@@ -117,7 +117,13 @@ plugins:
   - jekyll-titles-from-headings
   - jemoji
   - jekyll-gitlab-metadata
+  - jekyll-tagging
 
+#
+# Plugin configurations
+#
+tag_page_layout: tag_page
+tag_page_dir: tag
 
 #
 # INCLUDING HOOKS
