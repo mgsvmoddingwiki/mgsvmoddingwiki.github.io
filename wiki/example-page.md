@@ -1,6 +1,8 @@
 ---
-tags: example fox
+title: Example Page
+tags: [example, fox]
 ---
-## Example page
+
+## Subtitle
 
 This is an example page. You can edit it or create a [new one](new_page.md)

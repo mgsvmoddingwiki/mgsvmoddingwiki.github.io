@@ -117,7 +117,6 @@ plugins:
   - jekyll-titles-from-headings
   - jemoji
   - jekyll-gitlab-metadata
-  - jekyll-tagging
 
 #
 # Plugin configurations
@@ -131,13 +130,13 @@ tag_page_dir: tag
 # Check wiki documentation to learn how they work
 #
 
-inc_before_toc : 
+inc_before_toc : before_toc.html
 inc_after_toc : 
 inc_before_content : 
 inc_after_content : 
 inc_before_footer : 
 inc_after_footer : 
-inc_before_head : 
+inc_before_head : before_head.html
 inc_after_head : 
 inc_before_meta : 
 inc_after_meta : 
