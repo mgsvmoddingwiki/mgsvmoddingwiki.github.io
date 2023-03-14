@@ -1,6 +1,6 @@
 ---
 title: Example Page
-tag: example1 example2
+tags: [example1, example2]
 ---
 
 ## Subtitle
