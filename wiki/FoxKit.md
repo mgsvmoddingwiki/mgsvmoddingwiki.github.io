@@ -1,0 +1,5 @@
+---
+title: FoxKit
+permalink: /FoxKit/
+---
+
