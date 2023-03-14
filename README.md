@@ -1,4 +1,6 @@
-# Welcome to the MGSV Modding and Research Wiki!
+---
+title: Welcome to the MGSV Modding and Research Wiki!
+---
 
 This is the central hub for information on modding the [Fox Engine](https://en.wikipedia.org/wiki/Fox_Engine) [Metal Gear](https://en.wikipedia.org/wiki/Metal_Gear) games: 
 
