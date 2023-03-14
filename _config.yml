@@ -121,9 +121,10 @@ plugins:
 #
 # Plugin configurations
 #
-tag_page_layout: tag_page
-tag_page_dir: tag
-
+readme_index:
+  enabled:          true
+  remove_originals: false
+  with_frontmatter: true
 #
 # INCLUDING HOOKS
 # They are optional, change them only if you need
