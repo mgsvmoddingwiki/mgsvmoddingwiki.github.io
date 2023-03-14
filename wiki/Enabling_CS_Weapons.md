@@ -20,8 +20,15 @@ EquipDevelopFlowSetting.lua](https://github.com/Your401kPlan/Misc-Lua/blob/main/
 
 So now you have most of the CS guns in the game labeled , it's a matter
 of finding the right the corresponding weapon ID.
-
-All weapon ID's in the game can be found at
-<https://unknown321.github.io/mgsmonsterguns/#>\!
+[thumbAll](/File:XOF_Hospital_SMG_Info.png "wikilink") weapon ID's in
+the game can be found at <https://unknown321.github.io/mgsmonsterguns/#>
 
 Lets take the XOF hospital SMG for example. Here is it's info:
+
+From here we can see that the weapon ID is "WP_East_sm_030" so we can
+simply use ctrl+f to search this on the labeled lua file from github. In
+this case it's on line p50=310, so we simply scroll to the right to
+p69=2 and change it to p69=0. Save the file as
+EquipDevelopFlowSetting.lua and use fileproliferator and makebite to
+save it as a .mgsv. [Category:Weapons](/Category:Weapons "wikilink")
+[Category:Lua](/Category:Lua "wikilink")

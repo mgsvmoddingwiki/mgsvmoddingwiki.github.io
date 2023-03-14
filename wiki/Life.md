@@ -54,3 +54,4 @@ soldiers, meaning changing to any other character does not reset it and
 one does need to visit the shower on MB
 
 [Category:Lua](/Category:Lua "wikilink")
+[Category:Player](/Category:Player "wikilink")

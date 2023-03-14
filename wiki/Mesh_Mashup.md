@@ -10,9 +10,9 @@ want to exchange meshes between models using blender
 
 Let's say your objective is to put quiet's boots into the goblin
 swimsuit, this will work because both leg and boot meshes share the same
-bones, so something like a model from a different game, or a mesh
-specific with specific bones from another fox-model will not work
-without rigging it which will not be covered in this guide.
+bones, so something like a model from a different game, or a mesh with
+specific bones from another fox-model will not work without rigging it
+which will not be covered in this guide.
 
 ## Pipeline
 
@@ -62,3 +62,5 @@ texture icons in the inspector tab in unity, that will show you the
 texture size, name, resolution, and location, you can use that info to
 fetch the dds and drop them on the "Pictures" to later convert them back
 to .ftex and .ftexs by using the .ftex tool.
+[Category:Guides](/Category:Guides "wikilink")
+[Category:Rendering](/Category:Rendering "wikilink")

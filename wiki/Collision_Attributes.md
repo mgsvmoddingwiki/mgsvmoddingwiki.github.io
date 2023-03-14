@@ -12,18 +12,23 @@ like collisionAttributeNames in GeoxCollisionFreeShape.
   - PLAYER
   - RECOIL
   - ENEMY
-  - BULLET
+  - BULLET. Bullet model at collision.
   - MISSILE
   - BOMB
-  - BLOOD
-  - IK
+  - BLOOD. Blood at collision.
+  - IK. Inverse kinematic of model get adjusted with the geometry of
+    collision. If collision have angle the player will get the foot
+    adjusted to the surface.
   - STAIRWAY
   - STOP_EYE
   - CLIFF
-  - DONT_FALL
-  - CAMERA
+  - DONT_FALL. When player get off the collision it will fall naturally
+    and not a step out or jumping that usually do. Need more tests.
+  - CAMERA. Without this Tag the camera will pass through the model. If
+    active, camera will circumvent the model but with player center of
+    attention.
   - CLIFF_FLOOR
-  - BULLET_MARK
+  - BULLET_MARK. Texture of bullet mark at collision.
   - HEIGHT_LIMIT
   - DOUBLE_SLIDE
   - WATER_SURFACE
@@ -39,7 +44,7 @@ like collisionAttributeNames in GeoxCollisionFreeShape.
   - CLIMB
   - HORSE
   - VEHICLE
-  - MARKER
+  - MARKER. Turn available the scope marker at the collision.
   - RIDE_ON
   - THROUGH_LINE_OF_FIRE
   - THROUGH_ITEM_CHECK
@@ -48,3 +53,7 @@ like collisionAttributeNames in GeoxCollisionFreeShape.
   - FULTON
   - ITEM
   - BOSS
+
+[Category:Foxkit](/Category:Foxkit "wikilink")
+[Category:Guides](/Category:Guides "wikilink")
+[Category:References](/Category:References "wikilink")

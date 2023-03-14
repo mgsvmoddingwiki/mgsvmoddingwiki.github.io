@@ -10,7 +10,7 @@ with modding.
 There are a few things you need to have done before you begin, so before
 we actually do anything let's go over a checklist.
 
-**<big>Things to have done before you begin:</big>**
+## **<big>Things to have done before you begin:</big>**
 
 1.  An easy to access folder that will act as your workstation
 2.  Have [File
@@ -127,14 +127,17 @@ know this is the vanilla game's sound bank.
 
 So before we go any further, you have two ways of identifying the sound
 you need to change. The first is by using the [sound
-codes](https://metalgearmodding.fandom.com/wiki/Sound_Codes?venotify=created)page
-on the wiki. If you find the sound you're looking for keep node of it's
-file name.
+codes](https://metalgearmodding.fandom.com/wiki/Sound_Codes?venotify=created)
+page on the wiki. If you find the sound you're looking for keep node of
+it's file name.
+
+Countfuzzball also has some more sounds documented
+[here](https://docs.google.com/spreadsheets/d/1UYeaGqfZllUOZuiy0IMMf5A7fgFn4-fo5SQmT6BjKkQ/edit#gid=2132902213).
 
 The second is by using Ravioli Explorer. But before that we need to do
 one last thing.
 
-**Step 2.5: Using MGSV Sound Replacement Tool**
+### **Step 2.5: Using MGSV Sound Replacement Tool**
 
 So the MGSV is a modified version of Wwise, with almost everything
 stripped away from it. The .exe will unpack and repack the
@@ -147,7 +150,7 @@ the filename and info on every sound file in this sound bank. You'll
 need it. This isn't the last we'll be using the sound replacement tool
 but for now you can leave it alone.
 
-**Finishing Step 2: Using Ravioli Explorer**
+### **Finishing Step 2: Using Ravioli Explorer**
 
 You only need to use Ravioli Explorer if you do not know which file you
 want to replace yet. That is- you have not found the sound file you are
@@ -156,4 +159,111 @@ section](https://metalgearmodding.fandom.com/wiki/Sound_Codes?venotify=created).
 If you have not found it and need to look for the sound then you simply
 click on "Ravioli Explorer" and click open file at the top left then
 navigate to "Wwise_Output" then open "common_bank_01.bnk" from there
-you can navigate through
+you can navigate through all the sounds in this bank. Once you find the
+sound you're looking for write down the number somewhere.
+
+## **Step 3: Creating a replacement sound**
+
+Okay, you found which sound you want to replace, you know where it is,
+etc. Now we need to have a replacement for it. Replacing a sound file in
+MGSV is like giving a blood transfusion: it needs to match the original
+type or it will likely not work. It's quite simple but I'll start very
+basic anyways:
+
+There are two main types of sound in this game: Mono and Stereo. Stereo
+sound is more detailed and can be affected by various things in game
+such as being indoors, etc. When a player shoots a gun, the gunshot
+sound is stereo. Let's contrast this to Mono. Mono is generally lower
+quality, and isn't affected by as many things as stereo such as
+directional sound, sound propagation, echoing, etc. It just plays the
+sound with minor variables. When an enemy shoots a gun in game, it is
+mono and uses a different sound file. I mention this just to give you an
+idea of what is made stereo vs mono.
+
+The second thing is sample rate. This is basically a form of audio
+quality. I don't know much more than that and it's unimportant.
+
+So the gist is that when you find a sound, you need to open it with
+[audacity](https://www.audacityteam.org/), and make it [stereo or
+mono](https://www.wikihow.com/Change-a-Mono-Track-Into-Stereo-Track-Using-Audacity)
+depending on what the file you're replacing is, and match the [sample
+rate](http://www.dynamicsoflanguage.edu.au/research/data-archives/guides/resampling-audio-using-audacity/).
+
+### **Step 3.5 Finding audio file details**
+
+Alright so in order to match the sound quality of the new file with the
+old one, we need to know what the old one's information was. This is
+actually quite easy. Open up "common_bank_01_BNK.log" and this will
+give you the information on every sound file.
+
+Lets say we opened up Ravioli tools and want to replace "651564874" with
+something. Well we simply open up the log and search for "651564874".
+From the log I can see the real name of the file is "RIFF_0902.wem".
+Again the name that is "RIFF_XXXX" is the **REAL** name of the files.
+Keep note of that. Furthermore I can see that the file uses "PCM" as an
+audio format, is in Mono, and has a sample rate of 41,000Hz. Write all
+of these things down somewhere.
+[none|thumb|504x504px](/File:Sound_shit2.png "wikilink")
+
+### **Finishing Step 3: Creating the sounds**
+
+So the rest of this is self explanatory. Match the sample rate and audio
+type (Mono or Stereo) in audacity then export the file from audacity.
+Export it as a .wav for simplicity. You should put it and whatever other
+sounds you want to add in a folder and rename each file to be
+"RIFF_XXXX" obviously replace the XXXX with the number of the file you
+want to replace.
+
+## **Step 4: Converting your new audio files**
+
+Let's make sure we're on the same page: You should have your new file(s)
+in .wav format, renamed to the files you want to replace such as
+"RIFF_0902.wem" or something. These files also match the sample rate
+and sound type as the original. If you're at this point you are almost
+done, don't worry.
+
+Let's now open up Wwise 2015.1.9, not the Wwise.exe we used earlier.
+[Here](https://www.youtube.com/watch?v=H33bRnUHT54&t=186s) is a link to
+a video by Cuba on this part of the procedure, the relevant part is from
+1:18 to 2:26.
+
+Make a new project, then press "shift + K" then click on "source
+settings" then click the three dots next to "Default Conversion
+Settings" [none|thumb|222x222px](/File:More_wwise_shit.png "wikilink")
+After you click that it should open up a new box that gives you some
+options to convert the sounds. This is mostly mumbo jumbo to me, here's
+what matters: Remember the info about the sound file you got from the
+log earlier? It said PCM, Mono, and 41,000Hz. This is the part where we
+convert the new files to PCM. Again, not every file will be PCM but the
+ones in "common_bank_01" are all PCM. I don't know what PCM means but
+we need to have it. [none|thumb](/File:More_wwise_shit_2.png "wikilink")
+Select "PCM as input" this will convert all files we add to this project
+to PCM.
+
+NOW we import the files to the Wwise project. Select project at the top,
+then click "Import audio files" if you have the files you want to add in
+one folder you can just select the folder.
+
+Once you have all your files in then click "project" then "convert all
+audio files" [none|thumb](/File:Untitled.png "wikilink") This will
+export all your audio files to the cache of your project folder. Which
+should be in WwiseProjects\\(Project Name)\\.cache\\Windows\\SFX
+
+## **Packing the files**
+
+Now take all the .wems and make sure their names are "RIFF_XXXX.wem"
+they might have a bunch of numbers at the beginning or end don't worry
+about it just delete them.
+
+Now we go back to the "common_bank_01.sbp" we have in our workstation.
+Go to the Wwise_Input folder, then the common_bank_01BNK folder then
+paste your new .wem files in there. Next drag the common_bank_01.sbp
+back onto the Wwise.exe once more, this time it will compile the new
+sounds and overwrite the old ones.
+
+You're done. Create a folder name it the name of your mod so for example
+I'll call mine "soundmod" I'll now create these folders:
+Soundmod\\Assets\\tpp\\sound then in the sound folder I place the
+common_bank_01.sbp. From here simply pack the file with snakebite then
+you're done. [Category:Guides](/Category:Guides "wikilink")
+[Category:Sound](/Category:Sound "wikilink")

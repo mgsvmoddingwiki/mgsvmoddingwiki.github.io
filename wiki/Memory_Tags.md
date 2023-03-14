@@ -917,6 +917,10 @@ permalink: /Memory_Tags/
   - DemoOther: 0x1f0019
   - FxFile: 0xe000d
   - PriorityQueueDesc: 0x1a000c
+  - Network Ncl System: 0x70018
+  - Network Nt System: 0x50018
+  - Sound File: 0xc0007
 
-Network Ncl System: 0x70018 Network Nt System: 0x50018 Sound File:
-0xc0007
+[Category:References](/Category:References "wikilink")
+[Category:EXE](/Category:EXE "wikilink")
+[Category:Guides](/Category:Guides "wikilink")

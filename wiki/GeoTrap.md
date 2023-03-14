@@ -13,7 +13,8 @@ can fire whatever coded in lua script.
 GeoTrap area, namely **BoxShape** or **SphereShape**.
 
 **GeoModuleCondition** deal with callbacks and functions. I mean,
-**checkFuncNames** and **execFuncNames**.
+**checkFuncNames** and
+**execFuncNames**.[thumb|434x434px](/File:GeoTrap_Visual.jpg "wikilink")
 
 A common *checkFuncNames*, for example, can be the "*IsPlayer*" and have
 the *TppTrapCheckIsPlayerCallbackDataElement* which set the Trap to be
@@ -27,12 +28,11 @@ area will trigger the weatherTag.
 For a better understand about it. Let's build a Trap. We can use now
 Foxkit to write fox2 files better than just write from scratch with XML
 which is very time consuming. With Foxkit is just plenty simple and
-friendly. [thumb|679x679px](/File:GeoTrap_Visual.jpg "wikilink")
+friendly.
 
 ## **GeoTrap** Entity
 
-**name**. It is important to set the name so it will be call as a
-sender, later in Lua Script.
+[`thumb|451x451px`](/File:GeoTrap_Entity.jpg "wikilink")**`name`**`. It is important to set the name so it will be call as a sender, later in Lua Script. `
 
 **dataSet**. A fix value to the current fox2 file.
 
@@ -60,11 +60,11 @@ path to the fox2 where GeoModuleCondition is. Even using Foxkit the user
 may open the fox2 and manually editing the packagePath to empty.
 
 **enable**. Bool true or false.
-[thumb|680x680px](/File:GeoTrap_Entity.jpg "wikilink")
 
 ## **GeoModuleCondition** entity
 
-**name**. Not so important, but link with GeoTrap.
+[thumb|473x473px](/File:GeoModuleCondition-0.jpg "wikilink")**name**.
+Not so important, but link with GeoTrap.
 
 **dataSet**. A fix value to the current fox2 file.
 
@@ -101,16 +101,19 @@ For now IsPlayer. Enabling this will open the
 simple to use is ''TppRequestWeatherTagTrapExec. Enabling this will open
 the '**'execCallbackDataElements**.
 
-### **checkCallbackDataElements**. With checkFuncNames enabled as IsPlayer a new entity parameter show up.
+### **checkCallbackDataElements**.
+
+With checkFuncNames enabled as **IsPlayer** a new entity parameter show
+up.
 
 **owner**. Address of GeoModuleCondition.
 
 **funcName**. The checkFuncNames IsPlayer.
-[thumb|690x690px](/File:GeoModuleCondition-0.jpg "wikilink")
 
 ## **BoxShape** entity
 
-**name**. Not so important, but link with GeoTrap.
+[thumb|487x487px](/File:BoxShape.jpg "wikilink")**name**. Not so
+important, but link with GeoTrap.
 
 **dataSet**. A fix value to the current fox2 file.
 
@@ -130,11 +133,6 @@ first image of this post.
 
 **flags**. I do not have much info about it other than using Foxkit it
 will generate the right value for it. In this case, value 7.
-[thumb|680x680px](/File:BoxShape.jpg "wikilink")
-
-## And Now...
-
-## And Now...
 
 ## And Now...
 
@@ -170,3 +168,8 @@ of the GeoTrap it will be SUNNY.
 `   OnEnter = function() end,   `
 `   OnLeave = function () end,`
 `}`
+
+[Category:Entities](/Category:Entities "wikilink")
+[Category:Lua](/Category:Lua "wikilink")
+[Category:Foxkit](/Category:Foxkit "wikilink")
+[Category:Missions](/Category:Missions "wikilink")

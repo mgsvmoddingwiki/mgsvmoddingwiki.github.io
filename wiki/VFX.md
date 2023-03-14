@@ -3,6 +3,9 @@ title: VFX
 permalink: /VFX/
 ---
 
+[thumb|220x220px|The Fx editor in Fox
+Engine.](/File:UjcBdMG-1-.jpg "wikilink")
+
 An **FxVfxFile**, with the extension .vfx, is a binary file format used
 by Fox Engine to define node graphs which drive visual effects.
 
@@ -10,9 +13,14 @@ Because of the complexity of the Fx system, the format remained
 indecipherable for a long time, and would have remained unknown until
 one non-binary file was found left in the
 game: fx_tpp_splbrdwng01_s1.vfx, which is actually a DataSetFile2.
-That one file provided insight into the structure of the .vfx format.
+That one file provided insight into the structure of the .vfx
+format.[thumb|220x220px|Various examples of VFX usage in Metal Gear
+Online.](/File:Mgo3_vfx_demo_reel_images.png "wikilink")
+[thumb|220x220px|Example of custom
+VFX.](/File:MGSV_snow_vfx.jpg "wikilink") They can be unpacked and
+repacked with [VfxTool](https://github.com/youarebritish/VfxTool).
 
-## [thumb|The FX editor in Fox Engine.Structure](/File:UjcBdMG-1-.jpg "wikilink")
+## Structure
 
 A .vfx file is a directed acylic graph of Fx nodes with a single global
 output: an FxModuleGraph node. Each node produces different outputs, and
@@ -26,17 +34,18 @@ nodes, their parameters, and what they do.
 
 ### Header
 
-  - 0x0 - 0x2 (string): 'VFX.' Format signature.
+  - 0x0 - 0x2 (char\[3\] (no null terminator)): 'VFX.' Format signature.
   - 0x3 - 0x4 (uint16): Version number. Often (always?) 2.
   - 0x5 - 0x6 (uint16): Node count.
   - 0x7 - 0x8 (uint16): Edge count.
-  - 0x9 - 0x14: Padding.
+  - 0x9 - 0xE: Padding.
 
 ### Nodes
 
 The bulk of the format is the node data, which follows the header. There
 is one entry for each node. The first node is always an FxModuleGraph
-node.
+node. For details on parameters, see the list of [Fx
+nodes](/Fx_nodes "wikilink").
 
 #### Node definition struct
 
@@ -60,3 +69,6 @@ The nodes are followed by the graph edges, which connect nodes together.
   - 0x3 (byte): Source port index.
   - 0x4 (byte): Target port type.
   - 0x5 (byte): Target port index.
+
+[Category:File Formats](/Category:File_Formats "wikilink")
+[Category:VFX](/Category:VFX "wikilink")

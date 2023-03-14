@@ -10,11 +10,17 @@ ingame working with the Entity StaticModel. It will show another Entity
 that might be useful for some that add a small collision shape with
 eight points.
 
-### **Setting the Mod Folder**
 
-Before anything else, let's create a folder structure for the Mod we
-will call as "LoadingStairsInGame". Do it outside of Unity Foxkit for
-now.
+{| class="article-table" |+The other FoxKit Tutorials \![Foxkit:
+Installing, Import Files and
+Terrain](/Foxkit:_Installing,_Import_Files_and_Terrain "wikilink") |-
+|[**Foxkit: TppPrimRiverModel, TppWaterBounding, TppTextureLoader and
+FxLocatorData**](/Foxkit:_TppPrimRiverModel,_TppWaterBounding,_TppTextureLoader_and_FxLocatorData "wikilink")
+|- |**[Foxkit:
+TppSharedGimmickData](/Foxkit:_TppSharedGimmickData "wikilink")** |}
+\==**Setting the Mod Folder**== Before anything else, let's create a
+folder structure for the Mod we will call as "LoadingStairsInGame". Do
+it outside of Unity Foxkit for now.
 
 **LoadingStairsInGame/Assets/tpp/pack/location/afgh/pack_common/...**
 Inside the pack_common should have two packages.
@@ -48,7 +54,7 @@ Terrain](/Foxkit:_Installing,_Import_Files_and_Terrain "wikilink").
 
 Done. We have the mod ready to makebite and the folder in Unity.
 
-### **Creating a Fox2 file**
+## **Creating a Fox2 file**
 
 In Assets folder Unity create a Package Definition at menu **Unity
 Assets/Create/FoxKit/Package Definition**. Name it as afgh_common. The
@@ -74,7 +80,7 @@ the Data List with one Entity called TexturePackLoadConditioner0000.
 Good. Now we are ready to throw a lot of entities in there, but let's
 stick with the StaticModel.
 
-### **Entity StaticModel**
+## **Entity StaticModel**
 
 There are two ways to add this entity. A Horrible way and a Best Way.
 
@@ -139,7 +145,7 @@ paste. Don't forget to do it otherwise ingame...
 
 [579x579px](/File:StaticModel06.jpg "wikilink")
 
-### **Exporting DataSet**
+## **Exporting DataSet**
 
 Go to Data List Window, select the Dataset and hit right button mouse to
 show the options. Remember to set active if not otherwise it wont
@@ -164,7 +170,84 @@ DataListWindow.
 
 [border|587x587px](/File:AssetInGame.jpg "wikilink")
 
+### **Entity GeoxCollisionFreeShape**
 
-[Category:Guides](/Category:Guides "wikilink")
+This Entity add a small collision with eight points. Good if the
+geometry of the model is just a square or something simple. Let's take
+the StaticModel Staris we did and to a collision after the end of the
+Stairs. Check the sketch of the idea.
+
+[602x602px](/File:SketchGeox.jpg "wikilink")
+Open Unity and the DataSet we work before. Open the Entity List and
+search for **GeoxCollisionFreeShape.** In the Entity Window we see this:
+
+[591x591px](/File:GeoxCollision01.jpg "wikilink")
+
+1 - One is of course the transform positions, scale, rotations. Hit
+Create TransformEntity and it will drop the Entity in Hierachy Window
+next to the Stairs.
+
+2 - CollisionCategory **All** means all. I don't know what means
+**Chara** and **Recoil**. **All** works fine.
+
+3 - CollisionMaterial is greyed here. Currently not a option to edit in
+Foxkit 1.0. That we'll edit later manually using Fox2 tool to generate a
+xml. MTR_NONE_A is a good choice. The user can find more types in
+<https://github.com/unknown321/mgsv_lua_dump/blob/0e236d1180b35d70203e10605cfa7cfe631e2a74/tpp/master/data1/Assets/tpp/level_asset/weapon/ParameterTables/RecoilMaterial/RecoilMaterialTable.lua>
+
+4 - Tags. CHARA, PLAYER and ENEMY.
+
+5 - This eight points will be parented with the TransformEntity of
+**GeoxCollisionFreeShape.**
+
+#### **TransformEntity**
+
+After you create the TransformEntity, set pivot/local. Rotation to be
+according with the staticModel Stairs. Copy the rotation in Inspector
+Window to the Entity Window as we talk about that foxkit don't to this
+automatic. Move the **GeoxCollisionFreeShape** to where you think you'll
+start the shape we planned.
+
+[600x600px](/File:GeoxCollision02.jpg "wikilink")
+
+Create a Cube and drop inside the GeoxCollisionFreeShape0000. Erase the
+coords to 0,0,0 and scale it to 0.3,0.3, 0.3. This cube will be our
+First Point.
+
+[606x606px](/File:GeoxCollision03.jpg "wikilink")
+
+Create then more Seven Cubes and start to move then according to the
+Idea we sketch. It must be in that order. 1, 2, 3 and 4. Then 5, 6, 7
+and 8.
+
+[<File:GeoxCollision04.jpg>](/File:GeoxCollision04.jpg "wikilink")
+
+Add the tags.
+
+[<File:GeoxCollision05.jpg>](/File:GeoxCollision05.jpg "wikilink")
+
+Now.. Every Point we did with cubes we will copy the Positions to the
+Entity Window.
+
+[597x597px](/File:GeoxCollision06.jpg "wikilink")
+
+Done. Export the Dataset as we learn in previously with StaticModel. But
+now we need to edit manually the Fox2 File.
+
+Let's navigate to the Fox2 we build and with the FoxTool, extract it to
+XML. Open it with notepad++ or any editor that work.
+
+[589x589px](/File:Foxtooll01.jpg "wikilink")
+
+Search for CollisionMaterial and add MTR_NONE_A or any type you may
+find interesting in that list. Save and double click the xml to pack
+again in Fox2 file otherwise it wont load in game.
+
+[<File:Foxtooll02.jpg>](/File:Foxtooll02.jpg "wikilink")
+
+Done. Now test it. Do the .mgsv file in Makebite building the
+**LoadingStairsInGame folder.** Open with Snakebite and see it in game.
+
+[717x717px](/File:ColissionSucess.jpg "wikilink")
 [Category:Foxkit](/Category:Foxkit "wikilink") __INDEX__
 __NEWSECTIONLINK__

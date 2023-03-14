@@ -3,31 +3,29 @@ title: Metal Gear Modding Wiki
 permalink: /Metal_Gear_Modding_Wiki/
 ---
 
-<mainpage-leftcolumn-start />
+## **Welcome to the MGSV Modding and Research Wiki\!**
 
-## Welcome to the Wiki
+This is the central hub for information on modding the [Fox
+Engine](https://en.wikipedia.org/wiki/Fox_Engine) [Metal
+Gear](https://en.wikipedia.org/wiki/Metal_Gear) games:
 
-Welcome to the wiki. We’re a collaborative community website about your
-topic that anyone, including you, can edit. Click the edit button at the
-top of any page to get started\!
+  - [Metal Gear Solid V: Ground
+    Zeroes](https://en.wikipedia.org/wiki/Metal_Gear_Solid_V:_Ground_Zeroes)
 
-## Describe your topic
+<!-- end list -->
 
-Write a description about your topic. Let your readers know what your
-topic is about and add some general information about it.
+  - [Metal Gear Solid V: The Phantom
+    Pain](https://en.wikipedia.org/wiki/Metal_Gear_Solid_V:_The_Phantom_Pain)
 
-## Latest activity
+<!-- end list -->
 
-<activityfeed/>
+  - [Metal Gear
+    Survive](https://en.wikipedia.org/wiki/Metal_Gear_Survive)
 
-<mainpage-endcolumn />
+*If you're looking for information on modding MGSV, you've come to the
+right place\!*
 
-<mainpage-rightcolumn-start />
+## Main Categories
 
-Photos and videos are a great way to add visuals to your wiki. Find
-videos about your topic by exploring Fandom's [Video
-Library](/w:c:video "wikilink").
-
-[298px](/File:Placeholder "wikilink")
-
-<mainpage-endcolumn /> [Category:Browse](/Category:Browse "wikilink")
+<activityfeed></activityfeed>
+[Category:Browse](/Category:Browse "wikilink")

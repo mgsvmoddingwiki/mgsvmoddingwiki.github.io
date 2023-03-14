@@ -64,4 +64,5 @@ ends the mission, safe to say, its the core of the mission.
 
 ## sxxxxx_sequence.fox2
 
-Controls checkpoints used in the mission
+Controls checkpoints used in the mission [Category:Mission
+Design](/Category:Mission_Design "wikilink")

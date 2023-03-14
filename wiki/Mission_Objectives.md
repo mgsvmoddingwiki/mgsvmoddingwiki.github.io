@@ -29,9 +29,22 @@ it.
 ``` lua
 this.missionObjectiveDefine = {
     mission_target_cp = {
-        --Name of the marker gameobject
         packLabel = { "afterSahelanTestDemo" },
         --...
+    },
+}
+```
+
+#### announceLog
+
+The `announceLog` parameter in the objective will print a message in the
+announce log. The parameter is not a `langId`, instead it uses a string
+key of a `langId` value string from `TppUI`'s `ANNOUNCE_LOG_TYPE` table.
+
+``` lua
+this.missionObjectiveDefine = {
+    announce_eliminateTarget = {
+        announceLog = "eliminateTarget",
     },
 }
 ```
@@ -45,8 +58,8 @@ arguments using the function `TppMarker.Enable(gameObjectId,...)`. The
 like a soldier or a hostage, and if you're using a `gimmickId`, it will
 be the name of the gimmick in the `mvars.gim_identifierParamTable`
 table, meaning either a vanilla gimmick set up in the location's
-scripts, or a custom one you'll have to push to that table yourself
-somehow.
+scripts, or a custom one, though you'll have to push to that table
+yourself somehow.
 
 ``` lua
 this.missionObjectiveDefine = {
@@ -118,8 +131,8 @@ this.missionObjectiveDefine = {
 
 #### subGoalId
 
-The `subGoalId` parameter will change the subgoal `langId` and print the
-new subgoal in the announcement log.
+The `subGoalId` parameter will change the subgoal `langId` and if the
+subgoal is above 0, print the new subgoal in the announcement log.
 
 The subgoal index is generated into this `langId`:
 
@@ -522,3 +535,9 @@ TppMission.UpdateObjective{
     },
 }
 ```
+
+[Category:Mission Design](/Category:Mission_Design "wikilink")
+[Category:Guides](/Category:Guides "wikilink")
+[Category:Foxkit](/Category:Foxkit "wikilink")
+[Category:Lua](/Category:Lua "wikilink")
+[Category:Missions](/Category:Missions "wikilink")

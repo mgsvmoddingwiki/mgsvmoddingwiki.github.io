@@ -10,7 +10,7 @@ So.
 You've taken an interest in modding MGSV, but you don't know where to
 begin? Here are some great mods to start you off with\! 
 
-## [Snakebite Mod Manag](https://www.nexusmods.com/metalgearsolidvtpp/mods/106)er
+## [Snakebite Mod Manager](https://www.nexusmods.com/metalgearsolidvtpp/mods/106)
 
 [thumbYour](/File:Snakebite.png "wikilink") first order of business
 should be to install Snakebite, the mod manager used for all MGSV mods.
@@ -81,7 +81,7 @@ In no particular order...
 
 ## "But I want to make a mod\!" 
 
-Then join [Modder's Heaven](https://discord.gg/jhuVXsa), a Discord
+Then join [Modder's Heaven](https://discord.gg/yttPsfr), a Discord
 server where people are happy to help new faces learn the ins and outs
 of MGSV modding\! Welcome aboard\! [Category:Blog
 posts](/Category:Blog_posts "wikilink")

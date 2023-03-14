@@ -12,19 +12,30 @@ interpreter of the compiled bytecode is written in the C Programming
 Language.
 
 Lua was designed primarily for extending software applications
-customization.
-
-
+customization and is a popular scripting system for games.
 
 ## Lua in MGSV
 
-The Lua that is implemented into MGSV is hard to read. That's why
-TinManTex went ahead and made a [deminified
-version](https://github.com/TinManTex/mgsv-deminified-lua) of these
+MGSV uses [Lua 5.1](https://www.lua.org/manual/5.1/).
+
+The lua files are spread across data1.dat and patch .dat (00.dat
+unmodded, 01.dat with snakebite installed), which are loaded when the
+game is initialized, and in fpkds, which are loaded when the respective
+fpk is.
+
+For ease of reference we will call them data1 luas or fpk luas.
+
+The data1 luas were run through a
+[minifier](https://en.wikipedia.org/wiki/Minification_\(programming\))
+for the mgsv build, so TinManTex has worked on creating [deminified
+versions](https://github.com/TinManTex/mgsv-deminified-lua) of these
 scripts for ease of use.
 
 Less formal talk, the way Lua works in general you are not scripting
 elements that directly change the game engine, much rather you are
-scripting customizable options that are provided by the Engine. This is
+scripting customizable options that are provided by the engine. This is
 how Lua works in most cases and that's the way it's being implemented
 here.
+[Category:File Formats](/Category:File_Formats "wikilink")
+[Category:Unsorted File
+Formats](/Category:Unsorted_File_Formats "wikilink")

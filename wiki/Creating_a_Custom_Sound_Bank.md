@@ -87,10 +87,14 @@ These are quite big (heck one of them is 294 MB\!) and you really don’t
 need them, since WWise already has more than you’ll ever need in terms
 of effects or functionality. It’s recommended to turn them off. Besides,
 your project files will become huge anyway, so why make it waste even
-more space? [<File:Project> launcher
-assets.png](/File:Project_launcher_assets.png "wikilink") Finally,
-create your project by pressing **OK**. You will now be greeted with
-this pop up: [left](/File:Wwise_licensing.png "wikilink")
+more space?
+
+[<File:Project_launcher_assets.png>](/File:Project_launcher_assets.png "wikilink")
+
+Finally, create your project by pressing **OK**. You will now be greeted
+with this pop up:
+
+[<File:Wwise_licensing.png>](/File:Wwise_licensing.png "wikilink")
 
 This is the biggest (and the only?) limitation of the free version of
 WWise. The program will only let you have 200 media items at once. The
@@ -102,7 +106,8 @@ have to worry about this, so just press on **Close**.
 
 Now, I can imagine people freaking out when seeing WWise for the first
 time, with all of its menus & buttons all over the screen.
-[left|480x480px](/File:Wwise_is_scary.png "wikilink")
+
+[480x480px](/File:Wwise_is_scary.png "wikilink")
 
 But no need to worry because for the purposes of this tutorial, we won’t
 be using 80% of the stuff you see on screen. Just like any program, you
@@ -114,23 +119,23 @@ Dialogue and Music).
 For this tutorial we’re going to do something very simple: import an
 audio file, and then create a new event that will activate this audio
 file so that it can start playing in the game.
-
-## Importing Sound Files
-
-Importing an audio file is easy, and can be done in two ways: either by
-right-clicking on the **Default Work Unit** of the **Actor-Mixer
-Hierarchy** on the top-left and choosing **Import Audio Files**:
+\== Importing Sound Files == Importing an audio file is easy, and can be
+done in two ways: either by right-clicking on the **Default Work Unit**
+of the **Actor-Mixer Hierarchy** on the top-left and choosing **Import
+Audio Files**:
 
 [696x696px](/File:Import_method1.gif "wikilink")
 
 Or just doing a classic drag & drop onto the same **Default Work Unit**:
-[696x696px](/File:Import_method2.gif "wikilink") If everything went
-well, you should see your audio file underneath the **Default Work
-Unit**. Again, I should mention that WWise only accepts non-8-bit .wav
-audio. If you want to preview what your sound *sounds* like, you can
-either press Space when you have it selected, or go at the bottom of the
-screen where the **Transport Control** menu is displayed, and press the
-play button.
+
+[696x696px](/File:Import_method2.gif "wikilink")
+
+If everything went well, you should see your audio file underneath the
+**Default Work Unit**. Again, I should mention that WWise only accepts
+non-8-bit .wav audio. If you want to preview what your sound *sounds*
+like, you can either press Space when you have it selected, or go at the
+bottom of the screen where the **Transport Control** menu is displayed,
+and press the play button.
 
 ## The Sound Property Editor
 
@@ -147,7 +152,8 @@ box, which has to be enabled if you’re planning on making ambience or
 perhaps music, so that the sound doesn’t stop after it’s finished. If
 you want more advanced effects, go to the Effects tab, and play around
 with all the available effects (there’s a lot of them)\!
-[left|369x369px](/File:All_the_wwise_effects.png "wikilink")
+
+[369x369px](/File:All_the_wwise_effects.png "wikilink")
 
 As you can see, WWise is no joke. There’s a very good reason so many AAA
 game developer studios use it. Just imagine the amount of time it
@@ -157,8 +163,6 @@ sound modding a major pain, due to the way it’s been designed (the sound
 banks are only generated one-way, meaning that it’s extremely hard to
 reverse the process and see how they’ve been created. In other words,
 you can’t just open an .**sbp** and see what’s inside it).
-
-
 
 ## Sound Positioning
 
@@ -210,7 +214,10 @@ Editor** menu.
 
 And here we are, we have yet another scary menu with so many settings &
 buttons\! This is a common theme with WWise, so you should get used to
-seeing this. [580x580px](/File:Scary_attenuation_menu.png "wikilink")
+seeing this.
+
+[580x580px](/File:Scary_attenuation_menu.png "wikilink")
+
 But once again, it’s not too complicated. The **Curves** window you see
 at the bottom left define what property of the sound changes based on
 distance. In this case, only the **Output Bus volume** changes (the red
@@ -221,13 +228,14 @@ the settings of **Curve** from **None** to **Custom** to do just that.
 Finally, here’s a simple demonstration of playing around with the curve
 by adding extra points and changing the curve type (double left click on
 a curve to make an extra point, right click to change its type):
-[582x582px](/File:Changing_the_curve.gif "wikilink") One rule of thumb
-is to make sure that the volume of the sound isn’t decreased too much in
-the first few meters. Otherwise, the volume will change very intensively
-when you’re close to it, which is a bit unrealistic if you’re going for
-very loud sounds. It can also become an annoyance, given that the volume
-changes based on the position of the player’s camera (which changes very
-fast), and not the player itself.
+[582x582px](/File:Changing_the_curve.gif "wikilink")
+
+One rule of thumb is to make sure that the volume of the sound isn’t
+decreased too much in the first few meters. Otherwise, the volume will
+change very intensively when you’re close to it, which is a bit
+unrealistic if you’re going for very loud sounds. It can also become an
+annoyance, given that the volume changes based on the position of the
+player’s camera (which changes very fast), and not the player itself.
 
 But luckily, WWise makes this distance testing very easy\! The little
 **Distance \<distance number\>** box you see at the top of the graph is
@@ -250,15 +258,16 @@ it? This is simple to do, and again, can be done in two ways (well
 actually three but I’ll show two). The first is to right click on the
 sound file, go to **New Event** and then **Play**. Give your event a
 name and you’re done\!
-[717x717px](/File:Event_creation_method1.gif "wikilink") The second way
-it to go to the **Events** tab in the project explorer, then click on
-the **Default Work Unit** under the **Events** folder, and press the
-**Create New Event** icon. Give your event a name, press enter and then
-select it, so that a new **Event Editor** menu pops up at the center of
-the screen (it’s important that it actually appears). Now, go to the
-**Audio** tab in the **Project Explorer** again, and then perform a drag
-and drop of your sound file inside the **Event Actions** window. Make
-sure you don’t accidently select the sound, or else the **Event
+[717x717px](/File:Event_creation_method1.gif "wikilink")
+
+The second way it to go to the **Events** tab in the project explorer,
+then click on the **Default Work Unit** under the **Events** folder, and
+press the **Create New Event** icon. Give your event a name, press enter
+and then select it, so that a new **Event Editor** menu pops up at the
+center of the screen (it’s important that it actually appears). Now, go
+to the **Audio** tab in the **Project Explorer** again, and then perform
+a drag and drop of your sound file inside the **Event Actions** window.
+Make sure you don’t accidently select the sound, or else the **Event
 Actions** window will be replaced with the **Sound Property** Editor.
 Done\! WWise will automatically pick **Play** as the action, so no need
 to touch anything else.
@@ -471,7 +480,7 @@ Now, here’s a simple example of a **fox2** xml file that loads an
 
 ``` xml
 <?xml version="1.0" encoding="utf-8"?>
-<fox formatVersion="2" fileVersion="0" originalVersion="Sun Aug 29 00:43:36 UTC+03:00 2021">
+<fox formatVersion="2" fileVersion="0" originalVersion="">
   <classes>
     <class name="Entity" super="" version="2" />
     <class name="Data" super="Entity" version="2" />
@@ -554,7 +563,7 @@ sound bank. Again, here’s another example of a simple one:
 
 ``` xml numberLines
 <?xml version="1.0" encoding="utf-8"?>
-<fox formatVersion="2" fileVersion="0" originalVersion="Sun Aug 29 00:45:34 UTC+03:00 2021">
+<fox formatVersion="2" fileVersion="0" originalVersion="">
   <classes>
     <class name="Entity" super="" version="2" />
     <class name="Data" super="Entity" version="2" />
@@ -673,3 +682,8 @@ If the custom sound bank doesn’t work, here’s the most common causes:
 3.  The sound bank file (**.sbp**) is not inside
     **<Mod Folder Name>/Assets/tpp/sound/asset/**.
 4.  The sound bank name in the **sdf** is misspelled.
+
+[Category:Guides](/Category:Guides "wikilink")
+[Category:WWise](/Category:WWise "wikilink")
+[Category:Sound](/Category:Sound "wikilink")
+[Category:Foxkit](/Category:Foxkit "wikilink")

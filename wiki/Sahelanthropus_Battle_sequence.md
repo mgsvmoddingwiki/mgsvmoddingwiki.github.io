@@ -5,8 +5,6 @@ permalink: /Sahelanthropus_Battle_sequence/
 
 # Sahelanthropus Battle Sequence
 
-Sahelanthropus was some stages in his battle.
-
 On the beginning he follows the player around walking towards him,
 firing the miniguns on his head, if he gets close to the player he uses
 his amazing flamethrower or even tries to stomp the player if there is
@@ -42,3 +40,4 @@ Sahelanthropus (i noticed that sometimes Mantis doesn't appear), that
 goes on in a loop until you kill him
 
 Notes: He needs to attack Pequod to go Rex mode, no Pequod = no railgun
+[Category:Mission Design](/Category:Mission_Design "wikilink")

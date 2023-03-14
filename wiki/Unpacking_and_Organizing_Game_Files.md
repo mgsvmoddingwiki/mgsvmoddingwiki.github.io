@@ -3,10 +3,8 @@ title: Unpacking and Organizing Game Files
 permalink: /Unpacking_and_Organizing_Game_Files/
 ---
 
-# **<u>Unpacking and Organizing Game Files</u>** (WIP)
-
-*A guide on unpacking game files, plus some general tips and advice on
-organizing them into appropriate subdirectories.*
+**(WIP)** *A guide on unpacking game files, plus some general tips and
+advice on organizing them into appropriate subdirectories.*
 
 ## **Creating a Workspace and Subfolders**
 
@@ -52,16 +50,13 @@ folder location:
 
 ## **Unpacking The Phantom Pain**
 
-[right|frameless|140x140px](/File:Cutscene_Files.png "wikilink") <u>\*If
-you have SnakeBite installed, please skip down to the ***Unpacking The
-Phantom Pain with SnakeBite Installed*** section\!</u>
-
-File Monolith is all we'll need for The Phantom Pain, and if you've
-followed the guide above, you already have it set up. The first thing
-we'll do is run the Archive Unpacker. When the dialog box opens, go
-ahead and click the ellipses button beside the Archives input. Next
-we'll select most of the .dat files inside of TPP's master folder,
-making sure to ignore any files with the <u>e2f</u> prefix.
+[right|frameless|140x140pxFile](/File:Cutscene_Files.png "wikilink")
+Monolith is all we'll need for The Phantom Pain, and if you've followed
+the guide above, you already have it installed. The first thing we'll do
+is run the Archive Unpacker. When the dialog box opens, go ahead and
+click the ellipses button beside the Archives input. Next we'll select
+most of the .dat files inside of TPP's master folder, making sure to
+ignore any files with the <u>e2f</u> prefix.
 
   - (The e2f .dats are actually just video files for a few cutscenes, if
     you want to view them, just rename the extension from .dat to .wmv)
@@ -89,23 +84,32 @@ You should have two folders now, one with the raw unpacked files, and
 another with only converted textures. The entire thing should be around
 50 GB once everything is unpacked.
 
-## ***Unpacking The Phantom Pain with SnakeBite Installed***
+### **SnakeBite**
 
-When SnakeBite is installed, it moves the files in the 0 folder's 00.dat
-and 01.dat to **a_chunk7.dat** and **a_texture.dat** and the patched
-00.dat lua files into 01.dat. From that point on, mods will be installed
-in 00.dat. When unpacking the game files with SnakeBite installed,
-you'll follow the same instructions as above, except you'll ignore the 0
-folder in TPP's game folder. Instead, you'll select **a_chunk7** and
-**a_texture.dat** when using the Archive Unpacker.
+With SnakeBite installed, mods are stored in the 00.dat and 01.dat. The
+original data from these are then placed in the newly created archives,
+a_chunk7.dat, and a_texture7.dat, respectively. Snakebite moves this
+data so that mods may be installed more quickly.
+
+When unpacking TPP, you should treat a_chunk7.dat and a_texture7.dat
+as though they are 00.dat and 01.dat, skipping the 0 folder entirely.
 
 ## **Unpacking Metal Gear Online**
 
-\-To Be Added... preferably when it's not 4 AM
+Next up, run File Monolith's Archive Unpacker, and under the Archives
+prompt, select the two .dat files from TPP's mgo folder. The output
+folder will be our MGO/Main folder, just <u>make sure that the Condensed
+Directory Structure option is checked,</u> and click the Unpack Archives
+button.
+
+Once it's finished unpacking, open the Mass Texture Converter, select
+MGO/Main for the Input, and MGO/Textures for the Output. Make sure the
+Convert Subfolders option is enabled, and click Convert Textures. MGO is
+unpacked.
 
 ## **Unpacking Survive**
 
-Once again File Monolith will be our tool of choice here. We'll keep
+Once again, File Monolith will be our tool of choice here. We'll keep
 this short, since there aren't many differences between unpacking TPP
 and Survive. So, run File Monolith's Archive Unpacker, click on the
 ellipses button beside the Archives input, and select all of the .dats
@@ -123,14 +127,15 @@ support this filetype, but we can still use it's Mass Texture converter
 after we unpack the textures. Our tool of choice for unpacking these
 .g0s archives is the
 [GzsTool 0.2](https://github.com/Atvaark/GzsTool/releases/tag/v0.2),
-make sure to use this old version of the tool, as version 0.6.0 <u>will
+make sure to use this old version of the tool, as later versions <u>will
 not</u> work with Ground Zeroes.
 
-  - (Remember those files with the e2f prefixes from TPP? Ground Zeroes'
-    data_00.g0s is the same thing, a cutscene.)
+  - (Remember those e2f prefixes from TPP? Ground Zeroes' data_00.g0s
+    is the same thing, a cutscene.)
 
 We'll simply drag **data_01.g0s** and **data_02.g0s** onto the GzsTool
 0.2 and wait for the tool to finish unpacking. Once it's done, we'll
 move everything out of the new data folders (created by the GzsTool) and
 into our GZ Main folder in Fox Modding. All that's left is to run File
 Monolith's Mass Texture Converter and point it at our GZ Texture folder.
+[Category:Guides](/Category:Guides "wikilink")

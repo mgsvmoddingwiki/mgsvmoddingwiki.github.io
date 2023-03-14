@@ -3,34 +3,49 @@ title: Foxkit: TppSharedGimmickData
 permalink: /Foxkit-_TppSharedGimmickData/
 ---
 
-uide for FoxKit 1.0. This Guide assume that the user already know how to
-work with Foxkit and understand Datasets/ fox2 files and the mod folder
-structure. Please see [Foxkit: Installing, Import Files and
+Guide for FoxKit 1.0. This guide assumes that the user already knows how
+to work with Foxkit and understand Datasets/ fox2 files and the mod
+folder structure. Please see [Foxkit: Installing, Import Files and
 Terrain](/Foxkit:_Installing,_Import_Files_and_Terrain "wikilink") and
 [Foxkit: StaticModel and
 GeoxCollisionFreeShape](/Foxkit:_StaticModel_and_GeoxCollisionFreeShape "wikilink")
 
-Entity that work with lba files. (Locator Binary Array). Location data
+
+{| class="article-table" |+The other FoxKit Tutorials \!**[Foxkit:
+Installing, Import Files and
+Terrain](/Foxkit:_Installing,_Import_Files_and_Terrain "wikilink")** |-
+|[**Foxkit: StaticModel and
+GeoxCollisionFreeShape**](/Foxkit:_StaticModel_and_GeoxCollisionFreeShape "wikilink")
+|- |**[Foxkit: TppPrimRiverModel, TppWaterBounding, TppTextureLoader and
+FxLocatorData](/Foxkit:_TppPrimRiverModel,_TppWaterBounding,_TppTextureLoader_and_FxLocatorData "wikilink")**
+|}
+
+## **Beginning**
+
+Entity that works with lba files. (Locator Binary Array). Location data
 used to place gimmicks that is a little bit different then the
 **TppPermanentGimmickData.**
 
-This entity transform a model as something that become alive, animated,
-breakable, falling by gravity. A staticmodel of a chair if not load by
-lba files will be just a static model that wont fall if player touch it.
-Or a box that without lba it wont break if a grenade blow up near. Cloth
-will not swing around without lba.
+This entity transforms a model as something that becomes alive,
+animated, breakable, falling by gravity. A static model of a chair, if
+not loaded by lba files, will be just a static model that won't fall if
+player touches it. Or a box that without lba it won't break if a grenade
+blows up near. Cloth will not swing around without lba.
 
-The game have a limit of how many lba should be spawn in free roam
-mission. Luckly, if the user does a new custom mission or location the
+The game has a limit of how many lba should be spawned in free roam
+mission. Luckily, if the user does a new custom mission or location the
 limit can raise to up more than hundreds of lba working without crashing
-the game. This guide will only spawen two Gimmicks in free roam mission
-as a good start to understand how to load lba files.
+the game. This guide will only spawn two Gimmicks in the free roam
+mission as a good start to understand how to load lba files. Each
+location pack_common gimmick have **TppGimmickImmediateStateData** and
+other types of entities that set a kind of limit of gimmicks the
+location will have.
 
-The Guide will load two Gimmicks. A Chair and a Flag/Banner. The first
+The guide will load two Gimmicks. A Chair and a Flag/Banner. The first
 thing to do is build a mockup assets in Unity with a simple Dataset that
-it will not be inside MOD. The purpose of creating this fox2 file is to
-get the Positions and Rotations of the model to copy/paste into lba
-files. We do it because Foxkit can not load lba files yet.
+will not be inside MOD. The purpose of creating this fox2 file is to get
+the Positions and Rotations of the model to copy/paste into lba files.
+We do it because Foxkit can not load lba files just yet.
 
 Create a Dataset named "MockupGimmicks" and build a small assets scene.
 I did this:
@@ -39,9 +54,9 @@ I did this:
 
 We'll see this Fox2 later.
 
-### **TppSharedGimmickData list**
+## **TppSharedGimmickData list**
 
-Very important list to query the values we will need later.
+Very important list to query the values that we will need later.
 
 **<big>numDynamicGimmick</big>** <small>It does need more info about
 this one. Not sure what it means other than value 0 does not do nothing.
@@ -51,11 +66,11 @@ gimmicks only need 1 or 2.</small>
 **<big>flags</big>** <small>Every gimmick will have a first flag and a
 second flag. Notice that flag2 will have value 0 for the mostly
 gimmicks. Some have more than one number in flag1 that it will depend of
-which model is been loaded. Barbwire have three types of staticmodel and
-therefore have three flags1 that cause a specific behavior. But, this
-still need more information. It's a lot of time to look at each one and
-it will be a pleasure to anyone who try to test each and note what
-happens ingame.</small>
+which model is been loaded. Barbwire has three types of staticmodel and
+therefore has three flags1 that cause a specific behavior. But, this
+still needs more information. It's a lot of time to look at each one and
+it will be a pleasure to anyone who tries to test each and note what
+happens in-game.</small>
 
 <table>
 <caption>Query list of gimmicks, numDyn and flags</caption>
@@ -430,16 +445,10 @@ happens ingame.</small>
 <td><p>2147483904</p></td>
 <td><p>0 65536</p></td>
 </tr>
-<tr class="even">
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
 </tbody>
 </table>
 
-### **LbaTool**
+## **LbaTool**
 
 Download here.
 <https://github.com/youarebritish/LbaTool/releases/tag/1.0>
@@ -448,14 +457,14 @@ Find the lba for **afgh_char002** and **afgh_flag001** and paste in
 **afgh_common_fpk/Assets/tpp/level/location/afgh/block_common/lba**
 or in a place you know better for it in your project. The path folder I
 choose here is because we are working to spawn in free roam AFGH
-location pack_common. If were in a Sideop it probably would be in
+location pack_common. If we're in a side-op it probably would be in
 Sideop_fpk/Assets/tpp/level/mission2/quest/ih/lba.
 
 Open the **afgh_char002** and **afgh_flag001** outside of Unity with
 the LbaTool. Remember the mockupGimmick we did later and open the file
 too.
 
-Erase the content afgh_char002.lba have at the start, including the
+Erase the content afgh_char002.lba we have at the start, including the
 dataset path.
 
 **locator name of chair:** afgh_char002_gim_n0000|srt_afgh_char002
@@ -493,10 +502,10 @@ for the Chair and another for Flag/Banner we planned.
 **<big>breakedModelFile and breakedGeomFile</big>** Some models like
 box, wood desk, wall have a second fmdl and geom for pieces that will of
 course end the break animation and result in a visual broke of the first
-model. It's funny that you can add any thing here and make the break
+model. It's funny that you can add anything here and make the break
 quite interesting visually.
 
-**<big>partsFile</big>** Model need a part file to load ph, target and
+**<big>partsFile</big>** Model needs a part file to load ph, target and
 effects. Remember to add the files and path in Unity and Mod Folder.
 
 **<big>numDynamicGimmick</big>** As we talk about at the beginning of
@@ -504,15 +513,15 @@ this guide. Need more information about.
 
 **<big>locaterFile</big>** lba files will be in every fpk folder.
 Precisely in /Assets/tpp/level folder. In our case we are using
-afgh_common_fpk. So the location it will be is
+afgh_common_fpk. So the location for it will be is
 **/Assets/tpp/level/location/afgh/block_common/lba.** Make sure to add
 it later in Unity and Mod Folder.
 
 **<big>flags1</big>** Please see the QueryList. It's not clear what this
-flags actually means. Need more information.
+flags actually means. Needs more information.
 
 **<big>flags2</big>** Please see the QueryList. It's not clear what this
-flags actually means. Need more information.
+flags actually means. Needs more information.
 
 Do the same for the afgh_flag001.
 
@@ -520,12 +529,12 @@ Export the Fox2 file to the fpkd of our Mod Folder. You can now delete
 the mockupGimmick. It's important that this fox2 file we did just to
 take the positions and rotations for lba files not load in the Mod.
 
-Look that I'm using the same Mod from the previously guides. Every mod
+Look that I'm using the same mod from the previously guides. Every mod
 can have tons of fox2 file that deals with something in specific.
 
 [542x542px](/File:Gimmick02.jpg "wikilink")
 
-We nedd do edit manually the MyThirdFox2File in xml to add the flag
+We need to edit manually the MyThirdFox2File in xml to add the flag
 number and of course check if the paths are correctly done. Remember now
 to check the QueryList and choose the best flag.
 
@@ -566,5 +575,14 @@ there.
 
 [431x431px](/File:Gimmick08.jpg "wikilink")
 
-Done. Now test it. Do the .mgsv file in Makebite building the
-**LoadingStairsInGame folder.** Open with Snakebite and see it in game.
+Done. Now test it. Make the .mgsv file in Makebite building the
+**LoadingStairsInGame folder.** Open with SnakeBite and see it in game.
+
+Unfortunately due to the limits of Free Roam. Only one TppSharedGimmick
+was spawned. The flag works at least.
+
+[527x527px](/File:VideoGimmick01.webm "wikilink")
+
+
+[Category:Foxkit](/Category:Foxkit "wikilink") __INDEX__
+__NEWSECTIONLINK__

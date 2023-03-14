@@ -54,7 +54,7 @@ e.g.
     </property>
 
 Assigns
-EquipParameters.TppEquip.ReloadEquipParameterTables2.bullet\[18\].
+EquipParameters.TppEquip.ReloadEquipParameterTables2.bullet\[19\].
 
     {
         TppEquip.BL_Tankgun_30mmAutoCannon,

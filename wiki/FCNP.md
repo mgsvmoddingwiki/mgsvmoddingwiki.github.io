@@ -3,7 +3,7 @@ title: FCNP
 permalink: /FCNP/
 ---
 
-The .fncp format is used to define connection points for models in Metal
+The .fcnp format is used to define connection points for models in Metal
 Gear Solid V: Ground Zeroes and Metal Gear Solid V: The Phantom Pain.
 This format's documentation is still subject-to-change as it is still
 being researched.
@@ -75,4 +75,6 @@ This section has not yet been explored.
 ## Section 2: Strings
 
 This section is simply a list of strings, with every string, including
-the last one, being followed by a period (one null byte).
+the last one, being followed by a period (one null byte). [Category:File
+Formats](/Category:File_Formats "wikilink")
+[Category:Models](/Category:Models "wikilink")

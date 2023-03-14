@@ -19,3 +19,5 @@ FtexTool can convert an .ftex file into a .dds file by dragging the
 directory as all of its sub-textures for this process to work.) It can
 also convert all .ftex files in a directory into .dds images if the
 folder containing the .ftex files is dragged onto the tool.
+[Category:Tools](/Category:Tools "wikilink") [Category:File
+Tools](/Category:File_Tools "wikilink")

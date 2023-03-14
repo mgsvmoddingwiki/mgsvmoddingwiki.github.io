@@ -3,13 +3,14 @@ title: Zeta
 permalink: /Zeta/
 ---
 
-**Zeta** is an Infinite Heaven add-on that is both an in-game mod
-manager and modding framework. It was created to simplify modding, to
-improve mod organization, and to resolve file conflicts between mods. It
-can manage weapons, vehicles, custom player models, buddies and more.
-It's required to use Zeta modules.
+**Zeta** is an [Infinite Heaven](/Infinite_Heaven "wikilink") add-on
+that is both an in-game mod manager and modding framework. It was
+created to simplify modding, to improve mod organization, and to resolve
+file conflicts between mods. It can manage weapons, vehicles, custom
+player models, buddies and more. [It's required to use Zeta
+modules.](https://www.nexusmods.com/metalgearsolidvtpp/search/?search_description=Zeta)
 
-## Feature
+## Features
 
   - Mod Manager: Configure all of your mods in-game\! You can toggle
     them, change their settings as well as their load order.
@@ -24,9 +25,15 @@ It's required to use Zeta modules.
   - Included Mods: Advanced Graphics Menu, Unlocked Weapon
     Customization, Zeta Editor
 
+## Requirements
+
+  - [SnakeBite Mod Manager](/SnakeBite_Mod_Manager "wikilink")
+  - [Infinite Heaven](/Infinite_Heaven "wikilink")
+  - [IHHook](/IHHook "wikilink")
+
 ## Installation
 
-  - Extract "ZetaIHAddon.MGSV"
+  - Extract "ZetaIHAddon.zip"
   - Open [SnakeBite Mod
     Manager](https://www.nexusmods.com/metalgearsolidvtpp/mods/106)
   - Go to "Mods"
@@ -44,3 +51,7 @@ It's required to use Zeta modules.
   - To select an option, press right, or numpad 6.
   - General Settings has options that change how Zeta works overall.
   - Mod Management has options for all mods installed.
+
+[Category:Infinite Heaven](/Category:Infinite_Heaven "wikilink")
+[Category:Getting Started](/Category:Getting_Started "wikilink")
+[Category:Guides](/Category:Guides "wikilink")

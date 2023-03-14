@@ -5,11 +5,11 @@ permalink: /File_Monolith/
 
 File Monolith is a set of open-source tools which provide support for
 file management and folder formatting for MGSV:TPP. File Monolith
-consists of four separate tools as of v0.2.0.1:
+consists of six separate tools as of v0.4.0.0:
 
   - Archive Unpacker: The user can select Archive (.dat) files, which
     the tool will unpack into a target directory. Then, the tool will
-    unpack all .fkp, .fpkd, .pftxs, and .sbp files within the directory.
+    unpack all .fpk, .fpkd, .pftxs, and .sbp files within the directory.
   - Mass Texture Converter: The user can select a directory and the tool
     will attempt to convert all texture files from .ftex(s) to .dds. The
     resulting .dds files are sent to a target directory.
@@ -22,6 +22,14 @@ consists of four separate tools as of v0.2.0.1:
     filenames, and the tool will attempt to update their names and
     filepaths using the latest qar_dictionary. Any updated files are
     copied to the target directory.
+  - Archive Transferrer: The user selects their Ground Zeroes and
+    Phantom Pain executable files, and the tool will attempt to
+    automatically transfer the game archives from Ground Zeroes and
+    Metal Gear Online into The Phantom Pain.
+  - Texture Aggregator: The user can select a Packed Fox Textures
+    (.pftxs) file, and the tool will attempt to automatically complete
+    the textures partially contained in the .pftxs, and then convert the
+    textures to DirectDraw Surface (.dds) format.
 
 ## Archive Unpacker
 
@@ -91,16 +99,16 @@ Notes:
 ## File Proliferator
 
 [thumb|220x220px](/File:File_Proliferator.png "wikilink") The File
-Proliferator tool is the most powerful and feature-rich tool of the
-three. Although it has a number of use-cases and functions, its primary
-role is to create MakeBite-ready file directories for MGSV. From the
-files input by the user, this tool will search through the entirety of
-MGSV's files (including the contents of .fpk, .fpkd, .pftxs and .sbp
-files) for a matching filename. Upon finding a match, the tool will
-create a mimic of the file's directory structure in the target
-directory, and then place a copy of the user's file into that directory.
-In essence, this "proliferates" the user's files into the MakeBite
-structure, ready to be packed into a .mgsv file.
+Proliferator tool is the most powerful and feature-rich tool of the set.
+Although it has a number of use-cases and functions, its primary role is
+to create MakeBite-ready file directories for MGSV. From the files input
+by the user, this tool will search through the entirety of MGSV's files
+(including the contents of .fpk, .fpkd, .pftxs and .sbp files) for a
+matching filename. Upon finding a match, the tool will create a mimic of
+the file's directory structure in the target directory, and then place a
+copy of the user's file into that directory. In essence, this
+"proliferates" the user's files into the MakeBite structure, ready to be
+packed into a .mgsv file.
 
 This tool has a number options, but only one purpose:
 
@@ -196,4 +204,65 @@ Notes:
       - (Ex: 3cb5fc5a6e14d.2.ftexs -\>
         \\targetDirectory\\Assets\\tpp\\weapon\\amo\\Pictures\\am10_main0_def_c00_bsm.2.ftexs)
 
-[Category:Tools](/Category:Tools "wikilink")
+## Archive Transferrer
+
+The Archive Transferrer allows for the user to automatically import
+Ground Zeroes and Metal Gear Online data into The Phantom Pain. This
+tool will reformat and copy the files as necessary, without modifying
+the original data.
+
+This tool has one purpose:
+
+1.  To provide the user with a streamlined method of pulling data
+    archives from Ground Zeroes and Metal Gear Online into The Phantom
+    Pain.
+
+Notes:
+
+  - Currently the tool is only designed to transfer the "texture"
+    archives from Ground Zeroes / Metal Gear Online. A future update
+    should allow the user to transfer the "chunk" archives.
+  - This tool utilizes [morbidslinky's fork of
+    GzsTool](https://github.com/JosephZoeller/GzsTool) in order to
+    reformat the Ground Zeroes archive.
+  - Transferring the archives may take a moment.
+
+In order to read these foreign archives, SnakeBite makes the necessary
+edits to the foxfs.dat upon its initial setup, independently from the
+Archive Transferrer.
+
+  - There is no order to setting up SnakeBite and importing foreign
+    archives, but both steps are necessary in order to utilize the other
+    games' data.
+
+## Texture Aggregator
+
+The Texture Aggregator allows for the user to automatically build
+textures from a Packed Fox Textures (.pftxs) file. Given a .pftxs, the
+tool will unpack the file's partial textures, pull the additional
+texture files from the user's unpacked archives (from the Archive
+Unpacker's output), and then (optionally) convert all fox textures to
+DirectDraw Surface (.dds) files.
+
+This tool has one purpose:
+
+1.  To provide the user with a streamlined method of collecting all
+    textures associated with a specified .pftxs file.
+
+Notes:
+
+  - This tool expects the user to have unpacked the contents of all of
+    TPP's texture archives to a directory using the Archive Unpacker
+    tool.
+  - The aggregation process may take a moment, depending on the contents
+    of the .pftxs file.
+  - TppMasterFileList.txt: Similar to the File Proliferator tool,
+    Texture Aggregator references TppMasterFileList.txt to determine the
+    additional textures which need to be pulled from the unpacked
+    texture archives.
+  - I recommend using the SageThumbs Plugin in order to preview the .dds
+    files in their thumbnails without opening them in GIMP or Photoshop.
+      - <https://www.cherubicsoft.com/en/projects/sagethumbs>
+
+[Category:Tools](/Category:Tools "wikilink") [Category:Modding
+Tools](/Category:Modding_Tools "wikilink")

@@ -30,4 +30,6 @@ It should be noted that MatParamIndex_\# parameters allow one material
 to have multiple presets assigned to it. The codeblock above is a
 parameter for all materials. Most notably SpecularColor. The location of
 these files can be found in data1.dat. There can only be 256 material
-presets assigned to this array.
+presets assigned to this array. [Category:File
+Formats](/Category:File_Formats "wikilink")
+[Category:Textures](/Category:Textures "wikilink")

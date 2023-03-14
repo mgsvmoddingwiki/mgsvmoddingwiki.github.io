@@ -14,12 +14,18 @@ The fox engine uses different hashing functions for different purposes.
 
 It mostly uses CityHash with seeds.
 
-The main ones so far are StrCode32 - used in lua, langIds, and in GZ as
-part of the file name hashing?? PathFileNameCode64 - Used in file name
-hashing, most commonly seen in output from GzsTool/QarTool. (The name is
-my(tinmantex) choosing, since I don't know actual the function name)
-PathFileNameCode32 - some variant of the above, with a uint32 return to
-fit in luas number representation, used in a limited fashion in lua.
+The main ones so far are:
+
+  - StrCode32 - used in lua, langIds
+  - PathFileNameCode64 - Used in file name hashing, most commonly seen
+    in output from GzsTool/QarTool. (The name is my(tinmantex) choosing,
+    since I don't know actual the function name)
+  - PathFileNameCode32 - some variant of the above, with a uint32 return
+    to fit in luas number representation, used in a limited fashion in
+    lua. Actual function code not verified.
+  - PathCode64 - another variant, hash of just path and file name,
+    without the extension. Used in GzsTool/QarTool dictionary.
+  - PathCode64Gz - as above, but for GZ.
 
 In most cases we (modders) are only presented with the hashes
 themselves, and working with just hashes is not ideal in terms of
@@ -69,45 +75,52 @@ from patches) get a definitive list of all hashes for the set of data.
 If an up to date repository of the hashes can be found this step can be
 skipped and you can go on to Creating a test dictionary.
 
-###
 langId hashes:
 
 Repository: <https://github.com/TinManTex/mgsv-lookup-strings>
 
 Gathering: Using tinmantex fork of LangTool
-<https://github.com/TinManTex/FoxEngine.TranslationTool/> with the -d
-switch will append all hashes of an lng/2 file to langIdHashes.txt in
-the working folder. Workflow: Make sure all lng files are accessible:
-Extract all qar .dats Extract all fpk/ds.
+<https://github.com/TinManTex/FoxEngine.TranslationTool/> with the
+-OutputHashes switch will append all hashes of an lng/2 file to
+langIdHashes.txt in the working folder.
+
+Workflow: Make sure all lng files are accessible: Extract all qar .dats
+Extract all fpk/ds.
 
 Delete any existing langIdHashes.txt
 
-Run LangTool on each lng/2 with the -d switch
+Run LangTool on each lng/2 with the -OutputHashes switch
 
 Use some process to cull the list to unique hashes and sort. TODO: post
 uniquify
 
-FileName hashes: Repository: The
-<https://github.com/emoose/MGSV-QAR-Dictionary-Project> has reference
-hashes, however they are currently not updated to 1.0.11.0, and there's
-no information of emooses workflow to create them.
+GzsTool path hashes:
 
-Gathering: Ideally GzsTool should have an option to output hashes as it
-processes archives. As that is not the case one method is to recover
-from the archive metadata created by GzsTool or QAR Tool/FPK Tool. If
-it's easier than adding hash output to GzsTool a tool should be created
-to automate the following workflow step.
+Repository: The <https://github.com/emoose/MGSV-QAR-Dictionary-Project>
+has reference hashes, however they are currently not updated to
+1.0.11.0, and there's no information of emooses workflow to create them.
 
-As GzsTool does not output the file name hashes on it's entries if it
-finds a string match from it's dictionary you will have to run GzsTool
-on all files with an empty qar_dictionary.
+Gathering:
 
-QAR Tool will output hashes to it's archive.inf files regardless.
+Tpp: Using this fork of GzsTool <https://github.com/TinManTex/GzsTool>
+with the -OutputHashes option will output the hashes for the qar file to
+<filename>_pathHashes.txt
 
-All target archive metadata files should be processed to gather the
-hashes. GzsTool uses xml so could be recovered by reading that, but it
-would probably be faster to just targeted string scrape 'Key=' QAR tool
-inf files, for each line, if find '|', hash is string before '|'
+GZ: Not likely to be updated so the repository of hashes should be used,
+but if you want to verify: The GzsTool fork doesn't support GZ as
+GzsTools last version that supported GZ is 0.2. So have to fall back to
+grabbing from the archive metadata .xml files. Clear GzsTool 0.2
+dictionary so it outputs pathcode names. Run on the GZ .gz0s. Iterate
+the .xml files and grab from FilePath= , strip the file extension.
+Alternatively iterate the extracted files and grab their filenames
+without extension.
+
+Mtar path hashes: Repository: Does not have a dictionary project, hashes
+are however in <https://github.com/TinManTex/mgsv-lookup-strings>
+
+Gathering: Using this fork of MtarTool
+<https://github.com/TinManTex/MtarTool> with the -OutputHashes option
+will output the hashes for the qar file to <filename>_pathHashes.txt
 
 ## Creating a test dictionary
 
@@ -279,4 +292,74 @@ lang_dictionary.txt to act as the default dictionary for LangTool.
 Future runs can be done by pointing the HashWranglers dictionary arg to
 a folder instead of a specific file, and copying the current validated
 dictionary there along with dictionaries of new strings to test.
+
+GzsTool workflow:
+
+Hashes update: GzsTool -OutputHashes for current version qar archives
+GameData\\MGS\\hashgrab\\tpp_pc_<version> RoboCopy to
+mgsv-lookup-strings\\GzsTool\\Hashes\\tpp_pc_<version> Uniquify
+Hashes\\tpp_pc_<version> - Merges and sorts to one file. Copy
+tpp_pc_<version>_combined to Hashes\\PathCode64 Uniquify-Combine
+Hashes PathCode64 - merges all PathCode64 hashes to one Uniquify-Combine
+Hashes PathCode64Gz  (even though it's just one file, for ) Note: Dont
+ever want to merge PathCode64 and PathCode64Gz hashes since they are
+created from different hashing functions.
+
+Dict tests: HashWrangle -HashFunction PathCode64 with whatever dicts/new
+strings you got to test. Rename output if you're going to use the same
+dictionary again
+
+Repeat with PathCode64Gz
+
+Merge both PathCode64_matchedStrings / Gz_matched This is release
+dictionary.
+
+Stats: Run HashWrangler on each file in Hashes\\tpp_pc_<version> and
+collect the stats output.
+
+MtarTool workflow: Using fork <https://github.com/TinManTex/MtarTool>
+which adds -OutputHashes Workflow much the same as GzsTool
+
+Unresolved Issues/stuff that would be good to do:
+
+GzsTools broke off support for Ground Zeroes at 0.2, ideally it should
+be brought back to the current version of GzsTool Dictionary will have
+to be split, internally at least, if not at file leve, since it uses a
+different hashing function from TPP.
+
+For GZ there is also the strange case of .6.ftexs, which isn't in the
+extensions list, and doesn't seem to have an index for, but matches if
+you give it a dict entry.
+
+by default with
+/Assets/tpp/effect/vfx_pic/explosion/fx_expanm06_ks_alp_clp in dict
+
+<Entry FilePath="/Assets/tpp/effect/vfx_pic/explosion/fx_expanm06_ks_alp_clp.5.ftexs" />
+<Entry Hash="196289966432593" FilePath="b28651b8e151" />
+<Entry FilePath="/Assets/tpp/effect/vfx_pic/explosion/fx_expanm06_ks_alp_clp.ftex" />
+
+Adding
+/Assets/tpp/effect/vfx_pic/explosion/fx_expanm06_ks_alp_clp.6.ftexs
+
+<Entry FilePath="/Assets/tpp/effect/vfx_pic/explosion/fx_expanm06_ks_alp_clp.5.ftexs" />
+<Entry FilePath="/Assets/tpp/effect/vfx_pic/explosion/fx_expanm06_ks_alp_clp.6.ftexs" />
+<Entry FilePath="/Assets/tpp/effect/vfx_pic/explosion/fx_expanm06_ks_alp_clp.ftex" />
+
+SubpTool: should be updated with -OutputHashes option and a dictionary.
+MtarTool should be updated with -OutputHashes option
+
+MtarTool: While fork does have -OutputHashes, it outputs all pathhashes
+in pathcode64 (hash & 0x3FFFFFFFFFFFF), not pathcode64gz. However many
+hashes get hits with pathcode64gz. I'm probably just don't have an
+understanding what's happening.
+
+FoxTool: fox_dictionary and GzsTool fpk_dictionary might need to be
+looked into.
+
+HashWrangler: Better stats output/per file like qar-dictionary-project
+
+LangTool: Change to output to each file rather than append one? Would
+allow finer grained stats.
+
 [Category:Guides](/Category:Guides "wikilink")
+[Category:References](/Category:References "wikilink")

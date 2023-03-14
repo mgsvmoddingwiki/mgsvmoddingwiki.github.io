@@ -36,3 +36,13 @@ The following is a list of all formats compatible with FoxTool:
   - .vdp
   - .veh
   - .vfxlf
+
+## Dictionary
+
+FoxTool utilizes a dictionary of filenames called fox*_dictionary.txt*.
+As it decompiles the fox2, it compares the hashes generated from this
+dictionary to any hashed string literals it finds. If it finds a match,
+it will output the string by it's real name. If it cannot find a match,
+it will output the string by its hashed
+name.[Category:Tools](/Category:Tools "wikilink") [Category:File
+Tools](/Category:File_Tools "wikilink")

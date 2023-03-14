@@ -3,7 +3,16 @@ title: Notable Tools
 permalink: /Notable_Tools/
 ---
 
-Links to P.T. Resources:
+  - [AutoPftxs](https://github.com/BobDoleOwndU/AutoPftxsTool)
+  - [File Monolith](https://github.com/Morbidslinky/FileMonolith)
+  - [FMDL Studio](https://github.com/BobDoleOwndU/FMDL-Studio-v2)
+  - [FoxKit](https://github.com/youarebritish/FoxKit)
+  - [FoxTool](https://github.com/Atvaark/FoxTool)
+  - [FtexTool](https://github.com/Atvaark/FtexTool)
+  - [FvTwool](https://github.com/BobDoleOwndU/FvTwool)
+  - [GzsTool](https://github.com/Atvaark/GzsTool)
 
-  - <https://www.psxhax.com/threads/extracting-p-t-playable-teaser-ps4-model-data-textures-guide.1238/>
-  - <https://drive.google.com/file/d/1ArbhIQkKrYQMNOqx3O5UAgaTAD3fti7P/view?usp=sharing>
+
+[Category:Links](/Category:Links "wikilink")
+[Category:Tools](/Category:Tools "wikilink") [Category:Tool
+Resources](/Category:Tool_Resources "wikilink")

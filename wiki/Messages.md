@@ -561,8 +561,95 @@ Following is an uncategorised list of message names:
   - WormHoleTimerTimeUp
   - ZombBiteConnect
 
+#### Semi-Organized Notes About Events
+
+Sender → MessageID → Arguments
+
+  - **GameObject**
+      - **1746381789**
+          - *Description*
+              - called when two tires on a vehicle (including 6-wheel
+                trucks) are shot out, no other unknown event is raised
+                when all tires are shot out
+              - presumably, denotes reduced handling
+          - *Args*
+              - arg0: gameId -- the affected vehicle
+              - arg1: unknown -- example value: 1936681293
+  - **Radio**
+      - **3116057018**
+          - *Description*
+              - called when using the Inf-Scope to view a target with
+                radio information set, which changes the information
+                you'll receive when you use the Intel radio
+          - *Args*
+              - arg0: gameId -- the object to receive radio information
+                about
+              - arg1: conversation type -- unknown enum?
+                  - **3:** heavy machine gun (stationary turret)
+                  - **4:** mortar
+                  - **6:** communications equipment (blue radios)
+                  - **8:** power generator (GZ)
+                  - **9:** comms equipment
+                  - **11:** searchlight
+                  - **18:** dumpster
+                  - **19:** metal drum (explosive)
+                  - **20:** portable toilet
+                  - **27:** military four-wheel drive
+                  - **31:** walker gear
+                  - **44:** raven (bird)
+                  - **54:** Nubian Goat
+                  - **65:** Soviet soldier
+  - **Block**
+      - TBD
+  - **Player**
+      - **2990447840**
+          - *Description*
+              - called twice when opening the iDROID in the ACC, once
+                with the arg0=0 and a second time shortly after with
+                arg0=1
+              - while in the field, only called one time always with
+                arg0=0 -- after menu fully closes
+          - *Args*
+              - arg0: number
+      - **2307345963**
+          - *Description*
+              - called twice when opening the iDROID in the ACC, once
+                with the arg0=1 and a second time shortly after with
+                arg0=0
+              - while in the field, only called one time always with
+                arg0=0 -- after menu fully closes
+          - *Args*
+              - arg0: number
+      - **316563185**
+          - *Description*
+              - occurs when the <Call Radio> button is held and the menu
+                opens
+          - *Args*
+              - arg0: number -- seemingly always 0
+      - **4213428578**
+          - *Description*
+              - occurs when the <Call Radio> button is released and the
+                menu closes
+          - *Args*
+              - arg0: number -- seemingly always 0
+      - **2533923076**
+          - *Description*
+              - occurs when a wolf-type animal begins a lunge at the
+                player
+          - *Args*
+              - arg0: number -- seemingly always 0
+              - arg1: gameId -- the gameId of the instigating animal
+      - **2526961808**
+          - *Description*
+              - occurs every game tick while being lunged at by an
+                animal, beginning with Message **2533923076**, concludes
+                with a **DogBiteConnect** Message or ???
+          - *Args*
+              - arg0: number -- seemingly always 0
+
 ## sources
 
 <https://github.com/unknown321/mgsvdump/blob/master/tpp/sequences/messages_for_sequences.lua>
 
 [Category:Lua](/Category:Lua "wikilink")
+[Category:Engine](/Category:Engine "wikilink")

@@ -13,14 +13,16 @@ extension) of their actual paths, which are formatted as:
 The videoName can be any string, and in The Phantom Pain's case, the
 five base game's names are as follows. As for the \[targetSuffix\], it
 changes depending on the voice version of the game - English (_en) and
-Japanese (_jp)
+Japanese (_jp). The targetSuffix is assigned in Lua's TppMovie library,
+and therefore can be skipped if calling the TppVideoPlayer functions
+directly. The subtitle track is seemingly hardcoded in the .exe.
 
 |                      |                           |                      |                      |
 | -------------------- | ------------------------- | -------------------- | -------------------- |
 | videoName            | Description               | English File Name    | Japanese File Name   |
 | `p21_030010_movie`   | Movie after Cyprus        | e2f9a1fda590d087.dat | e2f861abe2e17760.dat |
 | `p31_010055_movie`   | Movie after Miller Rescue | e2fbebbd66f86086.dat | e2f867210cb635ca.dat |
-| `movie_Preview`      | Chapter 2 Preview Movie   | e2f8e499bc8f3606.dat | e2fb01787df277e4.dat |
+| `p31_050100_movie`   | Chapter 2 Preview Movie   | e2f8e499bc8f3606.dat | e2fb01787df277e4.dat |
 | `p51_020030_01movie` | Nuclear Development       | e2faa449a7e0781d.dat | e2fb41f633494d0c.dat |
 | `p51_020030_02movie` | Nuclear Disarmament       | e2fb02c35da41a21.dat | e2f986b5fa138174.dat |
 
@@ -84,5 +86,60 @@ VideoPlayerMemoryBlock class, using the aforementioned \[videoName\].
 And in .lua, they're played with a TppMovie.Play function.
 
 `TppMovie.Play{`
-`   videoName = [videoName],    `
+`    videoName = [videoName],`
+`    subtitleName = "string",`
+`    memoryPool = [videoName],`
+`    isLoop = false,`
+`    onStart = function() end,`
+`    onEnd = function() end,`
 `}`
+
+  - **videoName**: Required. Actually specifies the movie to play.
+  - **memoryPool**: Optional. Also uses the same string as videoName,
+    but not sure what it actually does.
+  - **subtitleName**: Does not seem to work. Subtitle id seems to be
+    hardcoded in the .exe.
+  - **isLoop**: Optional. Bool. Seemingly unused in TPP's TppMovie.Play,
+    but may still be usable in a direct call of
+    TppVideoPlayer.LoadVideo.
+  - **onStart**: Optional. This function will be executed when the movie
+    starts playing.
+  - **onEnd**: Optional. The function will be executed when the movie
+    finishes playing, whether it's skipped or not.
+
+Alternatively, you can directly call TppVideoPlayer, just like how
+TppMovie.Play does, with the isLoop flag, but without any fancy onStart
+or onEnd callbacks or status changes and such.
+
+`local movie=TppVideoPlayer.LoadVideo{`
+`    VideoName=[videoName],`
+`    SubtitleName="string",`
+`    MemoryPool=[videoName],`
+`    Loop=false`
+`}`
+`if not movie then`
+`    TppVideoPlayer.PlayVideo()`
+`end`
+`TppMovie.CallbackFunctionTable[Fox.StrCode32([videoName])]={`
+`    videoName=[videoName],`
+`    onStart=function()end,`
+`    onEnd=function()end`
+`}`
+
+  - **videoName**: Required. Specifies the movie to play. Lua's TppMovie
+    adds the targetSuffix here, but calling it directly doesn't require
+    that.
+  - **subTitleName**: Does not seem to work. Subtitle id seems to be
+    hardcoded in the .exe.
+  - **memoryPool**: Optional. Also uses the same string as videoName,
+    but not sure what it actually does.
+  - **isLoop**: Optional. Bool. Never used in TPP, but used in Survive
+    for the title screen.
+  - **onStart**: Optional. This function will be executed when the movie
+    starts playing.
+  - **onEnd**: Optional. The function will be executed when the movie
+    finishes playing, whether it's skipped or not.
+
+[Category:File Formats](/Category:File_Formats "wikilink")
+[Category:Unsorted File
+Formats](/Category:Unsorted_File_Formats "wikilink")

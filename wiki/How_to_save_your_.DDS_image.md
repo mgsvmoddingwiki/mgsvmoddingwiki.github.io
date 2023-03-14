@@ -12,21 +12,23 @@ you're making.
 
 There is one universal rule here which is to \*always\* generate
 mipmaps. They are important for the game to load textures correctly. As
-for the DXT type, there are two main types you're gonna use: DXT1 and
-DXT5. The one you'll use depends, again, on what type of texture you're
-saving.
+for the DXT/`BC` type, there are two main types you're gonna use:
+DXT1/`BC1` and DXT5/`BC3`. The one you'll use depends, again, on what
+type of texture you're saving.
 
-BSM/regular textures are DXT1
+BSM/regular textures are DXT1/`BC1`
 
-NRM/Normal maps are DXT5
+NRM/Normal maps are DXT5/`BC3`
 
-SRM is DXT1
+SRM is DXT1/`BC1`
 
-LYM is DXT1
+LYM is DXT1/`BC1`
 
-DTX is DXT1
+DTX is DXT1/`BC1`
 
-Why? DXT1 does not save alpha/transparency maps, and utilizing them when
-you're not trying to can cause texture issues/errors. Only Normal Maps
-regularly utilize alpha maps and are the only texture that should be
-saved using DXT5 - the type that saves the normal map.
+Why? DXT1/`BC1` does not save alpha/transparency maps, and utilizing
+them when you're not trying to can cause texture issues/errors. Only
+Normal Maps regularly utilize alpha maps and are the only texture that
+should be saved using DXT5/`BC3` - the type that saves the normal map.
+[Category:Guides](/Category:Guides "wikilink")
+[Category:Rendering](/Category:Rendering "wikilink")

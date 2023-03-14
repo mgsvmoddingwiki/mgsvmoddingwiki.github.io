@@ -8,6 +8,9 @@ there are still some major unsolved problems and mysteries. This page
 should serve as an index of major outstanding problems, what's known
 about them, and why they're important.
 
+Will try to serve this page as a check list, and update the information
+as necessary.
+
 ## Missions
 
 ### iDroid mission limit
@@ -18,11 +21,57 @@ limit exists in the exe or in a UI file.
 
 ## Levels
 
-While custom levels appear to be possible in theory, there are a few
-major limitations at present.
+[thumb|310.986x310.986px](/File:MGO3_Amberstation_.png "wikilink") As
+theorized, custom levels are possible and have been implemented thanks
+to CapLagRobin's research and experimentation, it is now possible to
+load [GNTN(Camp
+Omega)](https://www.nexusmods.com/metalgearsolidvtpp/mods/978) empty
+maps, and maps from MGO3.
+
+Work is needed to improve the accessibility of custom level editing and
+loading.
 
 ### Navmeshes
 
 While custom routes would allow you to place soldiers in a custom level,
-navmeshes are required to facilitate AI navigation of the map. This file
-format (.nav2, .nta) is completely unexplored.
+navmeshes are required to facilitate AI navigation of the map. <s>This
+file format (.nav2, .nta) is completely unexplored.</s>
+
+This file format has been reversed and more information can be found on
+the .nav2 wiki page. Thanks to OldBanana and Ventos for their hard work
+and implementation\!
+
+Still, there is much work that needs to be done to make it more
+accessible.
+
+## Models
+
+### Levels of Detail
+
+It is unknown exactly how the level of detail faces are triggered in
+models, making it difficult to implement and nearly impossible to test
+LOD faces for custom models.
+
+## Animations
+
+### Game Animations
+
+The .gani format has almost no public documentation, meaning custom
+animations cannot be created. The other chunks of data contained by
+.mtar files are also undocumented (.trk, .exchnk, .enchnk), making
+editing them infeasible as well.
+
+### Motion Graph
+
+The motion graph format, which controls animation states, is completely
+undocumented. This limits animation editing to swapping files.
+
+## Player Mechanics
+
+### Dual-Wielding
+
+It is unknown how Ocelot's dual-wielding mechanic is triggered, making
+it impossible to dual-wield the Tornadoes in mods that allow him to be
+used outside of FOB missions.
+[Category:Guides](/Category:Guides "wikilink")
+[Category:References](/Category:References "wikilink")

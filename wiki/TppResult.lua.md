@@ -9,7 +9,10 @@ File location: Assets/tpp/script/lib/
 
 Function: Calculates the player's end-of-mission score based on their
 performance. We can change several things in this script including GMP
-awarded and rank awarded for successful mission completion.
+awarded and rank awarded for successful mission completion. Additionally
+it also keeps track of the player's playstyle for awarding codenames,
+limits the player's rank to A if it detects the player has used a
+rank-limiting item and updating the Records tab using various functions.
 
 The game uses a ranking system of E(lowest), D, C, B, A and S (highest)
 based on how the player completed the mission according to several
@@ -33,9 +36,10 @@ They are contained in the array e.COMMON_SCORE_PARAM:
   - Tactical Takedowns. + 1e3 points per tactical takedown.
   - Hits taken. -100 points per hit taken.
   - Re-discovered alerts. -500 points per getting re-discovered. This is
-    where the enemy is searching for you after you get away and you are
-    found again, different to a full alert(which has reflex mode and the
-    exclamation above enemies' heads.).
+    where the enemy is actively searching for you after you get away
+    from a full alert and you are found again, different to a full
+    alert(which has reflex mode and the exclamation above enemies'
+    heads.).
   - Enemy Alerts. -5e3 points. Note: An enemy alert only counts when an
     enemy discovers you (reflex mode/exclamation mark) and begins
     shooting. Enemies going into "Alert mode" and increasing their
@@ -53,10 +57,13 @@ They are contained in the array e.COMMON_SCORE_PARAM:
   - No Alert bonus +5e3 points
   - No reflex bonus +1e4 points
 
-Rank scoring system:
+Note: Accuracy is counted here, but not sure where the function for it
+is.
 
-The Rank scoring system is stored in two arrays called e.RANK_THRESHOLD
-and e.RANK_BASE_SCORE
+Rank point definition:
+
+The Rank point definition is stored in two arrays called
+e.RANK_THRESHOLD and e.RANK_BASE_SCORE
 
 e.RANK_BASE_SCORE is the base number of points needed to acquire a
 rank and e.RANK_THRESHOLD is the upper limit for a particular rank.
@@ -67,8 +74,8 @@ rank and e.RANK_THRESHOLD is the upper limit for a particular rank.
 **e.RANK_BASE_SCORE={S=11e4,A=9e4,B=7e4,C=5e4,D=3e4,E=0}**
 
 Exceptions to these are stored in arrays immediately beneath these for
-specific missions called e.RANK_BASE_SCORE_<missioncode> to edit and
-override with their own values:
+specific missions called e.RANK_BASE_SCORE_<missioncode>\[1\] to edit
+and override with their own values:
 
 **e.RANK_BASE_SCORE={S=11e4,A=9e4,B=7e4,C=5e4,D=3e4,E=0}**
 
@@ -81,4 +88,13 @@ e.RANK_BASE_GMP is the array used for awarding GMP based on rank:
 **e.RANK_BASE_GMP={S=28e3,A=23400,B=2e4,C=18e3,D=13500,E=9999}**
 
 Each mission also guarantees a set amount of GMP, then the Rank GMP is
-added onto this. See the array e.MISSION_GUARANTEE_GMP.
+added onto this. See the array e.MISSION_GUARANTEE_GMP and uses the
+format \[<missioncode>=<NumberInScientificNotation>\]
+
+<references />
+
+[Category:Lua](/Category:Lua "wikilink")
+[Category:Missions](/Category:Missions "wikilink")
+[Category:Guides](/Category:Guides "wikilink")
+
+1.  <https://metalgearmodding.fandom.com/wiki/MissionCodes>

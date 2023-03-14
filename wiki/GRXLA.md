@@ -94,14 +94,14 @@ Pain and PL03 is used in The Phantom Pain and beyond.
   - 0x36-0x37 - Temperature half float.
   - 0x38-0x3B - Color deflection float.
   - 0x3C-0x3F - Lumen float.
-  - 0x40-0x41 - Unknown half float.
-  - 0x42-0x43 - Unknown half float.
-  - 0x44-0x45 - Unknown half float.
-  - 0x46-0x47 - Unknown half float.
-  - 0x48-0x49 - Unknown half float.
-  - 0x4A-0x4B - Unknown half float.
-  - 0x4C-0x4F - Unknown uint.
-  - 0x50-0x53 - Unknown uint.
+  - 0x40-0x41 - Light size half float.
+  - 0x42-0x43 - Dimmer half float.
+  - 0x44-0x45 - Shadow bias half float.
+  - 0x46-0x47 - LOD far size half float.
+  - 0x48-0x49 - LOD near size half float.
+  - 0x4A-0x4B - LOD shadow draw rate half float.
+  - 0x4C-0x4F - LOD radius level uint.
+  - 0x50-0x53 - LOD fade type uint.
   - 0x54-0x57 - Local offset to irradiation point. Entries that don't
     have an irradiation point have the value as 0.
 
@@ -171,7 +171,7 @@ Pain and SL03 is used in The Phantom Pain and beyond.
   - 0x48-0x49 - Umbra angle half float.
   - 0x4A-0x4B - Penumbra angle half float.
   - 0x4C-0x4D - Attenuation exponent half float.
-  - 0x4E-0x4F - Unknown half float.
+  - 0x4E-0x4F - Dimmer half float.
   - 0x50-0x51 - Color Red half float.
   - 0x52-0x53 - Color Green half float.
   - 0x54-0x55 - Color Blue half float.
@@ -179,18 +179,18 @@ Pain and SL03 is used in The Phantom Pain and beyond.
   - 0x58-0x59 - Temperature half float.
   - 0x5A-0x5B - Color deflection half float.
   - 0x5C-0x5F - Lumen float.
-  - 0x60-0x61 - Unknown half float.
+  - 0x60-0x61 - Light size half float.
   - 0x62-0x63 - Shadow umbra angle half float.
   - 0x64-0x65 - Shadow penumbra angle half float.
   - 0x66-0x67 - Shadow attenuation exponent half float.
-  - 0x68-0x69 - Dimmer half float.
-  - 0x6A-0x6B - Shadow bias half float.
-  - 0x6C-0x6D - View bias half float.
-  - 0x6E-0x6F - Unknown half float.
-  - 0x70-0x71 - Unknown half float.
-  - 0x72-0x73 - Unknown half float.
-  - 0x74-0x77 - Unknown flags.
-  - 0x78-0x7B - Unknown flags.
+  - 0x68-0x69 - Shadow bias half float.
+  - 0x6A-0x6B - View bias half float.
+  - 0x6C-0x6D - Power scale half float.
+  - 0x6E-0x6F - LOD far size half float.
+  - 0x70-0x71 - LOD near size half float.
+  - 0x72-0x73 - LOD shadow draw rate half float.
+  - 0x74-0x77 - LOD radius level flags.
+  - 0x78-0x7B - LOD fade type flags.
   - 0x7C-0x7F - Local offset to irradiation point. Entries that don't
     have an irradiation point have the value as 0.
 
@@ -251,16 +251,16 @@ These entries define light probes.
   - 0x1E-0x1F - Inner scale X negative half float.
   - 0x20-0x21 - Inner scale Y negative half float.
   - 0x22-0x23 - Inner scale Z negative half float.
-  - 0x24-0x27 - Scale X float.
-  - 0x28-0x2B - Scale Y float.
-  - 0x2C-0x2F - Scale Z float.
-  - 0x30-0x33 - Rotation quaternion X float.
-  - 0x34-0x37 - Rotation quaternion Y float.
-  - 0x38-0x3B - Rotation quaternion Z float.
-  - 0x3C-0x3F - Rotation quaternion W float.
-  - 0x40-0x43 - Translation X float.
-  - 0x44-0x47 - Translation Y float.
-  - 0x48-0x4B - Translation Z float.
+  - 0x24-0x27 - Bounding box Scale X float.
+  - 0x28-0x2B - Bounding box Scale Y float.
+  - 0x2C-0x2F - Bounding box Scale Z float.
+  - 0x30-0x33 - Bounding box Rotation quaternion X float.
+  - 0x34-0x37 - Bounding box Rotation quaternion Y float.
+  - 0x38-0x3B - Bounding box Rotation quaternion Z float.
+  - 0x3C-0x3F - Bounding box Rotation quaternion W float.
+  - 0x40-0x43 - Bounding box Translation X float.
+  - 0x44-0x47 - Bounding box Translation Y float.
+  - 0x48-0x4B - Bounding box Translation Z float.
   - 0x4C-0x4F - Unknown float. Translation W?
   - 0x50-0x51 - Priority short.
   - 0x52-0x53 - Shape type ushort. 0 - default square, 1 - triangular
@@ -301,3 +301,6 @@ For every face:
   - 0x2-0x3 - Unknown index.
   - 0x4-0x5 - First vertex index.
   - 0x6-0x7 - Vertex count.
+
+[Category:File Formats](/Category:File_Formats "wikilink")
+[Category:Level](/Category:Level "wikilink")

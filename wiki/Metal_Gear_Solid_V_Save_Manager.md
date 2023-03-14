@@ -3,14 +3,15 @@ title: Metal Gear Solid V Save Manager
 permalink: /Metal_Gear_Solid_V_Save_Manager/
 ---
 
-## MGSV Save Manager
+**<u>PROJECT DISCONTINUED</u>**
 
-[thumb|369x369px](/File:MGSVSaveManager2.png "wikilink") **MGSV Save
-Manager** is a simple, C\# based application to manager Metal Gear Solid
-V: The Phantom Pain save files.
+**MGSV Save Manager** is a simple, C\# based application to manager
+Metal Gear Solid V: The Phantom Pain save files.
 
 Current features include support for multiple users, save files,
 renaming, creating and deleting save files.
+
+<s>Download the latest release from the Project GitHub.</s>
 
 ## History
 
@@ -50,6 +51,7 @@ libraries packed alongside it.
 
 ## Features
 
+[thumb|375x375px](/File:MGSV_SaveManager2.3_Settings "wikilink")
 Currently supported features
 
   - Multiple users
@@ -57,6 +59,17 @@ Currently supported features
   - Renaming saves
   - Creating new saves
   - Deleting saves
+  - Launch the game
+  - Configure graphical settings
+      - Resolution and used display not yet supported.
+
+Possible features (depending on the feasibility)
+
+  - Separate Ground Zeroes save management
+  - Configure game settings (subtitles, reflex mode etc.)
+  - Game completion percentage next to the currently used save
+  - Hours played
+  - New version available notifications
 
 ## How to use
 
@@ -99,11 +112,14 @@ present.
 If you delete or move saves manually while the program is running, use
 **Save Scan** button to re-scan the save folder.
 
-## Source code and feedback
+## <s>Source code and feedback</s>
 
-You can view the source code on the [project GitHub
-page](https://github.com/thatsafy/MGSV_Save_Switcher).
+<s>You can view the source code on the project GitHub page.</s>
 
-Feedback and bug reports should be posted there in the Issues section.
-With bug reports, please describe the bug/error as accurately as
-possible for more efficient bug tracking and fixing.
+<s>Feedback and bug reports should be posted there in the Issues
+section. With bug reports, please describe the bug/error as accurately
+as possible for more efficient bug tracking and fixing.</s>
+[Category:Save Managers](/Category:Save_Managers "wikilink")
+[Category:Metal Gear Solid V: The Phantom
+Pain](/Category:Metal_Gear_Solid_V:_The_Phantom_Pain "wikilink")
+[Category:Tools](/Category:Tools "wikilink")

@@ -9,6 +9,10 @@ due in part to its name and the fact that none are actually placed
 anywhere in .fox2 files, but referenced as an included class in the
 *<classes>* block.
 
+## Format
+
+There is no known format for placed entities of type **Entity**.
+
 ## Usage
 
 The **Entity**'' ''is not an object directly placed in a level, but
@@ -21,4 +25,4 @@ The only known usage of the entity of type **Entity** is as a reference
 in the '''<classes> '''header block.
 
 ***Example:** <classes>* *<class name="Entity" super="" version="2" />
-</classes>*
+</classes>* [Category:Entities](/Category:Entities "wikilink")

@@ -6,7 +6,45 @@ permalink: /Route_Set/
 Route sets define groups of route names that will be used by the
 specified command post to arrange its soldiers for time and phase-based
 patrols, shift break routes, travel route groups, special Walker Gear
-parking routes and weather-dependent routes.
+parking routes and weather-dependent routes. These do not define the
+actual route data - that would be `.frt` Fox Route files, only one of
+which can be loaded in an `.fpk` pack.
+
+This is as minimal as you can get with a custom route set: one priority
+route group, sneak day and night sets, and a caution set, along with an
+empty hold route group.
+
+``` lua
+this.routeSets = {
+    ms_13_34_ob = {
+        priority = {
+            "groupA",
+        },
+        sneak_day = {
+            groupA = {
+                "rts_d_ene01_13to34_0000",
+                "rts_d_ene02_13to34_0000",
+            },
+        },
+        sneak_night = {
+            groupA = {
+                "rts_n_ene01_13to34_0000",
+                "rts_n_ene02_13to34_0000",
+            },
+        },
+        caution = {
+            groupA = {
+                "rts_d_ene01_13to34_0000",
+                "rts_d_ene01_13to34_0000",
+            },
+        },
+        hold = {
+            default = {},
+        },
+    },
+    //...
+}
+```
 
 ## Route Sets Lua Table
 
@@ -343,3 +381,8 @@ this.routeSets={
     //...
 }
 ```
+
+[Category:Mission Design](/Category:Mission_Design "wikilink")
+[Category:Guides](/Category:Guides "wikilink")
+[Category:Lua](/Category:Lua "wikilink")
+[Category:Missions](/Category:Missions "wikilink")

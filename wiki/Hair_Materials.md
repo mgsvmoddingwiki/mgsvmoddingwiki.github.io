@@ -18,3 +18,5 @@ As usual, the SRM map is as follows:
   - (Blue): Map Mask
 
 \<incomplete, will pick up tomorrow\>
+[Category:Rendering](/Category:Rendering "wikilink")
+[Category:Guides](/Category:Guides "wikilink")

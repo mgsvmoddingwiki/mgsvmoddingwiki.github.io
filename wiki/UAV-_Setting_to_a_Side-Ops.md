@@ -58,11 +58,25 @@ Or set separately for each Uav listed about the Routes.
 `   GameObject.SendCommand( GameObject.GetGameObjectId( uavName ), {id = "SetPatrolRoute", route="rts_uav" } )`
 `end`
 
+After that the user should add the functions to load inside ''OnEnter =
+function(). ''In Quests normally
+
+`quest_step.QStep_Start = {`
+`   OnEnter = function()`
+`       `
+`       this.SetupUAV() `
+
+`       this.SetupUAV01("ovniFun_01")`
+`       `
+`       TppQuest.SetNextQuestStep( "QStep_Main" )`
+`   end,`
+`}`
+
 ### RouteSet
 
-Uavs use the edge node Move Slow, Move Normal, Move Fast and Move Very
-fast. It may use a event node idle with Wait with just param0: 1 and
-param1: a unique number. See Route_Findings
+Uavs use the *edge node* '''Move Slow, Move Normal, Move Fast and Move
+Very fast. '''It may use a *event node* **Wait Idle** with just param0:
+1 and param1: a unique number. See Route_Findings
 
 ### Fox2 file
 
@@ -193,3 +207,6 @@ parameters = TppUavParameter
 `      `</staticProperties>
 `      `<dynamicProperties />
 `    `</entity>
+
+[Category:Guides](/Category:Guides "wikilink")
+[Category:Foxkit](/Category:Foxkit "wikilink")

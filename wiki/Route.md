@@ -7,6 +7,10 @@ In TPP and GZ, the **route system** governs the behavior of AI agents
 such as soldiers. Routes are stored in route sets, defined in
 [FRT](/FRT "wikilink") files.
 
+frt files can be opened and created with [FoxKit](/FoxKit "wikilink").
+Further info
+[here](https://github.com/youarebritish/FoxKit/wiki/Working-with-Route-Builder)
+
 ## Overview
 
 A route is a linear sequence of nodes, each of which has a location in
@@ -21,7 +25,8 @@ by the alert status:
 
   - Sneak route: Used when the agent's CP is unaware of the player.
   - Caution route: Used when the encampment is on alert.
-  - Alert route: ???
+  - Alert route: Used during combat alert. Combat AI usually uses a
+    unique system, however, so having an alert route defined is rare.
 
 You can change an agent's sneak route in Lua by calling:
 
@@ -32,6 +37,12 @@ GameObject.GetGameObjectId) and routeId is the name of the desired
 route, for instance, rts_ptr_e_citadel_W_0000. The caution and
 alert routes can be changed the same way, using "SetCautionRoute" and
 "SetAlertRoute" respectively.
+
+### Other uses
+
+Routes aren't only used for enemies. Helicopters also use routes,
+particularly for defining the approach and departure behavior for Pequod
+when using LZs.
 
 ## Events
 
@@ -55,3 +66,15 @@ have been discovered yet, this is still an area of active research. If
 interested, consider using
 [FoxLib](https://github.com/youarebritish/FoxLib) to unpack, edit, and
 create frt files to experiment with routes.
+
+## Notes
+
+  - Assigning a soldier to a nonexistent route will not crash the game,
+    but seems to make the soldier disappear.
+
+## See also
+
+  - [Route findings](/Route_findings "wikilink")
+  - [Route descriptions](/Route_descriptions "wikilink")
+
+[Category:FRT](/Category:FRT "wikilink")

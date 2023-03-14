@@ -8,3 +8,9 @@ permalink: /MediaWiki-Wikia.css/
 `   display: none;`
 
 }
+
+.ooui-theme-fandom .wds-community-header a {
+
+`   color: white;`
+
+}

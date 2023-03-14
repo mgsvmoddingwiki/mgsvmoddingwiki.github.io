@@ -26,8 +26,9 @@ attribute 'LangId'. If it cannot find a match, it will output the string
 by its hash with the XML attribute 'Key'.
 
 The most current dictionary can be found here:
-<https://github.com/cstBipBop/MGSV-Lang-Dictionary-Project>
+<https://github.com/TinManTex/mgsv-lookup-strings>
 
 ##
 
-[Category:Tools](/Category:Tools "wikilink")
+[Category:Tools](/Category:Tools "wikilink") [Category:File
+Tools](/Category:File_Tools "wikilink")

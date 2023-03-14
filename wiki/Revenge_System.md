@@ -126,3 +126,5 @@ If you are doing total ghost, ie not interacting with enemies at all,
 then you're not actually increasing the system anyway and it will
 actually slowly decrease (the rate of that is actually something that
 might want to be analyzed). [Category:Lua](/Category:Lua "wikilink")
+[Category:Missions](/Category:Missions "wikilink")
+[Category:Guides](/Category:Guides "wikilink")
