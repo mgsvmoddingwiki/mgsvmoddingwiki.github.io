@@ -132,9 +132,8 @@ will be happen to PointLight and SpotLight entities.
 ```csharp
 [OdinSerializeAttribute, NonSerializedAttribute, PropertyInfoAttribute(Core.PropertyInfoType.UInt32, 504, 1, Core.ContainerType.StaticArray, PropertyExport.Never, PropertyExport.Never, null, null)]`
 
-private System.UInt32 localFlags;```
-
-
+private System.UInt32 localFlags;
+```
 
 ## **PointLight**
 
