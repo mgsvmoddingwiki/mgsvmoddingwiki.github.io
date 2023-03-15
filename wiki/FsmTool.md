@@ -14,7 +14,7 @@ SND chunks, the tool automatically builds them into a Wwise sound file
 
 To unpack a .fsm, a user simply needs to drag and drop a .fsm onto the
 tool. The tool will output the extracted chunks into a folder named
-*<filename>_fsm* along with a .xml file documenting the contained
+*\<filename\>_fsm* along with a .xml file documenting the contained
 chunks. A .wem file built from the file's SND chunks will also be inside
 the folder containing the chunks.
 
