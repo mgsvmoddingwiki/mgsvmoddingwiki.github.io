@@ -46,8 +46,3 @@ the 00.dat file contains all other assets.
 When SnakeBite is installed it moves the files in master/0/00.dat,01.dat
 to master/a_chunk7.dat, a_texture.dat and the patched 00.dat lua files
 into 01.dat. From then it installs mods into 00.dat
-[Category:Guides](/Category:Guides "wikilink")
-[Category:Files](/Category:Files "wikilink") [Category:File
-Formats](/Category:File_Formats "wikilink")
-[Category:Resources](/Category:Resources "wikilink")
-[Category:References](/Category:References "wikilink")
