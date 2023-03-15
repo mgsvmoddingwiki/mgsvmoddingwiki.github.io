@@ -101,10 +101,10 @@ dictionary, otherwise it will appear as a string of numbers, as below:
 [thumb|372x372px|none](/File:SOC3.png "wikilink")
 
 You will need to copy the name of your route, in this example the route
-is called '**r*t_RouteSet_c_0000***' and paste it in to the
-***route_name_dictionary.txt**'' file located in your SideOp Companion
+is called **rt_RouteSet_c_0000** and paste it in to the
+**route_name_dictionary.txt** file located in your SideOp Companion
 folder. The file path for this will be: SideOp Companion
-\[folder\]\\SOCassets\\ToolAssets\\***route_name_dictionary**''
+\[folder\]\\SOCassets\\ToolAssets\\**route_name_dictionary**
 
 Once you have saved this text file the names of your created routes will
 appear as you named them in Fox Kit when building your SideOp
