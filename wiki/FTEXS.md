@@ -1,6 +1,6 @@
 ---
-title: ! 'FTEX & FTEXS'
-permalink: /FTEX_FTEXS/
+title: ! 'FTEX(S)'
+permalink: /FTEXS/
 tags: [File Formats, Rendering]
 ---
 
