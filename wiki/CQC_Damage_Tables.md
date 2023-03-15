@@ -17,6 +17,7 @@ damage array does. The following comes from his 4PR mod and I highly
 recommend reading through that mod as it's mostly intended to be
 self-documenting:
 
+```lua
     this.DamageParameter={
 
     -- I'm trying to make sense of this mess. For now I gave up so yeah.
@@ -84,6 +85,7 @@ self-documenting:
     -- 0,-- Non-Lethal Damage Value
 
     -- 300},-- Impact Force
+```
 
 For the CQC in particular, we're most interested in the last 3rd-to-last
 and 2nd-to-last values so we can make various throws, punches, kicks,
