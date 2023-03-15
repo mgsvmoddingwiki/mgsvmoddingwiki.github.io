@@ -108,5 +108,4 @@ The purpose of these indices is also unknown.
 This section is a list of hashed bone names that section 2 uses to
 define collision. For example, a cloth sim file for a coat might list
 and use "SKL_000_WAIST" here as collision, and not clipping, should
-occur between that bone and the simulated cloth. [Category:File
-Formats](/Category:File_Formats "wikilink")
+occur between that bone and the simulated cloth.
