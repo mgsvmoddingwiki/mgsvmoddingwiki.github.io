@@ -1,6 +1,7 @@
 ---
 title: Entities:DataSet
 permalink: /Entities-DataSet/
+tags: [Entities, Reference]
 ---
 
 The entity of type '''DataSet '''​is common to all .fox2 files and is
@@ -62,5 +63,3 @@ that given entity.
 
 The size of the **DataSet** is variable, depending on the number of
 entries listed in *dataList*.
-
-[Category:Entities](/Category:Entities "wikilink")

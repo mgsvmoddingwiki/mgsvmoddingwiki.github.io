@@ -1,6 +1,7 @@
 ---
 title: FCLO
 permalink: /FCLO/
+tags: [File Formats, Sim, Models]
 ---
 
 The .fclo format is a binary format used to set up cloth physics for the
@@ -109,4 +110,3 @@ define collision. For example, a cloth sim file for a coat might list
 and use "SKL_000_WAIST" here as collision, and not clipping, should
 occur between that bone and the simulated cloth. [Category:File
 Formats](/Category:File_Formats "wikilink")
-[Category:Models](/Category:Models "wikilink")

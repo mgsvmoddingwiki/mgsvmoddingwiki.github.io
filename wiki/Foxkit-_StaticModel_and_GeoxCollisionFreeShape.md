@@ -1,6 +1,7 @@
 ---
 title: Foxkit: StaticModel and GeoxCollisionFreeShape
 permalink: /Foxkit-_StaticModel_and_GeoxCollisionFreeShape/
+tags: [FoxKit, Guides, Files, Models, Geo]
 ---
 
 Guide for FoxKit 1.0.
@@ -249,5 +250,3 @@ Done. Now test it. Do the .mgsv file in Makebite building the
 **LoadingStairsInGame folder.** Open with Snakebite and see it in game.
 
 [717x717px](/File:ColissionSucess.jpg "wikilink")
-[Category:Foxkit](/Category:Foxkit "wikilink") __INDEX__
-__NEWSECTIONLINK__

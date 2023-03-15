@@ -1,6 +1,7 @@
 ---
 title: Creating a basic custom route
 permalink: /Creating_a_basic_custom_route/
+tags: [Guides, GameService]
 ---
 
 This covers the very basics of using the Route Builder in Foxkit,
@@ -112,5 +113,3 @@ Once built, create the .mgsv file from the SideOp Build folder that SOC
 creates, and then install it. Run the game and go to your custom side op
 to see the fruits of your labor\!
 [thumb|832x832px|none](/File:Game.png "wikilink")
-[Category:Guides](/Category:Guides "wikilink")
-[Category:FRT](/Category:FRT "wikilink")

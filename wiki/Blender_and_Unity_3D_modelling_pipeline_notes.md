@@ -1,6 +1,7 @@
 ---
 title: Blender and Unity 3D modelling pipeline notes
 permalink: /Blender_and_Unity_3D_modelling_pipeline_notes/
+tags: [Guides, Rendering, Models]
 ---
 
 ## Blender 2.81+
@@ -143,6 +144,3 @@ stretch into infinity. There are 2 currently known methods around this:
     an FBX file and re-import it. Then hit the bounding boxes button
     again and FMDL should roughly get it right first time. Some tweaking
     will probably be needed at this stage.
-
-[Category:Guides](/Category:Guides "wikilink")
-[Category:Rendering](/Category:Rendering "wikilink")

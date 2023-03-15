@@ -1,6 +1,7 @@
 ---
 title: CQC Damage Tables
 permalink: /CQC_Damage_Tables/
+tags: [Weapons, Lua, Reference]
 ---
 
 Recommended reading.
@@ -165,5 +166,4 @@ throw.
 **CqcContinousOver3Times:** Damage applied to the 3rd and 4th person
 (and so on) in a CQC chain throw.
 
-__FORCETOC__ [Category:Weapons](/Category:Weapons "wikilink")
-[Category:Lua](/Category:Lua "wikilink")
+__FORCETOC__

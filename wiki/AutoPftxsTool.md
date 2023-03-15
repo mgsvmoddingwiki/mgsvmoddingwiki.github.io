@@ -1,6 +1,7 @@
 ---
 title: AutoPftxsTool
 permalink: /AutoPftxsTool/
+tags: [Tools, File Tools]
 ---
 
 AutoPftxsTool is an open-source automatic .pftxs unpacker and repacker
@@ -18,5 +19,3 @@ to place the textures inside the unpacked folder. To repack a .pftxs
 file, the user simply needs to drag an unpacked folder onto the tool.
 The tool will automatically detect all textures contained in the folder
 and pack them into a .pftxs file.
-[Category:Tools](/Category:Tools "wikilink") [Category:File
-Tools](/Category:File_Tools "wikilink")

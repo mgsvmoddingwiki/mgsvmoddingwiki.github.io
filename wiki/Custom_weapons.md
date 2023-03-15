@@ -1,6 +1,7 @@
 ---
 title: Custom weapons
 permalink: /Custom_weapons/
+tags: [Guides, Rendering]
 ---
 
 This tutorial will show you how to import/port custom weapon models to
@@ -186,6 +187,4 @@ your weapon.
 I will also include a video
 [here](https://www.youtube.com/watch?v=x5pYG-x6ctg) made by TrikzMe with
 some help from me on how to do this, although the video doesn't cover
-everything. [Category:Guides](/Category:Guides "wikilink")
-[Category:Images](/Category:Images "wikilink")
-[Category:Rendering](/Category:Rendering "wikilink")
+everything.

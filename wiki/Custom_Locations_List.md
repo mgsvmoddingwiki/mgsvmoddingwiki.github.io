@@ -1,6 +1,7 @@
 ---
 title: Custom Locations List
 permalink: /Custom_Locations_List/
+tags: [Infinite Heaven, Locations, Reference]
 ---
 
 Custom / Addon Locations for Metal Gear Solid V: The Phantom Pain.
@@ -27,9 +28,4 @@ with the ids you intend to use.
 | 111-115      |              | mgo dlc maps                  |                 |                                                                                                                    |
 | 120          | smpl         | Sample empty map              | caplagrobin     |                                                                                                                    |
 | 139          | UNSA         | Test Area for NPCs / Vehicles | retali8         | <https://github.com/TheHuntingParty/TPP-sahelanthropus> / <https://www.nexusmods.com/metalgearsolidvtpp/mods/1750> |
-| 140          | EXPL         | expl sample map               | retali8         | <https://github.com/TheHuntingParty/EXPL-MAP-TPP>                                                                  |
-
-[Category:Locations](/Category:Locations "wikilink")
-[Category:Missions](/Category:Missions "wikilink") [Category:Infinite
-Heaven Custom Lists](/Category:Infinite_Heaven_Custom_Lists "wikilink")
-[Category:Guides](/Category:Guides "wikilink")
+| 140          | EXPL         | expl sample map               | retali8         | <https://github.com/TheHuntingParty/EXPL-MAP-TPP>

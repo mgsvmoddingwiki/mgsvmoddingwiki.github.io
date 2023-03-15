@@ -1,6 +1,7 @@
 ---
 title: Entities:PhxVehicleAxis
 permalink: /Entities-PhxVehicleAxis/
+tags: [Entities, Reference]
 ---
 
 <b>PhxVehicleAxis</b> is a parent entity that assigns child entity
@@ -185,4 +186,3 @@ set a model bone to each wheel on the axle, via property boneName.
 
 These arrays are unused in all vehicle .fpkd .veh files and attempts at
 editing them result in a CTD upon attempting to load into a sortie.
-[Category:Entities](/Category:Entities "wikilink")

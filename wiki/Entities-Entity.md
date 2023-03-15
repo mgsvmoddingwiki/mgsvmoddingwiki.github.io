@@ -1,6 +1,7 @@
 ---
 title: Entities:Entity
 permalink: /Entities-Entity/
+tags: [Entities, Reference]
 ---
 
 '''Entity '''is a type of object used in the Fox Engine. It is believed
@@ -25,4 +26,4 @@ The only known usage of the entity of type **Entity** is as a reference
 in the '''<classes> '''header block.
 
 ***Example:** <classes>* *<class name="Entity" super="" version="2" />
-</classes>* [Category:Entities](/Category:Entities "wikilink")
+</classes>*

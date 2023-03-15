@@ -1,6 +1,7 @@
 ---
 title: Commands
 permalink: /Commands/
+tags: [Lua, Reference]
 ---
 
 Commands in The Phantom Pain's lua files are typically used in the
@@ -2376,8 +2377,3 @@ Invalid
 ## Sources
 
 <https://github.com/unknown321/mgsvdump/blob/master/tpp/sequences/commands_for_sequences.lua>
-[Category:Metal Gear Solid V: The Phantom
-Pain](/Category:Metal_Gear_Solid_V:_The_Phantom_Pain "wikilink")
-[Category:lua](/Category:lua "wikilink")
-[Category:Engine](/Category:Engine "wikilink")
-[Category:Guides](/Category:Guides "wikilink")

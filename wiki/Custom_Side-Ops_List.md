@@ -1,6 +1,7 @@
 ---
 title: Custom Side-Ops List
 permalink: /Custom_Side-Ops_List/
+tags: [Infinite Heaven, Missions, Reference]
 ---
 
 Custom / Addon Side-Ops / Quests created for Metal Gear Solid V: The

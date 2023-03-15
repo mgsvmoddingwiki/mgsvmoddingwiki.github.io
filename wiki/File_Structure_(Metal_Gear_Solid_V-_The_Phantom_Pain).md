@@ -1,6 +1,7 @@
 ---
 title: File Structure (Metal Gear Solid V: The Phantom Pain)
 permalink: /File_Structure_(Metal_Gear_Solid_V-_The_Phantom_Pain)/
+tags: [Files, Reference]
 ---
 
 Metal Gear Solid V: The Phantom Pain's file structure is made up of a

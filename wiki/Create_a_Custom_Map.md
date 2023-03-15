@@ -1,6 +1,7 @@
 ---
 title: Create a Custom Map
 permalink: /Create_a_Custom_Map/
+tags: [Guides, FoxKit]
 ---
 
 The guide will present a custom map template by **CapLag** and describe
@@ -212,5 +213,3 @@ Companion](https://github.com/JosephZoeller/SOC), how other users'
 locations missions and side ops are made, or how all of the above work
 in the vanilla game. See .lng2 files to add a suited name for the area
 as well some images of location. This is just the beginning.
-[Category:Foxkit](/Category:Foxkit "wikilink")
-[Category:Guides](/Category:Guides "wikilink")

@@ -1,6 +1,7 @@
 ---
 title: External modding resources
 permalink: /External_modding_resources/
+tags: [Guides, Reference]
 ---
 
 Links to assorted MGSV modding references
@@ -108,5 +109,3 @@ General MGSV discussion
   - [MGSV PBR Texture Analysis](https://joey35233.github.io/) The
     discovery of the shader code has revealed that the srm section is
     not accurate.
-
-[Category:Guides](/Category:Guides "wikilink")

@@ -1,6 +1,7 @@
 ---
 title: File Monolith
 permalink: /File_Monolith/
+tags: [Tools, Files]
 ---
 
 File Monolith is a set of open-source tools which provide support for
@@ -263,6 +264,3 @@ Notes:
   - I recommend using the SageThumbs Plugin in order to preview the .dds
     files in their thumbnails without opening them in GIMP or Photoshop.
       - <https://www.cherubicsoft.com/en/projects/sagethumbs>
-
-[Category:Tools](/Category:Tools "wikilink") [Category:Modding
-Tools](/Category:Modding_Tools "wikilink")

@@ -1,6 +1,7 @@
 ---
 title: DFRM
 permalink: /DFRM/
+tags: [File Formats, Animation]
 ---
 
 The .dfrm, short for **d**e**f**o**rm**, is the format believed to be
@@ -40,6 +41,3 @@ PLACEHOLDER
 
   - [010 Editor
     Template](https://gist.github.com/Joey35233/6fd79695e34db56b37e656b3460bdfd7)
-
-[Category:File Formats](/Category:File_Formats "wikilink")
-[Category:Animation](/Category:Animation "wikilink")

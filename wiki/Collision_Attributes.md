@@ -1,6 +1,7 @@
 ---
 title: Collision Attributes
 permalink: /Collision_Attributes/
+tags: [FoxKit, Guides, Reference]
 ---
 
 The following strings are collision attribute names, used in properties
@@ -53,7 +54,3 @@ like collisionAttributeNames in GeoxCollisionFreeShape.
   - FULTON
   - ITEM
   - BOSS
-
-[Category:Foxkit](/Category:Foxkit "wikilink")
-[Category:Guides](/Category:Guides "wikilink")
-[Category:References](/Category:References "wikilink")

@@ -1,6 +1,7 @@
 ---
 title: Chimera Weapon System
 permalink: /Chimera_Weapon_System/
+tags: [Chimera, Weapons, Lua]
 ---
 
 What is the **Chimera Weapon System**, or rather, what is **Chimera**?
@@ -166,8 +167,3 @@ The following are the .lua files that contain and / or are related to
 Chimera.
 
 ### [**Chimera Package Table**](/Chimera_Package_Table "wikilink")
-
-
-[Category:Chimera](/Category:Chimera "wikilink")
-[Category:Weapons](/Category:Weapons "wikilink")
-[Category:Lua](/Category:Lua "wikilink")

@@ -1,6 +1,7 @@
 ---
 title: Foxkit: Installing, Import Files and Terrain
 permalink: /Foxkit-_Installing,_Import_Files_and_Terrain/
+tags: [FoxKit, Guides, Files, Terrain]
 ---
 
 
@@ -228,5 +229,4 @@ View. Check it\!\!
 \=== And that's it\!\! === A small guide to install, import Assets and
 Load Terrain as well see a little bit of the fox2 files. Check Discord
 Server Modders Heaven to talk about it and ask for help related to
-Mods/FoxKit. [Category:Foxkit](/Category:Foxkit "wikilink")
-__INDEX__
+Mods/FoxKit.

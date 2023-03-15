@@ -1,6 +1,7 @@
 ---
 title: Foxkit: TppLightProbe, PointLight and Spotlight
 permalink: /Foxkit-_TppLightProbe,_PointLight_and_Spotlight/
+tags: [FoxKit, Guides, Rendering]
 ---
 
 This guide show how to set a Probe to indoor space and add two types of
@@ -231,4 +232,3 @@ value 11 does everything it need.
 
 
 \== **SpotLight** == To be written
-[Category:Foxkit](/Category:Foxkit "wikilink")

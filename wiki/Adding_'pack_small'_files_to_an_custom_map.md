@@ -1,6 +1,7 @@
 ---
 title: Adding "pack small" files to an custom map
 permalink: /Adding_'pack_small'_files_to_an_custom_map/
+tags: [FoxKit]
 ---
 
 ## Requirements
@@ -142,4 +143,3 @@ the names. After that check if the new names are fine, if they are press
 
 Renaming will take some time to be done. After its completed your map
 pack_small files should be working fine.
-[Category:Foxkit](/Category:Foxkit "wikilink")

@@ -1,6 +1,7 @@
 ---
 title: Foxkit: GeoTrap, GeoModuleCondition and BoxShape
 permalink: /Foxkit-_GeoTrap,_GeoModuleCondition_and_BoxShape/
+tags: [FoxKit, Guides, Geo]
 ---
 
 Guide for FoxKit 1.0.
@@ -19,4 +20,3 @@ scratch a mod folder using the mission free roam in afgh, f30010 and how
 to trigger in f30010_sequence.lua the Trap "TrapWhatever" in fox2 file.
 
 [479.988x479.988px](/File:GeoTrap,_GeoModuleCondition_and_BoxShape "wikilink")
-[Category:Foxkit](/Category:Foxkit "wikilink")

@@ -1,6 +1,7 @@
 ---
 title: Chimera Package Table
 permalink: /Chimera_Package_Table/
+tags: [Lua, Chimera, Weapons]
 ---
 
 This can be found at:
@@ -170,6 +171,3 @@ look for a package by simply using the `[CTRL + F]` command.
 
 If you did everything correctly, you'll be able to setup your own custom
 chimera package models without replacing existing files\!
-[Category:Chimera](/Category:Chimera "wikilink")
-[Category:Weapons](/Category:Weapons "wikilink")
-[Category:Lua](/Category:Lua "wikilink")

@@ -1,6 +1,7 @@
 ---
 title: Entities:PhxVehicleNormalEngine
 permalink: /Entities-PhxVehicleNormalEngine/
+tags: [Entities, Reference]
 ---
 
     <entity class="PhxVehicleNormalEngine" classVersion="1" addr="0x031784A0" unknown1="120" unknown2="212215">
@@ -71,5 +72,3 @@ ratios of 2.5:1, 1.5:1, and 0.7:1 you would do:
       <value>1.5</value>
       <value>0.7</value>
     </property>
-
-[Category:Entities](/Category:Entities "wikilink")

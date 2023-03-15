@@ -1,6 +1,7 @@
 ---
 title: EquipDevelopSetting
 permalink: /EquipDevelopSetting/
+tags: [Guides]
 ---
 
 ## EquipDevelopSetting
@@ -297,5 +298,3 @@ does lack variables for p34, p35 and p36.
 </tr>
 </tbody>
 </table>
-
-[Category:Guides](/Category:Guides "wikilink")

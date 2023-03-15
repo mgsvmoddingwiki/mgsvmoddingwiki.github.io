@@ -1,6 +1,7 @@
 ---
 title: Entity Reference
 permalink: /Entity_Reference/
+tags: [Entities, Reference]
 ---
 
 ## Introduction
@@ -1382,8 +1383,3 @@ page](/Entity_Reference#All_TPP_Entities_\(Unsorted\) "wikilink").
   - MotherBaseStageSetupFile
   - TppMotherBaseContainerParameter
   - TppMotherBaseContainerLocatorParameter
-
-[Category:Guides](/Category:Guides "wikilink")
-[Category:Foxkit](/Category:Foxkit "wikilink")
-[Category:Entities](/Category:Entities "wikilink")
-[Category:References](/Category:References "wikilink")

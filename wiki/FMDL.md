@@ -1,6 +1,7 @@
 ---
 title: FMDL
 permalink: /FMDL/
+tags: [File Formats, Models]
 ---
 
 The .fmdl, or **F**ox **M**o**d**e**l**, is the format used by models in
@@ -462,6 +463,4 @@ object. Each entry is 0x6 bytes and follows this pattern:
 ### Block 0x3: Strings
 
 The strings block contains the actual string data that is referenced by
-section 0's block 0xC.[Category:File
-Formats](/Category:File_Formats "wikilink")
-[Category:Models](/Category:Models "wikilink")
+section 0's block 0xC.

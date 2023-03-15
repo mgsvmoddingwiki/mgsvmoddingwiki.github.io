@@ -1,6 +1,7 @@
 ---
-title: File Formats Used in MGSV (List)
-permalink: /File_Formats_Used_in_MGSV_(List)/
+title: File Formats
+permalink: /File_Formats/
+tags: [Files]
 ---
 
 This article lists the presumed names of extensions used in MGSV, as

@@ -1,6 +1,7 @@
 ---
 title: Entities:PhVehicleNormalEngineParam
 permalink: /Entities-PhVehicleNormalEngineParam/
+tags: [Entities, Reference]
 ---
 
 The Entity <b>PhVehicleNormalEngineParam</b> sets the torque curve for a
@@ -73,4 +74,4 @@ determine engine power at each RPM.
 
 Presumably the amount of engine braking being done to naturally
 decelerate the vehicle at each RPM, once the throttle is no longer being
-applied. [Category:Entities](/Category:Entities "wikilink")
+applied.

@@ -1,6 +1,7 @@
 ---
 title: Creating a Custom Sound Bank
 permalink: /Creating_a_Custom_Sound_Bank/
+tags: [Guides, Sound, FoxKit]
 ---
 
 So, you want to create custom sound banks? Perhaps you want to create a
@@ -682,8 +683,3 @@ If the custom sound bank doesn’t work, here’s the most common causes:
 3.  The sound bank file (**.sbp**) is not inside
     **<Mod Folder Name>/Assets/tpp/sound/asset/**.
 4.  The sound bank name in the **sdf** is misspelled.
-
-[Category:Guides](/Category:Guides "wikilink")
-[Category:WWise](/Category:WWise "wikilink")
-[Category:Sound](/Category:Sound "wikilink")
-[Category:Foxkit](/Category:Foxkit "wikilink")

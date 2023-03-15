@@ -1,6 +1,7 @@
 ---
 title: Enabling CS Weapons
 permalink: /Enabling_CS_Weapons/
+tags: [Weapons, Lua, Guides]
 ---
 
 In this article I'll explain how to enable CS guns, which are guns the
@@ -30,5 +31,4 @@ simply use ctrl+f to search this on the labeled lua file from github. In
 this case it's on line p50=310, so we simply scroll to the right to
 p69=2 and change it to p69=0. Save the file as
 EquipDevelopFlowSetting.lua and use fileproliferator and makebite to
-save it as a .mgsv. [Category:Weapons](/Category:Weapons "wikilink")
-[Category:Lua](/Category:Lua "wikilink")
+save it as a .mgsv.

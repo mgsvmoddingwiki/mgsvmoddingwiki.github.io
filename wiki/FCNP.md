@@ -1,6 +1,7 @@
 ---
 title: FCNP
 permalink: /FCNP/
+tags: [File Formats, Models]
 ---
 
 The .fcnp format is used to define connection points for models in Metal
@@ -75,6 +76,4 @@ This section has not yet been explored.
 ## Section 2: Strings
 
 This section is simply a list of strings, with every string, including
-the last one, being followed by a period (one null byte). [Category:File
-Formats](/Category:File_Formats "wikilink")
-[Category:Models](/Category:Models "wikilink")
+the last one, being followed by a period (one null byte).

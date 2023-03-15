@@ -1,6 +1,7 @@
 ---
 title: Foxkit: TppPrimRiverModel, TppWaterBounding, TppTextureLoader and FxLocatorData
 permalink: /Foxkit-_TppPrimRiverModel,_TppWaterBounding,_TppTextureLoader_and_FxLocatorData/
+tags: [FoxKit, Guides, Rendering]
 ---
 
 Guide for FoxKit 1.0.
@@ -260,5 +261,3 @@ building the **LoadingStairsInGame folder.** Open with SnakeBite and see
 it in-game.
 
 [1328x1328px](/File:Ingame01.jpg "wikilink")
-[Category:Foxkit](/Category:Foxkit "wikilink") __INDEX__
-__NEWSECTIONLINK__

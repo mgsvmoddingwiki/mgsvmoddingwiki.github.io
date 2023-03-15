@@ -1,6 +1,7 @@
 ---
 title: Custom Missions List
 permalink: /Custom_Missions_List/
+tags: [Infinite Heaven, Missions, Reference]
 ---
 
 Custom / Addon Missions for Metal Gear Solid V: The Phantom Pain.

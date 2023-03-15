@@ -1,6 +1,7 @@
 ---
 title: Entities:TppVehicle2WeaponParameter
 permalink: /Entities-TppVehicle2WeaponParameter/
+tags: [Entities, Reference]
 ---
 
 Entity class <b>TppVehicle2WeaponParameter</b> assigns turret rotation
@@ -186,5 +187,3 @@ max degrees of movement per second.
 
     n/100 == rotSpeed
     rotSpeed*100 == n
-
-[Category:Entities](/Category:Entities "wikilink")

@@ -1,6 +1,7 @@
 ---
 title: FfntTool
 permalink: /FfntTool/
+tags: [Tools, File Tools]
 ---
 
 [Category:Tools](/Category:Tools "wikilink") [Category:File

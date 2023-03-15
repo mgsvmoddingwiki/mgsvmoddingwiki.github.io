@@ -1,6 +1,7 @@
 ---
 title: User blog:BananaChelly Chelly's Rad as Shit Guide to Mods
 permalink: /User_blog-BananaChelly/Chelly's_Rad_as_Shit_Guide_to_Mods/
+tags: [Guides]
 ---
 
 [thumb|left](/File:So_meme.jpg "wikilink")
@@ -83,5 +84,4 @@ In no particular order...
 
 Then join [Modder's Heaven](https://discord.gg/yttPsfr), a Discord
 server where people are happy to help new faces learn the ins and outs
-of MGSV modding\! Welcome aboard\! [Category:Blog
-posts](/Category:Blog_posts "wikilink")
+of MGSV modding\! Welcome aboard\!

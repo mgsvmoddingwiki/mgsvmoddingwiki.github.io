@@ -1,6 +1,7 @@
 ---
 title: BNK
 permalink: /BNK/
+tags: [File Formats, Sound]
 ---
 
 BNK(.bnk) is a complex Wwise format utilized by many modern video games.
@@ -23,6 +24,3 @@ These are not meant to be viewed using other programs.
 ```
 
 Source:<https://file.org/extension/bnk>
-
-[Category:File Formats](/Category:File_Formats "wikilink")
-[Category:SFX](/Category:SFX "wikilink")
