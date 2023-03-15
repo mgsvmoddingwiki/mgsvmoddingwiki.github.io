@@ -335,7 +335,7 @@ unticking their tick boxes. Here’s this entire process in a GIF:
 
 [742x742px](/File:Configuring_soundbank.gif "wikilink")
 
-### <u>Building the Sound Bank\!</u>
+### <u>Building the Sound Bank!</u>
 
 Okay, so now that everything’s configured, it’s time to build the sound
 bank\! WWise lets you create a sound bank for many different systems,
