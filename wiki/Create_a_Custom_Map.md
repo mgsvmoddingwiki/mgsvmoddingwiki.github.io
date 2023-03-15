@@ -110,10 +110,10 @@ anything beyond 120 is fine.
 empty value, so it can be left as is.
 
 For the map to have weather and sky tinting based on time of day, you
-should write down a path between `<value\>\</value\>` to the weather
+should write down a path between `<value></value>` to the weather
 parameters file, .twpf, where it should be in
 `mapa_fpk/Assets/tpp/level/location/mapa/` folder, like:
-`<value\>/Assets/tpp/level/location/mapa/mapa_weatherParams.twpf\</value\>`
+`<value>/Assets/tpp/level/location/mapa/mapa_weatherParams.twpf</value>`
 It can be empty for now. There's no tools yet to generate `.twpf` files
 yet, so it's best to reuse vanilla ones from TPP and onwards.
 
