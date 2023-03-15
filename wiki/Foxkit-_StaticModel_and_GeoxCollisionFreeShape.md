@@ -11,15 +11,9 @@ ingame working with the Entity StaticModel. It will show another Entity
 that might be useful for some that add a small collision shape with
 eight points.
 
+# Setting the Mod Folder
 
-{| class="article-table" |+The other FoxKit Tutorials \![FoxKit:
-Installing, Import Files and
-Terrain](/FoxKit-_Installing_Import_Files_and_Terrain "wikilink") |-
-|[**FoxKit: TppPrimRiverModel, TppWaterBounding, TppTextureLoader and
-FxLocatorData**](/FoxKit-_TppPrimRiverModel_TppWaterBounding_TppTextureLoader_and_FxLocatorData "wikilink")
-|- |**[FoxKit:
-TppSharedGimmickData](/FoxKit-_TppSharedGimmickData "wikilink")** |}
-\==**Setting the Mod Folder**== Before anything else, let's create a
+Before anything else, let's create a
 folder structure for the Mod we will call as "LoadingStairsInGame". Do
 it outside of Unity FoxKit for now.
 
