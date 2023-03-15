@@ -166,4 +166,4 @@ So look up online on how to do so, and you'll be ready to go\!
 The following are the .lua files that contain and / or are related to
 Chimera.
 
-### [**Chimera Package Table**](/Chimera_Package_Table "wikilink")
+### [Chimera Package Table](/Chimera_Package_Table "wikilink")
