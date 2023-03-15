@@ -9,7 +9,7 @@ tags: [FoxKit, Guides, Files, Terrain]
 StaticModel and
 GeoxCollisionFreeShape](/FoxKit-_StaticModel_and_GeoxCollisionFreeShape "wikilink")
 |- |[**FoxKit: TppPrimRiverModel, TppWaterBounding, TppTextureLoader and
-FxLocatorData**](/FoxKit-_TppPrimRiverModel,_TppWaterBounding,_TppTextureLoader_and_FxLocatorData "wikilink")
+FxLocatorData**](/FoxKit-_TppPrimRiverModel_TppWaterBounding_TppTextureLoader_and_FxLocatorData "wikilink")
 |- |**[FoxKit:
 TppSharedGimmickData](/FoxKit-_TppSharedGimmickData "wikilink")** |}
 
