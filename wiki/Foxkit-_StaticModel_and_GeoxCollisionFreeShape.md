@@ -1,5 +1,5 @@
 ---
-title: FoxKit - StaticModel and GeoxCollisionFreeShape
+title: ! 'FoxKit: StaticModel and GeoxCollisionFreeShape'
 permalink: /FoxKit-_StaticModel_and_GeoxCollisionFreeShape/
 tags: [FoxKit, Guides, Files, Entities, Models, Geo]
 ---
@@ -14,11 +14,11 @@ eight points.
 
 {| class="article-table" |+The other FoxKit Tutorials \![FoxKit:
 Installing, Import Files and
-Terrain](/FoxKit:_Installing,_Import_Files_and_Terrain "wikilink") |-
+Terrain](/FoxKit-_Installing_Import_Files_and_Terrain "wikilink") |-
 |[**FoxKit: TppPrimRiverModel, TppWaterBounding, TppTextureLoader and
-FxLocatorData**](/FoxKit:_TppPrimRiverModel,_TppWaterBounding,_TppTextureLoader_and_FxLocatorData "wikilink")
+FxLocatorData**](/FoxKit-_TppPrimRiverModel_TppWaterBounding_TppTextureLoader_and_FxLocatorData "wikilink")
 |- |**[FoxKit:
-TppSharedGimmickData](/FoxKit:_TppSharedGimmickData "wikilink")** |}
+TppSharedGimmickData](/FoxKit-_TppSharedGimmickData "wikilink")** |}
 \==**Setting the Mod Folder**== Before anything else, let's create a
 folder structure for the Mod we will call as "LoadingStairsInGame". Do
 it outside of Unity FoxKit for now.
@@ -49,7 +49,7 @@ Unity.
 Copy this folder structure in Unity. It should be like the image below.
 No need to copy the fpk if the user already load the assets in the guide
 [FoxKit: Installing, Import Files and
-Terrain](/FoxKit:_Installing,_Import_Files_and_Terrain "wikilink").
+Terrain](/FoxKit-_Installing_Import_Files_and_Terrain "wikilink").
 
 [<File:FolderEstrutura03.jpg>](/File:FolderEstrutura03.jpg "wikilink")
 

@@ -1,6 +1,6 @@
 ---
 title: PhVehicleNormalEngineParam
-permalink: /Entities-PhVehicleNormalEngineParam/
+permalink: /PhVehicleNormalEngineParam/
 tags: [Entities, Reference]
 ---
 

@@ -1,6 +1,6 @@
 ---
-title: Entities - PhxVehicleNormalEngine
-permalink: /Entities-PhxVehicleNormalEngine/
+title: PhxVehicleNormalEngine
+permalink: /PhxVehicleNormalEngine/
 tags: [Entities, Reference]
 ---
 

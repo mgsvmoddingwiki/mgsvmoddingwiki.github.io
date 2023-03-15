@@ -1,5 +1,5 @@
 ---
-title: TppPrimRiverModel, TppWaterBounding, TppTextureLoader and FxLocatorData
+title: ! 'FoxKit: TppPrimRiverModel, TppWaterBounding, TppTextureLoader and FxLocatorData'
 permalink: /FoxKit-_TppPrimRiverModel_TppWaterBounding_TppTextureLoader_and_FxLocatorData/
 tags: [FoxKit, Entities, Guides, Rendering]
 ---
@@ -8,14 +8,14 @@ Guide for FoxKit 1.0.
 
 This guide will continue the Mod Folder created in [FoxKit: StaticModel
 and
-GeoxCollisionFreeShape](/FoxKit:_StaticModel_and_GeoxCollisionFreeShape "wikilink").
+GeoxCollisionFreeShape](/FoxKit-_StaticModel_and_GeoxCollisionFreeShape "wikilink").
 Please, see **Setting the Mod Folder** and **Creating a Fox2 file.** Now
 we'll meet four entities building water in-game and adding a vfx.
 
-| **[FoxKit: Installing, Import Files and Terrain](/FoxKit:_Installing,_Import_Files_and_Terrain "wikilink")**     |
+| **[FoxKit: Installing, Import Files and Terrain](/FoxKit-_Installing_Import_Files_and_Terrain "wikilink")**     |
 | ---------------------------------------------------------------------------------------------------------------- |
-| [**FoxKit: StaticModel and GeoxCollisionFreeShape**](/FoxKit:_StaticModel_and_GeoxCollisionFreeShape "wikilink") |
-| **[FoxKit: TppSharedGimmickData](/FoxKit:_TppSharedGimmickData "wikilink")**                                     |
+| [**FoxKit: StaticModel and GeoxCollisionFreeShape**](/FoxKit-_StaticModel_and_GeoxCollisionFreeShape "wikilink") |
+| **[FoxKit: TppSharedGimmickData](/FoxKit-_TppSharedGimmickData "wikilink")**                                     |
 
 The other FoxKit Tutorials
 

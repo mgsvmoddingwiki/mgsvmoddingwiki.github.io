@@ -1,6 +1,6 @@
 ---
-title: Entities - Entity
-permalink: /Entities-Entity/
+title: Entity
+permalink: /Entity/
 tags: [Entities, Reference]
 ---
 

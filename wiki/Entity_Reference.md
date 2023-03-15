@@ -17,9 +17,9 @@ page](/Entity_Reference#All_TPP_Entities_\(Unsorted\) "wikilink").
 
 ## Common Entities
 
-  - [Entity](/Entities:Entity "wikilink")
+  - [Entity](/Entity "wikilink")
   - EntityPtrArrayEntity
-  - [DataSet](/Entities:DataSet "wikilink")
+  - [DataSet](/DataSet "wikilink")
   - Data
   - DataIdentifier
   - FoxDataLinkCollectorData
@@ -177,7 +177,7 @@ page](/Entity_Reference#All_TPP_Entities_\(Unsorted\) "wikilink").
     west lv, 2 = east lv, 3 = west truck, 4 = east truck, 5 = west wav,
     6 = east wav, 7 = west tank, 8 = east tank*, bodyImplTypeIndex: *1 =
     lv, 2 = truck, 3 = east wav , 4 = west wav, 5 = tank*)
-  - [TppVehicle2WeaponParameter](/Entities:TppVehicle2WeaponParameter "wikilink")
+  - [TppVehicle2WeaponParameter](/TppVehicle2WeaponParameter "wikilink")
   - TppVehicle2AttachmentData (vehicleTypeCode: *49 = west truck item
     box, 50 = west truck container, 51 = west truck cistern, 52 = west
     truck hood, 65 = east truck ammunition, 66 = east truck material, 67
@@ -216,11 +216,11 @@ page](/Entity_Reference#All_TPP_Entities_\(Unsorted\) "wikilink").
   - PhObjectDesc
   - PhPrimitiveShapeParam
   - PhRigidBodyParam
-  - [PhVehicleNormalEngineParam](/Entities:PhVehicleNormalEngineParam "wikilink")
+  - [PhVehicleNormalEngineParam](/PhVehicleNormalEngineParam "wikilink")
   - PhxAssociation
   - PhxAssociationUnitElement
-  - [PhxVehicleAxis](/Entities:PhxVehicleAxis "wikilink")
-  - [PhxVehicleNormalEngine](/Entities:PhxVehicleNormalEngine "wikilink")
+  - [PhxVehicleAxis](/PhxVehicleAxis "wikilink")
+  - [PhxVehicleNormalEngine](/PhxVehicleNormalEngine "wikilink")
   - PhysicsDescription
   - VehicleDescription
 

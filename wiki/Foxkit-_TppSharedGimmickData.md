@@ -1,5 +1,5 @@
 ---
-title: TppSharedGimmickData
+title: ! 'FoxKit: TppSharedGimmickData'
 permalink: /FoxKit-_TppSharedGimmickData/
 tags: [FoxKit, Entities, Guides]
 ---
@@ -7,18 +7,18 @@ tags: [FoxKit, Entities, Guides]
 Guide for FoxKit 1.0. This guide assumes that the user already knows how
 to work with FoxKit and understand Datasets/ fox2 files and the mod
 folder structure. Please see [FoxKit: Installing, Import Files and
-Terrain](/FoxKit:_Installing,_Import_Files_and_Terrain "wikilink") and
+Terrain](/FoxKit-_Installing_Import_Files_and_Terrain "wikilink") and
 [FoxKit: StaticModel and
-GeoxCollisionFreeShape](/FoxKit:_StaticModel_and_GeoxCollisionFreeShape "wikilink")
+GeoxCollisionFreeShape](/FoxKit-_StaticModel_and_GeoxCollisionFreeShape "wikilink")
 
 
 {| class="article-table" |+The other FoxKit Tutorials \!**[FoxKit:
 Installing, Import Files and
-Terrain](/FoxKit:_Installing,_Import_Files_and_Terrain "wikilink")** |-
+Terrain](/FoxKit-_Installing_Import_Files_and_Terrain "wikilink")** |-
 |[**FoxKit: StaticModel and
-GeoxCollisionFreeShape**](/FoxKit:_StaticModel_and_GeoxCollisionFreeShape "wikilink")
+GeoxCollisionFreeShape**](/FoxKit-_StaticModel_and_GeoxCollisionFreeShape "wikilink")
 |- |**[FoxKit: TppPrimRiverModel, TppWaterBounding, TppTextureLoader and
-FxLocatorData](/FoxKit:_TppPrimRiverModel,_TppWaterBounding,_TppTextureLoader_and_FxLocatorData "wikilink")**
+FxLocatorData](/FoxKit-_TppPrimRiverModel_TppWaterBounding_TppTextureLoader_and_FxLocatorData "wikilink")**
 |}
 
 ## **Beginning**

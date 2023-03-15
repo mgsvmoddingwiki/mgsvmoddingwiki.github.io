@@ -1,6 +1,6 @@
 ---
 title: PhxVehicleAxis
-permalink: /Entities-PhxVehicleAxis/
+permalink: /PhxVehicleAxis/
 tags: [Entities, Reference]
 ---
 

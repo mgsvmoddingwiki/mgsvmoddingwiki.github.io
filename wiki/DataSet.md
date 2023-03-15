@@ -1,6 +1,6 @@
 ---
 title: DataSet
-permalink: /Entities-DataSet/
+permalink: /DataSet/
 tags: [Entities, Reference]
 ---
 

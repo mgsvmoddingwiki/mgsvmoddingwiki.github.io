@@ -1,5 +1,5 @@
 ---
-title: FoxKit - Installing, Import Files and Terrain
+title: ! 'FoxKit: Installing, Import Files and Terrain'
 permalink: /FoxKit-_Installing_Import_Files_and_Terrain/
 tags: [FoxKit, Guides, Files, Terrain]
 ---
@@ -7,11 +7,11 @@ tags: [FoxKit, Guides, Files, Terrain]
 
 {| class="article-table" |+The other FoxKit Tutorials \![FoxKit:
 StaticModel and
-GeoxCollisionFreeShape](/FoxKit:_StaticModel_and_GeoxCollisionFreeShape "wikilink")
+GeoxCollisionFreeShape](/FoxKit-_StaticModel_and_GeoxCollisionFreeShape "wikilink")
 |- |[**FoxKit: TppPrimRiverModel, TppWaterBounding, TppTextureLoader and
-FxLocatorData**](/FoxKit:_TppPrimRiverModel,_TppWaterBounding,_TppTextureLoader_and_FxLocatorData "wikilink")
+FxLocatorData**](/FoxKit-_TppPrimRiverModel,_TppWaterBounding,_TppTextureLoader_and_FxLocatorData "wikilink")
 |- |**[FoxKit:
-TppSharedGimmickData](/FoxKit:_TppSharedGimmickData "wikilink")** |}
+TppSharedGimmickData](/FoxKit-_TppSharedGimmickData "wikilink")** |}
 
 ## **Installing FoxKit**
 

@@ -76,7 +76,7 @@ which a `.fmdl`/`.geom` pair from the `.fpkd`'s associated `.fpk` called
 `mtbs_flor011` is placed as a `StaticModel`, rotated and scaled. To edit
 `.fox2` files in XML, download [FoxTool](/FoxTool "wikilink") and unpack
 the `.fox2`. Check out the guide [FoxKit: StaticModel and
-GeoxCollisionFreeShape](/FoxKit:_StaticModel_and_GeoxCollisionFreeShape "wikilink")
+GeoxCollisionFreeShape](/FoxKit-_StaticModel_and_GeoxCollisionFreeShape "wikilink")
 by **Ventos** to understand more about how to add more assets to the
 custom map. You can place as many `.fox2` files with as many placed
 assets in them as the game could possibly take it. You can completely
@@ -205,7 +205,7 @@ GameDir/mod/modules/InfMission.lua`.
 
 If you wish to expand the map, check out the guide [FoxKit: Installing,
 Import Files and
-Terrain](/FoxKit:_Installing,_Import_Files_and_Terrain "wikilink") by
+Terrain](/FoxKit-_Installing_Import_Files_and_Terrain "wikilink") by
 **Ventos**. You should understand how `.fox2` file works and get used to
 all the entities game has, the folder structure of game and what file
 does what. To write missions, see how side ops are made with [Side Op
