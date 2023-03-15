@@ -355,7 +355,7 @@ Congratulations\! You’ve created your very first sound bank\! But where
 was it saved? The answer is: in your project folder, and then in
 GeneratedSoundBanks and Windows. By default, your project folder is in
 your **Documents/WwiseProjects** folder. You will find two soundbank
-files: **Init.bnk** and **<name of your sound bank>.bnk**, as well as
+files: **Init.bnk** and **\<name of your sound bank\>.bnk**, as well as
 some more miscellaneous files. For the purposes of MGS:V, we leave
 **Init.bnk** alone. The second bank is what we want. It stores your
 sound files, as well as any events and anything else you’ve done with
@@ -681,5 +681,5 @@ If the custom sound bank doesn’t work, here’s the most common causes:
 2.  The path to the **sdf** in the **fox2** file is incorrect. This is
     very easy to miss.
 3.  The sound bank file (**.sbp**) is not inside
-    **<Mod Folder Name>/Assets/tpp/sound/asset/**.
+    **\<Mod Folder Name\>/Assets/tpp/sound/asset/**.
 4.  The sound bank name in the **sdf** is misspelled.
