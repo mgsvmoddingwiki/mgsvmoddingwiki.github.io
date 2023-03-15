@@ -12,16 +12,8 @@ GeoxCollisionFreeShape](/FoxKit-_StaticModel_and_GeoxCollisionFreeShape "wikilin
 Please, see **Setting the Mod Folder** and **Creating a Fox2 file.** Now
 we'll meet four entities building water in-game and adding a vfx.
 
-| **[FoxKit: Installing, Import Files and Terrain](/FoxKit-_Installing_Import_Files_and_Terrain "wikilink")**     |
-| ---------------------------------------------------------------------------------------------------------------- |
-| [**FoxKit: StaticModel and GeoxCollisionFreeShape**](/FoxKit-_StaticModel_and_GeoxCollisionFreeShape "wikilink") |
-| **[FoxKit: TppSharedGimmickData](/FoxKit-_TppSharedGimmickData "wikilink")**                                     |
-
-The other FoxKit Tutorials
-
-
-\==**TppPrimRiverModel** and TppPrimRiverModelParam == This Entity
-creates the visual and moviment of water in-game. A second Entity called
+# **TppPrimRiverModel** and TppPrimRiverModelParam
+This Entity creates the visual and moviment of water in-game. A second Entity called
 TppPrimRiverModelParam deals with more options. The Entity also needs to
 load a texture which TppTextureLoader should come in hand.
 
@@ -200,8 +192,8 @@ Go to **afgh_common_fpkd**
 Create the path **/Assets/tpp/effect/vfx_data/splash/**
 
 Find the Effect **fx_tpp_splwtr10_m1.vfx** and copy to this new
-folder. [<File:Fxlocator01.jpg>](/File:Fxlocator01.jpg "wikilink") Copy
-the **vfx_data/splash/fx_tpp_splwtr10_m1.vfx** to Unity under the
+folder. [<File:Fxlocator01.jpg>](/File:Fxlocator01.jpg "wikilink") 
+Copy the **vfx_data/splash/fx_tpp_splwtr10_m1.vfx** to Unity under the
 /Assets/tpp/effect/
 
 [405x405px](/File:Splash011.jpg "wikilink")
@@ -237,7 +229,7 @@ And the last, drag and drop the vfx file.
 
 ## **Almost Done...**
 
-Save and export the new fox2file to fpkd. Remember to update the fpk
+Save and export the new fox2 file to fpkd. Remember to update the fpk
 folder with the new staticmodel puddle. Now.. there is a few things we
 need to edit manually for the fox2file. The same process we did in the
 previously guide.
