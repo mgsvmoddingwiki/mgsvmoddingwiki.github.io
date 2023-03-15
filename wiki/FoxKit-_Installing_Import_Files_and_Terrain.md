@@ -5,13 +5,13 @@ tags: [FoxKit, Guides, Files, Terrain]
 ---
 
 
-{| class="article-table" |+The other FoxKit Tutorials \![Foxkit:
+{| class="article-table" |+The other FoxKit Tutorials \![FoxKit:
 StaticModel and
-GeoxCollisionFreeShape](/Foxkit:_StaticModel_and_GeoxCollisionFreeShape "wikilink")
-|- |[**Foxkit: TppPrimRiverModel, TppWaterBounding, TppTextureLoader and
-FxLocatorData**](/Foxkit:_TppPrimRiverModel,_TppWaterBounding,_TppTextureLoader_and_FxLocatorData "wikilink")
-|- |**[Foxkit:
-TppSharedGimmickData](/Foxkit:_TppSharedGimmickData "wikilink")** |}
+GeoxCollisionFreeShape](/FoxKit:_StaticModel_and_GeoxCollisionFreeShape "wikilink")
+|- |[**FoxKit: TppPrimRiverModel, TppWaterBounding, TppTextureLoader and
+FxLocatorData**](/FoxKit:_TppPrimRiverModel,_TppWaterBounding,_TppTextureLoader_and_FxLocatorData "wikilink")
+|- |**[FoxKit:
+TppSharedGimmickData](/FoxKit:_TppSharedGimmickData "wikilink")** |}
 
 ## **Installing FoxKit**
 
@@ -19,7 +19,7 @@ Download at <https://github.com/youarebritish/FoxKit>
 
 Click Code (green button) \> Download zip
 
-Unzip Foxkit-master somewhere. The Foxkit folder within this is a Unity
+Unzip FoxKit-master somewhere. The FoxKit folder within this is a Unity
 Project.
 
 Open Unity 2018.3.6f1 (64-bit). Probably there is a better version, but
@@ -29,21 +29,21 @@ File \> Open Project. Point it to FoxKit-master\\FoxKit
 
 Loading will take a long time.
 
-[555x555px](/File:Foxkit_Window.jpg "wikilink")
+[555x555px](/File:FoxKit_Window.jpg "wikilink")
 
 ## **Extracting Game Files and Texture Folder**
 
 Please see [File Monolith](/File_Monolith "wikilink"). Using Archive
 Unpacker in all the four-five chunks to one main folder should be ok.
 
-[466x466px](/File:Foxkit03.jpg "wikilink")
+[466x466px](/File:FoxKit03.jpg "wikilink")
 
-In general Foxkit works by replicating the mgsv Assets files in the
-Foxkit Assets folder, though due to the time to import different files
+In general FoxKit works by replicating the mgsv Assets files in the
+FoxKit Assets folder, though due to the time to import different files
 you should limit what you copy in to what you're working on.
 
 Just an example:[none|thumb](/File:AssetsFolder.jpg "wikilink")
-Texture chunks do not need to be imported into the Foxkit folder, and
+Texture chunks do not need to be imported into the FoxKit folder, and
 are set up differently. Extract and convert all the texture in dds with
 the tools in File monolith and place wherever outside Unity. After that
 go to menu **Unity/FMDL studio/ Set Texture Folder.**
