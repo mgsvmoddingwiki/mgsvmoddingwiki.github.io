@@ -4,15 +4,6 @@ permalink: /FoxKit-_Installing_Import_Files_and_Terrain/
 tags: [FoxKit, Guides, Files, Terrain]
 ---
 
-
-{| class="article-table" |+The other FoxKit Tutorials \![FoxKit:
-StaticModel and
-GeoxCollisionFreeShape](/FoxKit-_StaticModel_and_GeoxCollisionFreeShape "wikilink")
-|- |[**FoxKit: TppPrimRiverModel, TppWaterBounding, TppTextureLoader and
-FxLocatorData**](/FoxKit-_TppPrimRiverModel_TppWaterBounding_TppTextureLoader_and_FxLocatorData "wikilink")
-|- |**[FoxKit:
-TppSharedGimmickData](/FoxKit-_TppSharedGimmickData "wikilink")** |}
-
 ## **Installing FoxKit**
 
 Download at <https://github.com/youarebritish/FoxKit>
@@ -52,7 +43,8 @@ go to menu **Unity/FMDL studio/ Set Texture Folder.**
 Unity as we'll see later.**
 
 
-\==**Loading TerrainFile**== This guide will treat a small area of
+## Loading TerrainFile 
+This guide will treat a small area of
 location AFGH loading just a few tiles.
 
 #### **Finding the .tre2 file (TerrainFile)**
@@ -99,8 +91,8 @@ also it has a lod0 model of the assets that it's interesting to keep and
 drag to scene View to grasp a hint on visual.
 
 
-\==**Loading the TRE2 file**== Now that we have the tre2 inside the
-pack_common and two htre files in pack_small it's time to show terrain
+## **Loading the TRE2 file**
+Now that we have the tre2 inside the pack_common and two htre files in pack_small it's time to show terrain
 in Unity.
 
 To back to the file afgh_common_terrain.tre2 in Unity and select it. A
@@ -226,7 +218,8 @@ View. Check it\!\!
 [464x464px|alt=|left](/File:Ending.jpg "wikilink")
 
 
-\=== And that's it\!\! === A small guide to install, import Assets and
+### And that's it!! 
+A small guide to install, import Assets and
 Load Terrain as well see a little bit of the fox2 files. Check Discord
 Server Modders Heaven to talk about it and ask for help related to
 Mods/FoxKit.
