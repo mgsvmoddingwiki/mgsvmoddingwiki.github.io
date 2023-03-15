@@ -11,16 +11,6 @@ Terrain](/FoxKit-_Installing_Import_Files_and_Terrain "wikilink") and
 [FoxKit: StaticModel and
 GeoxCollisionFreeShape](/FoxKit-_StaticModel_and_GeoxCollisionFreeShape "wikilink")
 
-
-{| class="article-table" |+The other FoxKit Tutorials \!**[FoxKit:
-Installing, Import Files and
-Terrain](/FoxKit-_Installing_Import_Files_and_Terrain "wikilink")** |-
-|[**FoxKit: StaticModel and
-GeoxCollisionFreeShape**](/FoxKit-_StaticModel_and_GeoxCollisionFreeShape "wikilink")
-|- |**[FoxKit: TppPrimRiverModel, TppWaterBounding, TppTextureLoader and
-FxLocatorData](/FoxKit-_TppPrimRiverModel_TppWaterBounding_TppTextureLoader_and_FxLocatorData "wikilink")**
-|}
-
 ## **Beginning**
 
 Entity that works with lba files. (Locator Binary Array). Location data
