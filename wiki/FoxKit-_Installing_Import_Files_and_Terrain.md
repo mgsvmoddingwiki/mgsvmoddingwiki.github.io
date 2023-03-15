@@ -1,6 +1,6 @@
 ---
-title: Foxkit: Installing, Import Files and Terrain
-permalink: /Foxkit-_Installing,_Import_Files_and_Terrain/
+title: FoxKit: Installing, Import Files and Terrain
+permalink: /FoxKit-_Installing_Import_Files_and_Terrain/
 tags: [FoxKit, Guides, Files, Terrain]
 ---
 

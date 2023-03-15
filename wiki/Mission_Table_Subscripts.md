@@ -1,6 +1,7 @@
 ---
 title: Mission Table Subscripts
 permalink: /Mission_Table_Subscripts/
+tags: [Lua, Missions, Reference]
 ---
 
 The Mission Table subscripts exist in every mission in the game in
@@ -1215,8 +1216,3 @@ this.missionScoreTable = {
     tacticalTakeDownPoint = { countLimit = 40 },
 }
 ```
-
-[Category:Mission Design](/Category:Mission_Design "wikilink")
-[Category:Guides](/Category:Guides "wikilink")
-[Category:Missions](/Category:Missions "wikilink")
-[Category:Lua](/Category:Lua "wikilink")

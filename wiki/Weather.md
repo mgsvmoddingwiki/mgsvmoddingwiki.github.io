@@ -1,6 +1,7 @@
 ---
 title: Weather
 permalink: /Weather/
+tags: [Lua, Reference, Effects]
 ---
 
 Through Lua scripting, the weather, atmosphere, and mood of the game can
@@ -475,6 +476,3 @@ Clouds |- | |Param 2562 |TBW |- | |gcDensityMax | |- | |gcScattering |
 |- | |gcAbsorption | |- | |gcMieAnisotropy | |- | |gcDirLightGain | |- |
 |gcSkyLightGain | |- | |gcRayMarchDepth | |- | |gcExponent0 | |- |
 |gcExponent0Max | |- | |gcExponent1 | |- | |gcExponent1Max | |}
-[Category:Guides](/Category:Guides "wikilink")
-[Category:Foxkit](/Category:Foxkit "wikilink")
-[Category:Engine](/Category:Engine "wikilink")

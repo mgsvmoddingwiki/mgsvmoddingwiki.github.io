@@ -1,6 +1,7 @@
 ---
 title: RDF
 permalink: /RDF/
+tags: [File Formats, Sound, Missions]
 ---
 
 **RDF**, or **Radio Data File**, is a format used by Metal Gear Solid V:
@@ -140,8 +141,3 @@ An entry per Entries Count in Sets Section.
 An entry per Subentries Count in Set Label Offsets entry.
 
 `0x00-0x03 - Global offset to Label Params entry.`
-
-[Category:File Formats](/Category:File_Formats "wikilink")
-[Category:Metal Gear Solid V: The Phantom
-Pain](/Category:Metal_Gear_Solid_V:_The_Phantom_Pain "wikilink")
-[Category:SFX](/Category:SFX "wikilink")

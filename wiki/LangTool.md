@@ -1,6 +1,7 @@
 ---
 title: LangTool
 permalink: /LangTool/
+tags: [Lang, Tools, File Tools]
 ---
 
 LangTool is an open-source Fox Engine XML compiler/decompiler for Metal
@@ -27,8 +28,3 @@ by its hash with the XML attribute 'Key'.
 
 The most current dictionary can be found here:
 <https://github.com/TinManTex/mgsv-lookup-strings>
-
-##
-
-[Category:Tools](/Category:Tools "wikilink") [Category:File
-Tools](/Category:File_Tools "wikilink")

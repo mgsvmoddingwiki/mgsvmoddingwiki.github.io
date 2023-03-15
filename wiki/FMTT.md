@@ -1,7 +1,7 @@
 ---
 title: FMTT
 permalink: /FMTT/
-tags: [File Formats, Rendering, Textures]
+tags: [File Formats, Rendering]
 ---
 
 The file type .fmtt is a reference for the material ID maps for models,

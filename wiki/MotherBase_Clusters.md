@@ -1,6 +1,7 @@
 ---
 title: MotherBase Clusters
 permalink: /MotherBase_Clusters/
+tags: [MotherBase, Missions, Reference]
 ---
 
 Each section of MotherBase/a FOB is called a cluster.
@@ -212,6 +213,3 @@ mbLayout 3
 | 980        | Mentioned in TppLocation, no assets remain.                                                                                                   | N/A                                              |
 
 layoutCodes
-
-[Category:Lua](/Category:Lua "wikilink")
-[Category:Missions](/Category:Missions "wikilink")

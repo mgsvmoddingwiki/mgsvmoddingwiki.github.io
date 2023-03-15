@@ -1,6 +1,7 @@
 ---
 title: FSM
 permalink: /FSM/
+tags: [File Formats, Cutscenes]
 ---
 
 The .fsm format, or **F**ox **S**ystem **M**ovie, is the format used for
@@ -183,6 +184,3 @@ padding.
 
   - The first SND chunk is always 0x200020 bytes. All following SND
     chunks are 0x200010 bytes.
-
-[Category:File Formats](/Category:File_Formats "wikilink")
-[Category:Animation](/Category:Animation "wikilink")

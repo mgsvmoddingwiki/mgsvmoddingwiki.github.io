@@ -1,6 +1,7 @@
 ---
-title: LUA
-permalink: /LUA/
+title: Lua
+permalink: /Lua/
+tags: [File Formats, Lua]
 ---
 
 This article is a fundamental approach to Lua and it's relation in the
@@ -36,6 +37,3 @@ elements that directly change the game engine, much rather you are
 scripting customizable options that are provided by the engine. This is
 how Lua works in most cases and that's the way it's being implemented
 here.
-[Category:File Formats](/Category:File_Formats "wikilink")
-[Category:Unsorted File
-Formats](/Category:Unsorted_File_Formats "wikilink")

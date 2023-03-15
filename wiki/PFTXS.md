@@ -1,6 +1,7 @@
 ---
 title: PFTXS
 permalink: /PFTXS/
+tags: [File Formats, Rendering]
 ---
 
 ## **PFTXS (Packed Fox Textures)**
@@ -39,6 +40,4 @@ It's highly recommended to use File Monolith to unpack all the PFTXS
 files.
 
 AutoPFTXStool can be used for packing and unpacking individual PFTXS
-files if need be. [Category:File
-Formats](/Category:File_Formats "wikilink")
-[Category:Textures](/Category:Textures "wikilink")
+files if need be.

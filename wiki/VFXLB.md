@@ -1,6 +1,7 @@
 ---
 title: VFXLB
 permalink: /VFXLB/
+tags: [File Formats, Effects]
 ---
 
 [thumb|212x212px|The .vfxlb filetype contains a Header, a Section 0 and
@@ -211,5 +212,4 @@ parameters that do affect the visual effect:
 
 'CA 2F E4 4C' : Determines how close (in meters) the player needs to be
 to the locator in order for the visual effect to play. Parameter type:
-Float.[Category:File Formats](/Category:File_Formats "wikilink")
-[Category:VFX](/Category:VFX "wikilink")
+Float.

@@ -1,12 +1,12 @@
 ---
-title: Foxkit: TppLightProbe, PointLight and Spotlight
-permalink: /Foxkit-_TppLightProbe,_PointLight_and_Spotlight/
-tags: [FoxKit, Guides, Rendering]
+title: FoxKit: TppLightProbe, PointLight and Spotlight
+permalink: /FoxKit-_TppLightProbe_PointLight_and_Spotlight/
+tags: [FoxKit, Guides, Entities, Rendering]
 ---
 
 This guide show how to set a Probe to indoor space and add two types of
 light, Point and Spot. Require the user to know how Datasets and
-Entities in Foxkit.
+Entities in FoxKit.
 
 First. create a Dataset and add two Entities.
 TppLightProbeSHCoefficients and TppLightProbe. Ground and House is just
@@ -24,10 +24,10 @@ found in
 *Chunks\\Assets\\tpp\\pack\\location\\afgh\\pack_large\\afgh_field_fpk\\Assets\\tpp\\level\\location\\afgh\\block_large\\field\\**afgh_field_light.lpsh***
 
 Copy and paste to the fpk of you mod that match with the folder
-structure in Foxkit. In my case my mod load here
+structure in FoxKit. In my case my mod load here
 *\\Assets\\tpp\\pack\\location\\smpl\\smpl_fpk\\Assets\\tpp\\level\\location\\smpl\\block_common\\**afgh_field_light.lpsh***
 
-*And in Foxkit
+*And in FoxKit
 Assets\\tpp\\level\\location\\smpl\\block_common\\**afgh_field_light.lpsh.***
 
 Drag and drop the file ***afgh_field_light.lpsh*** in
@@ -42,11 +42,11 @@ Before move to TppLightProbe have a look on image below. I list all the
 Some are dark while other are bright. All have this tint of afgh colour
 in red, orange, yellow. At night it goes green, grey blue. Indoor areas
 use dark probes. So lets choose the LP_0038. The name "LP_0038" you
-can find inspecting the lpsh in Foxkit and its matter write the exactly
+can find inspecting the lpsh in FoxKit and its matter write the exactly
 name of the Probe in Dataset if you want make work.
 [alt=|left|421x421px](/File:Light3.jpg "wikilink")
 
-Name in Foxkit.
+Name in FoxKit.
 
 [372.972x372.972px](/File:Light4.jpg "wikilink")
 [left|thumb](/File:LPSH_Field_ref.jpg "wikilink")
@@ -119,9 +119,9 @@ In Game it shows like this.
 
 [659x659px](/File:Light8.jpg "wikilink")
 
-### **Small Fix in Foxkit to show Flags.**
+### **Small Fix in FoxKit to show Flags.**
 
-Foxkit normally dont show the localFlags parameter. To enable this
+FoxKit normally dont show the localFlags parameter. To enable this
 option in the Entity go to
 \\FoxKit\\Assets\\FoxKit\\Modules\\DataSet\\Fox\\TppEffect and open in
 any editor the file TppLightProbe.Generated.cs.

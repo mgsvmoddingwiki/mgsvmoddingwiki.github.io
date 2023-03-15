@@ -1,6 +1,7 @@
 ---
 title: How to create custom lang entries
 permalink: /How_to_create_custom_lang_entries/
+tags: [Guides, Lang]
 ---
 
 This tutorial will help you create your own lang entries instead of
@@ -194,6 +195,3 @@ with your custom langID.
 `   langProficAfrikaans=XXX,`
 `   missionId=XXX`
 `}`
-
-[Category:Guides](/Category:Guides "wikilink")
-[Category:Miscellaneous](/Category:Miscellaneous "wikilink")

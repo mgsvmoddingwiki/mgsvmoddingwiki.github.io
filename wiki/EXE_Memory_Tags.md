@@ -1,6 +1,7 @@
 ---
-title: Memory Tags
+title: EXE Memory Tags
 permalink: /Memory_Tags/
+tags: [EXE, Reference]
 ---
 
 ## TPP (PS4)
@@ -920,7 +921,3 @@ permalink: /Memory_Tags/
   - Network Ncl System: 0x70018
   - Network Nt System: 0x50018
   - Sound File: 0xc0007
-
-[Category:References](/Category:References "wikilink")
-[Category:EXE](/Category:EXE "wikilink")
-[Category:Guides](/Category:Guides "wikilink")

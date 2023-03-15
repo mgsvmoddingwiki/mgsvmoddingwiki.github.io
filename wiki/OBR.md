@@ -1,6 +1,7 @@
 ---
-title: Object Brush (.obr)
-permalink: /Object_Brush_(.obr)/
+title: OBR
+permalink: /OBR/
+tags: [Level, File Formats]
 ---
 
 [Documentation credited by
@@ -30,11 +31,4 @@ When placing terrain decorations, the shadows are not included in the
 file.(?) It's not known for sure what's in the files besides coordinate
 arrays.
 
-See also:
-
-  - \[<https://metalgearmodding.fandom.com/wiki/Object_Brush_Block_>(.obrb)
-    Object Brush Block (.obrb)\]
-
-
-[Category:File Formats](/Category:File_Formats "wikilink")
-[Category:Level](/Category:Level "wikilink")
+See also: [OBRB](/OBR)

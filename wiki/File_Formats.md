@@ -1,7 +1,7 @@
 ---
 title: File Formats
 permalink: /File_Formats/
-tags: [Files]
+tags: [Files, File Formats]
 ---
 
 This article lists the presumed names of extensions used in MGSV, as

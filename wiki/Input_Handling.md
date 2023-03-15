@@ -1,6 +1,7 @@
 ---
 title: Input Handling
 permalink: /Input_Handling/
+tags: [Player, Lua, Reference]
 ---
 
 Input is handled by checking bitflags on PlayerVars.scannedButtonsDirect
@@ -118,5 +119,4 @@ STICK_L STICK_R TRIGGER_L TRIGGER_R TRIGGER_ACCEL TRIGGER_BREAK
 are used with other functions/variables/not used with scannedButtons
 
 See Infinite Heavens /Assets/tpp/script/ih/InfButtons.lua for some more
-notes. [Category:Lua](/Category:Lua "wikilink")
-[Category:Player](/Category:Player "wikilink")
+notes.

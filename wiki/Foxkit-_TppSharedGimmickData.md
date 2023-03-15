@@ -1,23 +1,24 @@
 ---
-title: Foxkit: TppSharedGimmickData
-permalink: /Foxkit-_TppSharedGimmickData/
+title: FoxKit: TppSharedGimmickData
+permalink: /FoxKit-_TppSharedGimmickData/
+tags: [FoxKit, Entities, Guides]
 ---
 
 Guide for FoxKit 1.0. This guide assumes that the user already knows how
-to work with Foxkit and understand Datasets/ fox2 files and the mod
-folder structure. Please see [Foxkit: Installing, Import Files and
-Terrain](/Foxkit:_Installing,_Import_Files_and_Terrain "wikilink") and
-[Foxkit: StaticModel and
-GeoxCollisionFreeShape](/Foxkit:_StaticModel_and_GeoxCollisionFreeShape "wikilink")
+to work with FoxKit and understand Datasets/ fox2 files and the mod
+folder structure. Please see [FoxKit: Installing, Import Files and
+Terrain](/FoxKit:_Installing,_Import_Files_and_Terrain "wikilink") and
+[FoxKit: StaticModel and
+GeoxCollisionFreeShape](/FoxKit:_StaticModel_and_GeoxCollisionFreeShape "wikilink")
 
 
-{| class="article-table" |+The other FoxKit Tutorials \!**[Foxkit:
+{| class="article-table" |+The other FoxKit Tutorials \!**[FoxKit:
 Installing, Import Files and
-Terrain](/Foxkit:_Installing,_Import_Files_and_Terrain "wikilink")** |-
-|[**Foxkit: StaticModel and
-GeoxCollisionFreeShape**](/Foxkit:_StaticModel_and_GeoxCollisionFreeShape "wikilink")
-|- |**[Foxkit: TppPrimRiverModel, TppWaterBounding, TppTextureLoader and
-FxLocatorData](/Foxkit:_TppPrimRiverModel,_TppWaterBounding,_TppTextureLoader_and_FxLocatorData "wikilink")**
+Terrain](/FoxKit:_Installing,_Import_Files_and_Terrain "wikilink")** |-
+|[**FoxKit: StaticModel and
+GeoxCollisionFreeShape**](/FoxKit:_StaticModel_and_GeoxCollisionFreeShape "wikilink")
+|- |**[FoxKit: TppPrimRiverModel, TppWaterBounding, TppTextureLoader and
+FxLocatorData](/FoxKit:_TppPrimRiverModel,_TppWaterBounding,_TppTextureLoader_and_FxLocatorData "wikilink")**
 |}
 
 ## **Beginning**
@@ -45,7 +46,7 @@ The guide will load two Gimmicks. A Chair and a Flag/Banner. The first
 thing to do is build a mockup assets in Unity with a simple Dataset that
 will not be inside MOD. The purpose of creating this fox2 file is to get
 the Positions and Rotations of the model to copy/paste into lba files.
-We do it because Foxkit can not load lba files just yet.
+We do it because FoxKit can not load lba files just yet.
 
 Create a Dataset named "MockupGimmicks" and build a small assets scene.
 I did this:
@@ -582,7 +583,3 @@ Unfortunately due to the limits of Free Roam. Only one TppSharedGimmick
 was spawned. The flag works at least.
 
 [527x527px](/File:VideoGimmick01.webm "wikilink")
-
-
-[Category:Foxkit](/Category:Foxkit "wikilink") __INDEX__
-__NEWSECTIONLINK__

@@ -1,6 +1,7 @@
 ---
 title: Things Codes
 permalink: /Things_Codes/
+tags: [Reference]
 ---
 
 MGSV names a lot of its things with short 3-4 letter abreviated names.
@@ -402,7 +403,3 @@ folder, but their fmdls are.
 | smg  | Submachine Guns                    |
 | snr  | Sniper Rifles                      |
 | thr  | Throwables                         |
-
-[Category:Guides](/Category:Guides "wikilink")
-[Category:Files](/Category:Files "wikilink")
-[Category:References](/Category:References "wikilink")

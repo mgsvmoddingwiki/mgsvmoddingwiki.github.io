@@ -1,6 +1,7 @@
 ---
 title: Route Set
 permalink: /Route_Set/
+tags: [Lua, Routes, Reference]
 ---
 
 Route sets define groups of route names that will be used by the
@@ -381,8 +382,3 @@ this.routeSets={
     //...
 }
 ```
-
-[Category:Mission Design](/Category:Mission_Design "wikilink")
-[Category:Guides](/Category:Guides "wikilink")
-[Category:Lua](/Category:Lua "wikilink")
-[Category:Missions](/Category:Missions "wikilink")

@@ -1,6 +1,7 @@
 ---
 title: SnakeBite Mod Manager
 permalink: /SnakeBite_Mod_Manager/
+tags: [Tools, File Tools]
 ---
 
 **SnakeBite** is an unofficial, open-source mod manager for Metal Gear
@@ -327,9 +328,4 @@ the folder will appear under *Mod Files*. In most cases, if a file does
 not have a hashed name, the line should begin with */Assets/*. Once all
 of this is done, the user simply needs to click the *Do it (build
 archive)* button and select an output folder to build their .mgsv
-file.[Category:Tools](/Category:Tools "wikilink") [Category:Metal Gear
-Solid V: The Phantom
-Pain](/Category:Metal_Gear_Solid_V:_The_Phantom_Pain "wikilink")
-[Category:Getting Started](/Category:Getting_Started "wikilink")
-[Category:Modding Tools](/Category:Modding_Tools "wikilink")
-[Category:Guides](/Category:Guides "wikilink")
+file.

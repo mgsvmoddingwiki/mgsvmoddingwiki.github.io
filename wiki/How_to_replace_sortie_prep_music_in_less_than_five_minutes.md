@@ -1,6 +1,7 @@
 ---
 title: How to replace sortie prep music in less than five minutes
 permalink: /How_to_replace_sortie_prep_music_in_less_than_five_minutes/
+tags: [Guides, Sound]
 ---
 
 [thumb|480x480px](/File:How_to_replace_sortie_prep_music_in_MGSV_in_less_than_five_minutes. "wikilink")
@@ -77,5 +78,3 @@ your new **Common_bank_01.sbp** inside. Open **MakeBite** and build
 your mod, make sure you fill out the name and description so you don't
 forget what the mod does. Once created, install your mod with
 **Snakebite** and you are done\!
-[Category:Guides](/Category:Guides "wikilink")
-[Category:Sound](/Category:Sound "wikilink")

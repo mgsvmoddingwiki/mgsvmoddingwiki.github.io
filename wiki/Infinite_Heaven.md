@@ -1,6 +1,7 @@
 ---
 title: Infinite Heaven
 permalink: /Infinite_Heaven/
+tags: [Lua, Guides, Tools, Infinite Heaven]
 ---
 
 Infinite Heaven is a mod for Metal Gear Solid V: The Phantom Pain
@@ -2189,12 +2190,3 @@ Information provided by TinMaxTex
 | Emblem Keeps Resetting                                 | This is caused by booting the game offline with IH settings                  | Disable this option and play Online, emblem will update.                                                                                                                                                                                                           |
 
 Troubleshooting Chart
-
-
-[Category:Modifications](/Category:Modifications "wikilink")
-[Category:Metal Gear Solid V: The Phantom
-Pain](/Category:Metal_Gear_Solid_V:_The_Phantom_Pain "wikilink")
-__NOTOC__ [Category:Infinite
-Heaven](/Category:Infinite_Heaven "wikilink") [Category:Getting
-Started](/Category:Getting_Started "wikilink")
-[Category:Guides](/Category:Guides "wikilink")

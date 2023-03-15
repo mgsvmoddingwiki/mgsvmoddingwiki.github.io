@@ -1,6 +1,7 @@
 ---
 title: GeoTrap
 permalink: /GeoTrap/
+tags: [Entities, FoxKit, Lua, Missions, Geo]
 ---
 
 **GeoTrap** entity is one of the most interesting to use for achieve
@@ -26,8 +27,8 @@ A *execFuncNames* can be to add some weatherTag with
 area will trigger the weatherTag.
 
 For a better understand about it. Let's build a Trap. We can use now
-Foxkit to write fox2 files better than just write from scratch with XML
-which is very time consuming. With Foxkit is just plenty simple and
+FoxKit to write fox2 files better than just write from scratch with XML
+which is very time consuming. With FoxKit is just plenty simple and
 friendly.
 
 ## **GeoTrap** Entity
@@ -41,7 +42,7 @@ friendly.
 **transform**. Address to TransformEntity for the values of scale,
 rotation and translate of the geoTrap area. Scale here is important to
 define the size of the area. It is important to notice that it will
-exponence the size of BoxShape. Using Foxkit its possible to visually
+exponence the size of BoxShape. Using FoxKit its possible to visually
 knows the better size for the trap, otherwise it might get far from what
 you may want to achieve.
 
@@ -52,11 +53,11 @@ you may want to achieve.
 respectively the BoxShapes. Of course, having GeoModuleCondition or the
 Shapes outside of GeoTrap it will not work.
 
-**flags**. I do not have much info about it other than using Foxkit it
+**flags**. I do not have much info about it other than using FoxKit it
 will generate the right value for it. In this case, value 7.
 
 **conditionArray**. It will link the GeoModuleCondition and show the
-path to the fox2 where GeoModuleCondition is. Even using Foxkit the user
+path to the fox2 where GeoModuleCondition is. Even using FoxKit the user
 may open the fox2 and manually editing the packagePath to empty.
 
 **enable**. Bool true or false.
@@ -73,14 +74,14 @@ Not so important, but link with GeoTrap.
 **transform**. Address to TransformEntity for the values of scale,
 rotation and translate of the geoTrap area. Scale and Rotation are
 useless here, but one thing about translate is that only work if the
-values are set as x: -0.1, y: -0,1,z: -0,1. using Foxkit the user may
+values are set as x: -0.1, y: -0,1,z: -0,1. using FoxKit the user may
 find that x is positive but once exported it will be negative.
 
 **shearTransform and pivotTransform**. Can be 0x00000000.
 
 **children**. None.
 
-**flags**. I do not have much info about it other than using Foxkit it
+**flags**. I do not have much info about it other than using FoxKit it
 will generate the right value for it. In this case, value 7.
 
 **trapCategory**. I do not know much about it, set as empty is fine. I
@@ -123,7 +124,7 @@ important, but link with GeoTrap.
 rotation and translate of the geoTrap area. Here scale, rotation and
 translate are quite important because BoxShape is using exactly to place
 at the map to trigger the trap. And scale here need some digs. Using
-Foxkit the user may have a better understand about the right value for
+FoxKit the user may have a better understand about the right value for
 BoxShape. In this case the scale is 0,03333334 as it can see in the
 first image of this post.
 
@@ -131,7 +132,7 @@ first image of this post.
 
 **children**. None.
 
-**flags**. I do not have much info about it other than using Foxkit it
+**flags**. I do not have much info about it other than using FoxKit it
 will generate the right value for it. In this case, value 7.
 
 ## And Now...
@@ -168,8 +169,3 @@ of the GeoTrap it will be SUNNY.
 `   OnEnter = function() end,   `
 `   OnLeave = function () end,`
 `}`
-
-[Category:Entities](/Category:Entities "wikilink")
-[Category:Lua](/Category:Lua "wikilink")
-[Category:Foxkit](/Category:Foxkit "wikilink")
-[Category:Missions](/Category:Missions "wikilink")

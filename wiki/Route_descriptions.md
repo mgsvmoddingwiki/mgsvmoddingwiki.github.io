@@ -1,6 +1,7 @@
 ---
 title: Route descriptions
 permalink: /Route_descriptions/
+tags: [Routes, Reference]
 ---
 
 Use this page to summarize interesting routes from the main game. Be
@@ -39,4 +40,4 @@ List Middle Africa routes here.
 
 ## mtbs
 
-List Mother Base routes here. [Category:FRT](/Category:FRT "wikilink")
+List Mother Base routes here.

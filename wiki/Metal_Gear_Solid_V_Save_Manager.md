@@ -1,6 +1,7 @@
 ---
 title: Metal Gear Solid V Save Manager
 permalink: /Metal_Gear_Solid_V_Save_Manager/
+tags: [Tools]
 ---
 
 **<u>PROJECT DISCONTINUED</u>**
@@ -119,7 +120,3 @@ If you delete or move saves manually while the program is running, use
 <s>Feedback and bug reports should be posted there in the Issues
 section. With bug reports, please describe the bug/error as accurately
 as possible for more efficient bug tracking and fixing.</s>
-[Category:Save Managers](/Category:Save_Managers "wikilink")
-[Category:Metal Gear Solid V: The Phantom
-Pain](/Category:Metal_Gear_Solid_V:_The_Phantom_Pain "wikilink")
-[Category:Tools](/Category:Tools "wikilink")

@@ -1,6 +1,7 @@
 ---
-title: Troubleshooting Chart (General applications)
-permalink: /Troubleshooting_Chart_(General_applications)/
+title: Troubleshooting
+permalink: /Troubleshooting/
+tags: [Troubleshooting]
 ---
 
 Troubleshooting charts for MGSV:GZ and MGSV:TPP. Should be noted that
@@ -130,5 +131,3 @@ of hardware the user has. | |- |Cursor/Mouse Issues "Spinning circle"
 | Frame rate drops                                                                            | Try not to run this game off of an external HDD                                                           | Keep at least 90 GB free on your SSD for shaders                          |                                                                                                                            |
 
 Metal Gear Solid V: The Phantom Pain (PC)
-
-[Category:Troubleshooting](/Category:Troubleshooting "wikilink")

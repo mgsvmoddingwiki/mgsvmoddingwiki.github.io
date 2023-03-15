@@ -1,6 +1,7 @@
 ---
 title: How to save your .DDS image
 permalink: /How_to_save_your_.DDS_image/
+tags: [Guides, Rendering]
 ---
 
 So, let's assume you're adding some custom textures to the game and you
@@ -30,5 +31,3 @@ Why? DXT1/`BC1` does not save alpha/transparency maps, and utilizing
 them when you're not trying to can cause texture issues/errors. Only
 Normal Maps regularly utilize alpha maps and are the only texture that
 should be saved using DXT5/`BC3` - the type that saves the normal map.
-[Category:Guides](/Category:Guides "wikilink")
-[Category:Rendering](/Category:Rendering "wikilink")

@@ -1,6 +1,7 @@
 ---
 title: FoxKit
 permalink: /FoxKit/
+tags: [Tools, FoxKit]
 ---
 
 FoxKit is a general-purpose Fox Engine data editor, which includes
@@ -13,7 +14,7 @@ structure and mimics the game's directory structure.
 
 Installation procedures and a basic modification tutorial can be
 referenced
-[here.](/Foxkit:_Installing,_Import_Files_and_Terrain "wikilink")
+[here.](/FoxKit:_Installing,_Import_Files_and_Terrain "wikilink")
 
 Currently FoxKit handles these file types:
 
@@ -21,7 +22,3 @@ Currently FoxKit handles these file types:
   - .frt
   - .htre
   - .pcsp
-
-[Category:Tools](/Category:Tools "wikilink")
-[Category:Foxkit](/Category:Foxkit "wikilink") [Category:Modding
-Tools](/Category:Modding_Tools "wikilink")

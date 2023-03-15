@@ -1,6 +1,7 @@
 ---
 title: SPCH
 permalink: /SPCH/
+tags: [File Formats, Sound]
 ---
 
 **SPCH**, or Speech Data, is a format used in Metal Gear Solid V: The
@@ -216,8 +217,3 @@ This is a list of some animation act ids that can be used by SPCH files.
 | `2289914935`          | Ocelot animation                                                                        | `ocelot_g`                 |
 | `3574747766`          | Ocelot waves goodbye to leaving helicopter (not used in vanilla .spch, but used by lua) | `ocelot_go_heli`           |
 | `3423893682`          | Ocelot animation (not used in vanilla .spch)                                            | `ocelot_h`                 |
-
-[Category:File Formats](/Category:File_Formats "wikilink")
-[Category:Metal Gear Solid V: The Phantom
-Pain](/Category:Metal_Gear_Solid_V:_The_Phantom_Pain "wikilink")
-[Category:SFX](/Category:SFX "wikilink")

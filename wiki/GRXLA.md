@@ -1,6 +1,7 @@
 ---
 title: GRXLA
 permalink: /GRXLA/
+tags: [File Formats, Rendering]
 ---
 
 **GrxLA**, or **Grx** **L**ight **A**rray, is a file format used by
@@ -301,6 +302,3 @@ For every face:
   - 0x2-0x3 - Unknown index.
   - 0x4-0x5 - First vertex index.
   - 0x6-0x7 - Vertex count.
-
-[Category:File Formats](/Category:File_Formats "wikilink")
-[Category:Level](/Category:Level "wikilink")

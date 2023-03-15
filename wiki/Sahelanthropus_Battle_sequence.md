@@ -1,6 +1,7 @@
 ---
 title: Sahelanthropus Battle sequence
 permalink: /Sahelanthropus_Battle_sequence/
+tags: [Missions, Reference]
 ---
 
 # Sahelanthropus Battle Sequence
@@ -40,4 +41,3 @@ Sahelanthropus (i noticed that sometimes Mantis doesn't appear), that
 goes on in a loop until you kill him
 
 Notes: He needs to attack Pequod to go Rex mode, no Pequod = no railgun
-[Category:Mission Design](/Category:Mission_Design "wikilink")

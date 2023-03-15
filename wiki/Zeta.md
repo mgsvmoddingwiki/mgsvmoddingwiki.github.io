@@ -1,6 +1,7 @@
 ---
 title: Zeta
 permalink: /Zeta/
+tags: [Infinite Heaven, Tools]
 ---
 
 **Zeta** is an [Infinite Heaven](/Infinite_Heaven "wikilink") add-on
@@ -51,7 +52,3 @@ modules.](https://www.nexusmods.com/metalgearsolidvtpp/search/?search_descriptio
   - To select an option, press right, or numpad 6.
   - General Settings has options that change how Zeta works overall.
   - Mod Management has options for all mods installed.
-
-[Category:Infinite Heaven](/Category:Infinite_Heaven "wikilink")
-[Category:Getting Started](/Category:Getting_Started "wikilink")
-[Category:Guides](/Category:Guides "wikilink")

@@ -1,6 +1,7 @@
 ---
 title: FoxTool
 permalink: /FoxTool/
+tags: [Tools, File Tools]
 ---
 
 FoxTool is an open-source Fox Engine XML compiler/decompiler for Metal

@@ -1,6 +1,7 @@
 ---
 title: SubpTool
 permalink: /SubpTool/
+tags: [Tools, File Tools, Lang]
 ---
 
 ## Dictionary
@@ -13,5 +14,4 @@ attribute 'SubtitleId'. If it cannot find a match, it will output the
 string by its hash with the XML attribute 'Id'.
 
 The most current dictionary can be found here:
-<https://github.com/TinManTex/mgsv-lookup-strings>[Category:Tools](/Category:Tools "wikilink")
-[Category:File Tools](/Category:File_Tools "wikilink")
+<https://github.com/TinManTex/mgsv-lookup-strings>

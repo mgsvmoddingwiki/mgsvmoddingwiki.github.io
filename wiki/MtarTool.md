@@ -1,6 +1,7 @@
 ---
 title: MtarTool
 permalink: /MtarTool/
+tags: [Guides, Tools, File Tools, Animation]
 ---
 
 MtarTool is an open-source unpacker and repacker for Metal Gear Solid V:
@@ -60,7 +61,4 @@ extraction folder for the mtar, if it does find a match it will create
 the original file/folder layout and name.
 
 An up to date dictionary can be found at
-<https://github.com/TinManTex/mgsv-lookup-strings>[Category:Tools](/Category:Tools "wikilink")
-[Category:Metal Gear Solid V: The Phantom
-Pain](/Category:Metal_Gear_Solid_V:_The_Phantom_Pain "wikilink")
-[Category:File Tools](/Category:File_Tools "wikilink")
+<https://github.com/TinManTex/mgsv-lookup-strings>

@@ -1,6 +1,7 @@
 ---
 title: IHHook
 permalink: /IHHook/
+tags: [Infinite Heaven, EXE]
 ---
 
 A proxy dll (of dinput8.dll) that loads with MGSV to provide extended
@@ -40,8 +41,3 @@ separate install and nexus page to isolate feedback and issues.
 
 **[See this Youtube playlist for features that are visually
 demonstratable](https://www.youtube.com/playlist?list=PLSKlVTXYh6F9XCIpHUGTSkd9gDzoU6N1s).**
-
-[Category:Getting Started](/Category:Getting_Started "wikilink")
-[Category:Guides](/Category:Guides "wikilink")
-[Category:IH](/Category:IH "wikilink") [Category:Infinite
-Heaven](/Category:Infinite_Heaven "wikilink")

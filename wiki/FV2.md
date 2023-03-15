@@ -1,6 +1,7 @@
 ---
 title: FV2
 permalink: /FV2/
+tags: [File Formats, Models]
 ---
 
 The FV2, or Form Variation (also sometimes called fova), is a format
@@ -544,6 +545,3 @@ presented as the real texture paths:
 `0x00 - Length of the texture path, including this byte and the last null.`
 `Texture path.`
 `One null byte.`
-
-[Category:File Formats](/Category:File_Formats "wikilink")
-[Category:Models](/Category:Models "wikilink")

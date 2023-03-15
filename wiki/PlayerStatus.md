@@ -1,6 +1,7 @@
 ---
 title: PlayerStatus
 permalink: /PlayerStatus/
+tags: [Lua, Player, Reference]
 ---
 
 Some player status can be checked via bit flags using specfic bitflag
@@ -170,7 +171,3 @@ Example:
 | 149   | \-                            | \-                            | There is no code to set this flag?                                                                                                         |
 | 150   | \-                            | \-                            | There is no code to set this flag?                                                                                                         |
 | 151   | \-                            | \-                            | There is no code to set this flag?                                                                                                         |
-
-
-[Category:Lua](/Category:Lua "wikilink")
-[Category:Player](/Category:Player "wikilink")

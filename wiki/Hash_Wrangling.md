@@ -1,6 +1,7 @@
 ---
 title: Hash Wrangling
 permalink: /Hash_Wrangling/
+tags: [Guides]
 ---
 
 Wrangling Hashes, notes and workflow
@@ -360,6 +361,3 @@ HashWrangler: Better stats output/per file like qar-dictionary-project
 
 LangTool: Change to output to each file rather than append one? Would
 allow finer grained stats.
-
-[Category:Guides](/Category:Guides "wikilink")
-[Category:References](/Category:References "wikilink")

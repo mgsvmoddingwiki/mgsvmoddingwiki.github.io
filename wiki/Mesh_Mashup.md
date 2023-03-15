@@ -1,6 +1,7 @@
 ---
 title: Mesh Mashup
 permalink: /Mesh_Mashup/
+tags: [Models, Guides]
 ---
 
 This guide will explain the process you'll have to go through if you
@@ -62,5 +63,3 @@ texture icons in the inspector tab in unity, that will show you the
 texture size, name, resolution, and location, you can use that info to
 fetch the dds and drop them on the "Pictures" to later convert them back
 to .ftex and .ftexs by using the .ftex tool.
-[Category:Guides](/Category:Guides "wikilink")
-[Category:Rendering](/Category:Rendering "wikilink")

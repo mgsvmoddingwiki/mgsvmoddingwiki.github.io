@@ -1,6 +1,7 @@
 ---
 title: Iron Sight adjustments, fire-rate, draw and reload speeds
 permalink: /Iron_Sight_adjustments,_fire-rate,_draw_and_reload_speeds/
+tags: [Lua, Weapons, Chimera]
 ---
 
 Iron sight adjustments can be made to guns, this is needed specially for
@@ -66,6 +67,3 @@ other factors like snake's arm or certain abilities either on tpp or
 mgo, for that it is better to play with decimals the closer to 1 the
 faster, the farther the slower, reload speed works the same way.
 Aim-assist distance is calculated in meters.
-[Category:Chimera](/Category:Chimera "wikilink")
-[Category:Weapons](/Category:Weapons "wikilink")
-[Category:Lua](/Category:Lua "wikilink")

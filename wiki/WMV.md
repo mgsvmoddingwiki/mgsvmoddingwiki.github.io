@@ -1,6 +1,7 @@
 ---
 title: WMV
 permalink: /WMV/
+tags: [File Formats, Cutscenes]
 ---
 
 The pre-rendered video cutscenes in Metal Gear Solid V: The Phantom Pain
@@ -139,7 +140,3 @@ or onEnd callbacks or status changes and such.
     starts playing.
   - **onEnd**: Optional. The function will be executed when the movie
     finishes playing, whether it's skipped or not.
-
-[Category:File Formats](/Category:File_Formats "wikilink")
-[Category:Unsorted File
-Formats](/Category:Unsorted_File_Formats "wikilink")

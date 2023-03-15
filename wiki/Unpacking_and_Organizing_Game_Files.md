@@ -1,6 +1,7 @@
 ---
 title: Unpacking and Organizing Game Files
 permalink: /Unpacking_and_Organizing_Game_Files/
+tags: [Guides, Files]
 ---
 
 **(WIP)** *A guide on unpacking game files, plus some general tips and
@@ -138,4 +139,3 @@ We'll simply drag **data_01.g0s** and **data_02.g0s** onto the GzsTool
 move everything out of the new data folders (created by the GzsTool) and
 into our GZ Main folder in Fox Modding. All that's left is to run File
 Monolith's Mass Texture Converter and point it at our GZ Texture folder.
-[Category:Guides](/Category:Guides "wikilink")

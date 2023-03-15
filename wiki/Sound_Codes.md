@@ -1,6 +1,7 @@
 ---
 title: Sound Codes
 permalink: /Sound_Codes/
+tags: [Sound, Reference]
 ---
 
 Non exhaustive list of identified sounds, some may be guesses or
@@ -1441,7 +1442,3 @@ TABLE 2: se_b_qui.BNK
 | 93572792.wem   |                      |
 | 95266648.wem   |                      |
 | 988767254.wem  |                      |
-
-[Category:Files](/Category:Files "wikilink")
-[Category:Sound](/Category:Sound "wikilink")
-[Category:Guides](/Category:Guides "wikilink")

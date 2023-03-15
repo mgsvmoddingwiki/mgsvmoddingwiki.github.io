@@ -1,6 +1,7 @@
 ---
-title: How to add custom sounds to MGSV The Phantom Pain
-permalink: /How_to_add_custom_sounds_to_MGSV_The_Phantom_Pain/
+title: How to add custom sounds
+permalink: /How_to_add_custom_sounds/
+tags: [Guides, Sound]
 ---
 
 In this article I'll be explaining how to change sounds in MGSV. This
@@ -265,5 +266,4 @@ You're done. Create a folder name it the name of your mod so for example
 I'll call mine "soundmod" I'll now create these folders:
 Soundmod\\Assets\\tpp\\sound then in the sound folder I place the
 common_bank_01.sbp. From here simply pack the file with snakebite then
-you're done. [Category:Guides](/Category:Guides "wikilink")
-[Category:Sound](/Category:Sound "wikilink")
+you're done.

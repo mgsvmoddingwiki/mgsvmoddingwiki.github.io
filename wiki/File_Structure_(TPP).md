@@ -1,6 +1,6 @@
 ---
-title: File Structure (Metal Gear Solid V: The Phantom Pain)
-permalink: /File_Structure_(Metal_Gear_Solid_V-_The_Phantom_Pain)/
+title: File Structure (TPP)
+permalink: /File_Structure_(TPP)/
 tags: [Files, Reference]
 ---
 

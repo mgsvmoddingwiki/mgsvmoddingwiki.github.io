@@ -1,6 +1,7 @@
 ---
 title: NTA
 permalink: /NTA/
+tags: [File Formats, Missions, Nav]
 ---
 
 A **.nta** file specifies the locations of traversal actions in the
@@ -48,5 +49,4 @@ metadata section.
 ### Hash table
 
 There is one StrCode64 hash for each entry here. Perhaps a name for each
-entry? [Category:File Formats](/Category:File_Formats "wikilink")
-[Category:Level](/Category:Level "wikilink")
+entry?

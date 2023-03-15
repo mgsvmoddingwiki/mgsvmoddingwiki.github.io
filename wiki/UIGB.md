@@ -1,6 +1,7 @@
 ---
 title: UIGB
 permalink: /UIGB/
+tags: [File Formats, UI]
 ---
 
 The .uigb format is a binary file format used in Fox Engine to store a
@@ -143,6 +144,3 @@ refers exclusively to TPP.
   - 0x2C - 0x2F (uint32): Number of bytes in Section 5.
   - 0x30 - 0x33 (uint32): Unknown.
   - 0x34 - 0x37 (uint32): Section 5 offset.
-
-[Category:File Formats](/Category:File_Formats "wikilink")
-[Category:UI](/Category:UI "wikilink")

@@ -1,6 +1,7 @@
 ---
 title: Messages
 permalink: /Messages/
+tags: [Lua, Reference]
 ---
 
 Message systems are a somewhat common design pattern.
@@ -650,6 +651,3 @@ Sender → MessageID → Arguments
 ## sources
 
 <https://github.com/unknown321/mgsvdump/blob/master/tpp/sequences/messages_for_sequences.lua>
-
-[Category:Lua](/Category:Lua "wikilink")
-[Category:Engine](/Category:Engine "wikilink")

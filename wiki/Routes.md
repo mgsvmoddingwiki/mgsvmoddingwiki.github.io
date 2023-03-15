@@ -1,6 +1,7 @@
 ---
-title: Route findings
-permalink: /Route_findings/
+title: Routes
+permalink: /Routes/
+tags: [Routes, Level]
 ---
 
 If you discover anything interesting or useful about routes or route

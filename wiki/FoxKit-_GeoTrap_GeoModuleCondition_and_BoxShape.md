@@ -1,7 +1,7 @@
 ---
-title: Foxkit: GeoTrap, GeoModuleCondition and BoxShape
-permalink: /Foxkit-_GeoTrap,_GeoModuleCondition_and_BoxShape/
-tags: [FoxKit, Guides, Geo]
+title: FoxKit: GeoTrap, GeoModuleCondition and BoxShape
+permalink: /FoxKit-_GeoTrap_GeoModuleCondition_and_BoxShape/
+tags: [FoxKit, Guides, Entities, Geo]
 ---
 
 Guide for FoxKit 1.0.

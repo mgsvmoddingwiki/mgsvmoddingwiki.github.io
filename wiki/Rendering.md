@@ -1,6 +1,7 @@
 ---
-title: Graphics
-permalink: /Graphics/
+title: Rendering
+permalink: /Rendering/
+tags: [Rendering, Reference]
 ---
 
 ## Shaders
@@ -33,6 +34,3 @@ links.
     names](https://gist.github.com/youarebritish/5d4f8cd252bc8a9c1ebff00590aad091)
   - [Texture type
     names](https://gist.github.com/youarebritish/62ea8a552143a7f70da19be23db6c4c3)
-
-[Category:Guides](/Category:Guides "wikilink")
-[Category:Rendering](/Category:Rendering "wikilink")

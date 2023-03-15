@@ -1,6 +1,7 @@
 ---
 title: Steam Deck
 permalink: /Steam_Deck/
+tags: [Guides]
 ---
 
 Quick guide to using Snakebite for the deck.
@@ -35,5 +36,3 @@ to install your downloaded mods.
 
 NOTE: You will have to repeat this process every time you wish to open
 SnakeBite, at least for now.
-[Category:Guides](/Category:Guides "wikilink") [Category:Getting
-Started](/Category:Getting_Started "wikilink")

@@ -1,6 +1,7 @@
 ---
 title: Textures
 permalink: /Textures/
+tags: [Rendering]
 ---
 
 ## The basics: PBR
@@ -32,5 +33,3 @@ They're very similar to diffuse maps from previous shading models, with
 one exception: you should have the least amount of pre-baked
 lighting/shadowing informations possible, like pre-baked Ambient
 Occlusion, as this is handled through a bespoke map.
-[Category:Guides](/Category:Guides "wikilink")
-[Category:Rendering](/Category:Rendering "wikilink")

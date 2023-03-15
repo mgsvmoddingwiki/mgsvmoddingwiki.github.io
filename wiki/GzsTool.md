@@ -1,6 +1,7 @@
 ---
 title: GzsTool
 permalink: /GzsTool/
+tags: [Tools, File Tools]
 ---
 
 GzsTool is an open-source archive unpacker and repacker for Metal Gear
@@ -78,6 +79,3 @@ GzsTool a *-d* argument.
 | Hash Extension      | \-d -he \<extension (without *.*)\> | Produces the digits that when binary left-shifted by 51 then binary ored with the filename, will produce the filename's hash with extension. |
 | Hash With Extension | \-d hwe \<filename with extension\> | Produces the hashed version of a given filename with its extension included.                                                                 |
 | Hash Legacy         | \-d -hl                             | Uses the legacy hash function, which is still used in TPP to hash most strings.                                                              |
-
-[Category:Tools](/Category:Tools "wikilink") [Category:File
-Tools](/Category:File_Tools "wikilink")

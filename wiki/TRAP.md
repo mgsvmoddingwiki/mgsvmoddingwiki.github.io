@@ -1,6 +1,7 @@
 ---
 title: TRAP
 permalink: /TRAP/
+tags: [File Formats, Level, Geo]
 ---
 
 **TRAP**, or GeoTrapFile, is a format used in Metal Gear Solid V: The
@@ -152,8 +153,3 @@ of those functions at once).
 | 00 00 00 10            | 7A 0B D2 65      | TBA                                                                                                                                                                      |
 | 00 00 00 20            | E3 B7 9C BA      | TBA                                                                                                                                                                      |
 | 00 00 00 40            | NoFulton         | TBA                                                                                                                                                                      |
-
-[Category:File Formats](/Category:File_Formats "wikilink")
-[Category:Metal Gear Solid V: The Phantom
-Pain](/Category:Metal_Gear_Solid_V:_The_Phantom_Pain "wikilink")
-[Category:Level](/Category:Level "wikilink")

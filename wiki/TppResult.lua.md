@@ -1,6 +1,7 @@
 ---
 title: TppResult.lua
 permalink: /TppResult.lua/
+tags: [Lua, Missions]
 ---
 
 **TppResult.lua**
@@ -92,9 +93,5 @@ added onto this. See the array e.MISSION_GUARANTEE_GMP and uses the
 format \[<missioncode>=<NumberInScientificNotation>\]
 
 <references />
-
-[Category:Lua](/Category:Lua "wikilink")
-[Category:Missions](/Category:Missions "wikilink")
-[Category:Guides](/Category:Guides "wikilink")
 
 1.  <https://metalgearmodding.fandom.com/wiki/MissionCodes>

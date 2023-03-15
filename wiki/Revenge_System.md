@@ -1,6 +1,7 @@
 ---
 title: Revenge System
 permalink: /Revenge_System/
+tags: [Lua, Missions]
 ---
 
 A rough rundown of the Revenge system, otherwise known as the Enemy
@@ -125,6 +126,4 @@ revenge level.
 If you are doing total ghost, ie not interacting with enemies at all,
 then you're not actually increasing the system anyway and it will
 actually slowly decrease (the rate of that is actually something that
-might want to be analyzed). [Category:Lua](/Category:Lua "wikilink")
-[Category:Missions](/Category:Missions "wikilink")
-[Category:Guides](/Category:Guides "wikilink")
+might want to be analyzed).

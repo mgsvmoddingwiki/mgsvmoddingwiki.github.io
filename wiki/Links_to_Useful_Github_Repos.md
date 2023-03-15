@@ -1,6 +1,7 @@
 ---
 title: Links to Useful Github Repos
 permalink: /Links_to_Useful_Github_Repos/
+tags: [Tools, Reference]
 ---
 
 Below is a list of useful links to GitHub repositories, mostly for
@@ -42,8 +43,3 @@ historical and documentation purposes.
 </tr>
 </tbody>
 </table>
-
-__NOTOC__ [Category:References](/Category:References "wikilink")
-[Category:Github](/Category:Github "wikilink")
-[Category:Tools](/Category:Tools "wikilink") [Category:Tool
-Resources](/Category:Tool_Resources "wikilink")

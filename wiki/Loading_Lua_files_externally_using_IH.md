@@ -1,6 +1,7 @@
 ---
 title: Loading Lua files externally using IH
 permalink: /Loading_Lua_files_externally_using_IH/
+tags: [Lua, Infinite Heaven, Guides]
 ---
 
 ## Using IH to load lua files externally (in MGS_TPP\\mod) instead of internally (in dat or fpkd)
@@ -79,6 +80,3 @@ and it will used the edited lua.
 For sideops scripts just exit the sideops loadArea, edit your external
 lua then return to the sideop loadArea, and it should load your external
 lua.
-
-[Category:Lua](/Category:Lua "wikilink") [Category:Infinite
-Heaven](/Category:Infinite_Heaven "wikilink")

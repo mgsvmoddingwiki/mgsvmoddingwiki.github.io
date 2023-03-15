@@ -1,6 +1,7 @@
 ---
 title: Mission Objectives
 permalink: /Mission_Objectives/
+tags: [Guides, Missions, Lua]
 ---
 
 This page describes how to use mission objectives in missions, including
@@ -535,9 +536,3 @@ TppMission.UpdateObjective{
     },
 }
 ```
-
-[Category:Mission Design](/Category:Mission_Design "wikilink")
-[Category:Guides](/Category:Guides "wikilink")
-[Category:Foxkit](/Category:Foxkit "wikilink")
-[Category:Lua](/Category:Lua "wikilink")
-[Category:Missions](/Category:Missions "wikilink")

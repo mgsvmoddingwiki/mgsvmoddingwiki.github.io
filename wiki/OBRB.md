@@ -1,6 +1,7 @@
 ---
 title: OBRB
 permalink: /OBRB/
+tags: [Level, File Formats]
 ---
 
 Not much is known about this file type other than it's association with
@@ -14,6 +15,4 @@ manipulation of this file type.
 Simple working theory is that the reason why these file types share the
 same structure is because they were key level editor objects, so the
 designer responsible for designing the back-end for map design must have
-engineered these files. [Category:File
-Formats](/Category:File_Formats "wikilink")
-[Category:Level](/Category:Level "wikilink")
+engineered these files.

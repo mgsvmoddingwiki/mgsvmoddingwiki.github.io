@@ -1,6 +1,7 @@
 ---
 title: MissionCodes
 permalink: /MissionCodes/
+tags: [Missions, Reference]
 ---
 
 ## Overview
@@ -487,6 +488,4 @@ tpp_quest.eng.lng2
 
 xentax
 
-reddit [Category:Lua](/Category:Lua "wikilink")
-[Category:Guides](/Category:Guides "wikilink")
-[Category:Missions](/Category:Missions "wikilink")
+reddit

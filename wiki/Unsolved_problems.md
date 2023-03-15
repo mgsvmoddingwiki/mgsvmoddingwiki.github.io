@@ -1,6 +1,7 @@
 ---
 title: Unsolved problems
 permalink: /Unsolved_problems/
+tags: [Reference]
 ---
 
 While a lot of progress has been made in modding MGSV since its release,
@@ -73,5 +74,3 @@ undocumented. This limits animation editing to swapping files.
 It is unknown how Ocelot's dual-wielding mechanic is triggered, making
 it impossible to dual-wield the Tornadoes in mods that allow him to be
 used outside of FOB missions.
-[Category:Guides](/Category:Guides "wikilink")
-[Category:References](/Category:References "wikilink")

@@ -1,6 +1,7 @@
 ---
 title: GeoxPath2
 permalink: /GeoxPath2/
+tags: [Entities, FoxKit, Geo]
 ---
 
 **GeoxPath2** entity makes it possible to create nodes on the map where
@@ -26,7 +27,7 @@ The **Fence** tag seems to work if the nodes are in a horizontal line,
 same for **Elude** and **Jump**. But things like the **climb** tag works
 with the nodes in a vertical position too.
 
-Foxkit can build GeoxPath2, but is missing the choice to order the nodes
+FoxKit can build GeoxPath2, but is missing the choice to order the nodes
 with the edges for now. The user has to manually edit the **Outlink**
 and the **Edges** address in its XML file instead. See the image below
 to understand how it works.
@@ -96,5 +97,3 @@ face the player action and therefore the Action will only occurs in that
 side even for Jump and Elude. Behind is the only one that need to be
 lower, at the bottom of model/wall.
 [left|830x830px](/File:AxisGeoxPath2.jpg "wikilink")
-
-[Category:Entities](/Category:Entities "wikilink")

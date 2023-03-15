@@ -1,6 +1,7 @@
 ---
-title: Fx nodes
-permalink: /Fx_nodes/
+title: Fx Nodes
+permalink: /Fx_Nodes/
+tags: [Effects, Reference]
 ---
 
 There are a large number of nodes used in [VFX](/VFX "wikilink") files,
@@ -427,7 +428,3 @@ Example: fx_tpp_chrwmueye01_s0.vfx
   - unknownUint1 (uint32)
   - unknownUint2 (uint32)
   - unknownUint3 (uint32)
-
-[Category:VFX](/Category:VFX "wikilink")
-[Category:Rendering](/Category:Rendering "wikilink")
-[Category:Guides](/Category:Guides "wikilink")

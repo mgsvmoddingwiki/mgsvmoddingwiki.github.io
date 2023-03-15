@@ -1,6 +1,7 @@
 ---
-title: Notable Tools
-permalink: /Notable_Tools/
+title: Tools
+permalink: /Tools/
+tags: [Tools, Reference]
 ---
 
   - [AutoPftxs](https://github.com/BobDoleOwndU/AutoPftxsTool)
@@ -11,8 +12,3 @@ permalink: /Notable_Tools/
   - [FtexTool](https://github.com/Atvaark/FtexTool)
   - [FvTwool](https://github.com/BobDoleOwndU/FvTwool)
   - [GzsTool](https://github.com/Atvaark/GzsTool)
-
-
-[Category:Links](/Category:Links "wikilink")
-[Category:Tools](/Category:Tools "wikilink") [Category:Tool
-Resources](/Category:Tool_Resources "wikilink")

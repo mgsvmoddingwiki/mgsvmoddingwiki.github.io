@@ -1,7 +1,7 @@
 ---
-title: Foxkit: StaticModel and GeoxCollisionFreeShape
-permalink: /Foxkit-_StaticModel_and_GeoxCollisionFreeShape/
-tags: [FoxKit, Guides, Files, Models, Geo]
+title: FoxKit: StaticModel and GeoxCollisionFreeShape
+permalink: /FoxKit-_StaticModel_and_GeoxCollisionFreeShape/
+tags: [FoxKit, Guides, Files, Entities, Models, Geo]
 ---
 
 Guide for FoxKit 1.0.
@@ -12,16 +12,16 @@ that might be useful for some that add a small collision shape with
 eight points.
 
 
-{| class="article-table" |+The other FoxKit Tutorials \![Foxkit:
+{| class="article-table" |+The other FoxKit Tutorials \![FoxKit:
 Installing, Import Files and
-Terrain](/Foxkit:_Installing,_Import_Files_and_Terrain "wikilink") |-
-|[**Foxkit: TppPrimRiverModel, TppWaterBounding, TppTextureLoader and
-FxLocatorData**](/Foxkit:_TppPrimRiverModel,_TppWaterBounding,_TppTextureLoader_and_FxLocatorData "wikilink")
-|- |**[Foxkit:
-TppSharedGimmickData](/Foxkit:_TppSharedGimmickData "wikilink")** |}
+Terrain](/FoxKit:_Installing,_Import_Files_and_Terrain "wikilink") |-
+|[**FoxKit: TppPrimRiverModel, TppWaterBounding, TppTextureLoader and
+FxLocatorData**](/FoxKit:_TppPrimRiverModel,_TppWaterBounding,_TppTextureLoader_and_FxLocatorData "wikilink")
+|- |**[FoxKit:
+TppSharedGimmickData](/FoxKit:_TppSharedGimmickData "wikilink")** |}
 \==**Setting the Mod Folder**== Before anything else, let's create a
 folder structure for the Mod we will call as "LoadingStairsInGame". Do
-it outside of Unity Foxkit for now.
+it outside of Unity FoxKit for now.
 
 **LoadingStairsInGame/Assets/tpp/pack/location/afgh/pack_common/...**
 Inside the pack_common should have two packages.
@@ -48,8 +48,8 @@ Unity.
 **afgh_common_fpkd/Assets/tpp/level/location/afgh/block_common/**
 Copy this folder structure in Unity. It should be like the image below.
 No need to copy the fpk if the user already load the assets in the guide
-[Foxkit: Installing, Import Files and
-Terrain](/Foxkit:_Installing,_Import_Files_and_Terrain "wikilink").
+[FoxKit: Installing, Import Files and
+Terrain](/FoxKit:_Installing,_Import_Files_and_Terrain "wikilink").
 
 [<File:FolderEstrutura03.jpg>](/File:FolderEstrutura03.jpg "wikilink")
 
@@ -166,7 +166,7 @@ Done. Now test it. Do the .mgsv file in Makebite building the
 **LoadingStairsInGame folder.** Open with Snakebite and see it in game.
 One thing to remember. Save a scene in Unity. When exit the software,
 don't forget to close the DataSet in Data List Window. It may cause
-issues after you open again Foxkit with any DataSet still hangout in
+issues after you open again FoxKit with any DataSet still hangout in
 DataListWindow.
 
 [border|587x587px](/File:AssetInGame.jpg "wikilink")
@@ -192,7 +192,7 @@ next to the Stairs.
 **Chara** and **Recoil**. **All** works fine.
 
 3 - CollisionMaterial is greyed here. Currently not a option to edit in
-Foxkit 1.0. That we'll edit later manually using Fox2 tool to generate a
+FoxKit 1.0. That we'll edit later manually using Fox2 tool to generate a
 xml. MTR_NONE_A is a good choice. The user can find more types in
 <https://github.com/unknown321/mgsv_lua_dump/blob/0e236d1180b35d70203e10605cfa7cfe631e2a74/tpp/master/data1/Assets/tpp/level_asset/weapon/ParameterTables/RecoilMaterial/RecoilMaterialTable.lua>
 

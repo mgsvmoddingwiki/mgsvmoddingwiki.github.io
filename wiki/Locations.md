@@ -1,6 +1,7 @@
 ---
 title: Locations
 permalink: /Locations/
+tags: [Locations, Reference]
 ---
 
 A location is part of the system that represents a map/playspace. For a
@@ -78,8 +79,7 @@ afgh_waterway
 
 ### <u>Outposts (op)</u>
 
-[afgh_citadelSouth
-(1)](https://metalgearmodding.fandom.com/wiki/Afgh_citadelSouth_%281%29)
+afgh_citadelSouth (1)
 
 afgh_sovietSouth (2)
 
@@ -275,6 +275,4 @@ scripts and some environmental models in Metal Gear Survive.
 
 TBA
 
-locationId - 70 [Category:Locations](/Category:Locations "wikilink")
-[Category:References](/Category:References "wikilink")
-[Category:Guides](/Category:Guides "wikilink")
+locationId - 70

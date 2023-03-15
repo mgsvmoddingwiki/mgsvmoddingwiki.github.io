@@ -1,6 +1,7 @@
 ---
 title: FsmTool
 permalink: /FsmTool/
+tags: [Tools, File Tools, Cutscenes]
 ---
 
 FsmTool is open-source unpacker and repacker for Metal Gear Solid V: The
@@ -20,5 +21,3 @@ the folder containing the chunks.
 To repack a .fsm file, the user needs to drag an output .xml file onto
 the tool. The tool will read the file list from the .xml and repack the
 .fsm file based on that list.
-[Category:Tools](/Category:Tools "wikilink") [Category:File
-Tools](/Category:File_Tools "wikilink")

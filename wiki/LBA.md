@@ -1,6 +1,7 @@
 ---
 title: LBA
 permalink: /LBA/
+tags: [File Formats, Missions]
 ---
 
 The .lba file format is a binary file format used in GZ and TPP to store
@@ -146,9 +147,6 @@ ScaledGimmickLocatorSets, has one entry for each locator.
 ## References
 
 <references />
-
-[Category:File Formats](/Category:File_Formats "wikilink")
-[Category:Level](/Category:Level "wikilink")
 
 1.  Assets\\tpp\\level\\mission2\\story\\s10070\\s10070_gimmick.fox2
 2.  <https://github.com/TinManTex/MockFox/blob/cd6d825ed01982e99f341c5ced4d330a768855e2/MockFoxLua/MockFoxEngine.lua#L285>

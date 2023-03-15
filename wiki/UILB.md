@@ -1,6 +1,7 @@
 ---
 title: UILB
 permalink: /UILB/
+tags: [File Formats, UI]
 ---
 
 UILB (UI Library?) files are used in MGS:V for UI element layouts such
@@ -69,6 +70,3 @@ hash.[thumb|320x320px|centre](/File:Corrupted_uilb.png "wikilink")
     part of the data of a UILB file with something incorrect (we don't
     know the difference between correct-incorrect right now) also yields
     the same result (or it becomes completely invisible).
-
-[Category:File Formats](/Category:File_Formats "wikilink")
-[Category:UI](/Category:UI "wikilink")

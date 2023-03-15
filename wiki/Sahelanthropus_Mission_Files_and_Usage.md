@@ -1,6 +1,7 @@
 ---
 title: Sahelanthropus Mission Files and Usage
 permalink: /Sahelanthropus_Mission_Files_and_Usage/
+tags: [Missions, Reference]
 ---
 
 # Sahelanthropus Boss Battle Mission Files
@@ -64,5 +65,4 @@ ends the mission, safe to say, its the core of the mission.
 
 ## sxxxxx_sequence.fox2
 
-Controls checkpoints used in the mission [Category:Mission
-Design](/Category:Mission_Design "wikilink")
+Controls checkpoints used in the mission

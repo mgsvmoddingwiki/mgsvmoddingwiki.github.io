@@ -1,6 +1,7 @@
 ---
 title: MTAR
 permalink: /MTAR/
+tags: [File Formats, Animation]
 ---
 
 The .mtar or **M**o**t**ion **Ar**chive, is the archive format used to
@@ -102,6 +103,3 @@ Entries immediately follow after the number of entries. Each entry is
     0xFC50000000000000 from the hashed filename value. I.e. if the
     listed value is 0xFC53AFFADA200C63, subtract 0xFC50000000000000 to
     get 0x3AFFADA200C63. The file's name would be 3AFFADA200C63.gani.
-
-[Category:File Formats](/Category:File_Formats "wikilink")
-[Category:Animation](/Category:Animation "wikilink")

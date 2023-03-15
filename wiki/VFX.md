@@ -1,6 +1,7 @@
 ---
 title: VFX
 permalink: /VFX/
+tags: [File Formats, Effects]
 ---
 
 [thumb|220x220px|The Fx editor in Fox
@@ -69,6 +70,3 @@ The nodes are followed by the graph edges, which connect nodes together.
   - 0x3 (byte): Source port index.
   - 0x4 (byte): Target port type.
   - 0x5 (byte): Target port index.
-
-[Category:File Formats](/Category:File_Formats "wikilink")
-[Category:VFX](/Category:VFX "wikilink")

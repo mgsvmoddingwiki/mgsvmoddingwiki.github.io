@@ -1,6 +1,7 @@
 ---
-title: UAV: Setting to a Side-Ops
-permalink: /UAV-_Setting_to_a_Side-Ops/
+title: Using UAVs in Side-Ops
+permalink: /Using_UAVs_in_Side_Ops/
+tags: [Guides, Missions, FoxKit]
 ---
 
 ## **UAV**
@@ -207,6 +208,3 @@ parameters = TppUavParameter
 `      `</staticProperties>
 `      `<dynamicProperties />
 `    `</entity>
-
-[Category:Guides](/Category:Guides "wikilink")
-[Category:Foxkit](/Category:Foxkit "wikilink")

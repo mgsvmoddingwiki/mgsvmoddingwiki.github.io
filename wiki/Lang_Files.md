@@ -1,6 +1,7 @@
 ---
 title: Lang Files
 permalink: /Lang_Files/
+tags: [Lang]
 ---
 
 lng/lng2 files aka lang files are lists of strings used for localization
@@ -182,6 +183,4 @@ Lngs in Assets\\lang\\ui:
 \-tpp_database:
 
 Contains all descriptions of Key Items, Photos and Codenames in the
-database. [Category:File Formats](/Category:File_Formats "wikilink")
-[Category:UI](/Category:UI "wikilink")
-[Category:Files](/Category:Files "wikilink")
+database.

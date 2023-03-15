@@ -1,6 +1,7 @@
 ---
 title: FTEX FTEXS
 permalink: /FTEXS/
+tags: [File Formats, Rendering]
 ---
 
 The .ftex format is a binary format used in conjunction with a variable
@@ -226,6 +227,3 @@ Gimp is similar.
     1.  This image will look different than one from the game, that's
         fine though it still functions as it should. Save it as a DDS,
         and then convert it with ftex tool.
-
-[Category:File Formats](/Category:File_Formats "wikilink")
-[Category:Textures](/Category:Textures "wikilink")
