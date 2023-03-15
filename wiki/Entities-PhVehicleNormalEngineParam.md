@@ -1,5 +1,5 @@
 ---
-title: Entities:PhVehicleNormalEngineParam
+title: PhVehicleNormalEngineParam
 permalink: /Entities-PhVehicleNormalEngineParam/
 tags: [Entities, Reference]
 ---

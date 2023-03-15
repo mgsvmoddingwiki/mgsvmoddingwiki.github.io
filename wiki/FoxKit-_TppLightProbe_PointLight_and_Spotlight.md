@@ -1,5 +1,5 @@
 ---
-title: FoxKit: TppLightProbe, PointLight and Spotlight
+title: FoxKit - TppLightProbe, PointLight and Spotlight
 permalink: /FoxKit-_TppLightProbe_PointLight_and_Spotlight/
 tags: [FoxKit, Guides, Entities, Rendering]
 ---

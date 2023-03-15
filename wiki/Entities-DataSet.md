@@ -1,5 +1,5 @@
 ---
-title: Entities:DataSet
+title: DataSet
 permalink: /Entities-DataSet/
 tags: [Entities, Reference]
 ---

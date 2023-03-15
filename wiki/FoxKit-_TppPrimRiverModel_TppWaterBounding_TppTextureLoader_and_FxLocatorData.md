@@ -1,5 +1,5 @@
 ---
-title: FoxKit: TppPrimRiverModel, TppWaterBounding, TppTextureLoader and FxLocatorData
+title: TppPrimRiverModel, TppWaterBounding, TppTextureLoader and FxLocatorData
 permalink: /FoxKit-_TppPrimRiverModel_TppWaterBounding_TppTextureLoader_and_FxLocatorData/
 tags: [FoxKit, Entities, Guides, Rendering]
 ---

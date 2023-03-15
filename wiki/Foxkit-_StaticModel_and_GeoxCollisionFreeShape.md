@@ -1,5 +1,5 @@
 ---
-title: FoxKit: StaticModel and GeoxCollisionFreeShape
+title: FoxKit - StaticModel and GeoxCollisionFreeShape
 permalink: /FoxKit-_StaticModel_and_GeoxCollisionFreeShape/
 tags: [FoxKit, Guides, Files, Entities, Models, Geo]
 ---

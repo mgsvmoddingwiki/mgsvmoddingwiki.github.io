@@ -1,5 +1,5 @@
 ---
-title: Entities:PhxVehicleNormalEngine
+title: Entities - PhxVehicleNormalEngine
 permalink: /Entities-PhxVehicleNormalEngine/
 tags: [Entities, Reference]
 ---

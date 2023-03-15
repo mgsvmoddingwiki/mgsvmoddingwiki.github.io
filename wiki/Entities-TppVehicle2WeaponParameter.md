@@ -1,5 +1,5 @@
 ---
-title: Entities:TppVehicle2WeaponParameter
+title: Entities - TppVehicle2WeaponParameter
 permalink: /Entities-TppVehicle2WeaponParameter/
 tags: [Entities, Reference]
 ---

@@ -1,5 +1,5 @@
 ---
-title: Entities:PhxVehicleAxis
+title: PhxVehicleAxis
 permalink: /Entities-PhxVehicleAxis/
 tags: [Entities, Reference]
 ---

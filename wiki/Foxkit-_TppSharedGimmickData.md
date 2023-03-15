@@ -1,5 +1,5 @@
 ---
-title: FoxKit: TppSharedGimmickData
+title: TppSharedGimmickData
 permalink: /FoxKit-_TppSharedGimmickData/
 tags: [FoxKit, Entities, Guides]
 ---

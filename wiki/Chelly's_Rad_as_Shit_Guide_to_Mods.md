@@ -1,6 +1,6 @@
 ---
-title: User blog:BananaChelly Chelly's Rad as Shit Guide to Mods
-permalink: /User_blog-BananaChelly/Chelly's_Rad_as_Shit_Guide_to_Mods/
+title: Chelly's Rad as Shit Guide to Mods
+permalink: /Chelly's_Rad_as_Shit_Guide_to_Mods/
 tags: [Guides]
 ---
 

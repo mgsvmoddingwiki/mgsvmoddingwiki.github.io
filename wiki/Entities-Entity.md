@@ -1,5 +1,5 @@
 ---
-title: Entities:Entity
+title: Entities - Entity
 permalink: /Entities-Entity/
 tags: [Entities, Reference]
 ---

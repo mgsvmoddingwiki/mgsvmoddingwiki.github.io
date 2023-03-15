@@ -14,7 +14,7 @@ structure and mimics the game's directory structure.
 
 Installation procedures and a basic modification tutorial can be
 referenced
-[here.](/FoxKit:_Installing,_Import_Files_and_Terrain "wikilink")
+[here.](/FoxKit:_Installing_Import_Files_and_Terrain "wikilink")
 
 Currently FoxKit handles these file types:
 
