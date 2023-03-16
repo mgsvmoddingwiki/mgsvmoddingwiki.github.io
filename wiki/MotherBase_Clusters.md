@@ -133,20 +133,26 @@ You can derive the layout pack using TppPackList.AddFOBLayout
 
 MB:
 
-`local
-layoutPack="/Assets/tpp/pack/mission2/"..missionTypeName.."/"..missionCodeName.."/"..missionCodeName..string.format("_ly%03d",vars.mbLayoutCode)..".fpk"`
+```lua
+local
+layoutPack="/Assets/tpp/pack/mission2/"..missionTypeName.."/"..missionCodeName.."/"..missionCodeName..string.format("_ly%03d",vars.mbLayoutCode)..".fpk"
+```
 
 FOB:
 
-<code>local
+```lua
+local
 layoutPath="/Assets/tpp/pack/mission2/"..missionTypeName.."/"..missionCodeName.."/"..missionCodeName..string.format"_area_ly%03d",vars.mbLayoutCode)
 
-..".fpk"</code>
+..".fpk"
+```
 
 FOB also has clusterLayoutPack:
 
-`local
-clusterLayoutPack=layoutPath..string.format("_cl%02d",clusterId)..".fpk"`
+```lua
+local
+clusterLayoutPack=layoutPath..string.format("_cl%02d",clusterId)..".fpk"
+```
 
 Layouts use the packs `/pack/location/mtbs/pack_layout/mtbs_layout_[5
 number layoutCode].fpk` to define the placement and types of clusters of
