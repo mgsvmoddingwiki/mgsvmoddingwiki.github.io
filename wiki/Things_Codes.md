@@ -21,9 +21,8 @@ Heaven MGS_TPP\\mod\\modules\\InfBodyInfo.lua bodyInfo table and the
 annotated Solier2FaceAndBodyData.lua from IH or the Deminified data1
 luas.
 
-|      |                                                                       |
-| ---- | --------------------------------------------------------------------- |
 | code | description                                                           |
+| ---- | --------------------------------------------------------------------- |
 | avm  | Avatar Male                                                           |
 | cdt  | Code Talker                                                           |
 | chd  | Child                                                                 |
@@ -70,9 +69,8 @@ luas.
 
 ### animals (chara)
 
-|      |                                                                                                                        |
-| ---- | ---------------------------------------------------------------------------------------------------------------------- |
 | code | description                                                                                                            |
+| ---- | ---------------------------------------------------------------------------------------------------------------------- |
 | cns  | jackal variant - sole example f30150_fpk\\Assets\\tpp\\chara\\cns\\Scenes\\cns0_main0_def.fmdl, some animal i guess |
 | ddg  | D-Dog (both grown and puppy)                                                                                           |
 | hrs  | D-Horse                                                                                                                |
@@ -106,9 +104,8 @@ luas.
 
 ### mecha
 
-|      |                                                                           |
-| ---- | ------------------------------------------------------------------------- |
 | code | description                                                               |
+| ---- | ------------------------------------------------------------------------- |
 | aip  | AI Pod                                                                    |
 | amb  | Ambulance                                                                 |
 | bik  | Bike - sole instance s10010_s06                                          |
@@ -141,9 +138,8 @@ luas.
 
 ### item
 
-|      |                                                                                |
-| ---- | ------------------------------------------------------------------------------ |
 | code | description                                                                    |
+| ---- | ------------------------------------------------------------------------------ |
 | alm  | FOB theft Alarm.                                                               |
 | bfg  | Burial flag - DDog flag in military burial triangle, sole use s10240_d03_fpk |
 | bin  | Binoculars                                                                     |
@@ -200,9 +196,8 @@ luas.
 
 ### weapons
 
-|      |                                                  |
-| ---- | ------------------------------------------------ |
 | code | description                                      |
+| ---- | ------------------------------------------------ |
 | amo  | Ammo                                             |
 | asr  | Assault Rifle                                    |
 | bar  | Barrel                                           |
@@ -230,16 +225,14 @@ luas.
 
 ### vfx_effect
 
-|      |             |
-| ---- | ----------- |
 | code | description |
+| ---- | ----------- |
 | chf  | Chaff?      |
 
 ## Environment
 
-|               |                                     |
-| ------------- | ----------------------------------- |
 | code          | description                         |
+| ------------- | ----------------------------------- |
 | cypr_ship001 | trawler /                           |
 | cypr_ship002 | small fishing/pilot                 |
 | cypr_ship003 | container ship                      |
@@ -262,14 +255,12 @@ aa radar
 
 cargo container
 
-##
-GZ
+## GZ
 
 ### chara
 
-|      |                                    |  |  |
-| ---- | ---------------------------------- |  |  |
 | code | description                        |  |  |
+| ---- | ---------------------------------- |  |  |
 | dar  | DARPA Chief - e20060_area_fpkd   |  |  |
 | bkr  | President Baker                    |  |  |
 | gns  | Genome Soldier                     |  |  |
@@ -290,9 +281,8 @@ GZ
 
 ## Locations
 
-|               |                                                                                      |            |
-| ------------- | ------------------------------------------------------------------------------------ | ---------- |
 | code          | description                                                                          | locationId |
+| ------------- | ------------------------------------------------------------------------------------ | ---------- |
 | afgh          | Northern Kabul, Afghanistan                                                          | 10         |
 | ssd_afgh     | Northern Kabul, Afghanistan (Metal Gear Survive)                                     | 15         |
 | aftr          | Northern Kabul, Afghanistan (Metal Gear Survive, "After?" .fstb is only afgh_base2) | 16         |
@@ -333,9 +323,8 @@ GZ
 
 ### chara
 
-|            |                                                                                       |
-| ---------- | ------------------------------------------------------------------------------------- |
 | code       | description                                                                           |
+| ---------- | ------------------------------------------------------------------------------------- |
 | arm        | Arm slot equipment                                                                    |
 | base       | Avatar dummy that shows off emotes that you have to pay for, also avatar base         |
 | body       | Body slot equipment                                                                   |
@@ -365,9 +354,8 @@ GZ
 Note: Both of ray and shh's textures don't seem to be in the mecha
 folder, but their fmdls are.
 
-|      |                              |
-| ---- | ---------------------------- |
 | code | description                  |
+| ---- | ---------------------------- |
 | aut  | TBA                          |
 | dnw  | Archaea Blade Trap           |
 | ftp  | Teleporter                   |
@@ -380,17 +368,15 @@ folder, but their fmdls are.
 
 ### Items
 
-|      |                                                 |
-| ---- | ----------------------------------------------- |
 | code | description                                     |
+| ---- | ----------------------------------------------- |
 | bos  | Japanese coffee drink BOSS™ (Product Placement) |
 | TBA  | TBA?                                            |
 
 ### Weapons
 
-|      |                                    |
-| ---- | ---------------------------------- |
 | code | description                        |
+| ---- | ---------------------------------- |
 | amo  | Ammo/Bullets                       |
 | asr  | Assault Rifles                     |
 | asw  | ? (contains a shotgun and handgun) |
