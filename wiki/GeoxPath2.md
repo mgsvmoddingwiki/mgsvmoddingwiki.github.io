@@ -41,28 +41,22 @@ second GeoxPathNode has a **Outlink** to the second edge, IF it exists.
 In the Image below there is only one GeoxPathEdge.
 [thumb|464x464px](/File:ClimbNodesEdges.jpg "wikilink") Take some time
 to look at the GeoxPath2 in
-'''\\Chunk2\\Assets\\tpp\\level\\location\\afgh\\block_large\\waterway\\afgh_waterway_path.fox2
-'''(found inside the '''afgh_waterway.fpkd '''in
-**\\Assets\\tpp\\pack\\location\\afgh\\pack_large**). Inside that, one
-GeoxPath2 uses a climb tag with three nodes and two edges. The first
+**\\Chunk2\\Assets\\tpp\\level\\location\\afgh\\block_large\\waterway\\afgh_waterway_path.fox2**(found inside the **afgh_waterway.fpkd** in **\\Assets\\tpp\\pack\\location\\afgh\\pack_large**). Inside that, one GeoxPath2 uses a climb tag with three nodes and two edges. The first
 node has an **Outlink** with the first edge. The second node has an
 **Outlink** with the first edge and the second edge. Finally, the third
 node has an **Outlink** with the second edge... Yeah it's quite
 confusing.
 
-Another setting of the GeoxPath2 is the **selectIndex**, which'''
-'''seems to have values similar to the amount of nodes or edges?... or
-the nodes + edges. But I lack any info about it. So far a number equal
-to the amount of nodes make it
+Another setting of the GeoxPath2 is the **selectIndex**, which seems to have values similar to the amount of nodes or edges?... or the nodes + edges. But I lack any info about it. So far a number equal to the amount of nodes make it
 [thumb|359pxwork](/File:Unknown.png "wikilink").
 
 This is the minimal info enough to start with the Entity GeoxPath2.
 
 Image
-reference: https://drive.google.com/uc?id=15ii6crOxoGsQ0jt_taA4fYuH16FOkwLL
+reference: [https://drive.google.com/uc?id=15ii6crOxoGsQ0jt_taA4fYuH16FOkwLL](https://cdn.discordapp.com/attachments/364177950805065732/713501348200710157/unknown.png)
 
 Image reference
-\#2: https://cdn.discordapp.com/attachments/364177950805065732/713501348200710157/unknown.png (it's
+\#2: [https://cdn.discordapp.com/attachments/364177950805065732/713501348200710157/unknown.png](https://cdn.discordapp.com/attachments/364177950805065732/713501348200710157/unknown.png) (it's
 the same as the 3rd image on this page)
 
 ## nodeTags[thumb|359x359px](/File:GeoxPath2ExampleFence.jpg "wikilink")
