@@ -27,16 +27,18 @@ arrays.
 
 ### specPointAngularVelocity
 
-    <property name="specPointAngularVelocity" type="float" container="DynamicArray" arraySize="8">
-      <value>0</value>
-      <value>1000</value>
-      <value>2000</value>
-      <value>3000</value>
-      <value>4000</value>
-      <value>5000</value>
-      <value>6000</value>
-      <value>12000</value>
-    </property>
+```lua
+<property name="specPointAngularVelocity" type="float" container="DynamicArray" arraySize="8">
+  <value>0</value>
+  <value>1000</value>
+  <value>2000</value>
+  <value>3000</value>
+  <value>4000</value>
+  <value>5000</value>
+  <value>6000</value>
+  <value>12000</value>
+</property>
+```
 
 Sets engine RPM range. Used in conjunction with specPointTorque to
 determine engine power at each RPM.
@@ -44,16 +46,18 @@ determine engine power at each RPM.
 
 ### specPointTorque
 
-    <property name="specPointTorque" type="float" container="DynamicArray" arraySize="8">
-      <value>190</value>
-      <value>208</value>
-      <value>230</value>
-      <value>250</value>
-      <value>260</value>
-      <value>220</value>
-      <value>160</value>
-      <value>20</value>
-    </property>
+```lua
+<property name="specPointTorque" type="float" container="DynamicArray" arraySize="8">
+  <value>190</value>
+  <value>208</value>
+  <value>230</value>
+  <value>250</value>
+  <value>260</value>
+  <value>220</value>
+  <value>160</value>
+  <value>20</value>
+</property>
+```
 
 Sets engine torque ranges. Used with specPointAngularVelocity to
 determine engine power at each RPM.
@@ -61,16 +65,18 @@ determine engine power at each RPM.
 
 ### specPointBreakTorque
 
-    <property name="specPointBreakTorque" type="float" container="DynamicArray" arraySize="8">
-      <value>12.5</value>
-      <value>22.5</value>
-      <value>37.5</value>
-      <value>42.5</value>
-      <value>62.5</value>
-      <value>75</value>
-      <value>100</value>
-      <value>50</value>
-    </property>
+```xml
+<property name="specPointBreakTorque" type="float" container="DynamicArray" arraySize="8">
+  <value>12.5</value>
+  <value>22.5</value>
+  <value>37.5</value>
+  <value>42.5</value>
+  <value>62.5</value>
+  <value>75</value>
+  <value>100</value>
+  <value>50</value>
+</property>
+```
 
 Presumably the amount of engine braking being done to naturally
 decelerate the vehicle at each RPM, once the throttle is no longer being
