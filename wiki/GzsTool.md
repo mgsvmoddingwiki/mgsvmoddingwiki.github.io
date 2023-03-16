@@ -22,11 +22,10 @@ GzsTool can unpack files simply by having an archive file dragged onto
 it. It can also unpack archives by command line, providing GzsTool the
 path to the file (example: *GzsTool Example.dat*). It will output all of
 the files contained in the archive into a folder named
-*<filename>_<extension>*, and an .xml file detailing all of the files
+*\<filename\>_\<extension\>*, and an .xml file detailing all of the files
 that were contained in the archive. GzsTool can also unpack all .fpk and
 .fpkd archives in a specified directory, by dragging the folder onto
-GzsTool, or specifying the directory in command line (example: *GzsTool
-C:\\Example\\Folder*).
+GzsTool, or specifying the directory in command line (example: *GzsTool C:\\Example\\Folder*).
 
 GzsTool utilizes a dictionary of filenames called *qar_dictionary.txt*.
 As it outputs files, it compares the hashes generated from this
