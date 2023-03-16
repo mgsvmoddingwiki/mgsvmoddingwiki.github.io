@@ -27,7 +27,7 @@ arrays.
 
 ### specPointAngularVelocity
 
-```lua
+```xml
 <property name="specPointAngularVelocity" type="float" container="DynamicArray" arraySize="8">
   <value>0</value>
   <value>1000</value>
@@ -46,7 +46,7 @@ determine engine power at each RPM.
 
 ### specPointTorque
 
-```lua
+```xml
 <property name="specPointTorque" type="float" container="DynamicArray" arraySize="8">
   <value>190</value>
   <value>208</value>
