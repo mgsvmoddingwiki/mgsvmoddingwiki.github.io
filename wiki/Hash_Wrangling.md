@@ -105,7 +105,7 @@ Gathering:
 
 Tpp: Using this fork of GzsTool <https://github.com/TinManTex/GzsTool>
 with the -OutputHashes option will output the hashes for the qar file to
-<filename>_pathHashes.txt
+\<filename\>_pathHashes.txt
 
 GZ: Not likely to be updated so the repository of hashes should be used,
 but if you want to verify: The GzsTool fork doesn't support GZ as
@@ -121,7 +121,7 @@ are however in <https://github.com/TinManTex/mgsv-lookup-strings>
 
 Gathering: Using this fork of MtarTool
 <https://github.com/TinManTex/MtarTool> with the -OutputHashes option
-will output the hashes for the qar file to <filename>_pathHashes.txt
+will output the hashes for the qar file to \<filename\>_pathHashes.txt
 
 ## Creating a test dictionary
 
@@ -151,21 +151,21 @@ purpose.
 Input \<hashes.txt\> - hashes to test \<strings.txt\> -
 dictionary/strings to test
 
-Output <hashes>_matchedHashes.txt - hashes that matched a string
-<hashes>_unmatchedHashes.txt - hashes that didn't match any strings
+Output \<hashes\>\_matchedHashes.txt - hashes that matched a string
+\<hashes\>\_unmatchedHashes.txt - hashes that didn't match any strings
 
-<strings>_matchedStrings.txt - strings that matched a hash, can be
+\<strings\>\_matchedStrings.txt - strings that matched a hash, can be
 considered the validated dictionary for the given input hashes.
-<strings>_matchedStrings.txt - strings that didn't match any hash
+\<strings\>\_matchedStrings.txt - strings that didn't match any hash
 
-_matchedHashes and _matchedStrings are output in paired order, so for
+\_matchedHashes and \_matchedStrings are output in paired order, so for
 a given line in one file it will match in the other.
 
-<strings>_HashStringMatches.txt - hash string pairs, useful as a manual
+\<strings\>\_HashStringMatches.txt - hash string pairs, useful as a manual
 human lookup or identifying the file names for files that were extracted
 prior to the name being found.
 
-<strings>_HashStringsCollisions.txt - hash strings pairs, input strings
+\<strings\>\_HashStringsCollisions.txt - hash strings pairs, input strings
 that resolved to the same input hash. If you can clearly determine which
 string is correct then add it to the validated dictionary and remove it
 from input strings for this set of hashes. If you can't decide which
@@ -194,8 +194,8 @@ LangTool\\Dictionaries\\MGSV-Lang-Dictionary-Project-2017-08-10 - Which
 had some strings added that don't apply to langIds as well as some
 string collisions.
 
-Command line for HashWrangler is HashWrangler <hashes file path>
-<strings file path> -HashFunction <hash function type>
+Command line for HashWrangler is HashWrangler \<hashes file path\>
+\<strings file path\> -HashFunction \<hash function type\>
 
 LangId uses StrCode32 which is HashWranglers default so we don't really
 need to add the option -HashFunction StrCode32
@@ -232,13 +232,13 @@ One string for each hash needs to be chosen for the dictionary, but
 which is correct? First we'll run LangTool with our new
 langIdHashesTpp-1.0.11.0_matchedStrings.txt as this will have removed
 the colliding strings. With the tinmantex fork we can specify the
-dictionary with the -Dictionary <strings path> option.
+dictionary with the -Dictionary \<strings path\> option.
 
 After that’s completed a find-in-files using a text editor for the
 hashes with collisions. The first langId hash 1424049156 fortunately
 finds itself sandwiched between other found langIds
 
-<Entry LangId="cassette_002" Color="1" Value="TRACK" />
+` `<Entry LangId="cassette_002" Color="1" Value="TRACK" />
 ` `<Entry Key="1424049156" Color="1" Value="CASSETTE" />
 ` `<Entry LangId="gameover_select_return_title" Color="1" Value="RETURN TO TITLE MENU" />
 
@@ -246,7 +246,7 @@ Which suggests cassette_001 is the correct langId and option_h_vr is
 incorrect The following hashes are also pretty clear as to the correct
 langId
 
-<Entry LangId="mb_sortie_mode_sideops" Color="1" Value="SIDE OPS" />
+` `<Entry LangId="mb_sortie_mode_sideops" Color="1" Value="SIDE OPS" />
 ` `<Entry Key="1702400502" Color="1" Value="FOB MISSIONS" />
 ` `<Entry LangId="mb_fob_staff_res" Color="1" Value="Assigned Staff/%sPlaced Containers" />
 ` `
@@ -297,10 +297,10 @@ dictionary there along with dictionaries of new strings to test.
 GzsTool workflow:
 
 Hashes update: GzsTool -OutputHashes for current version qar archives
-GameData\\MGS\\hashgrab\\tpp_pc_<version> RoboCopy to
-mgsv-lookup-strings\\GzsTool\\Hashes\\tpp_pc_<version> Uniquify
-Hashes\\tpp_pc_<version> - Merges and sorts to one file. Copy
-tpp_pc_<version>_combined to Hashes\\PathCode64 Uniquify-Combine
+GameData\\MGS\\hashgrab\\tpp_pc_\<version\> RoboCopy to
+mgsv-lookup-strings\\GzsTool\\Hashes\\tpp_pc_\<version\> Uniquify
+Hashes\\tpp_pc_\<version\> - Merges and sorts to one file. Copy
+tpp_pc_\<version\>\_combined to Hashes\\PathCode64 Uniquify-Combine
 Hashes PathCode64 - merges all PathCode64 hashes to one Uniquify-Combine
 Hashes PathCode64Gz  (even though it's just one file, for ) Note: Dont
 ever want to merge PathCode64 and PathCode64Gz hashes since they are
@@ -315,7 +315,7 @@ Repeat with PathCode64Gz
 Merge both PathCode64_matchedStrings / Gz_matched This is release
 dictionary.
 
-Stats: Run HashWrangler on each file in Hashes\\tpp_pc_<version> and
+Stats: Run HashWrangler on each file in Hashes\\tpp_pc_\<version\> and
 collect the stats output.
 
 MtarTool workflow: Using fork <https://github.com/TinManTex/MtarTool>
@@ -335,16 +335,16 @@ you give it a dict entry.
 by default with
 /Assets/tpp/effect/vfx_pic/explosion/fx_expanm06_ks_alp_clp in dict
 
-<Entry FilePath="/Assets/tpp/effect/vfx_pic/explosion/fx_expanm06_ks_alp_clp.5.ftexs" />
-<Entry Hash="196289966432593" FilePath="b28651b8e151" />
-<Entry FilePath="/Assets/tpp/effect/vfx_pic/explosion/fx_expanm06_ks_alp_clp.ftex" />
+` `<Entry FilePath="/Assets/tpp/effect/vfx_pic/explosion/fx_expanm06_ks_alp_clp.5.ftexs" />
+` `<Entry Hash="196289966432593" FilePath="b28651b8e151" />
+` `<Entry FilePath="/Assets/tpp/effect/vfx_pic/explosion/fx_expanm06_ks_alp_clp.ftex" />
 
 Adding
 /Assets/tpp/effect/vfx_pic/explosion/fx_expanm06_ks_alp_clp.6.ftexs
 
-<Entry FilePath="/Assets/tpp/effect/vfx_pic/explosion/fx_expanm06_ks_alp_clp.5.ftexs" />
-<Entry FilePath="/Assets/tpp/effect/vfx_pic/explosion/fx_expanm06_ks_alp_clp.6.ftexs" />
-<Entry FilePath="/Assets/tpp/effect/vfx_pic/explosion/fx_expanm06_ks_alp_clp.ftex" />
+` `<Entry FilePath="/Assets/tpp/effect/vfx_pic/explosion/fx_expanm06_ks_alp_clp.5.ftexs" />
+` `<Entry FilePath="/Assets/tpp/effect/vfx_pic/explosion/fx_expanm06_ks_alp_clp.6.ftexs" />
+` `<Entry FilePath="/Assets/tpp/effect/vfx_pic/explosion/fx_expanm06_ks_alp_clp.ftex" />
 
 SubpTool: should be updated with -OutputHashes option and a dictionary.
 MtarTool should be updated with -OutputHashes option
