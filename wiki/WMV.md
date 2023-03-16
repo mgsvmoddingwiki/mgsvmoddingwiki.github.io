@@ -5,7 +5,7 @@ tags: [File Formats, Cutscenes]
 ---
 
 The pre-rendered video cutscenes in Metal Gear Solid V: The Phantom Pain
-are stored as *'.WMV **(**Windows Media Video*') files, with the
+are stored as **.WMV (Windows Media Video)** files, with the
 extension changed to .dat. Their names are PathCode64 hashes (with
 extension) of their actual paths, which are formatted as:
 
@@ -18,9 +18,8 @@ Japanese (_jp). The targetSuffix is assigned in Lua's TppMovie library,
 and therefore can be skipped if calling the TppVideoPlayer functions
 directly. The subtitle track is seemingly hardcoded in the .exe.
 
-|                      |                           |                      |                      |
-| -------------------- | ------------------------- | -------------------- | -------------------- |
 | videoName            | Description               | English File Name    | Japanese File Name   |
+| -------------------- | ------------------------- | -------------------- | -------------------- |
 | `p21_030010_movie`   | Movie after Cyprus        | e2f9a1fda590d087.dat | e2f861abe2e17760.dat |
 | `p31_010055_movie`   | Movie after Miller Rescue | e2fbebbd66f86086.dat | e2f867210cb635ca.dat |
 | `p31_050100_movie`   | Chapter 2 Preview Movie   | e2f8e499bc8f3606.dat | e2fb01787df277e4.dat |
@@ -36,64 +35,72 @@ safiles entry, converted to decimal.
 
 English .foxfs.dat:
 
-`   `<safiles>
-`       `<file code="16355565633005451293"/>
-`       `<file code="16355073395740587526"/>
-`       `<file code="16355925670434988166"/>
-`       `<file code="16355669509839002145"/>
-`       `<file code="16355281632549195911"/>
-`   `</safiles>
+```xml
+<safiles>
+   <file code="16355565633005451293"/>
+   <file code="16355073395740587526"/>
+   <file code="16355925670434988166"/>
+   <file code="16355669509839002145"/>
+   <file code="16355281632549195911"/>
+</safiles>
+```
 
 Japanese .foxfs.dat:
 
-`   `<safiles>
-`       `<file code="16355251637915451764"/>
-`       `<file code="16355738997404290316"/>
-`       `<file code="16355668088746833892"/>
-`       `<file code="16354929437669685088"/>
-`       `<file code="16354935438440805834"/>
-`   `</safiles>
+```xml
+<safiles>
+    <file code="16355251637915451764"/>
+    <file code="16355738997404290316"/>
+    <file code="16355668088746833892"/>
+    <file code="16354929437669685088"/>
+    <file code="16354935438440805834"/>
+</safiles>
+```
 
 In-game, the movies are loaded by a .fox2 DataSet entity of the
 VideoPlayerMemoryBlock class, using the aforementioned \[videoName\].
 
-`    `<entity class="VideoPlayerMemoryBlock" classVersion="0" addr="0x06A9E9B0" unknown1="84" unknown2="198117">
-`      `<staticProperties>
-`        `<property name="name" type="String" container="StaticArray" arraySize="1">
-`          `<value>`VideoPlayerMemoryBlock0000`</value>
-`        `</property>
-`        `<property name="dataSet" type="EntityHandle" container="StaticArray" arraySize="1">
-`          `<value>`0x03174A00`</value>
-`        `</property>
-`        `<property name="identify" type="String" container="StaticArray" arraySize="1">
-`          `<value>`[videoName]`</value>
-`        `</property>
-`        `<property name="videoFormat" type="String" container="StaticArray" arraySize="1">
-`          `<value></value>
-`        `</property>
-`        `<property name="videoWidth" type="uint32" container="StaticArray" arraySize="1">
-`          `<value>`0`</value>
-`        `</property>
-`        `<property name="videoHeight" type="uint32" container="StaticArray" arraySize="1">
-`          `<value>`0`</value>
-`        `</property>
-`        `<property name="videoAllocateSize" type="uint32" container="StaticArray" arraySize="1">
-`          `<value>`10485760`</value>
-`        `</property>
-`      `</staticProperties>
-`      `<dynamicProperties />
-`    `</entity>
+```xml
+<entity class="VideoPlayerMemoryBlock" classVersion="0" addr="0x06A9E9B0" unknown1="84" unknown2="198117">
+    <staticProperties>
+    <property name="name" type="String" container="StaticArray" arraySize="1">
+        <value>VideoPlayerMemoryBlock0000</value>
+    </property>
+    <property name="dataSet" type="EntityHandle" container="StaticArray" arraySize="1">
+        <value>0x03174A00</value>
+    </property>
+    <property name="identify" type="String" container="StaticArray" arraySize="1">
+        <value>[videoName]</value>
+    </property>
+    <property name="videoFormat" type="String" container="StaticArray" arraySize="1">
+        <value></value>
+    </property>
+    <property name="videoWidth" type="uint32" container="StaticArray" arraySize="1">
+        <value>0</value>
+    </property>
+    <property name="videoHeight" type="uint32" container="StaticArray" arraySize="1">
+        <value>0</value>
+    </property>
+    <property name="videoAllocateSize" type="uint32" container="StaticArray" arraySize="1">
+        <value>10485760</value>
+    </property>
+    </staticProperties>
+    <dynamicProperties />
+</entity>
+```
 
 And in .lua, they're played with a TppMovie.Play function.
 
-`TppMovie.Play{`
-`    videoName = [videoName],`
-`    subtitleName = "string",`
-`    memoryPool = [videoName],`
-`    isLoop = false,`
-`    onStart = function() end,`
-`    onEnd = function() end,`
-`}`
+```lua
+TppMovie.Play{
+    videoName = [videoName],
+    subtitleName = "string",
+    memoryPool = [videoName],
+    isLoop = false,
+    onStart = function() end,
+    onEnd = function() end,
+}
+```
 
   - **videoName**: Required. Actually specifies the movie to play.
   - **memoryPool**: Optional. Also uses the same string as videoName,
@@ -112,20 +119,22 @@ Alternatively, you can directly call TppVideoPlayer, just like how
 TppMovie.Play does, with the isLoop flag, but without any fancy onStart
 or onEnd callbacks or status changes and such.
 
-`local movie=TppVideoPlayer.LoadVideo{`
-`    VideoName=[videoName],`
-`    SubtitleName="string",`
-`    MemoryPool=[videoName],`
-`    Loop=false`
-`}`
-`if not movie then`
-`    TppVideoPlayer.PlayVideo()`
-`end`
-`TppMovie.CallbackFunctionTable[Fox.StrCode32([videoName])]={`
-`    videoName=[videoName],`
-`    onStart=function()end,`
-`    onEnd=function()end`
-`}`
+```lua
+local movie=TppVideoPlayer.LoadVideo{
+    VideoName=[videoName],
+    SubtitleName="string",
+    MemoryPool=[videoName],
+    Loop=false
+}
+if not movie then
+    TppVideoPlayer.PlayVideo()
+end
+TppMovie.CallbackFunctionTable[Fox.StrCode32([videoName])]={
+    videoName=[videoName],
+    onStart=function()end,
+    onEnd=function()end
+}
+```
 
   - **videoName**: Required. Specifies the movie to play. Lua's TppMovie
     adds the targetSuffix here, but calling it directly doesn't require
