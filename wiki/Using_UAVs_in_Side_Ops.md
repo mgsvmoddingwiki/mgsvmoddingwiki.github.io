@@ -215,6 +215,7 @@ parameters = TppUavParameter
 
 **TppUavLocatorParameter**
 
+```xml
 <entity class="TppUavLocatorParameter" classVersion="0" addr="0x06D7A490" unknown1="32" unknown2="54062">
     <staticProperties>
     <property name="owner" type="EntityHandle" container="StaticArray" arraySize="1">
@@ -226,3 +227,4 @@ parameters = TppUavParameter
     </staticProperties>
     <dynamicProperties />
 </entity>
+```
