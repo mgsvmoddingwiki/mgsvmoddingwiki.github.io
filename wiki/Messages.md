@@ -11,18 +11,20 @@ events or other information.
 
 There is no direct equivalent from lua to engine, instead direct engine
 module function calls are used or game object
-[commands](/commands "wikilink").
+[commands](/Commands "wikilink").
 
 For the TPP Lua modules subscribe to whatever message it's interested
 with a function to be called.
 
-`   function this.Messages()`
-`       return Tpp.StrCode32Table{`
-`           [message Class]={`
-`               {msg='msgName', func=this.functionName(params)}`
-`           }`
-`       }`
-`   }`
+```lua
+function this.Messages()
+    return Tpp.StrCode32Table{
+        [message Class]={
+            {msg='msgName', func=this.functionName(params)}
+        }
+    }
+}
+```
 
 The messages pass through TppMain.OnMessage which dispatches to the
 subscribed modules.
@@ -648,6 +650,6 @@ Sender → MessageID → Arguments
           - *Args*
               - arg0: number -- seemingly always 0
 
-## sources
+## Sources
 
 <https://github.com/unknown321/mgsvdump/blob/master/tpp/sequences/messages_for_sequences.lua>
