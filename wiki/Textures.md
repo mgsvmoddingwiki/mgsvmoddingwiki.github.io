@@ -22,7 +22,7 @@ creation.
 
 ## Texture type & purpose:
 
-#### Color maps, also called Albedo or Diffuse. They are labeled with the _bsm suffix.
+### Color maps, also called Albedo or Diffuse. They are labeled with the _bsm suffix.
 
 Here's an example, the *_bsm* map of the D114
 handgun:[thumb|300px|none](/File:Hg00_main0_def_c00_bsm.jpg "wikilink")
