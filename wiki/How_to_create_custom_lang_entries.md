@@ -105,15 +105,15 @@ change. \[Coming Soon: A tutorial for creating custom equips in Zeta
 will be linked here\]
 
 ```lua
-function this.EquipDevelopConstSetting()
-   return{
-       {
-           p00=XXX, --Should match the DevConst ID
-           p06="name_wp_XXX",
-           p07="info_wp_XXX",
-           p30="real_wp_XXX",
-       },
-   }
+function this.EquipDevelopConstSetting()
+   return{
+       {
+           p00=XXX, --Should match the DevConst ID
+           p06="name_wp_XXX",
+           p07="info_wp_XXX",
+           p30="real_wp_XXX",
+       },
+   }
 end
 ```
 
@@ -160,15 +160,15 @@ unique staff member you wish to change. \[Coming Soon: A tutorial for
 creating unique staff members in Zeta will be linked here\]
 
 ```lua
-function this.MbmCommonSetting()
-   return{
-       uniqueStaff={
-           {
-               uniqueTypeId=XXX, --Should be unique to the staff member
-               nameLangMessageId="unique_staff_XXX",
-           },
-       },
-   }
+function this.MbmCommonSetting()
+   return{
+       uniqueStaff={
+           {
+               uniqueTypeId=XXX, --Should be unique to the staff member
+               nameLangMessageId="unique_staff_XXX",
+           },
+       },
+   }
 end
 ```
 
