@@ -15,9 +15,11 @@ properties.
 String that assigns an attack ID from the global TppDamage tables set in
 DamageParameterTables.lua.
 
-    <property name="attackId" type="String" container="StaticArray" arraySize="1">
-          <value>ATK_Tankgun_30mmAutoCannon</value>
-    </property>
+```xml
+<property name="attackId" type="String" container="StaticArray" arraySize="1">
+      <value>ATK_Tankgun_30mmAutoCannon</value>
+</property>
+```
 
 Assigns TppDamage.ATK_Tankgun_30mmAutoCannon.
 
@@ -31,10 +33,11 @@ blank on autocannons and tank cannons, and presumably must be assigned a
 valid string value when an ammoFile property is specified; as is the
 case with the vehicle MRLS weapon system.
 
-    <property name="equipId" type="String" container="StaticArray" arraySize="1">
-      <value>EQP_BL_Tankgun_82mmRocketPoweredProjectile</value>
-    </property>
-
+```
+<property name="equipId" type="String" container="StaticArray" arraySize="1">
+  <value>EQP_BL_Tankgun_82mmRocketPoweredProjectile</value>
+</property>
+```
 
 
 
@@ -50,11 +53,14 @@ table
 
 e.g.
 
+```xml
     <property name="bulletId" type="String" container="StaticArray" arraySize="1">
       <value>BL_Tankgun_30mmAutoCannon</value>
     </property>
+```
 
 Assigns
+```lua
 EquipParameters.TppEquip.ReloadEquipParameterTables2.bullet\[19\].
 
     {
@@ -72,7 +78,7 @@ EquipParameters.TppEquip.ReloadEquipParameterTables2.bullet\[19\].
         1,
         TppEquip.EQP_TYPE_None
     }
-
+```
 
 
 
@@ -95,15 +101,17 @@ Unknown usage. However a list of known values are:
 ## fireInterval
 
 Property sets fire rate in a decimal representation of 60 seconds / RPM.
-
+```
     n = rounds per minute (RPM)
 
     60/n == fireInterval
     60/fireInterval == n
-
-    <property name="fireInterval" type="float" container="StaticArray" arraySize="1">
-      <value>0.333333</value>
-    </property>
+```
+```xml
+<property name="fireInterval" type="float" container="StaticArray" arraySize="1">
+  <value>0.333333</value>
+</property>
+```
 
 A value of 0.333333 sets the fire rate to 180 RPM.
 
@@ -113,10 +121,11 @@ A value of 0.333333 sets the fire rate to 180 RPM.
 File pointer assigning a weapon .parts file. This is only used for
 vehicle machine guns.
 
+```xml
     <property name="weaponFile" type="FilePtr" container="StaticArray" arraySize="1">
       <value>/Assets/tpp/parts/weapon/hew/hw01_main0_def_wav0.parts</value>
     </property>
-
+```
 
 
 
@@ -125,10 +134,11 @@ vehicle machine guns.
 File pointer assigning an ammo .parts file. This is only used for the
 vehicle MRLS weapon.
 
-    <property name="ammoFile" type="FilePtr" container="StaticArray" arraySize="1">
-      <value>/Assets/tpp/parts/mecha/sav/sav0_ammo0_def.parts</value>
-    </property>
-
+```xml
+<property name="ammoFile" type="FilePtr" container="StaticArray" arraySize="1">
+  <value>/Assets/tpp/parts/mecha/sav/sav0_ammo0_def.parts</value>
+</property>
+```
 
 
 
@@ -136,6 +146,7 @@ vehicle MRLS weapon.
 
 Sets the owner connection point and bone names, if applicable.
 
+```xml
     <property name="ownerCnpName" type="String" container="StaticArray" arraySize="1">
       <value>CNP_awp_a</value>
     </property>
@@ -148,7 +159,7 @@ Sets the owner connection point and bone names, if applicable.
     <property name="barrelBoneName" type="String" container="StaticArray" arraySize="1">
       <value>SKL_010_GUN</value>
     </property>
-
+```
 
 
 
@@ -160,17 +171,19 @@ movement a turret can move in either direction. minPitch must be set to
 a negative value to allow downward movement below base orientation and
 maxPitch must be positive for the inverse.
 
+```
     minPitch == (n*-1)/100
     maxPitch == (n+90)/100
+```
 
-
-
-    <property name="minPitch" type="float" container="StaticArray" arraySize="1">
-      <value>-0.20944</value>
-    </property>
-    <property name="maxPitch" type="float" container="StaticArray" arraySize="1">
-      <value>1.745329</value>
-    </property>
+```xml
+<property name="minPitch" type="float" container="StaticArray" arraySize="1">
+  <value>-0.20944</value>
+</property>
+<property name="maxPitch" type="float" container="StaticArray" arraySize="1">
+  <value>1.745329</value>
+</property>
+```
 
 The values here allow for 85 degrees of upward movement and 21 degrees
 of downward movement.
@@ -178,9 +191,11 @@ of downward movement.
 
 ## rotSpeed
 
-    <property name="rotSpeed" type="float" container="StaticArray" arraySize="1">
-      <value>0.785398</value>
-    </property>
+```xml
+<property name="rotSpeed" type="float" container="StaticArray" arraySize="1">
+  <value>0.785398</value>
+</property>
+```
 
 Sets the rotation speed of the turret in a decimal representation of the
 max degrees of movement per second.
