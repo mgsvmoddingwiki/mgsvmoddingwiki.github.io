@@ -43,7 +43,8 @@ f30050_sequence.lua to f30050_sequence_dev.lua
 
 3\. At top of the existing in-fpkd lua file add:
 
-<code>local loadExternal=true
+```lua
+local loadExternal=true
 
 if loadExternal then
 
@@ -52,7 +53,8 @@ if loadExternal then
   return InfCore.PCall(function()return
 InfCore.LoadSimpleModule(InfCore.paths.dev,fileName)end)
 
-end</code>
+end
+```
 
 Making sure the `fileName=` matches the external lua filename.
 
@@ -67,14 +69,14 @@ Then whenever the game loads the in-fpkd lua that will load the external
 dev lua, and (if you have debugMode on, via IH debug menu) it will log
 parsing errors to ih_log.txt when it first loads.
 
-When you're ready to do a release build just copy the _dev lua back
+When you're ready to do a release build just copy the \_dev lua back
 over the in-fpkd lua (and double check the in-fpk lua has the
 `loadExternal=false` from the external lua)
 
 This method is useful depending on when the game loads/unloads the fpk.
 
 For mission scripts it means you can just quit the game (or quit to
-ACC), edit your _dev lua in MGS_TPP\\mod\\dev\\ then restart the game
+ACC), edit your \_dev lua in MGS_TPP\\mod\\dev\\ then restart the game
 and it will used the edited lua.
 
 For sideops scripts just exit the sideops loadArea, edit your external
