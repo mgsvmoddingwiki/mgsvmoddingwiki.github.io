@@ -12,7 +12,7 @@ extension) to the game's data patch archives (0\\00.dat and 0\\01.dat).
 Additionally, the mod manager can save and load collections of mods as
 Mod Preset Files (.MGSVPreset file extension).
 
-'''Makebite '''is a companion application for SnakeBite, which serves to
+**Makebite** is a companion application for SnakeBite, which serves to
 format and build .MGSV Mod Files. **Makebite is automatically installed
 alongside SnakeBite**.
 
@@ -27,7 +27,7 @@ file is updated in real-time, and provides helpful diagnostics to users.
 
 ## **SnakeBite** **Menu Descriptions**
 
-### <u>Startup Launcher</u>
+### Startup Launcher
 
 [thumb|220x220px](/File:Snakebite.png "wikilink") After installation and
 setup, the Startup Launcher is displayed.
@@ -39,7 +39,7 @@ setup, the Startup Launcher is displayed.
 <!-- end list -->
 
   - ***Mods:*** Opens the mod installation and uninstallation interface.
-  - '**'Settings:** ''Opens the Settings Interface.
+  - ***Settings:*** Opens the Settings Interface.
   - ***Exit*:** Quits the Mod Manager.
 
 The MGSV Game Version and SnakeBite Application Version are displayed at
@@ -49,7 +49,7 @@ launcher is displayed upon starting SnakeBite, but the user can choose
 to skip directly to the Mod Interface on startup (Mods -\> Options -\>
 Skip Startup Launcher).
 
-### <u>Mod Interface</u>
+### Mod Interface
 
 [thumb|220x220px](/File:Installation_Interface.png "wikilink") The Mod
 Interface is the main menu for SnakeBite. Mods can be installed, viewed
@@ -79,7 +79,7 @@ bar.[thumb|220x220px](/File:SnakeBiteModInstaller.gif "wikilink")
 
 <!-- end list -->
 
-  - '**'Uninstall Checked Mod(s):** ''Uninstalls any mod with a
+  - **Uninstall Checked Mod(s):** ''Uninstalls any mod with a
     checkmark to the left of its name.
       - Double-clicking on a mod will mark the checkbox, thus marking
         the mod for uninstallation.
@@ -307,12 +307,10 @@ mod, as well as the list of files it will be installing.
 [thumb|220x220pxFirst](/File:FormattingHelp.png "wikilink"), a user
 should create a folder and add all of the files they have modified into
 this folder. .fpk and .fpkd files can be unpacked, and deleted (along
-with their .xml file), leaving only the _fpk and _fpkd folder behind.
-'''Any unmodified files in the _fpk and _fpkd folders can also be
+with their .xml file), leaving only the \_fpk and \_fpkd folder behind.
+**Any unmodified files in the \_fpk and \_fpkd folders can also be
 removed, as SnakeBite automatically finds and adds any files missing
-from the archive. ''' (Note: Only .fpk and .fpkd files can be unpacked
-and deleted. Other archive files, such as .pftxs files, must be packed
-into an archive.) File Monolith's [File
+from the archive.** *(Note: Only .fpk and .fpkd files can be unpacked and deleted. Other archive files, such as .pftxs files, must be packed into an archive.)* File Monolith's [File
 Proliferator](https://metalgearmodding.wikia.com/wiki/File_Monolith#File_Proliferator)
 tool is intended to automate most of this process, as it can generate a
 MakeBite-ready file structure from input files selected by the
