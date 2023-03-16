@@ -15,7 +15,7 @@ To unpack an .mtar archive, a user needs to simply drag and drop the
 archive onto the MtarTool. Alternatively, the user can unpack an archive
 by command line, by passing the filepath as an argument (example:
 MtarTool Example.mtar). The tool will output the contained files in a
-<filename>_mtar folder, and an .xml with a list of all of the files
+\<filename\>\_mtar folder, and an .xml with a list of all of the files
 that were unpacked. If the archive was an Mtar Type 2 file, additional
 files may appear alongside the .gani files. Reference the table below to
 see what the additional files are.
@@ -54,7 +54,7 @@ contains an id or not.
 
 ## Dictionary
 
-MtarTool utilizes a dictionary of strings called mtar*_dictionary.txt*
+MtarTool utilizes a dictionary of strings called mtar_*dictionary.txt*
 to match hashed file names to original file path names. If it does not
 find a match it will output the files with the hash in the root of the
 extraction folder for the mtar, if it does find a match it will create
