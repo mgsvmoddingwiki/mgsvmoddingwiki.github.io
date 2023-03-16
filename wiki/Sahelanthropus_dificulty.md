@@ -1,7 +1,7 @@
 ---
 title: ! 'Sahelanthropus dificulty'
 tags: [Guides, Missions]
-permalink: /Sahelanthropus_difficulty.md/
+permalink: /Sahelanthropus_difficulty/
 ---
 
 # Sahelanthropus Health Points and Attack Speed/Damage
