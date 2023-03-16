@@ -19,17 +19,17 @@ Download [GzsTool](/GzsTool "wikilink") and
 
 ## lang_default_data_XXX.fpk
 
-If you haven't extracted **lang_default_data_<language>.fpk**, you
+If you haven't extracted **lang_default_data_\<language\>.fpk**, you
 can extract it from **chunk0.dat** by drag & dropping it on
 [GzsTool](/GzsTool "wikilink"). Once extraction is finished, go to your
 mod's project folder and create this directory structure
-**"Assets\\tpp\\pack\\ui\\lang\\".** Copy
-**lang_default_data_<language>.fpk** to
-**"Assets\\tpp\\pack\\ui\\lang\\".** Last step, open
+**Assets\\tpp\\pack\\ui\\lang\\.** Copy
+**lang_default_data_\<language\>.fpk** to
+**Assets\\tpp\\pack\\ui\\lang\\**. Last step, open
 [MakeBite](/SnakeBite_Mod_Manager "wikilink"), select the mod's project
 folder, build the MGSV file as it will also extract all FPKs.
 Alternatively, you can drag & drop
-**lang_default_data_<language>.fpk** onto
+**lang_default_data_\<language\>.fpk** onto
 [GzsTool](/GzsTool "wikilink"). If you're unsure which language to
 modify, choose **eng (english)**. You can provide support for other
 languages if you'd like.
@@ -61,15 +61,17 @@ enough. You can copy the following snippet and paste it into a text
 editor, make your modifications, and save it as an XML file, rename the
 extension to **".lng2.xml"**.
 
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 
 <LangFile xmlns:xsi="<nowiki>http://www.w3.org/2001/XMLSchema-instance</nowiki>" xmlns:xsd="<nowiki>http://www.w3.org/2001/XMLSchema</nowiki>" Endianess="BigEndian">
-`  `<Entries>
-`    `<Entry LangId="custom_lang_id_a" Color="1" Value="Custom Lang ID A" />
-`    `<Entry LangId="custom_lang_id_b" Color="1" Value="Custom Lang ID B" />
-`    `<Entry LangId="custom_lang_id_c" Color="1" Value="Custom Lang ID C" />
-`  `</Entries>
+  <Entries>
+    <Entry LangId="custom_lang_id_a" Color="1" Value="Custom Lang ID A" />
+    <Entry LangId="custom_lang_id_b" Color="1" Value="Custom Lang ID B" />
+    <Entry LangId="custom_lang_id_c" Color="1" Value="Custom Lang ID C" />
+  </Entries>
 </LangFile>
+```
 
 ## Compile lng2 file
 
@@ -77,10 +79,10 @@ Next, drag and drop your lang XML file onto
 [LangTool.exe](/LangTool "wikilink"). It should compile the XML as a
 [lng2 file](/Lang_Files "wikilink") in the same directory. If it
 doesn't, check if your XML file is missing any opening or closing quotes
-or tags, such "</Entries>" or "</LangFile>". Once it successfully
+or tags, such "\</Entries\>" or "\</LangFile\>". Once it successfully
 compiles it as a lng2 file, you can add it in the
-**"\\Assets\\tpp\\lang\\ui"** directory inside your custom
-**lang_default_data_<language>.fpk.**
+**\\Assets\\tpp\\lang\\ui** directory inside your custom
+**lang_default_data_\<language\>.fpk**.
 
 ## Using your custom lang entries for equips
 
@@ -102,16 +104,18 @@ equip, **p00** should match the DevConst ID of the equip you wish to
 change. \[Coming Soon: A tutorial for creating custom equips in Zeta
 will be linked here\]
 
-`function this.EquipDevelopConstSetting()`
-`   return{`
-`       {`
-`           p00=XXX, --Should match the DevConst ID`
-`           p06="name_wp_XXX",`
-`           p07="info_wp_XXX",`
-`           p30="real_wp_XXX",`
-`       },`
-`   }`
-`end`
+```lua
+function this.EquipDevelopConstSetting()
+   return{
+       {
+           p00=XXX, --Should match the DevConst ID
+           p06="name_wp_XXX",
+           p07="info_wp_XXX",
+           p30="real_wp_XXX",
+       },
+   }
+end
+```
 
 ### EquipDevelopConstSetting.lua
 
@@ -155,16 +159,18 @@ staff member, **uniqueTypeId** should match the uniqueTypeId of the
 unique staff member you wish to change. \[Coming Soon: A tutorial for
 creating unique staff members in Zeta will be linked here\]
 
-`function this.MbmCommonSetting()`
-`   return{`
-`       uniqueStaff={`
-`           {`
-`               uniqueTypeId=XXX, --Should be unique to the staff member`
-`               nameLangMessageId="unique_staff_XXX",`
-`           },`
-`       },`
-`   }`
-`end`
+```lua
+function this.MbmCommonSetting()
+   return{
+       uniqueStaff={
+           {
+               uniqueTypeId=XXX, --Should be unique to the staff member
+               nameLangMessageId="unique_staff_XXX",
+           },
+       },
+   }
+end
+```
 
 ### MbmCommonSetting.lua
 
