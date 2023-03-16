@@ -146,26 +146,28 @@ linking. Below i show a simple way of once the player reach the Trap or
 collide with the BoxShape it will change the weather to RAINY. Once out
 of the GeoTrap it will be SUNNY.
 
-`this.Seq_Example = {`
+```lua
+this.Seq_Example = {
 
-`   Messages = function( self )`
-`   return`
-`   StrCode32Table {        `
-`       Trap = {`
-`           {`
-`               msg = "Enter", sender = "GeoTrap0000", -- Name of GeoTrap`
-`               func = function()`
-`                   TppWeather.RequestWeather(TppDefine.WEATHER.RAINY,0)                    `
-`               end,            `
-`           },`
-`           {`
-`               msg = "Exit", sender = "GeoTrap0000", -- Name of GeoTrap`
-`               func = function()`
-`                   TppWeather.RequestWeather(TppDefine.WEATHER.SUNNY,0)`
-`               end,                `
-`           },          `
-`   }`
-`   end,`
-`   OnEnter = function() end,   `
-`   OnLeave = function () end,`
-`}`
+   Messages = function( self )
+   return
+   StrCode32Table {        
+       Trap = {
+           {
+               msg = "Enter", sender = "GeoTrap0000", -- Name of GeoTrap
+               func = function()
+                   TppWeather.RequestWeather(TppDefine.WEATHER.RAINY,0)                    
+               end,            
+           },
+           {
+               msg = "Exit", sender = "GeoTrap0000", -- Name of GeoTrap
+               func = function()
+                   TppWeather.RequestWeather(TppDefine.WEATHER.SUNNY,0)
+               end,                
+           },          
+   }
+   end,
+   OnEnter = function() end,   
+   OnLeave = function () end,
+}
+```
