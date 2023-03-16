@@ -18,7 +18,8 @@ utilities as well as troubleshooting steps for errors encountered while
 installing or using the mod.
 
 
-\==Installation== [thumb|daften_23's tutorial on Snakebite and Infinite
+# Installation
+[thumb|daften_23's tutorial on Snakebite and Infinite
 Heaven Installation](/File:MGSV_Modding_-_01_-_SnakeBite "wikilink")
 
 **1. Preparation/insurance:**
@@ -30,9 +31,9 @@ upgrading a save that's mid-mission is likely to cause issues.
 
 Back up your save files for safety:
 
-<steam path>\\userdata\\<user id>\\287700 and
+\<steam path\>\\userdata\\\<user id\>\\287700 and
 
-<steam path>\\userdata\\<user id>\\311340
+\<steam path\>\\userdata\\\<user id\>\\311340
 
 MGSV uses two save folders:
 
@@ -53,7 +54,7 @@ Snakebite should do this, but it's good to have your own backups.
 
 Back up TPPs original 00.dat and 01.dat in
 
-<steam path>\\steamapps\\common\\MGS_TPP\\master\\0\\
+\<steam path\>\\steamapps\\common\\MGS_TPP\\master\\0\\
 
 This does not apply if you've already modded it.
 
@@ -135,7 +136,7 @@ the Install .ZIP option in the Installed Mods tab of Snakebite
 Or by using makebite (comes with snakebite) to create a Snakebite
 package (.MGSV)
 
-https://www.youtube.com/watch?v=tYPi_kj3F8g
+<https://www.youtube.com/watch?v=tYPi_kj3F8g>
 
 If you want to manually check to see if a mod conflicts unzip the
 Infinite Heaven .mgsv with the zip tool of your choice and check to see
@@ -155,7 +156,8 @@ Use uninstall in SnakeBite.
 Delete the MGS_TPP\\mod folder
 
 
-\==Features and Technical Data== All options in Infinite Heaven start
+# Features and Technical Data
+All options in Infinite Heaven start
 set to game defaults and can be adjusted in the Infinite Heaven menus.
 It must also be noted that if the mod was not installed correctly, the
 in-game menu will not prompt while in the ACC.
