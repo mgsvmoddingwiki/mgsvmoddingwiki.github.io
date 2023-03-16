@@ -6,7 +6,7 @@ permalink: /Sahelanthropus_difficulty.md/
 
 # Sahelanthropus Health Points and Attack Speed/Damage
 
-## defining Sahelanthropus Health Points
+## Defining Health Points
 Sahelanthropus Health Points can be changed on the enemy.lua, see the original data below
 
 ```lua
@@ -62,7 +62,7 @@ this.sahelanLifeTable = {
     
 The health points on each part, defines when that same part explodes during the boss fight, when the health points drop to 0.
 
-## Defining Sahelanthropus Attack damage and speed
+## Defining Attack Damage and Speed
 
 Sahelanthropus Attack damage and speed are controled by **TYPE_OKB** Variable, example:
 
@@ -119,7 +119,7 @@ After you made all your changes, save the file and thats it.
 
 ### Notes
 
-**Only Integer Values work**, no Decimal or Strings in his Life Table and **SAHELAN_MAX_LIFE** Variable.
+**Only integer values work**, no Decimal or Strings in his Life Table and **SAHELAN_MAX_LIFE** Variable.
 
 I have made Multiple tests to trigger Normal / Extreme mode using the mission code and no luck.
 **mvars** Variable is an boolean, its used on sequence.lua, i made multiple tests and no change.
