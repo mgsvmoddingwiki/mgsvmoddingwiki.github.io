@@ -4,26 +4,28 @@ permalink: /PhxVehicleNormalEngine/
 tags: [Entities, Reference]
 ---
 
-    <entity class="PhxVehicleNormalEngine" classVersion="1" addr="0x031784A0" unknown1="120" unknown2="212215">
-      <staticProperties>
-        <property name="name" type="String" container="StaticArray" arraySize="1">
-          <value>PhxVehicleNormalEngine0000</value>
-        </property>
-        <property name="dataSet" type="EntityHandle" container="StaticArray" arraySize="1">
-          <value>0x03177B70</value>
-        </property>
-        <property name="vehicleAxes" type="EntityLink" container="DynamicArray" arraySize="2">
-          <value packagePath="" archivePath="/Assets/tpp/parts/mecha/slv/slv.veh" nameInArchive="PhxVehicleAxis0000">0x03177BE0</value>
-          <value packagePath="" archivePath="/Assets/tpp/parts/mecha/slv/slv.veh" nameInArchive="PhxVehicleAxis0001">0x03178270</value>
-        </property>
-        <property name="torqueDistributions" type="float" container="DynamicArray" />
-        <property name="gearRatios" type="float" container="DynamicArray" />
-        <property name="vehicleNormalEngineParam" type="EntityPtr" container="StaticArray" arraySize="1">
-          <value>0x03178510</value>
-        </property>
-      </staticProperties>
-      <dynamicProperties />
-    </entity>
+```xml
+<entity class="PhxVehicleNormalEngine" classVersion="1" addr="0x031784A0" unknown1="120" unknown2="212215">
+  <staticProperties>
+    <property name="name" type="String" container="StaticArray" arraySize="1">
+      <value>PhxVehicleNormalEngine0000</value>
+    </property>
+    <property name="dataSet" type="EntityHandle" container="StaticArray" arraySize="1">
+      <value>0x03177B70</value>
+    </property>
+    <property name="vehicleAxes" type="EntityLink" container="DynamicArray" arraySize="2">
+      <value packagePath="" archivePath="/Assets/tpp/parts/mecha/slv/slv.veh" nameInArchive="PhxVehicleAxis0000">0x03177BE0</value>
+      <value packagePath="" archivePath="/Assets/tpp/parts/mecha/slv/slv.veh" nameInArchive="PhxVehicleAxis0001">0x03178270</value>
+    </property>
+    <property name="torqueDistributions" type="float" container="DynamicArray" />
+    <property name="gearRatios" type="float" container="DynamicArray" />
+    <property name="vehicleNormalEngineParam" type="EntityPtr" container="StaticArray" arraySize="1">
+      <value>0x03178510</value>
+    </property>
+  </staticProperties>
+  <dynamicProperties />
+</entity>
+```
 
 ## vehicleAxes
 
@@ -46,10 +48,12 @@ from front to back.
 e.g. For 30% of power being given to the front axle and 70% to the rear
 axle on a 4WD vehicle:
 
-    <property name="torqueDistributions" type="float" container="DynamicArray" arraySize="2">
-      <value>0.3</value>
-      <value>0.7</value>
-    </property>
+```xml
+<property name="torqueDistributions" type="float" container="DynamicArray" arraySize="2">
+  <value>0.3</value>
+  <value>0.7</value>
+</property>
+```
 
 ## gearRatios
 
@@ -67,8 +71,10 @@ Standard gear ratios are n:1 but the property simply takes n for the
 value. For a 4WD vehicle, which has three gears, with sequential gear
 ratios of 2.5:1, 1.5:1, and 0.7:1 you would do:
 
-    <property name="gearRatios" type="float" container="DynamicArray" arraySize="3">
-      <value>2.5</value>
-      <value>1.5</value>
-      <value>0.7</value>
-    </property>
+```xml
+<property name="gearRatios" type="float" container="DynamicArray" arraySize="3">
+  <value>2.5</value>
+  <value>1.5</value>
+  <value>0.7</value>
+</property>
+```
