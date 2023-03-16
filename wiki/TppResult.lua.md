@@ -4,8 +4,6 @@ permalink: /TppResult.lua/
 tags: [Lua, Missions]
 ---
 
-**TppResult.lua**
-
 File location: Assets/tpp/script/lib/
 
 Function: Calculates the player's end-of-mission score based on their
@@ -75,7 +73,7 @@ rank and e.RANK_THRESHOLD is the upper limit for a particular rank.
 **e.RANK_BASE_SCORE={S=11e4,A=9e4,B=7e4,C=5e4,D=3e4,E=0}**
 
 Exceptions to these are stored in arrays immediately beneath these for
-specific missions called e.RANK_BASE_SCORE_<missioncode>\[1\] to edit
+specific missions called e.RANK_BASE_SCORE_\<missioncode\>\[1\] to edit
 and override with their own values:
 
 **e.RANK_BASE_SCORE={S=11e4,A=9e4,B=7e4,C=5e4,D=3e4,E=0}**
@@ -90,8 +88,8 @@ e.RANK_BASE_GMP is the array used for awarding GMP based on rank:
 
 Each mission also guarantees a set amount of GMP, then the Rank GMP is
 added onto this. See the array e.MISSION_GUARANTEE_GMP and uses the
-format \[<missioncode>=<NumberInScientificNotation>\]
+format \[\<missioncode\>=\<NumberInScientificNotation\>\]
 
-<references />
+## References
 
 1.  <https://metalgearmodding.fandom.com/wiki/MissionCodes>
