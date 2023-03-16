@@ -1,9 +1,7 @@
 ---
-
 title: ! 'Sahelanthropus dificulty'
 tags: [Guides, Missions]
 permalink: /Sahelanthropus_difficulty.md/
-
 ---
 
 
@@ -12,6 +10,7 @@ permalink: /Sahelanthropus_difficulty.md/
 ## defining Sahelanthropus Health Points
 Sahelanthropus Health Points can be changed on the enemy.lua, see the original data below
 
+```lua
 	local SAHELAN_MAX_LIFE = 23000*1.5
     
 	this.sahelanLifeTable = {
@@ -35,10 +34,12 @@ Sahelanthropus Health Points can be changed on the enemy.lua, see the original d
 	PTRB 	=	96,		 -- Right Back White Cilynder
 	}
     
+```
 
 You can add more health points on Sahelanthropus by changing the values in front of the part names, the **local SAHELAN_MAX_LIFE** variable must be equal or more than his parts health points sum
 
 For example 
+```lua
 	
 	local SAHELAN_MAX_LIFE = 41310
     
@@ -65,10 +66,13 @@ For example
     
 The health points on each part, defines when that same part explodes during the boss fight, when the health points drop to 0.
 
+```
+
 ## Defining Sahelanthropus Attack damage and speed
 
 Sahelanthropus Attack damage and speed are controled by **TYPE_OKB** Variable, example:
 
+```lua
 	this.SetUpSahelan = function()
     
 	local TYPE_OKB = 2 
@@ -108,14 +112,16 @@ Sahelanthropus Attack damage and speed are controled by **TYPE_OKB** Variable, e
 			GameObject.SendCommand( gameObjectId, command )
 		end
 	end
-    
-    
+ 
+ ```   
+  
 In order to change is Attack damage and speed you must change the value of **TYPE_OKB**
 
+```lua
 	TYPE_OKB = 1 -- Normal Speed/damage
-    TYPE_OKB = 2 -- Extreme Speed/damage
-    
-    
+    TYPE_OKB = 2 -- Extreme Speed/damage    
+``` 
+
 After you made all your changes, save the file and thats it.
 
 ### Notes
