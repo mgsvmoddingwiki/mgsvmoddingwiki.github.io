@@ -6,7 +6,7 @@ tags: [Rendering]
 
 ## The basics: PBR
 
-FOX Engine uses a [https://en.wikipedia.org/wiki/Physically_based_rendering](Physically Based Rendering) shading model. Simply put, PBR is a
+FOX Engine uses a [Physically Based Rendering](https://en.wikipedia.org/wiki/Physically_based_rendering) shading model. Simply put, PBR is a
 modern rendering method that is more accurate and more predictable than
 previous shading models, leading to better looking materials and
 lighting
@@ -22,7 +22,7 @@ creation.
 
 ## Texture type & purpose:
 
-#### - Color maps, also called Albedo or Diffuse. They are labeled with the _bsm suffix.
+#### Color maps, also called Albedo or Diffuse. They are labeled with the _bsm suffix.
 
 Here's an example, the *_bsm* map of the D114
 handgun:[thumb|300px|none](/File:Hg00_main0_def_c00_bsm.jpg "wikilink")
