@@ -273,6 +273,7 @@ body {
     width: max-content;
     background: hsl(234, 8%, 10%);
     color: var(--color-secondary);
+    text-indent: 0; /* un-indent text of parent */
     content: '';
     display: flex;
     justify-content: center;
