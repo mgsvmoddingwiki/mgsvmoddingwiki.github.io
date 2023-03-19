@@ -460,6 +460,12 @@ body > .wrapper {
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ SIDEBAR ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
+/* Site logo (hidden, uses alternative) */
+.git-wiki-main-logo img,
+#git-wiki-mobile-header img[src$="/site-logo.png"] {
+    display: none;
+}
+
 /* Paz emblem graphic. Once mobile JS kicks in at narrower viewport the h1 element is auto removed, hiding this. */
 #git-wiki-sidebar h1::before {
     width: 204px;
