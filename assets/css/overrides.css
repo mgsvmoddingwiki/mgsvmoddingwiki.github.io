@@ -503,8 +503,14 @@ body > .wrapper {
     height: auto;
 }
 
+/* Hide 'View My Github Profile' link */
+#git-wiki-sidebar .view {
+    display: none;
+}
+
 #git-wiki-sidebar h1 {
     text-align: center;
+    margin-top: 155px; /* to avoid Paz emblem clipping into top of page when there's only a short scrollbar */
 }
 
 /* Scroll sidebar with page */
