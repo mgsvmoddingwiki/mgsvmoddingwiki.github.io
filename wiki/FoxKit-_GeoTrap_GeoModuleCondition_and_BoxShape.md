@@ -19,4 +19,4 @@ understand how to procede. After work in FoxKit, it show how to set from
 scratch a mod folder using the mission free roam in afgh, f30010 and how
 to trigger in f30010_sequence.lua the Trap "TrapWhatever" in fox2 file.
 
-[479.988x479.988px](/File:GeoTrap_GeoModuleCondition_and_BoxShape "wikilink")
+![](/assets/GeoTrap%20GeoModuleCondition%20and%20BoxShape.jfif){:width="479.988px"}

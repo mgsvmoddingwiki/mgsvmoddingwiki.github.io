@@ -52,7 +52,7 @@ libraries packed alongside it.
 
 ## Features
 
-[thumb|375x375px](/File:MGSV_SaveManager2.3_Settings "wikilink")
+![](/assets/MGSV%20SaveManager2.3%20Settings.png){:.thumb .legacy-small width="375px"}
 Currently supported features
 
   - Multiple users

@@ -90,12 +90,12 @@ of effects or functionality. It’s recommended to turn them off. Besides,
 your project files will become huge anyway, so why make it waste even
 more space?
 
-[<File:Project_launcher_assets.png>](/File:Project_launcher_assets.png "wikilink")
+![](/assets/Project%20launcher%20assets.png)
 
 Finally, create your project by pressing **OK**. You will now be greeted
 with this pop up:
 
-[<File:Wwise_licensing.png>](/File:Wwise_licensing.png "wikilink")
+![](/assets/Wwise%20licensing.png)
 
 This is the biggest (and the only?) limitation of the free version of
 WWise. The program will only let you have 200 media items at once. The
@@ -108,7 +108,7 @@ have to worry about this, so just press on **Close**.
 Now, I can imagine people freaking out when seeing WWise for the first
 time, with all of its menus & buttons all over the screen.
 
-[480x480px](/File:Wwise_is_scary.png "wikilink")
+![](/assets/Wwise%20is%20scary.png){:width="480px"}
 
 But no need to worry because for the purposes of this tutorial, we won’t
 be using 80% of the stuff you see on screen. Just like any program, you
@@ -125,11 +125,11 @@ done in two ways: either by right-clicking on the **Default Work Unit**
 of the **Actor-Mixer Hierarchy** on the top-left and choosing **Import
 Audio Files**:
 
-[696x696px](/File:Import_method1.gif "wikilink")
+![](/assets/Import%20method1.gif){:width="696px"}
 
 Or just doing a classic drag & drop onto the same **Default Work Unit**:
 
-[696x696px](/File:Import_method2.gif "wikilink")
+![](/assets/Import%20method2.gif){:width="696px"}
 
 If everything went well, you should see your audio file underneath the
 **Default Work Unit**. Again, I should mention that WWise only accepts
@@ -143,7 +143,7 @@ and press the play button.
 You might have noticed that, once the sound file is selected, a new menu
 appears at the middle of the screen, called **Sound Property Editor**.
 
-[828x828px](/File:Sound_property_editor.png "wikilink")
+![](/assets/Sound%20property%20editor.png){:width="828px"}
 
 This is where all of your sound properties are located. Here you can add
 any effect you can imagine. Low pass filter, high pass filter, pitch,
@@ -154,7 +154,7 @@ perhaps music, so that the sound doesn’t stop after it’s finished. If
 you want more advanced effects, go to the Effects tab, and play around
 with all the available effects (there’s a lot of them)\!
 
-[369x369px](/File:All_the_wwise_effects.png "wikilink")
+![](/assets/All%20the%20wwise%20effects.png){:.legacy-small width="369px"}
 
 As you can see, WWise is no joke. There’s a very good reason so many AAA
 game developer studios use it. Just imagine the amount of time it
@@ -211,13 +211,13 @@ clicking on **New**. Give it a name and click **OK**. Now you’ll see the
 **Edit…** button unlock, which will bring you to the **Attenuation
 Editor** menu.
 
-[551x551px](/File:Making_an_attenuation.gif "wikilink")
+![](/assets/Making%20an%20attenuation.gif){:width="551px"}
 
 And here we are, we have yet another scary menu with so many settings &
 buttons\! This is a common theme with WWise, so you should get used to
 seeing this.
 
-[580x580px](/File:Scary_attenuation_menu.png "wikilink")
+![](/assets/Scary%20attenuation%20menu.png){:width="580px"}
 
 But once again, it’s not too complicated. The **Curves** window you see
 at the bottom left define what property of the sound changes based on
@@ -229,7 +229,7 @@ the settings of **Curve** from **None** to **Custom** to do just that.
 Finally, here’s a simple demonstration of playing around with the curve
 by adding extra points and changing the curve type (double left click on
 a curve to make an extra point, right click to change its type):
-[582x582px](/File:Changing_the_curve.gif "wikilink")
+![](/assets/Changing%20the%20curve.gif){:width="582px"}
 
 One rule of thumb is to make sure that the volume of the sound isn’t
 decreased too much in the first few meters. Otherwise, the volume will
@@ -259,7 +259,7 @@ it? This is simple to do, and again, can be done in two ways (well
 actually three but I’ll show two). The first is to right click on the
 sound file, go to **New Event** and then **Play**. Give your event a
 name and you’re done\!
-[717x717px](/File:Event_creation_method1.gif "wikilink")
+![](/assets/Event%20creation%20method1.gif){:width="717px"}
 
 The second way it to go to the **Events** tab in the project explorer,
 then click on the **Default Work Unit** under the **Events** folder, and
@@ -273,7 +273,7 @@ Actions** window will be replaced with the **Sound Property** Editor.
 Done\! WWise will automatically pick **Play** as the action, so no need
 to touch anything else.
 
-[717x717px](/File:Event_creation_method2.gif "wikilink")
+![](/assets/Event%20creation%20method2.gif){:width="717px"}
 
 I would recommend to always give your event name the “play_” prefix,
 just so that it easily helps you understand what it does if you forget
@@ -309,7 +309,7 @@ by going to **Layouts** at the very top of the screen and selecting
 you’re working on. For music, there’s the **Interactive Music**
 layout. For dialogue, you have the **Dynamic Dialogue** and so on.
 
-[646x646px](/File:Creating_soundbank.gif "wikilink")
+![](/assets/Creating%20soundbank.gif){:width="646px"}
 
 ### <u>Configuring the Sound Bank</u>
 
@@ -333,7 +333,7 @@ That is, of course, if those sounds are ticked. That’s what the tick
 boxes next to the sounds are for. Excluding sounds is as simple as
 unticking their tick boxes. Here’s this entire process in a GIF:
 
-[742x742px](/File:Configuring_soundbank.gif "wikilink")
+![](/assets/Configuring%20soundbank.gif){:width="742px"}
 
 ### <u>Building the Sound Bank!</u>
 
@@ -349,7 +349,7 @@ Work Unit** (and then the sound bank will also be ticked), and then go
 to the other menus on the right and tick **Windows** and **English
 (US)**. And finally, press **Generate**\!
 
-[956x956px](/File:Generating_soundbank.gif "wikilink")
+![](/assets/Generating%20soundbank.gif){:width="956px"}
 
 Congratulations\! You’ve created your very first sound bank\! But where
 was it saved? The answer is: in your project folder, and then in
@@ -380,7 +380,7 @@ name as your sound bank in WWise) and add a new section, which has the
 signature of **SBPL**. So, open it up with HxD or the hex editor of your
 choice, and you should be greeted with something like this:
 
-[760x760px](/File:Hex_editor_sound_bank.png "wikilink")
+![](/assets/Hex%20editor%20sound%20bank.png){:width="760px"}
 
 This is the binary representation of your custom sound bank in a
 hexadecimal format. All that needs to be done is a simple copy + paste,
@@ -395,7 +395,7 @@ C7 01 00 00 00 00 00 00 00 00 00 00 00 00`
 that you’ve selected the first hex byte of the file, so that the cursor
 is at the very start of the file:
 
-[755x755px](/File:Hex_byte_placing.gif "wikilink")
+![](/assets/Hex%20byte%20placing.gif){:width="755px"}
 
 And of course, make sure that the new hex bytes are inserted into the
 file, and <u>it doesn’t replace</u> the **BKHD** section below. If it
@@ -432,7 +432,7 @@ integer that way. Make sure you replace the variable in the **UInt32**
 section (or just **Int32** if the number isn’t larger than 2 billion),
 because we’re modifying a 32 bit integer.
 
-[755x755px](/File:Replacing_integer_wwise_soundbank.gif "wikilink")
+![](/assets/Replacing%20integer%20wwise%20soundbank.gif){:width="755px"}
 
 Now we’re done\! So, go to File -\> Save As, and save your file with the
 extension of **.sbp**. This is our final sound bank file that the game
@@ -629,7 +629,7 @@ the end. What matters is the name of the event that plays it.
 
 For example, here’s how it’s done for an ambient sound:
 
-[790x790px](/File:Event_name_to_eventName_property.png "wikilink")
+![](/assets/Event%20name%20to%20eventName%20property.png){:width="790px"}
 
 ## Conclusion
 
@@ -683,3 +683,4 @@ If the custom sound bank doesn’t work, here’s the most common causes:
 3.  The sound bank file (**.sbp**) is not inside
     **\<Mod Folder Name\>/Assets/tpp/sound/asset/**.
 4.  The sound bank name in the **sdf** is misspelled.
+

@@ -112,6 +112,7 @@ pre code {
 }
 
 /* To avoid recursive font size decreases and for restoring font-size when parent set to `0`. `0.8` to match `80%` of `--font-size-small` */
+table table *,
 pre code,
 table pre,
 .tools-element a::after {
@@ -458,6 +459,48 @@ body > .wrapper {
 }
 
 
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ IMAGES ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+body.darkmode--activated img,
+body.darkmode--activated .darkmode-ignore {
+    mix-blend-mode: unset; /* override default theme's inversion of various images */
+}
+
+.git-wiki-page img,
+.git-wiki-page img.center {
+    margin: var(--spacing-secondary) auto var(--spacing-primary);
+    display: block;
+    border-radius: var(--radius-secondary);
+}
+
+/* Preset max width so users don't have to bother adding dimension attributes if they don't want */
+.git-wiki-page img.thumb:not(.legacy-small) {
+    max-width: 50%;
+}
+
+.git-wiki-page img.thumb.left:not(.legacy-small),
+.git-wiki-page img.thumb.right:not(.legacy-small), {
+    max-width: 30%;
+}
+
+.git-wiki-page img.right,
+.git-wiki-page .legacy-small {
+    max-width: 70%;
+    display: inline-block;
+    margin-left: var(--spacing-primary);
+    float: right;
+    clear: right;
+}
+
+.git-wiki-page img.left {
+    max-width: 70%;
+    display: inline-block;
+    margin-right: var(--spacing-primary);
+    float: left;
+    clear: left;
+}
+
+
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ SIDEBAR ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 /* Site logo (hidden, uses alternative) */
@@ -704,6 +747,15 @@ footer {
         right: 0;
     }
 
+    .git-wiki-page img.right,
+    .git-wiki-page .legacy-small {
+        max-width: 45%;
+    }
+
+    .git-wiki-page img.left {
+        max-width: 45%;
+    }
+
     #git-wiki-sidebar {
         width: 100% !important;
         max-width: 100%;
@@ -771,6 +823,17 @@ footer {
 
 }
 
+@media print, screen and (max-width: 960px) {
+
+    .git-wiki-page, footer {
+        /* Overriding defaults. Remove from original. */
+        border: inherit;
+        padding: 0;
+        margin: 0;
+    }
+
+}
+
 @media print, screen and (max-width: 880px) {
 
     body {
@@ -780,13 +843,18 @@ footer {
 
 }
 
-@media print, screen and (max-width: 960px) {
+@media print, screen and (max-width: 700px) {
 
-    .git-wiki-page, footer {
-        /* Overriding defaults. Remove from original. */
-        border: inherit;
-        padding: 0;
-        margin: 0;
+    .git-wiki-page img,
+    .git-wiki-page img.thumb,
+    .git-wiki-page img.right,
+    .git-wiki-page img.left,
+    .git-wiki-page .legacy-small {
+        width: auto;
+        max-width: 100%;
+        display: block;
+        margin: var(--spacing-secondary) auto var(--spacing-primary);
+        float: none;
     }
 
 }

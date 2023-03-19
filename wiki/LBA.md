@@ -150,3 +150,4 @@ ScaledGimmickLocatorSets, has one entry for each locator.
 
 1.  Assets\\tpp\\level\\mission2\\story\\s10070\\s10070_gimmick.fox2
 2. <https://github.com/TinManTex/MockFox/blob/cd6d825ed01982e99f341c5ced4d330a768855e2/MockFoxLua/MockFoxEngine.lua#L285>
+

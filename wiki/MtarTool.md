@@ -62,3 +62,4 @@ the original file/folder layout and name.
 
 An up to date dictionary can be found at
 <https://github.com/TinManTex/mgsv-lookup-strings>
+

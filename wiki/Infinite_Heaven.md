@@ -19,8 +19,7 @@ installing or using the mod.
 
 
 # Installation
-[thumb|daften_23's tutorial on Snakebite and Infinite
-Heaven Installation](/File:MGSV_Modding_-_01_-_SnakeBite "wikilink")
+![daften_23's tutorial on Snakebite and Infinite Heaven Installation](/assets/MGSV%20Modding%20-%2001%20-%20SnakeBite.jfif){:.thumb}
 
 **1. Preparation/insurance:**
 
@@ -2183,8 +2182,8 @@ Information provided by TinMaxTex
 
 | Problem                                                | Technical details                                                            | Solution                                                                                                                                                                                                                                                           |
 | ------------------------------------------------------ | ---------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Cannot install mod with Snakebite                      | [thumb|143.994x143.994px](/File:IFXUHRX.jpg "wikilink")                      | This may be a problem with the Snakebite installation/User not backing up files. The easiest solution is to back up your saves, uninstall Snakebite, Uninstall MGSV and delete all data from MGS_TPP. Reinstall the game and make sure to back up all game files. |
-| Cannot uninstall or install mods                       | [thumb|204.98x204.98px](/File:111pture.PNG "wikilink")                       | MGSV Still running in the background. Force kill with task manager or restart computer.                                                                                                                                                                            |
+| Cannot install mod with Snakebite                      | ![](/assets/IFXUHRX.jpg){:.thumb .legacy-small width="143.994px"}                      | This may be a problem with the Snakebite installation/User not backing up files. The easiest solution is to back up your saves, uninstall Snakebite, Uninstall MGSV and delete all data from MGS_TPP. Reinstall the game and make sure to back up all game files. |
+| Cannot uninstall or install mods                       | ![](/assets/111pture.PNG){:.thumb .legacy-small width="204.98px"}                       | MGSV Still running in the background. Force kill with task manager or restart computer.                                                                                                                                                                            |
 | IHExt overlay won't work                               |                                                                              | set IHExt.exe (located in MGS_TPP/mod/) to always run in administrator.                                                                                                                                                                                           |
 | Player model turning invisible - unable to move        | This may not be an issue with IH. This could be a conflict between fova mods | Return to ACC, shut down the game, and check for mod conflicts with Snakebite.                                                                                                                                                                                     |
 | Repeating cutscenes when returning to MB               | MB Cutscenes mode set to: Default or Play Selected                           | Disable MB cutscenes.                                                                                                                                                                                                                                              |
@@ -2192,3 +2191,4 @@ Information provided by TinMaxTex
 | Emblem Keeps Resetting                                 | This is caused by booting the game offline with IH settings                  | Disable this option and play Online, emblem will update.                                                                                                                                                                                                           |
 
 Troubleshooting Chart
+

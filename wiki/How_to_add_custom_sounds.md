@@ -81,10 +81,10 @@ likely prompt you to make an account and sign in, unfortunately to avoid
 legal altercations you're gonna have to do that. Make an account and
 sign in and it should take you [to this
 page](https://www.audiokinetic.com/download/):
-[none|thumb|524x524px](/File:Wwise_home_screen.png "wikilink") Using the
+![](/assets/Wwise%20home%20screen.png){:.thumb width="524px"} Using the
 image on above as a guide, click on "older versions", alternatively
 click [here](https://www.audiokinetic.com/downloads/previous/).
-[none|thumb|522x522px](/File:Wwise_shit2.png "wikilink")
+![](/assets/Wwise%20shit2.png){:.thumb width="522px"}
 
 It should now take you to the page in the above screenshot. Download
 "Windows Web Installer". Then click "Offline Setup for windows" to
@@ -204,7 +204,7 @@ Again the name that is "RIFF_XXXX" is the **REAL** name of the files.
 Keep note of that. Furthermore I can see that the file uses "PCM" as an
 audio format, is in Mono, and has a sample rate of 41,000Hz. Write all
 of these things down somewhere.
-[none|thumb|504x504px](/File:Sound_shit2.png "wikilink")
+![](/assets/Sound%20shit2.png){:.thumb width="504px"}
 
 ### **Finishing Step 3: Creating the sounds**
 
@@ -230,14 +230,14 @@ a video by Cuba on this part of the procedure, the relevant part is from
 
 Make a new project, then press "shift + K" then click on "source
 settings" then click the three dots next to "Default Conversion
-Settings" [none|thumb|222x222px](/File:More_wwise_shit.png "wikilink")
+Settings" ![](/assets/More%20wwise%20shit.png){:.thumb .legacy-small width="222px"}
 After you click that it should open up a new box that gives you some
 options to convert the sounds. This is mostly mumbo jumbo to me, here's
 what matters: Remember the info about the sound file you got from the
 log earlier? It said PCM, Mono, and 41,000Hz. This is the part where we
 convert the new files to PCM. Again, not every file will be PCM but the
 ones in "common_bank_01" are all PCM. I don't know what PCM means but
-we need to have it. [none|thumb](/File:More_wwise_shit_2.png "wikilink")
+we need to have it. ![](/assets/More%20wwise%20shit%202.png){:.thumb}
 Select "PCM as input" this will convert all files we add to this project
 to PCM.
 
@@ -246,7 +246,7 @@ then click "Import audio files" if you have the files you want to add in
 one folder you can just select the folder.
 
 Once you have all your files in then click "project" then "convert all
-audio files" [none|thumb](/File:Untitled.png "wikilink") This will
+audio files" ![](/assets/Untitled.png){:.thumb} This will
 export all your audio files to the cache of your project folder. Which
 should be in WwiseProjects\\(Project Name)\\.cache\\Windows\\SFX
 

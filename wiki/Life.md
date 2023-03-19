@@ -53,3 +53,4 @@ while NORMAL soldiers get 1.0 so it can become 1.1 after shower
 Once scaling decreases for one soldier, it remains decreased for <u>ALL</u>
 soldiers, meaning changing to any other character does not reset it and
 one does need to visit the shower on MB
+

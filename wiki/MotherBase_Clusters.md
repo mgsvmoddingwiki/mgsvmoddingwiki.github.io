@@ -201,21 +201,22 @@ mbLayout 3
 
 | layoutCode | Description                                                                                                                                   | Map Image                                        |
 | ---------- | --------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------ |
-| 00-03      | Default offline Mother Base layout code.                                                                                                      | [frameless](/File:LayoutCode_0.png "wikilink")   |
-| 10-13      | Layout code used in FOBs.                                                                                                                     | [frameless](/File:LayoutCode_10.png "wikilink")  |
-| 20-23      | Layout code used in FOBs.                                                                                                                     | [frameless](/File:LayoutCode_20.png "wikilink")  |
-| 30-33      | Layout code used in FOBs.                                                                                                                     | [frameless](/File:LayoutCode_30.png "wikilink")  |
-| 40-43      | Layout code used in FOBs.                                                                                                                     | [frameless](/File:LayoutCode_40.png "wikilink")  |
-| 53         | Unused layout code. Only the .mbl UI map layout file 53 remains.                                                                              | [frameless](/File:LayoutCode_53.png "wikilink")  |
-| 60-63      | Unused layout code. Only the .mbl UI map layout files 60, 61, 62 and 63 remain.                                                               | [frameless](/File:LayoutCode_63.png "wikilink")  |
-| 70-73      | Layout code used in FOBs.                                                                                                                     | [frameless](/File:LayoutCode_70.png "wikilink")  |
-| 80-83      | Layout code used in FOBs.                                                                                                                     | [frameless](/File:LayoutCode_80.png "wikilink")  |
-| 90-93      | Layout code used in FOBs.                                                                                                                     | [frameless](/File:LayoutCode_90.png "wikilink")  |
-| 100-103    | Unused layout code. Only .mbl UI map layouts 100, 101, 102 and 103 remain.                                                                    | [frameless](/File:LayoutCode_100.png "wikilink") |
-| 500        | Layout code used for the Animal Conservation Platform.                                                                                        | [frameless](/File:500.png "wikilink")            |
-| 900        | Unused layout code. Only the .mbl UI map layout file 900 exists, which is pretty broken.                                                      | [frameless](/File:LayoutCode_900.png "wikilink") |
-| 950-953    | Unused layout code with platforms placed strangely close together. Only the .mbl UI map layout files 950, 952 and 953 remain, 951 is missing. | [frameless](/File:LayoutCode_953.png "wikilink") |
-| 971        | Unused layout code with every common platform being identical and a bridge corner missing. Only the .mbl UI map layout file 971 remains.      | [frameless](/File:LayoutCode_971.png "wikilink") |
+| 00-03      | Default offline Mother Base layout code.                                                                                                      | ![](/assets/LayoutCode%200.png)   |
+| 10-13      | Layout code used in FOBs.                                                                                                                     | ![](/assets/LayoutCode%2010.png)  |
+| 20-23      | Layout code used in FOBs.                                                                                                                     | ![](/assets/LayoutCode%2020.png)  |
+| 30-33      | Layout code used in FOBs.                                                                                                                     | ![](/assets/LayoutCode%2030.png)  |
+| 40-43      | Layout code used in FOBs.                                                                                                                     | ![](/assets/LayoutCode%2040.png)  |
+| 53         | Unused layout code. Only the .mbl UI map layout file 53 remains.                                                                              | ![](/assets/LayoutCode%2053.png)  |
+| 60-63      | Unused layout code. Only the .mbl UI map layout files 60, 61, 62 and 63 remain.                                                               | ![](/assets/LayoutCode%2063.png)  |
+| 70-73      | Layout code used in FOBs.                                                                                                                     | ![](/assets/LayoutCode%2070.png)  |
+| 80-83      | Layout code used in FOBs.                                                                                                                     | ![](/assets/LayoutCode%2080.png)  |
+| 90-93      | Layout code used in FOBs.                                                                                                                     | ![](/assets/LayoutCode%2090.png)  |
+| 100-103    | Unused layout code. Only .mbl UI map layouts 100, 101, 102 and 103 remain.                                                                    | ![](/assets/LayoutCode%20100.png) |
+| 500        | Layout code used for the Animal Conservation Platform.                                                                                        | ![](/assets/500.png)            |
+| 900        | Unused layout code. Only the .mbl UI map layout file 900 exists, which is pretty broken.                                                      | ![](/assets/LayoutCode%20900.png) |
+| 950-953    | Unused layout code with platforms placed strangely close together. Only the .mbl UI map layout files 950, 952 and 953 remain, 951 is missing. | ![](/assets/LayoutCode%20953.png) |
+| 971        | Unused layout code with every common platform being identical and a bridge corner missing. Only the .mbl UI map layout file 971 remains.      | ![](/assets/LayoutCode%20971.png) |
 | 980        | Mentioned in TppLocation, no assets remain.                                                                                                   | N/A                                              |
 
 layoutCodes
+

@@ -34,7 +34,7 @@ consists of six separate tools as of v0.4.0.0:
 
 ## Archive Unpacker
 
-[thumb|220x220px](/File:Archive_Unpacker.png "wikilink") The Archive
+![](/assets/Archive%20Unpacker.png){:.thumb .legacy-small width="220px"} The Archive
 Unpacker is a simple tool which unpacks user-specified .dat files, and
 then unpacks all .fpk, .fpkd, .pftxs and .sbp files which resided in the
 .dat files into one single directory structure. This tool has three
@@ -68,7 +68,7 @@ Notes:
 
 ## Mass Texture Converter
 
-[thumb|216x216px](/File:Mass_Texture_Converter.png "wikilink") The Mass
+![](/assets/Mass%20Texture%20Converter.png){:.thumb .legacy-small width="216px"} The Mass
 Texture Converter enables the user to convert any given amount of
 .ftex/.ftexs files into .dds files. The user simply selects the input
 folder, the output folder, and whether to include subdirectories for
@@ -99,7 +99,7 @@ Notes:
 
 ## File Proliferator
 
-[thumb|220x220px](/File:File_Proliferator.png "wikilink") The File
+![](/assets/File%20Proliferator.png){:.thumb .legacy-small width="220px"} The File
 Proliferator tool is the most powerful and feature-rich tool of the set.
 Although it has a number of use-cases and functions, its primary role is
 to create MakeBite-ready file directories for MGSV. From the files input
@@ -182,7 +182,7 @@ Notes:
 
 ## Filename Updater
 
-[thumb|220x220px](/File:Filename_Updater.png "wikilink") The Filename
+![](/assets/Filename%20Updater.png){:.thumb .legacy-small sswidth="220px"} The Filename
 Updater allows users to update old, hashed filenames to their unhashed
 filepaths. Assuming that the files were originally unpacked using an
 outdated version of the qar_dictionary.txt, this tool will copy and

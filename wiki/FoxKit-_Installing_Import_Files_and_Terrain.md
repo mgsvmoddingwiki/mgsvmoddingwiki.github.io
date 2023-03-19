@@ -20,20 +20,20 @@ File \> Open Project. Point it to FoxKit-master\\FoxKit
 
 Loading will take a long time.
 
-[555x555px](/File:FoxKit_Window.jpg "wikilink")
+![](/assets/FoxKit%20Window.jpg){:width="555px"}
 
 ## **Extracting Game Files and Texture Folder**
 
 Please see [File Monolith](/File_Monolith "wikilink"). Using Archive
 Unpacker in all the four-five chunks to one main folder should be ok.
 
-[466x466px](/File:FoxKit03.jpg "wikilink")
+![](/assets/FoxKit03.jpg){:width="466px"}
 
 In general FoxKit works by replicating the mgsv Assets files in the
 FoxKit Assets folder, though due to the time to import different files
 you should limit what you copy in to what you're working on.
 
-Just an example:[none|thumb](/File:AssetsFolder.jpg "wikilink")
+Just an example:![](/assets/AssetsFolder.jpg){:.thumb}
 Texture chunks do not need to be imported into the FoxKit folder, and
 are set up differently. Extract and convert all the texture in dds with
 the tools in File monolith and place wherever outside Unity. After that
@@ -55,13 +55,13 @@ the pack_common there are the Fox Packages. Extract
 **afgh_common_fpk/Assets/tpp/level/location/block_common/.** Here
 there is afgh_common_terrain.tre2.
 
-[554x554px](/File:Tre2.jpg "wikilink")
+![](/assets/Tre2.jpg){:width="554px"}
 
 Now, create all those paths that you find the tre2 inside Unity and copy
 paste the file. Below it can see the afgh_common_terrain.tre2 in the
 right folder.
 
-[493x493px](/File:Inunity.jpg "wikilink")
+![](/assets/Inunity.jpg){:width="493px"}
 
 ## **Loading TerrainTileFile**
 
@@ -78,13 +78,13 @@ Go to
 Extract the two Fox Packages, **afgh_slod0_130_146.fpk and
 afgh_slod0_130_148.fpk** See below:
 
-[<File:Fox04.jpg>](/File:Fox04.jpg "wikilink")
+![](/assets/Fox04.jpg)
 
 Copy and paste this folder path to Unity.
 **Assets/tpp/pack/environ/stagelow/afgh/small_lod0/130/** and copy
 paste the fpks inside of 130.
 
-[543x543px](/File:Iunity.jpg "wikilink")
+![](/assets/Iunity.jpg){:width="543px"}
 
 Inside this Fox Package should have two htres per folder in level. But
 also it has a lod0 model of the assets that it's interesting to keep and
@@ -100,17 +100,17 @@ window called inspector will show. Click at "**stitch terrain file**".
 Save the prefab to /Assets and wait until it shows something in Scene
 View.
 
-[558x558px](/File:Unity52.jpg "wikilink")
+![](/assets/Unity52.jpg){:width="558px"}
 
 At first it seems like nothing worked after prefab showing up in
 Hierachy window. Select the prefab again and scroll down the Inspector
 Window until you see the T**essellation Edge Lengh**. Slide to value
 1.
-[546x546px](/File:Un6.jpg "wikilink")
+![](/assets/Un6.jpg){:width="546px"}
 
 **Check the Beautiful terrain below.**
 
-[552x552px](/File:Terrainloaed.jpg "wikilink")
+![](/assets/Terrainloaed.jpg){:width="552px"}
 
 ## **Loading Small Assets from the two Tiles**
 
@@ -126,16 +126,16 @@ Even Afgh that has its own environment assets take some model from
 another location so... It's wise to reserve some time to load all the
 models the game has.
 
-[591x591px](/File:Paths02.jpg "wikilink")
+![](/assets/Paths02.jpg){:width="591px"}
 
 Copy and paste the folder to Unity and relax...
 
-[437x437px](/File:Relax.jpg "wikilink")
+![](/assets/Relax.jpg){:width="437px"}
 
 FoxKit can show a preview of fmdl before anything else... Texture is
 missing, but it can be done later.
 
-[493x493px](/File:Fmdl_view.jpg "wikilink")
+![](/assets/Fmdl%20view.jpg){:width="493px"}
 
 Now to find the Fox2 files\!\!\!
 
@@ -151,7 +151,7 @@ See image Below that I loaded to Unity a few ones and only 132_149,
 you can copy all those Datas to Unity as long you get familliar with the
 files...
 
-[486x486px](/File:NoneedFornow.jpg "wikilink")
+![](/assets/NoneedFornow.jpg){:width="486px"}
 
 When you load a Fox2 file in Unity, FoxKit will warn about missing files
 in Console Window. It help to know which file should be located and
@@ -164,13 +164,13 @@ example. Select it and at Inspector Window hit Create Editable Copy.
 Save the new file with the same name of the original file or a new one
 in the same place.
 
-[470x470px](/File:Hitbutton.jpg "wikilink")
+![](/assets/Hitbutton.jpg){:width="470px"}
 
 The Icon is the same for fox2 file and the new .asset file. Now it's
 missing a package definition. Let's create one and stick the new file to
 it.
 
-[461x461px](/File:Missingpackage.jpg "wikilink")
+![](/assets/Missingpackage.jpg){:width="461px"}
 
 Go to menu **Unity Assets/Create/FoxKit/Package Definition**. It will
 create a package that can be fpk or pfkd or other types. Standard its
@@ -188,7 +188,7 @@ the DataSetView.
 Even if the fox2 is not converted to .asset in Unity. It can be open in
 DataList Window later, but not editable.
 
-[546x546px](/File:Aff.jpg "wikilink")
+![](/assets/Aff.jpg){:width="546px"}
 
 ## **Small Fix to Loading StaticModelArrays**
 
@@ -203,7 +203,7 @@ StaticModelArray.cs and open in Notepad++ or any editor. Remove the red
 line and add what Green Line says. Save, Close and back to Unity to auto
 load fix.
 
-[592x592px](/File:FixStaticModelArray.jpg "wikilink")
+![](/assets/FixStaticModelArray.jpg){:width="592px"}
 
 #### **Drop Assets in Terrain**
 
@@ -214,8 +214,8 @@ still holds the Entries. Back to one of
 afgh_130_146_asset_copy.asset for example, double click to see the
 Dataset list entities as well the models and gameobjects in the Scene
 View. Check it\!\!
-[alt=|left|482x482px](/File:Finally.jpg "wikilink")
-[464x464px|alt=|left](/File:Ending.jpg "wikilink")
+![](/assets/Finally.jpg){:.left width="482px"}
+![](/assets/Ending.jpg){:.left width="464px"}
 
 
 ### And that's it!! 
@@ -223,3 +223,4 @@ A small guide to install, import Assets and
 Load Terrain as well see a little bit of the fox2 files. Check Discord
 Server Modders Heaven to talk about it and ask for help related to
 Mods/FoxKit.
+

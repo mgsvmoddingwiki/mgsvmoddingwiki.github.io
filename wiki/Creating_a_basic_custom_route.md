@@ -28,7 +28,7 @@ enemy soldiers to friendly. Next you will travel to the nearest outpost
 or area with enemy troops. Place a marker on one of them and hold the
 call button again. This time press Down and the screen will print the
 soldier's name, and the nearest CP. Take note of the CP name.
-[thumb|839x839px|none](/File:20200423202203_1.jpg "wikilink")
+![](/assets/20200423202203%201.jpg){:.thumb width="839px"}
 
 Once you have that information you can proceed to where you would like
 to place your route. Navigate to the exact point you would like your
@@ -44,19 +44,19 @@ to find some important pieces of information. The first is a line that
 contains the quest area you were in when you took your coordinates. Next
 to that it will say if it is an acceptable location to place a side op.
 Below that information are the coordinates that you took.
-[thumb|834x834px|none](/File:Notepad.png "wikilink")
+![](/assets/Notepad.png){:.thumb width="834px"}
 
 Keep this information open, as you will need it for the remaining steps.
 Open up FoxKit in Unity, this may take a moment the first time you open
 it. Right click in the hierarchy area. In the menu that appears select
 FoxKit -\> Route Set.
-[thumb|551x551px|none](/File:Unity1.png "wikilink")
+![](/assets/Unity1.png){:.thumb width="551px"}
 
 This will create a new game object, as well as open an area where you
 can begin to edit your new route. Click the button to create a new route
 within your route set. This will create a child object that contains the
 route, and the first node for the route nested within it.
-[thumb|612x612px|none](/File:Unity2.png "wikilink")
+![](/assets/Unity2.png){:.thumb width="612px"}
 
 Click on the first node. With the first node open you are able to edit
 the coordinates of it under the Local Transform option. Paste in the
@@ -65,21 +65,21 @@ coordinate should always have the opposite positive or negative value as
 the coordinate that you took. So if your taken X coordinate is 100, then
 you would enter -100 in Unity. If your taken coordinate is -100, then
 you would enter 100 in Unity.
-[thumb|572x572px|none](/File:Unity3.png "wikilink")
+![](/assets/Unity3.png){:.thumb width="572px"}
 
 Once the first value is set, click on the button to create a new node.
-[thumb|569x569px|none](/File:Unity4.png "wikilink")
+![](/assets/Unity4.png){:.thumb width="569px"}
 
 With the new node created and selected, enter the values for the second
 set of coordinates that you took. Remember to flip the positive or
 negative on the X coordinate.
-[thumb|567x567px|none](/File:Unity5.png "wikilink")
+![](/assets/Unity5.png){:.thumb width="567px"}
 
 Once both coordinates are placed, click on the Parent Route set object
 in the Hierarchy, and then click on the button to save your route to a
 .frt file. Save it to the Route Assets folder in the SOC Assets folder
 that gets installed with SOC.
-[thumb|610x610px|none](/File:Unity7.png "wikilink")
+![](/assets/Unity7.png){:.thumb width="610px"}
 
 Open up SOC to create a new sideop. Enter in a file name for it, an
 unique Quest Number for it, set the location to the map the route is
@@ -87,10 +87,10 @@ meant for, place coordinates for the general area that the route is in
 and then choose the correct Quest Area (found in ih_log.txt), the
 correct Quest CP (this was found from the tagged soldier in game) and
 then select your route file. Fill Radius, Quest Category, and Rank to
-whatever you wish. [thumb|540x540px|none](/File:SOC1.png "wikilink")
+whatever you wish. ![](/assets/SOC1.png){:.thumb width="540px"}
 
 Fill out the Flavor text fields and then press the button to proceed to
-the next part of SOC. [thumb|804x804px|none](/File:SOC2.png "wikilink")
+the next part of SOC. ![](/assets/SOC2.png){:.thumb width="804px"}
 
 Spawn a sol_quest enemy, assign him to your custom route and then press
 the button to build your side op.
@@ -98,7 +98,7 @@ the button to build your side op.
 In order for your custom route's name to appear in the 'Sneak Route' and
 'Caution Route' drop down menu, you will need to add it to SOC's route
 dictionary, otherwise it will appear as a string of numbers, as below:
-[thumb|372x372px|none](/File:SOC3.png "wikilink")
+![](/assets/SOC3.png){:.thumb .legacy-small width="372px"}
 
 You will need to copy the name of your route, in this example the route
 is called **rt_RouteSet_c_0000** and paste it in to the
@@ -112,4 +112,5 @@ appear as you named them in Fox Kit when building your SideOp
 Once built, create the .mgsv file from the SideOp Build folder that SOC
 creates, and then install it. Run the game and go to your custom side op
 to see the fruits of your labor\!
-[thumb|832x832px|none](/File:Game.png "wikilink")
+![](/assets/Game.png){:.thumb width="832px"}
+

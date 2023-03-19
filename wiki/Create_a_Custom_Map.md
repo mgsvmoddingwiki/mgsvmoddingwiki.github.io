@@ -18,7 +18,7 @@ probably just run the sample map and it should load fast.
 Unpack the .mgsv with your preferred archive unzipper tool. Change the
 name of the folder to fit your taste.
 
-[<File:Map01.jpg>](/File:Map01.jpg "wikilink")
+![](/assets/Map01.jpg)
 
 Inside the Mod Folder, you should have the folders Assets and GameDir.
 `smpl` is the four letter name that will be the unique locationName for
@@ -37,7 +37,7 @@ any names. MakeBite from [SnakeBite](/SnakeBite_Mod_Manager "wikilink")
 will pack all `_fpk` and `_fpkd` folders to `.fpk` and `.fpkd` pack
 files.
 
-[<File:Map02.jpg>](/File:Map02.jpg "wikilink")
+![](/assets/Map02.jpg)
 
 `mapa.fpk` will have assets such as .[fmdl](/FMDL "wikilink"),
 .[geom](/GEOM "wikilink"), .[twpf](/TWPF "wikilink"),
@@ -67,7 +67,7 @@ as well the these three files. The `.fox2` files here don't matter much,
 and neither do their names, unless they need to be referenced by
 `EntityLink` references in some `.fox2` entities.
 
-[516.981x516.981px](/File:Map03.jpg "wikilink")
+![](/assets/Map03.jpg){:width="516.981px"}
 
 #### **_common_asset_floor.fox2**
 
@@ -117,7 +117,7 @@ parameters file, .twpf, where it should be in
 It can be empty for now. There's no tools yet to generate `.twpf` files
 yet, so it's best to reuse vanilla ones from TPP and onwards.
 
-[<File:Map04.jpg>](/File:Map04.jpg "wikilink")
+![](/assets/Map04.jpg)
 
 #### **_mission_block.fox2**
 
@@ -131,7 +131,7 @@ The template map only loads the `StaticModel` `mtbs_flor011.fmdl` and
 `.geom`. If you removed the floor dataset as previously suggested, you
 can remove these ones as well.
 
-[446.993x446.993px](/File:Map05.jpg "wikilink")
+![](/assets/Map05.jpg){:width="446.993px"}
 
 `_fpk/Assets/tpp` could store a lot of types of asset files.
 Environmental assets like rocks, trees, ground and houses can be found
@@ -169,7 +169,7 @@ example:
 `packs= { "/Assets/tpp/pack/location/mapa/mapa.fpk",
 "/Assets/tpp/pack/location/mapa/secondFPK.fpk", },`
 
-[<File:Map06.jpg>](/File:Map06.jpg "wikilink")
+![](/assets/Map06.jpg)
 
 ### **Mission**
 
@@ -199,7 +199,7 @@ For further mission and location add-on script parameters, check out
 Infinite Heaven's `InfMission.lua` script usually found in `/MGS_TPP or
 GameDir/mod/modules/InfMission.lua`.
 
-[<File:Map07.jpg>](/File:Map07.jpg "wikilink")
+![](/assets/Map07.jpg)
 
 ## **Building and Testing It**
 
@@ -213,3 +213,4 @@ Companion](https://github.com/JosephZoeller/SOC), how other users'
 locations missions and side ops are made, or how all of the above work
 in the vanilla game. See .lng2 files to add a suited name for the area
 as well some images of location. This is just the beginning.
+

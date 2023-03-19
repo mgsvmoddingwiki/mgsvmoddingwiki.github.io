@@ -12,7 +12,7 @@ First. create a Dataset and add two Entities.
 TppLightProbeSHCoefficients and TppLightProbe. Ground and House is just
 to have a better picture of the use here.
 
-[390x390px](/File:Light1.jpg "wikilink")
+![](/assets/Light1.jpg){:.legacy-small width="390px"}
 
 ## **LightProbe**
 
@@ -33,7 +33,7 @@ Assets\\tpp\\level\\location\\smpl\\block_common\\**afgh_field_light.lpsh.***
 Drag and drop the file ***afgh_field_light.lpsh*** in
 TppLightProbeSHCoefficients.
 
-[465.991x465.991px](/File:Light2.jpg "wikilink")
+![](/assets/Light2.jpg){:width="465.991px"}
 
 ### **LightProbes in LPSH file**
 
@@ -44,12 +44,12 @@ in red, orange, yellow. At night it goes green, grey blue. Indoor areas
 use dark probes. So lets choose the LP_0038. The name "LP_0038" you
 can find inspecting the lpsh in FoxKit and its matter write the exactly
 name of the Probe in Dataset if you want make work.
-[alt=|left|421x421px](/File:Light3.jpg "wikilink")
+![](/assets/Light3.jpg){:.left width="421px"}
 
 Name in FoxKit.
 
-[372.972x372.972px](/File:Light4.jpg "wikilink")
-[left|thumb](/File:LPSH_Field_ref.jpg "wikilink")
+![](/assets/Light4.jpg){:.legacy-small width="372.972px"}
+![](/assets/LPSH%20Field%20ref.jpg){:.left .thumb}
 
 ### **TppLightProbe**
 
@@ -62,7 +62,7 @@ adding to the scene. We choose LP_0038.
 the entity to fill the inside of the house. Remember to add the scale in
 TppLightProbe window later,
 
-[842x842px](/File:LightProbe5.jpg "wikilink")
+![](/assets/LightProbe5.jpg){:width="842px"}
 
 Now. Lets see all the parameters TppLightProbe have.
 
@@ -86,7 +86,7 @@ innerScales will show a soft probe. For indoors the best is 0.98 in all.
 There are nice probes to configure here. If the house were open on a
 side so we could diffuse the probe to this open side.
 
-[737x737px](/File:Light6.jpg "wikilink")
+![](/assets/Light6.jpg){:width="737px"}
 
 **priority** = This parameter define which probe will be over another
 probe. Its common use tons of probes and then use a huge one to diffuse
@@ -113,11 +113,11 @@ light.
 
 **occlusionModeOpenRate** = To be Written. Can be 0.
 
-[362.995x362.995px](/File:Light7.jpg "wikilink")
+![](/assets/Light7.jpg){:width="362.995px"}
 
 In Game it shows like this.
 
-[659x659px](/File:Light8.jpg "wikilink")
+![](/assets/Light8.jpg){:width="659px"}
 
 ### **Small Fix in FoxKit to show Flags.**
 
@@ -146,7 +146,7 @@ looks like a parameter of Locator "size" is always set to be 1, not 0.*
 
 The **IrradiantionPoint** need to be test, though can be left for now.
 
-[<File:P1.jpg>](/File:P1.jpg "wikilink")
+![](/assets/P1.jpg)
 
 
 **Color**
@@ -159,7 +159,7 @@ temperature is lower or cool if the temperature is higher.
 Set Alpha to 255 if you want to keep the max of colour strenght in the
 field.
 
-[<File:P2.jpg>](/File:P2.jpg "wikilink")
+![](/assets/P2.jpg)
 
 **ReachPoint**
 
@@ -169,7 +169,7 @@ Usually the best OuterRange size would be the minimum ReachPoint value
 so that the light will fade correctly inside the room. For now, I set 22
 in the example.
 
-[461.969x461.969px](/File:P3.jpg "wikilink")
+![](/assets/P3.jpg){:width="461.969px"}
 
 **OuterRange and InnerRange**
 
@@ -183,14 +183,14 @@ Image below show using the Outer fade to Z: 22. Even if Inner is 12 so
 that the light will be diffuse, the Y value is 7 and the Height of the
 room will hit stronger.
 
-[493.986x493.986px](/File:P4.jpg "wikilink")
+![](/assets/P4.jpg){:width="493.986px"}
 
 **Temperature**
 
 This turn the color Warm or Cool. The Values are pretty much between 0
 to 80.000 if needed.
 
-[509.988x509.988px](/File:P5.jpg "wikilink")
+![](/assets/P5.jpg){:width="509.988px"}
 
 **Color Deflaction.** The float parameter may help adjust a color to be
 right, but need more test. For now, can be left 0 value.
@@ -228,7 +228,8 @@ value 11 does everything it need.
 
 **The Result**
 
-[<File:P6.jpg>](/File:P6.jpg "wikilink")
+![](/assets/P6.jpg)
 
 
 \== **SpotLight** == To be written
+

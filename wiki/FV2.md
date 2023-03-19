@@ -70,8 +70,7 @@ priority of entries takes the following order.
 
 ### Hiding/Showing Mesh Groups
 
-[thumb|220x220px|Example of how showing/hiding meshes works in form
-variation files.](/File:Hide-show-mesh-group-entries.png "wikilink")
+![Example of how showing/hiding meshes works in form variation files.](/assets/Hide-show-mesh-group-entries.png){:.thumb .legacy-small width="220px"}
 Hiding and showing mesh groups requires a single parameter: the hash of
 the mesh group to show or hide.
 
@@ -83,8 +82,7 @@ starting at the entry after the last mesh group to be hidden.
 
 ### Swapping Textures
 
-[thumb|220x220px|Example of how swapping textures works in form
-variation files.](/File:Swap-texture-entries.png "wikilink") Swapping
+![Example of how swapping textures works in form variation files.](/assets/Swap-texture-entries.png){:.thumb .legacy-small width="220px"} Swapping
 textures requires four parameters: the hash of the material instance the
 texture is applied to, the hash of the texture type for the texture
 which is being swapped, the index of the texture in the external file
@@ -105,8 +103,7 @@ of the external file indices, then all of the unknown 0xFFFF entries.
 
 ### Attaching Models by Bones
 
-[thumb|220x220px|Example of how attaching models by bones works in form
-variation files.](/File:Attach-model-by-bones-entries.png "wikilink")
+![Example of how attaching models by bones works in form variation files.](/assets/Attach-model-by-bones-entries.png){:.thumb .legacy-small width="220px"}
 Fv2s can attach two or more models together by matching bones that exist
 in both models. This will allow the attached model to deform to the
 target model's bone movements.
@@ -131,9 +128,7 @@ to the parameter.
 
 ### Attaching Models by Connection Point
 
-[thumb|220x220px|Example of how attaching models by connection point
-works in form variation
-files.](/File:Attach-model-by-connection-point-entries.png "wikilink")
+![Example of how attaching models by connection point works in form variation files.](/assets/Attach-model-by-connection-point-entries.png){:.thumb .legacy-small width="220px"}
 Fv2s can also attach two or more models together by using a target
 model's connection points. Attaching models this way will prevent them
 from deforming when the target model's bones move. This also allows

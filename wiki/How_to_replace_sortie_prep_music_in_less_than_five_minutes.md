@@ -4,7 +4,7 @@ permalink: /How_to_replace_sortie_prep_music_in_less_than_five_minutes/
 tags: [Guides, Sound]
 ---
 
-[thumb|480x480px](/File:How_to_replace_sortie_prep_music_in_MGSV_in_less_than_five_minutes. "wikilink")
+![](/assets/How%20to%20replace%20sortie%20prep%20music%20in%20MGSV%20in%20less%20than%20five%20minutes.jfif){:.thumb width="480px"}
 
 **This video assumes you have unpacked your game with File Monolith and
 have SecaProjects SBP Tool, Wem Converter and Wwise installed.**

@@ -89,7 +89,7 @@ A is usually the most common you'll encounter.
 For explaining what compromises the packages, I'll use package 206 -
 D114 EX-Frame, an A Type Package:
 
-[frameless|500x500px](/File:Package_Example_A.png "wikilink")
+![](/assets/Package%20Example%20A.png){:width="500px"}
 
 As you have noticed, it's separated into 4 sections, with 2 lines for
 each.
@@ -122,7 +122,7 @@ And how does a version B of a package looks like?
 
 For this example I'll be using package 71 - .45 MAG x7 (D114):
 
-[frameless|500x500px](/File:Package_Example_B.png "wikilink")
+![](/assets/Package%20Example%20B.png){:width="500px"}
 
 As you have noticed, it only has a singular section.
 
@@ -137,7 +137,7 @@ usually are set for things such as ammo.
 In order to add a new package, head down the bottom of the list, where
 package 335 resides.
 
-[frameless|500x500px](/File:Adding_New_Package_1.png "wikilink")
+![](/assets/Adding%20New%20Package%201.png){:width="500px"}
 
 See the very end of it? Compare it to other packages. There's something
 missing from it, right?
@@ -145,7 +145,7 @@ missing from it, right?
 That's right, it's missing a comma. Add one, so the line at the end
 should look like this:
 
-[frameless|500x500px](/File:Adding_New_Package_2.png "wikilink")
+![](/assets/Adding%20New%20Package%202.png){:width="500px"}
 
 Again, you need to add **a comma**, if you have trouble finding it, copy
 it here: <big>`,`</big>
@@ -164,7 +164,7 @@ used by a normal package must be there on your custom entry.
 For this example, I just copied package 335 I used before, and placed it
 there. And afterwards changed the note to say it's package 336.
 
-[frameless|500x500px](/File:Adding_New_Package_3.png "wikilink")
+![](/assets/Adding%20New%20Package%203.png){:width="500px"}
 
 The note isn't for the game, **it's for you.** This makes it easier to
 look for a package by simply using the `[CTRL + F]` command.

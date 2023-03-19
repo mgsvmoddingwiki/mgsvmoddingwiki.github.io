@@ -15,7 +15,7 @@ GeoTrap area, namely **BoxShape** or **SphereShape**.
 
 **GeoModuleCondition** deal with callbacks and functions. I mean,
 **checkFuncNames** and
-**execFuncNames**.[thumb|434x434px](/File:GeoTrap_Visual.jpg "wikilink")
+**execFuncNames**.![](/assets/GeoTrap%20Visual.jpg){:.thumb width="434px"}
 
 A common *checkFuncNames*, for example, can be the "*IsPlayer*" and have
 the *TppTrapCheckIsPlayerCallbackDataElement* which set the Trap to be
@@ -33,7 +33,7 @@ friendly.
 
 ## **GeoTrap** Entity
 
-[`thumb|451x451px`](/File:GeoTrap_Entity.jpg "wikilink")**`name`**`. It is important to set the name so it will be call as a sender, later in Lua Script. `
+![](/assets/GeoTrap%20Entity.jpg){:.thumb width="451px"}**`name`**`. It is important to set the name so it will be call as a sender, later in Lua Script. `
 
 **dataSet**. A fix value to the current fox2 file.
 
@@ -64,7 +64,7 @@ may open the fox2 and manually editing the packagePath to empty.
 
 ## **GeoModuleCondition** entity
 
-[thumb|473x473px](/File:GeoModuleCondition-0.jpg "wikilink")**name**.
+![](/assets/GeoModuleCondition-0.jpg){:.thumb width="473px"}**name**.
 Not so important, but link with GeoTrap.
 
 **dataSet**. A fix value to the current fox2 file.
@@ -113,7 +113,7 @@ up.
 
 ## **BoxShape** entity
 
-[thumb|487x487px](/File:BoxShape.jpg "wikilink")**name**. Not so
+![](/assets/BoxShape.jpg){:.thumb width="487px"}**name**. Not so
 important, but link with GeoTrap.
 
 **dataSet**. A fix value to the current fox2 file.
@@ -171,3 +171,4 @@ this.Seq_Example = {
    OnLeave = function () end,
 }
 ```
+

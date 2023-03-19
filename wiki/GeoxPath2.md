@@ -39,7 +39,7 @@ where the player will receive the action icon of the tag.
 Each first GeoxPathNode has an **Outlink** to the first edge, and the
 second GeoxPathNode has a **Outlink** to the second edge, IF it exists.
 In the Image below there is only one GeoxPathEdge.
-[thumb|464x464px](/File:ClimbNodesEdges.jpg "wikilink") Take some time
+![](/assets/ClimbNodesEdges.jpg){:.thumb width="464px"} Take some time
 to look at the GeoxPath2 in
 **\\Chunk2\\Assets\\tpp\\level\\location\\afgh\\block_large\\waterway\\afgh_waterway_path.fox2**(found inside the **afgh_waterway.fpkd** in **\\Assets\\tpp\\pack\\location\\afgh\\pack_large**). Inside that, one GeoxPath2 uses a climb tag with three nodes and two edges. The first
 node has an **Outlink** with the first edge. The second node has an
@@ -48,7 +48,7 @@ node has an **Outlink** with the second edge... Yeah it's quite
 confusing.
 
 Another setting of the GeoxPath2 is the **selectIndex**, which seems to have values similar to the amount of nodes or edges?... or the nodes + edges. But I lack any info about it. So far a number equal to the amount of nodes make it
-[thumb|359pxwork](/File:Unknown.png "wikilink").
+![](/assets/Unknown.png){:.thumb .legacy-small width="359px"}.
 
 This is the minimal info enough to start with the Entity GeoxPath2.
 
@@ -59,7 +59,7 @@ Image reference
 \#2: [https://cdn.discordapp.com/attachments/364177950805065732/713501348200710157/unknown.png](https://cdn.discordapp.com/attachments/364177950805065732/713501348200710157/unknown.png) (it's
 the same as the 3rd image on this page)
 
-## nodeTags[thumb|359x359px](/File:GeoxPath2ExampleFence.jpg "wikilink")
+## nodeTags![](/assets/GeoxPath2ExampleFence.jpg){:.thumb .legacy-small width="359px"}
 
 To be written...
 
@@ -90,4 +90,5 @@ Blue Axis lead the direction to start the Nodes. The Red Axis should
 face the player action and therefore the Action will only occurs in that
 side even for Jump and Elude. Behind is the only one that need to be
 lower, at the bottom of model/wall.
-[left|830x830px](/File:AxisGeoxPath2.jpg "wikilink")
+![](/assets/AxisGeoxPath2.jpg){:.left width="830px"}
+

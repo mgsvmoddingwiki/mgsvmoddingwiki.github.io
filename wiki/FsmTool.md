@@ -21,3 +21,4 @@ the folder containing the chunks.
 To repack a .fsm file, the user needs to drag an output .xml file onto
 the tool. The tool will read the file list from the .xml and repack the
 .fsm file based on that list.
+

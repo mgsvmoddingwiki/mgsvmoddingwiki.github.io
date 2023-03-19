@@ -4,7 +4,7 @@ permalink: /Chelly's_Rad_as_Shit_Guide_to_Mods/
 tags: [Guides]
 ---
 
-[thumb|left](/File:So_meme.jpg "wikilink")
+![](/assets/So%20meme.jpg){:.left .thumb}
 
 So.
 
@@ -13,7 +13,7 @@ begin? Here are some great mods to start you off with\! 
 
 ## [Snakebite Mod Manager](https://www.nexusmods.com/metalgearsolidvtpp/mods/106)
 
-[thumbYour](/File:Snakebite.png "wikilink") first order of business
+![Your](/assets/Snakebite.png){:.thumb} first order of business
 should be to install Snakebite, the mod manager used for all MGSV mods.
 Set up is pretty simple: After it backs up your game files, you're good
 to go. Keep in mind that when you're installing mods, it'll take a
@@ -23,7 +23,7 @@ uninstalling mods, of course\! 
 
 ## [Infinite Heaven](https://www.nexusmods.com/metalgearsolidvtpp/mods/45)
 
-[thumb](/File:45-0-1448484425.jpg "wikilink")
+![](/assets/45-0-1448484425.jpg){:.thumb}
 
 By far the most useful mod, Infinite Heaven does...basically everything
 you could want. Tweak health values, guard sight/hearing, timescale,
@@ -36,7 +36,7 @@ add-ons to it. Which brings us to...
 
 ## [Morbid's Side-Op Expansion Pack](https://www.nexusmods.com/metalgearsolidvtpp/mods/464)
 
-[thumbThis](/File:464-4-1494937450.jpg "wikilink") mod adds a
+![This](/assets/464-4-1494937450.jpg){:.thumb} mod adds a
 whopping *50* side ops to the main game\! All of them have unique
 flavor text and obstacles, so no "Extract the Soldier \#32" here\! When
 you get done playing them all, you can create your own side-ops with
@@ -45,7 +45,7 @@ Companion\!](https://www.nexusmods.com/metalgearsolidvtpp/mods/571)
 
 ## [The Man Who Sold The World](https://www.nexusmods.com/metalgearsolidvtpp/mods/59)
 
-[thumbShameless](/File:59-1532209796-1642007205.png "wikilink")
+![Shameless](/assets/59-1532209796-1642007205.png){:.thumb}
 promotion. Sue me, it's my guide. 
 
 Anyway, this mod allows you to play as the guy you thought you would be

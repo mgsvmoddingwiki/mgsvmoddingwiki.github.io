@@ -21,7 +21,7 @@ EquipDevelopFlowSetting.lua](https://github.com/Your401kPlan/Misc-Lua/blob/main/
 
 So now you have most of the CS guns in the game labeled , it's a matter
 of finding the right the corresponding weapon ID.
-[thumbAll](/File:XOF_Hospital_SMG_Info.png "wikilink") weapon ID's in
+![All](/assets/XOF%20Hospital%20SMG%20Info.png){:.thumb} weapon ID's in
 the game can be found at <https://unknown321.github.io/mgsmonsterguns/#>
 
 Lets take the XOF hospital SMG for example. Here is it's info:

@@ -30,3 +30,4 @@ in the `<classes>` header block.
   <class name="Entity" super="" version="2" />
 </classes>
 ```
+

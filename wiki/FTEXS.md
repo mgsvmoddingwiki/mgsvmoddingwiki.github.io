@@ -227,3 +227,4 @@ Gimp is similar.
     1.  This image will look different than one from the game, that's
         fine though it still functions as it should. Save it as a DDS,
         and then convert it with ftex tool.
+

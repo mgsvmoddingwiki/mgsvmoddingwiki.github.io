@@ -41,7 +41,7 @@ We do it because FoxKit can not load lba files just yet.
 Create a Dataset named "MockupGimmicks" and build a small assets scene.
 I did this:
 
-[742x742px](/File:Mockup01.jpg "wikilink")
+![](/assets/Mockup01.jpg){:width="742px"}
 
 We'll see this Fox2 later.
 
@@ -468,7 +468,7 @@ If you want to add more than one locator, just increase the
 Copy position and rotation from the mockupGimmick to the lba file and
 save. Example afgh_char002:
 
-[578x578px](/File:Gimmick01.jpg "wikilink")
+![](/assets/Gimmick01.jpg){:width="578px"}
 
 Do the same for **afgh_flag001.**
 
@@ -484,7 +484,7 @@ for the Chair and another for Flag/Banner we planned.
 
 **afgh_char002**
 
-[552x552px](/File:Mockup02.jpg "wikilink")
+![](/assets/Mockup02.jpg){:width="552px"}
 
 **<big>modelFile</big>** Just add the model of afgh_char002.fmdl here
 
@@ -523,13 +523,13 @@ take the positions and rotations for lba files not load in the Mod.
 Look that I'm using the same mod from the previously guides. Every mod
 can have tons of fox2 file that deals with something in specific.
 
-[542x542px](/File:Gimmick02.jpg "wikilink")
+![](/assets/Gimmick02.jpg){:width="542px"}
 
 We need to edit manually the MyThirdFox2File in xml to add the flag
 number and of course check if the paths are correctly done. Remember now
 to check the QueryList and choose the best flag.
 
-[512x512px](/File:Gimmick03.jpg "wikilink")
+![](/assets/Gimmick03.jpg){:width="512px"}
 
 Save and pack the fox2 file.
 
@@ -542,9 +542,9 @@ with the LbaTool and copy/paste for our Mod Folder in
 **fpk/Assets/tpp/level/location/afgh/block_common/lba** or the path you
 choose in **TppSharedGimmickData.**
 
-[557x557px](/File:Gimmick04.jpg "wikilink")
+![](/assets/Gimmick04.jpg){:width="557px"}
 
-[566x566px](/File:Gimmick05.jpg "wikilink")
+![](/assets/Gimmick05.jpg){:width="566px"}
 
 #### **Models, motions and parts files**
 
@@ -556,15 +556,15 @@ there.
 
 **Fmdl and Geoms**
 
-[428x428px](/File:Gimmick06.jpg "wikilink")
+![](/assets/Gimmick06.jpg){:width="428px"}
 
 **Motion**
 
-[410x410px](/File:Gimmick07.jpg "wikilink")
+![](/assets/Gimmick07.jpg){:width="410px"}
 
 **Parts** Notice that parts goes to fpkd folder, not fpk.
 
-[431x431px](/File:Gimmick08.jpg "wikilink")
+![](/assets/Gimmick08.jpg){:width="431px"}
 
 Done. Now test it. Make the .mgsv file in Makebite building the
 **LoadingStairsInGame folder.** Open with SnakeBite and see it in game.
@@ -572,4 +572,5 @@ Done. Now test it. Make the .mgsv file in Makebite building the
 Unfortunately due to the limits of Free Roam. Only one TppSharedGimmick
 was spawned. The flag works at least.
 
-[527x527px](/File:VideoGimmick01.webm "wikilink")
+![](/assets/VideoGimmick01.webm){:width="527px"}
+

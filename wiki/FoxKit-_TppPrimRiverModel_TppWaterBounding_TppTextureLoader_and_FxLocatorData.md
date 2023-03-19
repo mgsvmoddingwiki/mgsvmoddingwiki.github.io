@@ -26,11 +26,11 @@ and copy paste to Entity Window. Change the pivot to Center/Local
 because some models, like the one I chose, have a far pivot to handle...
 Place where you think it may be good and done.
 
-[615x615px](/File:Puddle01.jpg "wikilink")
+![](/assets/Puddle01.jpg){:width="615px"}
 
 #### After that let's see the Entity Window **TppPrimRiverModel. Create it in DataList Window/Entity/TppPrimRiverModel**
 
-[<File:Prim01.jpg>](/File:Prim01.jpg "wikilink")
+![](/assets/Prim01.jpg)
 
 **primRiverGroupName** is whatever you might call it. I named it as
 WeirdWater.
@@ -49,7 +49,7 @@ DataSet is inside the package definition we chose. **afgh_common**.
 
 #### Now, **TppPrimRiverModelParam**
 
-[<File:Prim02.jpg>](/File:Prim02.jpg "wikilink")
+![](/assets/Prim02.jpg)
 
 **primRiverGroupName** is the same name we chose before. WeirdWater.
 
@@ -91,7 +91,7 @@ It adds a effect of player getting wet, splash water and trigger a sound
 of wet. It's quite simple to add. **Create it in DataList
 Window/Entity/TppWaterBouding.**
 
-[554x554px](/File:Prim03.jpg "wikilink")
+![](/assets/Prim03.jpg){:width="554px"}
 
 Once you load the **TppWaterBounding entity** to the Dataset and create
 a TransformEntity, set a cube inside of the gameobject in Hierachy
@@ -125,7 +125,7 @@ go to
 
 Create a **afgh_common_pftxs** folder.
 
-[530x530px](/File:Texturefolder01.jpg "wikilink")
+![](/assets/Texturefolder01.jpg){:width="530px"}
 
 Open the afgh_common_pftxs and create
 **/Assets/tpp/environ/object/afghanistan/puddle/afgh_pddl001/sourceimages/**
@@ -134,14 +134,14 @@ Get all the **ftex** and **ftex_1** textures in Texture_dat from the
 same path folder we made, copy and paste to the folder we created. It
 should look like the image down below.
 
-[601x601px](/File:Texturefolder07.jpg "wikilink")
+![](/assets/Texturefolder07.jpg){:width="601px"}
 
 One more folder path should be made for the cubemap.
 
 Open the afgh_common_pftxs and create
 **/Assets/tpp/common_source/cubemap/environ/afghanistan/cm_afgh_cb_vllg003/sourceimages/test03/**
 
-[598x598px](/File:Texturefolder04.jpg "wikilink")
+![](/assets/Texturefolder04.jpg){:width="598px"}
 
 The choice of those texture are my fav. Feel free to choose the best
 texture for puddle and Cmap.
@@ -154,7 +154,7 @@ Copy this folder with the files to Unity.
 Let's see the Entity Window for **TppTextureLoader. Create it in
 DataList Window/Entity/TppTextureLoader**
 
-[<File:Texturefolder06.jpg>](/File:Texturefolder06.jpg "wikilink")
+![](/assets/Texturefolder06.jpg)
 
 The name of Textures and forceLargeTextures are the same we saw in
 **TppPrimRiverModelParam.** Only that wt_bsm and srm went out of
@@ -163,14 +163,14 @@ work without them or not.
 
 Choose only ftex. And not ftex_1.
 
-[<File:Texturefolder08.jpg>](/File:Texturefolder08.jpg "wikilink")
+![](/assets/Texturefolder08.jpg)
 
 Now, let's pack the **afgh_common_pftxs** with the tool
 **[AutoPftxsTool.v0.2](https://github.com/BobDoleOwndU/AutoPftxsTool/releases)**
 and place it into the Mod Folder for when we test in-game. MakeBite does
 not pack pftxs folders like it does with fpk and fpkd.
 
-[635x635px](/File:Texturefolder05.jpg "wikilink")
+![](/assets/Texturefolder05.jpg){:width="635px"}
 
 ## **FxLocatorData**
 
@@ -192,16 +192,16 @@ Go to **afgh_common_fpkd**
 Create the path **/Assets/tpp/effect/vfx_data/splash/**
 
 Find the Effect **fx_tpp_splwtr10_m1.vfx** and copy to this new
-folder. [<File:Fxlocator01.jpg>](/File:Fxlocator01.jpg "wikilink") 
+folder. ![](/assets/Fxlocator01.jpg) 
 Copy the **vfx_data/splash/fx_tpp_splwtr10_m1.vfx** to Unity under the
 /Assets/tpp/effect/
 
-[405x405px](/File:Splash011.jpg "wikilink")
+![](/assets/Splash011.jpg){:width="405px"}
 
 Create Let's see the Entity Window now. **Create it in DataList
 Window/Entity/FxLocatorData**
 
-[647x647px](/File:Fxlocator02.jpg "wikilink")
+![](/assets/Fxlocator02.jpg){:width="647px"}
 
 Move the effect where it fits. Some effects really matter if rotated or
 noted. The Axis Blue seems to indicate the direction = 0. Scale does not
@@ -239,17 +239,18 @@ previously guide.
 The Package Definition does not look right here. So its better to erase
 and keep empty.
 
-[648x648px](/File:Ending01.jpg "wikilink")
+![](/assets/Ending01.jpg){:width="648px"}
 
 #### **Second Fix**
 
 And the StaticModel **FLAG** should be **4** and not **7**. If kept as 7
 it won't load the transparency of water and texture.
 
-[540x540px](/File:Ending02.jpg "wikilink")
+![](/assets/Ending02.jpg){:width="540px"}
 
 Pack the fixed fox2 file again. Make the .mgsv file in MakeBite,
 building the **LoadingStairsInGame folder.** Open with SnakeBite and see
 it in-game.
 
-[1328x1328px](/File:Ingame01.jpg "wikilink")
+![](/assets/Ingame01.jpg){:width="1328px"}
+

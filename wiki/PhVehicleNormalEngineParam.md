@@ -81,3 +81,4 @@ determine engine power at each RPM.
 Presumably the amount of engine braking being done to naturally
 decelerate the vehicle at each RPM, once the throttle is no longer being
 applied.
+

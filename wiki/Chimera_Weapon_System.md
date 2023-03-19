@@ -49,15 +49,15 @@ For this example, I'll be using two versions of the Rasp shotgun.
 
 This is the RASP TB-SG SB, which is a True Chimera:
 
-[frameless|515x515px](/File:RASP_-_True_Chimera.png "wikilink")
+![](/assets/RASP%20-%20True%20Chimera.png){:width="515px"}
 
 And this is the RASP SB-SG GOLD, which is a CS Weapon:
 
-[frameless|515x515px](/File:RASP_-_CS_Weapon.png "wikilink")
+![](/assets/RASP%20-%20CS%20Weapon.png){:width="515px"}
 
 Notice any differences? Look closely:
 
-[frameless|320x320px](/File:True_Chimera_-_Identification.png "wikilink")[frameless|320x320px](/File:CS_Weapon_-_Identification.png "wikilink")
+![](/assets/True%20Chimera%20-%20Identification.png){:.legacy-small width="320px"}![](/assets/CS%20Weapon%20-%20Identification.png){:.legacy-small width="320px"}
 
 True Chimeras always have the Switch Display function added to it's
 description in the customization menu, which allows you to swap pages
@@ -91,10 +91,10 @@ the default editor can be difficult to go through.
 
 For example, the default look of Notepad++ is this:
 
-[frameless|725x725px](/File:Default_Notepad++_Theme.png "wikilink")
+![](/assets/Default%20Notepad++%20Theme.png){:width="725px"}
 While personally, my custom theme makes it look like:
 
-[frameless|725x725px](/File:Muffins_Notepad++.png "wikilink")
+![](/assets/Muffins%20Notepad++.png){:width="725px"}
 
 Font is altered, there are different highlights, numbers are made larger
 to stand out, color is easier on the eyes.
@@ -102,7 +102,7 @@ to stand out, color is easier on the eyes.
 In order to change it, go over to the Item Bar on top and proceed to
 Settings:
 
-[frameless|250x250px](/File:Style_Configurator.png "wikilink")
+![](/assets/Style%20Configurator.png){:.legacy-small width="250px"}
 
 And pick Style Configurator. You'll open a window that allows you to
 swap themes for Notepad++. Pick a theme you like, and go at it\!
@@ -167,3 +167,4 @@ The following are the .lua files that contain and / or are related to
 Chimera.
 
 ### [Chimera Package Table](/Chimera_Package_Table "wikilink")
+

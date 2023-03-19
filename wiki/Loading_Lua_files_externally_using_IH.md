@@ -82,3 +82,4 @@ and it will used the edited lua.
 For sideops scripts just exit the sideops loadArea, edit your external
 lua then return to the sideop loadArea, and it should load your external
 lua.
+
