@@ -1,0 +1,1202 @@
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ GLOBAL VARIABLES ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+:root {
+    --width-sidebar: 280px;
+    --height-mobile-header: 50px;
+    --spacing-primary: 30px;
+    --spacing-secondary: 15px;
+    --spacing-minor: 5px;
+    --border-width: 2px;
+    --radius-primary: 4px;
+    --radius-secondary: 2px;
+    --radius-full: 100%;
+
+    --bg-page: hsl(46, 0%, 16%);
+    --bg-primary: hsl(234, 5%, 21%);
+    --bg-subtle: hsl(240, 7%, 26%);
+    --bg-input: hsl(234, 8%, 15%);
+    --bg-code: var(--bg-input);
+    --bg-list-hover: hsl(240, 7%, 46%);
+    --color-primary: hsl(0,0%,90%);
+    --color-secondary: hsl(231, 3%, 66%);
+    --color-inverse: #171717;
+    --color-accent: #d88d31;
+    --color-accent-hover: hsl(33, 80%, 66%);
+    --color-link: hsl(212,99%,73%);
+    --color-link-hover: hsl(209,95%,92%);
+    --color-code: hsl(207, 43%, 90%);
+    --color-border: hsl(0,0%,40%);
+    --color-buttons: var(--bg-subtle);
+    --color-buttons-hover: hsl(231, 3%, 31%);
+    --color-shadow: hsla(0,0%,0%,.2);
+
+    --font-sans: Kibur, "Segoe UI", sans-serif;
+    --font-size-base: 16px;
+    --font-size-small: 80%;
+    --font-line-height: 1.8em;
+    --font-weight-base: 400;
+    --font-weight-semibold: 500;
+    --font-weight-bold: 700;
+
+    --shadow-primary: 0 2px 20px 0 var(--color-shadow);
+    --shadow-secondary: 0 2px 10px 0 var(--color-shadow);
+}
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ GENERAL ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+html,body {
+    /* Overriding redundant properties in original stylesheet */
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+/* Text selection */
+::-moz-selection { background: var(--color-accent); color: var(--color-inverse); }
+::selection      { background: var(--color-accent); color: var(--color-inverse); }
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--color-primary);
+    font-family: var(--font-sans);
+    font-weight: var(--font-weight-semibold);
+}
+
+/* For whatever reason various headings are doubly bold */
+h1 strong,
+h2 strong,
+h3 strong,
+h4 strong,
+h5 strong,
+h6 strong {
+    font-weight: inherit;
+}
+
+code, pre,
+strong,
+th {
+    color: inherit;
+}
+
+a,
+table td:last-child, /* wrap words only in right-most cells, since otherwise if applied to all `td` has some unexpectedly narrow columns with certain tables */
+code, pre {
+    word-break: break-word;
+    overflow-wrap: break-word;
+}
+
+/* Code */
+code,
+pre {
+    background: var(--bg-code);
+    color: var(--color-code);
+    font-size: var(--font-size-small);
+    line-height: var(--font-line-height);
+}
+
+code {
+    padding: var(--spacing-minor);
+    border-radius: var(--radius-secondary);
+}
+
+pre {
+    border: none;
+    border-radius: var(--radius-secondary);
+}
+
+pre code {
+    background: inherit;
+    color: inherit;
+    padding: 0;
+    border-radius: 0;
+}
+
+/* To avoid recursive font size decreases and for restoring font-size when parent set to `0`. `0.8` to match `80%` of `--font-size-small` */
+pre code,
+table pre,
+.tools-element a::after {
+    font-size: calc(var(--font-size-base) * 0.8);
+}
+
+/* Rouge syntax highlighting */
+.highlight {
+    background-color: var(--bg-code);
+    border-radius: var(--radius-primary);
+}
+
+/* Links */
+a {
+    color: var(--color-link);
+}
+
+a:hover,
+a:active {
+    color: var(--color-link-hover);
+}
+
+/* Horizontal line */
+hr {
+    height: var(--border-width);
+    background: var(--color-border);
+    margin: calc(var(--spacing-minor) * 2) 0 20px 0;
+}
+
+input {
+    background: var(--bg-input);
+    color: var(--color-primary);
+    padding: var(--spacing-minor) var(--spacing-secondary);
+    border: none;
+    border-radius: var(--radius-primary);
+}
+
+input:focus {
+    outline: none;
+    box-shadow: 0px 0px 0 2px var(--color-border);
+}
+
+/* Tables */
+table {
+    max-width: 100%;
+    font-size: var(--font-size-small);
+    line-height: var(--font-line-height);
+    display: block; /* required for `overflow` to have any effect. Has side-effect of not expanding tables to full width of container if content shorter. Would require wrapper to fix. */
+    overflow: auto; /* enable scrollbars when tables exceed max container width */
+}
+
+th, td {
+    border-bottom: var(--border-width) solid var(--color-border);
+}
+
+td {
+    background: var(--bg-subtle);
+}
+
+body {
+    max-width: 1280px; /* Fandom content max width excluding sidebar: 864px */
+    background-color: var(--bg-page) !important; /* override unnecessary JS hiding */
+    color: var(--color-primary);
+    font-family: var(--font-sans);
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-base);
+    line-height: var(--font-line-height);
+    opacity: 1; /* override unnecessary JS hiding */
+    visibility: visible; /* ditto */
+    padding: var(--spacing-primary);
+    margin: var(--spacing-primary) auto calc(var(--spacing-primary) * 2) auto;
+}
+
+
+/* Hide the theme background overlay + toggle button */
+.darkmode-background,
+.darkmode-layer,
+.darkmode-toggle {
+    display: none !important;
+}
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ EDITING/SEARCH TOOLBAR ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+#tools-buttons {
+    text-align: inherit !important; /* override due to default CSS using inline styles */
+    display: flex;
+    flex-flow: column;
+}
+
+/* Buttons */
+.git-wiki-tools {
+    width: 100%;
+    font-size: 0; /* hide all text for icons only styling */
+    text-indent: -999px; /* required, otherwise on mobile w/ touch the hidden text causes unexpected page width scaling between 280-400px wide */
+    display: flex;
+    flex-flow: wrap;
+    align-items: baseline;
+    justify-content: flex-end;
+    position: absolute;
+    top: -25px;
+    right: var(--spacing-primary);
+}
+
+.git-wiki-tools br {
+    width: var(--spacing-secondary);
+    content: ''; /* Content property required otherwise styling is ignored */
+    display: none; /* For icons only styling I've hidden this */
+}
+
+.tools-element {
+    width: 38px;
+    height: 38px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    border: none;
+    margin: 0 var(--spacing-minor) calc(var(--spacing-minor) * 2) 0;
+}
+
+.tools-element:nth-last-child(2) {
+    margin-left: var(--spacing-secondary);
+}
+
+.tools-element a,
+.tools-element a:active,
+.tools-element a:active:hover {
+    background: var(--color-buttons);
+}
+
+.tools-element a {
+    width: 100%;
+    height: 100%;
+    color: var(--color-inverse);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--radius-full);
+    box-shadow: var(--shadow-secondary);
+    z-index: 3; /* so ::after tooltip doesn't dip below search box when :active */
+}
+
+.tools-element a:hover {
+    background: var(--color-buttons-hover);
+}
+
+.tools-element a:active {
+    filter: brightness(0.8);
+}
+
+.tools-element a::before,
+.tools-element a::after {
+    pointer-events: none; /* otherwise (for ::before at least) will block :active styling */
+}
+
+/* Buttons - Tooltip */
+.tools-element a::after {
+    width: max-content;
+    background: hsl(234, 8%, 10%);
+    color: var(--color-secondary);
+    content: '';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    padding: var(--spacing-minor) var(--spacing-secondary);
+    border-radius: var(--radius-primary);
+    box-shadow: var(--shadow-secondary);
+    position: absolute;
+    top: 60px;
+    z-index: 2;
+    transition: 150ms opacity ease-out, 150ms top ease-in;
+}
+
+.tools-element a:hover::after,
+.tools-element a:active::after {
+    opacity: 1;
+    top: 55px;
+}
+
+/* Buttons - Icon */
+.tools-element a::before {
+    width: 24px;
+    height: 24px;
+    background: var(--color-secondary);
+    content: '';
+    display: block;
+}
+
+/* Buttons - Add new page */
+.tools-element:nth-of-type(1) a::before {
+    -webkit-mask-image: url("/assets/images/ui.svg#icons-editing-add");
+    mask-image: url("/assets/images/ui.svg#icons-editing-add");
+}
+.tools-element:nth-of-type(1) a::after {
+    content: 'Add New Page';
+}
+
+/* Buttons - Edit page */
+.tools-element:nth-of-type(2) a::before {
+    -webkit-mask-image: url("/assets/images/ui.svg#icons-editing-edit");
+    mask-image: url("/assets/images/ui.svg#icons-editing-edit");
+}
+.tools-element:nth-of-type(2) a::after {
+    content: 'Edit Page';
+}
+
+/* Buttons - Delete page */
+.tools-element:nth-of-type(3) a::before {
+    -webkit-mask-image: url("/assets/images/ui.svg#icons-editing-delete");
+    mask-image: url("/assets/images/ui.svg#icons-editing-delete");
+}
+.tools-element:nth-of-type(3) a::after {
+    content: 'Delete Page';
+}
+
+/* Buttons - Page history */
+.tools-element:nth-of-type(4) a::before {
+    -webkit-mask-image: url("/assets/images/ui.svg#icons-editing-history");
+    mask-image: url("/assets/images/ui.svg#icons-editing-history");
+}
+.tools-element:nth-of-type(4) a::after {
+    content: 'Page History';
+}
+
+/* Buttons - Page source */
+.tools-element:nth-of-type(5) a::before {
+    -webkit-mask-image: url("/assets/images/ui.svg#icons-editing-source");
+    mask-image: url("/assets/images/ui.svg#icons-editing-source");
+}
+.tools-element:nth-of-type(5) a::after {
+    content: 'Page Source';
+}
+
+/* Buttons - Prose.io */
+.tools-element:nth-of-type(6) a,
+.tools-element:nth-of-type(6) a:active,
+.tools-element:nth-of-type(6) a:active:hover,
+.tools-element:nth-of-type(7) a,
+.tools-element:nth-of-type(7) a:active,
+.tools-element:nth-of-type(7) a:active:hover {
+    background: var(--color-accent);
+}
+.tools-element:nth-of-type(6) a:hover,
+.tools-element:nth-of-type(7) a:hover {
+    background: var(--color-accent-hover);
+}
+.tools-element:nth-of-type(6) a::before,
+.tools-element:nth-of-type(7) a::before {
+    background: var(--color-inverse);
+}
+
+/* Buttons - Prose.io - Add new page */
+.tools-element:nth-of-type(6) a::before {
+    -webkit-mask-image: url("/assets/images/ui.svg#icons-editing-add");
+    mask-image: url("/assets/images/ui.svg#icons-editing-add");
+}
+.tools-element:nth-of-type(6) a::after {
+    content: 'Prose.io - Add New Page';
+}
+
+/* Buttons - Prose.io - Edit page */
+.tools-element:nth-of-type(7) a::before {
+    -webkit-mask-image: url("/assets/images/ui.svg#icons-editing-edit");
+    mask-image: url("/assets/images/ui.svg#icons-editing-edit");
+}
+.tools-element:nth-of-type(7) a::after {
+    content: 'Prose.io - Edit Page';
+}
+
+/* Search */
+#search-input {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+#results-container {
+    overflow: hidden;
+    padding: 0;
+    border-radius: var(--radius-primary);
+    margin: var(--spacing-minor) 0 calc(var(--spacing-primary) - var(--spacing-minor)) 0;
+    position: relative;
+}
+
+#results-container li a {
+    width: 100%;
+    height: 100%;
+    color: var(--color-primary);
+    display: inline-block;
+    padding: var(--spacing-minor) var(--spacing-secondary);
+    position: relative; /* position text above background pseudo-element */
+}
+
+#results-container li a:hover {
+    background: var(--bg-list-hover);
+}
+
+/* Results background */
+#results-container li:first-child::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: var(--bg-input);
+    display: block;
+    position: absolute;
+    z-index: 0;
+}
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ MAIN CONTENT ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+body > .wrapper {
+    min-height: calc(100vh - var(--spacing-primary) * 4);
+    background: var(--bg-primary);
+    display: flex;
+    flex-flow: row;
+    border-radius: var(--radius-primary);
+    padding: var(--spacing-primary);
+    box-shadow: var(--shadow-primary);
+    position: relative;
+}
+
+.git-wiki-page {
+    min-width: 60%; /* so flex-basis works as expected */
+    flex: 1 1 auto;
+    padding-left: 0;
+    margin: 0 0 50px 0;
+}
+
+/* Table of contents */
+#git-wiki-toc {
+    background: var(--bg-subtle);
+    padding: var(--spacing-secondary);
+    padding-left: calc(var(--spacing-secondary) * 2.5);
+    border-radius: var(--radius-primary);
+    margin: var(--spacing-secondary) 0 var(--spacing-primary);
+}
+
+#git-wiki-toc ::marker {
+    color: var(--color-secondary);
+}
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ SIDEBAR ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/* Paz emblem graphic. Once mobile JS kicks in at narrower viewport the h1 element is auto removed, hiding this. */
+#git-wiki-sidebar h1::before {
+    width: 204px;
+    height: 204px;
+    content: '';
+    display: block;
+    background-color: var(--color-accent);
+    background-image: url("/assets/images/paz-emblem.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: var(--radius-full);
+    margin-left: 22px;
+    box-shadow: var(--shadow-secondary);
+    transition: 250ms transform ease-out, 250ms background-color ease-in;
+    position: absolute;
+    top: -230px;
+    z-index: 3;
+}
+
+#git-wiki-sidebar h1:hover::before {
+    background-color: var(--color-accent-hover);
+    transform: rotateZ(-4deg) rotateY(-15deg);
+}
+
+#git-wiki-sidebar {
+    width: auto !important;
+    max-width: var(--width-sidebar);
+    flex: 1 0 var(--width-sidebar);
+    border-right: var(--border-width) solid var(--color-border);
+    padding: 0 var(--spacing-primary) 0 0;
+    padding-bottom: 0 !important; /* default override */
+    margin-right: var(--spacing-primary);
+    overflow: unset; /* required for `position: sticky` of child element */
+    float: none;
+    z-index: 4; /* to match mobile top header in order for hamburger close button to become visible */
+}
+
+/* Inexplicably there's another selector for the sidebar :p */
+.w3-sidebar {
+    background-color: var(--bg-primary);
+    height: auto;
+}
+
+#git-wiki-sidebar h1 {
+    text-align: center;
+}
+
+/* Scroll sidebar with page */
+#git-wiki-sidebar > div {
+    position: sticky;
+    top: 245px; /* to account for Paz emblem */
+}
+
+/* Download repo buttons */
+#git-wiki-sidebar .git-wiki-downloads {
+    display: none;
+}
+
+/* Page lists - Re-ordering 'Menu' above recently updated list */
+.git-wiki-page-list {
+    display: flex;
+    flex-flow: wrap;
+}
+
+.page-list-title,
+.page-list {
+    order: 3;
+}
+
+.git-wiki-page-list > ul {
+    width: 100%;
+    margin-top: var(--spacing-minor);
+}
+
+/* Make sidebar lists more clickable/presentable */
+.git-wiki-page-list ul {
+    padding: 0;
+}
+
+.git-wiki-page-list li {
+    display: block;
+}
+
+.git-wiki-page-list li a {
+    font-size: var(--font-size-small);
+    line-height: var(--font-line-height);
+    font-weight: 500;
+    display: block;
+    padding: var(--spacing-minor) calc(var(--spacing-minor) * 2);
+    border-bottom: var(--border-width) solid var(--bg-subtle);
+}
+
+.git-wiki-page-list li a:hover,
+.git-wiki-page-list li a:active {
+    background: var(--bg-subtle);
+}
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ MOBILE ELEMENTS ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+#git-wiki-mobile-header {
+    height: var(--height-mobile-header);
+    background-color: var(--color-accent);
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 0;
+    border-bottom: none;
+    box-shadow: var(--shadow-primary);
+    left: 0;
+    z-index: 4;
+}
+
+/* Hamburger menu button */
+#git-wiki-mobile-header > button,
+#git-wiki-mobile-header > button:hover,
+#git-wiki-mobile-header > button:focus {
+    color: var(--color-inverse) !important;
+    background: none !important;
+    outline: none;
+}
+
+#git-wiki-mobile-header > button,
+#git-wiki-sidebar button {
+    height: var(--height-mobile-header);
+    width: 50px;
+    font-size: 0 !important;
+    text-indent: -999px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+#git-wiki-mobile-header > button::before,
+#git-wiki-sidebar button::before {
+    width: 24px;
+    height: 24px;
+    content: '';
+    display: block;
+    background: var(--color-inverse);
+    -webkit-mask-image: url("/assets/images/ui.svg#icons-hamburger-menu");
+    mask-image: url("/assets/images/ui.svg#icons-hamburger-menu");
+}
+
+/* Hamburger menu close button within sidebar */
+#git-wiki-sidebar button {
+    background: var(--color-accent);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+}
+
+#git-wiki-sidebar button::before {
+    -webkit-mask-image: url("/assets/images/ui.svg#icons-hamburger-menu-close");
+    mask-image: url("/assets/images/ui.svg#icons-hamburger-menu-close");
+}
+
+#git-wiki-sidebar button:hover {
+    background-color: var(--color-accent) !important;
+    color: inherit !important;
+}
+
+/* Paz emblem */
+#git-wiki-mobile-header a {
+    height: 100%;
+    color: var(--color-inverse);
+    font-size: 19px;
+    font-weight: var(--font-weight-bold);
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    position: relative;
+    left: -30px; /* to visually center text with graphic */
+}
+
+#git-wiki-mobile-header a::before {
+    content: '';
+    display: inline-block;
+    width: var(--height-mobile-header);
+    height: 100%;
+    background-image: url("/assets/images/paz-emblem.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: calc(var(--spacing-minor) * 2);
+}
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ FOOTER ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+footer {
+    width: 100%;
+    color: var(--color-secondary);
+    font-size: var(--font-size-small);
+    font-weight: var(--font-weight-semibold);
+    text-align: center;
+    padding-left: 0;
+    position: absolute;
+    left: 0;
+    bottom: calc(-1 * var(--spacing-primary) * 2);
+    float: none;
+    clear: both;
+    z-index: 2;
+}
+
+/* Hide extra project footer lines. These only seem to appear in the local testing version though. */
+.git-wiki-copyrights > p:not(:last-of-type),
+.git-wiki-copyrights small .view {
+    display: none;
+}
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ MEDIA QUERIES ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+@media print, screen and (max-width: 992px) {
+
+    :root {
+        --font-size-base: 15px;
+    }
+
+    body {
+        margin-top: calc(30px + var(--height-mobile-header));
+        padding-left: calc(var(--spacing-primary) * 2);
+        padding-right: calc(var(--spacing-primary) * 2);
+    }
+
+    .git-wiki-tools {
+        justify-content: center;
+        right: 0;
+    }
+
+    #git-wiki-sidebar {
+        width: 100% !important;
+        max-width: 100%;
+        background: var(--bg-page);
+        padding-top: var(--spacing-secondary);
+        padding-right: 0;
+        border: none;
+        border-radius: 0;
+        position: fixed !important;
+        top: var(--height-mobile-header);
+        left: 0;
+    }
+
+    #git-wiki-sidebar::before,
+    #git-wiki-sidebar::after {
+        width: 100%;
+        height: 30px;
+        content: '';
+        display: block;
+        box-shadow: var(--shadow-primary);
+        position: fixed;
+        z-index: -1; /* place below sidebar content */
+        pointer-events: none;
+    }
+
+    #git-wiki-sidebar::after {
+        margin-top: -30px;
+    }
+
+    #git-wiki-sidebar::before {
+        height: var(--height-mobile-header);
+        box-shadow: var(--shadow-primary); /* used pseudo-element instead of applying to element itself to both avoid overlap on same z-index and so if had used inset it doesn't inset on left/right edges */
+        top: 0;
+    }
+
+    #git-wiki-sidebar > div {
+        position: static;
+    }
+
+    .git-wiki-page-list {
+        /* Padding-left for orphaned text (un-targetable text with no container element) */
+        padding: 0 0 0 var(--spacing-secondary);
+    }
+
+    .git-wiki-page-list > ul {
+        /* Values to counteract the padding introduced by the parent container for orphan text */
+        width: calc(100% + var(--spacing-secondary));
+        margin: var(--spacing-minor) calc(-1 * var(--spacing-secondary)) var(--spacing-primary);
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .git-wiki-page-list li {
+        flex: 1 0 50%;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+
+    .git-wiki-page-list li a {
+        color: var(--color-primary);
+        overflow: hidden;
+        text-overflow: ellipsis;
+        padding: var(--spacing-minor) var(--spacing-secondary);
+    }
+
+}
+
+@media print, screen and (max-width: 880px) {
+
+    body {
+        padding-left: var(--spacing-primary);
+        padding-right: var(--spacing-primary);
+    }
+
+}
+
+@media print, screen and (max-width: 960px) {
+
+    .git-wiki-page, footer {
+        /* Overriding defaults. Remove from original. */
+        border: inherit;
+        padding: 0;
+        margin: 0;
+    }
+
+}
+
+@media print, screen and (max-width: 601px) {
+
+    :root {
+        --font-size-base: 14px;
+    }
+
+    body {
+        padding-left: var(--spacing-secondary);
+        padding-right: var(--spacing-secondary);
+    }
+
+    body > .wrapper {
+        padding: var(--spacing-primary) calc(var(--spacing-secondary) * 1.25);
+    }
+
+    #git-wiki-mobile-header a {
+        left: -15px;
+    }
+
+    .git-wiki-page-list li {
+        flex: 1 0 100%;
+    }
+
+    .tools-element {
+        width: 34px;
+        height: 34px;
+    }
+
+}
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ROUGE SYNTAX HIGHLIGHTING THEME ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/* Adapted from this source: https://github.com/brazacz/rouge-themes/blob/main/css/monokai.sublime.css */
+
+.highlight .gh {
+  color: #999999;
+}
+.highlight .sr {
+  color: #f6aa11;
+}
+.highlight .go {
+  color: #888888;
+}
+.highlight .gp {
+  color: #555555;
+}
+.highlight .gu {
+  color: #aaaaaa;
+}
+.highlight .nb {
+  color: #f6aa11;
+}
+.highlight .cm {
+  color: #75715e;
+}
+.highlight .cp {
+  color: #75715e;
+}
+.highlight .c1 {
+  color: #75715e;
+}
+.highlight .cs {
+  color: #75715e;
+}
+.highlight .c, .highlight .ch, .highlight .cd, .highlight .cpf {
+  color: #75715e;
+}
+.highlight .err {
+  color: #960050;
+  background-color: rgba(170,101,101,0.2);
+}
+.highlight .gr {
+  color: #960050;
+}
+.highlight .gt {
+  color: #960050;
+}
+.highlight .gd {
+  color: #49483e;
+}
+.highlight .gi {
+  color: #49483e;
+}
+.highlight .ge {
+  color: #49483e;
+}
+.highlight .kc {
+  color: #66d9ef;
+}
+.highlight .kd {
+  color: #66d9ef;
+}
+.highlight .kr {
+  color: #66d9ef;
+}
+.highlight .no {
+  color: #66d9ef;
+}
+.highlight .kt {
+  color: #66d9ef;
+}
+.highlight .mf {
+  color: #ae81ff;
+}
+.highlight .mh {
+  color: #ae81ff;
+}
+.highlight .il {
+  color: #ae81ff;
+}
+.highlight .mi {
+  color: #ae81ff;
+}
+.highlight .mo {
+  color: #ae81ff;
+}
+.highlight .m, .highlight .mb, .highlight .mx {
+  color: #ae81ff;
+}
+.highlight .sc {
+  color: #ae81ff;
+}
+.highlight .se {
+  color: #ae81ff;
+}
+.highlight .ss {
+  color: #ae81ff;
+}
+.highlight .sd {
+  color: #e6db74;
+}
+.highlight .s2 {
+  color: #e6db74;
+}
+.highlight .sb {
+  color: #e6db74;
+}
+.highlight .sh {
+  color: #e6db74;
+}
+.highlight .si {
+  color: #e6db74;
+}
+.highlight .sx {
+  color: #e6db74;
+}
+.highlight .s1 {
+  color: #e6db74;
+}
+.highlight .s, .highlight .sa, .highlight .dl {
+  color: #e6db74;
+}
+.highlight .na {
+  color: #a6e22e;
+}
+.highlight .nc {
+  color: #a6e22e;
+}
+.highlight .nd {
+  color: #a6e22e;
+}
+.highlight .ne {
+  color: #a6e22e;
+}
+.highlight .nf, .highlight .fm {
+  color: #a6e22e;
+}
+.highlight .vc {
+  color: var(--color-code);
+  background-color: none;
+}
+.highlight .nn {
+  color: var(--color-code);
+  background-color: none;
+}
+.highlight .nl {
+  color: var(--color-code);
+  background-color: none;
+}
+.highlight .ni {
+  color: var(--color-code);
+  background-color: none;
+}
+.highlight .bp {
+  color: var(--color-code);
+  background-color: none;
+}
+.highlight .vg {
+  color: var(--color-code);
+  background-color: none;
+}
+.highlight .vi {
+  color: var(--color-code);
+  background-color: none;
+}
+.highlight .nv, .highlight .vm {
+  color: var(--color-code);
+  background-color: none;
+}
+.highlight .w {
+  color: var(--color-code);
+  background-color: none;
+}
+.highlight .n, .highlight .py, .highlight .nx {
+  color: var(--color-code);
+  background-color: none;
+}
+.highlight .ow {
+  color: #f92672;
+}
+.highlight .nt {
+  color: #f92672;
+}
+.highlight .k, .highlight .kv {
+  color: #f92672;
+}
+.highlight .kn {
+  color: #f92672;
+}
+.highlight .kp {
+  color: #f92672;
+}
+.highlight .o {
+  color: #f92672;
+}
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ FONTS ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+@font-face {
+    font-family: Kibur;
+    font-style: italic;
+    font-weight: 400;
+    src:url('/assets/fonts/kibur/regular-italic-range-1.woff2') format('woff2');
+    unicode-range: u+0400-045f,u+0490-0491,u+04b0-04b1,u+2116
+}
+
+@font-face {
+    font-family: Kibur;
+    font-style: italic;
+    font-weight: 400;
+    src:url('/assets/fonts/kibur/regular-italic-range-2.woff2') format('woff2');
+    unicode-range: u+0590-05ff,u+20aa,u+25cc,u+fb1d-fb4f
+}
+
+@font-face {
+    font-family: Kibur;
+    font-style: italic;
+    font-weight: 400;
+    src:url('/assets/fonts/kibur/regular-italic-range-3.woff2') format('woff2');
+    unicode-range: u+0100-024f,u+0259,u+1e??,u+2020,u+20a0-20ab,u+20ad-20cf,u+2113,u+2c60-2c7f,u+a720-a7ff
+}
+
+@font-face {
+    font-family: Kibur;
+    font-style: italic;
+    font-weight: 400;
+    src:url('/assets/fonts/kibur/regular-italic-range-4.woff2') format('woff2');
+    unicode-range: u+00??,u+0131,u+0152-0153,u+02bb-02bc,u+02c6,u+02da,u+02dc,u+2000-206f,u+2074,u+20ac,u+2122,u+2191,u+2193,u+2212,u+2215,u+feff,u+fffd
+}
+
+@font-face {
+    font-family: Kibur;
+    font-style: italic;
+    font-weight: 500;
+    src:url('/assets/fonts/kibur/medium-italic-range-1.woff2') format('woff2');
+    unicode-range: u+0400-045f,u+0490-0491,u+04b0-04b1,u+2116
+}
+
+@font-face {
+    font-family: Kibur;
+    font-style: italic;
+    font-weight: 500;
+    src:url('/assets/fonts/kibur/medium-italic-range-2.woff2') format('woff2');
+    unicode-range: u+0590-05ff,u+20aa,u+25cc,u+fb1d-fb4f
+}
+
+@font-face {
+    font-family: Kibur;
+    font-style: italic;
+    font-weight: 500;
+    src:url('/assets/fonts/kibur/medium-italic-range-3.woff2') format('woff2');
+    unicode-range: u+0100-024f,u+0259,u+1e??,u+2020,u+20a0-20ab,u+20ad-20cf,u+2113,u+2c60-2c7f,u+a720-a7ff
+}
+
+@font-face {
+    font-family: Kibur;
+    font-style: italic;
+    font-weight: 500;
+    src:url('/assets/fonts/kibur/medium-italic-range-4.woff2') format('woff2');
+    unicode-range: u+00??,u+0131,u+0152-0153,u+02bb-02bc,u+02c6,u+02da,u+02dc,u+2000-206f,u+2074,u+20ac,u+2122,u+2191,u+2193,u+2212,u+2215,u+feff,u+fffd
+}
+
+@font-face {
+    font-family: Kibur;
+    font-style: italic;
+    font-weight: 700;
+    src:url('/assets/fonts/kibur/bold-italic-range-1.woff2') format('woff2');
+    unicode-range: u+0400-045f,u+0490-0491,u+04b0-04b1,u+2116
+}
+
+@font-face {
+    font-family: Kibur;
+    font-style: italic;
+    font-weight: 700;
+    src:url('/assets/fonts/kibur/bold-italic-range-2.woff2') format('woff2');
+    unicode-range: u+0590-05ff,u+20aa,u+25cc,u+fb1d-fb4f
+}
+
+@font-face {
+    font-family: Kibur;
+    font-style: italic;
+    font-weight: 700;
+    src:url('/assets/fonts/kibur/bold-italic-range-3.woff2') format('woff2');
+    unicode-range: u+0100-024f,u+0259,u+1e??,u+2020,u+20a0-20ab,u+20ad-20cf,u+2113,u+2c60-2c7f,u+a720-a7ff
+}
+
+@font-face {
+    font-family: Kibur;
+    font-style: italic;
+    font-weight: 700;
+    src:url('/assets/fonts/kibur/bold-italic-range-4.woff2') format('woff2');
+    unicode-range: u+00??,u+0131,u+0152-0153,u+02bb-02bc,u+02c6,u+02da,u+02dc,u+2000-206f,u+2074,u+20ac,u+2122,u+2191,u+2193,u+2212,u+2215,u+feff,u+fffd
+}
+
+@font-face {
+    font-family: Kibur;
+    font-style: normal;
+    font-weight: 400;
+    src:url('/assets/fonts/kibur/regular-range-1.woff2') format('woff2');
+    unicode-range: u+0400-045f,u+0490-0491,u+04b0-04b1,u+2116
+}
+
+@font-face {
+    font-family: Kibur;
+    font-style: normal;
+    font-weight: 400;
+    src:url('/assets/fonts/kibur/regular-range-2.woff2') format('woff2');
+    unicode-range: u+0590-05ff,u+20aa,u+25cc,u+fb1d-fb4f
+}
+
+@font-face {
+    font-family: Kibur;
+    font-style: normal;
+    font-weight: 400;
+    src:url('/assets/fonts/kibur/regular-range-3.woff2') format('woff2');
+    unicode-range: u+0100-024f,u+0259,u+1e??,u+2020,u+20a0-20ab,u+20ad-20cf,u+2113,u+2c60-2c7f,u+a720-a7ff
+}
+
+@font-face {
+    font-family: Kibur;
+    font-style: normal;
+    font-weight: 400;
+    src:url('/assets/fonts/kibur/regular-range-4.woff2') format('woff2');
+    unicode-range: u+00??,u+0131,u+0152-0153,u+02bb-02bc,u+02c6,u+02da,u+02dc,u+2000-206f,u+2074,u+20ac,u+2122,u+2191,u+2193,u+2212,u+2215,u+feff,u+fffd
+}
+
+@font-face {
+    font-family: Kibur;
+    font-style: normal;
+    font-weight: 500;
+    src:url('/assets/fonts/kibur/medium-range-1.woff2') format('woff2');
+    unicode-range: u+0400-045f,u+0490-0491,u+04b0-04b1,u+2116
+}
+
+@font-face {
+    font-family: Kibur;
+    font-style: normal;
+    font-weight: 500;
+    src:url('/assets/fonts/kibur/medium-range-2.woff2') format('woff2');
+    unicode-range: u+0590-05ff,u+20aa,u+25cc,u+fb1d-fb4f
+}
+
+@font-face {
+    font-family: Kibur;
+    font-style: normal;
+    font-weight: 500;
+    src:url('/assets/fonts/kibur/medium-range-3.woff2') format('woff2');
+    unicode-range: u+0100-024f,u+0259,u+1e??,u+2020,u+20a0-20ab,u+20ad-20cf,u+2113,u+2c60-2c7f,u+a720-a7ff
+}
+
+@font-face {
+    font-family: Kibur;
+    font-style: normal;
+    font-weight: 500;
+    src:url('/assets/fonts/kibur/medium-range-4.woff2') format('woff2');
+    unicode-range: u+00??,u+0131,u+0152-0153,u+02bb-02bc,u+02c6,u+02da,u+02dc,u+2000-206f,u+2074,u+20ac,u+2122,u+2191,u+2193,u+2212,u+2215,u+feff,u+fffd
+}
+
+@font-face {
+    font-family: Kibur;
+    font-style: normal;
+    font-weight: 700;
+    src:url('/assets/fonts/kibur/bold-range-1.woff2') format('woff2');
+    unicode-range: u+0400-045f,u+0490-0491,u+04b0-04b1,u+2116
+}
+
+@font-face {
+    font-family: Kibur;
+    font-style: normal;
+    font-weight: 700;
+    src:url('/assets/fonts/kibur/bold-range-2.woff2') format('woff2');
+    unicode-range: u+0590-05ff,u+20aa,u+25cc,u+fb1d-fb4f
+}
+
+@font-face {
+    font-family: Kibur;
+    font-style: normal;
+    font-weight: 700;
+    src:url('/assets/fonts/kibur/bold-range-3.woff2') format('woff2');
+    unicode-range: u+0100-024f,u+0259,u+1e??,u+2020,u+20a0-20ab,u+20ad-20cf,u+2113,u+2c60-2c7f,u+a720-a7ff
+}
+
+@font-face {
+    font-family: Kibur;
+    font-style: normal;
+    font-weight: 700;
+    src:url('/assets/fonts/kibur/bold-range-4.woff2') format('woff2');
+    unicode-range: u+00??,u+0131,u+0152-0153,u+02bb-02bc,u+02c6,u+02da,u+02dc,u+2000-206f,u+2074,u+20ac,u+2122,u+2191,u+2193,u+2212,u+2215,u+feff,u+fffd
+}
+

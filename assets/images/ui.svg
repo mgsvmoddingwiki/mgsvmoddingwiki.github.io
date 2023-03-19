@@ -1,0 +1,122 @@
+<!-- Created by choc (chocmake.github.io) -->
+
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
+    <!ENTITY ns_svg "http://www.w3.org/2000/svg">
+    <!ENTITY ns_xlink "http://www.w3.org/1999/xlink">
+]>
+
+<svg version="1.1" width="100%" height="100%" xmlns="&ns_svg;" xmlns:xlink="&ns_xlink;">
+
+    <defs>
+
+        <g id="icons-hamburger-menu-path" class="stroke" transform="translate(-3 -23)">
+            <path d="M8,42L22,42"/>
+            <path d="M8,35L22,35"/>
+            <path d="M8,28L22,28"/>
+        </g>
+
+        <g id="icons-hamburger-menu-close-path" class="stroke" transform="translate(-3 -23)">
+            <path d="M9,41L21,29"/>
+            <path d="M21,41L9,29"/>
+        </g>
+
+        <g id="icons-editing-add-path" class="stroke" transform="translate(-22 -23)">
+            <path d="M32.485,28L28,32.485L28,42L40,42L40,28L32.485,28Z"/>
+            <path d="M28,33L33,33L33,28"/>
+        </g>
+
+        <g id="icons-editing-edit-path" class="stroke" transform="translate(-64 -23)">
+            <path d="M82.886,32.377C83.666,31.597 83.666,30.329 82.886,29.549L81.511,28.174C80.73,27.393 79.463,27.393 78.682,28.174L69.001,37.855L69.006,42.005L73.26,42.004L82.886,32.377Z"/>
+            <path d="M81.008,34.008L76.973,29.973"/>
+        </g>
+
+        <g id="icons-editing-delete-path" class="stroke" transform="translate(-106 -23)">
+            <path d="M111.74,31L112.378,41.994L123.622,41.994L124.26,31L125,31L125,28L111,28L111,31L111.74,31Z"/>
+            <path d="M116,32L116,38"/>
+            <path d="M120,32L120,38"/>
+        </g>
+
+        <g id="icons-editing-history-path" class="stroke" transform="translate(-148 -23)">
+            <path d="M152.384,35C152.384,30.673 155.897,27.16 160.224,27.16C164.551,27.16 168.064,30.673 168.064,35C168.064,39.327 164.551,42.84 160.224,42.84C157.315,42.84 154.773,41.252 153.42,38.896"/>
+            <path d="M151,34L152.533,35.716L154,34"/>
+            <path d="M160.001,32L160.001,35L162.169,37.009"/>
+        </g>
+
+        <g id="icons-editing-source-path" class="stroke" transform="translate(-190 -23)">
+            <path d="M200,28L194.027,35L200,42"/>
+            <path d="M204.027,28L210,35L204.027,42"/>
+        </g>
+
+        <style><![CDATA[
+
+            * {
+            }
+
+            svg {
+                overflow: visible;
+            }
+
+            path {
+                vector-effect: non-scaling-stroke;
+            }
+
+            .crisp {
+                shape-rendering: crispEdges;
+            }
+
+            .stroke {
+                fill: none;
+                stroke: #fff;
+                stroke-width: 2px;
+                stroke-linecap: round;
+                stroke-miterlimit: 1;
+            }
+
+            .stroke.thin {
+                stroke-width: 1px;
+            }
+
+            .exclusion.stroke {
+                stroke: #000;
+            }
+
+            .exclusion.fill {
+                fill: #000;
+            }
+
+            .fill {
+                fill: #fff;
+                stroke: none;
+            }
+
+            .background.fill {
+                fill: blue;
+            }
+
+            .foreground.fill {
+                fill: red;
+            }
+
+            .output {
+                visibility: hidden;
+            }
+
+            .output:target {
+                visibility: visible;
+            }
+
+            ]]></style>
+    </defs>
+
+    <!-- <rect width="100%" height="100%" fill="lightblue"/> -->
+
+    <use class="output" id="icons-hamburger-menu" xlink:href="#icons-hamburger-menu-path"/>
+    <use class="output" id="icons-hamburger-menu-close" xlink:href="#icons-hamburger-menu-close-path"/>
+
+    <use class="output" id="icons-editing-add" xlink:href="#icons-editing-add-path"/>
+    <use class="output" id="icons-editing-edit" xlink:href="#icons-editing-edit-path"/>
+    <use class="output" id="icons-editing-delete" xlink:href="#icons-editing-delete-path"/>
+    <use class="output" id="icons-editing-history" xlink:href="#icons-editing-history-path"/>
+    <use class="output" id="icons-editing-source" xlink:href="#icons-editing-source-path"/>
+
+</svg>
