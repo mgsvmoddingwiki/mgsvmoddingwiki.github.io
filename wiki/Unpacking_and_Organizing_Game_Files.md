@@ -13,7 +13,7 @@ The first thing you'll want to do is create a folder somewhere to store
 all of your future work and mod tools. I keep mine in Documents, but
 anywhere on your computer should work. You can name this folder anything
 you want, but for this example I'll call it "Fox Modding".
-[right|frameless|309x309px](/File:File_Monolith_Shortcuts.png "wikilink")
+![](/assets/File%20Monolith%20Shortcuts.png){:.right width="309px"}
 Inside of that folder, we'll start by making our two most important
 subfolders, "Data" and "Tools". The titles here are a bit
 self-explanatory, but we'll be expanding these folders later on. Next
@@ -28,7 +28,7 @@ applications and store all of the dependencies in another subfolder. You
 could also add shortcuts in your
 [SendTo](https://www.howtogeek.com/howto/windows-vista/customize-the-windows-vista-send-to-menu/)
 folder for other tools you can't associate with a specific file type.
-[right|frameless|213x213px](/File:Data_Folder.png "wikilink") Now that
+![](/assets/Data%20Folder.png){:.right width="213px"} Now that
 we have our Tools folder set up, let's start working on the Data folder.
 Inside, we'll want to make a subfolder for each game we want to unpack.
 I'll use the official abbreviations for each game, so...
@@ -38,7 +38,7 @@ I'll use the official abbreviations for each game, so...
   - SSD = Survive (Stealth Survival Defense)
   - TPP = The Phantom Pain
 
-[right|frameless|257x257px](/File:TPP_Folder.png "wikilink") Inside of
+![](/assets/TPP%20Folder.png){:.right width="257px"} Inside of
 each you'll want to make a folder for our unpacked assets, and another
 for the converted textures. You can name them anything, but I've been
 using "Main" and "Textures" for a while. You could add other folders to
@@ -51,7 +51,7 @@ folder location:
 
 ## **Unpacking The Phantom Pain**
 
-[right|frameless|140x140pxFile](/File:Cutscene_Files.png "wikilink")
+![File](/assets/Cutscene%20Files.png){:.right width="140px"}
 Monolith is all we'll need for The Phantom Pain, and if you've followed
 the guide above, you already have it installed. The first thing we'll do
 is run the Archive Unpacker. When the dialog box opens, go ahead and
@@ -62,7 +62,7 @@ ignore any files with the <u>e2f</u> prefix.
   - (The e2f .dats are actually just video files for a few cutscenes, if
     you want to view them, just rename the extension from .dat to .wmv)
 
-[right|frameless|335x335px](/File:Archive_Unpacker_2.png "wikilink")
+![](/assets/Archive%20Unpacker%202.png){:.right width="335px"}
 After selecting the chunk, data, and texture .dats, go ahead and set the
 Output Folder to our TPP\\Main folder. Lastly, <u>make sure that the
 Condensed Directory Structure option is checked</u>, and hit the Unpack
@@ -73,7 +73,7 @@ take near as long to unpack.
 It doesn't matter which of these one you extract first, so long as they
 are done after the .dats from TPP's master folder. Remember to make sure
 Condensed Directory Structure checked.
-[right|frameless|335x335px](/File:Mass_Texture_Converter_2.png "wikilink")
+![](/assets/Mass%20Texture%20Converter%202.png){:.right width="335px"}
 Now that we have all of the .dats extracted, it's time to convert our
 textures. Start up File Monolith's Mass Texture Converter and select our
 Main folder for the Input Folder. The one we extracted all of the files
@@ -121,7 +121,7 @@ unpacking .dats, run the Mass Texture Converter and you're done.
 
 ## **Unpacking Ground Zeroes**
 
-[right|frameless|300x300px](/File:Unpacked_GZ_Main_Folder.png "wikilink")
+![](/assets/Unpacked%20GZ%20Main%20Folder.png){:.right width="300px"}
 Unlike The Phantom Pain or Survive, Ground Zeroes uses it's own .g0s
 format for .qar archives. File Monolith's Archive Unpacker doesn't
 support this filetype, but we can still use it's Mass Texture converter

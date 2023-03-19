@@ -98,7 +98,7 @@ of box shape type subentries (not for vector shape types)
 
 ## GeoTriggerTrap (.fox2 DataSet alternative)
 
-[thumb|220x220px](/File:GeoTriggerTrap_class_entity_example.png "wikilink")
+![](/assets/GeoTriggerTrap%20class%20entity%20example.png){:.thumb .legacy-small width="220px"}
 Aside from binary .TRAP files, the game can also use entities of a
 **GeoTriggerTrap** class. They work very similarly to GeoTrap entities,
 as it uses BoxShape class entities parented to it to mark the areas it

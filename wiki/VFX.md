@@ -4,8 +4,7 @@ permalink: /VFX/
 tags: [File Formats, Effects]
 ---
 
-[thumb|220x220px|The Fx editor in Fox
-Engine.](/File:UjcBdMG-1-.jpg "wikilink")
+![The Fx editor in Fox Engine.](/assets/UjcBdMG-1-.jpg){:.thumb .legacy-small width="220px"}
 
 An **FxVfxFile**, with the extension .vfx, is a binary file format used
 by Fox Engine to define node graphs which drive visual effects.
@@ -15,10 +14,8 @@ indecipherable for a long time, and would have remained unknown until
 one non-binary file was found left in the
 game: fx_tpp_splbrdwng01_s1.vfx, which is actually a DataSetFile2.
 That one file provided insight into the structure of the .vfx
-format.[thumb|220x220px|Various examples of VFX usage in Metal Gear
-Online.](/File:Mgo3_vfx_demo_reel_images.png "wikilink")
-[thumb|220x220px|Example of custom
-VFX.](/File:MGSV_snow_vfx.jpg "wikilink") They can be unpacked and
+format.![Various examples of VFX usage in Metal Gear Online.](/assets/Mgo3%20vfx%20demo%20reel%20images.png){:.thumb width="220px"}
+![Example of custom VFX.](/assets/MGSV%20snow%20vfx.jpg){:.thumb width="220px"} They can be unpacked and
 repacked with [VfxTool](https://github.com/youarebritish/VfxTool).
 
 ## Structure

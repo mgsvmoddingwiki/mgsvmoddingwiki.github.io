@@ -22,7 +22,7 @@ limit exists in the exe or in a UI file.
 
 ## Levels
 
-[thumb|310.986x310.986px](/File:MGO3_Amberstation_.png "wikilink") As
+![](/assets/MGO3%20Amberstation%20.png){:.thumb width="310.986px"} As
 theorized, custom levels are possible and have been implemented thanks
 to CapLagRobin's research and experimentation, it is now possible to
 load [GNTN(Camp

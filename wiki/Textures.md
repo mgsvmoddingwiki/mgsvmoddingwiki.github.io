@@ -25,9 +25,10 @@ creation.
 ### Color maps, also called Albedo or Diffuse. They are labeled with the _bsm suffix.
 
 Here's an example, the *_bsm* map of the D114
-handgun:[thumb|300px|none](/File:Hg00_main0_def_c00_bsm.jpg "wikilink")
+handgun:![](/assets/Hg00%20main0%20def%20c00%20bsm.jpg){:.thumb .legacy-small width="300px"}
 
 They're very similar to diffuse maps from previous shading models, with
 one exception: you should have the least amount of pre-baked
 lighting/shadowing informations possible, like pre-baked Ambient
 Occlusion, as this is handled through a bespoke map.
+

@@ -389,3 +389,4 @@ folder, but their fmdls are.
 | smg  | Submachine Guns                    |
 | snr  | Sniper Rifles                      |
 | thr  | Throwables                         |
+

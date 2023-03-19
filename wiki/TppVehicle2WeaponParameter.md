@@ -54,30 +54,30 @@ table
 e.g.
 
 ```xml
-<property name="bulletId" type="String" container="StaticArray" arraySize="1">
-  <value>BL_Tankgun_30mmAutoCannon</value>
-</property>
+    <property name="bulletId" type="String" container="StaticArray" arraySize="1">
+      <value>BL_Tankgun_30mmAutoCannon</value>
+    </property>
 ```
 
 Assigns
+```lua
 EquipParameters.TppEquip.ReloadEquipParameterTables2.bullet\[19\].
 
-```lua
-{
-    TppEquip.BL_Tankgun_30mmAutoCannon,
-    625,
-    625,
-    12,
-    30,
-    29,
-    7,
-    2,
-    TppEquip.RICOCHET_SIZE_LARGE,
-    TppEquip.BULLET_TYPE_BLAST,
-    TppEquip.BLA_Wav1,
-    1,
-    TppEquip.EQP_TYPE_None
-}
+    {
+        TppEquip.BL_Tankgun_30mmAutoCannon,
+        625,
+        625,
+        12,
+        30,
+        29,
+        7,
+        2,
+        TppEquip.RICOCHET_SIZE_LARGE,
+        TppEquip.BULLET_TYPE_BLAST,
+        TppEquip.BLA_Wav1,
+        1,
+        TppEquip.EQP_TYPE_None
+    }
 ```
 
 
@@ -102,10 +102,10 @@ Unknown usage. However a list of known values are:
 
 Property sets fire rate in a decimal representation of 60 seconds / RPM.
 ```
-n = rounds per minute (RPM)
+    n = rounds per minute (RPM)
 
-60/n == fireInterval
-60/fireInterval == n
+    60/n == fireInterval
+    60/fireInterval == n
 ```
 ```xml
 <property name="fireInterval" type="float" container="StaticArray" arraySize="1">
@@ -122,9 +122,9 @@ File pointer assigning a weapon .parts file. This is only used for
 vehicle machine guns.
 
 ```xml
-<property name="weaponFile" type="FilePtr" container="StaticArray" arraySize="1">
-  <value>/Assets/tpp/parts/weapon/hew/hw01_main0_def_wav0.parts</value>
-</property>
+    <property name="weaponFile" type="FilePtr" container="StaticArray" arraySize="1">
+      <value>/Assets/tpp/parts/weapon/hew/hw01_main0_def_wav0.parts</value>
+    </property>
 ```
 
 
@@ -147,18 +147,18 @@ vehicle MRLS weapon.
 Sets the owner connection point and bone names, if applicable.
 
 ```xml
-<property name="ownerCnpName" type="String" container="StaticArray" arraySize="1">
-  <value>CNP_awp_a</value>
-</property>
-<property name="weaponBoneName" type="String" container="StaticArray" arraySize="1">
-  <value></value>
-</property>
-<property name="turretBoneName" type="String" container="StaticArray" arraySize="1">
-  <value>SKL_010_KYUPOL1</value>
-</property>
-<property name="barrelBoneName" type="String" container="StaticArray" arraySize="1">
-  <value>SKL_010_GUN</value>
-</property>
+    <property name="ownerCnpName" type="String" container="StaticArray" arraySize="1">
+      <value>CNP_awp_a</value>
+    </property>
+    <property name="weaponBoneName" type="String" container="StaticArray" arraySize="1">
+      <value></value>
+    </property>
+    <property name="turretBoneName" type="String" container="StaticArray" arraySize="1">
+      <value>SKL_010_KYUPOL1</value>
+    </property>
+    <property name="barrelBoneName" type="String" container="StaticArray" arraySize="1">
+      <value>SKL_010_GUN</value>
+    </property>
 ```
 
 
@@ -172,8 +172,8 @@ a negative value to allow downward movement below base orientation and
 maxPitch must be positive for the inverse.
 
 ```
-minPitch == (n*-1)/100
-maxPitch == (n+90)/100
+    minPitch == (n*-1)/100
+    maxPitch == (n+90)/100
 ```
 
 ```xml
@@ -202,3 +202,4 @@ max degrees of movement per second.
 
     n/100 == rotSpeed
     rotSpeed*100 == n
+

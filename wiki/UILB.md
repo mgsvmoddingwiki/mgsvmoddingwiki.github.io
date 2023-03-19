@@ -41,10 +41,7 @@ it. However, patterns can still be found, such as the ones listed below:
 | 0x2D - 0x45 | Same as above                                      |
 | 0x4A - 0x8B | Same as above                                      |
 
-[centre|thumb|550x550px|An image showing the structure of a small UILB
-file. Please note that the last part of the file doesn't always have the
-hashes in the exact same places as its shown here\! The positions can
-differ.](/File:Uilb_notes-0.png "wikilink") Furthermore, nearly every
+![An image showing the structure of a small UILB file. Please note that the last part of the file doesn't always have the hashes in the exact same places as its shown here! The positions can differ.](/assets/Uilb%20notes-0.png){:.center .thumb width="550px"} Furthermore, nearly every
 UILB file contains 6 hashes near the end of it, three StrCode32 and
 three PathFileNameCode32. The StrCode32 ones contain names of .UIF, .UIA
 and even other .UILB file names that are included in the same fpk. The
@@ -57,7 +54,7 @@ this has to be confirmed.
 Also, it should be noted that sometimes the file name of a file in an
 StrCode32 hash may not correspond to the same name in its
 PathFileNameCode32
-hash.[thumb|320x320px|centre](/File:Corrupted_uilb.png "wikilink")
+hash.![](/assets/Corrupted%20uilb.png){:center .thumb width="320px"}
 
 ## Notes
 

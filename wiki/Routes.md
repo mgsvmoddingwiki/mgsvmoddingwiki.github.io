@@ -12,8 +12,7 @@ creating a separate page for them.
 
 ## Introduction
 
-[thumb|268x268px|Edge Node : Relaxed
-Walk](/File:EdgeNode.jpg "wikilink") Each Event Node has ten parameters.
+![Edge Node : Relaxed Walk](/assets/EdgeNode.jpg){:.thumb .legacy-small width="268px"} Each Event Node has ten parameters.
 And each parameter defines a behavior for the event as well as each
 event has very specific parameters. There is no event that has used all
 ten parameters.
@@ -22,8 +21,7 @@ Even the Edge Node can contain numbers in the ten parameters. An
 interesting one is while using Relaxed Walk there is a parameter to make
 the Soldier stare at something while moving.
 
-[thumb|267x267px|Event Node : Relaxed Idle Act with parameters
-filled](/File:EventNode.jpg "wikilink")
+![Event Node : Relaxed Idle Act with parameters filled](/assets/EventNode.jpg){:.thumb .legacy-small width="267px"}
 
 ## Relaxed Idle Act and Caution Idle Act \[event node\]
 
@@ -36,8 +34,7 @@ two Events.
 **Param1**. It holds values where the event will point to a specific
 direction, as well as hold for a brief time what has been chosen in
 Param6. For this there are unique numbers intended for this.
-[thumb|166x166px|Old
-Param1](/File:Param1_Unique_Numbers_.jpg "wikilink") *Values to used in
+![Old Param1](/assets/Param1%20Unique%20Numbers%20.jpg){:.thumb .legacy-small width="166px"} *Values to used in
 vanilla routes' Param1*
 
 <https://github.com/TinManTex/mgsv-lookup-strings/blob/master/RouteTool/Hashes/Tpp/Previous/routeEventMessages_unique.txt>
@@ -113,9 +110,7 @@ Sight Move Path and Route As Object. The others somehow get in the way.
     this value yet. But it should be similar to 769.
 
 **Param1**. It holds values where the event will point to a specific
-direction. Unique Numbers to use in Param1 [thumb|395x395px|A simple
-Route to Sight a target called
-Bait](/File:Setting_up_a_Aim.jpg "wikilink")
+direction. Unique Numbers to use in Param1 ![A simple Route to Sight a target called Bait](/assets/Setting%20up%20a%20Aim.jpg){:.thumb .legacy-small width="395px"}
 <https://github.com/TinManTex/mgsv-lookup-strings/blob/master/RouteTool/Hashes/Tpp/Previous/routeEventMessages_unique.txt>
 
 **Param2**. Holds a number that means the target of the sight. Any Node
@@ -292,7 +287,7 @@ A simple example to trigger a soldier to kill a hostage.
 `      }`
 `end`
 
-[thumb|226x226px](/File:SendMessage.jpg "wikilink")
+![](/assets/SendMessage.jpg){:.thumb .legacy-small width="226px"}
 
 **Param8**: Sometimes it have 4 to 6 numbers. But I have not figured out
 anything that might make sense. It is possible to ignore this param.
@@ -302,7 +297,7 @@ anything that might make sense. It is possible to ignore this param.
 
 ## Caution Stand Fire/ Caution Squat Fire \[event node\]
 
-[thumb|387x387px](/File:Sphere_of_possibilities_lol.jpg "wikilink")
+![](/assets/Sphere%20of%20possibilities%20lol.jpg){:.thumb .legacy-small width="387px"}
 Using the right parameters this event fires steady shots in a certain
 direction. It's a bit confusing as to what parameters to set for the
 direction of the shots. Here is an image that illustrates the dimension
@@ -325,7 +320,7 @@ The next three parameters, Param2, Param3 and Param4 will set the
 direction of the fire. Its a bit confusing choose the right numbers as
 the three values depends of each one to work. Setting 0 in the three
 params will be the safety zone and the default direction.
-[thumb|508x508px](/File:Fire_Parameters.jpg "wikilink") **Param2**: 0
+![](/assets/Fire%20Parameters.jpg){:.thumb width="508px"} **Param2**: 0
 
 **Param3**: 0
 
@@ -348,7 +343,7 @@ s10036_area.frt.
 
 Look at the image, there is four unique numbers divided along the small
 cp to the field cp and then goes to another small cp.
-[thumb|439x439px](/File:Field_Area.jpg "wikilink") So.. If you want to
+![](/assets/Field%20Area.jpg){:.thumb width="439px"} So.. If you want to
 do a route where a vehicle start at the small cp 22 and goes trhough the
 field cp (Shago Kallai) to end at the small cp 25 just use those numbers
 in param6.
@@ -406,7 +401,7 @@ Param6. For this there are unique numbers intended for this.
 
 **Param7**: Is where holds the conditionName. In this case
 CanUseSearchLight, 1327217007
-[thumb](/File:Gimmick_lua_table_entries.png "wikilink") **Param8**: Is
+![](/assets/Gimmick%20lua%20table%20entries.png){:.thumb} **Param8**: Is
 the gimmick id of the searchlight gimmick. In this case I will use a
 gimmick id from Afghanistan, the locatorName of which is
 "gntn_srlg001_vrtn002_gim_n0002|srt_gntn_srlg001_gm" in
@@ -468,7 +463,7 @@ alongside of the path of this route the same way in Caution Stand Idle
 Aim.
 
 **Param3, 4 and 5**: It holds a **Empty String** "", which is
-**3205930904.** [thumb|373x373px](/File:SwitchRoute.jpg "wikilink")
+**3205930904.** ![](/assets/SwitchRoute.jpg){:.thumb .legacy-small width="373px"}
 
 And there it is. Im still figure out how to use the other conditionName
 '''IsGimmickBroken. '''So far it use to access gimmick WatchTower and

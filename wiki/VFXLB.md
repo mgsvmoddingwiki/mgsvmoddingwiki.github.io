@@ -4,8 +4,7 @@ permalink: /VFXLB/
 tags: [File Formats, Effects]
 ---
 
-[thumb|212x212px|The .vfxlb filetype contains a Header, a Section 0 and
-a Section 1](/File:WithoutSection1.png "wikilink") The .vfxlb filetype
+![The .vfxlb filetype contains a Header, a Section 0 and a Section 1](/assets/WithoutSection1.png){:.thumb .legacy-small width="212px"} The .vfxlb filetype
 is the format used for specifying which visual effects are used, where
 they are used, and commands assigned to the effect. These files are
 written in Little-Endian format, meaning bytes are written in reverse
@@ -13,8 +12,7 @@ order of significance.
 
 ## Header
 
-[thumb|161x161px|The .vfxlb header denotes the entry counts for both
-sections, as well as their offsets.](/File:Colorcoded.png "wikilink")
+![The .vfxlb header denotes the entry counts for both sections, as well as their offsets.](/assets/Colorcoded.png){:.thumb .legacy-small width="161px"}
 The header is formatted as such:
 
   - 0x0 - 0x4: Signature, "VFXLB"
@@ -97,9 +95,7 @@ number of commands and the size of the individual command parameters.
 
 A section 1 entry can be concisely divided into 3 subsections: the Shell
 Entry, the Locator Assignments, and the Command/Parameter Links.
-[thumb|258x258px|A proposed breakdown of a Section 1 shell entry. The
-entry assigns parameters to the two visual effects (entry 00 00 and
-entry 00 01).](/File:SECTION1.png "wikilink")
+![A proposed breakdown of a Section 1 shell entry. The entry assigns parameters to the two visual effects (entry 00 00 and entry 00 01).](/assets/SECTION1.png){:.thumb .legacy-small width="258px"}
 
 ### The Shell Entry:
 

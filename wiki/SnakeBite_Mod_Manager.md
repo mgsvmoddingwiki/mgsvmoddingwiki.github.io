@@ -29,7 +29,7 @@ file is updated in real-time, and provides helpful diagnostics to users.
 
 ### Startup Launcher
 
-[thumb|220x220px](/File:Snakebite.png "wikilink") After installation and
+![](/assets/Snakebite.png){:.thumb .legacy-small width="220px"} After installation and
 setup, the Startup Launcher is displayed.
 
   - ***Start Game:*** Launches The Phantom Pain via Steam and exit the
@@ -51,11 +51,11 @@ Skip Startup Launcher).
 
 ### Mod Interface
 
-[thumb|220x220px](/File:Installation_Interface.png "wikilink") The Mod
+![](/assets/Installation%20Interface.png){:.thumb .legacy-small width="220px"} The Mod
 Interface is the main menu for SnakeBite. Mods can be installed, viewed
 and uninstalled through the Mod Interface. Additionally, a number of
 functions and shortcuts can be accessed through the window's menu
-bar.[thumb|220x220px](/File:SnakeBiteModInstaller.gif "wikilink")
+bar.![](/assets/SnakeBiteModInstaller.gif){:.thumb .legacy-small width="220px"}
 
   - ***Install .MGSV File(s):*** Prompts the user to select one or more
     .MGSV Mod Files.
@@ -105,7 +105,7 @@ bar.[thumb|220x220px](/File:SnakeBiteModInstaller.gif "wikilink")
         properly, even if they were intended for an earlier game
         version.
 
-[thumb|220x220px](/File:Dropdown-Menus.gif "wikilink")
+![](/assets/Dropdown-Menus.gif){:.thumb .legacy-small width="220px"}
 
 In addition to these primary functions, the Mod Interface also contains
 a number of Drop-Down Menus.
@@ -177,7 +177,7 @@ a number of Drop-Down Menus.
 
 ### <u>Settings Interface</u>
 
-[thumb|220x220px](/File:SnakeBiteSettings.png "wikilink") The Settings
+![](/assets/SnakeBiteSettings.png){:.thumb .legacy-small width="220px"} The Settings
 Interface can be accessed from both the Startup Launcher and the Mod
 Interface. This menu provides the user with tools and toggles for
 handling mod data as well as miscellaneous SnakeBite settings.
@@ -243,7 +243,7 @@ from the SnakeBite Settings window, as well as the ability to *Toggle
 Mods On/Off.* **Without backups, the user will need to revalidate their
 game files through Steam to redownload roughly 2 GB of game data
 whenever a problem occurs.**
-[thumb|244x244px](/File:Backup_existing_data.jpg "wikilink") Backups can
+![](/assets/Backup%20existing%20data.jpg){:.thumb .legacy-small width="244px"} Backups can
 be created through the Setup Wizard. When the user runs SnakeBite for
 the first time, the Setup Wizard will prompt the user to backup existing
 data. Alternatively, the user can run the Setup Wizard at any time
@@ -284,7 +284,7 @@ menu. RevertChanges.MGSVPreset is saved to your Game Directory.
 
 ## **MakeBite**
 
-[thumb|220x220px](/File:MakebiteInfiniteHeaven.png "wikilink") Makebite
+![](/assets/MakebiteInfiniteHeaven.png){:.thumb .legacy-small width="220px"} Makebite
 is SnakeBite's companion app for creating .MGSV Mod Files. Makebite will
 build a Mod File based on the list of files in a folder specified by the
 user. In addition, the user can provide information about the mod by
@@ -304,7 +304,7 @@ mod, as well as the list of files it will be installing.
 
 ## **Makebite Usage**
 
-[thumb|220x220pxFirst](/File:FormattingHelp.png "wikilink"), a user
+![First](/assets/FormattingHelp.png){:.thumb .legacy-small width="220px"}, a user
 should create a folder and add all of the files they have modified into
 this folder. .fpk and .fpkd files can be unpacked, and deleted (along
 with their .xml file), leaving only the \_fpk and \_fpkd folder behind.
@@ -314,8 +314,7 @@ from the archive.** *(Note: Only .fpk and .fpkd files can be unpacked and delete
 Proliferator](https://metalgearmodding.wikia.com/wiki/File_Monolith#File_Proliferator)
 tool is intended to automate most of this process, as it can generate a
 MakeBite-ready file structure from input files selected by the
-user.[thumb|330x330px|Video tutorial for creating a SnakeBite
-mod.](/File:SnakeBite_In-Depth-_Creating_SnakeBite_Files_for_Your_Mods "wikilink")
+user.![Video tutorial for creating a SnakeBite mod.](/assets/SnakeBite%20In-Depth-%20Creating%20SnakeBite%20Files%20for%20Your%20Mods.jfif){:.thumb width="330px"}
 Once the folder is prepared, the user can start MakeBite. In MakeBite,
 the user can specify a name for their mod, the version of the mod, the
 version of The Phantom Pain the mod is intended for, their mod's
@@ -327,3 +326,4 @@ not have a hashed name, the line should begin with */Assets/*. Once all
 of this is done, the user simply needs to click the *Do it (build
 archive)* button and select an output folder to build their .mgsv
 file.
+

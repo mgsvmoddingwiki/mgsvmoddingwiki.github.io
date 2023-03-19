@@ -78,3 +78,4 @@ ratios of 2.5:1, 1.5:1, and 0.7:1 you would do:
   <value>0.7</value>
 </property>
 ```
+
