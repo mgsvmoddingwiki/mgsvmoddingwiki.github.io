@@ -813,6 +813,10 @@ footer {
         height: 34px;
     }
 
+    .tools-element a::after {
+        display: none; /* hide tooltips at narrowest viewports to avoid page width issue from the text */
+    }
+
 }
 
 
