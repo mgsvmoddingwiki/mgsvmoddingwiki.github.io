@@ -6,19 +6,28 @@ window.onload = function() {
     img_array.forEach(img => {
 
         // Wrap images in links to image source
-        var wrapper = document.createElement('a');
-        wrapper.setAttribute('href', img.getAttribute('src'));
+        // Check if image already wrapped in link element (to not override it)
+        if (img.parentElement.tagName.toLowerCase() === 'a') {
+            var wrapperExists = true;
+            var wrapper = img.parentElement;
+        } else {
+            var wrapper = document.createElement('a');
+            wrapper.setAttribute('href', img.getAttribute('src'));
+        }
+
         wrapper.classList.add(...img.classList); // copy img classes to link instead
         wrapper.classList.add('image-wrapper');
         img.removeAttribute('class');
-        wrapper.appendChild(img.cloneNode(true));
-        img.parentNode.replaceChild(wrapper, img);
+        if (!wrapperExists) {
+            wrapper.appendChild(img.cloneNode(true));
+            img.parentNode.replaceChild(wrapper, img);
+        }
 
         // Create caption element if image has alt text
         if (img.getAttribute('alt')) {
             var caption = document.createElement('small');
             caption.classList.add('caption');
-            caption.textContent += img.getAttribute('alt')
+            caption.textContent += img.getAttribute('alt');
             wrapper.appendChild(caption);
         }
 

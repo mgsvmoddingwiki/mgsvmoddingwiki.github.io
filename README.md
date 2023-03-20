@@ -10,10 +10,11 @@ This is the central hub for information on modding the [Fox Engine](https://en.w
 
 ## Main Categories
 
-- File Formats
-- Guides
-- Lua
-- Tools
-- Infinite Heaven
-- FoxKit
-- Games
+[![File Formats](/assets/File Formats Icon.png){:.inline width="130px"}]()
+[![Guides](/assets/Guides Icon.png){:.inline width="130px"}]()
+[![Lua](/assets/Lua Icon.png){:.inline width="130px"}]()
+[![Tools](/assets/Tools Icon.png){:.inline width="130px"}]()
+[![Infinite Heaven](/assets/InfiniteHeaven Icon.webp){:.inline width="130px"}]()
+[![FoxKit](/assets/Philanthropy Icon.webp){:.inline width="130px"}]()
+[![Games](/assets/Games Icon.png){:.inline width="130px"}]()
+{:.center}

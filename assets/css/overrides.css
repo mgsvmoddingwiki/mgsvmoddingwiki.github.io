@@ -142,6 +142,12 @@ hr {
     margin: calc(var(--spacing-minor) * 2) 0 20px 0;
 }
 
+blockquote {
+    color: var(--color-secondary);
+    padding: 0 0 0 var(--spacing-secondary);
+    border-left: calc(var(--border-width) * 2) solid var(--color-border);
+}
+
 input {
     background: var(--bg-input);
     color: var(--color-primary);
@@ -459,7 +465,7 @@ body > .wrapper {
 }
 
 
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ IMAGES ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ IMAGES/ALIGNMENT ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 body.darkmode--activated img,
 body.darkmode--activated .darkmode-ignore {
@@ -472,6 +478,28 @@ body.darkmode--activated .darkmode-ignore {
     margin: var(--spacing-secondary) auto var(--spacing-primary);
     display: block;
     border-radius: var(--radius-secondary);
+}
+
+.git-wiki-page p.center {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.git-wiki-page p.center,
+.git-wiki-page p.center .image-wrapper {
+    /* if left to inherit 'auto' then justify-content won't have effect */
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.git-wiki-page p.center .image-wrapper:not(:only-child) {
+    margin-right: var(--spacing-primary);
+}
+
+/* Useful for index/category page icons or just placing smaller images side-by-side on same row */
+.git-wiki-page .inline {
+    display: inline-block;
 }
 
 /* Preset max width so users don't have to bother adding dimension attributes if they don't want */
@@ -505,6 +533,11 @@ body.darkmode--activated .darkmode-ignore {
     clear: both;
 }
 
+.git-wiki-page .image-wrapper.inline {
+    display: inline-table;
+    vertical-align: top; /* align images when side-by-side to their top edge */
+}
+
 .git-wiki-page .image-wrapper img {
     margin: 0;
 }
@@ -515,6 +548,10 @@ body.darkmode--activated .darkmode-ignore {
     display: table-caption; /* inherits width of remaining elements in parent container if parent set to `display: table` */
     caption-side: bottom; /* by default `table-caption` is placed above so we want it below image */
     margin-top: var(--spacing-secondary);
+}
+
+.git-wiki-page .image-wrapper:not(.left):not(.right):not(.legacy-small) .caption {
+    text-align: center;
 }
 
 
@@ -862,7 +899,7 @@ footer {
 
 @media print, screen and (max-width: 700px) {
 
-    .git-wiki-page img,
+    .git-wiki-page .image-wrapper:not(.inline) img:not(.inline), /* won't apply if user has Javascript disabled */
     .git-wiki-page .thumb,
     .git-wiki-page .right,
     .git-wiki-page .left,
@@ -873,7 +910,9 @@ footer {
         float: none;
     }
 
-    .git-wiki-page .caption {
+    .git-wiki-page .image-wrapper.legacy-small .caption,
+    .git-wiki-page .image-wrapper.left .caption,
+    .git-wiki-page .image-wrapper.right .caption {
         text-align: center;
     }
 
