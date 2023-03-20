@@ -502,6 +502,7 @@ body.darkmode--activated .darkmode-ignore {
 /* Elements created via Javascript */
 .git-wiki-page .image-wrapper {
     display: table;
+    clear: both;
 }
 
 .git-wiki-page .image-wrapper img {
