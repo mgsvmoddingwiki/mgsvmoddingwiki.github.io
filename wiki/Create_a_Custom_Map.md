@@ -196,8 +196,8 @@ will spawn on mission start. if you previously removed the floor dataset
 as suggested, change the Y, the second value, to -79.2.
 
 For further mission and location add-on script parameters, check out
-Infinite Heaven's `InfMission.lua` script usually found in `/MGS_TPP or
-GameDir/mod/modules/InfMission.lua`.
+Infinite Heaven's `InfMission.lua` script usually found in `/MGS_TPP` or
+`GameDir/mod/modules/InfMission.lua`.
 
 ![](/assets/Map07.jpg)
 
