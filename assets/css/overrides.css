@@ -466,38 +466,54 @@ body.darkmode--activated .darkmode-ignore {
     mix-blend-mode: unset; /* override default theme's inversion of various images */
 }
 
+.git-wiki-page .image-wrapper,
 .git-wiki-page img,
-.git-wiki-page img.center {
+.git-wiki-page .center {
     margin: var(--spacing-secondary) auto var(--spacing-primary);
     display: block;
     border-radius: var(--radius-secondary);
 }
 
 /* Preset max width so users don't have to bother adding dimension attributes if they don't want */
-.git-wiki-page img.thumb:not(.legacy-small) {
+.git-wiki-page .thumb:not(.legacy-small) {
     max-width: 50%;
 }
 
-.git-wiki-page img.thumb.left:not(.legacy-small),
-.git-wiki-page img.thumb.right:not(.legacy-small), {
+.git-wiki-page .thumb.left:not(.legacy-small),
+.git-wiki-page .thumb.right:not(.legacy-small), {
     max-width: 30%;
 }
 
-.git-wiki-page img.right,
+.git-wiki-page .right,
 .git-wiki-page .legacy-small {
     max-width: 70%;
-    display: inline-block;
     margin-left: var(--spacing-primary);
     float: right;
     clear: right;
 }
 
-.git-wiki-page img.left {
+.git-wiki-page .left {
     max-width: 70%;
-    display: inline-block;
     margin-right: var(--spacing-primary);
     float: left;
     clear: left;
+}
+
+/* Elements created via Javascript */
+.git-wiki-page .image-wrapper {
+    display: table;
+}
+
+.git-wiki-page .image-wrapper img {
+    margin: 0;
+}
+
+.git-wiki-page .caption {
+    color: var(--color-secondary); /* overrides default theme */
+    font-size: var(--font-size-small);
+    display: table-caption; /* inherits width of remaining elements in parent container if parent set to `display: table` */
+    caption-side: bottom; /* by default `table-caption` is placed above so we want it below image */
+    margin-top: var(--spacing-secondary);
 }
 
 
@@ -747,12 +763,12 @@ footer {
         right: 0;
     }
 
-    .git-wiki-page img.right,
+    .git-wiki-page .right,
     .git-wiki-page .legacy-small {
         max-width: 45%;
     }
 
-    .git-wiki-page img.left {
+    .git-wiki-page .left {
         max-width: 45%;
     }
 
@@ -846,15 +862,18 @@ footer {
 @media print, screen and (max-width: 700px) {
 
     .git-wiki-page img,
-    .git-wiki-page img.thumb,
-    .git-wiki-page img.right,
-    .git-wiki-page img.left,
+    .git-wiki-page .thumb,
+    .git-wiki-page .right,
+    .git-wiki-page .left,
     .git-wiki-page .legacy-small {
         width: auto;
         max-width: 100%;
-        display: block;
         margin: var(--spacing-secondary) auto var(--spacing-primary);
         float: none;
+    }
+
+    .git-wiki-page .caption {
+        text-align: center;
     }
 
 }
