@@ -746,7 +746,6 @@ body.darkmode--activated .darkmode-ignore {
 
 .git-wiki-page-list > ul {
     width: 100%;
-    columns: 1;
     margin-top: var(--spacing-minor);
 }
 
@@ -967,6 +966,19 @@ footer {
         margin: var(--spacing-minor) calc(-1 * var(--spacing-secondary)) var(--spacing-primary);
         columns: 2;
         column-gap: 0;
+        position: relative;
+    }
+
+    /* Create faux border bottom so lists always appear with full-width border line, for odd number of items */
+    .git-wiki-page-list > ul::after {
+        width: 100%;
+        height: var(--border-width);
+        background: var(--bg-subtle);
+        content: '';
+        display: block;
+        position: absolute;
+        left: 0;
+        bottom: 0;
     }
 
     .git-wiki-page-list li {
@@ -1054,8 +1066,8 @@ footer {
         left: -15px;
     }
 
-    .git-wiki-page-list li {
-        flex: 1 0 100%;
+    .git-wiki-page-list > ul {
+        columns: 1;
     }
 
     .tools-element {
