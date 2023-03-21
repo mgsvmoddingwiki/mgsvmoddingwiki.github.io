@@ -32,6 +32,7 @@
 
     --font-sans: Kibur, "Segoe UI", sans-serif;
     --font-size-base: 16px;
+    --font-size-medium: 20px;
     --font-size-small: 80%;
     --font-line-height: 1.8em;
     --font-weight-base: 400;
@@ -79,10 +80,18 @@ th {
 }
 
 a,
+#git-wiki-content > p,
 table td:last-child, /* wrap words only in right-most cells, since otherwise if applied to all `td` has some unexpectedly narrow columns with certain tables */
 code, pre {
     word-break: break-word;
     overflow-wrap: break-word;
+}
+
+.caption,
+table,
+code, pre {
+    font-size: var(--font-size-small);
+    line-height: var(--font-line-height);
 }
 
 /* Code */
@@ -90,8 +99,6 @@ code,
 pre {
     background: var(--bg-code);
     color: var(--color-code);
-    font-size: var(--font-size-small);
-    line-height: var(--font-line-height);
 }
 
 code {
@@ -164,8 +171,6 @@ input:focus {
 /* Tables */
 table {
     max-width: 100%;
-    font-size: var(--font-size-small);
-    line-height: var(--font-line-height);
     display: block; /* required for `overflow` to have any effect. Has side-effect of not expanding tables to full width of container if content shorter. Would require wrapper to fix. */
     overflow: auto; /* enable scrollbars when tables exceed max container width */
 }
@@ -454,14 +459,109 @@ body > .wrapper {
 /* Table of contents */
 #git-wiki-toc {
     background: var(--bg-subtle);
+    overflow-y: auto;
     padding: var(--spacing-secondary);
     padding-left: calc(var(--spacing-secondary) * 2.5);
     border-radius: var(--radius-primary);
-    margin: var(--spacing-secondary) 0 var(--spacing-primary);
+    margin: -45px 0 var(--spacing-primary);  /* top margin to cover default 'Contents:' text */
+    position: relative; /* raise above default 'Contents:' text */
+}
+
+#git-wiki-toc ol {
+    margin-bottom: var(--spacing-minor);
 }
 
 #git-wiki-toc ::marker {
     color: var(--color-secondary);
+}
+
+.toc-toggle {
+    margin: 0 0 var(--spacing-secondary);
+    position: relative;
+}
+
+.toc-toggle summary {
+    background: var(--color-buttons);
+    display: flex;
+    align-items: center;
+    outline: none;
+    cursor: pointer;
+    padding: var(--spacing-minor) var(--spacing-secondary);
+    border-radius: var(--radius-primary);
+    margin-bottom: var(--spacing-primary);
+    box-shadow: var(--shadow-secondary);
+    transition: background 150ms ease-out;
+}
+
+.toc-toggle summary::before {
+    width: 24px;
+    height: 24px;
+    background: var(--color-secondary);
+    content: '';
+    display: inline-block;
+    margin: 0 6px 0 calc(-1 * var(--spacing-minor));
+    -webkit-mask-image: url("/assets/images/ui.svg#icons-toc");
+    mask-image: url("/assets/images/ui.svg#icons-toc");
+}
+
+.toc-toggle summary:hover {
+    background: var(--color-buttons-hover);
+}
+
+.toc-toggle summary:active {
+    filter: brightness(0.8);
+}
+
+/* Split/divide content vertically into two columns */
+p.split {
+    columns: 2;
+    column-gap: var(--spacing-primary);
+}
+
+ul.split {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, min-content); /* `3` necessary to flow content top-to-bottom on first row */
+    grid-column-gap: var(--spacing-primary);
+    grid-row-gap: var(--spacing-secondary);
+    grid-auto-flow: column; /* necessary to flow content top-to-bottom on first row */
+}
+
+/* For using on lists for index/category pages */
+.index {
+    background: var(--bg-subtle);
+    padding: calc(var(--spacing-secondary) * 1.5);
+    border-radius: var(--radius-primary);
+}
+
+.index h1,
+.index h2,
+.index h3,
+.index h4 {
+    font-size: var(--font-size-medium);
+    margin-bottom: var(--spacing-secondary);
+}
+
+.index,
+.index li {
+    list-style: none;
+}
+
+.index li {
+    break-inside: avoid-column;
+}
+
+.index a {
+    width: 100%; /* make links clickable across entire list item area */
+    display: inline-block;
+}
+
+/* Acts as first-level heading underlines/margin */
+.index > li > ol,
+.index > li > ul {
+    padding: var(--spacing-secondary);
+    border-top: var(--border-width) solid var(--color-border);
+    margin-top: var(--spacing-secondary);
 }
 
 
@@ -488,18 +588,19 @@ body.darkmode--activated .darkmode-ignore {
 
 .git-wiki-page p.center,
 .git-wiki-page p.center .image-wrapper {
-    /* if left to inherit 'auto' then justify-content won't have effect */
+    /* If left to inherit 'auto' then justify-content won't have effect */
     margin-left: 0;
     margin-right: 0;
-}
-
-.git-wiki-page p.center .image-wrapper:not(:only-child) {
-    margin-right: var(--spacing-primary);
 }
 
 /* Useful for index/category page icons or just placing smaller images side-by-side on same row */
 .git-wiki-page .inline {
     display: inline-block;
+}
+
+.git-wiki-page .image-wrapper.inline:not(:only-child),
+.git-wiki-page .inline:not(:only-child) {
+    margin-right: var(--spacing-primary);
 }
 
 /* Preset max width so users don't have to bother adding dimension attributes if they don't want */
@@ -544,7 +645,6 @@ body.darkmode--activated .darkmode-ignore {
 
 .git-wiki-page .caption {
     color: var(--color-secondary); /* overrides default theme */
-    font-size: var(--font-size-small);
     display: table-caption; /* inherits width of remaining elements in parent container if parent set to `display: table` */
     caption-side: bottom; /* by default `table-caption` is placed above so we want it below image */
     margin-top: var(--spacing-secondary);
@@ -640,6 +740,7 @@ body.darkmode--activated .darkmode-ignore {
 
 .git-wiki-page-list > ul {
     width: 100%;
+    columns: 1;
     margin-top: var(--spacing-minor);
 }
 
@@ -714,7 +815,7 @@ body.darkmode--activated .darkmode-ignore {
     mask-image: url("/assets/images/ui.svg#icons-hamburger-menu");
 }
 
-/* Hamburger menu close button within sidebar */
+/* Hamburger menu close button within sidebar (moved top top-left to match open state position) */
 #git-wiki-sidebar button {
     background: var(--color-accent);
     position: fixed;
@@ -858,12 +959,11 @@ footer {
         /* Values to counteract the padding introduced by the parent container for orphan text */
         width: calc(100% + var(--spacing-secondary));
         margin: var(--spacing-minor) calc(-1 * var(--spacing-secondary)) var(--spacing-primary);
-        display: flex;
-        flex-wrap: wrap;
+        columns: 2;
+        column-gap: 0;
     }
 
     .git-wiki-page-list li {
-        flex: 1 0 50%;
         overflow: hidden;
         white-space: nowrap;
     }
@@ -898,6 +998,17 @@ footer {
 }
 
 @media print, screen and (max-width: 700px) {
+
+    /* Join into one column */
+    p.split {
+        columns: 1;
+    }
+
+    ul.split {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 1fr;
+        grid-auto-flow: unset;
+    }
 
     .git-wiki-page .image-wrapper:not(.inline) img:not(.inline), /* won't apply if user has Javascript disabled */
     .git-wiki-page .thumb,

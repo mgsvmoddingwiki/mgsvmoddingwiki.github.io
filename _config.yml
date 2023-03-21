@@ -132,7 +132,7 @@ readme_index:
 #
 
 inc_before_toc : before_toc.html
-inc_after_toc :
+inc_after_toc : after_toc.html
 inc_before_content :
 inc_after_content :
 inc_before_footer :

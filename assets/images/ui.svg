@@ -9,6 +9,12 @@
 
     <defs>
 
+        <g id="icons-toc-path" class="stroke" transform="translate(-22 -24)">
+            <path d="M39.999,40L32,40"/>
+            <path d="M39.999,35L32,35"/>
+            <path d="M39.999,30L28,30"/>
+        </g>
+
         <g id="icons-hamburger-menu-path" class="stroke" transform="translate(-3 -23)">
             <path d="M8,42L22,42"/>
             <path d="M8,35L22,35"/>
@@ -109,6 +115,8 @@
     </defs>
 
     <!-- <rect width="100%" height="100%" fill="lightblue"/> -->
+
+    <use class="output" id="icons-toc" xlink:href="#icons-toc-path"/>
 
     <use class="output" id="icons-hamburger-menu" xlink:href="#icons-hamburger-menu-path"/>
     <use class="output" id="icons-hamburger-menu-close" xlink:href="#icons-hamburger-menu-close-path"/>
