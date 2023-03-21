@@ -491,7 +491,7 @@ body > .wrapper {
     border-radius: var(--radius-primary);
     margin-bottom: var(--spacing-primary);
     box-shadow: var(--shadow-secondary);
-    transition: background 150ms ease-out;
+    transition: background 150ms ease-out; /* so when cursor clicks then moves away the background shift isn't so jarring. Toolbar editing icons don't need this since tooltip essentially provides similar effect. */
 }
 
 .toc-toggle summary::marker,
@@ -519,18 +519,9 @@ body > .wrapper {
 }
 
 /* Split/divide content vertically into two columns */
-p.split {
+.split {
     columns: 2;
     column-gap: var(--spacing-primary);
-}
-
-ul.split {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, min-content); /* `3` necessary to flow content top-to-bottom on first row */
-    grid-column-gap: var(--spacing-primary);
-    grid-row-gap: var(--spacing-secondary);
-    grid-auto-flow: column; /* necessary to flow content top-to-bottom on first row */
 }
 
 /* For using on lists for index/category pages */
@@ -1018,14 +1009,8 @@ footer {
 @media print, screen and (max-width: 700px) {
 
     /* Join into one column */
-    p.split {
+    .split {
         columns: 1;
-    }
-
-    ul.split {
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: 1fr;
-        grid-auto-flow: unset;
     }
 
     .git-wiki-page .image-wrapper:not(.inline) img:not(.inline), /* won't apply if user has Javascript disabled */
