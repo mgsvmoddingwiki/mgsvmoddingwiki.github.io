@@ -20,14 +20,14 @@ File \> Open Project. Point it to FoxKit-master\\FoxKit
 
 Loading will take a long time.
 
-![](/assets/FoxKit%20Window.jpg){:width="555px"}
+![](/assets/Foxkit%20Window.jpg){:width="555px"}
 
 ## **Extracting Game Files and Texture Folder**
 
 Please see [File Monolith](/File_Monolith "wikilink"). Using Archive
 Unpacker in all the four-five chunks to one main folder should be ok.
 
-![](/assets/FoxKit03.jpg){:width="466px"}
+![](/assets/Foxkit03.jpg){:width="466px"}
 
 In general FoxKit works by replicating the mgsv Assets files in the
 FoxKit Assets folder, though due to the time to import different files
