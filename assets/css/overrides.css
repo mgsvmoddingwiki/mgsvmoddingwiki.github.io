@@ -485,12 +485,18 @@ body > .wrapper {
     display: flex;
     align-items: center;
     outline: none;
+    list-style-type: none;
     cursor: pointer;
     padding: var(--spacing-minor) var(--spacing-secondary);
     border-radius: var(--radius-primary);
     margin-bottom: var(--spacing-primary);
     box-shadow: var(--shadow-secondary);
     transition: background 150ms ease-out;
+}
+
+.toc-toggle summary::marker,
+.toc-toggle summary::-webkit-details-marker {
+    display: none; /* hide default icon */
 }
 
 .toc-toggle summary::before {
