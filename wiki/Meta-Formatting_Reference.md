@@ -80,8 +80,8 @@ Code block with syntax highlighting:
 </safiles>
 ```
 
-    Code block with syntax highlighting:
     ```xml
+    Code block with syntax highlighting:
     <safiles>
         <file code="16355565633005451293"/>
     </safiles>
@@ -93,7 +93,7 @@ Code block with syntax highlighting:
 
     > Blockquote
 
-> Blockquote with `.important` class.
+> Blockquote with multiple lines and `.important` class.
 >
 > Correct:
 > ```xml
@@ -105,7 +105,7 @@ Code block with syntax highlighting:
 > ```
 {:.important}
 
-    > Blockquote with `.important` class.
+    > Blockquote with multiple lines and `.important` class.
     >
     > Correct:
     > ```xml
@@ -214,7 +214,7 @@ Code block with syntax highlighting:
     1. Sub-item
 ```
 
-**Divided style with `.split` class:**
+**Split style with `.split` class:**
 - Item
     - Sub-item
 - Item
