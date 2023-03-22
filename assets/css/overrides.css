@@ -4,6 +4,7 @@
     --width-sidebar: 280px;
     --height-mobile-header: 50px;
     --spacing-primary: 30px;
+    --spacing-intermediate: 20px;
     --spacing-secondary: 15px;
     --spacing-minor: 5px;
     --border-width: 2px;
@@ -146,13 +147,18 @@ a:active {
 hr {
     height: var(--border-width);
     background: var(--color-border);
-    margin: calc(var(--spacing-minor) * 2) 0 20px 0;
+    margin: calc(var(--spacing-minor) * 2) 0 var(--spacing-intermediate) 0;
 }
 
-blockquote {
-    color: var(--color-secondary);
-    padding: 0 0 0 var(--spacing-secondary);
-    border-left: calc(var(--border-width) * 2) solid var(--color-border);
+blockquote,
+.index {
+    background: var(--bg-subtle);
+    color: var(--color-primary);
+    font-style: inherit;
+    padding: var(--spacing-intermediate) var(--spacing-intermediate) 1px; /* `1px` allows only margin from last child item. `0` OTOH causes no padding at all, collapsing child items margin. */
+    border-radius: var(--radius-primary);
+    border-left: none;
+    margin-bottom: var(--spacing-intermediate);
 }
 
 input {
@@ -518,19 +524,19 @@ body > .wrapper {
     filter: brightness(0.8);
 }
 
-/* Split/divide content vertically into two columns */
-.split {
+/* Split/divide list elements vertically into two columns */
+ol.split,
+ul.split {
     columns: 2;
     column-gap: var(--spacing-primary);
 }
 
-/* For using on lists for index/category pages */
-.index {
-    background: var(--bg-subtle);
-    padding: calc(var(--spacing-secondary) * 1.5);
-    border-radius: var(--radius-primary);
+/* .important = call more attention to a blockquote */
+blockquote.important {
+    background: hsl(154,65%,32%);
 }
 
+/* .index = for use on lists for index/category pages, particularly when paired with .split */
 .index h1,
 .index h2,
 .index h3,
@@ -1009,7 +1015,8 @@ footer {
 @media print, screen and (max-width: 700px) {
 
     /* Join into one column */
-    .split {
+    ol.split,
+    ul.split {
         columns: 1;
     }
 
