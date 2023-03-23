@@ -33,4 +33,13 @@ window.onload = function() {
 
     });
 
+    // Video handling
+    var video_list = document.querySelectorAll('.git-wiki-page video');
+    var video_array = [...video_list];
+    video_array.forEach(video => {
+
+        video.volume = 0.5; // set default volume to 50%
+
+    });
+
 }

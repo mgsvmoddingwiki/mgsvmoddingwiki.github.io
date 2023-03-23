@@ -299,3 +299,47 @@ Code block with syntax highlighting:
 |-|-:|:-:|:-|
 | First row text. Foo bar. | First row text. Foo bar. | First row text. Foo bar. | First row text. Foo bar. |
 ```
+
+---
+
+## Videos
+
+The wiki uses customized templates for embedding videos.
+
+**Native video files:**
+
+{% include video url="/assets/VideoGimmick01.webm" %}
+
+    {% raw %}{% include video url="/assets/VideoGimmick01.webm" %}{% endraw %}
+
+> **Note:** use the URL of the video for the `url` value. Here showing a video hosted on the wiki itself so using the root path format, like for images.
+
+**Changing width and placement:**
+
+Similiar to the images section we can use classes to change the width/position. Here using the `.thumb` class to make the video smaller. We can also use `.left`/`.right`.
+
+{% include video url="/assets/VideoGimmick01.webm" %}{:.thumb}
+
+    {% raw %}{% include video url="/assets/VideoGimmick01.webm" %}{:.thumb}{% endraw %}
+
+> **Note:** changing size via `width=""` isn't supported for videos.
+
+**Youtube embeds:**
+
+{% include youtube id="pHjgbENgnvA" %}
+
+    {% raw %}{% include youtube id="pHjgbENgnvA" %}{% endraw %}
+
+> **Note:** use the ID of the video for the `id` value.
+
+> **Note:** changing width/position via classes isn't supported for Youtube embeds.
+
+**Vimeo embeds:**
+
+{% include vimeo id="123281253" %}
+
+    {% raw %}{% include vimeo id="123281253" %}{% endraw %}
+
+> **Note:** use the ID of the video for the `id` value.
+
+> **Note:** changing width/position via classes isn't supported for Vimeo embeds.

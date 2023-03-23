@@ -1,0 +1,3 @@
+<div class="video-wrapper">
+    <video controls preload="metadata" src="{{ include.url }}"></video>
+</div>
