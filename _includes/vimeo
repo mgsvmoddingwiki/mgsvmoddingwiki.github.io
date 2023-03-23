@@ -1,3 +1,10 @@
+{% if include.caption %}
+<div class="video-wrapper vimeo iframe-type has-caption">
+    <iframe src="https://player.vimeo.com/video/{{ include.id }}" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+    <small class="caption">{{ include.caption }}</small>
+</div>
+{% else %}
 <div class="video-wrapper vimeo iframe-type">
     <iframe src="https://player.vimeo.com/video/{{ include.id }}" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
 </div>
+{% endif %}

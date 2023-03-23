@@ -572,5 +572,4 @@ Done. Now test it. Make the .mgsv file in Makebite building the
 Unfortunately due to the limits of Free Roam. Only one TppSharedGimmick
 was spawned. The flag works at least.
 
-![](/assets/VideoGimmick01.webm){:width="527px"}
-
+{% include video url="/assets/VideoGimmick01.webm" %}{:.thumb}

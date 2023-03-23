@@ -19,7 +19,7 @@ installing or using the mod.
 
 
 # Installation
-![daften_23's tutorial on Snakebite and Infinite Heaven Installation](/assets/MGSV%20Modding%20-%2001%20-%20SnakeBite.jfif){:.thumb}
+{% include youtube id="pHjgbENgnvA" caption="daften_23's tutorial on Snakebite and Infinite Heaven Installation" %}
 
 **1. Preparation/insurance:**
 

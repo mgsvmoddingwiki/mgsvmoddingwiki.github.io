@@ -324,6 +324,12 @@ Similiar to the images section we can use classes to change the width/position. 
 
 > **Note:** changing size via `width=""` isn't supported for videos.
 
+**Adding a caption:**
+
+{% include video url="/assets/VideoGimmick01.webm" caption="Ventos' capture from the FoxKit: TppSharedGimmickData wiki page" %}{:.thumb}
+
+    {% raw %}{% include video url="/assets/VideoGimmick01.webm" caption="Ventos' capture from the FoxKit: TppSharedGimmickData wiki page" %}{:.thumb}{% endraw %}
+
 **Youtube embeds:**
 
 {% include youtube id="pHjgbENgnvA" %}
@@ -332,7 +338,7 @@ Similiar to the images section we can use classes to change the width/position. 
 
 > **Note:** use the ID of the video for the `id` value.
 
-> **Note:** changing width/position via classes isn't supported for Youtube embeds.
+> **Tip:** like the native video file embeds the Youtube embeds support adding the same classes as above and also captions.
 
 **Vimeo embeds:**
 
@@ -342,4 +348,4 @@ Similiar to the images section we can use classes to change the width/position. 
 
 > **Note:** use the ID of the video for the `id` value.
 
-> **Note:** changing width/position via classes isn't supported for Vimeo embeds.
+> **Tip:** like the native video file embeds the Vimeo embeds support adding the same classes as above and also captions.

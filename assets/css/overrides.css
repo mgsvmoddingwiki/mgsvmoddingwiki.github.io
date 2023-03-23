@@ -608,12 +608,15 @@ body.darkmode--activated .darkmode-ignore {
 }
 
 /* Preset max width so users don't have to bother adding dimension attributes if they don't want */
-.git-wiki-page .thumb:not(.legacy-small) {
+.git-wiki-page a.thumb:not(.legacy-small),
+.git-wiki-page img.thumb:not(.legacy-small) {
     max-width: 50%;
 }
 
-.git-wiki-page .thumb.left:not(.legacy-small),
-.git-wiki-page .thumb.right:not(.legacy-small), {
+.git-wiki-page a.thumb.left:not(.legacy-small),
+.git-wiki-page img.thumb.right:not(.legacy-small),
+.git-wiki-page a.thumb.left:not(.legacy-small),
+.git-wiki-page img.thumb.right:not(.legacy-small) {
     max-width: 30%;
 }
 
@@ -668,29 +671,38 @@ body.darkmode--activated .darkmode-ignore {
     max-width: 100%;
 }
 
-.git-wiki-page .video-wrapper.iframe-type {
-    height: 0;
-    padding-bottom: 56.25%; /* 16:9 ratio */
-    position: relative;
+.git-wiki-page .video-wrapper.iframe-type:not(.thumb) {
+    width: 100%;
 }
 
 .git-wiki-page .video-wrapper.iframe-type iframe {
     width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
+    height: auto;
+    aspect-ratio: 16 /9; /* modern method */
 }
 
 .git-wiki-page .video-wrapper.thumb {
-    max-width: 60%;
+    width: 60%;
 }
 
 .git-wiki-page .video-wrapper.thumb.left,
 .git-wiki-page .video-wrapper.thumb.right {
-    max-width: 50%;
+    width: 50%;
 }
 
+.git-wiki-page .video-wrapper.has-caption {
+    display: table;
+}
+
+.git-wiki-page .video-wrapper.has-caption .caption {
+    text-align: center;
+    margin-top: var(--spacing-minor);
+}
+
+.git-wiki-page .video-wrapper.has-caption.left .caption,
+.git-wiki-page .video-wrapper.has-caption.right .caption {
+    text-align: left;
+}
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ SIDEBAR ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
@@ -1068,9 +1080,18 @@ footer {
         float: none;
     }
 
+    .git-wiki-page .video-wrapper.thumb,
+    .git-wiki-page .video-wrapper.thumb.left,
+    .git-wiki-page .video-wrapper.thumb.right {
+        width: 100%;
+    }
+
     .git-wiki-page .image-wrapper.legacy-small .caption,
     .git-wiki-page .image-wrapper.left .caption,
-    .git-wiki-page .image-wrapper.right .caption {
+    .git-wiki-page .image-wrapper.right .caption,
+    .git-wiki-page .video-wrapper.has-caption .caption,
+    .git-wiki-page .video-wrapper.has-caption.left .caption,
+    .git-wiki-page .video-wrapper.has-caption.right .caption {
         text-align: center;
     }
 

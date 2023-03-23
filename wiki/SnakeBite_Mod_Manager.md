@@ -314,7 +314,7 @@ from the archive.** *(Note: Only .fpk and .fpkd files can be unpacked and delete
 Proliferator](https://metalgearmodding.wikia.com/wiki/File_Monolith#File_Proliferator)
 tool is intended to automate most of this process, as it can generate a
 MakeBite-ready file structure from input files selected by the
-user.![Video tutorial for creating a SnakeBite mod.](/assets/SnakeBite%20In-Depth-%20Creating%20SnakeBite%20Files%20for%20Your%20Mods.jfif){:.thumb width="330px"}
+user.{% include youtube id="Wg0qM7Yh5fU" caption="Video tutorial for creating a SnakeBite mod." %}{:.thumb .right}
 Once the folder is prepared, the user can start MakeBite. In MakeBite,
 the user can specify a name for their mod, the version of the mod, the
 version of The Phantom Pain the mod is intended for, their mod's
