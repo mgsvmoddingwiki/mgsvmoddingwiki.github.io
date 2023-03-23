@@ -123,7 +123,8 @@ pre code {
 table table *,
 pre code,
 table pre,
-.tools-element a::after {
+.tools-element a::after,
+.tools-element span::after {
     font-size: calc(var(--font-size-base) * 0.8);
 }
 
@@ -201,8 +202,13 @@ body {
     visibility: visible; /* ditto */
     padding: var(--spacing-primary);
     margin: var(--spacing-primary) auto calc(var(--spacing-primary) * 2) auto;
+    transition: max-width 150ms ease-out;
 }
 
+/* Class added via Javascript */
+body.expanded-width {
+    max-width: 100%;
+}
 
 /* Hide the theme background overlay + toggle button */
 .darkmode-background,
@@ -257,11 +263,15 @@ body {
 
 .tools-element a,
 .tools-element a:active,
-.tools-element a:active:hover {
+.tools-element a:active:hover,
+.tools-element span,
+.tools-element span:active,
+.tools-element span:active:hover {
     background: var(--color-buttons);
 }
 
-.tools-element a {
+.tools-element a,
+.tools-element span {
     width: 100%;
     height: 100%;
     color: var(--color-inverse);
@@ -273,21 +283,31 @@ body {
     z-index: 3; /* so ::after tooltip doesn't dip below search box when :active */
 }
 
-.tools-element a:hover {
+.tools-element a:hover,
+.tools-element span:hover {
     background: var(--color-buttons-hover);
 }
 
-.tools-element a:active {
+.tools-element a:active,
+.tools-element span:active {
     filter: brightness(0.8);
 }
 
 .tools-element a::before,
-.tools-element a::after {
+.tools-element a::after,
+.tools-element span::before,
+.tools-element span::after {
     pointer-events: none; /* otherwise (for ::before at least) will block :active styling */
 }
 
+/* Button added via Javascript */
+.tools-element.page-expand span {
+    cursor: pointer;
+}
+
 /* Buttons - Tooltip */
-.tools-element a::after {
+.tools-element a::after,
+.tools-element span::after {
     width: max-content;
     background: hsl(234, 8%, 10%);
     color: var(--color-secondary);
@@ -307,13 +327,16 @@ body {
 }
 
 .tools-element a:hover::after,
-.tools-element a:active::after {
+.tools-element a:active::after,
+.tools-element span:hover::after,
+.tools-element span:active::after {
     opacity: 1;
     top: 55px;
 }
 
 /* Buttons - Icon */
-.tools-element a::before {
+.tools-element a::before,
+.tools-element span::before {
     width: 24px;
     height: 24px;
     background: var(--color-secondary);
@@ -366,39 +389,55 @@ body {
     content: 'Page Source';
 }
 
+/* Buttons - Wiki expand width (added via Javascript) */
+.tools-element.page-expand span::before {
+    -webkit-mask-image: url("/assets/images/ui.svg#icons-page-expand-expand");
+    mask-image: url("/assets/images/ui.svg#icons-page-expand-expand");
+}
+body.expanded-width .tools-element.page-expand span::before {
+    -webkit-mask-image: url("/assets/images/ui.svg#icons-page-expand-contract");
+    mask-image: url("/assets/images/ui.svg#icons-page-expand-contract");
+}
+.tools-element.page-expand span::after {
+    content: 'Expand Wiki Width';
+}
+body.expanded-width .tools-element.page-expand span::after {
+    content: 'Contract Wiki Width';
+}
+
 /* Buttons - Prose.io */
-.tools-element:nth-of-type(6) a,
-.tools-element:nth-of-type(6) a:active,
-.tools-element:nth-of-type(6) a:active:hover,
-.tools-element:nth-of-type(7) a,
-.tools-element:nth-of-type(7) a:active,
-.tools-element:nth-of-type(7) a:active:hover {
+.tools-element:nth-last-of-type(2) a,
+.tools-element:nth-last-of-type(2) a:active,
+.tools-element:nth-last-of-type(2) a:active:hover,
+.tools-element:nth-last-of-type(1) a,
+.tools-element:nth-last-of-type(1) a:active,
+.tools-element:nth-last-of-type(1) a:active:hover {
     background: var(--color-accent);
 }
-.tools-element:nth-of-type(6) a:hover,
-.tools-element:nth-of-type(7) a:hover {
+.tools-element:nth-last-of-type(2) a:hover,
+.tools-element:nth-last-of-type(1) a:hover {
     background: var(--color-accent-hover);
 }
-.tools-element:nth-of-type(6) a::before,
-.tools-element:nth-of-type(7) a::before {
+.tools-element:nth-last-of-type(2) a::before,
+.tools-element:nth-last-of-type(1) a::before {
     background: var(--color-inverse);
 }
 
 /* Buttons - Prose.io - Add new page */
-.tools-element:nth-of-type(6) a::before {
+.tools-element:nth-last-of-type(2) a::before {
     -webkit-mask-image: url("/assets/images/ui.svg#icons-editing-add");
     mask-image: url("/assets/images/ui.svg#icons-editing-add");
 }
-.tools-element:nth-of-type(6) a::after {
+.tools-element:nth-last-of-type(2) a::after {
     content: 'Prose.io - Add New Page';
 }
 
 /* Buttons - Prose.io - Edit page */
-.tools-element:nth-of-type(7) a::before {
+.tools-element:nth-last-of-type(1) a::before {
     -webkit-mask-image: url("/assets/images/ui.svg#icons-editing-edit");
     mask-image: url("/assets/images/ui.svg#icons-editing-edit");
 }
-.tools-element:nth-of-type(7) a::after {
+.tools-element:nth-last-of-type(1) a::after {
     content: 'Prose.io - Edit Page';
 }
 
@@ -948,6 +987,10 @@ footer {
     .git-wiki-tools {
         justify-content: center;
         right: 0;
+    }
+
+    .tools-element.page-expand {
+        display: none; /* unneeded since page already becomes max width */
     }
 
     .git-wiki-page .right,
