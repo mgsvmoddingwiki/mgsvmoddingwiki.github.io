@@ -552,7 +552,7 @@ summary::before {
     mask-image: url("/assets/images/ui.svg#icons-spoiler-expand");
 }
 
-.spoiler[open] summary::before {
+.spoiler[open] > summary::before {
     -webkit-mask-image: url("/assets/images/ui.svg#icons-spoiler-contract");
     mask-image: url("/assets/images/ui.svg#icons-spoiler-contract");
 }
