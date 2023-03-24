@@ -9,6 +9,18 @@
 
     <defs>
 
+        <g id="icons-spoiler-expand-path" class="stroke" transform="translate(-22 -24)">
+            <path d="M28,35L40,35"/>
+            <path d="M36.101,39.908L34.011,42.002L31.924,39.923"/>
+            <path d="M36.084,30.085L34.011,28.007L31.924,30.086"/>
+        </g>
+
+        <g id="icons-spoiler-contract-path" class="stroke" transform="translate(-22 -24)">
+            <path d="M28,35L40,35"/>
+            <path d="M36.084,42.085L34.011,40.007L31.924,42.086"/>
+            <path d="M36.101,27.908L34.011,30.002L31.924,27.923"/>
+        </g>
+
         <g id="icons-page-expand-expand-path" class="stroke" transform="translate(-22 -23)">
             <path d="M31,28L27,28L27,32"/>
             <path d="M37,28L41,28L41,32"/>
@@ -132,6 +144,8 @@
 
 
     <use class="output" id="icons-toc" xlink:href="#icons-toc-path"/>
+    <use class="output" id="icons-spoiler-expand" xlink:href="#icons-spoiler-expand-path"/>
+    <use class="output" id="icons-spoiler-contract" xlink:href="#icons-spoiler-contract-path"/>
 
     <use class="output" id="icons-hamburger-menu" xlink:href="#icons-hamburger-menu-path"/>
     <use class="output" id="icons-hamburger-menu-close" xlink:href="#icons-hamburger-menu-close-path"/>

@@ -1,0 +1,11 @@
+<details class="spoiler" markdown="1">
+{% if include.title %}
+<summary markdown="1">
+{{ include.title }}
+</summary>
+{% else %}
+<summary markdown="1">
+Expand for more
+</summary>
+{% endif %}
+ 

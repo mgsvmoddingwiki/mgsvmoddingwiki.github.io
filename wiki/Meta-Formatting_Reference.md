@@ -302,6 +302,86 @@ Code block with syntax highlighting:
 
 ---
 
+## Spoiler elements
+
+We can add expandable sections that are collapsed by default, like the table of contents at the start of every page.
+
+It's best to only use spoilers for secondary information that would otherwise take up too much space, or when it helps the readability of the page.
+
+**Default:**
+
+{% include spoiler-start %}
+
+> Hey, you found me.
+{:.important}
+
+{% include spoiler-end %}
+
+    {% raw %}
+    {% include spoiler-start %}
+    
+    > Hey, you found me.
+    {:.important}
+
+    {% include spoiler-end %}
+    {% endraw %}
+
+> **Note:** always leave an empty line after the `spoiler-start` line.
+{:.important}
+
+**With custom title:**
+
+{% include spoiler-start title="Example" %}
+
+1. Item
+2. Item
+
+{% include spoiler-end %}
+
+    {% raw %}
+    {% include spoiler-start title="Example" %}
+    
+    1. Item
+    2. Item
+    
+    {% include spoiler-end %}
+    {% endraw %}
+
+> **Tip:** anything can be added between the `spoiler-start` and `spoiler-end`. Multiple lines, elements, etc.
+
+**Nested spoilers:**
+
+{% include spoiler-start title="Outer spoiler" %}
+
+Some text
+
+{% include spoiler-start title="Inner spoiler" %}
+
+Some other text
+
+{% include spoiler-end %}
+{% include spoiler-end %}
+
+    {% raw %}
+    {% include spoiler-start title="Outer spoiler" %}
+
+    Some text
+
+    {% include spoiler-start title="Inner spoiler" %}
+
+    Some other text
+
+    {% include spoiler-end %}
+    {% include spoiler-end %}
+    {% endraw %}
+
+> **Note:** nested spoilers are best avoided unless there's a good reason for them but they're demonstrated here to show it's possible.
+
+> **Note:** spoilers within other types of elements (like within tables and list items) aren't supported.
+{:.important}
+
+---
+
 ## Videos
 
 The wiki uses customized templates for embedding videos.
