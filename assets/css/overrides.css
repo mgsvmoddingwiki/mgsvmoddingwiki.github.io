@@ -514,6 +514,14 @@ body > .wrapper {
     margin: var(--spacing-secondary) 0 var(--spacing-secondary);
 }
 
+.spoiler > h1,
+.spoiler > h2,
+.spoiler > h3,
+.spoiler > h4,
+.spoiler > p {
+    padding-left: var(--spacing-minor); /* add slight left padding on first-level paragraph/heading elements to balance better with summary button */
+}
+
 summary {
     background: var(--color-buttons);
     display: flex;
