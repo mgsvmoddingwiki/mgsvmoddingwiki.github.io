@@ -356,15 +356,15 @@ To be used selectively for category/quasi-category pages to auto generate a list
 
 Floating sidebar for program/tool/script information.
 
-{% include infobox dev="choc, Joey, others" site="https://mgsvmoddingwiki.github.io/" download="https://mgsvmoddingwiki.github.io/" %}
+{% include infobox dev="choc, Joey, others" site="https://mgsvmoddingwiki.github.io/" download="https://mgsvmoddingwiki.github.io/Meta-Formatting_Reference" %}
 
 - By default the name will be detected from the page it's included on but this can be overridden by adding a `name=""` attribute and value.
 
-- The `dev`, `site` and `download` values are all optional and can be removed/added as needed.
+- The `dev`, `site` and `download` values are all optional and can be removed/added as needed. Javascript will automatically detect the base domain names from provided URLs and will show them for the visible link names.
 
 ```
 {% raw %}
-{% include infobox dev="choc, Joey, others" site="https://mgsvmoddingwiki.github.io/" download="https://mgsvmoddingwiki.github.io/" %}
+{% include infobox dev="choc, Joey, others" site="https://mgsvmoddingwiki.github.io/" download="https://mgsvmoddingwiki.github.io/Meta-Formatting_Reference" %}
 {% endraw %}
 ```
 {:.clear}
