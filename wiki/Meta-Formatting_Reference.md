@@ -1,6 +1,7 @@
 ---
 title: 'Meta: Formatting Reference'
 permalink: /Meta-Formatting_Reference/
+tags: [Guides]
 ---
 
 This page serves as a reference guide for the various Markdown and customized styling/formatting possible when creating pages.
@@ -148,13 +149,24 @@ Code block with syntax highlighting:
 
 **Aligned right and `.thumb` width:**
 
-    ![](/assets/45-0-1448484425.jpg){:.thumb .right}
+![](/assets/45-0-1448484425.jpg){:.thumb .right}
 
-> **Note:** since text on page will flow around images when they're aligned right/left both these examples are shown in code form only. Otherwise the images would look odd without paragraphs of text surrounding them.
+    ![](/assets/45-0-1448484425.jpg){:.thumb .right}
+{:.clear}
+
+> **Note:** if you need to make an element to not flow around an aligned left/right element but instead clear past it you can add a `.clear` class to the element. Eg:
+> 
+> ```
+> > Example blockquote
+> {:.clear}
+> ```
 
 **Aligned left and `.thumb` width:**
 
+![](/assets/45-0-1448484425.jpg){:.thumb .left}
+
     ![](/assets/45-0-1448484425.jpg){:.thumb .left}
+{:.clear}
 
 **Aligned center and `.thumb` width:**
 
@@ -214,6 +226,27 @@ Code block with syntax highlighting:
     1. Sub-item
 ```
 
+**Adding multi-line breaks for a single list item:**
+- Item\
+Second line of same list item
+- Item\
+\
+We can insert empty lines, too
+
+```
+- Item\
+Second line of same list item
+- Item\
+\
+We can insert empty lines, too
+```
+
+> **Note:** such line breaks aren't rendered correctly if the list is inside a [spoiler element](#spoiler-elements). Use `<br/>` instead of `\` if inside a spoiler element.
+{:.important}
+
+> **Note:** if a list uses a manual line break and code from a code block (wrapped in ```` ``` ````) begins with a `<` character it will render everything past it incorrectly. I've found adding a non-breaking space character (alt+255) before such characters fixes this (` <`).
+{:.important}
+
 **Split style with `.split` class:**
 - Item
     - Sub-item
@@ -229,26 +262,43 @@ Code block with syntax highlighting:
 {:.split}
 ```
 
-**Split style with headings and additional `.index` class:**
-- ### Category heading
+**Unique split style with headings using `.index` class:**
+- ## Category heading
     + [Linked page]()
     + [Linked page]()
-- ### Category heading
+- ## Category heading
     + [Linked page]()
     + [Linked page]()
-{:.index .split}
+{:.index}
 
 ```
-- ### Category heading
+- ## Category heading
     + [Linked page]()
     + [Linked page]()
-- ### Category heading
+- ## Category heading
     + [Linked page]()
     + [Linked page]()
-{:.index .split}
+{:.index}
 ```
 
-> **Note:** the `.index` class is intended for category pages.
+> **Note:** the `.index` class is intended for category pages. It automatically uses split styling without the need for an additional class.
+
+> **Note:** it's also recommended for the `.index` lists to use h2 headings (`##`) since if using h3 (`###`) Jekyll's table of contents list doesn't correctly pick up on the heading directly following the list, affecting the table of contents hierarchy.
+{:.important}
+
+**Auto-generated index for category pages:**
+
+To be used selectively for category/quasi-category pages to auto generate a list of all pages that contain the matching `tag` value.
+
+{% include index-autolist tag="Infinite Heaven" %}
+
+    {% raw %}
+    {% include index-autolist tag="Infinite Heaven" %}
+    {% endraw %}
+
+> **Tip:** can add a `.small` class to the end (`...%}{:.small}`) to decrease the font size for a more discrete list.
+
+> **Tip:** can add `type="dedicated"` within the Jekyll include line to change the title of the list to 'Alphabetical' instead of 'Related pages'. Intended for pages dedicated to being a category page.
 
 ---
 
@@ -299,6 +349,27 @@ Code block with syntax highlighting:
 |-|-:|:-:|:-|
 | First row text. Foo bar. | First row text. Foo bar. | First row text. Foo bar. | First row text. Foo bar. |
 ```
+
+---
+
+## Infobox
+
+Floating sidebar for program/tool/script information.
+
+{% include infobox dev="choc, Joey, others" site="https://mgsvmoddingwiki.github.io/" download="https://mgsvmoddingwiki.github.io/" %}
+
+- By default the name will be detected from the page it's included on but this can be overridden by adding a `name=""` attribute and value.
+
+- The `dev`, `site` and `download` values are all optional and can be removed/added as needed.
+
+```
+{% raw %}
+{% include infobox dev="choc, Joey, others" site="https://mgsvmoddingwiki.github.io/" download="https://mgsvmoddingwiki.github.io/" %}
+{% endraw %}
+```
+{:.clear}
+
+> **Note:** always place the include line at the start of a page, before the opening paragraphs. That way it properly makes the text flow around it.
 
 ---
 
@@ -378,6 +449,9 @@ Some other text
 > **Note:** nested spoilers are best avoided unless there's a good reason for them but they're demonstrated here to show it's possible.
 
 > **Note:** spoilers within other types of elements (like within tables and list items) aren't supported.
+{:.important}
+
+> **Note:** some formatting behaves differently when placed in a spoiler element. For instance, manual line breaks in lists (using `\`) need to instead be `<br/>`.
 {:.important}
 
 ---

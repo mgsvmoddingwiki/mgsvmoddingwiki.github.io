@@ -85,16 +85,20 @@ th {
 }
 
 a,
-#git-wiki-content > p,
 table td:last-child, /* wrap words only in right-most cells, since otherwise if applied to all `td` has some unexpectedly narrow columns with certain tables */
-code, pre {
+code, pre,
+#git-wiki-content > p,
+.infobox {
     word-break: break-word;
     overflow-wrap: break-word;
 }
 
-.caption,
 table,
-code, pre {
+code, pre,
+.caption,
+.git-wiki-page-list li a,
+.index.small,
+.infobox ul {
     font-size: var(--font-size-small);
     line-height: var(--font-line-height);
 }
@@ -153,6 +157,7 @@ hr {
     height: var(--border-width);
     background: var(--color-border);
     margin: calc(var(--spacing-minor) * 2) 0 var(--spacing-intermediate) 0;
+    clear: both;
 }
 
 blockquote,
@@ -223,6 +228,10 @@ body.expanded-width {
 .darkmode-layer,
 .darkmode-toggle {
     display: none !important;
+}
+
+.clear {
+    clear: both;
 }
 
 
@@ -603,7 +612,11 @@ summary:active {
 
 /* Split/divide list elements vertically into two columns */
 ol.split,
-ul.split {
+ul.split,
+ol.index,
+ul.index,
+.index.single-list li > ol,
+.index.single-list li > ul {
     columns: 2;
     column-gap: var(--spacing-primary);
 }
@@ -613,13 +626,31 @@ blockquote.important {
     background: hsl(154,65%,32%);
 }
 
-/* .index = for use on lists for index/category pages, particularly when paired with .split */
+/* .index = for use on lists for index/category pages */
+/* Handle single first-level lists differently by adding columns to child list instead */
+.index.single-list {
+    columns: 1;
+}
+
 .index h1,
 .index h2,
 .index h3,
 .index h4 {
     font-size: var(--font-size-medium);
+    margin-top: 0;
     margin-bottom: var(--spacing-secondary);
+}
+
+/* To decrease size and be more discrete */
+.index.small {
+    font-weight: var(--font-weight-semibold);
+}
+
+.index.small h1,
+.index.small h2,
+.index.small h3,
+.index.small h4 {
+    font-size: var(--font-size-base);
 }
 
 .index,
@@ -627,8 +658,19 @@ blockquote.important {
     list-style: none;
 }
 
-.index li {
+.index > li,
+.index > li ol,
+.index > li ul {
     break-inside: avoid-column;
+}
+
+.index ol:last-child,
+.index ul:last-child {
+    margin-bottom: calc(var(--spacing-minor) * 2);
+}
+
+.index > li li {
+    margin-bottom: var(--spacing-minor);
 }
 
 .index a {
@@ -642,6 +684,61 @@ blockquote.important {
     padding: var(--spacing-secondary);
     border-top: var(--border-width) solid var(--color-border);
     margin-top: var(--spacing-secondary);
+}
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ PROGRAM/TOOL INFOBOX ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.infobox {
+    width: var(--width-sidebar);
+    background: var(--bg-subtle);
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    border-radius: var(--radius-primary);
+    margin: 0 0 var(--spacing-primary) var(--spacing-primary);
+    float: right;
+}
+
+.infobox .title {
+    width: 100%;
+    background: var(--color-accent);
+    color: var(--color-inverse);
+    text-align: center;
+    font-weight: var(--font-weight-semibold);
+    padding: var(--spacing-minor) var(--spacing-secondary);
+}
+
+.infobox ul {
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.infobox li {
+    display: flex;
+    padding: var(--spacing-minor) var(--spacing-secondary);
+}
+
+.infobox li:first-child {
+    padding-top: calc(var(--spacing-minor) * 2);
+}
+
+.infobox li:last-child {
+    border-bottom: none;
+    padding-bottom: var(--spacing-secondary);
+}
+
+.infobox .label {
+    font-weight: var(--font-weight-semibold);
+    text-align: right;
+    flex: 1 1 50%;
+    margin-right: var(--spacing-secondary);
+}
+
+.infobox .value {
+    flex: 1 1 75%;
 }
 
 
@@ -690,10 +787,8 @@ body.darkmode--activated .darkmode-ignore {
     max-width: 50%;
 }
 
-.git-wiki-page a.thumb.left:not(.legacy-small),
-.git-wiki-page img.thumb.right:not(.legacy-small),
-.git-wiki-page a.thumb.left:not(.legacy-small),
-.git-wiki-page img.thumb.right:not(.legacy-small) {
+.git-wiki-page a.thumb.legacy-small,
+.git-wiki-page img.thumb.legacy-small {
     max-width: 30%;
 }
 
@@ -874,9 +969,7 @@ body.darkmode--activated .darkmode-ignore {
 }
 
 .git-wiki-page-list li a {
-    font-size: var(--font-size-small);
-    line-height: var(--font-line-height);
-    font-weight: 500;
+    font-weight: var(--font-weight-semibold);
     display: block;
     padding: var(--spacing-minor) calc(var(--spacing-minor) * 2);
     border-bottom: var(--border-width) solid var(--bg-subtle);
@@ -1026,12 +1119,11 @@ footer {
         display: none; /* unneeded since page already becomes max width */
     }
 
+    .git-wiki-page .left,
     .git-wiki-page .right,
-    .git-wiki-page .legacy-small {
-        max-width: 45%;
-    }
-
-    .git-wiki-page .left {
+    .git-wiki-page .legacy-small,
+    .git-wiki-page a.thumb.legacy-small,
+    .git-wiki-page img.thumb.legacy-small {
         max-width: 45%;
     }
 
@@ -1138,18 +1230,26 @@ footer {
 
     /* Join into one column */
     ol.split,
-    ul.split {
+    ul.split,
+    ol.index,
+    ul.index,
+    .index.single-list li > ol,
+    .index.single-list li > ul {
         columns: 1;
     }
 
     .git-wiki-page .image-wrapper:not(.inline) img:not(.inline), /* won't apply if user has Javascript disabled */
     .git-wiki-page .thumb,
+    .git-wiki-page a.thumb:not(.legacy-small),
+    .git-wiki-page img.thumb:not(.legacy-small),
     .git-wiki-page .video-wrapper.thumb,
     .git-wiki-page .video-wrapper.thumb.left,
     .git-wiki-page .video-wrapper.thumb.right,
     .git-wiki-page .right,
     .git-wiki-page .left,
-    .git-wiki-page .legacy-small {
+    .git-wiki-page .legacy-small,
+    .git-wiki-page a.thumb.legacy-small,
+    .git-wiki-page img.thumb.legacy-small {
         width: auto;
         max-width: 100%;
         margin: var(--spacing-secondary) auto var(--spacing-primary);
@@ -1203,6 +1303,12 @@ footer {
 
     .tools-element a::after {
         display: none; /* hide tooltips at narrowest viewports to avoid page width issue from the text */
+    }
+
+    .infobox {
+        width: 100%;
+        margin: 0 0 var(--spacing-primary);
+        float: none;
     }
 
 }

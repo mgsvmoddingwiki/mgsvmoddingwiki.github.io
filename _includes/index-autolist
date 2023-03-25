@@ -1,0 +1,38 @@
+{% if include.type contains "all" %}
+<ul class="index">
+    <li>
+        <h2>All</h2>
+        <ul>
+        {% if include.type == "all-pages" %}
+            {% for page in site.pages %}
+                <li><a href="{{ page.url }}">{{ page.title }}</a></li>
+            {% endfor %}
+            {% elsif include.type == "all-tags" %}
+            {% for tag in site.tag-list %}
+                <li><a href="/{{ tag | replace: " ", "_" }}">{{ tag }}</a></li>
+            {% endfor %}
+        {% endif %}
+        </ul>
+    </li>
+</ul>
+{% else %}
+<ul class="index">
+    <li>
+        {% if include.type == "dedicated" %}<h2 id="alphabetical">Alphabetical{% else %}<h2 id="related-pages">Related pages{% endif %}</h2>
+        <ul>
+        {% for input-tag in include.tag %}
+            {% for page in site.pages %}
+                {% for tag in page.tags %}
+                    {% if tag == input-tag %}
+                        {% if input-tag == page.title %}
+                        {% else %}
+                        <li><a href="{{ page.url }}">{{ page.title }}</a></li>
+                        {% endif %}
+                    {% endif %}
+                {% endfor %}
+            {% endfor %}
+        {% endfor %}
+        </ul>
+    </li>
+</ul>
+{% endif %}

@@ -1,0 +1,27 @@
+<div class="infobox">
+    {% if include.name %}
+    <div class="title">{{ include.name }}</div>
+    {% else %}
+    <div class="title">{{ page.title }}</div>
+    {% endif %}
+    <ul>
+        {% if include.dev %}
+        <li class="dev">
+            <span class="label">Developer</span>
+            <span class="value">{{ include.dev }}</span>
+        </li>
+        {% endif %}
+        {% if include.site %}
+        <li class="site">
+            <span class="label">Site</span>
+            <span class="value"><a href="{{ include.site }}">Site</a></span>
+        </li>
+        {% endif %}
+        {% if include.download %}
+        <li class="download">
+            <span class="label">Download</span>
+            <span class="value"><a href="{{ include.download }}">Download</a></span>
+        </li>
+        {% endif %}
+    </ul>
+</div>
