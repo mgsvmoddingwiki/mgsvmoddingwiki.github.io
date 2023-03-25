@@ -627,6 +627,10 @@ blockquote.important {
 }
 
 /* .index = for use on lists for index/category pages */
+.index {
+    clear: both;
+}
+
 /* Handle single first-level lists differently by adding columns to child list instead */
 .index.single-list {
     columns: 1;
