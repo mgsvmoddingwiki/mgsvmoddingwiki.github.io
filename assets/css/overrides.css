@@ -858,11 +858,13 @@ body.darkmode--activated .darkmode-ignore {
 
 .git-wiki-page .video-wrapper.thumb {
     width: 60%;
+    max-width: 100%; /* override image .thumb styling */
 }
 
 .git-wiki-page .video-wrapper.thumb.left,
 .git-wiki-page .video-wrapper.thumb.right {
     width: 50%;
+    max-width: 100%; /* override image .thumb styling */
 }
 
 .git-wiki-page .video-wrapper.has-caption .caption {
