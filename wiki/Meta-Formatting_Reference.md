@@ -350,7 +350,7 @@ To be used selectively for category/quasi-category pages to auto generate a list
 | First row text. Foo bar. | First row text. Foo bar. | First row text. Foo bar. | First row text. Foo bar. |
 ```
 
-**Adding multiple lines to a single cell:**
+**Adding manual line breaks:**
 
 | First row text<br/>Another line  | `Code example {`<br/>`Another line`<br/>`}`  | First row text    |
 
@@ -358,7 +358,7 @@ To be used selectively for category/quasi-category pages to auto generate a list
 | First row text<br/>Another line  | `Code example {`<br/>`Another line`<br/>`}`  | First row text    |
 ```
 
-> **Note:** new lines within table cells have to use the HTML `<br/>` line break. Empty new lines can be made by doubling the line breaks (`<br/><br/>`).
+> **Note:** manual line breaks within table cells have to use the HTML `<br/>` line break. Empty new lines can be made by doubling the line breaks (`<br/><br/>`).
 
 ---
 
