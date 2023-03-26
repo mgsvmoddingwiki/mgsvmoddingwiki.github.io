@@ -296,7 +296,7 @@ To be used selectively for category/quasi-category pages to auto generate a list
     {% include index-autolist tag="Infinite Heaven" %}
     {% endraw %}
 
-> **Tip:** can add a `.small` class to the end (`...%}{:.small}`) to decrease the font size for a more discrete list.
+> **Tip:** can add a `.small` class to the end (`...%}{:.small}`) to decrease the font size for a more discreet list.
 
 > **Tip:** can add `type="dedicated"` within the Jekyll include line to change the title of the list to 'Alphabetical' instead of 'Related pages'. Intended for pages dedicated to being a category page.
 
@@ -349,6 +349,16 @@ To be used selectively for category/quasi-category pages to auto generate a list
 |-|-:|:-:|:-|
 | First row text. Foo bar. | First row text. Foo bar. | First row text. Foo bar. | First row text. Foo bar. |
 ```
+
+**Adding multiple lines to a single cell:**
+
+| First row text<br/>Another line  | `Code example {`<br/>`Another line`<br/>`}`  | First row text    |
+
+```
+| First row text<br/>Another line  | `Code example {`<br/>`Another line`<br/>`}`  | First row text    |
+```
+
+> **Note:** new lines within table cells have to use the HTML `<br/>` line break. Empty new lines can be made by doubling the line breaks (`<br/><br/>`).
 
 ---
 

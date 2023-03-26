@@ -10,7 +10,7 @@ This is the central hub for information on modding the [Fox Engine](https://en.w
 
 ## Main Categories
 
-[![File Formats](/assets/File Formats Icon.png){:.inline width="130px"}]()
+[![File Formats](/assets/File Formats Icon.png){:.inline width="130px"}](/File_Formats)
 [![Guides](/assets/Guides Icon.png){:.inline width="130px"}](/Guides)
 [![Lua](/assets/Lua Icon.png){:.inline width="130px"}]()
 [![Tools](/assets/Tools Icon.png){:.inline width="130px"}]()

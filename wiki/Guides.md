@@ -26,12 +26,11 @@ permalink: /Guides/
     + [Mission Objectives](/Mission_Objectives)
     + [Mission Table Subscripts](/Mission_Table_Subscripts)
     + [Route Set](/Route_Set)
-    + [Sahelanthropus Battle sequence](/Sahelanthropus_Battle_sequence)
     + [Sahelanthropus Mission Files and Usage](/Sahelanthropus_Mission_Files_and_Usage)
 - ## Rendering
     + [Blender and Unity 3D modelling pipeline notes](/Blender_and_Unity_3D_modelling_pipeline_notes)
     + [Custom weapons](/Custom_weapons)
-    + [Fx nodes](/Fx_nodes)
+    + [Fx Nodes](/Fx_Nodes)
     + [Hair Materials](/Hair_Materials)
     + [How to save your .DDS image](/How_to_save_your_.DDS_image)
     + [Mesh Mashup](/Mesh_Mashup)

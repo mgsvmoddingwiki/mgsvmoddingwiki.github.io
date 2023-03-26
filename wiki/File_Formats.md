@@ -216,12 +216,3 @@ can be found [here](https://github.com/kapuragu/FoxEngineTemplates).
 3.  File types from GZ (to be split further) or referenced in exe or lua
     but not yet found/extracted as seperate files.
 4.  <https://github.com/Atvaark/FoxTool>
-
-
-## Notes
-
-When editing this page use HTML line breaks (`<br/>`) if there need to be multiple lines in a single cell. Line breaks can also be doubled for empty new lines.
-
-Eg:
-
-    RegisterExtensionInfo<br/>categories={"Target"}

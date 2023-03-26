@@ -645,7 +645,7 @@ blockquote.important {
     margin-bottom: var(--spacing-secondary);
 }
 
-/* To decrease size and be more discrete */
+/* To decrease size and be more discreet */
 .index.small {
     font-weight: var(--font-weight-semibold);
 }
@@ -786,13 +786,13 @@ body.darkmode--activated .darkmode-ignore {
 }
 
 /* Preset max width so users don't have to bother adding dimension attributes if they don't want */
-.git-wiki-page a.thumb:not(.legacy-small),
-.git-wiki-page img.thumb:not(.legacy-small) {
+.git-wiki-page .thumb:not(.legacy-small) {
     max-width: 50%;
 }
 
-.git-wiki-page a.thumb.legacy-small,
-.git-wiki-page img.thumb.legacy-small {
+.git-wiki-page .thumb.left,
+.git-wiki-page .thumb.right,
+.git-wiki-page .thumb.legacy-small {
     max-width: 30%;
 }
 
@@ -1126,8 +1126,9 @@ footer {
     .git-wiki-page .left,
     .git-wiki-page .right,
     .git-wiki-page .legacy-small,
-    .git-wiki-page a.thumb.legacy-small,
-    .git-wiki-page img.thumb.legacy-small {
+    .git-wiki-page .thumb.left,
+    .git-wiki-page .thumb.right,
+    .git-wiki-page .thumb.legacy-small {
         max-width: 45%;
     }
 
@@ -1244,16 +1245,16 @@ footer {
 
     .git-wiki-page .image-wrapper:not(.inline) img:not(.inline), /* won't apply if user has Javascript disabled */
     .git-wiki-page .thumb,
-    .git-wiki-page a.thumb:not(.legacy-small),
-    .git-wiki-page img.thumb:not(.legacy-small),
+    .git-wiki-page .thumb:not(.legacy-small),
+    .git-wiki-page .thumb.left,
+    .git-wiki-page .thumb.right,
     .git-wiki-page .video-wrapper.thumb,
     .git-wiki-page .video-wrapper.thumb.left,
     .git-wiki-page .video-wrapper.thumb.right,
     .git-wiki-page .right,
     .git-wiki-page .left,
     .git-wiki-page .legacy-small,
-    .git-wiki-page a.thumb.legacy-small,
-    .git-wiki-page img.thumb.legacy-small {
+    .git-wiki-page .thumb.legacy-small {
         width: auto;
         max-width: 100%;
         margin: var(--spacing-secondary) auto var(--spacing-primary);
