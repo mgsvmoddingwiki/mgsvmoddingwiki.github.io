@@ -42,6 +42,6 @@ permalink: /Guides/
     + [Sound Codes](/Sound_Codes)
 - ## Wiki Related
     + [Meta: Formatting Reference](/Meta-Formatting_Reference)
-{:.index .split}
+{:.index}
 
 {% include index-autolist type="dedicated" tag="Guides" %}

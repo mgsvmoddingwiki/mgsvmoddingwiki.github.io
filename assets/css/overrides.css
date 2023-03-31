@@ -64,7 +64,7 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: var(--font-weight-semibold);
 }
 
-h2 {
+h2, h3, h4 {
     margin-top: var(--spacing-primary);
 }
 
@@ -204,7 +204,7 @@ td {
 }
 
 body {
-    max-width: 1280px; /* Fandom content max width excluding sidebar: 864px */
+    max-width: 1280px;
     background-color: var(--bg-page) !important; /* override unnecessary JS hiding */
     color: var(--color-primary);
     font-family: var(--font-sans);

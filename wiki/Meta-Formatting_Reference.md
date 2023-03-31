@@ -226,6 +226,13 @@ Code block with syntax highlighting:
     1. Sub-item
 ```
 
+> **Tip:** if you'd like to begin an ordered list at a different starting number then prefix the list with `{:start="<number>"}`, like so:
+>   ```
+>   {:start="8"}
+>   8. Item
+>   9. Item
+>   ```
+
 **Adding multi-line breaks for a single list item:**
 - Item\
 Second line of same list item
@@ -244,7 +251,7 @@ We can insert empty lines, too
 > **Note:** such line breaks aren't rendered correctly if the list is inside a [spoiler element](#spoiler-elements). Use `<br/>` instead of `\` if inside a spoiler element.
 {:.important}
 
-> **Note:** if a list uses a manual line break and code from a code block (wrapped in ```` ``` ````) begins with a `<` character it will render everything past it incorrectly. I've found adding a non-breaking space character (alt+255) before such characters fixes this (` <`).
+> **Note:** if a list uses a manual line break and you've added code block (wrapped in ```` ``` ````) within the list, in which the code begins with a `<` character, it will render everything past it incorrectly. I've found adding a non-breaking space character (alt+255) before such characters fixes this (` <`).
 {:.important}
 
 **Split style with `.split` class:**
@@ -261,6 +268,12 @@ We can insert empty lines, too
     - Sub-item
 {:.split}
 ```
+
+**Split style lists for category pages (including auto-generated indexes):**
+
+Since these are only used for specific pages this section has been collapsed into a spoiler.
+
+{% include spoiler-start %}
 
 **Unique split style with headings using `.index` class:**
 - ## Category heading
@@ -299,6 +312,8 @@ To be used selectively for category/quasi-category pages to auto generate a list
 > **Tip:** can add a `.small` class to the end (`...%}{:.small}`) to decrease the font size for a more discreet list.
 
 > **Tip:** can add `type="dedicated"` within the Jekyll include line to change the title of the list to 'Alphabetical' instead of 'Related pages'. Intended for pages dedicated to being a category page.
+
+{% include spoiler-end %}
 
 ---
 
@@ -477,6 +492,9 @@ The wiki uses customized templates for embedding videos.
     {% raw %}{% include video url="/assets/VideoGimmick01.webm" %}{% endraw %}
 
 > **Note:** use the URL of the video for the `url` value. Here showing a video hosted on the wiki itself so using the root path format, like for images.
+
+> **Note:** video embeds are best avoided being placed within lists. It breaks the formatting of subsquent list items. Placing them around regular paragraph text is fine though.
+{:.important}
 
 **Changing width and placement:**
 
