@@ -4,6 +4,8 @@ permalink: /FoxTool/
 tags: [Tools, File Tools]
 ---
 
+{% include infobox dev="Atvaark" site="https://github.com/Atvaark/FoxTool" download="https://github.com/Atvaark/FoxTool/releases" %}
+
 FoxTool is an open-source Fox Engine XML compiler/decompiler for Metal
 Gear Solid V: Ground Zeroes and Metal Gear Solid V: The Phantom Pain
 created by Atvaark. It is capable of reading the data from compiled XML
