@@ -4,6 +4,8 @@ permalink: /LangTool/
 tags: [Lang, Tools, File Tools]
 ---
 
+{% include infobox dev="Atvaark" site="https://github.com/Atvaark/FoxEngine.TranslationTool" download="https://github.com/Atvaark/FoxEngine.TranslationTool/releases" %}
+
 LangTool is an open-source Fox Engine XML compiler/decompiler for Metal
 Gear Solid V: Ground Zeroes and Metal Gear Solid V: The Phantom Pain
 created by Atvaark. It is capable of reading the data from lng and lng2

@@ -4,6 +4,8 @@ permalink: /MtarTool/
 tags: [Guides, Tools, File Tools, Animation]
 ---
 
+{% include infobox dev="BobDoleOwndU" site="https://github.com/BobDoleOwndU/MtarTool" download="https://github.com/BobDoleOwndU/MtarTool/releases" %}
+
 MtarTool is an open-source unpacker and repacker for Metal Gear Solid V:
 The Phantom Pain's .mtar (Motion Archive) files, written by
 BobDoleOwndU. The tool is able to extract .gani (animation) files from

@@ -4,6 +4,8 @@ permalink: /FtexTool/
 tags: [Tools, File Tools, Rendering]
 ---
 
+{% include infobox dev="Atvaark" site="https://github.com/Atvaark/FtexTool" download="https://github.com/Atvaark/FtexTool/releases" %}
+
 FtexTool is an open-source tool which converts Fox Engine textures
 (.ftex) to Direct-Draw Surface textures (.dds). FtexTool works by
 getting information about the image from the .ftex file, and the actual

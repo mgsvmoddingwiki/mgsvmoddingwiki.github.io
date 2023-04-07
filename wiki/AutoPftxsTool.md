@@ -4,6 +4,8 @@ permalink: /AutoPftxsTool/
 tags: [Tools, File Tools]
 ---
 
+{% include infobox dev="BobDoleOwndU" site="https://github.com/BobDoleOwndU/AutoPftxsTool" download="https://github.com/BobDoleOwndU/AutoPftxsTool/releases" %}
+
 AutoPftxsTool is an open-source automatic .pftxs unpacker and repacker
 for Metal Gear Solid V: The Phantom Pain written by BobDoleOwndU. It
 simplifies the process of adding new textures or sub-textures to a

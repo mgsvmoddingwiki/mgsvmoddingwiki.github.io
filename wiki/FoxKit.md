@@ -4,6 +4,8 @@ permalink: /FoxKit/
 tags: [Tools, FoxKit]
 ---
 
+{% include infobox dev="Joey(FoxKit-2 Fork), youarebritish" site="https://github.com/Joey35233/FoxKit https://github.com/youarebritish/FoxKit" %}
+
 FoxKit is a general-purpose Fox Engine data editor, which includes
 features such as importing, exporting, and creat new AI routes utilizing
 TppRouteSet or "FOX Routes." (.[frt](/FRT "wikilink"))

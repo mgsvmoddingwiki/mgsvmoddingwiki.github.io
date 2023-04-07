@@ -741,8 +741,15 @@ blockquote.important {
     margin-right: var(--spacing-secondary);
 }
 
-.infobox .value {
+/* To account for when there are multiple values */
+.infobox .value-wrapper {
+    display: flex;
     flex: 1 1 75%;
+    flex-wrap: wrap;
+}
+
+.infobox .value {
+    flex-basis: 100%;
 }
 
 

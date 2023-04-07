@@ -4,6 +4,8 @@ permalink: /FsmTool/
 tags: [Tools, File Tools, Cutscenes]
 ---
 
+{% include infobox dev="BobDoleOwndU" site="https://github.com/BobDoleOwndU/FsmTool" download="https://github.com/BobDoleOwndU/FsmTool/releases" %}
+
 FsmTool is open-source unpacker and repacker for Metal Gear Solid V: The
 Phantom Pain's .fsm files written by BobDoleOwndU. The tool can extract
 the DEMO and SND chunks from .fsm files. Additionally, when extracting

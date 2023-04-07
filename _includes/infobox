@@ -6,22 +6,41 @@
     {% endif %}
     <ul>
         {% if include.dev %}
-        <li class="dev">
-            <span class="label">Developer</span>
-            <span class="value">{{ include.dev }}</span>
-        </li>
+            {% comment %} Reason for uniquely named standalone variables is to not conflict with other includes {% endcomment %}
+            {% assign infoboxdev = include.dev | split: ", " %}
+            {% assign i = 0 %}{% for name in infoboxdev %}{% if forloop.index > 1 %}{% assign devplural = "s" %}{% endif %}{% endfor %}
+            <li class="dev">
+                <span class="label">Developer{{ devplural }}</span>
+                <div class="value-wrapper">
+                    {% for name in infoboxdev %}
+                    <span class="value">{{ name }}</span>
+                    {% endfor %}
+                </div>
+            </li>
         {% endif %}
         {% if include.site %}
-        <li class="site">
-            <span class="label">Site</span>
-            <span class="value"><a href="{{ include.site }}">Site</a></span>
-        </li>
+            {% assign infoboxsite = include.site | split: " " %}
+            {% assign i = 0 %}{% for url in infoboxsite %}{% if forloop.index > 1 %}{% assign siteplural = "s" %}{% endif %}{% endfor %}
+                <li class="site">
+                    <span class="label">Site{{ siteplural }}</span>
+                    <div class="value-wrapper">
+                    {% for url in infoboxsite %}
+                        <span class="value"><a href="{{ url }}">Site</a></span>
+                    {% endfor %}
+                    </div>
+                </li>
         {% endif %}
         {% if include.download %}
-        <li class="download">
-            <span class="label">Download</span>
-            <span class="value"><a href="{{ include.download }}">Download</a></span>
-        </li>
+            {% assign infoboxdownload = include.download | split: " " %}
+            {% assign i = 0 %}{% for url in infoboxdownload %}{% if forloop.index > 1 %}{% assign downloadplural = "s" %}{% endif %}{% endfor %}
+            <li class="download">
+                <span class="label">Download{{ downloadplural }}</span>
+                <div class="value-wrapper">
+                    {% for url in infoboxdownload %}
+                    <span class="value"><a href="{{ url }}">Download</a></span>
+                    {% endfor %}
+                </div>
+            </li>
         {% endif %}
     </ul>
 </div>

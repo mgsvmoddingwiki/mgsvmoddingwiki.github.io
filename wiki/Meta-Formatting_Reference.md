@@ -251,7 +251,7 @@ We can insert empty lines, too
 > **Note:** such line breaks aren't rendered correctly if the list is inside a [spoiler element](#spoiler-elements). Use `<br/>` instead of `\` if inside a spoiler element.
 {:.important}
 
-> **Note:** if a list uses a manual line break and you've added code block (wrapped in ```` ``` ````) within the list, in which the code begins with a `<` character, it will render everything past it incorrectly. I've found adding a non-breaking space character (alt+255) before such characters fixes this (` <`).
+> **Note:** if a list uses a manual line break and you've added a code block (wrapped in ```` ``` ````) within the list, in which the code begins with a `<` character, it will render everything past it incorrectly. I've found adding a non-breaking space character (alt+255) before such characters fixes this (` <`).
 {:.important}
 
 **Split style with `.split` class:**
@@ -381,11 +381,13 @@ To be used selectively for category/quasi-category pages to auto generate a list
 
 Floating sidebar for program/tool/script information.
 
-{% include infobox dev="choc, Joey, others" site="https://mgsvmoddingwiki.github.io/" download="https://mgsvmoddingwiki.github.io/Meta-Formatting_Reference" %}
+{% include infobox dev="choc, Joey" site="https://mgsvmoddingwiki.github.io/" download="https://mgsvmoddingwiki.github.io/Meta-Formatting_Reference" %}
 
 - By default the name will be detected from the page it's included on but this can be overridden by adding a `name=""` attribute and value.
 
 - The `dev`, `site` and `download` values are all optional and can be removed/added as needed. Javascript will automatically detect the base domain names from provided URLs and will show them for the visible link names.
+
+- To add multiple names to the `dev` item separate each name by a comma and a space (`, `). Multiple URLs can also be added to the `site` and `download` items by separating the URLs with a space (any literal spaces in a URL can be replaced with `%20`).
 
 ```
 {% raw %}

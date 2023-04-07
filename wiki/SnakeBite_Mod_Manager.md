@@ -4,6 +4,8 @@ permalink: /SnakeBite_Mod_Manager/
 tags: [Tools, File Tools]
 ---
 
+{% include infobox dev="topher-au, TinManTex, Morbidslinky, ZipfsLaw" site="https://github.com/TinManTex/SnakeBite" download="http://www.nexusmods.com/metalgearsolidvtpp/mods/106" %}
+
 **SnakeBite** is an unofficial, open-source mod manager for Metal Gear
 Solid V: The Phantom Pain.
 

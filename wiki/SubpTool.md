@@ -4,6 +4,8 @@ permalink: /SubpTool/
 tags: [Tools, File Tools, Lang]
 ---
 
+{% include infobox dev="Atvaark" site="https://github.com/Atvaark/FoxEngine.TranslationTool" download="https://github.com/Atvaark/FoxEngine.TranslationTool/releases" %}
+
 ## Dictionary
 
 SubpTool utilizes a dictionary of filenames called

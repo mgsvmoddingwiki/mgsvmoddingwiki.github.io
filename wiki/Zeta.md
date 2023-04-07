@@ -4,6 +4,8 @@ permalink: /Zeta/
 tags: [Infinite Heaven, Tools]
 ---
 
+{% include infobox dev="ZipfsLaw" site="https://github.com/ZipfsLaw/Zeta" download="https://www.nexusmods.com/metalgearsolidvtpp/mods/1309" %}
+
 **Zeta** is an [Infinite Heaven](/Infinite_Heaven "wikilink") add-on
 that is both an in-game mod manager and modding framework. It was
 created to simplify modding, to improve mod organization, and to resolve
