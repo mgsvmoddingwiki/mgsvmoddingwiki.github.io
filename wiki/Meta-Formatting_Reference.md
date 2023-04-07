@@ -391,7 +391,7 @@ Floating sidebar for program/tool/script information.
 
 ```
 {% raw %}
-{% include infobox dev="choc, Joey, others" site="https://mgsvmoddingwiki.github.io/" download="https://mgsvmoddingwiki.github.io/Meta-Formatting_Reference" %}
+{% include infobox dev="choc, Joey" site="https://mgsvmoddingwiki.github.io/" download="https://mgsvmoddingwiki.github.io/Meta-Formatting_Reference" %}
 {% endraw %}
 ```
 {:.clear}
