@@ -22,3 +22,5 @@ Currently FoxKit handles these file types:
   - .frt
   - .htre
   - .pcsp
+
+{% include index-autolist tag="FoxKit" %}{:.small}
