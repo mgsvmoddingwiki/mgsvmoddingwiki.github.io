@@ -15,6 +15,8 @@ Language.
 Lua was designed primarily for extending software applications
 customization and is a popular scripting system for games.
 
+{% include index-autolist tag="Lua" %}{:.small}
+
 ## Lua in MGSV
 
 MGSV uses [Lua 5.1](https://www.lua.org/manual/5.1/).
