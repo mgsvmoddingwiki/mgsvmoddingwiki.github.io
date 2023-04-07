@@ -12,3 +12,5 @@ tags: [Tools, Reference]
   - [FtexTool](https://github.com/Atvaark/FtexTool)
   - [FvTwool](https://github.com/BobDoleOwndU/FvTwool)
   - [GzsTool](https://github.com/Atvaark/GzsTool)
+
+{% include index-autolist tag="Tools" %}{:.small}
