@@ -1,3 +1,22 @@
+{% comment %}Create custom equivalent of `site.tags` for pages not in `posts` directory:{% endcomment %}
+{% comment %}Credit to: https://talk.jekyllrb.com/t/cant-filter-tags-by-another-variable/5337/9{% endcomment %}
+
+{%- assign tags = site.pages | map: "tags" -%}
+{% assign all_tags = "" | split: "|" %}
+{% for tag_list in tags %}
+    {% for tag in tag_list %}
+        {% assign all_tags =  all_tags | push: tag %}
+    {% endfor %}
+{% endfor %}
+{% assign all_tags = all_tags | uniq | sort %}
+
+{% comment %}Debug: view array:
+{{ all_tags  | inspect }}
+{% endcomment %}
+
+
+{% comment %}----------------------{% endcomment %}
+
 {% if include.type contains "all" %}
 <ul class="index">
     <li>
@@ -8,8 +27,8 @@
                 <li><a href="{{ page.url }}">{{ page.title }}</a></li>
             {% endfor %}
             {% elsif include.type == "all-tags" %}
-            {% for tag in site.tag-list %}
-                <li><a href="/{{ tag | replace: " ", "_" }}">{{ tag }}</a></li>
+            {% for tag in all_tags %}
+                <li><a href="/{{ tag }}">{{ tag }}</a></li>
             {% endfor %}
         {% endif %}
         </ul>

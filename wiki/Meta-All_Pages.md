@@ -7,8 +7,6 @@ Below are two automatically generated lists. The first is of all category tags u
 
 The second is of all pages in the wiki. Useful for finding titles in page if the search filter isn't returning the desired result, among other things. 
 
-> **Note:** the tags were manually sourced on 2023-03-24 via the `searchdata.js` file (containing all pages) and added to `_config.yml`, so the list will periodically need to be updated in that file as anything changes.
-
 ## Categories
 
 {% include index-autolist type="all-tags" %}

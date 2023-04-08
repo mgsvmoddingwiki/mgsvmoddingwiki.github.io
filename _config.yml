@@ -156,6 +156,3 @@ inc_before_page_list :
 inc_after_page_list : sidebar.html
 inc_before_post_list :
 inc_after_post_list :
-
-# List of all categories, obtained after formatting the tags from `searchdata.js` in text editor for unique lines
-tag-list: [FoxKit, Tools, File Tools, Guides, Rendering, Models, Weapons, Lua, Reference, Chimera, Sound, GameService, Infinite Heaven, Locations, Missions, File Formats, Animation, Entities, EXE, Sim, Routes, Cutscenes, Lang, Files, Geo, Terrain, Effects, Player, MotherBase, Nav, Level, Troubleshooting, UI]
