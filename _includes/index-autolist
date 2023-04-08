@@ -28,7 +28,7 @@
             {% endfor %}
             {% elsif include.type == "all-tags" %}
             {% for tag in all_tags %}
-                <li><a href="/{{ tag }}">{{ tag }}</a></li>
+                <li><a href="/{{ tag | replace: " ", "_" }}">{{ tag }}</a></li>
             {% endfor %}
         {% endif %}
         </ul>

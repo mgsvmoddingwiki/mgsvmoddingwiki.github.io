@@ -125,19 +125,19 @@ readme_index:
   enabled:          true
   remove_originals: false
   with_frontmatter: true
+  
 #
 # INCLUDING HOOKS
 # They are optional, change them only if you need
 # Check wiki documentation to learn how they work
 #
-
 inc_before_toc : before_toc.html
 inc_after_toc : after_toc.html
 inc_before_content :
 inc_after_content :
 inc_before_footer :
 inc_after_footer :
-inc_before_head : before_head.html
+inc_before_head :
 inc_after_head :
 inc_before_meta :
 inc_after_meta :
