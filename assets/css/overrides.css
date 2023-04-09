@@ -203,6 +203,10 @@ td {
     background: var(--bg-subtle);
 }
 
+td:last-child {
+    min-width: 65px; /* to not break very short words if the th heading is also very short (causing the column to be too narrow otherwise) */
+}
+
 body {
     max-width: 1280px;
     background-color: var(--bg-page) !important; /* override unnecessary JS hiding */
