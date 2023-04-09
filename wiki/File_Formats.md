@@ -8,6 +8,8 @@ This article lists the presumed names of extensions used in MGSV, as
 well as some basic descriptions. The full list of up-to-date templates
 can be found [here](https://github.com/kapuragu/FoxEngineTemplates).
 
+> **Tip:** tables can be more comfortably viewed on widescreen monitors by pressing the *Expand Wiki Width* button at the top of the page.
+
 | Extension | Full Name | Location(count)[[1]](#references) | Tool | Description |
 |---|---|---|---|---|
 | adm | fpk(5258), gz fpk(1) | Mentioned in exe in with other extensions: vpc,twss,tmss,adm,tetl,tmsl, tlsp,tmsu,tmsf,twpf,cani. Related to ambient sound somehow. |  |  |
