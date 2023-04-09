@@ -4,13 +4,28 @@ permalink: /Tools/
 tags: [Tools, Reference]
 ---
 
-  - [AutoPftxs](https://github.com/BobDoleOwndU/AutoPftxsTool)
-  - [File Monolith](https://github.com/Morbidslinky/FileMonolith)
-  - [FMDL Studio](https://github.com/BobDoleOwndU/FMDL-Studio-v2)
-  - [FoxKit](https://github.com/youarebritish/FoxKit)
-  - [FoxTool](https://github.com/Atvaark/FoxTool)
-  - [FtexTool](https://github.com/Atvaark/FtexTool)
-  - [FvTwool](https://github.com/BobDoleOwndU/FvTwool)
-  - [GzsTool](https://github.com/Atvaark/GzsTool)
+- ### Modding Tools
+    - [SnakeBite Mod Manager](/SnakeBite_Mod_Manager)
+    - [File Monolith](/File_Monolith)
+    - [FoxKit](/FoxKit)
+    - [FMDL Studio](https://github.com/BobDoleOwndU/FMDL-Studio-v2)
+- ### Modding Frameworks
+    - [Infinite Heaven](/Infinite_Heaven)
+    - [Zeta](/Zeta)
+- ### Resources
+    - [Links to Useful Github Repos](/Links_to_Useful_Github_Repos)
+{:.index}
 
-{% include index-autolist tag="Tools" %}{:.small}
+## File Tools
+
+{% include index-autolist type="dedicated" tag="File Tools" %}
+
+## File Tools (External)
+
+- ### Alphabetical
+    - [FvTwool](https://github.com/BobDoleOwndU/FvTwool)
+{:.index}
+
+## All Pages
+
+{% include index-autolist type="dedicated" tag="Tools" %}
