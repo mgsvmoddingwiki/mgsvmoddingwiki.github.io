@@ -20,12 +20,10 @@ tags: [Tools, Reference]
 
 {% include index-autolist type="dedicated" tag="File Tools" %}
 
-## File Tools (External)
+## All
 
-- ### Alphabetical
-    - [FvTwool](https://github.com/BobDoleOwndU/FvTwool)
-{:.index}
-
-## All Pages
+{% include spoiler-start title="Show all pages" %}
 
 {% include index-autolist type="dedicated" tag="Tools" %}
+
+{% include spoiler-end %}
