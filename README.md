@@ -10,11 +10,11 @@ This is the central hub for information on modding the [Fox Engine](https://en.w
 
 ## Main Categories
 
-[![File Formats](/assets/File Formats Icon.png){:.inline width="130px"}](/File_Formats)
-[![Guides](/assets/Guides Icon.png){:.inline width="130px"}](/Guides)
-[![Lua](/assets/Lua Icon.png){:.inline width="130px"}](/Lua)
-[![Tools](/assets/Tools Icon.png){:.inline width="130px"}](/Tools)
-[![Infinite Heaven](/assets/InfiniteHeaven Icon.webp){:.inline width="130px"}](/Infinite_Heaven)
-[![FoxKit](/assets/Philanthropy Icon.webp){:.inline width="130px"}](/FoxKit)
-[![Games](/assets/Games Icon.png){:.inline width="130px"}]()
+[![Fox](/assets/Philanthropy Icon.webp){:.inline width="145px"}](/Fox)
+[![FoxKit](/assets/Games Icon.png){:.inline width="145px"}](/FoxKit)
+[![File Formats](/assets/File Formats Icon.png){:.inline width="145px"}](/File_Formats)
+[![Tools](/assets/Tools Icon.png){:.inline width="145px"}](/Tools)
+[![Lua](/assets/Lua Icon.png){:.inline width="145px"}](/Lua)
+[![Guides](/assets/Guides Icon.png){:.inline width="145px"}](/Guides)
+[![Infinite Heaven](/assets/InfiniteHeaven Icon.webp){:.inline width="145px"}](/Infinite_Heaven)
 {:.center}

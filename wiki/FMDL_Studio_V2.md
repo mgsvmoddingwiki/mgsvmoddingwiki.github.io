@@ -1,8 +1,12 @@
 ---
-title: Blender and Unity 3D modelling pipeline notes
-permalink: /Blender_and_Unity_3D_modelling_pipeline_notes/
-tags: [Guides, Rendering, Models]
+title: FMDL Studio V2
+permalink: /FMDL_Studio_V2/
+tags: [Tools, Guides, Rendering, Models]
 ---
+
+{% include infobox dev="BobDoleOwndU" site="https://github.com/BobDoleOwndU/FMDL-Studio-v2" download="https://github.com/BobDoleOwndU/FMDL-Studio-v2/releases" %}
+
+FMDL Studio V2 is a Unity project that is designed to be a one-stop shop for importing and exporting Fox Engine models. You can find more instructions [here](https://github.com/BobDoleOwndU/FMDL-Studio-v2/wiki). Below is a collection of notes for using the tool with Blender.
 
 ## Blender 2.81+
 

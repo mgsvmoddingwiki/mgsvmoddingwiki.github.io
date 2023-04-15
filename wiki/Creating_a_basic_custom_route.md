@@ -1,7 +1,7 @@
 ---
 title: Creating a basic custom route
 permalink: /Creating_a_basic_custom_route/
-tags: [Guides, GameService]
+tags: [Guides, Routes]
 ---
 
 This covers the very basics of using the Route Builder in FoxKit,

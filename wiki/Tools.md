@@ -8,7 +8,7 @@ tags: [Tools, Reference]
     - [SnakeBite Mod Manager](/SnakeBite_Mod_Manager)
     - [File Monolith](/File_Monolith)
     - [FoxKit](/FoxKit)
-    - [FMDL Studio](https://github.com/BobDoleOwndU/FMDL-Studio-v2)
+    - [FMDL Studio V2](/FMDL_Studio_V2)
 - ### Modding Frameworks
     - [Infinite Heaven](/Infinite_Heaven)
     - [Zeta](/Zeta)
