@@ -30,7 +30,7 @@ The files that we need are located in `Assets\tpp\pack\location\map_name\pack_sm
 For Africa it its `Assets\tpp\pack\location\mafr\pack_small`, now i will edit the chunk 127_130 that is located on the folder `Assets\tpp\pack\location\mafr\pack_small\127`.
 
 ![fpk/fpkd](/assets/Sahelanthropus_nav2/pack_127_130.png){:.thumb}
-![unpacked fpk/fpkd](/assets/Sahelanthropus_nav2/pack_127_130_unpacked.png){:.thumb}
-
 
 Unpack the fpk and the fpkd with GzsTool and you will get 2 normal folders
+
+![unpacked fpk/fpkd](/assets/Sahelanthropus_nav2/pack_127_130_unpacked.png){:.thumb}
