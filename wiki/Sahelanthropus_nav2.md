@@ -16,6 +16,7 @@ In order to load the Sahelanthropus .nav2 files without creating conflicts or br
 - [Nav2 010 Template](https://github.com/oldbanana12/Nav2)
 - MGSV: TPP Map files unpacked
 - [Foxtool](https://github.com/Atvaark/FoxTool)
+- [GzsTool](https://github.com/Atvaark/GzsTool)
 - [Makebite/Snakebite](https://www.nexusmods.com/metalgearsolidvtpp/mods/106)
 
 
@@ -24,3 +25,11 @@ In order to load the Sahelanthropus .nav2 files without creating conflicts or br
 > In this example i will be editing an nav2 from the Africa map, but the process is the same for all chunks/maps
 {:.important}
 
+The files that we need are located in `Assets\tpp\pack\location\map_name\pack_small`
+
+For Africa it its `Assets\tpp\pack\location\mafr\pack_small`, now i will edit the chunk 127_130 that is located on the folder `Assets\tpp\pack\location\mafr\pack_small\127`.
+
+![fpk/fpkd](/assets/Sahelanthropus_nav2/pack_127_130.png){:.thumb}
+
+
+Unpack the fpk and the fpkd with GzsTool and you will get 2 normal folders
