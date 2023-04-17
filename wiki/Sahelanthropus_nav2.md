@@ -85,3 +85,94 @@ To create an new entity, first copy the existing "NavBlock" value on the Datalis
 
 ![Datalist Before](/assets/Sahelanthropus_nav2/fox2_before_detalist.png){:.thumb}
 ![Datalist After](/assets/Sahelanthropus_nav2/fox2_after_datalist.png){:.thumb}
+
+
+Now do the same but on the entity itself.
+
+On the entity property you need to edit some data:
+
+- The `Name`, you must edit it to the same one above, for example `NavxNavBlock_1882` gets renamed to `NavxNavBlock_1882_sahelan`
+- The entity address must be the same on the entity and the datalist 
+- The `worldName` WAS TO BE `sahelan`, wont work if you dont place it like that
+- The `filePath`, `filePtr` and `remainingFilePtr` must be updated to the sahelan nav2 files names
+- The `useBlockParameter`, `verticalThreshold`, `simplificationThreshold`, `doesHoleSimplification`, `holeSimplificationConvexThreshold`, `holeSimplificationObbExpandThreshold`, `holeSimplificationObbToAabbThreshold`, `holeSimplificationSmoothingThreshold`, `isHoleSimplificationDoesNotClosePassage` and `holeSimplificationReduceCount` also need the correct values for Sahelanthropus
+
+They are: 
+```xml
+<property name="useBlockParameter" type="bool" container="StaticArray" arraySize="1">
+          <value>false</value>
+        </property>
+        <property name="verticalThreshold" type="float" container="StaticArray" arraySize="1">
+          <value>0</value>
+        </property>
+        <property name="simplificationThreshold" type="float" container="StaticArray" arraySize="1">
+          <value>0</value>
+        </property>
+        <property name="doesHoleSimplification" type="bool" container="StaticArray" arraySize="1">
+          <value>false</value>
+        </property>
+        <property name="holeSimplificationConvexThreshold" type="float" container="StaticArray" arraySize="1">
+          <value>0.2</value>
+        </property>
+        <property name="holeSimplificationObbExpandThreshold" type="float" container="StaticArray" arraySize="1">
+          <value>10</value>
+        </property>
+        <property name="holeSimplificationObbToAabbThreshold" type="float" container="StaticArray" arraySize="1">
+          <value>10</value>
+        </property>
+        <property name="holeSimplificationSmoothingThreshold" type="float" container="StaticArray" arraySize="1">
+          <value>1</value>
+        </property>
+        <property name="isHoleSimplificationDoesNotClosePassage" type="bool" container="StaticArray" arraySize="1">
+          <value>false</value>
+        </property>
+        <property name="holeSimplificationReduceCount" type="uint32" container="StaticArray" arraySize="1">
+          <value>1</value>
+        </property>
+``` 
+
+Example:
+{% include youtube id="wT0-azhuV1s" %}
+
+
+
+
+After you made all required changes, use the foxtool to create the FOX2 file, now the only thing left to do is edit the "flags" on the .nav2 file
+
+### .nav2 file
+Flags are used to decide what NPC is allowed to use that area, for example the flag 1249 allows Human NPCs to use that area, Sahelanthropus uses the flag 1, so you need to edit all main flags and subflags to 1
+
+In order to edit the nav2 file you need to open it on the 010 Editor, after you open the file, run the nav2 template, after doing that the 010 editor will open an menu with the sections of the file.
+
+>The Main flags are located inside `Struct Entry entry`, (on the first 5 entries only(0,1,2,3,4)) --> `struct NavWorld world` --> `struct NavworldsSubsection5 subsection5`, all entries on it.
+>
+>The Sub Flags are located on the 1st `struct Section2Entry section2entry` ( always on the 1st(0)) --> `subsection1entries`, all entries on it.
+> 
+>Some .nav2 files have more flags and subflags then the others, its normal, mainly in more complex areas like CPs.
+>
+>.1.nav2 files do not have subflags, and they only have 4 `Struct Entry entry`, the flags are always on the first one (0).
+{:.important}
+
+Example:
+{% include youtube id="RuBtZ6NF1Io" %}
+
+
+
+## Load the files in-game
+
+To load the files in-game you need to create an mod with makebite and install it with snakebite.
+The correct way to load them is to create an folder with subfolders on the mod folder, it should be like this:
+
+`Assets\tpp\pack\location\mafr\pack_small`
+Inside pack_small you need the chuck number folders, in this example its `127\127_130`, it should look like this now: 
+
+`Assets\tpp\pack\location\mafr\pack_small\127\127_130`
+
+inside the 127_130 folder, place there the fpk_fpkd folders with the moded files, makebite will deal with the rest:
+
+
+Note: mafr is the name of the map
+
+![example of dominion demo files](/assets/Sahelanthropus_nav2/dominion_demo_example.png){:.thumb}
+
+And that is all of it, now load the sahelan and have fun!
