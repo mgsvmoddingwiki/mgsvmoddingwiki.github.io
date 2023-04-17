@@ -65,3 +65,23 @@ Open the folder and head over to the last sub-folder, inside the last sub-folder
 
 ![only the nav file stays](/assets/Sahelanthropus_nav2/inside_fpkd.png){:.thumb}
 
+## Editing the nav files
+
+In order to make Sahelanthropus work, we need to edit the "Main flags" and "Sub Flags" on the .nav2 file and edit the nav.fox2 to make it load the file in-game.
+For that we need the Foxtool, 010 editor, and the Nav2 010 Template.
+
+### Nav fox2
+
+In order to edit the fox2 file, open it with the foxtool, you should get an .xml file on the same foler with the same name: 
+
+![Result](/assets/Sahelanthropus_nav2/foxtool_unpack.png){:.thumb}
+
+After this delete the FOX2 file and open the xml one.
+Inside the xml file, we need to create an new entity to load the new .nav2 file.
+
+#### 1st: create an new entity
+
+To create an new entity, first copy the existing "NavBlock" value on the Datalist, paste it bellow and edit both "key" and "addr" values, on the "key" add `_sahelan` on the end, for example, `NavxNavBlock_1882` gets renamed to `NavxNavBlock_1882_sahelan` on the "addr" you can use `0x03306FA0` / `0x03307080`  seems to work fine.
+
+![Datalist Before](/assets/Sahelanthropus_nav2/fox2_before_detalist.png){:.thumb}
+![Datalist After](/assets/Sahelanthropus_nav2/fox2_after_datalist.png){:.thumb}
