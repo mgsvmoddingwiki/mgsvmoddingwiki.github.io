@@ -1,7 +1,7 @@
 ---
 title: ! 'Sahelanthropus Nav2'
 tags: [Guides, Missions]
-permalink: /Sahelanthropus_nav2.md/
+permalink: /Sahelanthropus_nav2/
 ---
 
 # Sahelanthropus Nav2 
@@ -34,3 +34,17 @@ For Africa it its `Assets\tpp\pack\location\mafr\pack_small`, now i will edit th
 Unpack the fpk and the fpkd with GzsTool and you will get 2 normal folders
 
 ![unpacked fpk/fpkd](/assets/Sahelanthropus_nav2/pack_127_130_unpacked.png){:.thumb}
+
+Now cut those 2 folders and paste them in your work folder(if you use one)
+open the fpk folder and delete all folders inside `Assets\tpp` except for the `level` folder, that one stays.
+
+![only the level folder/subfolders stays](/assets/Sahelanthropus_nav2/inside_fpk_tpp.png){:.thumb}
+
+Now, inside the level folder `\level\location\mafr\block_small\127\127_130` delete everything exept the .nav2 files, sometimes there is only 1, sometimes there is 2, one .nav2 and one .1.nav2, dont delete those.
+
+![only the NAV2 files stays](/assets/Sahelanthropus_nav2/inside_level_folder.png){:.thumb}
+
+>On the `\level\location\mafr\block_small\127\127_130` the numbers are the chunk names, if you edit for example the chunk 123_123 it will be `\level\location\mafr\block_small\123\123_123`
+{:.important}
+
+
