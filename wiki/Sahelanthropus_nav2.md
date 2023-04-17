@@ -23,6 +23,7 @@ In order to load the Sahelanthropus .nav2 files without creating conflicts or br
 ## Preparing the folders to makebite
 
 > In this example i will be editing an nav2 from the Africa map, but the process is the same for all chunks/maps
+> The chunks are splited in 2 folders, one that ends on fpk and one that ends on fpkd, usually fpk holds the files and fpkd has the scrits to load them.
 {:.important}
 
 The files that we need are located in `Assets\tpp\pack\location\map_name\pack_small`
@@ -34,6 +35,8 @@ For Africa it its `Assets\tpp\pack\location\mafr\pack_small`, now i will edit th
 Unpack the fpk and the fpkd with GzsTool and you will get 2 normal folders
 
 ![unpacked fpk/fpkd](/assets/Sahelanthropus_nav2/pack_127_130_unpacked.png){:.thumb}
+
+### Fpk Folder
 
 Now cut those 2 folders and paste them in your work folder(if you use one)
 open the fpk folder and delete all folders inside `Assets\tpp` except for the `level` folder, that one stays.
@@ -47,4 +50,18 @@ Now, inside the level folder `\level\location\mafr\block_small\127\127_130` dele
 >On the `\level\location\mafr\block_small\127\127_130` the numbers are the chunk names, if you edit for example the chunk 123_123 it will be `\level\location\mafr\block_small\123\123_123`
 {:.important}
 
+Now you must rename the nav2 file with `_sahelan` after the map 4 letters for example `mafr_127_130_nav` gets renamed to `mafr_sahelan_127_130_nav`. 
+
+
+
+>Why are we renaming it? Its simple, if we dont rename it, snakebite will **replace the Sahelanthropus .nav2 by the original one and soldiers wont work on that area**, if we rename it snakebite will **add** this file to the folder, so both files will be able to be loaded in-game at the same time, avoiding conflicts and errors.
+{:.important}
+
+### Fpkd Folder
+
+Now we need to edit the script that loads the original nav2 to make it load both .nav2 files, the script is located inside the fpkd folder.
+
+Open the folder and head over to the last sub-folder, inside the last sub-folder you will have some .fox2 files, you can delete all of them **except** the nav file.
+
+![only the nav file stays](/assets/Sahelanthropus_nav2/inside_fpkd.png){:.thumb}
 
