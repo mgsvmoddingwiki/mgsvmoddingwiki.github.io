@@ -1,6 +1,6 @@
 ---
 title: ! 'Sahelanthropus Nav2'
-tags: [Guides, Missions]
+tags: [Guides, Missions, Nav]
 permalink: /Sahelanthropus_nav2/
 ---
 
