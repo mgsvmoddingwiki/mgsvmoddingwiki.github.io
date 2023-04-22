@@ -41,8 +41,9 @@ permalink: /Guides/
     + [How to replace sortie prep music in less than five minutes](/How_to_replace_sortie_prep_music_in_less_than_five_minutes)
     + [Sound Codes](/Sound_Codes)
 - ## Wiki Related
-    + [Meta: Formatting Reference](/Meta-Formatting_Reference)
     + [Meta: Wiki Tips](/Meta-Wiki_Tips)
+    + [Meta: Formatting Reference](/Meta-Formatting_Reference)
+    + [Meta: Creating/Editing a Page](/Meta-Creating_Editing_a_Page)
 {:.index}
 
 {% include index-autolist type="dedicated" tag="Guides" %}
