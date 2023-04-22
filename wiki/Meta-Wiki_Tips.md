@@ -14,6 +14,8 @@ The search box is quite simple in it's current form, acting more like a filter. 
 >
 > Alternatively if you know a page title contains a colon you can search using that which similarly improves results (eg: `FoxKit:`).
 
+> **Tip:** if the search hasn't helped you can always visit the [All Pages](/Meta-All_Pages) list and Ctrl+F in the browser to find a title.
+
 
 ## Top toolbar buttons
 
