@@ -28,7 +28,7 @@ permalink: /Guides/
     + [Route Set](/Route_Set)
     + [Sahelanthropus Mission Files and Usage](/Sahelanthropus_Mission_Files_and_Usage)
 - ## Rendering
-    + [Blender and Unity 3D modelling pipeline notes](/Blender_and_Unity_3D_modelling_pipeline_notes)
+    + [FMDL Studio v2 (incl. Blender pipeline notes)](/FMDL_Studio_V2)
     + [Custom weapons](/Custom_weapons)
     + [Fx Nodes](/Fx_Nodes)
     + [Hair Materials](/Hair_Materials)
@@ -42,6 +42,7 @@ permalink: /Guides/
     + [Sound Codes](/Sound_Codes)
 - ## Wiki Related
     + [Meta: Formatting Reference](/Meta-Formatting_Reference)
+    + [Meta: Wiki Tips](/Meta-Wiki_Tips)
 {:.index}
 
 {% include index-autolist type="dedicated" tag="Guides" %}
