@@ -182,8 +182,8 @@ the image chunk data.
 <tr class="even">
 <td><p>Dirty_Tex_LIN</p></td>
 <td><p>dtm</p></td>
-<td><p>Blood/Water/Dirt Overlay</p></td>
-<td><p>R: Blood, G: Water, B: Dirt</p></td>
+<td><p>Blood/Dirt/Water Overlay</p></td>
+<td><p>R: Blood, G: Dirt, B: Water</p></td>
 </tr>
 </tbody>
 </table>
