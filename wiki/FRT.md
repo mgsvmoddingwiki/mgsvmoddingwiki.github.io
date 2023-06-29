@@ -1,8 +1,3 @@
----
-title: FRT
-permalink: /FRT/
-tags: [File Formats, Routes, Missions]
----
 
 The .frt format is a binary file format used in GZ and TPP to store an
 AI route set. A route set contains a number of
@@ -43,23 +38,35 @@ For a detailed description of the route system, see the article on
 ## Format
 
 There are two known frt formats: one used in GZ and one used in TPP. The
-GZ format has not yet been reversed, so this format specification refers
-exclusively to TPP.
+GZ format uses a packed World Space Vector3 in a uint64 with an origin point in the header.
 
 ### Header
 
-  - 0x0 - 0x3 (string): 'ROUT.' Format signature.
-  - 0x4 - 0x5 (uint16): Version number. 3 for TPP.
+  - 0x0 - 0x3 (string): 'ROUT' format signature.
+  - 0x4 - 0x5 (uint16): Version number. 3 for TPP, 2 for GZ.
   - 0x6 - 0x7 (uint16): Route count.
-  - 0x8 - 0xB (uint32): Route IDs offset.
-  - 0xC - 0xF (uint32): Route definitions offset.
-  - 0x10 - 0x13 (uint32): Route node positions offset.
-  - 0x14 - 0x17 (uint32): Route node event tables offset.
-  - 0x18 - 0x1B (uint32): Events offset.
+  
+  If version is GZ:
+  - 0x0 - 0x7: Skipped.
+  - 0x8 - 0x13 (Vector3Float): World space origin point. 
+  - 0x14 - 0x17: Skipped.
+  
+  If end.
+  
+  - 0x0 - 0x3 (uint32): Route IDs offset.
+  - 0x4 - 0x7 (uint32): Route definitions offset.
+  - 0x8 - 0xB (uint32): Route node positions offset.
+  - 0xC - 0xF (uint32): Route node event tables offset.
+  - 0x10 - 0x13 (uint32): Events offset.
+  
+  If version is GZ:
+  - 0x0 - 0x7: Skipped.
+  
+  If end.
 
 The header is followed by the route IDs, of which there is one for each
 route. A route ID is a StrCode32 hash, and is the name the route is
-referred to by in Lua.
+referred to by in Lua or route event parameters.
 
 ### Route definitions
 
@@ -80,10 +87,16 @@ its component offsets in order to find the data that they point to.
 
 This section contains the node positions in sequential order. The first
 route's node positions are stored here, then the second route's node
-positions, and so on.
+positions, and so on. The GZ version packs its node positions into uint64.
 
 #### Node position struct
 
+  If version is GZ:
+  - 0x0 - 0x7 (uint64): A packed Vector3 added onto the origin point.
+
+The first 21 bits are the x coordinate, with the most significant bit, 21, serving as the sign. The same follows for the next 19 bits for for the y coordinate and the rest of the 21 bits for the z coordinate. Finally, each are divided by 1024, and added onto the origin point Vector3 world position.
+
+  If version is TPP:
   - 0x0 - 0x3 (float): World space position, x coordinate.
   - 0x4 - 0x7 (float): World space position, y coordinate.
   - 0x8 - 0xB (float): World space position, z coordinate.
@@ -113,143 +126,137 @@ The first event in each node's event list is its edge event.
 
 #### Event struct
 
-  - 0x0 - 0x1 (uint32): StrCode32 hash of the event type.
-  - 0x2 - 0xB: Event parameters. The contents vary depending on event
-    type.
-  - 0xC - 0xF (string): Unknown. A plaintext snippet associated with the
-    event.
+  - 0x0 - 0x3 (uint32): StrCode32 hash of the event type.
+  - 0x4 (uint8): Node Bool. 1 if Node event, 0 if Edge event.
+  - 0x5 (uint8): Aim Point Enum.
+  - 0x6: Empty.
+  - 0x7 (uint8): Loop Bool. 1 if the agent should loop on this event.
+  - 0x8 - 0x9 (uint16): Wait time, in frames, minus one. 0 on Edge events.
+  - 0xA - 0xB (int16): Facing direction. 0 on Edge events.
+  
+  If version is GZ:
+  - 0x0 (uint8): Inverse of the Node Bool: 255 if Node event, 0 if Edge event.
+  
+  If end.
+  
+  - 0x0 - 0x3 - Aim Point param 1.
+  - 0x4 - 0x7 - Aim Point param 2.
+  - 0x8 - 0xB - Aim Point param 3.
+  - 0xC - 0xF - Aim Point param 4.
+  - 0x10 - 0x13 - Event Type param 1.
+  - 0x14 - 0x17 - Event Type param 2.
+  - 0x18 - 0x1B - Event Type param 3.
+  - 0x1C - 0x1F - Event Type param 4.
+  
+  If version is TPP:
+  - 0x0 - 0x3 (string): Memory leak string on PC, skipped.
+  
+  If end.
 
-## Node events
+##### Aim Point param types
 
-A route node event has an event type and 10 parameters, most of which
-are 0. The parameters that an event takes vary depending on the event
-type.
+One of the following Aim Point Param sets will be used based on the Aim Point Enum.
+
+##### No Target (0)
+
+All params are zero. The route agent has no aim target.
+
+##### Static Point (1)
+
+The route agent uses a world space point as an aim target.
+  - Param 1 (float): World space x coordinate.
+  - Param 2 (float): World space y coordinate.
+  - Param 3 (float): World space z coordinate.
+
+##### Character (2)
+
+The route agent uses a character id as an aim target. Examples of the strings hashed here include "Player" for the player, and GameObjectLocator entity names, like "SupportHeli" or "hos_quest_0000".
+  - Param 1 (uint32): StrCode32 hash of the character id.
+  - Param 2: Skipped, but a 64-bit leftover of the hash is often written here.
+
+##### Route as Sight Move Path (3)
+
+The route agent uses a special route as an aim target. If the hash is of an empty string, "", it will be skipped.
+  - Param 1 (uint32): StrCode32 hash of the route name.
+  - Param 2 (uint32): StrCode32 hash of the route name.
+  - Param 3 (uint32): StrCode32 hash of the route name.
+  - Param 4 (uint32): StrCode32 hash of the route name.
+
+##### Route as Object (4)
+Very rare, and seems to be structurally identical to Route as Sight Move Path (3). Not much is known about it.
+
+#### Event Type params
+
+One of the following Event Type Param sets will be used based on the Event Type hash.
 
 Here are some of the discovered event types and their known parameters:
 
-### RelaxedWalk
+### Edge events
 
-  - Params: None
-  - The most common edge event.
+## Common Vehicle
 
-### 104983832  
+Used by VehicleBackFast, VehicleBackNormal, VehicleBackSlow, VehicleMoveFast, VehicleMoveNormal, VehicleMoveSlow and VehicleDir in TPP.
 
-  - Name: "None"
-  - Example: f30010.frt
-  - Params: None known
+  - Param 1 (uint32): StrCode32 hash of the rail name found in .frld files.
+  - Param 2 (int32): Usually zero, but may sometimes be a speed measurement in RPM.
 
-### 2265318157  
+### Node events
 
-  - Name: "SendMessage"
-  - Example: f30010.frt
-  - Params\[0\]: bool
-  - Params\[1\]: Hash (e.g., 3531407419)
-  - Params\[6\]: Hash?
-  - Params\[7\]: Hash (e.g., 1889384352)
-  - Params\[8\]: Hash (e.g., 3205930904)
+## IdleAct
 
-### 561913624
+Used by RelaxedIdleAct and CautionIdleAct in TPP.
 
-  - Name: "Wait"
-  - Example: f30010.frt
-  - Params\[0\]: bool
-  - Params\[1\]: Hash (e.g., 1108738227)
-  - Params\[6\]: bool?
+  - Param 1 (uint32): StrCode32 hash of an animation act type.
+  - Param 2: Unknown, rare, definitely not a 64 bit leftover. Not zero in s10030.frt.
 
-### 561913624
+## Conversation
 
-  - Name: "Move"
-  - Example: f30010.frt
-  - Params: None
+Used in GZ.
 
-### 1500257626
+  - Param 1 (uint32): StrCode32 hash of the name of the "conversation list" found in EnemyConversationList .json files.
+  - Param 2: Skipped, but a 64-bit leftover of the hash is often written here.
+  - Param 3 (uint32): StrCode32 hash of the name of the "friend" conversation partner to the route agent.
+  - Param 4: Skipped, but a 64-bit leftover of the hash is often written here.
 
-  - Name: Unknown
-  - Example: f30010.frt
-  - Params\[10\]: Hash?
+## ConversationIdle
 
-### 357669894
+Used in TPP.
 
-  - Name: Unknown
-  - Params\[10\]: Hash, or 0
+  - Param 1 (uint32): StrCode32 hash of the "conversation label" found in .spch files.
+  - Param 2 (uint32): StrCode32 hash of the name of the "friend" conversation partner to the route agent.
+  - Param 3: Skipped, but a 64-bit leftover of the hash is often written here.
+  - Param 4 (int32): Range integer, in world space units/meters.
 
-### 2628821024
+## SendMessage
 
-  - Name: Unknown
-  - Example: mafr_common.frt
-  - Params\[0\]: bool
-  - Params\[1\]: Hash (e.g., 4255711291)
-  - Params\[10\]: Hash (e.g., 1685021218) or 0
+Used by SendMessage, and strangely by PutHostageInVehicle and TakeHostageOutOfVehicle, in TPP.
 
-### 518500859
+  - Param 1: Unknown.
+  - Param 2 (uint32): StrCode32 hash of the message string received in Lua messages.
+  - Param 3 (uint32): StrCode32 hash of a route's name for some reason.
+  - Param 4: Skipped, but a 64-bit leftover of the hash is often written here.
 
-  - Name: Unknown
-  - Example: mafr_common.frt
-  - Params\[0\]: bool
-  - Params\[1\]:Hash (e.g., 500629563)
+## SwitchRoute
 
-### 3396619717
+Used in TPP. If a route agent triggers this event, a designated Lua function will be called with the "function name" and "argument" hashes, and if it returns true, the route agent will change to the specified route. This function can be found in [TppEnemy.lua](https://github.com/TinManTex/mgsv-deminified-lua/blob/master/data1/Assets/tpp/script/lib/TppEnemy.lua).
 
-  - Name: Unknown
-  - Example: mafr_common.frt
-  - Params\[0\]: bool
-  - Params\[1\]: Hash (e.g., 3786145851)
+The game's default vanilla functions only include "IsGimmickBroken", "IsNotGimmickBroken", "CanUseSearchLight" and "CanNotUseSearchLight". If the function name is not one of these four, this function will return true.
 
-### 2445979707
+"IsGimmickBroken" checks if the argument hash is a broken gimmick with TppGimmick.IsBroken, and returns true if so, allowing the route agent to switch routes. Naturally, "IsNotGimmickBroken" simply returns the opposite. "CanUseSearchLight" similarly checks if the gimmick in the argument is not broken, and if it's currently nighttime with TppClock.GetTimeOfDay, returning true only if both are correct. "CanNotUseSearchLight" also returns the opposite here.
 
-  - Name: Unknown
-  - Params\[0\]: bool
-  - Params\[1\]: Hash (e.g., 2428895291)
+  - Param 1 (uint32): StrCode32 hash of the name of the route to switch to.
+  - Param 2 (uint32): StrCode32 hash of the function name.
+  - Param 3 (uint32): StrCode32 hash of an argument to use in the function.
 
-### 2343446301
+## SyncRoute
 
-  - Name: Unknown
-  - Params\[0\]: bool
-  - Params\[1\]: Hash (e.g., 3733192763)
+Used in TPP.
 
-### 518500859
+Used in conjunction with [the mission's syncRouteTable](https://mgsvmoddingwiki.github.io/Mission_Table_Subscripts/#syncRouteTable).
 
-  - Name: Unknown
-  - Params\[0\]: bool
-  - Params\[1\]: Hash (e.g.,500629563)
+  - Param 1 (uint32): Sync table index.
+  - Param 2 (int32): Sync route step index.
 
-### 1375828191
-
-  - Name: Unknown
-  - Params\[0\]: bool
-  - Params\[1\]: Hash (e.g., 351469627)
-  - Params\[6\]: Integer (Angle? Seen values 0, 60, 90, 120)
-
-### 1530489467
-
-  - Name: Unknown
-
-### 1432398056
-
-  - Name: Unknown
-  - Example: f30010.frt
-  - Params\[0\]: bool
-  - Params\[1\]: Integer
-
-### 3942535391
-
-  - Name: Unknown
-  - Example: f30010.frt
-  - Params\[0\]: Hash (e.g., 16777217)
-  - Params\[1\]: Hash (e.g., 3575906363)
-
-### 4019510599
-
-  - Name: Unknown
-  - Example: f30010.fr
-  - Params\[0\]: Hash (e.g., 16777217)
-  - Params\[1\]: Hash (e.g., 960704211)
-  - Params\[6\]: Hash (e.g., 911690047)
-
-### 3487140098
-
-  - Name: Unknown
-  - Params\[6\]: Hash (e.g., 2845408250)
 
 ## Resources
 
