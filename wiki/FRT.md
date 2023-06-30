@@ -1,3 +1,8 @@
+---
+title: FRT
+permalink: /FRT/
+tags: [File Formats, Routes, Missions]
+---
 
 The .frt format is a binary file format used in GZ and TPP to store an
 AI route set. A route set contains a number of
