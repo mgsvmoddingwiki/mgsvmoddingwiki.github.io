@@ -562,7 +562,7 @@ actually required?
 Next up is the **sdf** file. Now this one is what actually loads the
 sound bank. Again, here’s another example of a simple one:
 
-``` xml numberLines
+``` xml
 <?xml version="1.0" encoding="utf-8"?>
 <fox formatVersion="2" fileVersion="0" originalVersion="">
   <classes>
