@@ -195,6 +195,11 @@ table {
     overflow: auto; /* enable scrollbars when tables exceed max container width */
 }
 
+/* Override default behavior with this class, to fill width of page. Use judiciously, such as if tables have only two columns and wanting a more cohesive appearance. */
+table.stretch {
+    display: table;
+}
+
 th, td {
     border-bottom: var(--border-width) solid var(--color-border);
 }
@@ -625,6 +630,12 @@ ul.index,
     column-gap: var(--spacing-primary);
 }
 
+.split > li, .index > li,
+.split > li ol, .index > li ol,
+.split > li ul, .index > li ul {
+    break-inside: avoid-column;
+}
+
 /* .important = call more attention to a blockquote */
 blockquote.important {
     background: hsl(154,65%,32%);
@@ -666,18 +677,13 @@ blockquote.important {
     list-style: none;
 }
 
-.index > li,
-.index > li ol,
-.index > li ul {
-    break-inside: avoid-column;
-}
-
 .index ol:last-child,
 .index ul:last-child {
     margin-bottom: calc(var(--spacing-minor) * 2);
 }
 
 .index > li li {
+    break-inside: avoid;
     margin-bottom: var(--spacing-minor);
 }
 
@@ -692,6 +698,19 @@ blockquote.important {
     padding: var(--spacing-secondary);
     border-top: var(--border-width) solid var(--color-border);
     margin-top: var(--spacing-secondary);
+}
+
+/* For sub-items to links (such as descriptions/notes) */
+.index > li > ul li ul {
+    padding-left: var(--spacing-intermediate);
+}
+
+.index > li > ul li ul *:not(a) {
+    color: var(--color-secondary);
+}
+
+.index > li > ul li ul a {
+    display: inline;
 }
 
 
@@ -890,7 +909,9 @@ body.darkmode--activated .darkmode-ignore {
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ SIDEBAR ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
-/* Site logo (hidden, uses alternative) */
+/* Hide 'Pages (Last <n> Updated)' list since date modified Jekyll plugin not allowed by Github Actions (assumes this list is last in sidebar) */
+.page-list-title, .page-list-title + ul,
+/* Hide site logo (uses alternative) */
 .git-wiki-main-logo img,
 #git-wiki-mobile-header img[src$="/site-logo.png"] {
     display: none;

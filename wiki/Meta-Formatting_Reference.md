@@ -375,6 +375,18 @@ To be used selectively for category/quasi-category pages to auto generate a list
 
 > **Note:** manual line breaks within table cells have to use the HTML `<br/>` line break. Empty new lines can be made by doubling the line breaks (`<br/><br/>`).
 
+**Stretched:**
+
+| First row text  | First row text  | First row text    |
+{:.stretch}
+
+```
+| First row text  | First row text  | First row text    |
+{:.stretch}
+```
+
+> **Note:** this class can be applied to a table to force it to expand to the page width. Keep in mind this prevents any horizontal scrollbar at narrower browser widths if there are too many table columns, so use thoughtfully.
+
 ---
 
 ## Infobox
