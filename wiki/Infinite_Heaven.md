@@ -20,6 +20,9 @@ The purpose of this article is to provide installation steps, notes about the mo
 
 {% include youtube id="pHjgbENgnvA" caption="daften_23's tutorial on Snakebite and Infinite Heaven Installation" %}
 
+> **Note:** the video above was made prior to [IHHook](https://www.nexusmods.com/metalgearsolidvtpp/mods/1226) being split off into a separate download. When installing Infinite Heaven via Snakebite made sure to also install IHHook or the GUI won't load.
+{:.important}
+
 **Text version:**
 
 The text guide also covers optionally manually backing up the game data archive files, along with some troubleshooting tips.
@@ -77,6 +80,13 @@ validating MGSV again.
 > It should say 1 or two files need to be redownloaded, so go to steam
 downloads and make sure that is happening.
 
+### Downloading Infinite Heaven and IHHook
+
+1. Download the latest version of Infinite Heaven from the [Nexus Mods page](https://www.nexusmods.com/metalgearsolidvtpp/mods/45?tab=files).
+2. Also download [IHHook](https://www.nexusmods.com/metalgearsolidvtpp/mods/1226?tab=files), which is required for Infinite Heaven's GUI.
+
+> Older versions of Infinite Heaven bundled IHHook with it but they've been split to separate downloads for some time now.
+
 ### Installing SnakeBite
 
 1. Get the latest SnakeBite Mod Manager from the [Nexus Mods page](http://nexusmods.com/metalgearsolidvtpp/mods/106/) and run through its setup.
@@ -91,9 +101,12 @@ downloads and make sure that is happening.
 
 6. Browse to the `Infinite Heaven.msgv` from the Infinite Heaven zip file.
 
-> The last step should only take a minute or so if no other mods installed (longer with other mods installed, basically proportional to the size of `00.dat`). See `log.txt` in the Snakebite directory which is updated with the install progress.
+> This step should only take a minute or so if no other mods installed (longer with other mods installed, basically proportional to the size of `00.dat`). See `log.txt` in the Snakebite directory which is updated with the install progress.
 
-> **Troubleshooting:** if it takes an excessively long time refer to the sticky comment on the Snakebite [Posts tab](https://www.nexusmods.com/metalgearsolidvtpp/mods/106?tab=posts) for possible fixes.
+{:start="7"}
+7. Finally install [IHHook](/IHHook) by repeating step 5 then browsing to IHHook's `.mgsv` file.
+
+> **Troubleshooting:** if IH takes an excessively long time to install refer to the sticky comment on the Snakebite [Posts tab](https://www.nexusmods.com/metalgearsolidvtpp/mods/106?tab=posts) for possible fixes.
 {:.important}
 
 {% include spoiler-end %}
