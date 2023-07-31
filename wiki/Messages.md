@@ -323,6 +323,7 @@ Following is an uncategorised list of message names:
   - OnScriptBlockStateTransition
   - OnVehicleDrive
   - OnVehicleRide_Start
+    * D-Horse also triggers this message!
   - OnWalkerGearDrive
   - OpenWormhole
   - OutFromWormhole
