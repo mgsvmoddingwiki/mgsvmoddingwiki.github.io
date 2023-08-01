@@ -4,7 +4,7 @@ permalink: /IHHook/
 tags: [Infinite Heaven, EXE]
 ---
 
-{% include infobox dev="TinManTex" site="https://www.nexusmods.com/metalgearsolidvtpp/mods/1226" download="https://www.nexusmods.com/metalgearsolidvtpp/mods/1226?tab=files" %}
+{% include infobox dev="TinManTex, Zipfslaw" site="https://www.nexusmods.com/metalgearsolidvtpp/mods/1226" download="https://www.nexusmods.com/metalgearsolidvtpp/mods/1226?tab=files" %}
 
 A proxy dll (of dinput8.dll) that loads with MGSV to provide extended
 features for modding. Previously bundled with [Infinite
