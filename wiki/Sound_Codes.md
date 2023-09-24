@@ -4,1235 +4,1041 @@ permalink: /Sound_Codes/
 tags: [Sound, Reference]
 ---
 
-Non exhaustive list of identified sounds, some may be guesses or
-inaccurate.
+Non-exhaustive list of identified sounds, some may be guesses or inaccurate.
 
 <table>
-<caption>TABLE 1: COMMON_BNK</caption>
-<tbody>
-<tr class="odd">
-<td><p>CODE:</p></td>
-<td><p>Identification(s)/Description:</p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p>Guns/Impact/Gore</p></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p>1012620448.wem</p></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p>101388289.wem</p></td>
-<td><p>flyby bullet</p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p>1027630967.wem</p></td>
-<td><p>flyby bullet</p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p>1029939264.wem</p></td>
-<td><p>impact, unknown material</p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p>1050351317.wem</p></td>
-<td><p>gunshot, unknown weapon</p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p>106015821.wem</p></td>
-<td><p>impact on flesh? Maybe a non lethal round</p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p>106846642.wem</p></td>
-<td><p>gunshot, high power rifle?</p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p>110140895.wem</p></td>
-<td><p>sounds like a decoy getting destroyed?</p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p>114891008.wem</p></td>
-<td><p>bullet flyby sound?</p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p>115070097.wem</p></td>
-<td><p>equip or reload sound?</p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p>115955741.wem</p></td>
-<td><p>gore- flesh impact sound</p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p>117466861.wem</p></td>
-<td><p>body hitting the floor</p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p>117917798.wem</p></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p>12013768.wem</p></td>
-<td><p>gunshot, high powered rifle of some kind</p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p>122597363.wem</p></td>
-<td><p>a step in wet ground quite likley in some mud.</p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p>123902019.wem</p></td>
-<td><p>suppressed gunshot, maybe a smg?</p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p>123982978.wem</p></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p>124807379.wem</p></td>
-<td><p>water pistol?</p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p>125941382.wem</p></td>
-<td><p>the slow-mo punch at the end of smacking a person multiple times with cqc</p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p>130632288.wem</p></td>
-<td><p>sounds like a high powered rifle impact</p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p>13181709.wem</p></td>
-<td><p>I think this is the sound of an enemy sniper shooting at you, maybe the quiet boss battle?</p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p>135811549.wem</p></td>
-<td><p>body falling and hitting the ground</p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p>141061443.wem</p></td>
-<td><p>sounds like a gunshot, could be wrong</p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p>142348389.wem</p></td>
-<td><p>Almost certain this is a non lethal smg/rifle impact round</p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p>144297022.wem</p></td>
-<td><p>gunshot, pistol?</p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p>151207389.wem</p></td>
-<td><p>gunshot, high powered rifle maybe? Could also be an explosive launch such as a rocket launcher</p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p>152429649.wem</p></td>
-<td><p>sound of turning on NVG</p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p>153341689.wem</p></td>
-<td><p>sounds like a door getting slammed open? or it could be hitting the floor after getting destroyed?</p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p>159611048.wem</p></td>
-<td><p>bullet flyby</p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p>160876061.wem</p></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p>163598967.wem</p></td>
-<td><p>I think this is the S-1000 shotgun</p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p>164043733.wem</p></td>
-<td><p>Lethal Bullet impact</p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p>178798613.wem</p></td>
-<td><p>gore- flesh impact sound</p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p>179415600.wem</p></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p>184145750.wem</p></td>
-<td><p>CQC punch SFX</p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p>185884477.wem</p></td>
-<td><p>bullet flyby sound</p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p>18991772.wem</p></td>
-<td><p>body hitting the floor sound</p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p>21454937.wem</p></td>
-<td><p>Brennan gunshot?</p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p>2255213.wem</p></td>
-<td><p>gore, could be lethal impact sound</p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p>225854973.wem</p></td>
-<td><p>gore, lethal kill</p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p>229632357.wem</p></td>
-<td><p>impact on flesh? I think this is a tranq round hitting someone in the torso, but it could be a lethal hit too because of the sound at the end</p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p>237442275.wem</p></td>
-<td><p>This sounds like a lethal flesh impact sound</p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p>24661481.wem</p></td>
-<td><p>bullet flyby sound</p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p>24693577.wem</p></td>
-<td><p>gunshot, I think this is an LMG</p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p>26244220.wem</p></td>
-<td><p>flesh impact sound, could be lethal or non lethal</p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p>264281654.wem</p></td>
-<td><p>Sounds like a rubber bullet on flesh</p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p>269696546.wem</p></td>
-<td><p>gunshot, unknown gun</p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p>286899742.wem</p></td>
-<td><p>sounds like a flare?</p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p>287640892.wem</p></td>
-<td><p>sounds like rubber bullets</p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p>287821235.wem</p></td>
-<td><p>explosion of some kind?</p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p>31407384.wem</p></td>
-<td><p>enemy sniper gunshot?</p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p>316935173.wem</p></td>
-<td><p>mounted turret, most likely not the anti air gun?</p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p>325860556.wem</p></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p>33698964.wem</p></td>
-<td><p>bullet wizz</p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p>337346311.wem</p></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p>34153649.wem</p></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p>342119968.wem</p></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p>34795800.wem</p></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p>349931413.wem</p></td>
-<td><p>body slamming a wall after getting thrown?</p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p>360760230.wem</p></td>
-<td><p>lethal headshot sound</p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p>363550897.wem</p></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p>367317971.wem</p></td>
-<td><p>sounds like a bullet hitting a bulletproof vest?</p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p>373215054.wem</p></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p>373435283.wem</p></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p>373992474.wem</p></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p>374575955.wem</p></td>
-<td><p>bullet hitting torso without armor?</p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p>376912022.wem</p></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p>376961842.wem</p></td>
-<td><p>non lethal headshot sound</p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p>380692384.wem</p></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p>383481839.wem</p></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p>401635225.wem</p></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p>406653179.wem</p></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p>416462537.wem</p></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p>42181331.wem</p></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p>28636400.wem</p></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p>431189294.wem</p></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p>431559389.wem</p></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p>436324668.wem</p></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p>4374709.wem</p></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p>443392438.wem</p></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p>452215089.wem</p></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p>45970006.wem</p></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p>462867978.wem</p></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p>464696567.wem</p></td>
-<td><p>the sound of the end of the suppresor</p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p>4729934.wem</p></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p>473391455.wem</p></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p>473963421.wem</p></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p>499151941.wem</p></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p>499822557.wem</p></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p>50056888.wem</p></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p>506323434.wem</p></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p>522126892.wem</p></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p>523412065.wem</p></td>
-<td><p>bullet wizz</p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p>524039858.wem</p></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p>5376419.wem</p></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p>547965660.wem</p></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p>54908821.wem</p></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p>551226485.wem</p></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p>567711259.wem</p></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p>568513227.wem</p></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p>570283762.wem</p></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p>609246202.wem</p></td>
-<td><p>fulton extract</p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p>607807443.wem</p></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p>62028992.wem</p></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p>620855429.wem</p></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p>622745205.wem</p></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p>623114805.wem</p></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p>632375943.wem</p></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p>632803390.wem</p></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p>640238813.wem</p></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p>64390077.wem</p></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p>646677593.wem</p></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p>647360596.wem</p></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p>647809902.wem</p></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p>651276599.wem</p></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p>651564874.wem</p></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p>66828717.wem</p></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p>672919467.wem</p></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p>676336925.wem</p></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p>686430404.wem</p></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p>694460480.wem</p></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p>695595645.wem</p></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p>698226342.wem</p></td>
-<td><p>WooooHOOOOOHHHHHHH (sins of the father, probably used for phantom cigar)</p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p>726118354.wem</p></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p>74068227.wem</p></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p>746147581.wem</p></td>
-<td><p>rocket sound when finishing a CQC combo</p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p>74290586.wem</p></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p>74564208.wem</p></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p>747088296.wem</p></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p>756549008.wem</p></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p>765469447.wem</p></td>
-<td><p>Windrurger transQ supressed shot?</p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p>803373987.wem</p></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p>808018223.wem</p></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p>808951501.wem</p></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p>80957925.wem</p></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p>809840985.wem</p></td>
-<td><p>Mortar shot</p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p>810289048.wem</p></td>
-<td><p>decoy destruction sound</p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p>818689286.wem</p></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p>819985963.wem</p></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p>838976687.wem</p></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p>840122966.wem</p></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p>854935462.wem</p></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p>863981917.wem</p></td>
-<td><p>alert !</p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p>865498406.wem</p></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p>868216991.wem</p></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p>913257438.wem</p></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p>927757815.wem</p></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p>942192948.wem</p></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p>94371706.wem</p></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p>946980993.wem</p></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p>9644287.wem</p></td>
-<td><p>lethal headshot?</p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p>965203707.wem</p></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p>986770435.wem</p></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p>86624794.wem</p></td>
-<td><p>pequod helicopter door opening sound</p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p>911876755.wem</p></td>
-<td><p>iDroid opening sound</p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p>Separator</p></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p>10717447.wem</p></td>
-<td><p>Power Switch</p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p>139146685.wem</p></td>
-<td><p>Horse hoof step</p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p>162794131.wem</p></td>
-<td><p>Weapon Overheat</p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p>179893612.wem</p></td>
-<td><p>D-horse neigh</p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p>191799857.wem</p></td>
-<td><p>rocket firing (not GROM)</p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p>19523899.wem</p></td>
-<td><p>the sound of climbing a metal mesh</p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p>228939430.wem</p></td>
-<td><p>helicopter sound(Pequod)?</p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p>271333830.wem</p></td>
-<td><p>sound of reload grenade launcher?</p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p>299885444.wem</p></td>
-<td><p>switching for underbarrel weapon?</p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p>308312767.wem</p></td>
-<td><p>draw assault rifle sound</p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p>322549454.wem</p></td>
-<td><p>the sound of the vehicle destroying</p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p>355149374.wem</p></td>
-<td><p>sound of cardboard box opening</p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p>Stereo player sound effect (Mono enemy sound effect)</p></td>
-<td><p>Main Weapon Sounds, courtesy of Nexus user SVNR</p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p>RIFF_1061</p></td>
-<td><p>Enemy's sniper shot</p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p>RIFF_1060 (1059)</p></td>
-<td><p>AM MRS 71/73, M-2000</p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p>RIFF_1057</p></td>
-<td><p>RENOV</p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p>RIFF_1053 (1052)</p></td>
-<td><p>ZE'EV</p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p>RIFF_1051</p></td>
-<td><p>MACHT 37, Sz.-336 silenced</p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p>RIFF_1050 (1049)</p></td>
-<td><p>MACHT 37, Sz.-336</p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p>RIFF_1045 (1044)</p></td>
-<td><p>S1000 EXT.</p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p>RIFF_1043 (1042)</p></td>
-<td><p>Double-barrel and other shotguns</p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p>RIFF_1021 (1020)</p></td>
-<td><p>LPG-63U</p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p>RIFF_1019 (1018)</p></td>
-<td><p>ALM 48</p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p>RIFF_1009</p></td>
-<td><p>Silenced pistols (well, the most part of)</p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p>RIFF_1006 (1005)</p></td>
-<td><p>Revolvers, GEIST P3 CB, WU S.PISTOL</p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p>RIFF_1004 (1003)</p></td>
-<td><p>The rest of the pistols</p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p>RIFF_0900 (0899)</p></td>
-<td><p>Unknown</p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p>RIFF_0897 (0896)</p></td>
-<td><p>G44</p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p>RIFF_0887 (0886)</p></td>
-<td><p>SVG, PG</p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p>RIFF_0885</p></td>
-<td><p>Silenced assault rifles</p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p>RIFF_0884 (0883)</p></td>
-<td><p>AM MRS, UN-ARC</p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p>RIFF_0718</p></td>
-<td><p>Night Vision</p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p>RIFF_0687</p></td>
-<td><p>Zoom in/out</p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p>RIFF_0443</p></td>
-<td><p>Smoke explode (turns out igniting molotov as well)</p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p>RIFF_0328</p></td>
-<td><p>Headshot</p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p>RIFF_1058 + RIFF_1061</p></td>
-<td><p>SERVAL AMR-7, MOLOTOK-68</p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p>RIFF_1060 + RIFF_1061</p></td>
-<td><p>BRENNAN</p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p>RIFF_1019 + RIFF_1021</p></td>
-<td><p>UN-AAM</p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p>RIFF_1008, RIFF_1007, RIFF_0894, RIFF_0888</p></td>
-<td><p>Reload sounds: 0888 is the mag out</p>
-<p>1007 is the mag in</p>
-<p>0894 is the the cocking of the gun</p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p>RIFF_0985</p></td>
-<td><p>Silenced M-2000</p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p>1004431013.wem</p></td>
-<td><p>Vehicle explosion</p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p>1005477978.wem</p></td>
-<td><p>Sound heard when you shoot the pig head in the white mamba mission</p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p>1045494066.wem</p></td>
-<td><p>Woosh sound just before vehicle explosion</p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p>11165277.wem</p></td>
-<td><p>Sound heard when searchlight lands on you</p></td>
-<td></td>
-<td></td>
-</tr>
-</tbody>
+    <caption>TABLE 1: COMMON_BNK</caption>
+    <thead>
+        <tr>
+            <th>INDEX:</th>
+            <th>CODE:</th>
+            <th>DESCRIPTION:</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>0001</td>
+            <td>313088075</td>
+            <td>Cardboard box</td>
+        </tr>
+        <tr>
+            <td>0002</td>
+            <td>110140895</td>
+            <td>Decoy being destroyed</td>
+        </tr>
+        <tr>
+            <td>0003</td>
+            <td>355149374</td>
+            <td>Cardboard box</td>
+        </tr>
+        <tr>
+            <td>0004</td>
+            <td>541266652</td>
+            <td>Cardboard box</td>
+        </tr>
+        <tr>
+            <td>0005</td>
+            <td>630910355</td>
+            <td>Cardboard box sliding</td>
+        </tr>
+        <tr>
+            <td>0006</td>
+            <td>35548791</td>
+            <td>Cardboard box</td>
+        </tr>
+        <tr>
+            <td>0007</td>
+            <td>592709295</td>
+            <td>Cardboard box</td>
+        </tr>
+        <tr>
+            <td>0008</td>
+            <td>192756764</td>
+            <td>Cardboard box</td>
+        </tr>
+        <tr>
+            <td>0009</td>
+            <td>424893440</td>
+            <td>Boing</td>
+        </tr>
+        <tr>
+            <td>0010</td>
+            <td>540864189</td>
+            <td>Mechanical sound</td>
+        </tr>
+        <tr>
+            <td>0011</td>
+            <td>1036686357</td>
+            <td>Equip cardboard box</td>
+        </tr>
+        <tr>
+            <td>0012</td>
+            <td>831534932</td>
+            <td>Unequip cardboard box</td>
+        </tr>
+        <tr>
+            <td>0013</td>
+            <td>201589775</td>
+            <td>Cardboard box crouch</td>
+        </tr>
+        <tr>
+            <td>0015</td>
+            <td>373215054</td>
+            <td>Cloth sound</td>
+        </tr>
+        <tr>
+            <td>0016</td>
+            <td>524039858</td>
+            <td>Cloth sound</td>
+        </tr>
+        <tr>
+            <td>0017</td>
+            <td>662458134</td>
+            <td>Entering/Exiting hanging mode. Standing punches when not attacking someone. Climbing things and dropping onto the ground</td>
+        </tr>
+        <tr>
+            <td>0018</td>
+            <td>123982978</td>
+            <td>Entering/Exiting hanging mode. Standing punches when not attacking someone. Climbing things and dropping onto the ground</td>
+        </tr>
+        <tr>
+            <td>0019</td>
+            <td>772513368</td>
+            <td>Entering/Exiting hanging mode. Standing punches when not attacking someone. Climbing things and dropping onto the ground</td>
+        </tr>
+        <tr>
+            <td>0020</td>
+            <td>990168320</td>
+            <td>Mechanical sound</td>
+        </tr>
+        <tr>
+            <td>0021</td>
+            <td>248938709</td>
+            <td>Body falling/crumpling</td>
+        </tr>
+        <tr>
+            <td>0024</td>
+            <td>865498406</td>
+            <td>Percussive thump</td>
+        </tr>
+        <tr>
+            <td>0025</td>
+            <td>45970006</td>
+            <td>CQC neck slit noise</td>
+        </tr>
+        <tr>
+            <td>0026</td>
+            <td>164043733</td>
+            <td>Lethal Bullet impact</td>
+        </tr>
+        <tr>
+            <td>0027</td>
+            <td>184145750</td>
+            <td>CQC punch SFX</td>
+        </tr>
+        <tr>
+            <td>0028</td>
+            <td>617807410</td>
+            <td>Player punch 2</td>
+        </tr>
+        <tr>
+            <td>0029</td>
+            <td>913257438</td>
+            <td>Punch?</td>
+        </tr>
+        <tr>
+            <td>0030</td>
+            <td>439444468</td>
+            <td>Cloth crunching</td>
+        </tr>
+        <tr>
+            <td>0031</td>
+            <td>597621317</td>
+            <td>CQC Chokehold squeeze</td>
+        </tr>
+        <tr>
+            <td>0033</td>
+            <td>660107893</td>
+            <td>“Fake” CQC lunge when no weapon equip and fire button pressed. Also used for kick combo and general movement from DD staff when saluting</td>
+        </tr>
+        <tr>
+            <td>0034</td>
+            <td>14222843</td>
+            <td>“Fake” CQC lunge when no weapon equip and fire button pressed</td>
+        </tr>
+        <tr>
+            <td>0035</td>
+            <td>478928338</td>
+            <td>Woosh sound?</td>
+        </tr>
+        <tr>
+            <td>0036</td>
+            <td>401156178</td>
+            <td>Woosh sound when punching in combo</td>
+        </tr>
+        <tr>
+            <td>0037</td>
+            <td>538708784</td>
+            <td>Foot on sand</td>
+        </tr>
+        <tr>
+            <td>0038</td>
+            <td>59773000</td>
+            <td>Foot on sand</td>
+        </tr>
+        <tr>
+            <td>0049</td>
+            <td>223406039</td>
+            <td>Knife stabbing sound</td>
+        </tr>
+        <tr>
+            <td>0050</td>
+            <td>66828717</td>
+            <td>Knife stabbing sound</td>
+        </tr>
+        <tr>
+            <td>0059</td>
+            <td>110093242</td>
+            <td>Jangle</td>
+        </tr>
+        <tr>
+            <td>0060</td>
+            <td>377865594</td>
+            <td>Jangle</td>
+        </tr>
+        <tr>
+            <td>0061</td>
+            <td>198446429</td>
+            <td>Jangle</td>
+        </tr>
+        <tr>
+            <td>0062</td>
+            <td>110738738</td>
+            <td>Jangle</td>
+        </tr>
+        <tr>
+            <td>0063</td>
+            <td>1031920467</td>
+            <td>Glass breaking</td>
+        </tr>
+        <tr>
+            <td>0064</td>
+            <td>868216991</td>
+            <td>Object hitting bulletproof vest?</td>
+        </tr>
+        <tr>
+            <td>0065</td>
+            <td>229632357</td>
+            <td>impact on flesh? I think this is a tranq round hitting someone in the torso, but it could be a lethal hit too because of the sound at the end</td>
+        </tr>
+        <tr>
+            <td>0066</td>
+            <td>367317971</td>
+            <td>Object hitting bulletproof vest?</td>
+        </tr>
+        <tr>
+            <td>0067</td>
+            <td>406653179</td>
+            <td>Object hitting bulletproof vest?</td>
+        </tr>
+        <tr>
+            <td>0068</td>
+            <td>58934033</td>
+            <td>Bucket rattle… or rain?</td>
+        </tr>
+        <tr>
+            <td>0069</td>
+            <td>19874717</td>
+            <td>Bucket rattle… or rain?</td>
+        </tr>
+        <tr>
+            <td>0070</td>
+            <td>7195340</td>
+            <td>Bucket rattle… or rain?</td>
+        </tr>
+        <tr>
+            <td>0071</td>
+            <td>241278731</td>
+            <td>Water running</td>
+        </tr>
+        <tr>
+            <td>0072</td>
+            <td>567711259</td>
+            <td>Hit sound. 80s cheesy style</td>
+        </tr>
+        <tr>
+            <td>0073</td>
+            <td>620855429</td>
+            <td>Hit sound. 80s cheesy style</td>
+        </tr>
+        <tr>
+            <td>0074</td>
+            <td>237442275</td>
+            <td>Body falling/crumpling with squelch</td>
+        </tr>
+        <tr>
+            <td>0075</td>
+            <td>672919467</td>
+            <td>Body falling/crumpling with squelch</td>
+        </tr>
+        <tr>
+            <td>0076</td>
+            <td>376712453</td>
+            <td>Sliding on sand?</td>
+        </tr>
+        <tr>
+            <td>0077</td>
+            <td>526880056</td>
+            <td>Sliding on sand?</td>
+        </tr>
+        <tr>
+            <td>0078</td>
+            <td>163510613</td>
+            <td>Wood knock sound</td>
+        </tr>
+        <tr>
+            <td>0079</td>
+            <td>171289495</td>
+            <td>Wood knock sound</td>
+        </tr>
+        <tr>
+            <td>0146</td>
+            <td>1064775308</td>
+            <td>Helmet falling on ground after getting shot off</td>
+        </tr>
+        <tr>
+            <td>0147</td>
+            <td>749965345</td>
+            <td>Helmet falling on ground after getting shot off</td>
+        </tr>
+        <tr>
+            <td>0148</td>
+            <td>79758342</td>
+            <td>Helmet getting shot (the shot bounced off..)</td>
+        </tr>
+        <tr>
+            <td>0149</td>
+            <td>462867978</td>
+            <td>Helmet getting shot (the shot bounced off..)</td>
+        </tr>
+        <tr>
+            <td>0150</td>
+            <td>349931413</td>
+            <td>Metal door slammed open, person falling</td>
+        </tr>
+        <tr>
+            <td>0151</td>
+            <td>158308375</td>
+            <td>Diving into person? Person falling</td>
+        </tr>
+        <tr>
+            <td>0152</td>
+            <td>18991772</td>
+            <td>Diving into person? Person falling</td>
+        </tr>
+        <tr>
+            <td>0153</td>
+            <td>117466861</td>
+            <td>Diving into person? Person falling</td>
+        </tr>
+        <tr>
+            <td>0154</td>
+            <td>92875507</td>
+            <td>Switch being flicked</td>
+        </tr>
+        <tr>
+            <td>0155</td>
+            <td>232133440</td>
+            <td>Switch being flicked</td>
+        </tr>
+        <tr>
+            <td>0156</td>
+            <td>839689715</td>
+            <td>Switch being flicked</td>
+        </tr>
+        <tr>
+            <td>0157</td>
+            <td>979589541</td>
+            <td>Switch being flicked</td>
+        </tr>
+        <tr>
+            <td>0158</td>
+            <td>577330304</td>
+            <td>Metal sound (knock?)</td>
+        </tr>
+        <tr>
+            <td>0181</td>
+            <td>252549298</td>
+            <td>Metal knock.</td>
+        </tr>
+        <tr>
+            <td>0182</td>
+            <td>715499360</td>
+            <td>Metal knock.</td>
+        </tr>
+        <tr>
+            <td>0183</td>
+            <td>42969992</td>
+            <td>Crouch clothes rustle?</td>
+        </tr>
+        <tr>
+            <td>0184</td>
+            <td>134519668</td>
+            <td>Crouch clothes rustle?</td>
+        </tr>
+        <tr>
+            <td>0185</td>
+            <td>192222695</td>
+            <td>Crouch clothes rustle?</td>
+        </tr>
+        <tr>
+            <td>0187</td>
+            <td>464753386</td>
+            <td>Alarm sound. DD. Not PF</td>
+        </tr>
+        <tr>
+            <td>0188</td>
+            <td>37182831</td>
+            <td>Helicopter noise</td>
+        </tr>
+        <tr>
+            <td>0189</td>
+            <td>228939430</td>
+            <td>Loud helicopter noise</td>
+        </tr>
+        <tr>
+            <td>0190</td>
+            <td>708305252</td>
+            <td>Loud helicopter noise</td>
+        </tr>
+        <tr>
+            <td>0191</td>
+            <td>462076643</td>
+            <td>Plane sound effect after using fulton</td>
+        </tr>
+        <tr>
+            <td>0206</td>
+            <td>304026732</td>
+            <td>Metal hit noise</td>
+        </tr>
+        <tr>
+            <td>0207</td>
+            <td>560706796</td>
+            <td>Water bubbles</td>
+        </tr>
+        <tr>
+            <td>0208</td>
+            <td>547972216</td>
+            <td>Water bubbles</td>
+        </tr>
+        <tr>
+            <td>0209</td>
+            <td>190669843</td>
+            <td>Knife being unsheathed</td>
+        </tr>
+        <tr>
+            <td>0210</td>
+            <td>40329114</td>
+            <td>Branches being crushed. Or crackling?</td>
+        </tr>
+        <tr>
+            <td>0211</td>
+            <td>384409916</td>
+            <td>Bzzzz noise</td>
+        </tr>
+        <tr>
+            <td>0212</td>
+            <td>127175485</td>
+            <td>Projectile launching noise</td>
+        </tr>
+        <tr>
+            <td>0215</td>
+            <td>877239272</td>
+            <td>electric noise</td>
+        </tr>
+        <tr>
+            <td>0216</td>
+            <td>655817752</td>
+            <td>Water surface noise. Or object dropped into water</td>
+        </tr>
+        <tr>
+            <td>0217</td>
+            <td>864739711</td>
+            <td>Water surface noise. Or object dropped into water</td>
+        </tr>
+        <tr>
+            <td>0218</td>
+            <td>816134518</td>
+            <td>Water surface noise. Or object dropped into water</td>
+        </tr>
+        <tr>
+            <td>0219</td>
+            <td>359719371</td>
+            <td>Water surface noise. Or object dropped into water</td>
+        </tr>
+        <tr>
+            <td>0225</td>
+            <td>1029939264</td>
+            <td>impact, unknown material</td>
+        </tr>
+        <tr>
+            <td>0227</td>
+            <td>38945587</td>
+            <td>Reload?</td>
+        </tr>
+        <tr>
+            <td>0228</td>
+            <td>21241084</td>
+            <td>Jangle</td>
+        </tr>
+        <tr>
+            <td>0229</td>
+            <td>93572792</td>
+            <td>Jangle</td>
+        </tr>
+        <tr>
+            <td>0236</td>
+            <td>176332856</td>
+            <td>squeaky office chair?</td>
+        </tr>
+        <tr>
+            <td>0237</td>
+            <td>270110131</td>
+            <td>squeaky office chair?</td>
+        </tr>
+        <tr>
+            <td>0260</td>
+            <td>1005477978</td>
+            <td>Sound heard when you shoot the pig head in the white mamba mission</td>
+        </tr>
+        <tr>
+            <td>0264</td>
+            <td>500818584</td>
+            <td>Unsheathing knife when in chokehold</td>
+        </tr>
+        <tr>
+            <td>0265</td>
+            <td>256248183</td>
+            <td>Reload?</td>
+        </tr>
+        <tr>
+            <td>0266</td>
+            <td>95822427</td>
+            <td>Silencer shot?</td>
+        </tr>
+        <tr>
+            <td>0267</td>
+            <td>523092334</td>
+            <td>Whir</td>
+        </tr>
+        <tr>
+            <td>0268</td>
+            <td>23621882</td>
+            <td>Clank?</td>
+        </tr>
+        <tr>
+            <td>0269</td>
+            <td>736639019</td>
+            <td>Whir</td>
+        </tr>
+        <tr>
+            <td>0270</td>
+            <td>137300996</td>
+            <td>Clank?</td>
+        </tr>
+        <tr>
+            <td>0271</td>
+            <td>970569679</td>
+            <td>Whir</td>
+        </tr>
+        <tr>
+            <td>0272</td>
+            <td>558871647</td>
+            <td>Clank?</td>
+        </tr>
+        <tr>
+            <td>0273</td>
+            <td>277301462</td>
+            <td>Whir</td>
+        </tr>
+        <tr>
+            <td>0289</td>
+            <td>258321088</td>
+            <td>Object getting hit. Sandbag maybe?</td>
+        </tr>
+        <tr>
+            <td>0290</td>
+            <td>158342983</td>
+            <td>Object getting hit. Sandbag maybe?</td>
+        </tr>
+        <tr>
+            <td>0291</td>
+            <td>218004060</td>
+            <td>Object getting hit. Sandbag maybe?</td>
+        </tr>
+        <tr>
+            <td>0292</td>
+            <td>337452249</td>
+            <td>Object getting hit. Sandbag maybe?</td>
+        </tr>
+        <tr>
+            <td>0293</td>
+            <td>376912022</td>
+            <td>Object getting hit. Sandbag maybe?</td>
+        </tr>
+        <tr>
+            <td>0294</td>
+            <td>231325813</td>
+            <td>Object getting hit. Sandbag maybe?</td>
+        </tr>
+        <tr>
+            <td>0295</td>
+            <td>582209116</td>
+            <td>Object getting hit. Sandbag maybe?</td>
+        </tr>
+        <tr>
+            <td>0296</td>
+            <td>594668402</td>
+            <td>Object getting hit. Sandbag maybe?</td>
+        </tr>
+        <tr>
+            <td>0297</td>
+            <td>548523341</td>
+            <td>Creak</td>
+        </tr>
+        <tr>
+            <td>0298</td>
+            <td>268575957</td>
+            <td>Body falling on ground</td>
+        </tr>
+        <tr>
+            <td>0299</td>
+            <td>238498890</td>
+            <td>Object hit or falling. Dull sound</td>
+        </tr>
+        <tr>
+            <td>0304</td>
+            <td>585047687</td>
+            <td>D-Horse whistle command</td>
+        </tr>
+        <tr>
+            <td>0307</td>
+            <td>60005384</td>
+            <td>Pipe being hit? Hanging mode?</td>
+        </tr>
+        <tr>
+            <td>0314</td>
+            <td>115955741</td>
+            <td>gore- flesh impact sound</td>
+        </tr>
+        <tr>
+            <td>0316</td>
+            <td>225854973</td>
+            <td>gore, lethal kill</td>
+        </tr>
+        <tr>
+            <td>0318</td>
+            <td>264281654</td>
+            <td>Sounds like a rubber bullet on flesh</td>
+        </tr>
+        <tr>
+            <td>0321</td>
+            <td>26244220</td>
+            <td>flesh impact sound, could be lethal or non lethal</td>
+        </tr>
+        <tr>
+            <td>0323</td>
+            <td>122597363</td>
+            <td>a step in wet ground quite likley in some mud.</td>
+        </tr>
+        <tr>
+            <td>0328</td>
+            <td>360760230</td>
+            <td>Headshot</td>
+        </tr>
+        <tr>
+            <td>0329</td>
+            <td>135811549</td>
+            <td>body falling and hitting the ground</td>
+        </tr>
+        <tr>
+            <td>0361</td>
+            <td>2255213</td>
+            <td>gore, could be lethal impact sound</td>
+        </tr>
+        <tr>
+            <td>0423</td>
+            <td>114891008</td>
+            <td>bullet flyby sound?</td>
+        </tr>
+        <tr>
+            <td>0443</td>
+            <td>286899742</td>
+            <td>Smoke explode (turns out igniting molotov as well)</td>
+        </tr>
+        <tr>
+            <td>0483</td>
+            <td>141061443</td>
+            <td>sounds like a gunshot, could be wrong</td>
+        </tr>
+        <tr>
+            <td>0493</td>
+            <td>11607919</td>
+            <td>Knuckle Cracking (Distraction Sound)</td>
+        </tr>
+        <tr>
+            <td>0621</td>
+            <td>106015821</td>
+            <td>impact on flesh? Maybe a non lethal round</td>
+        </tr>
+        <tr>
+            <td>0687</td>
+            <td>60098793</td>
+            <td>Zoom in/out</td>
+        </tr>
+        <tr>
+            <td>0718</td>
+            <td>152429649</td>
+            <td>Night Vision</td>
+        </tr>
+        <tr>
+            <td>0730</td>
+            <td>125941382</td>
+            <td>the slow-mo punch at the end of smacking a person multiple times with cqc</td>
+        </tr>
+        <tr>
+            <td>0773</td>
+            <td>130632288</td>
+            <td>sounds like a high powered rifle impact</td>
+        </tr>
+        <tr>
+            <td>0774</td>
+            <td>101388289</td>
+            <td>flyby bullet</td>
+        </tr>
+        <tr>
+            <td>0777</td>
+            <td>1027630967</td>
+            <td>flyby bullet</td>
+        </tr>
+        <tr>
+            <td>0823</td>
+            <td>11165277</td>
+            <td>Sound heard when searchlight lands on you</td>
+        </tr>
+        <tr>
+            <td>0846</td>
+            <td>124807379</td>
+            <td>water pistol?</td>
+        </tr>
+        <tr>
+            <td>0870</td>
+            <td>1004431013</td>
+            <td>Vehicle explosion</td>
+        </tr>
+        <tr>
+            <td>0871</td>
+            <td>1045494066</td>
+            <td>Woosh sound just before vehicle explosion</td>
+        </tr>
+        <tr>
+            <td>0876</td>
+            <td>153341689</td>
+            <td>sounds like a door getting slammed open? or it could be hitting the floor after getting destroyed?</td>
+        </tr>
+        <tr>
+            <td>0883</td>
+            <td>5376419</td>
+            <td>AM MRS, UN-ARC</td>
+        </tr>
+        <tr>
+            <td>0884</td>
+            <td>747088296</td>
+            <td>AM MRS, UN-ARC</td>
+        </tr>
+        <tr>
+            <td>0885</td>
+            <td>373435283</td>
+            <td>Silenced assault rifles</td>
+        </tr>
+        <tr>
+            <td>0886</td>
+            <td>986770435</td>
+            <td>SVG, PG (Enemy)</td>
+        </tr>
+        <tr>
+            <td>0887</td>
+            <td>819985963</td>
+            <td>SVG, PG (Player)</td>
+        </tr>
+        <tr>
+            <td>0888</td>
+            <td>169442059</td>
+            <td>Reloading - mag out</td>
+        </tr>
+        <tr>
+            <td>0894</td>
+            <td>404351043</td>
+            <td>Reloading - cocking</td>
+        </tr>
+        <tr>
+            <td>0896</td>
+            <td>473391455</td>
+            <td>G44 (Enemy)</td>
+        </tr>
+        <tr>
+            <td>0897</td>
+            <td>1050351317</td>
+            <td>G44 (Player)</td>
+        </tr>
+        <tr>
+            <td>0898</td>
+            <td>123902019</td>
+            <td>suppressed gunshot, maybe a smg?</td>
+        </tr>
+        <tr>
+            <td>0899</td>
+            <td>946980993</td>
+            <td>Unknown gun (Enemy)</td>
+        </tr>
+        <tr>
+            <td>0900</td>
+            <td>695595645</td>
+            <td>Unknown gun (Player)</td>
+        </tr>
+        <tr>
+            <td>0906</td>
+            <td>287640892</td>
+            <td>sounds like rubber bullets</td>
+        </tr>
+        <tr>
+            <td>0933</td>
+            <td>178798613</td>
+            <td>gore- flesh impact sound</td>
+        </tr>
+        <tr>
+            <td>0985</td>
+            <td>363550897</td>
+            <td>Silenced M-2000</td>
+        </tr>
+        <tr>
+            <td>0986</td>
+            <td>142348389</td>
+            <td>Almost certain this is a non lethal smg/rifle impact round</td>
+        </tr>
+        <tr>
+            <td>1003</td>
+            <td>34153649</td>
+            <td>The rest of the pistols (Enemy)</td>
+        </tr>
+        <tr>
+            <td>1004</td>
+            <td>373992474</td>
+            <td>Unsuppressed tranq gunshot, The rest of the pistols (Player)</td>
+        </tr>
+        <tr>
+            <td>1005</td>
+            <td>443392438</td>
+            <td>Revolver gunshot far, Revolvers, GEIST P3 CB, WU S.PISTOL (Enemy)</td>
+        </tr>
+        <tr>
+            <td>1006</td>
+            <td>965203707</td>
+            <td>Revolver gunshot close, Revolvers, GEIST P3 CB, WU S.PISTOL (Player)</td>
+        </tr>
+        <tr>
+            <td>1007</td>
+            <td>735969776</td>
+            <td>Reload pistol/tranq gun (magazine going in), Reloading - mag in</td>
+        </tr>
+        <tr>
+            <td>1008</td>
+            <td>742084480</td>
+            <td>Pull back slide on tranq gun</td>
+        </tr>
+        <tr>
+            <td>1009</td>
+            <td>765469447</td>
+            <td>Fire suppressed pistol, Silenced pistols (well, the most part of)</td>
+        </tr>
+        <tr>
+            <td>1018</td>
+            <td>4729934</td>
+            <td>ALM LMG gunshot far, ALM 48 (Enemy)</td>
+        </tr>
+        <tr>
+            <td>1019</td>
+            <td>144297022</td>
+            <td>ALM 48 (Player)</td>
+        </tr>
+        <tr>
+            <td>1020</td>
+            <td>838976687</td>
+            <td>LMG gunshot far, LPG-63U (Enemy)</td>
+        </tr>
+        <tr>
+            <td>1021</td>
+            <td>269696546</td>
+            <td>LPG-63U (Player)</td>
+        </tr>
+        <tr>
+            <td>1023</td>
+            <td>287821235</td>
+            <td>explosion of some kind?</td>
+        </tr>
+        <tr>
+            <td>1024</td>
+            <td>151207389</td>
+            <td>gunshot, high powered rifle maybe? Could also be an explosive launch such as a rocket launcher</td>
+        </tr>
+        <tr>
+            <td>1027</td>
+            <td>645563607</td>
+            <td>Put primary weapon away (assault rifle/shotgun, etc) and smg secondaries/begin painting throw arc for support weapon</td>
+        </tr>
+        <tr>
+            <td>1028</td>
+            <td>745805673</td>
+            <td>Put away secondary(pistols) weapon / ready support weapon</td>
+        </tr>
+        <tr>
+            <td>1031</td>
+            <td>436141391</td>
+            <td>Bring grenade launcher down from aiming</td>
+        </tr>
+        <tr>
+            <td>1032</td>
+            <td>461296730</td>
+            <td>Bring grenade launcher up to aim</td>
+        </tr>
+        <tr>
+            <td>1035</td>
+            <td>185884477</td>
+            <td>Bullet richochet</td>
+        </tr>
+        <tr>
+            <td>1036</td>
+            <td>33698964</td>
+            <td>Bullet richochet</td>
+        </tr>
+        <tr>
+            <td>1037</td>
+            <td>24661481</td>
+            <td>Bullet richochet</td>
+        </tr>
+        <tr>
+            <td>1038</td>
+            <td>640238813</td>
+            <td>Bullet richochet</td>
+        </tr>
+        <tr>
+            <td>1039</td>
+            <td>523412065</td>
+            <td>Bullet richochet</td>
+        </tr>
+        <tr>
+            <td>1040</td>
+            <td>716957862</td>
+            <td>Bullet richochet</td>
+        </tr>
+        <tr>
+            <td>1041</td>
+            <td>159611048</td>
+            <td>Bullet richochet</td>
+        </tr>
+        <tr>
+            <td>1042</td>
+            <td>106846642</td>
+            <td>Double-barrel and other shotguns (Enemy)</td>
+        </tr>
+        <tr>
+            <td>1043</td>
+            <td>12013768</td>
+            <td>Double-barrel and other shotguns (Player)</td>
+        </tr>
+        <tr>
+            <td>1044</td>
+            <td>163598967</td>
+            <td>S1000 EXT. (Enemy)</td>
+        </tr>
+        <tr>
+            <td>1045</td>
+            <td>62028992</td>
+            <td>Flashbang explosion / shotgun blast, S1000 EXT.</td>
+        </tr>
+        <tr>
+            <td>1046</td>
+            <td>115070097</td>
+            <td>Snap double barrel shotgun/dbl grenade launcher down for reload. Cycle pump action. Cycle bolt action on sniper rifle</td>
+        </tr>
+        <tr>
+            <td>1047</td>
+            <td>473963421</td>
+            <td>Snap double barrel shotgun/dbl grenade launcher back up after reload. Cycle pump action. Cycle bolt action on sniper rifle</td>
+        </tr>
+        <tr>
+            <td>1048</td>
+            <td>271333830</td>
+            <td>Reload shotgun shell into shotgun</td>
+        </tr>
+        <tr>
+            <td>1049</td>
+            <td>818689286</td>
+            <td>MACHT 37, Sz.-336 (Enemy)</td>
+        </tr>
+        <tr>
+            <td>1050</td>
+            <td>1012620448</td>
+            <td>MACHT 37, Sz.-336 (Player)</td>
+        </tr>
+        <tr>
+            <td>1051</td>
+            <td>428636400</td>
+            <td>MACHT 37, Sz.-336 silenced (Player)</td>
+        </tr>
+        <tr>
+            <td>1052</td>
+            <td>622745205</td>
+            <td>ZE&#39;EV (Enemy)</td>
+        </tr>
+        <tr>
+            <td>1053</td>
+            <td>380692384</td>
+            <td>ZE&#39;EV (Player)</td>
+        </tr>
+        <tr>
+            <td>1057</td>
+            <td>942192948</td>
+            <td>Renov, SERVAL AMR-7, MOLOTOK-67 (Enemy)</td>
+        </tr>
+        <tr>
+            <td>1058</td>
+            <td>416462537</td>
+            <td>Renov, SERVAL AMR-7, MOLOTOK-67 (Player)</td>
+        </tr>
+        <tr>
+            <td>1059</td>
+            <td>21454937</td>
+            <td>AM MRS-4, AM MRS-71, AM MRS-73, Bambetov, M-2000D, Brennan Sniper gunshot (Enemy)</td>
+        </tr>
+        <tr>
+            <td>1060</td>
+            <td>651276599</td>
+            <td>AM MRS-4, AM MRS-71, AM MRS-73, Bambetov, M-2000D, Brennan Sniper gunshot (Player)</td>
+        </tr>
+        <tr>
+            <td>1061</td>
+            <td>13181709</td>
+            <td>Enemy&#39;s sniper shot</td>
+        </tr>
+        <tr>
+            <td>1066</td>
+            <td>419700400</td>
+            <td>AM MRS-4 scrape</td>
+        </tr>
+    </tbody>
 </table>
-
+    
 TABLE 2: se_b_qui.BNK
 
 |                |                      |
