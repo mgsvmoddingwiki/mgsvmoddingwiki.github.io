@@ -1,7 +1,11 @@
 ---
 title: Custom Missions List
 permalink: /Custom_Missions_List/
-tags: [Infinite Heaven, Missions, Reference]
+tags:
+  - Infinite Heaven
+  - Missions
+  - Reference
+published: true
 ---
 
 Custom / Addon Missions for Metal Gear Solid V: The Phantom Pain.
@@ -20,7 +24,11 @@ with the ids you intend to use.
 | missionCode | Location | Author          | Name                                       | Link                                                                                                                                                                   |
 | ----------- | -------- | --------------- | ------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | N/A         | afgh     | Ventos          | Small Ruins                                | <https://www.nexusmods.com/metalgearsolidvtpp/mods/753>                                                                                                                |
-| N/A         | afgh     | Ventos          | Unknown Place                              | <https://www.nexusmods.com/metalgearsolidvtpp/mods/1237>                                                                                                               |
+| N/A         | afgh     | Ventos          | Unknown Place                              | <https://www.nexusmods.com/metalgearsolidvtpp/mods/1237>
+| 12001       | mafr     | Yazed0071       | Nuclear Network                            | <https://www.nexusmods.com/metalgearsolidvtpp/mods/1783>
+| 12002       | mafr     | Yazed0071       | Whispers                                   | <https://www.nexusmods.com/metalgearsolidvtpp/mods/1820>
+| 12003       | gntn     | Yazed0071       | SECURE THE CLASSIFIED TAPE                 | <https://www.nexusmods.com/metalgearsolidvtpp/mods/1836>
+| 12004       | gntn     | Yazed0071       | [SUBSISTENCE] SECURE THE CLASSIFIED TAPE   | <https://www.nexusmods.com/metalgearsolidvtpp/mods/1836>
 | 13000       | mafr     | CapLagRobin     | TGS 2014 SPECIAL MISSION                   | <https://www.nexusmods.com/metalgearsolidvtpp/mods/918>                                                                                                                |
 | 13001       | afgh     | CapLagRobin     | The Phantom Pain (E3 Version)              | <https://www.nexusmods.com/metalgearsolidvtpp/mods/1245>                                                                                                               |
 | 13002       | mafr     | CapLagRobin     | Secure the Hidden Tape                     | <https://www.nexusmods.com/metalgearsolidvtpp/mods/1665>                                                                                                               |
