@@ -12,7 +12,7 @@ See [MissionCodes](/MissionCodes#side-op-ids) for vanilla questIds. [Infinite He
 > 
 > A table [at the bottom](#side-ops-with-conflicting-ids) lists side-ops with conflicting IDs.
 
-| questId                    | Author          | Mod Title / Link                                                                                         | Number of Side-Ops | Location
+| questId                    | Author          | Name / Link                                                                                              | Number of Side-Ops | Location
 | -------------------------- | --------------- | -------------------------------------------------------------------------------------------------------- | ------------------ | ----------
 | q30100-q30102              | tinmantex       | [MB Animals](https://www.nexusmods.com/metalgearsolidvtpp/mods/45)                                       | 3                  | mtbs      
 | q30103                     | tinmantex       | IH sideop addon example                                                                                  | 1                  |           
@@ -83,7 +83,7 @@ See [MissionCodes](/MissionCodes#side-op-ids) for vanilla questIds. [Infinite He
 
 List of ops using previously reserved/used questId(s).
 
-| questId                    | Author          | Mod Title / Link                                                                                         | Number of Side-Ops | Location
+| questId                    | Author          | Name / Link                                                                                              | Number of Side-Ops | Location
 | -------------------------- | --------------- | -------------------------------------------------------------------------------------------------------- | ------------------ | ----------
 | q30103                     | TaliKnight      | [Guantanamo Sheep](https://www.nexusmods.com/metalgearsolidvtpp/mods/1193)                               | 1                  | 
 | q30117                     | Your401kPlan    | [Operation R.Y.A.N Ep2](https://www.nexusmods.com/metalgearsolidvtpp/mods/1084)                          | 1                  | 
