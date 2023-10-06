@@ -23,7 +23,7 @@ The search box is quite simple in it's current form, acting more like a filter. 
 
 At the top of every page are a row of icons. This table explains them beginning from leftmost icon to rightmost.
 
-> **Tip:** if wanting to add a new simple, text-only page or wanting to make simple edits to a page then the Prose.io buttons with the colored backgrounds are the easiest way. For more about creating/editing pages see the [Creating/Editing a Page](/Meta-Creating_Editing_a_Page) guide.
+> **Tip:** for simple, text-only page edits or new pages the Prose.io buttons with the colored backgrounds are the easiest way. It just requires a single authorization with your Github account and then it can handle submissions on your behalf. For more about creating/editing pages see the [Creating/Editing a Page](/Meta-Creating_Editing_a_Page) guide.
 
 | Icon | Title | Description |
 |-|-|-|
@@ -33,5 +33,5 @@ At the top of every page are a row of icons. This table explains them beginning 
 | ![](/assets/images/ui.svg#icons-editing-history){:width="24px" height="24px"} | Page History | Displays a page's history of edits. |
 | ![](/assets/images/ui.svg#icons-editing-source){:width="24px" height="24px"} | Page Source | Displays the raw code used to generate the page. |
 | ![](/assets/images/ui.svg#icons-page-expand-expand){:width="24px" height="24px"} | Expand Wiki Width | A UI button that When clicked will toggle an expanded width of the wiki page. Useful for viewing dense/long tables on various wiki pages. Button only appears on desktop browsers. |
-| ![](/assets/images/ui.svg#icons-editing-add){:width="24px" height="24px" style="background: var(--color-accent)"} | Prose.io - Add New Page | Opens [prose.io](https://prose.io) where you can add a new wiki page without any special permissions. Still requires Github account. |
-| ![](/assets/images/ui.svg#icons-editing-edit){:width="24px" height="24px" style="background: var(--color-accent)"} | Prose.io - Edit Page | Opens [prose.io](https://prose.io) where you can edit an a wiki page without any special permissions. Still requires Github account. |
+| ![](/assets/images/ui.svg#icons-editing-add){:width="24px" height="24px" style="background: var(--color-accent)"} | Prose.io - Add New Page | Opens [prose.io](https://prose.io) where you can add a new wiki page.<br/><br/>Requires an initial authorization of Prose with your Github account. See [this page](/Meta-Creating_Editing_a_Page) for more info. |
+| ![](/assets/images/ui.svg#icons-editing-edit){:width="24px" height="24px" style="background: var(--color-accent)"} | Prose.io - Edit Page | Opens [prose.io](https://prose.io) where you can edit an a wiki page.<br/><br/>Requires an initial authorization of Prose with your Github account. See [this page](/Meta-Creating_Editing_a_Page) for more info. |

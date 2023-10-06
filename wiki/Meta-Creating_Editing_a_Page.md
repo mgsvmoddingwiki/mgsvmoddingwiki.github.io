@@ -10,7 +10,9 @@ There are a couple ways to create or edit a wiki page so this guide will cover e
 
 ## Prose.io: Using the Prose.io toolbar buttons
 
-For novice users the Prose.io toolbar buttons at the top of every page will likely be the easiest method for creating new text-only pages, or simple edits. You'll need a Github account but the submission of changes part is handled by Prose.io for you.
+For various users the Prose.io toolbar buttons at the top of every page will likely be the easiest method for creating new text-only pages, or simple edits to existing pages.
+
+You'll need a Github account and to authorize Prose for it but the submission of changes is then handled by Prose.io for you.
 
 > **Note:** a downside to this method is new images can't be added and you're limited to changing one file at a time. If you need that check out the [manual pull request](#manually-submitting-a-pull-request) method further below this guide, which is generally the preferred method.
 
