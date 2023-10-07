@@ -1,10 +1,7 @@
 ---
 title: File Structure (TPP)
 permalink: /File_Structure_(TPP)/
-tags:
-  - Files
-  - Reference
-published: true
+tags: [Files, Reference]
 ---
 
 Metal Gear Solid V: The Phantom Pain's file structure is made up of a
