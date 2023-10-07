@@ -1,7 +1,10 @@
 ---
 title: File Structure (TPP)
 permalink: /File_Structure_(TPP)/
-tags: [Files, Reference]
+tags:
+  - Files
+  - Reference
+published: true
 ---
 
 Metal Gear Solid V: The Phantom Pain's file structure is made up of a
@@ -11,7 +14,7 @@ of e2f8e499bc8f3606.dat, e2f9a1fda590d087.dat, e2faa449a7e0781d.dat,
 e2fb02c35da41a21.dat, and e2fbebbd66f86086.dat, which are .wmv files
 with their extensions changed.
 
-See [File Formats](/File_Formats_Used_in_MGSV_\(List\) "wikilink") for
+See [File Formats](/File_Formats "wikilink") for
 more information about the files in the dats, [Things
 Codes](/Things_Codes "wikilink") for information on some of the naming
 of files, [Sound Codes](/Sound_Codes "wikilink"), or [animation
@@ -46,4 +49,3 @@ the 00.dat file contains all other assets.
 When SnakeBite is installed it moves the files in master/0/00.dat,01.dat
 to master/a_chunk7.dat, a_texture.dat and the patched 00.dat lua files
 into 01.dat. From then it installs mods into 00.dat
-
