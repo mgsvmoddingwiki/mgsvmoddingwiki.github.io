@@ -7,6 +7,7 @@
     --spacing-intermediate: 20px;
     --spacing-secondary: 15px;
     --spacing-minor: 5px;
+    --spacing-lightbox: var(--spacing-primary);
     --border-width: 2px;
     --radius-primary: 4px;
     --radius-secondary: 2px;
@@ -18,6 +19,8 @@
     --bg-input: hsl(234, 8%, 15%);
     --bg-code: var(--bg-input);
     --bg-list-hover: hsl(240, 7%, 46%);
+    --bg-tooltips: hsl(234, 8%, 10%);
+    --bg-mobile-menu: var(--bg-page);
     --color-primary: hsl(0,0%,90%);
     --color-secondary: hsl(231, 3%, 66%);
     --color-inverse: #171717;
@@ -29,6 +32,7 @@
     --color-border: hsl(0,0%,40%);
     --color-buttons: var(--bg-subtle);
     --color-buttons-hover: hsl(231, 3%, 31%);
+    --color-important: hsl(154,65%,32%);
     --color-shadow: hsla(0,0%,0%,.2);
 
     --font-sans: Kibur, "Segoe UI", sans-serif;
@@ -42,6 +46,9 @@
 
     --shadow-primary: 0 2px 20px 0 var(--color-shadow);
     --shadow-secondary: 0 2px 10px 0 var(--color-shadow);
+
+    --timing-bezier-1: cubic-bezier(0.19,1,0.22,1); /* easeOutExpo */
+    --filter-button-active: brightness(0.8);
 }
 
 
@@ -62,6 +69,10 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--color-primary);
     font-family: var(--font-sans);
     font-weight: var(--font-weight-semibold);
+}
+
+h1, h2 {
+    letter-spacing: -0.01em;
 }
 
 h2, h3, h4 {
@@ -316,7 +327,7 @@ body.expanded-width {
 
 .tools-element a:active,
 .tools-element span:active {
-    filter: brightness(0.8);
+    filter: var(--filter-button-active);
 }
 
 .tools-element a::before,
@@ -335,7 +346,7 @@ body.expanded-width {
 .tools-element a::after,
 .tools-element span::after {
     width: max-content;
-    background: hsl(234, 8%, 10%);
+    background: var(--bg-tooltips);
     color: var(--color-secondary);
     text-indent: 0; /* un-indent text of parent */
     content: '';
@@ -588,7 +599,7 @@ summary:hover {
 }
 
 summary:active {
-    filter: brightness(0.8);
+    filter: var(--filter-button-active);
 }
 
 /* Table of contents */
@@ -636,9 +647,9 @@ ul.index,
     break-inside: avoid-column;
 }
 
-/* .important = call more attention to a blockquote */
+/* Call more attention to a blockquote */
 blockquote.important {
-    background: hsl(154,65%,32%);
+    background: var(--color-important);
 }
 
 /* .index = for use on lists for index/category pages */
@@ -656,6 +667,7 @@ blockquote.important {
 .index h3,
 .index h4 {
     font-size: var(--font-size-medium);
+    letter-spacing: 0;
     margin-top: 0;
     margin-bottom: var(--spacing-secondary);
 }
@@ -907,6 +919,50 @@ body.darkmode--activated .darkmode-ignore {
     text-align: left;
 }
 
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ IMAGES: LIGHTBOX ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.medium-zoom-overlay,
+.medium-zoom-image--opened {
+    z-index: 99;
+}
+
+.medium-zoom-overlay {
+    background: var(--bg-page);
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transition: opacity 500ms;
+    will-change: opacity;
+}
+
+.medium-zoom--opened .medium-zoom-overlay {
+    opacity: 0.8;
+    cursor: pointer;
+    cursor: zoom-out;
+}
+
+.medium-zoom-image {
+    cursor: pointer;
+    cursor: zoom-in;
+    transition: transform 500ms var(--timing-bezier-1); /* Duration gives Javascript lightbox just enough time to avoid overlapping with scrollIntoView(), which would otherwise auto close lightbox thinking a scroll was occurring */
+}
+
+.medium-zoom-image--hidden {
+    visibility: hidden;
+}
+
+.medium-zoom-image--opened {
+    position: relative;
+    cursor: pointer;
+    cursor: zoom-out;
+    will-change: transform;
+}
+
+
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ SIDEBAR ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 /* Hide 'Pages (Last <n> Updated)' list since date modified Jekyll plugin not allowed by Github Actions (assumes this list is last in sidebar) */
@@ -1021,7 +1077,8 @@ body.darkmode--activated .darkmode-ignore {
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ MOBILE ELEMENTS ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
-#git-wiki-mobile-header {
+#git-wiki-mobile-header,
+#git-wiki-mobile-header.visible {
     height: var(--height-mobile-header);
     background-color: var(--color-accent);
     display: flex;
@@ -1030,8 +1087,17 @@ body.darkmode--activated .darkmode-ignore {
     border-radius: 0;
     border-bottom: none;
     box-shadow: var(--shadow-primary);
+    top: 0;
     left: 0;
     z-index: 4;
+    transform: translateY(0);
+    transition: transform 500ms var(--timing-bezier-1),
+                box-shadow 300ms;
+}
+
+#git-wiki-mobile-header.hidden {
+    transform: translateY(calc(-1 * var(--height-mobile-header) - 10px));
+    box-shadow: 0 0 0 0 transparent;
 }
 
 /* Hamburger menu button */
@@ -1043,8 +1109,11 @@ body.darkmode--activated .darkmode-ignore {
     outline: none;
 }
 
-#git-wiki-mobile-header > button,
 #git-wiki-sidebar button {
+    display: none; /* hide original superfluous button */
+}
+
+#git-wiki-mobile-header > button {
     height: var(--height-mobile-header);
     width: 50px;
     font-size: 0 !important;
@@ -1055,8 +1124,9 @@ body.darkmode--activated .darkmode-ignore {
     padding: 0;
 }
 
+/* `.menu-closed`/`.menu-open` classes via custom JS (overriding default JS) */
 #git-wiki-mobile-header > button::before,
-#git-wiki-sidebar button::before {
+.menu-closed #git-wiki-mobile-header > button::before {
     width: 24px;
     height: 24px;
     content: '';
@@ -1066,23 +1136,9 @@ body.darkmode--activated .darkmode-ignore {
     mask-image: url("/assets/images/ui.svg#icons-hamburger-menu");
 }
 
-/* Hamburger menu close button within sidebar (moved top top-left to match open state position) */
-#git-wiki-sidebar button {
-    background: var(--color-accent);
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 5;
-}
-
-#git-wiki-sidebar button::before {
+.menu-open #git-wiki-mobile-header > button::before {
     -webkit-mask-image: url("/assets/images/ui.svg#icons-hamburger-menu-close");
     mask-image: url("/assets/images/ui.svg#icons-hamburger-menu-close");
-}
-
-#git-wiki-sidebar button:hover {
-    background-color: var(--color-accent) !important;
-    color: inherit !important;
 }
 
 /* Paz emblem */
@@ -1139,6 +1195,7 @@ footer {
 @media print, screen and (max-width: 992px) {
 
     :root {
+        --spacing-lightbox: var(--spacing-secondary);
         --font-size-base: 15px;
     }
 
@@ -1166,10 +1223,19 @@ footer {
         max-width: 45%;
     }
 
+    #git-wiki-sidebar,
+    .menu-closed #git-wiki-sidebar {
+        display: none;
+    }
+
+    .menu-open #git-wiki-sidebar {
+        display: block;
+    }
+
     #git-wiki-sidebar {
         width: 100% !important;
         max-width: 100%;
-        background: var(--bg-page);
+        background: var(--bg-mobile-menu);
         padding-top: var(--spacing-secondary);
         padding-right: 0;
         border: none;
@@ -1193,6 +1259,7 @@ footer {
 
     #git-wiki-sidebar::after {
         margin-top: -30px;
+        clip-path: polygon(0 100%, 100% 100%, 100% 200%, 0% 200%); /* mask to only display from end of menu and below */
     }
 
     #git-wiki-sidebar::before {
