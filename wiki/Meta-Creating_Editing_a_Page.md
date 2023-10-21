@@ -69,7 +69,7 @@ This takes the following form and should be the first thing at the top of any pa
 ---
 title: 'Your Page Name'
 permalink: /Your_Page_Name/
-tags: [Tag, Tag2]
+tags: [Tag, Tag 2]
 ---
 ``` 
 
@@ -224,7 +224,7 @@ I'll be using a text editor to create the wiki page offline before later uploadi
 ---
 title: 'Your Page Name'
 permalink: /Your_Page_Name/
-tags: [Tag, Tag2]
+tags: [Tag, Tag 2]
 ---
 ```
 So for my page I'll be using the following metadata:
