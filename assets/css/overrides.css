@@ -1359,6 +1359,7 @@ body.darkmode--activated .darkmode-ignore {
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ SIDEBAR ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
+#git-wiki-sidebar .view, /* Hide 'View My Github Profile' link */
 .page-list-title, .page-list-title + ul, /* Hide 'Pages (Last <n> Updated)' list since date modified Jekyll plugin not allowed by Github Actions (assumes this list is last in sidebar) */
 /* Hide site logo (uses alternative) */
 .git-wiki-main-logo img,
