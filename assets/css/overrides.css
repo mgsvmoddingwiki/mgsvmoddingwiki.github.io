@@ -3,6 +3,7 @@
 :root {
     --width-sidebar: 280px;
     --height-mobile-header: 50px;
+    --height-menu-button: 39px;  /* static value based on current text size/padding settings */
     --spacing-primary: 30px;
     --spacing-intermediate: 20px;
     --spacing-secondary: 15px;
@@ -11,29 +12,8 @@
     --border-width: 2px;
     --radius-primary: 4px;
     --radius-secondary: 2px;
-    --radius-full: 100%;
-
-    --bg-page: hsl(46, 0%, 16%);
-    --bg-primary: hsl(234, 5%, 21%);
-    --bg-subtle: hsl(240, 7%, 26%);
-    --bg-input: hsl(234, 8%, 15%);
-    --bg-code: var(--bg-input);
-    --bg-list-hover: hsl(240, 7%, 46%);
-    --bg-tooltips: hsl(234, 8%, 10%);
-    --bg-mobile-menu: var(--bg-page);
-    --color-primary: hsl(0,0%,90%);
-    --color-secondary: hsl(231, 3%, 66%);
-    --color-inverse: #171717;
-    --color-accent: #d88d31;
-    --color-accent-hover: hsl(33, 80%, 66%);
-    --color-link: hsl(212,99%,73%);
-    --color-link-hover: hsl(209,95%,92%);
-    --color-code: hsl(207, 43%, 90%);
-    --color-border: hsl(0,0%,40%);
-    --color-buttons: var(--bg-subtle);
-    --color-buttons-hover: hsl(231, 3%, 31%);
-    --color-important: hsl(154,65%,32%);
-    --color-shadow: hsla(0,0%,0%,.2);
+    --radius-full: 100px;
+    --radius-circle: 100%;
 
     --font-sans: Kibur, "Segoe UI", sans-serif;
     --font-size-base: 16px;
@@ -44,26 +24,145 @@
     --font-weight-semibold: 500;
     --font-weight-bold: 700;
 
-    --shadow-primary: 0 2px 20px 0 var(--color-shadow);
-    --shadow-secondary: 0 2px 10px 0 var(--color-shadow);
-
     --timing-bezier-1: cubic-bezier(0.19,1,0.22,1); /* easeOutExpo */
-    --filter-button-active: brightness(0.8);
+    --timing-bezier-2: cubic-bezier(0.95,0.05,0.795,0.035); /* easeInExpo */
+
+    --header-graphic-default: url("/assets/images/header-graphic-default.png");
+    --header-graphic-second: url("/assets/images/header-graphic-2.png");
 }
 
+:root {
+    --dark-theme-bg-page: hsl(46, 0%, 16%);
+    --dark-theme-bg-primary: hsl(234, 5%, 21%);
+    --dark-theme-bg-subtle: hsl(240, 7%, 26%);
+    --dark-theme-bg-input: hsl(234, 8%, 15%);
+    --dark-theme-bg-code: var(--dark-theme-bg-input);
+    --dark-theme-bg-list-hover: hsl(240, 7%, 46%);
+    --dark-theme-bg-tooltip: hsl(234, 8%, 10%);
+    --dark-theme-color-primary: hsl(0,0%,90%);
+    --dark-theme-color-secondary: hsl(231, 3%, 72%);
+    --dark-theme-color-accent: #d88d31;
+    --dark-theme-color-accent-hover: hsl(33, 80%, 66%);
+    --dark-theme-color-accent-foreground: #171717;
+    --dark-theme-color-link: hsl(212,99%,73%);
+    --dark-theme-color-link-hover: hsl(209,95%,92%);
+    --dark-theme-color-code: hsl(207, 43%, 90%);
+    --dark-theme-color-border: hsl(0,0%,30%);
+    --dark-theme-color-buttons: var(--dark-theme-bg-subtle);
+    --dark-theme-color-buttons-hover: hsl(231, 3%, 31%);
+    --dark-theme-color-buttons-inset: var(--dark-theme-color-buttons);
+    --dark-theme-color-important: hsl(154,65%,32%);
+    --dark-theme-color-shadow: hsla(0,0%,0%,.2);
+
+    --dark-theme-filter-button-active: brightness(0.8);
+
+
+    --light-theme-bg-page: hsl(235, 5%, 76%);
+    --light-theme-bg-primary: hsl(0, 0%, 90.5%);
+    --light-theme-bg-subtle: hsl(0, 0%, 95.23%);
+    --light-theme-bg-input: hsl(225, 7%, 86%);
+    --light-theme-bg-code: hsl(234, 18%, 96%);
+    --light-theme-bg-code-inset: hsl(234, 9%, 90%); /* exclusive to light theme */
+    --light-theme-bg-list-hover: hsl(240, 5%, 96%);
+    --light-theme-bg-tooltip: var(--light-theme-bg-list-hover);
+    --light-theme-color-primary: hsl(0, 0%, 5%);
+    --light-theme-color-secondary: hsl(231, 5%, 42%);
+    --light-theme-color-accent: hsl(33, 85%, 62%);
+    --light-theme-color-accent-hover: hsl(33, 100%, 70%);
+    --light-theme-color-accent-foreground: var(--dark-theme-color-accent-foreground);
+    --light-theme-color-link: hsl(217, 65%, 58%);
+    --light-theme-color-link-hover: hsl(217, 100%, 72%);
+    --light-theme-color-code: hsl(207, 6%, 31%);
+    --light-theme-color-border: hsla(229, 16%, 78%, .8);
+    --light-theme-color-buttons: var(--light-theme-bg-subtle);
+    --light-theme-color-buttons-hover: hsl(0, 0%, 100%);
+    --light-theme-color-buttons-inset: var(--light-theme-bg-input);
+    --light-theme-color-important: hsl(154, 61%, 61%);
+    --light-theme-color-shadow: hsla(230, 26%, 61%, .3);
+
+    --light-theme-filter-button-active: brightness(0.9);
+}
+
+body, body.theme-dark {
+    --bg-page: var(--dark-theme-bg-page);
+    --bg-primary: var(--dark-theme-bg-primary);
+    --bg-subtle: var(--dark-theme-bg-subtle);
+    --bg-input: var(--dark-theme-bg-input);
+    --bg-code: var(--dark-theme-bg-code);
+    --bg-list-hover: var(--dark-theme-bg-list-hover);
+    --bg-tooltip: var(--dark-theme-bg-tooltip);
+    --color-primary: var(--dark-theme-color-primary);
+    --color-secondary: var(--dark-theme-color-secondary);
+    --color-accent: var(--dark-theme-color-accent);
+    --color-accent-hover: var(--dark-theme-color-accent-hover);
+    --color-accent-foreground: var(--dark-theme-color-accent-foreground);
+    --color-link: var(--dark-theme-color-link);
+    --color-link-hover: var(--dark-theme-color-link-hover);
+    --color-code: var(--dark-theme-color-code);
+    --color-border: var(--dark-theme-color-border);
+    --color-buttons: var(--dark-theme-color-buttons);
+    --color-buttons-hover: var(--dark-theme-color-buttons-hover);
+    --color-buttons-inset: var(--dark-theme-color-buttons-inset);
+    --color-important: var(--dark-theme-color-important);
+    --color-shadow: var(--dark-theme-color-shadow);
+
+    --shadow-primary: 0 2px 20px 0 var(--color-shadow);
+    --shadow-secondary: 0 2px 10px 0 var(--color-shadow);
+    --filter-shadow-secondary: drop-shadow(0 2px 5px var(--color-shadow));
+
+    --filter-button-active: var(--dark-theme-filter-button-active);
+}
+
+body.theme-light {
+    --bg-page: var(--light-theme-bg-page);
+    --bg-primary: var(--light-theme-bg-primary);
+    --bg-subtle: var(--light-theme-bg-subtle);
+    --bg-input: var(--light-theme-bg-input);
+    --bg-code: var(--light-theme-bg-code);
+    --bg-code-inset: var(--light-theme-bg-code-inset);
+    --bg-list-hover: var(--light-theme-bg-list-hover);
+    --bg-tooltip: var(--light-theme-bg-tooltip);
+    --color-primary: var(--light-theme-color-primary);
+    --color-secondary: var(--light-theme-color-secondary);
+    --color-accent: var(--light-theme-color-accent);
+    --color-accent-hover: var(--light-theme-color-accent-hover);
+    --color-accent-foreground: var(--light-theme-color-accent-foreground);
+    --color-link: var(--light-theme-color-link);
+    --color-link-hover: var(--light-theme-color-link-hover);
+    --color-code: var(--light-theme-color-code);
+    --color-border: var(--light-theme-color-border);
+    --color-buttons: var(--light-theme-color-buttons);
+    --color-buttons-hover: var(--light-theme-color-buttons-hover);
+    --color-buttons-inset: var(--light-theme-color-buttons-inset);
+    --color-important: var(--light-theme-color-important);
+    --color-shadow: var(--light-theme-color-shadow);
+
+    --filter-button-active: var(--light-theme-filter-button-active);
+}
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ GENERAL ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
+/* Overriding redundant properties in original stylesheet */
 html,body {
-    /* Overriding redundant properties in original stylesheet */
     font-family: inherit;
     font-size: inherit;
     line-height: inherit;
 }
 
+/* Invisible psuedo-element just to extend body bounds for JS click dismissal purposes */
+body::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
 /* Text selection */
-::-moz-selection { background: var(--color-accent); color: var(--color-inverse); }
-::selection      { background: var(--color-accent); color: var(--color-inverse); }
+::-moz-selection { background: var(--color-accent); color: var(--color-accent-foreground); }
+::selection      { background: var(--color-accent); color: var(--color-accent-foreground); }
 
 h1, h2, h3, h4, h5, h6 {
     color: var(--color-primary);
@@ -142,8 +241,7 @@ pre code {
 table table *,
 pre code,
 table pre,
-.tools-element a::after,
-.tools-element span::after {
+.tools-button .tooltip {
     font-size: calc(var(--font-size-base) * 0.8);
 }
 
@@ -239,8 +337,12 @@ body {
 }
 
 /* Class added via Javascript */
-body.expanded-width {
+body.expanded-width-true {
     max-width: 100%;
+}
+
+body.expanded-width-instant {
+    transition: none; /* disable so on page load it's immediately wide */
 }
 
 /* Hide the theme background overlay + toggle button */
@@ -252,6 +354,13 @@ body.expanded-width {
 
 .clear {
     clear: both;
+}
+
+/* Optically match color of icons using `--color-secondary` to text color */
+li::marker,
+summary::before,
+.iconed::before {
+    opacity: 0.88; /* to optically match color of text. Same for all icons using `--color-secondary` */
 }
 
 
@@ -266,114 +375,234 @@ body.expanded-width {
 /* Buttons */
 .git-wiki-tools {
     width: 100%;
-    font-size: 0; /* hide all text for icons only styling */
-    text-indent: -999px; /* required, otherwise on mobile w/ touch the hidden text causes unexpected page width scaling between 280-400px wide */
     display: flex;
     flex-flow: wrap;
     align-items: baseline;
     justify-content: flex-end;
+    list-style: none;
+    padding-left: 0; /* override some inherited value */
     position: absolute;
     top: -25px;
     right: var(--spacing-primary);
 }
 
-.git-wiki-tools br {
-    width: var(--spacing-secondary);
-    content: ''; /* Content property required otherwise styling is ignored */
-    display: none; /* For icons only styling I've hidden this */
-}
-
-.tools-element {
-    width: 38px;
-    height: 38px;
+/* HTML/classes modified via custom `page_actions.html` */
+.tools-button,
+.tools-button .primary-button {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    padding: 0;
-    border: none;
-    margin: 0 var(--spacing-minor) calc(var(--spacing-minor) * 2) 0;
 }
 
-.tools-element:nth-last-child(2) {
+.tools-button {
+    padding: 0;
+    margin: 0 var(--spacing-minor) calc(var(--spacing-minor) * 2) 0;
+    z-index: 3; /* so tooltip doesn't dip below search box when :active */
+}
+
+.tools-button .primary-button {
+    width: 38px;
+    height: 38px;
+    cursor: pointer;
+    border: none;
+    border-radius: var(--radius-circle);
+    box-shadow: var(--shadow-secondary);
+}
+
+.tools-button.prose.new {
     margin-left: var(--spacing-secondary);
 }
 
-.tools-element a,
-.tools-element a:active,
-.tools-element a:active:hover,
-.tools-element span,
-.tools-element span:active,
-.tools-element span:active:hover {
+.tools-button .primary-button,
+.tools-button .primary-button:active,
+.tools-button .primary-button:active:hover {
     background: var(--color-buttons);
 }
 
-.tools-element a,
-.tools-element span {
-    width: 100%;
-    height: 100%;
-    color: var(--color-inverse);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: var(--radius-full);
-    box-shadow: var(--shadow-secondary);
-    z-index: 3; /* so ::after tooltip doesn't dip below search box when :active */
-}
-
-.tools-element a:hover,
-.tools-element span:hover {
+.tools-button .primary-button:hover {
     background: var(--color-buttons-hover);
 }
 
-.tools-element a:active,
-.tools-element span:active {
+.tools-button .primary-button:active {
     filter: var(--filter-button-active);
 }
 
-.tools-element a::before,
-.tools-element a::after,
-.tools-element span::before,
-.tools-element span::after {
+.tools-button .primary-button.iconed::before,
+.tools-button .tooltip {
     pointer-events: none; /* otherwise (for ::before at least) will block :active styling */
 }
 
-/* Button added via Javascript */
-.tools-element.page-expand span {
-    cursor: pointer;
+.tools-button .tooltip,
+.git-wiki-tools.menu-visible .tools-button:not(.menu-open) .tooltip /* hide all other tooltips beside the one with a menu active, to avoid tooltip overlaps */
+{
+    opacity: 0;
+    top: 60px;
 }
 
-/* Buttons - Tooltip */
-.tools-element a::after,
-.tools-element span::after {
+.tools-button .tooltip {
     width: max-content;
-    background: var(--bg-tooltips);
+    background: var(--bg-tooltip);
     color: var(--color-secondary);
-    text-indent: 0; /* un-indent text of parent */
-    content: '';
+    text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    opacity: 0;
+    flex-wrap: wrap;
+    cursor: default;
     padding: var(--spacing-minor) var(--spacing-secondary);
     border-radius: var(--radius-primary);
-    box-shadow: var(--shadow-secondary);
+    filter: var(--filter-shadow-secondary); /* to conform to entire shape of element, including pseudo-element */
     position: absolute;
-    top: 60px;
     z-index: 2;
-    transition: 150ms opacity ease-out, 150ms top ease-in;
+    transition: opacity 150ms ease-out, top 150ms ease-in;
 }
 
-.tools-element a:hover::after,
-.tools-element a:active::after,
-.tools-element span:hover::after,
-.tools-element span:active::after {
+.tools-button .primary-button:hover ~ .tooltip,
+.tools-button .primary-button:active ~ .tooltip,
+.tools-button.menu-open .tooltip.menu {
     opacity: 1;
     top: 55px;
 }
 
-/* Buttons - Icon */
-.tools-element a::before,
-.tools-element span::before {
+/* Tooltip/overflow menu pop-up */
+.tools-button .tooltip.menu {
+    max-width: 150px; /* workaround as unit-less values can't be used with transitions */
+    max-height: var(--height-menu-button);
+    user-select: none; /* prevent text selection */
+    transition: max-width 150ms ease-in-out, max-height 200ms ease-out, opacity 150ms ease-out, top 150ms ease-in;
+}
+
+.tools-button .tooltip.menu::before {
+    --height: 8px;
+    width: 20px;
+    height: var(--height);
+    background: var(--bg-tooltip);
+    content: '';
+    display: block;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%); /* triangle */
+    position: absolute;
+    top: 0;
+    transition: top 200ms ease-out;
+}
+
+.tools-button.menu-open .tooltip.menu::before {
+    top: calc(-1 * var(--height));
+}
+
+.tools-button .tooltip.menu > div {
+    flex-basis: 100%; /* force wrapping top-level children */
+}
+
+.tools-button.menu-open .tooltip.menu {
+    max-width: 210px;
+    max-height: 300px;
+    pointer-events: all;
+    padding-bottom: var(--spacing-secondary);
+}
+
+.tools-button .tooltip.menu .menu-content {
+    width: 0;
+    height: 0;
+    opacity: 0;
+    margin-top: var(--spacing-minor);
+    position: relative;
+    top: 5px;
+    transition: width 150ms ease-in-out, height 200ms ease-out, opacity 150ms ease-in, top 150ms ease-in; /* timing functions of dimensions to match parent */
+}
+
+.tools-button.menu-open .tooltip.menu .menu-content {
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    top: 0;
+}
+
+.tools-button .tooltip.menu hr {
+    background: var(--bg-primary);
+    margin: var(--spacing-secondary) 0;
+}
+
+.tools-button .tooltip.menu .menu-button {
+    width: 100%;
+    border-radius: var(--radius-full);
+    border: var(--border-width) solid var(--color-buttons-inset);
+}
+
+.tools-button .tooltip.menu .menu-button:hover {
+    border-color: var(--color-buttons-hover);
+}
+
+.tools-button .tooltip.menu .menu-button:active,
+.tools-button .tooltip.menu .menu-button.active {
+    border-color: var(--color-accent);
+}
+
+.tools-button .tooltip.menu .menu-button a {
+    width: 100%;
+    height: calc(var(--height-menu-button) - (var(--border-width) * 2));
+    color: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+    cursor: pointer;
+}
+
+.tools-button .tooltip.menu .menu-button .iconed.label {
+    display: inline-flex;
+    align-items: center;
+}
+
+/* Radio buttons */
+.tools-button .tooltip.menu .menu-radio {
+    display: flex;
+    gap: var(--spacing-minor);
+}
+
+.tools-button .tooltip.menu .menu-radio ~ .menu-radio {
+    margin-top: calc(var(--spacing-minor) * 2);
+}
+
+.tools-button .tooltip.menu .menu-radio .active {
+    position: relative;
+}
+
+/* Active setting badge indicator */
+.tools-button .tooltip.menu .menu-radio .menu-button::before,
+.tools-button .tooltip.menu .menu-radio .menu-button::after {
+    width: 18px;
+    height: 18px;
+    background: var(--color-accent);
+    content: '';
+    display: block;
+    opacity: 0;
+    border-radius: var(--radius-circle);
+    position: absolute;
+    top: calc(-1 * var(--border-width) - 3px);
+    right: calc(-1 * var(--border-width));
+    transform: scale(0);
+    transform-origin: 50% 50%;
+    transition: transform 200ms var(--timing-bezier-1);
+    z-index: 1;
+}
+
+.tools-button .tooltip.menu .menu-radio .menu-button::before {
+    box-shadow: var(--shadow-secondary);
+}
+
+.tools-button .tooltip.menu .menu-radio .menu-button::after {
+    background: var(--color-accent-foreground);
+    transition: opacity 200ms var(--timing-bezier-1);
+}
+
+.tools-button .tooltip.menu .menu-radio .menu-button.active::before,
+.tools-button .tooltip.menu .menu-radio .menu-button.active::after {
+    transform: scale(1);
+    opacity: 1;
+}
+
+/* Buttons - icons. Named such so they can also be reused in documentation */
+.iconed.icon-toolbar::before {
     width: 24px;
     height: 24px;
     background: var(--color-secondary);
@@ -381,102 +610,110 @@ body.expanded-width {
     display: block;
 }
 
-/* Buttons - Add new page */
-.tools-element:nth-of-type(1) a::before {
+/* For buttons with icon + text label */
+.tools-button .tooltip.menu .iconed.label::before {
+    margin-right: var(--spacing-minor);
+}
+
+.tools-button .tooltip.menu .iconed.label.dim::before {
+    opacity: 0.5; /* dim icon to attract less attention. Made for delete button */
+}
+
+.tools-button .tooltip.menu .menu-radio .menu-button.active::after {
+    -webkit-mask-image: url("/assets/images/ui.svg#icons-badge-tick");
+    mask-image: url("/assets/images/ui.svg#icons-badge-tick");
+}
+
+.icon-toolbar.icon-add::before {
     -webkit-mask-image: url("/assets/images/ui.svg#icons-editing-add");
     mask-image: url("/assets/images/ui.svg#icons-editing-add");
 }
-.tools-element:nth-of-type(1) a::after {
-    content: 'Add New Page';
-}
 
-/* Buttons - Edit page */
-.tools-element:nth-of-type(2) a::before {
+.icon-toolbar.icon-edit::before {
     -webkit-mask-image: url("/assets/images/ui.svg#icons-editing-edit");
     mask-image: url("/assets/images/ui.svg#icons-editing-edit");
 }
-.tools-element:nth-of-type(2) a::after {
-    content: 'Edit Page';
-}
 
-/* Buttons - Delete page */
-.tools-element:nth-of-type(3) a::before {
-    -webkit-mask-image: url("/assets/images/ui.svg#icons-editing-delete");
-    mask-image: url("/assets/images/ui.svg#icons-editing-delete");
-}
-.tools-element:nth-of-type(3) a::after {
-    content: 'Delete Page';
-}
-
-/* Buttons - Page history */
-.tools-element:nth-of-type(4) a::before {
+.icon-toolbar.icon-history::before {
     -webkit-mask-image: url("/assets/images/ui.svg#icons-editing-history");
     mask-image: url("/assets/images/ui.svg#icons-editing-history");
 }
-.tools-element:nth-of-type(4) a::after {
-    content: 'Page History';
-}
 
-/* Buttons - Page source */
-.tools-element:nth-of-type(5) a::before {
+.icon-toolbar.icon-source::before {
     -webkit-mask-image: url("/assets/images/ui.svg#icons-editing-source");
     mask-image: url("/assets/images/ui.svg#icons-editing-source");
 }
-.tools-element:nth-of-type(5) a::after {
-    content: 'Page Source';
-}
 
-/* Buttons - Wiki expand width (added via Javascript) */
-.tools-element.page-expand span::before {
+.icon-toolbar.icon-expand::before {
     -webkit-mask-image: url("/assets/images/ui.svg#icons-page-expand-expand");
     mask-image: url("/assets/images/ui.svg#icons-page-expand-expand");
 }
-body.expanded-width .tools-element.page-expand span::before {
+
+body.expanded-width-true .icon-toolbar.icon-expand::before {
     -webkit-mask-image: url("/assets/images/ui.svg#icons-page-expand-contract");
     mask-image: url("/assets/images/ui.svg#icons-page-expand-contract");
 }
-.tools-element.page-expand span::after {
-    content: 'Expand Wiki Width';
+
+.icon-toolbar.icon-overflow::before {
+    -webkit-mask-image: url("/assets/images/ui.svg#icons-overflow-menu");
+    mask-image: url("/assets/images/ui.svg#icons-overflow-menu");
 }
-body.expanded-width .tools-element.page-expand span::after {
-    content: 'Contract Wiki Width';
+
+.icon-toolbar.icon-themes-dark::before {
+    -webkit-mask-image: url("/assets/images/ui.svg#icons-themes-dark");
+    mask-image: url("/assets/images/ui.svg#icons-themes-dark");
+}
+
+.icon-toolbar.icon-themes-light::before {
+    -webkit-mask-image: url("/assets/images/ui.svg#icons-themes-light");
+    mask-image: url("/assets/images/ui.svg#icons-themes-light");
+}
+
+.icon-toolbar.icon-delete::before {
+    -webkit-mask-image: url("/assets/images/ui.svg#icons-editing-delete");
+    mask-image: url("/assets/images/ui.svg#icons-editing-delete");
 }
 
 /* Buttons - Prose.io */
-.tools-element:nth-last-of-type(2) a,
-.tools-element:nth-last-of-type(2) a:active,
-.tools-element:nth-last-of-type(2) a:active:hover,
-.tools-element:nth-last-of-type(1) a,
-.tools-element:nth-last-of-type(1) a:active,
-.tools-element:nth-last-of-type(1) a:active:hover {
+.tools-button.prose .primary-button,
+.tools-button.prose .primary-button:active,
+.tools-button.prose .primary-button:active:hover,
+#git-wiki-content .iconed.icon-toolbar.prose::before /* for documentation */
+{
     background: var(--color-accent);
 }
-.tools-element:nth-last-of-type(2) a:hover,
-.tools-element:nth-last-of-type(1) a:hover {
+
+.tools-button.prose .primary-button:hover {
     background: var(--color-accent-hover);
 }
-.tools-element:nth-last-of-type(2) a::before,
-.tools-element:nth-last-of-type(1) a::before {
-    background: var(--color-inverse);
+
+.tools-button.prose .primary-button.iconed::before {
+    background: var(--color-accent-foreground);
 }
 
-/* Buttons - Prose.io - Add new page */
-.tools-element:nth-last-of-type(2) a::before {
-    -webkit-mask-image: url("/assets/images/ui.svg#icons-editing-add");
-    mask-image: url("/assets/images/ui.svg#icons-editing-add");
-}
-.tools-element:nth-last-of-type(2) a::after {
-    content: 'Prose.io - Add New Page';
+/* Buttons - Graphic/image-based */
+.tools-button .graphic-button::before {
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-accent);
+    background-repeat: no-repeat;
+    content: '';
+    display: block;
+    border-radius: var(--radius-full);
 }
 
-/* Buttons - Prose.io - Edit page */
-.tools-element:nth-last-of-type(1) a::before {
-    -webkit-mask-image: url("/assets/images/ui.svg#icons-editing-edit");
-    mask-image: url("/assets/images/ui.svg#icons-editing-edit");
+.tools-button .header-graphic-switcher-default .graphic-button::before {
+    background-image: var(--header-graphic-default);
+    background-size: 80px; /* using absolute rather than relative units to avoid scaling when menu toggled */
+    background-position: 1px -26px;
 }
-.tools-element:nth-last-of-type(1) a::after {
-    content: 'Prose.io - Edit Page';
+
+.tools-button .header-graphic-switcher-second .graphic-button::before {
+    background-image: var(--header-graphic-second);
+    background-size: 115px;
+    background-position: -30px -17px;
 }
+
 
 /* Search */
 #search-input {
@@ -502,7 +739,8 @@ body.expanded-width .tools-element.page-expand span::after {
     position: relative; /* position text above background pseudo-element */
 }
 
-#results-container li a:hover {
+#results-container li a:hover,
+#results-container li a:active {
     background: var(--bg-list-hover);
 }
 
@@ -536,6 +774,30 @@ body > .wrapper {
     flex: 1 1 auto;
     padding-left: 0;
     margin: 0 0 50px 0;
+}
+
+/* Page heading, category tag list */
+.page-heading {
+    margin-bottom: var(--spacing-secondary);
+}
+
+#tag-list {
+    margin-bottom: var(--spacing-intermediate);
+}
+
+.tag-list-heading {
+    margin-right: calc(var(--spacing-minor) * 2);
+}
+
+.tag-list-tag {
+    background: var(--bg-subtle);
+    font-size: var(--font-size-small);
+    font-weight: var(--font-weight-semibold);
+    line-height: initial;
+    display: inline-flex;
+    padding: var(--spacing-minor) calc(var(--spacing-minor) * 2);
+    border-radius: var(--radius-full);
+    margin-right: var(--spacing-minor);
 }
 
 /* Spoiler boxes */
@@ -742,7 +1004,7 @@ blockquote.important {
 .infobox .title {
     width: 100%;
     background: var(--color-accent);
-    color: var(--color-inverse);
+    color: var(--color-accent-foreground);
     text-align: center;
     font-weight: var(--font-weight-semibold);
     padding: var(--spacing-minor) var(--spacing-secondary);
@@ -956,45 +1218,152 @@ body.darkmode--activated .darkmode-ignore {
 }
 
 .medium-zoom-image--opened {
-    position: relative;
     cursor: pointer;
     cursor: zoom-out;
+    position: relative;
     will-change: transform;
+}
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~ SIDEBAR: HEADER GRAPHIC ~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* Once mobile viewport kicks in the desktop logo element is auto hidden */
+
+.header-graphic-desktop {
+    width: 204px;
+    height: 204px;
+    margin-left: 22px;
+    filter: var(--filter-shadow-secondary);
+    position: absolute;
+    top: -230px;
+    z-index: 3;
+    transition: transform 250ms ease-out;
+}
+
+.header-graphic-desktop:hover {
+    transform: rotateZ(-4deg) rotateY(-15deg);
+}
+
+.header-graphic-desktop.animate {
+    animation: anim-header-graphic-scale 900ms;
+}
+
+.header-graphic-desktop-mask,
+.header-graphic-desktop-image {
+    width: 100%;
+    height: 100%;
+}
+
+.header-graphic-desktop-mask {
+    background-color: var(--color-accent);
+    clip-path: circle(50% at 50% 50%);
+    transition: background-color 250ms ease-in;
+}
+
+.header-graphic-desktop:hover .header-graphic-desktop-mask {
+    background-color: var(--color-accent-hover);
+}
+
+.header-graphic-desktop.animate .header-graphic-desktop-mask {
+    animation: anim-header-graphic-bg-color 900ms;
+}
+
+.header-graphic-desktop-image::before,
+.header-graphic-desktop-image::after {
+    width: 100%;
+    height: 100%;
+    background-image: var(--header-graphic-to);
+    background-size: contain;
+    background-repeat: no-repeat;
+    content: '';
+    display: block;
+    position: absolute;
+}
+
+.header-graphic-desktop-image::after {
+    background-image: var(--header-graphic-from);
+    display: none;
+}
+
+.header-graphic-desktop-image::before,
+.header-graphic-default .header-graphic-desktop-image::before,
+#git-wiki-mobile-header a::before,
+.header-graphic-default #git-wiki-mobile-header a::before {
+    --header-graphic-to: var(--header-graphic-default); /* Javascript will change these variables on click via an inline style, for animation purposes */
+}
+
+.header-graphic-second .header-graphic-desktop-image::before,
+.header-graphic-second #git-wiki-mobile-header a::before {
+    --header-graphic-to: var(--header-graphic-second);
+}
+
+.header-graphic-second #git-wiki-mobile-header a::before {
+    transform: scale(1.3) translateY(2.5px); /* for a more pleasant visual balance */
+}
+
+.header-graphic-desktop-image.animate::before,
+.header-graphic-desktop-image.animate::after {
+    --gradient: linear-gradient(45deg, #fff 45%, #0000 55%);  /* Unclear why `#0000` works but `#000` doesn't */
+    animation: anim-header-graphic-swipe 500ms forwards;
+}
+
+.header-graphic-desktop-image.animate::after {
+    --gradient: linear-gradient(45deg, #0000 45%, #fff 55%);
+    display: block;
+}
+
+#git-wiki-mobile-header a.animate::before {
+    animation: anim-header-mobile-graphic-swap 500ms;
+}
+
+@keyframes anim-header-graphic-scale {
+    5%       { transform: scale(1); animation-timing-function: var(--timing-bezier-1); }
+    10%,85%  { transform: scale(1.08); }
+    90%      { animation-timing-function: var(--timing-bezier-2); }
+    90%,100% { transform: scale(1); }
+}
+
+@keyframes anim-header-graphic-bg-color {
+    0%,30%,70%,100% { background-color: var(--color-accent); }
+    50%             { background-color: var(--color-accent-hover); }
+}
+
+@keyframes anim-header-graphic-swipe {
+    0%,60%,100% {
+        -webkit-mask-image: var(--gradient);
+        mask-image: var(--gradient);
+        -webkit-mask-size: 300% 100%;
+        mask-size: 300% 100%;
+        -webkit-mask-position: -50% 0;
+        mask-position: -50% 0;
+    }
+    100% {
+        -webkit-mask-position: -150% 0;
+        mask-position: -150% 0;
+    }
+}
+
+@keyframes anim-header-mobile-graphic-swap {
+    0%,100% {
+        background-image: var(--header-graphic-from);
+        opacity: 1;
+    }
+    50.00% {
+        background-image: var(--header-graphic-from);
+        opacity: 0;
+    }
+    50.01%,100% {
+        background-image: var(--header-graphic-to);
+    }
 }
 
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ SIDEBAR ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
-/* Hide 'Pages (Last <n> Updated)' list since date modified Jekyll plugin not allowed by Github Actions (assumes this list is last in sidebar) */
-.page-list-title, .page-list-title + ul,
+.page-list-title, .page-list-title + ul, /* Hide 'Pages (Last <n> Updated)' list since date modified Jekyll plugin not allowed by Github Actions (assumes this list is last in sidebar) */
 /* Hide site logo (uses alternative) */
 .git-wiki-main-logo img,
 #git-wiki-mobile-header img[src$="/site-logo.png"] {
     display: none;
-}
-
-/* Paz emblem graphic. Once mobile JS kicks in at narrower viewport the h1 element is auto removed, hiding this. */
-#git-wiki-sidebar h1::before {
-    width: 204px;
-    height: 204px;
-    content: '';
-    display: block;
-    background-color: var(--color-accent);
-    background-image: url("/assets/images/paz-emblem.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    border-radius: var(--radius-full);
-    margin-left: 22px;
-    box-shadow: var(--shadow-secondary);
-    transition: 250ms transform ease-out, 250ms background-color ease-in;
-    position: absolute;
-    top: -230px;
-    z-index: 3;
-}
-
-#git-wiki-sidebar h1:hover::before {
-    background-color: var(--color-accent-hover);
-    transform: rotateZ(-4deg) rotateY(-15deg);
 }
 
 #git-wiki-sidebar {
@@ -1010,15 +1379,10 @@ body.darkmode--activated .darkmode-ignore {
     z-index: 4; /* to match mobile top header in order for hamburger close button to become visible */
 }
 
-/* Inexplicably there's another selector for the sidebar :p */
+/* Overriding default theme's additional sidebar selector */
 .w3-sidebar {
     background-color: var(--bg-primary);
     height: auto;
-}
-
-/* Hide 'View My Github Profile' link */
-#git-wiki-sidebar .view {
-    display: none;
 }
 
 #git-wiki-sidebar h1 {
@@ -1028,24 +1392,9 @@ body.darkmode--activated .darkmode-ignore {
 
 /* Scroll sidebar with page */
 #git-wiki-sidebar > div {
+    --header-graphic-offset: 245px;  /* to account for Paz emblem */
     position: sticky;
-    top: 245px; /* to account for Paz emblem */
-}
-
-/* Download repo buttons */
-#git-wiki-sidebar .git-wiki-downloads {
-    display: none;
-}
-
-/* Page lists - Re-ordering 'Menu' above recently updated list */
-.git-wiki-page-list {
-    display: flex;
-    flex-flow: wrap;
-}
-
-.page-list-title,
-.page-list {
-    order: 3;
+    top: var(--header-graphic-offset);
 }
 
 .git-wiki-page-list > ul {
@@ -1053,25 +1402,154 @@ body.darkmode--activated .darkmode-ignore {
     margin-top: var(--spacing-minor);
 }
 
-/* Make sidebar lists more clickable/presentable */
 .git-wiki-page-list ul {
-    padding: 0;
+    padding: 0 0 var(--spacing-secondary);
+}
+
+.git-wiki-page-list ul:not(:last-child) {
+    border-bottom: var(--border-width) solid var(--color-border);
+}
+
+.git-wiki-page-list ul:last-child {
+    margin-bottom: var(--spacing-minor); /* only relevant for mobile menu */
 }
 
 .git-wiki-page-list li {
+    break-inside: avoid-column; /* prevents icon mask issue in Chromium */
     display: block;
 }
 
 .git-wiki-page-list li a {
+    color: var(--color-secondary);
     font-weight: var(--font-weight-semibold);
-    display: block;
+    display: flex;
+    align-items: center;
     padding: var(--spacing-minor) calc(var(--spacing-minor) * 2);
-    border-bottom: var(--border-width) solid var(--bg-subtle);
+    border-radius: var(--radius-primary);
 }
 
 .git-wiki-page-list li a:hover,
 .git-wiki-page-list li a:active {
     background: var(--bg-subtle);
+}
+
+.git-wiki-page-list li a:hover {
+    color: var(--color-link);
+}
+
+.git-wiki-page-list li a:active {
+    color: var(--color-link-hover);
+}
+
+.git-wiki-page-list li .label {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: block;
+    overflow: hidden;
+}
+
+
+/* Counter badges */
+.git-wiki-page-list .count-badge::after {
+    max-width: 90px;
+    background: var(--bg-subtle);
+    color: var(--color-secondary);
+    content: attr(data-count); /* assumes this custom HTML attribute has been added to element (using eg. Jekyll) */
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    padding: 0 calc(var(--spacing-minor) * 2);
+    border-radius: var(--radius-full);
+    margin-left: auto;
+}
+
+.git-wiki-page-list .count-badge .label {
+    margin-right: var(--spacing-minor);
+}
+
+/* Icons */
+.iconed.icon-sidebar::before {
+    width: 22px; /* icons are based on 16x16px bounds, however for minor optical equivalence some icons reach 18px. Extra width just gives more headroom. */
+    height: 22px;
+    background: var(--color-secondary);
+    content: '';
+    display: inline-block;
+    flex-shrink: 0; /* prevent parent flexbox scaling from making width smaller if sibling elements grow */
+    margin: 0 calc(var(--spacing-minor) - 2px) -2px 0; /* offset to account for increased icon bounds */
+    -webkit-mask-position: -2px -2px;
+    -webkit-mask-repeat: no-repeat;
+    mask-position: -2px -2px;
+    mask-repeat: no-repeat;
+}
+
+/* For use in documentation */
+#git-wiki-content .iconed.icon-sidebar::before {
+    margin: 4px 2px 0;
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+}
+
+.git-wiki-page-list li .iconed:hover::before {
+    background: var(--color-link);
+}
+
+.git-wiki-page-list li .iconed:active::before {
+    background: var(--color-link-hover);
+}
+
+.icon-sidebar.icon-diamond::before {
+    -webkit-mask-image: url("/assets/images/ui.svg#icons-sidebar-diamond");
+    mask-image: url("/assets/images/ui.svg#icons-sidebar-diamond");
+}
+
+.icon-sidebar.icon-open-pages::before {
+    -webkit-mask-image: url("/assets/images/ui.svg#icons-sidebar-open-pages");
+    mask-image: url("/assets/images/ui.svg#icons-sidebar-open-pages");
+}
+
+.icon-sidebar.icon-package::before {
+    -webkit-mask-image: url("/assets/images/ui.svg#icons-sidebar-package");
+    mask-image: url("/assets/images/ui.svg#icons-sidebar-package");
+}
+
+.icon-sidebar.icon-tag::before {
+    -webkit-mask-image: url("/assets/images/ui.svg#icons-sidebar-tag");
+    mask-image: url("/assets/images/ui.svg#icons-sidebar-tag");
+}
+
+.icon-sidebar.icon-text-caret::before {
+    -webkit-mask-image: url("/assets/images/ui.svg#icons-sidebar-text-caret");
+    mask-image: url("/assets/images/ui.svg#icons-sidebar-text-caret");
+}
+
+.icon-sidebar.icon-curly-brackets::before {
+    -webkit-mask-image: url("/assets/images/ui.svg#icons-sidebar-curly-brackets");
+    mask-image: url("/assets/images/ui.svg#icons-sidebar-curly-brackets");
+}
+
+.icon-sidebar.icon-lightbulb::before {
+    -webkit-mask-image: url("/assets/images/ui.svg#icons-sidebar-lightbulb");
+    mask-image: url("/assets/images/ui.svg#icons-sidebar-lightbulb");
+}
+
+.icon-sidebar.icon-globe::before {
+    -webkit-mask-image: url("/assets/images/ui.svg#icons-sidebar-globe");
+    mask-image: url("/assets/images/ui.svg#icons-sidebar-globe");
+}
+
+.icon-sidebar.icon-discord::before {
+    -webkit-mask-image: url("/assets/images/ui.svg#icons-sidebar-discord");
+    mask-image: url("/assets/images/ui.svg#icons-sidebar-discord");
+}
+
+.icon-sidebar.icon-nexusmods::before {
+    -webkit-mask-image: url("/assets/images/ui.svg#icons-sidebar-nexusmods");
+    mask-image: url("/assets/images/ui.svg#icons-sidebar-nexusmods");
+}
+
+.icon-sidebar.icon-tool::before {
+    -webkit-mask-image: url("/assets/images/ui.svg#icons-sidebar-tool");
+    mask-image: url("/assets/images/ui.svg#icons-sidebar-tool");
 }
 
 
@@ -1104,7 +1582,7 @@ body.darkmode--activated .darkmode-ignore {
 #git-wiki-mobile-header > button,
 #git-wiki-mobile-header > button:hover,
 #git-wiki-mobile-header > button:focus {
-    color: var(--color-inverse) !important;
+    color: var(--color-accent-foreground) !important;
     background: none !important;
     outline: none;
 }
@@ -1131,7 +1609,7 @@ body.darkmode--activated .darkmode-ignore {
     height: 24px;
     content: '';
     display: block;
-    background: var(--color-inverse);
+    background: var(--color-accent-foreground);
     -webkit-mask-image: url("/assets/images/ui.svg#icons-hamburger-menu");
     mask-image: url("/assets/images/ui.svg#icons-hamburger-menu");
 }
@@ -1144,7 +1622,7 @@ body.darkmode--activated .darkmode-ignore {
 /* Paz emblem */
 #git-wiki-mobile-header a {
     height: 100%;
-    color: var(--color-inverse);
+    color: var(--color-accent-foreground);
     font-size: 19px;
     font-weight: var(--font-weight-bold);
     display: flex;
@@ -1155,14 +1633,16 @@ body.darkmode--activated .darkmode-ignore {
 }
 
 #git-wiki-mobile-header a::before {
+    --header-graphic-to: var(--header-graphic-default);
+    background-image: var(--header-graphic-to);
     content: '';
     display: inline-block;
     width: var(--height-mobile-header);
     height: 100%;
-    background-image: url("/assets/images/paz-emblem.png");
     background-size: contain;
     background-repeat: no-repeat;
     margin-right: calc(var(--spacing-minor) * 2);
+    transition: transform 200ms;
 }
 
 
@@ -1190,6 +1670,98 @@ footer {
 }
 
 
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ THEMES RELATED ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* Note: to avoid more copies of code the styling of this section is only active when body has class added via JS (ie: users with JS disabled won't see them) */
+
+/* Code within tables so it's not white-on-white background */
+.theme-light table code,
+.theme-light blockquote code {
+    background: var(--bg-code-inset);
+}
+
+/* Code block within blockquote */
+.theme-light blockquote:not(.important) > .highlighter-rouge > .highlight > pre {
+    border: var(--border-width) solid var(--color-border);
+}
+
+.theme-light blockquote > .highlighter-rouge > .highlight > pre code {
+    background: var(--bg-code);
+}
+
+/* Rouge syntax highlighting */
+.theme-light .highlight span {
+    filter: brightness(0.75) saturate(1.2);
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ MEDIA QUERIES - THEMES ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/* Copies of .body blocks from global definitions */
+@media (prefers-color-scheme: light) {
+
+    body {
+        --bg-page: var(--light-theme-bg-page);
+        --bg-primary: var(--light-theme-bg-primary);
+        --bg-subtle: var(--light-theme-bg-subtle);
+        --bg-input: var(--light-theme-bg-input);
+        --bg-code: var(--light-theme-bg-code);
+        --bg-code-inset: var(--light-theme-bg-code-inset);
+        --bg-list-hover: var(--light-theme-bg-list-hover);
+        --bg-tooltip: var(--light-theme-bg-tooltip);
+        --color-primary: var(--light-theme-color-primary);
+        --color-secondary: var(--light-theme-color-secondary);
+        --color-accent: var(--light-theme-color-accent);
+        --color-accent-hover: var(--light-theme-color-accent-hover);
+        --color-accent-foreground: var(--light-theme-color-accent-foreground);
+        --color-link: var(--light-theme-color-link);
+        --color-link-hover: var(--light-theme-color-link-hover);
+        --color-code: var(--light-theme-color-code);
+        --color-border: var(--light-theme-color-border);
+        --color-buttons: var(--light-theme-color-buttons);
+        --color-buttons-hover: var(--light-theme-color-buttons-hover);
+        --color-buttons-inset: var(--light-theme-color-buttons-inset);
+        --color-important: var(--light-theme-color-important);
+        --color-shadow: var(--light-theme-color-shadow);
+
+        --filter-button-active: var(--light-theme-filter-button-active);
+    }
+
+}
+
+@media (prefers-color-scheme: dark) {
+
+    body {
+        --bg-page: var(--dark-theme-bg-page);
+        --bg-primary: var(--dark-theme-bg-primary);
+        --bg-subtle: var(--dark-theme-bg-subtle);
+        --bg-input: var(--dark-theme-bg-input);
+        --bg-code: var(--dark-theme-bg-code);
+        --bg-list-hover: var(--dark-theme-bg-list-hover);
+        --bg-tooltip: var(--dark-theme-bg-tooltip);
+        --color-primary: var(--dark-theme-color-primary);
+        --color-secondary: var(--dark-theme-color-secondary);
+        --color-accent: var(--dark-theme-color-accent);
+        --color-accent-hover: var(--dark-theme-color-accent-hover);
+        --color-accent-foreground: var(--dark-theme-color-accent-foreground);
+        --color-link: var(--dark-theme-color-link);
+        --color-link-hover: var(--dark-theme-color-link-hover);
+        --color-code: var(--dark-theme-color-code);
+        --color-border: var(--dark-theme-color-border);
+        --color-buttons: var(--dark-theme-color-buttons);
+        --color-buttons-hover: var(--dark-theme-color-buttons-hover);
+        --color-buttons-inset: var(--dark-theme-color-buttons-inset);
+        --color-important: var(--dark-theme-color-important);
+        --color-shadow: var(--dark-theme-color-shadow);
+
+        --shadow-primary: 0 2px 20px 0 var(--color-shadow);
+        --shadow-secondary: 0 2px 10px 0 var(--color-shadow);
+        --filter-shadow-secondary: drop-shadow(0 2px 5px var(--color-shadow));
+
+        --filter-button-active: var(--dark-theme-filter-button-active);
+    }
+
+}
+
+
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ MEDIA QUERIES ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 @media print, screen and (max-width: 992px) {
@@ -1210,8 +1782,8 @@ footer {
         right: 0;
     }
 
-    .tools-element.page-expand {
-        display: none; /* unneeded since page already becomes max width */
+    .tools-button.page-width-toggle {
+        display: none; /* button unnecessary since page already becomes max width */
     }
 
     .git-wiki-page .left,
@@ -1223,49 +1795,79 @@ footer {
         max-width: 45%;
     }
 
-    #git-wiki-sidebar,
-    .menu-closed #git-wiki-sidebar {
-        display: none;
-    }
-
-    .menu-open #git-wiki-sidebar {
-        display: block;
-    }
-
     #git-wiki-sidebar {
-        width: 100% !important;
+        width: calc(100% - var(--spacing-minor) * 2) !important;
         max-width: 100%;
-        background: var(--bg-mobile-menu);
+        background: var(--bg-tooltip);
+        display: block;
         padding-top: var(--spacing-secondary);
         padding-right: 0;
         border: none;
-        border-radius: 0;
+        border-radius: var(--radius-primary);
+        margin: 0 var(--spacing-minor);
         position: fixed !important;
-        top: var(--height-mobile-header);
+        top: calc(var(--height-mobile-header) + var(--spacing-secondary));
         left: 0;
+        filter: var(--filter-shadow-secondary);
+        transition: max-height 200ms ease-out, opacity 150ms ease-out, top 150ms ease-in;
     }
 
-    #git-wiki-sidebar::before,
-    #git-wiki-sidebar::after {
-        width: 100%;
-        height: 30px;
-        content: '';
-        display: block;
-        box-shadow: var(--shadow-primary);
-        position: fixed;
-        z-index: -1; /* place below sidebar content */
+    #git-wiki-sidebar,
+    .menu-closed #git-wiki-sidebar {
+        max-height: 100px;
+        opacity: 0;
+        top: calc(var(--height-mobile-header) + var(--spacing-minor) * 2);
         pointer-events: none;
     }
 
-    #git-wiki-sidebar::after {
-        margin-top: -30px;
-        clip-path: polygon(0 100%, 100% 100%, 100% 200%, 0% 200%); /* mask to only display from end of menu and below */
+    .menu-open #git-wiki-sidebar {
+        max-height: 100vh;
+        opacity: 1;
+        top: calc(var(--height-mobile-header) + var(--spacing-minor));
+        pointer-events: auto;
     }
 
+    /* Copy of tooltip menu pseudo-element styling */
     #git-wiki-sidebar::before {
-        height: var(--height-mobile-header);
-        box-shadow: var(--shadow-primary); /* used pseudo-element instead of applying to element itself to both avoid overlap on same z-index and so if had used inset it doesn't inset on left/right edges */
+        --height: 8px;
+        width: 20px;
+        height: var(--height);
+        background: var(--bg-tooltip);
+        content: '';
+        display: block;
+        clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+        position: absolute;
         top: 0;
+        left: calc(var(--spacing-minor) * 2);
+        transition: top 200ms ease-out;
+    }
+
+    .menu-open #git-wiki-sidebar::before {
+        top: calc(-1 * var(--height));
+    }
+
+    /* Behind menu overlay, like lightbox */
+    body > .wrapper::before {
+        background: var(--bg-page);
+        content: '';
+        display: block;
+        opacity: 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        pointer-events: none;
+        z-index: 4;
+        transition: opacity 500ms;
+    }
+
+    body > .wrapper.menu-open::before {
+        opacity: 0.8;
+    }
+
+    .menu-open .git-wiki-page > section {
+        pointer-events: none; /* prevent interactable elements being clicked behind menu */
     }
 
     #git-wiki-sidebar > div {
@@ -1273,41 +1875,21 @@ footer {
     }
 
     .git-wiki-page-list {
-        /* Padding-left for orphaned text (un-targetable text with no container element) */
-        padding: 0 0 0 var(--spacing-secondary);
+        padding: 0 var(--spacing-secondary);
     }
 
     .git-wiki-page-list > ul {
-        /* Values to counteract the padding introduced by the parent container for orphan text */
-        width: calc(100% + var(--spacing-secondary));
-        margin: var(--spacing-minor) calc(-1 * var(--spacing-secondary)) var(--spacing-primary);
         columns: 2;
         column-gap: 0;
-        position: relative;
     }
 
-    /* Create faux border bottom so lists always appear with full-width border line, for odd number of items */
-    .git-wiki-page-list > ul::after {
-        width: 100%;
-        height: var(--border-width);
-        background: var(--bg-subtle);
-        content: '';
-        display: block;
-        position: absolute;
-        left: 0;
-        bottom: 0;
+    .git-wiki-page-list ul:not(:last-child) {
+        border-color: var(--bg-primary);
     }
 
-    .git-wiki-page-list li {
-        overflow: hidden;
-        white-space: nowrap;
-    }
-
-    .git-wiki-page-list li a {
-        color: var(--color-primary);
-        overflow: hidden;
-        text-overflow: ellipsis;
-        padding: var(--spacing-minor) var(--spacing-secondary);
+    .git-wiki-page-list li a:active,
+    .git-wiki-page-list .count-badge::after {
+        background: var(--bg-primary);
     }
 
 }
@@ -1334,7 +1916,6 @@ footer {
 
 @media print, screen and (max-width: 700px) {
 
-    /* Join into one column */
     ol.split,
     ul.split,
     ol.index,
@@ -1398,16 +1979,7 @@ footer {
         left: -15px;
     }
 
-    .git-wiki-page-list > ul {
-        columns: 1;
-    }
-
-    .tools-element {
-        width: 34px;
-        height: 34px;
-    }
-
-    .tools-element a::after {
+    .tools-button .tooltip:not(.tooltip.menu) {
         display: none; /* hide tooltips at narrowest viewports to avoid page width issue from the text */
     }
 
@@ -1415,6 +1987,23 @@ footer {
         width: 100%;
         margin: 0 0 var(--spacing-primary);
         float: none;
+    }
+
+}
+
+@media print, screen and (max-width: 480px) {
+
+    .git-wiki-page-list > ul {
+        columns: 1;
+    }
+
+}
+
+@media print, screen and (max-width: 400px) {
+
+    .tools-button .primary-button {
+        width: 34px;
+        height: 34px;
     }
 
 }
@@ -1624,7 +2213,7 @@ footer {
     font-style: italic;
     font-weight: 400;
     src:url('/assets/fonts/kibur/regular-italic-range-1.woff2') format('woff2');
-    unicode-range: u+0400-045f,u+0490-0491,u+04b0-04b1,u+2116
+    unicode-range: u+0400-045f,u+0490-0491,u+04b0-04b1,u+2116;
 }
 
 @font-face {
@@ -1632,7 +2221,7 @@ footer {
     font-style: italic;
     font-weight: 400;
     src:url('/assets/fonts/kibur/regular-italic-range-2.woff2') format('woff2');
-    unicode-range: u+0590-05ff,u+20aa,u+25cc,u+fb1d-fb4f
+    unicode-range: u+0590-05ff,u+20aa,u+25cc,u+fb1d-fb4f;
 }
 
 @font-face {
@@ -1640,7 +2229,7 @@ footer {
     font-style: italic;
     font-weight: 400;
     src:url('/assets/fonts/kibur/regular-italic-range-3.woff2') format('woff2');
-    unicode-range: u+0100-024f,u+0259,u+1e??,u+2020,u+20a0-20ab,u+20ad-20cf,u+2113,u+2c60-2c7f,u+a720-a7ff
+    unicode-range: u+0100-024f,u+0259,u+1e??,u+2020,u+20a0-20ab,u+20ad-20cf,u+2113,u+2c60-2c7f,u+a720-a7ff;
 }
 
 @font-face {
@@ -1648,7 +2237,7 @@ footer {
     font-style: italic;
     font-weight: 400;
     src:url('/assets/fonts/kibur/regular-italic-range-4.woff2') format('woff2');
-    unicode-range: u+00??,u+0131,u+0152-0153,u+02bb-02bc,u+02c6,u+02da,u+02dc,u+2000-206f,u+2074,u+20ac,u+2122,u+2191,u+2193,u+2212,u+2215,u+feff,u+fffd
+    unicode-range: u+00??,u+0131,u+0152-0153,u+02bb-02bc,u+02c6,u+02da,u+02dc,u+2000-206f,u+2074,u+20ac,u+2122,u+2191,u+2193,u+2212,u+2215,u+feff,u+fffd;
 }
 
 @font-face {
@@ -1656,7 +2245,7 @@ footer {
     font-style: italic;
     font-weight: 500;
     src:url('/assets/fonts/kibur/medium-italic-range-1.woff2') format('woff2');
-    unicode-range: u+0400-045f,u+0490-0491,u+04b0-04b1,u+2116
+    unicode-range: u+0400-045f,u+0490-0491,u+04b0-04b1,u+2116;
 }
 
 @font-face {
@@ -1664,7 +2253,7 @@ footer {
     font-style: italic;
     font-weight: 500;
     src:url('/assets/fonts/kibur/medium-italic-range-2.woff2') format('woff2');
-    unicode-range: u+0590-05ff,u+20aa,u+25cc,u+fb1d-fb4f
+    unicode-range: u+0590-05ff,u+20aa,u+25cc,u+fb1d-fb4f;
 }
 
 @font-face {
@@ -1672,7 +2261,7 @@ footer {
     font-style: italic;
     font-weight: 500;
     src:url('/assets/fonts/kibur/medium-italic-range-3.woff2') format('woff2');
-    unicode-range: u+0100-024f,u+0259,u+1e??,u+2020,u+20a0-20ab,u+20ad-20cf,u+2113,u+2c60-2c7f,u+a720-a7ff
+    unicode-range: u+0100-024f,u+0259,u+1e??,u+2020,u+20a0-20ab,u+20ad-20cf,u+2113,u+2c60-2c7f,u+a720-a7ff;
 }
 
 @font-face {
@@ -1680,7 +2269,7 @@ footer {
     font-style: italic;
     font-weight: 500;
     src:url('/assets/fonts/kibur/medium-italic-range-4.woff2') format('woff2');
-    unicode-range: u+00??,u+0131,u+0152-0153,u+02bb-02bc,u+02c6,u+02da,u+02dc,u+2000-206f,u+2074,u+20ac,u+2122,u+2191,u+2193,u+2212,u+2215,u+feff,u+fffd
+    unicode-range: u+00??,u+0131,u+0152-0153,u+02bb-02bc,u+02c6,u+02da,u+02dc,u+2000-206f,u+2074,u+20ac,u+2122,u+2191,u+2193,u+2212,u+2215,u+feff,u+fffd;
 }
 
 @font-face {
@@ -1688,7 +2277,7 @@ footer {
     font-style: italic;
     font-weight: 700;
     src:url('/assets/fonts/kibur/bold-italic-range-1.woff2') format('woff2');
-    unicode-range: u+0400-045f,u+0490-0491,u+04b0-04b1,u+2116
+    unicode-range: u+0400-045f,u+0490-0491,u+04b0-04b1,u+2116;
 }
 
 @font-face {
@@ -1696,7 +2285,7 @@ footer {
     font-style: italic;
     font-weight: 700;
     src:url('/assets/fonts/kibur/bold-italic-range-2.woff2') format('woff2');
-    unicode-range: u+0590-05ff,u+20aa,u+25cc,u+fb1d-fb4f
+    unicode-range: u+0590-05ff,u+20aa,u+25cc,u+fb1d-fb4f;
 }
 
 @font-face {
@@ -1704,7 +2293,7 @@ footer {
     font-style: italic;
     font-weight: 700;
     src:url('/assets/fonts/kibur/bold-italic-range-3.woff2') format('woff2');
-    unicode-range: u+0100-024f,u+0259,u+1e??,u+2020,u+20a0-20ab,u+20ad-20cf,u+2113,u+2c60-2c7f,u+a720-a7ff
+    unicode-range: u+0100-024f,u+0259,u+1e??,u+2020,u+20a0-20ab,u+20ad-20cf,u+2113,u+2c60-2c7f,u+a720-a7ff;
 }
 
 @font-face {
@@ -1712,7 +2301,7 @@ footer {
     font-style: italic;
     font-weight: 700;
     src:url('/assets/fonts/kibur/bold-italic-range-4.woff2') format('woff2');
-    unicode-range: u+00??,u+0131,u+0152-0153,u+02bb-02bc,u+02c6,u+02da,u+02dc,u+2000-206f,u+2074,u+20ac,u+2122,u+2191,u+2193,u+2212,u+2215,u+feff,u+fffd
+    unicode-range: u+00??,u+0131,u+0152-0153,u+02bb-02bc,u+02c6,u+02da,u+02dc,u+2000-206f,u+2074,u+20ac,u+2122,u+2191,u+2193,u+2212,u+2215,u+feff,u+fffd;
 }
 
 @font-face {
@@ -1720,7 +2309,7 @@ footer {
     font-style: normal;
     font-weight: 400;
     src:url('/assets/fonts/kibur/regular-range-1.woff2') format('woff2');
-    unicode-range: u+0400-045f,u+0490-0491,u+04b0-04b1,u+2116
+    unicode-range: u+0400-045f,u+0490-0491,u+04b0-04b1,u+2116;
 }
 
 @font-face {
@@ -1728,7 +2317,7 @@ footer {
     font-style: normal;
     font-weight: 400;
     src:url('/assets/fonts/kibur/regular-range-2.woff2') format('woff2');
-    unicode-range: u+0590-05ff,u+20aa,u+25cc,u+fb1d-fb4f
+    unicode-range: u+0590-05ff,u+20aa,u+25cc,u+fb1d-fb4f;
 }
 
 @font-face {
@@ -1736,7 +2325,7 @@ footer {
     font-style: normal;
     font-weight: 400;
     src:url('/assets/fonts/kibur/regular-range-3.woff2') format('woff2');
-    unicode-range: u+0100-024f,u+0259,u+1e??,u+2020,u+20a0-20ab,u+20ad-20cf,u+2113,u+2c60-2c7f,u+a720-a7ff
+    unicode-range: u+0100-024f,u+0259,u+1e??,u+2020,u+20a0-20ab,u+20ad-20cf,u+2113,u+2c60-2c7f,u+a720-a7ff;
 }
 
 @font-face {
@@ -1744,7 +2333,7 @@ footer {
     font-style: normal;
     font-weight: 400;
     src:url('/assets/fonts/kibur/regular-range-4.woff2') format('woff2');
-    unicode-range: u+00??,u+0131,u+0152-0153,u+02bb-02bc,u+02c6,u+02da,u+02dc,u+2000-206f,u+2074,u+20ac,u+2122,u+2191,u+2193,u+2212,u+2215,u+feff,u+fffd
+    unicode-range: u+00??,u+0131,u+0152-0153,u+02bb-02bc,u+02c6,u+02da,u+02dc,u+2000-206f,u+2074,u+20ac,u+2122,u+2191,u+2193,u+2212,u+2215,u+feff,u+fffd;
 }
 
 @font-face {
@@ -1752,7 +2341,7 @@ footer {
     font-style: normal;
     font-weight: 500;
     src:url('/assets/fonts/kibur/medium-range-1.woff2') format('woff2');
-    unicode-range: u+0400-045f,u+0490-0491,u+04b0-04b1,u+2116
+    unicode-range: u+0400-045f,u+0490-0491,u+04b0-04b1,u+2116;
 }
 
 @font-face {
@@ -1760,7 +2349,7 @@ footer {
     font-style: normal;
     font-weight: 500;
     src:url('/assets/fonts/kibur/medium-range-2.woff2') format('woff2');
-    unicode-range: u+0590-05ff,u+20aa,u+25cc,u+fb1d-fb4f
+    unicode-range: u+0590-05ff,u+20aa,u+25cc,u+fb1d-fb4f;
 }
 
 @font-face {
@@ -1768,7 +2357,7 @@ footer {
     font-style: normal;
     font-weight: 500;
     src:url('/assets/fonts/kibur/medium-range-3.woff2') format('woff2');
-    unicode-range: u+0100-024f,u+0259,u+1e??,u+2020,u+20a0-20ab,u+20ad-20cf,u+2113,u+2c60-2c7f,u+a720-a7ff
+    unicode-range: u+0100-024f,u+0259,u+1e??,u+2020,u+20a0-20ab,u+20ad-20cf,u+2113,u+2c60-2c7f,u+a720-a7ff;
 }
 
 @font-face {
@@ -1776,7 +2365,7 @@ footer {
     font-style: normal;
     font-weight: 500;
     src:url('/assets/fonts/kibur/medium-range-4.woff2') format('woff2');
-    unicode-range: u+00??,u+0131,u+0152-0153,u+02bb-02bc,u+02c6,u+02da,u+02dc,u+2000-206f,u+2074,u+20ac,u+2122,u+2191,u+2193,u+2212,u+2215,u+feff,u+fffd
+    unicode-range: u+00??,u+0131,u+0152-0153,u+02bb-02bc,u+02c6,u+02da,u+02dc,u+2000-206f,u+2074,u+20ac,u+2122,u+2191,u+2193,u+2212,u+2215,u+feff,u+fffd;
 }
 
 @font-face {
@@ -1784,7 +2373,7 @@ footer {
     font-style: normal;
     font-weight: 700;
     src:url('/assets/fonts/kibur/bold-range-1.woff2') format('woff2');
-    unicode-range: u+0400-045f,u+0490-0491,u+04b0-04b1,u+2116
+    unicode-range: u+0400-045f,u+0490-0491,u+04b0-04b1,u+2116;
 }
 
 @font-face {
@@ -1792,7 +2381,7 @@ footer {
     font-style: normal;
     font-weight: 700;
     src:url('/assets/fonts/kibur/bold-range-2.woff2') format('woff2');
-    unicode-range: u+0590-05ff,u+20aa,u+25cc,u+fb1d-fb4f
+    unicode-range: u+0590-05ff,u+20aa,u+25cc,u+fb1d-fb4f;
 }
 
 @font-face {
@@ -1800,7 +2389,7 @@ footer {
     font-style: normal;
     font-weight: 700;
     src:url('/assets/fonts/kibur/bold-range-3.woff2') format('woff2');
-    unicode-range: u+0100-024f,u+0259,u+1e??,u+2020,u+20a0-20ab,u+20ad-20cf,u+2113,u+2c60-2c7f,u+a720-a7ff
+    unicode-range: u+0100-024f,u+0259,u+1e??,u+2020,u+20a0-20ab,u+20ad-20cf,u+2113,u+2c60-2c7f,u+a720-a7ff;
 }
 
 @font-face {
@@ -1808,6 +2397,6 @@ footer {
     font-style: normal;
     font-weight: 700;
     src:url('/assets/fonts/kibur/bold-range-4.woff2') format('woff2');
-    unicode-range: u+00??,u+0131,u+0152-0153,u+02bb-02bc,u+02c6,u+02da,u+02dc,u+2000-206f,u+2074,u+20ac,u+2122,u+2191,u+2193,u+2212,u+2215,u+feff,u+fffd
+    unicode-range: u+00??,u+0131,u+0152-0153,u+02bb-02bc,u+02c6,u+02da,u+02dc,u+2000-206f,u+2074,u+20ac,u+2122,u+2191,u+2193,u+2212,u+2215,u+feff,u+fffd;
 }
 

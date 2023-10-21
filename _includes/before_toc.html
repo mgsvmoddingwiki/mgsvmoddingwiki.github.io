@@ -1,9 +1,10 @@
-<h1>{{ page.title }}</h1>
-<span>Categories: {% for tag in page.tags %}
-    {% capture tag_name %}{{ tag }}{% endcapture %}
-    <a href="/{{ tag_name | replace: " ", "_" }}">{{ tag_name }}</a>
-    {% if forloop.last != true %}|{% endif %}
-  {% endfor %}</span>
+<h1 class="page-heading">{{ page.title }}</h1>
+
+<div id="tag-list">
+    <!-- Jekyll templating all on one line to avoid adding HTML whitespace per item -->
+    {% if page.tags %}<span class="tag-list-heading">Categories:</span>{% endif %}{% for tag in page.tags %}{% capture tag_name %}{{ tag }}{% endcapture %}<a class="tag-list-tag" href="/{{ tag_name | replace: " ", "_" }}">{{ tag_name }}</a>{% endfor %}
+</div>
+
 <hr>
 
 <details class="toc-toggle">

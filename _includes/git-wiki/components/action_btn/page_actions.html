@@ -1,0 +1,58 @@
+<ul class="git-wiki-tools">
+
+    {% if site.disable_edit != true %}
+    <li class="tools-button new">
+        <a class="primary-button iconed icon-toolbar icon-add" target="_blank" href="{{ site.github.repository_url }}/new/{{site.git_branch | escape}}{{ site.site_root | default: '/' }}{{ site.wiki_folder }}?filename="></a>
+        <div class="tooltip">Add New Page</div>
+    </li>
+    <li class="tools-button edit">
+        <a class="primary-button iconed icon-toolbar icon-edit" target="_blank" href="{{ site.github.repository_url }}/edit/{{site.git_branch | escape}}/{{ site.site_root | default: '/' }}{{page.path | escape}}"></a>
+        <div class="tooltip">Edit Page</div>
+    </li>
+    {% endif %}
+    <li class="tools-button history">
+        <a class="primary-button iconed icon-toolbar icon-history" target="_blank" href="{{ site.github.repository_url }}/commits/{{site.git_branch | escape}}/{{ site.site_root | default: '/' }}{{page.path | escape}}"></a>
+        <div class="tooltip">Page History</div>
+    </li>
+    <li class="tools-button source">
+        <a class="primary-button iconed icon-toolbar icon-source" target="_blank" href="{{ site.github.repository_url }}/blob/{{site.git_branch | escape}}/{{ site.site_root | default: '/' }}{{page.path | escape}}"></a>
+        <div class="tooltip">Page Source</div>
+    </li>
+    <li class="tools-button page-width-toggle">
+        <a class="primary-button iconed icon-toolbar icon-expand"></a>
+        <div class="tooltip">Expand Page Width</div>
+    </li>
+    <li class="tools-button more-options">
+        <a class="primary-button iconed icon-toolbar icon-overflow"></a>
+        <div class="tooltip menu">
+            <div>More Options</div>
+            <div class="menu-content">
+                <div class="menu-radio">
+                    <div class="menu-button theme-light-switcher"><a class="iconed icon-toolbar icon-themes-light"></a></div>
+                    <div class="menu-button theme-dark-switcher"><a class="iconed icon-toolbar icon-themes-dark"></a></div>
+                </div>
+                <div class="menu-radio">
+                    <div class="menu-button header-graphic-switcher-default"><a class="graphic-button"></a></div>
+                    <div class="menu-button header-graphic-switcher-second"><a class="graphic-button"></a></div>
+                </div>
+                {% if site.disable_edit != true %}
+                <hr/>
+                <div class="menu-button delete">
+                    <a target="_blank" href="{{ site.github.repository_url }}/delete/{{site.git_branch | escape}}/{{ site.site_root | default: '/' }}{{page.path | escape}}">
+                        <span class="iconed icon-toolbar icon-delete label dim">Delete Page</span>
+                    </a>
+                </div>
+                {% endif %}
+            </div>
+        </div>
+    </li>
+    <li class="tools-button prose new">
+        <a class="primary-button iconed icon-toolbar icon-add" target="_blank" href="http://prose.io/#{{site.github.repository_nwo}}/new/{{site.git_branch | escape}}{{ site.site_root | default: '/' }}{{ site.wiki_folder }}"></a>
+        <div class="tooltip">Prose.io - Add New Page</div>
+    </li>
+    <li class="tools-button prose edit">
+        <a class="primary-button iconed icon-toolbar icon-edit" target="_blank" href="http://prose.io/#{{site.github.repository_nwo}}/edit/{{site.git_branch | escape}}{{ site.site_root | default: '/' }}{{page.path | escape}}"></a>
+        <div class="tooltip">Prose.io - Edit Page</div>
+    </li>
+
+</ul>

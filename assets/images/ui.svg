@@ -8,6 +8,159 @@
 <svg version="1.1" width="100%" height="100%" xmlns="&ns_svg;" xmlns:xlink="&ns_xlink;">
 
     <defs>
+        <!-- Mask fills -->
+        <rect id="mask-exclusion" class="exclusion fill" width="100%" height="100%"/>
+        <rect id="mask-fill" class="fill" width="100%" height="100%"/>
+
+        <!-- Sidebar icons -->
+        <g id="icons-sidebar-tool-path" class="stroke miter-sharpest" transform="translate(-26 -115)">
+            <path d="M35.006,125.608C35.001,125.409 35,125.206 35,125C35,122.24 35.316,119.435 40,120C40.542,120.065 40.998,120.108 41.633,120.19L39.426,123.529L39.958,125.23L41.497,125.599L44.88,123.376C44.931,124.065 44.96,124.583 45,125C45.264,127.722 44.76,130 40,130C39.791,130 39.59,129.996 39.398,129.987L36.093,133.292C35.385,134 34.995,134.014 33.879,134.014C32.763,134.014 32.148,133.996 31.572,133.421C30.997,132.845 30.966,132.166 30.966,131.096C30.966,130.027 30.951,129.663 31.707,128.907L35.006,125.608Z"/>
+        </g>
+
+        <g id="icons-sidebar-nexusmods-group">
+            <path id="icons-sidebar-nexusmods-path-exclusion" transform="translate(-26 -468)" d="M35,481L38,481L38,483L39,483L39,480L41,480L41,479L38,479L38,477L37,477L37,480L35,480L35,481Z"/>
+            <mask id="icons-sidebar-nexusmods-path-exclusion-mask">
+                <use xlink:href="#mask-fill"/>
+                <use class="fill exclusion" xlink:href="#icons-sidebar-nexusmods-path-exclusion"/>
+            </mask>
+            <g id="icons-sidebar-nexusmods-path" class="stroke linecap-butt">
+                <g mask="url(#icons-sidebar-nexusmods-path-exclusion-mask)">
+                    <g transform="translate(-26 -468)">
+                        <path d="M38.465,479.619C39.402,476.606 40.065,474.779 41.143,473.806C42.281,472.778 43.682,472.844 44.46,473.614C45.148,474.295 45.125,475.387 44.824,476.231C44.585,476.899 44.134,477.471 43.676,477.894C43.938,478.548 44.074,479.263 44.074,480.009C44.074,480.91 43.876,481.765 43.522,482.534"/>
+                        <path d="M37.55,480.395C36.613,483.408 35.95,485.235 34.872,486.208C33.734,487.235 32.333,487.169 31.556,486.399C30.868,485.718 30.89,484.626 31.192,483.783C31.431,483.114 31.881,482.542 32.34,482.12C32.077,481.465 31.942,480.75 31.942,480.004C31.942,479.103 32.139,478.248 32.493,477.479"/>
+                        <path d="M38.396,480.464C41.409,481.401 43.236,482.064 44.209,483.142C45.236,484.28 45.17,485.681 44.4,486.459C43.719,487.147 42.627,487.124 41.784,486.823C41.115,486.584 40.544,486.133 40.121,485.675C39.466,485.937 38.752,486.073 38.005,486.073C37.104,486.073 36.249,485.875 35.48,485.521"/>
+                        <path d="M37.62,479.549C34.607,478.612 32.78,477.949 31.807,476.871C30.779,475.733 30.846,474.332 31.615,473.554C32.296,472.866 33.388,472.889 34.232,473.191C34.9,473.43 35.472,473.88 35.895,474.338C36.549,474.076 37.264,473.941 38.01,473.941C38.911,473.941 39.767,474.138 40.535,474.492"/>
+                    </g>
+                </g>
+            </g>
+        </g>
+
+        <g id="icons-sidebar-discord-path" transform="translate(-26 -433)">
+            <path class="stroke miter-sharp" d="M40.363,449.747C39.633,449.834 36.385,449.834 35.654,449.747C35.139,450.279 34.624,450.966 34.624,450.966C34.624,450.966 33.364,450.597 32.821,450.403C32.017,450.117 31.16,449.46 31.16,449.46C31.16,449.46 31.058,448.337 31.003,447.51C30.934,446.467 30.905,445.509 31.052,444.524C31.422,442.029 33.39,439.566 33.39,439.566C33.39,439.566 34.973,439.265 36.054,439.107C36.296,439.339 36.461,439.674 36.675,439.954C37.099,439.886 38.918,439.886 39.342,439.954C39.557,439.674 39.722,439.339 39.963,439.107C41.045,439.265 42.627,439.566 42.627,439.566C42.627,439.566 44.595,442.029 44.966,444.524C45.112,445.509 45.084,446.467 45.015,447.51C44.96,448.337 44.858,449.46 44.858,449.46C44.858,449.46 44,450.117 43.197,450.403C42.653,450.597 41.394,450.966 41.394,450.966C41.394,450.966 40.879,450.279 40.363,449.747Z"/>
+            <path class="fill" d="M36,443.767C36.681,443.767 37.233,444.319 37.233,445C37.233,445.681 36.681,446.233 36,446.233C35.319,446.233 34.767,445.681 34.767,445C34.767,444.319 35.319,443.767 36,443.767ZM40,443.767C40.681,443.767 41.233,444.319 41.233,445C41.233,445.681 40.681,446.233 40,446.233C39.319,446.233 38.767,445.681 38.767,445C38.767,444.319 39.319,443.767 40,443.767Z"/>
+        </g>
+
+        <g id="icons-sidebar-globe-group">
+            <path id="icons-sidebar-globe-path-exclusion" transform="translate(-26 -574)" d="M39.138,592.415C41.341,590.962 42.376,589.482 42.376,586.454L43.034,586.454C43.034,589.934 42.618,592.415 39.138,592.415ZM36.886,592.415C34.683,590.962 33.648,589.482 33.648,586.454L32.99,586.454C32.99,589.934 33.406,592.415 36.886,592.415ZM39.138,579.822C41.341,581.275 42.376,582.755 42.376,585.783L43.034,585.783C43.034,582.303 42.618,579.822 39.138,579.822ZM36.886,579.822C34.683,581.275 33.648,582.755 33.648,585.783L32.99,585.783C32.99,582.303 33.406,579.822 36.886,579.822Z"/>
+            <circle id="icons-sidebar-globe-path-circle" transform="translate(-26 -574)" cx="38" cy="586" r="7.304"/>
+            <mask id="icons-sidebar-globe-path-exclusion-mask">
+                <use xlink:href="#mask-fill"/>
+                <use class="fill exclusion" xlink:href="#icons-sidebar-globe-path-exclusion"/>
+            </mask>
+            <!-- Optional inner gap for further reducing color in joins -->
+            <mask id="icons-sidebar-globe-path-innergap-mask">
+                <use xlink:href="#mask-fill"/>
+                <use class="stroke exclusion innergap" xlink:href="#icons-sidebar-globe-path-circle"/>
+            </mask>
+            <g id="icons-sidebar-globe-path" class="stroke linecap-butt">
+                <use xlink:href="#icons-sidebar-globe-path-circle"/>
+                <!-- <g mask="url(#icons-sidebar-globe-path-innergap-mask)"> -->
+                    <path transform="translate(-26 -574)" d="M30.696,586L45.304,586"/>
+                    <g mask="url(#icons-sidebar-globe-path-exclusion-mask)">
+                        <g transform="translate(-26 -574)">
+                            <path d="M38,593.173C39.774,592.013 40.874,589.421 40.874,586C40.874,582.579 39.779,580.022 38,578.827"/>
+                            <path d="M38.001,593.173C36.227,592.013 35.127,589.421 35.127,586C35.127,582.579 36.222,580.022 38.001,578.827"/>
+                        </g>
+                    </g>
+                <!-- </g> -->
+            </g>
+        </g>
+
+        <g id="icons-sidebar-lightbulb-path" class="stroke" transform="translate(-26 -274)">
+            <path d="M35.356,288.995C35.356,288.204 35.268,288.172 34.134,287.277C32.994,286.377 32.226,285.398 31.983,284.4C31.755,283.465 31.733,282.492 31.997,281.303C32.342,279.749 34.541,278.005 36.887,278.005L39.113,278.005C41.459,278.005 43.658,279.749 44.003,281.303C44.267,282.492 44.245,283.465 44.017,284.4C43.774,285.398 43.006,286.377 41.866,287.277C40.732,288.172 40.644,288.204 40.644,288.995L35.356,288.995Z"/>
+            <path d="M35.815,292L40.185,292"/>
+            <path d="M38,284.85L38,288.995"/>
+            <path d="M35.815,283L38,285.172L40.185,283"/>
+        </g>
+
+        <g id="icons-sidebar-curly-brackets-path" class="stroke miter-sharp linecap-square" transform="translate(-26 -344)">
+            <path d="M40.003,348.988C42.615,348.988 42.998,349.575 42.998,352.023C42.998,354.471 43.29,355.016 44.995,355.016L44.995,356.984C43.29,356.984 42.998,357.528 42.998,359.976C42.998,362.425 42.615,363.012 40.003,363.012"/>
+            <path d="M35.995,348.988C33.383,348.988 32.999,349.575 32.999,352.023C32.999,354.471 32.708,355.016 31.003,355.016L31.003,356.984C32.708,356.984 32.999,357.528 32.999,359.976C32.999,362.425 33.383,363.012 35.995,363.012"/>
+        </g>
+
+        <g id="icons-sidebar-text-caret-group">
+            <path id="icons-sidebar-text-caret-path-exclusion" transform="translate(-26 -309)" d="M42.94,330.854L37.99,335.803L33.041,330.854C33.041,330.854 36.061,328.861 36.543,328.379C37.025,327.896 37.99,326.134 37.99,326.134C37.99,326.134 38.955,327.896 39.438,328.379C39.92,328.861 42.94,330.854 42.94,330.854ZM42.94,309.164L37.99,304.215L33.041,309.164C33.041,309.164 36.061,311.157 36.543,311.639C37.025,312.122 37.99,313.884 37.99,313.884C37.99,313.884 38.955,312.122 39.438,311.639C39.92,311.157 42.94,309.164 42.94,309.164Z"/>
+            <mask id="icons-sidebar-text-caret-path-exclusion-mask">
+                <use xlink:href="#mask-fill"/>
+                <use class="fill exclusion" xlink:href="#icons-sidebar-text-caret-path-exclusion"/>
+            </mask>
+            <g id="icons-sidebar-text-caret-path" class="stroke linecap-square">
+                <g mask="url(#icons-sidebar-text-caret-path-exclusion-mask)">
+                    <g transform="translate(-26 -309)">
+                        <path d="M41.99,313L40.72,313C39.219,313 38,314.219 38,315.72L38,324.28C38,325.781 39.219,327 40.72,327L41.99,327"/>
+                        <path d="M34,313L35.27,313C36.772,313 37.99,314.219 37.99,315.72"/>
+                        <path d="M37.99,324.28C37.99,325.781 36.772,327 35.27,327L34,327"/>
+                    </g>
+                </g>
+            </g>
+        </g>
+
+
+        <g id="icons-sidebar-tag-path" transform="translate(-26 -185)">
+            <path class="stroke" d="M31.003,198.018L31.003,199.44L35.572,204.009L36.999,204.009L45.01,196.016L45.005,189.992L39.02,189.992L31.003,198.018Z"/>
+            <circle class="fill" cx="41" cy="194" r="1.233"/>
+        </g>
+
+        <g id="icons-sidebar-package-group">
+            <!-- Raw path referenced by <use> outside of output group to hide its visibility in result. Needs transform applied to it for CSS to render it in the correct position (despite the raw SVG having no issues with the transform applied to the output group itself) -->
+            <path id="icons-sidebar-package-path-box" transform="translate(-26 -152)" d="M42.542,157L33.458,157L30.991,160.987L31,169L45,169L45,160.987L42.542,157Z"/>
+            <mask id="icons-sidebar-package-path-innergap-mask">
+                <use xlink:href="#mask-fill"/>
+                <use class="stroke exclusion innergap" xlink:href="#icons-sidebar-package-path-box"/>
+            </mask>
+            <g id="icons-sidebar-package-path" class="stroke">
+                <use xlink:href="#icons-sidebar-package-path-box"/>
+                <g mask="url(#icons-sidebar-package-path-innergap-mask)">
+                    <g transform="translate(-26 -152)"><!-- Separate group required here for transform since it can't be applied to the group using the mask else the paths won't be rendered as expected via CSS -->
+                        <path d="M31.003,162L45,162.01"/>
+                        <path d="M38.006,157L38.006,162"/>
+                    </g>
+                </g>
+            </g>
+        </g>
+
+        <g id="icons-sidebar-open-pages-group">
+            <path id="icons-sidebar-open-pages-path-exclusion" transform="translate(-26 -81)" d="M39,91L39,97.579C39.017,94.281 43,94 43,94L43,91L39,91ZM37,91L37,97.579C36.983,94.281 33,94 33,94L33,91L37,91Z"/>
+            <mask id="icons-sidebar-open-pages-path-mask">
+                <use xlink:href="#mask-fill"/>
+                <use class="fill exclusion" xlink:href="#icons-sidebar-open-pages-path-exclusion"/>
+            </mask>
+            <g id="icons-sidebar-open-pages-path" class="stroke miter-sharp">
+                <g mask="url(#icons-sidebar-open-pages-path-mask)">
+                    <g transform="translate(-26 -81)">
+                        <path d="M38,99C35.531,95.263 31.014,96.002 31.014,96.002L31.014,86.059C31.014,86.059 35.531,85.321 38,89.058C40.469,85.321 45,86.059 45,86.059L45,96.002C45,96.002 40.482,95.263 38.014,99"/>
+                        <path d="M38,89L38,99"/>
+                    </g>
+                </g>
+            </g>
+        </g>
+
+        <g id="icons-sidebar-diamond-path" class="stroke miter-sharp" transform="translate(-26 -45)">
+            <path d="M33.895,50L42.105,50L45.236,55.868L38,63.725L30.792,55.839L33.895,50Z"/>
+        </g>
+
+
+        <!-- Toolbar and spoiler element icons -->
+        <g id="icons-themes-light-path" transform="translate(-106 -23)">
+            <circle class="stroke" cx="118" cy="35" r="5.358"/>
+            <path class="fill" d="M117.996,42.241C118.737,42.241 119.338,42.842 119.338,43.584C119.338,44.325 118.737,44.926 117.996,44.926C117.254,44.926 116.653,44.325 116.653,43.584C116.653,42.842 117.254,42.241 117.996,42.241ZM110.975,42.018C110.451,41.494 110.451,40.644 110.975,40.12C111.499,39.596 112.35,39.596 112.874,40.12C113.398,40.644 113.398,41.494 112.874,42.018C112.35,42.542 111.499,42.542 110.975,42.018ZM125.016,42.018C124.492,42.542 123.641,42.542 123.117,42.018C122.593,41.494 122.593,40.644 123.117,40.12C123.641,39.596 124.492,39.596 125.016,40.12C125.54,40.644 125.54,41.494 125.016,42.018ZM110.753,34.998C110.753,35.739 110.151,36.341 109.41,36.341C108.669,36.341 108.068,35.739 108.068,34.998C108.068,34.257 108.669,33.656 109.41,33.656C110.151,33.656 110.753,34.257 110.753,34.998ZM127.923,34.998C127.923,35.739 127.322,36.341 126.581,36.341C125.84,36.341 125.238,35.739 125.238,34.998C125.238,34.257 125.84,33.656 126.581,33.656C127.322,33.656 127.923,34.257 127.923,34.998ZM112.874,29.877C112.35,30.401 111.499,30.401 110.975,29.877C110.451,29.353 110.451,28.502 110.975,27.978C111.499,27.454 112.35,27.454 112.874,27.978C113.398,28.502 113.398,29.353 112.874,29.877ZM123.117,29.877C122.593,29.353 122.593,28.502 123.117,27.978C123.641,27.454 124.492,27.454 125.016,27.978C125.54,28.502 125.54,29.353 125.016,29.877C124.492,30.401 123.641,30.401 123.117,29.877ZM117.996,25.07C118.737,25.07 119.338,25.672 119.338,26.413C119.338,27.154 118.737,27.756 117.996,27.756C117.254,27.756 116.653,27.154 116.653,26.413C116.653,25.672 117.254,25.07 117.996,25.07Z"/>
+        </g>
+
+        <g id="icons-themes-dark-path" class="stroke" transform="translate(-148 -23)">
+            <path class="stroke" d="M167.384,38.748C166.051,41.203 163.449,42.872 160.461,42.872C156.116,42.872 152.589,39.345 152.589,35C152.589,30.655 156.116,27.128 160.461,27.128C160.758,27.128 161.051,27.145 161.34,27.177C160.235,28.411 159.562,30.041 159.562,31.827C159.562,35.675 162.686,38.799 166.535,38.799C166.822,38.799 167.106,38.782 167.384,38.748Z"/>
+            <path class="fill" d="M166.538,26.831C166.538,26.831 166.033,30.039 165.796,30.402C165.554,30.772 163.468,31.534 163.468,31.534C163.468,31.534 165.543,32.284 165.785,32.654C166.026,33.022 166.538,36.182 166.538,36.182C166.538,36.182 167.007,32.995 167.249,32.625C167.486,32.262 169.679,31.534 169.679,31.534C169.679,31.534 167.482,30.804 167.243,30.438C167,30.067 166.538,26.831 166.538,26.831Z"/>
+        </g>
+
+        <g id="icons-badge-tick-path" class="stroke" transform="translate(-25 -26)">
+            <path d="M30.448,35.256L33.18,38.448L37.744,32.192"/>
+        </g>
+
+        <g id="icons-overflow-menu-path" class="fill">
+            <!-- Circles made to be optically same weight as 2px stroke -->
+            <circle cx="12" cy="6" r="1.9"/>
+            <circle cx="12" cy="12" r="1.9"/>
+            <circle cx="12" cy="18" r="1.9"/>
+        </g>
 
         <g id="icons-spoiler-expand-path" class="stroke" transform="translate(-22 -24)">
             <path d="M28,35L40,35"/>
@@ -108,8 +261,28 @@
                 stroke-width: 1px;
             }
 
+            .stroke.miter-sharp {
+                stroke-miterlimit: 1.7;
+            }
+
+            .stroke.miter-sharpest {
+                stroke-miterlimit: 3;
+            }
+
+            .stroke.linecap-butt {
+                stroke-linecap: butt;
+            }
+
+            .stroke.linecap-square {
+                stroke-linecap: square;
+            }
+
             .exclusion.stroke {
                 stroke: #000;
+            }
+
+            .exclusion.stroke.innergap {
+                stroke-width: 4px;
             }
 
             .exclusion.fill {
@@ -157,5 +330,25 @@
     <use class="output" id="icons-editing-source" xlink:href="#icons-editing-source-path"/>
     <use class="output" id="icons-page-expand-expand" xlink:href="#icons-page-expand-expand-path"/>
     <use class="output" id="icons-page-expand-contract" xlink:href="#icons-page-expand-contract-path"/>
+    <use class="output" id="icons-overflow-menu" xlink:href="#icons-overflow-menu-path"/>
+
+    <use class="output" id="icons-badge-tick" xlink:href="#icons-badge-tick-path"/>
+    <use class="output" id="icons-themes-dark" xlink:href="#icons-themes-dark-path"/>
+    <use class="output" id="icons-themes-light" xlink:href="#icons-themes-light-path"/>
+
+    <!-- Sidebar icons -->
+    <use class="output" id="icons-sidebar-diamond" xlink:href="#icons-sidebar-diamond-path"/>
+    <use class="output" id="icons-sidebar-open-pages" xlink:href="#icons-sidebar-open-pages-path"/>
+    <use class="output" id="icons-sidebar-package" xlink:href="#icons-sidebar-package-path"/>
+    <use class="output" id="icons-sidebar-tag" xlink:href="#icons-sidebar-tag-path"/>
+    <use class="output" id="icons-sidebar-text-caret" xlink:href="#icons-sidebar-text-caret-path"/>
+    <use class="output" id="icons-sidebar-curly-brackets" xlink:href="#icons-sidebar-curly-brackets-path"/>
+    <use class="output" id="icons-sidebar-lightbulb" xlink:href="#icons-sidebar-lightbulb-path"/>
+    <use class="output" id="icons-sidebar-globe" xlink:href="#icons-sidebar-globe-path"/>
+    <use class="output" id="icons-sidebar-discord" xlink:href="#icons-sidebar-discord-path"/>
+    <use class="output" id="icons-sidebar-nexusmods" xlink:href="#icons-sidebar-nexusmods-path"/>
+    <use class="output" id="icons-sidebar-tool" xlink:href="#icons-sidebar-tool-path"/>
+
+
 
 </svg>
