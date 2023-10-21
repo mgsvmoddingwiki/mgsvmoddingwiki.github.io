@@ -74,8 +74,7 @@ tags: [Tag, Tag2]
 ``` 
 
 - `title` = What your page title is, wrapped in single quotes.
-- `permalink` = Your page title but in URL form with special characters substituted (like we did in the prior step) and beginning and ending in a forwardslash.<br/>
-<br/>
+- `permalink` = Your page title but in URL form with special characters substituted (like we did in the prior step) and beginning and ending in a forwardslash.
 > **Note:** unlike the filename in the previous step there should not be any `wiki` prefix or `.md` suffix used for permalinks.
 {:.important}
 
@@ -200,10 +199,9 @@ As mentioned above the wiki expects images for new pages to be inside a sub-dire
 
 1. Firstly create a directory on Windows called `assets`.
 2. Inside `assets` create a sub-directory named after the page title. In my case the title will be 'Meta: Wiki Tips', so I'll name the sub-directory `Meta-Wiki_Tips`, substituting various filename characters as noted below.
-<br/><br/>
 > **Note:** always make the filename essentially match the page title, with the same capitalization. also replace/substitute all special characters with legal filename characters. For any colons (`:`) in a title use a dash (`-`) for the filename instead and for spaces use an underscore (`_`) instead. 
 {:.important}
-3. Finally move the image into that new sub-directory. The resulting path is:<br/><br/>
+3. Finally move the image into that new sub-directory. The resulting path is:
 ```
 /assets/Meta-Wiki_Tips/Search - Forwardslash use.png
 ```
@@ -217,12 +215,11 @@ I'll be using a text editor to create the wiki page offline before later uploadi
 1. Firstly create a directory on Windows called `wiki`.
 2. Inside the `wiki` directory create a new text file, then change its extension from `.txt` to `.md`.
 3. Next rename the text file to match the page title you want. In my case the title will be 'Meta: Wiki Tips', so I'll name the filename `Meta-Wiki_Tips.md`, substituting various filename characters as noted below.
-<br/><br/>
 > **Note:** always make the filename essentially match the page title, with the same capitalization. also replace/substitute all special characters with legal filename characters. For any colons (`:`) in a title use a dash (`-`) for the filename instead and for spaces use an underscore (`_`) instead. 
 {:.important}
 
 {:start="4"}
-4. Open the text file in a text editor and add a metadata section at the very start of the file. Metadata sections take the following format:<br/><br/>
+4. Open the text file in a text editor and add a metadata section at the very start of the file. Metadata sections take the following format:
 ```
 ---
 title: 'Your Page Name'
@@ -230,7 +227,7 @@ permalink: /Your_Page_Name/
 tags: [Tag, Tag2]
 ---
 ```
-So for my page I'll be using the following metadata:<br/>
+So for my page I'll be using the following metadata:
 ```
 ---
 title: 'Meta: Wiki Tips'
@@ -239,15 +236,14 @@ tags: [Guides]
 ---
 ```
 - `title` = What your page title is, wrapped in single quotes.
-- `permalink` = Your page title but in URL form with special characters substituted (like we did in the prior step) and beginning and ending in a forwardslash.<br/>
-<br/>
+- `permalink` = Your page title but in URL form with special characters substituted (like we did in the prior step) and beginning and ending in a forwardslash.
 > **Note:** unlike the filename in the previous step there should not be any `wiki` prefix or `.md` suffix used for permalinks.
 <br/>
 - `tags` = Add appropriate tag(s), as found in the [All Pages](/Meta-All_Pages) 'Categories' list. If you've chosen multiple tags then separate them by a comma and space.
 <br/><br/>
 
 {:start="5"}
-5. Now below the metadata section you can add the desired body content/text. Since I want my image to display on the wiki page I included it using the following code:<br/><br/>
+5. Now below the metadata section you can add the desired body content/text. Since I want my image to display on the wiki page I included it using the following code:
 ```
 ![](/assets/Meta-Wiki_Tips/Search - Forwardslash use.png)
 ```

@@ -34,22 +34,18 @@ The text guide also covers optionally manually backing up the game data archive 
 1. End/Abort any mission back to ACC before upgrading Infinite Heaven, upgrading a save that's mid-mission is likely to cause issues.
 
 2. Back up your save files for safety:
-<br/><br/>
 ```
  <Steam path>\userdata\<user id>\287700
 ```
 and
-<br/>
 ```
  <Steam path>\userdata\<user id>\311340
 ```
 > The placeholder name `<Steam path>` means wherever the Steam program directory is. By default the path is `C:\Program Files\Steam`.
 
 3. MGSV uses two save directories:
-<br/><br/>
-`311340` is Ground Zeros Steam id, but used by MGSV for save data even if GZ is not installed.
-<br/><br/>
-`287700` is TPP steam id, most of the files here seem to be just backup, except for `TPP_GRAPHICS_CONFIG`
+    - `311340` is Ground Zeros Steam id, but used by MGSV for save data even if GZ is not installed.
+    - `287700` is TPP steam id, most of the files here seem to be just backup, except for `TPP_GRAPHICS_CONFIG`
 
 4. Copy both directories to a safe place.
 
@@ -60,7 +56,6 @@ and
 Snakebite should do this, but it's good to have your own backups.
 
 - Back up TPPs original `00.dat` and `01.dat` in
-<br/><br/>
 ```
  <Steam path>\steamapps\common\MGS_TPP\master\0\
 ```
@@ -150,9 +145,7 @@ You can also convert many mods to Snakebite yourself either by trying the *Insta
 
 ## Uninstallation
 
-1. Exit any missions, return to the ACC.\
-\
-\
+1. Exit any missions, return to the ACC.
 > The mod saves some varables to the save file, but on initial testing (feedback is welcome on this) there is no issue with loading a save from this mod after the mod has been removed (provided you have exited to ACC).
 
 2. Use uninstall in SnakeBite.
@@ -174,8 +167,6 @@ For other issues can you please provide the following files to help me test:
 {% include spoiler-start title="Instructions for providing files" %}
 
 - Your save game that's at the point it's having issues. The save files are located in:
-<br/>
-<br/>
 ```
  <Steam path>\userdata\<user id>\311340\remote
 ```

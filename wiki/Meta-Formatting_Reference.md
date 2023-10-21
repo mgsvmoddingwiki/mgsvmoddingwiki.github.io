@@ -251,9 +251,6 @@ We can insert empty lines, too
 > **Note:** such line breaks aren't rendered correctly if the list is inside a [spoiler element](#spoiler-elements). Use `<br/>` instead of `\` if inside a spoiler element.
 {:.important}
 
-> **Note:** if a list uses a manual line break and you've added a code block (wrapped in ```` ``` ````) within the list, in which the code begins with a `<` character, it will render everything past it incorrectly. I've found adding a non-breaking space character (alt+255) before such characters fixes this (` <`).
-{:.important}
-
 **Split style with `.split` class:**
 - Item
     - Sub-item
@@ -491,6 +488,11 @@ Some other text
 {:.important}
 
 > **Note:** some formatting behaves differently when placed in a spoiler element. For instance, manual line breaks in lists (using `\`) need to instead be `<br/>`.
+{:.important}
+
+> **Note:** any list within a spoiler element that has a code block (wrapped in ```` ``` ````) in it beginning with a `<` character will cause the everything past that point to render incorrectly. In such a case you can prefix a non-breaking space character (alt+255) to resolve this issue (` <`).\
+\
+> The [Infinite Heaven](/Infinite_Heaven) page is an example where this workaround can be seen utilized.
 {:.important}
 
 ---

@@ -280,6 +280,13 @@ blockquote,
     margin-bottom: var(--spacing-intermediate);
 }
 
+/* Effectively auto add line breaks for list notes and code blocks to avoid having to do so manually */
+li > blockquote,
+li > .highlighter-rouge /* the container element for code blocks added by Jekyll */
+{
+    margin-top: var(--spacing-secondary);
+}
+
 input {
     background: var(--bg-input);
     color: var(--color-primary);
