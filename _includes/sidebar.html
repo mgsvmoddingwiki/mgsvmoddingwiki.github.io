@@ -1,27 +1,88 @@
-Menu (<a href="{{ site.github.repository_url }}/edit/{{site.git_branch | escape}}/_includes/sidebar.html">Edit</a>):
+{%- assign guides_count = 0 -%}
+{% for page in site.pages %}
+    {% for tag in page.tags %}
+        {% if tag == 'Guides' %}
+            {%- assign guides_count = guides_count | plus: 1 -%}
+        {% endif %}
+    {% endfor %}
+{% endfor %}
+
+<span class="sidebar-heading">Quick Menu</span>
 
 <ul>
-  <li><a href="{{ '/' | relative_url }}">Home</a></li>
-  <li><a href="/Guides">Guides</a></li>
-  <li><a href="/Infinite_Heaven">Infinite Heaven</a></li>
-  <li><a href="/FoxKit">FoxKit</a></li>
-  <li><a href="/Meta-All_Pages">All Pages</a></li>
+    <li>
+        <a class="iconed icon-sidebar icon-diamond" href="{{ '/' | relative_url }}">
+            <span class="label">Home</span>
+        </a>
+    </li>
+    <li>
+        <a class="iconed icon-sidebar icon-open-pages count-badge" href="/Guides" data-count="{{ guides_count }}">
+            <span class="label">Guides</span>
+        </a>
+    </li>
+    <li>
+        <a class="iconed icon-sidebar icon-tool" href="/Infinite_Heaven">
+            <span class="label">Infinite Heaven</span>
+        </a>
+    </li>
+    <li>
+        <a class="iconed icon-sidebar icon-tool" href="/FoxKit">
+            <span class="label">FoxKit</span>
+        </a>
+    </li>
+    <li>
+        <a class="iconed icon-sidebar icon-tag count-badge" href="/Meta-All_Pages" data-count="{{ site.pages | size }}">
+            <span class="label">All Pages</span>
+        </a>
+    </li>
 </ul>
 
-Wiki
+<span class="sidebar-heading">Wiki</span>
 
 <ul>
-    <li><a href="/Meta-Wiki_Tips">Wiki Tips</a></li>
-    <li><a href="/Meta-Creating_Editing_a_Page">Creating/Editing a Page</a></li>
-    <li><a href="/Meta-Formatting_Reference">Formatting Reference</a></li>
+    <li>
+        <a class="iconed icon-sidebar icon-lightbulb" href="/Meta-Wiki_Tips">
+            <span class="label">Wiki Tips</span>
+        </a>
+    </li>
+    <li>
+        <a class="iconed icon-sidebar icon-text-caret" href="/Meta-Creating_Editing_a_Page">
+            <span class="label">Creating/Editing a Page</span>
+        </a>
+    </li>
+    <li>
+        <a class="iconed icon-sidebar icon-curly-brackets" href="/Meta-Formatting_Reference">
+            <span class="label">Formatting Reference</span>
+        </a>
+    </li>
 </ul>
 
-External Links
+<span class="sidebar-heading">External Links</span>
 
 <ul>
-    <li><a href="https://discord.gg/moddersheaven">Modding Discord</a></li>
-    <li><a href="https://www.nexusmods.com/metalgearsolidvtpp">Nexusmods (TPP)</a></li>
-    <li><a href="https://www.nexusmods.com/metalgearsolidvgz">Nexusmods (GZ)</a></li>
-    <li><a href="https://www.nexusmods.com/metalgearsurvive">Nexusmods (Survive)</a></li>
-    <li><a href="https://mgsvmods.github.io/">Non-Nexus Mods Collection</a></li>
+    <li>
+        <a class="iconed icon-sidebar icon-discord" href="https://discord.gg/moddersheaven">
+            <span class="label">Modding Discord</span>
+        </a>
+    </li>
+    <li>
+        <a class="iconed icon-sidebar icon-nexusmods" href="https://www.nexusmods.com/metalgearsolidvtpp">
+            <span class="label">Nexus Mods (TPP)</span>
+        </a>
+    </li>
+    <li>
+        <a class="iconed icon-sidebar icon-nexusmods" href="https://www.nexusmods.com/metalgearsolidvgz">
+            <span class="label">Nexus Mods (GZ)</span>
+        </a>
+    </li>
+    <li>
+        <a class="iconed icon-sidebar icon-nexusmods" href="https://www.nexusmods.com/metalgearsurvive">
+            <span class="label">Nexus Mods (Survive)</span>
+        </a>
+    </li>
+    <li>
+        <a class="iconed icon-sidebar icon-globe" href="https://mgsvmods.github.io/">
+            <span class="label">Non-Nexus Mods Collection</span>
+        </a>
+    </li>
 </ul>

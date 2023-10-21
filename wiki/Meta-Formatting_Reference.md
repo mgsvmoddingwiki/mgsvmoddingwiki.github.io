@@ -8,7 +8,7 @@ This page serves as a reference guide for the various Markdown and customized st
 
 Each example first shows how it looks on the page, followed by the raw code used.
 
-> **Side-note:** if a page title you're creating contains a colon character (`:`) then wrap the title in single quotes, such as used for this very page:
+> **Side-note:** if a page title you're creating contains a colon character (`:`) then in the page's metadata section wrap the title in single quotes, such as used for this very page:
 > ```
 > title: 'Meta: Formatting Reference'
 > ```
@@ -408,7 +408,7 @@ Floating sidebar for program/tool/script information.
 ```
 {:.clear}
 
-> **Note:** always place the include line at the start of a page, before the opening paragraphs. That way it properly makes the text flow around it.
+> **Note:** place the include line before the opening paragraphs so text properly flows around it.
 
 ---
 
@@ -545,3 +545,35 @@ Similiar to the images section we can use classes to change the width/position. 
 > **Note:** use the ID of the video for the `id` value.
 
 > **Tip:** like the native video file embeds the Vimeo embeds support adding the same classes as above and also captions.
+
+---
+
+## Sidebar menu icons
+
+For those editing the sidebar of the wiki itself these are a list of available custom icons to choose from.
+
+| Icon | Class | Notes |
+|-|-|-|
+| [](/){:.iconed.icon-sidebar.icon-curly-brackets} | `icon-curly-brackets` |  |
+| [](/){:.iconed.icon-sidebar.icon-diamond} | `icon-diamond` | Intended for home page |
+| [](/){:.iconed.icon-sidebar.icon-discord} | `icon-discord` | For Discord links |
+| [](/){:.iconed.icon-sidebar.icon-globe} | `icon-globe` | For generic links |
+| [](/){:.iconed.icon-sidebar.icon-lightbulb} | `icon-lightbulb` |  |
+| [](/){:.iconed.icon-sidebar.icon-nexusmods} | `icon-nexusmods` | For Nexus Mods links |
+| [](/){:.iconed.icon-sidebar.icon-open-pages} | `icon-open-pages` |  |
+| [](/){:.iconed.icon-sidebar.icon-package} | `icon-package` | For eg: file formats |
+| [](/){:.iconed.icon-sidebar.icon-tag} | `icon-tag` |  |
+| [](/){:.iconed.icon-sidebar.icon-text-caret} | `icon-text-caret` |  |
+| [](/){:.iconed.icon-sidebar.icon-tool} | `icon-tool` |  |
+
+As a full example of the classes/structure needed for a menu item in the sidebar here's the code for single list item in an unordered list (`ul`) element:
+
+```html
+<ul>
+    <li>
+        <a class="iconed icon-sidebar icon-curly-brackets" href="/Meta-Formatting_Reference">
+            <span class="label">Formatting Reference</span>
+        </a>
+    </li>
+</ul>
+```

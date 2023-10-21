@@ -125,7 +125,7 @@ readme_index:
   enabled:          true
   remove_originals: false
   with_frontmatter: true
-  
+
 #
 # INCLUDING HOOKS
 # They are optional, change them only if you need
@@ -144,7 +144,7 @@ inc_after_meta :
 inc_before_scripts :
 inc_after_scripts :
 inc_before_styles :
-inc_after_styles : stylesheets.html
+inc_after_styles : head-after-styles.html
 inc_before_header :
 inc_after_header :
 inc_before_tail :
