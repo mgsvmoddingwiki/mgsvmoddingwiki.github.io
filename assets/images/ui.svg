@@ -13,6 +13,11 @@
         <rect id="mask-fill" class="fill" width="100%" height="100%"/>
 
         <!-- Sidebar icons -->
+        <g id="icons-sidebar-youtube-path" transform="translate(-26 -219)">
+            <path class="stroke" d="M45,228.806C45,226.456 42.878,225 40.528,225L35.472,225C33.122,225 31,226.456 31,228.806L31,233.194C31,235.544 33.122,237 35.472,237L40.528,237C42.878,237 45,235.544 45,233.194L45,228.806Z"/>
+            <path class="fill" d="M40.408,230.498L40.408,231.502L37.326,232.792L36,232.792L36,229.208L37.326,229.208L40.408,230.498Z"/>
+        </g>
+
         <g id="icons-sidebar-tool-path" class="stroke miter-sharpest" transform="translate(-26 -115)">
             <path d="M35.006,125.608C35.001,125.409 35,125.206 35,125C35,122.24 35.316,119.435 40,120C40.542,120.065 40.998,120.108 41.633,120.19L39.426,123.529L39.958,125.23L41.497,125.599L44.88,123.376C44.931,124.065 44.96,124.583 45,125C45.264,127.722 44.76,130 40,130C39.791,130 39.59,129.996 39.398,129.987L36.093,133.292C35.385,134 34.995,134.014 33.879,134.014C32.763,134.014 32.148,133.996 31.572,133.421C30.997,132.845 30.966,132.166 30.966,131.096C30.966,130.027 30.951,129.663 31.707,128.907L35.006,125.608Z"/>
         </g>
@@ -348,6 +353,7 @@
     <use class="output" id="icons-sidebar-discord" xlink:href="#icons-sidebar-discord-path"/>
     <use class="output" id="icons-sidebar-nexusmods" xlink:href="#icons-sidebar-nexusmods-path"/>
     <use class="output" id="icons-sidebar-tool" xlink:href="#icons-sidebar-tool-path"/>
+    <use class="output" id="icons-sidebar-youtube" xlink:href="#icons-sidebar-youtube-path"/>
 
 
 

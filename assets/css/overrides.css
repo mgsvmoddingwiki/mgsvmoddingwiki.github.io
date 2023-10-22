@@ -1369,7 +1369,7 @@ body.darkmode--activated .darkmode-ignore {
 }
 
 
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ SIDEBAR ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ SIDEBAR, ICONS ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 #git-wiki-sidebar .view, /* Hide 'View My Github Profile' link */
 .page-list-title, .page-list-title + ul, /* Hide 'Pages (Last <n> Updated)' list since date modified Jekyll plugin not allowed by Github Actions (assumes this list is last in sidebar) */
@@ -1481,7 +1481,9 @@ body.darkmode--activated .darkmode-ignore {
 }
 
 /* Icons */
-.iconed.icon-sidebar::before {
+.iconed.icon-sidebar::before,
+#git-wiki-content a[href^="https://youtu.be"]::before, #git-wiki-content a[href^="https://www.youtube.com"]::before
+ {
     width: 22px; /* icons are based on 16x16px bounds, however for minor optical equivalence some icons reach 18px. Extra width just gives more headroom. */
     height: 22px;
     background: var(--color-secondary);
@@ -1500,6 +1502,21 @@ body.darkmode--activated .darkmode-ignore {
     margin: 4px 2px 0;
     -webkit-mask-position: 0 0;
     mask-position: 0 0;
+}
+
+/* External link icons for certain sites (not embeds) */
+#git-wiki-content a[href^="https://youtu.be"]::before, #git-wiki-content a[href^="https://www.youtube.com"]::before
+{
+    background: currentColor;
+    margin-right: 2px;
+    position: relative;
+    top: 4px;
+}
+
+/* External link icons for certain sites - Hide regular external link icon to avoid visual busyness */
+#git-wiki-content a[href^="https://youtu.be"], #git-wiki-content a[href^="https://www.youtube.com"] {
+    background-image: none;
+    padding-right: 0;
 }
 
 .git-wiki-page-list li .iconed:hover::before {
@@ -1563,6 +1580,12 @@ body.darkmode--activated .darkmode-ignore {
 .icon-sidebar.icon-tool::before {
     -webkit-mask-image: url("/assets/images/ui.svg#icons-sidebar-tool");
     mask-image: url("/assets/images/ui.svg#icons-sidebar-tool");
+}
+
+.icon-sidebar.icon-youtube::before,
+#git-wiki-content a[href^="https://youtu.be"]::before, .git-wiki-page a[href^="https://www.youtube.com"]::before {
+    -webkit-mask-image: url("/assets/images/ui.svg#icons-sidebar-youtube");
+    mask-image: url("/assets/images/ui.svg#icons-sidebar-youtube");
 }
 
 

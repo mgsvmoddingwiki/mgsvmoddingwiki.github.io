@@ -55,18 +55,18 @@ permalink: /Guides/
 ## External Guides
 
 - ## Getting Started
-    - [MGSV Modding Series playlist 📼](https://www.youtube.com/playlist?list=PLvs_Pavo7cCXJoassPaeMKWE9R99M22Fz)
+    - [MGSV Modding Series playlist](https://www.youtube.com/playlist?list=PLvs_Pavo7cCXJoassPaeMKWE9R99M22Fz)
         - Covers: Snakebite, unpacking game files, FMDL Studio v2 setup, 3dsMax UI and basics, Unity model and texture editing, FV2 texture swaps
-    - [SnakeBite In-Depth: Creating Your Own Mod Files 📼](https://www.youtube.com/watch?v=Wg0qM7Yh5fU)
+    - [SnakeBite In-Depth: Creating Your Own Mod Files](https://www.youtube.com/watch?v=Wg0qM7Yh5fU)
 - ## Sound
     - [Adding BGM From Other Missions](https://github.com/NasaNhak/git-tuppm-src/wiki/Guide:-Adding-BGM-From-Other-Missions)
     - [Sound Swapping and the Wwise Format](https://bobdoleowndu.github.io/mgsv/documentation/soundswapping.html)
 - ## Rendering
-    - [Fmdl Studio v2: Merging Models w/ Blender 📼](https://www.youtube.com/watch?v=0Z5Pt9EkUZM)
-    - [How to Correctly Swap Player Models 📼](https://www.youtube.com/watch?v=tqgLYR1GRF8)
-    - [How to Create Custom Form Variations 📼](https://www.youtube.com/watch?v=1oQ7V1-sUEQ)
+    - [Fmdl Studio v2: Merging Models w/ Blender](https://www.youtube.com/watch?v=0Z5Pt9EkUZM)
+    - [How to Correctly Swap Player Models](https://www.youtube.com/watch?v=tqgLYR1GRF8)
+    - [How to Create Custom Form Variations](https://www.youtube.com/watch?v=1oQ7V1-sUEQ)
     - [Perfect First-Person with Any Model](https://bobdoleowndu.github.io/mgsv/documentation/perfectfirstperson.html)
-    - [Texture Modding Tutorial [AutoPftxsTool and Snakebite] 📼](https://www.youtube.com/watch?v=WJ_HVJA-Zu0)
+    - [Texture Modding Tutorial [AutoPftxsTool and Snakebite]](https://www.youtube.com/watch?v=WJ_HVJA-Zu0)
         - Follow-up to an earlier [tutorial](https://youtu.be/dqK2rErPd0s).
     - [Re-texturing a Supply Box](https://github.com/chocmake/MGSV-Custom-Texture-Path-Hex-Replacer/wiki/Re%E2%80%90texturing-a-Supply-Box)
         - Texture modding using FMDL path edits

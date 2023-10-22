@@ -567,6 +567,7 @@ For those editing the sidebar of the wiki itself these are a list of available c
 | [](/){:.iconed.icon-sidebar.icon-tag} | `icon-tag` |  |
 | [](/){:.iconed.icon-sidebar.icon-text-caret} | `icon-text-caret` |  |
 | [](/){:.iconed.icon-sidebar.icon-tool} | `icon-tool` |  |
+| [](/){:.iconed.icon-sidebar.icon-youtube} | `icon-youtube` | For Youtube links |
 
 As a full example of the classes/structure needed for a menu item in the sidebar here's the code for single list item in an unordered list (`ul`) element:
 
