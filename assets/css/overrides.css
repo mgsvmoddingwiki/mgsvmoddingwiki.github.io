@@ -808,6 +808,10 @@ body > .wrapper {
 }
 
 /* Spoiler boxes */
+details:not([open]) summary {
+    margin-bottom: 0; /* Chromium includes the summary margin when closed, while Firefox doesn't, so this normalizes both */
+}
+
 .spoiler {
     margin: var(--spacing-secondary) 0 var(--spacing-secondary);
 }
@@ -890,6 +894,7 @@ summary:active {
     margin: 0 0 var(--spacing-secondary);
 }
 
+.toc-toggle:not([open]),
 .toc-toggle summary {
     margin-bottom: var(--spacing-primary);
 }
