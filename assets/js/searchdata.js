@@ -19,7 +19,7 @@ var searchIndex = [
 ];
 
 var fuse = new Fuse(searchIndex, {
-    keys: ['title', 'content']
+    keys: ['title', 'tags', 'content']
 });
 
 const searchInput = body.querySelector('#search-input');
