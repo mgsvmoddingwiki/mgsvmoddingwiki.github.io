@@ -8,15 +8,9 @@ This page covers tips for using the wiki, some of which are non-obvious so worth
 
 ## Search
 
-The search box is quite simple in it's current form, acting more like a filter. It will return the first matches for a query from anywhere on a page (whether a tag, title, body text or URL) in alphabetical order.
+The search box returns results in the form of autocomplete suggestions. It also accepts fuzzy queries, which is useful for typos (such as matching the 'File Monolith' page to a query of `File Miniloth`).
 
-> **Tip:** if you know the beginning word of a page title you can typically filter results better by adding a forwardslash to the start of the query (eg: `/FoxKit`), since it's contained in the page URL.
->
-> Alternatively if you know a page title contains a colon you can search using that which similarly improves results (eg: `FoxKit:`).
-
-![`/Foxkit` as query. Without using these tips the 'FoxKit' page doesn't show in results normally, despite being the most relevant.](/assets/Meta-Wiki_Tips/Search - Forwardslash use.png){:width="600px"}
-
-> **Tip:** if the search hasn't helped you can always visit the [All Pages](/Meta-All_Pages) list and Ctrl+F in the browser to find a title.
+> **Tip:** if you still can't find what you're after you can try the [All Pages](/Meta-All_Pages) list, where there's a list of all pages by title and a list of all categories to browse.
 
 
 ## Top toolbar buttons
