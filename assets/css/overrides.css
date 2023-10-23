@@ -366,7 +366,8 @@ body.expanded-width-instant {
 /* Optically match color of icons using `--color-secondary` to text color */
 li::marker,
 summary::before,
-.iconed::before {
+.iconed::before,
+#git-wiki-content a[href^="http"]::before {
     opacity: 0.88; /* to optically match color of text. Same for all icons using `--color-secondary` */
 }
 
