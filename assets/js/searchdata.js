@@ -19,7 +19,13 @@ var searchIndex = [
 ];
 
 var fuse = new Fuse(searchIndex, {
-    keys: ['title', 'tags', 'content']
+    keys: [
+        { name: 'title', weight: 2 }, // increase title relevance to result ordering
+        { name: 'tags', weight: 1 },
+        { name: 'content', weight: 0.5 } // reducing this weight appears to improve perf
+    ],
+    threshold: 0, // effectively disable fuzzy matching by requiring exact  matches
+    ignoreLocation: true, // search through all text at expense of performance
 });
 
 const searchInput = body.querySelector('#search-input');
