@@ -5,8 +5,8 @@ function getKeyByValue(object, value) {
     return Object.keys(object).find(key => object[key] === value)
 }
 
-function matchTarget(target, object) {
-    return Object.values(object).includes(target)
+function matchObjVal(object, value) {
+    return Object.values(object).includes(value)
 }
 
 // ---------------------- Toolbar: button functions ---------------------
@@ -77,7 +77,7 @@ const themeRadio = themeButtons.light.closest('.menu-radio');
 radioButtonActivate(themeButtons, checkTheme());
 
 themeRadio.addEventListener('click', (e) => {
-    if (matchTarget(e.target, themeButtons)) {
+    if (matchObjVal(themeButtons, e.target)) {
         var themeType = getKeyByValue(themeButtons, e.target);
         setClassSetting(body, themeType, themeClassPrefix);
         radioButtonActivate(themeButtons, themeType);
@@ -100,7 +100,7 @@ radioButtonActivate(graphicButtons, checkGraphic(Object.keys(graphicButtons)[0])
 
 graphicRadio.addEventListener('click', (e) => {
     const defaultClass = graphicClassPrefix + '-' + Object.keys(graphicButtons)[0];
-    if (matchTarget(e.target, graphicButtons)) {
+    if (matchObjVal(graphicButtons, e.target)) {
         var graphicType = getKeyByValue(graphicButtons, e.target);
         var currentClass = graphicClassPrefix + '-' + graphicType;
         var priorClass = checkPriorClass(body, graphicClassPrefix, defaultClass); // store the last used image class for transition purposes

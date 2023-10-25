@@ -37,7 +37,7 @@
     --dark-theme-bg-subtle: hsl(240, 7%, 26%);
     --dark-theme-bg-input: hsl(234, 8%, 15%);
     --dark-theme-bg-code: var(--dark-theme-bg-input);
-    --dark-theme-bg-list-hover: hsl(240, 7%, 46%);
+    --dark-theme-bg-list-hover: hsl(240, 7%, 29%);
     --dark-theme-bg-tooltip: hsl(234, 8%, 10%);
     --dark-theme-color-primary: hsl(0,0%,90%);
     --dark-theme-color-secondary: hsl(231, 3%, 72%);
@@ -63,8 +63,8 @@
     --light-theme-bg-input: hsl(225, 7%, 86%);
     --light-theme-bg-code: hsl(234, 18%, 96%);
     --light-theme-bg-code-inset: hsl(234, 9%, 90%); /* exclusive to light theme */
-    --light-theme-bg-list-hover: hsl(240, 5%, 96%);
-    --light-theme-bg-tooltip: var(--light-theme-bg-list-hover);
+    --light-theme-bg-list-hover: hsl(240, 5%, 90%);
+    --light-theme-bg-tooltip: hsl(240, 5%, 96%);
     --light-theme-color-primary: hsl(0, 0%, 5%);
     --light-theme-color-secondary: hsl(231, 5%, 42%);
     --light-theme-color-accent: hsl(33, 85%, 62%);
@@ -372,7 +372,7 @@ summary::before,
 }
 
 
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ EDITING/SEARCH TOOLBAR ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ EDITING TOOLBAR ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 #tools-buttons {
     text-align: inherit !important; /* override due to default CSS using inline styles */
@@ -723,19 +723,103 @@ body.expanded-width-true .icon-toolbar.icon-expand::before {
 }
 
 
-/* Search */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ SEARCH BOX ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.git-wiki-search {
+    --clear-width: 28px;
+    --no-results-width: 95px;
+    position: relative;
+    margin-bottom: calc(var(--spacing-primary) - var(--spacing-minor));
+}
+
 #search-input {
     width: 100%;
     position: relative;
+    padding-right: calc(var(--spacing-secondary) + var(--clear-width));
     z-index: 1;
 }
 
-#results-container {
-    overflow: hidden;
-    padding: 0;
-    border-radius: var(--radius-primary);
-    margin: var(--spacing-minor) 0 calc(var(--spacing-primary) - var(--spacing-minor)) 0;
+.search-actions.no-results ~ #search-input {
+    padding-right: calc(var(--spacing-secondary) + var(--clear-width) + var(--no-results-width));
+}
+
+/* Customized HTML elements */
+.search-actions {
+    --offset-top: 0px;
+    display: flex;
+    position: absolute;
+    top: calc(var(--spacing-minor) + var(--offset-top));
+    right: calc(var(--spacing-secondary) - 7px); /* to match text padding of input while still having extra clickable area of button */
+    z-index: 2;
+}
+
+.search-clear-query,
+.search-no-results {
+    opacity: 0;
+    transition: opacity 150ms;
+}
+
+.search-clear-query {
+    width: var(--clear-width);
+    height: var(--clear-width);
+    background: var(--color-primary);
+    cursor: pointer;
+    border: none; /* override default button styling */
+    -webkit-mask-image: url("/assets/images/ui.svg#icons-searchbox-clear");
+    mask-image: url("/assets/images/ui.svg#icons-searchbox-clear");
+    -webkit-mask-position: 2px 2px;
+    mask-position: 2px 2px;
+    pointer-events: none;
+}
+
+.search-actions.no-results .search-no-results,
+.search-actions.clear .search-clear-query {
+    opacity: 0.5; /* to match placeholder text */
+    pointer-events: auto;
+}
+
+.search-actions.clear .search-clear-query:hover {
+    opacity: 1;
+}
+
+.search-actions.clear .search-clear-query:active {
+    filter: var(--filter-button-active);
+}
+
+.search-no-results {
+    height: 100%;
+    color: var(--color-primary);
+    font-size: var(--font-size-small);
+    font-weight: var(--font-weight-semibold);
+    line-height: 100%;
+    padding: var(--spacing-minor) calc(var(--spacing-minor) * 2);
+    border: var(--border-width) solid var(--color-border);
+    border-radius: var(--radius-full);
+    margin-right: var(--spacing-minor);
     position: relative;
+    top: 1px; /* to align with clear query button */
+    pointer-events: none;
+}
+
+#results-container {
+    width: 100%;
+    background: var(--bg-tooltip);
+    overflow: hidden;
+    opacity: 0;
+    border-radius: var(--radius-primary);
+    padding: var(--spacing-minor);
+    margin-top: calc(var(--spacing-minor) * 2);
+    box-shadow: var(--shadow-secondary);
+    position: absolute;
+    transition: opacity 150ms 50ms ease-out, margin 150ms ease-in; /* minor delay */
+    pointer-events: none;
+    z-index: 2;
+}
+
+/* Only show when input field focused or list clicked */
+#results-container.visible {
+    opacity: 1;
+    margin-top: var(--spacing-minor);
+    pointer-events: auto;
 }
 
 #results-container li a {
@@ -743,24 +827,20 @@ body.expanded-width-true .icon-toolbar.icon-expand::before {
     height: 100%;
     color: var(--color-primary);
     display: inline-block;
-    padding: var(--spacing-minor) var(--spacing-secondary);
+    padding: var(--spacing-minor) calc(var(--spacing-minor) * 2);
+    border-radius: var(--radius-secondary);
     position: relative; /* position text above background pseudo-element */
 }
 
 #results-container li a:hover,
-#results-container li a:active {
+#results-container li a.highlight {
     background: var(--bg-list-hover);
 }
 
-/* Results background */
-#results-container li:first-child::before {
-    content: '';
-    width: 100%;
-    height: 100%;
-    background: var(--bg-input);
-    display: block;
-    position: absolute;
-    z-index: 0;
+#results-container li a:active,
+#results-container li a.active {
+    background: var(--color-accent);
+    color: var(--color-accent-foreground);
 }
 
 
@@ -1525,7 +1605,7 @@ body.darkmode--activated .darkmode-ignore {
 }
 
 .git-wiki-page-list li .iconed:active::before {
-    background: var(--color-link-hover);
+    background: currentColor;
 }
 
 .icon-sidebar.icon-diamond::before {
@@ -1823,6 +1903,10 @@ footer {
         display: none; /* button unnecessary since page already becomes max width */
     }
 
+    .search-actions {
+        --offset-top: -1px;
+    }
+
     .git-wiki-page .left,
     .git-wiki-page .right,
     .git-wiki-page .legacy-small,
@@ -1924,6 +2008,7 @@ footer {
         border-color: var(--bg-primary);
     }
 
+    .git-wiki-page-list li a:hover,
     .git-wiki-page-list li a:active,
     .git-wiki-page-list .count-badge::after {
         background: var(--bg-primary);

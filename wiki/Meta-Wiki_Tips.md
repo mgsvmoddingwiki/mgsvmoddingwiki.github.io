@@ -8,7 +8,7 @@ This page covers tips for using the wiki, some of which are non-obvious so worth
 
 ## Search
 
-The search box returns results in the form of autocomplete suggestions. It also accepts fuzzy queries, which is useful for typos (such as matching the 'File Monolith' page to a query of `File Miniloth`).
+The search box returns results in the form of autocomplete suggestions. As it peforms a full text search it can be little sluggish on Firefox-based browsers. The results can also be navigated using keyboard arrow or tab keys.
 
 > **Tip:** if you still can't find what you're after you can try the [All Pages](/Meta-All_Pages) list, where there's a list of all pages by title and a list of all categories to browse.
 

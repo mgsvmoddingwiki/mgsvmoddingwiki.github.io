@@ -487,13 +487,7 @@ Some other text
 > **Note:** spoilers within other types of elements (like within tables and list items) aren't supported.
 {:.important}
 
-> **Note:** some formatting behaves differently when placed in a spoiler element. For instance, manual line breaks in lists (using `\`) need to instead be `<br/>`.
-{:.important}
-
-> **Note:** any list within a spoiler element that has a code block (wrapped in ```` ``` ````) in it beginning with a `<` character will cause the everything past that point to render incorrectly. In such a case you can prefix a non-breaking space character (alt+255) to resolve this issue (` <`).\
-\
-> The [Infinite Heaven](/Infinite_Heaven) page is an example where this workaround can be seen utilized.
-{:.important}
+> **Note:** any list within a spoiler element that has a code block (wrapped in ```` ``` ````) in it beginning with a `<` character will cause the everything past that point to render incorrectly. In such a case you can prefix a non-breaking space character (alt+255) to resolve this issue (` <`).
 
 ---
 
