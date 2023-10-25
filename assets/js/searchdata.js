@@ -38,7 +38,8 @@ var keyNavCodes = {
     arrowDown: 40,
     enter: 13,
     esc: 27,
-    tab: 9
+    tab: 9,
+    shift: 16 // for whatever reason the keyup listener doesn't detect `shiftKey` but does detect the raw keycode so it's added here
 }
 
 searchInput.addEventListener('keyup', (e) => {
@@ -46,7 +47,7 @@ searchInput.addEventListener('keyup', (e) => {
     // Trigger on every key except those used for nav
     if (!matchObjVal(keyNavCodes, e.keyCode)) {
         if (typeof val != 'undefined' && val != null && val.length != 0) {
-            outputResults(fuse.search(val));
+            outputResults(fuse.search(val), e.keyCode);
         } else {
             clearResults(true);
             searchClearShow(false);
@@ -56,6 +57,7 @@ searchInput.addEventListener('keyup', (e) => {
     } else {
         // Defocus input
         if (e.keyCode == keyNavCodes.esc) {
+            // Chromium/Firefox handles this fine but Vivaldi seems to hijack the Esc key
             searchInput.blur();
             searchResultsShow(false);
         }
@@ -64,7 +66,7 @@ searchInput.addEventListener('keyup', (e) => {
 
 searchInput.addEventListener('keydown', (e) => {
     if (resultsContainer.classList.contains('visible')) {
-        if (matchObjVal(keyNavCodes, e.keyCode) || e.shiftKey) {
+        if (matchObjVal(keyNavCodes, e.keyCode)) {
             e.preventDefault(); // disable native key functionality (necessary for tab handling)
             searchKeyNav(e); // pass entire event not just keyCode, so modifiers can be detected
         }
@@ -89,7 +91,6 @@ searchClear.addEventListener('click', (e) => {
 // Keyboard navigation
 // https://stackoverflow.com/a/71951738
 function searchKeyNav(e) {
-    const key = e;
     const a = resultsContainer.getElementsByTagName('a');
     var priorItem = keyNavCurItem;
     if (e.keyCode == keyNavCodes.arrowDown || (e.keyCode == keyNavCodes.tab && !e.shiftKey)) {
@@ -108,7 +109,7 @@ function searchKeyNav(e) {
             changeHighlight(a[keyNavCurItem], true);
         }
     }
-    if (e.keyCode == keyNavCodes.arrowUp || (e.keyCode = keyNavCodes.tab && e.shiftKey)) {
+    if (e.keyCode == keyNavCodes.arrowUp || (e.keyCode == keyNavCodes.tab && e.shiftKey)) {
         keyNavCurItem--;
         if (keyNavCurItem == -1) {
             priorItem = 0;
@@ -171,10 +172,12 @@ function searchClearShow(state) {
     }
 }
 
-function outputResults(input) {
+function outputResults(input, key) {
     searchClearShow(true);
     if (input.length != 0) {
-        clearResults();
+        if (key != keyNavCodes.shift) {
+            clearResults(); // prevent clearing highlighted item from key nav
+        }
         searchResultsShow(true);
         searchNoResults(false);
         input.slice(0,resultsMax).forEach((result) => {
