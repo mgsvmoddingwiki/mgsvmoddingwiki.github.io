@@ -111,7 +111,7 @@ function searchKeyNav(e) {
     }
     if (e.keyCode == keyNavCodes.arrowUp || (e.keyCode == keyNavCodes.tab && e.shiftKey)) {
         keyNavCurItem--;
-        if (keyNavCurItem == -1) {
+        if (keyNavCurItem <= -1) {
             priorItem = 0;
             keyNavCurItem = a.length - 1; // to account for zero-based array
             updateItems();
