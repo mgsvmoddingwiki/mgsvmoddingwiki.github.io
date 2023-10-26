@@ -174,6 +174,7 @@ function outputResults(input, key) {
     searchClearShow(true);
     if (input.length != 0) {
         if (key != keyNavCodes.shift) {
+            keyNavCurItem = -1; // reset on dismiss
             resultsContainer.replaceChildren(); // prevent clearing highlighted item from key nav
         }
         searchResultsShow(true);
