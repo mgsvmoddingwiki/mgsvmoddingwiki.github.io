@@ -750,6 +750,7 @@ body.expanded-width-true .icon-toolbar.icon-expand::before {
     top: calc(var(--spacing-minor) + var(--offset-top));
     right: calc(var(--spacing-secondary) - 7px); /* to match text padding of input while still having extra clickable area of button */
     z-index: 2;
+    pointer-events: none;
 }
 
 .search-clear-query,
@@ -774,6 +775,9 @@ body.expanded-width-true .icon-toolbar.icon-expand::before {
 .search-actions.no-results .search-no-results,
 .search-actions.clear .search-clear-query {
     opacity: 0.5; /* to match placeholder text */
+}
+
+.search-actions.clear .search-clear-query {
     pointer-events: auto;
 }
 

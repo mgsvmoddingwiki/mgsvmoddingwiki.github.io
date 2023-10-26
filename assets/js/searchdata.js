@@ -49,7 +49,6 @@ searchInput.addEventListener('keyup', (e) => {
         if (typeof val != 'undefined' && val != null && val.length != 0) {
             outputResults(fuse.search(val), e.keyCode);
         } else {
-            clearResults(true);
             searchClearShow(false);
             searchNoResults(false);
             searchResultsShow(false);
@@ -83,7 +82,6 @@ body.addEventListener('click', (e) => {
 
 searchClear.addEventListener('click', (e) => {
     searchInput.value = null;
-    clearResults(true);
     searchClearShow(false);
     searchNoResults(false);
 });
@@ -176,7 +174,7 @@ function outputResults(input, key) {
     searchClearShow(true);
     if (input.length != 0) {
         if (key != keyNavCodes.shift) {
-            clearResults(); // prevent clearing highlighted item from key nav
+            resultsContainer.replaceChildren(); // prevent clearing highlighted item from key nav
         }
         searchResultsShow(true);
         searchNoResults(false);
@@ -190,22 +188,8 @@ function outputResults(input, key) {
             resultsContainer.appendChild(listItem);
         });
     } else {
-        clearResults(true);
         searchNoResults(true);
         searchResultsShow(false);
-    }
-}
-
-function clearResults(delay) {
-    keyNavCurItem = -1; // reset on dismiss
-    if (delay) {
-        // Delay clearing list so it remains visible during CSS transition
-        const delay = async () => {
-            await delay(1000);
-            resultsContainer.replaceChildren();
-        }
-    } else {
-        resultsContainer.replaceChildren();
     }
 }
 
