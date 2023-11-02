@@ -1,0 +1,16 @@
+---
+layout: git-wiki-default
+permalink: /404.html
+is_wiki_page: false
+---
+
+{% comment %}For whatever reason Jekyll doesn't parse Markdown contained in this file (even if the file has a `.md` extension) so HTML has to be used. Liquid templating is still functional, however.{% endcomment %}
+
+{% comment %}Script has to be external in order to be a module, so that it can import the search index array from the external script.{% endcomment %}
+<script defer type="module" src="{{ 'assets/js/404.js' | relative_url }}"></script>
+
+<blockquote class="important">
+    <p>The page you were looking for doesn't exist at this URL. It may have been renamed/moved so check out the most relevant results below.</p>
+</blockquote>
+
+<ul class="pagenotfound-results loading"></ul>
