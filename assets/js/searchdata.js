@@ -2,21 +2,10 @@
 layout: null
 is_wiki_page: false
 ---
+
 {% if site.search_engine == "js" %}
 
-var searchIndex = [
-    {% for page in site.html_pages %}
-    {
-        {% assign title = page.title | default: page.name %}
-        {% if title != nil and title != '404.html' and title != 'index.html' %}
-            title: `{{ title }}`,
-            tags: `{{ page.tags | join: ', ' }}`,
-            url: `{{ site.baseurl }}{{ page.url }}`,
-            content: {{ page.content | jsonify  }}
-        {% endif %}
-    } {% unless forloop.last %},{% endunless %}
-    {% endfor %}
-];
+import { searchIndex } from './searchindex.js'
 
 var fuse = new Fuse(searchIndex, {
     keys: [
@@ -173,9 +162,10 @@ function searchClearShow(state) {
 function outputResults(input, key) {
     searchClearShow(true);
     if (input.length != 0) {
+        // Avoid resetting unless a non-shift key is pressed
         if (key != keyNavCodes.shift) {
-            keyNavCurItem = -1; // reset on dismiss
-            resultsContainer.replaceChildren(); // prevent clearing highlighted item from key nav
+            keyNavCurItem = -1; // reset currently highlighted item
+            resultsContainer.replaceChildren(); // reset all list items
         }
         searchResultsShow(true);
         searchNoResults(false);

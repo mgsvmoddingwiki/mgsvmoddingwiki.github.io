@@ -1791,6 +1791,35 @@ footer {
 }
 
 
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 404 PAGE ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.pagenotfound-results {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.pagenotfound-results.loading {
+    height: 100px;
+    background: var(--color-secondary);
+    -webkit-mask-image: url("/assets/images/ui.svg#loading-dots");
+    mask-image: url("/assets/images/ui.svg#loading-dots");
+}
+
+.pagenotfound-results li a {
+    display: block;
+    padding: calc(var(--spacing-minor) * 2) var(--spacing-intermediate);
+    background: var(--color-buttons);
+    border-radius: var(--radius-primary);
+    margin: 0 0 var(--spacing-minor);
+}
+
+.pagenotfound-results li a:hover,
+.pagenotfound-results li a:active {
+    background: var(--color-buttons-hover);
+}
+
+
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ THEMES RELATED ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* Note: to avoid more copies of code the styling of this section is only active when body has class added via JS (ie: users with JS disabled won't see them) */
 
