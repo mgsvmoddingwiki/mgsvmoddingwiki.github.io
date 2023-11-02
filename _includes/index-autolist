@@ -24,11 +24,14 @@
         <ul>
         {% if include.type == "all-pages" %}
             {% for page in site.pages %}
-                <li><a href="{{ page.url }}">{{ page.title }}</a></li>
+                {% assign title = page.title | default: page.name %}
+                {% if title != nil and title != 'Page Not Found' %}
+                    <li><a href="{{ page.url }}">{{ page.title }}</a></li>
+                {% endif %}
             {% endfor %}
             {% elsif include.type == "all-tags" %}
             {% for tag in all_tags %}
-                <li><a href="/{{ tag | replace: " ", "_" }}">{{ tag }}</a></li>
+                <li><a href="/{{ tag }}">{{ tag }}</a></li>
             {% endfor %}
         {% endif %}
         </ul>

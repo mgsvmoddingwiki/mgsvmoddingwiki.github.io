@@ -7,7 +7,7 @@ export const searchIndex = [
     {% for page in site.html_pages %}
     {
         {% assign title = page.title | default: page.name %}
-        {% if title != nil and title != '404.html' and title != 'index.html' %}
+        {% if title != nil and title != 'Page Not Found' and title != 'index.html' %}
             title: `{{ title }}`,
             tags: `{{ page.tags | join: ', ' }}`,
             url: `{{ site.baseurl }}{{ page.url }}`,

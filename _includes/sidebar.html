@@ -1,10 +1,15 @@
 {%- assign guides_count = 0 -%}
+{%- assign allpages_count = 0 -%}
 {% for page in site.pages %}
     {% for tag in page.tags %}
         {% if tag == 'Guides' %}
             {%- assign guides_count = guides_count | plus: 1 -%}
         {% endif %}
     {% endfor %}
+    {% assign title = page.title | default: page.name %}
+    {% if title != nil and title != 'Page Not Found' %}
+        {%- assign allpages_count = allpages_count | plus: 1 -%}
+    {% endif %}
 {% endfor %}
 
 <span class="sidebar-heading">Quick Menu</span>
@@ -31,7 +36,7 @@
         </a>
     </li>
     <li>
-        <a class="iconed icon-sidebar icon-tag count-badge" href="/Meta-All_Pages" data-count="{{ site.pages | size }}">
+        <a class="iconed icon-sidebar icon-tag count-badge" href="/Meta-All_Pages" data-count="{{ allpages_count }}">
             <span class="label">All Pages</span>
         </a>
     </li>

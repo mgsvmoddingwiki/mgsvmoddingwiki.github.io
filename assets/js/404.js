@@ -6,6 +6,7 @@ window.onload = function() {
     var fuse = new Fuse(searchIndex, {
         keys: [
             { name: 'title', weight: 2 },
+            { name: 'url', weight: 1 },
             { name: 'tags', weight: 1 },
             { name: 'content', weight: 0.5 }
         ],
