@@ -6,11 +6,11 @@ tags: [File Formats, Routes, Missions]
 
 The .frt format is a binary file format used in GZ and TPP to store an
 AI route set. A route set contains a number of
-[routes](/route "wikilink"), which dictate AI movement and behavior.
+[routes](/Route), which dictate AI movement and behavior.
 
-There is a file format implementation in [FoxLib](/FoxLib "wikilink").
+There is a file format implementation in [FoxLib](/FoxLib).
 
-frt files can be opened and created with [FoxKit](/FoxKit "wikilink").
+frt files can be opened and created with [FoxKit](/FoxKit).
 Further info
 [here](https://github.com/youarebritish/FoxKit/wiki/Working-with-Route-Builder).
 
@@ -38,7 +38,7 @@ alert routes can be changed the same way, using "SetCautionRoute" and
 "SetAlertRoute" respectively.
 
 For a detailed description of the route system, see the article on
-[routes](/route "wikilink").
+[routes](/Route).
 
 ## Format
 
@@ -257,7 +257,7 @@ The game's default vanilla functions only include "IsGimmickBroken", "IsNotGimmi
 
 Used in TPP.
 
-Used in conjunction with [the mission's syncRouteTable](https://mgsvmoddingwiki.github.io/Mission_Table_Subscripts/#syncRouteTable).
+Used in conjunction with [the mission's syncRouteTable](https://mgsvmoddingwiki.github.io/Mission_Table_Subscripts/#syncroutetable).
 
   - Param 1 (uint32): Sync table index.
   - Param 2 (int32): Sync route step index.
