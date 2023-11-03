@@ -12,17 +12,6 @@
         <rect id="mask-exclusion" class="exclusion fill" width="100%" height="100%"/>
         <rect id="mask-fill" class="fill" width="100%" height="100%"/>
 
-        <!-- Miscellaneous -->
-        <g id="loading-dots-group">
-            <svg x="50%" y="50%">
-                <svg x="-42px" y="-30px"><!-- offset -->
-                    <circle class="fill loading-dot one" cx="10" cy="30" r="5"/>
-                    <circle class="fill loading-dot two" cx="25" cy="30" r="5"/>
-                    <circle class="fill loading-dot three" cx="40" cy="30" r="5"/>
-                </svg>
-            </svg>
-        </g>
-
         <!-- Sidebar icons -->
         <g id="icons-sidebar-youtube-path" transform="translate(-26 -219)">
             <path class="stroke" d="M45,228.806C45,226.456 42.878,225 40.528,225L35.472,225C33.122,225 31,226.456 31,228.806L31,233.194C31,235.544 33.122,237 35.472,237L40.528,237C42.878,237 45,235.544 45,233.194L45,228.806Z"/>
@@ -333,23 +322,23 @@
 
             /* Animations */
 
-            .loading-dot {
+            .output:target .loading-dot {
+                opacity: 0.5;
+                transform: translateY(0);
                 animation: anim-loading-dot 1s ease-in-out infinite;
             }
 
-            .loading-dot.two {
+            .output:target .loading-dot.two {
                 animation-delay: 0.25s;
             }
 
-            .loading-dot.three {
+            .output:target .loading-dot.three {
                 animation-delay: 0.5s;
             }
 
             @keyframes anim-loading-dot {
-                0%   { opacity: 0.5; transform: translateY(0); }
-                20%  { opacity: 1; transform: translateY(-10px); }
-                50%  { opacity: 0.5; transform: translateY(0); }
-                100% { opacity: 0.5; transform: translateY(0); }
+                0%,50%,100%   { opacity: 0.5; transform: translateY(0); }
+                20%           { opacity: 1; transform: translateY(-10px); }
             }
 
             ]]></style>
@@ -394,7 +383,16 @@
     <use class="output" id="icons-sidebar-tool" xlink:href="#icons-sidebar-tool-path"/>
     <use class="output" id="icons-sidebar-youtube" xlink:href="#icons-sidebar-youtube-path"/>
 
-    <use class="output" id="loading-dots" xlink:href="#loading-dots-group"/>
+    <!-- Inserted here so animation only plays when referenced via fragment identifier -->
+    <g class="output" id="loading-dots">
+        <svg x="50%" y="50%">
+            <svg x="-42px" y="-30px">
+                <circle class="fill loading-dot one" cx="10" cy="30" r="5"/>
+                <circle class="fill loading-dot two" cx="25" cy="30" r="5"/>
+                <circle class="fill loading-dot three" cx="40" cy="30" r="5"/>
+            </svg>
+        </svg>
+    </g>
 
 
 
