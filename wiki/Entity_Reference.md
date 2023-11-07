@@ -13,7 +13,7 @@ and foremost, with information regarding Survive coming at a later date.
 
 Click a link below (when those exist) to learn more about that entity or
 subject. For the full, unsorted list, check the [bottom of the
-page](/Entity_Reference#All_TPP_Entities_\(Unsorted\) "wikilink").
+page](/Entity_Reference#all-tpp-entities-unsorted).
 
 ## Common Entities
 
