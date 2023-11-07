@@ -1,13 +1,14 @@
 ---
 title: Route
 permalink: /Route/
+tags: [Routes]
 ---
 
 In TPP and GZ, the **route system** governs the behavior of AI agents
 such as soldiers. Routes are stored in route sets, defined in
-[FRT](/FRT "wikilink") files.
+[FRT](/FRT) files.
 
-frt files can be opened and created with [FoxKit](/FoxKit "wikilink").
+frt files can be opened and created with [FoxKit](/FoxKit).
 Further info
 [here](https://github.com/youarebritish/FoxKit/wiki/Working-with-Route-Builder)
 
@@ -74,7 +75,5 @@ create frt files to experiment with routes.
 
 ## See also
 
-  - [Route findings](/Route_findings "wikilink")
-  - [Route descriptions](/Route_descriptions "wikilink")
-
-[Category:FRT](/Category:FRT "wikilink")
+  - [Routes](/Routes)
+  - [Route descriptions](/Route_descriptions)
