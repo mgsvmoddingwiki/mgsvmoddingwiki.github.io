@@ -4,6 +4,8 @@ permalink: /Rendering/
 tags: [Rendering, Reference]
 ---
 
+{% include index-autolist tag="Rendering" %}{:.small}
+
 ## Shaders
 
 Metal Gear Solid V: The Phantom Pain uses normalized Blinn-Phong for
