@@ -8,7 +8,7 @@ tags: [File Formats, Sound]
 Phantom Pain to make in-game characters speak specified voice clips,
 either in enemy soldier conversations, prisoner carrying monologues or
 unique story characters' monologues. It functions when called by
-[commands](/commands "wikilink") CallVoice, CallMonologue, CallRadio,
+[commands](/Commands) CallVoice, CallMonologue, CallRadio,
 CallConversation or other with a label, making the specified in-game
 character play a voice clip, with an option for the character to play
 unique animations while doing so. The format is Little-Endian, meaning
