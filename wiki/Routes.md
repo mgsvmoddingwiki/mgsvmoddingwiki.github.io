@@ -10,6 +10,8 @@ This page can be a general repository of unsorted route-related
 information. If your findings are complicated or in-depth, consider
 creating a separate page for them.
 
+{% include index-autolist tag="Routes" %}{:.small}
+
 ## Introduction
 
 ![Edge Node : Relaxed Walk](/assets/EdgeNode.jpg){:.thumb .legacy-small width="268px"} Each Event Node has ten parameters.
