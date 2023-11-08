@@ -37,7 +37,7 @@ Troubleshooting charts for the PC versions of MGSV Ground Zeroes and The Phantom
 
 {% include spoiler-start title="The Phantom Pain" %}
 
-### Minimum
+#### Minimum
 
 - CPU: Intel Core i5-4460 (3.40 GHz) or better; Quad-core or better
 - RAM: 4 GB
@@ -49,7 +49,7 @@ Troubleshooting charts for the PC versions of MGSV Ground Zeroes and The Phantom
 - FREE DISK SPACE: 28 GB
 - DEDICATED VIDEO RAM: 2 GB
 
-### Recommended Requirements
+#### Recommended Requirements
 
 - CPU: Intel Core i7-4790 (3.60GHz) or better; Quad-core or better
 - RAM: 8 GB
