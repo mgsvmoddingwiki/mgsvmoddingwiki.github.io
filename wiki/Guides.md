@@ -65,6 +65,7 @@ permalink: /Guides/
     - [Fmdl Studio v2: Merging Models w/ Blender](https://www.youtube.com/watch?v=0Z5Pt9EkUZM)
     - [How to Correctly Swap Player Models](https://www.youtube.com/watch?v=tqgLYR1GRF8)
     - [How to Create Custom Form Variations](https://www.youtube.com/watch?v=1oQ7V1-sUEQ)
+        - FV2 editing tutorial using [FvTwool](/FvTwool)
     - [Perfect First-Person with Any Model](https://bobdoleowndu.github.io/mgsv/documentation/perfectfirstperson.html)
     - [Texture Modding Tutorial [AutoPftxsTool and Snakebite]](https://www.youtube.com/watch?v=WJ_HVJA-Zu0)
         - Follow-up to an earlier [tutorial](https://youtu.be/dqK2rErPd0s).
