@@ -5,9 +5,7 @@ tags: [Level, File Formats]
 ---
 
 [Documentation credited by
-youarebritish](https://forum.xentax.com/viewtopic.php?f=10&t=12407&p=136170#p136170):
-
-<references group="https://forum.xentax.com/viewtopic.php?f=10&t=12407&p=136170#p136170" />
+youarebritish](https://web.archive.org/web/20230513231557/https://forum.xentax.com/viewtopic.php?t=12407&start=1605#p136170):
 
 Object Brush (obr) files are used in Cyprus and Mother Base to place
 grass, bushes, and other misc semi-procedural debris. There's a
@@ -31,4 +29,4 @@ When placing terrain decorations, the shadows are not included in the
 file.(?) It's not known for sure what's in the files besides coordinate
 arrays.
 
-See also: [OBRB](/OBR)
+See also: [OBRB](/OBRB)

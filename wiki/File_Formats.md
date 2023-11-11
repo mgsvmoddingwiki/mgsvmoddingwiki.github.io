@@ -20,7 +20,7 @@ can be found [here](https://github.com/kapuragu/FoxEngineTemplates).
 | cani | Camera Animation | gz fpk(92) | Likely similar to .gani for camera animations. |  |
 | chnk | mtar(251) | A chunk of data with an unknown purpose belonging to an Mtar Type 2 file. Extension named by MtarTool author |  |  |
 | clo | Cloth Configuration File (fox2) | fpkd(25) | [FoxTool](/FoxTool) | SimClothSettingData |
-| dat | QAR Archive | master | [QAR Tool](http://forum.xentax.com/viewtopic.php?f=10&t=12407&p=124477#p124477), [GzsTool](/GzsTool) | Main file archives Quark Archive? |
+| dat | QAR Archive | master | [QAR Tool](https://web.archive.org/web/20230516145600/https://forum.xentax.com/viewtopic.php?t=12407&start=1440#p124477), [GzsTool](/GzsTool) | Main file archives Quark Archive? |
 | dat | fox file system data XML | Chunk0(1), \0\00(1) | Any text editor | Plain XML with extension .dat. In the root of some Qar files. |
 | [dat](/WMV) | WMV | master | Video |  |
 | des | Destruction data (fox2) | fpkd(32) | [FoxTool](/FoxTool) | Destruction data set file. |
@@ -37,8 +37,8 @@ can be found [here](https://github.com/kapuragu/FoxEngineTemplates).
 | [fmtt](https://mgsvmoddingwiki.github.io/FMTT) | Material parameters | data1(2) | [FoxKit](https://github.com/youarebritish/FoxKit/) | GrTools.SetMaterialParamBinary |
 | fnt | Font | fpk(7) | UiFontDataElement entity, fontFile common_art.fox2,*_art.fox2 In exe section with uil,uif,uia,fnt,utxl |  |
 | fox2 | DataSetFile2 | fpkd(75167), gz fpkd(450) | [FoxTool](/FoxTool) | Translated comment in pc init.lua 'Object arrangement / property data file' |
-| fpk | Fox Package | Chunks(16637) | [FPK Tool](http://forum.xentax.com/viewtopic.php?f=10&t=12407&p=110644#p110644), [GzsTool](/GzsTool) | Usually contains compiled files that have no associated editing tools. Must have a matching fpkd (which may be empty) |
-| fpkd | Fox Package Data | Chunks(16637) | [FPK Tool](http://forum.xentax.com/viewtopic.php?f=10&t=12407&p=110644#p110644), [GzsTool](/GzsTool) | Archive that allows changes to physics or sound associations; data archive. Must have a matching fpk (which may be empty) |
+| fpk | Fox Package | Chunks(16637) | [FPK Tool](https://web.archive.org/web/20230517070053/https://forum.xentax.com/viewtopic.php?t=12407&start=690#p110644), [GzsTool](/GzsTool) | Usually contains compiled files that have no associated editing tools. Must have a matching fpkd (which may be empty) |
+| fpkd | Fox Package Data | Chunks(16637) | [FPK Tool](https://web.archive.org/web/20230517070053/https://forum.xentax.com/viewtopic.php?t=12407&start=690#p110644), [GzsTool](/GzsTool) | Archive that allows changes to physics or sound associations; data archive. Must have a matching fpk (which may be empty) |
 | fpkl | Fox Package Link | fpk(1), gz fpk(3) | Any text editor | Only one instance in chunk0 col_common_tpp.fpk Seems to define required files to load. |
 | frdv | HelpBoneFile | fpk(664) | Related to helper bone rotations. |  |
 | [frig](/FRIG) | RigFile | fpk(233) gz fpk(1) | [FoxLib](https://github.com/youarebritish/FoxLib) | Defines bone groups for IK and animations. |

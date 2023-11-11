@@ -9,7 +9,7 @@ Links to assorted MGSV modding references. See also: [External Guides](/Guides#e
 ## Forums/Threads
 
 | [Modders' Heaven Discord Server](https://discord.gg/moddersheaven) | Active community modding, research and discussions |
-| [xentax.com](https://forum.xentax.com/viewtopic.php?f=10&t=12407) | Early foundational Ground Zeroes/Phantom Pain modding thread |
+| [xentax.com](https://web.archive.org/web/20230513141950/https://forum.xentax.com/viewtopic.php?f=10&t=12407) | Early foundational Ground Zeroes/Phantom Pain modding thread |
 | [/r/moddergearsolid](https://www.reddit.com/r/moddergearsolid/) | Subreddit |
 {:.stretch}
 
