@@ -9,6 +9,7 @@ tags: [Tools, Reference]
     - [File Monolith](/File_Monolith)
     - [FoxKit](/FoxKit)
     - [FMDL Studio V2](/FMDL_Studio_V2)
+    - [SideOp Companion](/SideOp_Companion)
 - ### Modding Frameworks
     - [Infinite Heaven](/Infinite_Heaven)
     - [Zeta](/Zeta)
