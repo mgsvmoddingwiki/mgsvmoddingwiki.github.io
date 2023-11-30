@@ -41,7 +41,7 @@ More details for each location after the table.
 ## Afghanistan/afgh
 
 ![Afghanistan. Location id 10](/assets/Latest.jpg){:.thumb .right}
-![Afghanistan. Large Blocks](/assets/Afgh cp ob fltn hlf.png){:.thumb .right}
+![Afghanistan. Large Blocks. White areas are auto fulton traps (leaving them triggers fulton of NPCs within 5m of player).](/assets/Afgh cp ob fltn hlf.png){:.thumb .right}
 ![Afghanistan. Outposts](/assets/MGSV afgnMap.jpg){:.thumb .right}
 
 Afghanistan uses the standard **StageBlockControllerData**-class entity
@@ -136,7 +136,7 @@ afgh_fieldEast (25)
 ## Middle Africa/mafr
 
 ![Middle Africa. Location id 20](/assets/Latest-0.jpg){:.thumb .right}
-![Middle Africa. Large Blocks](/assets/Mafr cp ob fltn hlf.png){:.thumb .right}
+![Middle Africa. Large Blocks. White areas are auto fulton traps (leaving them triggers fulton of NPCs within 5m of player).](/assets/Mafr cp ob fltn hlf.png){:.thumb .right}
 
 Central Africa uses the standard **StageBlockControllerData**-class
 entity block streaming system.
