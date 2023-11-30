@@ -1,0 +1,20 @@
+{% if include.file %}
+{% assign filepath = include.file | split: "/" %}
+{% for filename in filepath %}
+    {% if forloop.last == true %}
+        {% assign displayname = filename %}
+        {% assign filename = filename %}
+        {% if include.name %}
+            {% assign displayname = include.name %}
+            {% assign extension = filename | split: "." %}
+            {% for extension in extension %}
+                {% if forloop.last == true %}
+                {% assign extension = extension %}
+                {% endif %}
+            {% endfor %}
+            {% capture filename %}{{ include.name }}.{{ extension }}{% endcapture %}
+        {% endif %}
+    {% endif %}
+{% endfor %}
+<a class="file-download content-button" href="{{ include.file }}" download="{{ filename }}">{{ displayname }}</a>
+{% endif %}
