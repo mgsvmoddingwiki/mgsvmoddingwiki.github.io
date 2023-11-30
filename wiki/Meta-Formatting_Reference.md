@@ -544,6 +544,22 @@ Similiar to the images section we can use classes to change the width/position. 
 
 ---
 
+## Download button
+
+{% include download file="/assets/Chimera_Package_Table/ChimeraPartsPackageTable.lua" %}
+
+    {% raw %}{% include download file="/assets/Chimera_Package_Table/ChimeraPartsPackageTable.lua" %}{% endraw%}
+
+**Adding a custom name:**
+
+{% include download file="/assets/Chimera_Package_Table/ChimeraPartsPackageTable.lua" name="Custom name" %}
+
+    {% raw %}{% include download file="/assets/Chimera_Package_Table/ChimeraPartsPackageTable.lua" name="Custom name" %}{% endraw%}
+
+You can link files like regular links however a download button like the above is useful when you'd like to force the browser to download a file instead of displaying it (for example `.txt` files or images) and/or prefer a styled download link to make files more obvious on the page.
+
+---
+
 ## Sidebar menu icons
 
 For those editing the sidebar of the wiki itself these are a list of available custom icons to choose from.

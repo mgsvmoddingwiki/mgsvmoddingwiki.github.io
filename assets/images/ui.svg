@@ -145,7 +145,7 @@
         </g>
 
 
-        <!-- Toolbar and spoiler element icons -->
+        <!-- Toolbar and other button icons -->
         <g id="icons-searchbox-clear-path" class="stroke" transform="translate(-3 -23)">
             <path d="M10,40L20,30"/>
             <path d="M20,40L10,30"/>
@@ -170,6 +170,12 @@
             <circle cx="12" cy="6" r="1.9"/>
             <circle cx="12" cy="12" r="1.9"/>
             <circle cx="12" cy="18" r="1.9"/>
+        </g>
+
+        <g id="icons-download-file-path" class="stroke" transform="translate(-22 -24)">
+            <path d="M34,28L34,38"/>
+            <path d="M38.446,33.423L34,38L29.554,33.423"/>
+            <path d="M28,39L28,42L40,42L40,39"/>
         </g>
 
         <g id="icons-spoiler-expand-path" class="stroke" transform="translate(-22 -24)">
@@ -350,6 +356,7 @@
     <use class="output" id="icons-toc" xlink:href="#icons-toc-path"/>
     <use class="output" id="icons-spoiler-expand" xlink:href="#icons-spoiler-expand-path"/>
     <use class="output" id="icons-spoiler-contract" xlink:href="#icons-spoiler-contract-path"/>
+    <use class="output" id="icons-download-file" xlink:href="#icons-download-file-path"/>
 
     <use class="output" id="icons-hamburger-menu" xlink:href="#icons-hamburger-menu-path"/>
     <use class="output" id="icons-hamburger-menu-close" xlink:href="#icons-hamburger-menu-close-path"/>
