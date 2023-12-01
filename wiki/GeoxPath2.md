@@ -6,7 +6,8 @@ tags: [Entities, FoxKit, Geo]
 
 **GeoxPath2** entity makes it possible to create nodes on the map where the player can interact with specific places in the environment. Climbling, jumping and hanging are some of the examples.
 
-{% include download file="/assets/GeoxPath2/GeoPathTags.lua" name="List of the tags (GeoPathTags.lua)" %}
+List of the tags:
+{% include download file="/assets/GeoxPath2/GeoPathTags.lua" %}
 
 Some tags still need more study to know how to use them. For now, here are some common, easy and useful tags to start with: `Climb, Elude, Fence and Jump`
 
