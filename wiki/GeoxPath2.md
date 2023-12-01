@@ -28,7 +28,7 @@ Each first GeoxPathNode has an **Outlink** to the first edge, and the second Geo
 ![](/assets/GeoxPath2/ClimbNodesEdges.jpg){:.right width="400px"}
 
 Take some time to look at the GeoxPath2 in
-`\Chunk2\Assets\tpp\level\location\afgh\block_large\waterway\afgh_waterway_path.fox2` (found inside the `afgh_waterway.fpkd` in `\Assets\tpp\pack\location\afgh\pack_large`). Inside that, one GeoxPath2 uses a climb tag with three nodes and two edges. The first jjnode has an **Outlink** with the first edge. The second node has an **Outlink** with the first edge and the second edge. Finally, the third node has an **Outlink** with the second edge... Yeah it's quite confusing.
+`\Chunk2\Assets\tpp\level\location\afgh\block_large\waterway\afgh_waterway_path.fox2` (found inside the `afgh_waterway.fpkd` in `\Assets\tpp\pack\location\afgh\pack_large`). Inside that, one GeoxPath2 uses a climb tag with three nodes and two edges. The first node has an **Outlink** with the first edge. The second node has an **Outlink** with the first edge and the second edge. Finally, the third node has an **Outlink** with the second edge... Yeah it's quite confusing.
 
 ![](/assets/GeoxPath2/Unknown.png){:.right width="400px"}
 
