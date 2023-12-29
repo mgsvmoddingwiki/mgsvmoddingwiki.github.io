@@ -1,8 +1,3 @@
-// THINGS LEFT:
-// - Properly style spoiler buttons in list
-// - Add minimal JS scroll bar to overflow of sidebar menu and make spoiler summary elements position:sticky via CSS so it's clear what heading is being viewed at all times
-// Adjust mobile styling so hierarchy list occupies full mobile menu width (I think this is the clearest choice)
-
 import { searchIndex } from './searchindex.js'
 import { pageCounters } from './searchindex.js'
 
