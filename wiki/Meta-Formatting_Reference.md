@@ -574,6 +574,7 @@ For those editing the sidebar of the wiki itself these are a list of available c
 | [](/){:.iconed.icon-sidebar.icon-nexusmods} | `icon-nexusmods` | For Nexus Mods links |
 | [](/){:.iconed.icon-sidebar.icon-open-pages} | `icon-open-pages` |  |
 | [](/){:.iconed.icon-sidebar.icon-package} | `icon-package` | For eg: file formats |
+| [](/){:.iconed.icon-sidebar.icon-page} | `icon-page` | |
 | [](/){:.iconed.icon-sidebar.icon-tag} | `icon-tag` |  |
 | [](/){:.iconed.icon-sidebar.icon-text-caret} | `icon-text-caret` |  |
 | [](/){:.iconed.icon-sidebar.icon-tool} | `icon-tool` |  |

@@ -1,0 +1,23 @@
+{% comment Count number of levels in page URL, to check if path tree should be parsed. Minus `1` to exclude root domain %}{% endcomment %}
+{% assign crumbs = page.url | split: '/' %}
+{% assign page_level = crumbs.size | minus: 1 %}
+
+{% if page_level > 1 %}
+
+    <div class="breadcrumb-list" markdown="0">
+        {% comment Adding a home page link just signals to the user that the sub-section root shown in breadcrumbs isn't the root of the wiki itself, if they're new to the site %}{% endcomment %}
+        <div class="breadcrumb-item">
+            <a href="/">Home</a>
+        </div>
+        {% comment This more naive method of breadcrumb parsing is leaner, perf-wise, for compiling than doing a reverse lookup across all posts for the precise YAML title %}{% endcomment %}
+        {% for crumb in crumbs offset: 1 %}
+            {% unless forloop.last %}
+            <div class="breadcrumb-item">
+                {% comment Assumes all levels have their own page %}{% endcomment %}
+                <a href="{% assign crumb_limit = forloop.index | plus: 1 %}{% for crumb in crumbs limit: crumb_limit %}{{ crumb | append: '/' }}{% endfor %}">{{ crumb | replace: '_',' ' | replace: '-',' ' }}</a>
+            </div>
+            {% endunless %}
+        {% endfor %}
+    </div>
+
+{% endif %}

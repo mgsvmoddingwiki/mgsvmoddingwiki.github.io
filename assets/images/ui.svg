@@ -146,6 +146,26 @@
 
 
         <!-- Toolbar and other button icons -->
+        <g id="icons-spoiler-sidebar-hierarchy-expand-path" class="stroke" transform="translate(-26 -27)">
+            <path d="M30,33L34.497,37L39,33"/>
+        </g>
+
+        <g id="icons-spoiler-sidebar-hierarchy-contract-path" class="stroke" transform="translate(-26 -27)">
+            <path d="M30,37L34.497,33L39,37"/>
+        </g>
+
+        <g id="icons-spoiler-sidebar-main-expand-path" class="stroke" transform="translate(-26 -27)">
+            <path d="M28,32L34,38L40,32"/>
+        </g>
+
+        <g id="icons-spoiler-sidebar-main-contract-path" class="stroke" transform="translate(-26 -27)">
+            <path d="M28,38L34,32L40,38"/>
+        </g>
+
+        <g id="icons-breadcrumb-path" class="stroke" transform="translate(-8 -27)">
+            <path d="M12,40L17.492,30"/>
+        </g>
+
         <g id="icons-searchbox-clear-path" class="stroke" transform="translate(-3 -23)">
             <path d="M10,40L20,30"/>
             <path d="M20,40L10,30"/>
@@ -354,9 +374,14 @@
 
 
     <use class="output" id="icons-toc" xlink:href="#icons-toc-path"/>
+    <use class="output" id="icons-download-file" xlink:href="#icons-download-file-path"/>
+
     <use class="output" id="icons-spoiler-expand" xlink:href="#icons-spoiler-expand-path"/>
     <use class="output" id="icons-spoiler-contract" xlink:href="#icons-spoiler-contract-path"/>
-    <use class="output" id="icons-download-file" xlink:href="#icons-download-file-path"/>
+    <use class="output" id="icons-spoiler-sidebar-main-expand" xlink:href="#icons-spoiler-sidebar-main-expand-path"/>
+    <use class="output" id="icons-spoiler-sidebar-main-contract" xlink:href="#icons-spoiler-sidebar-main-contract-path"/>
+    <use class="output" id="icons-spoiler-sidebar-hierarchy-expand" xlink:href="#icons-spoiler-sidebar-hierarchy-expand-path"/>
+    <use class="output" id="icons-spoiler-sidebar-hierarchy-contract" xlink:href="#icons-spoiler-sidebar-hierarchy-contract-path"/>
 
     <use class="output" id="icons-hamburger-menu" xlink:href="#icons-hamburger-menu-path"/>
     <use class="output" id="icons-hamburger-menu-close" xlink:href="#icons-hamburger-menu-close-path"/>
@@ -375,6 +400,7 @@
     <use class="output" id="icons-themes-light" xlink:href="#icons-themes-light-path"/>
 
     <use class="output" id="icons-searchbox-clear" xlink:href="#icons-searchbox-clear-path"/>
+    <use class="output" id="icons-breadcrumb" xlink:href="#icons-breadcrumb-path"/>
 
     <!-- Sidebar icons -->
     <use class="output" id="icons-sidebar-diamond" xlink:href="#icons-sidebar-diamond-path"/>
@@ -389,6 +415,8 @@
     <use class="output" id="icons-sidebar-nexusmods" xlink:href="#icons-sidebar-nexusmods-path"/>
     <use class="output" id="icons-sidebar-tool" xlink:href="#icons-sidebar-tool-path"/>
     <use class="output" id="icons-sidebar-youtube" xlink:href="#icons-sidebar-youtube-path"/>
+    <use class="output" id="icons-sidebar-page" xlink:href="#icons-editing-add-path"/>
+
 
     <!-- Inserted here so animation only plays when referenced via fragment identifier -->
     <g class="output" id="loading-dots">

@@ -1,8 +1,10 @@
 // ----------------------------- Peripheral -----------------------------
-// Any functions used here that aren't defined here are from inline script at top of custom body.html
-
 function getKeyByValue(object, value) {
     return Object.keys(object).find(key => object[key] === value)
+}
+
+function getIndexByValue(array, key, value) {
+    return array.findIndex(obj => obj[key] == value);
 }
 
 function matchObjVal(object, value) {
@@ -10,7 +12,7 @@ function matchObjVal(object, value) {
 }
 
 // ---------------------- Toolbar: button functions ---------------------
-const buttonsMenu = document.querySelector('.git-wiki-tools');
+const buttonsMenu = body.querySelector('.git-wiki-tools');
 
 // Page width toggle
 const pageWidthToggleButton = buttonsMenu.querySelector('.page-width-toggle');
@@ -139,7 +141,7 @@ function captureClass(el, prefix) {
 
 
 // --------------------------- Image handling ---------------------------
-var imgs = [...document.querySelectorAll('.git-wiki-page img')];
+var imgs = [...body.querySelectorAll('.git-wiki-page img')];
 imgs.forEach(img => {
 
     // Wrap images in container
@@ -243,7 +245,7 @@ zoom.on('close', detachKeyEvents);
 
 
 // --------------------------- Video handling ---------------------------
-var videos = [...document.querySelectorAll('.git-wiki-page video')];
+var videos = [...body.querySelectorAll('.git-wiki-page video')];
 videos.forEach(video => {
     video.volume = 0.5; // set default volume to 50%
 });
@@ -251,7 +253,7 @@ videos.forEach(video => {
 
 // ------------------------------- Infobox ------------------------------
 // Replace 'Site', 'Download' link names with names of hostname from URL
-var iblinks = [...document.querySelectorAll('.infobox a')];
+var iblinks = [...body.querySelectorAll('.infobox a')];
 iblinks.forEach(iblink => {
     // https://stackoverflow.com/a/8498629
     var matches = iblink.href.match(/^https?\:\/\/([^\/?#]+)(?:[\/?#]|$)/i);
@@ -261,7 +263,7 @@ iblinks.forEach(iblink => {
 
 
 // ----------------------------- Index lists ----------------------------
-var listIndexes = [...document.querySelectorAll('.git-wiki-page .index')];
+var listIndexes = [...body.querySelectorAll('.git-wiki-page .index')];
 listIndexes.forEach(listIndex => {
     // Add unique class if only has single first-level list item
     if (!listIndex.children[1]) {
@@ -274,7 +276,7 @@ listIndexes.forEach(listIndex => {
 var lastScrollPos = window.pageYOffset;
 window.onscroll = function() {
     var currentScrollPos = window.pageYOffset;
-    const mobileHeader = document.querySelector("#git-wiki-mobile-header");
+    const mobileHeader = body.querySelector("#git-wiki-mobile-header");
     if (lastScrollPos >= currentScrollPos) {
         mobileHeader.classList.remove('hidden');
         mobileHeader.classList.add('visible');
@@ -287,13 +289,13 @@ window.onscroll = function() {
 }
 
 // Override default hamburger menu inline onclick behavior
-const mobileHamburger = document.querySelector('#git-wiki-mobile-header > button')
-const pageWrapper = document.querySelector('body > .wrapper')
+const mobileHamburger = body.querySelector('#git-wiki-mobile-header > button')
+const pageWrapper = body.querySelector('body > .wrapper')
 mobileHamburger.setAttribute('onclick','mobileMainMenuToggle()');
 
 function mobileMainMenuToggle() {
     const rootHtml = document.querySelector('html');
-    const dismissEl = document.querySelector('.git-wiki-page');
+    const dismissEl = body.querySelector('.git-wiki-page');
     if (pageWrapper.classList.contains('menu-open')) {
         rootHtml.removeAttribute('style');
         dismissEl.removeAttribute('onclick');
