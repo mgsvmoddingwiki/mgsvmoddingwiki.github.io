@@ -793,6 +793,10 @@ body.expanded-width-true .icon-toolbar.icon-expand::before {
     z-index: 1;
 }
 
+.search-actions:not(.section) .search-section-filter {
+    display: none;
+}
+
 .search-actions.section:not(.clear) .search-no-results {
     right: calc(-1 * (var(--section-filter-width) - var(--clear-width)));
 }
