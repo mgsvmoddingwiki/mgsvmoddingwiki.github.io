@@ -16,9 +16,10 @@ for (let key in counters) {
 var curPage
 var curUrl = window.location.pathname;
 var curUrlRoot = '/' + curUrl.split('/')[1] + '/'; // obtain first-level path of current URL
-var multiPaths = pathTreeFilterArray(searchIndex, 'url', curUrlRoot); // check search index for shared root pages (assumes each path level has its own page)
+export const sectionIndexFlat = pathTreeFilterArray(searchIndex, 'url', curUrlRoot); // check search index for shared root pages (assumes each path level has its own page)
+var sectionIndex = JSON.parse(JSON.stringify(sectionIndexFlat)); // creates separate reference for array copy so original array doesn't get retroactively modified by subsequent changes
 
-if (multiPaths.length > 1) {
+if (sectionIndex.length > 1) {
     // Collapse any main sidebar spoiler elements besides the hierarchy section list
     const spoilerSiblings = sidebar.querySelectorAll('details');
     var spoilerClosedHeight = 0;
@@ -38,9 +39,9 @@ if (multiPaths.length > 1) {
     sidebar.appendChild(details);
 
     // Parse array, convert to HTML list
-    pathTreeSetParents(multiPaths);
-    multiPaths = pathTreeNestArray(multiPaths);
-    pathTreeCreateList(multiPaths, details);
+    pathTreeSetParents(sectionIndex);
+    sectionIndex = pathTreeNestArray(sectionIndex);
+    pathTreeCreateList(sectionIndex, details);
 
     // Additional formatting
     let uls = details.querySelectorAll('ul');
@@ -164,8 +165,6 @@ function pathTreeFilterArray(array, key, value) {
             if (obj[key].indexOf(value) === 0) {
                 obj.id = id++;
                 obj.parentId = 0;
-                delete obj.content // discard unnessary values for new array
-                delete obj.tags
                 return obj
             }
         }
@@ -178,18 +177,23 @@ function pathTreeSetParents(array) {
         const obj = array[i];
         let parts = [...String(obj.url).split('/')]; // in `String()` to avoid undefined errors
         let levels = parts.length - 2;
+        delete obj.content // discard unnecessary values for array
+        delete obj.tags
         if (levels > 1) {
-            // Determine deepest path level
-            for (const [i, value] of parts.entries()) {
-                if (i === parts.length - 1) {
-                    // Trim last level from full path to obtain parent URL
-                    let fs = 1;
-                    if (obj.url[obj.url.length - 1] != '/') { fs = 0; }; // check if permalink lacks trailing forwardslash
-                    let parentPath = obj.url.substring(0, obj.url.length - parts[i - fs].length - fs);
-                    let parentIndex = getIndexByValue(multiPaths, 'url', parentPath);
-                    obj.parentId = multiPaths[parentIndex].id;
-                }
-            }
+            let parentPath = getParentPath(obj.url, parts)
+            let parentIndex = getIndexByValue(sectionIndex, 'url', parentPath);
+            obj.parentId = sectionIndex[parentIndex].id;
+        }
+    }
+}
+
+export function getParentPath(string, parts) {
+    for (const [i] of parts.entries()) {
+        // Determine deepest path level
+        if (i === parts.length - 1) {
+            let fs = 1;
+            if (string[string.length - 1] != '/') { fs = 0; }; // check if permalink lacks trailing forwardslash
+            return string.substring(0, string.length - parts[i - fs].length - fs);
         }
     }
 }
