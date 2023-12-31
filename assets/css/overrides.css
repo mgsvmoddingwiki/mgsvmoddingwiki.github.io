@@ -2263,6 +2263,19 @@ footer {
         padding: 0 var(--spacing-secondary);
     }
 
+    .git-wiki-page-list.has-scrollbar::before,
+    .git-wiki-page-list.has-scrollbar::after {
+        width: calc(100% - var(--spacing-secondary) * 2);
+    }
+
+    .git-wiki-page-list.has-scrollbar::before {
+        background: linear-gradient(0deg, transparent 0%, var(--bg-tooltip) 80% 100%);
+    }
+
+    .git-wiki-page-list.has-scrollbar::after {
+        background: linear-gradient(180deg, transparent 0%, var(--bg-tooltip) 80% 100%);
+    }
+
     .spoiler-sidebar > .sidebar-heading {
         background: var(--bg-tooltip);
     }
