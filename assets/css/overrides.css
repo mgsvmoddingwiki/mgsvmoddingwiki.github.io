@@ -1692,6 +1692,7 @@ body.darkmode--activated .darkmode-ignore {
     position: absolute;
     z-index: 2;
     transition: opacity 250ms var(--timing-bezier-1);
+    pointer-events: none;
 }
 
 .git-wiki-page-list.has-scrollbar::before {
@@ -1703,8 +1704,8 @@ body.darkmode--activated .darkmode-ignore {
     bottom: 0;
 }
 
-.git-wiki-page-list.has-scrollbar.at-top::before,
-.git-wiki-page-list.has-scrollbar.at-bottom::before {
+.git-wiki-page-list.has-scrollbar.hide-top::before,
+.git-wiki-page-list.has-scrollbar.hide-bottom::after {
     opacity: 0;
 }
 

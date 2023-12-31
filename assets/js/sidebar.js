@@ -13,6 +13,7 @@ for (let key in counters) {
 
 
 // -------------------- Page URL hierarchy navigation -------------------
+var curPage
 var curUrl = window.location.pathname;
 var curUrlRoot = '/' + curUrl.split('/')[1] + '/'; // obtain first-level path of current URL
 var multiPaths = pathTreeFilterArray(searchIndex, 'url', curUrlRoot); // check search index for shared root pages (assumes each path level has its own page)
@@ -68,7 +69,7 @@ if (multiPaths.length > 1) {
     });
 
     // Expand spoilers to current page/section
-    const curPage = details.querySelector('.current-page');
+    curPage = details.querySelector('.current-page');
     let ancestors = [];
     let node = curPage;
     let spoilerChild = node.querySelector(':scope > details');
@@ -81,18 +82,13 @@ if (multiPaths.length > 1) {
       }
       node = node.parentElement;
     }
-
-    SimpleScrollbar.initEl(sidebar); // subsequently initialize custom scrollbar
-
-    // Scroll to center of container element
-    let scrollbarWrapper = sidebar.querySelector('.ss-content'); // newly created by custom scrollbar
-    scrollToCenter(curPage, scrollbarWrapper, (details.offsetTop + spoilerClosedHeight));
-} else {
-    SimpleScrollbar.initEl(sidebar);
 }
 
 
 // ----------------------- Scroll states detection ----------------------
+SimpleScrollbar.initEl(sidebar); // subsequently initialize custom scrollbar
+let scrollbarWrapper = sidebar.querySelector('.ss-content')
+
 // Check for position sticky state of headings (expects `top: -1px` in element's CSS)
 const spoilerHeadings = sidebar.querySelectorAll('.spoiler-sidebar > .sidebar-heading');
 let detectPosSticky = new IntersectionObserver((items) => {
@@ -107,24 +103,53 @@ spoilerHeadings.forEach((el) => {
 });
 
 // Determine scrollbar state for container faded edges styling
-let scrollbarWrapper = sidebar.querySelector('.ss-content')
 scrollbarWrapper.addEventListener('scroll', e => {
     const {scrollHeight, scrollTop, clientHeight} = e.target;
-    let stickies = sidebar.querySelectorAll('.stickied');
     let stickyState = false;
-    stickies.forEach(el => {
-        // Check parent details element for `open` state in case a stickied sidebar heading isn't a summary element (which would lead to false positives when toggling `at-top` class)
-        if (el.parentNode.hasAttribute('open')) {
-            stickyState = true;
-        }
+    // Since event is fired synchronously the new `stickied` class is undetected initially (most obvious in Chromium). So an asynchronous check is used.
+    waitForElementsToExist(sidebar, '.stickied').then(stickies => {
+        stickies.forEach(el => {
+            // Check parent details element for `open` state in case heading is inside closed state (which would lead to false positives when toggling `hide-top` class)
+            if (el.parentNode.hasAttribute('open')) {
+                stickyState = true;
+            }
+        });
+        sidebar.classList.toggle('has-scrollbar', scrollHeight != clientHeight);
+        sidebar.classList.toggle('hide-bottom', Math.abs(scrollHeight - clientHeight - scrollTop) <= 3);
+        sidebar.classList.toggle('hide-top', scrollTop == 0 || stickyState);
     });
-    sidebar.classList.toggle('has-scrollbar', scrollHeight != clientHeight)
-    sidebar.classList.toggle('at-bottom', Math.abs(scrollHeight - clientHeight - scrollTop) <= 3)
-    sidebar.classList.toggle('at-top', (scrollTop == 0 || stickyState))
+    if (scrollTop == 0) {
+       sidebar.classList.add('hide-top'); // always remove even if heading lacks stickied class match above
+    }
 });
 
 
+if (curPage) {
+    scrollToCenter(curPage, scrollbarWrapper, (details.offsetTop + spoilerClosedHeight));
+}
+
+
 // ------------------------------ Functions -----------------------------
+function waitForElementsToExist(parent, selector) {
+    return new Promise(resolve => {
+        if (parent.querySelectorAll(selector).length) {
+            return resolve(parent.querySelectorAll(selector));
+        }
+
+        const observer = new MutationObserver(() => {
+            if (parent.querySelectorAll(selector).length) {
+                resolve(parent.querySelectorAll(selector));
+                observer.disconnect();
+            }
+        });
+
+        observer.observe(parent, {
+            subtree: true,
+            childList: true,
+        });
+    });
+}
+
 function scrollToCenter(target, container, yOffset) {
     let top = (target.offsetTop + (yOffset || 0)) + (target.clientHeight / 2);
     let center = top - (container.clientHeight / 2);
