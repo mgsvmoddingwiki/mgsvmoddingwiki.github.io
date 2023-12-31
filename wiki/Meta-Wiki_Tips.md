@@ -10,6 +10,18 @@ This page covers tips for using the wiki, some of which are non-obvious so worth
 
 The search box returns results in the form of autocomplete suggestions. As it peforms a full text search it can be little sluggish on Firefox-based browsers. The results can also be navigated using keyboard arrow or tab keys.
 
+There are a number of search operators that can be used to refine queries:
+
+| Operator | Example | Description |
+|-|-|-|
+| ` ` | `inf hook` | Spaces act as an *and*. Strings can be partial and still match. |
+| `|` | `hair | sound` | Pipes act as an *or*, returning results of either string. |
+| `""` | `"infinite heaven"` | Wrapping in double quotes returns exact match. |
+| `!` | `inf heaven !guide` | Prefixing an exclamation mark before a string will (usually) exclude it from results. Note: this may still sometimes return a result due to matching of a different field. |
+| `^` | `^meta` | Returns results beginning with string. |
+| `$` | `entries$` | Returns results ending with string. Note: this can match things like tag fields that end with a particular tag. |
+{:.stretch}
+
 > **Tip:** if you still can't find what you're after you can try the [All Pages](/Meta-All_Pages) list, where there's a list of all pages by title and a list of all categories to browse.
 
 

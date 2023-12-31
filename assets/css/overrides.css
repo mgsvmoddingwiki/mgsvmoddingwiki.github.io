@@ -727,6 +727,7 @@ body.expanded-width-true .icon-toolbar.icon-expand::before {
 .git-wiki-search {
     --clear-width: 28px;
     --no-results-width: 95px;
+    --section-filter-width: 128px;
     position: relative;
     margin-bottom: calc(var(--spacing-primary) - var(--spacing-minor));
 }
@@ -738,8 +739,18 @@ body.expanded-width-true .icon-toolbar.icon-expand::before {
     z-index: 1;
 }
 
-.search-actions.no-results ~ #search-input {
-    padding-right: calc(var(--spacing-secondary) + var(--clear-width) + var(--no-results-width));
+.search-actions.no-results ~ #search-input,
+.search-actions.section ~ #search-input {
+    --offset: calc(var(--no-results-width) + var(--section-filter-width));
+    padding-right: calc(var(--spacing-secondary) + var(--clear-width) + var(--offset));
+}
+
+.search-actions.section:not(.no-results) ~ #search-input {
+    --offset: var(--section-filter-width);
+}
+
+.search-actions.no-results:not(.section) ~ #search-input {
+    --offset: var(--no-results-width);
 }
 
 /* Customized HTML elements */
@@ -754,9 +765,69 @@ body.expanded-width-true .icon-toolbar.icon-expand::before {
 }
 
 .search-clear-query,
-.search-no-results {
+.search-no-results,
+.search-section-filter {
     opacity: 0;
-    transition: opacity 150ms;
+}
+
+.search-no-results,
+.search-section-filter {
+    height: 100%;
+    background: var(--bg-input); /* so both labels don't appear to overlap during transitions */
+    color: var(--color-primary);
+    font-size: var(--font-size-small);
+    font-weight: var(--font-weight-semibold);
+    line-height: 100%;
+    padding: var(--spacing-minor) calc(var(--spacing-minor) * 2);
+    border: var(--border-width) solid var(--color-border);
+    border-radius: var(--radius-full);
+    margin-right: var(--spacing-minor);
+    position: relative;
+    top: 1px; /* to align with clear query button */
+    right: 0;
+    transition: opacity 150ms, right 150ms;
+    pointer-events: none;
+}
+
+.search-section-filter {
+    z-index: 1;
+}
+
+.search-actions.section:not(.clear) .search-no-results {
+    right: calc(-1 * (var(--section-filter-width) - var(--clear-width)));
+}
+
+.search-actions.section.no-results .search-no-results {
+    right: 0;
+}
+
+.search-actions.section .search-section-filter {
+    cursor: pointer;
+    right: calc(-1 * var(--clear-width));
+    pointer-events: all;
+}
+
+.search-actions.section .search-section-filter,
+.search-actions.no-results .search-no-results,
+.search-actions.clear .search-clear-query {
+    opacity: 0.5; /* to match placeholder text */
+}
+
+.search-actions.filtered .search-section-filter,
+.search-actions.section:not(.filtered) .search-section-filter:hover {
+    opacity: 1;
+    background: var(--color-buttons);
+    color: var(--color-secondary);
+    border-color: transparent;
+}
+
+.search-actions.filtered .search-section-filter:hover {
+    background: var(--color-buttons-hover);
+    color: var(--color-primary);
+}
+
+.search-actions.section .search-section-filter:active {
+    filter: var(--filter-button-active);
 }
 
 .search-clear-query {
@@ -764,17 +835,19 @@ body.expanded-width-true .icon-toolbar.icon-expand::before {
     height: var(--clear-width);
     background: var(--color-primary);
     cursor: pointer;
+    padding: 0;
+    opacity: 0;
     border: none; /* override default button styling */
     -webkit-mask-image: url("/assets/images/ui.svg#icons-searchbox-clear");
     mask-image: url("/assets/images/ui.svg#icons-searchbox-clear");
     -webkit-mask-position: 2px 2px;
     mask-position: 2px 2px;
     pointer-events: none;
+    transition: opacity 250ms var(--timing-bezier-1);
 }
 
-.search-actions.no-results .search-no-results,
-.search-actions.clear .search-clear-query {
-    opacity: 0.5; /* to match placeholder text */
+.search-actions.clear .search-section-filter {
+    right: 0;
 }
 
 .search-actions.clear .search-clear-query {
@@ -787,21 +860,6 @@ body.expanded-width-true .icon-toolbar.icon-expand::before {
 
 .search-actions.clear .search-clear-query:active {
     filter: var(--filter-button-active);
-}
-
-.search-no-results {
-    height: 100%;
-    color: var(--color-primary);
-    font-size: var(--font-size-small);
-    font-weight: var(--font-weight-semibold);
-    line-height: 100%;
-    padding: var(--spacing-minor) calc(var(--spacing-minor) * 2);
-    border: var(--border-width) solid var(--color-border);
-    border-radius: var(--radius-full);
-    margin-right: var(--spacing-minor);
-    position: relative;
-    top: 1px; /* to align with clear query button */
-    pointer-events: none;
 }
 
 #results-container {
@@ -826,25 +884,38 @@ body.expanded-width-true .icon-toolbar.icon-expand::before {
     pointer-events: auto;
 }
 
-#results-container li a {
+#results-container .search-result-item {
     width: 100%;
     height: 100%;
     color: var(--color-primary);
-    display: inline-block;
+    display: inline-flex;
+    flex-direction: column;
     padding: var(--spacing-minor) calc(var(--spacing-minor) * 2);
     border-radius: var(--radius-secondary);
     position: relative; /* position text above background pseudo-element */
 }
 
-#results-container li a:hover,
-#results-container li a.highlight {
+#results-container .search-result-item:hover,
+#results-container .search-result-item.highlight {
     background: var(--bg-list-hover);
 }
 
-#results-container li a:active,
-#results-container li a.active {
+#results-container .search-result-item:active,
+#results-container .search-result-item.active {
     background: var(--color-accent);
     color: var(--color-accent-foreground);
+}
+
+#results-container .search-result-path {
+    color: var(--color-secondary);
+    font-size: var(--font-size-small);
+    opacity: 0.6;
+    margin-top: -8px;
+}
+
+#results-container .search-result-item:active .search-result-path,
+#results-container .search-result-item.active .search-result-path {
+    color: currentColor;
 }
 
 
@@ -870,11 +941,11 @@ body > .wrapper {
 
 /* Breadcrumb links */
 .breadcrumb-list {
-    height: 20px;
     font-size: var(--font-size-small);
     font-weight: var(--font-weight-semibold);
     display: flex;
-    margin-bottom: var(--spacing-secondary);
+    flex-wrap: wrap;
+    margin: -4px 0 calc(var(--spacing-secondary) - 4px); /* offsets to align to regular heading area */
 }
 
 .breadcrumb-item {
@@ -1607,11 +1678,6 @@ body.darkmode--activated .darkmode-ignore {
     opacity: 1;
 }
 
-.spoiler-sidebar .stickied {
-    --shadow-size: 10px;
-    box-shadow: 0 var(--shadow-size) var(--shadow-size) 0 var(--bg-primary);
-}
-
 .spoiler-sidebar > ul:only-of-type,
 .spoiler-sidebar > ul:last-child {
     padding-bottom: var(--spacing-minor);
@@ -1681,10 +1747,13 @@ body.darkmode--activated .darkmode-ignore {
 }
 
 /* Scrolling overflow fades */
+.spoiler-sidebar .sidebar-heading::before,
 .git-wiki-page-list.has-scrollbar::before,
 .git-wiki-page-list.has-scrollbar::after {
+    --height: 30px;
+    --offset: 2px;
     width: 100%;
-    height: 30px;
+    height: var(--height);
     background: linear-gradient(0deg, transparent 0%, var(--bg-primary) 80% 100%);
     content: '';
     display: block;
@@ -1695,6 +1764,12 @@ body.darkmode--activated .darkmode-ignore {
     pointer-events: none;
 }
 
+.spoiler-sidebar .sidebar-heading::before {
+    opacity: 0;
+    top: calc(var(--height) - var(--offset));
+    z-index: -2;
+}
+
 .git-wiki-page-list.has-scrollbar::before {
     top: 0;
 }
@@ -1702,6 +1777,10 @@ body.darkmode--activated .darkmode-ignore {
 .git-wiki-page-list.has-scrollbar::after {
     background: linear-gradient(180deg, transparent 0%, var(--bg-primary) 80% 100%);
     bottom: 0;
+}
+
+.spoiler-sidebar .sidebar-heading.stickied::before {
+    opacity: 1;
 }
 
 .git-wiki-page-list.has-scrollbar.hide-top::before,
@@ -2269,7 +2348,9 @@ footer {
         width: calc(100% - var(--spacing-secondary) * 2);
     }
 
+    .spoiler-sidebar .sidebar-heading::before,
     .git-wiki-page-list.has-scrollbar::before {
+        --offset: 5px;
         background: linear-gradient(0deg, transparent 0%, var(--bg-tooltip) 80% 100%);
     }
 
@@ -2279,10 +2360,6 @@ footer {
 
     .spoiler-sidebar > .sidebar-heading {
         background: var(--bg-tooltip);
-    }
-
-    .spoiler-sidebar .stickied {
-        box-shadow: 0 var(--shadow-size) var(--shadow-size) 0 var(--bg-tooltip);
     }
 
     .spoiler-sidebar > ul,
