@@ -19,8 +19,10 @@ var multiPaths = pathTreeFilterArray(searchIndex, 'url', curUrlRoot); // check s
 
 if (multiPaths.length > 1) {
     // Collapse any main sidebar spoiler elements besides the hierarchy section list
-    let siblings = sidebar.querySelectorAll('details');
-    siblings.forEach((el) => {
+    const spoilerSiblings = sidebar.querySelectorAll('details');
+    var spoilerClosedHeight = 0;
+    spoilerSiblings.forEach((el) => {
+        spoilerClosedHeight = el.getBoundingClientRect().height;
         el.removeAttribute('open');
     });
 
@@ -57,6 +59,7 @@ if (multiPaths.length > 1) {
         } else if (i > 1 && ul.parentNode.classList.contains('has-children')) {
             const spoiler = document.createElement('details');
             const summary = document.createElement('summary');
+            summary.classList.add('spoiler-button');
             spoiler.classList.add(spoilerClass);
             spoiler.appendChild(summary);
             ul.parentNode.insertBefore(spoiler, ul);
@@ -65,8 +68,9 @@ if (multiPaths.length > 1) {
     });
 
     // Expand spoilers to current page/section
+    const curPage = details.querySelector('.current-page');
     let ancestors = [];
-    let node = details.querySelector('.current-page');
+    let node = curPage;
     let spoilerChild = node.querySelector(':scope > details');
     if (spoilerChild) { spoilerChild.setAttribute('open',''); } // expand child spoilers for section items
     ancestors.push(node);
@@ -77,9 +81,55 @@ if (multiPaths.length > 1) {
       }
       node = node.parentElement;
     }
+
+    SimpleScrollbar.initEl(sidebar); // subsequently initialize custom scrollbar
+
+    // Scroll to center of container element
+    let scrollbarWrapper = sidebar.querySelector('.ss-content'); // newly created by custom scrollbar
+    scrollToCenter(curPage, scrollbarWrapper, (details.offsetTop + spoilerClosedHeight));
+} else {
+    SimpleScrollbar.initEl(sidebar);
 }
 
-SimpleScrollbar.initEl(sidebar); // subsequently initialize custom scrollbar
+
+// ----------------------- Scroll states detection ----------------------
+// Check for position sticky state of headings (expects `top: -1px` in element's CSS)
+const spoilerHeadings = sidebar.querySelectorAll('.spoiler-sidebar > .sidebar-heading');
+let detectPosSticky = new IntersectionObserver((items) => {
+    items.forEach(item => {
+        item.target.classList.toggle('stickied', item.intersectionRatio < 1)
+    })
+}, { threshold: 1 }
+);
+
+spoilerHeadings.forEach((el) => {
+    detectPosSticky.observe(el);
+});
+
+// Determine scrollbar state for container faded edges styling
+let scrollbarWrapper = sidebar.querySelector('.ss-content')
+scrollbarWrapper.addEventListener('scroll', e => {
+    const {scrollHeight, scrollTop, clientHeight} = e.target;
+    let stickies = sidebar.querySelectorAll('.stickied');
+    let stickyState = false;
+    stickies.forEach(el => {
+        // Check parent details element for `open` state in case a stickied sidebar heading isn't a summary element (which would lead to false positives when toggling `at-top` class)
+        if (el.parentNode.hasAttribute('open')) {
+            stickyState = true;
+        }
+    });
+    sidebar.classList.toggle('has-scrollbar', scrollHeight != clientHeight)
+    sidebar.classList.toggle('at-bottom', Math.abs(scrollHeight - clientHeight - scrollTop) <= 3)
+    sidebar.classList.toggle('at-top', (scrollTop == 0 || stickyState))
+});
+
+
+// ------------------------------ Functions -----------------------------
+function scrollToCenter(target, container, yOffset) {
+    let top = (target.offsetTop + (yOffset || 0)) + (target.clientHeight / 2);
+    let center = top - (container.clientHeight / 2);
+    container.scrollTo(0, center);
+}
 
 function pathTreeFilterArray(array, key, value) {
     var id = 1;

@@ -1571,17 +1571,17 @@ body.darkmode--activated .darkmode-ignore {
     margin-bottom: calc(var(--spacing-secondary) / 1.25);
 }
 
-.spoiler-sidebar > summary {
+.spoiler-sidebar > .sidebar-heading {
     background: var(--bg-primary);
     display: flex;
     align-items: center;
     justify-content: space-between;
     position: sticky; /* for use w/ scrollable sidebar container */
-    top: 0; /* stick to top of container */
-    z-index: 1;
+    top: -1px; /* stick to top of container (`-1px` so Javascript observer can detect 'stuck' state change) */
+    z-index: 2;
 }
 
-.spoiler-sidebar > summary::after {
+.spoiler-sidebar > .sidebar-heading::after {
     width: 16px;
     height: 16px;
     background: var(--color-border);
@@ -1593,18 +1593,23 @@ body.darkmode--activated .darkmode-ignore {
     transition: opacity 250ms var(--timing-bezier-1), background 250ms var(--timing-bezier-1);
 }
 
-.spoiler-sidebar[open] > summary::after {
+.spoiler-sidebar[open] > .sidebar-heading::after {
     opacity: 0;
     -webkit-mask-image: url("/assets/images/ui.svg#icons-spoiler-sidebar-main-contract");
     mask-image: url("/assets/images/ui.svg#icons-spoiler-sidebar-main-contract");
 }
 
-.spoiler-sidebar > summary:hover::after {
+.spoiler-sidebar > .sidebar-heading:hover::after {
     background: var(--color-secondary);
 }
 
-.spoiler-sidebar[open] > summary:hover::after {
+.spoiler-sidebar[open] > .sidebar-heading:hover::after {
     opacity: 1;
+}
+
+.spoiler-sidebar .stickied {
+    --shadow-size: 10px;
+    box-shadow: 0 var(--shadow-size) var(--shadow-size) 0 var(--bg-primary);
 }
 
 .spoiler-sidebar > ul:only-of-type,
@@ -1675,6 +1680,34 @@ body.darkmode--activated .darkmode-ignore {
     overflow: hidden;
 }
 
+/* Scrolling overflow fades */
+.git-wiki-page-list.has-scrollbar::before,
+.git-wiki-page-list.has-scrollbar::after {
+    width: 100%;
+    height: 30px;
+    background: linear-gradient(0deg, transparent 0%, var(--bg-primary) 80% 100%);
+    content: '';
+    display: block;
+    opacity: 1;
+    position: absolute;
+    z-index: 2;
+    transition: opacity 250ms var(--timing-bezier-1);
+}
+
+.git-wiki-page-list.has-scrollbar::before {
+    top: 0;
+}
+
+.git-wiki-page-list.has-scrollbar::after {
+    background: linear-gradient(180deg, transparent 0%, var(--bg-primary) 80% 100%);
+    bottom: 0;
+}
+
+.git-wiki-page-list.has-scrollbar.at-top::before,
+.git-wiki-page-list.has-scrollbar.at-bottom::before {
+    opacity: 0;
+}
+
 /* Section hierarchy list specific */
 .section-hierarchy-list li .label {
     white-space: normal; /* disable text truncation (more useful for docs) */
@@ -1703,7 +1736,7 @@ body.darkmode--activated .darkmode-ignore {
     padding-right: var(--spoiler-button-width);
 }
 
-.section-hierarchy-spoiler > summary {
+.section-hierarchy-spoiler > .spoiler-button {
     width: var(--spoiler-button-width);
     height: var(--spoiler-button-width);
     position: absolute;
@@ -1719,21 +1752,21 @@ body.darkmode--activated .darkmode-ignore {
     transition: opacity 250ms var(--timing-bezier-1), background 250ms var(--timing-bezier-1);
 }
 
-.section-hierarchy-spoiler[open] > summary {
+.section-hierarchy-spoiler[open] > .spoiler-button {
     opacity: 0;
     -webkit-mask-image: url("/assets/images/ui.svg#icons-spoiler-sidebar-hierarchy-contract");
     mask-image: url("/assets/images/ui.svg#icons-spoiler-sidebar-hierarchy-contract");
 }
 
-.section-hierarchy-spoiler > summary:hover {
+.section-hierarchy-spoiler > .spoiler-button:hover {
     background: var(--color-secondary);
 }
 
-.section-hierarchy-spoiler[open] > summary:hover {
+.section-hierarchy-spoiler[open] > .spoiler-button:hover {
     opacity: 1;
 }
 
-.current-page > .section-hierarchy-spoiler > summary {
+.current-page > .section-hierarchy-spoiler > .spoiler-button {
     background: var(--color-accent-foreground);
 }
 
@@ -2226,12 +2259,16 @@ footer {
     }
 
     .git-wiki-page-list {
-        height: calc(100vh - var(--height-mobile-header) - var(--spacing-primary));
+        height: calc(100vh - var(--height-mobile-header) - (var(--spacing-primary) * 4));
         padding: 0 var(--spacing-secondary);
     }
 
-    .spoiler-sidebar > summary {
+    .spoiler-sidebar > .sidebar-heading {
         background: var(--bg-tooltip);
+    }
+
+    .spoiler-sidebar .stickied {
+        box-shadow: 0 var(--shadow-size) var(--shadow-size) 0 var(--bg-tooltip);
     }
 
     .spoiler-sidebar > ul,
@@ -2255,8 +2292,8 @@ footer {
     }
 
     /* Make sidebar spoiler buttons always visible due to lack of mobile hover */
-    .spoiler-sidebar[open] > summary::after,
-    .section-hierarchy-spoiler[open] > summary {
+    .spoiler-sidebar[open] > .sidebar-heading::after,
+    .section-hierarchy-spoiler[open] > .spoiler-button {
         opacity: 1;
     }
 
@@ -2834,8 +2871,11 @@ footer {
     opacity: 1;
 }
 
-.ss-grabbed {
+.ss-scroll.ss-grabbed {
     background: var(--color-buttons-hover);
+}
+
+body.ss-grabbed {
     -moz-user-select: none;
     -webkit-user-select: none;
     user-select: none;

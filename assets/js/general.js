@@ -26,7 +26,7 @@ pageWidthToggleButton.addEventListener('click', (e) => {
 
 function expandPageWidthTooltip(expand) {
     const tooltip = pageWidthToggleButton.querySelector('.tooltip');
-    if (expand == true) {
+    if (expand) {
         tooltip.textContent = 'Contract Page Width';
     } else {
         tooltip.textContent = 'Expand Page Width';
@@ -50,13 +50,8 @@ body.addEventListener('click', (e) => {
     visible(false); // Dismiss if clicked elsewhere
 
     function visible(state) {
-        if (state == true) {
-            moreOptionsMenu.classList.add('menu-open');
-            moreOptionsMenu.parentNode.classList.add('menu-visible');
-        } else {
-            moreOptionsMenu.classList.remove('menu-open');
-            moreOptionsMenu.parentNode.classList.remove('menu-visible');
-        }
+        moreOptionsMenu.classList.toggle('menu-open', state);
+        moreOptionsMenu.parentNode.classList.toggle('menu-visible', state);
     }
 });
 
