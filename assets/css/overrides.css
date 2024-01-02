@@ -1173,6 +1173,7 @@ blockquote.important {
     letter-spacing: 0;
     margin-top: 0;
     margin-bottom: var(--spacing-secondary);
+    position: relative; /* for anchoring heading fragment identifier button */
 }
 
 /* To decrease size and be more discreet */
@@ -1229,7 +1230,8 @@ blockquote.important {
 }
 
 /* Heading fragment identifier links (added via JS) */
-.heading-frag-id-link {
+.heading-frag-id-link,
+.index .heading-frag-id-link {
     width: 32px;
     height: 32px;
     background: var(--color-buttons);
@@ -1244,6 +1246,11 @@ blockquote.important {
     transition: opacity 250ms var(--timing-bezier-1);
 }
 
+.index .heading-frag-id-link {
+    background: var(--color-buttons-hover);
+    top: -5px;
+}
+
 h2.heading-with-frag-id .heading-frag-id-link {
     margin-top: 0;
 }
@@ -1253,7 +1260,7 @@ h2.heading-with-frag-id .heading-frag-id-link {
 }
 
 .heading-frag-id-link:hover {
-    background: var(-color-buttons-hover);
+    background: var(--color-buttons-hover);
 }
 
 .heading-frag-id-link:active {

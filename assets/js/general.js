@@ -271,7 +271,6 @@ listIndexes.forEach(listIndex => {
 // Add fragment identifier links on hover
 var contentHeadings = body.querySelectorAll('.git-wiki-page h2, .git-wiki-page h3, .git-wiki-page h4'); // add to h4, too, even if not included in ToC
 contentHeadings.forEach(heading => {
-    console.log(heading.textContent)
     heading.classList.add('heading-with-frag-id');
     let link = document.createElement('a');
     link.classList.add('heading-frag-id-link','iconed');
