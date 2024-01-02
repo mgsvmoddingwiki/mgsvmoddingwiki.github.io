@@ -1248,7 +1248,8 @@ blockquote.important {
 
 .index .heading-frag-id-link {
     background: var(--color-buttons-hover);
-    top: -5px;
+    margin-top: 0;
+    transform: translateY(-5px); /* alternative to `top` since Chromium ignores `break-inside: avoid` on absolutely positioned elements */
 }
 
 h2.heading-with-frag-id .heading-frag-id-link {
