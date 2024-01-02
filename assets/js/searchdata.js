@@ -100,8 +100,8 @@ function initHtml() {
     sectionFilter.classList.add('search-section-filter');
     clear.classList.add('search-clear-query');
     results.id = 'results-container';
-    noResults.innerHTML = 'No Results';
-    sectionFilter.innerHTML = 'Filter to section';
+    noResults.textContent = 'No Results';
+    sectionFilter.textContent = 'Filter to section';
     actions.appendChild(noResults);
     actions.appendChild(sectionFilter);
     actions.appendChild(clear);
@@ -241,7 +241,7 @@ function outputResults(input, key) {
             link.classList.add('search-result-item');
             link.setAttribute('href', result.item.url);
             labelTitle.classList.add('search-result-title');
-            labelTitle.innerHTML = result.item.title;
+            labelTitle.textContent = result.item.title;
             link.appendChild(labelTitle);
 
             let path = result.item.url,
@@ -251,7 +251,7 @@ function outputResults(input, key) {
                 let labelPath = document.createElement('span'),
                     parentPath = getParentPath(path, parts);
                 labelPath.classList.add('search-result-path');
-                labelPath.innerHTML = parentPath.replace('/', ' ').replaceAll('/',' / ').replaceAll('_',' ').replaceAll('-',' ').replace(/\/([^\/]*)$/, '$1'); // regex replaces last occurrence of `/`
+                labelPath.textContent = parentPath.replace('/', ' ').replaceAll('/',' / ').replaceAll('_',' ').replaceAll('-',' ').replace(/\/([^\/]*)$/, '$1'); // regex replaces last occurrence of `/`
                 link.appendChild(labelPath);
             }
 

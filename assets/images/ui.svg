@@ -146,6 +146,13 @@
 
 
         <!-- Toolbar and other button icons -->
+        <g id="icons-heading-frag-id-path" class="stroke" transform="translate(-26 -27)">
+            <path d="M30,41L32.4,29"/>
+            <path d="M36,41L38.4,29"/>
+            <path d="M29,32L40,32"/>
+            <path d="M28,38L39,38"/>
+        </g>
+
         <g id="icons-spoiler-sidebar-hierarchy-expand-path" class="stroke" transform="translate(-26 -27)">
             <path d="M30,33L34.497,37L39,33"/>
         </g>
@@ -375,6 +382,7 @@
 
     <use class="output" id="icons-toc" xlink:href="#icons-toc-path"/>
     <use class="output" id="icons-download-file" xlink:href="#icons-download-file-path"/>
+    <use class="output" id="icons-heading-frag-id" xlink:href="#icons-heading-frag-id-path"/>
 
     <use class="output" id="icons-spoiler-expand" xlink:href="#icons-spoiler-expand-path"/>
     <use class="output" id="icons-spoiler-contract" xlink:href="#icons-spoiler-contract-path"/>

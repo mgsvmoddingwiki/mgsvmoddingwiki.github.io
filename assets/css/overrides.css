@@ -371,6 +371,10 @@ li::marker,
     opacity: 0.88; /* to optically match color of text. Same for all icons using `--color-secondary` */
 }
 
+:target {
+    scroll-margin-top: var(--spacing-primary); /* set distance that fragment identifier links should be from viewport top */
+}
+
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ EDITING TOOLBAR ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
@@ -1222,6 +1226,48 @@ blockquote.important {
 
 .index > li > ul li ul a {
     display: inline;
+}
+
+/* Heading fragment identifier links (added via JS) */
+.heading-frag-id-link {
+    width: 32px;
+    height: 32px;
+    background: var(--color-buttons);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    border-radius: var(--radius-full);
+    box-shadow: var(--shadow-secondary);
+    margin: -2px 0 0 calc(var(--spacing-minor) * 2);
+    position: absolute;
+    transition: opacity 250ms var(--timing-bezier-1);
+}
+
+h2.heading-with-frag-id .heading-frag-id-link {
+    margin-top: 0;
+}
+
+.heading-with-frag-id:hover .heading-frag-id-link {
+    opacity: 1;
+}
+
+.heading-frag-id-link:hover {
+    background: var(-color-buttons-hover);
+}
+
+.heading-frag-id-link:active {
+    filter: var(--filter-button-active);
+}
+
+.heading-frag-id-link::before {
+    width: 16px;
+    height: 16px;
+    background: var(--color-secondary);
+    content: '';
+    display: block;
+    -webkit-mask-image: url("/assets/images/ui.svg#icons-heading-frag-id");
+    mask-image: url("/assets/images/ui.svg#icons-heading-frag-id");
 }
 
 
@@ -2239,6 +2285,10 @@ footer {
         margin-top: calc(30px + var(--height-mobile-header));
         padding-left: calc(var(--spacing-primary) * 2);
         padding-right: calc(var(--spacing-primary) * 2);
+    }
+
+    :target {
+        scroll-margin-top: calc(var(--height-mobile-header) + var(--spacing-primary));
     }
 
     .git-wiki-tools {

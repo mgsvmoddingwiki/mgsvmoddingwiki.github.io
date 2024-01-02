@@ -136,7 +136,7 @@ function captureClass(el, prefix) {
 
 
 // --------------------------- Image handling ---------------------------
-var imgs = [...body.querySelectorAll('.git-wiki-page img')];
+var imgs = body.querySelectorAll('.git-wiki-page img');
 imgs.forEach(img => {
 
     // Wrap images in container
@@ -240,7 +240,7 @@ zoom.on('close', detachKeyEvents);
 
 
 // --------------------------- Video handling ---------------------------
-var videos = [...body.querySelectorAll('.git-wiki-page video')];
+var videos = body.querySelectorAll('.git-wiki-page video');
 videos.forEach(video => {
     video.volume = 0.5; // set default volume to 50%
 });
@@ -248,7 +248,7 @@ videos.forEach(video => {
 
 // ------------------------------- Infobox ------------------------------
 // Replace 'Site', 'Download' link names with names of hostname from URL
-var iblinks = [...body.querySelectorAll('.infobox a')];
+var iblinks = body.querySelectorAll('.infobox a');
 iblinks.forEach(iblink => {
     // https://stackoverflow.com/a/8498629
     var matches = iblink.href.match(/^https?\:\/\/([^\/?#]+)(?:[\/?#]|$)/i);
@@ -258,13 +258,27 @@ iblinks.forEach(iblink => {
 
 
 // ----------------------------- Index lists ----------------------------
-var listIndexes = [...body.querySelectorAll('.git-wiki-page .index')];
+var listIndexes = body.querySelectorAll('.git-wiki-page .index');
 listIndexes.forEach(listIndex => {
     // Add unique class if only has single first-level list item
     if (!listIndex.children[1]) {
         listIndex.classList.add('single-list');
     }
 });
+
+
+// -------------------------- Content headings --------------------------
+// Add fragment identifier links on hover
+var contentHeadings = body.querySelectorAll('.git-wiki-page h2, .git-wiki-page h3, .git-wiki-page h4'); // add to h4, too, even if not included in ToC
+contentHeadings.forEach(heading => {
+    console.log(heading.textContent)
+    heading.classList.add('heading-with-frag-id');
+    let link = document.createElement('a');
+    link.classList.add('heading-frag-id-link','iconed');
+    link.setAttribute('href', '#' + heading.getAttribute('id'));
+    heading.appendChild(link);
+});
+
 
 // ---------------------------- Mobile header ---------------------------
 // Hide header on downward scrolling
@@ -284,8 +298,8 @@ window.onscroll = function() {
 }
 
 // Override default hamburger menu inline onclick behavior
-const mobileHamburger = body.querySelector('#git-wiki-mobile-header > button')
-const pageWrapper = body.querySelector('body > .wrapper')
+const mobileHamburger = body.querySelector('#git-wiki-mobile-header > button');
+const pageWrapper = body.querySelector('body > .wrapper');
 mobileHamburger.setAttribute('onclick','mobileMainMenuToggle()');
 
 function mobileMainMenuToggle() {
