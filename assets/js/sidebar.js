@@ -124,13 +124,39 @@ scrollbarWrapper.addEventListener('scroll', e => {
     }
 });
 
-
 if (curPage) {
     scrollToCenter(curPage, scrollbarWrapper, (details.offsetTop + spoilerClosedHeight));
 }
 
 
+// -------- Share section index with page auto index includes -----------
+if (sectionIndexFlat.length > 1) {
+    const autoIndexSection = body.querySelectorAll('.index.section ul');
+    autoIndexSection.forEach((index) => {
+        const parent = getNestedObjFromValue(sectionIndex, 'children', 'url', curUrl)
+        parent.children.forEach((child) => {
+            let item = document.createElement('li');
+            let link = document.createElement('a');
+            link.setAttribute('href', child.url);
+            link.textContent = child.title;
+            item.appendChild(link);
+            index.appendChild(item);
+        });
+    });
+}
+
+
 // ------------------------------ Functions -----------------------------
+// https://stackoverflow.com/a/53390570
+function getNestedObjFromValue(array, nestingKey, itemKey, value) {
+    const obj = array.reduce((acc, item) => {
+        if (acc) { return acc }
+        if (item[itemKey] == value) { return item }
+        if (item[nestingKey]) { return getNestedObjFromValue(item[nestingKey], nestingKey, itemKey, value) }
+    }, null)
+    return obj
+}
+
 function waitForElementsToExist(parent, selector) {
     return new Promise(resolve => {
         if (parent.querySelectorAll(selector).length) {

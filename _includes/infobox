@@ -1,6 +1,6 @@
 <div class="infobox">
-    {% if include.name %}
-    <div class="title">{{ include.name }}</div>
+    {% if include.title %}
+    <div class="title">{{ include.title }}</div>
     {% else %}
     <div class="title">{{ page.title }}</div>
     {% endif %}

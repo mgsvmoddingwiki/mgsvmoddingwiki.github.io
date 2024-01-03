@@ -19,12 +19,12 @@ tags: [Tools, Reference]
 
 ## File Tools
 
-{% include index-autolist type="dedicated" tag="File Tools" %}
+{% include index-autolist heading="alpha" tag="File Tools" %}
 
 ## All
 
 {% include spoiler-start title="Show all pages" %}
 
-{% include index-autolist type="dedicated" tag="Tools" %}
+{% include index-autolist heading="alpha" tag="Tools" %}
 
 {% include spoiler-end %}
