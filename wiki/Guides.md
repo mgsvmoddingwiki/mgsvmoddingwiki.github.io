@@ -76,4 +76,4 @@ permalink: /Guides/
         - MTAR/GANI modding walkthrough, resources
 {:.index}
 
-{% include index-autolist type="dedicated" tag="Guides" %}
+{% include index-autolist heading="alpha" tag="Guides" %}

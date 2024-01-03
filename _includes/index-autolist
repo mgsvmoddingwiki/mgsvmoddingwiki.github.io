@@ -37,10 +37,18 @@
         </ul>
     </li>
 </ul>
+{% elsif include.type contains "section" %}
+<ul class="index section">
+    <li>
+        <h2 id="section-pages">Section pages</h2>
+        <ul>
+        </ul>
+    </li>
+</ul>
 {% else %}
 <ul class="index">
     <li>
-        {% if include.type == "dedicated" %}<h2 id="alphabetical">Alphabetical{% else %}<h2 id="related-pages">Related pages{% endif %}</h2>
+        {% if include.heading == "alpha" %}<h2 id="alphabetical">Alphabetical{% else %}<h2 id="related-pages">Related pages{% endif %}</h2>
         <ul>
         {% for input-tag in include.tag %}
             {% for page in site.pages %}
