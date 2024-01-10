@@ -1,0 +1,24 @@
+<!--
+title: CheckpointTrapScriptModuleConditionBody
+permalink: /Entity_Reference/Fox/GameKit/CheckpointTrapScriptModuleConditionBody
+tags: [Fox, GameKit, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [GameKit](/Entity_Reference/Fox/GameKit)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Geo.GeoTrapScriptModuleConditionBody → CheckpointTrapScriptModuleConditionBody
+
+```cpp
+CheckpointTrapScriptModuleConditionBody : Fox.Geo.GeoTrapScriptModuleConditionBody 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [checkpointName](#checkpointname) | TODO: Description |
+

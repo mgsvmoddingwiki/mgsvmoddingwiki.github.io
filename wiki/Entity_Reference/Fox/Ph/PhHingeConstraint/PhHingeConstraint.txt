@@ -1,0 +1,27 @@
+<!--
+title: PhHingeConstraint
+permalink: /Entity_Reference/Fox/Ph/PhHingeConstraint
+tags: [Fox, Ph, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Ph](/Entity_Reference/Fox/Ph)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Ph.PhConstraint → PhHingeConstraint
+
+```cpp
+PhHingeConstraint : Fox.Ph.PhConstraint 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [axis](#axis) | TODO: Description |
+| [limitedFlag](#limitedflag) | TODO: Description |
+| [limitHi](#limithi) | TODO: Description |
+| [limitLo](#limitlo) | TODO: Description |
+

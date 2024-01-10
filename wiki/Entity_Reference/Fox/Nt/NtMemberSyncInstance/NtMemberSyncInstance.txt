@@ -1,0 +1,21 @@
+<!--
+title: NtMemberSyncInstance
+permalink: /Entity_Reference/Fox/Nt/NtMemberSyncInstance
+tags: [Fox, Nt, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Nt](/Entity_Reference/Fox/Nt)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Nt.SyncInstance → NtMemberSyncInstance
+
+```cpp
+NtMemberSyncInstance : Fox.Nt.SyncInstance 
+```
+
+TODO: Description
+
+
+
+

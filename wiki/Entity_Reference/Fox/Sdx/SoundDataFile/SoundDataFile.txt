@@ -1,0 +1,21 @@
+<!--
+title: SoundDataFile
+permalink: /Entity_Reference/Fox/Sdx/SoundDataFile
+tags: [Fox, Sdx, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Sdx](/Entity_Reference/Fox/Sdx)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.DataSetFile2 → SoundDataFile
+
+```cpp
+SoundDataFile : Fox.Core.DataSetFile2 
+```
+
+TODO: Description
+
+
+
+

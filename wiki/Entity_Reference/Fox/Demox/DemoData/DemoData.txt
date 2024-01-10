@@ -1,0 +1,70 @@
+<!--
+title: DemoData
+permalink: /Entity_Reference/Fox/Demox/DemoData
+tags: [Fox, Demox, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Demox](/Entity_Reference/Fox/Demox)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.TransformData → DemoData
+
+```cpp
+DemoData : Fox.Core.TransformData 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [evfFiles](#evffiles) | TODO: Description |
+| [onMemory](#onmemory) | TODO: Description |
+| [demoLength](#demolength) | TODO: Description |
+| [priority](#priority) | TODO: Description |
+| [scriptPath](#scriptpath) | TODO: Description |
+| [fmdlFiles](#fmdlfiles) | TODO: Description |
+| [helpBoneFiles](#helpbonefiles) | TODO: Description |
+| [partsDesc](#partsdesc) | TODO: Description |
+| [clipDatas](#clipdatas) | TODO: Description |
+| [loadFiles](#loadfiles) | TODO: Description |
+| [demoId](#demoid) | TODO: Description |
+| [playingRoot](#playingroot) | TODO: Description |
+| [streamAnimation](#streamanimation) | TODO: Description |
+| [demoStreamPath](#demostreampath) | TODO: Description |
+| [motionPath](#motionpath) | TODO: Description |
+| [motionFile](#motionfile) | TODO: Description |
+| [audioPath](#audiopath) | TODO: Description |
+| [subtitleFile](#subtitlefile) | TODO: Description |
+| [subtitleBinaryFile](#subtitlebinaryfile) | TODO: Description |
+| [nodeDataFile](#nodedatafile) | TODO: Description |
+| [stringParams](#stringparams) | TODO: Description |
+| [entityParams](#entityparams) | TODO: Description |
+| [fileParams](#fileparams) | TODO: Description |
+| [controlCharacters](#controlcharacters) | TODO: Description |
+| [controlDatas](#controldatas) | TODO: Description |
+| [controlCollectibles](#controlcollectibles) | TODO: Description |
+| [parameters](#parameters) | TODO: Description |
+| [setupLights](#setuplights) | TODO: Description |
+| [cameraInterpType](#camerainterptype) | TODO: Description |
+| [cameraInterpFrame](#camerainterpframe) | TODO: Description |
+| [cameraInterpCurveRate](#camerainterpcurverate) | TODO: Description |
+| [cameraInterpScurveCenter](#camerainterpscurvecenter) | TODO: Description |
+| [cameraTranslation](#cameratranslation) | TODO: Description |
+| [cameraRotation](#camerarotation) | TODO: Description |
+| [cameraParam](#cameraparam) | TODO: Description |
+| [cameraDistanceToLookAt](#cameradistancetolookat) | TODO: Description |
+| [cameraStartTranslation](#camerastarttranslation) | TODO: Description |
+| [cameraStartRotation](#camerastartrotation) | TODO: Description |
+| [cameraStartParam](#camerastartparam) | TODO: Description |
+| [cameraStartDistanceToLookAt](#camerastartdistancetolookat) | TODO: Description |
+| [eventCacheNum](#eventcachenum) | TODO: Description |
+| [eventInterpCacheNum](#eventinterpcachenum) | TODO: Description |
+| [eventSkipCacheNum](#eventskipcachenum) | TODO: Description |
+| [highestTextureStreamModel](#highesttexturestreammodel) | TODO: Description |
+| [highestTexture](#highesttexture) | TODO: Description |
+| [objectNum](#objectnum) | TODO: Description |
+| [blockPositionSetter](#blockpositionsetter) | TODO: Description |
+

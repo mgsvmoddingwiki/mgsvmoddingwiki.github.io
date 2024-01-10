@@ -1,0 +1,28 @@
+<!--
+title: TppBuddyPuppyParameter
+permalink: /Entity_Reference/Tpp/GameCore/TppBuddyPuppyParameter
+tags: [Tpp, GameCore, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [GameCore](/Entity_Reference/Tpp/GameCore)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.DataElement → TppBuddyPuppyParameter
+
+```cpp
+TppBuddyPuppyParameter : Fox.Core.DataElement 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [partsFile](#partsfile) | TODO: Description |
+| [motionGraphFile](#motiongraphfile) | TODO: Description |
+| [mtarFile](#mtarfile) | TODO: Description |
+| [vfxFiles](#vfxfiles) | TODO: Description |
+| [fovaFiles](#fovafiles) | TODO: Description |
+

@@ -1,0 +1,21 @@
+<!--
+title: GeoPathService
+permalink: /Entity_Reference/Fox/Geo/GeoPathService
+tags: [Fox, Geo, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Geo](/Entity_Reference/Fox/Geo)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Entity → GeoPathService
+
+```cpp
+GeoPathService : Fox.Core.Entity 
+```
+
+TODO: Description
+
+
+
+

@@ -1,0 +1,36 @@
+<!--
+title: TppBushManager
+permalink: /Entity_Reference/Tpp/GameKit/TppBushManager
+tags: [Tpp, GameKit, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [GameKit](/Entity_Reference/Tpp/GameKit)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Entity → TppBushManager
+
+```cpp
+TppBushManager : Fox.Core.Entity 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [flag](#flag) | TODO: Description |
+| [totalBlockNum](#totalblocknum) | TODO: Description |
+| [totalUnitNum](#totalunitnum) | TODO: Description |
+| [maxBlockNum](#maxblocknum) | TODO: Description |
+| [maxUnitNum](#maxunitnum) | TODO: Description |
+| [maxTotalBlockNum](#maxtotalblocknum) | TODO: Description |
+| [maxTotalUnitNum](#maxtotalunitnum) | TODO: Description |
+| [realizeRange](#realizerange) | TODO: Description |
+| [windShakeRange](#windshakerange) | TODO: Description |
+| [cameraPos](#camerapos) | TODO: Description |
+| [existMaterials](#existmaterials) | TODO: Description |
+| [noiseSeType](#noisesetype) | TODO: Description |
+| [noiseSeEventNames](#noiseseeventnames) | TODO: Description |
+

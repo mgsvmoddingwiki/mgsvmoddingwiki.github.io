@@ -1,0 +1,21 @@
+<!--
+title: GetWormholeAreaListReceive
+permalink: /Entity_Reference/Tpp/Ui/GetWormholeAreaListReceive
+tags: [Tpp, Ui, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [Ui](/Entity_Reference/Tpp/Ui)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Entity → GetWormholeAreaListReceive
+
+```cpp
+GetWormholeAreaListReceive : Fox.Core.Entity 
+```
+
+TODO: Description
+
+
+
+

@@ -1,0 +1,24 @@
+<!--
+title: SoundAreaEdgeParameter
+permalink: /Entity_Reference/Fox/Sdx/SoundAreaEdgeParameter
+tags: [Fox, Sdx, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Sdx](/Entity_Reference/Fox/Sdx)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.DataElement → SoundAreaEdgeParameter
+
+```cpp
+SoundAreaEdgeParameter : Fox.Core.DataElement 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [fadeTime](#fadetime) | TODO: Description |
+

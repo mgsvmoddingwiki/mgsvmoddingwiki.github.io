@@ -1,0 +1,29 @@
+<!--
+title: TrapCheckCharacterFilterParam
+permalink: /Entity_Reference/Tpp/GameKit/TrapCheckCharacterFilterParam
+tags: [Tpp, GameKit, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [GameKit](/Entity_Reference/Tpp/GameKit)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Geo.GeoTrapModuleCallbackDataElement → TrapCheckCharacterFilterParam
+
+```cpp
+TrapCheckCharacterFilterParam : Fox.Geo.GeoTrapModuleCallbackDataElement 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [flag](#flag) | TODO: Description |
+| [checkPlayer](#checkplayer) | TODO: Description |
+| [checkSoldier](#checksoldier) | TODO: Description |
+| [checkUav](#checkuav) | TODO: Description |
+| [checkVolgin](#checkvolgin) | TODO: Description |
+| [checkLiquid](#checkliquid) | TODO: Description |
+

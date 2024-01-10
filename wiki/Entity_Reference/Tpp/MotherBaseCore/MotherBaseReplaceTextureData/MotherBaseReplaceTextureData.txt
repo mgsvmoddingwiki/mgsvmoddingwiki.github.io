@@ -1,0 +1,25 @@
+<!--
+title: MotherBaseReplaceTextureData
+permalink: /Entity_Reference/Tpp/MotherBaseCore/MotherBaseReplaceTextureData
+tags: [Tpp, MotherBaseCore, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [MotherBaseCore](/Entity_Reference/Tpp/MotherBaseCore)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Data → MotherBaseReplaceTextureData
+
+```cpp
+MotherBaseReplaceTextureData : Fox.Core.Data 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [pathCodes](#pathcodes) | TODO: Description |
+| [flags](#flags) | TODO: Description |
+

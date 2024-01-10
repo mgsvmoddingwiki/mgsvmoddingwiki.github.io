@@ -1,0 +1,21 @@
+<!--
+title: NavxSquareGraphBounderDataBody
+permalink: /Entity_Reference/Fox/Navx/NavxSquareGraphBounderDataBody
+tags: [Fox, Navx, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Navx](/Entity_Reference/Fox/Navx)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Navx.NavxBounderDataBody → NavxSquareGraphBounderDataBody
+
+```cpp
+NavxSquareGraphBounderDataBody : Fox.Navx.NavxBounderDataBody 
+```
+
+TODO: Description
+
+
+
+

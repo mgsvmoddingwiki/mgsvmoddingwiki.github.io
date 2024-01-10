@@ -1,0 +1,21 @@
+<!--
+title: EndingSettingFile
+permalink: /Entity_Reference/Tpp/Ui/EndingSettingFile
+tags: [Tpp, Ui, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [Ui](/Entity_Reference/Tpp/Ui)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.RawFile → EndingSettingFile
+
+```cpp
+EndingSettingFile : Fox.Core.RawFile 
+```
+
+TODO: Description
+
+
+
+

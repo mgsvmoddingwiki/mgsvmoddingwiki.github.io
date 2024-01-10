@@ -1,0 +1,25 @@
+<!--
+title: FilePtrArrayPropertyDifference
+permalink: /Entity_Reference/Fox/Core/FilePtrArrayPropertyDifference
+tags: [Fox, Core, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Core](/Entity_Reference/Fox/Core)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.PropertyDifference → FilePtrArrayPropertyDifference
+
+```cpp
+FilePtrArrayPropertyDifference : Fox.Core.PropertyDifference 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [originalValues](#originalvalues) | TODO: Description |
+| [values](#values) | TODO: Description |
+

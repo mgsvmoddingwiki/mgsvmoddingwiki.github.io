@@ -1,0 +1,21 @@
+<!--
+title: GrPluginDeferredGeometryDecal
+permalink: /Entity_Reference/Fox/Gr/GrPluginDeferredGeometryDecal
+tags: [Fox, Gr, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Gr](/Entity_Reference/Fox/Gr)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Gr.GrPluginDeferredGeometryOpaque → GrPluginDeferredGeometryDecal
+
+```cpp
+GrPluginDeferredGeometryDecal : Fox.Gr.GrPluginDeferredGeometryOpaque 
+```
+
+TODO: Description
+
+
+
+

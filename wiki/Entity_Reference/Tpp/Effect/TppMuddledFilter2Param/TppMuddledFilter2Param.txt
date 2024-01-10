@@ -1,0 +1,28 @@
+<!--
+title: TppMuddledFilter2Param
+permalink: /Entity_Reference/Tpp/Effect/TppMuddledFilter2Param
+tags: [Tpp, Effect, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [Effect](/Entity_Reference/Tpp/Effect)\
+> Submodule: TODO: Submodule
+
+```cpp
+TppMuddledFilter2Param 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [widthMin](#widthmin) | TODO: Description |
+| [widthMax](#widthmax) | TODO: Description |
+| [lifeMin](#lifemin) | TODO: Description |
+| [lifeMax](#lifemax) | TODO: Description |
+| [deltaAngleMin](#deltaanglemin) | TODO: Description |
+| [deltaAngleMax](#deltaanglemax) | TODO: Description |
+

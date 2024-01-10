@@ -1,0 +1,36 @@
+<!--
+title: UiModelData
+permalink: /Entity_Reference/Fox/UiScene/UiModelData
+tags: [Fox, UiScene, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [UiScene](/Entity_Reference/Fox/UiScene)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.TransformData → UiModelData
+
+```cpp
+UiModelData : Fox.Core.TransformData 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [data](#data) | TODO: Description |
+| [sceneName](#scenename) | TODO: Description |
+| [priority](#priority) | TODO: Description |
+| [animations](#animations) | TODO: Description |
+| [useLayoutCamera](#uselayoutcamera) | TODO: Description |
+| [flag](#flag) | TODO: Description |
+| [billboardMin](#billboardmin) | TODO: Description |
+| [billboardMax](#billboardmax) | TODO: Description |
+| [connection_connectModelDataHandle](#connection-connectmodeldatahandle) | TODO: Description |
+| [connection_connectModelNodeName](#connection-connectmodelnodename) | TODO: Description |
+| [color](#color) | TODO: Description |
+| [inheritanceSetting](#inheritancesetting) | TODO: Description |
+| [modelNodes](#modelnodes) | TODO: Description |
+

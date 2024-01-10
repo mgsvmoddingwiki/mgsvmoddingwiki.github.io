@@ -1,0 +1,24 @@
+<!--
+title: VehicleDescription
+permalink: /Entity_Reference/Fox/PartsBuilder/VehicleDescription
+tags: [Fox, PartsBuilder, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [PartsBuilder](/Entity_Reference/Fox/PartsBuilder)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.PartsBuilder.PartDescription → VehicleDescription
+
+```cpp
+VehicleDescription : Fox.PartsBuilder.PartDescription 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [vehicleFile](#vehiclefile) | TODO: Description |
+

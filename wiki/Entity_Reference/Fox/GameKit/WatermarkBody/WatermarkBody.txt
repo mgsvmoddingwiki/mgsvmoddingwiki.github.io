@@ -1,0 +1,21 @@
+<!--
+title: WatermarkBody
+permalink: /Entity_Reference/Fox/GameKit/WatermarkBody
+tags: [Fox, GameKit, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [GameKit](/Entity_Reference/Fox/GameKit)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.DataBody → WatermarkBody
+
+```cpp
+WatermarkBody : Fox.Core.DataBody 
+```
+
+TODO: Description
+
+
+
+

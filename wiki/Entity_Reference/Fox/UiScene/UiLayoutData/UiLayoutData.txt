@@ -1,0 +1,31 @@
+<!--
+title: UiLayoutData
+permalink: /Entity_Reference/Fox/UiScene/UiLayoutData
+tags: [Fox, UiScene, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [UiScene](/Entity_Reference/Fox/UiScene)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.TransformData → UiLayoutData
+
+```cpp
+UiLayoutData : Fox.Core.TransformData 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [layoutPath](#layoutpath) | TODO: Description |
+| [color](#color) | TODO: Description |
+| [visible](#visible) | TODO: Description |
+| [drawPriority](#drawpriority) | TODO: Description |
+| [connection_connectModelDataHandle](#connection-connectmodeldatahandle) | TODO: Description |
+| [connection_connectModelNodeName](#connection-connectmodelnodename) | TODO: Description |
+| [useParentCamera](#useparentcamera) | TODO: Description |
+| [fontTableIndex](#fonttableindex) | TODO: Description |
+

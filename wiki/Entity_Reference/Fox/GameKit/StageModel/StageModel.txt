@@ -1,0 +1,25 @@
+<!--
+title: StageModel
+permalink: /Entity_Reference/Fox/GameKit/StageModel
+tags: [Fox, GameKit, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [GameKit](/Entity_Reference/Fox/GameKit)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.TransformData → StageModel
+
+```cpp
+StageModel : Fox.Core.TransformData 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [modelPath](#modelpath) | TODO: Description |
+| [geomPath](#geompath) | TODO: Description |
+

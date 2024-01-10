@@ -1,0 +1,21 @@
+<!--
+title: UiManager
+permalink: /Entity_Reference/Fox/Ui/UiManager
+tags: [Fox, Ui, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Ui](/Entity_Reference/Fox/Ui)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Entity → UiManager
+
+```cpp
+UiManager : Fox.Core.Entity 
+```
+
+TODO: Description
+
+
+
+

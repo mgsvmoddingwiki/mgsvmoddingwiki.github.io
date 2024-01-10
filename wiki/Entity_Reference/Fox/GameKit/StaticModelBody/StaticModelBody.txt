@@ -1,0 +1,26 @@
+<!--
+title: StaticModelBody
+permalink: /Entity_Reference/Fox/GameKit/StaticModelBody
+tags: [Fox, GameKit, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [GameKit](/Entity_Reference/Fox/GameKit)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.TransformDataBody → StaticModelBody
+
+```cpp
+StaticModelBody : Fox.Core.TransformDataBody 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [geom](#geom) | TODO: Description |
+| [isVisible](#isvisible) | TODO: Description |
+| [isGeomActive](#isgeomactive) | TODO: Description |
+

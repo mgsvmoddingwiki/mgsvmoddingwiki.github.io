@@ -1,0 +1,24 @@
+<!--
+title: BoxShape
+permalink: /Entity_Reference/Fox/Core/BoxShape
+tags: [Fox, Core, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Core](/Entity_Reference/Fox/Core)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.ShapeData → BoxShape
+
+```cpp
+BoxShape : Fox.Core.ShapeData 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [size](#size) | TODO: Description |
+

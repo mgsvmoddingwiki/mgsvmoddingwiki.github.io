@@ -1,0 +1,32 @@
+<!--
+title: TppNightVisionParam
+permalink: /Entity_Reference/Tpp/Effect/TppNightVisionParam
+tags: [Tpp, Effect, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [Effect](/Entity_Reference/Tpp/Effect)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.DataElement → TppNightVisionParam
+
+```cpp
+TppNightVisionParam : Fox.Core.DataElement 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [enable](#enable) | TODO: Description |
+| [colorCorrectionLUT](#colorcorrectionlut) | TODO: Description |
+| [exposureCompensation](#exposurecompensation) | TODO: Description |
+| [switchOnCompensation](#switchoncompensation) | TODO: Description |
+| [switchOnEffectTime](#switchoneffecttime) | TODO: Description |
+| [switchOffCompensation](#switchoffcompensation) | TODO: Description |
+| [switchOffEffectTime](#switchoffeffecttime) | TODO: Description |
+| [tonemapThreshold](#tonemapthreshold) | TODO: Description |
+| [tonemapRange](#tonemaprange) | TODO: Description |
+

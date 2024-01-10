@@ -1,0 +1,27 @@
+<!--
+title: GkEventTimer
+permalink: /Entity_Reference/Fox/GameKit/GkEventTimer
+tags: [Fox, GameKit, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [GameKit](/Entity_Reference/Fox/GameKit)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.DataBody → GkEventTimer
+
+```cpp
+GkEventTimer : Fox.Core.DataBody 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [isTimerActive](#istimeractive) | TODO: Description |
+| [timer](#timer) | TODO: Description |
+| [measureTime](#measuretime) | TODO: Description |
+| [enableDebugView](#enabledebugview) | TODO: Description |
+

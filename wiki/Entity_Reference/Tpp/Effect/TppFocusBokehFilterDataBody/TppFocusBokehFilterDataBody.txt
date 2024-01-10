@@ -1,0 +1,21 @@
+<!--
+title: TppFocusBokehFilterDataBody
+permalink: /Entity_Reference/Tpp/Effect/TppFocusBokehFilterDataBody
+tags: [Tpp, Effect, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [Effect](/Entity_Reference/Tpp/Effect)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.DataBody → TppFocusBokehFilterDataBody
+
+```cpp
+TppFocusBokehFilterDataBody : Fox.Core.DataBody 
+```
+
+TODO: Description
+
+
+
+

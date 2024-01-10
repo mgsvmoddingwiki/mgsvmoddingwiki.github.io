@@ -1,0 +1,25 @@
+<!--
+title: TppCorpseLocatorParameter
+permalink: /Entity_Reference/Tpp/GameCore/TppCorpseLocatorParameter
+tags: [Tpp, GameCore, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [GameCore](/Entity_Reference/Tpp/GameCore)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.DataElement → TppCorpseLocatorParameter
+
+```cpp
+TppCorpseLocatorParameter : Fox.Core.DataElement 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [identifier](#identifier) | TODO: Description |
+| [isEmplaced](#isemplaced) | TODO: Description |
+

@@ -1,0 +1,25 @@
+<!--
+title: Int64StringMapPropertyDifference
+permalink: /Entity_Reference/Fox/Core/Int64StringMapPropertyDifference
+tags: [Fox, Core, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Core](/Entity_Reference/Fox/Core)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.PropertyDifference → Int64StringMapPropertyDifference
+
+```cpp
+Int64StringMapPropertyDifference : Fox.Core.PropertyDifference 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [originalValues](#originalvalues) | TODO: Description |
+| [values](#values) | TODO: Description |
+

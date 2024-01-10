@@ -1,0 +1,30 @@
+<!--
+title: MotherBaseConstructData
+permalink: /Entity_Reference/Tpp/MotherBaseCore/MotherBaseConstructData
+tags: [Tpp, MotherBaseCore, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [MotherBaseCore](/Entity_Reference/Tpp/MotherBaseCore)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.TransformData → MotherBaseConstructData
+
+```cpp
+MotherBaseConstructData : Fox.Core.TransformData 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [type](#type) | TODO: Description |
+| [index](#index) | TODO: Description |
+| [divisionType](#divisiontype) | TODO: Description |
+| [divisionRotate](#divisionrotate) | TODO: Description |
+| [anotherConnector](#anotherconnector) | TODO: Description |
+| [cluster](#cluster) | TODO: Description |
+| [plant](#plant) | TODO: Description |
+

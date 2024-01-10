@@ -1,0 +1,40 @@
+<!--
+title: TppGlobalVolumetricFogParam
+permalink: /Entity_Reference/Tpp/Effect/TppGlobalVolumetricFogParam
+tags: [Tpp, Effect, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [Effect](/Entity_Reference/Tpp/Effect)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.DataElement → TppGlobalVolumetricFogParam
+
+```cpp
+TppGlobalVolumetricFogParam : Fox.Core.DataElement 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [enable](#enable) | TODO: Description |
+| [selfLuminance](#selfluminance) | TODO: Description |
+| [selfColor](#selfcolor) | TODO: Description |
+| [skyAlbedo](#skyalbedo) | TODO: Description |
+| [rayleighScattering](#rayleighscattering) | TODO: Description |
+| [mieScattering](#miescattering) | TODO: Description |
+| [mieAnisotropy](#mieanisotropy) | TODO: Description |
+| [skyLightGain](#skylightgain) | TODO: Description |
+| [dirLightGain](#dirlightgain) | TODO: Description |
+| [lightningGain](#lightninggain) | TODO: Description |
+| [density](#density) | TODO: Description |
+| [power](#power) | TODO: Description |
+| [near](#near) | TODO: Description |
+| [falloff](#falloff) | TODO: Description |
+| [exposureOffsetValues](#exposureoffsetvalues) | TODO: Description |
+| [exposureOffsetTargets](#exposureoffsettargets) | TODO: Description |
+| [flags](#flags) | TODO: Description |
+

@@ -1,0 +1,21 @@
+<!--
+title: TerrainHole
+permalink: /Entity_Reference/Fox/GameKit/TerrainHole
+tags: [Fox, GameKit, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [GameKit](/Entity_Reference/Fox/GameKit)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.TransformData → TerrainHole
+
+```cpp
+TerrainHole : Fox.Core.TransformData 
+```
+
+TODO: Description
+
+
+
+

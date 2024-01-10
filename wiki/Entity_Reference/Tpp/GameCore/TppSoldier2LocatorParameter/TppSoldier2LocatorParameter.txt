@@ -1,0 +1,24 @@
+<!--
+title: TppSoldier2LocatorParameter
+permalink: /Entity_Reference/Tpp/GameCore/TppSoldier2LocatorParameter
+tags: [Tpp, GameCore, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [GameCore](/Entity_Reference/Tpp/GameCore)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.DataElement → TppSoldier2LocatorParameter
+
+```cpp
+TppSoldier2LocatorParameter : Fox.Core.DataElement 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [identifier](#identifier) | TODO: Description |
+

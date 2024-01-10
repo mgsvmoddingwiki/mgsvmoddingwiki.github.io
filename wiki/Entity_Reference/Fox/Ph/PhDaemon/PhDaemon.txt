@@ -1,0 +1,28 @@
+<!--
+title: PhDaemon
+permalink: /Entity_Reference/Fox/Ph/PhDaemon
+tags: [Fox, Ph, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Ph](/Entity_Reference/Fox/Ph)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Entity → PhDaemon
+
+```cpp
+PhDaemon : Fox.Core.Entity 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [materialManager](#materialmanager) | TODO: Description |
+| [defaultFriction](#defaultfriction) | TODO: Description |
+| [defaultRestitution](#defaultrestitution) | TODO: Description |
+| [isParallel](#isparallel) | TODO: Description |
+| [isUseSmallJob](#isusesmalljob) | TODO: Description |
+

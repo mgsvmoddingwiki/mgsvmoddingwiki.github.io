@@ -1,0 +1,36 @@
+<!--
+title: NavCurrentNavigationDesc
+permalink: /Entity_Reference/Fox/Nav/NavCurrentNavigationDesc
+tags: [Fox, Nav, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Nav](/Entity_Reference/Fox/Nav)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Entity → NavCurrentNavigationDesc
+
+```cpp
+NavCurrentNavigationDesc : Fox.Core.Entity 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [destination](#destination) | TODO: Description |
+| [destinationDirection](#destinationdirection) | TODO: Description |
+| [position](#position) | TODO: Description |
+| [startPositions](#startpositions) | TODO: Description |
+| [direction](#direction) | TODO: Description |
+| [steeringMargin](#steeringmargin) | TODO: Description |
+| [minimumTurningRadius](#minimumturningradius) | TODO: Description |
+| [turningRadius](#turningradius) | TODO: Description |
+| [radius](#radius) | TODO: Description |
+| [attribute](#attribute) | TODO: Description |
+| [pathUpdateDist](#pathupdatedist) | TODO: Description |
+| [pathfindOptionEnableFlags](#pathfindoptionenableflags) | TODO: Description |
+| [enableAutoIncrementStep](#enableautoincrementstep) | TODO: Description |
+

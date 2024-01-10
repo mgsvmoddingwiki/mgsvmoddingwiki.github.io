@@ -1,0 +1,25 @@
+<!--
+title: Int8ArrayPropertyDifference
+permalink: /Entity_Reference/Fox/Core/Int8ArrayPropertyDifference
+tags: [Fox, Core, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Core](/Entity_Reference/Fox/Core)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.PropertyDifference → Int8ArrayPropertyDifference
+
+```cpp
+Int8ArrayPropertyDifference : Fox.Core.PropertyDifference 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [originalValues](#originalvalues) | TODO: Description |
+| [values](#values) | TODO: Description |
+

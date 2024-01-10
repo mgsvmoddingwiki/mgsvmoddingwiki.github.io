@@ -1,0 +1,21 @@
+<!--
+title: TppObjectBrushPluginBushBody
+permalink: /Entity_Reference/Tpp/GameKit/TppObjectBrushPluginBushBody
+tags: [Tpp, GameKit, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [GameKit](/Entity_Reference/Tpp/GameKit)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.GameKit.ObjectBrushPluginCloneBody → TppObjectBrushPluginBushBody
+
+```cpp
+TppObjectBrushPluginBushBody : Fox.GameKit.ObjectBrushPluginCloneBody 
+```
+
+TODO: Description
+
+
+
+

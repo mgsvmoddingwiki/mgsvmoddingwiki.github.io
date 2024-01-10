@@ -1,0 +1,30 @@
+<!--
+title: GkEventTimerData
+permalink: /Entity_Reference/Fox/GameKit/GkEventTimerData
+tags: [Fox, GameKit, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [GameKit](/Entity_Reference/Fox/GameKit)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Data → GkEventTimerData
+
+```cpp
+GkEventTimerData : Fox.Core.Data 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [measureTime](#measuretime) | TODO: Description |
+| [startMessageName](#startmessagename) | TODO: Description |
+| [interruptMessageName](#interruptmessagename) | TODO: Description |
+| [alarmMessageName](#alarmmessagename) | TODO: Description |
+| [enableDebugView](#enabledebugview) | TODO: Description |
+| [debugViewPositionX](#debugviewpositionx) | TODO: Description |
+| [debugViewPositionY](#debugviewpositiony) | TODO: Description |
+

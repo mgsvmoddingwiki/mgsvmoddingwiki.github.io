@@ -1,0 +1,31 @@
+<!--
+title: TppSandWind
+permalink: /Entity_Reference/Tpp/Effect/TppSandWind
+tags: [Tpp, Effect, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [Effect](/Entity_Reference/Tpp/Effect)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Data → TppSandWind
+
+```cpp
+TppSandWind : Fox.Core.Data 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [intensity](#intensity) | TODO: Description |
+| [velocity](#velocity) | TODO: Description |
+| [amount](#amount) | TODO: Description |
+| [textureRepetition](#texturerepetition) | TODO: Description |
+| [intervalDuration](#intervalduration) | TODO: Description |
+| [phaseScale](#phasescale) | TODO: Description |
+| [closeSandRelativeIntensity](#closesandrelativeintensity) | TODO: Description |
+| [closeSandRelativeVelocity](#closesandrelativevelocity) | TODO: Description |
+

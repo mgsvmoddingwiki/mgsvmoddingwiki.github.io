@@ -1,0 +1,21 @@
+<!--
+title: GeoxPartsTargetExtensionBody
+permalink: /Entity_Reference/Fox/Geox/GeoxPartsTargetExtensionBody
+tags: [Fox, Geox, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Geox](/Entity_Reference/Fox/Geox)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.DataBody → GeoxPartsTargetExtensionBody
+
+```cpp
+GeoxPartsTargetExtensionBody : Fox.Core.DataBody 
+```
+
+TODO: Description
+
+
+
+

@@ -1,0 +1,24 @@
+<!--
+title: TppCheckPointTrapExecDataElement
+permalink: /Entity_Reference/Tpp/System/TppCheckPointTrapExecDataElement
+tags: [Tpp, System, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [System](/Entity_Reference/Tpp/System)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Geo.GeoTrapModuleCallbackDataElement → TppCheckPointTrapExecDataElement
+
+```cpp
+TppCheckPointTrapExecDataElement : Fox.Geo.GeoTrapModuleCallbackDataElement 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [locators](#locators) | TODO: Description |
+

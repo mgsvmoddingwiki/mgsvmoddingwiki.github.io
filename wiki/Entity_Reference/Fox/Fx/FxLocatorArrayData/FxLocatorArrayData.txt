@@ -1,0 +1,24 @@
+<!--
+title: FxLocatorArrayData
+permalink: /Entity_Reference/Fox/Fx/FxLocatorArrayData
+tags: [Fox, Fx, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Fx](/Entity_Reference/Fox/Fx)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.TransformData → FxLocatorArrayData
+
+```cpp
+FxLocatorArrayData : Fox.Core.TransformData 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [vfxlbFile](#vfxlbfile) | TODO: Description |
+

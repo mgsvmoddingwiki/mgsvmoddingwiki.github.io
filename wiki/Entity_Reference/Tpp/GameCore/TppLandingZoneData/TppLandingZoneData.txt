@@ -1,0 +1,25 @@
+<!--
+title: TppLandingZoneData
+permalink: /Entity_Reference/Tpp/GameCore/TppLandingZoneData
+tags: [Tpp, GameCore, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [GameCore](/Entity_Reference/Tpp/GameCore)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.TransformData → TppLandingZoneData
+
+```cpp
+TppLandingZoneData : Fox.Core.TransformData 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [approachRoute](#approachroute) | TODO: Description |
+| [returnRoute](#returnroute) | TODO: Description |
+

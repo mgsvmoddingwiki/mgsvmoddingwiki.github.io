@@ -1,0 +1,29 @@
+<!--
+title: TppPermanentGimmickMachineGunParameter
+permalink: /Entity_Reference/Tpp/GameKit/TppPermanentGimmickMachineGunParameter
+tags: [Tpp, GameKit, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [GameKit](/Entity_Reference/Tpp/GameKit)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.DataElement → TppPermanentGimmickMachineGunParameter
+
+```cpp
+TppPermanentGimmickMachineGunParameter : Fox.Core.DataElement 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [maxYAxisAngle](#maxyaxisangle) | TODO: Description |
+| [minYAxisAngle](#minyaxisangle) | TODO: Description |
+| [maxXAxisAngle](#maxxaxisangle) | TODO: Description |
+| [minXAxisAngle](#minxaxisangle) | TODO: Description |
+| [weaponPartsFile](#weaponpartsfile) | TODO: Description |
+| [flags1](#flags1) | TODO: Description |
+

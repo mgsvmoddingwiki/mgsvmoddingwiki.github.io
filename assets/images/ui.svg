@@ -13,6 +13,11 @@
         <rect id="mask-fill" class="fill" width="100%" height="100%"/>
 
         <!-- Sidebar icons -->
+        <g id="icons-sidebar-nodes-path" class="stroke" transform="translate(-22 -23)">
+            <path d="M33,29C33,28.448 32.552,28 32,28L28,28C27.448,28 27,28.448 27,29L27,31C27,31.552 27.448,32 28,32L32,32C32.552,32 33,31.552 33,31L33,29Z"/>
+            <path d="M41,39C41,38.448 40.552,38 40,38L36,38C35.448,38 35,38.448 35,39L35,41C35,41.552 35.448,42 36,42L40,42C40.552,42 41,41.552 41,41L41,39Z"/>
+            <path d="M35,40L29.417,40C28.037,40 26.917,38.88 26.917,37.5C26.917,36.12 28.037,35 29.417,35L38.5,35C39.88,35 41,33.88 41,32.5C41,31.12 39.88,30 38.5,30L32.917,30"/>
+        </g>
         <g id="icons-sidebar-youtube-path" transform="translate(-26 -219)">
             <path class="stroke" d="M45,228.806C45,226.456 42.878,225 40.528,225L35.472,225C33.122,225 31,226.456 31,228.806L31,233.194C31,235.544 33.122,237 35.472,237L40.528,237C42.878,237 45,235.544 45,233.194L45,228.806Z"/>
             <path class="fill" d="M40.408,230.498L40.408,231.502L37.326,232.792L36,232.792L36,229.208L37.326,229.208L40.408,230.498Z"/>
@@ -424,6 +429,7 @@
     <use class="output" id="icons-sidebar-tool" xlink:href="#icons-sidebar-tool-path"/>
     <use class="output" id="icons-sidebar-youtube" xlink:href="#icons-sidebar-youtube-path"/>
     <use class="output" id="icons-sidebar-page" xlink:href="#icons-editing-add-path"/>
+    <use class="output" id="icons-sidebar-nodes" xlink:href="#icons-sidebar-nodes-path"/>
 
 
     <!-- Inserted here so animation only plays when referenced via fragment identifier -->

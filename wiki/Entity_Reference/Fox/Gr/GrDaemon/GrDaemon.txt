@@ -1,0 +1,21 @@
+<!--
+title: GrDaemon
+permalink: /Entity_Reference/Fox/Gr/GrDaemon
+tags: [Fox, Gr, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Gr](/Entity_Reference/Fox/Gr)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Actor → GrDaemon
+
+```cpp
+GrDaemon : Fox.Core.Actor 
+```
+
+TODO: Description
+
+
+
+

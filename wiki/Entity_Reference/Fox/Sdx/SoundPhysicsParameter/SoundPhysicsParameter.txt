@@ -1,0 +1,42 @@
+<!--
+title: SoundPhysicsParameter
+permalink: /Entity_Reference/Fox/Sdx/SoundPhysicsParameter
+tags: [Fox, Sdx, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Sdx](/Entity_Reference/Fox/Sdx)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Data → SoundPhysicsParameter
+
+```cpp
+SoundPhysicsParameter : Fox.Core.Data 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [hitEvent](#hitevent) | TODO: Description |
+| [rollStartEvent](#rollstartevent) | TODO: Description |
+| [rollEndEvent](#rollendevent) | TODO: Description |
+| [hitRtpcName](#hitrtpcname) | TODO: Description |
+| [rollRtpcName](#rollrtpcname) | TODO: Description |
+| [switchName](#switchname) | TODO: Description |
+| [generalEvent1](#generalevent1) | TODO: Description |
+| [generalEvent2](#generalevent2) | TODO: Description |
+| [hitLowerPower](#hitlowerpower) | TODO: Description |
+| [hitUpperPower](#hitupperpower) | TODO: Description |
+| [hitIntervalSeconds](#hitintervalseconds) | TODO: Description |
+| [hitLowerRtpc](#hitlowerrtpc) | TODO: Description |
+| [hitUpperRtpc](#hitupperrtpc) | TODO: Description |
+| [rollLowerPower](#rolllowerpower) | TODO: Description |
+| [rollUpperPower](#rollupperpower) | TODO: Description |
+| [rollStartSeconds](#rollstartseconds) | TODO: Description |
+| [rollEndSeconds](#rollendseconds) | TODO: Description |
+| [rollLowerRtpc](#rolllowerrtpc) | TODO: Description |
+| [rollUpperRtpc](#rollupperrtpc) | TODO: Description |
+

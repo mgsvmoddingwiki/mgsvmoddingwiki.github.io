@@ -1,0 +1,26 @@
+<!--
+title: NavxNavFileConnector
+permalink: /Entity_Reference/Fox/Navx/NavxNavFileConnector
+tags: [Fox, Navx, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Navx](/Entity_Reference/Fox/Navx)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.TransformData → NavxNavFileConnector
+
+```cpp
+NavxNavFileConnector : Fox.Core.TransformData 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [sceneName](#scenename) | TODO: Description |
+| [worldName](#worldname) | TODO: Description |
+| [groupName](#groupname) | TODO: Description |
+

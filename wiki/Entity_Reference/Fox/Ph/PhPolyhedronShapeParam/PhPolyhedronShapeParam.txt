@@ -1,0 +1,25 @@
+<!--
+title: PhPolyhedronShapeParam
+permalink: /Entity_Reference/Fox/Ph/PhPolyhedronShapeParam
+tags: [Fox, Ph, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Ph](/Entity_Reference/Fox/Ph)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Ph.PhShapeParam → PhPolyhedronShapeParam
+
+```cpp
+PhPolyhedronShapeParam : Fox.Ph.PhShapeParam 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [verts](#verts) | TODO: Description |
+| [polys](#polys) | TODO: Description |
+

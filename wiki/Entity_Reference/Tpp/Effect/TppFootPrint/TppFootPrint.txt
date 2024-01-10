@@ -1,0 +1,29 @@
+<!--
+title: TppFootPrint
+permalink: /Entity_Reference/Tpp/Effect/TppFootPrint
+tags: [Tpp, Effect, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [Effect](/Entity_Reference/Tpp/Effect)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.TransformData → TppFootPrint
+
+```cpp
+TppFootPrint : Fox.Core.TransformData 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [matrices](#matrices) | TODO: Description |
+| [footChara](#footchara) | TODO: Description |
+| [footLR](#footlr) | TODO: Description |
+| [alpha](#alpha) | TODO: Description |
+| [blood](#blood) | TODO: Description |
+| [enable](#enable) | TODO: Description |
+

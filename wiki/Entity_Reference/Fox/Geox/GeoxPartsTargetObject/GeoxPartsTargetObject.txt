@@ -1,0 +1,31 @@
+<!--
+title: GeoxPartsTargetObject
+permalink: /Entity_Reference/Fox/Geox/GeoxPartsTargetObject
+tags: [Fox, Geox, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Geox](/Entity_Reference/Fox/Geox)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.TransformData → GeoxPartsTargetObject
+
+```cpp
+GeoxPartsTargetObject : Fox.Core.TransformData 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [primType](#primtype) | TODO: Description |
+| [axisSortFlag](#axissortflag) | TODO: Description |
+| [systemAttribute](#systemattribute) | TODO: Description |
+| [through](#through) | TODO: Description |
+| [isValid](#isvalid) | TODO: Description |
+| [categoryTag](#categorytag) | TODO: Description |
+| [groupTags](#grouptags) | TODO: Description |
+| [applicationDataLink](#applicationdatalink) | TODO: Description |
+

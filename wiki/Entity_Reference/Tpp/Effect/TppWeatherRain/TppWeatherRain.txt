@@ -1,0 +1,21 @@
+<!--
+title: TppWeatherRain
+permalink: /Entity_Reference/Tpp/Effect/TppWeatherRain
+tags: [Tpp, Effect, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [Effect](/Entity_Reference/Tpp/Effect)\
+> Submodule: TODO: Submodule\
+> Inheritance: Tpp.Effect.TppWeatherEffectBase → TppWeatherRain
+
+```cpp
+TppWeatherRain : Tpp.Effect.TppWeatherEffectBase 
+```
+
+TODO: Description
+
+
+
+

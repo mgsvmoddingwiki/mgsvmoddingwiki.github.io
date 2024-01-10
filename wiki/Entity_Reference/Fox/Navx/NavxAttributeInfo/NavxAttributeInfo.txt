@@ -1,0 +1,25 @@
+<!--
+title: NavxAttributeInfo
+permalink: /Entity_Reference/Fox/Navx/NavxAttributeInfo
+tags: [Fox, Navx, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Navx](/Entity_Reference/Fox/Navx)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.DataElement → NavxAttributeInfo
+
+```cpp
+NavxAttributeInfo : Fox.Core.DataElement 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [name](#name) | TODO: Description |
+| [simplificationThreshold](#simplificationthreshold) | TODO: Description |
+

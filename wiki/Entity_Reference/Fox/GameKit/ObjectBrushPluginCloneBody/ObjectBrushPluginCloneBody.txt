@@ -1,0 +1,21 @@
+<!--
+title: ObjectBrushPluginCloneBody
+permalink: /Entity_Reference/Fox/GameKit/ObjectBrushPluginCloneBody
+tags: [Fox, GameKit, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [GameKit](/Entity_Reference/Fox/GameKit)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.GameKit.ObjectBrushPluginBody → ObjectBrushPluginCloneBody
+
+```cpp
+ObjectBrushPluginCloneBody : Fox.GameKit.ObjectBrushPluginBody 
+```
+
+TODO: Description
+
+
+
+

@@ -1,0 +1,26 @@
+<!--
+title: MotherBaseConstructDivisionLocator
+permalink: /Entity_Reference/Tpp/MotherBaseCore/MotherBaseConstructDivisionLocator
+tags: [Tpp, MotherBaseCore, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [MotherBaseCore](/Entity_Reference/Tpp/MotherBaseCore)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.TransformData → MotherBaseConstructDivisionLocator
+
+```cpp
+MotherBaseConstructDivisionLocator : Fox.Core.TransformData 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [type](#type) | TODO: Description |
+| [isLowModel](#islowmodel) | TODO: Description |
+| [staticModels](#staticmodels) | TODO: Description |
+

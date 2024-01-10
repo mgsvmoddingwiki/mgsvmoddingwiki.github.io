@@ -1,0 +1,31 @@
+<!--
+title: Watermark
+permalink: /Entity_Reference/Fox/GameKit/Watermark
+tags: [Fox, GameKit, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [GameKit](/Entity_Reference/Fox/GameKit)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Data → Watermark
+
+```cpp
+Watermark : Fox.Core.Data 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [isVisible](#isvisible) | TODO: Description |
+| [standard](#standard) | TODO: Description |
+| [offsetX](#offsetx) | TODO: Description |
+| [offsetY](#offsety) | TODO: Description |
+| [textureScaleX](#texturescalex) | TODO: Description |
+| [textureScaleY](#texturescaley) | TODO: Description |
+| [alphaBlend](#alphablend) | TODO: Description |
+| [texturePath](#texturepath) | TODO: Description |
+

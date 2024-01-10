@@ -1,0 +1,21 @@
+<!--
+title: GeoxDynamicPolygonBody
+permalink: /Entity_Reference/Fox/Geox/GeoxDynamicPolygonBody
+tags: [Fox, Geox, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Geox](/Entity_Reference/Fox/Geox)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.TransformDataBody → GeoxDynamicPolygonBody
+
+```cpp
+GeoxDynamicPolygonBody : Fox.Core.TransformDataBody 
+```
+
+TODO: Description
+
+
+
+

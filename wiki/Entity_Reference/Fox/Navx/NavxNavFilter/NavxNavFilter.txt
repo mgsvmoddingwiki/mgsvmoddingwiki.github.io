@@ -1,0 +1,24 @@
+<!--
+title: NavxNavFilter
+permalink: /Entity_Reference/Fox/Navx/NavxNavFilter
+tags: [Fox, Navx, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Navx](/Entity_Reference/Fox/Navx)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.TransformData → NavxNavFilter
+
+```cpp
+NavxNavFilter : Fox.Core.TransformData 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [worldName](#worldname) | TODO: Description |
+

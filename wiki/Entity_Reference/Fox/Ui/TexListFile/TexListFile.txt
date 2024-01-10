@@ -1,0 +1,21 @@
+<!--
+title: TexListFile
+permalink: /Entity_Reference/Fox/Ui/TexListFile
+tags: [Fox, Ui, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Ui](/Entity_Reference/Fox/Ui)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.RawFile → TexListFile
+
+```cpp
+TexListFile : Fox.Core.RawFile 
+```
+
+TODO: Description
+
+
+
+

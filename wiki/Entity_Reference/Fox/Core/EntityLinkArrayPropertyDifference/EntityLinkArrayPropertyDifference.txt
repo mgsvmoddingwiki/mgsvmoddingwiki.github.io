@@ -1,0 +1,25 @@
+<!--
+title: EntityLinkArrayPropertyDifference
+permalink: /Entity_Reference/Fox/Core/EntityLinkArrayPropertyDifference
+tags: [Fox, Core, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Core](/Entity_Reference/Fox/Core)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.PropertyDifference → EntityLinkArrayPropertyDifference
+
+```cpp
+EntityLinkArrayPropertyDifference : Fox.Core.PropertyDifference 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [originalValues](#originalvalues) | TODO: Description |
+| [values](#values) | TODO: Description |
+

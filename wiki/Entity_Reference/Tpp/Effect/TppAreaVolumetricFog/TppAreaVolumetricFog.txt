@@ -1,0 +1,24 @@
+<!--
+title: TppAreaVolumetricFog
+permalink: /Entity_Reference/Tpp/Effect/TppAreaVolumetricFog
+tags: [Tpp, Effect, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [Effect](/Entity_Reference/Tpp/Effect)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.TransformData → TppAreaVolumetricFog
+
+```cpp
+TppAreaVolumetricFog : Fox.Core.TransformData 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [param](#param) | TODO: Description |
+

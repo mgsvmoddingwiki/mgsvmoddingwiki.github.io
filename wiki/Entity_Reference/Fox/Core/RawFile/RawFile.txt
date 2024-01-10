@@ -1,0 +1,21 @@
+<!--
+title: RawFile
+permalink: /Entity_Reference/Fox/Core/RawFile
+tags: [Fox, Core, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Core](/Entity_Reference/Fox/Core)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.File → RawFile
+
+```cpp
+RawFile : Fox.Core.File 
+```
+
+TODO: Description
+
+
+
+

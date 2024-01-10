@@ -1,0 +1,25 @@
+<!--
+title: WideVector3ArrayPropertyDifference
+permalink: /Entity_Reference/Fox/Core/WideVector3ArrayPropertyDifference
+tags: [Fox, Core, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Core](/Entity_Reference/Fox/Core)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.PropertyDifference → WideVector3ArrayPropertyDifference
+
+```cpp
+WideVector3ArrayPropertyDifference : Fox.Core.PropertyDifference 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [originalValues](#originalvalues) | TODO: Description |
+| [values](#values) | TODO: Description |
+

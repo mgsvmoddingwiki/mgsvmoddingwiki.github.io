@@ -1,0 +1,31 @@
+<!--
+title: TppCoverPoint
+permalink: /Entity_Reference/Tpp/GameKit/TppCoverPoint
+tags: [Tpp, GameKit, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [GameKit](/Entity_Reference/Tpp/GameKit)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Tactical.GkTacticalPoint → TppCoverPoint
+
+```cpp
+TppCoverPoint : Fox.Tactical.GkTacticalPoint 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [isLeftOpen](#isleftopen) | TODO: Description |
+| [isRightOpen](#isrightopen) | TODO: Description |
+| [isUpOpen](#isupopen) | TODO: Description |
+| [isUnVaultable](#isunvaultable) | TODO: Description |
+| [isUseVip](#isusevip) | TODO: Description |
+| [isUseSniper](#isusesniper) | TODO: Description |
+| [isBreakDisable](#isbreakdisable) | TODO: Description |
+| [isBreakEnable](#isbreakenable) | TODO: Description |
+

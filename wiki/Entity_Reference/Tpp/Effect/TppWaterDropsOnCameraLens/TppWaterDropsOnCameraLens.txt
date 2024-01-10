@@ -1,0 +1,33 @@
+<!--
+title: TppWaterDropsOnCameraLens
+permalink: /Entity_Reference/Tpp/Effect/TppWaterDropsOnCameraLens
+tags: [Tpp, Effect, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [Effect](/Entity_Reference/Tpp/Effect)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Data → TppWaterDropsOnCameraLens
+
+```cpp
+TppWaterDropsOnCameraLens : Fox.Core.Data 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [diffulseTexture](#diffulsetexture) | TODO: Description |
+| [normalTexture](#normaltexture) | TODO: Description |
+| [sizeMin](#sizemin) | TODO: Description |
+| [sizeMax](#sizemax) | TODO: Description |
+| [lifeMin](#lifemin) | TODO: Description |
+| [lifeMax](#lifemax) | TODO: Description |
+| [angleAppear](#angleappear) | TODO: Description |
+| [angleMax](#anglemax) | TODO: Description |
+| [waitMin](#waitmin) | TODO: Description |
+| [waitMax](#waitmax) | TODO: Description |
+

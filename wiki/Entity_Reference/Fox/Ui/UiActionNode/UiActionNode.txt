@@ -1,0 +1,24 @@
+<!--
+title: UiActionNode
+permalink: /Entity_Reference/Fox/Ui/UiActionNode
+tags: [Fox, Ui, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Ui](/Entity_Reference/Fox/Ui)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Ui.UiNodeData → UiActionNode
+
+```cpp
+UiActionNode : Fox.Ui.UiNodeData 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [kind](#kind) | TODO: Description |
+

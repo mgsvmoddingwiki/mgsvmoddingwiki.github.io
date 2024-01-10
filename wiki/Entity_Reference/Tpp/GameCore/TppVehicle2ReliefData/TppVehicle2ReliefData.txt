@@ -1,0 +1,24 @@
+<!--
+title: TppVehicle2ReliefData
+permalink: /Entity_Reference/Tpp/GameCore/TppVehicle2ReliefData
+tags: [Tpp, GameCore, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [GameCore](/Entity_Reference/Tpp/GameCore)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Data → TppVehicle2ReliefData
+
+```cpp
+TppVehicle2ReliefData : Fox.Core.Data 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [blockSizeInBytes](#blocksizeinbytes) | TODO: Description |
+

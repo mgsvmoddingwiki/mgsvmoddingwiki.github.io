@@ -1,0 +1,27 @@
+<!--
+title: TerrainMaterialConfigration
+permalink: /Entity_Reference/Fox/Gr/TerrainMaterialConfigration
+tags: [Fox, Gr, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Gr](/Entity_Reference/Fox/Gr)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Data → TerrainMaterialConfigration
+
+```cpp
+TerrainMaterialConfigration : Fox.Core.Data 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [slot0](#slot0) | TODO: Description |
+| [slot1](#slot1) | TODO: Description |
+| [slot2](#slot2) | TODO: Description |
+| [slot3](#slot3) | TODO: Description |
+

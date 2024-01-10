@@ -1,0 +1,25 @@
+<!--
+title: PhVehicleAxisParam
+permalink: /Entity_Reference/Fox/Phx/PhVehicleAxisParam
+tags: [Fox, Phx, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Phx](/Entity_Reference/Fox/Phx)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Entity → PhVehicleAxisParam
+
+```cpp
+PhVehicleAxisParam : Fox.Core.Entity 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [maxBreakTorque](#maxbreaktorque) | TODO: Description |
+| [useDifferential](#usedifferential) | TODO: Description |
+

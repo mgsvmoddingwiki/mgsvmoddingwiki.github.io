@@ -1,0 +1,29 @@
+<!--
+title: TppFocusBokehFilterData
+permalink: /Entity_Reference/Tpp/Effect/TppFocusBokehFilterData
+tags: [Tpp, Effect, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [Effect](/Entity_Reference/Tpp/Effect)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Data → TppFocusBokehFilterData
+
+```cpp
+TppFocusBokehFilterData : Fox.Core.Data 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [debugDraw](#debugdraw) | TODO: Description |
+| [debugDrawIndex](#debugdrawindex) | TODO: Description |
+| [focusInSize](#focusinsize) | TODO: Description |
+| [bokehPower](#bokehpower) | TODO: Description |
+| [quality](#quality) | TODO: Description |
+| [targetLocators](#targetlocators) | TODO: Description |
+

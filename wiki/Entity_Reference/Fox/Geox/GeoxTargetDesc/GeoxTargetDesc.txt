@@ -1,0 +1,36 @@
+<!--
+title: GeoxTargetDesc
+permalink: /Entity_Reference/Fox/Geox/GeoxTargetDesc
+tags: [Fox, Geox, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Geox](/Entity_Reference/Fox/Geox)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Data → GeoxTargetDesc
+
+```cpp
+GeoxTargetDesc : Fox.Core.Data 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [posArray](#posarray) | TODO: Description |
+| [scaleArray](#scalearray) | TODO: Description |
+| [rotArray](#rotarray) | TODO: Description |
+| [primTypeArray](#primtypearray) | TODO: Description |
+| [systemAttributeArray](#systemattributearray) | TODO: Description |
+| [throughValueArray](#throughvaluearray) | TODO: Description |
+| [flagArray](#flagarray) | TODO: Description |
+| [categoryTag](#categorytag) | TODO: Description |
+| [nameArray](#namearray) | TODO: Description |
+| [attachSkeletonArray](#attachskeletonarray) | TODO: Description |
+| [groupArray](#grouparray) | TODO: Description |
+| [objIndexForgroupTagArray](#objindexforgrouptagarray) | TODO: Description |
+| [applicationDataLinkArray](#applicationdatalinkarray) | TODO: Description |
+

@@ -1,0 +1,21 @@
+<!--
+title: FoxTerrainDecalPackFile
+permalink: /Entity_Reference/Fox/GameKit/FoxTerrainDecalPackFile
+tags: [Fox, GameKit, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [GameKit](/Entity_Reference/Fox/GameKit)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.RawFile → FoxTerrainDecalPackFile
+
+```cpp
+FoxTerrainDecalPackFile : Fox.Core.RawFile 
+```
+
+TODO: Description
+
+
+
+

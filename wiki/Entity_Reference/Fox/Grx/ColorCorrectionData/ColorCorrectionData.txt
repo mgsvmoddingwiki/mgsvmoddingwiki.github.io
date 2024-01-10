@@ -1,0 +1,29 @@
+<!--
+title: ColorCorrectionData
+permalink: /Entity_Reference/Fox/Grx/ColorCorrectionData
+tags: [Fox, Grx, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Grx](/Entity_Reference/Fox/Grx)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Data → ColorCorrectionData
+
+```cpp
+ColorCorrectionData : Fox.Core.Data 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [textureLUT](#texturelut) | TODO: Description |
+| [startSlope](#startslope) | TODO: Description |
+| [endSlope](#endslope) | TODO: Description |
+| [showBaseLUT](#showbaselut) | TODO: Description |
+| [showFilterLUT](#showfilterlut) | TODO: Description |
+| [colorScale](#colorscale) | TODO: Description |
+

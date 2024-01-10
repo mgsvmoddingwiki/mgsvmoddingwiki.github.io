@@ -1,0 +1,26 @@
+<!--
+title: LevelingTerrain
+permalink: /Entity_Reference/Fox/GameKit/LevelingTerrain
+tags: [Fox, GameKit, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [GameKit](/Entity_Reference/Fox/GameKit)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.TransformData → LevelingTerrain
+
+```cpp
+LevelingTerrain : Fox.Core.TransformData 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [type](#type) | TODO: Description |
+| [radius](#radius) | TODO: Description |
+| [mixAreaRadius](#mixarearadius) | TODO: Description |
+

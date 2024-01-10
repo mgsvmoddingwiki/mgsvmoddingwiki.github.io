@@ -1,0 +1,21 @@
+<!--
+title: GeoxTargetModifyCallbackBase
+permalink: /Entity_Reference/Fox/Geox/GeoxTargetModifyCallbackBase
+tags: [Fox, Geox, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Geox](/Entity_Reference/Fox/Geox)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Entity → GeoxTargetModifyCallbackBase
+
+```cpp
+GeoxTargetModifyCallbackBase : Fox.Core.Entity 
+```
+
+TODO: Description
+
+
+
+

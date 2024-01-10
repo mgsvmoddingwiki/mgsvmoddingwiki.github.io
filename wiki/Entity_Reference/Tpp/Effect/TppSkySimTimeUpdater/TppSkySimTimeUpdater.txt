@@ -1,0 +1,21 @@
+<!--
+title: TppSkySimTimeUpdater
+permalink: /Entity_Reference/Tpp/Effect/TppSkySimTimeUpdater
+tags: [Tpp, Effect, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [Effect](/Entity_Reference/Tpp/Effect)\
+> Submodule: TODO: Submodule\
+> Inheritance: Tpp.Effect.TppWeatherEffectBase → TppSkySimTimeUpdater
+
+```cpp
+TppSkySimTimeUpdater : Tpp.Effect.TppWeatherEffectBase 
+```
+
+TODO: Description
+
+
+
+

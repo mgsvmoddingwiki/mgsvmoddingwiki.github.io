@@ -1,0 +1,24 @@
+<!--
+title: MotherBaseConstructConnectionData
+permalink: /Entity_Reference/Tpp/MotherBaseCore/MotherBaseConstructConnectionData
+tags: [Tpp, MotherBaseCore, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [MotherBaseCore](/Entity_Reference/Tpp/MotherBaseCore)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Data → MotherBaseConstructConnectionData
+
+```cpp
+MotherBaseConstructConnectionData : Fox.Core.Data 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [constructConnectionList](#constructconnectionlist) | TODO: Description |
+

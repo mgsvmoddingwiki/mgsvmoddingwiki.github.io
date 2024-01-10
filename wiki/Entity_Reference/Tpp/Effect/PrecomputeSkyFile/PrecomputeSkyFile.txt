@@ -1,0 +1,21 @@
+<!--
+title: PrecomputeSkyFile
+permalink: /Entity_Reference/Tpp/Effect/PrecomputeSkyFile
+tags: [Tpp, Effect, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [Effect](/Entity_Reference/Tpp/Effect)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.RawFile → PrecomputeSkyFile
+
+```cpp
+PrecomputeSkyFile : Fox.Core.RawFile 
+```
+
+TODO: Description
+
+
+
+

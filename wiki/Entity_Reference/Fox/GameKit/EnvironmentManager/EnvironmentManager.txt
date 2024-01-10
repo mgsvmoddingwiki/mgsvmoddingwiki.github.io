@@ -1,0 +1,21 @@
+<!--
+title: EnvironmentManager
+permalink: /Entity_Reference/Fox/GameKit/EnvironmentManager
+tags: [Fox, GameKit, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [GameKit](/Entity_Reference/Fox/GameKit)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Entity → EnvironmentManager
+
+```cpp
+EnvironmentManager : Fox.Core.Entity 
+```
+
+TODO: Description
+
+
+
+

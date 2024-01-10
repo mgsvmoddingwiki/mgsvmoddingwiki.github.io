@@ -1,0 +1,21 @@
+<!--
+title: TppPrimRiverModelParamOverlayBody
+permalink: /Entity_Reference/Tpp/Effect/TppPrimRiverModelParamOverlayBody
+tags: [Tpp, Effect, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [Effect](/Entity_Reference/Tpp/Effect)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.DataBody → TppPrimRiverModelParamOverlayBody
+
+```cpp
+TppPrimRiverModelParamOverlayBody : Fox.Core.DataBody 
+```
+
+TODO: Description
+
+
+
+

@@ -1,0 +1,42 @@
+<!--
+title: PhxVehicleAxis
+permalink: /Entity_Reference/Fox/Phx/PhxVehicleAxis
+tags: [Fox, Phx, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Phx](/Entity_Reference/Fox/Phx)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Data → PhxVehicleAxis
+
+```cpp
+PhxVehicleAxis : Fox.Core.Data 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [vehicleAxisParam](#vehicleaxisparam) | TODO: Description |
+| [wheelConstraintParam](#wheelconstraintparam) | TODO: Description |
+| [wheelAssociationUnitParams](#wheelassociationunitparams) | TODO: Description |
+| [torqueDistributions](#torquedistributions) | TODO: Description |
+| [gearRatios](#gearratios) | TODO: Description |
+| [wheelFront](#wheelfront) | TODO: Description |
+| [wheelUp](#wheelup) | TODO: Description |
+| [wheelPositionOffset](#wheelpositionoffset) | TODO: Description |
+| [wheelRadius](#wheelradius) | TODO: Description |
+| [wheelFriction](#wheelfriction) | TODO: Description |
+| [wheelRestitution](#wheelrestitution) | TODO: Description |
+| [wheelInertia](#wheelinertia) | TODO: Description |
+| [suspentionLength](#suspentionlength) | TODO: Description |
+| [maxSuspentionForceCoeff](#maxsuspentionforcecoeff) | TODO: Description |
+| [dampingCoeffElong](#dampingcoeffelong) | TODO: Description |
+| [dampingCoeffCompress](#dampingcoeffcompress) | TODO: Description |
+| [maxBreakTorqueCoeff](#maxbreaktorquecoeff) | TODO: Description |
+| [useDifferential](#usedifferential) | TODO: Description |
+| [AssignedBoneNames](#assignedbonenames) | TODO: Description |
+

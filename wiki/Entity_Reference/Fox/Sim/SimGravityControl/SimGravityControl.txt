@@ -1,0 +1,25 @@
+<!--
+title: SimGravityControl
+permalink: /Entity_Reference/Fox/Sim/SimGravityControl
+tags: [Fox, Sim, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Sim](/Entity_Reference/Fox/Sim)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Sim.SimControlElement → SimGravityControl
+
+```cpp
+SimGravityControl : Fox.Sim.SimControlElement 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [controlParam](#controlparam) | TODO: Description |
+| [gravityCoefficient](#gravitycoefficient) | TODO: Description |
+

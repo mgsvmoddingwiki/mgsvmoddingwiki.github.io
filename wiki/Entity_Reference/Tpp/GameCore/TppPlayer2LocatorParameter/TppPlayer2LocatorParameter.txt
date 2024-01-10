@@ -1,0 +1,21 @@
+<!--
+title: TppPlayer2LocatorParameter
+permalink: /Entity_Reference/Tpp/GameCore/TppPlayer2LocatorParameter
+tags: [Tpp, GameCore, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [GameCore](/Entity_Reference/Tpp/GameCore)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.DataElement → TppPlayer2LocatorParameter
+
+```cpp
+TppPlayer2LocatorParameter : Fox.Core.DataElement 
+```
+
+TODO: Description
+
+
+
+

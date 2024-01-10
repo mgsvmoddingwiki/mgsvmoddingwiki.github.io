@@ -1,0 +1,37 @@
+<!--
+title: TppWeatherSandStormData
+permalink: /Entity_Reference/Tpp/Effect/TppWeatherSandStormData
+tags: [Tpp, Effect, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [Effect](/Entity_Reference/Tpp/Effect)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Data → TppWeatherSandStormData
+
+```cpp
+TppWeatherSandStormData : Fox.Core.Data 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [vfxFileSandStormStart](#vfxfilesandstormstart) | TODO: Description |
+| [vfxFileSandStormFar](#vfxfilesandstormfar) | TODO: Description |
+| [vfxFileSandStormNear](#vfxfilesandstormnear) | TODO: Description |
+| [vfxFileSandStormCamera](#vfxfilesandstormcamera) | TODO: Description |
+| [sandStormFarDistance](#sandstormfardistance) | TODO: Description |
+| [sandStormFarHeight](#sandstormfarheight) | TODO: Description |
+| [sandStormNearDistance](#sandstormneardistance) | TODO: Description |
+| [sandStormNearHeight](#sandstormnearheight) | TODO: Description |
+| [noiseScale](#noisescale) | TODO: Description |
+| [noiseOffset](#noiseoffset) | TODO: Description |
+| [noiseCutScale](#noisecutscale) | TODO: Description |
+| [noiseCutOffset](#noisecutoffset) | TODO: Description |
+| [noiseColor](#noisecolor) | TODO: Description |
+| [noiseSunLightColorMul](#noisesunlightcolormul) | TODO: Description |
+

@@ -1,0 +1,21 @@
+<!--
+title: GeoxPathBody
+permalink: /Entity_Reference/Fox/Geox/GeoxPathBody
+tags: [Fox, Geox, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Geox](/Entity_Reference/Fox/Geox)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Graphx.GraphxPath → GeoxPathBody
+
+```cpp
+GeoxPathBody : Fox.Graphx.GraphxPath 
+```
+
+TODO: Description
+
+
+
+

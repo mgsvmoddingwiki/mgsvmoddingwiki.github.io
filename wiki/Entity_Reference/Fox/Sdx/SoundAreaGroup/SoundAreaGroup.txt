@@ -1,0 +1,27 @@
+<!--
+title: SoundAreaGroup
+permalink: /Entity_Reference/Fox/Sdx/SoundAreaGroup
+tags: [Fox, Sdx, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Sdx](/Entity_Reference/Fox/Sdx)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Data → SoundAreaGroup
+
+```cpp
+SoundAreaGroup : Fox.Core.Data 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [priority](#priority) | TODO: Description |
+| [parameter](#parameter) | TODO: Description |
+| [members](#members) | TODO: Description |
+| [edges](#edges) | TODO: Description |
+

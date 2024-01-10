@@ -1,0 +1,25 @@
+<!--
+title: DataIdentifier
+permalink: /Entity_Reference/Fox/Core/DataIdentifier
+tags: [Fox, Core, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Core](/Entity_Reference/Fox/Core)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Data → DataIdentifier
+
+```cpp
+DataIdentifier : Fox.Core.Data 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [identifier](#identifier) | TODO: Description |
+| [links](#links) | TODO: Description |
+

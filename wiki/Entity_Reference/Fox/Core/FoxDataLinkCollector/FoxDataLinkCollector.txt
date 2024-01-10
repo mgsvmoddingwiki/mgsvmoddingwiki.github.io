@@ -1,0 +1,21 @@
+<!--
+title: FoxDataLinkCollector
+permalink: /Entity_Reference/Fox/Core/FoxDataLinkCollector
+tags: [Fox, Core, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Core](/Entity_Reference/Fox/Core)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Entity → FoxDataLinkCollector
+
+```cpp
+FoxDataLinkCollector : Fox.Core.Entity 
+```
+
+TODO: Description
+
+
+
+

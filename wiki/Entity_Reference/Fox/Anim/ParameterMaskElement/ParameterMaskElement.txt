@@ -1,0 +1,25 @@
+<!--
+title: ParameterMaskElement
+permalink: /Entity_Reference/Fox/Anim/ParameterMaskElement
+tags: [Fox, Anim, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Anim](/Entity_Reference/Fox/Anim)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.DataElement → ParameterMaskElement
+
+```cpp
+ParameterMaskElement : Fox.Core.DataElement 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [unitNameList](#unitnamelist) | TODO: Description |
+| [nodeName](#nodename) | TODO: Description |
+

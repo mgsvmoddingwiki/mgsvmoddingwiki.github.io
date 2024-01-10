@@ -1,0 +1,26 @@
+<!--
+title: BoxShapeBody
+permalink: /Entity_Reference/Fox/Core/BoxShapeBody
+tags: [Fox, Core, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Core](/Entity_Reference/Fox/Core)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.ShapeDataBody → BoxShapeBody
+
+```cpp
+BoxShapeBody : Fox.Core.ShapeDataBody 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [shape_center](#shape-center) | TODO: Description |
+| [shape_size](#shape-size) | TODO: Description |
+| [shape_rotation](#shape-rotation) | TODO: Description |
+

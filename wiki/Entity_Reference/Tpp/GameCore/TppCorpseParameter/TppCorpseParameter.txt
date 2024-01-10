@@ -1,0 +1,28 @@
+<!--
+title: TppCorpseParameter
+permalink: /Entity_Reference/Tpp/GameCore/TppCorpseParameter
+tags: [Tpp, GameCore, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [GameCore](/Entity_Reference/Tpp/GameCore)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.DataElement → TppCorpseParameter
+
+```cpp
+TppCorpseParameter : Fox.Core.DataElement 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [partsFile](#partsfile) | TODO: Description |
+| [motionGraphFile](#motiongraphfile) | TODO: Description |
+| [mtarFile](#mtarfile) | TODO: Description |
+| [extensionMtarFile](#extensionmtarfile) | TODO: Description |
+| [vfxFiles](#vfxfiles) | TODO: Description |
+

@@ -1,0 +1,25 @@
+<!--
+title: ObjectBrushPlugin
+permalink: /Entity_Reference/Fox/GameKit/ObjectBrushPlugin
+tags: [Fox, GameKit, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [GameKit](/Entity_Reference/Fox/GameKit)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Data → ObjectBrushPlugin
+
+```cpp
+ObjectBrushPlugin : Fox.Core.Data 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [parentDataName](#parentdataname) | TODO: Description |
+| [visibility](#visibility) | TODO: Description |
+

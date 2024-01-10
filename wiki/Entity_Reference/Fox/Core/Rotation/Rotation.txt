@@ -1,0 +1,23 @@
+<!--
+title: Rotation
+permalink: /Entity_Reference/Fox/Core/Rotation
+tags: [Fox, Core, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Core](/Entity_Reference/Fox/Core)\
+> Submodule: TODO: Submodule
+
+```cpp
+Rotation 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [quat](#quat) | TODO: Description |
+

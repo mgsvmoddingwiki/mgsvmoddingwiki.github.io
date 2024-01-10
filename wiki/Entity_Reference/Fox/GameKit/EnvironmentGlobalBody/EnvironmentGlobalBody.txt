@@ -1,0 +1,24 @@
+<!--
+title: EnvironmentGlobalBody
+permalink: /Entity_Reference/Fox/GameKit/EnvironmentGlobalBody
+tags: [Fox, GameKit, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [GameKit](/Entity_Reference/Fox/GameKit)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.DataBody → EnvironmentGlobalBody
+
+```cpp
+EnvironmentGlobalBody : Fox.Core.DataBody 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [tag](#tag) | TODO: Description |
+

@@ -1,0 +1,29 @@
+<!--
+title: PassiveBlockControllerData
+permalink: /Entity_Reference/Fox/Core/PassiveBlockControllerData
+tags: [Fox, Core, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Core](/Entity_Reference/Fox/Core)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Data → PassiveBlockControllerData
+
+```cpp
+PassiveBlockControllerData : Fox.Core.Data 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [enable](#enable) | TODO: Description |
+| [loadWithDataProperty](#loadwithdataproperty) | TODO: Description |
+| [scriptPath](#scriptpath) | TODO: Description |
+| [blockGroups](#blockgroups) | TODO: Description |
+| [isAddRelatedBlockGroupEachOther](#isaddrelatedblockgroupeachother) | TODO: Description |
+| [prerequisiteBlockGroupName](#prerequisiteblockgroupname) | TODO: Description |
+

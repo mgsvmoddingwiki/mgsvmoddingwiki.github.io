@@ -1,0 +1,30 @@
+<!--
+title: PhxVehicleNormalEngine
+permalink: /Entity_Reference/Fox/Phx/PhxVehicleNormalEngine
+tags: [Fox, Phx, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Phx](/Entity_Reference/Fox/Phx)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Data → PhxVehicleNormalEngine
+
+```cpp
+PhxVehicleNormalEngine : Fox.Core.Data 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [vehicleAxes](#vehicleaxes) | TODO: Description |
+| [torqueDistributions](#torquedistributions) | TODO: Description |
+| [gearRatios](#gearratios) | TODO: Description |
+| [vehicleNormalEngineParam](#vehiclenormalengineparam) | TODO: Description |
+| [specPointAngularVelocity](#specpointangularvelocity) | TODO: Description |
+| [specPointTorque](#specpointtorque) | TODO: Description |
+| [specPointBreakTorque](#specpointbreaktorque) | TODO: Description |
+

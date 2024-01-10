@@ -1,0 +1,27 @@
+<!--
+title: PhShapeParam
+permalink: /Entity_Reference/Fox/Ph/PhShapeParam
+tags: [Fox, Ph, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Ph](/Entity_Reference/Fox/Ph)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Entity → PhShapeParam
+
+```cpp
+PhShapeParam : Fox.Core.Entity 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [offset](#offset) | TODO: Description |
+| [rotation](#rotation) | TODO: Description |
+| [size](#size) | TODO: Description |
+| [type](#type) | TODO: Description |
+

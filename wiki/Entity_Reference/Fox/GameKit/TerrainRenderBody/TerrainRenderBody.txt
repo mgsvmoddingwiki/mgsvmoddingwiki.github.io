@@ -1,0 +1,21 @@
+<!--
+title: TerrainRenderBody
+permalink: /Entity_Reference/Fox/GameKit/TerrainRenderBody
+tags: [Fox, GameKit, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [GameKit](/Entity_Reference/Fox/GameKit)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.TransformDataBody → TerrainRenderBody
+
+```cpp
+TerrainRenderBody : Fox.Core.TransformDataBody 
+```
+
+TODO: Description
+
+
+
+

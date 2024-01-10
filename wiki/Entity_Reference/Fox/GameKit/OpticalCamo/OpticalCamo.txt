@@ -1,0 +1,28 @@
+<!--
+title: OpticalCamo
+permalink: /Entity_Reference/Fox/GameKit/OpticalCamo
+tags: [Fox, GameKit, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [GameKit](/Entity_Reference/Fox/GameKit)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Data → OpticalCamo
+
+```cpp
+OpticalCamo : Fox.Core.Data 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [target](#target) | TODO: Description |
+| [isOn](#ison) | TODO: Description |
+| [lightBendColor](#lightbendcolor) | TODO: Description |
+| [lightBendUOffset](#lightbenduoffset) | TODO: Description |
+| [lightBendVOffset](#lightbendvoffset) | TODO: Description |
+

@@ -1,0 +1,25 @@
+<!--
+title: GrFilmicTonemapParameter
+permalink: /Entity_Reference/Fox/Gr/GrFilmicTonemapParameter
+tags: [Fox, Gr, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Gr](/Entity_Reference/Fox/Gr)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Gr.GrViewportParameter → GrFilmicTonemapParameter
+
+```cpp
+GrFilmicTonemapParameter : Fox.Gr.GrViewportParameter 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [enable](#enable) | TODO: Description |
+| [parameters](#parameters) | TODO: Description |
+

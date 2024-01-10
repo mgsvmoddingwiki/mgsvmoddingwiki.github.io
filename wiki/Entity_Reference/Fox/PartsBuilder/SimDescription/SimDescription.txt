@@ -1,0 +1,25 @@
+<!--
+title: SimDescription
+permalink: /Entity_Reference/Fox/PartsBuilder/SimDescription
+tags: [Fox, PartsBuilder, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [PartsBuilder](/Entity_Reference/Fox/PartsBuilder)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.PartsBuilder.PartDescription → SimDescription
+
+```cpp
+SimDescription : Fox.PartsBuilder.PartDescription 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [simFile](#simfile) | TODO: Description |
+| [isActive](#isactive) | TODO: Description |
+

@@ -1,0 +1,29 @@
+<!--
+title: TppLensFlareMaterial
+permalink: /Entity_Reference/Tpp/Effect/TppLensFlareMaterial
+tags: [Tpp, Effect, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [Effect](/Entity_Reference/Tpp/Effect)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Data → TppLensFlareMaterial
+
+```cpp
+TppLensFlareMaterial : Fox.Core.Data 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [texture](#texture) | TODO: Description |
+| [arcAlphaField](#arcalphafield) | TODO: Description |
+| [arcAlphaFadeAngle](#arcalphafadeangle) | TODO: Description |
+| [arcAlphaBaseAngle](#arcalphabaseangle) | TODO: Description |
+| [maskShape](#maskshape) | TODO: Description |
+| [debugDrawMaskShape](#debugdrawmaskshape) | TODO: Description |
+

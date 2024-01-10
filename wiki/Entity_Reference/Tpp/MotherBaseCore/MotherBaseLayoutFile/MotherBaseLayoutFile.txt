@@ -1,0 +1,21 @@
+<!--
+title: MotherBaseLayoutFile
+permalink: /Entity_Reference/Tpp/MotherBaseCore/MotherBaseLayoutFile
+tags: [Tpp, MotherBaseCore, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [MotherBaseCore](/Entity_Reference/Tpp/MotherBaseCore)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.RawFile → MotherBaseLayoutFile
+
+```cpp
+MotherBaseLayoutFile : Fox.Core.RawFile 
+```
+
+TODO: Description
+
+
+
+

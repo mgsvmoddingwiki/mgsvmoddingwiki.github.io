@@ -1,0 +1,25 @@
+<!--
+title: QuatStringMapPropertyDifference
+permalink: /Entity_Reference/Fox/Core/QuatStringMapPropertyDifference
+tags: [Fox, Core, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Core](/Entity_Reference/Fox/Core)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.PropertyDifference → QuatStringMapPropertyDifference
+
+```cpp
+QuatStringMapPropertyDifference : Fox.Core.PropertyDifference 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [originalValues](#originalvalues) | TODO: Description |
+| [values](#values) | TODO: Description |
+

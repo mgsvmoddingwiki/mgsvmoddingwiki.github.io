@@ -1,0 +1,21 @@
+<!--
+title: TppCombatLocatorDataBody
+permalink: /Entity_Reference/Tpp/GameKit/TppCombatLocatorDataBody
+tags: [Tpp, GameKit, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [GameKit](/Entity_Reference/Tpp/GameKit)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.TransformDataBody → TppCombatLocatorDataBody
+
+```cpp
+TppCombatLocatorDataBody : Fox.Core.TransformDataBody 
+```
+
+TODO: Description
+
+
+
+

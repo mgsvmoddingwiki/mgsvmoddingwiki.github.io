@@ -1,0 +1,31 @@
+<!--
+title: FxLocatorData
+permalink: /Entity_Reference/Fox/Fx/FxLocatorData
+tags: [Fox, Fx, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Fx](/Entity_Reference/Fox/Fx)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.TransformData → FxLocatorData
+
+```cpp
+FxLocatorData : Fox.Core.TransformData 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [variationName](#variationname) | TODO: Description |
+| [effectInstanceName](#effectinstancename) | TODO: Description |
+| [enableUserRandomSeed](#enableuserrandomseed) | TODO: Description |
+| [userRandomSeed](#userrandomseed) | TODO: Description |
+| [shapeKeep](#shapekeep) | TODO: Description |
+| [createOnInitialize](#createoninitialize) | TODO: Description |
+| [blockMemoryAllocation](#blockmemoryallocation) | TODO: Description |
+| [vfxFile](#vfxfile) | TODO: Description |
+

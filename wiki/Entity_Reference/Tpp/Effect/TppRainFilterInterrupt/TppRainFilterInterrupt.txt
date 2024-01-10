@@ -1,0 +1,27 @@
+<!--
+title: TppRainFilterInterrupt
+permalink: /Entity_Reference/Tpp/Effect/TppRainFilterInterrupt
+tags: [Tpp, Effect, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [Effect](/Entity_Reference/Tpp/Effect)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Data → TppRainFilterInterrupt
+
+```cpp
+TppRainFilterInterrupt : Fox.Core.Data 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [planeMatrices](#planematrices) | TODO: Description |
+| [maskTextures](#masktextures) | TODO: Description |
+| [interruptFlags](#interruptflags) | TODO: Description |
+| [levels](#levels) | TODO: Description |
+

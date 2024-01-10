@@ -1,0 +1,38 @@
+<!--
+title: TppObjectBrushPluginSkeletonModel
+permalink: /Entity_Reference/Tpp/GameKit/TppObjectBrushPluginSkeletonModel
+tags: [Tpp, GameKit, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [GameKit](/Entity_Reference/Tpp/GameKit)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.GameKit.ObjectBrushPlugin → TppObjectBrushPluginSkeletonModel
+
+```cpp
+TppObjectBrushPluginSkeletonModel : Fox.GameKit.ObjectBrushPlugin 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [modelFile](#modelfile) | TODO: Description |
+| [geomFile](#geomfile) | TODO: Description |
+| [animFile](#animfile) | TODO: Description |
+| [animWindyFile](#animwindyfile) | TODO: Description |
+| [mtarFile](#mtarfile) | TODO: Description |
+| [soundSeType](#soundsetype) | TODO: Description |
+| [minSize](#minsize) | TODO: Description |
+| [maxSize](#maxsize) | TODO: Description |
+| [isGeomActivity](#isgeomactivity) | TODO: Description |
+| [thinkOutRate](#thinkoutrate) | TODO: Description |
+| [extensionRadius](#extensionradius) | TODO: Description |
+| [reserveResourcePlugin](#reserveresourceplugin) | TODO: Description |
+| [reserveResourcePerBlock](#reserveresourceperblock) | TODO: Description |
+| [lodLength](#lodlength) | TODO: Description |
+| [lodLengthForHighEnd](#lodlengthforhighend) | TODO: Description |
+

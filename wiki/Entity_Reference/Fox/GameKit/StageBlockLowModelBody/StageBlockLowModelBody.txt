@@ -1,0 +1,21 @@
+<!--
+title: StageBlockLowModelBody
+permalink: /Entity_Reference/Fox/GameKit/StageBlockLowModelBody
+tags: [Fox, GameKit, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [GameKit](/Entity_Reference/Fox/GameKit)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.DataBody → StageBlockLowModelBody
+
+```cpp
+StageBlockLowModelBody : Fox.Core.DataBody 
+```
+
+TODO: Description
+
+
+
+

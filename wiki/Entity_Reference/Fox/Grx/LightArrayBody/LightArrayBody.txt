@@ -1,0 +1,21 @@
+<!--
+title: LightArrayBody
+permalink: /Entity_Reference/Fox/Grx/LightArrayBody
+tags: [Fox, Grx, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Grx](/Entity_Reference/Fox/Grx)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.TransformDataBody → LightArrayBody
+
+```cpp
+LightArrayBody : Fox.Core.TransformDataBody 
+```
+
+TODO: Description
+
+
+
+

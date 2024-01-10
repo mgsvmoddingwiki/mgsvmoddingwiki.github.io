@@ -1,0 +1,32 @@
+<!--
+title: TppNvgFilterNoise
+permalink: /Entity_Reference/Tpp/Effect/TppNvgFilterNoise
+tags: [Tpp, Effect, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [Effect](/Entity_Reference/Tpp/Effect)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Data → TppNvgFilterNoise
+
+```cpp
+TppNvgFilterNoise : Fox.Core.Data 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [visibility](#visibility) | TODO: Description |
+| [scale](#scale) | TODO: Description |
+| [offset](#offset) | TODO: Description |
+| [cutScale](#cutscale) | TODO: Description |
+| [cutOffset](#cutoffset) | TODO: Description |
+| [isForceVisible](#isforcevisible) | TODO: Description |
+| [color](#color) | TODO: Description |
+| [radialSlope](#radialslope) | TODO: Description |
+| [radialShift](#radialshift) | TODO: Description |
+

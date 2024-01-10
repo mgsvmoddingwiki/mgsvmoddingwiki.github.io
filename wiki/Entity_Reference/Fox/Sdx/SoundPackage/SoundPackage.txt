@@ -1,0 +1,25 @@
+<!--
+title: SoundPackage
+permalink: /Entity_Reference/Fox/Sdx/SoundPackage
+tags: [Fox, Sdx, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Sdx](/Entity_Reference/Fox/Sdx)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Data → SoundPackage
+
+```cpp
+SoundPackage : Fox.Core.Data 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [soundDataFile](#sounddatafile) | TODO: Description |
+| [syncLoad](#syncload) | TODO: Description |
+

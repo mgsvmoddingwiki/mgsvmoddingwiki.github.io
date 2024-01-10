@@ -1,0 +1,45 @@
+<!--
+title: NavxWorldGenerateParameter
+permalink: /Entity_Reference/Fox/Navx/NavxWorldGenerateParameter
+tags: [Fox, Navx, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Navx](/Entity_Reference/Fox/Navx)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.TransformData → NavxWorldGenerateParameter
+
+```cpp
+NavxWorldGenerateParameter : Fox.Core.TransformData 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [resolution](#resolution) | TODO: Description |
+| [verticalThreshold](#verticalthreshold) | TODO: Description |
+| [doesDivideIslandWithSector](#doesdivideislandwithsector) | TODO: Description |
+| [doesHoleSimplification](#doesholesimplification) | TODO: Description |
+| [holeSimplificationConvexThreshold](#holesimplificationconvexthreshold) | TODO: Description |
+| [holeSimplificationObbExpandThreshold](#holesimplificationobbexpandthreshold) | TODO: Description |
+| [holeSimplificationObbToAabbThreshold](#holesimplificationobbtoaabbthreshold) | TODO: Description |
+| [holeSimplificationSmoothingThreshold](#holesimplificationsmoothingthreshold) | TODO: Description |
+| [isHoleSimplificationDoesNotClosePassage](#isholesimplificationdoesnotclosepassage) | TODO: Description |
+| [holeSimplificationReduceCount](#holesimplificationreducecount) | TODO: Description |
+| [doesAdjustSearchSpaceToNavmesh](#doesadjustsearchspacetonavmesh) | TODO: Description |
+| [doesGenerateFillNavVolumeInRadius](#doesgeneratefillnavvolumeinradius) | TODO: Description |
+| [roughGraphFilePath](#roughgraphfilepath) | TODO: Description |
+| [roughGraphFilePtr](#roughgraphfileptr) | TODO: Description |
+| [worldName](#worldname) | TODO: Description |
+| [maxFileSizeInKb](#maxfilesizeinkb) | TODO: Description |
+| [parameters](#parameters) | TODO: Description |
+| [sectorSizeHorizontal](#sectorsizehorizontal) | TODO: Description |
+| [tileSizeHorizontal](#tilesizehorizontal) | TODO: Description |
+| [searchSpaceBucketSizeHorizontal](#searchspacebucketsizehorizontal) | TODO: Description |
+| [collisionAttributes](#collisionattributes) | TODO: Description |
+| [loadFox2FileListScriptPath](#loadfox2filelistscriptpath) | TODO: Description |
+

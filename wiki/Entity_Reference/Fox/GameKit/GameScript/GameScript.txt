@@ -1,0 +1,26 @@
+<!--
+title: GameScript
+permalink: /Entity_Reference/Fox/GameKit/GameScript
+tags: [Fox, GameKit, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [GameKit](/Entity_Reference/Fox/GameKit)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Data → GameScript
+
+```cpp
+GameScript : Fox.Core.Data 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [enable](#enable) | TODO: Description |
+| [scriptPath](#scriptpath) | TODO: Description |
+| [variables](#variables) | TODO: Description |
+

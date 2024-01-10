@@ -1,0 +1,21 @@
+<!--
+title: NavNavigationParameterHolder
+permalink: /Entity_Reference/Fox/Nav/NavNavigationParameterHolder
+tags: [Fox, Nav, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Nav](/Entity_Reference/Fox/Nav)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Entity → NavNavigationParameterHolder
+
+```cpp
+NavNavigationParameterHolder : Fox.Core.Entity 
+```
+
+TODO: Description
+
+
+
+

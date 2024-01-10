@@ -1,0 +1,21 @@
+<!--
+title: TppGrenadeShockDataBody
+permalink: /Entity_Reference/Tpp/Effect/TppGrenadeShockDataBody
+tags: [Tpp, Effect, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [Effect](/Entity_Reference/Tpp/Effect)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.DataBody → TppGrenadeShockDataBody
+
+```cpp
+TppGrenadeShockDataBody : Fox.Core.DataBody 
+```
+
+TODO: Description
+
+
+
+

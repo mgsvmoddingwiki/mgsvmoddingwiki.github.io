@@ -1,0 +1,24 @@
+<!--
+title: TexturePackLoadConditioner
+permalink: /Entity_Reference/Fox/GameKit/TexturePackLoadConditioner
+tags: [Fox, GameKit, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [GameKit](/Entity_Reference/Fox/GameKit)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Data → TexturePackLoadConditioner
+
+```cpp
+TexturePackLoadConditioner : Fox.Core.Data 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [texturePackPath](#texturepackpath) | TODO: Description |
+

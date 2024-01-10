@@ -11,7 +11,7 @@ disable_edit: false
 # (boolean) Enable/disable wiki page list in sidebar
 show_wiki_pages: true
 # (integer) Maximum number of wiki page to shown in sidebar
-show_wiki_pages_limit: 10
+show_wiki_pages_limit: 0
 # (boolean) Enable/disable blog feature
 blog_feature: false
 # (boolean) Enable/disable wiki posts list in sidebar (needs blog_feature enabled)
@@ -156,3 +156,8 @@ inc_before_page_list :
 inc_after_page_list : sidebar.html
 inc_before_post_list :
 inc_after_post_list :
+
+# List of pages that will act as root basis for virtual pages
+# Both the original page's `permalink` path and the path here musn't contain a trailing forwardslash
+virtual_page_roots:
+  - '/Entity_Reference'

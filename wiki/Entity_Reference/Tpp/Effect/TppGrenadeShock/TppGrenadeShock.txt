@@ -1,0 +1,30 @@
+<!--
+title: TppGrenadeShock
+permalink: /Entity_Reference/Tpp/Effect/TppGrenadeShock
+tags: [Tpp, Effect, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [Effect](/Entity_Reference/Tpp/Effect)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Data → TppGrenadeShock
+
+```cpp
+TppGrenadeShock : Fox.Core.Data 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [redConeSaturationDuration](#redconesaturationduration) | TODO: Description |
+| [greenConeSaturationDuration](#greenconesaturationduration) | TODO: Description |
+| [blueConeSaturationDuration](#blueconesaturationduration) | TODO: Description |
+| [distortionVelocity](#distortionvelocity) | TODO: Description |
+| [distortionIntensity](#distortionintensity) | TODO: Description |
+| [distortionProjectionScale](#distortionprojectionscale) | TODO: Description |
+| [rotationSpeed](#rotationspeed) | TODO: Description |
+

@@ -1,0 +1,21 @@
+<!--
+title: RailFile
+permalink: /Entity_Reference/Fox/Geo/RailFile
+tags: [Fox, Geo, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Geo](/Entity_Reference/Fox/Geo)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.RawFile → RailFile
+
+```cpp
+RailFile : Fox.Core.RawFile 
+```
+
+TODO: Description
+
+
+
+

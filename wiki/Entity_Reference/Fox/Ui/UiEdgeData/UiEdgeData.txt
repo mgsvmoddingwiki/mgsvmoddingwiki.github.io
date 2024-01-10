@@ -1,0 +1,36 @@
+<!--
+title: UiEdgeData
+permalink: /Entity_Reference/Fox/Ui/UiEdgeData
+tags: [Fox, Ui, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Ui](/Entity_Reference/Fox/Ui)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Data → UiEdgeData
+
+```cpp
+UiEdgeData : Fox.Core.Data 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [sourcePort](#sourceport) | TODO: Description |
+| [sourcePortType](#sourceporttype) | TODO: Description |
+| [sourcePortIndex](#sourceportindex) | TODO: Description |
+| [targetPort](#targetport) | TODO: Description |
+| [targetPortType](#targetporttype) | TODO: Description |
+| [targetPortIndex](#targetportindex) | TODO: Description |
+| [isVirtual](#isvirtual) | TODO: Description |
+| [virtualSourcePortIndex](#virtualsourceportindex) | TODO: Description |
+| [virtualTargetPortIndex](#virtualtargetportindex) | TODO: Description |
+| [virtualSourceNode](#virtualsourcenode) | TODO: Description |
+| [virtualTargetNode](#virtualtargetnode) | TODO: Description |
+| [isInvalid](#isinvalid) | TODO: Description |
+| [connectRealEdge](#connectrealedge) | TODO: Description |
+

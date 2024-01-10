@@ -1,0 +1,26 @@
+<!--
+title: TppPermanentGimmickBank
+permalink: /Entity_Reference/Tpp/GameKit/TppPermanentGimmickBank
+tags: [Tpp, GameKit, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [GameKit](/Entity_Reference/Tpp/GameKit)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Data → TppPermanentGimmickBank
+
+```cpp
+TppPermanentGimmickBank : Fox.Core.Data 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [partsFile](#partsfile) | TODO: Description |
+| [flags](#flags) | TODO: Description |
+| [instanceCount](#instancecount) | TODO: Description |
+

@@ -1,0 +1,47 @@
+<!--
+title: DirectionalLight
+permalink: /Entity_Reference/Fox/Grx/DirectionalLight
+tags: [Fox, Grx, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Grx](/Entity_Reference/Fox/Grx)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.TransformData → DirectionalLight
+
+```cpp
+DirectionalLight : Fox.Core.TransformData 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [color](#color) | TODO: Description |
+| [direction](#direction) | TODO: Description |
+| [shadowRange](#shadowrange) | TODO: Description |
+| [shadowRangeExtra](#shadowrangeextra) | TODO: Description |
+| [hiResShadowRange](#hiresshadowrange) | TODO: Description |
+| [shadowProjectionRange](#shadowprojectionrange) | TODO: Description |
+| [shadowFadeRange](#shadowfaderange) | TODO: Description |
+| [selfShadowBias](#selfshadowbias) | TODO: Description |
+| [temperature](#temperature) | TODO: Description |
+| [colorDeflection](#colordeflection) | TODO: Description |
+| [lux](#lux) | TODO: Description |
+| [lightSize](#lightsize) | TODO: Description |
+| [shadowMaskSpecular](#shadowmaskspecular) | TODO: Description |
+| [shadowOffsetStartAngle](#shadowoffsetstartangle) | TODO: Description |
+| [shadowOffsetEndAngle](#shadowoffsetendangle) | TODO: Description |
+| [diatanceFade_StartDistance](#diatancefade-startdistance) | TODO: Description |
+| [distanceFade_FadeoutRange](#distancefade-fadeoutrange) | TODO: Description |
+| [lightFlags](#lightflags) | TODO: Description |
+| [enable](#enable) | TODO: Description |
+| [isCascadeBlend](#iscascadeblend) | TODO: Description |
+| [castShadow](#castshadow) | TODO: Description |
+| [isBounced](#isbounced) | TODO: Description |
+| [showObject](#showobject) | TODO: Description |
+| [enableDistanceFade](#enabledistancefade) | TODO: Description |
+

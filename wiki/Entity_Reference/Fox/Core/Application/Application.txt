@@ -1,0 +1,21 @@
+<!--
+title: Application
+permalink: /Entity_Reference/Fox/Core/Application
+tags: [Fox, Core, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Core](/Entity_Reference/Fox/Core)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Actor → Application
+
+```cpp
+Application : Fox.Core.Actor 
+```
+
+TODO: Description
+
+
+
+

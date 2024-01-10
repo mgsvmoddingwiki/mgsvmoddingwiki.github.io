@@ -1,0 +1,21 @@
+<!--
+title: SoundAreaGlobalBody
+permalink: /Entity_Reference/Fox/Sdx/SoundAreaGlobalBody
+tags: [Fox, Sdx, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Sdx](/Entity_Reference/Fox/Sdx)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.DataBody → SoundAreaGlobalBody
+
+```cpp
+SoundAreaGlobalBody : Fox.Core.DataBody 
+```
+
+TODO: Description
+
+
+
+

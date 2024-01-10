@@ -1,0 +1,21 @@
+<!--
+title: StageBlockControllerDataBody
+permalink: /Entity_Reference/Fox/Core/StageBlockControllerDataBody
+tags: [Fox, Core, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Core](/Entity_Reference/Fox/Core)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.DataBody → StageBlockControllerDataBody
+
+```cpp
+StageBlockControllerDataBody : Fox.Core.DataBody 
+```
+
+TODO: Description
+
+
+
+

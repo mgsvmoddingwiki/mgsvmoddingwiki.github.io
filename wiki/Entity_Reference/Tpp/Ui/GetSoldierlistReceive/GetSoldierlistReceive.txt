@@ -1,0 +1,21 @@
+<!--
+title: GetSoldierlistReceive
+permalink: /Entity_Reference/Tpp/Ui/GetSoldierlistReceive
+tags: [Tpp, Ui, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [Ui](/Entity_Reference/Tpp/Ui)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Entity → GetSoldierlistReceive
+
+```cpp
+GetSoldierlistReceive : Fox.Core.Entity 
+```
+
+TODO: Description
+
+
+
+

@@ -1,0 +1,21 @@
+<!--
+title: LocatorGroupBody
+permalink: /Entity_Reference/Fox/Fx/LocatorGroupBody
+tags: [Fox, Fx, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Fx](/Entity_Reference/Fox/Fx)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.TransformDataBody → LocatorGroupBody
+
+```cpp
+LocatorGroupBody : Fox.Core.TransformDataBody 
+```
+
+TODO: Description
+
+
+
+

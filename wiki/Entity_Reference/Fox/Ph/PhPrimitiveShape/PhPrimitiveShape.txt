@@ -1,0 +1,28 @@
+<!--
+title: PhPrimitiveShape
+permalink: /Entity_Reference/Fox/Ph/PhPrimitiveShape
+tags: [Fox, Ph, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Ph](/Entity_Reference/Fox/Ph)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Ph.PhShape → PhPrimitiveShape
+
+```cpp
+PhPrimitiveShape : Fox.Ph.PhShape 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [type](#type) | TODO: Description |
+| [size](#size) | TODO: Description |
+| [radius](#radius) | TODO: Description |
+| [height](#height) | TODO: Description |
+| [radius2](#radius2) | TODO: Description |
+

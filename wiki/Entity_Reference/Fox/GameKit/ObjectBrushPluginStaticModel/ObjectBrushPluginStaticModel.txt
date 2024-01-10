@@ -1,0 +1,31 @@
+<!--
+title: ObjectBrushPluginStaticModel
+permalink: /Entity_Reference/Fox/GameKit/ObjectBrushPluginStaticModel
+tags: [Fox, GameKit, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [GameKit](/Entity_Reference/Fox/GameKit)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.GameKit.ObjectBrushPlugin → ObjectBrushPluginStaticModel
+
+```cpp
+ObjectBrushPluginStaticModel : Fox.GameKit.ObjectBrushPlugin 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [modelFile](#modelfile) | TODO: Description |
+| [geomFile](#geomfile) | TODO: Description |
+| [minSize](#minsize) | TODO: Description |
+| [maxSize](#maxsize) | TODO: Description |
+| [lodFarSize](#lodfarsize) | TODO: Description |
+| [lodNearSize](#lodnearsize) | TODO: Description |
+| [drawRejectionLevel](#drawrejectionlevel) | TODO: Description |
+| [isGeomActivity](#isgeomactivity) | TODO: Description |
+

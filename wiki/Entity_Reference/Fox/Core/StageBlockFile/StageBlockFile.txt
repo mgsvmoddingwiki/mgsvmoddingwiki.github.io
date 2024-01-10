@@ -1,0 +1,21 @@
+<!--
+title: StageBlockFile
+permalink: /Entity_Reference/Fox/Core/StageBlockFile
+tags: [Fox, Core, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Core](/Entity_Reference/Fox/Core)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.RawFile → StageBlockFile
+
+```cpp
+StageBlockFile : Fox.Core.RawFile 
+```
+
+TODO: Description
+
+
+
+

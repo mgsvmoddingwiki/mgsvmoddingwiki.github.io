@@ -1,0 +1,21 @@
+<!--
+title: TppSubViewport
+permalink: /Entity_Reference/Tpp/Effect/TppSubViewport
+tags: [Tpp, Effect, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [Effect](/Entity_Reference/Tpp/Effect)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Gr.GrViewport → TppSubViewport
+
+```cpp
+TppSubViewport : Fox.Gr.GrViewport 
+```
+
+TODO: Description
+
+
+
+

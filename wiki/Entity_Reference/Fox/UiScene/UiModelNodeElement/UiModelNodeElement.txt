@@ -1,0 +1,39 @@
+<!--
+title: UiModelNodeElement
+permalink: /Entity_Reference/Fox/UiScene/UiModelNodeElement
+tags: [Fox, UiScene, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [UiScene](/Entity_Reference/Fox/UiScene)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.DataElement → UiModelNodeElement
+
+```cpp
+UiModelNodeElement : Fox.Core.DataElement 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [modelNodeName](#modelnodename) | TODO: Description |
+| [visible](#visible) | TODO: Description |
+| [priority](#priority) | TODO: Description |
+| [scale](#scale) | TODO: Description |
+| [rotQuat](#rotquat) | TODO: Description |
+| [translate](#translate) | TODO: Description |
+| [color](#color) | TODO: Description |
+| [blendType](#blendtype) | TODO: Description |
+| [returnInit](#returninit) | TODO: Description |
+| [initVisible](#initvisible) | TODO: Description |
+| [initPriority](#initpriority) | TODO: Description |
+| [initScale](#initscale) | TODO: Description |
+| [initRotQuat](#initrotquat) | TODO: Description |
+| [initTranslate](#inittranslate) | TODO: Description |
+| [initColor](#initcolor) | TODO: Description |
+| [initBlendType](#initblendtype) | TODO: Description |
+

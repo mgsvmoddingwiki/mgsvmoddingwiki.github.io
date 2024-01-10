@@ -1,0 +1,21 @@
+<!--
+title: UiAnimWorkMemoryDataBody
+permalink: /Entity_Reference/Fox/UiScene/UiAnimWorkMemoryDataBody
+tags: [Fox, UiScene, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [UiScene](/Entity_Reference/Fox/UiScene)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.DataBody → UiAnimWorkMemoryDataBody
+
+```cpp
+UiAnimWorkMemoryDataBody : Fox.Core.DataBody 
+```
+
+TODO: Description
+
+
+
+

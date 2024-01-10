@@ -1,0 +1,21 @@
+<!--
+title: UiDaemon
+permalink: /Entity_Reference/Fox/Ui/UiDaemon
+tags: [Fox, Ui, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Ui](/Entity_Reference/Fox/Ui)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Entity → UiDaemon
+
+```cpp
+UiDaemon : Fox.Core.Entity 
+```
+
+TODO: Description
+
+
+
+

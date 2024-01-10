@@ -1,0 +1,26 @@
+<!--
+title: CapsuleShape
+permalink: /Entity_Reference/Fox/Core/CapsuleShape
+tags: [Fox, Core, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Core](/Entity_Reference/Fox/Core)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.ShapeData → CapsuleShape
+
+```cpp
+CapsuleShape : Fox.Core.ShapeData 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [point0](#point0) | TODO: Description |
+| [point1](#point1) | TODO: Description |
+| [radius](#radius) | TODO: Description |
+

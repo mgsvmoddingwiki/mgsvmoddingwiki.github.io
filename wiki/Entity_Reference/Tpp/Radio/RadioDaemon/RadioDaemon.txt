@@ -1,0 +1,21 @@
+<!--
+title: RadioDaemon
+permalink: /Entity_Reference/Tpp/Radio/RadioDaemon
+tags: [Tpp, Radio, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [Radio](/Entity_Reference/Tpp/Radio)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Entity → RadioDaemon
+
+```cpp
+RadioDaemon : Fox.Core.Entity 
+```
+
+TODO: Description
+
+
+
+

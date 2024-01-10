@@ -1,0 +1,21 @@
+<!--
+title: OccluderArrayBody
+permalink: /Entity_Reference/Fox/Grx/OccluderArrayBody
+tags: [Fox, Grx, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Grx](/Entity_Reference/Fox/Grx)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.TransformDataBody → OccluderArrayBody
+
+```cpp
+OccluderArrayBody : Fox.Core.TransformDataBody 
+```
+
+TODO: Description
+
+
+
+

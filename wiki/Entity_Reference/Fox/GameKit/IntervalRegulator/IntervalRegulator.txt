@@ -1,0 +1,24 @@
+<!--
+title: IntervalRegulator
+permalink: /Entity_Reference/Fox/GameKit/IntervalRegulator
+tags: [Fox, GameKit, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [GameKit](/Entity_Reference/Fox/GameKit)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Entity → IntervalRegulator
+
+```cpp
+IntervalRegulator : Fox.Core.Entity 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [intervalTimers](#intervaltimers) | TODO: Description |
+

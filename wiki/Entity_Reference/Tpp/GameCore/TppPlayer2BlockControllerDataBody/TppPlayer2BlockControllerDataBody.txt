@@ -1,0 +1,21 @@
+<!--
+title: TppPlayer2BlockControllerDataBody
+permalink: /Entity_Reference/Tpp/GameCore/TppPlayer2BlockControllerDataBody
+tags: [Tpp, GameCore, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [GameCore](/Entity_Reference/Tpp/GameCore)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.DataBody → TppPlayer2BlockControllerDataBody
+
+```cpp
+TppPlayer2BlockControllerDataBody : Fox.Core.DataBody 
+```
+
+TODO: Description
+
+
+
+

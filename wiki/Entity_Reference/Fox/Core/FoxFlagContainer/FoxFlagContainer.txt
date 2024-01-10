@@ -1,0 +1,25 @@
+<!--
+title: FoxFlagContainer
+permalink: /Entity_Reference/Fox/Core/FoxFlagContainer
+tags: [Fox, Core, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Core](/Entity_Reference/Fox/Core)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Entity → FoxFlagContainer
+
+```cpp
+FoxFlagContainer : Fox.Core.Entity 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [status](#status) | TODO: Description |
+| [string](#string) | TODO: Description |
+

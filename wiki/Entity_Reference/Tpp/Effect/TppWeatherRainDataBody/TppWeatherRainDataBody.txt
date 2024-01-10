@@ -1,0 +1,21 @@
+<!--
+title: TppWeatherRainDataBody
+permalink: /Entity_Reference/Tpp/Effect/TppWeatherRainDataBody
+tags: [Tpp, Effect, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [Effect](/Entity_Reference/Tpp/Effect)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.DataBody → TppWeatherRainDataBody
+
+```cpp
+TppWeatherRainDataBody : Fox.Core.DataBody 
+```
+
+TODO: Description
+
+
+
+

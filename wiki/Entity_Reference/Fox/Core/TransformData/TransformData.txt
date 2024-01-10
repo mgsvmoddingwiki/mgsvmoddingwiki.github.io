@@ -1,0 +1,34 @@
+<!--
+title: TransformData
+permalink: /Entity_Reference/Fox/Core/TransformData
+tags: [Fox, Core, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Core](/Entity_Reference/Fox/Core)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Data → TransformData
+
+```cpp
+TransformData : Fox.Core.Data 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [parent](#parent) | TODO: Description |
+| [transform](#transform) | TODO: Description |
+| [shearTransform](#sheartransform) | TODO: Description |
+| [pivotTransform](#pivottransform) | TODO: Description |
+| [children](#children) | TODO: Description |
+| [flags](#flags) | TODO: Description |
+| [inheritTransform](#inherittransform) | TODO: Description |
+| [visibility](#visibility) | TODO: Description |
+| [selection](#selection) | TODO: Description |
+| [worldMatrix](#worldmatrix) | TODO: Description |
+| [worldTransform](#worldtransform) | TODO: Description |
+

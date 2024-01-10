@@ -1,0 +1,21 @@
+<!--
+title: SafeScript
+permalink: /Entity_Reference/Fox/Core/SafeScript
+tags: [Fox, Core, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Core](/Entity_Reference/Fox/Core)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Script → SafeScript
+
+```cpp
+SafeScript : Fox.Core.Script 
+```
+
+TODO: Description
+
+
+
+

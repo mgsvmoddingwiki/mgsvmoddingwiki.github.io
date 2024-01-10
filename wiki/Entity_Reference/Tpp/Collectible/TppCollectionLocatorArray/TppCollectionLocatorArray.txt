@@ -1,0 +1,32 @@
+<!--
+title: TppCollectionLocatorArray
+permalink: /Entity_Reference/Tpp/Collectible/TppCollectionLocatorArray
+tags: [Tpp, Collectible, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [Collectible](/Entity_Reference/Tpp/Collectible)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Data → TppCollectionLocatorArray
+
+```cpp
+TppCollectionLocatorArray : Fox.Core.Data 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [positions](#positions) | TODO: Description |
+| [rotations](#rotations) | TODO: Description |
+| [infos](#infos) | TODO: Description |
+| [segmentIndices](#segmentindices) | TODO: Description |
+| [locatorIndices](#locatorindices) | TODO: Description |
+| [locatorCounts](#locatorcounts) | TODO: Description |
+| [groupIds](#groupids) | TODO: Description |
+| [segmentInfoIndices](#segmentinfoindices) | TODO: Description |
+| [segmentInfoCounts](#segmentinfocounts) | TODO: Description |
+

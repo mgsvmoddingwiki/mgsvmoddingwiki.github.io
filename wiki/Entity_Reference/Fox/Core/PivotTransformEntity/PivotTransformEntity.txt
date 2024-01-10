@@ -1,0 +1,27 @@
+<!--
+title: PivotTransformEntity
+permalink: /Entity_Reference/Fox/Core/PivotTransformEntity
+tags: [Fox, Core, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Core](/Entity_Reference/Fox/Core)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.DataElement → PivotTransformEntity
+
+```cpp
+PivotTransformEntity : Fox.Core.DataElement 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [pivotTransform_pivot](#pivottransform-pivot) | TODO: Description |
+| [pivotTransform_pivotTranslation](#pivottransform-pivottranslation) | TODO: Description |
+| [pivot](#pivot) | TODO: Description |
+| [pivotTranslation](#pivottranslation) | TODO: Description |
+

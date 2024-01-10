@@ -1,0 +1,21 @@
+<!--
+title: FultonSoldierReceive
+permalink: /Entity_Reference/Tpp/Ui/FultonSoldierReceive
+tags: [Tpp, Ui, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [Ui](/Entity_Reference/Tpp/Ui)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Entity → FultonSoldierReceive
+
+```cpp
+FultonSoldierReceive : Fox.Core.Entity 
+```
+
+TODO: Description
+
+
+
+

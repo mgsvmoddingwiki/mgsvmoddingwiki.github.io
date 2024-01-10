@@ -1,0 +1,21 @@
+<!--
+title: MotherBaseStageSetupFile
+permalink: /Entity_Reference/Tpp/MotherBaseStage/MotherBaseStageSetupFile
+tags: [Tpp, MotherBaseStage, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [MotherBaseStage](/Entity_Reference/Tpp/MotherBaseStage)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.RawFile → MotherBaseStageSetupFile
+
+```cpp
+MotherBaseStageSetupFile : Fox.Core.RawFile 
+```
+
+TODO: Description
+
+
+
+

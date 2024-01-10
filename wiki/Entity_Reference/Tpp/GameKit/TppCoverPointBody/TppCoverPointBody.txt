@@ -1,0 +1,21 @@
+<!--
+title: TppCoverPointBody
+permalink: /Entity_Reference/Tpp/GameKit/TppCoverPointBody
+tags: [Tpp, GameKit, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [GameKit](/Entity_Reference/Tpp/GameKit)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Tactical.GkTacticalPointBody → TppCoverPointBody
+
+```cpp
+TppCoverPointBody : Fox.Tactical.GkTacticalPointBody 
+```
+
+TODO: Description
+
+
+
+

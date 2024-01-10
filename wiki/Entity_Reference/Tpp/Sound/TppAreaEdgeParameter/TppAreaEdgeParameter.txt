@@ -1,0 +1,27 @@
+<!--
+title: TppAreaEdgeParameter
+permalink: /Entity_Reference/Tpp/Sound/TppAreaEdgeParameter
+tags: [Tpp, Sound, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [Sound](/Entity_Reference/Tpp/Sound)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Sdx.SoundAreaEdgeParameter → TppAreaEdgeParameter
+
+```cpp
+TppAreaEdgeParameter : Fox.Sdx.SoundAreaEdgeParameter 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [connectedClearObstruction](#connectedclearobstruction) | TODO: Description |
+| [connectedClearOcclusion](#connectedclearocclusion) | TODO: Description |
+| [connectedBlockedObstruction](#connectedblockedobstruction) | TODO: Description |
+| [connectedBlockedOcclusion](#connectedblockedocclusion) | TODO: Description |
+

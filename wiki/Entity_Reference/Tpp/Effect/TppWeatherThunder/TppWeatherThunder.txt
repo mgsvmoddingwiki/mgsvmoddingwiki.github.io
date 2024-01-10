@@ -1,0 +1,38 @@
+<!--
+title: TppWeatherThunder
+permalink: /Entity_Reference/Tpp/Effect/TppWeatherThunder
+tags: [Tpp, Effect, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [Effect](/Entity_Reference/Tpp/Effect)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Data → TppWeatherThunder
+
+```cpp
+TppWeatherThunder : Fox.Core.Data 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [enable](#enable) | TODO: Description |
+| [color](#color) | TODO: Description |
+| [probability](#probability) | TODO: Description |
+| [powerScale](#powerscale) | TODO: Description |
+| [decaySpeed](#decayspeed) | TODO: Description |
+| [vfxFileStrong](#vfxfilestrong) | TODO: Description |
+| [vfxFileNormal](#vfxfilenormal) | TODO: Description |
+| [vfxFileWeak](#vfxfileweak) | TODO: Description |
+| [fxThresholdStrong](#fxthresholdstrong) | TODO: Description |
+| [fxThresholdNormal](#fxthresholdnormal) | TODO: Description |
+| [fxThresholdWeak](#fxthresholdweak) | TODO: Description |
+| [enableSpotLight](#enablespotlight) | TODO: Description |
+| [spotLightLifeMin](#spotlightlifemin) | TODO: Description |
+| [spotLightLifeMax](#spotlightlifemax) | TODO: Description |
+| [spotLightLumen](#spotlightlumen) | TODO: Description |
+

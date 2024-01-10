@@ -1,0 +1,36 @@
+<!--
+title: PhxWheelConstraintParam
+permalink: /Entity_Reference/Fox/Phx/PhxWheelConstraintParam
+tags: [Fox, Phx, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Phx](/Entity_Reference/Fox/Phx)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Ph.PhConstraintParam → PhxWheelConstraintParam
+
+```cpp
+PhxWheelConstraintParam : Fox.Ph.PhConstraintParam 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [defaultRotation](#defaultrotation) | TODO: Description |
+| [positionL](#positionl) | TODO: Description |
+| [frontL](#frontl) | TODO: Description |
+| [upL](#upl) | TODO: Description |
+| [wheelPositionOffset](#wheelpositionoffset) | TODO: Description |
+| [radius](#radius) | TODO: Description |
+| [suspensionLength](#suspensionlength) | TODO: Description |
+| [maxSuspensionForce](#maxsuspensionforce) | TODO: Description |
+| [dampingFactorElong](#dampingfactorelong) | TODO: Description |
+| [dampingFactorCompress](#dampingfactorcompress) | TODO: Description |
+| [friction](#friction) | TODO: Description |
+| [restitution](#restitution) | TODO: Description |
+| [inertia](#inertia) | TODO: Description |
+

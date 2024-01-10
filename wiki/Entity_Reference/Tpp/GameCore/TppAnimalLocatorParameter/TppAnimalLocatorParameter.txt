@@ -1,0 +1,25 @@
+<!--
+title: TppAnimalLocatorParameter
+permalink: /Entity_Reference/Tpp/GameCore/TppAnimalLocatorParameter
+tags: [Tpp, GameCore, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [GameCore](/Entity_Reference/Tpp/GameCore)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.DataElement → TppAnimalLocatorParameter
+
+```cpp
+TppAnimalLocatorParameter : Fox.Core.DataElement 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [count](#count) | TODO: Description |
+| [radius](#radius) | TODO: Description |
+

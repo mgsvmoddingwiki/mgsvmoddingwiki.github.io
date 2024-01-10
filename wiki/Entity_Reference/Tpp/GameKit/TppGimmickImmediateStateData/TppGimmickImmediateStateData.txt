@@ -1,0 +1,24 @@
+<!--
+title: TppGimmickImmediateStateData
+permalink: /Entity_Reference/Tpp/GameKit/TppGimmickImmediateStateData
+tags: [Tpp, GameKit, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [GameKit](/Entity_Reference/Tpp/GameKit)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Data → TppGimmickImmediateStateData
+
+```cpp
+TppGimmickImmediateStateData : Fox.Core.Data 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [numMaxMemory](#nummaxmemory) | TODO: Description |
+

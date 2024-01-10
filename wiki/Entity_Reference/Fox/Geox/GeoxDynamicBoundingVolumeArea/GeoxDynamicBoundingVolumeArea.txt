@@ -1,0 +1,21 @@
+<!--
+title: GeoxDynamicBoundingVolumeArea
+permalink: /Entity_Reference/Fox/Geox/GeoxDynamicBoundingVolumeArea
+tags: [Fox, Geox, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Geox](/Entity_Reference/Fox/Geox)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.TransformData → GeoxDynamicBoundingVolumeArea
+
+```cpp
+GeoxDynamicBoundingVolumeArea : Fox.Core.TransformData 
+```
+
+TODO: Description
+
+
+
+

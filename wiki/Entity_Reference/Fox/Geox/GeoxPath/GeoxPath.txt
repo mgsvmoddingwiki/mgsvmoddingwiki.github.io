@@ -1,0 +1,24 @@
+<!--
+title: GeoxPath
+permalink: /Entity_Reference/Fox/Geox/GeoxPath
+tags: [Fox, Geox, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Geox](/Entity_Reference/Fox/Geox)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Graphx.GraphxPathData → GeoxPath
+
+```cpp
+GeoxPath : Fox.Graphx.GraphxPathData 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [selectIndex](#selectindex) | TODO: Description |
+

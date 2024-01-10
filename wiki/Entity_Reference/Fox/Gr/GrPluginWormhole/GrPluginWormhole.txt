@@ -1,0 +1,21 @@
+<!--
+title: GrPluginWormhole
+permalink: /Entity_Reference/Fox/Gr/GrPluginWormhole
+tags: [Fox, Gr, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Gr](/Entity_Reference/Fox/Gr)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Gr.GrRenderPlugin → GrPluginWormhole
+
+```cpp
+GrPluginWormhole : Fox.Gr.GrRenderPlugin 
+```
+
+TODO: Description
+
+
+
+

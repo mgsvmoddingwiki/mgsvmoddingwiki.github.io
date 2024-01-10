@@ -1,0 +1,33 @@
+<!--
+title: PhBallsocketConstraintParam
+permalink: /Entity_Reference/Fox/Ph/PhBallsocketConstraintParam
+tags: [Fox, Ph, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Ph](/Entity_Reference/Fox/Ph)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Ph.PhConstraintParam → PhBallsocketConstraintParam
+
+```cpp
+PhBallsocketConstraintParam : Fox.Ph.PhConstraintParam 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [limitedFlag](#limitedflag) | TODO: Description |
+| [refA](#refa) | TODO: Description |
+| [refB](#refb) | TODO: Description |
+| [limit](#limit) | TODO: Description |
+| [springFlag](#springflag) | TODO: Description |
+| [springRefCustomFlag](#springrefcustomflag) | TODO: Description |
+| [springRef](#springref) | TODO: Description |
+| [springConstant](#springconstant) | TODO: Description |
+| [flexibility](#flexibility) | TODO: Description |
+| [stopTwistFlag](#stoptwistflag) | TODO: Description |
+

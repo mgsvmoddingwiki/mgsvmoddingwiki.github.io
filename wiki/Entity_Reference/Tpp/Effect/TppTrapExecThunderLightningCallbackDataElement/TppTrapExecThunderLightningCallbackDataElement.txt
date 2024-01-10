@@ -1,0 +1,26 @@
+<!--
+title: TppTrapExecThunderLightningCallbackDataElement
+permalink: /Entity_Reference/Tpp/Effect/TppTrapExecThunderLightningCallbackDataElement
+tags: [Tpp, Effect, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [Effect](/Entity_Reference/Tpp/Effect)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Geo.GeoTrapModuleCallbackDataElement → TppTrapExecThunderLightningCallbackDataElement
+
+```cpp
+TppTrapExecThunderLightningCallbackDataElement : Fox.Geo.GeoTrapModuleCallbackDataElement 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [type](#type) | TODO: Description |
+| [positionLocator](#positionlocator) | TODO: Description |
+| [power](#power) | TODO: Description |
+

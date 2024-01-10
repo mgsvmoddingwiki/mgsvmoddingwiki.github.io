@@ -1,0 +1,48 @@
+<!--
+title: Camera
+permalink: /Entity_Reference/Fox/GameKit/Camera
+tags: [Fox, GameKit, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [GameKit](/Entity_Reference/Fox/GameKit)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Entity → Camera
+
+```cpp
+Camera : Fox.Core.Entity 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [priorityName](#priorityname) | TODO: Description |
+| [enable](#enable) | TODO: Description |
+| [transform_rotation_quat](#transform-rotation-quat) | TODO: Description |
+| [transform_translation](#transform-translation) | TODO: Description |
+| [focusDistance](#focusdistance) | TODO: Description |
+| [focalLength](#focallength) | TODO: Description |
+| [useEffectiveFocalLength](#useeffectivefocallength) | TODO: Description |
+| [effectiveFocalLengthRatio](#effectivefocallengthratio) | TODO: Description |
+| [aperture](#aperture) | TODO: Description |
+| [listenerVirtualTrans_rotation_quat](#listenervirtualtrans-rotation-quat) | TODO: Description |
+| [listenerVirtualTrans_translation](#listenervirtualtrans-translation) | TODO: Description |
+| [listenerVirtualFlag](#listenervirtualflag) | TODO: Description |
+| [nearClipDistance](#nearclipdistance) | TODO: Description |
+| [farClipDistance](#farclipdistance) | TODO: Description |
+| [shutterSpeed](#shutterspeed) | TODO: Description |
+| [useDefaultExposureValue](#usedefaultexposurevalue) | TODO: Description |
+| [minExposure](#minexposure) | TODO: Description |
+| [maxExposure](#maxexposure) | TODO: Description |
+| [exposureCompensation](#exposurecompensation) | TODO: Description |
+| [useDefaultBloom](#usedefaultbloom) | TODO: Description |
+| [bloomSize](#bloomsize) | TODO: Description |
+| [bloomWeight](#bloomweight) | TODO: Description |
+| [bloomBrightnessExtraction](#bloombrightnessextraction) | TODO: Description |
+| [cancelCameraBlur](#cancelcamerablur) | TODO: Description |
+| [keyValue](#keyvalue) | TODO: Description |
+

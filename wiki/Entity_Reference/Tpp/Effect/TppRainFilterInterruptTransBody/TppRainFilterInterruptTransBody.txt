@@ -1,0 +1,21 @@
+<!--
+title: TppRainFilterInterruptTransBody
+permalink: /Entity_Reference/Tpp/Effect/TppRainFilterInterruptTransBody
+tags: [Tpp, Effect, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [Effect](/Entity_Reference/Tpp/Effect)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.TransformDataBody → TppRainFilterInterruptTransBody
+
+```cpp
+TppRainFilterInterruptTransBody : Fox.Core.TransformDataBody 
+```
+
+TODO: Description
+
+
+
+

@@ -1,0 +1,33 @@
+<!--
+title: UiCameraData
+permalink: /Entity_Reference/Fox/UiScene/UiCameraData
+tags: [Fox, UiScene, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [UiScene](/Entity_Reference/Fox/UiScene)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Data → UiCameraData
+
+```cpp
+UiCameraData : Fox.Core.Data 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [cameraName](#cameraname) | TODO: Description |
+| [translate](#translate) | TODO: Description |
+| [rotate](#rotate) | TODO: Description |
+| [useOrtho](#useortho) | TODO: Description |
+| [orthoHeight](#orthoheight) | TODO: Description |
+| [nearClip](#nearclip) | TODO: Description |
+| [farClip](#farclip) | TODO: Description |
+| [fov](#fov) | TODO: Description |
+| [fovType](#fovtype) | TODO: Description |
+| [debug](#debug) | TODO: Description |
+

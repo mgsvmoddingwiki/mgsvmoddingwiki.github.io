@@ -1,0 +1,24 @@
+<!--
+title: BoundingBox
+permalink: /Entity_Reference/Fox/Core/BoundingBox
+tags: [Fox, Core, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Core](/Entity_Reference/Fox/Core)\
+> Submodule: TODO: Submodule
+
+```cpp
+BoundingBox 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [min](#min) | TODO: Description |
+| [max](#max) | TODO: Description |
+

@@ -1,0 +1,27 @@
+<!--
+title: PartsDesc
+permalink: /Entity_Reference/Fox/Demo/PartsDesc
+tags: [Fox, Demo, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Demo](/Entity_Reference/Fox/Demo)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.DataElement → PartsDesc
+
+```cpp
+PartsDesc : Fox.Core.DataElement 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [instanceName](#instancename) | TODO: Description |
+| [partsFile](#partsfile) | TODO: Description |
+| [modelPath](#modelpath) | TODO: Description |
+| [partName](#partname) | TODO: Description |
+

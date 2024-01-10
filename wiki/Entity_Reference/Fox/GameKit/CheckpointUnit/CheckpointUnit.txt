@@ -1,0 +1,26 @@
+<!--
+title: CheckpointUnit
+permalink: /Entity_Reference/Fox/GameKit/CheckpointUnit
+tags: [Fox, GameKit, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [GameKit](/Entity_Reference/Fox/GameKit)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Entity → CheckpointUnit
+
+```cpp
+CheckpointUnit : Fox.Core.Entity 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [checkPointParam](#checkpointparam) | TODO: Description |
+| [checkPointData](#checkpointdata) | TODO: Description |
+| [isReplacable](#isreplacable) | TODO: Description |
+

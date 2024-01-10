@@ -1,0 +1,24 @@
+<!--
+title: Locator
+permalink: /Entity_Reference/Fox/Core/Locator
+tags: [Fox, Core, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Core](/Entity_Reference/Fox/Core)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.TransformData → Locator
+
+```cpp
+Locator : Fox.Core.TransformData 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [size](#size) | TODO: Description |
+

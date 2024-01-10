@@ -1,0 +1,33 @@
+<!--
+title: SimOnPhysics
+permalink: /Entity_Reference/Fox/Sim/SimOnPhysics
+tags: [Fox, Sim, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Sim](/Entity_Reference/Fox/Sim)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Sim.SimObject → SimOnPhysics
+
+```cpp
+SimOnPhysics : Fox.Sim.SimObject 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [simRootBones](#simrootbones) | TODO: Description |
+| [simBones](#simbones) | TODO: Description |
+| [simTransBones](#simtransbones) | TODO: Description |
+| [simHitBones](#simhitbones) | TODO: Description |
+| [formatVersion](#formatversion) | TODO: Description |
+| [physicsData](#physicsdata) | TODO: Description |
+| [minLodLevel](#minlodlevel) | TODO: Description |
+| [maxLodLevel](#maxlodlevel) | TODO: Description |
+| [isEnableGeoCheck](#isenablegeocheck) | TODO: Description |
+| [convertMoveToWind](#convertmovetowind) | TODO: Description |
+

@@ -1,0 +1,48 @@
+<!--
+title: GrPluginSettings
+permalink: /Entity_Reference/Fox/Grx/GrPluginSettings
+tags: [Fox, Grx, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Grx](/Entity_Reference/Fox/Grx)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Data → GrPluginSettings
+
+```cpp
+GrPluginSettings : Fox.Core.Data 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [motionBlurConvolutionLevel](#motionblurconvolutionlevel) | TODO: Description |
+| [exposureCompensation](#exposurecompensation) | TODO: Description |
+| [minExposure](#minexposure) | TODO: Description |
+| [maxExposure](#maxexposure) | TODO: Description |
+| [keyValue](#keyvalue) | TODO: Description |
+| [bloomSize](#bloomsize) | TODO: Description |
+| [bloomBrightnessExtraction](#bloombrightnessextraction) | TODO: Description |
+| [bloomWeight](#bloomweight) | TODO: Description |
+| [tonemapSpeed](#tonemapspeed) | TODO: Description |
+| [maxLuminanceValue](#maxluminancevalue) | TODO: Description |
+| [captureBounceCount](#capturebouncecount) | TODO: Description |
+| [minDecalArea](#mindecalarea) | TODO: Description |
+| [flags](#flags) | TODO: Description |
+| [isTonemap](#istonemap) | TODO: Description |
+| [isBloom](#isbloom) | TODO: Description |
+| [isMotionBlur](#ismotionblur) | TODO: Description |
+| [isDepthOfField](#isdepthoffield) | TODO: Description |
+| [isDOFVisualizeFocus](#isdofvisualizefocus) | TODO: Description |
+| [isLocalReflections](#islocalreflections) | TODO: Description |
+| [isTemporalAA](#istemporalaa) | TODO: Description |
+| [isFixedShutterRatio](#isfixedshutterratio) | TODO: Description |
+| [isPatchVelocity](#ispatchvelocity) | TODO: Description |
+| [isLightAdaptationFromLACC](#islightadaptationfromlacc) | TODO: Description |
+| [isShowDecals](#isshowdecals) | TODO: Description |
+| [isShrinkSHBuffer](#isshrinkshbuffer) | TODO: Description |
+

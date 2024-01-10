@@ -1,0 +1,46 @@
+<!--
+title: ObjectBrushPluginBushDataElement
+permalink: /Entity_Reference/Tpp/GameKit/ObjectBrushPluginBushDataElement
+tags: [Tpp, GameKit, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [GameKit](/Entity_Reference/Tpp/GameKit)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.DataElement → ObjectBrushPluginBushDataElement
+
+```cpp
+ObjectBrushPluginBushDataElement : Fox.Core.DataElement 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [lodMeshName](#lodmeshname) | TODO: Description |
+| [lodDistance](#loddistance) | TODO: Description |
+| [lodDistanceHighEnd](#loddistancehighend) | TODO: Description |
+| [rotationRate](#rotationrate) | TODO: Description |
+| [elasticRate](#elasticrate) | TODO: Description |
+| [alphaMinimizeDist](#alphaminimizedist) | TODO: Description |
+| [alphaMaximizeDist](#alphamaximizedist) | TODO: Description |
+| [baseDensity](#basedensity) | TODO: Description |
+| [camoufDensity](#camoufdensity) | TODO: Description |
+| [camofRadius](#camofradius) | TODO: Description |
+| [camofHeight](#camofheight) | TODO: Description |
+| [modelRadius](#modelradius) | TODO: Description |
+| [stopEyeRadius](#stopeyeradius) | TODO: Description |
+| [stopEyeHeight](#stopeyeheight) | TODO: Description |
+| [noiseSeType](#noisesetype) | TODO: Description |
+| [bushFlags](#bushflags) | TODO: Description |
+| [baseCycleSpeedRate](#basecyclespeedrate) | TODO: Description |
+| [windAmplitude](#windamplitude) | TODO: Description |
+| [windDirYAxisFixZero](#winddiryaxisfixzero) | TODO: Description |
+| [windOffsetFactor](#windoffsetfactor) | TODO: Description |
+| [bulletEffect](#bulleteffect) | TODO: Description |
+| [fairEffect](#faireffect) | TODO: Description |
+| [rainEffect](#raineffect) | TODO: Description |
+

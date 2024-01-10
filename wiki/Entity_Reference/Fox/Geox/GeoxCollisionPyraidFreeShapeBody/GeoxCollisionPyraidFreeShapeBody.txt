@@ -1,0 +1,21 @@
+<!--
+title: GeoxCollisionPyraidFreeShapeBody
+permalink: /Entity_Reference/Fox/Geox/GeoxCollisionPyraidFreeShapeBody
+tags: [Fox, Geox, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Geox](/Entity_Reference/Fox/Geox)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.TransformDataBody → GeoxCollisionPyraidFreeShapeBody
+
+```cpp
+GeoxCollisionPyraidFreeShapeBody : Fox.Core.TransformDataBody 
+```
+
+TODO: Description
+
+
+
+

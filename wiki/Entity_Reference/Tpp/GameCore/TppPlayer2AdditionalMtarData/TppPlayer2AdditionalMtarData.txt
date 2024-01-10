@@ -1,0 +1,24 @@
+<!--
+title: TppPlayer2AdditionalMtarData
+permalink: /Entity_Reference/Tpp/GameCore/TppPlayer2AdditionalMtarData
+tags: [Tpp, GameCore, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [GameCore](/Entity_Reference/Tpp/GameCore)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Data → TppPlayer2AdditionalMtarData
+
+```cpp
+TppPlayer2AdditionalMtarData : Fox.Core.Data 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [mtarFiles](#mtarfiles) | TODO: Description |
+

@@ -1,0 +1,39 @@
+<!--
+title: TerrainDecal
+permalink: /Entity_Reference/Fox/GameKit/TerrainDecal
+tags: [Fox, GameKit, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [GameKit](/Entity_Reference/Fox/GameKit)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.TransformData → TerrainDecal
+
+```cpp
+TerrainDecal : Fox.Core.TransformData 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [material](#material) | TODO: Description |
+| [gridColor](#gridcolor) | TODO: Description |
+| [color](#color) | TODO: Description |
+| [stepLength](#steplength) | TODO: Description |
+| [width](#width) | TODO: Description |
+| [transparency](#transparency) | TODO: Description |
+| [textureRepeatU](#texturerepeatu) | TODO: Description |
+| [textureRepeatV](#texturerepeatv) | TODO: Description |
+| [renderingPriority](#renderingpriority) | TODO: Description |
+| [edgeTransparencyLength](#edgetransparencylength) | TODO: Description |
+| [smoothEdgeLength](#smoothedgelength) | TODO: Description |
+| [isTargetBlockTerrain](#istargetblockterrain) | TODO: Description |
+| [drawRejectionLevel](#drawrejectionlevel) | TODO: Description |
+| [isDisableAlbedo](#isdisablealbedo) | TODO: Description |
+| [hasSerializedNodes](#hasserializednodes) | TODO: Description |
+| [serializedGraphNodes](#serializedgraphnodes) | TODO: Description |
+

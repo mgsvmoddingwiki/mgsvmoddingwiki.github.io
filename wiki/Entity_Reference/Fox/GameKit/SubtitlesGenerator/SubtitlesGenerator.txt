@@ -1,0 +1,34 @@
+<!--
+title: SubtitlesGenerator
+permalink: /Entity_Reference/Fox/GameKit/SubtitlesGenerator
+tags: [Fox, GameKit, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [GameKit](/Entity_Reference/Fox/GameKit)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Ui.UiGraphEntry → SubtitlesGenerator
+
+```cpp
+SubtitlesGenerator : Fox.Ui.UiGraphEntry 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [key](#key) | TODO: Description |
+| [color](#color) | TODO: Description |
+| [offset](#offset) | TODO: Description |
+| [size](#size) | TODO: Description |
+| [fontSpace](#fontspace) | TODO: Description |
+| [lineSpace](#linespace) | TODO: Description |
+| [hAlign](#halign) | TODO: Description |
+| [vAlign](#valign) | TODO: Description |
+| [bAlign](#balign) | TODO: Description |
+| [fontName](#fontname) | TODO: Description |
+| [autoLineFeed](#autolinefeed) | TODO: Description |
+

@@ -1,0 +1,21 @@
+<!--
+title: CheckpointDaemon
+permalink: /Entity_Reference/Fox/GameKit/CheckpointDaemon
+tags: [Fox, GameKit, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [GameKit](/Entity_Reference/Fox/GameKit)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Entity → CheckpointDaemon
+
+```cpp
+CheckpointDaemon : Fox.Core.Entity 
+```
+
+TODO: Description
+
+
+
+

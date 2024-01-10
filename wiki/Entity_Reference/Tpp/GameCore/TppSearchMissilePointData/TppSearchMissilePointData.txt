@@ -1,0 +1,24 @@
+<!--
+title: TppSearchMissilePointData
+permalink: /Entity_Reference/Tpp/GameCore/TppSearchMissilePointData
+tags: [Tpp, GameCore, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [GameCore](/Entity_Reference/Tpp/GameCore)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.TransformData → TppSearchMissilePointData
+
+```cpp
+TppSearchMissilePointData : Fox.Core.TransformData 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [type](#type) | TODO: Description |
+

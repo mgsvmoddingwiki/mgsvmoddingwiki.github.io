@@ -1,0 +1,21 @@
+<!--
+title: AmbientOcclusionSettingsBody
+permalink: /Entity_Reference/Fox/Grx/AmbientOcclusionSettingsBody
+tags: [Fox, Grx, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Grx](/Entity_Reference/Fox/Grx)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.DataBody → AmbientOcclusionSettingsBody
+
+```cpp
+AmbientOcclusionSettingsBody : Fox.Core.DataBody 
+```
+
+TODO: Description
+
+
+
+

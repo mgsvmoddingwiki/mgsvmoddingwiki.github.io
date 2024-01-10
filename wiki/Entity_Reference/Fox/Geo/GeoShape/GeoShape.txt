@@ -1,0 +1,25 @@
+<!--
+title: GeoShape
+permalink: /Entity_Reference/Fox/Geo/GeoShape
+tags: [Fox, Geo, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Geo](/Entity_Reference/Fox/Geo)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.TransformData → GeoShape
+
+```cpp
+GeoShape : Fox.Core.TransformData 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [geometryType](#geometrytype) | TODO: Description |
+| [isDispShape](#isdispshape) | TODO: Description |
+

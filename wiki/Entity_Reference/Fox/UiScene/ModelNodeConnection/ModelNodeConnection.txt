@@ -1,0 +1,24 @@
+<!--
+title: ModelNodeConnection
+permalink: /Entity_Reference/Fox/UiScene/ModelNodeConnection
+tags: [Fox, UiScene, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [UiScene](/Entity_Reference/Fox/UiScene)\
+> Submodule: TODO: Submodule
+
+```cpp
+ModelNodeConnection 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [connectModelDataHandle](#connectmodeldatahandle) | TODO: Description |
+| [connectModelNodeName](#connectmodelnodename) | TODO: Description |
+

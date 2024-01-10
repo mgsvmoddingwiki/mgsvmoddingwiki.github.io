@@ -1,0 +1,21 @@
+<!--
+title: GameObjectLocatorBody
+permalink: /Entity_Reference/Fox/GameCore/GameObjectLocatorBody
+tags: [Fox, GameCore, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [GameCore](/Entity_Reference/Fox/GameCore)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.TransformDataBody → GameObjectLocatorBody
+
+```cpp
+GameObjectLocatorBody : Fox.Core.TransformDataBody 
+```
+
+TODO: Description
+
+
+
+

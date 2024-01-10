@@ -1,0 +1,21 @@
+<!--
+title: EntityFile
+permalink: /Entity_Reference/Fox/Core/EntityFile
+tags: [Fox, Core, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Core](/Entity_Reference/Fox/Core)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.File → EntityFile
+
+```cpp
+EntityFile : Fox.Core.File 
+```
+
+TODO: Description
+
+
+
+

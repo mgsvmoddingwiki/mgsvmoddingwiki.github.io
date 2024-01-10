@@ -1,0 +1,26 @@
+<!--
+title: SoundAreaMember
+permalink: /Entity_Reference/Fox/Sdx/SoundAreaMember
+tags: [Fox, Sdx, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Sdx](/Entity_Reference/Fox/Sdx)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Data → SoundAreaMember
+
+```cpp
+SoundAreaMember : Fox.Core.Data 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [shapes](#shapes) | TODO: Description |
+| [priority](#priority) | TODO: Description |
+| [parameter](#parameter) | TODO: Description |
+

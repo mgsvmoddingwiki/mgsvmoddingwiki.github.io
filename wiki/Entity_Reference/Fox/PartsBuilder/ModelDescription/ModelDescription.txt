@@ -1,0 +1,35 @@
+<!--
+title: ModelDescription
+permalink: /Entity_Reference/Fox/PartsBuilder/ModelDescription
+tags: [Fox, PartsBuilder, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [PartsBuilder](/Entity_Reference/Fox/PartsBuilder)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.PartsBuilder.PartDescription → ModelDescription
+
+```cpp
+ModelDescription : Fox.PartsBuilder.PartDescription 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [modelFile](#modelfile) | TODO: Description |
+| [connectPointFile](#connectpointfile) | TODO: Description |
+| [gameRigFile](#gamerigfile) | TODO: Description |
+| [helpBoneFile](#helpbonefile) | TODO: Description |
+| [lipAdjustBinaryFile](#lipadjustbinaryfile) | TODO: Description |
+| [facialSettingFile](#facialsettingfile) | TODO: Description |
+| [invisibleMeshNames](#invisiblemeshnames) | TODO: Description |
+| [lodFarPixelSize](#lodfarpixelsize) | TODO: Description |
+| [lodNearPixelSize](#lodnearpixelsize) | TODO: Description |
+| [lodPolygonSize](#lodpolygonsize) | TODO: Description |
+| [drawRejectionLevel](#drawrejectionlevel) | TODO: Description |
+| [rejectFarRangeShadowCast](#rejectfarrangeshadowcast) | TODO: Description |
+

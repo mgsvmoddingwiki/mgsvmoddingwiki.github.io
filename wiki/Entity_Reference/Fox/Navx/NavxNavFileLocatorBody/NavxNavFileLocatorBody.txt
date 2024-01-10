@@ -1,0 +1,21 @@
+<!--
+title: NavxNavFileLocatorBody
+permalink: /Entity_Reference/Fox/Navx/NavxNavFileLocatorBody
+tags: [Fox, Navx, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Navx](/Entity_Reference/Fox/Navx)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.TransformDataBody → NavxNavFileLocatorBody
+
+```cpp
+NavxNavFileLocatorBody : Fox.Core.TransformDataBody 
+```
+
+TODO: Description
+
+
+
+

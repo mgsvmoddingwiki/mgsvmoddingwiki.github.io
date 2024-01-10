@@ -1,0 +1,36 @@
+<!--
+title: TppOutOfMissionRangeEffect
+permalink: /Entity_Reference/Tpp/Effect/TppOutOfMissionRangeEffect
+tags: [Tpp, Effect, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [Effect](/Entity_Reference/Tpp/Effect)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Data → TppOutOfMissionRangeEffect
+
+```cpp
+TppOutOfMissionRangeEffect : Fox.Core.Data 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [enable](#enable) | TODO: Description |
+| [lutTexture](#luttexture) | TODO: Description |
+| [startSlope](#startslope) | TODO: Description |
+| [endSlope](#endslope) | TODO: Description |
+| [blendRatio](#blendratio) | TODO: Description |
+| [colorScale](#colorscale) | TODO: Description |
+| [noiseScale](#noisescale) | TODO: Description |
+| [noiseOffset](#noiseoffset) | TODO: Description |
+| [noiseCutScale](#noisecutscale) | TODO: Description |
+| [noiseCutOffset](#noisecutoffset) | TODO: Description |
+| [noiseColor](#noisecolor) | TODO: Description |
+| [cinemaScopeSlope](#cinemascopeslope) | TODO: Description |
+| [cinemaScopeShift](#cinemascopeshift) | TODO: Description |
+

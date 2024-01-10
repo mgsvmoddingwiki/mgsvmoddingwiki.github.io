@@ -1,0 +1,26 @@
+<!--
+title: PhMaterialInfo
+permalink: /Entity_Reference/Fox/Ph/PhMaterialInfo
+tags: [Fox, Ph, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Ph](/Entity_Reference/Fox/Ph)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Geo.MaterialInfoBase → PhMaterialInfo
+
+```cpp
+PhMaterialInfo : Fox.Geo.MaterialInfoBase 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [friction](#friction) | TODO: Description |
+| [restitution](#restitution) | TODO: Description |
+| [density](#density) | TODO: Description |
+

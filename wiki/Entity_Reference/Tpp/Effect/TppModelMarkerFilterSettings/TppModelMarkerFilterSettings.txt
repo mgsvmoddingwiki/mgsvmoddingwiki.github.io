@@ -1,0 +1,30 @@
+<!--
+title: TppModelMarkerFilterSettings
+permalink: /Entity_Reference/Tpp/Effect/TppModelMarkerFilterSettings
+tags: [Tpp, Effect, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [Effect](/Entity_Reference/Tpp/Effect)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Data → TppModelMarkerFilterSettings
+
+```cpp
+TppModelMarkerFilterSettings : Fox.Core.Data 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [texRepeatsNear](#texrepeatsnear) | TODO: Description |
+| [texRepeatsFar](#texrepeatsfar) | TODO: Description |
+| [texRepeatsMin](#texrepeatsmin) | TODO: Description |
+| [texRepeatsMax](#texrepeatsmax) | TODO: Description |
+| [alphas](#alphas) | TODO: Description |
+| [offsets](#offsets) | TODO: Description |
+| [incidences](#incidences) | TODO: Description |
+

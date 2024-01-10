@@ -1,0 +1,21 @@
+<!--
+title: GrPluginFxaa
+permalink: /Entity_Reference/Fox/Gr/GrPluginFxaa
+tags: [Fox, Gr, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Gr](/Entity_Reference/Fox/Gr)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Gr.GrRenderPlugin → GrPluginFxaa
+
+```cpp
+GrPluginFxaa : Fox.Gr.GrRenderPlugin 
+```
+
+TODO: Description
+
+
+
+

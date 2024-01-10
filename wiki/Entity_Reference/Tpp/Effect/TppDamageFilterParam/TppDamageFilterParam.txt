@@ -1,0 +1,31 @@
+<!--
+title: TppDamageFilterParam
+permalink: /Entity_Reference/Tpp/Effect/TppDamageFilterParam
+tags: [Tpp, Effect, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [Effect](/Entity_Reference/Tpp/Effect)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.TransformData → TppDamageFilterParam
+
+```cpp
+TppDamageFilterParam : Fox.Core.TransformData 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [burnOutsideColor](#burnoutsidecolor) | TODO: Description |
+| [burnMiddleColor](#burnmiddlecolor) | TODO: Description |
+| [burnInsideColor](#burninsidecolor) | TODO: Description |
+| [burnHoleColor](#burnholecolor) | TODO: Description |
+| [burnSpriteSize](#burnspritesize) | TODO: Description |
+| [burnSpritePosition](#burnspriteposition) | TODO: Description |
+| [damageColorCorrectionTextureName](#damagecolorcorrectiontexturename) | TODO: Description |
+| [injuryColorCorrectionTextureName](#injurycolorcorrectiontexturename) | TODO: Description |
+

@@ -1,0 +1,37 @@
+<!--
+title: GrxLineSSAOParameters
+permalink: /Entity_Reference/Fox/Grx/GrxLineSSAOParameters
+tags: [Fox, Grx, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Grx](/Entity_Reference/Fox/Grx)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Entity → GrxLineSSAOParameters
+
+```cpp
+GrxLineSSAOParameters : Fox.Core.Entity 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [innerRadius](#innerradius) | TODO: Description |
+| [outerRadius](#outerradius) | TODO: Description |
+| [maxDistanceInner](#maxdistanceinner) | TODO: Description |
+| [maxDistanceThresholdInner](#maxdistancethresholdinner) | TODO: Description |
+| [maxDistanceOuter](#maxdistanceouter) | TODO: Description |
+| [maxDistanceThresholdOuter](#maxdistancethresholdouter) | TODO: Description |
+| [contrastLow](#contrastlow) | TODO: Description |
+| [contrastHigh](#contrasthigh) | TODO: Description |
+| [blurMode](#blurmode) | TODO: Description |
+| [blurRadius](#blurradius) | TODO: Description |
+| [falloffStart](#falloffstart) | TODO: Description |
+| [falloffRange](#falloffrange) | TODO: Description |
+| [gainonStart](#gainonstart) | TODO: Description |
+| [gainonRange](#gainonrange) | TODO: Description |
+

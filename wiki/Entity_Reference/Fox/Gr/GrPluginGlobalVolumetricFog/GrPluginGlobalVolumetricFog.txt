@@ -1,0 +1,21 @@
+<!--
+title: GrPluginGlobalVolumetricFog
+permalink: /Entity_Reference/Fox/Gr/GrPluginGlobalVolumetricFog
+tags: [Fox, Gr, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Gr](/Entity_Reference/Fox/Gr)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Gr.GrRenderPlugin → GrPluginGlobalVolumetricFog
+
+```cpp
+GrPluginGlobalVolumetricFog : Fox.Gr.GrRenderPlugin 
+```
+
+TODO: Description
+
+
+
+

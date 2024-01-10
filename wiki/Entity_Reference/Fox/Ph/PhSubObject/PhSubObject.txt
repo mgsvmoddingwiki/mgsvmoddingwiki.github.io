@@ -1,0 +1,21 @@
+<!--
+title: PhSubObject
+permalink: /Entity_Reference/Fox/Ph/PhSubObject
+tags: [Fox, Ph, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Ph](/Entity_Reference/Fox/Ph)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.TransformData → PhSubObject
+
+```cpp
+PhSubObject : Fox.Core.TransformData 
+```
+
+TODO: Description
+
+
+
+

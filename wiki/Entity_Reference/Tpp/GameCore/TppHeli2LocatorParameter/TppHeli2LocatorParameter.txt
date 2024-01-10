@@ -1,0 +1,21 @@
+<!--
+title: TppHeli2LocatorParameter
+permalink: /Entity_Reference/Tpp/GameCore/TppHeli2LocatorParameter
+tags: [Tpp, GameCore, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [GameCore](/Entity_Reference/Tpp/GameCore)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.DataElement → TppHeli2LocatorParameter
+
+```cpp
+TppHeli2LocatorParameter : Fox.Core.DataElement 
+```
+
+TODO: Description
+
+
+
+

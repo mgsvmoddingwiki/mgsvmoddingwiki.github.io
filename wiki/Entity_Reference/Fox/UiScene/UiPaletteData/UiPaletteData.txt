@@ -1,0 +1,24 @@
+<!--
+title: UiPaletteData
+permalink: /Entity_Reference/Fox/UiScene/UiPaletteData
+tags: [Fox, UiScene, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [UiScene](/Entity_Reference/Fox/UiScene)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Data → UiPaletteData
+
+```cpp
+UiPaletteData : Fox.Core.Data 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [colors](#colors) | TODO: Description |
+

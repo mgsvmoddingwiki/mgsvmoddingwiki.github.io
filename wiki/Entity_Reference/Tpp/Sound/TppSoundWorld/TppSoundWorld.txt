@@ -1,0 +1,46 @@
+<!--
+title: TppSoundWorld
+permalink: /Entity_Reference/Tpp/Sound/TppSoundWorld
+tags: [Tpp, Sound, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [Sound](/Entity_Reference/Tpp/Sound)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Data → TppSoundWorld
+
+```cpp
+TppSoundWorld : Fox.Core.Data 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [updateSeconds](#updateseconds) | TODO: Description |
+| [startMorning](#startmorning) | TODO: Description |
+| [midMorning](#midmorning) | TODO: Description |
+| [endMorning](#endmorning) | TODO: Description |
+| [startEvening](#startevening) | TODO: Description |
+| [midEvening](#midevening) | TODO: Description |
+| [endEvening](#endevening) | TODO: Description |
+| [situationEvent](#situationevent) | TODO: Description |
+| [clockRtpc](#clockrtpc) | TODO: Description |
+| [windVelocityRtpc](#windvelocityrtpc) | TODO: Description |
+| [windDirectionRtpc](#winddirectionrtpc) | TODO: Description |
+| [rainRtpc](#rainrtpc) | TODO: Description |
+| [heightRtpc](#heightrtpc) | TODO: Description |
+| [ambientParameter](#ambientparameter) | TODO: Description |
+| [categoryFpvStateGroup](#categoryfpvstategroup) | TODO: Description |
+| [categoryFpvStateValue](#categoryfpvstatevalue) | TODO: Description |
+| [dashStartEventName](#dashstarteventname) | TODO: Description |
+| [dashFinishEventName](#dashfinisheventname) | TODO: Description |
+| [blockedObstruction](#blockedobstruction) | TODO: Description |
+| [blockedOcclusion](#blockedocclusion) | TODO: Description |
+| [unlinkedObstruction](#unlinkedobstruction) | TODO: Description |
+| [unlinkedOcclusion](#unlinkedocclusion) | TODO: Description |
+| [interferenceSlope](#interferenceslope) | TODO: Description |
+

@@ -1,0 +1,27 @@
+<!--
+title: TppLocationInformationData
+permalink: /Entity_Reference/Tpp/System/TppLocationInformationData
+tags: [Tpp, System, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [System](/Entity_Reference/Tpp/System)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Data → TppLocationInformationData
+
+```cpp
+TppLocationInformationData : Fox.Core.Data 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [locationId](#locationid) | TODO: Description |
+| [locationPathString](#locationpathstring) | TODO: Description |
+| [locationType](#locationtype) | TODO: Description |
+| [loadScriptPath](#loadscriptpath) | TODO: Description |
+

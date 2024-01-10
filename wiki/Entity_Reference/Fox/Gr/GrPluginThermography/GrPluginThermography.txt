@@ -1,0 +1,21 @@
+<!--
+title: GrPluginThermography
+permalink: /Entity_Reference/Fox/Gr/GrPluginThermography
+tags: [Fox, Gr, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Gr](/Entity_Reference/Fox/Gr)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Gr.GrRenderPlugin → GrPluginThermography
+
+```cpp
+GrPluginThermography : Fox.Gr.GrRenderPlugin 
+```
+
+TODO: Description
+
+
+
+

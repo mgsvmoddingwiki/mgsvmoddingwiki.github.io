@@ -1,0 +1,21 @@
+<!--
+title: TppLandingZoneDataBody
+permalink: /Entity_Reference/Tpp/GameCore/TppLandingZoneDataBody
+tags: [Tpp, GameCore, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [GameCore](/Entity_Reference/Tpp/GameCore)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.TransformDataBody → TppLandingZoneDataBody
+
+```cpp
+TppLandingZoneDataBody : Fox.Core.TransformDataBody 
+```
+
+TODO: Description
+
+
+
+

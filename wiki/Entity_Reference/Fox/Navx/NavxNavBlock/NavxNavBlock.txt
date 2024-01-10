@@ -1,0 +1,41 @@
+<!--
+title: NavxNavBlock
+permalink: /Entity_Reference/Fox/Navx/NavxNavBlock
+tags: [Fox, Navx, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Navx](/Entity_Reference/Fox/Navx)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Data → NavxNavBlock
+
+```cpp
+NavxNavBlock : Fox.Core.Data 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [sceneName](#scenename) | TODO: Description |
+| [worldName](#worldname) | TODO: Description |
+| [tileId](#tileid) | TODO: Description |
+| [filePath](#filepath) | TODO: Description |
+| [filePtr](#fileptr) | TODO: Description |
+| [remainingFilePtr](#remainingfileptr) | TODO: Description |
+| [isSplit](#issplit) | TODO: Description |
+| [maxFileSizeInKb](#maxfilesizeinkb) | TODO: Description |
+| [useBlockParameter](#useblockparameter) | TODO: Description |
+| [verticalThreshold](#verticalthreshold) | TODO: Description |
+| [simplificationThreshold](#simplificationthreshold) | TODO: Description |
+| [doesHoleSimplification](#doesholesimplification) | TODO: Description |
+| [holeSimplificationConvexThreshold](#holesimplificationconvexthreshold) | TODO: Description |
+| [holeSimplificationObbExpandThreshold](#holesimplificationobbexpandthreshold) | TODO: Description |
+| [holeSimplificationObbToAabbThreshold](#holesimplificationobbtoaabbthreshold) | TODO: Description |
+| [holeSimplificationSmoothingThreshold](#holesimplificationsmoothingthreshold) | TODO: Description |
+| [isHoleSimplificationDoesNotClosePassage](#isholesimplificationdoesnotclosepassage) | TODO: Description |
+| [holeSimplificationReduceCount](#holesimplificationreducecount) | TODO: Description |
+

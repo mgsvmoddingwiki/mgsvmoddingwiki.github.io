@@ -1,0 +1,28 @@
+<!--
+title: SimEngineOnPhysicsDefaultInfo
+permalink: /Entity_Reference/Fox/Sim/SimEngineOnPhysicsDefaultInfo
+tags: [Fox, Sim, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Sim](/Entity_Reference/Fox/Sim)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.DataElement → SimEngineOnPhysicsDefaultInfo
+
+```cpp
+SimEngineOnPhysicsDefaultInfo : Fox.Core.DataElement 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [defaultRadius](#defaultradius) | TODO: Description |
+| [defaultLimit](#defaultlimit) | TODO: Description |
+| [defaultSpring](#defaultspring) | TODO: Description |
+| [defaultStopTwistFlag](#defaultstoptwistflag) | TODO: Description |
+| [defaultMass](#defaultmass) | TODO: Description |
+

@@ -1,0 +1,21 @@
+<!--
+title: GeoxGeomSetLoaderBody
+permalink: /Entity_Reference/Fox/Geox/GeoxGeomSetLoaderBody
+tags: [Fox, Geox, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Geox](/Entity_Reference/Fox/Geox)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.TransformDataBody → GeoxGeomSetLoaderBody
+
+```cpp
+GeoxGeomSetLoaderBody : Fox.Core.TransformDataBody 
+```
+
+TODO: Description
+
+
+
+

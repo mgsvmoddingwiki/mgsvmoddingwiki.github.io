@@ -1,0 +1,25 @@
+<!--
+title: TppBearLocatorParameter
+permalink: /Entity_Reference/Tpp/GameCore/TppBearLocatorParameter
+tags: [Tpp, GameCore, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [GameCore](/Entity_Reference/Tpp/GameCore)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.DataElement → TppBearLocatorParameter
+
+```cpp
+TppBearLocatorParameter : Fox.Core.DataElement 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [count](#count) | TODO: Description |
+| [radius](#radius) | TODO: Description |
+

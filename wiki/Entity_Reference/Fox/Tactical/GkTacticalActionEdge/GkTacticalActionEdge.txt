@@ -1,0 +1,25 @@
+<!--
+title: GkTacticalActionEdge
+permalink: /Entity_Reference/Fox/Tactical/GkTacticalActionEdge
+tags: [Fox, Tactical, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Tactical](/Entity_Reference/Fox/Tactical)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.DataElement → GkTacticalActionEdge
+
+```cpp
+GkTacticalActionEdge : Fox.Core.DataElement 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [actionName](#actionname) | TODO: Description |
+| [actionDirection](#actiondirection) | TODO: Description |
+

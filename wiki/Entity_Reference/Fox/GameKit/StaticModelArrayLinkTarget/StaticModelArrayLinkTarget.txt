@@ -1,0 +1,25 @@
+<!--
+title: StaticModelArrayLinkTarget
+permalink: /Entity_Reference/Fox/GameKit/StaticModelArrayLinkTarget
+tags: [Fox, GameKit, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [GameKit](/Entity_Reference/Fox/GameKit)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Data → StaticModelArrayLinkTarget
+
+```cpp
+StaticModelArrayLinkTarget : Fox.Core.Data 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [staticModelArray](#staticmodelarray) | TODO: Description |
+| [arrayIndex](#arrayindex) | TODO: Description |
+

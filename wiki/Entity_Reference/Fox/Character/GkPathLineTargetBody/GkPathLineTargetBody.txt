@@ -1,0 +1,21 @@
+<!--
+title: GkPathLineTargetBody
+permalink: /Entity_Reference/Fox/Character/GkPathLineTargetBody
+tags: [Fox, Character, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Character](/Entity_Reference/Fox/Character)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Graphx.GraphxPath → GkPathLineTargetBody
+
+```cpp
+GkPathLineTargetBody : Fox.Graphx.GraphxPath 
+```
+
+TODO: Description
+
+
+
+

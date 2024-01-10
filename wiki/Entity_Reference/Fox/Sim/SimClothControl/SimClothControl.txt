@@ -1,0 +1,27 @@
+<!--
+title: SimClothControl
+permalink: /Entity_Reference/Fox/Sim/SimClothControl
+tags: [Fox, Sim, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Sim](/Entity_Reference/Fox/Sim)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Sim.SimControlElement → SimClothControl
+
+```cpp
+SimClothControl : Fox.Sim.SimControlElement 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [controlParam](#controlparam) | TODO: Description |
+| [clothControlUnits](#clothcontrolunits) | TODO: Description |
+| [windCoefficient](#windcoefficient) | TODO: Description |
+| [isLoop](#isloop) | TODO: Description |
+

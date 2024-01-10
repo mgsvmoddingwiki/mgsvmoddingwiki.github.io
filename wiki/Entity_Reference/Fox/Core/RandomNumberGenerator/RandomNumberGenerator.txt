@@ -1,0 +1,23 @@
+<!--
+title: RandomNumberGenerator
+permalink: /Entity_Reference/Fox/Core/RandomNumberGenerator
+tags: [Fox, Core, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Core](/Entity_Reference/Fox/Core)\
+> Submodule: TODO: Submodule
+
+```cpp
+RandomNumberGenerator 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [seed](#seed) | TODO: Description |
+

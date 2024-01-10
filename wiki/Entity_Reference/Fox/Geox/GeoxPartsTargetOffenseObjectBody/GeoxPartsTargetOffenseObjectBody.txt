@@ -1,0 +1,21 @@
+<!--
+title: GeoxPartsTargetOffenseObjectBody
+permalink: /Entity_Reference/Fox/Geox/GeoxPartsTargetOffenseObjectBody
+tags: [Fox, Geox, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Geox](/Entity_Reference/Fox/Geox)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Geox.GeoxPartsTargetObjectBody → GeoxPartsTargetOffenseObjectBody
+
+```cpp
+GeoxPartsTargetOffenseObjectBody : Fox.Geox.GeoxPartsTargetObjectBody 
+```
+
+TODO: Description
+
+
+
+

@@ -261,6 +261,10 @@ a:active {
     color: var(--color-link-hover);
 }
 
+a.broken-link {
+    color: red !important;
+}
+
 /* Horizontal line */
 hr {
     height: var(--border-width);
@@ -330,14 +334,12 @@ td:last-child {
 
 body {
     max-width: 1280px;
-    background-color: var(--bg-page) !important; /* override unnecessary JS hiding */
+    background-color: var(--bg-page);
     color: var(--color-primary);
     font-family: var(--font-sans);
     font-size: var(--font-size-base);
     font-weight: var(--font-weight-base);
     line-height: var(--font-line-height);
-    opacity: 1; /* override unnecessary JS hiding */
-    visibility: visible; /* ditto */
     padding: var(--spacing-primary);
     margin: var(--spacing-primary) auto calc(var(--spacing-primary) * 2) auto;
     transition: max-width 150ms ease-out;
@@ -350,13 +352,6 @@ body.expanded-width-true {
 
 body.expanded-width-instant {
     transition: none; /* disable so on page load it's immediately wide */
-}
-
-/* Hide the theme background overlay + toggle button */
-.darkmode-background,
-.darkmode-layer,
-.darkmode-toggle {
-    display: none !important;
 }
 
 .clear {
@@ -373,6 +368,10 @@ li::marker,
 
 :target {
     scroll-margin-top: var(--spacing-primary); /* set distance that fragment identifier links should be from viewport top */
+}
+
+.hidden-generic {
+    display: none;
 }
 
 
@@ -947,6 +946,36 @@ body > .wrapper {
     margin: 0 0 50px 0;
 }
 
+/* Virtual pages */
+.vp-content .page-heading,
+.vp-content .tag-list-tag,
+.vp-content #git-wiki-content {
+    transition: opacity 250ms;
+}
+
+.vp-content.first-load:not(.loaded) .page-heading,
+.vp-content.first-load:not(.loaded) .tag-list-tag,
+.vp-content.first-load:not(.loaded) #git-wiki-content {
+    opacity: 0;
+}
+
+.vp-content:not(.first-load) .page-heading,
+.vp-content:not(.first-load) .tag-list-tag,
+.vp-content:not(.first-load) #git-wiki-content {
+    opacity: 1;
+}
+
+.vp-content.first-load:not(.loaded) #git-wiki-content {
+    max-height: 100vh; /* prevent long pages creating long scrollbar on initial load */
+    overflow: hidden;
+}
+
+.vp-content:not(.first-load) #git-wiki-content {
+    max-height: 100%;
+    overflow: inherit;
+}
+
+
 /* Breadcrumb links */
 .breadcrumb-list {
     font-size: var(--font-size-small);
@@ -990,10 +1019,12 @@ body > .wrapper {
 
 /* Page heading, category tag list */
 .page-heading {
+    word-break: break-word;
     margin-bottom: var(--spacing-secondary);
 }
 
 #tag-list {
+    display: block;
     margin-bottom: var(--spacing-intermediate);
 }
 
@@ -1138,8 +1169,8 @@ ol.split,
 ul.split,
 ol.index,
 ul.index,
-.index.single-list li > ol,
-.index.single-list li > ul {
+.index.full-width li > ol,
+.index.full-width li > ul {
     columns: 2;
     column-gap: var(--spacing-primary);
 }
@@ -1161,7 +1192,7 @@ blockquote.important {
 }
 
 /* Handle single first-level lists differently by adding columns to child list instead */
-.index.single-list {
+.index.full-width {
     columns: 1;
 }
 
@@ -1342,11 +1373,6 @@ h2.heading-with-frag-id .heading-frag-id-link {
 
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ IMAGES/VIDEO/ALIGNMENT ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-
-body.darkmode--activated img,
-body.darkmode--activated .darkmode-ignore {
-    mix-blend-mode: unset; /* override default theme's inversion of various images */
-}
 
 .git-wiki-page .image-wrapper,
 .git-wiki-page img,
@@ -2041,6 +2067,11 @@ body.darkmode--activated .darkmode-ignore {
     mask-image: url("/assets/images/ui.svg#icons-sidebar-page");
 }
 
+.icon-sidebar.icon-nodes::before {
+    -webkit-mask-image: url("/assets/images/ui.svg#icons-sidebar-nodes");
+    mask-image: url("/assets/images/ui.svg#icons-sidebar-nodes");
+}
+
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ MOBILE ELEMENTS ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
@@ -2478,8 +2509,8 @@ footer {
     ul.split,
     ol.index,
     ul.index,
-    .index.single-list li > ol,
-    .index.single-list li > ul {
+    .index.full-width li > ol,
+    .index.full-width li > ul {
         columns: 1;
     }
 

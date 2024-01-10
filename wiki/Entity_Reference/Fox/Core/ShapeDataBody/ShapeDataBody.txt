@@ -1,0 +1,21 @@
+<!--
+title: ShapeDataBody
+permalink: /Entity_Reference/Fox/Core/ShapeDataBody
+tags: [Fox, Core, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Core](/Entity_Reference/Fox/Core)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.TransformDataBody → ShapeDataBody
+
+```cpp
+ShapeDataBody : Fox.Core.TransformDataBody 
+```
+
+TODO: Description
+
+
+
+

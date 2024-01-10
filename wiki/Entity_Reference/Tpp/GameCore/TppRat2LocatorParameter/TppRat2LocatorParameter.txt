@@ -1,0 +1,24 @@
+<!--
+title: TppRat2LocatorParameter
+permalink: /Entity_Reference/Tpp/GameCore/TppRat2LocatorParameter
+tags: [Tpp, GameCore, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [GameCore](/Entity_Reference/Tpp/GameCore)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.DataElement → TppRat2LocatorParameter
+
+```cpp
+TppRat2LocatorParameter : Fox.Core.DataElement 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [count](#count) | TODO: Description |
+

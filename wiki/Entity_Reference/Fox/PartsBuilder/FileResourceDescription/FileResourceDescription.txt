@@ -1,0 +1,24 @@
+<!--
+title: FileResourceDescription
+permalink: /Entity_Reference/Fox/PartsBuilder/FileResourceDescription
+tags: [Fox, PartsBuilder, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [PartsBuilder](/Entity_Reference/Fox/PartsBuilder)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.PartsBuilder.PartDescription → FileResourceDescription
+
+```cpp
+FileResourceDescription : Fox.PartsBuilder.PartDescription 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [fileResource](#fileresource) | TODO: Description |
+

@@ -1,0 +1,21 @@
+<!--
+title: ObjectBrushPluginStaticModelBody
+permalink: /Entity_Reference/Fox/GameKit/ObjectBrushPluginStaticModelBody
+tags: [Fox, GameKit, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [GameKit](/Entity_Reference/Fox/GameKit)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.GameKit.ObjectBrushPluginBody → ObjectBrushPluginStaticModelBody
+
+```cpp
+ObjectBrushPluginStaticModelBody : Fox.GameKit.ObjectBrushPluginBody 
+```
+
+TODO: Description
+
+
+
+

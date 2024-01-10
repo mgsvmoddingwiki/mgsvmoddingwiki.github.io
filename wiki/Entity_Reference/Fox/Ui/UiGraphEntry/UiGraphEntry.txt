@@ -1,0 +1,25 @@
+<!--
+title: UiGraphEntry
+permalink: /Entity_Reference/Fox/Ui/UiGraphEntry
+tags: [Fox, Ui, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Ui](/Entity_Reference/Fox/Ui)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Data → UiGraphEntry
+
+```cpp
+UiGraphEntry : Fox.Core.Data 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [files](#files) | TODO: Description |
+| [rawFiles](#rawfiles) | TODO: Description |
+

@@ -1,0 +1,8 @@
+<!--
+title: Core
+permalink: /Entity_Reference/Fox/Core/
+tags: []
+-->
+
+{% include index-autolist type="section" %}
+

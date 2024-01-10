@@ -1,0 +1,24 @@
+<!--
+title: FoxTrapExecViewGroupControlCallbackDataElement
+permalink: /Entity_Reference/Fox/GameKit/FoxTrapExecViewGroupControlCallbackDataElement
+tags: [Fox, GameKit, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [GameKit](/Entity_Reference/Fox/GameKit)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Geo.GeoTrapModuleCallbackDataElement → FoxTrapExecViewGroupControlCallbackDataElement
+
+```cpp
+FoxTrapExecViewGroupControlCallbackDataElement : Fox.Geo.GeoTrapModuleCallbackDataElement 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [identify](#identify) | TODO: Description |
+

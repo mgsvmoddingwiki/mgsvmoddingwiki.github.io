@@ -1,0 +1,30 @@
+<!--
+title: BlockGroupData
+permalink: /Entity_Reference/Fox/Core/BlockGroupData
+tags: [Fox, Core, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Core](/Entity_Reference/Fox/Core)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Data → BlockGroupData
+
+```cpp
+BlockGroupData : Fox.Core.Data 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [blockMemorySize](#blockmemorysize) | TODO: Description |
+| [sizeOrder](#sizeorder) | TODO: Description |
+| [blockSizeInBytes](#blocksizeinbytes) | TODO: Description |
+| [blockCount](#blockcount) | TODO: Description |
+| [block](#block) | TODO: Description |
+| [relatedBlockGroups](#relatedblockgroups) | TODO: Description |
+| [prerequisiteBlockGroups](#prerequisiteblockgroups) | TODO: Description |
+

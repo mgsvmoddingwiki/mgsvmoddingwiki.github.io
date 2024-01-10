@@ -1,0 +1,24 @@
+<!--
+title: FxBaseLocator
+permalink: /Entity_Reference/Fox/Demo/FxBaseLocator
+tags: [Fox, Demo, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Demo](/Entity_Reference/Fox/Demo)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.TransformData → FxBaseLocator
+
+```cpp
+FxBaseLocator : Fox.Core.TransformData 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [drawText](#drawtext) | TODO: Description |
+

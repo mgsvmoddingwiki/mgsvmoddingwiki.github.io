@@ -1,0 +1,21 @@
+<!--
+title: OccluderArrayFile
+permalink: /Entity_Reference/Fox/Grx/OccluderArrayFile
+tags: [Fox, Grx, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Grx](/Entity_Reference/Fox/Grx)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.RawFile → OccluderArrayFile
+
+```cpp
+OccluderArrayFile : Fox.Core.RawFile 
+```
+
+TODO: Description
+
+
+
+

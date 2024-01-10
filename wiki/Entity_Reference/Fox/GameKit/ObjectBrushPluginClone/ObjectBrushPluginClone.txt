@@ -1,0 +1,28 @@
+<!--
+title: ObjectBrushPluginClone
+permalink: /Entity_Reference/Fox/GameKit/ObjectBrushPluginClone
+tags: [Fox, GameKit, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [GameKit](/Entity_Reference/Fox/GameKit)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.GameKit.ObjectBrushPlugin → ObjectBrushPluginClone
+
+```cpp
+ObjectBrushPluginClone : Fox.GameKit.ObjectBrushPlugin 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [modelFile](#modelfile) | TODO: Description |
+| [minSize](#minsize) | TODO: Description |
+| [maxSize](#maxsize) | TODO: Description |
+| [enableLod](#enablelod) | TODO: Description |
+| [modelRejectionLevel](#modelrejectionlevel) | TODO: Description |
+

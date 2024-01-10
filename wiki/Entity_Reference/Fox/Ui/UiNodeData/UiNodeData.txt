@@ -1,0 +1,38 @@
+<!--
+title: UiNodeData
+permalink: /Entity_Reference/Fox/Ui/UiNodeData
+tags: [Fox, Ui, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Ui](/Entity_Reference/Fox/Ui)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Data → UiNodeData
+
+```cpp
+UiNodeData : Fox.Core.Data 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [inputEdges](#inputedges) | TODO: Description |
+| [outputEdges](#outputedges) | TODO: Description |
+| [inputPortCount](#inputportcount) | TODO: Description |
+| [inputPortTypes](#inputporttypes) | TODO: Description |
+| [inputPropertyNames](#inputpropertynames) | TODO: Description |
+| [inputPropertyTypes](#inputpropertytypes) | TODO: Description |
+| [outputPortCount](#outputportcount) | TODO: Description |
+| [outputPortTypes](#outputporttypes) | TODO: Description |
+| [outputPropertyNames](#outputpropertynames) | TODO: Description |
+| [outputPropertyTypes](#outputpropertytypes) | TODO: Description |
+| [xPosition](#xposition) | TODO: Description |
+| [yPosition](#yposition) | TODO: Description |
+| [category](#category) | TODO: Description |
+| [type](#type) | TODO: Description |
+| [nodeName](#nodename) | TODO: Description |
+

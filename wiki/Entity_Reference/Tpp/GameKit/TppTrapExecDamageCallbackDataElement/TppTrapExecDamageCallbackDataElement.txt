@@ -1,0 +1,25 @@
+<!--
+title: TppTrapExecDamageCallbackDataElement
+permalink: /Entity_Reference/Tpp/GameKit/TppTrapExecDamageCallbackDataElement
+tags: [Tpp, GameKit, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [GameKit](/Entity_Reference/Tpp/GameKit)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Geo.GeoTrapModuleCallbackDataElement → TppTrapExecDamageCallbackDataElement
+
+```cpp
+TppTrapExecDamageCallbackDataElement : Fox.Geo.GeoTrapModuleCallbackDataElement 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [onlyOnce](#onlyonce) | TODO: Description |
+| [offenseName](#offensename) | TODO: Description |
+

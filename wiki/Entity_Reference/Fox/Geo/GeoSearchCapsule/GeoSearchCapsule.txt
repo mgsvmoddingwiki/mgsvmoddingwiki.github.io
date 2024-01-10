@@ -1,0 +1,25 @@
+<!--
+title: GeoSearchCapsule
+permalink: /Entity_Reference/Fox/Geo/GeoSearchCapsule
+tags: [Fox, Geo, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Geo](/Entity_Reference/Fox/Geo)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Geo.GeoSearchObject → GeoSearchCapsule
+
+```cpp
+GeoSearchCapsule : Fox.Geo.GeoSearchObject 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [p0](#p0) | TODO: Description |
+| [p1](#p1) | TODO: Description |
+

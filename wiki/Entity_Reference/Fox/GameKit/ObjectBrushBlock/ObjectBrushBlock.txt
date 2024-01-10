@@ -1,0 +1,27 @@
+<!--
+title: ObjectBrushBlock
+permalink: /Entity_Reference/Fox/GameKit/ObjectBrushBlock
+tags: [Fox, GameKit, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [GameKit](/Entity_Reference/Fox/GameKit)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Data → ObjectBrushBlock
+
+```cpp
+ObjectBrushBlock : Fox.Core.Data 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [filePath](#filepath) | TODO: Description |
+| [obrbFile](#obrbfile) | TODO: Description |
+| [blockId](#blockid) | TODO: Description |
+| [objectBrushName](#objectbrushname) | TODO: Description |
+

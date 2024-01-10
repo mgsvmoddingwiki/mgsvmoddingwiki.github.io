@@ -1,0 +1,21 @@
+<!--
+title: UiPaletteDataBody
+permalink: /Entity_Reference/Fox/UiScene/UiPaletteDataBody
+tags: [Fox, UiScene, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [UiScene](/Entity_Reference/Fox/UiScene)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.DataBody → UiPaletteDataBody
+
+```cpp
+UiPaletteDataBody : Fox.Core.DataBody 
+```
+
+TODO: Description
+
+
+
+

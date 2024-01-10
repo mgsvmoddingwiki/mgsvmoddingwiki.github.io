@@ -1,0 +1,30 @@
+<!--
+title: DesEffectData
+permalink: /Entity_Reference/Fox/Des/DesEffectData
+tags: [Fox, Des, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Des](/Entity_Reference/Fox/Des)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Data → DesEffectData
+
+```cpp
+DesEffectData : Fox.Core.Data 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [effectFilePath](#effectfilepath) | TODO: Description |
+| [effectName](#effectname) | TODO: Description |
+| [setModelName](#setmodelname) | TODO: Description |
+| [connectPointFilePath](#connectpointfilepath) | TODO: Description |
+| [connectPointName](#connectpointname) | TODO: Description |
+| [effectFlag](#effectflag) | TODO: Description |
+| [randomSeed](#randomseed) | TODO: Description |
+

@@ -1,0 +1,25 @@
+<!--
+title: UInt8StringMapPropertyDifference
+permalink: /Entity_Reference/Fox/Core/UInt8StringMapPropertyDifference
+tags: [Fox, Core, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Core](/Entity_Reference/Fox/Core)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.PropertyDifference → UInt8StringMapPropertyDifference
+
+```cpp
+UInt8StringMapPropertyDifference : Fox.Core.PropertyDifference 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [originalValues](#originalvalues) | TODO: Description |
+| [values](#values) | TODO: Description |
+

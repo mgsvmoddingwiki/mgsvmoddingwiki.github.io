@@ -13,4 +13,4 @@ The second is of all pages in the wiki. Useful for finding titles in page if the
 
 ## Pages
 
-{% include index-autolist type="all-pages" %}
+{% include index-autolist type="all-pages" %}{:.small}

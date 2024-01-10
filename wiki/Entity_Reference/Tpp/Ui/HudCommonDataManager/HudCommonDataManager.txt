@@ -1,0 +1,21 @@
+<!--
+title: HudCommonDataManager
+permalink: /Entity_Reference/Tpp/Ui/HudCommonDataManager
+tags: [Tpp, Ui, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [Ui](/Entity_Reference/Tpp/Ui)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Entity → HudCommonDataManager
+
+```cpp
+HudCommonDataManager : Fox.Core.Entity 
+```
+
+TODO: Description
+
+
+
+

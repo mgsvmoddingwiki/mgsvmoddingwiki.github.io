@@ -1,0 +1,25 @@
+<!--
+title: WideVector3StringMapPropertyDifference
+permalink: /Entity_Reference/Fox/Core/WideVector3StringMapPropertyDifference
+tags: [Fox, Core, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Core](/Entity_Reference/Fox/Core)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.PropertyDifference → WideVector3StringMapPropertyDifference
+
+```cpp
+WideVector3StringMapPropertyDifference : Fox.Core.PropertyDifference 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [originalValues](#originalvalues) | TODO: Description |
+| [values](#values) | TODO: Description |
+

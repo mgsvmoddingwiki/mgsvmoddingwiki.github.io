@@ -1,0 +1,24 @@
+<!--
+title: TppTrapExecLostHostageCallbackDataElement
+permalink: /Entity_Reference/Tpp/GameCore/TppTrapExecLostHostageCallbackDataElement
+tags: [Tpp, GameCore, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [GameCore](/Entity_Reference/Tpp/GameCore)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Geo.GeoTrapModuleCallbackDataElement → TppTrapExecLostHostageCallbackDataElement
+
+```cpp
+TppTrapExecLostHostageCallbackDataElement : Fox.Geo.GeoTrapModuleCallbackDataElement 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [hostageName](#hostagename) | TODO: Description |
+

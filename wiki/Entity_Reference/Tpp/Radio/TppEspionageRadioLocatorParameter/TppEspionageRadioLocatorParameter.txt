@@ -1,0 +1,27 @@
+<!--
+title: TppEspionageRadioLocatorParameter
+permalink: /Entity_Reference/Tpp/Radio/TppEspionageRadioLocatorParameter
+tags: [Tpp, Radio, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [Radio](/Entity_Reference/Tpp/Radio)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.DataElement → TppEspionageRadioLocatorParameter
+
+```cpp
+TppEspionageRadioLocatorParameter : Fox.Core.DataElement 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [radioLocatorId](#radiolocatorid) | TODO: Description |
+| [minDistance](#mindistance) | TODO: Description |
+| [maxDistance](#maxdistance) | TODO: Description |
+| [angle](#angle) | TODO: Description |
+

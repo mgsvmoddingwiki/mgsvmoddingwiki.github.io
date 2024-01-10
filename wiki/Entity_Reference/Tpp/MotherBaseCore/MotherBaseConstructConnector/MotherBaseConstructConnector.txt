@@ -1,0 +1,21 @@
+<!--
+title: MotherBaseConstructConnector
+permalink: /Entity_Reference/Tpp/MotherBaseCore/MotherBaseConstructConnector
+tags: [Tpp, MotherBaseCore, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [MotherBaseCore](/Entity_Reference/Tpp/MotherBaseCore)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Entity → MotherBaseConstructConnector
+
+```cpp
+MotherBaseConstructConnector : Fox.Core.Entity 
+```
+
+TODO: Description
+
+
+
+

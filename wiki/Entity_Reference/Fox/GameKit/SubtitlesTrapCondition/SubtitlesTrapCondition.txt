@@ -1,0 +1,26 @@
+<!--
+title: SubtitlesTrapCondition
+permalink: /Entity_Reference/Fox/GameKit/SubtitlesTrapCondition
+tags: [Fox, GameKit, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [GameKit](/Entity_Reference/Fox/GameKit)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Geo.GeoTrapCondition → SubtitlesTrapCondition
+
+```cpp
+SubtitlesTrapCondition : Fox.Geo.GeoTrapCondition 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [targetTags](#targettags) | TODO: Description |
+| [enterSubtitlesFileName](#entersubtitlesfilename) | TODO: Description |
+| [outSubtitlesFileName](#outsubtitlesfilename) | TODO: Description |
+

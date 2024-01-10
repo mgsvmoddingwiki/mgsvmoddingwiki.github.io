@@ -1,0 +1,21 @@
+<!--
+title: TargetExtensionData
+permalink: /Entity_Reference/Fox/Geo/TargetExtensionData
+tags: [Fox, Geo, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Geo](/Entity_Reference/Fox/Geo)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Entity → TargetExtensionData
+
+```cpp
+TargetExtensionData : Fox.Core.Entity 
+```
+
+TODO: Description
+
+
+
+

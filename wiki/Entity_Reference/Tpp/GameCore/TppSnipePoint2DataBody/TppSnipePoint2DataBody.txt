@@ -1,0 +1,21 @@
+<!--
+title: TppSnipePoint2DataBody
+permalink: /Entity_Reference/Tpp/GameCore/TppSnipePoint2DataBody
+tags: [Tpp, GameCore, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [GameCore](/Entity_Reference/Tpp/GameCore)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.TransformDataBody → TppSnipePoint2DataBody
+
+```cpp
+TppSnipePoint2DataBody : Fox.Core.TransformDataBody 
+```
+
+TODO: Description
+
+
+
+

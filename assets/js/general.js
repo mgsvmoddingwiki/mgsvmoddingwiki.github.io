@@ -1,15 +1,4 @@
-// ----------------------------- Peripheral -----------------------------
-function getKeyByValue(object, value) {
-    return Object.keys(object).find(key => object[key] === value)
-}
-
-function getIndexByValue(array, key, value) {
-    return array.findIndex(obj => obj[key] == value);
-}
-
-function matchObjVal(object, value) {
-    return Object.values(object).includes(value)
-}
+import * as func from './functions.js';
 
 // ---------------------- Toolbar: button functions ---------------------
 const buttonsMenu = body.querySelector('.git-wiki-tools');
@@ -36,20 +25,25 @@ function expandPageWidthTooltip(expand) {
 // Overflow menu
 const moreOptionsMenu = buttonsMenu.querySelector('.more-options');
 body.addEventListener('click', (e) => {
-    // Detect if clicked within menu
+    // Dismiss mobile menu if clicked outside it
+    if (e.target.closest('.menu-open .git-wiki-page')) {
+        mobileMainMenuToggle();
+    }
+
+    // Detect if clicked within overflow menu
     if (e.target.closest('.more-options')) {
         if (e.target.classList.contains('primary-button')) {
             if (!moreOptionsMenu.classList.contains('menu-open')) {
-                visible(true);
+                moreOptionsVisible(true);
             } else {
-                visible(false);
+                moreOptionsVisible(false);
             }
         }
         return;
     }
-    visible(false); // Dismiss if clicked elsewhere
+    moreOptionsVisible(false); // Dismiss if clicked elsewhere
 
-    function visible(state) {
+    function moreOptionsVisible(state) {
         moreOptionsMenu.classList.toggle('menu-open', state);
         moreOptionsMenu.parentNode.classList.toggle('menu-visible', state);
     }
@@ -74,8 +68,8 @@ const themeRadio = themeButtons.light.closest('.menu-radio');
 radioButtonActivate(themeButtons, checkTheme());
 
 themeRadio.addEventListener('click', (e) => {
-    if (matchObjVal(themeButtons, e.target)) {
-        var themeType = getKeyByValue(themeButtons, e.target);
+    if (func.matchObjVal(themeButtons, e.target)) {
+        var themeType = func.getKeyByValue(themeButtons, e.target);
         setClassSetting(body, themeType, themeClassPrefix);
         radioButtonActivate(themeButtons, themeType);
     }
@@ -97,8 +91,8 @@ radioButtonActivate(graphicButtons, checkGraphic(Object.keys(graphicButtons)[0])
 
 graphicRadio.addEventListener('click', (e) => {
     const defaultClass = graphicClassPrefix + '-' + Object.keys(graphicButtons)[0];
-    if (matchObjVal(graphicButtons, e.target)) {
-        var graphicType = getKeyByValue(graphicButtons, e.target);
+    if (func.matchObjVal(graphicButtons, e.target)) {
+        var graphicType = func.getKeyByValue(graphicButtons, e.target);
         var currentClass = graphicClassPrefix + '-' + graphicType;
         var priorClass = checkPriorClass(body, graphicClassPrefix, defaultClass); // store the last used image class for transition purposes
         var inlineStyle = '--header-graphic-from: var(--' + priorClass + '); --header-graphic-to: var(--' + currentClass + ')';
@@ -136,147 +130,155 @@ function captureClass(el, prefix) {
 
 
 // --------------------------- Image handling ---------------------------
-var imgs = body.querySelectorAll('.git-wiki-page img');
-imgs.forEach(img => {
+func.checkVp(images);
+function images() {
+    var imgs = body.querySelectorAll('.git-wiki-page img');
+    imgs.forEach(img => {
 
-    // Wrap images in container
-    // Check if image already wrapped in link element (to not override it)
-    if (img.parentElement.tagName.toLowerCase() === 'a') {
-        var wrapperExists = true;
-        var wrapper = img.parentElement;
-    } else {
-        var wrapper = document.createElement('div');
-    }
+        // Wrap images in container
+        // Check if image already wrapped in link element (to not override it)
+        if (img.parentElement.tagName.toLowerCase() === 'a') {
+            var wrapperExists = true;
+            var wrapper = img.parentElement;
+        } else {
+            var wrapper = document.createElement('div');
+        }
 
-    wrapper.classList.add(...img.classList); // copy img classes to link instead
-    wrapper.classList.add('image-wrapper');
-    img.removeAttribute('class');
-    if (!wrapperExists) {
-        img.setAttribute('data-zoomable','');
-        wrapper.appendChild(img.cloneNode(true));
-        img.parentNode.replaceChild(wrapper, img);
-    }
+        wrapper.classList.add(...img.classList); // copy img classes to link instead
+        wrapper.classList.add('image-wrapper');
+        img.removeAttribute('class');
+        if (!wrapperExists) {
+            img.setAttribute('data-zoomable','');
+            wrapper.appendChild(img.cloneNode(true));
+            img.parentNode.replaceChild(wrapper, img);
+        }
 
-    // Create caption element if image has alt text
-    if (img.getAttribute('alt')) {
-        var caption = document.createElement('small');
-        caption.classList.add('caption');
-        caption.textContent += img.getAttribute('alt');
-        wrapper.appendChild(caption);
-    }
+        // Create caption element if image has alt text
+        if (img.getAttribute('alt')) {
+            var caption = document.createElement('small');
+            caption.classList.add('caption');
+            caption.textContent += img.getAttribute('alt');
+            wrapper.appendChild(caption);
+        }
 
-});
+    });
+}
 
 
 // ---------------------- Image handling: lightbox ----------------------
 const cssStyle = getComputedStyle(body);
 var cssSpacing = Number(cssStyle.getPropertyValue('--spacing-lightbox').replace('px','')); // obtain variable from CSS, convert to integer
 
-const zoom = mediumZoom('[data-zoomable]', {
-    margin: cssSpacing
-});
+func.checkVp(lightbox);
+function lightbox() {
+    const zoom = mediumZoom('[data-zoomable]', {
+        margin: cssSpacing
+    });
 
-// Detect arrow left/right presses for image navigation
-const attachKeyEvents = e => {
-    document.addEventListener('keyup', handleKey, false)
-}
-const detachKeyEvents = e => {
-    document.removeEventListener('keyup', handleKey, false)
-}
-const handleKey = e => {
-    const images = zoom.getImages();
-    const currentImageIndex = images.indexOf(zoom.getZoomedImage());
-    let target
-
-    if (images.length <= 1) {
-        return
+    // Detect arrow left/right presses for image navigation
+    const attachKeyEvents = e => {
+        document.addEventListener('keyup', handleKey, false)
     }
-
-    switch (e.code) {
-        case 'ArrowLeft':
-            target = currentImageIndex - 1 < 0 ?
-                images[images.length - 1] : images[currentImageIndex - 1]
-            switchNav();
-            break;
-        case 'ArrowRight':
-            target = currentImageIndex + 1 >= images.length ?
-                images[0] : images[currentImageIndex + 1]
-            switchNav();
-            break;
-        default:
-            break;
+    const detachKeyEvents = e => {
+        document.removeEventListener('keyup', handleKey, false)
     }
+    const handleKey = e => {
+        const images = zoom.getImages();
+        const currentImageIndex = images.indexOf(zoom.getZoomedImage());
+        let target
 
-    function switchNav() {
-        // Check if element descendant of spoiler element and if it's in open state. If not, open it, to avoid image navigation glitches when spoiler is closed.
-        if (target.closest('details')) {
-            if (target.closest('details').open != open) {
-                target.closest('details').open = true;
-            }
-            // Account for two-level nested spoilers
-            if (target.closest('details details')) {
-                if (target.closest('details').parentElement.open != open) {
-                    target.closest('details').parentElement.open = true;
-                }
-            }
+        if (images.length <= 1) {
+            return
         }
 
-        target.scrollIntoView({
-            block: 'nearest',
-            behavior: 'smooth',
-        });
-        zoom.close().then(() => {
-            zoom.open({
-                target: target
+        switch (e.code) {
+            case 'ArrowLeft':
+                target = currentImageIndex - 1 < 0 ?
+                    images[images.length - 1] : images[currentImageIndex - 1]
+                switchNav();
+                break;
+            case 'ArrowRight':
+                target = currentImageIndex + 1 >= images.length ?
+                    images[0] : images[currentImageIndex + 1]
+                switchNav();
+                break;
+            default:
+                break;
+        }
+
+        function switchNav() {
+            // Check if element descendant of spoiler element and if it's in open state. If not, open it, to avoid image navigation glitches when spoiler is closed.
+            if (target.closest('details')) {
+                if (target.closest('details').open != open) {
+                    target.closest('details').open = true;
+                }
+                // Account for two-level nested spoilers
+                if (target.closest('details details')) {
+                    if (target.closest('details').parentElement.open != open) {
+                        target.closest('details').parentElement.open = true;
+                    }
+                }
+            }
+
+            target.scrollIntoView({
+                block: 'nearest',
+                behavior: 'smooth',
             });
-        });
+            zoom.close().then(() => {
+                zoom.open({
+                    target: target
+                });
+            });
+
+        }
 
     }
 
+    zoom.on('open', attachKeyEvents);
+    zoom.on('close', detachKeyEvents);
 }
-
-zoom.on('open', attachKeyEvents);
-zoom.on('close', detachKeyEvents);
-
-
-// --------------------------- Video handling ---------------------------
-var videos = body.querySelectorAll('.git-wiki-page video');
-videos.forEach(video => {
-    video.volume = 0.5; // set default volume to 50%
-});
 
 
 // ------------------------------- Infobox ------------------------------
 // Replace 'Site', 'Download' link names with names of hostname from URL
-var iblinks = body.querySelectorAll('.infobox a');
-iblinks.forEach(iblink => {
-    // https://stackoverflow.com/a/8498629
-    var matches = iblink.href.match(/^https?\:\/\/([^\/?#]+)(?:[\/?#]|$)/i);
-    var domain = matches && matches[1];  // domain will be null if no match is found
-    iblink.innerHTML = domain.replace('www.','');
-});
+func.checkVp(infoboxes);
+function infoboxes() {
+    var iblinks = body.querySelectorAll('.infobox a');
+    iblinks.forEach(iblink => {
+        // https://stackoverflow.com/a/8498629
+        var matches = iblink.href.match(/^https?\:\/\/([^\/?#]+)(?:[\/?#]|$)/i);
+        var domain = matches && matches[1];  // domain will be null if no match is found
+        iblink.innerHTML = domain.replace('www.','');
+    });
+}
 
 
 // ----------------------------- Index lists ----------------------------
-var listIndexes = body.querySelectorAll('.git-wiki-page .index');
-listIndexes.forEach(listIndex => {
-    // Add unique class if only has single first-level list item
-    if (!listIndex.children[1]) {
-        listIndex.classList.add('single-list');
-    }
-});
+func.checkVp(indexLists);
+function indexLists() {
+    var listIndexes = body.querySelectorAll('.git-wiki-page .index');
+    listIndexes.forEach(listIndex => {
+        // Add unique class if only has single first-level list item
+        if (!listIndex.children[1]) {
+            listIndex.classList.add('full-width');
+        }
+    });
+}
 
 
 // -------------------------- Content headings --------------------------
 // Add fragment identifier links on hover
-var contentHeadings = body.querySelectorAll('.git-wiki-page h2, .git-wiki-page h3, .git-wiki-page h4'); // add to h4, too, even if not included in ToC
-contentHeadings.forEach(heading => {
-    heading.classList.add('heading-with-frag-id');
-    let link = document.createElement('a');
-    link.classList.add('heading-frag-id-link','iconed');
-    link.setAttribute('href', '#' + heading.getAttribute('id'));
-    heading.appendChild(link);
-});
+func.checkVp(headingFragIds);
+function headingFragIds() {
+    var contentHeadings = body.querySelectorAll('.git-wiki-page h2, .git-wiki-page h3, .git-wiki-page h4'); // add to h4, too, even if not included in ToC
+    contentHeadings.forEach(heading => {
+        heading.classList.add('heading-with-frag-id');
+        let link = document.createElement('a');
+        link.classList.add('heading-frag-id-link','iconed');
+        link.setAttribute('href', '#' + heading.getAttribute('id'));
+        heading.appendChild(link);
+    });
+}
 
 
 // ---------------------------- Mobile header ---------------------------
@@ -297,22 +299,22 @@ window.onscroll = function() {
 }
 
 // Override default hamburger menu inline onclick behavior
+var pageWrapper = body.querySelector('body > .wrapper'),
+    rootHtml = document.querySelector('html');
 const mobileHamburger = body.querySelector('#git-wiki-mobile-header > button');
-const pageWrapper = body.querySelector('body > .wrapper');
-mobileHamburger.setAttribute('onclick','mobileMainMenuToggle()');
+mobileHamburger.removeAttribute('onclick'); // disable default theme onclick behavior
+mobileHamburger.addEventListener('click', (e) => {
+    mobileMainMenuToggle();
+});
 
 function mobileMainMenuToggle() {
-    const rootHtml = document.querySelector('html');
-    const dismissEl = body.querySelector('.git-wiki-page');
     if (pageWrapper.classList.contains('menu-open')) {
         rootHtml.removeAttribute('style');
-        dismissEl.removeAttribute('onclick');
         pageWrapper.classList.remove('menu-open');
         pageWrapper.classList.add('menu-closed');
     } else {
         // Prevent underlying page from being scrollable so header doesn't get dismissed on scroll
         rootHtml.setAttribute('style','overflow: hidden');
-        dismissEl.setAttribute('onclick','mobileMainMenuToggle()'); // crude method to dismiss menu by clicking elsewhere
         pageWrapper.classList.remove('menu-closed');
         pageWrapper.classList.add('menu-open');
     }

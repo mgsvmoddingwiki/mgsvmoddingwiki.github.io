@@ -1,0 +1,21 @@
+<!--
+title: GrPluginRawDecal
+permalink: /Entity_Reference/Fox/Gr/GrPluginRawDecal
+tags: [Fox, Gr, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Gr](/Entity_Reference/Fox/Gr)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Gr.GrRenderPlugin → GrPluginRawDecal
+
+```cpp
+GrPluginRawDecal : Fox.Gr.GrRenderPlugin 
+```
+
+TODO: Description
+
+
+
+

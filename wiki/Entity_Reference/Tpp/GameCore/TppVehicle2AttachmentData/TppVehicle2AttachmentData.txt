@@ -1,0 +1,30 @@
+<!--
+title: TppVehicle2AttachmentData
+permalink: /Entity_Reference/Tpp/GameCore/TppVehicle2AttachmentData
+tags: [Tpp, GameCore, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [GameCore](/Entity_Reference/Tpp/GameCore)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Data → TppVehicle2AttachmentData
+
+```cpp
+TppVehicle2AttachmentData : Fox.Core.Data 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [vehicleTypeCode](#vehicletypecode) | TODO: Description |
+| [attachmentImplTypeIndex](#attachmentimpltypeindex) | TODO: Description |
+| [attachmentFile](#attachmentfile) | TODO: Description |
+| [attachmentInstanceCount](#attachmentinstancecount) | TODO: Description |
+| [bodyCnpName](#bodycnpname) | TODO: Description |
+| [attachmentBoneName](#attachmentbonename) | TODO: Description |
+| [weaponParams](#weaponparams) | TODO: Description |
+

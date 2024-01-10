@@ -1,0 +1,31 @@
+<!--
+title: TppLensFlareShapeArray
+permalink: /Entity_Reference/Tpp/Effect/TppLensFlareShapeArray
+tags: [Tpp, Effect, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [Effect](/Entity_Reference/Tpp/Effect)\
+> Submodule: TODO: Submodule\
+> Inheritance: Tpp.Effect.TppLensFlareShape → TppLensFlareShapeArray
+
+```cpp
+TppLensFlareShapeArray : Tpp.Effect.TppLensFlareShape 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [spriteCount](#spritecount) | TODO: Description |
+| [offsetScaleMin](#offsetscalemin) | TODO: Description |
+| [offsetScaleMax](#offsetscalemax) | TODO: Description |
+| [sizeScaleMin](#sizescalemin) | TODO: Description |
+| [sizeScaleMax](#sizescalemax) | TODO: Description |
+| [randomColorMin](#randomcolormin) | TODO: Description |
+| [randomColorMax](#randomcolormax) | TODO: Description |
+| [randomSeed](#randomseed) | TODO: Description |
+

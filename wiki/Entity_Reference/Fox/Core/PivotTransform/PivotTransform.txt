@@ -1,0 +1,24 @@
+<!--
+title: PivotTransform
+permalink: /Entity_Reference/Fox/Core/PivotTransform
+tags: [Fox, Core, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Core](/Entity_Reference/Fox/Core)\
+> Submodule: TODO: Submodule
+
+```cpp
+PivotTransform 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [pivot](#pivot) | TODO: Description |
+| [pivotTranslation](#pivottranslation) | TODO: Description |
+

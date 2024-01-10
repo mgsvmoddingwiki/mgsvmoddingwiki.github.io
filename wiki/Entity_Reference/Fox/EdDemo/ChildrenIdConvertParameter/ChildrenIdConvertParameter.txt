@@ -1,0 +1,34 @@
+<!--
+title: ChildrenIdConvertParameter
+permalink: /Entity_Reference/Fox/EdDemo/ChildrenIdConvertParameter
+tags: [Fox, EdDemo, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [EdDemo](/Entity_Reference/Fox/EdDemo)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Demo.DemoParameter → ChildrenIdConvertParameter
+
+```cpp
+ChildrenIdConvertParameter : Fox.Demo.DemoParameter 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [injuryId](#injuryid) | TODO: Description |
+| [yellowHoodId](#yellowhoodid) | TODO: Description |
+| [afloId](#afloid) | TODO: Description |
+| [shortAfloId](#shortafloid) | TODO: Description |
+| [blackCoatId](#blackcoatid) | TODO: Description |
+| [injuryPriority](#injurypriority) | TODO: Description |
+| [yellowHoodPriority](#yellowhoodpriority) | TODO: Description |
+| [afloPriority](#aflopriority) | TODO: Description |
+| [shortAfloPriority](#shortaflopriority) | TODO: Description |
+| [blackCoatPriority](#blackcoatpriority) | TODO: Description |
+| [enableInjuredChildSpecialization](#enableinjuredchildspecialization) | TODO: Description |
+

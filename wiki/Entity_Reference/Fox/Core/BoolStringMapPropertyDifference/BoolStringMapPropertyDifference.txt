@@ -1,0 +1,25 @@
+<!--
+title: BoolStringMapPropertyDifference
+permalink: /Entity_Reference/Fox/Core/BoolStringMapPropertyDifference
+tags: [Fox, Core, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Core](/Entity_Reference/Fox/Core)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.PropertyDifference → BoolStringMapPropertyDifference
+
+```cpp
+BoolStringMapPropertyDifference : Fox.Core.PropertyDifference 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [originalValues](#originalvalues) | TODO: Description |
+| [values](#values) | TODO: Description |
+

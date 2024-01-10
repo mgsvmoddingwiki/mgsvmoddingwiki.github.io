@@ -1,0 +1,21 @@
+<!--
+title: SimControlParam
+permalink: /Entity_Reference/Fox/Sim/SimControlParam
+tags: [Fox, Sim, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Sim](/Entity_Reference/Fox/Sim)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Entity → SimControlParam
+
+```cpp
+SimControlParam : Fox.Core.Entity 
+```
+
+TODO: Description
+
+
+
+

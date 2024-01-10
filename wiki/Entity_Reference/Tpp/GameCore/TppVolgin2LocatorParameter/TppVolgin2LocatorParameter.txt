@@ -1,0 +1,24 @@
+<!--
+title: TppVolgin2LocatorParameter
+permalink: /Entity_Reference/Tpp/GameCore/TppVolgin2LocatorParameter
+tags: [Tpp, GameCore, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [GameCore](/Entity_Reference/Tpp/GameCore)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.DataElement → TppVolgin2LocatorParameter
+
+```cpp
+TppVolgin2LocatorParameter : Fox.Core.DataElement 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [identifier](#identifier) | TODO: Description |
+

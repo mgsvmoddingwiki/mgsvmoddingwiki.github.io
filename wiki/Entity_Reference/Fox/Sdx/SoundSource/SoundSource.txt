@@ -1,0 +1,27 @@
+<!--
+title: SoundSource
+permalink: /Entity_Reference/Fox/Sdx/SoundSource
+tags: [Fox, Sdx, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Sdx](/Entity_Reference/Fox/Sdx)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.TransformData → SoundSource
+
+```cpp
+SoundSource : Fox.Core.TransformData 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [eventName](#eventname) | TODO: Description |
+| [shapes](#shapes) | TODO: Description |
+| [lodRange](#lodrange) | TODO: Description |
+| [playRange](#playrange) | TODO: Description |
+
