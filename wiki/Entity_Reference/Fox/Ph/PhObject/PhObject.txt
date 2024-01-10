@@ -1,0 +1,25 @@
+<!--
+title: PhObject
+permalink: /Entity_Reference/Fox/Ph/PhObject
+tags: [Fox, Ph, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Ph](/Entity_Reference/Fox/Ph)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.TransformData → PhObject
+
+```cpp
+PhObject : Fox.Core.TransformData 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [param](#param) | TODO: Description |
+| [worldName](#worldname) | TODO: Description |
+

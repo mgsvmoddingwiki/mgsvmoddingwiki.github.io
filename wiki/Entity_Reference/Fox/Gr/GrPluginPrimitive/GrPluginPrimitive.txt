@@ -1,0 +1,21 @@
+<!--
+title: GrPluginPrimitive
+permalink: /Entity_Reference/Fox/Gr/GrPluginPrimitive
+tags: [Fox, Gr, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Gr](/Entity_Reference/Fox/Gr)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Gr.GrRenderPlugin → GrPluginPrimitive
+
+```cpp
+GrPluginPrimitive : Fox.Gr.GrRenderPlugin 
+```
+
+TODO: Description
+
+
+
+

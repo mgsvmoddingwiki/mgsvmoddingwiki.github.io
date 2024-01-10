@@ -1,0 +1,24 @@
+<!--
+title: SimControlElement
+permalink: /Entity_Reference/Fox/Sim/SimControlElement
+tags: [Fox, Sim, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Sim](/Entity_Reference/Fox/Sim)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.DataElement → SimControlElement
+
+```cpp
+SimControlElement : Fox.Core.DataElement 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [bones](#bones) | TODO: Description |
+

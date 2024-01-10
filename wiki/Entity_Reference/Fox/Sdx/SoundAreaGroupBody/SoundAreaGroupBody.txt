@@ -1,0 +1,21 @@
+<!--
+title: SoundAreaGroupBody
+permalink: /Entity_Reference/Fox/Sdx/SoundAreaGroupBody
+tags: [Fox, Sdx, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Sdx](/Entity_Reference/Fox/Sdx)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.DataBody → SoundAreaGroupBody
+
+```cpp
+SoundAreaGroupBody : Fox.Core.DataBody 
+```
+
+TODO: Description
+
+
+
+

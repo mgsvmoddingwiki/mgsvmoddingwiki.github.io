@@ -1,0 +1,21 @@
+<!--
+title: PassiveBlockController
+permalink: /Entity_Reference/Fox/Core/PassiveBlockController
+tags: [Fox, Core, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Core](/Entity_Reference/Fox/Core)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.DataBody → PassiveBlockController
+
+```cpp
+PassiveBlockController : Fox.Core.DataBody 
+```
+
+TODO: Description
+
+
+
+

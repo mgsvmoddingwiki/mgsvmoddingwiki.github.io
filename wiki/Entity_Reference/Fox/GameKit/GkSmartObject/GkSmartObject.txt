@@ -1,0 +1,24 @@
+<!--
+title: GkSmartObject
+permalink: /Entity_Reference/Fox/GameKit/GkSmartObject
+tags: [Fox, GameKit, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [GameKit](/Entity_Reference/Fox/GameKit)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Data → GkSmartObject
+
+```cpp
+GkSmartObject : Fox.Core.Data 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [scriptPath](#scriptpath) | TODO: Description |
+

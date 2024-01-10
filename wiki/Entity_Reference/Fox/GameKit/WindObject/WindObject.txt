@@ -1,0 +1,21 @@
+<!--
+title: WindObject
+permalink: /Entity_Reference/Fox/GameKit/WindObject
+tags: [Fox, GameKit, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [GameKit](/Entity_Reference/Fox/GameKit)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.GameKit.EnvironmentObject → WindObject
+
+```cpp
+WindObject : Fox.GameKit.EnvironmentObject 
+```
+
+TODO: Description
+
+
+
+

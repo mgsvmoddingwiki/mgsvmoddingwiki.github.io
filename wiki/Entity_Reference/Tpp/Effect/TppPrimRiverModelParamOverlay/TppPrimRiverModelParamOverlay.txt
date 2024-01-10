@@ -1,0 +1,41 @@
+<!--
+title: TppPrimRiverModelParamOverlay
+permalink: /Entity_Reference/Tpp/Effect/TppPrimRiverModelParamOverlay
+tags: [Tpp, Effect, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [Effect](/Entity_Reference/Tpp/Effect)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Data → TppPrimRiverModelParamOverlay
+
+```cpp
+TppPrimRiverModelParamOverlay : Fox.Core.Data 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [primRiverGroupName](#primrivergroupname) | TODO: Description |
+| [visibility](#visibility) | TODO: Description |
+| [baseTextureName](#basetexturename) | TODO: Description |
+| [normalTextureName](#normaltexturename) | TODO: Description |
+| [cubeMapName](#cubemapname) | TODO: Description |
+| [lightCaptureLocator](#lightcapturelocator) | TODO: Description |
+| [scrollDirection0](#scrolldirection0) | TODO: Description |
+| [scrollSpeed0](#scrollspeed0) | TODO: Description |
+| [scrollScale0](#scrollscale0) | TODO: Description |
+| [scrollDirection1](#scrolldirection1) | TODO: Description |
+| [scrollSpeed1](#scrollspeed1) | TODO: Description |
+| [scrollScale1](#scrollscale1) | TODO: Description |
+| [reflectionRate](#reflectionrate) | TODO: Description |
+| [distortionPower](#distortionpower) | TODO: Description |
+| [surfaceShadowRate](#surfaceshadowrate) | TODO: Description |
+| [maskDistortionRate](#maskdistortionrate) | TODO: Description |
+| [useHnmTexture](#usehnmtexture) | TODO: Description |
+| [debugReset](#debugreset) | TODO: Description |
+

@@ -1,0 +1,26 @@
+<!--
+title: SubtitlesPackage
+permalink: /Entity_Reference/Fox/GameKit/SubtitlesPackage
+tags: [Fox, GameKit, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [GameKit](/Entity_Reference/Fox/GameKit)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Data → SubtitlesPackage
+
+```cpp
+SubtitlesPackage : Fox.Core.Data 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [subtitlesPackage](#subtitlespackage) | TODO: Description |
+| [subtitlesStreamData](#subtitlesstreamdata) | TODO: Description |
+| [subtitlesStreamPath](#subtitlesstreampath) | TODO: Description |
+

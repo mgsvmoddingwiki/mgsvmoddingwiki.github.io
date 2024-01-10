@@ -1,0 +1,27 @@
+<!--
+title: SimDaemon
+permalink: /Entity_Reference/Fox/Sim/SimDaemon
+tags: [Fox, Sim, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Sim](/Entity_Reference/Fox/Sim)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Entity → SimDaemon
+
+```cpp
+SimDaemon : Fox.Core.Entity 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [defaultViewPort](#defaultviewport) | TODO: Description |
+| [maxActiveClothNum](#maxactiveclothnum) | TODO: Description |
+| [inertialMax](#inertialmax) | TODO: Description |
+| [isClothLocked](#isclothlocked) | TODO: Description |
+

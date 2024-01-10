@@ -1,0 +1,44 @@
+<!--
+title: PhRigidBody
+permalink: /Entity_Reference/Fox/Ph/PhRigidBody
+tags: [Fox, Ph, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Ph](/Entity_Reference/Fox/Ph)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Ph.PhSubObject → PhRigidBody
+
+```cpp
+PhRigidBody : Fox.Ph.PhSubObject 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [param](#param) | TODO: Description |
+| [defaultPosition](#defaultposition) | TODO: Description |
+| [defaultRotation](#defaultrotation) | TODO: Description |
+| [mass](#mass) | TODO: Description |
+| [friction](#friction) | TODO: Description |
+| [restitution](#restitution) | TODO: Description |
+| [maxLinearVelocity](#maxlinearvelocity) | TODO: Description |
+| [maxAngularVelocity](#maxangularvelocity) | TODO: Description |
+| [linearVelocityDamp](#linearvelocitydamp) | TODO: Description |
+| [angularVelocityDamp](#angularvelocitydamp) | TODO: Description |
+| [permittedDepth](#permitteddepth) | TODO: Description |
+| [sleepEnable](#sleepenable) | TODO: Description |
+| [sleepLinearVelocityTh](#sleeplinearvelocityth) | TODO: Description |
+| [sleepAngularVelocityTh](#sleepangularvelocityth) | TODO: Description |
+| [sleepTimeTh](#sleeptimeth) | TODO: Description |
+| [collisionGroup](#collisiongroup) | TODO: Description |
+| [collisionType](#collisiontype) | TODO: Description |
+| [collisionId](#collisionid) | TODO: Description |
+| [centerOfMassOffset](#centerofmassoffset) | TODO: Description |
+| [motionType](#motiontype) | TODO: Description |
+| [material](#material) | TODO: Description |
+

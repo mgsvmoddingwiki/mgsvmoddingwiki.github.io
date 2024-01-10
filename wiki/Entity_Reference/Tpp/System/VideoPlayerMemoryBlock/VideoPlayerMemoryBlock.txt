@@ -1,0 +1,28 @@
+<!--
+title: VideoPlayerMemoryBlock
+permalink: /Entity_Reference/Tpp/System/VideoPlayerMemoryBlock
+tags: [Tpp, System, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [System](/Entity_Reference/Tpp/System)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Data → VideoPlayerMemoryBlock
+
+```cpp
+VideoPlayerMemoryBlock : Fox.Core.Data 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [identify](#identify) | TODO: Description |
+| [videoFormat](#videoformat) | TODO: Description |
+| [videoWidth](#videowidth) | TODO: Description |
+| [videoHeight](#videoheight) | TODO: Description |
+| [videoAllocateSize](#videoallocatesize) | TODO: Description |
+

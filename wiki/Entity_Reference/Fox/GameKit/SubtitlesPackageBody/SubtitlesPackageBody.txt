@@ -1,0 +1,21 @@
+<!--
+title: SubtitlesPackageBody
+permalink: /Entity_Reference/Fox/GameKit/SubtitlesPackageBody
+tags: [Fox, GameKit, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [GameKit](/Entity_Reference/Fox/GameKit)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.DataBody → SubtitlesPackageBody
+
+```cpp
+SubtitlesPackageBody : Fox.Core.DataBody 
+```
+
+TODO: Description
+
+
+
+

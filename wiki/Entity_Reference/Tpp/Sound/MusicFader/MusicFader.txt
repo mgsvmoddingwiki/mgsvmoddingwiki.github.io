@@ -1,0 +1,26 @@
+<!--
+title: MusicFader
+permalink: /Entity_Reference/Tpp/Sound/MusicFader
+tags: [Tpp, Sound, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [Sound](/Entity_Reference/Tpp/Sound)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Data → MusicFader
+
+```cpp
+MusicFader : Fox.Core.Data 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [shapes](#shapes) | TODO: Description |
+| [rtpcName](#rtpcname) | TODO: Description |
+| [fadeRange](#faderange) | TODO: Description |
+

@@ -1,0 +1,47 @@
+<!--
+title: TppLightProbe
+permalink: /Entity_Reference/Tpp/Effect/TppLightProbe
+tags: [Tpp, Effect, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [Effect](/Entity_Reference/Tpp/Effect)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.TransformData → TppLightProbe
+
+```cpp
+TppLightProbe : Fox.Core.TransformData 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [enable](#enable) | TODO: Description |
+| [lightArea](#lightarea) | TODO: Description |
+| [innerArea](#innerarea) | TODO: Description |
+| [shCoefficientsData](#shcoefficientsdata) | TODO: Description |
+| [onLights](#onlights) | TODO: Description |
+| [offLights](#offlights) | TODO: Description |
+| [innerScaleXPositive](#innerscalexpositive) | TODO: Description |
+| [innerScaleXNegative](#innerscalexnegative) | TODO: Description |
+| [innerScaleYPositive](#innerscaleypositive) | TODO: Description |
+| [innerScaleYNegative](#innerscaleynegative) | TODO: Description |
+| [innerScaleZPositive](#innerscalezpositive) | TODO: Description |
+| [innerScaleZNegative](#innerscaleznegative) | TODO: Description |
+| [priority](#priority) | TODO: Description |
+| [debugMode](#debugmode) | TODO: Description |
+| [drawRejectionLevel](#drawrejectionlevel) | TODO: Description |
+| [shapeType](#shapetype) | TODO: Description |
+| [exposure](#exposure) | TODO: Description |
+| [localFlags](#localflags) | TODO: Description |
+| [occlusionModeOpenRate](#occlusionmodeopenrate) | TODO: Description |
+| [enable24hSH](#enable24hsh) | TODO: Description |
+| [enableWeatherSH](#enableweathersh) | TODO: Description |
+| [enableRelatedLightSH](#enablerelatedlightsh) | TODO: Description |
+| [enableOcclusionMode](#enableocclusionmode) | TODO: Description |
+| [packingGeneration](#packinggeneration) | TODO: Description |
+

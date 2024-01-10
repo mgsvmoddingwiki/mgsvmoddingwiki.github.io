@@ -1,0 +1,39 @@
+<!--
+title: DemoStreamAnimation
+permalink: /Entity_Reference/Fox/Demox/DemoStreamAnimation
+tags: [Fox, Demox, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Demox](/Entity_Reference/Fox/Demox)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Data → DemoStreamAnimation
+
+```cpp
+DemoStreamAnimation : Fox.Core.Data 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [streamPath](#streampath) | TODO: Description |
+| [demoLength](#demolength) | TODO: Description |
+| [locatorTypes](#locatortypes) | TODO: Description |
+| [cameraTypes](#cameratypes) | TODO: Description |
+| [modelFiles](#modelfiles) | TODO: Description |
+| [helpBoneFiles](#helpbonefiles) | TODO: Description |
+| [partsFiles](#partsfiles) | TODO: Description |
+| [coverModelFiles](#covermodelfiles) | TODO: Description |
+| [modelPartsDictionary](#modelpartsdictionary) | TODO: Description |
+| [coverModelDictionary](#covermodeldictionary) | TODO: Description |
+| [updateJobCount](#updatejobcount) | TODO: Description |
+| [modelProxyPaths](#modelproxypaths) | TODO: Description |
+| [partsProxyPaths](#partsproxypaths) | TODO: Description |
+| [dynamicModel](#dynamicmodel) | TODO: Description |
+| [dynamicParts](#dynamicparts) | TODO: Description |
+| [dynamicFv2](#dynamicfv2) | TODO: Description |
+

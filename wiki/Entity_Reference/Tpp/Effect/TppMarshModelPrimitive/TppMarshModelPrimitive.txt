@@ -1,0 +1,36 @@
+<!--
+title: TppMarshModelPrimitive
+permalink: /Entity_Reference/Tpp/Effect/TppMarshModelPrimitive
+tags: [Tpp, Effect, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [Effect](/Entity_Reference/Tpp/Effect)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Data → TppMarshModelPrimitive
+
+```cpp
+TppMarshModelPrimitive : Fox.Core.Data 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [baseTexturePath](#basetexturepath) | TODO: Description |
+| [normalTexturePath](#normaltexturepath) | TODO: Description |
+| [specularTexturePath](#speculartexturepath) | TODO: Description |
+| [cubeMapPath](#cubemappath) | TODO: Description |
+| [visibility](#visibility) | TODO: Description |
+| [depthBlendLength](#depthblendlength) | TODO: Description |
+| [scrollSpeed0U](#scrollspeed0u) | TODO: Description |
+| [scrollSpeed0V](#scrollspeed0v) | TODO: Description |
+| [scrollSpeed1U](#scrollspeed1u) | TODO: Description |
+| [scrollSpeed1V](#scrollspeed1v) | TODO: Description |
+| [useHnmTexture](#usehnmtexture) | TODO: Description |
+| [debugReset](#debugreset) | TODO: Description |
+| [staticModels](#staticmodels) | TODO: Description |
+

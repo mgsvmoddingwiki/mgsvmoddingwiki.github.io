@@ -1,0 +1,29 @@
+<!--
+title: SimClothControlUnitParam
+permalink: /Entity_Reference/Fox/Sim/SimClothControlUnitParam
+tags: [Fox, Sim, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Sim](/Entity_Reference/Fox/Sim)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Entity → SimClothControlUnitParam
+
+```cpp
+SimClothControlUnitParam : Fox.Core.Entity 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [mass](#mass) | TODO: Description |
+| [thickness](#thickness) | TODO: Description |
+| [limitedFlag](#limitedflag) | TODO: Description |
+| [limit](#limit) | TODO: Description |
+| [expansionRatio](#expansionratio) | TODO: Description |
+| [contractionRatio](#contractionratio) | TODO: Description |
+

@@ -1,0 +1,30 @@
+<!--
+title: TppHandLightLensFlareRoot
+permalink: /Entity_Reference/Tpp/Effect/TppHandLightLensFlareRoot
+tags: [Tpp, Effect, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [Effect](/Entity_Reference/Tpp/Effect)\
+> Submodule: TODO: Submodule\
+> Inheritance: Tpp.Effect.TppLensFlareRootBase → TppHandLightLensFlareRoot
+
+```cpp
+TppHandLightLensFlareRoot : Tpp.Effect.TppLensFlareRootBase 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [independentEditMode](#independenteditmode) | TODO: Description |
+| [takeover](#takeover) | TODO: Description |
+| [debugFillCheck](#debugfillcheck) | TODO: Description |
+| [needCollisionCheck](#needcollisioncheck) | TODO: Description |
+| [exposureBlend](#exposureblend) | TODO: Description |
+| [lensFlareName](#lensflarename) | TODO: Description |
+| [shapes](#shapes) | TODO: Description |
+

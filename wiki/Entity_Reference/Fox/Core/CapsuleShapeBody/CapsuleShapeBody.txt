@@ -1,0 +1,25 @@
+<!--
+title: CapsuleShapeBody
+permalink: /Entity_Reference/Fox/Core/CapsuleShapeBody
+tags: [Fox, Core, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Core](/Entity_Reference/Fox/Core)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.ShapeDataBody → CapsuleShapeBody
+
+```cpp
+CapsuleShapeBody : Fox.Core.ShapeDataBody 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [shape_p0](#shape-p0) | TODO: Description |
+| [shape_p1](#shape-p1) | TODO: Description |
+

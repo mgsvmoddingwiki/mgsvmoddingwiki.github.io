@@ -1,0 +1,24 @@
+<!--
+title: PhysicsDescription
+permalink: /Entity_Reference/Fox/PartsBuilder/PhysicsDescription
+tags: [Fox, PartsBuilder, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [PartsBuilder](/Entity_Reference/Fox/PartsBuilder)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.PartsBuilder.PartDescription → PhysicsDescription
+
+```cpp
+PhysicsDescription : Fox.PartsBuilder.PartDescription 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [physicsFile](#physicsfile) | TODO: Description |
+

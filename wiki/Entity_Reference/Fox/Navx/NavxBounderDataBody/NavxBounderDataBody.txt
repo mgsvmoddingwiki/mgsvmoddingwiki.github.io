@@ -1,0 +1,24 @@
+<!--
+title: NavxBounderDataBody
+permalink: /Entity_Reference/Fox/Navx/NavxBounderDataBody
+tags: [Fox, Navx, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Navx](/Entity_Reference/Fox/Navx)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.TransformDataBody → NavxBounderDataBody
+
+```cpp
+NavxBounderDataBody : Fox.Core.TransformDataBody 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [select](#select) | TODO: Description |
+

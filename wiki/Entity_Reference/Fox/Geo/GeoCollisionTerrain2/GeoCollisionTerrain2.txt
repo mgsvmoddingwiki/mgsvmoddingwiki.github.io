@@ -1,0 +1,21 @@
+<!--
+title: GeoCollisionTerrain2
+permalink: /Entity_Reference/Fox/Geo/GeoCollisionTerrain2
+tags: [Fox, Geo, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Geo](/Entity_Reference/Fox/Geo)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Entity → GeoCollisionTerrain2
+
+```cpp
+GeoCollisionTerrain2 : Fox.Core.Entity 
+```
+
+TODO: Description
+
+
+
+

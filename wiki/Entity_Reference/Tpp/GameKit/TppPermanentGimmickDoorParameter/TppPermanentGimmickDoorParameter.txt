@@ -1,0 +1,24 @@
+<!--
+title: TppPermanentGimmickDoorParameter
+permalink: /Entity_Reference/Tpp/GameKit/TppPermanentGimmickDoorParameter
+tags: [Tpp, GameKit, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [GameKit](/Entity_Reference/Tpp/GameKit)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.DataElement → TppPermanentGimmickDoorParameter
+
+```cpp
+TppPermanentGimmickDoorParameter : Fox.Core.DataElement 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [attribute](#attribute) | TODO: Description |
+

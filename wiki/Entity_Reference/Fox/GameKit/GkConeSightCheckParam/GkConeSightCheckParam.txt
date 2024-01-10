@@ -1,0 +1,27 @@
+<!--
+title: GkConeSightCheckParam
+permalink: /Entity_Reference/Fox/GameKit/GkConeSightCheckParam
+tags: [Fox, GameKit, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [GameKit](/Entity_Reference/Fox/GameKit)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.GameKit.GkSightCheckParam → GkConeSightCheckParam
+
+```cpp
+GkConeSightCheckParam : Fox.GameKit.GkSightCheckParam 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [range](#range) | TODO: Description |
+| [angleLeftRight](#angleleftright) | TODO: Description |
+| [angleUpDown](#angleupdown) | TODO: Description |
+| [headBackDistance](#headbackdistance) | TODO: Description |
+

@@ -1,0 +1,25 @@
+<!--
+title: Vector4StringMapPropertyDifference
+permalink: /Entity_Reference/Fox/Core/Vector4StringMapPropertyDifference
+tags: [Fox, Core, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Core](/Entity_Reference/Fox/Core)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.PropertyDifference → Vector4StringMapPropertyDifference
+
+```cpp
+Vector4StringMapPropertyDifference : Fox.Core.PropertyDifference 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [originalValues](#originalvalues) | TODO: Description |
+| [values](#values) | TODO: Description |
+

@@ -1,0 +1,24 @@
+<!--
+title: SubtitlesOptionBlockControllerData
+permalink: /Entity_Reference/Fox/GameKit/SubtitlesOptionBlockControllerData
+tags: [Fox, GameKit, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [GameKit](/Entity_Reference/Fox/GameKit)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Data → SubtitlesOptionBlockControllerData
+
+```cpp
+SubtitlesOptionBlockControllerData : Fox.Core.Data 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [packageFileNames](#packagefilenames) | TODO: Description |
+

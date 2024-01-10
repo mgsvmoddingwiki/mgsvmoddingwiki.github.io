@@ -1,0 +1,34 @@
+<!--
+title: Material
+permalink: /Entity_Reference/Fox/Core/Material
+tags: [Fox, Core, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Core](/Entity_Reference/Fox/Core)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Data → Material
+
+```cpp
+Material : Fox.Core.Data 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [materialName](#materialname) | TODO: Description |
+| [shader](#shader) | TODO: Description |
+| [diffuseTexture](#diffusetexture) | TODO: Description |
+| [srmTexture](#srmtexture) | TODO: Description |
+| [normalTexture](#normaltexture) | TODO: Description |
+| [materialMapTexture](#materialmaptexture) | TODO: Description |
+| [materialIndex](#materialindex) | TODO: Description |
+| [diffuseColor](#diffusecolor) | TODO: Description |
+| [specularColor](#specularcolor) | TODO: Description |
+| [fmtrPath](#fmtrpath) | TODO: Description |
+| [residentFlag](#residentflag) | TODO: Description |
+

@@ -1,0 +1,31 @@
+<!--
+title: TppMuddledFilterParam
+permalink: /Entity_Reference/Tpp/Effect/TppMuddledFilterParam
+tags: [Tpp, Effect, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [Effect](/Entity_Reference/Tpp/Effect)\
+> Submodule: TODO: Submodule
+
+```cpp
+TppMuddledFilterParam 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [sphereRadiusMin](#sphereradiusmin) | TODO: Description |
+| [sphereRadiusMax](#sphereradiusmax) | TODO: Description |
+| [headRadiusMin](#headradiusmin) | TODO: Description |
+| [headRadiusMax](#headradiusmax) | TODO: Description |
+| [sinCurveAmplitude](#sincurveamplitude) | TODO: Description |
+| [sinCurveLength](#sincurvelength) | TODO: Description |
+| [moveSpeedMin](#movespeedmin) | TODO: Description |
+| [moveSpeedMax](#movespeedmax) | TODO: Description |
+| [power](#power) | TODO: Description |
+

@@ -1,0 +1,21 @@
+<!--
+title: NavxNavFilterVolumeBody
+permalink: /Entity_Reference/Fox/Navx/NavxNavFilterVolumeBody
+tags: [Fox, Navx, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Navx](/Entity_Reference/Fox/Navx)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Graphx.GraphxPathVolumeBody → NavxNavFilterVolumeBody
+
+```cpp
+NavxNavFilterVolumeBody : Fox.Graphx.GraphxPathVolumeBody 
+```
+
+TODO: Description
+
+
+
+

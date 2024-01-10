@@ -1,0 +1,25 @@
+<!--
+title: OrientedBoundingBox
+permalink: /Entity_Reference/Fox/Core/OrientedBoundingBox
+tags: [Fox, Core, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Core](/Entity_Reference/Fox/Core)\
+> Submodule: TODO: Submodule
+
+```cpp
+OrientedBoundingBox 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [center](#center) | TODO: Description |
+| [size](#size) | TODO: Description |
+| [rotation](#rotation) | TODO: Description |
+

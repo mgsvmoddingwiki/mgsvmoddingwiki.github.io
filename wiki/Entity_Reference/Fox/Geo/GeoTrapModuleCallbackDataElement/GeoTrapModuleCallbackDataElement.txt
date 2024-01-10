@@ -1,0 +1,24 @@
+<!--
+title: GeoTrapModuleCallbackDataElement
+permalink: /Entity_Reference/Fox/Geo/GeoTrapModuleCallbackDataElement
+tags: [Fox, Geo, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Geo](/Entity_Reference/Fox/Geo)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.DataElement → GeoTrapModuleCallbackDataElement
+
+```cpp
+GeoTrapModuleCallbackDataElement : Fox.Core.DataElement 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [funcName](#funcname) | TODO: Description |
+

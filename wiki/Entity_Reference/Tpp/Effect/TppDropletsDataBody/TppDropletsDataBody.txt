@@ -1,0 +1,21 @@
+<!--
+title: TppDropletsDataBody
+permalink: /Entity_Reference/Tpp/Effect/TppDropletsDataBody
+tags: [Tpp, Effect, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [Effect](/Entity_Reference/Tpp/Effect)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.DataBody → TppDropletsDataBody
+
+```cpp
+TppDropletsDataBody : Fox.Core.DataBody 
+```
+
+TODO: Description
+
+
+
+

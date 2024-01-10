@@ -1,0 +1,21 @@
+<!--
+title: GrPluginCloneDeferred
+permalink: /Entity_Reference/Fox/Gr/GrPluginCloneDeferred
+tags: [Fox, Gr, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Gr](/Entity_Reference/Fox/Gr)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Gr.GrPluginClone → GrPluginCloneDeferred
+
+```cpp
+GrPluginCloneDeferred : Fox.Gr.GrPluginClone 
+```
+
+TODO: Description
+
+
+
+

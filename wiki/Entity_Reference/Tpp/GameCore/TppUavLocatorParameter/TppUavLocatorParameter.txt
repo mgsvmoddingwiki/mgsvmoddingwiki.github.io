@@ -1,0 +1,24 @@
+<!--
+title: TppUavLocatorParameter
+permalink: /Entity_Reference/Tpp/GameCore/TppUavLocatorParameter
+tags: [Tpp, GameCore, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [GameCore](/Entity_Reference/Tpp/GameCore)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.DataElement → TppUavLocatorParameter
+
+```cpp
+TppUavLocatorParameter : Fox.Core.DataElement 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [identifier](#identifier) | TODO: Description |
+

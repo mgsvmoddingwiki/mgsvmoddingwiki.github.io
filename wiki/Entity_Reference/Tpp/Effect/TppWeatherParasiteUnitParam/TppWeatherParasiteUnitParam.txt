@@ -1,0 +1,26 @@
+<!--
+title: TppWeatherParasiteUnitParam
+permalink: /Entity_Reference/Tpp/Effect/TppWeatherParasiteUnitParam
+tags: [Tpp, Effect, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [Effect](/Entity_Reference/Tpp/Effect)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Data → TppWeatherParasiteUnitParam
+
+```cpp
+TppWeatherParasiteUnitParam : Fox.Core.Data 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [vfxCameraFront](#vfxcamerafront) | TODO: Description |
+| [enableDebugMistRate](#enabledebugmistrate) | TODO: Description |
+| [debugMistRate](#debugmistrate) | TODO: Description |
+

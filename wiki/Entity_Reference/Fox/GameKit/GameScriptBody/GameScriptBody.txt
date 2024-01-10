@@ -1,0 +1,25 @@
+<!--
+title: GameScriptBody
+permalink: /Entity_Reference/Fox/GameKit/GameScriptBody
+tags: [Fox, GameKit, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [GameKit](/Entity_Reference/Fox/GameKit)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.DataBody → GameScriptBody
+
+```cpp
+GameScriptBody : Fox.Core.DataBody 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [enable](#enable) | TODO: Description |
+| [storage](#storage) | TODO: Description |
+

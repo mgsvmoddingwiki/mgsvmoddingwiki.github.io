@@ -1,0 +1,21 @@
+<!--
+title: LineSegmentComponentSet
+permalink: /Entity_Reference/Fox/Core/LineSegmentComponentSet
+tags: [Fox, Core, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Core](/Entity_Reference/Fox/Core)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.ComponentSet → LineSegmentComponentSet
+
+```cpp
+LineSegmentComponentSet : Fox.Core.ComponentSet 
+```
+
+TODO: Description
+
+
+
+

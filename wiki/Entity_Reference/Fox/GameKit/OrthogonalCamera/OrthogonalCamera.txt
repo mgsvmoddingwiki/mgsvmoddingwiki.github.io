@@ -1,0 +1,25 @@
+<!--
+title: OrthogonalCamera
+permalink: /Entity_Reference/Fox/GameKit/OrthogonalCamera
+tags: [Fox, GameKit, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [GameKit](/Entity_Reference/Fox/GameKit)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.GameKit.Camera → OrthogonalCamera
+
+```cpp
+OrthogonalCamera : Fox.GameKit.Camera 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [type](#type) | TODO: Description |
+| [scale](#scale) | TODO: Description |
+

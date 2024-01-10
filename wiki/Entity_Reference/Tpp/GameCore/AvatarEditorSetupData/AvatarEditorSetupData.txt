@@ -1,0 +1,24 @@
+<!--
+title: AvatarEditorSetupData
+permalink: /Entity_Reference/Tpp/GameCore/AvatarEditorSetupData
+tags: [Tpp, GameCore, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [GameCore](/Entity_Reference/Tpp/GameCore)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Data → AvatarEditorSetupData
+
+```cpp
+AvatarEditorSetupData : Fox.Core.Data 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [param](#param) | TODO: Description |
+

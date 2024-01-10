@@ -1,0 +1,21 @@
+<!--
+title: MtarFile
+permalink: /Entity_Reference/Fox/Anim/MtarFile
+tags: [Fox, Anim, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Anim](/Entity_Reference/Fox/Anim)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.RawFile → MtarFile
+
+```cpp
+MtarFile : Fox.Core.RawFile 
+```
+
+TODO: Description
+
+
+
+

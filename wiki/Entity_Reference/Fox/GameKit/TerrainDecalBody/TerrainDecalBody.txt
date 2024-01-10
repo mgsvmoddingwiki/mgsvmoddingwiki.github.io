@@ -1,0 +1,21 @@
+<!--
+title: TerrainDecalBody
+permalink: /Entity_Reference/Fox/GameKit/TerrainDecalBody
+tags: [Fox, GameKit, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [GameKit](/Entity_Reference/Fox/GameKit)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.TransformDataBody → TerrainDecalBody
+
+```cpp
+TerrainDecalBody : Fox.Core.TransformDataBody 
+```
+
+TODO: Description
+
+
+
+

@@ -1,0 +1,34 @@
+<!--
+title: GrxAreaSSAOParameters
+permalink: /Entity_Reference/Fox/Grx/GrxAreaSSAOParameters
+tags: [Fox, Grx, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Grx](/Entity_Reference/Fox/Grx)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Entity → GrxAreaSSAOParameters
+
+```cpp
+GrxAreaSSAOParameters : Fox.Core.Entity 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [resolution](#resolution) | TODO: Description |
+| [radius](#radius) | TODO: Description |
+| [angleBias](#anglebias) | TODO: Description |
+| [numSteps](#numsteps) | TODO: Description |
+| [numDirections](#numdirections) | TODO: Description |
+| [attenuation](#attenuation) | TODO: Description |
+| [contrast](#contrast) | TODO: Description |
+| [blurMode](#blurmode) | TODO: Description |
+| [blurRadius](#blurradius) | TODO: Description |
+| [blurSharpness](#blursharpness) | TODO: Description |
+| [blurSceneScale](#blurscenescale) | TODO: Description |
+

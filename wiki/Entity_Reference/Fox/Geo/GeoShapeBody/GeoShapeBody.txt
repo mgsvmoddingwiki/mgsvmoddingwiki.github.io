@@ -1,0 +1,21 @@
+<!--
+title: GeoShapeBody
+permalink: /Entity_Reference/Fox/Geo/GeoShapeBody
+tags: [Fox, Geo, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Geo](/Entity_Reference/Fox/Geo)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.TransformDataBody → GeoShapeBody
+
+```cpp
+GeoShapeBody : Fox.Core.TransformDataBody 
+```
+
+TODO: Description
+
+
+
+

@@ -1,0 +1,35 @@
+<!--
+title: StaticModelArray
+permalink: /Entity_Reference/Fox/GameKit/StaticModelArray
+tags: [Fox, GameKit, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [GameKit](/Entity_Reference/Fox/GameKit)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Data → StaticModelArray
+
+```cpp
+StaticModelArray : Fox.Core.Data 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [modelFile](#modelfile) | TODO: Description |
+| [geomFile](#geomfile) | TODO: Description |
+| [isVisibleGeom](#isvisiblegeom) | TODO: Description |
+| [lodFarSize](#lodfarsize) | TODO: Description |
+| [lodNearSize](#lodnearsize) | TODO: Description |
+| [lodPolygonSize](#lodpolygonsize) | TODO: Description |
+| [drawRejectionLevel](#drawrejectionlevel) | TODO: Description |
+| [drawMode](#drawmode) | TODO: Description |
+| [rejectFarRangeShadowCast](#rejectfarrangeshadowcast) | TODO: Description |
+| [parentLocator](#parentlocator) | TODO: Description |
+| [transforms](#transforms) | TODO: Description |
+| [colors](#colors) | TODO: Description |
+

@@ -1,0 +1,33 @@
+<!--
+title: TppStar
+permalink: /Entity_Reference/Tpp/Effect/TppStar
+tags: [Tpp, Effect, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [Effect](/Entity_Reference/Tpp/Effect)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.TransformData → TppStar
+
+```cpp
+TppStar : Fox.Core.TransformData 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [enable](#enable) | TODO: Description |
+| [color](#color) | TODO: Description |
+| [intensity](#intensity) | TODO: Description |
+| [direction](#direction) | TODO: Description |
+| [bgModelName](#bgmodelname) | TODO: Description |
+| [modelNameArray](#modelnamearray) | TODO: Description |
+| [nameArray](#namearray) | TODO: Description |
+| [latitudeArray](#latitudearray) | TODO: Description |
+| [longitudeArray](#longitudearray) | TODO: Description |
+| [scaleArray](#scalearray) | TODO: Description |
+

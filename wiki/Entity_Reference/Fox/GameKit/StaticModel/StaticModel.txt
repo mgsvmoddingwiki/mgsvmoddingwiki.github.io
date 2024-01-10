@@ -1,0 +1,34 @@
+<!--
+title: StaticModel
+permalink: /Entity_Reference/Fox/GameKit/StaticModel
+tags: [Fox, GameKit, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [GameKit](/Entity_Reference/Fox/GameKit)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.TransformData → StaticModel
+
+```cpp
+StaticModel : Fox.Core.TransformData 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [modelFile](#modelfile) | TODO: Description |
+| [geomFile](#geomfile) | TODO: Description |
+| [isVisibleGeom](#isvisiblegeom) | TODO: Description |
+| [isIsolated](#isisolated) | TODO: Description |
+| [lodFarSize](#lodfarsize) | TODO: Description |
+| [lodNearSize](#lodnearsize) | TODO: Description |
+| [lodPolygonSize](#lodpolygonsize) | TODO: Description |
+| [color](#color) | TODO: Description |
+| [drawRejectionLevel](#drawrejectionlevel) | TODO: Description |
+| [drawMode](#drawmode) | TODO: Description |
+| [rejectFarRangeShadowCast](#rejectfarrangeshadowcast) | TODO: Description |
+

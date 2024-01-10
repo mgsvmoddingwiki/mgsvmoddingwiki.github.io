@@ -619,9 +619,10 @@ For those editing the sidebar of the wiki itself these are a list of available c
 | [](/){:.iconed.icon-sidebar.icon-curly-brackets} | `icon-curly-brackets` |  |
 | [](/){:.iconed.icon-sidebar.icon-diamond} | `icon-diamond` | Intended for home page |
 | [](/){:.iconed.icon-sidebar.icon-discord} | `icon-discord` | For Discord links |
-| [](/){:.iconed.icon-sidebar.icon-globe} | `icon-globe` | For generic links |
+| [](/){:.iconed.icon-sidebar.icon-globe} | `icon-globe` | For generic external links |
 | [](/){:.iconed.icon-sidebar.icon-lightbulb} | `icon-lightbulb` |  |
 | [](/){:.iconed.icon-sidebar.icon-nexusmods} | `icon-nexusmods` | For Nexus Mods links |
+| [](/){:.iconed.icon-sidebar.icon-nodes} | `icon-nodes` | For eg: Entity Reference section |
 | [](/){:.iconed.icon-sidebar.icon-open-pages} | `icon-open-pages` |  |
 | [](/){:.iconed.icon-sidebar.icon-package} | `icon-package` | For eg: file formats |
 | [](/){:.iconed.icon-sidebar.icon-page} | `icon-page` | |

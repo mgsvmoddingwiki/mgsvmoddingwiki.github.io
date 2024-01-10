@@ -1,0 +1,26 @@
+<!--
+title: NavxFillNavVolume
+permalink: /Entity_Reference/Fox/Navx/NavxFillNavVolume
+tags: [Fox, Navx, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Navx](/Entity_Reference/Fox/Navx)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.TransformData → NavxFillNavVolume
+
+```cpp
+NavxFillNavVolume : Fox.Core.TransformData 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [sceneName](#scenename) | TODO: Description |
+| [worldName](#worldname) | TODO: Description |
+| [attributes](#attributes) | TODO: Description |
+

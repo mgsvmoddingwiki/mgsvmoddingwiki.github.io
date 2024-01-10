@@ -1,0 +1,21 @@
+<!--
+title: UiGraphEntryBody
+permalink: /Entity_Reference/Fox/Ui/UiGraphEntryBody
+tags: [Fox, Ui, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Ui](/Entity_Reference/Fox/Ui)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.DataBody → UiGraphEntryBody
+
+```cpp
+UiGraphEntryBody : Fox.Core.DataBody 
+```
+
+TODO: Description
+
+
+
+

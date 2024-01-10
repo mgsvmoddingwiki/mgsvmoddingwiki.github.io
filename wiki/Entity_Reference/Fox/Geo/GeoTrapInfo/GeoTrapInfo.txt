@@ -1,0 +1,35 @@
+<!--
+title: GeoTrapInfo
+permalink: /Entity_Reference/Fox/Geo/GeoTrapInfo
+tags: [Fox, Geo, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Geo](/Entity_Reference/Fox/Geo)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Entity → GeoTrapInfo
+
+```cpp
+GeoTrapInfo : Fox.Core.Entity 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [moverTags](#movertags) | TODO: Description |
+| [moverHandle](#moverhandle) | TODO: Description |
+| [moverPosition](#moverposition) | TODO: Description |
+| [moverRotation](#moverrotation) | TODO: Description |
+| [trapName](#trapname) | TODO: Description |
+| [trapPosition](#trapposition) | TODO: Description |
+| [trapBodyHandle](#trapbodyhandle) | TODO: Description |
+| [conditionHandle](#conditionhandle) | TODO: Description |
+| [conditionBodyHandle](#conditionbodyhandle) | TODO: Description |
+| [trapFlagString](#trapflagstring) | TODO: Description |
+| [trapFlag](#trapflag) | TODO: Description |
+| [moverGameObjectId](#movergameobjectid) | TODO: Description |
+

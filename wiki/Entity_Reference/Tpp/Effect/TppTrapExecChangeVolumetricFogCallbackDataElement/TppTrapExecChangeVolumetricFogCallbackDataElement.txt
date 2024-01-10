@@ -1,0 +1,40 @@
+<!--
+title: TppTrapExecChangeVolumetricFogCallbackDataElement
+permalink: /Entity_Reference/Tpp/Effect/TppTrapExecChangeVolumetricFogCallbackDataElement
+tags: [Tpp, Effect, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [Effect](/Entity_Reference/Tpp/Effect)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Geo.GeoTrapModuleCallbackDataElement → TppTrapExecChangeVolumetricFogCallbackDataElement
+
+```cpp
+TppTrapExecChangeVolumetricFogCallbackDataElement : Fox.Geo.GeoTrapModuleCallbackDataElement 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [ignoreYAxis](#ignoreyaxis) | TODO: Description |
+| [ignoreZAxis](#ignorezaxis) | TODO: Description |
+| [interpRange](#interprange) | TODO: Description |
+| [restoreFogParameters](#restorefogparameters) | TODO: Description |
+| [color](#color) | TODO: Description |
+| [luminance](#luminance) | TODO: Description |
+| [albedo](#albedo) | TODO: Description |
+| [density](#density) | TODO: Description |
+| [nearDistance](#neardistance) | TODO: Description |
+| [falloff](#falloff) | TODO: Description |
+| [changeColor](#changecolor) | TODO: Description |
+| [changeAlbedo](#changealbedo) | TODO: Description |
+| [changeLuminance](#changeluminance) | TODO: Description |
+| [changeDensity](#changedensity) | TODO: Description |
+| [changeNearDistance](#changeneardistance) | TODO: Description |
+| [changeFalloff](#changefalloff) | TODO: Description |
+| [areaVolumetricFog](#areavolumetricfog) | TODO: Description |
+

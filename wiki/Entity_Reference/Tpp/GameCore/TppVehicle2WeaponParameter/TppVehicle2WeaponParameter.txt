@@ -1,0 +1,37 @@
+<!--
+title: TppVehicle2WeaponParameter
+permalink: /Entity_Reference/Tpp/GameCore/TppVehicle2WeaponParameter
+tags: [Tpp, GameCore, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [GameCore](/Entity_Reference/Tpp/GameCore)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.DataElement → TppVehicle2WeaponParameter
+
+```cpp
+TppVehicle2WeaponParameter : Fox.Core.DataElement 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [attackId](#attackid) | TODO: Description |
+| [equipId](#equipid) | TODO: Description |
+| [bulletId](#bulletid) | TODO: Description |
+| [weaponImplTypeIndex](#weaponimpltypeindex) | TODO: Description |
+| [fireInterval](#fireinterval) | TODO: Description |
+| [weaponFile](#weaponfile) | TODO: Description |
+| [ammoFile](#ammofile) | TODO: Description |
+| [ownerCnpName](#ownercnpname) | TODO: Description |
+| [weaponBoneName](#weaponbonename) | TODO: Description |
+| [turretBoneName](#turretbonename) | TODO: Description |
+| [barrelBoneName](#barrelbonename) | TODO: Description |
+| [minPitch](#minpitch) | TODO: Description |
+| [maxPitch](#maxpitch) | TODO: Description |
+| [rotSpeed](#rotspeed) | TODO: Description |
+

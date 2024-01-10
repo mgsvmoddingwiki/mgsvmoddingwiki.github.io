@@ -1,0 +1,21 @@
+<!--
+title: WindGlobalBody
+permalink: /Entity_Reference/Fox/GameKit/WindGlobalBody
+tags: [Fox, GameKit, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [GameKit](/Entity_Reference/Fox/GameKit)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.GameKit.EnvironmentGlobalBody → WindGlobalBody
+
+```cpp
+WindGlobalBody : Fox.GameKit.EnvironmentGlobalBody 
+```
+
+TODO: Description
+
+
+
+

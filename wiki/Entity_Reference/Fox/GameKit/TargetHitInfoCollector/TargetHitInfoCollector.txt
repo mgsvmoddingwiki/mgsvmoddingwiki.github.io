@@ -1,0 +1,21 @@
+<!--
+title: TargetHitInfoCollector
+permalink: /Entity_Reference/Fox/GameKit/TargetHitInfoCollector
+tags: [Fox, GameKit, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [GameKit](/Entity_Reference/Fox/GameKit)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Entity → TargetHitInfoCollector
+
+```cpp
+TargetHitInfoCollector : Fox.Core.Entity 
+```
+
+TODO: Description
+
+
+
+

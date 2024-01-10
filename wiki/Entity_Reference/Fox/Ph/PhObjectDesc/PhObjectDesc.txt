@@ -1,0 +1,26 @@
+<!--
+title: PhObjectDesc
+permalink: /Entity_Reference/Fox/Ph/PhObjectDesc
+tags: [Fox, Ph, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Ph](/Entity_Reference/Fox/Ph)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Data → PhObjectDesc
+
+```cpp
+PhObjectDesc : Fox.Core.Data 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [bodies](#bodies) | TODO: Description |
+| [constraints](#constraints) | TODO: Description |
+| [bodyIndices](#bodyindices) | TODO: Description |
+

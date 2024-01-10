@@ -1,0 +1,21 @@
+<!--
+title: DataSetFile
+permalink: /Entity_Reference/Fox/Core/DataSetFile
+tags: [Fox, Core, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Core](/Entity_Reference/Fox/Core)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.File → DataSetFile
+
+```cpp
+DataSetFile : Fox.Core.File 
+```
+
+TODO: Description
+
+
+
+

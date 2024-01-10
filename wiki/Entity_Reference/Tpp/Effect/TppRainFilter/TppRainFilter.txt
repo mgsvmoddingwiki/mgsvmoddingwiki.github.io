@@ -1,0 +1,47 @@
+<!--
+title: TppRainFilter
+permalink: /Entity_Reference/Tpp/Effect/TppRainFilter
+tags: [Tpp, Effect, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [Effect](/Entity_Reference/Tpp/Effect)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Data → TppRainFilter
+
+```cpp
+TppRainFilter : Fox.Core.Data 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [enable](#enable) | TODO: Description |
+| [startFadeInDistance](#startfadeindistance) | TODO: Description |
+| [endFadeInDistance](#endfadeindistance) | TODO: Description |
+| [startFadeOutDistance](#startfadeoutdistance) | TODO: Description |
+| [endFadeOutDistance](#endfadeoutdistance) | TODO: Description |
+| [albedoExtinctionRatio](#albedoextinctionratio) | TODO: Description |
+| [roughnessExtinctionCoefficient](#roughnessextinctioncoefficient) | TODO: Description |
+| [roughnessEffectiveThreshold](#roughnesseffectivethreshold) | TODO: Description |
+| [LABDiffuseScale](#labdiffusescale) | TODO: Description |
+| [LABDiffuseAdd](#labdiffuseadd) | TODO: Description |
+| [floorTexScale](#floortexscale) | TODO: Description |
+| [wallTexScale0](#walltexscale0) | TODO: Description |
+| [wallTexScale1](#walltexscale1) | TODO: Description |
+| [wallTexSpeed](#walltexspeed) | TODO: Description |
+| [maskTexScale0](#masktexscale0) | TODO: Description |
+| [maskTexScale1](#masktexscale1) | TODO: Description |
+| [maskTexSpeed](#masktexspeed) | TODO: Description |
+| [rainColor](#raincolor) | TODO: Description |
+| [windScale](#windscale) | TODO: Description |
+| [wallAlphaRate](#wallalpharate) | TODO: Description |
+| [normalWallTexPath](#normalwalltexpath) | TODO: Description |
+| [normalFloorTexPath](#normalfloortexpath) | TODO: Description |
+| [reflectionCubeMapTexPath](#reflectioncubemaptexpath) | TODO: Description |
+| [maskTexPath](#masktexpath) | TODO: Description |
+

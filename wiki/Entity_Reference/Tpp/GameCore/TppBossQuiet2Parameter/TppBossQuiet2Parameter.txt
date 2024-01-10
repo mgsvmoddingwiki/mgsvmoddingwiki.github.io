@@ -1,0 +1,28 @@
+<!--
+title: TppBossQuiet2Parameter
+permalink: /Entity_Reference/Tpp/GameCore/TppBossQuiet2Parameter
+tags: [Tpp, GameCore, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [GameCore](/Entity_Reference/Tpp/GameCore)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.DataElement → TppBossQuiet2Parameter
+
+```cpp
+TppBossQuiet2Parameter : Fox.Core.DataElement 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [partsFile](#partsfile) | TODO: Description |
+| [motionGraphFile](#motiongraphfile) | TODO: Description |
+| [mtarFile](#mtarfile) | TODO: Description |
+| [extensionMtarFile](#extensionmtarfile) | TODO: Description |
+| [vfxFiles](#vfxfiles) | TODO: Description |
+

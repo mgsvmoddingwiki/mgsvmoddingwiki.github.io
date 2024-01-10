@@ -1,0 +1,29 @@
+<!--
+title: TppLensFlareAsymmetricField
+permalink: /Entity_Reference/Tpp/Effect/TppLensFlareAsymmetricField
+tags: [Tpp, Effect, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [Effect](/Entity_Reference/Tpp/Effect)\
+> Submodule: TODO: Submodule\
+> Inheritance: Tpp.Effect.TppLensFlareField → TppLensFlareAsymmetricField
+
+```cpp
+TppLensFlareAsymmetricField : Tpp.Effect.TppLensFlareField 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [verticalInnerScale](#verticalinnerscale) | TODO: Description |
+| [verticalCenterScale](#verticalcenterscale) | TODO: Description |
+| [verticalOuterScale](#verticalouterscale) | TODO: Description |
+| [verticalInnerValue](#verticalinnervalue) | TODO: Description |
+| [verticalCenterValue](#verticalcentervalue) | TODO: Description |
+| [verticalOuterValue](#verticaloutervalue) | TODO: Description |
+

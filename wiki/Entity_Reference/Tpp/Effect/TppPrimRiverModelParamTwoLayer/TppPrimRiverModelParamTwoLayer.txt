@@ -1,0 +1,56 @@
+<!--
+title: TppPrimRiverModelParamTwoLayer
+permalink: /Entity_Reference/Tpp/Effect/TppPrimRiverModelParamTwoLayer
+tags: [Tpp, Effect, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [Effect](/Entity_Reference/Tpp/Effect)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Data → TppPrimRiverModelParamTwoLayer
+
+```cpp
+TppPrimRiverModelParamTwoLayer : Fox.Core.Data 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [primRiverGroupName](#primrivergroupname) | TODO: Description |
+| [visibility](#visibility) | TODO: Description |
+| [baseTextureName](#basetexturename) | TODO: Description |
+| [normalTextureName](#normaltexturename) | TODO: Description |
+| [cubeMapName](#cubemapname) | TODO: Description |
+| [secondLayerBaseTextureName](#secondlayerbasetexturename) | TODO: Description |
+| [lightCaptureLocator](#lightcapturelocator) | TODO: Description |
+| [scrollDirection0](#scrolldirection0) | TODO: Description |
+| [scrollSpeed0](#scrollspeed0) | TODO: Description |
+| [scrollScale0](#scrollscale0) | TODO: Description |
+| [scrollDirection1](#scrolldirection1) | TODO: Description |
+| [scrollSpeed1](#scrollspeed1) | TODO: Description |
+| [scrollScale1](#scrollscale1) | TODO: Description |
+| [transparency](#transparency) | TODO: Description |
+| [transparencyDepthBlend](#transparencydepthblend) | TODO: Description |
+| [reflectionRate](#reflectionrate) | TODO: Description |
+| [distortionPower](#distortionpower) | TODO: Description |
+| [surfaceShadowRate](#surfaceshadowrate) | TODO: Description |
+| [secondScrollDirection0](#secondscrolldirection0) | TODO: Description |
+| [secondScrollSpeed0](#secondscrollspeed0) | TODO: Description |
+| [secondScrollScale0](#secondscrollscale0) | TODO: Description |
+| [secondScrollDirection1](#secondscrolldirection1) | TODO: Description |
+| [secondScrollSpeed1](#secondscrollspeed1) | TODO: Description |
+| [secondScrollScale1](#secondscrollscale1) | TODO: Description |
+| [secondLayerTransparency](#secondlayertransparency) | TODO: Description |
+| [secondLayerTransparencyDepthBlend](#secondlayertransparencydepthblend) | TODO: Description |
+| [secondLayerReflectionRate](#secondlayerreflectionrate) | TODO: Description |
+| [secondLayerDistortionPower](#secondlayerdistortionpower) | TODO: Description |
+| [secondLayerSurfaceShadowRate](#secondlayersurfaceshadowrate) | TODO: Description |
+| [maskDistortionRate](#maskdistortionrate) | TODO: Description |
+| [oilIntensity](#oilintensity) | TODO: Description |
+| [useHnmTexture](#usehnmtexture) | TODO: Description |
+| [debugReset](#debugreset) | TODO: Description |
+

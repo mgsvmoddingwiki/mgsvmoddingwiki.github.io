@@ -1,0 +1,24 @@
+<!--
+title: GeoxPathWallBody
+permalink: /Entity_Reference/Fox/Geox/GeoxPathWallBody
+tags: [Fox, Geox, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Geox](/Entity_Reference/Fox/Geox)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.TransformDataBody → GeoxPathWallBody
+
+```cpp
+GeoxPathWallBody : Fox.Core.TransformDataBody 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [isGeomActive](#isgeomactive) | TODO: Description |
+

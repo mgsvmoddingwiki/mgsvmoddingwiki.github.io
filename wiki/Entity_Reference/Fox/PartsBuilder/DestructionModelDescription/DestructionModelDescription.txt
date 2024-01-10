@@ -1,0 +1,25 @@
+<!--
+title: DestructionModelDescription
+permalink: /Entity_Reference/Fox/PartsBuilder/DestructionModelDescription
+tags: [Fox, PartsBuilder, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [PartsBuilder](/Entity_Reference/Fox/PartsBuilder)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.PartsBuilder.ModelDescription → DestructionModelDescription
+
+```cpp
+DestructionModelDescription : Fox.PartsBuilder.ModelDescription 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [fdesFile](#fdesfile) | TODO: Description |
+| [desDataSetFile](#desdatasetfile) | TODO: Description |
+

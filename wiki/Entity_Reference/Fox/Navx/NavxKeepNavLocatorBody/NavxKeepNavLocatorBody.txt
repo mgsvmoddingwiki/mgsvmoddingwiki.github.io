@@ -1,0 +1,21 @@
+<!--
+title: NavxKeepNavLocatorBody
+permalink: /Entity_Reference/Fox/Navx/NavxKeepNavLocatorBody
+tags: [Fox, Navx, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Navx](/Entity_Reference/Fox/Navx)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.TransformDataBody → NavxKeepNavLocatorBody
+
+```cpp
+NavxKeepNavLocatorBody : Fox.Core.TransformDataBody 
+```
+
+TODO: Description
+
+
+
+

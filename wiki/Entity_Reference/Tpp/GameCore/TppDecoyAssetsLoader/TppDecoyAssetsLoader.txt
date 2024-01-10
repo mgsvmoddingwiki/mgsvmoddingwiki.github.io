@@ -1,0 +1,26 @@
+<!--
+title: TppDecoyAssetsLoader
+permalink: /Entity_Reference/Tpp/GameCore/TppDecoyAssetsLoader
+tags: [Tpp, GameCore, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [GameCore](/Entity_Reference/Tpp/GameCore)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Data → TppDecoyAssetsLoader
+
+```cpp
+TppDecoyAssetsLoader : Fox.Core.Data 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [decoyAssets](#decoyassets) | TODO: Description |
+| [playerDecoyType](#playerdecoytype) | TODO: Description |
+| [enemyDecoyType](#enemydecoytype) | TODO: Description |
+

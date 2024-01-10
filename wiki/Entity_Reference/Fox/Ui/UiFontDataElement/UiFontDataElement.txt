@@ -1,0 +1,32 @@
+<!--
+title: UiFontDataElement
+permalink: /Entity_Reference/Fox/Ui/UiFontDataElement
+tags: [Fox, Ui, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Ui](/Entity_Reference/Fox/Ui)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.DataElement → UiFontDataElement
+
+```cpp
+UiFontDataElement : Fox.Core.DataElement 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [language](#language) | TODO: Description |
+| [fontName](#fontname) | TODO: Description |
+| [fontFile](#fontfile) | TODO: Description |
+| [texturePath](#texturepath) | TODO: Description |
+| [fontWidth](#fontwidth) | TODO: Description |
+| [fontHeight](#fontheight) | TODO: Description |
+| [textSpace](#textspace) | TODO: Description |
+| [lineSpace](#linespace) | TODO: Description |
+| [fontEdge](#fontedge) | TODO: Description |
+

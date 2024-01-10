@@ -1,0 +1,25 @@
+<!--
+title: ShearTransformEntity
+permalink: /Entity_Reference/Fox/Core/ShearTransformEntity
+tags: [Fox, Core, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Core](/Entity_Reference/Fox/Core)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.DataElement → ShearTransformEntity
+
+```cpp
+ShearTransformEntity : Fox.Core.DataElement 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [shearTransform_shear](#sheartransform-shear) | TODO: Description |
+| [shear](#shear) | TODO: Description |
+

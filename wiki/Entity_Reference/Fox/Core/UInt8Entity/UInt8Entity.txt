@@ -1,0 +1,24 @@
+<!--
+title: UInt8Entity
+permalink: /Entity_Reference/Fox/Core/UInt8Entity
+tags: [Fox, Core, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Core](/Entity_Reference/Fox/Core)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.PropertyValueEntity → UInt8Entity
+
+```cpp
+UInt8Entity : Fox.Core.PropertyValueEntity 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [value](#value) | TODO: Description |
+

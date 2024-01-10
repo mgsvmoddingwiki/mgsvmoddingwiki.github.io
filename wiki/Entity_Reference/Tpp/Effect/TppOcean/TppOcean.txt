@@ -1,0 +1,41 @@
+<!--
+title: TppOcean
+permalink: /Entity_Reference/Tpp/Effect/TppOcean
+tags: [Tpp, Effect, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [Effect](/Entity_Reference/Tpp/Effect)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.TransformData → TppOcean
+
+```cpp
+TppOcean : Fox.Core.TransformData 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [enable](#enable) | TODO: Description |
+| [guantanamoOcean](#guantanamoocean) | TODO: Description |
+| [wireframe](#wireframe) | TODO: Description |
+| [baseHeight](#baseheight) | TODO: Description |
+| [gridNumX](#gridnumx) | TODO: Description |
+| [gridNumY](#gridnumy) | TODO: Description |
+| [screenMarginX](#screenmarginx) | TODO: Description |
+| [screenMarginY](#screenmarginy) | TODO: Description |
+| [waveLengthMin](#wavelengthmin) | TODO: Description |
+| [waveLengthMax](#wavelengthmax) | TODO: Description |
+| [waveDispersion](#wavedispersion) | TODO: Description |
+| [windSpeed](#windspeed) | TODO: Description |
+| [waveParamTexture](#waveparamtexture) | TODO: Description |
+| [whitecapTexture](#whitecaptexture) | TODO: Description |
+| [horizonDistance](#horizondistance) | TODO: Description |
+| [lightCaptureDistance](#lightcapturedistance) | TODO: Description |
+| [randomSeed](#randomseed) | TODO: Description |
+| [collisionDatas](#collisiondatas) | TODO: Description |
+

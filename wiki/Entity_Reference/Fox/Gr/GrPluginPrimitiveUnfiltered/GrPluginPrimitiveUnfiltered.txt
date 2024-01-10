@@ -1,0 +1,21 @@
+<!--
+title: GrPluginPrimitiveUnfiltered
+permalink: /Entity_Reference/Fox/Gr/GrPluginPrimitiveUnfiltered
+tags: [Fox, Gr, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Gr](/Entity_Reference/Fox/Gr)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Gr.GrPluginPrimitive → GrPluginPrimitiveUnfiltered
+
+```cpp
+GrPluginPrimitiveUnfiltered : Fox.Gr.GrPluginPrimitive 
+```
+
+TODO: Description
+
+
+
+

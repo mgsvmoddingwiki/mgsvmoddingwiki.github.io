@@ -1,0 +1,21 @@
+<!--
+title: GrPluginDeferredGeometry
+permalink: /Entity_Reference/Fox/Gr/GrPluginDeferredGeometry
+tags: [Fox, Gr, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Gr](/Entity_Reference/Fox/Gr)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Gr.GrRenderPlugin → GrPluginDeferredGeometry
+
+```cpp
+GrPluginDeferredGeometry : Fox.Gr.GrRenderPlugin 
+```
+
+TODO: Description
+
+
+
+

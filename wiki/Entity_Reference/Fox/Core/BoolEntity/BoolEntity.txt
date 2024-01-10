@@ -1,0 +1,24 @@
+<!--
+title: BoolEntity
+permalink: /Entity_Reference/Fox/Core/BoolEntity
+tags: [Fox, Core, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Core](/Entity_Reference/Fox/Core)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.PropertyValueEntity → BoolEntity
+
+```cpp
+BoolEntity : Fox.Core.PropertyValueEntity 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [value](#value) | TODO: Description |
+

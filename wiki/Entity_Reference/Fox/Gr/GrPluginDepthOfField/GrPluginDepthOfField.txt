@@ -1,0 +1,21 @@
+<!--
+title: GrPluginDepthOfField
+permalink: /Entity_Reference/Fox/Gr/GrPluginDepthOfField
+tags: [Fox, Gr, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Gr](/Entity_Reference/Fox/Gr)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Gr.GrRenderPlugin → GrPluginDepthOfField
+
+```cpp
+GrPluginDepthOfField : Fox.Gr.GrRenderPlugin 
+```
+
+TODO: Description
+
+
+
+

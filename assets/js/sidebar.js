@@ -1,5 +1,7 @@
-import { searchIndex } from './searchindex.js'
-import { pageCounters } from './searchindex.js'
+import * as func from './functions.js';
+import { searchIndex } from './searchindex.js';
+import { pageCounters } from './searchindex.js';
+import { isVirtualPage } from './virtualpages.js';
 
 // ---------------- Add page counters to Quick Menu items ---------------
 const sidebar = body.querySelector('.git-wiki-page-list');
@@ -13,9 +15,8 @@ for (let key in counters) {
 
 
 // -------------------- Page URL hierarchy navigation -------------------
-var curPage
-var curUrl = window.location.pathname;
-var curUrlRoot = '/' + curUrl.split('/')[1] + '/'; // obtain first-level path of current URL
+var {curUrl, curUrlRoot} = func.getPageUrls(isVirtualPage),
+    curPage;
 export const sectionIndexFlat = pathTreeFilterArray(searchIndex, 'url', curUrlRoot); // check search index for shared root pages (assumes each path level has its own page)
 var sectionIndex = JSON.parse(JSON.stringify(sectionIndexFlat)); // creates separate reference for array copy so original array doesn't get retroactively modified by subsequent changes
 
@@ -29,38 +30,38 @@ if (sectionIndex.length > 1) {
     });
 
     // Create initial container HTML
-    var details = document.createElement('details');
-    var summary = document.createElement('summary');
-    details.classList.add('spoiler-sidebar','section-hierarchy');
-    details.setAttribute('open','');
+    var sectionSpoiler = document.createElement('details'),
+        summary = document.createElement('summary');
+    sectionSpoiler.classList.add('spoiler-sidebar','section-hierarchy');
+    sectionSpoiler.setAttribute('open','');
     summary.classList.add('sidebar-heading');
     summary.innerHTML = 'Current Section';
-    details.appendChild(summary);
-    sidebar.appendChild(details);
+    sectionSpoiler.appendChild(summary);
+    sidebar.appendChild(sectionSpoiler);
 
     // Parse array, convert to HTML list
     pathTreeSetParents(sectionIndex);
     sectionIndex = pathTreeNestArray(sectionIndex);
-    pathTreeCreateList(sectionIndex, details);
+    pathTreeCreateList(sectionIndex, sectionSpoiler);
 
     // Additional formatting
-    let uls = details.querySelectorAll('ul');
-    let spoilerClass = 'section-hierarchy-spoiler';
-    uls.forEach((ul, i) => {
+    let uls = sectionSpoiler.querySelectorAll('ul');
+    var spoilerClass = 'section-hierarchy-spoiler';
+    uls.forEach((ul, uli) => {
         const links = ul.querySelectorAll('li > a');
         links.forEach((link, i) => {
-            if (i == 0) {
-                link.classList.add('icon-open-pages');
+            if (uli == 0 && i == 0) {
+                link.classList.add('root-page', 'icon-open-pages');
             } else {
                 link.classList.add('icon-page');
             }
         });
-        if (i == 0) {
+        if (uli == 0) {
             ul.classList.add('section-hierarchy-list');
         // Skip wrapping first-level ul in spoiler so second-level children always visible
-        } else if (i > 1 && ul.parentNode.classList.contains('has-children')) {
-            const spoiler = document.createElement('details');
-            const summary = document.createElement('summary');
+        } else if (uli > 1 && ul.parentNode.classList.contains('has-children')) {
+            const spoiler = document.createElement('details'),
+                  summary = document.createElement('summary');
             summary.classList.add('spoiler-button');
             spoiler.classList.add(spoilerClass);
             spoiler.appendChild(summary);
@@ -70,19 +71,7 @@ if (sectionIndex.length > 1) {
     });
 
     // Expand spoilers to current page/section
-    curPage = details.querySelector('.current-page');
-    let ancestors = [];
-    let node = curPage;
-    let spoilerChild = node.querySelector(':scope > details');
-    if (spoilerChild) { spoilerChild.setAttribute('open',''); } // expand child spoilers for section items
-    ancestors.push(node);
-    while (node.parentElement) {
-      if (node.parentElement.classList.contains(spoilerClass)) {
-        node.parentElement.setAttribute('open','');
-        ancestors.unshift(node.parentElement);
-      }
-      node = node.parentElement;
-    }
+    expandSpoilerTree();
 }
 
 
@@ -108,7 +97,7 @@ scrollbarWrapper.addEventListener('scroll', e => {
     const {scrollHeight, scrollTop, clientHeight} = e.target;
     let stickyState = false;
     // Since event is fired synchronously the new `stickied` class is undetected initially (most obvious in Chromium). So an asynchronous check is used.
-    waitForElementsToExist(sidebar, '.stickied').then(stickies => {
+    func.waitForElements(sidebar, '.stickied').then(stickies => {
         stickies.forEach(el => {
             // Check parent details element for `open` state in case heading is inside closed state (which would lead to false positives when toggling `hide-top` class)
             if (el.parentNode.hasAttribute('open')) {
@@ -125,28 +114,54 @@ scrollbarWrapper.addEventListener('scroll', e => {
 });
 
 if (curPage) {
-    scrollToCenter(curPage, scrollbarWrapper, (details.offsetTop + spoilerClosedHeight));
+    scrollCurrentItemIntoView(curPage);
 }
 
 
 // -------- Share section index with page auto index includes -----------
-if (sectionIndexFlat.length > 1) {
-    const autoIndexSection = body.querySelectorAll('.index.section ul');
-    autoIndexSection.forEach((index) => {
-        const parent = getNestedObjFromValue(sectionIndex, 'children', 'url', curUrl)
-        parent.children.forEach((child) => {
-            let item = document.createElement('li');
-            let link = document.createElement('a');
-            link.setAttribute('href', child.url);
-            link.textContent = child.title;
-            item.appendChild(link);
-            index.appendChild(item);
+func.checkVp(indexAutoListSection);
+function indexAutoListSection() {
+    if (sectionIndexFlat.length > 1) {
+        const autoIndexSection = body.querySelectorAll('.index.section ul');
+        autoIndexSection.forEach((index) => {
+            var {curUrl, curUrlRoot} = func.getPageUrls(isVirtualPage); // always re-fetch current URL
+            const parent = getNestedObjFromValue(sectionIndex, 'children', 'url', curUrl);
+            parent.children.forEach((child) => {
+                let item = document.createElement('li'),
+                    link = document.createElement('a');
+                link.setAttribute('href', child.url);
+                link.textContent = child.title;
+                item.appendChild(link);
+                index.appendChild(item);
+            });
         });
-    });
+    }
 }
 
 
 // ------------------------------ Functions -----------------------------
+export function expandSpoilerTree(collapseSiblings) {
+    if (collapseSiblings) {
+        let spoilers = sectionSpoiler.querySelectorAll('.section-hierarchy-spoiler');
+        spoilers.forEach((spoiler) => {
+            spoiler.removeAttribute('open');
+        });
+    }
+    curPage = sectionSpoiler.querySelector('.current-page');
+    let ancestors = [];
+    let node = curPage;
+    let spoilerChild = node.querySelector(':scope > details');
+    if (spoilerChild) { spoilerChild.setAttribute('open',''); } // expand child spoilers for section items
+    ancestors.push(node);
+    while (node.parentElement) {
+      if (node.parentElement.classList.contains(spoilerClass)) {
+        node.parentElement.setAttribute('open','');
+        ancestors.unshift(node.parentElement);
+      }
+      node = node.parentElement;
+    }
+}
+
 // https://stackoverflow.com/a/53390570
 function getNestedObjFromValue(array, nestingKey, itemKey, value) {
     const obj = array.reduce((acc, item) => {
@@ -157,29 +172,15 @@ function getNestedObjFromValue(array, nestingKey, itemKey, value) {
     return obj
 }
 
-function waitForElementsToExist(parent, selector) {
-    return new Promise(resolve => {
-        if (parent.querySelectorAll(selector).length) {
-            return resolve(parent.querySelectorAll(selector));
-        }
-
-        const observer = new MutationObserver(() => {
-            if (parent.querySelectorAll(selector).length) {
-                resolve(parent.querySelectorAll(selector));
-                observer.disconnect();
-            }
-        });
-
-        observer.observe(parent, {
-            subtree: true,
-            childList: true,
-        });
-    });
+export function scrollCurrentItemIntoView(currentItem) {
+    scrollToCenter(currentItem, scrollbarWrapper, false, (sectionSpoiler.offsetTop + spoilerClosedHeight));
 }
 
-function scrollToCenter(target, container, yOffset) {
-    let top = (target.offsetTop + (yOffset || 0)) + (target.clientHeight / 2);
-    let center = top - (container.clientHeight / 2);
+function scrollToCenter(target, container, toTargetCenter, yOffset) {
+    let targetCenter = 0; // by default use top coord to align
+    if (toTargetCenter) { targetCenter = (target.clientHeight / 2); }
+    let top = (target.offsetTop + (yOffset || 0)) + targetCenter,
+        center = top - (container.clientHeight / 2);
     container.scrollTo(0, center);
 }
 
@@ -201,13 +202,15 @@ function pathTreeFilterArray(array, key, value) {
 function pathTreeSetParents(array) {
     for (let i in array) {
         const obj = array[i];
-        let parts = [...String(obj.url).split('/')]; // in `String()` to avoid undefined errors
-        let levels = parts.length - 2;
+        let {parts, levels} = func.getPathLevels(obj.url);
         delete obj.content // discard unnecessary values for array
         delete obj.tags
         if (levels > 1) {
-            let parentPath = getParentPath(obj.url, parts)
-            let parentIndex = getIndexByValue(sectionIndex, 'url', parentPath);
+            let parentPath = getParentPath(obj.url, parts);
+            if (isVirtualPage && parentPath == curUrlRoot + '/') {
+                parentPath = func.trimTrailFs(parentPath); // virtual pages require root real page have no trailing forwardslash, so removed else object can't be matched
+            }
+            let parentIndex = func.getIndexByValue(sectionIndex, 'url', parentPath);
             obj.parentId = sectionIndex[parentIndex].id;
         }
     }
@@ -258,7 +261,7 @@ function pathTreeCreateList(array, targetEl) {
         if (el.url == curUrl) {
             li.classList.add('current-page');
         }
-        li.innerHTML = '<a class="iconed icon-sidebar" href="' + el.url + '"><span class="label">' + el.title + '</span></a>';
+        li.innerHTML = '<a class="section-hierarchy-link iconed icon-sidebar" href="' + el.url + '"><span class="label">' + el.title + '</span></a>';
         if (el.children.length) {
             li.classList.add('has-children');
             pathTreeCreateList(el.children, li);

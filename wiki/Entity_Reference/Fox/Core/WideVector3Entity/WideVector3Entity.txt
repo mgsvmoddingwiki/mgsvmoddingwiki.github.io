@@ -1,0 +1,24 @@
+<!--
+title: WideVector3Entity
+permalink: /Entity_Reference/Fox/Core/WideVector3Entity
+tags: [Fox, Core, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Core](/Entity_Reference/Fox/Core)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.PropertyValueEntity → WideVector3Entity
+
+```cpp
+WideVector3Entity : Fox.Core.PropertyValueEntity 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [value](#value) | TODO: Description |
+

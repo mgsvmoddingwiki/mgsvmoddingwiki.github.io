@@ -1,0 +1,21 @@
+<!--
+title: UiFontGroupDataBody
+permalink: /Entity_Reference/Fox/Ui/UiFontGroupDataBody
+tags: [Fox, Ui, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Ui](/Entity_Reference/Fox/Ui)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.DataBody → UiFontGroupDataBody
+
+```cpp
+UiFontGroupDataBody : Fox.Core.DataBody 
+```
+
+TODO: Description
+
+
+
+

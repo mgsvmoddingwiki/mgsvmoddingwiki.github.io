@@ -1,0 +1,26 @@
+<!--
+title: TppVolgin2Parameter
+permalink: /Entity_Reference/Tpp/GameCore/TppVolgin2Parameter
+tags: [Tpp, GameCore, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [GameCore](/Entity_Reference/Tpp/GameCore)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.DataElement → TppVolgin2Parameter
+
+```cpp
+TppVolgin2Parameter : Fox.Core.DataElement 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [partsFile](#partsfile) | TODO: Description |
+| [motionGraphFile](#motiongraphfile) | TODO: Description |
+| [mtarFile](#mtarfile) | TODO: Description |
+

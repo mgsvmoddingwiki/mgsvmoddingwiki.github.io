@@ -1,0 +1,28 @@
+<!--
+title: ClipData
+permalink: /Entity_Reference/Fox/Demo/ClipData
+tags: [Fox, Demo, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Demo](/Entity_Reference/Fox/Demo)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.DataElement → ClipData
+
+```cpp
+ClipData : Fox.Core.DataElement 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [name](#name) | TODO: Description |
+| [cameraName](#cameraname) | TODO: Description |
+| [startFrame](#startframe) | TODO: Description |
+| [endFrame](#endframe) | TODO: Description |
+| [offsetFrame](#offsetframe) | TODO: Description |
+

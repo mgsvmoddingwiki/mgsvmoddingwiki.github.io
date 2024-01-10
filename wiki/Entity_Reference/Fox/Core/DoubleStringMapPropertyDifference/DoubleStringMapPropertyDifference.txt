@@ -1,0 +1,25 @@
+<!--
+title: DoubleStringMapPropertyDifference
+permalink: /Entity_Reference/Fox/Core/DoubleStringMapPropertyDifference
+tags: [Fox, Core, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Core](/Entity_Reference/Fox/Core)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.PropertyDifference → DoubleStringMapPropertyDifference
+
+```cpp
+DoubleStringMapPropertyDifference : Fox.Core.PropertyDifference 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [originalValues](#originalvalues) | TODO: Description |
+| [values](#values) | TODO: Description |
+

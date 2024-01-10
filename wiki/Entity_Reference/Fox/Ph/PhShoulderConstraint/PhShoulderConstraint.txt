@@ -1,0 +1,31 @@
+<!--
+title: PhShoulderConstraint
+permalink: /Entity_Reference/Fox/Ph/PhShoulderConstraint
+tags: [Fox, Ph, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Ph](/Entity_Reference/Fox/Ph)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Ph.PhConstraint → PhShoulderConstraint
+
+```cpp
+PhShoulderConstraint : Fox.Ph.PhConstraint 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [limitedFlag](#limitedflag) | TODO: Description |
+| [refA](#refa) | TODO: Description |
+| [refB](#refb) | TODO: Description |
+| [limit](#limit) | TODO: Description |
+| [limitedFlag1](#limitedflag1) | TODO: Description |
+| [refA1](#refa1) | TODO: Description |
+| [refB1](#refb1) | TODO: Description |
+| [limit1](#limit1) | TODO: Description |
+

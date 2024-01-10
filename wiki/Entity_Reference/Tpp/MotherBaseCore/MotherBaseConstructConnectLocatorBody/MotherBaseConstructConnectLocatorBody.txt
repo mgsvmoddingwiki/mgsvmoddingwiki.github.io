@@ -1,0 +1,21 @@
+<!--
+title: MotherBaseConstructConnectLocatorBody
+permalink: /Entity_Reference/Tpp/MotherBaseCore/MotherBaseConstructConnectLocatorBody
+tags: [Tpp, MotherBaseCore, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [MotherBaseCore](/Entity_Reference/Tpp/MotherBaseCore)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.TransformDataBody → MotherBaseConstructConnectLocatorBody
+
+```cpp
+MotherBaseConstructConnectLocatorBody : Fox.Core.TransformDataBody 
+```
+
+TODO: Description
+
+
+
+

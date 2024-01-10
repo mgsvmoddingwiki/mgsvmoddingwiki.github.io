@@ -1,0 +1,21 @@
+<!--
+title: GrPlugin2D
+permalink: /Entity_Reference/Fox/Gr/GrPlugin2D
+tags: [Fox, Gr, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Gr](/Entity_Reference/Fox/Gr)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Gr.GrRenderPlugin → GrPlugin2D
+
+```cpp
+GrPlugin2D : Fox.Gr.GrRenderPlugin 
+```
+
+TODO: Description
+
+
+
+

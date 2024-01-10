@@ -1,0 +1,27 @@
+<!--
+title: NetworkInfo
+permalink: /Entity_Reference/Tpp/Network/NetworkInfo
+tags: [Tpp, Network, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [Network](/Entity_Reference/Tpp/Network)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Entity → NetworkInfo
+
+```cpp
+NetworkInfo : Fox.Core.Entity 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [userId](#userid) | TODO: Description |
+| [userName](#username) | TODO: Description |
+| [playerId](#playerid) | TODO: Description |
+| [playerName](#playername) | TODO: Description |
+

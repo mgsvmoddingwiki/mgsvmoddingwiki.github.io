@@ -1,0 +1,30 @@
+<!--
+title: TppCombatLocatorData
+permalink: /Entity_Reference/Tpp/GameKit/TppCombatLocatorData
+tags: [Tpp, GameKit, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [GameKit](/Entity_Reference/Tpp/GameKit)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.TransformData → TppCombatLocatorData
+
+```cpp
+TppCombatLocatorData : Fox.Core.TransformData 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [radius](#radius) | TODO: Description |
+| [lostSearchRadius](#lostsearchradius) | TODO: Description |
+| [isUseWaitPrioirty](#isusewaitprioirty) | TODO: Description |
+| [isReinforcePoint](#isreinforcepoint) | TODO: Description |
+| [memberCount](#membercount) | TODO: Description |
+| [memberCountFront](#membercountfront) | TODO: Description |
+| [subLocators](#sublocators) | TODO: Description |
+

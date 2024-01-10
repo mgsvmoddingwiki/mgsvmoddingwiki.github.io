@@ -1,0 +1,21 @@
+<!--
+title: TppHidePointDataBody
+permalink: /Entity_Reference/Tpp/GameCore/TppHidePointDataBody
+tags: [Tpp, GameCore, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [GameCore](/Entity_Reference/Tpp/GameCore)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.TransformDataBody → TppHidePointDataBody
+
+```cpp
+TppHidePointDataBody : Fox.Core.TransformDataBody 
+```
+
+TODO: Description
+
+
+
+

@@ -1,0 +1,21 @@
+<!--
+title: DecalBody
+permalink: /Entity_Reference/Fox/GameKit/DecalBody
+tags: [Fox, GameKit, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [GameKit](/Entity_Reference/Fox/GameKit)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.TransformDataBody → DecalBody
+
+```cpp
+DecalBody : Fox.Core.TransformDataBody 
+```
+
+TODO: Description
+
+
+
+

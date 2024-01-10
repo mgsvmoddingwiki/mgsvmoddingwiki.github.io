@@ -1,0 +1,24 @@
+<!--
+title: GeoSearchSphere
+permalink: /Entity_Reference/Fox/Geo/GeoSearchSphere
+tags: [Fox, Geo, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Geo](/Entity_Reference/Fox/Geo)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Geo.GeoSearchObject → GeoSearchSphere
+
+```cpp
+GeoSearchSphere : Fox.Geo.GeoSearchObject 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [p](#p) | TODO: Description |
+

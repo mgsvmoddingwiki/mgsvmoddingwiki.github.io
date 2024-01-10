@@ -1,0 +1,26 @@
+<!--
+title: GeoCheckModuleCondition
+permalink: /Entity_Reference/Fox/Geo/GeoCheckModuleCondition
+tags: [Fox, Geo, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Geo](/Entity_Reference/Fox/Geo)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Geo.GeoTrapCondition → GeoCheckModuleCondition
+
+```cpp
+GeoCheckModuleCondition : Fox.Geo.GeoTrapCondition 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [isAndCheck](#isandcheck) | TODO: Description |
+| [checkFuncNames](#checkfuncnames) | TODO: Description |
+| [checkCallbackDataElements](#checkcallbackdataelements) | TODO: Description |
+

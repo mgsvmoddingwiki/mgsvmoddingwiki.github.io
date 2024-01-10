@@ -2,6 +2,11 @@
 {% assign page_level = page.url | split: '/' %}
 {% assign page_level = page_level.size | minus: 1 %}
 {% if page_level < 2 %}{% assign singlelevel = true %}{% endif %}
+{% for path in site.virtual_page_roots %}
+    {% if page.url contains path %}
+        {% assign singlelevel = false %}
+    {% endif %}
+{% endfor %}
 
 <details class="spoiler-sidebar" {% if singlelevel %}open{% endif %}>
     <summary class="sidebar-heading">Quick Menu</summary>
@@ -24,6 +29,11 @@
         <li>
             <a class="iconed icon-sidebar icon-tool" href="/FoxKit">
                 <span class="label">FoxKit</span>
+            </a>
+        </li>
+        <li>
+            <a class="iconed icon-sidebar icon-nodes" href="/Entity_Reference">
+                <span class="label">Entity Reference</span>
             </a>
         </li>
         <li>

@@ -1,0 +1,25 @@
+<!--
+title: TppTextureLoader
+permalink: /Entity_Reference/Tpp/Effect/TppTextureLoader
+tags: [Tpp, Effect, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [Effect](/Entity_Reference/Tpp/Effect)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Data → TppTextureLoader
+
+```cpp
+TppTextureLoader : Fox.Core.Data 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [textures](#textures) | TODO: Description |
+| [forceLargeTextures](#forcelargetextures) | TODO: Description |
+

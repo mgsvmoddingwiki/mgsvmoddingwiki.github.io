@@ -1,0 +1,25 @@
+<!--
+title: StaticModelArrayBody
+permalink: /Entity_Reference/Fox/GameKit/StaticModelArrayBody
+tags: [Fox, GameKit, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [GameKit](/Entity_Reference/Fox/GameKit)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.DataBody → StaticModelArrayBody
+
+```cpp
+StaticModelArrayBody : Fox.Core.DataBody 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [isVisible](#isvisible) | TODO: Description |
+| [isGeomActive](#isgeomactive) | TODO: Description |
+

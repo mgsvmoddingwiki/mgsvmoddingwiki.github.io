@@ -1,0 +1,21 @@
+<!--
+title: PhMaterialManager
+permalink: /Entity_Reference/Fox/Ph/PhMaterialManager
+tags: [Fox, Ph, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Ph](/Entity_Reference/Fox/Ph)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Entity → PhMaterialManager
+
+```cpp
+PhMaterialManager : Fox.Core.Entity 
+```
+
+TODO: Description
+
+
+
+

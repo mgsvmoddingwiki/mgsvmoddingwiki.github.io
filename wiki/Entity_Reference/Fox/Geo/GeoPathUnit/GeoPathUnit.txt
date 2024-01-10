@@ -1,0 +1,24 @@
+<!--
+title: GeoPathUnit
+permalink: /Entity_Reference/Fox/Geo/GeoPathUnit
+tags: [Fox, Geo, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Geo](/Entity_Reference/Fox/Geo)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.TransformData → GeoPathUnit
+
+```cpp
+GeoPathUnit : Fox.Core.TransformData 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [tags](#tags) | TODO: Description |
+

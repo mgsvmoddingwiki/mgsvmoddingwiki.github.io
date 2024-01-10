@@ -1,0 +1,26 @@
+<!--
+title: GraphxSpatialGraphDataNode
+permalink: /Entity_Reference/Fox/Graphx/GraphxSpatialGraphDataNode
+tags: [Fox, Graphx, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Graphx](/Entity_Reference/Fox/Graphx)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.DataElement → GraphxSpatialGraphDataNode
+
+```cpp
+GraphxSpatialGraphDataNode : Fox.Core.DataElement 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [position](#position) | TODO: Description |
+| [inlinks](#inlinks) | TODO: Description |
+| [outlinks](#outlinks) | TODO: Description |
+

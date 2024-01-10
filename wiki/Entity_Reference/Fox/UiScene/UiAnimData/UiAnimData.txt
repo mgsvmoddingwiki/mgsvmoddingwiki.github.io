@@ -1,0 +1,30 @@
+<!--
+title: UiAnimData
+permalink: /Entity_Reference/Fox/UiScene/UiAnimData
+tags: [Fox, UiScene, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [UiScene](/Entity_Reference/Fox/UiScene)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Data → UiAnimData
+
+```cpp
+UiAnimData : Fox.Core.Data 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [data](#data) | TODO: Description |
+| [data_s](#data-s) | TODO: Description |
+| [model](#model) | TODO: Description |
+| [speed](#speed) | TODO: Description |
+| [flag](#flag) | TODO: Description |
+| [srcNodeNames](#srcnodenames) | TODO: Description |
+| [destNodeNames](#destnodenames) | TODO: Description |
+

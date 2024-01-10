@@ -1,0 +1,26 @@
+<!--
+title: StageLightFadeData
+permalink: /Entity_Reference/Fox/GameKit/StageLightFadeData
+tags: [Fox, GameKit, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [GameKit](/Entity_Reference/Fox/GameKit)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Data → StageLightFadeData
+
+```cpp
+StageLightFadeData : Fox.Core.Data 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [lightGroup](#lightgroup) | TODO: Description |
+| [colorList](#colorlist) | TODO: Description |
+| [requirdTime](#requirdtime) | TODO: Description |
+

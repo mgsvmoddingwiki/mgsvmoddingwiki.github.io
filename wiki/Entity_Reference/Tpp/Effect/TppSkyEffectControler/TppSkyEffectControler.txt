@@ -1,0 +1,27 @@
+<!--
+title: TppSkyEffectControler
+permalink: /Entity_Reference/Tpp/Effect/TppSkyEffectControler
+tags: [Tpp, Effect, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [Effect](/Entity_Reference/Tpp/Effect)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Data → TppSkyEffectControler
+
+```cpp
+TppSkyEffectControler : Fox.Core.Data 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [cameraLight](#cameralight) | TODO: Description |
+| [hour](#hour) | TODO: Description |
+| [minute](#minute) | TODO: Description |
+| [second](#second) | TODO: Description |
+

@@ -1,0 +1,31 @@
+<!--
+title: TppParasite2Parameter
+permalink: /Entity_Reference/Tpp/GameCore/TppParasite2Parameter
+tags: [Tpp, GameCore, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [GameCore](/Entity_Reference/Tpp/GameCore)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.DataElement → TppParasite2Parameter
+
+```cpp
+TppParasite2Parameter : Fox.Core.DataElement 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [partsFile](#partsfile) | TODO: Description |
+| [motionGraphFile](#motiongraphfile) | TODO: Description |
+| [mtarFile](#mtarfile) | TODO: Description |
+| [partsFiles](#partsfiles) | TODO: Description |
+| [vfxFiles](#vfxfiles) | TODO: Description |
+| [fmdlFiles](#fmdlfiles) | TODO: Description |
+| [geomFiles](#geomfiles) | TODO: Description |
+| [fovaFiles](#fovafiles) | TODO: Description |
+

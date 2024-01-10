@@ -1,0 +1,21 @@
+<!--
+title: TppLensFlareRootBase
+permalink: /Entity_Reference/Tpp/Effect/TppLensFlareRootBase
+tags: [Tpp, Effect, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [Effect](/Entity_Reference/Tpp/Effect)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.TransformData → TppLensFlareRootBase
+
+```cpp
+TppLensFlareRootBase : Fox.Core.TransformData 
+```
+
+TODO: Description
+
+
+
+

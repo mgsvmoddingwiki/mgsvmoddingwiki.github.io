@@ -1,0 +1,26 @@
+<!--
+title: UiNodeDataBody
+permalink: /Entity_Reference/Fox/Ui/UiNodeDataBody
+tags: [Fox, Ui, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Ui](/Entity_Reference/Fox/Ui)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.DataBody → UiNodeDataBody
+
+```cpp
+UiNodeDataBody : Fox.Core.DataBody 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [inputEdges](#inputedges) | TODO: Description |
+| [outputEdges](#outputedges) | TODO: Description |
+| [uigName](#uigname) | TODO: Description |
+

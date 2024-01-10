@@ -1,0 +1,102 @@
+<!--
+title: TppAtmosphere
+permalink: /Entity_Reference/Tpp/Effect/TppAtmosphere
+tags: [Tpp, Effect, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [Effect](/Entity_Reference/Tpp/Effect)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Data → TppAtmosphere
+
+```cpp
+TppAtmosphere : Fox.Core.Data 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [atshFilePath](#atshfilepath) | TODO: Description |
+| [pcspFilePath](#pcspfilepath) | TODO: Description |
+| [atshFilePtr](#atshfileptr) | TODO: Description |
+| [pcspFilePtr](#pcspfileptr) | TODO: Description |
+| [useBakedData](#usebakeddata) | TODO: Description |
+| [capturePosition](#captureposition) | TODO: Description |
+| [rayleighHeightScale](#rayleighheightscale) | TODO: Description |
+| [rayleighScatteringCoefficient](#rayleighscatteringcoefficient) | TODO: Description |
+| [rayleighScatteringCoefficientOfCloudySky](#rayleighscatteringcoefficientofcloudysky) | TODO: Description |
+| [mieHeightScale](#mieheightscale) | TODO: Description |
+| [mieAbsorptionRate](#mieabsorptionrate) | TODO: Description |
+| [mieAnisotropy](#mieanisotropy) | TODO: Description |
+| [mieScatteringCoefficient](#miescatteringcoefficient) | TODO: Description |
+| [mieAnisotropyOfCloudySky](#mieanisotropyofcloudysky) | TODO: Description |
+| [mieScatteringCoefficientOfCloudySky](#miescatteringcoefficientofcloudysky) | TODO: Description |
+| [multiScatteringOrder](#multiscatteringorder) | TODO: Description |
+| [groundColor](#groundcolor) | TODO: Description |
+| [northAngle](#northangle) | TODO: Description |
+| [latitude](#latitude) | TODO: Description |
+| [longitude](#longitude) | TODO: Description |
+| [gmtTimeDifference](#gmttimedifference) | TODO: Description |
+| [year](#year) | TODO: Description |
+| [month](#month) | TODO: Description |
+| [day](#day) | TODO: Description |
+| [shadowRange](#shadowrange) | TODO: Description |
+| [shadowRangeExtra](#shadowrangeextra) | TODO: Description |
+| [hiResShadowRange](#hiresshadowrange) | TODO: Description |
+| [shadowProjectionRange](#shadowprojectionrange) | TODO: Description |
+| [shadowFadeRange](#shadowfaderange) | TODO: Description |
+| [selfShadowBias](#selfshadowbias) | TODO: Description |
+| [shadowMaskSpecular](#shadowmaskspecular) | TODO: Description |
+| [dirLightFadeStart](#dirlightfadestart) | TODO: Description |
+| [dirLightFadeLength](#dirlightfadelength) | TODO: Description |
+| [sunLux](#sunlux) | TODO: Description |
+| [moonLux](#moonlux) | TODO: Description |
+| [starLight](#starlight) | TODO: Description |
+| [sunMoonSize](#sunmoonsize) | TODO: Description |
+| [sunMoonIntensity](#sunmoonintensity) | TODO: Description |
+| [sunTexture](#suntexture) | TODO: Description |
+| [moonTexture](#moontexture) | TODO: Description |
+| [moonColor](#mooncolor) | TODO: Description |
+| [sunColorExtinctionOfClearSky](#suncolorextinctionofclearsky) | TODO: Description |
+| [sunColorOfCloudySky](#suncolorofcloudysky) | TODO: Description |
+| [skyLightSunScale](#skylightsunscale) | TODO: Description |
+| [skyColorSunScale](#skycolorsunscale) | TODO: Description |
+| [daySkyAmbientScale](#dayskyambientscale) | TODO: Description |
+| [dirLightSunLimitAngle](#dirlightsunlimitangle) | TODO: Description |
+| [dirLightMoonLimitAngle](#dirlightmoonlimitangle) | TODO: Description |
+| [dirLightAttenuStart](#dirlightattenustart) | TODO: Description |
+| [dirLightAttenuEnd](#dirlightattenuend) | TODO: Description |
+| [fixedLightDirSunRise](#fixedlightdirsunrise) | TODO: Description |
+| [fixedLightDirSunSet](#fixedlightdirsunset) | TODO: Description |
+| [fixedLightDirMoonRise](#fixedlightdirmoonrise) | TODO: Description |
+| [fixedLightDirMoonSet](#fixedlightdirmoonset) | TODO: Description |
+| [fixedRisingSunDir](#fixedrisingsundir) | TODO: Description |
+| [fixedFallingSunDir](#fixedfallingsundir) | TODO: Description |
+| [fixedRisingMoonDir](#fixedrisingmoondir) | TODO: Description |
+| [fixedFallingMoonDir](#fixedfallingmoondir) | TODO: Description |
+| [skyLightLuminanceScale](#skylightluminancescale) | TODO: Description |
+| [numBands](#numbands) | TODO: Description |
+| [coefficients](#coefficients) | TODO: Description |
+| [cloudiness](#cloudiness) | TODO: Description |
+| [influenceOfFog](#influenceoffog) | TODO: Description |
+| [localFlags](#localflags) | TODO: Description |
+| [priority](#priority) | TODO: Description |
+| [interpolateTimeInSecondOfDirLightSteppedMove](#interpolatetimeinsecondofdirlightsteppedmove) | TODO: Description |
+| [divisonNumOfDirLightSteppedMove](#divisonnumofdirlightsteppedmove) | TODO: Description |
+| [enable](#enable) | TODO: Description |
+| [skyEnable](#skyenable) | TODO: Description |
+| [sunLightEnable](#sunlightenable) | TODO: Description |
+| [isCascadeBlend](#iscascadeblend) | TODO: Description |
+| [castShadow](#castshadow) | TODO: Description |
+| [dirLightFade](#dirlightfade) | TODO: Description |
+| [disableSkyCapture](#disableskycapture) | TODO: Description |
+| [skyLightEnable](#skylightenable) | TODO: Description |
+| [usePrecomputedAmbient](#useprecomputedambient) | TODO: Description |
+| [fogEnable](#fogenable) | TODO: Description |
+| [expandHorizontalLineColor](#expandhorizontallinecolor) | TODO: Description |
+| [isSteppedMoveOfDirectionalLight](#issteppedmoveofdirectionallight) | TODO: Description |
+

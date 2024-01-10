@@ -1,0 +1,35 @@
+<!--
+title: TppDroplets
+permalink: /Entity_Reference/Tpp/Effect/TppDroplets
+tags: [Tpp, Effect, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [Effect](/Entity_Reference/Tpp/Effect)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Data → TppDroplets
+
+```cpp
+TppDroplets : Fox.Core.Data 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [timeBetweenNewDroplets](#timebetweennewdroplets) | TODO: Description |
+| [timeBetweenNewBigDroplets](#timebetweennewbigdroplets) | TODO: Description |
+| [timeBetweenTwoNewBigDropletsAtTheSameTime](#timebetweentwonewbigdropletsatthesametime) | TODO: Description |
+| [dropletsSize](#dropletssize) | TODO: Description |
+| [dropletsVelocity](#dropletsvelocity) | TODO: Description |
+| [dropletsTransparency](#dropletstransparency) | TODO: Description |
+| [minimumMassToStartMoving](#minimummasstostartmoving) | TODO: Description |
+| [minimumVelocityToAdvance](#minimumvelocitytoadvance) | TODO: Description |
+| [remainingMassPropotionWhenDropletsMove](#remainingmasspropotionwhendropletsmove) | TODO: Description |
+| [residualWaterMinimumRenderingRadius](#residualwaterminimumrenderingradius) | TODO: Description |
+| [residualWaterMaximumRenderingRadius](#residualwatermaximumrenderingradius) | TODO: Description |
+| [residualWaterMaximumIntensity](#residualwatermaximumintensity) | TODO: Description |
+

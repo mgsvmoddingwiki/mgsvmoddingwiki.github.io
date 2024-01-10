@@ -1,0 +1,24 @@
+<!--
+title: UInt32ListEntity
+permalink: /Entity_Reference/Fox/Core/UInt32ListEntity
+tags: [Fox, Core, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Core](/Entity_Reference/Fox/Core)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Entity → UInt32ListEntity
+
+```cpp
+UInt32ListEntity : Fox.Core.Entity 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [list](#list) | TODO: Description |
+

@@ -1,0 +1,25 @@
+<!--
+title: TppCheckPointLocator
+permalink: /Entity_Reference/Tpp/System/TppCheckPointLocator
+tags: [Tpp, System, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [System](/Entity_Reference/Tpp/System)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Locator → TppCheckPointLocator
+
+```cpp
+TppCheckPointLocator : Fox.Core.Locator 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [checkPointId](#checkpointid) | TODO: Description |
+| [usePlayerRotation](#useplayerrotation) | TODO: Description |
+

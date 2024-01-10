@@ -1,0 +1,21 @@
+<!--
+title: Scene
+permalink: /Entity_Reference/Fox/Core/Scene
+tags: [Fox, Core, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Core](/Entity_Reference/Fox/Core)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Actor → Scene
+
+```cpp
+Scene : Fox.Core.Actor 
+```
+
+TODO: Description
+
+
+
+

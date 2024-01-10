@@ -1,0 +1,31 @@
+<!--
+title: ProceduralDemoData
+permalink: /Entity_Reference/Fox/Demox/ProceduralDemoData
+tags: [Fox, Demox, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Demox](/Entity_Reference/Fox/Demox)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.TransformData → ProceduralDemoData
+
+```cpp
+ProceduralDemoData : Fox.Core.TransformData 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [evfFiles](#evffiles) | TODO: Description |
+| [eventFiles](#eventfiles) | TODO: Description |
+| [priority](#priority) | TODO: Description |
+| [demoId](#demoid) | TODO: Description |
+| [stringParams](#stringparams) | TODO: Description |
+| [entityParams](#entityparams) | TODO: Description |
+| [fileParams](#fileparams) | TODO: Description |
+| [objectNum](#objectnum) | TODO: Description |
+

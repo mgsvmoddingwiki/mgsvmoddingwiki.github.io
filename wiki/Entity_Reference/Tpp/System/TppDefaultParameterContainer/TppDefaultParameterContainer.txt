@@ -1,0 +1,25 @@
+<!--
+title: TppDefaultParameterContainer
+permalink: /Entity_Reference/Tpp/System/TppDefaultParameterContainer
+tags: [Tpp, System, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [System](/Entity_Reference/Tpp/System)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Data → TppDefaultParameterContainer
+
+```cpp
+TppDefaultParameterContainer : Fox.Core.Data 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [id](#id) | TODO: Description |
+| [params](#params) | TODO: Description |
+

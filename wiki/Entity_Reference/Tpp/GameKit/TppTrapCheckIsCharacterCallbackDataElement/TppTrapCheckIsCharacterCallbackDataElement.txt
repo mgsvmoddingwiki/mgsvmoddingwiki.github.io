@@ -1,0 +1,24 @@
+<!--
+title: TppTrapCheckIsCharacterCallbackDataElement
+permalink: /Entity_Reference/Tpp/GameKit/TppTrapCheckIsCharacterCallbackDataElement
+tags: [Tpp, GameKit, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [GameKit](/Entity_Reference/Tpp/GameKit)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Geo.GeoTrapModuleCallbackDataElement → TppTrapCheckIsCharacterCallbackDataElement
+
+```cpp
+TppTrapCheckIsCharacterCallbackDataElement : Fox.Geo.GeoTrapModuleCallbackDataElement 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [checkLocator](#checklocator) | TODO: Description |
+

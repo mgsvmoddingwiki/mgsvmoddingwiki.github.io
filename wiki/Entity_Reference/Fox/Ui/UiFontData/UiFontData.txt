@@ -1,0 +1,26 @@
+<!--
+title: UiFontData
+permalink: /Entity_Reference/Fox/Ui/UiFontData
+tags: [Fox, Ui, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Ui](/Entity_Reference/Fox/Ui)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Data → UiFontData
+
+```cpp
+UiFontData : Fox.Core.Data 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [fontName](#fontname) | TODO: Description |
+| [texturePath](#texturepath) | TODO: Description |
+| [fontFile](#fontfile) | TODO: Description |
+

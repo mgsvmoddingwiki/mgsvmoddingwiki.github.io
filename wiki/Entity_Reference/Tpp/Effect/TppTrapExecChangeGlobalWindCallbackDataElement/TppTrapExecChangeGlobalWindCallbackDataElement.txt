@@ -1,0 +1,30 @@
+<!--
+title: TppTrapExecChangeGlobalWindCallbackDataElement
+permalink: /Entity_Reference/Tpp/Effect/TppTrapExecChangeGlobalWindCallbackDataElement
+tags: [Tpp, Effect, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [Effect](/Entity_Reference/Tpp/Effect)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Geo.GeoTrapModuleCallbackDataElement → TppTrapExecChangeGlobalWindCallbackDataElement
+
+```cpp
+TppTrapExecChangeGlobalWindCallbackDataElement : Fox.Geo.GeoTrapModuleCallbackDataElement 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [speed](#speed) | TODO: Description |
+| [rotation](#rotation) | TODO: Description |
+| [speedTurbulentRate](#speedturbulentrate) | TODO: Description |
+| [speedTurbulentCycle](#speedturbulentcycle) | TODO: Description |
+| [rotTurbulentRate](#rotturbulentrate) | TODO: Description |
+| [rotTurbulentCycle](#rotturbulentcycle) | TODO: Description |
+| [interpTime](#interptime) | TODO: Description |
+

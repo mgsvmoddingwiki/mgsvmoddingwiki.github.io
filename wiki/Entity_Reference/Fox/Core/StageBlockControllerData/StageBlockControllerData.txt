@@ -1,0 +1,86 @@
+<!--
+title: StageBlockControllerData
+permalink: /Entity_Reference/Fox/Core/StageBlockControllerData
+tags: [Fox, Core, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Core](/Entity_Reference/Fox/Core)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Data → StageBlockControllerData
+
+```cpp
+StageBlockControllerData : Fox.Core.Data 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [enable](#enable) | TODO: Description |
+| [stageName](#stagename) | TODO: Description |
+| [useBaseDirectoryPathAndName](#usebasedirectorypathandname) | TODO: Description |
+| [baseDirectoryPath](#basedirectorypath) | TODO: Description |
+| [baseName](#basename) | TODO: Description |
+| [smallBlock1BaseDirectoryPath](#smallblock1basedirectorypath) | TODO: Description |
+| [smallBlock1BaseName](#smallblock1basename) | TODO: Description |
+| [blockSizeX](#blocksizex) | TODO: Description |
+| [blockSizeZ](#blocksizez) | TODO: Description |
+| [countX](#countx) | TODO: Description |
+| [countZ](#countz) | TODO: Description |
+| [centerIndexX](#centerindexx) | TODO: Description |
+| [centerIndexZ](#centerindexz) | TODO: Description |
+| [blockSizeInBytes](#blocksizeinbytes) | TODO: Description |
+| [smallBlock1CountX](#smallblock1countx) | TODO: Description |
+| [smallBlock1CountZ](#smallblock1countz) | TODO: Description |
+| [smallBlock1BlockSizeInBytes](#smallblock1blocksizeinbytes) | TODO: Description |
+| [blockMarginX](#blockmarginx) | TODO: Description |
+| [blockMarginZ](#blockmarginz) | TODO: Description |
+| [loadingDistanceX](#loadingdistancex) | TODO: Description |
+| [loadingDistanceZ](#loadingdistancez) | TODO: Description |
+| [commonBlockSizeInBytes](#commonblocksizeinbytes) | TODO: Description |
+| [largeBlockCount0](#largeblockcount0) | TODO: Description |
+| [largeBlockSizeInBytes0](#largeblocksizeinbytes0) | TODO: Description |
+| [largeBlockCount1](#largeblockcount1) | TODO: Description |
+| [largeBlockSizeInBytes1](#largeblocksizeinbytes1) | TODO: Description |
+| [largeBlockCount2](#largeblockcount2) | TODO: Description |
+| [largeBlockSizeInBytes2](#largeblocksizeinbytes2) | TODO: Description |
+| [largeBlockCount3](#largeblockcount3) | TODO: Description |
+| [largeBlockSizeInBytes3](#largeblocksizeinbytes3) | TODO: Description |
+| [largeBlockLoadingMarginX](#largeblockloadingmarginx) | TODO: Description |
+| [largeBlockLoadingMarginZ](#largeblockloadingmarginz) | TODO: Description |
+| [stageBlockFile](#stageblockfile) | TODO: Description |
+| [lod0BaseDirectoryPath](#lod0basedirectorypath) | TODO: Description |
+| [lod0BaseName](#lod0basename) | TODO: Description |
+| [lod0blockSizeInBytes](#lod0blocksizeinbytes) | TODO: Description |
+| [lod0blockSizeX](#lod0blocksizex) | TODO: Description |
+| [lod0blockSizeZ](#lod0blocksizez) | TODO: Description |
+| [lod0BlockCountX](#lod0blockcountx) | TODO: Description |
+| [lod0BlockCountZ](#lod0blockcountz) | TODO: Description |
+| [lod0LargeBlock0SizeInBytes](#lod0largeblock0sizeinbytes) | TODO: Description |
+| [lod0LargeBlock0Count](#lod0largeblock0count) | TODO: Description |
+| [lod0LargeBlock1SizeInBytes](#lod0largeblock1sizeinbytes) | TODO: Description |
+| [lod0LargeBlock1Count](#lod0largeblock1count) | TODO: Description |
+| [lod0LargeBlock2SizeInBytes](#lod0largeblock2sizeinbytes) | TODO: Description |
+| [lod0LargeBlock2Count](#lod0largeblock2count) | TODO: Description |
+| [lod0LargeBlock3SizeInBytes](#lod0largeblock3sizeinbytes) | TODO: Description |
+| [lod0LargeBlock3Count](#lod0largeblock3count) | TODO: Description |
+| [lod1BaseDirectoryPath](#lod1basedirectorypath) | TODO: Description |
+| [lod1BaseName](#lod1basename) | TODO: Description |
+| [lod1blockSizeInBytes](#lod1blocksizeinbytes) | TODO: Description |
+| [lod1blockSizeX](#lod1blocksizex) | TODO: Description |
+| [lod1blockSizeZ](#lod1blocksizez) | TODO: Description |
+| [lod1BlockCountX](#lod1blockcountx) | TODO: Description |
+| [lod1BlockCountZ](#lod1blockcountz) | TODO: Description |
+| [lod1LargeBlock0SizeInBytes](#lod1largeblock0sizeinbytes) | TODO: Description |
+| [lod1LargeBlock0Count](#lod1largeblock0count) | TODO: Description |
+| [lod1LargeBlock1SizeInBytes](#lod1largeblock1sizeinbytes) | TODO: Description |
+| [lod1LargeBlock1Count](#lod1largeblock1count) | TODO: Description |
+| [lod1LargeBlock2SizeInBytes](#lod1largeblock2sizeinbytes) | TODO: Description |
+| [lod1LargeBlock2Count](#lod1largeblock2count) | TODO: Description |
+| [lod1LargeBlock3SizeInBytes](#lod1largeblock3sizeinbytes) | TODO: Description |
+| [lod1LargeBlock3Count](#lod1largeblock3count) | TODO: Description |
+

@@ -1,0 +1,41 @@
+<!--
+title: Terrain
+permalink: /Entity_Reference/Fox/GameKit/Terrain
+tags: [Fox, GameKit, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [GameKit](/Entity_Reference/Fox/GameKit)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.TransformData → Terrain
+
+```cpp
+Terrain : Fox.Core.TransformData 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [filePath](#filepath) | TODO: Description |
+| [loadFilePath](#loadfilepath) | TODO: Description |
+| [dummyFilePath](#dummyfilepath) | TODO: Description |
+| [meterPerOneRepeat](#meterperonerepeat) | TODO: Description |
+| [meterPerPixel](#meterperpixel) | TODO: Description |
+| [isWireFrame](#iswireframe) | TODO: Description |
+| [lodFlag](#lodflag) | TODO: Description |
+| [isSave](#issave) | TODO: Description |
+| [isDebugMaterial](#isdebugmaterial) | TODO: Description |
+| [materials](#materials) | TODO: Description |
+| [lodParam](#lodparam) | TODO: Description |
+| [materialConfigs](#materialconfigs) | TODO: Description |
+| [baseColorTexture](#basecolortexture) | TODO: Description |
+| [materialLodScale](#materiallodscale) | TODO: Description |
+| [materialLodNearOffset](#materiallodnearoffset) | TODO: Description |
+| [materialLodFarOffset](#materiallodfaroffset) | TODO: Description |
+| [materialLodHeightOffset](#materiallodheightoffset) | TODO: Description |
+| [isUseWorldTexture](#isuseworldtexture) | TODO: Description |
+

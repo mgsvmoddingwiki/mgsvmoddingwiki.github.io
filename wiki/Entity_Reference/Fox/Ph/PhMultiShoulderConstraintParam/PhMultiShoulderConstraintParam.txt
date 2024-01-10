@@ -1,0 +1,31 @@
+<!--
+title: PhMultiShoulderConstraintParam
+permalink: /Entity_Reference/Fox/Ph/PhMultiShoulderConstraintParam
+tags: [Fox, Ph, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Ph](/Entity_Reference/Fox/Ph)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Ph.PhConstraintParam → PhMultiShoulderConstraintParam
+
+```cpp
+PhMultiShoulderConstraintParam : Fox.Ph.PhConstraintParam 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [refVec0](#refvec0) | TODO: Description |
+| [refVec1](#refvec1) | TODO: Description |
+| [refLimit0](#reflimit0) | TODO: Description |
+| [refLimit1](#reflimit1) | TODO: Description |
+| [velocityMax](#velocitymax) | TODO: Description |
+| [torqueMax](#torquemax) | TODO: Description |
+| [velocityRate](#velocityrate) | TODO: Description |
+| [isPoweredFlag](#ispoweredflag) | TODO: Description |
+

@@ -1,0 +1,21 @@
+<!--
+title: TppDirtyModelManager
+permalink: /Entity_Reference/Tpp/Effect/TppDirtyModelManager
+tags: [Tpp, Effect, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [Effect](/Entity_Reference/Tpp/Effect)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Entity → TppDirtyModelManager
+
+```cpp
+TppDirtyModelManager : Fox.Core.Entity 
+```
+
+TODO: Description
+
+
+
+

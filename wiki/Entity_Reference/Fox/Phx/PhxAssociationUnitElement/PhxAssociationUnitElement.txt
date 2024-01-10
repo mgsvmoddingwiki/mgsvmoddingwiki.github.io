@@ -1,0 +1,28 @@
+<!--
+title: PhxAssociationUnitElement
+permalink: /Entity_Reference/Fox/Phx/PhxAssociationUnitElement
+tags: [Fox, Phx, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Phx](/Entity_Reference/Fox/Phx)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.DataElement → PhxAssociationUnitElement
+
+```cpp
+PhxAssociationUnitElement : Fox.Core.DataElement 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [body](#body) | TODO: Description |
+| [constraint](#constraint) | TODO: Description |
+| [bodyOffsetPos](#bodyoffsetpos) | TODO: Description |
+| [constraintOffsetPos](#constraintoffsetpos) | TODO: Description |
+| [offsetRot](#offsetrot) | TODO: Description |
+

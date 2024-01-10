@@ -1,0 +1,21 @@
+<!--
+title: DemoFileProxyBody
+permalink: /Entity_Reference/Fox/Demo/DemoFileProxyBody
+tags: [Fox, Demo, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Demo](/Entity_Reference/Fox/Demo)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.DataBody → DemoFileProxyBody
+
+```cpp
+DemoFileProxyBody : Fox.Core.DataBody 
+```
+
+TODO: Description
+
+
+
+

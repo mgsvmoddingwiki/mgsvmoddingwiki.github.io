@@ -1,0 +1,34 @@
+<!--
+title: TppLensFlareRateGraph
+permalink: /Entity_Reference/Tpp/Effect/TppLensFlareRateGraph
+tags: [Tpp, Effect, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [Effect](/Entity_Reference/Tpp/Effect)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Data → TppLensFlareRateGraph
+
+```cpp
+TppLensFlareRateGraph : Fox.Core.Data 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [value0_0](#value0-0) | TODO: Description |
+| [value0_1](#value0-1) | TODO: Description |
+| [value0_2](#value0-2) | TODO: Description |
+| [value0_3](#value0-3) | TODO: Description |
+| [value0_4](#value0-4) | TODO: Description |
+| [value0_5](#value0-5) | TODO: Description |
+| [value0_6](#value0-6) | TODO: Description |
+| [value0_7](#value0-7) | TODO: Description |
+| [value0_8](#value0-8) | TODO: Description |
+| [value0_9](#value0-9) | TODO: Description |
+| [value1_0](#value1-0) | TODO: Description |
+

@@ -1,0 +1,25 @@
+<!--
+title: TppReflectionSettingTrapCallbackDataElement
+permalink: /Entity_Reference/Tpp/Effect/TppReflectionSettingTrapCallbackDataElement
+tags: [Tpp, Effect, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [Effect](/Entity_Reference/Tpp/Effect)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Geo.GeoTrapModuleCallbackDataElement → TppReflectionSettingTrapCallbackDataElement
+
+```cpp
+TppReflectionSettingTrapCallbackDataElement : Fox.Geo.GeoTrapModuleCallbackDataElement 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [reflectionTexturePath](#reflectiontexturepath) | TODO: Description |
+| [reflectionTexturePathForGoOut](#reflectiontexturepathforgoout) | TODO: Description |
+

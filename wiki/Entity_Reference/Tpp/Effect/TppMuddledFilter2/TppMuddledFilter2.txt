@@ -1,0 +1,21 @@
+<!--
+title: TppMuddledFilter2
+permalink: /Entity_Reference/Tpp/Effect/TppMuddledFilter2
+tags: [Tpp, Effect, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [Effect](/Entity_Reference/Tpp/Effect)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Entity → TppMuddledFilter2
+
+```cpp
+TppMuddledFilter2 : Fox.Core.Entity 
+```
+
+TODO: Description
+
+
+
+

@@ -13,9 +13,11 @@ const searchClear = searchWrapper.querySelector('.search-clear-query'),
       resultsContainer = searchWrapper.querySelector('#results-container'),
       resultsMax = 10;
 
-import { searchIndex } from './searchindex.js'
-import { sectionIndexFlat } from './sidebar.js'
-import { getParentPath } from './sidebar.js'
+import * as func from './functions.js';
+import { searchIndex } from './searchindex.js';
+import { sectionIndexFlat } from './sidebar.js';
+import { getParentPath } from './sidebar.js';
+import { isVirtualPage } from './virtualpages.js';
 
 var enableSectionIndex = false,
     lookupIndex = useSectionIndex(enableSectionIndex);
@@ -42,7 +44,7 @@ var fuse = fuseConfig(enableSectionIndex),
 searchInput.addEventListener('keyup', (e) => {
     const val = e.target.value;
     // Trigger on every key except those used for nav
-    if (!matchObjVal(keyNavCodes, e.keyCode)) {
+    if (!func.matchObjVal(keyNavCodes, e.keyCode)) {
         if (typeof val != 'undefined' && val != null && val.length != 0) {
             outputResults(fuse.search(val), e.keyCode);
             searchResultsShow(true); // retrigger visibility check on character deletion
@@ -63,7 +65,7 @@ searchInput.addEventListener('keyup', (e) => {
 
 searchInput.addEventListener('keydown', (e) => {
     if (resultsContainer.classList.contains('visible')) {
-        if (matchObjVal(keyNavCodes, e.keyCode)) {
+        if (func.matchObjVal(keyNavCodes, e.keyCode)) {
             e.preventDefault(); // disable native key functionality (necessary for tab handling)
             searchKeyNav(e); // pass entire event not just keyCode, so modifiers can be detected
         }
@@ -71,6 +73,9 @@ searchInput.addEventListener('keydown', (e) => {
 });
 
 body.addEventListener('click', (e) => {
+    if (isVirtualPage && e.target.closest('ul') == resultsContainer) {
+        resetAll();
+    }
     if (e.target == searchInput || e.target == resultsContainer || e.target == searchFilter) {
         searchResultsShow(true);
     } else {
@@ -161,7 +166,11 @@ function searchKeyNav(e) {
     }
     if (e.keyCode == keyNavCodes.enter) {
         changeHighlight(a[keyNavCurItem], true, true)
-        window.location.href = a[keyNavCurItem].href;
+        if (!isVirtualPage) {
+            window.location.href = a[keyNavCurItem].href;
+        } else {
+            resetAll();
+        }
     }
 
     function updateItems() {
@@ -180,6 +189,14 @@ function searchKeyNav(e) {
             el.classList.remove('highlight');
         }
     }
+}
+
+function resetAll() {
+    searchResultsShow(false);
+    searchInput.blur();
+    searchInput.value = null;
+    searchClearShow(false);
+    searchNoResults(false);
 }
 
 function searchResultsShow(state) {
@@ -251,7 +268,7 @@ function outputResults(input, key) {
                 let labelPath = document.createElement('span'),
                     parentPath = getParentPath(path, parts);
                 labelPath.classList.add('search-result-path');
-                labelPath.textContent = parentPath.replace('/', ' ').replaceAll('/',' / ').replaceAll('_',' ').replaceAll('-',' ').replace(/\/([^\/]*)$/, '$1'); // regex replaces last occurrence of `/`
+                labelPath.textContent = func.trimTrailFs(parentPath.replace('/', ' ').replaceAll('/',' / ').replaceAll('_',' ').replaceAll('-',' '));
                 link.appendChild(labelPath);
             }
 

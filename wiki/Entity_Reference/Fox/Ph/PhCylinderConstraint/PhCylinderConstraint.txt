@@ -1,0 +1,27 @@
+<!--
+title: PhCylinderConstraint
+permalink: /Entity_Reference/Fox/Ph/PhCylinderConstraint
+tags: [Fox, Ph, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Ph](/Entity_Reference/Fox/Ph)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Ph.PhConstraint → PhCylinderConstraint
+
+```cpp
+PhCylinderConstraint : Fox.Ph.PhConstraint 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [axis](#axis) | TODO: Description |
+| [radius](#radius) | TODO: Description |
+| [heightMin](#heightmin) | TODO: Description |
+| [heightMax](#heightmax) | TODO: Description |
+

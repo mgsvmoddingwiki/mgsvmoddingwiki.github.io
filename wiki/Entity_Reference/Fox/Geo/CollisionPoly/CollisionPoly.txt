@@ -1,0 +1,25 @@
+<!--
+title: CollisionPoly
+permalink: /Entity_Reference/Fox/Geo/CollisionPoly
+tags: [Fox, Geo, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Geo](/Entity_Reference/Fox/Geo)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Geo.CollisionObject → CollisionPoly
+
+```cpp
+CollisionPoly : Fox.Geo.CollisionObject 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [attribute](#attribute) | TODO: Description |
+| [vertices](#vertices) | TODO: Description |
+

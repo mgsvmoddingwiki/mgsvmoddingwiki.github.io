@@ -1,0 +1,28 @@
+<!--
+title: TppLensFlareRoot
+permalink: /Entity_Reference/Tpp/Effect/TppLensFlareRoot
+tags: [Tpp, Effect, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [Effect](/Entity_Reference/Tpp/Effect)\
+> Submodule: TODO: Submodule\
+> Inheritance: Tpp.Effect.TppLensFlareRootBase → TppLensFlareRoot
+
+```cpp
+TppLensFlareRoot : Tpp.Effect.TppLensFlareRootBase 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [useDebugLightPosition](#usedebuglightposition) | TODO: Description |
+| [lightPositionX](#lightpositionx) | TODO: Description |
+| [lightPositionY](#lightpositiony) | TODO: Description |
+| [shieldCheckLength](#shieldchecklength) | TODO: Description |
+| [shapes](#shapes) | TODO: Description |
+

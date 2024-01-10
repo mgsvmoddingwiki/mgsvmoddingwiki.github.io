@@ -1,0 +1,24 @@
+<!--
+title: SpotLightBody
+permalink: /Entity_Reference/Fox/Grx/SpotLightBody
+tags: [Fox, Grx, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Grx](/Entity_Reference/Fox/Grx)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.TransformDataBody → SpotLightBody
+
+```cpp
+SpotLightBody : Fox.Core.TransformDataBody 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [enable](#enable) | TODO: Description |
+

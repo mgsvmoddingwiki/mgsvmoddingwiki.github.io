@@ -1,0 +1,57 @@
+<!--
+title: TppSky
+permalink: /Entity_Reference/Tpp/Effect/TppSky
+tags: [Tpp, Effect, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [Effect](/Entity_Reference/Tpp/Effect)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.TransformData → TppSky
+
+```cpp
+TppSky : Fox.Core.TransformData 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [enable](#enable) | TODO: Description |
+| [priority](#priority) | TODO: Description |
+| [model](#model) | TODO: Description |
+| [cloudTexture](#cloudtexture) | TODO: Description |
+| [textureRepeats](#texturerepeats) | TODO: Description |
+| [lightExtinction](#lightextinction) | TODO: Description |
+| [diffusion](#diffusion) | TODO: Description |
+| [dirLightGain](#dirlightgain) | TODO: Description |
+| [ambLightGain](#amblightgain) | TODO: Description |
+| [inCloudScatterGain](#incloudscattergain) | TODO: Description |
+| [density](#density) | TODO: Description |
+| [cloudWindInfluence](#cloudwindinfluence) | TODO: Description |
+| [densityLayerPower](#densitylayerpower) | TODO: Description |
+| [densityLayerWindInfluence](#densitylayerwindinfluence) | TODO: Description |
+| [dom2TextureRepeats](#dom2texturerepeats) | TODO: Description |
+| [dom2CloudDensity](#dom2clouddensity) | TODO: Description |
+| [dom2WindInfluence](#dom2windinfluence) | TODO: Description |
+| [dom2DensityLayerPower](#dom2densitylayerpower) | TODO: Description |
+| [dom2DensityLayerWindInfluence](#dom2densitylayerwindinfluence) | TODO: Description |
+| [dom3TextureRepeats](#dom3texturerepeats) | TODO: Description |
+| [dom3CloudDensity](#dom3clouddensity) | TODO: Description |
+| [dom3WindInfluence](#dom3windinfluence) | TODO: Description |
+| [dom3DensityLayerPower](#dom3densitylayerpower) | TODO: Description |
+| [dom3DensityLayerWindInfluence](#dom3densitylayerwindinfluence) | TODO: Description |
+| [cylCloudTexture](#cylcloudtexture) | TODO: Description |
+| [cylTextureRepeats](#cyltexturerepeats) | TODO: Description |
+| [cylCloudDensity](#cylclouddensity) | TODO: Description |
+| [cylDiffusion](#cyldiffusion) | TODO: Description |
+| [cylScatterGain](#cylscattergain) | TODO: Description |
+| [cylDirLightGain](#cyldirlightgain) | TODO: Description |
+| [cylAmbLightGain](#cylamblightgain) | TODO: Description |
+| [cylWindInfluence](#cylwindinfluence) | TODO: Description |
+| [cylDensityLayerPower](#cyldensitylayerpower) | TODO: Description |
+| [cylDensityLayerWindInfluence](#cyldensitylayerwindinfluence) | TODO: Description |
+

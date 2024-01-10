@@ -1,0 +1,21 @@
+<!--
+title: GrPluginViewCallback
+permalink: /Entity_Reference/Fox/Gr/GrPluginViewCallback
+tags: [Fox, Gr, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Gr](/Entity_Reference/Fox/Gr)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Gr.GrRenderPlugin → GrPluginViewCallback
+
+```cpp
+GrPluginViewCallback : Fox.Gr.GrRenderPlugin 
+```
+
+TODO: Description
+
+
+
+

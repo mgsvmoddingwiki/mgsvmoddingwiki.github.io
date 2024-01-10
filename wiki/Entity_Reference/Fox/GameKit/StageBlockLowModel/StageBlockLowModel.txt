@@ -1,0 +1,30 @@
+<!--
+title: StageBlockLowModel
+permalink: /Entity_Reference/Fox/GameKit/StageBlockLowModel
+tags: [Fox, GameKit, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [GameKit](/Entity_Reference/Fox/GameKit)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Data → StageBlockLowModel
+
+```cpp
+StageBlockLowModel : Fox.Core.Data 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [lowModelBasePath](#lowmodelbasepath) | TODO: Description |
+| [minIndexX](#minindexx) | TODO: Description |
+| [minIndexZ](#minindexz) | TODO: Description |
+| [maxIndexX](#maxindexx) | TODO: Description |
+| [maxIndexZ](#maxindexz) | TODO: Description |
+| [groupCountX](#groupcountx) | TODO: Description |
+| [groupCountZ](#groupcountz) | TODO: Description |
+

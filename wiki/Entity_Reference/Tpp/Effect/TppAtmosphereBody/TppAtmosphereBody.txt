@@ -1,0 +1,32 @@
+<!--
+title: TppAtmosphereBody
+permalink: /Entity_Reference/Tpp/Effect/TppAtmosphereBody
+tags: [Tpp, Effect, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [Effect](/Entity_Reference/Tpp/Effect)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.DataBody → TppAtmosphereBody
+
+```cpp
+TppAtmosphereBody : Fox.Core.DataBody 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [hour](#hour) | TODO: Description |
+| [minute](#minute) | TODO: Description |
+| [second](#second) | TODO: Description |
+| [daySkyLightScale](#dayskylightscale) | TODO: Description |
+| [nightSkyLightScale](#nightskylightscale) | TODO: Description |
+| [mieHeightScale](#mieheightscale) | TODO: Description |
+| [mieAnisotropy](#mieanisotropy) | TODO: Description |
+| [mieScatteringCoefficient](#miescatteringcoefficient) | TODO: Description |
+| [cloudiness](#cloudiness) | TODO: Description |
+

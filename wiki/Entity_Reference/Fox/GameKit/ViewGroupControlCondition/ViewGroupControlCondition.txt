@@ -1,0 +1,26 @@
+<!--
+title: ViewGroupControlCondition
+permalink: /Entity_Reference/Fox/GameKit/ViewGroupControlCondition
+tags: [Fox, GameKit, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [GameKit](/Entity_Reference/Fox/GameKit)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Data → ViewGroupControlCondition
+
+```cpp
+ViewGroupControlCondition : Fox.Core.Data 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [flags](#flags) | TODO: Description |
+| [condition](#condition) | TODO: Description |
+| [identify](#identify) | TODO: Description |
+

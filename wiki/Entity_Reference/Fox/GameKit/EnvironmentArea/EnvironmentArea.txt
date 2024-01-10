@@ -1,0 +1,27 @@
+<!--
+title: EnvironmentArea
+permalink: /Entity_Reference/Fox/GameKit/EnvironmentArea
+tags: [Fox, GameKit, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [GameKit](/Entity_Reference/Fox/GameKit)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.TransformData → EnvironmentArea
+
+```cpp
+EnvironmentArea : Fox.Core.TransformData 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [parameter](#parameter) | TODO: Description |
+| [priority](#priority) | TODO: Description |
+| [enable](#enable) | TODO: Description |
+| [shapes](#shapes) | TODO: Description |
+

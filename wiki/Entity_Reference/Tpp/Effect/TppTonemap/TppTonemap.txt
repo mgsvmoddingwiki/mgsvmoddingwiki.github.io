@@ -1,0 +1,26 @@
+<!--
+title: TppTonemap
+permalink: /Entity_Reference/Tpp/Effect/TppTonemap
+tags: [Tpp, Effect, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [Effect](/Entity_Reference/Tpp/Effect)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Data → TppTonemap
+
+```cpp
+TppTonemap : Fox.Core.Data 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [enable](#enable) | TODO: Description |
+| [threshold](#threshold) | TODO: Description |
+| [range](#range) | TODO: Description |
+

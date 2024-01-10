@@ -1,0 +1,21 @@
+<!--
+title: LightUtility
+permalink: /Entity_Reference/Fox/Grx/LightUtility
+tags: [Fox, Grx, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Grx](/Entity_Reference/Fox/Grx)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Entity → LightUtility
+
+```cpp
+LightUtility : Fox.Core.Entity 
+```
+
+TODO: Description
+
+
+
+

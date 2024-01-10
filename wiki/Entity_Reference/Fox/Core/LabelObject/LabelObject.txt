@@ -1,0 +1,21 @@
+<!--
+title: LabelObject
+permalink: /Entity_Reference/Fox/Core/LabelObject
+tags: [Fox, Core, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Core](/Entity_Reference/Fox/Core)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Entity → LabelObject
+
+```cpp
+LabelObject : Fox.Core.Entity 
+```
+
+TODO: Description
+
+
+
+

@@ -1,0 +1,21 @@
+<!--
+title: TppLensFlareShapeCircleBody
+permalink: /Entity_Reference/Tpp/Effect/TppLensFlareShapeCircleBody
+tags: [Tpp, Effect, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [Effect](/Entity_Reference/Tpp/Effect)\
+> Submodule: TODO: Submodule\
+> Inheritance: Tpp.Effect.TppLensFlareShapeBody → TppLensFlareShapeCircleBody
+
+```cpp
+TppLensFlareShapeCircleBody : Tpp.Effect.TppLensFlareShapeBody 
+```
+
+TODO: Description
+
+
+
+

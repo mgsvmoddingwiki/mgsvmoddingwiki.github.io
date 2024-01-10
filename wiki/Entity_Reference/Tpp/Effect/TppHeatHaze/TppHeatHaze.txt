@@ -1,0 +1,47 @@
+<!--
+title: TppHeatHaze
+permalink: /Entity_Reference/Tpp/Effect/TppHeatHaze
+tags: [Tpp, Effect, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [Effect](/Entity_Reference/Tpp/Effect)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Data → TppHeatHaze
+
+```cpp
+TppHeatHaze : Fox.Core.Data 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [distortionIntensityFullResolution](#distortionintensityfullresolution) | TODO: Description |
+| [distortionVelocityFullResolution](#distortionvelocityfullresolution) | TODO: Description |
+| [distortionTextureRepetitionFullResolution](#distortiontexturerepetitionfullresolution) | TODO: Description |
+| [hazeMirageIntensityFullResolution](#hazemirageintensityfullresolution) | TODO: Description |
+| [hazeStartDistanceFullResolution](#hazestartdistancefullresolution) | TODO: Description |
+| [hazeEndDistanceFullResolution](#hazeenddistancefullresolution) | TODO: Description |
+| [hazeRangeAttenuationFullResolution](#hazerangeattenuationfullresolution) | TODO: Description |
+| [hazeSecondLayerIntensityDifference](#hazesecondlayerintensitydifference) | TODO: Description |
+| [hazeSecondLayerStartDistance](#hazesecondlayerstartdistance) | TODO: Description |
+| [hazeSecondLayerBlurRadius](#hazesecondlayerblurradius) | TODO: Description |
+| [hazeDistortionIntensityAddedOnBinoculars](#hazedistortionintensityaddedonbinoculars) | TODO: Description |
+| [mirageColorSaturation](#miragecolorsaturation) | TODO: Description |
+| [mirageSpreadingPower](#miragespreadingpower) | TODO: Description |
+| [mirageRayLength](#mirageraylength) | TODO: Description |
+| [mirageHitRange](#miragehitrange) | TODO: Description |
+| [mirageStartDistance](#miragestartdistance) | TODO: Description |
+| [mirageRangeAttenuation](#miragerangeattenuation) | TODO: Description |
+| [distortionIntensityHalfResolution](#distortionintensityhalfresolution) | TODO: Description |
+| [distortionVelocityHalfResolution](#distortionvelocityhalfresolution) | TODO: Description |
+| [distortionTextureRepetitionHalfResolution](#distortiontexturerepetitionhalfresolution) | TODO: Description |
+| [hazeIntensityHalfResolution](#hazeintensityhalfresolution) | TODO: Description |
+| [hazeStartDistanceHalfResolution](#hazestartdistancehalfresolution) | TODO: Description |
+| [hazeEndDistanceHalfResolution](#hazeenddistancehalfresolution) | TODO: Description |
+| [hazeRangeAttenuationHalfResolution](#hazerangeattenuationhalfresolution) | TODO: Description |
+

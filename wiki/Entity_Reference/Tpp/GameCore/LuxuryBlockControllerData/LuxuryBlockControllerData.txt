@@ -1,0 +1,30 @@
+<!--
+title: LuxuryBlockControllerData
+permalink: /Entity_Reference/Tpp/GameCore/LuxuryBlockControllerData
+tags: [Tpp, GameCore, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [GameCore](/Entity_Reference/Tpp/GameCore)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Data → LuxuryBlockControllerData
+
+```cpp
+LuxuryBlockControllerData : Fox.Core.Data 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [blockWidthX](#blockwidthx) | TODO: Description |
+| [blockWidthZ](#blockwidthz) | TODO: Description |
+| [centerIndexX](#centerindexx) | TODO: Description |
+| [centerIndexZ](#centerindexz) | TODO: Description |
+| [blockLoadMargin](#blockloadmargin) | TODO: Description |
+| [maxBlockIndexMapCount](#maxblockindexmapcount) | TODO: Description |
+| [maxPathListCount](#maxpathlistcount) | TODO: Description |
+

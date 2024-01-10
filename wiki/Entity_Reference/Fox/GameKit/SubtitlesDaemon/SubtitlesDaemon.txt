@@ -1,0 +1,21 @@
+<!--
+title: SubtitlesDaemon
+permalink: /Entity_Reference/Fox/GameKit/SubtitlesDaemon
+tags: [Fox, GameKit, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [GameKit](/Entity_Reference/Fox/GameKit)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Entity → SubtitlesDaemon
+
+```cpp
+SubtitlesDaemon : Fox.Core.Entity 
+```
+
+TODO: Description
+
+
+
+

@@ -1,0 +1,21 @@
+<!--
+title: EnvironmentDaemon
+permalink: /Entity_Reference/Fox/GameKit/EnvironmentDaemon
+tags: [Fox, GameKit, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [GameKit](/Entity_Reference/Fox/GameKit)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Entity → EnvironmentDaemon
+
+```cpp
+EnvironmentDaemon : Fox.Core.Entity 
+```
+
+TODO: Description
+
+
+
+

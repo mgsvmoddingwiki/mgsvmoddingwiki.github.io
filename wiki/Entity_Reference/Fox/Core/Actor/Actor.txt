@@ -1,0 +1,26 @@
+<!--
+title: Actor
+permalink: /Entity_Reference/Fox/Core/Actor
+tags: [Fox, Core, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Core](/Entity_Reference/Fox/Core)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Entity → Actor
+
+```cpp
+Actor : Fox.Core.Entity 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [name](#name) | TODO: Description |
+| [actorLevelName](#actorlevelname) | TODO: Description |
+| [sceneName](#scenename) | TODO: Description |
+

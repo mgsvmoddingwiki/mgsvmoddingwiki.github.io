@@ -1,0 +1,27 @@
+<!--
+title: GeoTrapExecScriptCondition
+permalink: /Entity_Reference/Fox/Geo/GeoTrapExecScriptCondition
+tags: [Fox, Geo, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Geo](/Entity_Reference/Fox/Geo)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Geo.GeoCheckModuleCondition → GeoTrapExecScriptCondition
+
+```cpp
+GeoTrapExecScriptCondition : Fox.Geo.GeoCheckModuleCondition 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [execEnter](#execenter) | TODO: Description |
+| [execStay](#execstay) | TODO: Description |
+| [execExit](#execexit) | TODO: Description |
+| [execScriptPath](#execscriptpath) | TODO: Description |
+

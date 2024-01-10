@@ -1,0 +1,29 @@
+<!--
+title: TppDemoPlayerResourceParameter
+permalink: /Entity_Reference/Fox/EdDemo/TppDemoPlayerResourceParameter
+tags: [Fox, EdDemo, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [EdDemo](/Entity_Reference/Fox/EdDemo)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Demo.DemoParameter → TppDemoPlayerResourceParameter
+
+```cpp
+TppDemoPlayerResourceParameter : Fox.Demo.DemoParameter 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [playerInstanceName](#playerinstancename) | TODO: Description |
+| [partsFile](#partsfile) | TODO: Description |
+| [handFv2File](#handfv2file) | TODO: Description |
+| [headFv2File](#headfv2file) | TODO: Description |
+| [camoFv2File](#camofv2file) | TODO: Description |
+| [needReload](#needreload) | TODO: Description |
+

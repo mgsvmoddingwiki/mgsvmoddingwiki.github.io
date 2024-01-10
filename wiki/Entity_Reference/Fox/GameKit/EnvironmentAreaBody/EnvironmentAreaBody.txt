@@ -1,0 +1,25 @@
+<!--
+title: EnvironmentAreaBody
+permalink: /Entity_Reference/Fox/GameKit/EnvironmentAreaBody
+tags: [Fox, GameKit, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [GameKit](/Entity_Reference/Fox/GameKit)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.TransformDataBody → EnvironmentAreaBody
+
+```cpp
+EnvironmentAreaBody : Fox.Core.TransformDataBody 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [tag](#tag) | TODO: Description |
+| [manager](#manager) | TODO: Description |
+

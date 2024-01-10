@@ -1,0 +1,21 @@
+<!--
+title: GrViewport
+permalink: /Entity_Reference/Fox/Gr/GrViewport
+tags: [Fox, Gr, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Gr](/Entity_Reference/Fox/Gr)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Entity → GrViewport
+
+```cpp
+GrViewport : Fox.Core.Entity 
+```
+
+TODO: Description
+
+
+
+

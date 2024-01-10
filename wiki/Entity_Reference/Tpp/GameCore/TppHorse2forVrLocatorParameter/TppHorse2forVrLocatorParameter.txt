@@ -1,0 +1,24 @@
+<!--
+title: TppHorse2forVrLocatorParameter
+permalink: /Entity_Reference/Tpp/GameCore/TppHorse2forVrLocatorParameter
+tags: [Tpp, GameCore, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [GameCore](/Entity_Reference/Tpp/GameCore)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.DataElement → TppHorse2forVrLocatorParameter
+
+```cpp
+TppHorse2forVrLocatorParameter : Fox.Core.DataElement 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [identifier](#identifier) | TODO: Description |
+

@@ -1,0 +1,21 @@
+<!--
+title: UiSupport
+permalink: /Entity_Reference/Tpp/Ui/UiSupport
+tags: [Tpp, Ui, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [Ui](/Entity_Reference/Tpp/Ui)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Entity → UiSupport
+
+```cpp
+UiSupport : Fox.Core.Entity 
+```
+
+TODO: Description
+
+
+
+

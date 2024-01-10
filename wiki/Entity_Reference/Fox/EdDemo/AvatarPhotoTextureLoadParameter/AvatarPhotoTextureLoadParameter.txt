@@ -1,0 +1,21 @@
+<!--
+title: AvatarPhotoTextureLoadParameter
+permalink: /Entity_Reference/Fox/EdDemo/AvatarPhotoTextureLoadParameter
+tags: [Fox, EdDemo, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [EdDemo](/Entity_Reference/Fox/EdDemo)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Demo.DemoParameter → AvatarPhotoTextureLoadParameter
+
+```cpp
+AvatarPhotoTextureLoadParameter : Fox.Demo.DemoParameter 
+```
+
+TODO: Description
+
+
+
+

@@ -1,0 +1,24 @@
+<!--
+title: EnvironmentParameter
+permalink: /Entity_Reference/Fox/GameKit/EnvironmentParameter
+tags: [Fox, GameKit, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [GameKit](/Entity_Reference/Fox/GameKit)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.DataElement → EnvironmentParameter
+
+```cpp
+EnvironmentParameter : Fox.Core.DataElement 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [decayRate](#decayrate) | TODO: Description |
+

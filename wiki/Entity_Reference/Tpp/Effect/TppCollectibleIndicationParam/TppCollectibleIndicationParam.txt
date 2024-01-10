@@ -1,0 +1,28 @@
+<!--
+title: TppCollectibleIndicationParam
+permalink: /Entity_Reference/Tpp/Effect/TppCollectibleIndicationParam
+tags: [Tpp, Effect, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [Effect](/Entity_Reference/Tpp/Effect)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Data → TppCollectibleIndicationParam
+
+```cpp
+TppCollectibleIndicationParam : Fox.Core.Data 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [color](#color) | TODO: Description |
+| [emitInterval](#emitinterval) | TODO: Description |
+| [speed](#speed) | TODO: Description |
+| [width](#width) | TODO: Description |
+| [limitRange](#limitrange) | TODO: Description |
+

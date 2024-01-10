@@ -1,0 +1,24 @@
+<!--
+title: TppDefaultParameterElement
+permalink: /Entity_Reference/Tpp/System/TppDefaultParameterElement
+tags: [Tpp, System, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [System](/Entity_Reference/Tpp/System)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.DataElement → TppDefaultParameterElement
+
+```cpp
+TppDefaultParameterElement : Fox.Core.DataElement 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [paramName](#paramname) | TODO: Description |
+

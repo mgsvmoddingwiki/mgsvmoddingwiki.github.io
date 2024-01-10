@@ -1,0 +1,21 @@
+<!--
+title: GameScriptCheckpointObserver
+permalink: /Entity_Reference/Fox/GameKit/GameScriptCheckpointObserver
+tags: [Fox, GameKit, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [GameKit](/Entity_Reference/Fox/GameKit)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.GameKit.CheckpointObserver → GameScriptCheckpointObserver
+
+```cpp
+GameScriptCheckpointObserver : Fox.GameKit.CheckpointObserver 
+```
+
+TODO: Description
+
+
+
+

@@ -1,0 +1,38 @@
+<!--
+title: EffectDescription
+permalink: /Entity_Reference/Fox/PartsBuilder/EffectDescription
+tags: [Fox, PartsBuilder, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [PartsBuilder](/Entity_Reference/Fox/PartsBuilder)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.PartsBuilder.PartDescription → EffectDescription
+
+```cpp
+EffectDescription : Fox.PartsBuilder.PartDescription 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [connectDestinationSkelNames](#connectdestinationskelnames) | TODO: Description |
+| [connectDestinationCnpNames](#connectdestinationcnpnames) | TODO: Description |
+| [offsetSkelPositions](#offsetskelpositions) | TODO: Description |
+| [offsetCnpPositions](#offsetcnppositions) | TODO: Description |
+| [generalSkelParameters](#generalskelparameters) | TODO: Description |
+| [generalCnpParameters](#generalcnpparameters) | TODO: Description |
+| [effectConnect](#effectconnect) | TODO: Description |
+| [changeEffectConnectSetting](#changeeffectconnectsetting) | TODO: Description |
+| [visibleModelWithEffect](#visiblemodelwitheffect) | TODO: Description |
+| [createStartEffect](#createstarteffect) | TODO: Description |
+| [effectRandomSeed](#effectrandomseed) | TODO: Description |
+| [effectKind](#effectkind) | TODO: Description |
+| [effectVariationName](#effectvariationname) | TODO: Description |
+| [effectFileFromVfxFileLoader](#effectfilefromvfxfileloader) | TODO: Description |
+| [effectFileFromFilePtr](#effectfilefromfileptr) | TODO: Description |
+

@@ -1,0 +1,32 @@
+<!--
+title: GkTacticalAction
+permalink: /Entity_Reference/Fox/Tactical/GkTacticalAction
+tags: [Fox, Tactical, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Tactical](/Entity_Reference/Fox/Tactical)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.TransformData → GkTacticalAction
+
+```cpp
+GkTacticalAction : Fox.Core.TransformData 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [enable](#enable) | TODO: Description |
+| [enableInGame](#enableingame) | TODO: Description |
+| [worldName](#worldname) | TODO: Description |
+| [userData](#userdata) | TODO: Description |
+| [userId](#userid) | TODO: Description |
+| [waypoints](#waypoints) | TODO: Description |
+| [edges](#edges) | TODO: Description |
+| [attributeNames](#attributenames) | TODO: Description |
+| [attribute](#attribute) | TODO: Description |
+

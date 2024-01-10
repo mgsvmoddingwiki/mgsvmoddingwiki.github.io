@@ -1,0 +1,28 @@
+<!--
+title: Horizon
+permalink: /Entity_Reference/Fox/Grx/Horizon
+tags: [Fox, Grx, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Grx](/Entity_Reference/Fox/Grx)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.TransformData → Horizon
+
+```cpp
+Horizon : Fox.Core.TransformData 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [enable](#enable) | TODO: Description |
+| [colorPreset](#colorpreset) | TODO: Description |
+| [skyColor](#skycolor) | TODO: Description |
+| [horizonColor](#horizoncolor) | TODO: Description |
+| [showObject](#showobject) | TODO: Description |
+

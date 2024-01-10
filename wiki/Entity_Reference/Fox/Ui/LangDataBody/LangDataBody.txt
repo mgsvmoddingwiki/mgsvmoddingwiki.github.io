@@ -1,0 +1,21 @@
+<!--
+title: LangDataBody
+permalink: /Entity_Reference/Fox/Ui/LangDataBody
+tags: [Fox, Ui, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Ui](/Entity_Reference/Fox/Ui)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.DataBody → LangDataBody
+
+```cpp
+LangDataBody : Fox.Core.DataBody 
+```
+
+TODO: Description
+
+
+
+

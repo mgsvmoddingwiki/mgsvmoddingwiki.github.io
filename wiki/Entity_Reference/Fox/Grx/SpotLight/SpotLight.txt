@@ -1,0 +1,59 @@
+<!--
+title: SpotLight
+permalink: /Entity_Reference/Fox/Grx/SpotLight
+tags: [Fox, Grx, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Grx](/Entity_Reference/Fox/Grx)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.TransformData → SpotLight
+
+```cpp
+SpotLight : Fox.Core.TransformData 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [lightArea](#lightarea) | TODO: Description |
+| [irradiationPoint](#irradiationpoint) | TODO: Description |
+| [lookAtPoint](#lookatpoint) | TODO: Description |
+| [reachPoint](#reachpoint) | TODO: Description |
+| [innerRange](#innerrange) | TODO: Description |
+| [outerRange](#outerrange) | TODO: Description |
+| [color](#color) | TODO: Description |
+| [temperature](#temperature) | TODO: Description |
+| [colorDeflection](#colordeflection) | TODO: Description |
+| [lumen](#lumen) | TODO: Description |
+| [lightSize](#lightsize) | TODO: Description |
+| [umbraAngle](#umbraangle) | TODO: Description |
+| [penumbraAngle](#penumbraangle) | TODO: Description |
+| [attenuationExponent](#attenuationexponent) | TODO: Description |
+| [shadowUmbraAngle](#shadowumbraangle) | TODO: Description |
+| [shadowPenumbraAngle](#shadowpenumbraangle) | TODO: Description |
+| [shadowAttenuationExponent](#shadowattenuationexponent) | TODO: Description |
+| [dimmer](#dimmer) | TODO: Description |
+| [shadowBias](#shadowbias) | TODO: Description |
+| [viewBias](#viewbias) | TODO: Description |
+| [powerScale](#powerscale) | TODO: Description |
+| [LodFarSize](#lodfarsize) | TODO: Description |
+| [LodNearSize](#lodnearsize) | TODO: Description |
+| [LodShadowDrawRate](#lodshadowdrawrate) | TODO: Description |
+| [lightFlags](#lightflags) | TODO: Description |
+| [lodRadiusLevel](#lodradiuslevel) | TODO: Description |
+| [lodFadeType](#lodfadetype) | TODO: Description |
+| [enable](#enable) | TODO: Description |
+| [packingGeneration](#packinggeneration) | TODO: Description |
+| [castShadow](#castshadow) | TODO: Description |
+| [isBounced](#isbounced) | TODO: Description |
+| [showObject](#showobject) | TODO: Description |
+| [showRange](#showrange) | TODO: Description |
+| [isDebugLightVolumeBound](#isdebuglightvolumebound) | TODO: Description |
+| [useAutoDimmer](#useautodimmer) | TODO: Description |
+| [hasSpecular](#hasspecular) | TODO: Description |
+

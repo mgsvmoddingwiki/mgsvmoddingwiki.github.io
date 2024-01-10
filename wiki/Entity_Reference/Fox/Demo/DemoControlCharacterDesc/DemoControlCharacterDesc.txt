@@ -1,0 +1,33 @@
+<!--
+title: DemoControlCharacterDesc
+permalink: /Entity_Reference/Fox/Demo/DemoControlCharacterDesc
+tags: [Fox, Demo, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Demo](/Entity_Reference/Fox/Demo)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.DataElement → DemoControlCharacterDesc
+
+```cpp
+DemoControlCharacterDesc : Fox.Core.DataElement 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [characterId](#characterid) | TODO: Description |
+| [releaseGroupName](#releasegroupname) | TODO: Description |
+| [releaseTag](#releasetag) | TODO: Description |
+| [controlledAtStart](#controlledatstart) | TODO: Description |
+| [translation](#translation) | TODO: Description |
+| [rotation](#rotation) | TODO: Description |
+| [startGroupName](#startgroupname) | TODO: Description |
+| [startTag](#starttag) | TODO: Description |
+| [startTranslation](#starttranslation) | TODO: Description |
+| [startRotation](#startrotation) | TODO: Description |
+

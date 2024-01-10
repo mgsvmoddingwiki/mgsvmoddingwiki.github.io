@@ -1,0 +1,21 @@
+<!--
+title: GrPlugin2DShrink
+permalink: /Entity_Reference/Fox/Gr/GrPlugin2DShrink
+tags: [Fox, Gr, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Gr](/Entity_Reference/Fox/Gr)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Gr.GrPlugin2D → GrPlugin2DShrink
+
+```cpp
+GrPlugin2DShrink : Fox.Gr.GrPlugin2D 
+```
+
+TODO: Description
+
+
+
+

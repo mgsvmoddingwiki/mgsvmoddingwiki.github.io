@@ -1,0 +1,24 @@
+<!--
+title: TppMbQuietLocatorParameter
+permalink: /Entity_Reference/Tpp/GameCore/TppMbQuietLocatorParameter
+tags: [Tpp, GameCore, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [GameCore](/Entity_Reference/Tpp/GameCore)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.DataElement → TppMbQuietLocatorParameter
+
+```cpp
+TppMbQuietLocatorParameter : Fox.Core.DataElement 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [identifier](#identifier) | TODO: Description |
+

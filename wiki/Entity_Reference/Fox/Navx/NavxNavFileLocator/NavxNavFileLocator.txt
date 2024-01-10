@@ -1,0 +1,27 @@
+<!--
+title: NavxNavFileLocator
+permalink: /Entity_Reference/Fox/Navx/NavxNavFileLocator
+tags: [Fox, Navx, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Navx](/Entity_Reference/Fox/Navx)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.TransformData → NavxNavFileLocator
+
+```cpp
+NavxNavFileLocator : Fox.Core.TransformData 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [sceneName](#scenename) | TODO: Description |
+| [worldName](#worldname) | TODO: Description |
+| [enable](#enable) | TODO: Description |
+| [navFile](#navfile) | TODO: Description |
+

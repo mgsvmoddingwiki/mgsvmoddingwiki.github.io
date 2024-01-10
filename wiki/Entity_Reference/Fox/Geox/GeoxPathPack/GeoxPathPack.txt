@@ -1,0 +1,24 @@
+<!--
+title: GeoxPathPack
+permalink: /Entity_Reference/Fox/Geox/GeoxPathPack
+tags: [Fox, Geox, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Geox](/Entity_Reference/Fox/Geox)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.TransformData → GeoxPathPack
+
+```cpp
+GeoxPathPack : Fox.Core.TransformData 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [pathFixedPackFile](#pathfixedpackfile) | TODO: Description |
+

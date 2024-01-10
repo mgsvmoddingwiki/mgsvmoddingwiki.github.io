@@ -1,0 +1,31 @@
+<!--
+title: TppPlayer2AdditionalMotionBlockData
+permalink: /Entity_Reference/Tpp/GameCore/TppPlayer2AdditionalMotionBlockData
+tags: [Tpp, GameCore, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [GameCore](/Entity_Reference/Tpp/GameCore)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Data → TppPlayer2AdditionalMotionBlockData
+
+```cpp
+TppPlayer2AdditionalMotionBlockData : Fox.Core.Data 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [blockSize](#blocksize) | TODO: Description |
+| [vramBlockSize](#vramblocksize) | TODO: Description |
+| [residentVramSyncBufferSize](#residentvramsyncbuffersize) | TODO: Description |
+| [baseVramSyncBufferSize](#basevramsyncbuffersize) | TODO: Description |
+| [equipVramSyncBufferSize](#equipvramsyncbuffersize) | TODO: Description |
+| [weaponVramSyncBufferSize](#weaponvramsyncbuffersize) | TODO: Description |
+| [fpkPath](#fpkpath) | TODO: Description |
+| [vramFpkPath](#vramfpkpath) | TODO: Description |
+

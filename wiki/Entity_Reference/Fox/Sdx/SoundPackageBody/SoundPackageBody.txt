@@ -1,0 +1,21 @@
+<!--
+title: SoundPackageBody
+permalink: /Entity_Reference/Fox/Sdx/SoundPackageBody
+tags: [Fox, Sdx, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Sdx](/Entity_Reference/Fox/Sdx)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.DataBody → SoundPackageBody
+
+```cpp
+SoundPackageBody : Fox.Core.DataBody 
+```
+
+TODO: Description
+
+
+
+

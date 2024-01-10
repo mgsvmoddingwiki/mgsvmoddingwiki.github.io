@@ -1,0 +1,32 @@
+<!--
+title: TppPermanentGimmickSearchLightParameter
+permalink: /Entity_Reference/Tpp/GameKit/TppPermanentGimmickSearchLightParameter
+tags: [Tpp, GameKit, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [GameKit](/Entity_Reference/Tpp/GameKit)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.DataElement → TppPermanentGimmickSearchLightParameter
+
+```cpp
+TppPermanentGimmickSearchLightParameter : Fox.Core.DataElement 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [rotationLimitLeftRight](#rotationlimitleftright) | TODO: Description |
+| [rotationLimitUp](#rotationlimitup) | TODO: Description |
+| [rotationLimitDown](#rotationlimitdown) | TODO: Description |
+| [rangeDiscovery](#rangediscovery) | TODO: Description |
+| [rangeLeftRightDiscovery](#rangeleftrightdiscovery) | TODO: Description |
+| [rangeUpDownDiscovery](#rangeupdowndiscovery) | TODO: Description |
+| [rangeDim](#rangedim) | TODO: Description |
+| [rangeLeftRightDim](#rangeleftrightdim) | TODO: Description |
+| [rangeUpDownDim](#rangeupdowndim) | TODO: Description |
+

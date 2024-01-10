@@ -1,0 +1,27 @@
+<!--
+title: GeoxPartsTargetOffenseObject
+permalink: /Entity_Reference/Fox/Geox/GeoxPartsTargetOffenseObject
+tags: [Fox, Geox, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Geox](/Entity_Reference/Fox/Geox)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Geox.GeoxPartsTargetObject → GeoxPartsTargetOffenseObject
+
+```cpp
+GeoxPartsTargetOffenseObject : Fox.Geox.GeoxPartsTargetObject 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [isAnyOffenseCallback](#isanyoffensecallback) | TODO: Description |
+| [isNoDefenseCallback](#isnodefensecallback) | TODO: Description |
+| [isHandleCheck](#ishandlecheck) | TODO: Description |
+| [isNameCheck](#isnamecheck) | TODO: Description |
+

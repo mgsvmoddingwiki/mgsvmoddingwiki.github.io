@@ -1,0 +1,21 @@
+<!--
+title: NavxSquareGraphBounderData
+permalink: /Entity_Reference/Fox/Navx/NavxSquareGraphBounderData
+tags: [Fox, Navx, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Navx](/Entity_Reference/Fox/Navx)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Navx.NavxBounderData → NavxSquareGraphBounderData
+
+```cpp
+NavxSquareGraphBounderData : Fox.Navx.NavxBounderData 
+```
+
+TODO: Description
+
+
+
+

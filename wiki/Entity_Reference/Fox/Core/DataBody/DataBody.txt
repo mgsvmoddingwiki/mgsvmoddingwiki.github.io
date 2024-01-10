@@ -1,0 +1,25 @@
+<!--
+title: DataBody
+permalink: /Entity_Reference/Fox/Core/DataBody
+tags: [Fox, Core, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Core](/Entity_Reference/Fox/Core)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Entity → DataBody
+
+```cpp
+DataBody : Fox.Core.Entity 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [dataBodySet](#databodyset) | TODO: Description |
+| [data](#data) | TODO: Description |
+

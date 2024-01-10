@@ -1,0 +1,24 @@
+<!--
+title: StringListEntity
+permalink: /Entity_Reference/Fox/Core/StringListEntity
+tags: [Fox, Core, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Core](/Entity_Reference/Fox/Core)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Entity → StringListEntity
+
+```cpp
+StringListEntity : Fox.Core.Entity 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [list](#list) | TODO: Description |
+

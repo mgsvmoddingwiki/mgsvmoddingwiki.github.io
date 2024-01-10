@@ -1,0 +1,25 @@
+<!--
+title: UiInstanceData
+permalink: /Entity_Reference/Fox/Ui/UiInstanceData
+tags: [Fox, Ui, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Ui](/Entity_Reference/Fox/Ui)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Data → UiInstanceData
+
+```cpp
+UiInstanceData : Fox.Core.Data 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [createWindowParams](#createwindowparams) | TODO: Description |
+| [windowFactoryName](#windowfactoryname) | TODO: Description |
+

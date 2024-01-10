@@ -1,0 +1,30 @@
+<!--
+title: NavxHoleSimplificationParameterVolume
+permalink: /Entity_Reference/Fox/Navx/NavxHoleSimplificationParameterVolume
+tags: [Fox, Navx, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Navx](/Entity_Reference/Fox/Navx)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.TransformData → NavxHoleSimplificationParameterVolume
+
+```cpp
+NavxHoleSimplificationParameterVolume : Fox.Core.TransformData 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [sceneName](#scenename) | TODO: Description |
+| [worldName](#worldname) | TODO: Description |
+| [convexThreshold](#convexthreshold) | TODO: Description |
+| [obbExpandThreshold](#obbexpandthreshold) | TODO: Description |
+| [obbToAabbThreshold](#obbtoaabbthreshold) | TODO: Description |
+| [smoothingThreshold](#smoothingthreshold) | TODO: Description |
+| [isNotClosePassage](#isnotclosepassage) | TODO: Description |
+

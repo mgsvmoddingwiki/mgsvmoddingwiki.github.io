@@ -1,0 +1,21 @@
+<!--
+title: TppFirePropagationLightsDataBody
+permalink: /Entity_Reference/Tpp/Effect/TppFirePropagationLightsDataBody
+tags: [Tpp, Effect, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [Effect](/Entity_Reference/Tpp/Effect)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.DataBody → TppFirePropagationLightsDataBody
+
+```cpp
+TppFirePropagationLightsDataBody : Fox.Core.DataBody 
+```
+
+TODO: Description
+
+
+
+

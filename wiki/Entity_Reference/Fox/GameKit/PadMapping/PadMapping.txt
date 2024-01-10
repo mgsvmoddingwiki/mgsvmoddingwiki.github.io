@@ -1,0 +1,21 @@
+<!--
+title: PadMapping
+permalink: /Entity_Reference/Fox/GameKit/PadMapping
+tags: [Fox, GameKit, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [GameKit](/Entity_Reference/Fox/GameKit)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Entity → PadMapping
+
+```cpp
+PadMapping : Fox.Core.Entity 
+```
+
+TODO: Description
+
+
+
+

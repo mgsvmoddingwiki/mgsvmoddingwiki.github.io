@@ -1,0 +1,21 @@
+<!--
+title: HudBootBody
+permalink: /Entity_Reference/Tpp/Ui/HudBootBody
+tags: [Tpp, Ui, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [Ui](/Entity_Reference/Tpp/Ui)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.DataBody → HudBootBody
+
+```cpp
+HudBootBody : Fox.Core.DataBody 
+```
+
+TODO: Description
+
+
+
+

@@ -1,0 +1,21 @@
+<!--
+title: OverlayModelBody
+permalink: /Entity_Reference/Fox/GameKit/OverlayModelBody
+tags: [Fox, GameKit, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [GameKit](/Entity_Reference/Fox/GameKit)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.DataBody → OverlayModelBody
+
+```cpp
+OverlayModelBody : Fox.Core.DataBody 
+```
+
+TODO: Description
+
+
+
+

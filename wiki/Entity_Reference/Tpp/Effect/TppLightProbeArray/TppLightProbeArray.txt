@@ -1,0 +1,27 @@
+<!--
+title: TppLightProbeArray
+permalink: /Entity_Reference/Tpp/Effect/TppLightProbeArray
+tags: [Tpp, Effect, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [Effect](/Entity_Reference/Tpp/Effect)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.TransformData → TppLightProbeArray
+
+```cpp
+TppLightProbeArray : Fox.Core.TransformData 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [drawRejectionLevels](#drawrejectionlevels) | TODO: Description |
+| [relatedLights](#relatedlights) | TODO: Description |
+| [shDatas](#shdatas) | TODO: Description |
+| [lightArrayFile](#lightarrayfile) | TODO: Description |
+

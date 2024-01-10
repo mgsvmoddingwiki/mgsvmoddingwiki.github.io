@@ -1,0 +1,31 @@
+<!--
+title: GrFilmicTonemap
+permalink: /Entity_Reference/Fox/Gr/GrFilmicTonemap
+tags: [Fox, Gr, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Gr](/Entity_Reference/Fox/Gr)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Data → GrFilmicTonemap
+
+```cpp
+GrFilmicTonemap : Fox.Core.Data 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [enable](#enable) | TODO: Description |
+| [sholderStrength](#sholderstrength) | TODO: Description |
+| [linearStrength](#linearstrength) | TODO: Description |
+| [linearAngle](#linearangle) | TODO: Description |
+| [toeStrength](#toestrength) | TODO: Description |
+| [toeNumerator](#toenumerator) | TODO: Description |
+| [toeDenominator](#toedenominator) | TODO: Description |
+| [whitePointValue](#whitepointvalue) | TODO: Description |
+

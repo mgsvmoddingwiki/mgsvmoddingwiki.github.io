@@ -1,0 +1,24 @@
+<!--
+title: Int16Entity
+permalink: /Entity_Reference/Fox/Core/Int16Entity
+tags: [Fox, Core, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Core](/Entity_Reference/Fox/Core)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.PropertyValueEntity → Int16Entity
+
+```cpp
+Int16Entity : Fox.Core.PropertyValueEntity 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [value](#value) | TODO: Description |
+

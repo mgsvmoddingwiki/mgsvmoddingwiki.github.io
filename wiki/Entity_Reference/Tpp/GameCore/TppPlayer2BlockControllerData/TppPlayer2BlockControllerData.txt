@@ -1,0 +1,34 @@
+<!--
+title: TppPlayer2BlockControllerData
+permalink: /Entity_Reference/Tpp/GameCore/TppPlayer2BlockControllerData
+tags: [Tpp, GameCore, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [GameCore](/Entity_Reference/Tpp/GameCore)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Data → TppPlayer2BlockControllerData
+
+```cpp
+TppPlayer2BlockControllerData : Fox.Core.Data 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [configuration_commonMotionBlockSize](#configuration-commonmotionblocksize) | TODO: Description |
+| [configuration_commonMotionBlockSizePs3](#configuration-commonmotionblocksizeps3) | TODO: Description |
+| [configuration_additiveMotionBlockCount](#configuration-additivemotionblockcount) | TODO: Description |
+| [configuration_additiveMotionBlockSize](#configuration-additivemotionblocksize) | TODO: Description |
+| [configuration_partsBlockCount](#configuration-partsblockcount) | TODO: Description |
+| [configuration_partsBlockSize](#configuration-partsblocksize) | TODO: Description |
+| [instanceSettings_instancePackagePath](#instancesettings-instancepackagepath) | TODO: Description |
+| [instanceSettings_instanceBlockSize](#instancesettings-instanceblocksize) | TODO: Description |
+| [instanceSettings_commonMotionTypeName](#instancesettings-commonmotiontypename) | TODO: Description |
+| [instanceSettings_partsTypeNames](#instancesettings-partstypenames) | TODO: Description |
+| [instanceSettings_partsTypeInitial](#instancesettings-partstypeinitial) | TODO: Description |
+

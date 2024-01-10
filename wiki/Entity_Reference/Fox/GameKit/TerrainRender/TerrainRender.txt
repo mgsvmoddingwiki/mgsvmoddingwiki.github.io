@@ -1,0 +1,49 @@
+<!--
+title: TerrainRender
+permalink: /Entity_Reference/Fox/GameKit/TerrainRender
+tags: [Fox, GameKit, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [GameKit](/Entity_Reference/Fox/GameKit)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.TransformData → TerrainRender
+
+```cpp
+TerrainRender : Fox.Core.TransformData 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [filePath](#filepath) | TODO: Description |
+| [loadFilePath](#loadfilepath) | TODO: Description |
+| [dummyFilePath](#dummyfilepath) | TODO: Description |
+| [filePtr](#fileptr) | TODO: Description |
+| [meterPerOneRepeat](#meterperonerepeat) | TODO: Description |
+| [meterPerPixel](#meterperpixel) | TODO: Description |
+| [isWireFrame](#iswireframe) | TODO: Description |
+| [lodFlag](#lodflag) | TODO: Description |
+| [isDebugMaterial](#isdebugmaterial) | TODO: Description |
+| [materials](#materials) | TODO: Description |
+| [lodParam](#lodparam) | TODO: Description |
+| [materialConfigs](#materialconfigs) | TODO: Description |
+| [packedAlbedoTexturePath](#packedalbedotexturepath) | TODO: Description |
+| [packedNormalTexturePath](#packednormaltexturepath) | TODO: Description |
+| [packedSrmTexturePath](#packedsrmtexturepath) | TODO: Description |
+| [packedMaterialIdentify](#packedmaterialidentify) | TODO: Description |
+| [isFourceUsePackedMaterialTexture](#isfourceusepackedmaterialtexture) | TODO: Description |
+| [baseColorTexture](#basecolortexture) | TODO: Description |
+| [materialLodScale](#materiallodscale) | TODO: Description |
+| [materialLodNearOffset](#materiallodnearoffset) | TODO: Description |
+| [materialLodFarOffset](#materiallodfaroffset) | TODO: Description |
+| [materialLodHeightOffset](#materiallodheightoffset) | TODO: Description |
+| [worldTextureMode](#worldtexturemode) | TODO: Description |
+| [worldTextureDividedNumX](#worldtexturedividednumx) | TODO: Description |
+| [worldTextureDividedNumZ](#worldtexturedividednumz) | TODO: Description |
+| [worldTextureTilePathes](#worldtexturetilepathes) | TODO: Description |
+

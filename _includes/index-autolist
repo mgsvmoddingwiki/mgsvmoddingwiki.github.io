@@ -18,9 +18,9 @@
 {% comment %}----------------------{% endcomment %}
 
 {% if include.type contains "all" %}
-<ul class="index">
+<ul class="index {{ include.type }}">
     <li>
-        <h2>All</h2>
+        <h2 id="{{ include.type }}">All</h2>
         <ul>
         {% if include.type == "all-pages" %}
             {% for page in site.pages %}
@@ -46,15 +46,19 @@
     </li>
 </ul>
 {% else %}
-<ul class="index">
+<ul class="index tags" data-tag="{{ include.tag }}">
     <li>
         {% if include.heading == "alpha" %}<h2 id="alphabetical">Alphabetical{% else %}<h2 id="related-pages">Related pages{% endif %}</h2>
         <ul>
-        {% for input-tag in include.tag %}
+        {% for input_tag in include.tag %}
             {% for page in site.pages %}
                 {% for tag in page.tags %}
-                    {% if tag == input-tag %}
-                        {% if input-tag == page.title %}
+                    {% comment Case insensitive comparison for when tag differences exist like `Ui` vs `UI` %}{% endcomment %}
+                    {% assign tag_lower = tag | downcase %}
+                    {% assign input_tag_lower = input_tag | downcase %}
+                    {% assign title_lower = page.title | downcase %}
+                    {% if tag_lower == input_tag_lower %}
+                        {% if input_tag_lower == title_lower %}
                         {% else %}
                         <li><a href="{{ page.url }}">{{ page.title }}</a></li>
                         {% endif %}

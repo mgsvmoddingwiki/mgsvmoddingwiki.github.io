@@ -1,0 +1,34 @@
+<!--
+title: PhMultiHingeConstraint
+permalink: /Entity_Reference/Fox/Ph/PhMultiHingeConstraint
+tags: [Fox, Ph, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Ph](/Entity_Reference/Fox/Ph)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Ph.PhConstraint → PhMultiHingeConstraint
+
+```cpp
+PhMultiHingeConstraint : Fox.Ph.PhConstraint 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [axis](#axis) | TODO: Description |
+| [limitedFlag](#limitedflag) | TODO: Description |
+| [isPoweredFlag](#ispoweredflag) | TODO: Description |
+| [limitHi](#limithi) | TODO: Description |
+| [limitLo](#limitlo) | TODO: Description |
+| [powerControlType](#powercontroltype) | TODO: Description |
+| [velocityMax](#velocitymax) | TODO: Description |
+| [torqueMax](#torquemax) | TODO: Description |
+| [targetTheta](#targettheta) | TODO: Description |
+| [targetVelocity](#targetvelocity) | TODO: Description |
+| [velocityRate](#velocityrate) | TODO: Description |
+

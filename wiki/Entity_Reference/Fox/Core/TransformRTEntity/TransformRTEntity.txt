@@ -1,0 +1,27 @@
+<!--
+title: TransformRTEntity
+permalink: /Entity_Reference/Fox/Core/TransformRTEntity
+tags: [Fox, Core, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Core](/Entity_Reference/Fox/Core)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.DataElement → TransformRTEntity
+
+```cpp
+TransformRTEntity : Fox.Core.DataElement 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [transform_rotation_quat](#transform-rotation-quat) | TODO: Description |
+| [transform_translation](#transform-translation) | TODO: Description |
+| [rotQuat](#rotquat) | TODO: Description |
+| [translation](#translation) | TODO: Description |
+

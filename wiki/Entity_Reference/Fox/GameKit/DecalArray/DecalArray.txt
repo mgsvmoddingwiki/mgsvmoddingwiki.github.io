@@ -1,0 +1,47 @@
+<!--
+title: DecalArray
+permalink: /Entity_Reference/Fox/GameKit/DecalArray
+tags: [Fox, GameKit, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [GameKit](/Entity_Reference/Fox/GameKit)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.TransformData → DecalArray
+
+```cpp
+DecalArray : Fox.Core.TransformData 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [material](#material) | TODO: Description |
+| [projectionMode](#projectionmode) | TODO: Description |
+| [nearClipScale](#nearclipscale) | TODO: Description |
+| [projectionTarget](#projectiontarget) | TODO: Description |
+| [repeatU](#repeatu) | TODO: Description |
+| [repeatV](#repeatv) | TODO: Description |
+| [transparency](#transparency) | TODO: Description |
+| [polygonDataSource](#polygondatasource) | TODO: Description |
+| [drawRejectionLevel](#drawrejectionlevel) | TODO: Description |
+| [drawRejectionDegree](#drawrejectiondegree) | TODO: Description |
+| [decalFlags](#decalflags) | TODO: Description |
+| [scales](#scales) | TODO: Description |
+| [rotations](#rotations) | TODO: Description |
+| [translations](#translations) | TODO: Description |
+| [targets](#targets) | TODO: Description |
+| [targetIndices](#targetindices) | TODO: Description |
+| [targetStartIndices](#targetstartindices) | TODO: Description |
+| [renderingPriorities](#renderingpriorities) | TODO: Description |
+| [isDisableAlbedo](#isdisablealbedo) | TODO: Description |
+| [isPreserveAspect](#ispreserveaspect) | TODO: Description |
+| [isWrap](#iswrap) | TODO: Description |
+| [showObject](#showobject) | TODO: Description |
+| [isVisibleGeom](#isvisiblegeom) | TODO: Description |
+| [isSSDecal](#isssdecal) | TODO: Description |
+

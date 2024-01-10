@@ -1,0 +1,25 @@
+<!--
+title: NavUnitHandleEntity
+permalink: /Entity_Reference/Fox/Nav/NavUnitHandleEntity
+tags: [Fox, Nav, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Nav](/Entity_Reference/Fox/Nav)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Entity → NavUnitHandleEntity
+
+```cpp
+NavUnitHandleEntity : Fox.Core.Entity 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [uid](#uid) | TODO: Description |
+| [index](#index) | TODO: Description |
+

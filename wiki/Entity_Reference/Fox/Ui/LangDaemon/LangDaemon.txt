@@ -1,0 +1,21 @@
+<!--
+title: LangDaemon
+permalink: /Entity_Reference/Fox/Ui/LangDaemon
+tags: [Fox, Ui, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Ui](/Entity_Reference/Fox/Ui)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Entity → LangDaemon
+
+```cpp
+LangDaemon : Fox.Core.Entity 
+```
+
+TODO: Description
+
+
+
+

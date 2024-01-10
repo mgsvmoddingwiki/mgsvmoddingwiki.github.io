@@ -1,0 +1,52 @@
+<!--
+title: TppLensFlareShape
+permalink: /Entity_Reference/Tpp/Effect/TppLensFlareShape
+tags: [Tpp, Effect, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [Effect](/Entity_Reference/Tpp/Effect)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.TransformData → TppLensFlareShape
+
+```cpp
+TppLensFlareShape : Fox.Core.TransformData 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [material](#material) | TODO: Description |
+| [width](#width) | TODO: Description |
+| [height](#height) | TODO: Description |
+| [baseColor](#basecolor) | TODO: Description |
+| [offsetType](#offsettype) | TODO: Description |
+| [offsetScale](#offsetscale) | TODO: Description |
+| [baseOffsetX](#baseoffsetx) | TODO: Description |
+| [baseOffsetY](#baseoffsety) | TODO: Description |
+| [rotateType](#rotatetype) | TODO: Description |
+| [baseRotate](#baserotate) | TODO: Description |
+| [screenSpaceRotSpeedX](#screenspacerotspeedx) | TODO: Description |
+| [screenSpaceRotSpeedY](#screenspacerotspeedy) | TODO: Description |
+| [screenSpaceRotField](#screenspacerotfield) | TODO: Description |
+| [scaleFieldX](#scalefieldx) | TODO: Description |
+| [scaleFieldY](#scalefieldy) | TODO: Description |
+| [scaleFieldPickSunPositionFlag](#scalefieldpicksunpositionflag) | TODO: Description |
+| [alphaField](#alphafield) | TODO: Description |
+| [alphaFieldPickSunPositionFlag](#alphafieldpicksunpositionflag) | TODO: Description |
+| [shieldFadeOutTime](#shieldfadeouttime) | TODO: Description |
+| [shieldFadeInTime](#shieldfadeintime) | TODO: Description |
+| [angleScaleGraphX](#anglescalegraphx) | TODO: Description |
+| [angleScaleGraphY](#anglescalegraphy) | TODO: Description |
+| [angleAlphaGraph](#anglealphagraph) | TODO: Description |
+| [distanceScaling](#distancescaling) | TODO: Description |
+| [limitDistance](#limitdistance) | TODO: Description |
+| [notDrawMultiple](#notdrawmultiple) | TODO: Description |
+| [seName](#sename) | TODO: Description |
+| [seCallThreshold](#secallthreshold) | TODO: Description |
+| [scaleOnZoom](#scaleonzoom) | TODO: Description |
+

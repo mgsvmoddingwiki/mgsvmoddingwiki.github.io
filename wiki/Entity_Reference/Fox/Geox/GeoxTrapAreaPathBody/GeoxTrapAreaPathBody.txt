@@ -1,0 +1,21 @@
+<!--
+title: GeoxTrapAreaPathBody
+permalink: /Entity_Reference/Fox/Geox/GeoxTrapAreaPathBody
+tags: [Fox, Geox, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Geox](/Entity_Reference/Fox/Geox)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Graphx.GraphxPath → GeoxTrapAreaPathBody
+
+```cpp
+GeoxTrapAreaPathBody : Fox.Graphx.GraphxPath 
+```
+
+TODO: Description
+
+
+
+

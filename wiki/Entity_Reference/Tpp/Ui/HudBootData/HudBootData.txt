@@ -1,0 +1,25 @@
+<!--
+title: HudBootData
+permalink: /Entity_Reference/Tpp/Ui/HudBootData
+tags: [Tpp, Ui, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [Ui](/Entity_Reference/Tpp/Ui)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Data → HudBootData
+
+```cpp
+HudBootData : Fox.Core.Data 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [uigFiles](#uigfiles) | TODO: Description |
+| [rawFiles](#rawfiles) | TODO: Description |
+

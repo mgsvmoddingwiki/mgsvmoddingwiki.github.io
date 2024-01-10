@@ -1,0 +1,26 @@
+<!--
+title: UiAnimWorkMemoryData
+permalink: /Entity_Reference/Fox/UiScene/UiAnimWorkMemoryData
+tags: [Fox, UiScene, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [UiScene](/Entity_Reference/Fox/UiScene)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Data → UiAnimWorkMemoryData
+
+```cpp
+UiAnimWorkMemoryData : Fox.Core.Data 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [nodeAnimNum](#nodeanimnum) | TODO: Description |
+| [shaderAnimNum](#shaderanimnum) | TODO: Description |
+| [vertexAnimNum](#vertexanimnum) | TODO: Description |
+

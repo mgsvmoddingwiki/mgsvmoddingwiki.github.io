@@ -1,0 +1,21 @@
+<!--
+title: TppSimpleGameSequenceSystem
+permalink: /Entity_Reference/Tpp/GameCore/TppSimpleGameSequenceSystem
+tags: [Tpp, GameCore, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [GameCore](/Entity_Reference/Tpp/GameCore)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Entity → TppSimpleGameSequenceSystem
+
+```cpp
+TppSimpleGameSequenceSystem : Fox.Core.Entity 
+```
+
+TODO: Description
+
+
+
+

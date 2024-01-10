@@ -1,0 +1,21 @@
+<!--
+title: TppTrapCheckIsPlayerAndHostCallbackDataElement
+permalink: /Entity_Reference/Tpp/GameKit/TppTrapCheckIsPlayerAndHostCallbackDataElement
+tags: [Tpp, GameKit, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [GameKit](/Entity_Reference/Tpp/GameKit)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Geo.GeoTrapModuleCallbackDataElement → TppTrapCheckIsPlayerAndHostCallbackDataElement
+
+```cpp
+TppTrapCheckIsPlayerAndHostCallbackDataElement : Fox.Geo.GeoTrapModuleCallbackDataElement 
+```
+
+TODO: Description
+
+
+
+

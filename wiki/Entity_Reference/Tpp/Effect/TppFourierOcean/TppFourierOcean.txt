@@ -1,0 +1,41 @@
+<!--
+title: TppFourierOcean
+permalink: /Entity_Reference/Tpp/Effect/TppFourierOcean
+tags: [Tpp, Effect, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [Effect](/Entity_Reference/Tpp/Effect)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Data → TppFourierOcean
+
+```cpp
+TppFourierOcean : Fox.Core.Data 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [displacementStrenght](#displacementstrenght) | TODO: Description |
+| [velocity](#velocity) | TODO: Description |
+| [windDirectionX](#winddirectionx) | TODO: Description |
+| [windDirectionZ](#winddirectionz) | TODO: Description |
+| [waveAmplitude](#waveamplitude) | TODO: Description |
+| [windSpeed](#windspeed) | TODO: Description |
+| [windDependency](#winddependency) | TODO: Description |
+| [baseHeight](#baseheight) | TODO: Description |
+| [choppyScale](#choppyscale) | TODO: Description |
+| [projectionScale](#projectionscale) | TODO: Description |
+| [blendStart](#blendstart) | TODO: Description |
+| [blendEnd](#blendend) | TODO: Description |
+| [farProjectionScale](#farprojectionscale) | TODO: Description |
+| [farProjectionAmplitude](#farprojectionamplitude) | TODO: Description |
+| [farProjectionNormalStrenght](#farprojectionnormalstrenght) | TODO: Description |
+| [reflectionPower](#reflectionpower) | TODO: Description |
+| [specularIntensity](#specularintensity) | TODO: Description |
+| [foamAmount](#foamamount) | TODO: Description |
+

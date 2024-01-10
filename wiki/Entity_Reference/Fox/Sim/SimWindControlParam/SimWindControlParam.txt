@@ -1,0 +1,24 @@
+<!--
+title: SimWindControlParam
+permalink: /Entity_Reference/Fox/Sim/SimWindControlParam
+tags: [Fox, Sim, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Sim](/Entity_Reference/Fox/Sim)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Sim.SimControlParam → SimWindControlParam
+
+```cpp
+SimWindControlParam : Fox.Sim.SimControlParam 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [coefficient](#coefficient) | TODO: Description |
+

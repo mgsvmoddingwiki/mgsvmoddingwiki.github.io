@@ -1,0 +1,27 @@
+<!--
+title: PhConstraint
+permalink: /Entity_Reference/Fox/Ph/PhConstraint
+tags: [Fox, Ph, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Ph](/Entity_Reference/Fox/Ph)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Ph.PhSubObject → PhConstraint
+
+```cpp
+PhConstraint : Fox.Ph.PhSubObject 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [param](#param) | TODO: Description |
+| [bodyA](#bodya) | TODO: Description |
+| [bodyB](#bodyb) | TODO: Description |
+| [defaultPosition](#defaultposition) | TODO: Description |
+

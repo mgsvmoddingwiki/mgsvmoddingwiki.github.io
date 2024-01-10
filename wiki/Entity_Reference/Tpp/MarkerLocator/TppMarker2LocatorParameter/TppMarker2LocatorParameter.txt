@@ -1,0 +1,25 @@
+<!--
+title: TppMarker2LocatorParameter
+permalink: /Entity_Reference/Tpp/MarkerLocator/TppMarker2LocatorParameter
+tags: [Tpp, MarkerLocator, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [MarkerLocator](/Entity_Reference/Tpp/MarkerLocator)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.DataElement → TppMarker2LocatorParameter
+
+```cpp
+TppMarker2LocatorParameter : Fox.Core.DataElement 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [markerType](#markertype) | TODO: Description |
+| [markerId](#markerid) | TODO: Description |
+

@@ -1,0 +1,28 @@
+<!--
+title: GeomDescription
+permalink: /Entity_Reference/Fox/PartsBuilder/GeomDescription
+tags: [Fox, PartsBuilder, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [PartsBuilder](/Entity_Reference/Fox/PartsBuilder)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.PartsBuilder.PartDescription → GeomDescription
+
+```cpp
+GeomDescription : Fox.PartsBuilder.PartDescription 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [geomFile](#geomfile) | TODO: Description |
+| [skeletonName](#skeletonname) | TODO: Description |
+| [offsetScale](#offsetscale) | TODO: Description |
+| [offsetRotQuat](#offsetrotquat) | TODO: Description |
+| [offsetTranslation](#offsettranslation) | TODO: Description |
+

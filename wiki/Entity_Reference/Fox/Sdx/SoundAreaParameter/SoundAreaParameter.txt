@@ -1,0 +1,30 @@
+<!--
+title: SoundAreaParameter
+permalink: /Entity_Reference/Fox/Sdx/SoundAreaParameter
+tags: [Fox, Sdx, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Sdx](/Entity_Reference/Fox/Sdx)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.DataElement → SoundAreaParameter
+
+```cpp
+SoundAreaParameter : Fox.Core.DataElement 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [ambientEvent](#ambientevent) | TODO: Description |
+| [ambientRtpcName](#ambientrtpcname) | TODO: Description |
+| [ambientRtpcValue](#ambientrtpcvalue) | TODO: Description |
+| [objectRtpcName](#objectrtpcname) | TODO: Description |
+| [objectRtpcValue](#objectrtpcvalue) | TODO: Description |
+| [auxSends](#auxsends) | TODO: Description |
+| [dryVolume](#dryvolume) | TODO: Description |
+

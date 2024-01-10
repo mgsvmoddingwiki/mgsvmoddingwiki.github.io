@@ -1,0 +1,24 @@
+<!--
+title: StaticModelArrayPathFilter
+permalink: /Entity_Reference/Fox/GameKit/StaticModelArrayPathFilter
+tags: [Fox, GameKit, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [GameKit](/Entity_Reference/Fox/GameKit)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Data → StaticModelArrayPathFilter
+
+```cpp
+StaticModelArrayPathFilter : Fox.Core.Data 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [filterPath](#filterpath) | TODO: Description |
+

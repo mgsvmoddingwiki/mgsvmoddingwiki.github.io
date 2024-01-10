@@ -1,0 +1,46 @@
+<!--
+title: TppSkyClouds3Param
+permalink: /Entity_Reference/Tpp/Effect/TppSkyClouds3Param
+tags: [Tpp, Effect, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [Effect](/Entity_Reference/Tpp/Effect)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.DataElement → TppSkyClouds3Param
+
+```cpp
+TppSkyClouds3Param : Fox.Core.DataElement 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [enable](#enable) | TODO: Description |
+| [followCamera](#followcamera) | TODO: Description |
+| [color](#color) | TODO: Description |
+| [luminanceScale](#luminancescale) | TODO: Description |
+| [bottom](#bottom) | TODO: Description |
+| [radius](#radius) | TODO: Description |
+| [height](#height) | TODO: Description |
+| [domeLength](#domelength) | TODO: Description |
+| [domeStreach](#domestreach) | TODO: Description |
+| [domeWindInfluence](#domewindinfluence) | TODO: Description |
+| [midCylinderPos](#midcylinderpos) | TODO: Description |
+| [midCylinderWidth](#midcylinderwidth) | TODO: Description |
+| [midCylinderStreach](#midcylinderstreach) | TODO: Description |
+| [midCylinderScrSpeed](#midcylinderscrspeed) | TODO: Description |
+| [lowCylinderIntrusion](#lowcylinderintrusion) | TODO: Description |
+| [lowCylinderStreach](#lowcylinderstreach) | TODO: Description |
+| [lowCylinderScrSpeed](#lowcylinderscrspeed) | TODO: Description |
+| [cylinderTexRepeat](#cylindertexrepeat) | TODO: Description |
+| [domeTexture](#dometexture) | TODO: Description |
+| [midCylinderTexture](#midcylindertexture) | TODO: Description |
+| [lowCylinderTexture](#lowcylindertexture) | TODO: Description |
+| [colorSpace](#colorspace) | TODO: Description |
+| [textureColorHandling](#texturecolorhandling) | TODO: Description |
+

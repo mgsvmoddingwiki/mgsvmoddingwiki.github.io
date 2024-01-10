@@ -1,0 +1,27 @@
+<!--
+title: TppWeatherCloudShadowSettings
+permalink: /Entity_Reference/Tpp/Effect/TppWeatherCloudShadowSettings
+tags: [Tpp, Effect, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [Effect](/Entity_Reference/Tpp/Effect)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Data → TppWeatherCloudShadowSettings
+
+```cpp
+TppWeatherCloudShadowSettings : Fox.Core.Data 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [enable](#enable) | TODO: Description |
+| [texture](#texture) | TODO: Description |
+| [textureMappingRange](#texturemappingrange) | TODO: Description |
+| [windInfluence](#windinfluence) | TODO: Description |
+

@@ -1,0 +1,29 @@
+<!--
+title: ObjectBrush
+permalink: /Entity_Reference/Fox/GameKit/ObjectBrush
+tags: [Fox, GameKit, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [GameKit](/Entity_Reference/Fox/GameKit)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.TransformData → ObjectBrush
+
+```cpp
+ObjectBrush : Fox.Core.TransformData 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [pluginHandle](#pluginhandle) | TODO: Description |
+| [blockDataName](#blockdataname) | TODO: Description |
+| [filePath](#filepath) | TODO: Description |
+| [loadFilePath](#loadfilepath) | TODO: Description |
+| [obrFile](#obrfile) | TODO: Description |
+| [numBlocks](#numblocks) | TODO: Description |
+

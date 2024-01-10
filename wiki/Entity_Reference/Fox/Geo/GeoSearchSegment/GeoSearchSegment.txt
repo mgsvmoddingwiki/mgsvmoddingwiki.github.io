@@ -1,0 +1,25 @@
+<!--
+title: GeoSearchSegment
+permalink: /Entity_Reference/Fox/Geo/GeoSearchSegment
+tags: [Fox, Geo, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Geo](/Entity_Reference/Fox/Geo)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Geo.GeoSearchObject → GeoSearchSegment
+
+```cpp
+GeoSearchSegment : Fox.Geo.GeoSearchObject 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [p0](#p0) | TODO: Description |
+| [p1](#p1) | TODO: Description |
+

@@ -1,0 +1,21 @@
+<!--
+title: HorizonBody
+permalink: /Entity_Reference/Fox/Grx/HorizonBody
+tags: [Fox, Grx, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Grx](/Entity_Reference/Fox/Grx)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.TransformDataBody → HorizonBody
+
+```cpp
+HorizonBody : Fox.Core.TransformDataBody 
+```
+
+TODO: Description
+
+
+
+

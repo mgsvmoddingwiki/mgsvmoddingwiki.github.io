@@ -1,0 +1,21 @@
+<!--
+title: GrPluginTerrainDepth
+permalink: /Entity_Reference/Fox/Gr/GrPluginTerrainDepth
+tags: [Fox, Gr, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Gr](/Entity_Reference/Fox/Gr)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Gr.GrPluginTerrain → GrPluginTerrainDepth
+
+```cpp
+GrPluginTerrainDepth : Fox.Gr.GrPluginTerrain 
+```
+
+TODO: Description
+
+
+
+

@@ -1,0 +1,8 @@
+<!--
+title: EdDemo
+permalink: /Entity_Reference/Fox/EdDemo
+tags: []
+-->
+
+{% include index-autolist type="section" %}
+

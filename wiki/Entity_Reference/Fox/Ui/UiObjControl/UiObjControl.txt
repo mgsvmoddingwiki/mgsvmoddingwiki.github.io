@@ -1,0 +1,25 @@
+<!--
+title: UiObjControl
+permalink: /Entity_Reference/Fox/Ui/UiObjControl
+tags: [Fox, Ui, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Ui](/Entity_Reference/Fox/Ui)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Entity → UiObjControl
+
+```cpp
+UiObjControl : Fox.Core.Entity 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [uigName](#uigname) | TODO: Description |
+| [uigFileName](#uigfilename) | TODO: Description |
+

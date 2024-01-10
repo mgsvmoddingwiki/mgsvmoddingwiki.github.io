@@ -1,0 +1,26 @@
+<!--
+title: Data
+permalink: /Entity_Reference/Fox/Core/Data
+tags: [Fox, Core, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Core](/Entity_Reference/Fox/Core)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Entity → Data
+
+```cpp
+Data : Fox.Core.Entity 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [name](#name) | TODO: Description |
+| [dataSet](#dataset) | TODO: Description |
+| [referencePath](#referencepath) | TODO: Description |
+

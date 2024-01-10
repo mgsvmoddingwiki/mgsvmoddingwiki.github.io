@@ -1,0 +1,26 @@
+<!--
+title: CheckpointContainer
+permalink: /Entity_Reference/Fox/GameKit/CheckpointContainer
+tags: [Fox, GameKit, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [GameKit](/Entity_Reference/Fox/GameKit)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Entity → CheckpointContainer
+
+```cpp
+CheckpointContainer : Fox.Core.Entity 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [checkPointUnits](#checkpointunits) | TODO: Description |
+| [passedCheckpoints](#passedcheckpoints) | TODO: Description |
+| [latestCheckpointTag](#latestcheckpointtag) | TODO: Description |
+

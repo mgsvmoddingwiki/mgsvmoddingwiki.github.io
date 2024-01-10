@@ -1,0 +1,26 @@
+<!--
+title: TppRequestWeatherTagTrapExecDataElement
+permalink: /Entity_Reference/Tpp/System/TppRequestWeatherTagTrapExecDataElement
+tags: [Tpp, System, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [System](/Entity_Reference/Tpp/System)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Geo.GeoTrapModuleCallbackDataElement → TppRequestWeatherTagTrapExecDataElement
+
+```cpp
+TppRequestWeatherTagTrapExecDataElement : Fox.Geo.GeoTrapModuleCallbackDataElement 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [tagName](#tagname) | TODO: Description |
+| [priority](#priority) | TODO: Description |
+| [interpTime](#interptime) | TODO: Description |
+

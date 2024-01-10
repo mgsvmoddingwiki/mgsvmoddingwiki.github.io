@@ -1,0 +1,24 @@
+<!--
+title: UInt32ArrayEntity
+permalink: /Entity_Reference/Fox/Core/UInt32ArrayEntity
+tags: [Fox, Core, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Core](/Entity_Reference/Fox/Core)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Entity → UInt32ArrayEntity
+
+```cpp
+UInt32ArrayEntity : Fox.Core.Entity 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [array](#array) | TODO: Description |
+

@@ -1,0 +1,21 @@
+<!--
+title: TerrainTileFile
+permalink: /Entity_Reference/Fox/Gr/TerrainTileFile
+tags: [Fox, Gr, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Gr](/Entity_Reference/Fox/Gr)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.RawFile → TerrainTileFile
+
+```cpp
+TerrainTileFile : Fox.Core.RawFile 
+```
+
+TODO: Description
+
+
+
+

@@ -1,0 +1,27 @@
+<!--
+title: TppGimmickBrokenElectricCableBank
+permalink: /Entity_Reference/Tpp/GameKit/TppGimmickBrokenElectricCableBank
+tags: [Tpp, GameKit, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [GameKit](/Entity_Reference/Tpp/GameKit)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Data → TppGimmickBrokenElectricCableBank
+
+```cpp
+TppGimmickBrokenElectricCableBank : Fox.Core.Data 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [referencePartsPath](#referencepartspath) | TODO: Description |
+| [modelFile](#modelfile) | TODO: Description |
+| [connectPointFile](#connectpointfile) | TODO: Description |
+| [instanceCount](#instancecount) | TODO: Description |
+

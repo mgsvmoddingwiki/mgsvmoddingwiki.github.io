@@ -1,0 +1,24 @@
+<!--
+title: PhAssociationParam
+permalink: /Entity_Reference/Fox/Phx/PhAssociationParam
+tags: [Fox, Phx, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Phx](/Entity_Reference/Fox/Phx)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Entity → PhAssociationParam
+
+```cpp
+PhAssociationParam : Fox.Core.Entity 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [connectType](#connecttype) | TODO: Description |
+

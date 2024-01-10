@@ -1,0 +1,21 @@
+<!--
+title: TppVolumetricFogManager
+permalink: /Entity_Reference/Tpp/Effect/TppVolumetricFogManager
+tags: [Tpp, Effect, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [Effect](/Entity_Reference/Tpp/Effect)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Entity → TppVolumetricFogManager
+
+```cpp
+TppVolumetricFogManager : Fox.Core.Entity 
+```
+
+TODO: Description
+
+
+
+

@@ -1,0 +1,21 @@
+<!--
+title: PhPrimitiveShapeParam
+permalink: /Entity_Reference/Fox/Ph/PhPrimitiveShapeParam
+tags: [Fox, Ph, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Ph](/Entity_Reference/Fox/Ph)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Ph.PhShapeParam → PhPrimitiveShapeParam
+
+```cpp
+PhPrimitiveShapeParam : Fox.Ph.PhShapeParam 
+```
+
+TODO: Description
+
+
+
+

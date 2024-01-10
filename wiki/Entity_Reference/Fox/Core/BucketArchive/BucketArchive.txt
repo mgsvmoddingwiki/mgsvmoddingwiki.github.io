@@ -1,0 +1,27 @@
+<!--
+title: BucketArchive
+permalink: /Entity_Reference/Fox/Core/BucketArchive
+tags: [Fox, Core, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Core](/Entity_Reference/Fox/Core)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Entity → BucketArchive
+
+```cpp
+BucketArchive : Fox.Core.Entity 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [name](#name) | TODO: Description |
+| [dataSetFiles](#datasetfiles) | TODO: Description |
+| [dataBodySets](#databodysets) | TODO: Description |
+| [editableDataBodySet](#editabledatabodyset) | TODO: Description |
+

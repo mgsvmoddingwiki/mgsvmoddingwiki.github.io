@@ -1,0 +1,7 @@
+<!--
+title: Fox
+permalink: /Entity_Reference/Fox/
+tags: []
+-->
+
+{% include index-autolist type="section" %}

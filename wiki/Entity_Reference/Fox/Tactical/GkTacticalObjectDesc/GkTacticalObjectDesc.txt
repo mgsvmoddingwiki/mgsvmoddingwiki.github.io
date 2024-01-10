@@ -1,0 +1,21 @@
+<!--
+title: GkTacticalObjectDesc
+permalink: /Entity_Reference/Fox/Tactical/GkTacticalObjectDesc
+tags: [Fox, Tactical, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Tactical](/Entity_Reference/Fox/Tactical)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.DataElement → GkTacticalObjectDesc
+
+```cpp
+GkTacticalObjectDesc : Fox.Core.DataElement 
+```
+
+TODO: Description
+
+
+
+

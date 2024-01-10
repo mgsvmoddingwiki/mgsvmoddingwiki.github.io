@@ -1,0 +1,28 @@
+<!--
+title: MotherBaseConstructLocator
+permalink: /Entity_Reference/Tpp/MotherBaseCore/MotherBaseConstructLocator
+tags: [Tpp, MotherBaseCore, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [MotherBaseCore](/Entity_Reference/Tpp/MotherBaseCore)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.TransformData → MotherBaseConstructLocator
+
+```cpp
+MotherBaseConstructLocator : Fox.Core.TransformData 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [type](#type) | TODO: Description |
+| [index](#index) | TODO: Description |
+| [clusterId](#clusterid) | TODO: Description |
+| [isLowModel](#islowmodel) | TODO: Description |
+| [staticModels](#staticmodels) | TODO: Description |
+

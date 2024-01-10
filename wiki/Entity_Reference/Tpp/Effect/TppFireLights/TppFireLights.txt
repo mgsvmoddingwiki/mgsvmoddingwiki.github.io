@@ -1,0 +1,21 @@
+<!--
+title: TppFireLights
+permalink: /Entity_Reference/Tpp/Effect/TppFireLights
+tags: [Tpp, Effect, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [Effect](/Entity_Reference/Tpp/Effect)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Data → TppFireLights
+
+```cpp
+TppFireLights : Fox.Core.Data 
+```
+
+TODO: Description
+
+
+
+

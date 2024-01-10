@@ -1,0 +1,23 @@
+<!--
+title: Sphere
+permalink: /Entity_Reference/Fox/Core/Sphere
+tags: [Fox, Core, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Core](/Entity_Reference/Fox/Core)\
+> Submodule: TODO: Submodule
+
+```cpp
+Sphere 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [p](#p) | TODO: Description |
+

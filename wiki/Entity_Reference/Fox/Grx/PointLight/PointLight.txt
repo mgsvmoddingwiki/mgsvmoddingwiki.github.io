@@ -1,0 +1,49 @@
+<!--
+title: PointLight
+permalink: /Entity_Reference/Fox/Grx/PointLight
+tags: [Fox, Grx, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Grx](/Entity_Reference/Fox/Grx)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.TransformData → PointLight
+
+```cpp
+PointLight : Fox.Core.TransformData 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [color](#color) | TODO: Description |
+| [reachPoint](#reachpoint) | TODO: Description |
+| [lightArea](#lightarea) | TODO: Description |
+| [irradiationPoint](#irradiationpoint) | TODO: Description |
+| [outerRange](#outerrange) | TODO: Description |
+| [innerRange](#innerrange) | TODO: Description |
+| [temperature](#temperature) | TODO: Description |
+| [colorDeflection](#colordeflection) | TODO: Description |
+| [lumen](#lumen) | TODO: Description |
+| [lightSize](#lightsize) | TODO: Description |
+| [dimmer](#dimmer) | TODO: Description |
+| [shadowBias](#shadowbias) | TODO: Description |
+| [LodFarSize](#lodfarsize) | TODO: Description |
+| [LodNearSize](#lodnearsize) | TODO: Description |
+| [LodShadowDrawRate](#lodshadowdrawrate) | TODO: Description |
+| [lightFlags](#lightflags) | TODO: Description |
+| [lodRadiusLevel](#lodradiuslevel) | TODO: Description |
+| [lodFadeType](#lodfadetype) | TODO: Description |
+| [enable](#enable) | TODO: Description |
+| [packingGeneration](#packinggeneration) | TODO: Description |
+| [castShadow](#castshadow) | TODO: Description |
+| [isBounced](#isbounced) | TODO: Description |
+| [showObject](#showobject) | TODO: Description |
+| [showRange](#showrange) | TODO: Description |
+| [isDebugLightVolumeBound](#isdebuglightvolumebound) | TODO: Description |
+| [hasSpecular](#hasspecular) | TODO: Description |
+

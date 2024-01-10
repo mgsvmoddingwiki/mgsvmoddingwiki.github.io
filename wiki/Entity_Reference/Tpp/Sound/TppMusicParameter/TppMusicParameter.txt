@@ -1,0 +1,43 @@
+<!--
+title: TppMusicParameter
+permalink: /Entity_Reference/Tpp/Sound/TppMusicParameter
+tags: [Tpp, Sound, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [Sound](/Entity_Reference/Tpp/Sound)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Data → TppMusicParameter
+
+```cpp
+TppMusicParameter : Fox.Core.Data 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [tag](#tag) | TODO: Description |
+| [playEvent](#playevent) | TODO: Description |
+| [daySwitchEvent](#dayswitchevent) | TODO: Description |
+| [nightSwitchEvent](#nightswitchevent) | TODO: Description |
+| [dangerEasySwitchEvent](#dangereasyswitchevent) | TODO: Description |
+| [dangerOuterSwitchEvent](#dangerouterswitchevent) | TODO: Description |
+| [dangerHardSwitchEvent](#dangerhardswitchevent) | TODO: Description |
+| [dangerEasyLostSwitchEvent](#dangereasylostswitchevent) | TODO: Description |
+| [dangerOuterLostSwitchEvent](#dangerouterlostswitchevent) | TODO: Description |
+| [dangerHardLostSwitchEvent](#dangerhardlostswitchevent) | TODO: Description |
+| [dangerEvasionSwitchEvent](#dangerevasionswitchevent) | TODO: Description |
+| [dangerStrongSwitchEvent](#dangerstrongswitchevent) | TODO: Description |
+| [safetyReflexSwitchEvent](#safetyreflexswitchevent) | TODO: Description |
+| [safetyNeutralToSneakSwitchEvent](#safetyneutraltosneakswitchevent) | TODO: Description |
+| [safetySneakSwitchEvent](#safetysneakswitchevent) | TODO: Description |
+| [safetyCautionSwitchEvent](#safetycautionswitchevent) | TODO: Description |
+| [safetyNoticeSwitchEvent](#safetynoticeswitchevent) | TODO: Description |
+| [safetyCautionNoticeSwitchEvent](#safetycautionnoticeswitchevent) | TODO: Description |
+| [safetyAlertToCautionSwitchEvent](#safetyalerttocautionswitchevent) | TODO: Description |
+| [neutralSwitchEvent](#neutralswitchevent) | TODO: Description |
+

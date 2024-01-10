@@ -1,0 +1,21 @@
+<!--
+title: TppLensFlareMultipleShapeManager
+permalink: /Entity_Reference/Tpp/Effect/TppLensFlareMultipleShapeManager
+tags: [Tpp, Effect, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [Effect](/Entity_Reference/Tpp/Effect)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Entity → TppLensFlareMultipleShapeManager
+
+```cpp
+TppLensFlareMultipleShapeManager : Fox.Core.Entity 
+```
+
+TODO: Description
+
+
+
+

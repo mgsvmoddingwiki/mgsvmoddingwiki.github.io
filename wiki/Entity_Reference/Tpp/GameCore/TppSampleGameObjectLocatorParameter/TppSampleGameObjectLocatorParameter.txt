@@ -1,0 +1,24 @@
+<!--
+title: TppSampleGameObjectLocatorParameter
+permalink: /Entity_Reference/Tpp/GameCore/TppSampleGameObjectLocatorParameter
+tags: [Tpp, GameCore, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [GameCore](/Entity_Reference/Tpp/GameCore)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.DataElement → TppSampleGameObjectLocatorParameter
+
+```cpp
+TppSampleGameObjectLocatorParameter : Fox.Core.DataElement 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [text](#text) | TODO: Description |
+

@@ -1,0 +1,28 @@
+<!--
+title: AimCamera
+permalink: /Entity_Reference/Fox/GameKit/AimCamera
+tags: [Fox, GameKit, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [GameKit](/Entity_Reference/Fox/GameKit)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.GameKit.Camera → AimCamera
+
+```cpp
+AimCamera : Fox.GameKit.Camera 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [aim](#aim) | TODO: Description |
+| [distance](#distance) | TODO: Description |
+| [rotX](#rotx) | TODO: Description |
+| [rotY](#roty) | TODO: Description |
+| [rotZ](#rotz) | TODO: Description |
+

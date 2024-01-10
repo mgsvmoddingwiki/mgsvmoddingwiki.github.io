@@ -1,0 +1,24 @@
+<!--
+title: TppTrapExecOnOffVolumetricFogCallbackDataElement
+permalink: /Entity_Reference/Tpp/Effect/TppTrapExecOnOffVolumetricFogCallbackDataElement
+tags: [Tpp, Effect, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [Effect](/Entity_Reference/Tpp/Effect)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Geo.GeoTrapModuleCallbackDataElement → TppTrapExecOnOffVolumetricFogCallbackDataElement
+
+```cpp
+TppTrapExecOnOffVolumetricFogCallbackDataElement : Fox.Geo.GeoTrapModuleCallbackDataElement 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [areaVolumetricFog](#areavolumetricfog) | TODO: Description |
+

@@ -1,0 +1,24 @@
+<!--
+title: DesFixData
+permalink: /Entity_Reference/Fox/Des/DesFixData
+tags: [Fox, Des, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Des](/Entity_Reference/Fox/Des)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Data → DesFixData
+
+```cpp
+DesFixData : Fox.Core.Data 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [elementNames](#elementnames) | TODO: Description |
+

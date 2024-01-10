@@ -1,0 +1,34 @@
+<!--
+title: TppDemoParameter
+permalink: /Entity_Reference/Fox/EdDemo/TppDemoParameter
+tags: [Fox, EdDemo, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [EdDemo](/Entity_Reference/Fox/EdDemo)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Demo.DemoParameter → TppDemoParameter
+
+```cpp
+TppDemoParameter : Fox.Demo.DemoParameter 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [pauseEnable](#pauseenable) | TODO: Description |
+| [fadeSerchLightEnable](#fadeserchlightenable) | TODO: Description |
+| [fadeDirectionalLightEnable](#fadedirectionallightenable) | TODO: Description |
+| [fadeSandStormEnable](#fadesandstormenable) | TODO: Description |
+| [sandStormDensityMin](#sandstormdensitymin) | TODO: Description |
+| [fadeTime](#fadetime) | TODO: Description |
+| [useSetTime](#usesettime) | TODO: Description |
+| [hour](#hour) | TODO: Description |
+| [minute](#minute) | TODO: Description |
+| [second](#second) | TODO: Description |
+| [weatherType](#weathertype) | TODO: Description |
+

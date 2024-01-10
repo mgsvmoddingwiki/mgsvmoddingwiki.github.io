@@ -1,0 +1,24 @@
+<!--
+title: TppDemoIntelligenceObject
+permalink: /Entity_Reference/Tpp/Effect/TppDemoIntelligenceObject
+tags: [Tpp, Effect, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [Effect](/Entity_Reference/Tpp/Effect)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.TransformData → TppDemoIntelligenceObject
+
+```cpp
+TppDemoIntelligenceObject : Fox.Core.TransformData 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [debugDraw](#debugdraw) | TODO: Description |
+

@@ -1,0 +1,21 @@
+<!--
+title: ScriptFile
+permalink: /Entity_Reference/Fox/Core/ScriptFile
+tags: [Fox, Core, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Core](/Entity_Reference/Fox/Core)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.File → ScriptFile
+
+```cpp
+ScriptFile : Fox.Core.File 
+```
+
+TODO: Description
+
+
+
+

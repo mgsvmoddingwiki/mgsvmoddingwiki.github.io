@@ -1,0 +1,33 @@
+<!--
+title: DemoResource
+permalink: /Entity_Reference/Fox/Demox/DemoResource
+tags: [Fox, Demox, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Demox](/Entity_Reference/Fox/Demox)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Data → DemoResource
+
+```cpp
+DemoResource : Fox.Core.Data 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [enable](#enable) | TODO: Description |
+| [demoIdentifierName](#demoidentifiername) | TODO: Description |
+| [demoIdentifierKey](#demoidentifierkey) | TODO: Description |
+| [streamBufferSizeInKbytes](#streambuffersizeinkbytes) | TODO: Description |
+| [systemPacketSizeInKbytes](#systempacketsizeinkbytes) | TODO: Description |
+| [systemPacketNum](#systempacketnum) | TODO: Description |
+| [soundPacketSizeInKbytes](#soundpacketsizeinkbytes) | TODO: Description |
+| [soundPacketNum](#soundpacketnum) | TODO: Description |
+| [demoPacketSizeInKbytes](#demopacketsizeinkbytes) | TODO: Description |
+| [demoPacketNum](#demopacketnum) | TODO: Description |
+

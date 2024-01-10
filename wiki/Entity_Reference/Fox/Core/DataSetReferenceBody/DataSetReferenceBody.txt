@@ -1,0 +1,21 @@
+<!--
+title: DataSetReferenceBody
+permalink: /Entity_Reference/Fox/Core/DataSetReferenceBody
+tags: [Fox, Core, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Core](/Entity_Reference/Fox/Core)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.TransformDataBody → DataSetReferenceBody
+
+```cpp
+DataSetReferenceBody : Fox.Core.TransformDataBody 
+```
+
+TODO: Description
+
+
+
+

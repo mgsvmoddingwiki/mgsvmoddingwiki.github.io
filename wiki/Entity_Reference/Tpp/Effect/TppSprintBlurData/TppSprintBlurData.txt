@@ -1,0 +1,29 @@
+<!--
+title: TppSprintBlurData
+permalink: /Entity_Reference/Tpp/Effect/TppSprintBlurData
+tags: [Tpp, Effect, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [Effect](/Entity_Reference/Tpp/Effect)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.TransformData → TppSprintBlurData
+
+```cpp
+TppSprintBlurData : Fox.Core.TransformData 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [playerLocator](#playerlocator) | TODO: Description |
+| [enable](#enable) | TODO: Description |
+| [filterGradientLinear](#filtergradientlinear) | TODO: Description |
+| [filterGradientSquare](#filtergradientsquare) | TODO: Description |
+| [filterGradinetOffset](#filtergradinetoffset) | TODO: Description |
+| [filterPower](#filterpower) | TODO: Description |
+

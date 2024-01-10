@@ -1,0 +1,25 @@
+<!--
+title: OverlayModel
+permalink: /Entity_Reference/Fox/GameKit/OverlayModel
+tags: [Fox, GameKit, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [GameKit](/Entity_Reference/Fox/GameKit)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Data → OverlayModel
+
+```cpp
+OverlayModel : Fox.Core.Data 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [target](#target) | TODO: Description |
+| [isOn](#ison) | TODO: Description |
+

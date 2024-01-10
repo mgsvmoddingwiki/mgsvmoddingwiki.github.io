@@ -1,0 +1,27 @@
+<!--
+title: PhxAssociation
+permalink: /Entity_Reference/Fox/Phx/PhxAssociation
+tags: [Fox, Phx, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Phx](/Entity_Reference/Fox/Phx)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Data → PhxAssociation
+
+```cpp
+PhxAssociation : Fox.Core.Data 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [physicsData](#physicsdata) | TODO: Description |
+| [connections](#connections) | TODO: Description |
+| [param](#param) | TODO: Description |
+| [connectType](#connecttype) | TODO: Description |
+

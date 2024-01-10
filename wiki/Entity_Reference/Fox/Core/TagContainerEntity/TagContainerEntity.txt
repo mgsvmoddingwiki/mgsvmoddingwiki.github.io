@@ -1,0 +1,24 @@
+<!--
+title: TagContainerEntity
+permalink: /Entity_Reference/Fox/Core/TagContainerEntity
+tags: [Fox, Core, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Core](/Entity_Reference/Fox/Core)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.Entity → TagContainerEntity
+
+```cpp
+TagContainerEntity : Fox.Core.Entity 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [tags](#tags) | TODO: Description |
+

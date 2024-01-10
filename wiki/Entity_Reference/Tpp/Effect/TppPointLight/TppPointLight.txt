@@ -1,0 +1,51 @@
+<!--
+title: TppPointLight
+permalink: /Entity_Reference/Tpp/Effect/TppPointLight
+tags: [Tpp, Effect, Reference]
+-->
+
+## Definition
+> Project: Tpp\
+> Module: [Effect](/Entity_Reference/Tpp/Effect)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.TransformData → TppPointLight
+
+```cpp
+TppPointLight : Fox.Core.TransformData 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [color](#color) | TODO: Description |
+| [reachPoint](#reachpoint) | TODO: Description |
+| [BynaryData](#bynarydata) | TODO: Description |
+| [lightArea](#lightarea) | TODO: Description |
+| [irradiationPoint](#irradiationpoint) | TODO: Description |
+| [outerRange](#outerrange) | TODO: Description |
+| [innerRange](#innerrange) | TODO: Description |
+| [temperature](#temperature) | TODO: Description |
+| [colorDeflection](#colordeflection) | TODO: Description |
+| [lumen](#lumen) | TODO: Description |
+| [lightSize](#lightsize) | TODO: Description |
+| [dimmer](#dimmer) | TODO: Description |
+| [shadowBias](#shadowbias) | TODO: Description |
+| [LodFarSize](#lodfarsize) | TODO: Description |
+| [LodNearSize](#lodnearsize) | TODO: Description |
+| [LodShadowDrawRate](#lodshadowdrawrate) | TODO: Description |
+| [lightFlags](#lightflags) | TODO: Description |
+| [lodRadiusLevel](#lodradiuslevel) | TODO: Description |
+| [lodFadeType](#lodfadetype) | TODO: Description |
+| [enable](#enable) | TODO: Description |
+| [packingGeneration](#packinggeneration) | TODO: Description |
+| [castShadow](#castshadow) | TODO: Description |
+| [isBounced](#isbounced) | TODO: Description |
+| [showObject](#showobject) | TODO: Description |
+| [showRange](#showrange) | TODO: Description |
+| [isDebugLightVolumeBounding](#isdebuglightvolumebounding) | TODO: Description |
+| [hasSpecular](#hasspecular) | TODO: Description |
+| [importFilePath](#importfilepath) | TODO: Description |
+

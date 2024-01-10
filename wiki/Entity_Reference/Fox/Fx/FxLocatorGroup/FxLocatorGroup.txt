@@ -1,0 +1,24 @@
+<!--
+title: FxLocatorGroup
+permalink: /Entity_Reference/Fox/Fx/FxLocatorGroup
+tags: [Fox, Fx, Reference]
+-->
+
+## Definition
+> Project: Fox\
+> Module: [Fx](/Entity_Reference/Fox/Fx)\
+> Submodule: TODO: Submodule\
+> Inheritance: Fox.Core.TransformData → FxLocatorGroup
+
+```cpp
+FxLocatorGroup : Fox.Core.TransformData 
+```
+
+TODO: Description
+
+## Properties
+
+| | |
+|-|-|
+| [groupInstanceName](#groupinstancename) | TODO: Description |
+
