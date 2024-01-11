@@ -307,7 +307,7 @@ mobileHamburger.addEventListener('click', (e) => {
     mobileMainMenuToggle();
 });
 
-function mobileMainMenuToggle() {
+export function mobileMainMenuToggle() {
     if (pageWrapper.classList.contains('menu-open')) {
         rootHtml.removeAttribute('style');
         pageWrapper.classList.remove('menu-open');
