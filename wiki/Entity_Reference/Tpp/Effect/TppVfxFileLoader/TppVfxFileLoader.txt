@@ -1,12 +1,12 @@
 <!--
 title: TppVfxFileLoader
-permalink: /Entity_Reference/Tpp/Effect/TppVfxFileLoader
+permalink: /Entity_Reference/?/Tpp/Effect/TppVfxFileLoader/
 tags: [Tpp, Effect, Reference]
 -->
 
 ## Definition
 > Project: Tpp\
-> Module: [Effect](/Entity_Reference/Tpp/Effect)\
+> Module: [Effect](/Entity_Reference/?/Tpp/Effect)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.Data → TppVfxFileLoader
 
@@ -23,4 +23,5 @@ TODO: Description
 | [vfxFiles](#vfxfiles) | TODO: Description |
 | [geoMaterialFiles](#geomaterialfiles) | TODO: Description |
 | [otherFiles](#otherfiles) | TODO: Description |
+
 

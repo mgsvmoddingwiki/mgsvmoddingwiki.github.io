@@ -1,12 +1,12 @@
 <!--
 title: GeoSearchAABB
-permalink: /Entity_Reference/Fox/Geo/GeoSearchAABB
+permalink: /Entity_Reference/?/Fox/Geo/GeoSearchAABB/
 tags: [Fox, Geo, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Geo](/Entity_Reference/Fox/Geo)\
+> Module: [Geo](/Entity_Reference/?/Fox/Geo)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Geo.GeoSearchObject → GeoSearchAABB
 
@@ -22,4 +22,5 @@ TODO: Description
 |-|-|
 | [min](#min) | TODO: Description |
 | [max](#max) | TODO: Description |
+
 

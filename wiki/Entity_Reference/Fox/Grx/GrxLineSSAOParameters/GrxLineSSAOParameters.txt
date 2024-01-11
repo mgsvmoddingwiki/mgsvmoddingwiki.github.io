@@ -1,12 +1,12 @@
 <!--
 title: GrxLineSSAOParameters
-permalink: /Entity_Reference/Fox/Grx/GrxLineSSAOParameters
+permalink: /Entity_Reference/?/Fox/Grx/GrxLineSSAOParameters/
 tags: [Fox, Grx, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Grx](/Entity_Reference/Fox/Grx)\
+> Module: [Grx](/Entity_Reference/?/Fox/Grx)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.Entity → GrxLineSSAOParameters
 
@@ -34,4 +34,5 @@ TODO: Description
 | [falloffRange](#falloffrange) | TODO: Description |
 | [gainonStart](#gainonstart) | TODO: Description |
 | [gainonRange](#gainonrange) | TODO: Description |
+
 

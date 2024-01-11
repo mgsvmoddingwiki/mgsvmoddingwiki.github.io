@@ -1,12 +1,12 @@
 <!--
 title: SimClothControlUnitParam
-permalink: /Entity_Reference/Fox/Sim/SimClothControlUnitParam
+permalink: /Entity_Reference/?/Fox/Sim/SimClothControlUnitParam/
 tags: [Fox, Sim, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Sim](/Entity_Reference/Fox/Sim)\
+> Module: [Sim](/Entity_Reference/?/Fox/Sim)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.Entity → SimClothControlUnitParam
 
@@ -26,4 +26,5 @@ TODO: Description
 | [limit](#limit) | TODO: Description |
 | [expansionRatio](#expansionratio) | TODO: Description |
 | [contractionRatio](#contractionratio) | TODO: Description |
+
 

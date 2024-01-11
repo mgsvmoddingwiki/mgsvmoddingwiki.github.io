@@ -1,12 +1,12 @@
 <!--
 title: CollisionSkeletonCreater
-permalink: /Entity_Reference/Fox/Geo/CollisionSkeletonCreater
+permalink: /Entity_Reference/?/Fox/Geo/CollisionSkeletonCreater/
 tags: [Fox, Geo, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Geo](/Entity_Reference/Fox/Geo)\
+> Module: [Geo](/Entity_Reference/?/Fox/Geo)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.Entity → CollisionSkeletonCreater
 
@@ -15,6 +15,7 @@ CollisionSkeletonCreater : Fox.Core.Entity
 ```
 
 TODO: Description
+
 
 
 

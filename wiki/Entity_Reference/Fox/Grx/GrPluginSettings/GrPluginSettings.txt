@@ -1,12 +1,12 @@
 <!--
 title: GrPluginSettings
-permalink: /Entity_Reference/Fox/Grx/GrPluginSettings
+permalink: /Entity_Reference/?/Fox/Grx/GrPluginSettings/
 tags: [Fox, Grx, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Grx](/Entity_Reference/Fox/Grx)\
+> Module: [Grx](/Entity_Reference/?/Fox/Grx)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.Data → GrPluginSettings
 
@@ -45,4 +45,5 @@ TODO: Description
 | [isLightAdaptationFromLACC](#islightadaptationfromlacc) | TODO: Description |
 | [isShowDecals](#isshowdecals) | TODO: Description |
 | [isShrinkSHBuffer](#isshrinkshbuffer) | TODO: Description |
+
 

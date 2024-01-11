@@ -1,12 +1,12 @@
 <!--
 title: GeoxPartsTargetFollowSkeletonBody
-permalink: /Entity_Reference/Fox/Geox/GeoxPartsTargetFollowSkeletonBody
+permalink: /Entity_Reference/?/Fox/Geox/GeoxPartsTargetFollowSkeletonBody/
 tags: [Fox, Geox, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Geox](/Entity_Reference/Fox/Geox)\
+> Module: [Geox](/Entity_Reference/?/Fox/Geox)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.DataBody → GeoxPartsTargetFollowSkeletonBody
 
@@ -15,6 +15,7 @@ GeoxPartsTargetFollowSkeletonBody : Fox.Core.DataBody
 ```
 
 TODO: Description
+
 
 
 

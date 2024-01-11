@@ -1,12 +1,12 @@
 <!--
 title: TppPlayer2InstanceSettings
-permalink: /Entity_Reference/Tpp/GameCore/TppPlayer2InstanceSettings
+permalink: /Entity_Reference/?/Tpp/GameCore/TppPlayer2InstanceSettings/
 tags: [Tpp, GameCore, Reference]
 -->
 
 ## Definition
 > Project: Tpp\
-> Module: [GameCore](/Entity_Reference/Tpp/GameCore)\
+> Module: [GameCore](/Entity_Reference/?/Tpp/GameCore)\
 > Submodule: TODO: Submodule
 
 ```cpp
@@ -24,4 +24,5 @@ TODO: Description
 | [commonMotionTypeName](#commonmotiontypename) | TODO: Description |
 | [partsTypeNames](#partstypenames) | TODO: Description |
 | [partsTypeInitial](#partstypeinitial) | TODO: Description |
+
 

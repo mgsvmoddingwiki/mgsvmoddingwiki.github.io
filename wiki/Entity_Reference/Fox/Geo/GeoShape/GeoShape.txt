@@ -1,12 +1,12 @@
 <!--
 title: GeoShape
-permalink: /Entity_Reference/Fox/Geo/GeoShape
+permalink: /Entity_Reference/?/Fox/Geo/GeoShape/
 tags: [Fox, Geo, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Geo](/Entity_Reference/Fox/Geo)\
+> Module: [Geo](/Entity_Reference/?/Fox/Geo)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.TransformData → GeoShape
 
@@ -22,4 +22,5 @@ TODO: Description
 |-|-|
 | [geometryType](#geometrytype) | TODO: Description |
 | [isDispShape](#isdispshape) | TODO: Description |
+
 

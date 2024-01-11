@@ -1,12 +1,12 @@
 <!--
 title: DemoResource
-permalink: /Entity_Reference/Fox/Demox/DemoResource
+permalink: /Entity_Reference/?/Fox/Demox/DemoResource/
 tags: [Fox, Demox, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Demox](/Entity_Reference/Fox/Demox)\
+> Module: [Demox](/Entity_Reference/?/Fox/Demox)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.Data → DemoResource
 
@@ -30,4 +30,5 @@ TODO: Description
 | [soundPacketNum](#soundpacketnum) | TODO: Description |
 | [demoPacketSizeInKbytes](#demopacketsizeinkbytes) | TODO: Description |
 | [demoPacketNum](#demopacketnum) | TODO: Description |
+
 

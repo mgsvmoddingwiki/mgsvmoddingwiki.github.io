@@ -1,12 +1,12 @@
 <!--
 title: TppSprintBlurData
-permalink: /Entity_Reference/Tpp/Effect/TppSprintBlurData
+permalink: /Entity_Reference/?/Tpp/Effect/TppSprintBlurData/
 tags: [Tpp, Effect, Reference]
 -->
 
 ## Definition
 > Project: Tpp\
-> Module: [Effect](/Entity_Reference/Tpp/Effect)\
+> Module: [Effect](/Entity_Reference/?/Tpp/Effect)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.TransformData → TppSprintBlurData
 
@@ -26,4 +26,5 @@ TODO: Description
 | [filterGradientSquare](#filtergradientsquare) | TODO: Description |
 | [filterGradinetOffset](#filtergradinetoffset) | TODO: Description |
 | [filterPower](#filterpower) | TODO: Description |
+
 

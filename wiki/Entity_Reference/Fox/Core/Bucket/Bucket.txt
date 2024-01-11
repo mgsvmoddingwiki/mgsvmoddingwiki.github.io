@@ -1,12 +1,12 @@
 <!--
 title: Bucket
-permalink: /Entity_Reference/Fox/Core/Bucket
+permalink: /Entity_Reference/?/Fox/Core/Bucket/
 tags: [Fox, Core, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Core](/Entity_Reference/Fox/Core)\
+> Module: [Core](/Entity_Reference/?/Fox/Core)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.Entity → Bucket
 
@@ -31,4 +31,5 @@ TODO: Description
 | [editableDataBodySet](#editabledatabodyset) | TODO: Description |
 | [editableDataSetChanged](#editabledatasetchanged) | TODO: Description |
 | [isEditableLocked](#iseditablelocked) | TODO: Description |
+
 

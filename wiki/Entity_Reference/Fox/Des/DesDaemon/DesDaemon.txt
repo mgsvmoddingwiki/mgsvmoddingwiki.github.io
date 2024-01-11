@@ -1,12 +1,12 @@
 <!--
 title: DesDaemon
-permalink: /Entity_Reference/Fox/Des/DesDaemon
+permalink: /Entity_Reference/?/Fox/Des/DesDaemon/
 tags: [Fox, Des, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Des](/Entity_Reference/Fox/Des)\
+> Module: [Des](/Entity_Reference/?/Fox/Des)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.Entity → DesDaemon
 
@@ -15,6 +15,7 @@ DesDaemon : Fox.Core.Entity
 ```
 
 TODO: Description
+
 
 
 

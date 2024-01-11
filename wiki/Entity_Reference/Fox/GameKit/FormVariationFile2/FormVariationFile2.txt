@@ -1,12 +1,12 @@
 <!--
 title: FormVariationFile2
-permalink: /Entity_Reference/Fox/GameKit/FormVariationFile2
+permalink: /Entity_Reference/?/Fox/GameKit/FormVariationFile2/
 tags: [Fox, GameKit, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [GameKit](/Entity_Reference/Fox/GameKit)\
+> Module: [GameKit](/Entity_Reference/?/Fox/GameKit)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.RawFile → FormVariationFile2
 
@@ -15,6 +15,7 @@ FormVariationFile2 : Fox.Core.RawFile
 ```
 
 TODO: Description
+
 
 
 

@@ -1,12 +1,12 @@
 <!--
 title: NavNavigationGraphHandleEntity
-permalink: /Entity_Reference/Fox/Nav/NavNavigationGraphHandleEntity
+permalink: /Entity_Reference/?/Fox/Nav/NavNavigationGraphHandleEntity/
 tags: [Fox, Nav, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Nav](/Entity_Reference/Fox/Nav)\
+> Module: [Nav](/Entity_Reference/?/Fox/Nav)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Nav.NavUnitHandleEntity → NavNavigationGraphHandleEntity
 
@@ -21,4 +21,5 @@ TODO: Description
 | | |
 |-|-|
 | [subId](#subid) | TODO: Description |
+
 

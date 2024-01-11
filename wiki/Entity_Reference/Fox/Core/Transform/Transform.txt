@@ -1,12 +1,12 @@
 <!--
 title: Transform
-permalink: /Entity_Reference/Fox/Core/Transform
+permalink: /Entity_Reference/?/Fox/Core/Transform/
 tags: [Fox, Core, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Core](/Entity_Reference/Fox/Core)\
+> Module: [Core](/Entity_Reference/?/Fox/Core)\
 > Submodule: TODO: Submodule
 
 ```cpp
@@ -22,4 +22,5 @@ TODO: Description
 | [scale](#scale) | TODO: Description |
 | [rotation_quat](#rotation-quat) | TODO: Description |
 | [translation](#translation) | TODO: Description |
+
 

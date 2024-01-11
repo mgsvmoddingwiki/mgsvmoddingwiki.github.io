@@ -1,12 +1,12 @@
 <!--
 title: TppUavParameter
-permalink: /Entity_Reference/Tpp/GameCore/TppUavParameter
+permalink: /Entity_Reference/?/Tpp/GameCore/TppUavParameter/
 tags: [Tpp, GameCore, Reference]
 -->
 
 ## Definition
 > Project: Tpp\
-> Module: [GameCore](/Entity_Reference/Tpp/GameCore)\
+> Module: [GameCore](/Entity_Reference/?/Tpp/GameCore)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.DataElement → TppUavParameter
 
@@ -21,4 +21,5 @@ TODO: Description
 | | |
 |-|-|
 | [partsFile](#partsfile) | TODO: Description |
+
 

@@ -1,12 +1,12 @@
 <!--
 title: GeoxPath
-permalink: /Entity_Reference/Fox/Geox/GeoxPath
+permalink: /Entity_Reference/?/Fox/Geox/GeoxPath/
 tags: [Fox, Geox, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Geox](/Entity_Reference/Fox/Geox)\
+> Module: [Geox](/Entity_Reference/?/Fox/Geox)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Graphx.GraphxPathData → GeoxPath
 
@@ -21,4 +21,5 @@ TODO: Description
 | | |
 |-|-|
 | [selectIndex](#selectindex) | TODO: Description |
+
 

@@ -1,12 +1,12 @@
 <!--
 title: TppPermanentGimmickInfraredSensorParameter
-permalink: /Entity_Reference/Tpp/GameKit/TppPermanentGimmickInfraredSensorParameter
+permalink: /Entity_Reference/?/Tpp/GameKit/TppPermanentGimmickInfraredSensorParameter/
 tags: [Tpp, GameKit, Reference]
 -->
 
 ## Definition
 > Project: Tpp\
-> Module: [GameKit](/Entity_Reference/Tpp/GameKit)\
+> Module: [GameKit](/Entity_Reference/?/Tpp/GameKit)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.DataElement → TppPermanentGimmickInfraredSensorParameter
 
@@ -23,4 +23,5 @@ TODO: Description
 | [flag](#flag) | TODO: Description |
 | [checkHostAndLocalPlayer](#checkhostandlocalplayer) | TODO: Description |
 | [checkPlayer](#checkplayer) | TODO: Description |
+
 

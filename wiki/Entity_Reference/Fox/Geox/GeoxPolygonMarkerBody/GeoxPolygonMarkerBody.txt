@@ -1,12 +1,12 @@
 <!--
 title: GeoxPolygonMarkerBody
-permalink: /Entity_Reference/Fox/Geox/GeoxPolygonMarkerBody
+permalink: /Entity_Reference/?/Fox/Geox/GeoxPolygonMarkerBody/
 tags: [Fox, Geox, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Geox](/Entity_Reference/Fox/Geox)\
+> Module: [Geox](/Entity_Reference/?/Fox/Geox)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.TransformDataBody → GeoxPolygonMarkerBody
 
@@ -21,4 +21,5 @@ TODO: Description
 | | |
 |-|-|
 | [vertices](#vertices) | TODO: Description |
+
 

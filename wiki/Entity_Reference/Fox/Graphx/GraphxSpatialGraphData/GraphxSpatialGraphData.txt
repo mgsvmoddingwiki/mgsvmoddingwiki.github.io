@@ -1,12 +1,12 @@
 <!--
 title: GraphxSpatialGraphData
-permalink: /Entity_Reference/Fox/Graphx/GraphxSpatialGraphData
+permalink: /Entity_Reference/?/Fox/Graphx/GraphxSpatialGraphData/
 tags: [Fox, Graphx, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Graphx](/Entity_Reference/Fox/Graphx)\
+> Module: [Graphx](/Entity_Reference/?/Fox/Graphx)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.TransformData → GraphxSpatialGraphData
 
@@ -22,4 +22,5 @@ TODO: Description
 |-|-|
 | [nodes](#nodes) | TODO: Description |
 | [edges](#edges) | TODO: Description |
+
 

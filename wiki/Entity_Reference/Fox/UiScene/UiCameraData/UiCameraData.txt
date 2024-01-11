@@ -1,12 +1,12 @@
 <!--
 title: UiCameraData
-permalink: /Entity_Reference/Fox/UiScene/UiCameraData
+permalink: /Entity_Reference/?/Fox/UiScene/UiCameraData/
 tags: [Fox, UiScene, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [UiScene](/Entity_Reference/Fox/UiScene)\
+> Module: [UiScene](/Entity_Reference/?/Fox/UiScene)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.Data → UiCameraData
 
@@ -30,4 +30,5 @@ TODO: Description
 | [fov](#fov) | TODO: Description |
 | [fovType](#fovtype) | TODO: Description |
 | [debug](#debug) | TODO: Description |
+
 

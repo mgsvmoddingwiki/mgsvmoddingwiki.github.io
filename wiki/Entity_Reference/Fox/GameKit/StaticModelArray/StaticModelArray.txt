@@ -1,12 +1,12 @@
 <!--
 title: StaticModelArray
-permalink: /Entity_Reference/Fox/GameKit/StaticModelArray
+permalink: /Entity_Reference/?/Fox/GameKit/StaticModelArray/
 tags: [Fox, GameKit, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [GameKit](/Entity_Reference/Fox/GameKit)\
+> Module: [GameKit](/Entity_Reference/?/Fox/GameKit)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.Data → StaticModelArray
 
@@ -32,4 +32,5 @@ TODO: Description
 | [parentLocator](#parentlocator) | TODO: Description |
 | [transforms](#transforms) | TODO: Description |
 | [colors](#colors) | TODO: Description |
+
 

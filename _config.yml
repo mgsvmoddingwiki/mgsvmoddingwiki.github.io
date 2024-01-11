@@ -158,6 +158,6 @@ inc_before_post_list :
 inc_after_post_list :
 
 # List of pages that will act as root basis for virtual pages
-# Both the original page's `permalink` path and the path here musn't contain a trailing forwardslash
+# Both the original page's `permalink` path and the path here must match
 virtual_page_roots:
-  - '/Entity_Reference'
+  - '/Entity_Reference/'

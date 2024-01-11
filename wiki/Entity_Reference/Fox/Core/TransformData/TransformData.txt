@@ -1,12 +1,12 @@
 <!--
 title: TransformData
-permalink: /Entity_Reference/Fox/Core/TransformData
+permalink: /Entity_Reference/?/Fox/Core/TransformData/
 tags: [Fox, Core, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Core](/Entity_Reference/Fox/Core)\
+> Module: [Core](/Entity_Reference/?/Fox/Core)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.Data → TransformData
 
@@ -31,4 +31,5 @@ TODO: Description
 | [selection](#selection) | TODO: Description |
 | [worldMatrix](#worldmatrix) | TODO: Description |
 | [worldTransform](#worldtransform) | TODO: Description |
+
 

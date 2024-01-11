@@ -1,12 +1,12 @@
 <!--
 title: ClipData
-permalink: /Entity_Reference/Fox/Demo/ClipData
+permalink: /Entity_Reference/?/Fox/Demo/ClipData/
 tags: [Fox, Demo, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Demo](/Entity_Reference/Fox/Demo)\
+> Module: [Demo](/Entity_Reference/?/Fox/Demo)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.DataElement → ClipData
 
@@ -25,4 +25,5 @@ TODO: Description
 | [startFrame](#startframe) | TODO: Description |
 | [endFrame](#endframe) | TODO: Description |
 | [offsetFrame](#offsetframe) | TODO: Description |
+
 

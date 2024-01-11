@@ -1,12 +1,12 @@
 <!--
 title: NavNavFile
-permalink: /Entity_Reference/Fox/Nav/NavNavFile
+permalink: /Entity_Reference/?/Fox/Nav/NavNavFile/
 tags: [Fox, Nav, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Nav](/Entity_Reference/Fox/Nav)\
+> Module: [Nav](/Entity_Reference/?/Fox/Nav)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.RawFile → NavNavFile
 
@@ -15,6 +15,7 @@ NavNavFile : Fox.Core.RawFile
 ```
 
 TODO: Description
+
 
 
 

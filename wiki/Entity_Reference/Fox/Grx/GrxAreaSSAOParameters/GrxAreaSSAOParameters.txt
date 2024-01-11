@@ -1,12 +1,12 @@
 <!--
 title: GrxAreaSSAOParameters
-permalink: /Entity_Reference/Fox/Grx/GrxAreaSSAOParameters
+permalink: /Entity_Reference/?/Fox/Grx/GrxAreaSSAOParameters/
 tags: [Fox, Grx, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Grx](/Entity_Reference/Fox/Grx)\
+> Module: [Grx](/Entity_Reference/?/Fox/Grx)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.Entity → GrxAreaSSAOParameters
 
@@ -31,4 +31,5 @@ TODO: Description
 | [blurRadius](#blurradius) | TODO: Description |
 | [blurSharpness](#blursharpness) | TODO: Description |
 | [blurSceneScale](#blurscenescale) | TODO: Description |
+
 

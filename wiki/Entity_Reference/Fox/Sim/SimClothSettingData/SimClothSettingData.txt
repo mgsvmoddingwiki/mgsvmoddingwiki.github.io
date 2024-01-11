@@ -1,12 +1,12 @@
 <!--
 title: SimClothSettingData
-permalink: /Entity_Reference/Fox/Sim/SimClothSettingData
+permalink: /Entity_Reference/?/Fox/Sim/SimClothSettingData/
 tags: [Fox, Sim, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Sim](/Entity_Reference/Fox/Sim)\
+> Module: [Sim](/Entity_Reference/?/Fox/Sim)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.Data → SimClothSettingData
 
@@ -29,4 +29,5 @@ TODO: Description
 | [inertialRate](#inertialrate) | TODO: Description |
 | [inertialMax](#inertialmax) | TODO: Description |
 | [noHitSkinMesh](#nohitskinmesh) | TODO: Description |
+
 

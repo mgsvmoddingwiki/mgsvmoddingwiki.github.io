@@ -1,12 +1,12 @@
 <!--
 title: AimCamera
-permalink: /Entity_Reference/Fox/GameKit/AimCamera
+permalink: /Entity_Reference/?/Fox/GameKit/AimCamera/
 tags: [Fox, GameKit, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [GameKit](/Entity_Reference/Fox/GameKit)\
+> Module: [GameKit](/Entity_Reference/?/Fox/GameKit)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.GameKit.Camera → AimCamera
 
@@ -25,4 +25,5 @@ TODO: Description
 | [rotX](#rotx) | TODO: Description |
 | [rotY](#roty) | TODO: Description |
 | [rotZ](#rotz) | TODO: Description |
+
 

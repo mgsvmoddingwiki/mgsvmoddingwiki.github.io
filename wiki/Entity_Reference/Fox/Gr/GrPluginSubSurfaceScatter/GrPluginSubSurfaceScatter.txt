@@ -1,12 +1,12 @@
 <!--
 title: GrPluginSubSurfaceScatter
-permalink: /Entity_Reference/Fox/Gr/GrPluginSubSurfaceScatter
+permalink: /Entity_Reference/?/Fox/Gr/GrPluginSubSurfaceScatter/
 tags: [Fox, Gr, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Gr](/Entity_Reference/Fox/Gr)\
+> Module: [Gr](/Entity_Reference/?/Fox/Gr)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Gr.GrRenderPlugin → GrPluginSubSurfaceScatter
 
@@ -15,6 +15,7 @@ GrPluginSubSurfaceScatter : Fox.Gr.GrRenderPlugin
 ```
 
 TODO: Description
+
 
 
 

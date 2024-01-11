@@ -1,12 +1,12 @@
 <!--
 title: GeoxBoundingVolumeFileParameterLarge
-permalink: /Entity_Reference/Fox/Geox/GeoxBoundingVolumeFileParameterLarge
+permalink: /Entity_Reference/?/Fox/Geox/GeoxBoundingVolumeFileParameterLarge/
 tags: [Fox, Geox, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Geox](/Entity_Reference/Fox/Geox)\
+> Module: [Geox](/Entity_Reference/?/Fox/Geox)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.Data → GeoxBoundingVolumeFileParameterLarge
 
@@ -21,4 +21,5 @@ TODO: Description
 | | |
 |-|-|
 | [gridSize](#gridsize) | TODO: Description |
+
 

@@ -1,12 +1,12 @@
 <!--
 title: LightArray
-permalink: /Entity_Reference/Fox/Grx/LightArray
+permalink: /Entity_Reference/?/Fox/Grx/LightArray/
 tags: [Fox, Grx, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Grx](/Entity_Reference/Fox/Grx)\
+> Module: [Grx](/Entity_Reference/?/Fox/Grx)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.TransformData → LightArray
 
@@ -21,4 +21,5 @@ TODO: Description
 | | |
 |-|-|
 | [lightArrayFile](#lightarrayfile) | TODO: Description |
+
 

@@ -1,12 +1,12 @@
 <!--
 title: GkOffenseTargetData
-permalink: /Entity_Reference/Fox/GameKit/GkOffenseTargetData
+permalink: /Entity_Reference/?/Fox/GameKit/GkOffenseTargetData/
 tags: [Fox, GameKit, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [GameKit](/Entity_Reference/Fox/GameKit)\
+> Module: [GameKit](/Entity_Reference/?/Fox/GameKit)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.GameKit.GkTargetData → GkOffenseTargetData
 
@@ -27,4 +27,5 @@ TODO: Description
 | [through](#through) | TODO: Description |
 | [attackDirection](#attackdirection) | TODO: Description |
 | [isAttackDirection](#isattackdirection) | TODO: Description |
+
 

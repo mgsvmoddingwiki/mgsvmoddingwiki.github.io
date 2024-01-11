@@ -1,12 +1,12 @@
 <!--
 title: SimDirectionControlParam
-permalink: /Entity_Reference/Fox/Sim/SimDirectionControlParam
+permalink: /Entity_Reference/?/Fox/Sim/SimDirectionControlParam/
 tags: [Fox, Sim, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Sim](/Entity_Reference/Fox/Sim)\
+> Module: [Sim](/Entity_Reference/?/Fox/Sim)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Sim.SimControlParam → SimDirectionControlParam
 
@@ -22,4 +22,5 @@ TODO: Description
 |-|-|
 | [refBone](#refbone) | TODO: Description |
 | [offset](#offset) | TODO: Description |
+
 

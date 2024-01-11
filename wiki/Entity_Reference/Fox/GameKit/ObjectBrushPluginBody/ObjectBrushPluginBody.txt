@@ -1,12 +1,12 @@
 <!--
 title: ObjectBrushPluginBody
-permalink: /Entity_Reference/Fox/GameKit/ObjectBrushPluginBody
+permalink: /Entity_Reference/?/Fox/GameKit/ObjectBrushPluginBody/
 tags: [Fox, GameKit, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [GameKit](/Entity_Reference/Fox/GameKit)\
+> Module: [GameKit](/Entity_Reference/?/Fox/GameKit)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.DataBody → ObjectBrushPluginBody
 
@@ -25,4 +25,5 @@ TODO: Description
 | [modelName](#modelname) | TODO: Description |
 | [thumbnailPath](#thumbnailpath) | TODO: Description |
 | [numObjects](#numobjects) | TODO: Description |
+
 

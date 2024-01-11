@@ -1,12 +1,12 @@
 <!--
 title: GeoxDynamicBoundingVolumeActivator
-permalink: /Entity_Reference/Fox/Geox/GeoxDynamicBoundingVolumeActivator
+permalink: /Entity_Reference/?/Fox/Geox/GeoxDynamicBoundingVolumeActivator/
 tags: [Fox, Geox, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Geox](/Entity_Reference/Fox/Geox)\
+> Module: [Geox](/Entity_Reference/?/Fox/Geox)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.TransformData → GeoxDynamicBoundingVolumeActivator
 
@@ -22,4 +22,5 @@ TODO: Description
 |-|-|
 | [gridSize](#gridsize) | TODO: Description |
 | [allocateSize](#allocatesize) | TODO: Description |
+
 

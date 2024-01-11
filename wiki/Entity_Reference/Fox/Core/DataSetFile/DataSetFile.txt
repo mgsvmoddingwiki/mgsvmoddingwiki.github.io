@@ -1,12 +1,12 @@
 <!--
 title: DataSetFile
-permalink: /Entity_Reference/Fox/Core/DataSetFile
+permalink: /Entity_Reference/?/Fox/Core/DataSetFile/
 tags: [Fox, Core, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Core](/Entity_Reference/Fox/Core)\
+> Module: [Core](/Entity_Reference/?/Fox/Core)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.File → DataSetFile
 
@@ -15,6 +15,7 @@ DataSetFile : Fox.Core.File
 ```
 
 TODO: Description
+
 
 
 

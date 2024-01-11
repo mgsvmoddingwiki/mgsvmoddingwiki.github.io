@@ -1,12 +1,12 @@
 <!--
 title: TppFadeOutEffectHolder
-permalink: /Entity_Reference/Tpp/Effect/TppFadeOutEffectHolder
+permalink: /Entity_Reference/?/Tpp/Effect/TppFadeOutEffectHolder/
 tags: [Tpp, Effect, Reference]
 -->
 
 ## Definition
 > Project: Tpp\
-> Module: [Effect](/Entity_Reference/Tpp/Effect)\
+> Module: [Effect](/Entity_Reference/?/Tpp/Effect)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.Entity → TppFadeOutEffectHolder
 
@@ -15,6 +15,7 @@ TppFadeOutEffectHolder : Fox.Core.Entity
 ```
 
 TODO: Description
+
 
 
 

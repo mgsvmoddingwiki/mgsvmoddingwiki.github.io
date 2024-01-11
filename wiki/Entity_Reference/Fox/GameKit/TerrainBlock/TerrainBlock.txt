@@ -1,12 +1,12 @@
 <!--
 title: TerrainBlock
-permalink: /Entity_Reference/Fox/GameKit/TerrainBlock
+permalink: /Entity_Reference/?/Fox/GameKit/TerrainBlock/
 tags: [Fox, GameKit, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [GameKit](/Entity_Reference/Fox/GameKit)\
+> Module: [GameKit](/Entity_Reference/?/Fox/GameKit)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.Data → TerrainBlock
 
@@ -25,4 +25,5 @@ TODO: Description
 | [filePtr](#fileptr) | TODO: Description |
 | [filePath](#filepath) | TODO: Description |
 | [pos](#pos) | TODO: Description |
+
 

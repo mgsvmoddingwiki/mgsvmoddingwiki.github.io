@@ -1,12 +1,12 @@
 <!--
 title: GrxShape
-permalink: /Entity_Reference/Fox/Grx/GrxShape
+permalink: /Entity_Reference/?/Fox/Grx/GrxShape/
 tags: [Fox, Grx, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Grx](/Entity_Reference/Fox/Grx)\
+> Module: [Grx](/Entity_Reference/?/Fox/Grx)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.Entity → GrxShape
 
@@ -15,6 +15,7 @@ GrxShape : Fox.Core.Entity
 ```
 
 TODO: Description
+
 
 
 

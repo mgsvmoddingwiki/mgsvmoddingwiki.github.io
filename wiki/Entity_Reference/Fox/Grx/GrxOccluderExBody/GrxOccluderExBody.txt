@@ -1,12 +1,12 @@
 <!--
 title: GrxOccluderExBody
-permalink: /Entity_Reference/Fox/Grx/GrxOccluderExBody
+permalink: /Entity_Reference/?/Fox/Grx/GrxOccluderExBody/
 tags: [Fox, Grx, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Grx](/Entity_Reference/Fox/Grx)\
+> Module: [Grx](/Entity_Reference/?/Fox/Grx)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.TransformDataBody → GrxOccluderExBody
 
@@ -15,6 +15,7 @@ GrxOccluderExBody : Fox.Core.TransformDataBody
 ```
 
 TODO: Description
+
 
 
 

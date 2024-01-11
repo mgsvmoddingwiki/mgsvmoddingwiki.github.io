@@ -1,12 +1,12 @@
 <!--
 title: TppWaterRippleViewport
-permalink: /Entity_Reference/Tpp/Effect/TppWaterRippleViewport
+permalink: /Entity_Reference/?/Tpp/Effect/TppWaterRippleViewport/
 tags: [Tpp, Effect, Reference]
 -->
 
 ## Definition
 > Project: Tpp\
-> Module: [Effect](/Entity_Reference/Tpp/Effect)\
+> Module: [Effect](/Entity_Reference/?/Tpp/Effect)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.Data → TppWaterRippleViewport
 
@@ -24,4 +24,5 @@ TODO: Description
 | [viewportWidth](#viewportwidth) | TODO: Description |
 | [ripplePower](#ripplepower) | TODO: Description |
 | [debugView](#debugview) | TODO: Description |
+
 

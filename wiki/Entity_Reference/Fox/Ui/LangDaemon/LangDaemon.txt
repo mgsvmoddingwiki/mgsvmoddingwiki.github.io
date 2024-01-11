@@ -1,12 +1,12 @@
 <!--
 title: LangDaemon
-permalink: /Entity_Reference/Fox/Ui/LangDaemon
+permalink: /Entity_Reference/?/Fox/Ui/LangDaemon/
 tags: [Fox, Ui, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Ui](/Entity_Reference/Fox/Ui)\
+> Module: [Ui](/Entity_Reference/?/Fox/Ui)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.Entity → LangDaemon
 
@@ -15,6 +15,7 @@ LangDaemon : Fox.Core.Entity
 ```
 
 TODO: Description
+
 
 
 

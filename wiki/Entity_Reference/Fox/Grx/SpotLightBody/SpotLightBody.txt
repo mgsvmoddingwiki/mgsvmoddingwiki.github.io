@@ -1,12 +1,12 @@
 <!--
 title: SpotLightBody
-permalink: /Entity_Reference/Fox/Grx/SpotLightBody
+permalink: /Entity_Reference/?/Fox/Grx/SpotLightBody/
 tags: [Fox, Grx, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Grx](/Entity_Reference/Fox/Grx)\
+> Module: [Grx](/Entity_Reference/?/Fox/Grx)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.TransformDataBody → SpotLightBody
 
@@ -21,4 +21,5 @@ TODO: Description
 | | |
 |-|-|
 | [enable](#enable) | TODO: Description |
+
 

@@ -1,8 +1,9 @@
 <!--
 title: Gr
-permalink: /Entity_Reference/Fox/Gr
+permalink: /Entity_Reference/?/Fox/Gr/
 tags: []
 -->
 
 {% include index-autolist type="section" %}
+
 

@@ -1,12 +1,12 @@
 <!--
 title: TppPlacedLocatorParameter
-permalink: /Entity_Reference/Tpp/Collectible/TppPlacedLocatorParameter
+permalink: /Entity_Reference/?/Tpp/Collectible/TppPlacedLocatorParameter/
 tags: [Tpp, Collectible, Reference]
 -->
 
 ## Definition
 > Project: Tpp\
-> Module: [Collectible](/Entity_Reference/Tpp/Collectible)\
+> Module: [Collectible](/Entity_Reference/?/Tpp/Collectible)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.DataElement → TppPlacedLocatorParameter
 
@@ -21,4 +21,5 @@ TODO: Description
 | | |
 |-|-|
 | [equipIdStrCode32](#equipidstrcode32) | TODO: Description |
+
 

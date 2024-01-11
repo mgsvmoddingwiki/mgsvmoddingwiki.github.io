@@ -1,12 +1,12 @@
 <!--
 title: Game
-permalink: /Entity_Reference/Fox/Core/Game
+permalink: /Entity_Reference/?/Fox/Core/Game/
 tags: [Fox, Core, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Core](/Entity_Reference/Fox/Core)\
+> Module: [Core](/Entity_Reference/?/Fox/Core)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.Actor → Game
 
@@ -21,4 +21,5 @@ TODO: Description
 | | |
 |-|-|
 | [bucketCollector](#bucketcollector) | TODO: Description |
+
 

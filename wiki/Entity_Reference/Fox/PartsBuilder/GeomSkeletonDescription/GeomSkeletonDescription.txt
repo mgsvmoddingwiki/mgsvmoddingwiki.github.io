@@ -1,12 +1,12 @@
 <!--
 title: GeomSkeletonDescription
-permalink: /Entity_Reference/Fox/PartsBuilder/GeomSkeletonDescription
+permalink: /Entity_Reference/?/Fox/PartsBuilder/GeomSkeletonDescription/
 tags: [Fox, PartsBuilder, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [PartsBuilder](/Entity_Reference/Fox/PartsBuilder)\
+> Module: [PartsBuilder](/Entity_Reference/?/Fox/PartsBuilder)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.PartsBuilder.PartDescription → GeomSkeletonDescription
 
@@ -21,4 +21,5 @@ TODO: Description
 | | |
 |-|-|
 | [gsklFile](#gsklfile) | TODO: Description |
+
 

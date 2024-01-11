@@ -1,12 +1,12 @@
 <!--
 title: TppHandLightLensFlareRootBody
-permalink: /Entity_Reference/Tpp/Effect/TppHandLightLensFlareRootBody
+permalink: /Entity_Reference/?/Tpp/Effect/TppHandLightLensFlareRootBody/
 tags: [Tpp, Effect, Reference]
 -->
 
 ## Definition
 > Project: Tpp\
-> Module: [Effect](/Entity_Reference/Tpp/Effect)\
+> Module: [Effect](/Entity_Reference/?/Tpp/Effect)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.TransformDataBody → TppHandLightLensFlareRootBody
 
@@ -15,6 +15,7 @@ TppHandLightLensFlareRootBody : Fox.Core.TransformDataBody
 ```
 
 TODO: Description
+
 
 
 

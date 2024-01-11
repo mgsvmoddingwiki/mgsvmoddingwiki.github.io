@@ -1,12 +1,12 @@
 <!--
 title: Material
-permalink: /Entity_Reference/Fox/Core/Material
+permalink: /Entity_Reference/?/Fox/Core/Material/
 tags: [Fox, Core, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Core](/Entity_Reference/Fox/Core)\
+> Module: [Core](/Entity_Reference/?/Fox/Core)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.Data → Material
 
@@ -31,4 +31,5 @@ TODO: Description
 | [specularColor](#specularcolor) | TODO: Description |
 | [fmtrPath](#fmtrpath) | TODO: Description |
 | [residentFlag](#residentflag) | TODO: Description |
+
 

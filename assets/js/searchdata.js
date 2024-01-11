@@ -262,18 +262,20 @@ function outputResults(input, key) {
             link.appendChild(labelTitle);
 
             let path = result.item.url,
-                parts = [...String(path).split('/')],
+                parts = [...String(path).replace('/?/','/').split('/')],
                 levels = parts.length - 2;
             if (levels > 1) {
                 let labelPath = document.createElement('span'),
                     parentPath = getParentPath(path, parts);
                 labelPath.classList.add('search-result-path');
-                labelPath.textContent = func.trimTrailFs(parentPath.replace('/', ' ').replaceAll('/',' / ').replaceAll('_',' ').replaceAll('-',' '));
+                labelPath.textContent = func.trimTrailFs(parentPath).replace('/?/','/').replace('/',' ').replaceAll('/',' / ').replaceAll('_',' ').replaceAll('-',' ');
                 link.appendChild(labelPath);
             }
 
             listItem.appendChild(link);
-            resultsContainer.appendChild(listItem);
+            if (result.item.title != 'redirect.html') {
+                resultsContainer.appendChild(listItem);
+            }
         });
     } else {
         searchNoResults(true);

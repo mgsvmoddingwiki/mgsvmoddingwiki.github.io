@@ -1,12 +1,12 @@
 <!--
 title: SoundAreaEdgeBody
-permalink: /Entity_Reference/Fox/Sdx/SoundAreaEdgeBody
+permalink: /Entity_Reference/?/Fox/Sdx/SoundAreaEdgeBody/
 tags: [Fox, Sdx, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Sdx](/Entity_Reference/Fox/Sdx)\
+> Module: [Sdx](/Entity_Reference/?/Fox/Sdx)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.DataBody → SoundAreaEdgeBody
 
@@ -15,6 +15,7 @@ SoundAreaEdgeBody : Fox.Core.DataBody
 ```
 
 TODO: Description
+
 
 
 

@@ -1,12 +1,12 @@
 <!--
 title: EnvironmentGlobal
-permalink: /Entity_Reference/Fox/GameKit/EnvironmentGlobal
+permalink: /Entity_Reference/?/Fox/GameKit/EnvironmentGlobal/
 tags: [Fox, GameKit, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [GameKit](/Entity_Reference/Fox/GameKit)\
+> Module: [GameKit](/Entity_Reference/?/Fox/GameKit)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.Data → EnvironmentGlobal
 
@@ -21,4 +21,5 @@ TODO: Description
 | | |
 |-|-|
 | [parameter](#parameter) | TODO: Description |
+
 

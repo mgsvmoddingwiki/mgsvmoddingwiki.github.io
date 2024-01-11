@@ -1,12 +1,12 @@
 <!--
 title: TppTrapExecCombatLocatorCallbackDataElement
-permalink: /Entity_Reference/Tpp/GameCore/TppTrapExecCombatLocatorCallbackDataElement
+permalink: /Entity_Reference/?/Tpp/GameCore/TppTrapExecCombatLocatorCallbackDataElement/
 tags: [Tpp, GameCore, Reference]
 -->
 
 ## Definition
 > Project: Tpp\
-> Module: [GameCore](/Entity_Reference/Tpp/GameCore)\
+> Module: [GameCore](/Entity_Reference/?/Tpp/GameCore)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Geo.GeoTrapModuleCallbackDataElement → TppTrapExecCombatLocatorCallbackDataElement
 
@@ -22,4 +22,5 @@ TODO: Description
 |-|-|
 | [frontLineName](#frontlinename) | TODO: Description |
 | [inactiveLocators](#inactivelocators) | TODO: Description |
+
 

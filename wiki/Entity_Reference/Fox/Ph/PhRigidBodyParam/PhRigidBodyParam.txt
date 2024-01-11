@@ -1,12 +1,12 @@
 <!--
 title: PhRigidBodyParam
-permalink: /Entity_Reference/Fox/Ph/PhRigidBodyParam
+permalink: /Entity_Reference/?/Fox/Ph/PhRigidBodyParam/
 tags: [Fox, Ph, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Ph](/Entity_Reference/Fox/Ph)\
+> Module: [Ph](/Entity_Reference/?/Fox/Ph)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.Entity → PhRigidBodyParam
 
@@ -41,4 +41,5 @@ TODO: Description
 | [motionType](#motiontype) | TODO: Description |
 | [material](#material) | TODO: Description |
 | [isNoGravity](#isnogravity) | TODO: Description |
+
 

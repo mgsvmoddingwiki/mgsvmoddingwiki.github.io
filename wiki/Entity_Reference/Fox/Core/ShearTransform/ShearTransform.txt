@@ -1,12 +1,12 @@
 <!--
 title: ShearTransform
-permalink: /Entity_Reference/Fox/Core/ShearTransform
+permalink: /Entity_Reference/?/Fox/Core/ShearTransform/
 tags: [Fox, Core, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Core](/Entity_Reference/Fox/Core)\
+> Module: [Core](/Entity_Reference/?/Fox/Core)\
 > Submodule: TODO: Submodule
 
 ```cpp
@@ -20,4 +20,5 @@ TODO: Description
 | | |
 |-|-|
 | [shear](#shear) | TODO: Description |
+
 

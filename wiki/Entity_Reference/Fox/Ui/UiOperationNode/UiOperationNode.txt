@@ -1,12 +1,12 @@
 <!--
 title: UiOperationNode
-permalink: /Entity_Reference/Fox/Ui/UiOperationNode
+permalink: /Entity_Reference/?/Fox/Ui/UiOperationNode/
 tags: [Fox, Ui, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Ui](/Entity_Reference/Fox/Ui)\
+> Module: [Ui](/Entity_Reference/?/Fox/Ui)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Ui.UiNodeData → UiOperationNode
 
@@ -21,4 +21,5 @@ TODO: Description
 | | |
 |-|-|
 | [kind](#kind) | TODO: Description |
+
 

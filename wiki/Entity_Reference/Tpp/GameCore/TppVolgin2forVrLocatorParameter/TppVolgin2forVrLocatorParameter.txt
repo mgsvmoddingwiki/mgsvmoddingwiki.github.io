@@ -1,12 +1,12 @@
 <!--
 title: TppVolgin2forVrLocatorParameter
-permalink: /Entity_Reference/Tpp/GameCore/TppVolgin2forVrLocatorParameter
+permalink: /Entity_Reference/?/Tpp/GameCore/TppVolgin2forVrLocatorParameter/
 tags: [Tpp, GameCore, Reference]
 -->
 
 ## Definition
 > Project: Tpp\
-> Module: [GameCore](/Entity_Reference/Tpp/GameCore)\
+> Module: [GameCore](/Entity_Reference/?/Tpp/GameCore)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.DataElement → TppVolgin2forVrLocatorParameter
 
@@ -21,4 +21,5 @@ TODO: Description
 | | |
 |-|-|
 | [identifier](#identifier) | TODO: Description |
+
 

@@ -1,12 +1,12 @@
 <!--
 title: EvControlSubtitlesNode
-permalink: /Entity_Reference/Fox/GameKit/EvControlSubtitlesNode
+permalink: /Entity_Reference/?/Fox/GameKit/EvControlSubtitlesNode/
 tags: [Fox, GameKit, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [GameKit](/Entity_Reference/Fox/GameKit)\
+> Module: [GameKit](/Entity_Reference/?/Fox/GameKit)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Ui.UiEventNode → EvControlSubtitlesNode
 
@@ -15,6 +15,7 @@ EvControlSubtitlesNode : Fox.Ui.UiEventNode
 ```
 
 TODO: Description
+
 
 
 

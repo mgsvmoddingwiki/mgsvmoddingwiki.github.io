@@ -1,12 +1,12 @@
 <!--
 title: UiAnimData
-permalink: /Entity_Reference/Fox/UiScene/UiAnimData
+permalink: /Entity_Reference/?/Fox/UiScene/UiAnimData/
 tags: [Fox, UiScene, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [UiScene](/Entity_Reference/Fox/UiScene)\
+> Module: [UiScene](/Entity_Reference/?/Fox/UiScene)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.Data → UiAnimData
 
@@ -27,4 +27,5 @@ TODO: Description
 | [flag](#flag) | TODO: Description |
 | [srcNodeNames](#srcnodenames) | TODO: Description |
 | [destNodeNames](#destnodenames) | TODO: Description |
+
 

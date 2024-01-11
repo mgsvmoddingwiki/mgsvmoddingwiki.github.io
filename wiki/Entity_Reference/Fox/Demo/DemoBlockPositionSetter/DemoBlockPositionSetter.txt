@@ -1,12 +1,12 @@
 <!--
 title: DemoBlockPositionSetter
-permalink: /Entity_Reference/Fox/Demo/DemoBlockPositionSetter
+permalink: /Entity_Reference/?/Fox/Demo/DemoBlockPositionSetter/
 tags: [Fox, Demo, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Demo](/Entity_Reference/Fox/Demo)\
+> Module: [Demo](/Entity_Reference/?/Fox/Demo)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.TransformData → DemoBlockPositionSetter
 
@@ -15,6 +15,7 @@ DemoBlockPositionSetter : Fox.Core.TransformData
 ```
 
 TODO: Description
+
 
 
 

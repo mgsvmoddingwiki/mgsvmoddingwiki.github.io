@@ -1,12 +1,12 @@
 <!--
 title: Decal
-permalink: /Entity_Reference/Fox/GameKit/Decal
+permalink: /Entity_Reference/?/Fox/GameKit/Decal/
 tags: [Fox, GameKit, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [GameKit](/Entity_Reference/Fox/GameKit)\
+> Module: [GameKit](/Entity_Reference/?/Fox/GameKit)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.TransformData → Decal
 
@@ -39,4 +39,5 @@ TODO: Description
 | [showObject](#showobject) | TODO: Description |
 | [isVisibleGeom](#isvisiblegeom) | TODO: Description |
 | [isSSDecal](#isssdecal) | TODO: Description |
+
 

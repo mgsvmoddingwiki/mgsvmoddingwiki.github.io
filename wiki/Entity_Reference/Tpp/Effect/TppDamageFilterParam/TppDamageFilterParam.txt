@@ -1,12 +1,12 @@
 <!--
 title: TppDamageFilterParam
-permalink: /Entity_Reference/Tpp/Effect/TppDamageFilterParam
+permalink: /Entity_Reference/?/Tpp/Effect/TppDamageFilterParam/
 tags: [Tpp, Effect, Reference]
 -->
 
 ## Definition
 > Project: Tpp\
-> Module: [Effect](/Entity_Reference/Tpp/Effect)\
+> Module: [Effect](/Entity_Reference/?/Tpp/Effect)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.TransformData → TppDamageFilterParam
 
@@ -28,4 +28,5 @@ TODO: Description
 | [burnSpritePosition](#burnspriteposition) | TODO: Description |
 | [damageColorCorrectionTextureName](#damagecolorcorrectiontexturename) | TODO: Description |
 | [injuryColorCorrectionTextureName](#injurycolorcorrectiontexturename) | TODO: Description |
+
 

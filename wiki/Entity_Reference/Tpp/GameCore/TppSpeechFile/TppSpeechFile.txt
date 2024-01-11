@@ -1,12 +1,12 @@
 <!--
 title: TppSpeechFile
-permalink: /Entity_Reference/Tpp/GameCore/TppSpeechFile
+permalink: /Entity_Reference/?/Tpp/GameCore/TppSpeechFile/
 tags: [Tpp, GameCore, Reference]
 -->
 
 ## Definition
 > Project: Tpp\
-> Module: [GameCore](/Entity_Reference/Tpp/GameCore)\
+> Module: [GameCore](/Entity_Reference/?/Tpp/GameCore)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.RawFile → TppSpeechFile
 
@@ -15,6 +15,7 @@ TppSpeechFile : Fox.Core.RawFile
 ```
 
 TODO: Description
+
 
 
 

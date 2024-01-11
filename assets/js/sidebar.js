@@ -205,11 +205,9 @@ function pathTreeSetParents(array) {
         let {parts, levels} = func.getPathLevels(obj.url);
         delete obj.content // discard unnecessary values for array
         delete obj.tags
+        // console.log(parts, levels, obj.url)
         if (levels > 1) {
             let parentPath = getParentPath(obj.url, parts);
-            if (isVirtualPage && parentPath == curUrlRoot + '/') {
-                parentPath = func.trimTrailFs(parentPath); // virtual pages require root real page have no trailing forwardslash, so removed else object can't be matched
-            }
             let parentIndex = func.getIndexByValue(sectionIndex, 'url', parentPath);
             obj.parentId = sectionIndex[parentIndex].id;
         }
@@ -222,7 +220,11 @@ export function getParentPath(string, parts) {
         if (i === parts.length - 1) {
             let fs = 1;
             if (string[string.length - 1] != '/') { fs = 0; }; // check if permalink lacks trailing forwardslash
-            return string.substring(0, string.length - parts[i - fs].length - fs);
+            let parent = string.substring(0, string.length - parts[i - fs].length - fs);
+            if (parent == curUrlRoot + '?/') {
+                parent = curUrlRoot;
+            }
+            return parent
         }
     }
 }

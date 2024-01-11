@@ -1,12 +1,12 @@
 <!--
 title: PathStringMapPropertyDifference
-permalink: /Entity_Reference/Fox/Core/PathStringMapPropertyDifference
+permalink: /Entity_Reference/?/Fox/Core/PathStringMapPropertyDifference/
 tags: [Fox, Core, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Core](/Entity_Reference/Fox/Core)\
+> Module: [Core](/Entity_Reference/?/Fox/Core)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.PropertyDifference → PathStringMapPropertyDifference
 
@@ -22,4 +22,5 @@ TODO: Description
 |-|-|
 | [originalValues](#originalvalues) | TODO: Description |
 | [values](#values) | TODO: Description |
+
 

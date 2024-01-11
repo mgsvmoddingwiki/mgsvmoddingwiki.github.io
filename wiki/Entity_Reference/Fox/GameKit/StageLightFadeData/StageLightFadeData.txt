@@ -1,12 +1,12 @@
 <!--
 title: StageLightFadeData
-permalink: /Entity_Reference/Fox/GameKit/StageLightFadeData
+permalink: /Entity_Reference/?/Fox/GameKit/StageLightFadeData/
 tags: [Fox, GameKit, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [GameKit](/Entity_Reference/Fox/GameKit)\
+> Module: [GameKit](/Entity_Reference/?/Fox/GameKit)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.Data → StageLightFadeData
 
@@ -23,4 +23,5 @@ TODO: Description
 | [lightGroup](#lightgroup) | TODO: Description |
 | [colorList](#colorlist) | TODO: Description |
 | [requirdTime](#requirdtime) | TODO: Description |
+
 

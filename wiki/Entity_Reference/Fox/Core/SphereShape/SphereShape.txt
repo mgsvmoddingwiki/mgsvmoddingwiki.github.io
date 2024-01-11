@@ -1,12 +1,12 @@
 <!--
 title: SphereShape
-permalink: /Entity_Reference/Fox/Core/SphereShape
+permalink: /Entity_Reference/?/Fox/Core/SphereShape/
 tags: [Fox, Core, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Core](/Entity_Reference/Fox/Core)\
+> Module: [Core](/Entity_Reference/?/Fox/Core)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.ShapeData → SphereShape
 
@@ -21,4 +21,5 @@ TODO: Description
 | | |
 |-|-|
 | [radius](#radius) | TODO: Description |
+
 

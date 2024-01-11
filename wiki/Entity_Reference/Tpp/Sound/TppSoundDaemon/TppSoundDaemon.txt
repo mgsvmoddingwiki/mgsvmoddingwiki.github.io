@@ -1,12 +1,12 @@
 <!--
 title: TppSoundDaemon
-permalink: /Entity_Reference/Tpp/Sound/TppSoundDaemon
+permalink: /Entity_Reference/?/Tpp/Sound/TppSoundDaemon/
 tags: [Tpp, Sound, Reference]
 -->
 
 ## Definition
 > Project: Tpp\
-> Module: [Sound](/Entity_Reference/Tpp/Sound)\
+> Module: [Sound](/Entity_Reference/?/Tpp/Sound)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.Entity → TppSoundDaemon
 
@@ -21,4 +21,5 @@ TODO: Description
 | | |
 |-|-|
 | [keepNoticeEnable](#keepnoticeenable) | TODO: Description |
+
 

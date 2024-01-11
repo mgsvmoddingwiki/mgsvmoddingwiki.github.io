@@ -1,12 +1,12 @@
 <!--
 title: ScriptBlockScript
-permalink: /Entity_Reference/Fox/Core/ScriptBlockScript
+permalink: /Entity_Reference/?/Fox/Core/ScriptBlockScript/
 tags: [Fox, Core, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Core](/Entity_Reference/Fox/Core)\
+> Module: [Core](/Entity_Reference/?/Fox/Core)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.Data → ScriptBlockScript
 
@@ -21,4 +21,5 @@ TODO: Description
 | | |
 |-|-|
 | [script](#script) | TODO: Description |
+
 

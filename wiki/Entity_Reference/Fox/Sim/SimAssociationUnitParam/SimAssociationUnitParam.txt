@@ -1,12 +1,12 @@
 <!--
 title: SimAssociationUnitParam
-permalink: /Entity_Reference/Fox/Sim/SimAssociationUnitParam
+permalink: /Entity_Reference/?/Fox/Sim/SimAssociationUnitParam/
 tags: [Fox, Sim, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Sim](/Entity_Reference/Fox/Sim)\
+> Module: [Sim](/Entity_Reference/?/Fox/Sim)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.Entity → SimAssociationUnitParam
 
@@ -22,4 +22,5 @@ TODO: Description
 |-|-|
 | [boneName](#bonename) | TODO: Description |
 | [initialized](#initialized) | TODO: Description |
+
 

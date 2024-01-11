@@ -1,12 +1,12 @@
 <!--
 title: GeoxTargetDesc
-permalink: /Entity_Reference/Fox/Geox/GeoxTargetDesc
+permalink: /Entity_Reference/?/Fox/Geox/GeoxTargetDesc/
 tags: [Fox, Geox, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Geox](/Entity_Reference/Fox/Geox)\
+> Module: [Geox](/Entity_Reference/?/Fox/Geox)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.Data → GeoxTargetDesc
 
@@ -33,4 +33,5 @@ TODO: Description
 | [groupArray](#grouparray) | TODO: Description |
 | [objIndexForgroupTagArray](#objindexforgrouptagarray) | TODO: Description |
 | [applicationDataLinkArray](#applicationdatalinkarray) | TODO: Description |
+
 

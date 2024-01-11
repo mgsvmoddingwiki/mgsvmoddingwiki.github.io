@@ -1,12 +1,12 @@
 <!--
 title: TppMotherBaseStageBlockControllerDataBody
-permalink: /Entity_Reference/Tpp/MotherBaseStage/TppMotherBaseStageBlockControllerDataBody
+permalink: /Entity_Reference/?/Tpp/MotherBaseStage/TppMotherBaseStageBlockControllerDataBody/
 tags: [Tpp, MotherBaseStage, Reference]
 -->
 
 ## Definition
 > Project: Tpp\
-> Module: [MotherBaseStage](/Entity_Reference/Tpp/MotherBaseStage)\
+> Module: [MotherBaseStage](/Entity_Reference/?/Tpp/MotherBaseStage)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.DataBody → TppMotherBaseStageBlockControllerDataBody
 
@@ -15,6 +15,7 @@ TppMotherBaseStageBlockControllerDataBody : Fox.Core.DataBody
 ```
 
 TODO: Description
+
 
 
 

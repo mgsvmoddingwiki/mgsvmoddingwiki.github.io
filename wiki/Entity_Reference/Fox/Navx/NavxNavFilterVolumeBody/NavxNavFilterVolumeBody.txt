@@ -1,12 +1,12 @@
 <!--
 title: NavxNavFilterVolumeBody
-permalink: /Entity_Reference/Fox/Navx/NavxNavFilterVolumeBody
+permalink: /Entity_Reference/?/Fox/Navx/NavxNavFilterVolumeBody/
 tags: [Fox, Navx, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Navx](/Entity_Reference/Fox/Navx)\
+> Module: [Navx](/Entity_Reference/?/Fox/Navx)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Graphx.GraphxPathVolumeBody → NavxNavFilterVolumeBody
 
@@ -15,6 +15,7 @@ NavxNavFilterVolumeBody : Fox.Graphx.GraphxPathVolumeBody
 ```
 
 TODO: Description
+
 
 
 

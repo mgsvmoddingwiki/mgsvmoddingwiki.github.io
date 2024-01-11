@@ -1,12 +1,12 @@
 <!--
 title: VideoPlayerMemoryBlock
-permalink: /Entity_Reference/Tpp/System/VideoPlayerMemoryBlock
+permalink: /Entity_Reference/?/Tpp/System/VideoPlayerMemoryBlock/
 tags: [Tpp, System, Reference]
 -->
 
 ## Definition
 > Project: Tpp\
-> Module: [System](/Entity_Reference/Tpp/System)\
+> Module: [System](/Entity_Reference/?/Tpp/System)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.Data → VideoPlayerMemoryBlock
 
@@ -25,4 +25,5 @@ TODO: Description
 | [videoWidth](#videowidth) | TODO: Description |
 | [videoHeight](#videoheight) | TODO: Description |
 | [videoAllocateSize](#videoallocatesize) | TODO: Description |
+
 

@@ -1,12 +1,12 @@
 <!--
 title: Actor
-permalink: /Entity_Reference/Fox/Core/Actor
+permalink: /Entity_Reference/?/Fox/Core/Actor/
 tags: [Fox, Core, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Core](/Entity_Reference/Fox/Core)\
+> Module: [Core](/Entity_Reference/?/Fox/Core)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.Entity → Actor
 
@@ -23,4 +23,5 @@ TODO: Description
 | [name](#name) | TODO: Description |
 | [actorLevelName](#actorlevelname) | TODO: Description |
 | [sceneName](#scenename) | TODO: Description |
+
 

@@ -1,8 +1,9 @@
 <!--
 title: GameKit
-permalink: /Entity_Reference/Fox/GameKit
+permalink: /Entity_Reference/?/Fox/GameKit/
 tags: []
 -->
 
 {% include index-autolist type="section" %}
+
 

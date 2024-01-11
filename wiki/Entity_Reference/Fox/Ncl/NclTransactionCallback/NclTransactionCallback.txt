@@ -1,12 +1,12 @@
 <!--
 title: NclTransactionCallback
-permalink: /Entity_Reference/Fox/Ncl/NclTransactionCallback
+permalink: /Entity_Reference/?/Fox/Ncl/NclTransactionCallback/
 tags: [Fox, Ncl, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Ncl](/Entity_Reference/Fox/Ncl)\
+> Module: [Ncl](/Entity_Reference/?/Fox/Ncl)\
 > Submodule: TODO: Submodule
 
 ```cpp
@@ -14,6 +14,7 @@ NclTransactionCallback
 ```
 
 TODO: Description
+
 
 
 

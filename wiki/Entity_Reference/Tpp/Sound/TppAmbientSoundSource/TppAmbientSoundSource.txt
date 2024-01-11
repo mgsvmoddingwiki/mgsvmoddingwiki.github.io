@@ -1,12 +1,12 @@
 <!--
 title: TppAmbientSoundSource
-permalink: /Entity_Reference/Tpp/Sound/TppAmbientSoundSource
+permalink: /Entity_Reference/?/Tpp/Sound/TppAmbientSoundSource/
 tags: [Tpp, Sound, Reference]
 -->
 
 ## Definition
 > Project: Tpp\
-> Module: [Sound](/Entity_Reference/Tpp/Sound)\
+> Module: [Sound](/Entity_Reference/?/Tpp/Sound)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Sdx.SoundSource → TppAmbientSoundSource
 
@@ -22,4 +22,5 @@ TODO: Description
 |-|-|
 | [volumeRtpc](#volumertpc) | TODO: Description |
 | [ambientIndex](#ambientindex) | TODO: Description |
+
 

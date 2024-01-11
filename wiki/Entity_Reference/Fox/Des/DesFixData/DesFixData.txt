@@ -1,12 +1,12 @@
 <!--
 title: DesFixData
-permalink: /Entity_Reference/Fox/Des/DesFixData
+permalink: /Entity_Reference/?/Fox/Des/DesFixData/
 tags: [Fox, Des, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Des](/Entity_Reference/Fox/Des)\
+> Module: [Des](/Entity_Reference/?/Fox/Des)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.Data → DesFixData
 
@@ -21,4 +21,5 @@ TODO: Description
 | | |
 |-|-|
 | [elementNames](#elementnames) | TODO: Description |
+
 

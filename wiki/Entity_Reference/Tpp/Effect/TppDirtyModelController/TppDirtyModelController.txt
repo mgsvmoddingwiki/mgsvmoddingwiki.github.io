@@ -1,12 +1,12 @@
 <!--
 title: TppDirtyModelController
-permalink: /Entity_Reference/Tpp/Effect/TppDirtyModelController
+permalink: /Entity_Reference/?/Tpp/Effect/TppDirtyModelController/
 tags: [Tpp, Effect, Reference]
 -->
 
 ## Definition
 > Project: Tpp\
-> Module: [Effect](/Entity_Reference/Tpp/Effect)\
+> Module: [Effect](/Entity_Reference/?/Tpp/Effect)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.Entity → TppDirtyModelController
 
@@ -15,6 +15,7 @@ TppDirtyModelController : Fox.Core.Entity
 ```
 
 TODO: Description
+
 
 
 

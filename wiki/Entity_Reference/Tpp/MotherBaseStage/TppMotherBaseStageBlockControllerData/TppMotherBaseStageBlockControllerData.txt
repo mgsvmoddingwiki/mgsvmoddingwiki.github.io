@@ -1,12 +1,12 @@
 <!--
 title: TppMotherBaseStageBlockControllerData
-permalink: /Entity_Reference/Tpp/MotherBaseStage/TppMotherBaseStageBlockControllerData
+permalink: /Entity_Reference/?/Tpp/MotherBaseStage/TppMotherBaseStageBlockControllerData/
 tags: [Tpp, MotherBaseStage, Reference]
 -->
 
 ## Definition
 > Project: Tpp\
-> Module: [MotherBaseStage](/Entity_Reference/Tpp/MotherBaseStage)\
+> Module: [MotherBaseStage](/Entity_Reference/?/Tpp/MotherBaseStage)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.Data → TppMotherBaseStageBlockControllerData
 
@@ -40,4 +40,5 @@ TODO: Description
 | [clusterPositions](#clusterpositions) | TODO: Description |
 | [clusterRequestRadiuses](#clusterrequestradiuses) | TODO: Description |
 | [clusterRequireRadiuses](#clusterrequireradiuses) | TODO: Description |
+
 

@@ -1,12 +1,12 @@
 <!--
 title: TppLadderManagerData
-permalink: /Entity_Reference/Tpp/GameKit/TppLadderManagerData
+permalink: /Entity_Reference/?/Tpp/GameKit/TppLadderManagerData/
 tags: [Tpp, GameKit, Reference]
 -->
 
 ## Definition
 > Project: Tpp\
-> Module: [GameKit](/Entity_Reference/Tpp/GameKit)\
+> Module: [GameKit](/Entity_Reference/?/Tpp/GameKit)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.Data → TppLadderManagerData
 
@@ -22,4 +22,5 @@ TODO: Description
 |-|-|
 | [maxLadderCount](#maxladdercount) | TODO: Description |
 | [maxBreakableLadderCount](#maxbreakableladdercount) | TODO: Description |
+
 

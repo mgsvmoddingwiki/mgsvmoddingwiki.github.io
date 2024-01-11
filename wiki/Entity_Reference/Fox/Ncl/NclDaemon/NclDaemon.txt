@@ -1,12 +1,12 @@
 <!--
 title: NclDaemon
-permalink: /Entity_Reference/Fox/Ncl/NclDaemon
+permalink: /Entity_Reference/?/Fox/Ncl/NclDaemon/
 tags: [Fox, Ncl, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Ncl](/Entity_Reference/Fox/Ncl)\
+> Module: [Ncl](/Entity_Reference/?/Fox/Ncl)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.Entity → NclDaemon
 
@@ -22,4 +22,5 @@ TODO: Description
 |-|-|
 | [exIp](#exip) | TODO: Description |
 | [inIp](#inip) | TODO: Description |
+
 

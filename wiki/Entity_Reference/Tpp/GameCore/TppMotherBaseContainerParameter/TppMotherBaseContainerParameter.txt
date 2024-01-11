@@ -1,12 +1,12 @@
 <!--
 title: TppMotherBaseContainerParameter
-permalink: /Entity_Reference/Tpp/GameCore/TppMotherBaseContainerParameter
+permalink: /Entity_Reference/?/Tpp/GameCore/TppMotherBaseContainerParameter/
 tags: [Tpp, GameCore, Reference]
 -->
 
 ## Definition
 > Project: Tpp\
-> Module: [GameCore](/Entity_Reference/Tpp/GameCore)\
+> Module: [GameCore](/Entity_Reference/?/Tpp/GameCore)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.DataElement → TppMotherBaseContainerParameter
 
@@ -21,4 +21,5 @@ TODO: Description
 | | |
 |-|-|
 | [modelPath](#modelpath) | TODO: Description |
+
 

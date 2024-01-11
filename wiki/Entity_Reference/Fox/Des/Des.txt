@@ -1,8 +1,9 @@
 <!--
 title: Fox
-permalink: /Entity_Reference/Fox/Des/
+permalink: /Entity_Reference/?/Fox/Des/
 tags: []
 -->
 
 {% include index-autolist type="section" %}
+
 

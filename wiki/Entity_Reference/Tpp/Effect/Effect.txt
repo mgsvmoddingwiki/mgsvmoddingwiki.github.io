@@ -1,8 +1,9 @@
 <!--
 title: Effect
-permalink: /Entity_Reference/Tpp/Effect
+permalink: /Entity_Reference/?/Tpp/Effect/
 tags: []
 -->
 
 {% include index-autolist type="section" %}
+
 

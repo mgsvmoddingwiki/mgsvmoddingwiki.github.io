@@ -1,12 +1,12 @@
 <!--
 title: PhMultiHingeConstraint
-permalink: /Entity_Reference/Fox/Ph/PhMultiHingeConstraint
+permalink: /Entity_Reference/?/Fox/Ph/PhMultiHingeConstraint/
 tags: [Fox, Ph, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Ph](/Entity_Reference/Fox/Ph)\
+> Module: [Ph](/Entity_Reference/?/Fox/Ph)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Ph.PhConstraint → PhMultiHingeConstraint
 
@@ -31,4 +31,5 @@ TODO: Description
 | [targetTheta](#targettheta) | TODO: Description |
 | [targetVelocity](#targetvelocity) | TODO: Description |
 | [velocityRate](#velocityrate) | TODO: Description |
+
 

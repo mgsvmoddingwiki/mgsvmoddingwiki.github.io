@@ -1,12 +1,12 @@
 <!--
 title: TppHandLightLensFlareRoot
-permalink: /Entity_Reference/Tpp/Effect/TppHandLightLensFlareRoot
+permalink: /Entity_Reference/?/Tpp/Effect/TppHandLightLensFlareRoot/
 tags: [Tpp, Effect, Reference]
 -->
 
 ## Definition
 > Project: Tpp\
-> Module: [Effect](/Entity_Reference/Tpp/Effect)\
+> Module: [Effect](/Entity_Reference/?/Tpp/Effect)\
 > Submodule: TODO: Submodule\
 > Inheritance: Tpp.Effect.TppLensFlareRootBase → TppHandLightLensFlareRoot
 
@@ -27,4 +27,5 @@ TODO: Description
 | [exposureBlend](#exposureblend) | TODO: Description |
 | [lensFlareName](#lensflarename) | TODO: Description |
 | [shapes](#shapes) | TODO: Description |
+
 

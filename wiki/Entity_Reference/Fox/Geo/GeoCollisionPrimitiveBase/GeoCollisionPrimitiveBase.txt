@@ -1,12 +1,12 @@
 <!--
 title: GeoCollisionPrimitiveBase
-permalink: /Entity_Reference/Fox/Geo/GeoCollisionPrimitiveBase
+permalink: /Entity_Reference/?/Fox/Geo/GeoCollisionPrimitiveBase/
 tags: [Fox, Geo, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Geo](/Entity_Reference/Fox/Geo)\
+> Module: [Geo](/Entity_Reference/?/Fox/Geo)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Geo.CollisionObject → GeoCollisionPrimitiveBase
 
@@ -15,6 +15,7 @@ GeoCollisionPrimitiveBase : Fox.Geo.CollisionObject
 ```
 
 TODO: Description
+
 
 
 

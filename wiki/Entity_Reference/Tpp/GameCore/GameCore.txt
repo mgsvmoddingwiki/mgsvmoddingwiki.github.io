@@ -1,8 +1,9 @@
 <!--
 title: GameCore
-permalink: /Entity_Reference/Tpp/GameCore
+permalink: /Entity_Reference/?/Tpp/GameCore/
 tags: []
 -->
 
 {% include index-autolist type="section" %}
+
 

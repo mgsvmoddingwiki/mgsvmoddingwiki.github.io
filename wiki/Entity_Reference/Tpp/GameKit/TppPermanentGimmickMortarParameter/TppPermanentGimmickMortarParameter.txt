@@ -1,12 +1,12 @@
 <!--
 title: TppPermanentGimmickMortarParameter
-permalink: /Entity_Reference/Tpp/GameKit/TppPermanentGimmickMortarParameter
+permalink: /Entity_Reference/?/Tpp/GameKit/TppPermanentGimmickMortarParameter/
 tags: [Tpp, GameKit, Reference]
 -->
 
 ## Definition
 > Project: Tpp\
-> Module: [GameKit](/Entity_Reference/Tpp/GameKit)\
+> Module: [GameKit](/Entity_Reference/?/Tpp/GameKit)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.DataElement → TppPermanentGimmickMortarParameter
 
@@ -25,4 +25,5 @@ TODO: Description
 | [rotationLimitDown](#rotationlimitdown) | TODO: Description |
 | [defaultShellPartsFile](#defaultshellpartsfile) | TODO: Description |
 | [flareShellPartsFile](#flareshellpartsfile) | TODO: Description |
+
 

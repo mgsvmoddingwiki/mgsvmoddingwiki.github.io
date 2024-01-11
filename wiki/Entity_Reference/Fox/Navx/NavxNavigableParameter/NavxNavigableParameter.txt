@@ -1,12 +1,12 @@
 <!--
 title: NavxNavigableParameter
-permalink: /Entity_Reference/Fox/Navx/NavxNavigableParameter
+permalink: /Entity_Reference/?/Fox/Navx/NavxNavigableParameter/
 tags: [Fox, Navx, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Navx](/Entity_Reference/Fox/Navx)\
+> Module: [Navx](/Entity_Reference/?/Fox/Navx)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.DataElement → NavxNavigableParameter
 
@@ -28,4 +28,5 @@ TODO: Description
 | [maxClimbableAngle](#maxclimbableangle) | TODO: Description |
 | [maxStepSize](#maxstepsize) | TODO: Description |
 | [minArea](#minarea) | TODO: Description |
+
 

@@ -1,12 +1,12 @@
 <!--
 title: UiFontGroupData
-permalink: /Entity_Reference/Fox/Ui/UiFontGroupData
+permalink: /Entity_Reference/?/Fox/Ui/UiFontGroupData/
 tags: [Fox, Ui, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Ui](/Entity_Reference/Fox/Ui)\
+> Module: [Ui](/Entity_Reference/?/Fox/Ui)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.Data → UiFontGroupData
 
@@ -21,4 +21,5 @@ TODO: Description
 | | |
 |-|-|
 | [fonts](#fonts) | TODO: Description |
+
 

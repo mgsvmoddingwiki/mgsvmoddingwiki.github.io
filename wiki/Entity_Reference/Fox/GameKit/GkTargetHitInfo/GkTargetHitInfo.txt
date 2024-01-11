@@ -1,12 +1,12 @@
 <!--
 title: GkTargetHitInfo
-permalink: /Entity_Reference/Fox/GameKit/GkTargetHitInfo
+permalink: /Entity_Reference/?/Fox/GameKit/GkTargetHitInfo/
 tags: [Fox, GameKit, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [GameKit](/Entity_Reference/Fox/GameKit)\
+> Module: [GameKit](/Entity_Reference/?/Fox/GameKit)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.Entity → GkTargetHitInfo
 
@@ -26,4 +26,5 @@ TODO: Description
 | [hitNormal](#hitnormal) | TODO: Description |
 | [hitDirection](#hitdirection) | TODO: Description |
 | [attackDirection](#attackdirection) | TODO: Description |
+
 

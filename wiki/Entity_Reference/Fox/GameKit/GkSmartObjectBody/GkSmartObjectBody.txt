@@ -1,12 +1,12 @@
 <!--
 title: GkSmartObjectBody
-permalink: /Entity_Reference/Fox/GameKit/GkSmartObjectBody
+permalink: /Entity_Reference/?/Fox/GameKit/GkSmartObjectBody/
 tags: [Fox, GameKit, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [GameKit](/Entity_Reference/Fox/GameKit)\
+> Module: [GameKit](/Entity_Reference/?/Fox/GameKit)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.DataBody → GkSmartObjectBody
 
@@ -15,6 +15,7 @@ GkSmartObjectBody : Fox.Core.DataBody
 ```
 
 TODO: Description
+
 
 
 

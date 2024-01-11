@@ -1,12 +1,12 @@
 <!--
 title: SoundPhysicsParameter
-permalink: /Entity_Reference/Fox/Sdx/SoundPhysicsParameter
+permalink: /Entity_Reference/?/Fox/Sdx/SoundPhysicsParameter/
 tags: [Fox, Sdx, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Sdx](/Entity_Reference/Fox/Sdx)\
+> Module: [Sdx](/Entity_Reference/?/Fox/Sdx)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.Data → SoundPhysicsParameter
 
@@ -39,4 +39,5 @@ TODO: Description
 | [rollEndSeconds](#rollendseconds) | TODO: Description |
 | [rollLowerRtpc](#rolllowerrtpc) | TODO: Description |
 | [rollUpperRtpc](#rollupperrtpc) | TODO: Description |
+
 

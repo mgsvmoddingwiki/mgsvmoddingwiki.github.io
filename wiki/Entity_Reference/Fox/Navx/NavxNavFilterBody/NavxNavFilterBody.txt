@@ -1,12 +1,12 @@
 <!--
 title: NavxNavFilterBody
-permalink: /Entity_Reference/Fox/Navx/NavxNavFilterBody
+permalink: /Entity_Reference/?/Fox/Navx/NavxNavFilterBody/
 tags: [Fox, Navx, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Navx](/Entity_Reference/Fox/Navx)\
+> Module: [Navx](/Entity_Reference/?/Fox/Navx)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.TransformDataBody → NavxNavFilterBody
 
@@ -15,6 +15,7 @@ NavxNavFilterBody : Fox.Core.TransformDataBody
 ```
 
 TODO: Description
+
 
 
 

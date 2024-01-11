@@ -1,12 +1,12 @@
 <!--
 title: GeoxCollisionPyraidFreeShape
-permalink: /Entity_Reference/Fox/Geox/GeoxCollisionPyraidFreeShape
+permalink: /Entity_Reference/?/Fox/Geox/GeoxCollisionPyraidFreeShape/
 tags: [Fox, Geox, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Geox](/Entity_Reference/Fox/Geox)\
+> Module: [Geox](/Entity_Reference/?/Fox/Geox)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.TransformData → GeoxCollisionPyraidFreeShape
 
@@ -24,4 +24,5 @@ TODO: Description
 | [collisionMaterial](#collisionmaterial) | TODO: Description |
 | [collisionAttributeNames](#collisionattributenames) | TODO: Description |
 | [points](#points) | TODO: Description |
+
 

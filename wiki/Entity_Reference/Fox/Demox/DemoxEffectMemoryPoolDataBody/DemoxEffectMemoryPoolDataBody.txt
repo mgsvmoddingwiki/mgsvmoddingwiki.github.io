@@ -1,12 +1,12 @@
 <!--
 title: DemoxEffectMemoryPoolDataBody
-permalink: /Entity_Reference/Fox/Demox/DemoxEffectMemoryPoolDataBody
+permalink: /Entity_Reference/?/Fox/Demox/DemoxEffectMemoryPoolDataBody/
 tags: [Fox, Demox, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Demox](/Entity_Reference/Fox/Demox)\
+> Module: [Demox](/Entity_Reference/?/Fox/Demox)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.DataBody → DemoxEffectMemoryPoolDataBody
 
@@ -15,6 +15,7 @@ DemoxEffectMemoryPoolDataBody : Fox.Core.DataBody
 ```
 
 TODO: Description
+
 
 
 

@@ -1,12 +1,12 @@
 <!--
 title: DemoRelativePlayParameter
-permalink: /Entity_Reference/Fox/EdDemo/DemoRelativePlayParameter
+permalink: /Entity_Reference/?/Fox/EdDemo/DemoRelativePlayParameter/
 tags: [Fox, EdDemo, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [EdDemo](/Entity_Reference/Fox/EdDemo)\
+> Module: [EdDemo](/Entity_Reference/?/Fox/EdDemo)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Demo.DemoParameter → DemoRelativePlayParameter
 
@@ -22,4 +22,5 @@ TODO: Description
 |-|-|
 | [rootCharacterId](#rootcharacterid) | TODO: Description |
 | [lookAtCharacterId](#lookatcharacterid) | TODO: Description |
+
 

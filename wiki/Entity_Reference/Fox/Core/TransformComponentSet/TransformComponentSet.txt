@@ -1,12 +1,12 @@
 <!--
 title: TransformComponentSet
-permalink: /Entity_Reference/Fox/Core/TransformComponentSet
+permalink: /Entity_Reference/?/Fox/Core/TransformComponentSet/
 tags: [Fox, Core, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Core](/Entity_Reference/Fox/Core)\
+> Module: [Core](/Entity_Reference/?/Fox/Core)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.ComponentSet → TransformComponentSet
 
@@ -15,6 +15,7 @@ TransformComponentSet : Fox.Core.ComponentSet
 ```
 
 TODO: Description
+
 
 
 

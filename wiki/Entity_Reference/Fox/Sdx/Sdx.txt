@@ -1,8 +1,9 @@
 <!--
 title: Sdx
-permalink: /Entity_Reference/Fox/Sdx
+permalink: /Entity_Reference/?/Fox/Sdx/
 tags: []
 -->
 
 {% include index-autolist type="section" %}
+
 

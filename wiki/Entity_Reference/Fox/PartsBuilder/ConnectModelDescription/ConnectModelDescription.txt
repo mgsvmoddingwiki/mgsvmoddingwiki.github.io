@@ -1,12 +1,12 @@
 <!--
 title: ConnectModelDescription
-permalink: /Entity_Reference/Fox/PartsBuilder/ConnectModelDescription
+permalink: /Entity_Reference/?/Fox/PartsBuilder/ConnectModelDescription/
 tags: [Fox, PartsBuilder, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [PartsBuilder](/Entity_Reference/Fox/PartsBuilder)\
+> Module: [PartsBuilder](/Entity_Reference/?/Fox/PartsBuilder)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.PartsBuilder.ModelDescription → ConnectModelDescription
 
@@ -21,4 +21,5 @@ TODO: Description
 | | |
 |-|-|
 | [connectPointNames](#connectpointnames) | TODO: Description |
+
 

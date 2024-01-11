@@ -1,12 +1,12 @@
 <!--
 title: GeoTrapGeomHeader
-permalink: /Entity_Reference/Fox/Geo/GeoTrapGeomHeader
+permalink: /Entity_Reference/?/Fox/Geo/GeoTrapGeomHeader/
 tags: [Fox, Geo, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Geo](/Entity_Reference/Fox/Geo)\
+> Module: [Geo](/Entity_Reference/?/Fox/Geo)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.Entity → GeoTrapGeomHeader
 
@@ -15,6 +15,7 @@ GeoTrapGeomHeader : Fox.Core.Entity
 ```
 
 TODO: Description
+
 
 
 

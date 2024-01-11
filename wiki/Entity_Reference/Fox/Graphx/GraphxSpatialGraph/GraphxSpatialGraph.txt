@@ -1,12 +1,12 @@
 <!--
 title: GraphxSpatialGraph
-permalink: /Entity_Reference/Fox/Graphx/GraphxSpatialGraph
+permalink: /Entity_Reference/?/Fox/Graphx/GraphxSpatialGraph/
 tags: [Fox, Graphx, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Graphx](/Entity_Reference/Fox/Graphx)\
+> Module: [Graphx](/Entity_Reference/?/Fox/Graphx)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.TransformDataBody → GraphxSpatialGraph
 
@@ -15,6 +15,7 @@ GraphxSpatialGraph : Fox.Core.TransformDataBody
 ```
 
 TODO: Description
+
 
 
 

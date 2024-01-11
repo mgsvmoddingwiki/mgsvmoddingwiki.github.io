@@ -1,12 +1,12 @@
 <!--
 title: GrViewportLightingParameters
-permalink: /Entity_Reference/Fox/Gr/GrViewportLightingParameters
+permalink: /Entity_Reference/?/Fox/Gr/GrViewportLightingParameters/
 tags: [Fox, Gr, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Gr](/Entity_Reference/Fox/Gr)\
+> Module: [Gr](/Entity_Reference/?/Fox/Gr)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Gr.GrViewportParameter → GrViewportLightingParameters
 
@@ -21,4 +21,5 @@ TODO: Description
 | | |
 |-|-|
 | [flags](#flags) | TODO: Description |
+
 

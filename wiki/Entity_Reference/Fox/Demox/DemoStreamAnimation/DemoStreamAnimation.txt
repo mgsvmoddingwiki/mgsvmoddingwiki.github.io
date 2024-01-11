@@ -1,12 +1,12 @@
 <!--
 title: DemoStreamAnimation
-permalink: /Entity_Reference/Fox/Demox/DemoStreamAnimation
+permalink: /Entity_Reference/?/Fox/Demox/DemoStreamAnimation/
 tags: [Fox, Demox, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Demox](/Entity_Reference/Fox/Demox)\
+> Module: [Demox](/Entity_Reference/?/Fox/Demox)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.Data → DemoStreamAnimation
 
@@ -36,4 +36,5 @@ TODO: Description
 | [dynamicModel](#dynamicmodel) | TODO: Description |
 | [dynamicParts](#dynamicparts) | TODO: Description |
 | [dynamicFv2](#dynamicfv2) | TODO: Description |
+
 

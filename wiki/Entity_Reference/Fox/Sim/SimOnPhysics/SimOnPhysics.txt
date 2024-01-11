@@ -1,12 +1,12 @@
 <!--
 title: SimOnPhysics
-permalink: /Entity_Reference/Fox/Sim/SimOnPhysics
+permalink: /Entity_Reference/?/Fox/Sim/SimOnPhysics/
 tags: [Fox, Sim, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Sim](/Entity_Reference/Fox/Sim)\
+> Module: [Sim](/Entity_Reference/?/Fox/Sim)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Sim.SimObject → SimOnPhysics
 
@@ -30,4 +30,5 @@ TODO: Description
 | [maxLodLevel](#maxlodlevel) | TODO: Description |
 | [isEnableGeoCheck](#isenablegeocheck) | TODO: Description |
 | [convertMoveToWind](#convertmovetowind) | TODO: Description |
+
 

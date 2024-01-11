@@ -1,12 +1,12 @@
 <!--
 title: NavNavigationParameter
-permalink: /Entity_Reference/Fox/Nav/NavNavigationParameter
+permalink: /Entity_Reference/?/Fox/Nav/NavNavigationParameter/
 tags: [Fox, Nav, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Nav](/Entity_Reference/Fox/Nav)\
+> Module: [Nav](/Entity_Reference/?/Fox/Nav)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.Entity → NavNavigationParameter
 
@@ -15,6 +15,7 @@ NavNavigationParameter : Fox.Core.Entity
 ```
 
 TODO: Description
+
 
 
 

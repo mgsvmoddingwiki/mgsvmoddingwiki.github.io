@@ -1,12 +1,12 @@
 <!--
 title: TppCigaretteSmokeGlobalManager
-permalink: /Entity_Reference/Tpp/Effect/TppCigaretteSmokeGlobalManager
+permalink: /Entity_Reference/?/Tpp/Effect/TppCigaretteSmokeGlobalManager/
 tags: [Tpp, Effect, Reference]
 -->
 
 ## Definition
 > Project: Tpp\
-> Module: [Effect](/Entity_Reference/Tpp/Effect)\
+> Module: [Effect](/Entity_Reference/?/Tpp/Effect)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.Entity → TppCigaretteSmokeGlobalManager
 
@@ -15,6 +15,7 @@ TppCigaretteSmokeGlobalManager : Fox.Core.Entity
 ```
 
 TODO: Description
+
 
 
 

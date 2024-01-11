@@ -1,12 +1,12 @@
 <!--
 title: GeoxCollisionPrimitiveBody
-permalink: /Entity_Reference/Fox/Geox/GeoxCollisionPrimitiveBody
+permalink: /Entity_Reference/?/Fox/Geox/GeoxCollisionPrimitiveBody/
 tags: [Fox, Geox, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Geox](/Entity_Reference/Fox/Geox)\
+> Module: [Geox](/Entity_Reference/?/Fox/Geox)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.TransformDataBody → GeoxCollisionPrimitiveBody
 
@@ -15,6 +15,7 @@ GeoxCollisionPrimitiveBody : Fox.Core.TransformDataBody
 ```
 
 TODO: Description
+
 
 
 

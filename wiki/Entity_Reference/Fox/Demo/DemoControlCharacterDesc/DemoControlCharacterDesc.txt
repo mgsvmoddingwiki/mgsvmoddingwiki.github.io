@@ -1,12 +1,12 @@
 <!--
 title: DemoControlCharacterDesc
-permalink: /Entity_Reference/Fox/Demo/DemoControlCharacterDesc
+permalink: /Entity_Reference/?/Fox/Demo/DemoControlCharacterDesc/
 tags: [Fox, Demo, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Demo](/Entity_Reference/Fox/Demo)\
+> Module: [Demo](/Entity_Reference/?/Fox/Demo)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.DataElement → DemoControlCharacterDesc
 
@@ -30,4 +30,5 @@ TODO: Description
 | [startTag](#starttag) | TODO: Description |
 | [startTranslation](#starttranslation) | TODO: Description |
 | [startRotation](#startrotation) | TODO: Description |
+
 

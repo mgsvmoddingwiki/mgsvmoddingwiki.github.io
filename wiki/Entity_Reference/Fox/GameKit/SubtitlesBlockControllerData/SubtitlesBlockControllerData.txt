@@ -1,12 +1,12 @@
 <!--
 title: SubtitlesBlockControllerData
-permalink: /Entity_Reference/Fox/GameKit/SubtitlesBlockControllerData
+permalink: /Entity_Reference/?/Fox/GameKit/SubtitlesBlockControllerData/
 tags: [Fox, GameKit, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [GameKit](/Entity_Reference/Fox/GameKit)\
+> Module: [GameKit](/Entity_Reference/?/Fox/GameKit)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.Data → SubtitlesBlockControllerData
 
@@ -21,4 +21,5 @@ TODO: Description
 | | |
 |-|-|
 | [packageFileNames](#packagefilenames) | TODO: Description |
+
 

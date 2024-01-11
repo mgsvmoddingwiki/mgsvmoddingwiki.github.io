@@ -1,12 +1,12 @@
 <!--
 title: TppSkyClouds3Param
-permalink: /Entity_Reference/Tpp/Effect/TppSkyClouds3Param
+permalink: /Entity_Reference/?/Tpp/Effect/TppSkyClouds3Param/
 tags: [Tpp, Effect, Reference]
 -->
 
 ## Definition
 > Project: Tpp\
-> Module: [Effect](/Entity_Reference/Tpp/Effect)\
+> Module: [Effect](/Entity_Reference/?/Tpp/Effect)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.DataElement → TppSkyClouds3Param
 
@@ -43,4 +43,5 @@ TODO: Description
 | [lowCylinderTexture](#lowcylindertexture) | TODO: Description |
 | [colorSpace](#colorspace) | TODO: Description |
 | [textureColorHandling](#texturecolorhandling) | TODO: Description |
+
 

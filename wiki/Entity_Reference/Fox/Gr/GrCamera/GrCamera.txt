@@ -1,12 +1,12 @@
 <!--
 title: GrCamera
-permalink: /Entity_Reference/Fox/Gr/GrCamera
+permalink: /Entity_Reference/?/Fox/Gr/GrCamera/
 tags: [Fox, Gr, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Gr](/Entity_Reference/Fox/Gr)\
+> Module: [Gr](/Entity_Reference/?/Fox/Gr)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.Entity → GrCamera
 
@@ -15,6 +15,7 @@ GrCamera : Fox.Core.Entity
 ```
 
 TODO: Description
+
 
 
 

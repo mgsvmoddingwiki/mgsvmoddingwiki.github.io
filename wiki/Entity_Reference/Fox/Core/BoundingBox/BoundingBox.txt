@@ -1,12 +1,12 @@
 <!--
 title: BoundingBox
-permalink: /Entity_Reference/Fox/Core/BoundingBox
+permalink: /Entity_Reference/?/Fox/Core/BoundingBox/
 tags: [Fox, Core, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Core](/Entity_Reference/Fox/Core)\
+> Module: [Core](/Entity_Reference/?/Fox/Core)\
 > Submodule: TODO: Submodule
 
 ```cpp
@@ -21,4 +21,5 @@ TODO: Description
 |-|-|
 | [min](#min) | TODO: Description |
 | [max](#max) | TODO: Description |
+
 

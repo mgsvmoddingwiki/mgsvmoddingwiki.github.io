@@ -1,12 +1,12 @@
 <!--
 title: CapsuleShapeBody
-permalink: /Entity_Reference/Fox/Core/CapsuleShapeBody
+permalink: /Entity_Reference/?/Fox/Core/CapsuleShapeBody/
 tags: [Fox, Core, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Core](/Entity_Reference/Fox/Core)\
+> Module: [Core](/Entity_Reference/?/Fox/Core)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.ShapeDataBody → CapsuleShapeBody
 
@@ -22,4 +22,5 @@ TODO: Description
 |-|-|
 | [shape_p0](#shape-p0) | TODO: Description |
 | [shape_p1](#shape-p1) | TODO: Description |
+
 

@@ -1,12 +1,12 @@
 <!--
 title: ComponentInsertionInfo
-permalink: /Entity_Reference/Fox/Core/ComponentInsertionInfo
+permalink: /Entity_Reference/?/Fox/Core/ComponentInsertionInfo/
 tags: [Fox, Core, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Core](/Entity_Reference/Fox/Core)\
+> Module: [Core](/Entity_Reference/?/Fox/Core)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.Entity → ComponentInsertionInfo
 
@@ -15,6 +15,7 @@ ComponentInsertionInfo : Fox.Core.Entity
 ```
 
 TODO: Description
+
 
 
 

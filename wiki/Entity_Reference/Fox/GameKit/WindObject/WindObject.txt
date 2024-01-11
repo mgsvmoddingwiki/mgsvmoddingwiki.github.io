@@ -1,12 +1,12 @@
 <!--
 title: WindObject
-permalink: /Entity_Reference/Fox/GameKit/WindObject
+permalink: /Entity_Reference/?/Fox/GameKit/WindObject/
 tags: [Fox, GameKit, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [GameKit](/Entity_Reference/Fox/GameKit)\
+> Module: [GameKit](/Entity_Reference/?/Fox/GameKit)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.GameKit.EnvironmentObject → WindObject
 
@@ -15,6 +15,7 @@ WindObject : Fox.GameKit.EnvironmentObject
 ```
 
 TODO: Description
+
 
 
 

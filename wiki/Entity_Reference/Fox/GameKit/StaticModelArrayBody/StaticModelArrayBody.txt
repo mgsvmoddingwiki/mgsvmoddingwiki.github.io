@@ -1,12 +1,12 @@
 <!--
 title: StaticModelArrayBody
-permalink: /Entity_Reference/Fox/GameKit/StaticModelArrayBody
+permalink: /Entity_Reference/?/Fox/GameKit/StaticModelArrayBody/
 tags: [Fox, GameKit, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [GameKit](/Entity_Reference/Fox/GameKit)\
+> Module: [GameKit](/Entity_Reference/?/Fox/GameKit)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.DataBody → StaticModelArrayBody
 
@@ -22,4 +22,5 @@ TODO: Description
 |-|-|
 | [isVisible](#isvisible) | TODO: Description |
 | [isGeomActive](#isgeomactive) | TODO: Description |
+
 

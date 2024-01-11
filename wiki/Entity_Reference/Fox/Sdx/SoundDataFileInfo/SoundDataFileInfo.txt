@@ -1,12 +1,12 @@
 <!--
 title: SoundDataFileInfo
-permalink: /Entity_Reference/Fox/Sdx/SoundDataFileInfo
+permalink: /Entity_Reference/?/Fox/Sdx/SoundDataFileInfo/
 tags: [Fox, Sdx, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Sdx](/Entity_Reference/Fox/Sdx)\
+> Module: [Sdx](/Entity_Reference/?/Fox/Sdx)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.Data → SoundDataFileInfo
 
@@ -23,4 +23,5 @@ TODO: Description
 | [loadBanks](#loadbanks) | TODO: Description |
 | [prepareBanks](#preparebanks) | TODO: Description |
 | [prepareEvents](#prepareevents) | TODO: Description |
+
 

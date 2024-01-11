@@ -1,12 +1,12 @@
 <!--
 title: GeoTrapConditionBody
-permalink: /Entity_Reference/Fox/Geo/GeoTrapConditionBody
+permalink: /Entity_Reference/?/Fox/Geo/GeoTrapConditionBody/
 tags: [Fox, Geo, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Geo](/Entity_Reference/Fox/Geo)\
+> Module: [Geo](/Entity_Reference/?/Fox/Geo)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.TransformDataBody → GeoTrapConditionBody
 
@@ -23,4 +23,5 @@ TODO: Description
 | [trapCategory](#trapcategory) | TODO: Description |
 | [trapPriority](#trappriority) | TODO: Description |
 | [isDone](#isdone) | TODO: Description |
+
 

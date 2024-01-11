@@ -1,12 +1,12 @@
 <!--
 title: DemoBlockPositionSetterBody
-permalink: /Entity_Reference/Fox/Demo/DemoBlockPositionSetterBody
+permalink: /Entity_Reference/?/Fox/Demo/DemoBlockPositionSetterBody/
 tags: [Fox, Demo, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Demo](/Entity_Reference/Fox/Demo)\
+> Module: [Demo](/Entity_Reference/?/Fox/Demo)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.TransformDataBody → DemoBlockPositionSetterBody
 
@@ -15,6 +15,7 @@ DemoBlockPositionSetterBody : Fox.Core.TransformDataBody
 ```
 
 TODO: Description
+
 
 
 

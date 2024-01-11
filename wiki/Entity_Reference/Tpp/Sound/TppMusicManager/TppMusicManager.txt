@@ -1,12 +1,12 @@
 <!--
 title: TppMusicManager
-permalink: /Entity_Reference/Tpp/Sound/TppMusicManager
+permalink: /Entity_Reference/?/Tpp/Sound/TppMusicManager/
 tags: [Tpp, Sound, Reference]
 -->
 
 ## Definition
 > Project: Tpp\
-> Module: [Sound](/Entity_Reference/Tpp/Sound)\
+> Module: [Sound](/Entity_Reference/?/Tpp/Sound)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.Entity → TppMusicManager
 
@@ -15,6 +15,7 @@ TppMusicManager : Fox.Core.Entity
 ```
 
 TODO: Description
+
 
 
 

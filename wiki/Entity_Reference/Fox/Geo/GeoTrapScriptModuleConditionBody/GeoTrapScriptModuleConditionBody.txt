@@ -1,12 +1,12 @@
 <!--
 title: GeoTrapScriptModuleConditionBody
-permalink: /Entity_Reference/Fox/Geo/GeoTrapScriptModuleConditionBody
+permalink: /Entity_Reference/?/Fox/Geo/GeoTrapScriptModuleConditionBody/
 tags: [Fox, Geo, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Geo](/Entity_Reference/Fox/Geo)\
+> Module: [Geo](/Entity_Reference/?/Fox/Geo)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Geo.GeoTrapConditionBody → GeoTrapScriptModuleConditionBody
 
@@ -22,4 +22,5 @@ TODO: Description
 |-|-|
 | [checkScriptArray](#checkscriptarray) | TODO: Description |
 | [execScriptArray](#execscriptarray) | TODO: Description |
+
 

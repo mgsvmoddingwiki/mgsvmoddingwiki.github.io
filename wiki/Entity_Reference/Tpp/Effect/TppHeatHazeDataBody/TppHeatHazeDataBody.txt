@@ -1,12 +1,12 @@
 <!--
 title: TppHeatHazeDataBody
-permalink: /Entity_Reference/Tpp/Effect/TppHeatHazeDataBody
+permalink: /Entity_Reference/?/Tpp/Effect/TppHeatHazeDataBody/
 tags: [Tpp, Effect, Reference]
 -->
 
 ## Definition
 > Project: Tpp\
-> Module: [Effect](/Entity_Reference/Tpp/Effect)\
+> Module: [Effect](/Entity_Reference/?/Tpp/Effect)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.DataBody → TppHeatHazeDataBody
 
@@ -15,6 +15,7 @@ TppHeatHazeDataBody : Fox.Core.DataBody
 ```
 
 TODO: Description
+
 
 
 

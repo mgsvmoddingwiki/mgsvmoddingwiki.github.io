@@ -1,12 +1,12 @@
 <!--
 title: PhxAssociationUnitElement
-permalink: /Entity_Reference/Fox/Phx/PhxAssociationUnitElement
+permalink: /Entity_Reference/?/Fox/Phx/PhxAssociationUnitElement/
 tags: [Fox, Phx, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Phx](/Entity_Reference/Fox/Phx)\
+> Module: [Phx](/Entity_Reference/?/Fox/Phx)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.DataElement → PhxAssociationUnitElement
 
@@ -25,4 +25,5 @@ TODO: Description
 | [bodyOffsetPos](#bodyoffsetpos) | TODO: Description |
 | [constraintOffsetPos](#constraintoffsetpos) | TODO: Description |
 | [offsetRot](#offsetrot) | TODO: Description |
+
 

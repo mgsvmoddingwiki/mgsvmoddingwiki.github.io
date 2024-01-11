@@ -1,12 +1,12 @@
 <!--
 title: SimClothControlUnit
-permalink: /Entity_Reference/Fox/Sim/SimClothControlUnit
+permalink: /Entity_Reference/?/Fox/Sim/SimClothControlUnit/
 tags: [Fox, Sim, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Sim](/Entity_Reference/Fox/Sim)\
+> Module: [Sim](/Entity_Reference/?/Fox/Sim)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.DataElement → SimClothControlUnit
 
@@ -26,4 +26,5 @@ TODO: Description
 | [limit](#limit) | TODO: Description |
 | [expansionRatio](#expansionratio) | TODO: Description |
 | [contractionRatio](#contractionratio) | TODO: Description |
+
 

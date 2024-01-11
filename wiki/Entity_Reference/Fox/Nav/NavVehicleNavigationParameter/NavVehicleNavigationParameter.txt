@@ -1,12 +1,12 @@
 <!--
 title: NavVehicleNavigationParameter
-permalink: /Entity_Reference/Fox/Nav/NavVehicleNavigationParameter
+permalink: /Entity_Reference/?/Fox/Nav/NavVehicleNavigationParameter/
 tags: [Fox, Nav, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Nav](/Entity_Reference/Fox/Nav)\
+> Module: [Nav](/Entity_Reference/?/Fox/Nav)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Nav.NavNavigationParameter → NavVehicleNavigationParameter
 
@@ -22,4 +22,5 @@ TODO: Description
 |-|-|
 | [turningRadii](#turningradii) | TODO: Description |
 | [turningSpeeds](#turningspeeds) | TODO: Description |
+
 

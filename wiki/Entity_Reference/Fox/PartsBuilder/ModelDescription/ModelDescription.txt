@@ -1,12 +1,12 @@
 <!--
 title: ModelDescription
-permalink: /Entity_Reference/Fox/PartsBuilder/ModelDescription
+permalink: /Entity_Reference/?/Fox/PartsBuilder/ModelDescription/
 tags: [Fox, PartsBuilder, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [PartsBuilder](/Entity_Reference/Fox/PartsBuilder)\
+> Module: [PartsBuilder](/Entity_Reference/?/Fox/PartsBuilder)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.PartsBuilder.PartDescription → ModelDescription
 
@@ -32,4 +32,5 @@ TODO: Description
 | [lodPolygonSize](#lodpolygonsize) | TODO: Description |
 | [drawRejectionLevel](#drawrejectionlevel) | TODO: Description |
 | [rejectFarRangeShadowCast](#rejectfarrangeshadowcast) | TODO: Description |
+
 

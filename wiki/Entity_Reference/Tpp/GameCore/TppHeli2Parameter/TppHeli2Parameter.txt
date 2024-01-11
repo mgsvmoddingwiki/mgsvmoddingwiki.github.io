@@ -1,12 +1,12 @@
 <!--
 title: TppHeli2Parameter
-permalink: /Entity_Reference/Tpp/GameCore/TppHeli2Parameter
+permalink: /Entity_Reference/?/Tpp/GameCore/TppHeli2Parameter/
 tags: [Tpp, GameCore, Reference]
 -->
 
 ## Definition
 > Project: Tpp\
-> Module: [GameCore](/Entity_Reference/Tpp/GameCore)\
+> Module: [GameCore](/Entity_Reference/?/Tpp/GameCore)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.DataElement → TppHeli2Parameter
 
@@ -27,4 +27,5 @@ TODO: Description
 | [vfxFiles](#vfxfiles) | TODO: Description |
 | [fovaFiles](#fovafiles) | TODO: Description |
 | [mtarFile](#mtarfile) | TODO: Description |
+
 

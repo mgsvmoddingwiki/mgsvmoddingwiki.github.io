@@ -1,12 +1,12 @@
 <!--
 title: TppSoundWorld
-permalink: /Entity_Reference/Tpp/Sound/TppSoundWorld
+permalink: /Entity_Reference/?/Tpp/Sound/TppSoundWorld/
 tags: [Tpp, Sound, Reference]
 -->
 
 ## Definition
 > Project: Tpp\
-> Module: [Sound](/Entity_Reference/Tpp/Sound)\
+> Module: [Sound](/Entity_Reference/?/Tpp/Sound)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.Data → TppSoundWorld
 
@@ -43,4 +43,5 @@ TODO: Description
 | [unlinkedObstruction](#unlinkedobstruction) | TODO: Description |
 | [unlinkedOcclusion](#unlinkedocclusion) | TODO: Description |
 | [interferenceSlope](#interferenceslope) | TODO: Description |
+
 

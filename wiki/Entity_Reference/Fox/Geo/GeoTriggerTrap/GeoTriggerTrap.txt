@@ -1,12 +1,12 @@
 <!--
 title: GeoTriggerTrap
-permalink: /Entity_Reference/Fox/Geo/GeoTriggerTrap
+permalink: /Entity_Reference/?/Fox/Geo/GeoTriggerTrap/
 tags: [Fox, Geo, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Geo](/Entity_Reference/Fox/Geo)\
+> Module: [Geo](/Entity_Reference/?/Fox/Geo)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.TransformData → GeoTriggerTrap
 
@@ -24,4 +24,5 @@ TODO: Description
 | [stateFlag](#stateflag) | TODO: Description |
 | [uniqueId](#uniqueid) | TODO: Description |
 | [groupTags](#grouptags) | TODO: Description |
+
 

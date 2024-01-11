@@ -1,12 +1,12 @@
 <!--
 title: RadioData
-permalink: /Entity_Reference/Tpp/Radio/RadioData
+permalink: /Entity_Reference/?/Tpp/Radio/RadioData/
 tags: [Tpp, Radio, Reference]
 -->
 
 ## Definition
 > Project: Tpp\
-> Module: [Radio](/Entity_Reference/Tpp/Radio)\
+> Module: [Radio](/Entity_Reference/?/Tpp/Radio)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.Data → RadioData
 
@@ -21,4 +21,5 @@ TODO: Description
 | | |
 |-|-|
 | [radioDataFile](#radiodatafile) | TODO: Description |
+
 

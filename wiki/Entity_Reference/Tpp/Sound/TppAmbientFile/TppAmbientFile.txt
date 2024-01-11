@@ -1,12 +1,12 @@
 <!--
 title: TppAmbientFile
-permalink: /Entity_Reference/Tpp/Sound/TppAmbientFile
+permalink: /Entity_Reference/?/Tpp/Sound/TppAmbientFile/
 tags: [Tpp, Sound, Reference]
 -->
 
 ## Definition
 > Project: Tpp\
-> Module: [Sound](/Entity_Reference/Tpp/Sound)\
+> Module: [Sound](/Entity_Reference/?/Tpp/Sound)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.RawFile → TppAmbientFile
 
@@ -15,6 +15,7 @@ TppAmbientFile : Fox.Core.RawFile
 ```
 
 TODO: Description
+
 
 
 

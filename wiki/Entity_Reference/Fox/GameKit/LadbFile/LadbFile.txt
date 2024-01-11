@@ -1,12 +1,12 @@
 <!--
 title: LadbFile
-permalink: /Entity_Reference/Fox/GameKit/LadbFile
+permalink: /Entity_Reference/?/Fox/GameKit/LadbFile/
 tags: [Fox, GameKit, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [GameKit](/Entity_Reference/Fox/GameKit)\
+> Module: [GameKit](/Entity_Reference/?/Fox/GameKit)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.RawFile → LadbFile
 
@@ -15,6 +15,7 @@ LadbFile : Fox.Core.RawFile
 ```
 
 TODO: Description
+
 
 
 

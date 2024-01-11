@@ -1,12 +1,12 @@
 <!--
 title: GeoModuleCondition
-permalink: /Entity_Reference/Fox/Geo/GeoModuleCondition
+permalink: /Entity_Reference/?/Fox/Geo/GeoModuleCondition/
 tags: [Fox, Geo, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Geo](/Entity_Reference/Fox/Geo)\
+> Module: [Geo](/Entity_Reference/?/Fox/Geo)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Geo.GeoTrapCondition → GeoModuleCondition
 
@@ -25,4 +25,5 @@ TODO: Description
 | [execFuncNames](#execfuncnames) | TODO: Description |
 | [checkCallbackDataElements](#checkcallbackdataelements) | TODO: Description |
 | [execCallbackDataElements](#execcallbackdataelements) | TODO: Description |
+
 

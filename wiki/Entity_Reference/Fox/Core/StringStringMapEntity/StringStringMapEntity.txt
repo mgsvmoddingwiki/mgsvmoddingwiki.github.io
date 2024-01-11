@@ -1,12 +1,12 @@
 <!--
 title: StringStringMapEntity
-permalink: /Entity_Reference/Fox/Core/StringStringMapEntity
+permalink: /Entity_Reference/?/Fox/Core/StringStringMapEntity/
 tags: [Fox, Core, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Core](/Entity_Reference/Fox/Core)\
+> Module: [Core](/Entity_Reference/?/Fox/Core)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.Entity → StringStringMapEntity
 
@@ -21,4 +21,5 @@ TODO: Description
 | | |
 |-|-|
 | [stringMap](#stringmap) | TODO: Description |
+
 

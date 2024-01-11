@@ -2218,6 +2218,35 @@ footer {
     background: var(--color-buttons-hover);
 }
 
+.pagenotfound-results .redirection a {
+    width: 100%;
+    padding-left: 130px;
+    position: relative;
+}
+
+.pagenotfound-results .redirection a::before {
+    color: var(--color-secondary);
+    content: 'Redirection';
+    font-size: var(--font-size-small);
+    font-weight: var(--font-weight-semibold);
+    display: inline-block;
+    line-height: 100%;
+    padding: var(--spacing-minor) calc(var(--spacing-minor) * 2);
+    border-radius: var(--radius-full);
+    border: var(--border-width) solid var(--color-border);
+    position: absolute;
+    z-index: 1;
+    top: calc(var(--spacing-minor) * 2);
+    left: var(--spacing-intermediate);
+    pointer-events: none;
+}
+
+.pagenotfound-results .no-results {
+    color: var(--color-secondary);
+    text-align: center;
+    margin-top: calc(var(--spacing-primary) * 2);
+}
+
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ THEMES RELATED ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* Note: to avoid more copies of code the styling of this section is only active when body has class added via JS (ie: users with JS disabled won't see them) */

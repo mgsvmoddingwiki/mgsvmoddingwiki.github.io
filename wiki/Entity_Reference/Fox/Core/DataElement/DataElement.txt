@@ -1,12 +1,12 @@
 <!--
 title: DataElement
-permalink: /Entity_Reference/Fox/Core/DataElement
+permalink: /Entity_Reference/?/Fox/Core/DataElement/
 tags: [Fox, Core, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Core](/Entity_Reference/Fox/Core)\
+> Module: [Core](/Entity_Reference/?/Fox/Core)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.Entity → DataElement
 
@@ -21,4 +21,5 @@ TODO: Description
 | | |
 |-|-|
 | [owner](#owner) | TODO: Description |
+
 

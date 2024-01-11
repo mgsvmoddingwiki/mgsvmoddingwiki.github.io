@@ -1,12 +1,12 @@
 <!--
 title: UiModelNodeElement
-permalink: /Entity_Reference/Fox/UiScene/UiModelNodeElement
+permalink: /Entity_Reference/?/Fox/UiScene/UiModelNodeElement/
 tags: [Fox, UiScene, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [UiScene](/Entity_Reference/Fox/UiScene)\
+> Module: [UiScene](/Entity_Reference/?/Fox/UiScene)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.DataElement → UiModelNodeElement
 
@@ -36,4 +36,5 @@ TODO: Description
 | [initTranslate](#inittranslate) | TODO: Description |
 | [initColor](#initcolor) | TODO: Description |
 | [initBlendType](#initblendtype) | TODO: Description |
+
 

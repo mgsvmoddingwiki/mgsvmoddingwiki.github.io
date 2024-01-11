@@ -1,12 +1,12 @@
 <!--
 title: OccluderEx
-permalink: /Entity_Reference/Fox/Grx/OccluderEx
+permalink: /Entity_Reference/?/Fox/Grx/OccluderEx/
 tags: [Fox, Grx, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Grx](/Entity_Reference/Fox/Grx)\
+> Module: [Grx](/Entity_Reference/?/Fox/Grx)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.TransformData → OccluderEx
 
@@ -25,4 +25,5 @@ TODO: Description
 | [mode](#mode) | TODO: Description |
 | [numVertices](#numvertices) | TODO: Description |
 | [positions](#positions) | TODO: Description |
+
 

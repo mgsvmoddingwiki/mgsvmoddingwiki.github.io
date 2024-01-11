@@ -1,12 +1,12 @@
 <!--
 title: TppRainFilterInterruptTrans
-permalink: /Entity_Reference/Tpp/Effect/TppRainFilterInterruptTrans
+permalink: /Entity_Reference/?/Tpp/Effect/TppRainFilterInterruptTrans/
 tags: [Tpp, Effect, Reference]
 -->
 
 ## Definition
 > Project: Tpp\
-> Module: [Effect](/Entity_Reference/Tpp/Effect)\
+> Module: [Effect](/Entity_Reference/?/Tpp/Effect)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.TransformData → TppRainFilterInterruptTrans
 
@@ -24,4 +24,5 @@ TODO: Description
 | [maskTextures](#masktextures) | TODO: Description |
 | [interruptFlags](#interruptflags) | TODO: Description |
 | [levels](#levels) | TODO: Description |
+
 

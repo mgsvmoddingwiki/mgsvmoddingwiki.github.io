@@ -1,12 +1,12 @@
 <!--
 title: StageBlockControllerData
-permalink: /Entity_Reference/Fox/Core/StageBlockControllerData
+permalink: /Entity_Reference/?/Fox/Core/StageBlockControllerData/
 tags: [Fox, Core, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Core](/Entity_Reference/Fox/Core)\
+> Module: [Core](/Entity_Reference/?/Fox/Core)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.Data → StageBlockControllerData
 
@@ -83,4 +83,5 @@ TODO: Description
 | [lod1LargeBlock2Count](#lod1largeblock2count) | TODO: Description |
 | [lod1LargeBlock3SizeInBytes](#lod1largeblock3sizeinbytes) | TODO: Description |
 | [lod1LargeBlock3Count](#lod1largeblock3count) | TODO: Description |
+
 

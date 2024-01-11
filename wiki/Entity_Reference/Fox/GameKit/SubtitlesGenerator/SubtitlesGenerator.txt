@@ -1,12 +1,12 @@
 <!--
 title: SubtitlesGenerator
-permalink: /Entity_Reference/Fox/GameKit/SubtitlesGenerator
+permalink: /Entity_Reference/?/Fox/GameKit/SubtitlesGenerator/
 tags: [Fox, GameKit, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [GameKit](/Entity_Reference/Fox/GameKit)\
+> Module: [GameKit](/Entity_Reference/?/Fox/GameKit)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Ui.UiGraphEntry → SubtitlesGenerator
 
@@ -31,4 +31,5 @@ TODO: Description
 | [bAlign](#balign) | TODO: Description |
 | [fontName](#fontname) | TODO: Description |
 | [autoLineFeed](#autolinefeed) | TODO: Description |
+
 

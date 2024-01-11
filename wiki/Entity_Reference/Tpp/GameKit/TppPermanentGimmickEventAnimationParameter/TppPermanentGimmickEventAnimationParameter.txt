@@ -1,12 +1,12 @@
 <!--
 title: TppPermanentGimmickEventAnimationParameter
-permalink: /Entity_Reference/Tpp/GameKit/TppPermanentGimmickEventAnimationParameter
+permalink: /Entity_Reference/?/Tpp/GameKit/TppPermanentGimmickEventAnimationParameter/
 tags: [Tpp, GameKit, Reference]
 -->
 
 ## Definition
 > Project: Tpp\
-> Module: [GameKit](/Entity_Reference/Tpp/GameKit)\
+> Module: [GameKit](/Entity_Reference/?/Tpp/GameKit)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.DataElement → TppPermanentGimmickEventAnimationParameter
 
@@ -24,4 +24,5 @@ TODO: Description
 | [defaultAnimPath](#defaultanimpath) | TODO: Description |
 | [eventAnimPath](#eventanimpath) | TODO: Description |
 | [fadeTime](#fadetime) | TODO: Description |
+
 

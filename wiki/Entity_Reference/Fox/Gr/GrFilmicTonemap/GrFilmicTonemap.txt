@@ -1,12 +1,12 @@
 <!--
 title: GrFilmicTonemap
-permalink: /Entity_Reference/Fox/Gr/GrFilmicTonemap
+permalink: /Entity_Reference/?/Fox/Gr/GrFilmicTonemap/
 tags: [Fox, Gr, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Gr](/Entity_Reference/Fox/Gr)\
+> Module: [Gr](/Entity_Reference/?/Fox/Gr)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.Data → GrFilmicTonemap
 
@@ -28,4 +28,5 @@ TODO: Description
 | [toeNumerator](#toenumerator) | TODO: Description |
 | [toeDenominator](#toedenominator) | TODO: Description |
 | [whitePointValue](#whitepointvalue) | TODO: Description |
+
 

@@ -1,12 +1,12 @@
 <!--
 title: Project
-permalink: /Entity_Reference/Fox/Core/Project
+permalink: /Entity_Reference/?/Fox/Core/Project/
 tags: [Fox, Core, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Core](/Entity_Reference/Fox/Core)\
+> Module: [Core](/Entity_Reference/?/Fox/Core)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.Entity → Project
 
@@ -22,4 +22,5 @@ TODO: Description
 |-|-|
 | [dataSetPaths](#datasetpaths) | TODO: Description |
 | [currentDataSetPath](#currentdatasetpath) | TODO: Description |
+
 

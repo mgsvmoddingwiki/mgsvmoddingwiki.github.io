@@ -1,12 +1,12 @@
 <!--
 title: TppTakePictureParameter
-permalink: /Entity_Reference/Fox/EdDemo/TppTakePictureParameter
+permalink: /Entity_Reference/?/Fox/EdDemo/TppTakePictureParameter/
 tags: [Fox, EdDemo, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [EdDemo](/Entity_Reference/Fox/EdDemo)\
+> Module: [EdDemo](/Entity_Reference/?/Fox/EdDemo)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Demo.DemoParameter → TppTakePictureParameter
 
@@ -15,6 +15,7 @@ TppTakePictureParameter : Fox.Demo.DemoParameter
 ```
 
 TODO: Description
+
 
 
 

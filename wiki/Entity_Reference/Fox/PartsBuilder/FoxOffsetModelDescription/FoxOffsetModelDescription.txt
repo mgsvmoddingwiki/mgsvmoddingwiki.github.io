@@ -1,12 +1,12 @@
 <!--
 title: FoxOffsetModelDescription
-permalink: /Entity_Reference/Fox/PartsBuilder/FoxOffsetModelDescription
+permalink: /Entity_Reference/?/Fox/PartsBuilder/FoxOffsetModelDescription/
 tags: [Fox, PartsBuilder, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [PartsBuilder](/Entity_Reference/Fox/PartsBuilder)\
+> Module: [PartsBuilder](/Entity_Reference/?/Fox/PartsBuilder)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.PartsBuilder.ModelDescription → FoxOffsetModelDescription
 
@@ -22,4 +22,5 @@ TODO: Description
 |-|-|
 | [offsetTranslation](#offsettranslation) | TODO: Description |
 | [offsetRotQuat](#offsetrotquat) | TODO: Description |
+
 

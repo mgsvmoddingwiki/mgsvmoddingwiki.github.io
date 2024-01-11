@@ -1,12 +1,12 @@
 <!--
 title: PhMultiShoulderConstraint
-permalink: /Entity_Reference/Fox/Ph/PhMultiShoulderConstraint
+permalink: /Entity_Reference/?/Fox/Ph/PhMultiShoulderConstraint/
 tags: [Fox, Ph, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Ph](/Entity_Reference/Fox/Ph)\
+> Module: [Ph](/Entity_Reference/?/Fox/Ph)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Ph.PhConstraint → PhMultiShoulderConstraint
 
@@ -28,4 +28,5 @@ TODO: Description
 | [torqueMax](#torquemax) | TODO: Description |
 | [velocityRate](#velocityrate) | TODO: Description |
 | [isPoweredFlag](#ispoweredflag) | TODO: Description |
+
 

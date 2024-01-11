@@ -1,12 +1,12 @@
 <!--
 title: Watermark
-permalink: /Entity_Reference/Fox/GameKit/Watermark
+permalink: /Entity_Reference/?/Fox/GameKit/Watermark/
 tags: [Fox, GameKit, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [GameKit](/Entity_Reference/Fox/GameKit)\
+> Module: [GameKit](/Entity_Reference/?/Fox/GameKit)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.Data → Watermark
 
@@ -28,4 +28,5 @@ TODO: Description
 | [textureScaleY](#texturescaley) | TODO: Description |
 | [alphaBlend](#alphablend) | TODO: Description |
 | [texturePath](#texturepath) | TODO: Description |
+
 

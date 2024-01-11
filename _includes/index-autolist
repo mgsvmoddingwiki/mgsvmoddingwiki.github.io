@@ -25,7 +25,7 @@
         {% if include.type == "all-pages" %}
             {% for page in site.pages %}
                 {% assign title = page.title | default: page.name %}
-                {% if title != nil and title != 'Page Not Found' %}
+                {% if title != nil and title != 'Page Not Found' and title != 'redirect.html' %}
                     <li><a href="{{ page.url }}">{{ page.title }}</a></li>
                 {% endif %}
             {% endfor %}

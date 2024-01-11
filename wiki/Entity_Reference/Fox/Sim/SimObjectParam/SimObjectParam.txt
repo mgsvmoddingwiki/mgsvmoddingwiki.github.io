@@ -1,12 +1,12 @@
 <!--
 title: SimObjectParam
-permalink: /Entity_Reference/Fox/Sim/SimObjectParam
+permalink: /Entity_Reference/?/Fox/Sim/SimObjectParam/
 tags: [Fox, Sim, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Sim](/Entity_Reference/Fox/Sim)\
+> Module: [Sim](/Entity_Reference/?/Fox/Sim)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.Entity → SimObjectParam
 
@@ -15,6 +15,7 @@ SimObjectParam : Fox.Core.Entity
 ```
 
 TODO: Description
+
 
 
 

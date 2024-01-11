@@ -1,12 +1,12 @@
 <!--
 title: ObjectBrushPluginCloneBody
-permalink: /Entity_Reference/Fox/GameKit/ObjectBrushPluginCloneBody
+permalink: /Entity_Reference/?/Fox/GameKit/ObjectBrushPluginCloneBody/
 tags: [Fox, GameKit, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [GameKit](/Entity_Reference/Fox/GameKit)\
+> Module: [GameKit](/Entity_Reference/?/Fox/GameKit)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.GameKit.ObjectBrushPluginBody → ObjectBrushPluginCloneBody
 
@@ -15,6 +15,7 @@ ObjectBrushPluginCloneBody : Fox.GameKit.ObjectBrushPluginBody
 ```
 
 TODO: Description
+
 
 
 

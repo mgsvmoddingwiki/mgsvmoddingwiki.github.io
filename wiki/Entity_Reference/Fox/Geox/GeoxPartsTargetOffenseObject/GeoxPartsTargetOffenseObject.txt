@@ -1,12 +1,12 @@
 <!--
 title: GeoxPartsTargetOffenseObject
-permalink: /Entity_Reference/Fox/Geox/GeoxPartsTargetOffenseObject
+permalink: /Entity_Reference/?/Fox/Geox/GeoxPartsTargetOffenseObject/
 tags: [Fox, Geox, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Geox](/Entity_Reference/Fox/Geox)\
+> Module: [Geox](/Entity_Reference/?/Fox/Geox)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Geox.GeoxPartsTargetObject → GeoxPartsTargetOffenseObject
 
@@ -24,4 +24,5 @@ TODO: Description
 | [isNoDefenseCallback](#isnodefensecallback) | TODO: Description |
 | [isHandleCheck](#ishandlecheck) | TODO: Description |
 | [isNameCheck](#isnamecheck) | TODO: Description |
+
 

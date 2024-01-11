@@ -1,12 +1,12 @@
 <!--
 title: LangDataBody
-permalink: /Entity_Reference/Fox/Ui/LangDataBody
+permalink: /Entity_Reference/?/Fox/Ui/LangDataBody/
 tags: [Fox, Ui, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Ui](/Entity_Reference/Fox/Ui)\
+> Module: [Ui](/Entity_Reference/?/Fox/Ui)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.DataBody → LangDataBody
 
@@ -15,6 +15,7 @@ LangDataBody : Fox.Core.DataBody
 ```
 
 TODO: Description
+
 
 
 

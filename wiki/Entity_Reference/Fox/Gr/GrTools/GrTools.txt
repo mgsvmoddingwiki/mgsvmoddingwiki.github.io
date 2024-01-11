@@ -1,12 +1,12 @@
 <!--
 title: GrTools
-permalink: /Entity_Reference/Fox/Gr/GrTools
+permalink: /Entity_Reference/?/Fox/Gr/GrTools/
 tags: [Fox, Gr, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Gr](/Entity_Reference/Fox/Gr)\
+> Module: [Gr](/Entity_Reference/?/Fox/Gr)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.Entity → GrTools
 
@@ -15,6 +15,7 @@ GrTools : Fox.Core.Entity
 ```
 
 TODO: Description
+
 
 
 

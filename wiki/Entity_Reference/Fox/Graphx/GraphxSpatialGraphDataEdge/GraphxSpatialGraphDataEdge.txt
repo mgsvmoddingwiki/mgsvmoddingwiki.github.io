@@ -1,12 +1,12 @@
 <!--
 title: GraphxSpatialGraphDataEdge
-permalink: /Entity_Reference/Fox/Graphx/GraphxSpatialGraphDataEdge
+permalink: /Entity_Reference/?/Fox/Graphx/GraphxSpatialGraphDataEdge/
 tags: [Fox, Graphx, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Graphx](/Entity_Reference/Fox/Graphx)\
+> Module: [Graphx](/Entity_Reference/?/Fox/Graphx)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.DataElement → GraphxSpatialGraphDataEdge
 
@@ -22,4 +22,5 @@ TODO: Description
 |-|-|
 | [prevNode](#prevnode) | TODO: Description |
 | [nextNode](#nextnode) | TODO: Description |
+
 

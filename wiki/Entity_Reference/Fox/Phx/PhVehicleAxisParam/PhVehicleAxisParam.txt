@@ -1,12 +1,12 @@
 <!--
 title: PhVehicleAxisParam
-permalink: /Entity_Reference/Fox/Phx/PhVehicleAxisParam
+permalink: /Entity_Reference/?/Fox/Phx/PhVehicleAxisParam/
 tags: [Fox, Phx, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Phx](/Entity_Reference/Fox/Phx)\
+> Module: [Phx](/Entity_Reference/?/Fox/Phx)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.Entity → PhVehicleAxisParam
 
@@ -22,4 +22,5 @@ TODO: Description
 |-|-|
 | [maxBreakTorque](#maxbreaktorque) | TODO: Description |
 | [useDifferential](#usedifferential) | TODO: Description |
+
 

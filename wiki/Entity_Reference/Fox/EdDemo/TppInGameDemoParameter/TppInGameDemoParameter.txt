@@ -1,12 +1,12 @@
 <!--
 title: TppInGameDemoParameter
-permalink: /Entity_Reference/Fox/EdDemo/TppInGameDemoParameter
+permalink: /Entity_Reference/?/Fox/EdDemo/TppInGameDemoParameter/
 tags: [Fox, EdDemo, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [EdDemo](/Entity_Reference/Fox/EdDemo)\
+> Module: [EdDemo](/Entity_Reference/?/Fox/EdDemo)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Demo.DemoParameter → TppInGameDemoParameter
 
@@ -15,6 +15,7 @@ TppInGameDemoParameter : Fox.Demo.DemoParameter
 ```
 
 TODO: Description
+
 
 
 

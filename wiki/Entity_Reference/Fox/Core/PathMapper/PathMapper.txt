@@ -1,12 +1,12 @@
 <!--
 title: PathMapper
-permalink: /Entity_Reference/Fox/Core/PathMapper
+permalink: /Entity_Reference/?/Fox/Core/PathMapper/
 tags: [Fox, Core, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Core](/Entity_Reference/Fox/Core)\
+> Module: [Core](/Entity_Reference/?/Fox/Core)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.Entity → PathMapper
 
@@ -15,6 +15,7 @@ PathMapper : Fox.Core.Entity
 ```
 
 TODO: Description
+
 
 
 

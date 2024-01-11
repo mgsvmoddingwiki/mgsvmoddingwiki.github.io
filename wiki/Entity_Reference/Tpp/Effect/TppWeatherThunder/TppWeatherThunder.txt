@@ -1,12 +1,12 @@
 <!--
 title: TppWeatherThunder
-permalink: /Entity_Reference/Tpp/Effect/TppWeatherThunder
+permalink: /Entity_Reference/?/Tpp/Effect/TppWeatherThunder/
 tags: [Tpp, Effect, Reference]
 -->
 
 ## Definition
 > Project: Tpp\
-> Module: [Effect](/Entity_Reference/Tpp/Effect)\
+> Module: [Effect](/Entity_Reference/?/Tpp/Effect)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.Data → TppWeatherThunder
 
@@ -35,4 +35,5 @@ TODO: Description
 | [spotLightLifeMin](#spotlightlifemin) | TODO: Description |
 | [spotLightLifeMax](#spotlightlifemax) | TODO: Description |
 | [spotLightLumen](#spotlightlumen) | TODO: Description |
+
 

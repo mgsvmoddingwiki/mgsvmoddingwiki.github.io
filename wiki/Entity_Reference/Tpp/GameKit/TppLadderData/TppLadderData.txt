@@ -1,12 +1,12 @@
 <!--
 title: TppLadderData
-permalink: /Entity_Reference/Tpp/GameKit/TppLadderData
+permalink: /Entity_Reference/?/Tpp/GameKit/TppLadderData/
 tags: [Tpp, GameKit, Reference]
 -->
 
 ## Definition
 > Project: Tpp\
-> Module: [GameKit](/Entity_Reference/Tpp/GameKit)\
+> Module: [GameKit](/Entity_Reference/?/Tpp/GameKit)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.TransformData → TppLadderData
 
@@ -23,4 +23,5 @@ TODO: Description
 | [numSteps](#numsteps) | TODO: Description |
 | [tacticalActionId](#tacticalactionid) | TODO: Description |
 | [entryPoints](#entrypoints) | TODO: Description |
+
 

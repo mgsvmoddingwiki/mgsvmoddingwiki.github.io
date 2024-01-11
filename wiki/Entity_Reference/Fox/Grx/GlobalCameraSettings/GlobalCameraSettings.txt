@@ -1,12 +1,12 @@
 <!--
 title: GlobalCameraSettings
-permalink: /Entity_Reference/Fox/Grx/GlobalCameraSettings
+permalink: /Entity_Reference/?/Fox/Grx/GlobalCameraSettings/
 tags: [Fox, Grx, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Grx](/Entity_Reference/Fox/Grx)\
+> Module: [Grx](/Entity_Reference/?/Fox/Grx)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.Data → GlobalCameraSettings
 
@@ -27,4 +27,5 @@ TODO: Description
 | [flags](#flags) | TODO: Description |
 | [isIgnoreDofCameraSetting](#isignoredofcamerasetting) | TODO: Description |
 | [isIgnoreMotionBlurCameraSetting](#isignoremotionblurcamerasetting) | TODO: Description |
+
 

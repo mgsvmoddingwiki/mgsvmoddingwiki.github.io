@@ -1,12 +1,12 @@
 <!--
 title: TppObjectBrushPluginSkeletonModel
-permalink: /Entity_Reference/Tpp/GameKit/TppObjectBrushPluginSkeletonModel
+permalink: /Entity_Reference/?/Tpp/GameKit/TppObjectBrushPluginSkeletonModel/
 tags: [Tpp, GameKit, Reference]
 -->
 
 ## Definition
 > Project: Tpp\
-> Module: [GameKit](/Entity_Reference/Tpp/GameKit)\
+> Module: [GameKit](/Entity_Reference/?/Tpp/GameKit)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.GameKit.ObjectBrushPlugin → TppObjectBrushPluginSkeletonModel
 
@@ -35,4 +35,5 @@ TODO: Description
 | [reserveResourcePerBlock](#reserveresourceperblock) | TODO: Description |
 | [lodLength](#lodlength) | TODO: Description |
 | [lodLengthForHighEnd](#lodlengthforhighend) | TODO: Description |
+
 

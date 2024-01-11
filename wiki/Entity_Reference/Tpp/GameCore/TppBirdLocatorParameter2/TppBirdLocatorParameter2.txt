@@ -1,12 +1,12 @@
 <!--
 title: TppBirdLocatorParameter2
-permalink: /Entity_Reference/Tpp/GameCore/TppBirdLocatorParameter2
+permalink: /Entity_Reference/?/Tpp/GameCore/TppBirdLocatorParameter2/
 tags: [Tpp, GameCore, Reference]
 -->
 
 ## Definition
 > Project: Tpp\
-> Module: [GameCore](/Entity_Reference/Tpp/GameCore)\
+> Module: [GameCore](/Entity_Reference/?/Tpp/GameCore)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.DataElement → TppBirdLocatorParameter2
 
@@ -25,4 +25,5 @@ TODO: Description
 | [perchPoints](#perchpoints) | TODO: Description |
 | [radius](#radius) | TODO: Description |
 | [height](#height) | TODO: Description |
+
 

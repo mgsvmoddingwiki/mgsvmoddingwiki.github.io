@@ -1,12 +1,12 @@
 <!--
 title: WindArea
-permalink: /Entity_Reference/Fox/GameKit/WindArea
+permalink: /Entity_Reference/?/Fox/GameKit/WindArea/
 tags: [Fox, GameKit, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [GameKit](/Entity_Reference/Fox/GameKit)\
+> Module: [GameKit](/Entity_Reference/?/Fox/GameKit)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.GameKit.EnvironmentArea → WindArea
 
@@ -21,4 +21,5 @@ TODO: Description
 | | |
 |-|-|
 | [influenceOfGlobal](#influenceofglobal) | TODO: Description |
+
 

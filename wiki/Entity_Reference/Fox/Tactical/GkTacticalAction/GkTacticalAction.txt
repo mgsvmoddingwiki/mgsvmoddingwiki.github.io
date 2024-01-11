@@ -1,12 +1,12 @@
 <!--
 title: GkTacticalAction
-permalink: /Entity_Reference/Fox/Tactical/GkTacticalAction
+permalink: /Entity_Reference/?/Fox/Tactical/GkTacticalAction/
 tags: [Fox, Tactical, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Tactical](/Entity_Reference/Fox/Tactical)\
+> Module: [Tactical](/Entity_Reference/?/Fox/Tactical)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.TransformData → GkTacticalAction
 
@@ -29,4 +29,5 @@ TODO: Description
 | [edges](#edges) | TODO: Description |
 | [attributeNames](#attributenames) | TODO: Description |
 | [attribute](#attribute) | TODO: Description |
+
 

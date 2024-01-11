@@ -1,12 +1,12 @@
 <!--
 title: RailUniqueIdFile
-permalink: /Entity_Reference/Fox/Geo/RailUniqueIdFile
+permalink: /Entity_Reference/?/Fox/Geo/RailUniqueIdFile/
 tags: [Fox, Geo, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Geo](/Entity_Reference/Fox/Geo)\
+> Module: [Geo](/Entity_Reference/?/Fox/Geo)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.RawFile → RailUniqueIdFile
 
@@ -15,6 +15,7 @@ RailUniqueIdFile : Fox.Core.RawFile
 ```
 
 TODO: Description
+
 
 
 

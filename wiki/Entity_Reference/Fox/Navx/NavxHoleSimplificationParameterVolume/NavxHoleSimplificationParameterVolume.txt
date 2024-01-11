@@ -1,12 +1,12 @@
 <!--
 title: NavxHoleSimplificationParameterVolume
-permalink: /Entity_Reference/Fox/Navx/NavxHoleSimplificationParameterVolume
+permalink: /Entity_Reference/?/Fox/Navx/NavxHoleSimplificationParameterVolume/
 tags: [Fox, Navx, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Navx](/Entity_Reference/Fox/Navx)\
+> Module: [Navx](/Entity_Reference/?/Fox/Navx)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.TransformData → NavxHoleSimplificationParameterVolume
 
@@ -27,4 +27,5 @@ TODO: Description
 | [obbToAabbThreshold](#obbtoaabbthreshold) | TODO: Description |
 | [smoothingThreshold](#smoothingthreshold) | TODO: Description |
 | [isNotClosePassage](#isnotclosepassage) | TODO: Description |
+
 

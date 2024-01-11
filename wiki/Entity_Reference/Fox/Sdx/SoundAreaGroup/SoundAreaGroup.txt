@@ -1,12 +1,12 @@
 <!--
 title: SoundAreaGroup
-permalink: /Entity_Reference/Fox/Sdx/SoundAreaGroup
+permalink: /Entity_Reference/?/Fox/Sdx/SoundAreaGroup/
 tags: [Fox, Sdx, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Sdx](/Entity_Reference/Fox/Sdx)\
+> Module: [Sdx](/Entity_Reference/?/Fox/Sdx)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.Data → SoundAreaGroup
 
@@ -24,4 +24,5 @@ TODO: Description
 | [parameter](#parameter) | TODO: Description |
 | [members](#members) | TODO: Description |
 | [edges](#edges) | TODO: Description |
+
 

@@ -1,12 +1,12 @@
 <!--
 title: GeoxPathEdge
-permalink: /Entity_Reference/Fox/Geox/GeoxPathEdge
+permalink: /Entity_Reference/?/Fox/Geox/GeoxPathEdge/
 tags: [Fox, Geox, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Geox](/Entity_Reference/Fox/Geox)\
+> Module: [Geox](/Entity_Reference/?/Fox/Geox)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Graphx.GraphxSpatialGraphDataEdge → GeoxPathEdge
 
@@ -21,4 +21,5 @@ TODO: Description
 | | |
 |-|-|
 | [edgeTags](#edgetags) | TODO: Description |
+
 

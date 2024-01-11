@@ -1,12 +1,12 @@
 <!--
 title: TppSahelan2Parameter
-permalink: /Entity_Reference/Tpp/GameCore/TppSahelan2Parameter
+permalink: /Entity_Reference/?/Tpp/GameCore/TppSahelan2Parameter/
 tags: [Tpp, GameCore, Reference]
 -->
 
 ## Definition
 > Project: Tpp\
-> Module: [GameCore](/Entity_Reference/Tpp/GameCore)\
+> Module: [GameCore](/Entity_Reference/?/Tpp/GameCore)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.DataElement → TppSahelan2Parameter
 
@@ -24,4 +24,5 @@ TODO: Description
 | [motionGraphFile](#motiongraphfile) | TODO: Description |
 | [mtarFile](#mtarfile) | TODO: Description |
 | [vfxFiles](#vfxfiles) | TODO: Description |
+
 

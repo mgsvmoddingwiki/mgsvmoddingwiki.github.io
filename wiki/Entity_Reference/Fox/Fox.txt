@@ -1,6 +1,6 @@
 <!--
 title: Fox
-permalink: /Entity_Reference/Fox/
+permalink: /Entity_Reference/?/Fox/
 tags: []
 -->
 

@@ -1,12 +1,12 @@
 <!--
 title: SimDaemon
-permalink: /Entity_Reference/Fox/Sim/SimDaemon
+permalink: /Entity_Reference/?/Fox/Sim/SimDaemon/
 tags: [Fox, Sim, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Sim](/Entity_Reference/Fox/Sim)\
+> Module: [Sim](/Entity_Reference/?/Fox/Sim)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.Entity → SimDaemon
 
@@ -24,4 +24,5 @@ TODO: Description
 | [maxActiveClothNum](#maxactiveclothnum) | TODO: Description |
 | [inertialMax](#inertialmax) | TODO: Description |
 | [isClothLocked](#isclothlocked) | TODO: Description |
+
 

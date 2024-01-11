@@ -1,12 +1,12 @@
 <!--
 title: CallbackProcedureDataBody
-permalink: /Entity_Reference/Fox/Core/CallbackProcedureDataBody
+permalink: /Entity_Reference/?/Fox/Core/CallbackProcedureDataBody/
 tags: [Fox, Core, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Core](/Entity_Reference/Fox/Core)\
+> Module: [Core](/Entity_Reference/?/Fox/Core)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.DataBody → CallbackProcedureDataBody
 
@@ -15,6 +15,7 @@ CallbackProcedureDataBody : Fox.Core.DataBody
 ```
 
 TODO: Description
+
 
 
 

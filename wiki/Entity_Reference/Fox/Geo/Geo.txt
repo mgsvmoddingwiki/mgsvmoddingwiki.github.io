@@ -1,8 +1,9 @@
 <!--
 title: Geo
-permalink: /Entity_Reference/Fox/Geo
+permalink: /Entity_Reference/?/Fox/Geo/
 tags: []
 -->
 
 {% include index-autolist type="section" %}
+
 

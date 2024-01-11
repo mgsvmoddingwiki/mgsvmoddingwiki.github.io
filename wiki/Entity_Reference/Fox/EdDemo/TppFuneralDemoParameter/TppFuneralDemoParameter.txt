@@ -1,12 +1,12 @@
 <!--
 title: TppFuneralDemoParameter
-permalink: /Entity_Reference/Fox/EdDemo/TppFuneralDemoParameter
+permalink: /Entity_Reference/?/Fox/EdDemo/TppFuneralDemoParameter/
 tags: [Fox, EdDemo, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [EdDemo](/Entity_Reference/Fox/EdDemo)\
+> Module: [EdDemo](/Entity_Reference/?/Fox/EdDemo)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Demo.DemoParameter → TppFuneralDemoParameter
 
@@ -22,4 +22,5 @@ TODO: Description
 |-|-|
 | [fova2File](#fova2file) | TODO: Description |
 | [mtarFile](#mtarfile) | TODO: Description |
+
 

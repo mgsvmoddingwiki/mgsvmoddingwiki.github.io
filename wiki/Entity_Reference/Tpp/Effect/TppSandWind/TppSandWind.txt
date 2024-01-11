@@ -1,12 +1,12 @@
 <!--
 title: TppSandWind
-permalink: /Entity_Reference/Tpp/Effect/TppSandWind
+permalink: /Entity_Reference/?/Tpp/Effect/TppSandWind/
 tags: [Tpp, Effect, Reference]
 -->
 
 ## Definition
 > Project: Tpp\
-> Module: [Effect](/Entity_Reference/Tpp/Effect)\
+> Module: [Effect](/Entity_Reference/?/Tpp/Effect)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.Data → TppSandWind
 
@@ -28,4 +28,5 @@ TODO: Description
 | [phaseScale](#phasescale) | TODO: Description |
 | [closeSandRelativeIntensity](#closesandrelativeintensity) | TODO: Description |
 | [closeSandRelativeVelocity](#closesandrelativevelocity) | TODO: Description |
+
 

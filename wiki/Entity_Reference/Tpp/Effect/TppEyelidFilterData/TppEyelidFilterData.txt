@@ -1,12 +1,12 @@
 <!--
 title: TppEyelidFilterData
-permalink: /Entity_Reference/Tpp/Effect/TppEyelidFilterData
+permalink: /Entity_Reference/?/Tpp/Effect/TppEyelidFilterData/
 tags: [Tpp, Effect, Reference]
 -->
 
 ## Definition
 > Project: Tpp\
-> Module: [Effect](/Entity_Reference/Tpp/Effect)\
+> Module: [Effect](/Entity_Reference/?/Tpp/Effect)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.Data → TppEyelidFilterData
 
@@ -30,4 +30,5 @@ TODO: Description
 | [openRate2](#openrate2) | TODO: Description |
 | [color1](#color1) | TODO: Description |
 | [color2](#color2) | TODO: Description |
+
 

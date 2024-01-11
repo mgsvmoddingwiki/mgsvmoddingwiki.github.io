@@ -1,12 +1,12 @@
 <!--
 title: TppTrapChangeEventSequenceCallbackDataElement
-permalink: /Entity_Reference/Tpp/System/TppTrapChangeEventSequenceCallbackDataElement
+permalink: /Entity_Reference/?/Tpp/System/TppTrapChangeEventSequenceCallbackDataElement/
 tags: [Tpp, System, Reference]
 -->
 
 ## Definition
 > Project: Tpp\
-> Module: [System](/Entity_Reference/Tpp/System)\
+> Module: [System](/Entity_Reference/?/Tpp/System)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Geo.GeoTrapModuleCallbackDataElement → TppTrapChangeEventSequenceCallbackDataElement
 
@@ -22,4 +22,5 @@ TODO: Description
 |-|-|
 | [eventSequenceManager](#eventsequencemanager) | TODO: Description |
 | [sequenceIdToGo](#sequenceidtogo) | TODO: Description |
+
 

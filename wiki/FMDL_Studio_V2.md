@@ -2,6 +2,8 @@
 title: FMDL Studio V2
 permalink: /FMDL_Studio_V2/
 tags: [Tools, Guides, Rendering, Models]
+redirect_from:
+    - /Blender_and_Unity_3D_modelling_pipeline_notes/
 ---
 
 {% include infobox dev="BobDoleOwndU" site="https://github.com/BobDoleOwndU/FMDL-Studio-v2" download="https://github.com/BobDoleOwndU/FMDL-Studio-v2/releases" %}

@@ -1,12 +1,12 @@
 <!--
 title: EntityPtrArrayEntity
-permalink: /Entity_Reference/Fox/Core/EntityPtrArrayEntity
+permalink: /Entity_Reference/?/Fox/Core/EntityPtrArrayEntity/
 tags: [Fox, Core, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Core](/Entity_Reference/Fox/Core)\
+> Module: [Core](/Entity_Reference/?/Fox/Core)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.Entity → EntityPtrArrayEntity
 
@@ -21,4 +21,5 @@ TODO: Description
 | | |
 |-|-|
 | [array](#array) | TODO: Description |
+
 

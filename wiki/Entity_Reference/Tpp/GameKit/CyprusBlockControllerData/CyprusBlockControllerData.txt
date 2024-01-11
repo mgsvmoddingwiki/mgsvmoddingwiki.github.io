@@ -1,12 +1,12 @@
 <!--
 title: CyprusBlockControllerData
-permalink: /Entity_Reference/Tpp/GameKit/CyprusBlockControllerData
+permalink: /Entity_Reference/?/Tpp/GameKit/CyprusBlockControllerData/
 tags: [Tpp, GameKit, Reference]
 -->
 
 ## Definition
 > Project: Tpp\
-> Module: [GameKit](/Entity_Reference/Tpp/GameKit)\
+> Module: [GameKit](/Entity_Reference/?/Tpp/GameKit)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.Data → CyprusBlockControllerData
 
@@ -33,4 +33,5 @@ TODO: Description
 | [smallMissionBlockSizeInByte](#smallmissionblocksizeinbyte) | TODO: Description |
 | [demoBlockCount](#demoblockcount) | TODO: Description |
 | [demoBlockSizeInByte](#demoblocksizeinbyte) | TODO: Description |
+
 

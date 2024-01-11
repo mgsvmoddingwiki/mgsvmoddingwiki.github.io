@@ -1,12 +1,12 @@
 <!--
 title: PhxVehicleAxis
-permalink: /Entity_Reference/Fox/Phx/PhxVehicleAxis
+permalink: /Entity_Reference/?/Fox/Phx/PhxVehicleAxis/
 tags: [Fox, Phx, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Phx](/Entity_Reference/Fox/Phx)\
+> Module: [Phx](/Entity_Reference/?/Fox/Phx)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.Data → PhxVehicleAxis
 
@@ -39,4 +39,5 @@ TODO: Description
 | [maxBreakTorqueCoeff](#maxbreaktorquecoeff) | TODO: Description |
 | [useDifferential](#usedifferential) | TODO: Description |
 | [AssignedBoneNames](#assignedbonenames) | TODO: Description |
+
 

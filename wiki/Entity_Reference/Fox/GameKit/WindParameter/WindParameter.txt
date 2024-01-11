@@ -1,12 +1,12 @@
 <!--
 title: WindParameter
-permalink: /Entity_Reference/Fox/GameKit/WindParameter
+permalink: /Entity_Reference/?/Fox/GameKit/WindParameter/
 tags: [Fox, GameKit, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [GameKit](/Entity_Reference/Fox/GameKit)\
+> Module: [GameKit](/Entity_Reference/?/Fox/GameKit)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.GameKit.EnvironmentParameter → WindParameter
 
@@ -28,4 +28,5 @@ TODO: Description
 | [rotTurbulentRate](#rotturbulentrate) | TODO: Description |
 | [rotTurbulentCycle](#rotturbulentcycle) | TODO: Description |
 | [influenceOfGlobal](#influenceofglobal) | TODO: Description |
+
 

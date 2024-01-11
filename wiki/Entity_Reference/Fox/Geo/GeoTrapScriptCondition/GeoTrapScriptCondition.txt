@@ -1,12 +1,12 @@
 <!--
 title: GeoTrapScriptCondition
-permalink: /Entity_Reference/Fox/Geo/GeoTrapScriptCondition
+permalink: /Entity_Reference/?/Fox/Geo/GeoTrapScriptCondition/
 tags: [Fox, Geo, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Geo](/Entity_Reference/Fox/Geo)\
+> Module: [Geo](/Entity_Reference/?/Fox/Geo)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Geo.GeoTrapCondition → GeoTrapScriptCondition
 
@@ -21,4 +21,5 @@ TODO: Description
 | | |
 |-|-|
 | [scriptPath](#scriptpath) | TODO: Description |
+
 

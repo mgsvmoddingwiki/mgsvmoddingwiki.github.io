@@ -1,8 +1,9 @@
 <!--
 title: Fx
-permalink: /Entity_Reference/Fox/Fx
+permalink: /Entity_Reference/?/Fox/Fx/
 tags: []
 -->
 
 {% include index-autolist type="section" %}
+
 

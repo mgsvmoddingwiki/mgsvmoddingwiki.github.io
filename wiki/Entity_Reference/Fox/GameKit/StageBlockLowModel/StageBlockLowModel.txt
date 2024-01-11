@@ -1,12 +1,12 @@
 <!--
 title: StageBlockLowModel
-permalink: /Entity_Reference/Fox/GameKit/StageBlockLowModel
+permalink: /Entity_Reference/?/Fox/GameKit/StageBlockLowModel/
 tags: [Fox, GameKit, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [GameKit](/Entity_Reference/Fox/GameKit)\
+> Module: [GameKit](/Entity_Reference/?/Fox/GameKit)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.Data → StageBlockLowModel
 
@@ -27,4 +27,5 @@ TODO: Description
 | [maxIndexZ](#maxindexz) | TODO: Description |
 | [groupCountX](#groupcountx) | TODO: Description |
 | [groupCountZ](#groupcountz) | TODO: Description |
+
 

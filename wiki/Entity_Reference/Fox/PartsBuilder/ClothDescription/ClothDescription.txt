@@ -1,12 +1,12 @@
 <!--
 title: ClothDescription
-permalink: /Entity_Reference/Fox/PartsBuilder/ClothDescription
+permalink: /Entity_Reference/?/Fox/PartsBuilder/ClothDescription/
 tags: [Fox, PartsBuilder, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [PartsBuilder](/Entity_Reference/Fox/PartsBuilder)\
+> Module: [PartsBuilder](/Entity_Reference/?/Fox/PartsBuilder)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.PartsBuilder.PartDescription → ClothDescription
 
@@ -23,4 +23,5 @@ TODO: Description
 | [clothFile](#clothfile) | TODO: Description |
 | [clothSettingFile](#clothsettingfile) | TODO: Description |
 | [clothHitFile](#clothhitfile) | TODO: Description |
+
 

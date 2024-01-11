@@ -1,12 +1,12 @@
 <!--
 title: Camera
-permalink: /Entity_Reference/Fox/GameKit/Camera
+permalink: /Entity_Reference/?/Fox/GameKit/Camera/
 tags: [Fox, GameKit, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [GameKit](/Entity_Reference/Fox/GameKit)\
+> Module: [GameKit](/Entity_Reference/?/Fox/GameKit)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.Entity → Camera
 
@@ -45,4 +45,5 @@ TODO: Description
 | [bloomBrightnessExtraction](#bloombrightnessextraction) | TODO: Description |
 | [cancelCameraBlur](#cancelcamerablur) | TODO: Description |
 | [keyValue](#keyvalue) | TODO: Description |
+
 

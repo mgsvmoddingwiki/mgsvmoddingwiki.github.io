@@ -1,12 +1,12 @@
 <!--
 title: TppSharedGimmickData
-permalink: /Entity_Reference/Tpp/GameKit/TppSharedGimmickData
+permalink: /Entity_Reference/?/Tpp/GameKit/TppSharedGimmickData/
 tags: [Tpp, GameKit, Reference]
 -->
 
 ## Definition
 > Project: Tpp\
-> Module: [GameKit](/Entity_Reference/Tpp/GameKit)\
+> Module: [GameKit](/Entity_Reference/?/Tpp/GameKit)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.Data → TppSharedGimmickData
 
@@ -29,4 +29,5 @@ TODO: Description
 | [locaterFile](#locaterfile) | TODO: Description |
 | [flags1](#flags1) | TODO: Description |
 | [flags2](#flags2) | TODO: Description |
+
 

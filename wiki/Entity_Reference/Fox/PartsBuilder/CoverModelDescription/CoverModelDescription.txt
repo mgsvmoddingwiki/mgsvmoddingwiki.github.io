@@ -1,12 +1,12 @@
 <!--
 title: CoverModelDescription
-permalink: /Entity_Reference/Fox/PartsBuilder/CoverModelDescription
+permalink: /Entity_Reference/?/Fox/PartsBuilder/CoverModelDescription/
 tags: [Fox, PartsBuilder, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [PartsBuilder](/Entity_Reference/Fox/PartsBuilder)\
+> Module: [PartsBuilder](/Entity_Reference/?/Fox/PartsBuilder)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.PartsBuilder.ModelDescription → CoverModelDescription
 
@@ -15,6 +15,7 @@ CoverModelDescription : Fox.PartsBuilder.ModelDescription
 ```
 
 TODO: Description
+
 
 
 

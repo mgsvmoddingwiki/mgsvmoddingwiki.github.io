@@ -1,12 +1,12 @@
 <!--
 title: ObjectBrushPluginClone
-permalink: /Entity_Reference/Fox/GameKit/ObjectBrushPluginClone
+permalink: /Entity_Reference/?/Fox/GameKit/ObjectBrushPluginClone/
 tags: [Fox, GameKit, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [GameKit](/Entity_Reference/Fox/GameKit)\
+> Module: [GameKit](/Entity_Reference/?/Fox/GameKit)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.GameKit.ObjectBrushPlugin → ObjectBrushPluginClone
 
@@ -25,4 +25,5 @@ TODO: Description
 | [maxSize](#maxsize) | TODO: Description |
 | [enableLod](#enablelod) | TODO: Description |
 | [modelRejectionLevel](#modelrejectionlevel) | TODO: Description |
+
 

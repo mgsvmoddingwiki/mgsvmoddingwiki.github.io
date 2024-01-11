@@ -1,12 +1,12 @@
 <!--
 title: DemoxEffectMemoryPoolData
-permalink: /Entity_Reference/Fox/Demox/DemoxEffectMemoryPoolData
+permalink: /Entity_Reference/?/Fox/Demox/DemoxEffectMemoryPoolData/
 tags: [Fox, Demox, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Demox](/Entity_Reference/Fox/Demox)\
+> Module: [Demox](/Entity_Reference/?/Fox/Demox)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.Data → DemoxEffectMemoryPoolData
 
@@ -21,4 +21,5 @@ TODO: Description
 | | |
 |-|-|
 | [poolSize](#poolsize) | TODO: Description |
+
 

@@ -1,12 +1,12 @@
 <!--
 title: GeoSearchOBB
-permalink: /Entity_Reference/Fox/Geo/GeoSearchOBB
+permalink: /Entity_Reference/?/Fox/Geo/GeoSearchOBB/
 tags: [Fox, Geo, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Geo](/Entity_Reference/Fox/Geo)\
+> Module: [Geo](/Entity_Reference/?/Fox/Geo)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Geo.GeoSearchObject → GeoSearchOBB
 
@@ -23,4 +23,5 @@ TODO: Description
 | [center](#center) | TODO: Description |
 | [size](#size) | TODO: Description |
 | [rotation](#rotation) | TODO: Description |
+
 

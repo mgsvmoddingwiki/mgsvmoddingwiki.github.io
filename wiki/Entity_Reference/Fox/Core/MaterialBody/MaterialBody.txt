@@ -1,12 +1,12 @@
 <!--
 title: MaterialBody
-permalink: /Entity_Reference/Fox/Core/MaterialBody
+permalink: /Entity_Reference/?/Fox/Core/MaterialBody/
 tags: [Fox, Core, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Core](/Entity_Reference/Fox/Core)\
+> Module: [Core](/Entity_Reference/?/Fox/Core)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.DataBody → MaterialBody
 
@@ -15,6 +15,7 @@ MaterialBody : Fox.Core.DataBody
 ```
 
 TODO: Description
+
 
 
 

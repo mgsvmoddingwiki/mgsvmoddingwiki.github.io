@@ -1,12 +1,12 @@
 <!--
 title: TerrainRender
-permalink: /Entity_Reference/Fox/GameKit/TerrainRender
+permalink: /Entity_Reference/?/Fox/GameKit/TerrainRender/
 tags: [Fox, GameKit, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [GameKit](/Entity_Reference/Fox/GameKit)\
+> Module: [GameKit](/Entity_Reference/?/Fox/GameKit)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.TransformData → TerrainRender
 
@@ -46,4 +46,5 @@ TODO: Description
 | [worldTextureDividedNumX](#worldtexturedividednumx) | TODO: Description |
 | [worldTextureDividedNumZ](#worldtexturedividednumz) | TODO: Description |
 | [worldTextureTilePathes](#worldtexturetilepathes) | TODO: Description |
+
 

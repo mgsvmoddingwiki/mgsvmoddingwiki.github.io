@@ -1,12 +1,12 @@
 <!--
 title: FmdlFile
-permalink: /Entity_Reference/Fox/Gr/FmdlFile
+permalink: /Entity_Reference/?/Fox/Gr/FmdlFile/
 tags: [Fox, Gr, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Gr](/Entity_Reference/Fox/Gr)\
+> Module: [Gr](/Entity_Reference/?/Fox/Gr)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.RawFile → FmdlFile
 
@@ -15,6 +15,7 @@ FmdlFile : Fox.Core.RawFile
 ```
 
 TODO: Description
+
 
 
 

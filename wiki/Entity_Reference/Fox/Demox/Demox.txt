@@ -1,8 +1,9 @@
 <!--
 title: Demox
-permalink: /Entity_Reference/Fox/Demox/
+permalink: /Entity_Reference/?/Fox/Demox/
 tags: []
 -->
 
 {% include index-autolist type="section" %}
+
 

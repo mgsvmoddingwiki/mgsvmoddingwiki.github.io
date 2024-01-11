@@ -1,12 +1,12 @@
 <!--
 title: GrPluginSky
-permalink: /Entity_Reference/Fox/Gr/GrPluginSky
+permalink: /Entity_Reference/?/Fox/Gr/GrPluginSky/
 tags: [Fox, Gr, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Gr](/Entity_Reference/Fox/Gr)\
+> Module: [Gr](/Entity_Reference/?/Fox/Gr)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Gr.GrRenderPlugin → GrPluginSky
 
@@ -15,6 +15,7 @@ GrPluginSky : Fox.Gr.GrRenderPlugin
 ```
 
 TODO: Description
+
 
 
 

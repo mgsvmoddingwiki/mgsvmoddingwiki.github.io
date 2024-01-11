@@ -1,12 +1,12 @@
 <!--
 title: PhxAssociation
-permalink: /Entity_Reference/Fox/Phx/PhxAssociation
+permalink: /Entity_Reference/?/Fox/Phx/PhxAssociation/
 tags: [Fox, Phx, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Phx](/Entity_Reference/Fox/Phx)\
+> Module: [Phx](/Entity_Reference/?/Fox/Phx)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.Data → PhxAssociation
 
@@ -24,4 +24,5 @@ TODO: Description
 | [connections](#connections) | TODO: Description |
 | [param](#param) | TODO: Description |
 | [connectType](#connecttype) | TODO: Description |
+
 

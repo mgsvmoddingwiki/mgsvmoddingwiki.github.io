@@ -1,12 +1,12 @@
 <!--
 title: TppCollectionLocatorArray
-permalink: /Entity_Reference/Tpp/Collectible/TppCollectionLocatorArray
+permalink: /Entity_Reference/?/Tpp/Collectible/TppCollectionLocatorArray/
 tags: [Tpp, Collectible, Reference]
 -->
 
 ## Definition
 > Project: Tpp\
-> Module: [Collectible](/Entity_Reference/Tpp/Collectible)\
+> Module: [Collectible](/Entity_Reference/?/Tpp/Collectible)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.Data → TppCollectionLocatorArray
 
@@ -29,4 +29,5 @@ TODO: Description
 | [groupIds](#groupids) | TODO: Description |
 | [segmentInfoIndices](#segmentinfoindices) | TODO: Description |
 | [segmentInfoCounts](#segmentinfocounts) | TODO: Description |
+
 

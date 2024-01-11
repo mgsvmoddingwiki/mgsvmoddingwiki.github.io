@@ -1,12 +1,12 @@
 <!--
 title: WindGlobal
-permalink: /Entity_Reference/Fox/GameKit/WindGlobal
+permalink: /Entity_Reference/?/Fox/GameKit/WindGlobal/
 tags: [Fox, GameKit, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [GameKit](/Entity_Reference/Fox/GameKit)\
+> Module: [GameKit](/Entity_Reference/?/Fox/GameKit)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.GameKit.EnvironmentGlobal → WindGlobal
 
@@ -15,6 +15,7 @@ WindGlobal : Fox.GameKit.EnvironmentGlobal
 ```
 
 TODO: Description
+
 
 
 

@@ -1,12 +1,12 @@
 <!--
 title: TppPrimRiverModel
-permalink: /Entity_Reference/Tpp/Effect/TppPrimRiverModel
+permalink: /Entity_Reference/?/Tpp/Effect/TppPrimRiverModel/
 tags: [Tpp, Effect, Reference]
 -->
 
 ## Definition
 > Project: Tpp\
-> Module: [Effect](/Entity_Reference/Tpp/Effect)\
+> Module: [Effect](/Entity_Reference/?/Tpp/Effect)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.Data → TppPrimRiverModel
 
@@ -25,4 +25,5 @@ TODO: Description
 | [depthBlendLength](#depthblendlength) | TODO: Description |
 | [raise](#raise) | TODO: Description |
 | [staticModels](#staticmodels) | TODO: Description |
+
 

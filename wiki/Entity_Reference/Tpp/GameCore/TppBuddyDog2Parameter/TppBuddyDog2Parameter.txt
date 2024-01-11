@@ -1,12 +1,12 @@
 <!--
 title: TppBuddyDog2Parameter
-permalink: /Entity_Reference/Tpp/GameCore/TppBuddyDog2Parameter
+permalink: /Entity_Reference/?/Tpp/GameCore/TppBuddyDog2Parameter/
 tags: [Tpp, GameCore, Reference]
 -->
 
 ## Definition
 > Project: Tpp\
-> Module: [GameCore](/Entity_Reference/Tpp/GameCore)\
+> Module: [GameCore](/Entity_Reference/?/Tpp/GameCore)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.DataElement → TppBuddyDog2Parameter
 
@@ -25,4 +25,5 @@ TODO: Description
 | [mtarFile](#mtarfile) | TODO: Description |
 | [extensionMtarFile](#extensionmtarfile) | TODO: Description |
 | [vfxFiles](#vfxfiles) | TODO: Description |
+
 

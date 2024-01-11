@@ -1,12 +1,12 @@
 <!--
 title: FxLocatorGroup
-permalink: /Entity_Reference/Fox/Fx/FxLocatorGroup
+permalink: /Entity_Reference/?/Fox/Fx/FxLocatorGroup/
 tags: [Fox, Fx, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Fx](/Entity_Reference/Fox/Fx)\
+> Module: [Fx](/Entity_Reference/?/Fox/Fx)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.TransformData → FxLocatorGroup
 
@@ -21,4 +21,5 @@ TODO: Description
 | | |
 |-|-|
 | [groupInstanceName](#groupinstancename) | TODO: Description |
+
 

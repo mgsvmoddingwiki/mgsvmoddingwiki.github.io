@@ -1,12 +1,12 @@
 <!--
 title: TppDroplets
-permalink: /Entity_Reference/Tpp/Effect/TppDroplets
+permalink: /Entity_Reference/?/Tpp/Effect/TppDroplets/
 tags: [Tpp, Effect, Reference]
 -->
 
 ## Definition
 > Project: Tpp\
-> Module: [Effect](/Entity_Reference/Tpp/Effect)\
+> Module: [Effect](/Entity_Reference/?/Tpp/Effect)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.Data → TppDroplets
 
@@ -32,4 +32,5 @@ TODO: Description
 | [residualWaterMinimumRenderingRadius](#residualwaterminimumrenderingradius) | TODO: Description |
 | [residualWaterMaximumRenderingRadius](#residualwatermaximumrenderingradius) | TODO: Description |
 | [residualWaterMaximumIntensity](#residualwatermaximumintensity) | TODO: Description |
+
 

@@ -1,12 +1,12 @@
 <!--
 title: UiLayoutDataBody
-permalink: /Entity_Reference/Fox/UiScene/UiLayoutDataBody
+permalink: /Entity_Reference/?/Fox/UiScene/UiLayoutDataBody/
 tags: [Fox, UiScene, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [UiScene](/Entity_Reference/Fox/UiScene)\
+> Module: [UiScene](/Entity_Reference/?/Fox/UiScene)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.TransformDataBody → UiLayoutDataBody
 
@@ -15,6 +15,7 @@ UiLayoutDataBody : Fox.Core.TransformDataBody
 ```
 
 TODO: Description
+
 
 
 

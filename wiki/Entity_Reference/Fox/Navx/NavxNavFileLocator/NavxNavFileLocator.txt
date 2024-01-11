@@ -1,12 +1,12 @@
 <!--
 title: NavxNavFileLocator
-permalink: /Entity_Reference/Fox/Navx/NavxNavFileLocator
+permalink: /Entity_Reference/?/Fox/Navx/NavxNavFileLocator/
 tags: [Fox, Navx, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Navx](/Entity_Reference/Fox/Navx)\
+> Module: [Navx](/Entity_Reference/?/Fox/Navx)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.TransformData → NavxNavFileLocator
 
@@ -24,4 +24,5 @@ TODO: Description
 | [worldName](#worldname) | TODO: Description |
 | [enable](#enable) | TODO: Description |
 | [navFile](#navfile) | TODO: Description |
+
 

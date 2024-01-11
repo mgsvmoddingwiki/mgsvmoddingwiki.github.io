@@ -1,12 +1,12 @@
 <!--
 title: GeoxPathWall
-permalink: /Entity_Reference/Fox/Geox/GeoxPathWall
+permalink: /Entity_Reference/?/Fox/Geox/GeoxPathWall/
 tags: [Fox, Geox, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Geox](/Entity_Reference/Fox/Geox)\
+> Module: [Geox](/Entity_Reference/?/Fox/Geox)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.TransformData → GeoxPathWall
 
@@ -24,4 +24,5 @@ TODO: Description
 | [isVisibleGeom](#isvisiblegeom) | TODO: Description |
 | [faceFlag](#faceflag) | TODO: Description |
 | [collisionAttributeTags](#collisionattributetags) | TODO: Description |
+
 

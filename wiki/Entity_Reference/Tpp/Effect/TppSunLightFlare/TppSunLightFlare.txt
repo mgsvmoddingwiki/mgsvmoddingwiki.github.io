@@ -1,12 +1,12 @@
 <!--
 title: TppSunLightFlare
-permalink: /Entity_Reference/Tpp/Effect/TppSunLightFlare
+permalink: /Entity_Reference/?/Tpp/Effect/TppSunLightFlare/
 tags: [Tpp, Effect, Reference]
 -->
 
 ## Definition
 > Project: Tpp\
-> Module: [Effect](/Entity_Reference/Tpp/Effect)\
+> Module: [Effect](/Entity_Reference/?/Tpp/Effect)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.TransformData → TppSunLightFlare
 
@@ -21,4 +21,5 @@ TODO: Description
 | | |
 |-|-|
 | [flareName](#flarename) | TODO: Description |
+
 

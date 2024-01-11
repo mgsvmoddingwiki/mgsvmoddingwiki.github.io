@@ -1,12 +1,12 @@
 <!--
 title: SoundSourceTrapParameter
-permalink: /Entity_Reference/Fox/Sdx/SoundSourceTrapParameter
+permalink: /Entity_Reference/?/Fox/Sdx/SoundSourceTrapParameter/
 tags: [Fox, Sdx, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Sdx](/Entity_Reference/Fox/Sdx)\
+> Module: [Sdx](/Entity_Reference/?/Fox/Sdx)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Geo.GeoTrapModuleCallbackDataElement → SoundSourceTrapParameter
 
@@ -23,4 +23,5 @@ TODO: Description
 | [source](#source) | TODO: Description |
 | [enterEvent](#enterevent) | TODO: Description |
 | [outEvent](#outevent) | TODO: Description |
+
 

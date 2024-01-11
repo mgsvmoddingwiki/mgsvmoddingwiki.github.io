@@ -1,8 +1,9 @@
 <!--
 title: MotionGraph
-permalink: /Entity_Reference/Fox/MotionGraph
+permalink: /Entity_Reference/?/Fox/MotionGraph/
 tags: []
 -->
 
 {% include index-autolist type="section" %}
+
 

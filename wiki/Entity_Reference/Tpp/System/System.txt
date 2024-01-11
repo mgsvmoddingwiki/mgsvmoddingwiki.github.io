@@ -1,8 +1,9 @@
 <!--
 title: System
-permalink: /Entity_Reference/Tpp/System
+permalink: /Entity_Reference/?/Tpp/System/
 tags: []
 -->
 
 {% include index-autolist type="section" %}
+
 
