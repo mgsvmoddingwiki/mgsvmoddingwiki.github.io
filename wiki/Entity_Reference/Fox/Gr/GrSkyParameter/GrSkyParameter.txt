@@ -1,12 +1,12 @@
 <!--
 title: GrSkyParameter
-permalink: /Entity_Reference/Fox/Gr/GrSkyParameter
+permalink: /Entity_Reference/?/Fox/Gr/GrSkyParameter/
 tags: [Fox, Gr, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Gr](/Entity_Reference/Fox/Gr)\
+> Module: [Gr](/Entity_Reference/?/Fox/Gr)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Gr.GrViewportParameter → GrSkyParameter
 
@@ -21,4 +21,5 @@ TODO: Description
 | | |
 |-|-|
 | [isAtmosphereOnly](#isatmosphereonly) | TODO: Description |
+
 

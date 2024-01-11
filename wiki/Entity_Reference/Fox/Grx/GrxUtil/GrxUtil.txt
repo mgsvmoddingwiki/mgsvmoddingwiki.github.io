@@ -1,12 +1,12 @@
 <!--
 title: GrxUtil
-permalink: /Entity_Reference/Fox/Grx/GrxUtil
+permalink: /Entity_Reference/?/Fox/Grx/GrxUtil/
 tags: [Fox, Grx, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Grx](/Entity_Reference/Fox/Grx)\
+> Module: [Grx](/Entity_Reference/?/Fox/Grx)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.Entity → GrxUtil
 
@@ -15,6 +15,7 @@ GrxUtil : Fox.Core.Entity
 ```
 
 TODO: Description
+
 
 
 

@@ -1,12 +1,12 @@
 <!--
 title: TppCollectibleIndicationParam
-permalink: /Entity_Reference/Tpp/Effect/TppCollectibleIndicationParam
+permalink: /Entity_Reference/?/Tpp/Effect/TppCollectibleIndicationParam/
 tags: [Tpp, Effect, Reference]
 -->
 
 ## Definition
 > Project: Tpp\
-> Module: [Effect](/Entity_Reference/Tpp/Effect)\
+> Module: [Effect](/Entity_Reference/?/Tpp/Effect)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.Data → TppCollectibleIndicationParam
 
@@ -25,4 +25,5 @@ TODO: Description
 | [speed](#speed) | TODO: Description |
 | [width](#width) | TODO: Description |
 | [limitRange](#limitrange) | TODO: Description |
+
 

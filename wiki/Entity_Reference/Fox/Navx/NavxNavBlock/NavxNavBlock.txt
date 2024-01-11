@@ -1,12 +1,12 @@
 <!--
 title: NavxNavBlock
-permalink: /Entity_Reference/Fox/Navx/NavxNavBlock
+permalink: /Entity_Reference/?/Fox/Navx/NavxNavBlock/
 tags: [Fox, Navx, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Navx](/Entity_Reference/Fox/Navx)\
+> Module: [Navx](/Entity_Reference/?/Fox/Navx)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.Data → NavxNavBlock
 
@@ -38,4 +38,5 @@ TODO: Description
 | [holeSimplificationSmoothingThreshold](#holesimplificationsmoothingthreshold) | TODO: Description |
 | [isHoleSimplificationDoesNotClosePassage](#isholesimplificationdoesnotclosepassage) | TODO: Description |
 | [holeSimplificationReduceCount](#holesimplificationreducecount) | TODO: Description |
+
 

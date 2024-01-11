@@ -1,12 +1,12 @@
 <!--
 title: GrPluginSphericalHarmonics
-permalink: /Entity_Reference/Fox/Gr/GrPluginSphericalHarmonics
+permalink: /Entity_Reference/?/Fox/Gr/GrPluginSphericalHarmonics/
 tags: [Fox, Gr, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Gr](/Entity_Reference/Fox/Gr)\
+> Module: [Gr](/Entity_Reference/?/Fox/Gr)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Gr.GrRenderPlugin → GrPluginSphericalHarmonics
 
@@ -15,6 +15,7 @@ GrPluginSphericalHarmonics : Fox.Gr.GrRenderPlugin
 ```
 
 TODO: Description
+
 
 
 

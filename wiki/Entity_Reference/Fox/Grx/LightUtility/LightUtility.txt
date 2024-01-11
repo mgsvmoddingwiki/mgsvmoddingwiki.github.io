@@ -1,12 +1,12 @@
 <!--
 title: LightUtility
-permalink: /Entity_Reference/Fox/Grx/LightUtility
+permalink: /Entity_Reference/?/Fox/Grx/LightUtility/
 tags: [Fox, Grx, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Grx](/Entity_Reference/Fox/Grx)\
+> Module: [Grx](/Entity_Reference/?/Fox/Grx)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.Entity → LightUtility
 
@@ -15,6 +15,7 @@ LightUtility : Fox.Core.Entity
 ```
 
 TODO: Description
+
 
 
 

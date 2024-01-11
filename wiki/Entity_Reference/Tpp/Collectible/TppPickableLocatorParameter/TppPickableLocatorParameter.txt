@@ -1,12 +1,12 @@
 <!--
 title: TppPickableLocatorParameter
-permalink: /Entity_Reference/Tpp/Collectible/TppPickableLocatorParameter
+permalink: /Entity_Reference/?/Tpp/Collectible/TppPickableLocatorParameter/
 tags: [Tpp, Collectible, Reference]
 -->
 
 ## Definition
 > Project: Tpp\
-> Module: [Collectible](/Entity_Reference/Tpp/Collectible)\
+> Module: [Collectible](/Entity_Reference/?/Tpp/Collectible)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.DataElement → TppPickableLocatorParameter
 
@@ -25,4 +25,5 @@ TODO: Description
 | [countSubRaw](#countsubraw) | TODO: Description |
 | [flag](#flag) | TODO: Description |
 | [reserved](#reserved) | TODO: Description |
+
 

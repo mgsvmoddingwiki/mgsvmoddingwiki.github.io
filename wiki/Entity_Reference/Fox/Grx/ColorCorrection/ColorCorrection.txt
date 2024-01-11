@@ -1,12 +1,12 @@
 <!--
 title: ColorCorrection
-permalink: /Entity_Reference/Fox/Grx/ColorCorrection
+permalink: /Entity_Reference/?/Fox/Grx/ColorCorrection/
 tags: [Fox, Grx, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Grx](/Entity_Reference/Fox/Grx)\
+> Module: [Grx](/Entity_Reference/?/Fox/Grx)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.DataBody → ColorCorrection
 
@@ -15,6 +15,7 @@ ColorCorrection : Fox.Core.DataBody
 ```
 
 TODO: Description
+
 
 
 

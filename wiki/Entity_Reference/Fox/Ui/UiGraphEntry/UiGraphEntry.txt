@@ -1,12 +1,12 @@
 <!--
 title: UiGraphEntry
-permalink: /Entity_Reference/Fox/Ui/UiGraphEntry
+permalink: /Entity_Reference/?/Fox/Ui/UiGraphEntry/
 tags: [Fox, Ui, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Ui](/Entity_Reference/Fox/Ui)\
+> Module: [Ui](/Entity_Reference/?/Fox/Ui)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.Data → UiGraphEntry
 
@@ -22,4 +22,5 @@ TODO: Description
 |-|-|
 | [files](#files) | TODO: Description |
 | [rawFiles](#rawfiles) | TODO: Description |
+
 

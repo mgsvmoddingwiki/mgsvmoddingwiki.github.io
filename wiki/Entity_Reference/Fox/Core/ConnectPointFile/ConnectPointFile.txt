@@ -1,12 +1,12 @@
 <!--
 title: ConnectPointFile
-permalink: /Entity_Reference/Fox/Core/ConnectPointFile
+permalink: /Entity_Reference/?/Fox/Core/ConnectPointFile/
 tags: [Fox, Core, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Core](/Entity_Reference/Fox/Core)\
+> Module: [Core](/Entity_Reference/?/Fox/Core)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.RawFile → ConnectPointFile
 
@@ -15,6 +15,7 @@ ConnectPointFile : Fox.Core.RawFile
 ```
 
 TODO: Description
+
 
 
 

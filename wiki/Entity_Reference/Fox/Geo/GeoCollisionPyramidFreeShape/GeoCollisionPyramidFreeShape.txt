@@ -1,12 +1,12 @@
 <!--
 title: GeoCollisionPyramidFreeShape
-permalink: /Entity_Reference/Fox/Geo/GeoCollisionPyramidFreeShape
+permalink: /Entity_Reference/?/Fox/Geo/GeoCollisionPyramidFreeShape/
 tags: [Fox, Geo, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Geo](/Entity_Reference/Fox/Geo)\
+> Module: [Geo](/Entity_Reference/?/Fox/Geo)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Geo.CollisionObject → GeoCollisionPyramidFreeShape
 
@@ -15,6 +15,7 @@ GeoCollisionPyramidFreeShape : Fox.Geo.CollisionObject
 ```
 
 TODO: Description
+
 
 
 

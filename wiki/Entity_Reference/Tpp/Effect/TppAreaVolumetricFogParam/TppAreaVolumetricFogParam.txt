@@ -1,12 +1,12 @@
 <!--
 title: TppAreaVolumetricFogParam
-permalink: /Entity_Reference/Tpp/Effect/TppAreaVolumetricFogParam
+permalink: /Entity_Reference/?/Tpp/Effect/TppAreaVolumetricFogParam/
 tags: [Tpp, Effect, Reference]
 -->
 
 ## Definition
 > Project: Tpp\
-> Module: [Effect](/Entity_Reference/Tpp/Effect)\
+> Module: [Effect](/Entity_Reference/?/Tpp/Effect)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.DataElement → TppAreaVolumetricFogParam
 
@@ -29,4 +29,5 @@ TODO: Description
 | [nearDistance](#neardistance) | TODO: Description |
 | [falloff](#falloff) | TODO: Description |
 | [inverseFalloff](#inversefalloff) | TODO: Description |
+
 

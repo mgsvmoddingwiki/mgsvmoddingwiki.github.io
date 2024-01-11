@@ -1,12 +1,12 @@
 <!--
 title: UiInstanceData
-permalink: /Entity_Reference/Fox/Ui/UiInstanceData
+permalink: /Entity_Reference/?/Fox/Ui/UiInstanceData/
 tags: [Fox, Ui, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Ui](/Entity_Reference/Fox/Ui)\
+> Module: [Ui](/Entity_Reference/?/Fox/Ui)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.Data → UiInstanceData
 
@@ -22,4 +22,5 @@ TODO: Description
 |-|-|
 | [createWindowParams](#createwindowparams) | TODO: Description |
 | [windowFactoryName](#windowfactoryname) | TODO: Description |
+
 

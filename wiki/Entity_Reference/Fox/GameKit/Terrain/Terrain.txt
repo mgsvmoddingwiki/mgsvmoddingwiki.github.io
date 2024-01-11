@@ -1,12 +1,12 @@
 <!--
 title: Terrain
-permalink: /Entity_Reference/Fox/GameKit/Terrain
+permalink: /Entity_Reference/?/Fox/GameKit/Terrain/
 tags: [Fox, GameKit, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [GameKit](/Entity_Reference/Fox/GameKit)\
+> Module: [GameKit](/Entity_Reference/?/Fox/GameKit)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.TransformData → Terrain
 
@@ -38,4 +38,5 @@ TODO: Description
 | [materialLodFarOffset](#materiallodfaroffset) | TODO: Description |
 | [materialLodHeightOffset](#materiallodheightoffset) | TODO: Description |
 | [isUseWorldTexture](#isuseworldtexture) | TODO: Description |
+
 

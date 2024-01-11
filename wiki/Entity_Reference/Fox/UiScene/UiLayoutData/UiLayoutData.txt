@@ -1,12 +1,12 @@
 <!--
 title: UiLayoutData
-permalink: /Entity_Reference/Fox/UiScene/UiLayoutData
+permalink: /Entity_Reference/?/Fox/UiScene/UiLayoutData/
 tags: [Fox, UiScene, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [UiScene](/Entity_Reference/Fox/UiScene)\
+> Module: [UiScene](/Entity_Reference/?/Fox/UiScene)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.TransformData → UiLayoutData
 
@@ -28,4 +28,5 @@ TODO: Description
 | [connection_connectModelNodeName](#connection-connectmodelnodename) | TODO: Description |
 | [useParentCamera](#useparentcamera) | TODO: Description |
 | [fontTableIndex](#fonttableindex) | TODO: Description |
+
 

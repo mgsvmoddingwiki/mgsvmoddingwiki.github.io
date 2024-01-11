@@ -1,12 +1,12 @@
 <!--
 title: SimControlElement
-permalink: /Entity_Reference/Fox/Sim/SimControlElement
+permalink: /Entity_Reference/?/Fox/Sim/SimControlElement/
 tags: [Fox, Sim, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Sim](/Entity_Reference/Fox/Sim)\
+> Module: [Sim](/Entity_Reference/?/Fox/Sim)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.DataElement → SimControlElement
 
@@ -21,4 +21,5 @@ TODO: Description
 | | |
 |-|-|
 | [bones](#bones) | TODO: Description |
+
 

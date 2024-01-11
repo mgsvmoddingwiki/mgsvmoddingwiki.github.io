@@ -1,12 +1,12 @@
 <!--
 title: DemoModelDataNode
-permalink: /Entity_Reference/Fox/Demo/DemoModelDataNode
+permalink: /Entity_Reference/?/Fox/Demo/DemoModelDataNode/
 tags: [Fox, Demo, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Demo](/Entity_Reference/Fox/Demo)\
+> Module: [Demo](/Entity_Reference/?/Fox/Demo)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.Data → DemoModelDataNode
 
@@ -22,4 +22,5 @@ TODO: Description
 |-|-|
 | [partNames](#partnames) | TODO: Description |
 | [target](#target) | TODO: Description |
+
 

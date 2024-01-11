@@ -1,12 +1,12 @@
 <!--
 title: TppSpeechData
-permalink: /Entity_Reference/Tpp/GameCore/TppSpeechData
+permalink: /Entity_Reference/?/Tpp/GameCore/TppSpeechData/
 tags: [Tpp, GameCore, Reference]
 -->
 
 ## Definition
 > Project: Tpp\
-> Module: [GameCore](/Entity_Reference/Tpp/GameCore)\
+> Module: [GameCore](/Entity_Reference/?/Tpp/GameCore)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.Data → TppSpeechData
 
@@ -22,4 +22,5 @@ TODO: Description
 |-|-|
 | [enabled](#enabled) | TODO: Description |
 | [files](#files) | TODO: Description |
+
 

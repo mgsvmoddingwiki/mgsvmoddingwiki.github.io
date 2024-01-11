@@ -1,12 +1,12 @@
 <!--
 title: PhPrimitiveShapeParam
-permalink: /Entity_Reference/Fox/Ph/PhPrimitiveShapeParam
+permalink: /Entity_Reference/?/Fox/Ph/PhPrimitiveShapeParam/
 tags: [Fox, Ph, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Ph](/Entity_Reference/Fox/Ph)\
+> Module: [Ph](/Entity_Reference/?/Fox/Ph)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Ph.PhShapeParam → PhPrimitiveShapeParam
 
@@ -15,6 +15,7 @@ PhPrimitiveShapeParam : Fox.Ph.PhShapeParam
 ```
 
 TODO: Description
+
 
 
 

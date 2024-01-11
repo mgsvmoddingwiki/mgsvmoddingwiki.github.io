@@ -1,12 +1,12 @@
 <!--
 title: GrGraphicsSettingManager
-permalink: /Entity_Reference/Fox/Gr/GrGraphicsSettingManager
+permalink: /Entity_Reference/?/Fox/Gr/GrGraphicsSettingManager/
 tags: [Fox, Gr, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Gr](/Entity_Reference/Fox/Gr)\
+> Module: [Gr](/Entity_Reference/?/Fox/Gr)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.Entity → GrGraphicsSettingManager
 
@@ -15,6 +15,7 @@ GrGraphicsSettingManager : Fox.Core.Entity
 ```
 
 TODO: Description
+
 
 
 

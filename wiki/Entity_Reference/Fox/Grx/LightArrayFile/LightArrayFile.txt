@@ -1,12 +1,12 @@
 <!--
 title: LightArrayFile
-permalink: /Entity_Reference/Fox/Grx/LightArrayFile
+permalink: /Entity_Reference/?/Fox/Grx/LightArrayFile/
 tags: [Fox, Grx, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Grx](/Entity_Reference/Fox/Grx)\
+> Module: [Grx](/Entity_Reference/?/Fox/Grx)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.RawFile → LightArrayFile
 
@@ -15,6 +15,7 @@ LightArrayFile : Fox.Core.RawFile
 ```
 
 TODO: Description
+
 
 
 

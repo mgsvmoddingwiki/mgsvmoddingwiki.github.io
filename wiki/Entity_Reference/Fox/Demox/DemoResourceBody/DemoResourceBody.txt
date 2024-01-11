@@ -1,12 +1,12 @@
 <!--
 title: DemoResourceBody
-permalink: /Entity_Reference/Fox/Demox/DemoResourceBody
+permalink: /Entity_Reference/?/Fox/Demox/DemoResourceBody/
 tags: [Fox, Demox, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Demox](/Entity_Reference/Fox/Demox)\
+> Module: [Demox](/Entity_Reference/?/Fox/Demox)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.DataBody → DemoResourceBody
 
@@ -15,6 +15,7 @@ DemoResourceBody : Fox.Core.DataBody
 ```
 
 TODO: Description
+
 
 
 

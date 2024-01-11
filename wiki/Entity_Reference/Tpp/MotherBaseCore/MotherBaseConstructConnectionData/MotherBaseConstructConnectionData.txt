@@ -1,12 +1,12 @@
 <!--
 title: MotherBaseConstructConnectionData
-permalink: /Entity_Reference/Tpp/MotherBaseCore/MotherBaseConstructConnectionData
+permalink: /Entity_Reference/?/Tpp/MotherBaseCore/MotherBaseConstructConnectionData/
 tags: [Tpp, MotherBaseCore, Reference]
 -->
 
 ## Definition
 > Project: Tpp\
-> Module: [MotherBaseCore](/Entity_Reference/Tpp/MotherBaseCore)\
+> Module: [MotherBaseCore](/Entity_Reference/?/Tpp/MotherBaseCore)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.Data → MotherBaseConstructConnectionData
 
@@ -21,4 +21,5 @@ TODO: Description
 | | |
 |-|-|
 | [constructConnectionList](#constructconnectionlist) | TODO: Description |
+
 

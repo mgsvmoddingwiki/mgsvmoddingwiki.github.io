@@ -1,12 +1,12 @@
 <!--
 title: MotherBaseConstructDataBody
-permalink: /Entity_Reference/Tpp/MotherBaseCore/MotherBaseConstructDataBody
+permalink: /Entity_Reference/?/Tpp/MotherBaseCore/MotherBaseConstructDataBody/
 tags: [Tpp, MotherBaseCore, Reference]
 -->
 
 ## Definition
 > Project: Tpp\
-> Module: [MotherBaseCore](/Entity_Reference/Tpp/MotherBaseCore)\
+> Module: [MotherBaseCore](/Entity_Reference/?/Tpp/MotherBaseCore)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.TransformDataBody → MotherBaseConstructDataBody
 
@@ -15,6 +15,7 @@ MotherBaseConstructDataBody : Fox.Core.TransformDataBody
 ```
 
 TODO: Description
+
 
 
 

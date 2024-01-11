@@ -1,8 +1,9 @@
 <!--
 title: Demo
-permalink: /Entity_Reference/Fox/Demo/
+permalink: /Entity_Reference/?/Fox/Demo/
 tags: []
 -->
 
 {% include index-autolist type="section" %}
+
 

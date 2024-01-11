@@ -1,8 +1,9 @@
 <!--
 title: Collectible
-permalink: /Entity_Reference/Tpp/Collectible
+permalink: /Entity_Reference/?/Tpp/Collectible/
 tags: []
 -->
 
 {% include index-autolist type="section" %}
+
 

@@ -1,12 +1,12 @@
 <!--
 title: ColorCorrectionData
-permalink: /Entity_Reference/Fox/Grx/ColorCorrectionData
+permalink: /Entity_Reference/?/Fox/Grx/ColorCorrectionData/
 tags: [Fox, Grx, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Grx](/Entity_Reference/Fox/Grx)\
+> Module: [Grx](/Entity_Reference/?/Fox/Grx)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.Data → ColorCorrectionData
 
@@ -26,4 +26,5 @@ TODO: Description
 | [showBaseLUT](#showbaselut) | TODO: Description |
 | [showFilterLUT](#showfilterlut) | TODO: Description |
 | [colorScale](#colorscale) | TODO: Description |
+
 

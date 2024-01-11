@@ -1,12 +1,12 @@
 <!--
 title: EnvironmentParameter
-permalink: /Entity_Reference/Fox/GameKit/EnvironmentParameter
+permalink: /Entity_Reference/?/Fox/GameKit/EnvironmentParameter/
 tags: [Fox, GameKit, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [GameKit](/Entity_Reference/Fox/GameKit)\
+> Module: [GameKit](/Entity_Reference/?/Fox/GameKit)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.DataElement → EnvironmentParameter
 
@@ -21,4 +21,5 @@ TODO: Description
 | | |
 |-|-|
 | [decayRate](#decayrate) | TODO: Description |
+
 

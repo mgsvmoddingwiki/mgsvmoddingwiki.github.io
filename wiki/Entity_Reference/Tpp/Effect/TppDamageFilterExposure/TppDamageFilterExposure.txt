@@ -1,12 +1,12 @@
 <!--
 title: TppDamageFilterExposure
-permalink: /Entity_Reference/Tpp/Effect/TppDamageFilterExposure
+permalink: /Entity_Reference/?/Tpp/Effect/TppDamageFilterExposure/
 tags: [Tpp, Effect, Reference]
 -->
 
 ## Definition
 > Project: Tpp\
-> Module: [Effect](/Entity_Reference/Tpp/Effect)\
+> Module: [Effect](/Entity_Reference/?/Tpp/Effect)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.Data → TppDamageFilterExposure
 
@@ -26,4 +26,5 @@ TODO: Description
 | [beatExposureCompensation](#beatexposurecompensation) | TODO: Description |
 | [minBeatInterval](#minbeatinterval) | TODO: Description |
 | [maxBeatInterval](#maxbeatinterval) | TODO: Description |
+
 

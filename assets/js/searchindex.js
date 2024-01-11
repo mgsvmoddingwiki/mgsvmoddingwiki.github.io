@@ -13,7 +13,9 @@ var regularIndex = [
     {
         {% assign title = page.title | default: page.name %}
         {% if title != nil and title != 'Page Not Found' and title != 'index.html' %}
-            {%- assign allpages_count = allpages_count | plus: 1 -%}
+            {% if title != 'redirect.html' %}
+                {%- assign allpages_count = allpages_count | plus: 1 -%}
+            {% endif %}
             title: `{{ title }}`,
             tags: [{% for tag in page.tags %}{% assign tag_lower = tag | downcase %}{% if tag_lower == 'guides' %}{%- assign guides_count = guides_count | plus: 1 -%}{% endif %}`{{ tag }}`{% unless forloop.last %},{% endunless %}{% endfor %}],
             {% comment Force trailing forwardslash for lookup consistency %}{% endcomment %}

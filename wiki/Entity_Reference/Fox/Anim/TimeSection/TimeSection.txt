@@ -1,12 +1,12 @@
 <!--
 title: TimeSection
-permalink: /Entity_Reference/Fox/Anim/TimeSection
+permalink: /Entity_Reference/?/Fox/Anim/TimeSection/
 tags: [Fox, Anim, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Anim](/Entity_Reference/Fox/Anim)\
+> Module: [Anim](/Entity_Reference/?/Fox/Anim)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.DataElement → TimeSection
 
@@ -22,4 +22,5 @@ TODO: Description
 |-|-|
 | [startFrame](#startframe) | TODO: Description |
 | [endFrame](#endframe) | TODO: Description |
+
 

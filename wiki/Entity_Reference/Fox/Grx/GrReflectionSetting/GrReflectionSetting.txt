@@ -1,12 +1,12 @@
 <!--
 title: GrReflectionSetting
-permalink: /Entity_Reference/Fox/Grx/GrReflectionSetting
+permalink: /Entity_Reference/?/Fox/Grx/GrReflectionSetting/
 tags: [Fox, Grx, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Grx](/Entity_Reference/Fox/Grx)\
+> Module: [Grx](/Entity_Reference/?/Fox/Grx)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.Data → GrReflectionSetting
 
@@ -21,4 +21,5 @@ TODO: Description
 | | |
 |-|-|
 | [reflectionTexturePath](#reflectiontexturepath) | TODO: Description |
+
 

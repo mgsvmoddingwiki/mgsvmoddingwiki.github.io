@@ -1,12 +1,12 @@
 <!--
 title: PluginSettingsBody
-permalink: /Entity_Reference/Fox/Grx/PluginSettingsBody
+permalink: /Entity_Reference/?/Fox/Grx/PluginSettingsBody/
 tags: [Fox, Grx, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Grx](/Entity_Reference/Fox/Grx)\
+> Module: [Grx](/Entity_Reference/?/Fox/Grx)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.DataBody → PluginSettingsBody
 
@@ -15,6 +15,7 @@ PluginSettingsBody : Fox.Core.DataBody
 ```
 
 TODO: Description
+
 
 
 

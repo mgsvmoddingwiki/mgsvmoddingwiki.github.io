@@ -1,12 +1,12 @@
 <!--
 title: Group
-permalink: /Entity_Reference/Fox/Core/Group
+permalink: /Entity_Reference/?/Fox/Core/Group/
 tags: [Fox, Core, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Core](/Entity_Reference/Fox/Core)\
+> Module: [Core](/Entity_Reference/?/Fox/Core)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.Data → Group
 
@@ -23,4 +23,5 @@ TODO: Description
 | [parentGroup](#parentgroup) | TODO: Description |
 | [members](#members) | TODO: Description |
 | [deleteFromPackage](#deletefrompackage) | TODO: Description |
+
 

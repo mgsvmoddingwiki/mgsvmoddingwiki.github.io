@@ -1,12 +1,12 @@
 <!--
 title: GeoTrap
-permalink: /Entity_Reference/Fox/Geo/GeoTrap
+permalink: /Entity_Reference/?/Fox/Geo/GeoTrap/
 tags: [Fox, Geo, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Geo](/Entity_Reference/Fox/Geo)\
+> Module: [Geo](/Entity_Reference/?/Fox/Geo)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.TransformData → GeoTrap
 
@@ -22,4 +22,5 @@ TODO: Description
 |-|-|
 | [conditionArray](#conditionarray) | TODO: Description |
 | [enable](#enable) | TODO: Description |
+
 

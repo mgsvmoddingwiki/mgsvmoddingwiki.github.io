@@ -1,12 +1,12 @@
 <!--
 title: EffectDescription
-permalink: /Entity_Reference/Fox/PartsBuilder/EffectDescription
+permalink: /Entity_Reference/?/Fox/PartsBuilder/EffectDescription/
 tags: [Fox, PartsBuilder, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [PartsBuilder](/Entity_Reference/Fox/PartsBuilder)\
+> Module: [PartsBuilder](/Entity_Reference/?/Fox/PartsBuilder)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.PartsBuilder.PartDescription → EffectDescription
 
@@ -35,4 +35,5 @@ TODO: Description
 | [effectVariationName](#effectvariationname) | TODO: Description |
 | [effectFileFromVfxFileLoader](#effectfilefromvfxfileloader) | TODO: Description |
 | [effectFileFromFilePtr](#effectfilefromfileptr) | TODO: Description |
+
 

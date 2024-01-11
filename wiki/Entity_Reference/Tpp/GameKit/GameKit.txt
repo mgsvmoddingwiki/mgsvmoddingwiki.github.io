@@ -1,8 +1,9 @@
 <!--
 title: GameKit
-permalink: /Entity_Reference/Tpp/GameKit
+permalink: /Entity_Reference/?/Tpp/GameKit/
 tags: []
 -->
 
 {% include index-autolist type="section" %}
+
 

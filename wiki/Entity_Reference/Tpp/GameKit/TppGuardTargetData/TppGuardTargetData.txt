@@ -1,12 +1,12 @@
 <!--
 title: TppGuardTargetData
-permalink: /Entity_Reference/Tpp/GameKit/TppGuardTargetData
+permalink: /Entity_Reference/?/Tpp/GameKit/TppGuardTargetData/
 tags: [Tpp, GameKit, Reference]
 -->
 
 ## Definition
 > Project: Tpp\
-> Module: [GameKit](/Entity_Reference/Tpp/GameKit)\
+> Module: [GameKit](/Entity_Reference/?/Tpp/GameKit)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.TransformData → TppGuardTargetData
 
@@ -23,4 +23,5 @@ TODO: Description
 | [radius](#radius) | TODO: Description |
 | [memberCount](#membercount) | TODO: Description |
 | [aimPoints](#aimpoints) | TODO: Description |
+
 

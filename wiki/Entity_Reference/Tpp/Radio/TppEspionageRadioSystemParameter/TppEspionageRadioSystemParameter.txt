@@ -1,12 +1,12 @@
 <!--
 title: TppEspionageRadioSystemParameter
-permalink: /Entity_Reference/Tpp/Radio/TppEspionageRadioSystemParameter
+permalink: /Entity_Reference/?/Tpp/Radio/TppEspionageRadioSystemParameter/
 tags: [Tpp, Radio, Reference]
 -->
 
 ## Definition
 > Project: Tpp\
-> Module: [Radio](/Entity_Reference/Tpp/Radio)\
+> Module: [Radio](/Entity_Reference/?/Tpp/Radio)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.DataElement → TppEspionageRadioSystemParameter
 
@@ -15,6 +15,7 @@ TppEspionageRadioSystemParameter : Fox.Core.DataElement
 ```
 
 TODO: Description
+
 
 
 

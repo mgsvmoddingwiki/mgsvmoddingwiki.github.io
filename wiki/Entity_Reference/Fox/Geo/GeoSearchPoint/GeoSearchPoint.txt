@@ -1,12 +1,12 @@
 <!--
 title: GeoSearchPoint
-permalink: /Entity_Reference/Fox/Geo/GeoSearchPoint
+permalink: /Entity_Reference/?/Fox/Geo/GeoSearchPoint/
 tags: [Fox, Geo, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Geo](/Entity_Reference/Fox/Geo)\
+> Module: [Geo](/Entity_Reference/?/Fox/Geo)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Geo.GeoSearchObject → GeoSearchPoint
 
@@ -21,4 +21,5 @@ TODO: Description
 | | |
 |-|-|
 | [position](#position) | TODO: Description |
+
 

@@ -1,8 +1,9 @@
 <!--
 title: Tactical
-permalink: /Entity_Reference/Fox/Tactical
+permalink: /Entity_Reference/?/Fox/Tactical/
 tags: []
 -->
 
 {% include index-autolist type="section" %}
+
 

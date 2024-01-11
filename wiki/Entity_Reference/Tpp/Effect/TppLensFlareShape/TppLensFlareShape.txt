@@ -1,12 +1,12 @@
 <!--
 title: TppLensFlareShape
-permalink: /Entity_Reference/Tpp/Effect/TppLensFlareShape
+permalink: /Entity_Reference/?/Tpp/Effect/TppLensFlareShape/
 tags: [Tpp, Effect, Reference]
 -->
 
 ## Definition
 > Project: Tpp\
-> Module: [Effect](/Entity_Reference/Tpp/Effect)\
+> Module: [Effect](/Entity_Reference/?/Tpp/Effect)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.TransformData → TppLensFlareShape
 
@@ -49,4 +49,5 @@ TODO: Description
 | [seName](#sename) | TODO: Description |
 | [seCallThreshold](#secallthreshold) | TODO: Description |
 | [scaleOnZoom](#scaleonzoom) | TODO: Description |
+
 

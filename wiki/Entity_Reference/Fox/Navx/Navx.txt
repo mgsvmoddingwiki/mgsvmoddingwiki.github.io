@@ -1,8 +1,9 @@
 <!--
 title: Navx
-permalink: /Entity_Reference/Fox/Navx
+permalink: /Entity_Reference/?/Fox/Navx/
 tags: []
 -->
 
 {% include index-autolist type="section" %}
+
 

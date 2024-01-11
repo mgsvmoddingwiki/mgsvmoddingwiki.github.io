@@ -1,12 +1,12 @@
 <!--
 title: GrPluginRawDecal
-permalink: /Entity_Reference/Fox/Gr/GrPluginRawDecal
+permalink: /Entity_Reference/?/Fox/Gr/GrPluginRawDecal/
 tags: [Fox, Gr, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Gr](/Entity_Reference/Fox/Gr)\
+> Module: [Gr](/Entity_Reference/?/Fox/Gr)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Gr.GrRenderPlugin → GrPluginRawDecal
 
@@ -15,6 +15,7 @@ GrPluginRawDecal : Fox.Gr.GrRenderPlugin
 ```
 
 TODO: Description
+
 
 
 

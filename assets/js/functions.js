@@ -27,14 +27,19 @@ export function removeChildText(parent) {
 }
 
 export function getPathLevels(url) {
-    let parts = [...String(url).split('/')]; // in `String()` to avoid undefined errors
+    let parts = [...String(url).replace('/?/','/').split('/')]; // in `String()` to avoid undefined errors, replace virtual page URL basis for consistency
     let levels = parts.length - 2;
     return {parts, levels}
 }
 
 export function getPageUrls(isVirtualPage) {
-    // Always force trailing forwardslash since both search indexes force them, too, for consistency of lookups
-    var curUrl = trimTrailFs(window.location.pathname) + '/';
+    var location;
+    if (isVirtualPage) {
+        location = window.location.pathname + window.location.search;
+    } else {
+        location = window.location.pathname;
+    }
+    var curUrl = trimTrailFs(location) + '/'; // always force trailing forwardslash since both search indexes force them, too, for consistency of lookups
     var curUrlRoot = '/' + trimTrailFs(curUrl.split('/')[1]) + '/'; // obtain first-level path of current URL
     return {curUrl, curUrlRoot} // return object will have keys named after these vars
 }
@@ -63,7 +68,8 @@ export function waitForElements(parent, selector) {
     });
 }
 
-export function checkVp(funcName) {
+export async function checkVp(funcName) {
+    var { isVirtualPage } = await import('./virtualpages.js');
     if (isVirtualPage) {
         waitForElements(body, '.vp-loaded').then(nodes => {
             nodes.forEach(el => {

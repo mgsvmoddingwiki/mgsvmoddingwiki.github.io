@@ -1,12 +1,12 @@
 <!--
 title: ColorInfo
-permalink: /Entity_Reference/Fox/Geo/ColorInfo
+permalink: /Entity_Reference/?/Fox/Geo/ColorInfo/
 tags: [Fox, Geo, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Geo](/Entity_Reference/Fox/Geo)\
+> Module: [Geo](/Entity_Reference/?/Fox/Geo)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Geo.MaterialInfoBase → ColorInfo
 
@@ -15,6 +15,7 @@ ColorInfo : Fox.Geo.MaterialInfoBase
 ```
 
 TODO: Description
+
 
 
 

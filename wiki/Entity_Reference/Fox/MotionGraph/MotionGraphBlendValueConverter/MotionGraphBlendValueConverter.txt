@@ -1,12 +1,12 @@
 <!--
 title: MotionGraphBlendValueConverter
-permalink: /Entity_Reference/Fox/MotionGraph/MotionGraphBlendValueConverter
+permalink: /Entity_Reference/?/Fox/MotionGraph/MotionGraphBlendValueConverter/
 tags: [Fox, MotionGraph, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [MotionGraph](/Entity_Reference/Fox/MotionGraph)\
+> Module: [MotionGraph](/Entity_Reference/?/Fox/MotionGraph)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.Entity → MotionGraphBlendValueConverter
 
@@ -15,6 +15,7 @@ MotionGraphBlendValueConverter : Fox.Core.Entity
 ```
 
 TODO: Description
+
 
 
 

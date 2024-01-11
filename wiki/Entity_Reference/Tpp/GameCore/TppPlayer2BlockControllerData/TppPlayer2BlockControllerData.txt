@@ -1,12 +1,12 @@
 <!--
 title: TppPlayer2BlockControllerData
-permalink: /Entity_Reference/Tpp/GameCore/TppPlayer2BlockControllerData
+permalink: /Entity_Reference/?/Tpp/GameCore/TppPlayer2BlockControllerData/
 tags: [Tpp, GameCore, Reference]
 -->
 
 ## Definition
 > Project: Tpp\
-> Module: [GameCore](/Entity_Reference/Tpp/GameCore)\
+> Module: [GameCore](/Entity_Reference/?/Tpp/GameCore)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.Data → TppPlayer2BlockControllerData
 
@@ -31,4 +31,5 @@ TODO: Description
 | [instanceSettings_commonMotionTypeName](#instancesettings-commonmotiontypename) | TODO: Description |
 | [instanceSettings_partsTypeNames](#instancesettings-partstypenames) | TODO: Description |
 | [instanceSettings_partsTypeInitial](#instancesettings-partstypeinitial) | TODO: Description |
+
 

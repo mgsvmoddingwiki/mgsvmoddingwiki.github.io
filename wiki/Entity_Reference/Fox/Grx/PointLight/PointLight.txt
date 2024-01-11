@@ -1,12 +1,12 @@
 <!--
 title: PointLight
-permalink: /Entity_Reference/Fox/Grx/PointLight
+permalink: /Entity_Reference/?/Fox/Grx/PointLight/
 tags: [Fox, Grx, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Grx](/Entity_Reference/Fox/Grx)\
+> Module: [Grx](/Entity_Reference/?/Fox/Grx)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.TransformData → PointLight
 
@@ -46,4 +46,5 @@ TODO: Description
 | [showRange](#showrange) | TODO: Description |
 | [isDebugLightVolumeBound](#isdebuglightvolumebound) | TODO: Description |
 | [hasSpecular](#hasspecular) | TODO: Description |
+
 

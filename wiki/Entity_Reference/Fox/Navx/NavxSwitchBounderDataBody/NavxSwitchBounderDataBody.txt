@@ -1,12 +1,12 @@
 <!--
 title: NavxSwitchBounderDataBody
-permalink: /Entity_Reference/Fox/Navx/NavxSwitchBounderDataBody
+permalink: /Entity_Reference/?/Fox/Navx/NavxSwitchBounderDataBody/
 tags: [Fox, Navx, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Navx](/Entity_Reference/Fox/Navx)\
+> Module: [Navx](/Entity_Reference/?/Fox/Navx)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Navx.NavxBounderDataBody → NavxSwitchBounderDataBody
 
@@ -15,6 +15,7 @@ NavxSwitchBounderDataBody : Fox.Navx.NavxBounderDataBody
 ```
 
 TODO: Description
+
 
 
 

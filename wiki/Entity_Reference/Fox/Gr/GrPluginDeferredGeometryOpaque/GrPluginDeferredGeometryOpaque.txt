@@ -1,12 +1,12 @@
 <!--
 title: GrPluginDeferredGeometryOpaque
-permalink: /Entity_Reference/Fox/Gr/GrPluginDeferredGeometryOpaque
+permalink: /Entity_Reference/?/Fox/Gr/GrPluginDeferredGeometryOpaque/
 tags: [Fox, Gr, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Gr](/Entity_Reference/Fox/Gr)\
+> Module: [Gr](/Entity_Reference/?/Fox/Gr)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Gr.GrRenderPlugin → GrPluginDeferredGeometryOpaque
 
@@ -15,6 +15,7 @@ GrPluginDeferredGeometryOpaque : Fox.Gr.GrRenderPlugin
 ```
 
 TODO: Description
+
 
 
 

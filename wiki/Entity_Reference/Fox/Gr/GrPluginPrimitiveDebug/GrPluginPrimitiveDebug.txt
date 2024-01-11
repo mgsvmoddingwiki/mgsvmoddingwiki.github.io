@@ -1,12 +1,12 @@
 <!--
 title: GrPluginPrimitiveDebug
-permalink: /Entity_Reference/Fox/Gr/GrPluginPrimitiveDebug
+permalink: /Entity_Reference/?/Fox/Gr/GrPluginPrimitiveDebug/
 tags: [Fox, Gr, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Gr](/Entity_Reference/Fox/Gr)\
+> Module: [Gr](/Entity_Reference/?/Fox/Gr)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Gr.GrPluginPrimitiveUnfiltered → GrPluginPrimitiveDebug
 
@@ -15,6 +15,7 @@ GrPluginPrimitiveDebug : Fox.Gr.GrPluginPrimitiveUnfiltered
 ```
 
 TODO: Description
+
 
 
 

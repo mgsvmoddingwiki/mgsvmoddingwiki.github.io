@@ -1,12 +1,12 @@
 <!--
 title: EntityPtrEntity
-permalink: /Entity_Reference/Fox/Core/EntityPtrEntity
+permalink: /Entity_Reference/?/Fox/Core/EntityPtrEntity/
 tags: [Fox, Core, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Core](/Entity_Reference/Fox/Core)\
+> Module: [Core](/Entity_Reference/?/Fox/Core)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.PropertyValueEntity → EntityPtrEntity
 
@@ -21,4 +21,5 @@ TODO: Description
 | | |
 |-|-|
 | [value](#value) | TODO: Description |
+
 

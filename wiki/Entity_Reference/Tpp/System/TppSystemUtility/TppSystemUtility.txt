@@ -1,12 +1,12 @@
 <!--
 title: TppSystemUtility
-permalink: /Entity_Reference/Tpp/System/TppSystemUtility
+permalink: /Entity_Reference/?/Tpp/System/TppSystemUtility/
 tags: [Tpp, System, Reference]
 -->
 
 ## Definition
 > Project: Tpp\
-> Module: [System](/Entity_Reference/Tpp/System)\
+> Module: [System](/Entity_Reference/?/Tpp/System)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.Entity → TppSystemUtility
 
@@ -15,6 +15,7 @@ TppSystemUtility : Fox.Core.Entity
 ```
 
 TODO: Description
+
 
 
 

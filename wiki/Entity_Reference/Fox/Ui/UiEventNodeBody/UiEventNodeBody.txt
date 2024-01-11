@@ -1,12 +1,12 @@
 <!--
 title: UiEventNodeBody
-permalink: /Entity_Reference/Fox/Ui/UiEventNodeBody
+permalink: /Entity_Reference/?/Fox/Ui/UiEventNodeBody/
 tags: [Fox, Ui, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Ui](/Entity_Reference/Fox/Ui)\
+> Module: [Ui](/Entity_Reference/?/Fox/Ui)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Ui.UiNodeDataBody → UiEventNodeBody
 
@@ -15,6 +15,7 @@ UiEventNodeBody : Fox.Ui.UiNodeDataBody
 ```
 
 TODO: Description
+
 
 
 

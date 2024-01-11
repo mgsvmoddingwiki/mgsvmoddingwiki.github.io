@@ -1,12 +1,12 @@
 <!--
 title: GrPluginMotionBlur
-permalink: /Entity_Reference/Fox/Gr/GrPluginMotionBlur
+permalink: /Entity_Reference/?/Fox/Gr/GrPluginMotionBlur/
 tags: [Fox, Gr, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Gr](/Entity_Reference/Fox/Gr)\
+> Module: [Gr](/Entity_Reference/?/Fox/Gr)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Gr.GrRenderPlugin → GrPluginMotionBlur
 
@@ -15,6 +15,7 @@ GrPluginMotionBlur : Fox.Gr.GrRenderPlugin
 ```
 
 TODO: Description
+
 
 
 

@@ -1,12 +1,12 @@
 <!--
 title: UiEdgeData
-permalink: /Entity_Reference/Fox/Ui/UiEdgeData
+permalink: /Entity_Reference/?/Fox/Ui/UiEdgeData/
 tags: [Fox, Ui, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Ui](/Entity_Reference/Fox/Ui)\
+> Module: [Ui](/Entity_Reference/?/Fox/Ui)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.Data → UiEdgeData
 
@@ -33,4 +33,5 @@ TODO: Description
 | [virtualTargetNode](#virtualtargetnode) | TODO: Description |
 | [isInvalid](#isinvalid) | TODO: Description |
 | [connectRealEdge](#connectrealedge) | TODO: Description |
+
 

@@ -1,12 +1,12 @@
 <!--
 title: BaseLocatorBody
-permalink: /Entity_Reference/Fox/Demo/BaseLocatorBody
+permalink: /Entity_Reference/?/Fox/Demo/BaseLocatorBody/
 tags: [Fox, Demo, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Demo](/Entity_Reference/Fox/Demo)\
+> Module: [Demo](/Entity_Reference/?/Fox/Demo)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.TransformDataBody → BaseLocatorBody
 
@@ -15,6 +15,7 @@ BaseLocatorBody : Fox.Core.TransformDataBody
 ```
 
 TODO: Description
+
 
 
 

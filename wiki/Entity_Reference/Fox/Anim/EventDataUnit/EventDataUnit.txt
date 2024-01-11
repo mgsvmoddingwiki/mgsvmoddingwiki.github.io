@@ -1,12 +1,12 @@
 <!--
 title: EventDataUnit
-permalink: /Entity_Reference/Fox/Anim/EventDataUnit
+permalink: /Entity_Reference/?/Fox/Anim/EventDataUnit/
 tags: [Fox, Anim, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Anim](/Entity_Reference/Fox/Anim)\
+> Module: [Anim](/Entity_Reference/?/Fox/Anim)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.Data → EventDataUnit
 
@@ -25,4 +25,5 @@ TODO: Description
 | [paramString](#paramstring) | TODO: Description |
 | [paramInt](#paramint) | TODO: Description |
 | [paramFloat](#paramfloat) | TODO: Description |
+
 

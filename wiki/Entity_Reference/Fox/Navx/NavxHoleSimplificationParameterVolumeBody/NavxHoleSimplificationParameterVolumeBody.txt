@@ -1,12 +1,12 @@
 <!--
 title: NavxHoleSimplificationParameterVolumeBody
-permalink: /Entity_Reference/Fox/Navx/NavxHoleSimplificationParameterVolumeBody
+permalink: /Entity_Reference/?/Fox/Navx/NavxHoleSimplificationParameterVolumeBody/
 tags: [Fox, Navx, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Navx](/Entity_Reference/Fox/Navx)\
+> Module: [Navx](/Entity_Reference/?/Fox/Navx)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.TransformDataBody → NavxHoleSimplificationParameterVolumeBody
 
@@ -15,6 +15,7 @@ NavxHoleSimplificationParameterVolumeBody : Fox.Core.TransformDataBody
 ```
 
 TODO: Description
+
 
 
 

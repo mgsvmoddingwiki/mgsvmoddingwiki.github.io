@@ -1,12 +1,12 @@
 <!--
 title: SoundAreaParameter
-permalink: /Entity_Reference/Fox/Sdx/SoundAreaParameter
+permalink: /Entity_Reference/?/Fox/Sdx/SoundAreaParameter/
 tags: [Fox, Sdx, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Sdx](/Entity_Reference/Fox/Sdx)\
+> Module: [Sdx](/Entity_Reference/?/Fox/Sdx)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.DataElement → SoundAreaParameter
 
@@ -27,4 +27,5 @@ TODO: Description
 | [objectRtpcValue](#objectrtpcvalue) | TODO: Description |
 | [auxSends](#auxsends) | TODO: Description |
 | [dryVolume](#dryvolume) | TODO: Description |
+
 

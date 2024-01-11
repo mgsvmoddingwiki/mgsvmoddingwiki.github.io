@@ -1,12 +1,12 @@
 <!--
 title: TppFloorRainSplashData
-permalink: /Entity_Reference/Tpp/Effect/TppFloorRainSplashData
+permalink: /Entity_Reference/?/Tpp/Effect/TppFloorRainSplashData/
 tags: [Tpp, Effect, Reference]
 -->
 
 ## Definition
 > Project: Tpp\
-> Module: [Effect](/Entity_Reference/Tpp/Effect)\
+> Module: [Effect](/Entity_Reference/?/Tpp/Effect)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.Data → TppFloorRainSplashData
 
@@ -22,4 +22,5 @@ TODO: Description
 |-|-|
 | [vfxFile](#vfxfile) | TODO: Description |
 | [materialSoundList](#materialsoundlist) | TODO: Description |
+
 

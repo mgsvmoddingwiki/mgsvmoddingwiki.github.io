@@ -1,12 +1,12 @@
 <!--
 title: TppPermanentGimmickGatlingGunParameter
-permalink: /Entity_Reference/Tpp/GameKit/TppPermanentGimmickGatlingGunParameter
+permalink: /Entity_Reference/?/Tpp/GameKit/TppPermanentGimmickGatlingGunParameter/
 tags: [Tpp, GameKit, Reference]
 -->
 
 ## Definition
 > Project: Tpp\
-> Module: [GameKit](/Entity_Reference/Tpp/GameKit)\
+> Module: [GameKit](/Entity_Reference/?/Tpp/GameKit)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.DataElement → TppPermanentGimmickGatlingGunParameter
 
@@ -27,4 +27,5 @@ TODO: Description
 | [minYAxisAngle](#minyaxisangle) | TODO: Description |
 | [animPath](#animpath) | TODO: Description |
 | [mtarFile](#mtarfile) | TODO: Description |
+
 

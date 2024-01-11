@@ -1,12 +1,12 @@
 <!--
 title: SpotLight
-permalink: /Entity_Reference/Fox/Grx/SpotLight
+permalink: /Entity_Reference/?/Fox/Grx/SpotLight/
 tags: [Fox, Grx, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Grx](/Entity_Reference/Fox/Grx)\
+> Module: [Grx](/Entity_Reference/?/Fox/Grx)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.TransformData → SpotLight
 
@@ -56,4 +56,5 @@ TODO: Description
 | [isDebugLightVolumeBound](#isdebuglightvolumebound) | TODO: Description |
 | [useAutoDimmer](#useautodimmer) | TODO: Description |
 | [hasSpecular](#hasspecular) | TODO: Description |
+
 

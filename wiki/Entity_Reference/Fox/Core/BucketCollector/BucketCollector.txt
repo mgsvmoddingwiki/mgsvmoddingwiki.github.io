@@ -1,12 +1,12 @@
 <!--
 title: BucketCollector
-permalink: /Entity_Reference/Fox/Core/BucketCollector
+permalink: /Entity_Reference/?/Fox/Core/BucketCollector/
 tags: [Fox, Core, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Core](/Entity_Reference/Fox/Core)\
+> Module: [Core](/Entity_Reference/?/Fox/Core)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.Entity → BucketCollector
 
@@ -22,4 +22,5 @@ TODO: Description
 |-|-|
 | [buckets](#buckets) | TODO: Description |
 | [mainBucket](#mainbucket) | TODO: Description |
+
 

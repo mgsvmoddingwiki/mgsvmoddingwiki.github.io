@@ -1,12 +1,12 @@
 <!--
 title: GrFilmicTonemapParameter
-permalink: /Entity_Reference/Fox/Gr/GrFilmicTonemapParameter
+permalink: /Entity_Reference/?/Fox/Gr/GrFilmicTonemapParameter/
 tags: [Fox, Gr, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Gr](/Entity_Reference/Fox/Gr)\
+> Module: [Gr](/Entity_Reference/?/Fox/Gr)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Gr.GrViewportParameter → GrFilmicTonemapParameter
 
@@ -22,4 +22,5 @@ TODO: Description
 |-|-|
 | [enable](#enable) | TODO: Description |
 | [parameters](#parameters) | TODO: Description |
+
 

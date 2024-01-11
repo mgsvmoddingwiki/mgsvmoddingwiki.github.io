@@ -1,12 +1,12 @@
 <!--
 title: TppAtmosphereBody
-permalink: /Entity_Reference/Tpp/Effect/TppAtmosphereBody
+permalink: /Entity_Reference/?/Tpp/Effect/TppAtmosphereBody/
 tags: [Tpp, Effect, Reference]
 -->
 
 ## Definition
 > Project: Tpp\
-> Module: [Effect](/Entity_Reference/Tpp/Effect)\
+> Module: [Effect](/Entity_Reference/?/Tpp/Effect)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.DataBody → TppAtmosphereBody
 
@@ -29,4 +29,5 @@ TODO: Description
 | [mieAnisotropy](#mieanisotropy) | TODO: Description |
 | [mieScatteringCoefficient](#miescatteringcoefficient) | TODO: Description |
 | [cloudiness](#cloudiness) | TODO: Description |
+
 

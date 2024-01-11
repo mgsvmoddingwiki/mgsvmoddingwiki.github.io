@@ -1,12 +1,12 @@
 <!--
 title: OrthogonalAimCamera
-permalink: /Entity_Reference/Fox/GameKit/OrthogonalAimCamera
+permalink: /Entity_Reference/?/Fox/GameKit/OrthogonalAimCamera/
 tags: [Fox, GameKit, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [GameKit](/Entity_Reference/Fox/GameKit)\
+> Module: [GameKit](/Entity_Reference/?/Fox/GameKit)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.GameKit.AimCamera → OrthogonalAimCamera
 
@@ -21,4 +21,5 @@ TODO: Description
 | | |
 |-|-|
 | [scale](#scale) | TODO: Description |
+
 

@@ -1,12 +1,12 @@
 <!--
 title: FxBaseLocator
-permalink: /Entity_Reference/Fox/Demo/FxBaseLocator
+permalink: /Entity_Reference/?/Fox/Demo/FxBaseLocator/
 tags: [Fox, Demo, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Demo](/Entity_Reference/Fox/Demo)\
+> Module: [Demo](/Entity_Reference/?/Fox/Demo)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.TransformData → FxBaseLocator
 
@@ -21,4 +21,5 @@ TODO: Description
 | | |
 |-|-|
 | [drawText](#drawtext) | TODO: Description |
+
 

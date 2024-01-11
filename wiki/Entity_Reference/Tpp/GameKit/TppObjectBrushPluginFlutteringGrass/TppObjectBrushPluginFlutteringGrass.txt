@@ -1,12 +1,12 @@
 <!--
 title: TppObjectBrushPluginFlutteringGrass
-permalink: /Entity_Reference/Tpp/GameKit/TppObjectBrushPluginFlutteringGrass
+permalink: /Entity_Reference/?/Tpp/GameKit/TppObjectBrushPluginFlutteringGrass/
 tags: [Tpp, GameKit, Reference]
 -->
 
 ## Definition
 > Project: Tpp\
-> Module: [GameKit](/Entity_Reference/Tpp/GameKit)\
+> Module: [GameKit](/Entity_Reference/?/Tpp/GameKit)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.GameKit.ObjectBrushPluginClone → TppObjectBrushPluginFlutteringGrass
 
@@ -24,4 +24,5 @@ TODO: Description
 | [windAmplitude](#windamplitude) | TODO: Description |
 | [windOffsetFactor](#windoffsetfactor) | TODO: Description |
 | [windDirYAxisFixZero](#winddiryaxisfixzero) | TODO: Description |
+
 

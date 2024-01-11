@@ -1,12 +1,12 @@
 <!--
 title: TerrainDecal
-permalink: /Entity_Reference/Fox/GameKit/TerrainDecal
+permalink: /Entity_Reference/?/Fox/GameKit/TerrainDecal/
 tags: [Fox, GameKit, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [GameKit](/Entity_Reference/Fox/GameKit)\
+> Module: [GameKit](/Entity_Reference/?/Fox/GameKit)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.TransformData → TerrainDecal
 
@@ -36,4 +36,5 @@ TODO: Description
 | [isDisableAlbedo](#isdisablealbedo) | TODO: Description |
 | [hasSerializedNodes](#hasserializednodes) | TODO: Description |
 | [serializedGraphNodes](#serializedgraphnodes) | TODO: Description |
+
 

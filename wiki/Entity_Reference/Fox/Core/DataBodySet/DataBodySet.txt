@@ -1,12 +1,12 @@
 <!--
 title: DataBodySet
-permalink: /Entity_Reference/Fox/Core/DataBodySet
+permalink: /Entity_Reference/?/Fox/Core/DataBodySet/
 tags: [Fox, Core, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Core](/Entity_Reference/Fox/Core)\
+> Module: [Core](/Entity_Reference/?/Fox/Core)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.DataBody → DataBodySet
 
@@ -21,4 +21,5 @@ TODO: Description
 | | |
 |-|-|
 | [dataBodyList](#databodylist) | TODO: Description |
+
 

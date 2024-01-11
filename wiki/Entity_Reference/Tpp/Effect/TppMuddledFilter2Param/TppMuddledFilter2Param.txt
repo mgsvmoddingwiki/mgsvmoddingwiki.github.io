@@ -1,12 +1,12 @@
 <!--
 title: TppMuddledFilter2Param
-permalink: /Entity_Reference/Tpp/Effect/TppMuddledFilter2Param
+permalink: /Entity_Reference/?/Tpp/Effect/TppMuddledFilter2Param/
 tags: [Tpp, Effect, Reference]
 -->
 
 ## Definition
 > Project: Tpp\
-> Module: [Effect](/Entity_Reference/Tpp/Effect)\
+> Module: [Effect](/Entity_Reference/?/Tpp/Effect)\
 > Submodule: TODO: Submodule
 
 ```cpp
@@ -25,4 +25,5 @@ TODO: Description
 | [lifeMax](#lifemax) | TODO: Description |
 | [deltaAngleMin](#deltaanglemin) | TODO: Description |
 | [deltaAngleMax](#deltaanglemax) | TODO: Description |
+
 

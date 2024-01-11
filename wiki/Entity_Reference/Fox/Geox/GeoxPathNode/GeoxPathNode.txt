@@ -1,12 +1,12 @@
 <!--
 title: GeoxPathNode
-permalink: /Entity_Reference/Fox/Geox/GeoxPathNode
+permalink: /Entity_Reference/?/Fox/Geox/GeoxPathNode/
 tags: [Fox, Geox, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Geox](/Entity_Reference/Fox/Geox)\
+> Module: [Geox](/Entity_Reference/?/Fox/Geox)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Graphx.GraphxSpatialGraphDataNode → GeoxPathNode
 
@@ -21,4 +21,5 @@ TODO: Description
 | | |
 |-|-|
 | [nodeTags](#nodetags) | TODO: Description |
+
 

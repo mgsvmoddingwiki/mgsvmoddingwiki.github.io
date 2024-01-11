@@ -1,12 +1,12 @@
 <!--
 title: HelpBoneFile
-permalink: /Entity_Reference/Fox/Animx/HelpBoneFile
+permalink: /Entity_Reference/?/Fox/Animx/HelpBoneFile/
 tags: [Fox, Animx, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Animx](/Entity_Reference/Fox/Animx)\
+> Module: [Animx](/Entity_Reference/?/Fox/Animx)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.RawFile → HelpBoneFile
 
@@ -15,6 +15,7 @@ HelpBoneFile : Fox.Core.RawFile
 ```
 
 TODO: Description
+
 
 
 

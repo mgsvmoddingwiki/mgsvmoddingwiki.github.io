@@ -1,12 +1,12 @@
 <!--
 title: GeoxTrapAreaPath
-permalink: /Entity_Reference/Fox/Geox/GeoxTrapAreaPath
+permalink: /Entity_Reference/?/Fox/Geox/GeoxTrapAreaPath/
 tags: [Fox, Geox, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Geox](/Entity_Reference/Fox/Geox)\
+> Module: [Geox](/Entity_Reference/?/Fox/Geox)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Graphx.GraphxPathData → GeoxTrapAreaPath
 
@@ -21,4 +21,5 @@ TODO: Description
 | | |
 |-|-|
 | [height](#height) | TODO: Description |
+
 

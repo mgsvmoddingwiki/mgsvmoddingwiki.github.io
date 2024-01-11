@@ -1,12 +1,12 @@
 <!--
 title: GeoxTextureMaterialRegister
-permalink: /Entity_Reference/Fox/Geox/GeoxTextureMaterialRegister
+permalink: /Entity_Reference/?/Fox/Geox/GeoxTextureMaterialRegister/
 tags: [Fox, Geox, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Geox](/Entity_Reference/Fox/Geox)\
+> Module: [Geox](/Entity_Reference/?/Fox/Geox)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.Data → GeoxTextureMaterialRegister
 
@@ -23,4 +23,5 @@ TODO: Description
 | [materialLink](#materiallink) | TODO: Description |
 | [collisionMaterialName](#collisionmaterialname) | TODO: Description |
 | [collisionColorName](#collisioncolorname) | TODO: Description |
+
 

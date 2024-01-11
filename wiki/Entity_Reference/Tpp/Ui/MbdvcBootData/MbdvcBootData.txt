@@ -1,12 +1,12 @@
 <!--
 title: MbdvcBootData
-permalink: /Entity_Reference/Tpp/Ui/MbdvcBootData
+permalink: /Entity_Reference/?/Tpp/Ui/MbdvcBootData/
 tags: [Tpp, Ui, Reference]
 -->
 
 ## Definition
 > Project: Tpp\
-> Module: [Ui](/Entity_Reference/Tpp/Ui)\
+> Module: [Ui](/Entity_Reference/?/Tpp/Ui)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.Data → MbdvcBootData
 
@@ -22,4 +22,5 @@ TODO: Description
 |-|-|
 | [uigFile](#uigfile) | TODO: Description |
 | [rawFile](#rawfile) | TODO: Description |
+
 

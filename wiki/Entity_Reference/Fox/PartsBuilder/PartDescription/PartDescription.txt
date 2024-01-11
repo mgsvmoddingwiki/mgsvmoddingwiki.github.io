@@ -1,12 +1,12 @@
 <!--
 title: PartDescription
-permalink: /Entity_Reference/Fox/PartsBuilder/PartDescription
+permalink: /Entity_Reference/?/Fox/PartsBuilder/PartDescription/
 tags: [Fox, PartsBuilder, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [PartsBuilder](/Entity_Reference/Fox/PartsBuilder)\
+> Module: [PartsBuilder](/Entity_Reference/?/Fox/PartsBuilder)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.Data → PartDescription
 
@@ -23,4 +23,5 @@ TODO: Description
 | [depends](#depends) | TODO: Description |
 | [partName](#partname) | TODO: Description |
 | [buildType](#buildtype) | TODO: Description |
+
 

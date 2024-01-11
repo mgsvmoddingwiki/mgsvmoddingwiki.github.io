@@ -1,12 +1,12 @@
 <!--
 title: BucketArchive
-permalink: /Entity_Reference/Fox/Core/BucketArchive
+permalink: /Entity_Reference/?/Fox/Core/BucketArchive/
 tags: [Fox, Core, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Core](/Entity_Reference/Fox/Core)\
+> Module: [Core](/Entity_Reference/?/Fox/Core)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.Entity → BucketArchive
 
@@ -24,4 +24,5 @@ TODO: Description
 | [dataSetFiles](#datasetfiles) | TODO: Description |
 | [dataBodySets](#databodysets) | TODO: Description |
 | [editableDataBodySet](#editabledatabodyset) | TODO: Description |
+
 

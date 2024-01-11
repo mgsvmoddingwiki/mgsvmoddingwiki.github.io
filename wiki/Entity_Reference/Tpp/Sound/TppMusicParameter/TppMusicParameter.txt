@@ -1,12 +1,12 @@
 <!--
 title: TppMusicParameter
-permalink: /Entity_Reference/Tpp/Sound/TppMusicParameter
+permalink: /Entity_Reference/?/Tpp/Sound/TppMusicParameter/
 tags: [Tpp, Sound, Reference]
 -->
 
 ## Definition
 > Project: Tpp\
-> Module: [Sound](/Entity_Reference/Tpp/Sound)\
+> Module: [Sound](/Entity_Reference/?/Tpp/Sound)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.Data → TppMusicParameter
 
@@ -40,4 +40,5 @@ TODO: Description
 | [safetyCautionNoticeSwitchEvent](#safetycautionnoticeswitchevent) | TODO: Description |
 | [safetyAlertToCautionSwitchEvent](#safetyalerttocautionswitchevent) | TODO: Description |
 | [neutralSwitchEvent](#neutralswitchevent) | TODO: Description |
+
 

@@ -1,12 +1,12 @@
 <!--
 title: PassiveBlockControllerData
-permalink: /Entity_Reference/Fox/Core/PassiveBlockControllerData
+permalink: /Entity_Reference/?/Fox/Core/PassiveBlockControllerData/
 tags: [Fox, Core, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Core](/Entity_Reference/Fox/Core)\
+> Module: [Core](/Entity_Reference/?/Fox/Core)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.Data → PassiveBlockControllerData
 
@@ -26,4 +26,5 @@ TODO: Description
 | [blockGroups](#blockgroups) | TODO: Description |
 | [isAddRelatedBlockGroupEachOther](#isaddrelatedblockgroupeachother) | TODO: Description |
 | [prerequisiteBlockGroupName](#prerequisiteblockgroupname) | TODO: Description |
+
 

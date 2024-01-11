@@ -1,12 +1,12 @@
 <!--
 title: TppHighSpeedFilter
-permalink: /Entity_Reference/Tpp/Effect/TppHighSpeedFilter
+permalink: /Entity_Reference/?/Tpp/Effect/TppHighSpeedFilter/
 tags: [Tpp, Effect, Reference]
 -->
 
 ## Definition
 > Project: Tpp\
-> Module: [Effect](/Entity_Reference/Tpp/Effect)\
+> Module: [Effect](/Entity_Reference/?/Tpp/Effect)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.Entity → TppHighSpeedFilter
 
@@ -15,6 +15,7 @@ TppHighSpeedFilter : Fox.Core.Entity
 ```
 
 TODO: Description
+
 
 
 

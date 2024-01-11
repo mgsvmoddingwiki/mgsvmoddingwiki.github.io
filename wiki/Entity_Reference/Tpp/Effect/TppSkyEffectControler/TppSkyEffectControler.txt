@@ -1,12 +1,12 @@
 <!--
 title: TppSkyEffectControler
-permalink: /Entity_Reference/Tpp/Effect/TppSkyEffectControler
+permalink: /Entity_Reference/?/Tpp/Effect/TppSkyEffectControler/
 tags: [Tpp, Effect, Reference]
 -->
 
 ## Definition
 > Project: Tpp\
-> Module: [Effect](/Entity_Reference/Tpp/Effect)\
+> Module: [Effect](/Entity_Reference/?/Tpp/Effect)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.Data → TppSkyEffectControler
 
@@ -24,4 +24,5 @@ TODO: Description
 | [hour](#hour) | TODO: Description |
 | [minute](#minute) | TODO: Description |
 | [second](#second) | TODO: Description |
+
 

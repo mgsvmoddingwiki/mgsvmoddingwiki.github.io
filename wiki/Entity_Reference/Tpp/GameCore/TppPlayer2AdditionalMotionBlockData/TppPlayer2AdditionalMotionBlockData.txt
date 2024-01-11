@@ -1,12 +1,12 @@
 <!--
 title: TppPlayer2AdditionalMotionBlockData
-permalink: /Entity_Reference/Tpp/GameCore/TppPlayer2AdditionalMotionBlockData
+permalink: /Entity_Reference/?/Tpp/GameCore/TppPlayer2AdditionalMotionBlockData/
 tags: [Tpp, GameCore, Reference]
 -->
 
 ## Definition
 > Project: Tpp\
-> Module: [GameCore](/Entity_Reference/Tpp/GameCore)\
+> Module: [GameCore](/Entity_Reference/?/Tpp/GameCore)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.Data → TppPlayer2AdditionalMotionBlockData
 
@@ -28,4 +28,5 @@ TODO: Description
 | [weaponVramSyncBufferSize](#weaponvramsyncbuffersize) | TODO: Description |
 | [fpkPath](#fpkpath) | TODO: Description |
 | [vramFpkPath](#vramfpkpath) | TODO: Description |
+
 

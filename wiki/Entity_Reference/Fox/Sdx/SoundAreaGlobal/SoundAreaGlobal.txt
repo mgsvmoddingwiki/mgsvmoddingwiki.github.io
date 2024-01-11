@@ -1,12 +1,12 @@
 <!--
 title: SoundAreaGlobal
-permalink: /Entity_Reference/Fox/Sdx/SoundAreaGlobal
+permalink: /Entity_Reference/?/Fox/Sdx/SoundAreaGlobal/
 tags: [Fox, Sdx, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Sdx](/Entity_Reference/Fox/Sdx)\
+> Module: [Sdx](/Entity_Reference/?/Fox/Sdx)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.Data → SoundAreaGlobal
 
@@ -22,4 +22,5 @@ TODO: Description
 |-|-|
 | [parameter](#parameter) | TODO: Description |
 | [volumeRtpc](#volumertpc) | TODO: Description |
+
 

@@ -1,12 +1,12 @@
 <!--
 title: UiEventNode
-permalink: /Entity_Reference/Fox/Ui/UiEventNode
+permalink: /Entity_Reference/?/Fox/Ui/UiEventNode/
 tags: [Fox, Ui, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Ui](/Entity_Reference/Fox/Ui)\
+> Module: [Ui](/Entity_Reference/?/Fox/Ui)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Ui.UiNodeData → UiEventNode
 
@@ -26,4 +26,5 @@ TODO: Description
 | [useStopOperation](#usestopoperation) | TODO: Description |
 | [isReEnter](#isreenter) | TODO: Description |
 | [kind](#kind) | TODO: Description |
+
 

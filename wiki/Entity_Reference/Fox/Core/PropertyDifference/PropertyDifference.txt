@@ -1,12 +1,12 @@
 <!--
 title: PropertyDifference
-permalink: /Entity_Reference/Fox/Core/PropertyDifference
+permalink: /Entity_Reference/?/Fox/Core/PropertyDifference/
 tags: [Fox, Core, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Core](/Entity_Reference/Fox/Core)\
+> Module: [Core](/Entity_Reference/?/Fox/Core)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.Entity → PropertyDifference
 
@@ -15,6 +15,7 @@ PropertyDifference : Fox.Core.Entity
 ```
 
 TODO: Description
+
 
 
 

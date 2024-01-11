@@ -1,8 +1,9 @@
 <!--
 title: MotherBaseCore
-permalink: /Entity_Reference/Tpp/MotherBaseCore
+permalink: /Entity_Reference/?/Tpp/MotherBaseCore/
 tags: []
 -->
 
 {% include index-autolist type="section" %}
+
 

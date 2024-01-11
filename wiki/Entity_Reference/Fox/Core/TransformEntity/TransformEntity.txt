@@ -1,12 +1,12 @@
 <!--
 title: TransformEntity
-permalink: /Entity_Reference/Fox/Core/TransformEntity
+permalink: /Entity_Reference/?/Fox/Core/TransformEntity/
 tags: [Fox, Core, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Core](/Entity_Reference/Fox/Core)\
+> Module: [Core](/Entity_Reference/?/Fox/Core)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.DataElement → TransformEntity
 
@@ -26,4 +26,5 @@ TODO: Description
 | [scale](#scale) | TODO: Description |
 | [rotQuat](#rotquat) | TODO: Description |
 | [translation](#translation) | TODO: Description |
+
 

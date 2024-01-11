@@ -1,12 +1,12 @@
 <!--
 title: TppSprintBlur
-permalink: /Entity_Reference/Tpp/Effect/TppSprintBlur
+permalink: /Entity_Reference/?/Tpp/Effect/TppSprintBlur/
 tags: [Tpp, Effect, Reference]
 -->
 
 ## Definition
 > Project: Tpp\
-> Module: [Effect](/Entity_Reference/Tpp/Effect)\
+> Module: [Effect](/Entity_Reference/?/Tpp/Effect)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.Entity → TppSprintBlur
 
@@ -15,6 +15,7 @@ TppSprintBlur : Fox.Core.Entity
 ```
 
 TODO: Description
+
 
 
 

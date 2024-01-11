@@ -1,12 +1,12 @@
 <!--
 title: PhxWheelConstraintParam
-permalink: /Entity_Reference/Fox/Phx/PhxWheelConstraintParam
+permalink: /Entity_Reference/?/Fox/Phx/PhxWheelConstraintParam/
 tags: [Fox, Phx, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Phx](/Entity_Reference/Fox/Phx)\
+> Module: [Phx](/Entity_Reference/?/Fox/Phx)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Ph.PhConstraintParam → PhxWheelConstraintParam
 
@@ -33,4 +33,5 @@ TODO: Description
 | [friction](#friction) | TODO: Description |
 | [restitution](#restitution) | TODO: Description |
 | [inertia](#inertia) | TODO: Description |
+
 

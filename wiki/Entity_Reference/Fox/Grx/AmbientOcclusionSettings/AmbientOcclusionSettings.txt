@@ -1,12 +1,12 @@
 <!--
 title: AmbientOcclusionSettings
-permalink: /Entity_Reference/Fox/Grx/AmbientOcclusionSettings
+permalink: /Entity_Reference/?/Fox/Grx/AmbientOcclusionSettings/
 tags: [Fox, Grx, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Grx](/Entity_Reference/Fox/Grx)\
+> Module: [Grx](/Entity_Reference/?/Fox/Grx)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.Data → AmbientOcclusionSettings
 
@@ -24,4 +24,5 @@ TODO: Description
 | [attachment](#attachment) | TODO: Description |
 | [lineSSAOParameters](#linessaoparameters) | TODO: Description |
 | [areaSSAOParameters](#areassaoparameters) | TODO: Description |
+
 

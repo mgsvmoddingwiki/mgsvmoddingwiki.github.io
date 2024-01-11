@@ -1,12 +1,12 @@
 <!--
 title: TppMuddledFilterParam
-permalink: /Entity_Reference/Tpp/Effect/TppMuddledFilterParam
+permalink: /Entity_Reference/?/Tpp/Effect/TppMuddledFilterParam/
 tags: [Tpp, Effect, Reference]
 -->
 
 ## Definition
 > Project: Tpp\
-> Module: [Effect](/Entity_Reference/Tpp/Effect)\
+> Module: [Effect](/Entity_Reference/?/Tpp/Effect)\
 > Submodule: TODO: Submodule
 
 ```cpp
@@ -28,4 +28,5 @@ TODO: Description
 | [moveSpeedMin](#movespeedmin) | TODO: Description |
 | [moveSpeedMax](#movespeedmax) | TODO: Description |
 | [power](#power) | TODO: Description |
+
 

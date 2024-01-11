@@ -1,12 +1,12 @@
 <!--
 title: DemoDynamicFileChangeModel
-permalink: /Entity_Reference/Fox/Demox/DemoDynamicFileChangeModel
+permalink: /Entity_Reference/?/Fox/Demox/DemoDynamicFileChangeModel/
 tags: [Fox, Demox, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Demox](/Entity_Reference/Fox/Demox)\
+> Module: [Demox](/Entity_Reference/?/Fox/Demox)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.DataElement → DemoDynamicFileChangeModel
 
@@ -24,4 +24,5 @@ TODO: Description
 | [extraScaleJoints](#extrascalejoints) | TODO: Description |
 | [helpBoneParamSrcMax](#helpboneparamsrcmax) | TODO: Description |
 | [modelNum](#modelnum) | TODO: Description |
+
 

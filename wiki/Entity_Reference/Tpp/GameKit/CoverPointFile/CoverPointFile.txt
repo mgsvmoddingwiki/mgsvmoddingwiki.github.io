@@ -1,12 +1,12 @@
 <!--
 title: CoverPointFile
-permalink: /Entity_Reference/Tpp/GameKit/CoverPointFile
+permalink: /Entity_Reference/?/Tpp/GameKit/CoverPointFile/
 tags: [Tpp, GameKit, Reference]
 -->
 
 ## Definition
 > Project: Tpp\
-> Module: [GameKit](/Entity_Reference/Tpp/GameKit)\
+> Module: [GameKit](/Entity_Reference/?/Tpp/GameKit)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.RawFile → CoverPointFile
 
@@ -15,6 +15,7 @@ CoverPointFile : Fox.Core.RawFile
 ```
 
 TODO: Description
+
 
 
 

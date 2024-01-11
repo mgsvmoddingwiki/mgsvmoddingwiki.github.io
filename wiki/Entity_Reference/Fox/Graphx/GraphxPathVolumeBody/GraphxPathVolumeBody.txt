@@ -1,12 +1,12 @@
 <!--
 title: GraphxPathVolumeBody
-permalink: /Entity_Reference/Fox/Graphx/GraphxPathVolumeBody
+permalink: /Entity_Reference/?/Fox/Graphx/GraphxPathVolumeBody/
 tags: [Fox, Graphx, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Graphx](/Entity_Reference/Fox/Graphx)\
+> Module: [Graphx](/Entity_Reference/?/Fox/Graphx)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Graphx.GraphxPath → GraphxPathVolumeBody
 
@@ -15,6 +15,7 @@ GraphxPathVolumeBody : Fox.Graphx.GraphxPath
 ```
 
 TODO: Description
+
 
 
 

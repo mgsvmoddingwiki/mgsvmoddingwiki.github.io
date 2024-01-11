@@ -1,12 +1,12 @@
 <!--
 title: HudBootData
-permalink: /Entity_Reference/Tpp/Ui/HudBootData
+permalink: /Entity_Reference/?/Tpp/Ui/HudBootData/
 tags: [Tpp, Ui, Reference]
 -->
 
 ## Definition
 > Project: Tpp\
-> Module: [Ui](/Entity_Reference/Tpp/Ui)\
+> Module: [Ui](/Entity_Reference/?/Tpp/Ui)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.Data → HudBootData
 
@@ -22,4 +22,5 @@ TODO: Description
 |-|-|
 | [uigFiles](#uigfiles) | TODO: Description |
 | [rawFiles](#rawfiles) | TODO: Description |
+
 

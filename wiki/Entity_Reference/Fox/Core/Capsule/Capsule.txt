@@ -1,12 +1,12 @@
 <!--
 title: Capsule
-permalink: /Entity_Reference/Fox/Core/Capsule
+permalink: /Entity_Reference/?/Fox/Core/Capsule/
 tags: [Fox, Core, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Core](/Entity_Reference/Fox/Core)\
+> Module: [Core](/Entity_Reference/?/Fox/Core)\
 > Submodule: TODO: Submodule
 
 ```cpp
@@ -21,4 +21,5 @@ TODO: Description
 |-|-|
 | [p0](#p0) | TODO: Description |
 | [p1](#p1) | TODO: Description |
+
 

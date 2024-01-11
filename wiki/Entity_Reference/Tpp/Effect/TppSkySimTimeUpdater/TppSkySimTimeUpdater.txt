@@ -1,12 +1,12 @@
 <!--
 title: TppSkySimTimeUpdater
-permalink: /Entity_Reference/Tpp/Effect/TppSkySimTimeUpdater
+permalink: /Entity_Reference/?/Tpp/Effect/TppSkySimTimeUpdater/
 tags: [Tpp, Effect, Reference]
 -->
 
 ## Definition
 > Project: Tpp\
-> Module: [Effect](/Entity_Reference/Tpp/Effect)\
+> Module: [Effect](/Entity_Reference/?/Tpp/Effect)\
 > Submodule: TODO: Submodule\
 > Inheritance: Tpp.Effect.TppWeatherEffectBase → TppSkySimTimeUpdater
 
@@ -15,6 +15,7 @@ TppSkySimTimeUpdater : Tpp.Effect.TppWeatherEffectBase
 ```
 
 TODO: Description
+
 
 
 

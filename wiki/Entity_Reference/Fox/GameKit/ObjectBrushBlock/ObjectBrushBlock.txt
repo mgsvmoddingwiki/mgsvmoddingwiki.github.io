@@ -1,12 +1,12 @@
 <!--
 title: ObjectBrushBlock
-permalink: /Entity_Reference/Fox/GameKit/ObjectBrushBlock
+permalink: /Entity_Reference/?/Fox/GameKit/ObjectBrushBlock/
 tags: [Fox, GameKit, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [GameKit](/Entity_Reference/Fox/GameKit)\
+> Module: [GameKit](/Entity_Reference/?/Fox/GameKit)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.Data → ObjectBrushBlock
 
@@ -24,4 +24,5 @@ TODO: Description
 | [obrbFile](#obrbfile) | TODO: Description |
 | [blockId](#blockid) | TODO: Description |
 | [objectBrushName](#objectbrushname) | TODO: Description |
+
 

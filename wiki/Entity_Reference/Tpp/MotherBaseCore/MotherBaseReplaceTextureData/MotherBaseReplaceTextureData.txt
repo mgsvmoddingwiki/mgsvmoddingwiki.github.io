@@ -1,12 +1,12 @@
 <!--
 title: MotherBaseReplaceTextureData
-permalink: /Entity_Reference/Tpp/MotherBaseCore/MotherBaseReplaceTextureData
+permalink: /Entity_Reference/?/Tpp/MotherBaseCore/MotherBaseReplaceTextureData/
 tags: [Tpp, MotherBaseCore, Reference]
 -->
 
 ## Definition
 > Project: Tpp\
-> Module: [MotherBaseCore](/Entity_Reference/Tpp/MotherBaseCore)\
+> Module: [MotherBaseCore](/Entity_Reference/?/Tpp/MotherBaseCore)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.Data → MotherBaseReplaceTextureData
 
@@ -22,4 +22,5 @@ TODO: Description
 |-|-|
 | [pathCodes](#pathcodes) | TODO: Description |
 | [flags](#flags) | TODO: Description |
+
 

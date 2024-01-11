@@ -1,12 +1,12 @@
 <!--
 title: TerrainDecalPack
-permalink: /Entity_Reference/Fox/GameKit/TerrainDecalPack
+permalink: /Entity_Reference/?/Fox/GameKit/TerrainDecalPack/
 tags: [Fox, GameKit, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [GameKit](/Entity_Reference/Fox/GameKit)\
+> Module: [GameKit](/Entity_Reference/?/Fox/GameKit)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.Data → TerrainDecalPack
 
@@ -22,4 +22,5 @@ TODO: Description
 |-|-|
 | [terrainDecalPackFile](#terraindecalpackfile) | TODO: Description |
 | [materialLinks](#materiallinks) | TODO: Description |
+
 

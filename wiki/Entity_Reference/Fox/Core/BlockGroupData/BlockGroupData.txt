@@ -1,12 +1,12 @@
 <!--
 title: BlockGroupData
-permalink: /Entity_Reference/Fox/Core/BlockGroupData
+permalink: /Entity_Reference/?/Fox/Core/BlockGroupData/
 tags: [Fox, Core, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Core](/Entity_Reference/Fox/Core)\
+> Module: [Core](/Entity_Reference/?/Fox/Core)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.Data → BlockGroupData
 
@@ -27,4 +27,5 @@ TODO: Description
 | [block](#block) | TODO: Description |
 | [relatedBlockGroups](#relatedblockgroups) | TODO: Description |
 | [prerequisiteBlockGroups](#prerequisiteblockgroups) | TODO: Description |
+
 

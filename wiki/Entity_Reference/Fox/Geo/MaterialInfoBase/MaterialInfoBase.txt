@@ -1,12 +1,12 @@
 <!--
 title: MaterialInfoBase
-permalink: /Entity_Reference/Fox/Geo/MaterialInfoBase
+permalink: /Entity_Reference/?/Fox/Geo/MaterialInfoBase/
 tags: [Fox, Geo, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Geo](/Entity_Reference/Fox/Geo)\
+> Module: [Geo](/Entity_Reference/?/Fox/Geo)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.Entity → MaterialInfoBase
 
@@ -15,6 +15,7 @@ MaterialInfoBase : Fox.Core.Entity
 ```
 
 TODO: Description
+
 
 
 

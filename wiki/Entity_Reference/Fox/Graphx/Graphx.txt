@@ -1,8 +1,9 @@
 <!--
 title: Graphx
-permalink: /Entity_Reference/Fox/Graphx
+permalink: /Entity_Reference/?/Fox/Graphx/
 tags: []
 -->
 
 {% include index-autolist type="section" %}
+
 

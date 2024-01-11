@@ -1,12 +1,12 @@
 <!--
 title: TppVolgin2forVrParameter
-permalink: /Entity_Reference/Tpp/GameCore/TppVolgin2forVrParameter
+permalink: /Entity_Reference/?/Tpp/GameCore/TppVolgin2forVrParameter/
 tags: [Tpp, GameCore, Reference]
 -->
 
 ## Definition
 > Project: Tpp\
-> Module: [GameCore](/Entity_Reference/Tpp/GameCore)\
+> Module: [GameCore](/Entity_Reference/?/Tpp/GameCore)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.DataElement → TppVolgin2forVrParameter
 
@@ -23,4 +23,5 @@ TODO: Description
 | [partsFile](#partsfile) | TODO: Description |
 | [motionGraphFile](#motiongraphfile) | TODO: Description |
 | [mtarFile](#mtarfile) | TODO: Description |
+
 

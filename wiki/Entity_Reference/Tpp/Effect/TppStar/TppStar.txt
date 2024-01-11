@@ -1,12 +1,12 @@
 <!--
 title: TppStar
-permalink: /Entity_Reference/Tpp/Effect/TppStar
+permalink: /Entity_Reference/?/Tpp/Effect/TppStar/
 tags: [Tpp, Effect, Reference]
 -->
 
 ## Definition
 > Project: Tpp\
-> Module: [Effect](/Entity_Reference/Tpp/Effect)\
+> Module: [Effect](/Entity_Reference/?/Tpp/Effect)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.TransformData → TppStar
 
@@ -30,4 +30,5 @@ TODO: Description
 | [latitudeArray](#latitudearray) | TODO: Description |
 | [longitudeArray](#longitudearray) | TODO: Description |
 | [scaleArray](#scalearray) | TODO: Description |
+
 

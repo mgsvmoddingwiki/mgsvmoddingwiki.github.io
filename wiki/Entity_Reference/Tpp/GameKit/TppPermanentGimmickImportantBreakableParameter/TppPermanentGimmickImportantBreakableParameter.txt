@@ -1,12 +1,12 @@
 <!--
 title: TppPermanentGimmickImportantBreakableParameter
-permalink: /Entity_Reference/Tpp/GameKit/TppPermanentGimmickImportantBreakableParameter
+permalink: /Entity_Reference/?/Tpp/GameKit/TppPermanentGimmickImportantBreakableParameter/
 tags: [Tpp, GameKit, Reference]
 -->
 
 ## Definition
 > Project: Tpp\
-> Module: [GameKit](/Entity_Reference/Tpp/GameKit)\
+> Module: [GameKit](/Entity_Reference/?/Tpp/GameKit)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.DataElement → TppPermanentGimmickImportantBreakableParameter
 
@@ -23,4 +23,5 @@ TODO: Description
 | [life](#life) | TODO: Description |
 | [flag1](#flag1) | TODO: Description |
 | [flag2](#flag2) | TODO: Description |
+
 

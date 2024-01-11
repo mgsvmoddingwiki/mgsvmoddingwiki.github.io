@@ -1,12 +1,12 @@
 <!--
 title: EnvironmentArea
-permalink: /Entity_Reference/Fox/GameKit/EnvironmentArea
+permalink: /Entity_Reference/?/Fox/GameKit/EnvironmentArea/
 tags: [Fox, GameKit, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [GameKit](/Entity_Reference/Fox/GameKit)\
+> Module: [GameKit](/Entity_Reference/?/Fox/GameKit)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.TransformData → EnvironmentArea
 
@@ -24,4 +24,5 @@ TODO: Description
 | [priority](#priority) | TODO: Description |
 | [enable](#enable) | TODO: Description |
 | [shapes](#shapes) | TODO: Description |
+
 

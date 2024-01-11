@@ -1,8 +1,9 @@
 <!--
 title: Anim
-permalink: /Entity_Reference/Fox/Anim/
+permalink: /Entity_Reference/?/Fox/Anim/
 tags: []
 -->
 
 {% include index-autolist type="section" %}
+
 

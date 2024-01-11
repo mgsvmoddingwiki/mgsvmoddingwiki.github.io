@@ -1,12 +1,12 @@
 <!--
 title: TppLensFlareShapeArray
-permalink: /Entity_Reference/Tpp/Effect/TppLensFlareShapeArray
+permalink: /Entity_Reference/?/Tpp/Effect/TppLensFlareShapeArray/
 tags: [Tpp, Effect, Reference]
 -->
 
 ## Definition
 > Project: Tpp\
-> Module: [Effect](/Entity_Reference/Tpp/Effect)\
+> Module: [Effect](/Entity_Reference/?/Tpp/Effect)\
 > Submodule: TODO: Submodule\
 > Inheritance: Tpp.Effect.TppLensFlareShape → TppLensFlareShapeArray
 
@@ -28,4 +28,5 @@ TODO: Description
 | [randomColorMin](#randomcolormin) | TODO: Description |
 | [randomColorMax](#randomcolormax) | TODO: Description |
 | [randomSeed](#randomseed) | TODO: Description |
+
 

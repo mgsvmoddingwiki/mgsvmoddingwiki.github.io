@@ -1,12 +1,12 @@
 <!--
 title: TppMbQuietParameter
-permalink: /Entity_Reference/Tpp/GameCore/TppMbQuietParameter
+permalink: /Entity_Reference/?/Tpp/GameCore/TppMbQuietParameter/
 tags: [Tpp, GameCore, Reference]
 -->
 
 ## Definition
 > Project: Tpp\
-> Module: [GameCore](/Entity_Reference/Tpp/GameCore)\
+> Module: [GameCore](/Entity_Reference/?/Tpp/GameCore)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.DataElement → TppMbQuietParameter
 
@@ -25,4 +25,5 @@ TODO: Description
 | [mtarFile](#mtarfile) | TODO: Description |
 | [extensionMtarFile](#extensionmtarfile) | TODO: Description |
 | [vfxFiles](#vfxfiles) | TODO: Description |
+
 

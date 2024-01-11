@@ -1,12 +1,12 @@
 <!--
 title: UiObjControl
-permalink: /Entity_Reference/Fox/Ui/UiObjControl
+permalink: /Entity_Reference/?/Fox/Ui/UiObjControl/
 tags: [Fox, Ui, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Ui](/Entity_Reference/Fox/Ui)\
+> Module: [Ui](/Entity_Reference/?/Fox/Ui)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.Entity → UiObjControl
 
@@ -22,4 +22,5 @@ TODO: Description
 |-|-|
 | [uigName](#uigname) | TODO: Description |
 | [uigFileName](#uigfilename) | TODO: Description |
+
 

@@ -1,12 +1,12 @@
 <!--
 title: GeoxPathPackBody
-permalink: /Entity_Reference/Fox/Geox/GeoxPathPackBody
+permalink: /Entity_Reference/?/Fox/Geox/GeoxPathPackBody/
 tags: [Fox, Geox, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Geox](/Entity_Reference/Fox/Geox)\
+> Module: [Geox](/Entity_Reference/?/Fox/Geox)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.TransformDataBody → GeoxPathPackBody
 
@@ -15,6 +15,7 @@ GeoxPathPackBody : Fox.Core.TransformDataBody
 ```
 
 TODO: Description
+
 
 
 

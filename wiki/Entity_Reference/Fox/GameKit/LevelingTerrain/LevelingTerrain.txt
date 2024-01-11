@@ -1,12 +1,12 @@
 <!--
 title: LevelingTerrain
-permalink: /Entity_Reference/Fox/GameKit/LevelingTerrain
+permalink: /Entity_Reference/?/Fox/GameKit/LevelingTerrain/
 tags: [Fox, GameKit, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [GameKit](/Entity_Reference/Fox/GameKit)\
+> Module: [GameKit](/Entity_Reference/?/Fox/GameKit)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.TransformData → LevelingTerrain
 
@@ -23,4 +23,5 @@ TODO: Description
 | [type](#type) | TODO: Description |
 | [radius](#radius) | TODO: Description |
 | [mixAreaRadius](#mixarearadius) | TODO: Description |
+
 

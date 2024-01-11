@@ -1,12 +1,12 @@
 <!--
 title: FacialSettingData
-permalink: /Entity_Reference/Fox/Anim/FacialSettingData
+permalink: /Entity_Reference/?/Fox/Anim/FacialSettingData/
 tags: [Fox, Anim, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Anim](/Entity_Reference/Fox/Anim)\
+> Module: [Anim](/Entity_Reference/?/Fox/Anim)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.Data → FacialSettingData
 
@@ -24,4 +24,5 @@ TODO: Description
 | [mouthMask](#mouthmask) | TODO: Description |
 | [lipMask](#lipmask) | TODO: Description |
 | [rootName](#rootname) | TODO: Description |
+
 

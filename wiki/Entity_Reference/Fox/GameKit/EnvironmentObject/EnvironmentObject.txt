@@ -1,12 +1,12 @@
 <!--
 title: EnvironmentObject
-permalink: /Entity_Reference/Fox/GameKit/EnvironmentObject
+permalink: /Entity_Reference/?/Fox/GameKit/EnvironmentObject/
 tags: [Fox, GameKit, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [GameKit](/Entity_Reference/Fox/GameKit)\
+> Module: [GameKit](/Entity_Reference/?/Fox/GameKit)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.Entity → EnvironmentObject
 
@@ -15,6 +15,7 @@ EnvironmentObject : Fox.Core.Entity
 ```
 
 TODO: Description
+
 
 
 

@@ -1,12 +1,12 @@
 <!--
 title: NavxNavFileConnectorBody
-permalink: /Entity_Reference/Fox/Navx/NavxNavFileConnectorBody
+permalink: /Entity_Reference/?/Fox/Navx/NavxNavFileConnectorBody/
 tags: [Fox, Navx, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Navx](/Entity_Reference/Fox/Navx)\
+> Module: [Navx](/Entity_Reference/?/Fox/Navx)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.TransformDataBody → NavxNavFileConnectorBody
 
@@ -15,6 +15,7 @@ NavxNavFileConnectorBody : Fox.Core.TransformDataBody
 ```
 
 TODO: Description
+
 
 
 

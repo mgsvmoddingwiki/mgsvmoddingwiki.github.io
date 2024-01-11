@@ -1,12 +1,12 @@
 <!--
 title: TppAmbientParameter
-permalink: /Entity_Reference/Tpp/Sound/TppAmbientParameter
+permalink: /Entity_Reference/?/Tpp/Sound/TppAmbientParameter/
 tags: [Tpp, Sound, Reference]
 -->
 
 ## Definition
 > Project: Tpp\
-> Module: [Sound](/Entity_Reference/Tpp/Sound)\
+> Module: [Sound](/Entity_Reference/?/Tpp/Sound)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.Data → TppAmbientParameter
 
@@ -25,4 +25,5 @@ TODO: Description
 | [objectRtpcValue](#objectrtpcvalue) | TODO: Description |
 | [auxSends](#auxsends) | TODO: Description |
 | [dryVolume](#dryvolume) | TODO: Description |
+
 

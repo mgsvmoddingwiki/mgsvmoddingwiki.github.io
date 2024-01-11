@@ -1,12 +1,12 @@
 <!--
 title: GameObjectDataBody
-permalink: /Entity_Reference/Fox/GameCore/GameObjectDataBody
+permalink: /Entity_Reference/?/Fox/GameCore/GameObjectDataBody/
 tags: [Fox, GameCore, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [GameCore](/Entity_Reference/Fox/GameCore)\
+> Module: [GameCore](/Entity_Reference/?/Fox/GameCore)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.DataBody → GameObjectDataBody
 
@@ -15,6 +15,7 @@ GameObjectDataBody : Fox.Core.DataBody
 ```
 
 TODO: Description
+
 
 
 

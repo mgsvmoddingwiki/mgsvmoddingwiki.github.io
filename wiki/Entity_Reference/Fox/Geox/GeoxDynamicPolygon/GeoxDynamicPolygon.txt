@@ -1,12 +1,12 @@
 <!--
 title: GeoxDynamicPolygon
-permalink: /Entity_Reference/Fox/Geox/GeoxDynamicPolygon
+permalink: /Entity_Reference/?/Fox/Geox/GeoxDynamicPolygon/
 tags: [Fox, Geox, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Geox](/Entity_Reference/Fox/Geox)\
+> Module: [Geox](/Entity_Reference/?/Fox/Geox)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.TransformData → GeoxDynamicPolygon
 
@@ -23,4 +23,5 @@ TODO: Description
 | [isVisibleGeom](#isvisiblegeom) | TODO: Description |
 | [vertices](#vertices) | TODO: Description |
 | [collisionAttributeTags](#collisionattributetags) | TODO: Description |
+
 

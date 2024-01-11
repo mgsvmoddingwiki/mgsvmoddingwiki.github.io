@@ -1,12 +1,12 @@
 <!--
 title: NavxAttributeInfo
-permalink: /Entity_Reference/Fox/Navx/NavxAttributeInfo
+permalink: /Entity_Reference/?/Fox/Navx/NavxAttributeInfo/
 tags: [Fox, Navx, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Navx](/Entity_Reference/Fox/Navx)\
+> Module: [Navx](/Entity_Reference/?/Fox/Navx)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.DataElement → NavxAttributeInfo
 
@@ -22,4 +22,5 @@ TODO: Description
 |-|-|
 | [name](#name) | TODO: Description |
 | [simplificationThreshold](#simplificationthreshold) | TODO: Description |
+
 

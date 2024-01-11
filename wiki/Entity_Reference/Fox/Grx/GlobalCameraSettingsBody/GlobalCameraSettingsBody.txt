@@ -1,12 +1,12 @@
 <!--
 title: GlobalCameraSettingsBody
-permalink: /Entity_Reference/Fox/Grx/GlobalCameraSettingsBody
+permalink: /Entity_Reference/?/Fox/Grx/GlobalCameraSettingsBody/
 tags: [Fox, Grx, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Grx](/Entity_Reference/Fox/Grx)\
+> Module: [Grx](/Entity_Reference/?/Fox/Grx)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.DataBody → GlobalCameraSettingsBody
 
@@ -15,6 +15,7 @@ GlobalCameraSettingsBody : Fox.Core.DataBody
 ```
 
 TODO: Description
+
 
 
 

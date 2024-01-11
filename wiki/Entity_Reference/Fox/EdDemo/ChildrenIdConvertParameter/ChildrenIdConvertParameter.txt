@@ -1,12 +1,12 @@
 <!--
 title: ChildrenIdConvertParameter
-permalink: /Entity_Reference/Fox/EdDemo/ChildrenIdConvertParameter
+permalink: /Entity_Reference/?/Fox/EdDemo/ChildrenIdConvertParameter/
 tags: [Fox, EdDemo, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [EdDemo](/Entity_Reference/Fox/EdDemo)\
+> Module: [EdDemo](/Entity_Reference/?/Fox/EdDemo)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Demo.DemoParameter → ChildrenIdConvertParameter
 
@@ -31,4 +31,5 @@ TODO: Description
 | [shortAfloPriority](#shortaflopriority) | TODO: Description |
 | [blackCoatPriority](#blackcoatpriority) | TODO: Description |
 | [enableInjuredChildSpecialization](#enableinjuredchildspecialization) | TODO: Description |
+
 

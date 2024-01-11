@@ -1,12 +1,12 @@
 <!--
 title: AmbientOcclusionSettingsBody
-permalink: /Entity_Reference/Fox/Grx/AmbientOcclusionSettingsBody
+permalink: /Entity_Reference/?/Fox/Grx/AmbientOcclusionSettingsBody/
 tags: [Fox, Grx, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Grx](/Entity_Reference/Fox/Grx)\
+> Module: [Grx](/Entity_Reference/?/Fox/Grx)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.DataBody → AmbientOcclusionSettingsBody
 
@@ -15,6 +15,7 @@ AmbientOcclusionSettingsBody : Fox.Core.DataBody
 ```
 
 TODO: Description
+
 
 
 

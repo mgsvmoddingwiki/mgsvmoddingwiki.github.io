@@ -1,12 +1,12 @@
 <!--
 title: DemoParameter
-permalink: /Entity_Reference/Fox/Demo/DemoParameter
+permalink: /Entity_Reference/?/Fox/Demo/DemoParameter/
 tags: [Fox, Demo, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Demo](/Entity_Reference/Fox/Demo)\
+> Module: [Demo](/Entity_Reference/?/Fox/Demo)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.DataElement → DemoParameter
 
@@ -15,6 +15,7 @@ DemoParameter : Fox.Core.DataElement
 ```
 
 TODO: Description
+
 
 
 

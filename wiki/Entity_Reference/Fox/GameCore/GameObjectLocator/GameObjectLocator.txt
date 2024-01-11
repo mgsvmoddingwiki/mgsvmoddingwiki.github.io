@@ -1,12 +1,12 @@
 <!--
 title: GameObjectLocator
-permalink: /Entity_Reference/Fox/GameCore/GameObjectLocator
+permalink: /Entity_Reference/?/Fox/GameCore/GameObjectLocator/
 tags: [Fox, GameCore, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [GameCore](/Entity_Reference/Fox/GameCore)\
+> Module: [GameCore](/Entity_Reference/?/Fox/GameCore)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.TransformData → GameObjectLocator
 
@@ -23,4 +23,5 @@ TODO: Description
 | [typeName](#typename) | TODO: Description |
 | [groupId](#groupid) | TODO: Description |
 | [parameters](#parameters) | TODO: Description |
+
 

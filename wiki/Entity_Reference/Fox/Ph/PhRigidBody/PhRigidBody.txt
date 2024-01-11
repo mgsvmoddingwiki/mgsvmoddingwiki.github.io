@@ -1,12 +1,12 @@
 <!--
 title: PhRigidBody
-permalink: /Entity_Reference/Fox/Ph/PhRigidBody
+permalink: /Entity_Reference/?/Fox/Ph/PhRigidBody/
 tags: [Fox, Ph, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Ph](/Entity_Reference/Fox/Ph)\
+> Module: [Ph](/Entity_Reference/?/Fox/Ph)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Ph.PhSubObject → PhRigidBody
 
@@ -41,4 +41,5 @@ TODO: Description
 | [centerOfMassOffset](#centerofmassoffset) | TODO: Description |
 | [motionType](#motiontype) | TODO: Description |
 | [material](#material) | TODO: Description |
+
 

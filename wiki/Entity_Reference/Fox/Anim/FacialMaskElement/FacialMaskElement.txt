@@ -1,12 +1,12 @@
 <!--
 title: FacialMaskElement
-permalink: /Entity_Reference/Fox/Anim/FacialMaskElement
+permalink: /Entity_Reference/?/Fox/Anim/FacialMaskElement/
 tags: [Fox, Anim, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Anim](/Entity_Reference/Fox/Anim)\
+> Module: [Anim](/Entity_Reference/?/Fox/Anim)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.DataElement → FacialMaskElement
 
@@ -22,4 +22,5 @@ TODO: Description
 |-|-|
 | [skelList](#skellist) | TODO: Description |
 | [shaderList](#shaderlist) | TODO: Description |
+
 

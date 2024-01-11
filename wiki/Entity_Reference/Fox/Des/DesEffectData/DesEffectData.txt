@@ -1,12 +1,12 @@
 <!--
 title: DesEffectData
-permalink: /Entity_Reference/Fox/Des/DesEffectData
+permalink: /Entity_Reference/?/Fox/Des/DesEffectData/
 tags: [Fox, Des, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Des](/Entity_Reference/Fox/Des)\
+> Module: [Des](/Entity_Reference/?/Fox/Des)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.Data → DesEffectData
 
@@ -27,4 +27,5 @@ TODO: Description
 | [connectPointName](#connectpointname) | TODO: Description |
 | [effectFlag](#effectflag) | TODO: Description |
 | [randomSeed](#randomseed) | TODO: Description |
+
 

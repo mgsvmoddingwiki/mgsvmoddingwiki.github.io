@@ -1,12 +1,12 @@
 <!--
 title: GeoxPartsTargetObject
-permalink: /Entity_Reference/Fox/Geox/GeoxPartsTargetObject
+permalink: /Entity_Reference/?/Fox/Geox/GeoxPartsTargetObject/
 tags: [Fox, Geox, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Geox](/Entity_Reference/Fox/Geox)\
+> Module: [Geox](/Entity_Reference/?/Fox/Geox)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.TransformData → GeoxPartsTargetObject
 
@@ -28,4 +28,5 @@ TODO: Description
 | [categoryTag](#categorytag) | TODO: Description |
 | [groupTags](#grouptags) | TODO: Description |
 | [applicationDataLink](#applicationdatalink) | TODO: Description |
+
 

@@ -1,12 +1,12 @@
 <!--
 title: Script
-permalink: /Entity_Reference/Fox/Core/Script
+permalink: /Entity_Reference/?/Fox/Core/Script/
 tags: [Fox, Core, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Core](/Entity_Reference/Fox/Core)\
+> Module: [Core](/Entity_Reference/?/Fox/Core)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.Entity → Script
 
@@ -15,6 +15,7 @@ Script : Fox.Core.Entity
 ```
 
 TODO: Description
+
 
 
 

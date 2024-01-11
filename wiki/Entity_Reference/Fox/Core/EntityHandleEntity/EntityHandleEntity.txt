@@ -1,12 +1,12 @@
 <!--
 title: EntityHandleEntity
-permalink: /Entity_Reference/Fox/Core/EntityHandleEntity
+permalink: /Entity_Reference/?/Fox/Core/EntityHandleEntity/
 tags: [Fox, Core, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Core](/Entity_Reference/Fox/Core)\
+> Module: [Core](/Entity_Reference/?/Fox/Core)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.PropertyValueEntity → EntityHandleEntity
 
@@ -21,4 +21,5 @@ TODO: Description
 | | |
 |-|-|
 | [value](#value) | TODO: Description |
+
 

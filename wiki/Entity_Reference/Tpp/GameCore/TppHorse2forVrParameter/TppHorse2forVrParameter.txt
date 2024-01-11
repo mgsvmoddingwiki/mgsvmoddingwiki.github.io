@@ -1,12 +1,12 @@
 <!--
 title: TppHorse2forVrParameter
-permalink: /Entity_Reference/Tpp/GameCore/TppHorse2forVrParameter
+permalink: /Entity_Reference/?/Tpp/GameCore/TppHorse2forVrParameter/
 tags: [Tpp, GameCore, Reference]
 -->
 
 ## Definition
 > Project: Tpp\
-> Module: [GameCore](/Entity_Reference/Tpp/GameCore)\
+> Module: [GameCore](/Entity_Reference/?/Tpp/GameCore)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.DataElement → TppHorse2forVrParameter
 
@@ -24,4 +24,5 @@ TODO: Description
 | [motionGraphFile](#motiongraphfile) | TODO: Description |
 | [mtarFile](#mtarfile) | TODO: Description |
 | [vfxFiles](#vfxfiles) | TODO: Description |
+
 

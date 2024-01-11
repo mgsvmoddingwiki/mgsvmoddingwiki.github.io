@@ -1,12 +1,12 @@
 <!--
 title: GameObject
-permalink: /Entity_Reference/Fox/GameCore/GameObject
+permalink: /Entity_Reference/?/Fox/GameCore/GameObject/
 tags: [Fox, GameCore, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [GameCore](/Entity_Reference/Fox/GameCore)\
+> Module: [GameCore](/Entity_Reference/?/Fox/GameCore)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.Data → GameObject
 
@@ -25,4 +25,5 @@ TODO: Description
 | [totalCount](#totalcount) | TODO: Description |
 | [realizedCount](#realizedcount) | TODO: Description |
 | [parameters](#parameters) | TODO: Description |
+
 

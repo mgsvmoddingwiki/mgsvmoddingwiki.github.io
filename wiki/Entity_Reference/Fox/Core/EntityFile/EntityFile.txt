@@ -1,12 +1,12 @@
 <!--
 title: EntityFile
-permalink: /Entity_Reference/Fox/Core/EntityFile
+permalink: /Entity_Reference/?/Fox/Core/EntityFile/
 tags: [Fox, Core, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Core](/Entity_Reference/Fox/Core)\
+> Module: [Core](/Entity_Reference/?/Fox/Core)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.File → EntityFile
 
@@ -15,6 +15,7 @@ EntityFile : Fox.Core.File
 ```
 
 TODO: Description
+
 
 
 

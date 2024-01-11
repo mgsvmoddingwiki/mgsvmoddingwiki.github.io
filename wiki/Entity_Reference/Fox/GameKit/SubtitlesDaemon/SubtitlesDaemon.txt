@@ -1,12 +1,12 @@
 <!--
 title: SubtitlesDaemon
-permalink: /Entity_Reference/Fox/GameKit/SubtitlesDaemon
+permalink: /Entity_Reference/?/Fox/GameKit/SubtitlesDaemon/
 tags: [Fox, GameKit, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [GameKit](/Entity_Reference/Fox/GameKit)\
+> Module: [GameKit](/Entity_Reference/?/Fox/GameKit)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.Entity → SubtitlesDaemon
 
@@ -15,6 +15,7 @@ SubtitlesDaemon : Fox.Core.Entity
 ```
 
 TODO: Description
+
 
 
 

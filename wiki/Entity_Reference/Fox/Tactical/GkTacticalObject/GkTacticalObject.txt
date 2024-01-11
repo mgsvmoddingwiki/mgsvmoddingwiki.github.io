@@ -1,12 +1,12 @@
 <!--
 title: GkTacticalObject
-permalink: /Entity_Reference/Fox/Tactical/GkTacticalObject
+permalink: /Entity_Reference/?/Fox/Tactical/GkTacticalObject/
 tags: [Fox, Tactical, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Tactical](/Entity_Reference/Fox/Tactical)\
+> Module: [Tactical](/Entity_Reference/?/Fox/Tactical)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.Entity → GkTacticalObject
 
@@ -15,6 +15,7 @@ GkTacticalObject : Fox.Core.Entity
 ```
 
 TODO: Description
+
 
 
 

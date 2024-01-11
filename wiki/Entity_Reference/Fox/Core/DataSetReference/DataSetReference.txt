@@ -1,12 +1,12 @@
 <!--
 title: DataSetReference
-permalink: /Entity_Reference/Fox/Core/DataSetReference
+permalink: /Entity_Reference/?/Fox/Core/DataSetReference/
 tags: [Fox, Core, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Core](/Entity_Reference/Fox/Core)\
+> Module: [Core](/Entity_Reference/?/Fox/Core)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.TransformData → DataSetReference
 
@@ -23,4 +23,5 @@ TODO: Description
 | [referenceFilePath](#referencefilepath) | TODO: Description |
 | [isReferenceLocked](#isreferencelocked) | TODO: Description |
 | [dataSetDifference](#datasetdifference) | TODO: Description |
+
 

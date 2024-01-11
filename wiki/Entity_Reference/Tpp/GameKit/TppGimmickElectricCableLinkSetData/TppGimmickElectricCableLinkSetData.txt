@@ -1,12 +1,12 @@
 <!--
 title: TppGimmickElectricCableLinkSetData
-permalink: /Entity_Reference/Tpp/GameKit/TppGimmickElectricCableLinkSetData
+permalink: /Entity_Reference/?/Tpp/GameKit/TppGimmickElectricCableLinkSetData/
 tags: [Tpp, GameKit, Reference]
 -->
 
 ## Definition
 > Project: Tpp\
-> Module: [GameKit](/Entity_Reference/Tpp/GameKit)\
+> Module: [GameKit](/Entity_Reference/?/Tpp/GameKit)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.Data → TppGimmickElectricCableLinkSetData
 
@@ -25,4 +25,5 @@ TODO: Description
 | [electricCable](#electriccable) | TODO: Description |
 | [pole](#pole) | TODO: Description |
 | [cnpIndex](#cnpindex) | TODO: Description |
+
 

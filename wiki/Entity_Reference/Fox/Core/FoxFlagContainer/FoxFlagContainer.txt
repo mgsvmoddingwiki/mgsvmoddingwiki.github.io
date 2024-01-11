@@ -1,12 +1,12 @@
 <!--
 title: FoxFlagContainer
-permalink: /Entity_Reference/Fox/Core/FoxFlagContainer
+permalink: /Entity_Reference/?/Fox/Core/FoxFlagContainer/
 tags: [Fox, Core, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Core](/Entity_Reference/Fox/Core)\
+> Module: [Core](/Entity_Reference/?/Fox/Core)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.Entity → FoxFlagContainer
 
@@ -22,4 +22,5 @@ TODO: Description
 |-|-|
 | [status](#status) | TODO: Description |
 | [string](#string) | TODO: Description |
+
 

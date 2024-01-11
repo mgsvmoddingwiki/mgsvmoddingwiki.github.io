@@ -1,12 +1,12 @@
 <!--
 title: GrPlugin2DFrontmost
-permalink: /Entity_Reference/Fox/Gr/GrPlugin2DFrontmost
+permalink: /Entity_Reference/?/Fox/Gr/GrPlugin2DFrontmost/
 tags: [Fox, Gr, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Gr](/Entity_Reference/Fox/Gr)\
+> Module: [Gr](/Entity_Reference/?/Fox/Gr)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Gr.GrPlugin2D → GrPlugin2DFrontmost
 
@@ -15,6 +15,7 @@ GrPlugin2DFrontmost : Fox.Gr.GrPlugin2D
 ```
 
 TODO: Description
+
 
 
 

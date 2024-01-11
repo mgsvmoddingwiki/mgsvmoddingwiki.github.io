@@ -1,12 +1,12 @@
 <!--
 title: ShapeData
-permalink: /Entity_Reference/Fox/Core/ShapeData
+permalink: /Entity_Reference/?/Fox/Core/ShapeData/
 tags: [Fox, Core, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Core](/Entity_Reference/Fox/Core)\
+> Module: [Core](/Entity_Reference/?/Fox/Core)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.TransformData → ShapeData
 
@@ -15,6 +15,7 @@ ShapeData : Fox.Core.TransformData
 ```
 
 TODO: Description
+
 
 
 

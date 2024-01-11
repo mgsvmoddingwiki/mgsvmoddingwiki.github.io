@@ -1,12 +1,12 @@
 <!--
 title: MotherBaseConstructConnectLocator
-permalink: /Entity_Reference/Tpp/MotherBaseCore/MotherBaseConstructConnectLocator
+permalink: /Entity_Reference/?/Tpp/MotherBaseCore/MotherBaseConstructConnectLocator/
 tags: [Tpp, MotherBaseCore, Reference]
 -->
 
 ## Definition
 > Project: Tpp\
-> Module: [MotherBaseCore](/Entity_Reference/Tpp/MotherBaseCore)\
+> Module: [MotherBaseCore](/Entity_Reference/?/Tpp/MotherBaseCore)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.TransformData → MotherBaseConstructConnectLocator
 
@@ -23,4 +23,5 @@ TODO: Description
 | [plantId](#plantid) | TODO: Description |
 | [buildingPoint](#buildingpoint) | TODO: Description |
 | [isOn](#ison) | TODO: Description |
+
 

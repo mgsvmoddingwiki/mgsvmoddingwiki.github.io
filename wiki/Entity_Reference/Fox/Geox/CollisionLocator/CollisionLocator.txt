@@ -1,12 +1,12 @@
 <!--
 title: CollisionLocator
-permalink: /Entity_Reference/Fox/Geox/CollisionLocator
+permalink: /Entity_Reference/?/Fox/Geox/CollisionLocator/
 tags: [Fox, Geox, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Geox](/Entity_Reference/Fox/Geox)\
+> Module: [Geox](/Entity_Reference/?/Fox/Geox)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.TransformData → CollisionLocator
 
@@ -22,4 +22,5 @@ TODO: Description
 |-|-|
 | [modelFile](#modelfile) | TODO: Description |
 | [geomFile](#geomfile) | TODO: Description |
+
 

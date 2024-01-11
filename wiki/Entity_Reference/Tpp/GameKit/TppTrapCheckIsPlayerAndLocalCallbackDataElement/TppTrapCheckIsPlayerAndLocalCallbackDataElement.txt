@@ -1,12 +1,12 @@
 <!--
 title: TppTrapCheckIsPlayerAndLocalCallbackDataElement
-permalink: /Entity_Reference/Tpp/GameKit/TppTrapCheckIsPlayerAndLocalCallbackDataElement
+permalink: /Entity_Reference/?/Tpp/GameKit/TppTrapCheckIsPlayerAndLocalCallbackDataElement/
 tags: [Tpp, GameKit, Reference]
 -->
 
 ## Definition
 > Project: Tpp\
-> Module: [GameKit](/Entity_Reference/Tpp/GameKit)\
+> Module: [GameKit](/Entity_Reference/?/Tpp/GameKit)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Geo.GeoTrapModuleCallbackDataElement → TppTrapCheckIsPlayerAndLocalCallbackDataElement
 
@@ -15,6 +15,7 @@ TppTrapCheckIsPlayerAndLocalCallbackDataElement : Fox.Geo.GeoTrapModuleCallbackD
 ```
 
 TODO: Description
+
 
 
 

@@ -1,12 +1,12 @@
 <!--
 title: EntityPtrStringMapEntity
-permalink: /Entity_Reference/Fox/Core/EntityPtrStringMapEntity
+permalink: /Entity_Reference/?/Fox/Core/EntityPtrStringMapEntity/
 tags: [Fox, Core, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Core](/Entity_Reference/Fox/Core)\
+> Module: [Core](/Entity_Reference/?/Fox/Core)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.Entity → EntityPtrStringMapEntity
 
@@ -21,4 +21,5 @@ TODO: Description
 | | |
 |-|-|
 | [stringMap](#stringmap) | TODO: Description |
+
 

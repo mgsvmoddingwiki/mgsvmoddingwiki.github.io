@@ -1,12 +1,12 @@
 <!--
 title: StaticModel
-permalink: /Entity_Reference/Fox/GameKit/StaticModel
+permalink: /Entity_Reference/?/Fox/GameKit/StaticModel/
 tags: [Fox, GameKit, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [GameKit](/Entity_Reference/Fox/GameKit)\
+> Module: [GameKit](/Entity_Reference/?/Fox/GameKit)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.TransformData → StaticModel
 
@@ -31,4 +31,5 @@ TODO: Description
 | [drawRejectionLevel](#drawrejectionlevel) | TODO: Description |
 | [drawMode](#drawmode) | TODO: Description |
 | [rejectFarRangeShadowCast](#rejectfarrangeshadowcast) | TODO: Description |
+
 

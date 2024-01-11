@@ -1,8 +1,9 @@
 <!--
 title: MotherBaseStage
-permalink: /Entity_Reference/Tpp/MotherBaseStage
+permalink: /Entity_Reference/?/Tpp/MotherBaseStage/
 tags: []
 -->
 
 {% include index-autolist type="section" %}
+
 

@@ -1,12 +1,12 @@
 <!--
 title: GeoPathService
-permalink: /Entity_Reference/Fox/Geo/GeoPathService
+permalink: /Entity_Reference/?/Fox/Geo/GeoPathService/
 tags: [Fox, Geo, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Geo](/Entity_Reference/Fox/Geo)\
+> Module: [Geo](/Entity_Reference/?/Fox/Geo)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.Entity → GeoPathService
 
@@ -15,6 +15,7 @@ GeoPathService : Fox.Core.Entity
 ```
 
 TODO: Description
+
 
 
 

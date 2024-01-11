@@ -1,12 +1,12 @@
 <!--
 title: Horizon
-permalink: /Entity_Reference/Fox/Grx/Horizon
+permalink: /Entity_Reference/?/Fox/Grx/Horizon/
 tags: [Fox, Grx, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Grx](/Entity_Reference/Fox/Grx)\
+> Module: [Grx](/Entity_Reference/?/Fox/Grx)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.TransformData → Horizon
 
@@ -25,4 +25,5 @@ TODO: Description
 | [skyColor](#skycolor) | TODO: Description |
 | [horizonColor](#horizoncolor) | TODO: Description |
 | [showObject](#showobject) | TODO: Description |
+
 

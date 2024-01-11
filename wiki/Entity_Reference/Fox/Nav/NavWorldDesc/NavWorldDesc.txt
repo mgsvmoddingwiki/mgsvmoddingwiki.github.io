@@ -1,12 +1,12 @@
 <!--
 title: NavWorldDesc
-permalink: /Entity_Reference/Fox/Nav/NavWorldDesc
+permalink: /Entity_Reference/?/Fox/Nav/NavWorldDesc/
 tags: [Fox, Nav, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Nav](/Entity_Reference/Fox/Nav)\
+> Module: [Nav](/Entity_Reference/?/Fox/Nav)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.Entity → NavWorldDesc
 
@@ -22,4 +22,5 @@ TODO: Description
 |-|-|
 | [sceneName](#scenename) | TODO: Description |
 | [worldName](#worldname) | TODO: Description |
+
 

@@ -1,12 +1,12 @@
 <!--
 title: MotionGraphEnterNodeCallback
-permalink: /Entity_Reference/Fox/MotionGraph/MotionGraphEnterNodeCallback
+permalink: /Entity_Reference/?/Fox/MotionGraph/MotionGraphEnterNodeCallback/
 tags: [Fox, MotionGraph, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [MotionGraph](/Entity_Reference/Fox/MotionGraph)\
+> Module: [MotionGraph](/Entity_Reference/?/Fox/MotionGraph)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.Entity → MotionGraphEnterNodeCallback
 
@@ -15,6 +15,7 @@ MotionGraphEnterNodeCallback : Fox.Core.Entity
 ```
 
 TODO: Description
+
 
 
 

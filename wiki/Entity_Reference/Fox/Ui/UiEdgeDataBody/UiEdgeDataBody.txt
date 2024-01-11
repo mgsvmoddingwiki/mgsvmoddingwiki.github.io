@@ -1,12 +1,12 @@
 <!--
 title: UiEdgeDataBody
-permalink: /Entity_Reference/Fox/Ui/UiEdgeDataBody
+permalink: /Entity_Reference/?/Fox/Ui/UiEdgeDataBody/
 tags: [Fox, Ui, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Ui](/Entity_Reference/Fox/Ui)\
+> Module: [Ui](/Entity_Reference/?/Fox/Ui)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.DataBody → UiEdgeDataBody
 
@@ -28,4 +28,5 @@ TODO: Description
 | [targetPortIndex](#targetportindex) | TODO: Description |
 | [isConnect](#isconnect) | TODO: Description |
 | [isVirtual](#isvirtual) | TODO: Description |
+
 

@@ -1,12 +1,12 @@
 <!--
 title: TppGlobalVolumetricFogParam
-permalink: /Entity_Reference/Tpp/Effect/TppGlobalVolumetricFogParam
+permalink: /Entity_Reference/?/Tpp/Effect/TppGlobalVolumetricFogParam/
 tags: [Tpp, Effect, Reference]
 -->
 
 ## Definition
 > Project: Tpp\
-> Module: [Effect](/Entity_Reference/Tpp/Effect)\
+> Module: [Effect](/Entity_Reference/?/Tpp/Effect)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.DataElement → TppGlobalVolumetricFogParam
 
@@ -37,4 +37,5 @@ TODO: Description
 | [exposureOffsetValues](#exposureoffsetvalues) | TODO: Description |
 | [exposureOffsetTargets](#exposureoffsettargets) | TODO: Description |
 | [flags](#flags) | TODO: Description |
+
 

@@ -1,12 +1,12 @@
 <!--
 title: SubtitlesPackage
-permalink: /Entity_Reference/Fox/GameKit/SubtitlesPackage
+permalink: /Entity_Reference/?/Fox/GameKit/SubtitlesPackage/
 tags: [Fox, GameKit, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [GameKit](/Entity_Reference/Fox/GameKit)\
+> Module: [GameKit](/Entity_Reference/?/Fox/GameKit)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.Data → SubtitlesPackage
 
@@ -23,4 +23,5 @@ TODO: Description
 | [subtitlesPackage](#subtitlespackage) | TODO: Description |
 | [subtitlesStreamData](#subtitlesstreamdata) | TODO: Description |
 | [subtitlesStreamPath](#subtitlesstreampath) | TODO: Description |
+
 

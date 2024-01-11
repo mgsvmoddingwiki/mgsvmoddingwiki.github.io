@@ -1,12 +1,12 @@
 <!--
 title: TppPlayer2Parameter
-permalink: /Entity_Reference/Tpp/GameCore/TppPlayer2Parameter
+permalink: /Entity_Reference/?/Tpp/GameCore/TppPlayer2Parameter/
 tags: [Tpp, GameCore, Reference]
 -->
 
 ## Definition
 > Project: Tpp\
-> Module: [GameCore](/Entity_Reference/Tpp/GameCore)\
+> Module: [GameCore](/Entity_Reference/?/Tpp/GameCore)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.DataElement → TppPlayer2Parameter
 
@@ -30,4 +30,5 @@ TODO: Description
 | [lifeRecoveryCooldownTimer](#liferecoverycooldowntimer) | TODO: Description |
 | [partsType](#partstype) | TODO: Description |
 | [TODO_trapTags](#todo-traptags) | TODO: Description |
+
 

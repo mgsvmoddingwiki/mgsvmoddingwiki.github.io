@@ -1,12 +1,12 @@
 <!--
 title: PhVehicleNormalEngineParam
-permalink: /Entity_Reference/Fox/Phx/PhVehicleNormalEngineParam
+permalink: /Entity_Reference/?/Fox/Phx/PhVehicleNormalEngineParam/
 tags: [Fox, Phx, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Phx](/Entity_Reference/Fox/Phx)\
+> Module: [Phx](/Entity_Reference/?/Fox/Phx)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.Entity → PhVehicleNormalEngineParam
 
@@ -23,4 +23,5 @@ TODO: Description
 | [specPointAngularVelocity](#specpointangularvelocity) | TODO: Description |
 | [specPointTorque](#specpointtorque) | TODO: Description |
 | [specPointBreakTorque](#specpointbreaktorque) | TODO: Description |
+
 

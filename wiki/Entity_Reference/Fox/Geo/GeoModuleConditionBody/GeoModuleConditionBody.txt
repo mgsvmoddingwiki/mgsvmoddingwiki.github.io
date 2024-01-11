@@ -1,12 +1,12 @@
 <!--
 title: GeoModuleConditionBody
-permalink: /Entity_Reference/Fox/Geo/GeoModuleConditionBody
+permalink: /Entity_Reference/?/Fox/Geo/GeoModuleConditionBody/
 tags: [Fox, Geo, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Geo](/Entity_Reference/Fox/Geo)\
+> Module: [Geo](/Entity_Reference/?/Fox/Geo)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Geo.GeoTrapConditionBody → GeoModuleConditionBody
 
@@ -15,6 +15,7 @@ GeoModuleConditionBody : Fox.Geo.GeoTrapConditionBody
 ```
 
 TODO: Description
+
 
 
 

@@ -1,12 +1,12 @@
 <!--
 title: DemoData
-permalink: /Entity_Reference/Fox/Demox/DemoData
+permalink: /Entity_Reference/?/Fox/Demox/DemoData/
 tags: [Fox, Demox, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Demox](/Entity_Reference/Fox/Demox)\
+> Module: [Demox](/Entity_Reference/?/Fox/Demox)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.TransformData → DemoData
 
@@ -67,4 +67,5 @@ TODO: Description
 | [highestTexture](#highesttexture) | TODO: Description |
 | [objectNum](#objectnum) | TODO: Description |
 | [blockPositionSetter](#blockpositionsetter) | TODO: Description |
+
 

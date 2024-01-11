@@ -1,12 +1,12 @@
 <!--
 title: SimHitGroupControlParam
-permalink: /Entity_Reference/Fox/Sim/SimHitGroupControlParam
+permalink: /Entity_Reference/?/Fox/Sim/SimHitGroupControlParam/
 tags: [Fox, Sim, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Sim](/Entity_Reference/Fox/Sim)\
+> Module: [Sim](/Entity_Reference/?/Fox/Sim)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Sim.SimControlParam → SimHitGroupControlParam
 
@@ -21,4 +21,5 @@ TODO: Description
 | | |
 |-|-|
 | [groupIndex](#groupindex) | TODO: Description |
+
 

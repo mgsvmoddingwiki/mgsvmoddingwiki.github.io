@@ -1,12 +1,12 @@
 <!--
 title: NavxWorldGenerateParameterBody
-permalink: /Entity_Reference/Fox/Navx/NavxWorldGenerateParameterBody
+permalink: /Entity_Reference/?/Fox/Navx/NavxWorldGenerateParameterBody/
 tags: [Fox, Navx, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Navx](/Entity_Reference/Fox/Navx)\
+> Module: [Navx](/Entity_Reference/?/Fox/Navx)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.TransformDataBody → NavxWorldGenerateParameterBody
 
@@ -15,6 +15,7 @@ NavxWorldGenerateParameterBody : Fox.Core.TransformDataBody
 ```
 
 TODO: Description
+
 
 
 

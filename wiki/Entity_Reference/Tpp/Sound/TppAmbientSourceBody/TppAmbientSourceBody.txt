@@ -1,12 +1,12 @@
 <!--
 title: TppAmbientSourceBody
-permalink: /Entity_Reference/Tpp/Sound/TppAmbientSourceBody
+permalink: /Entity_Reference/?/Tpp/Sound/TppAmbientSourceBody/
 tags: [Tpp, Sound, Reference]
 -->
 
 ## Definition
 > Project: Tpp\
-> Module: [Sound](/Entity_Reference/Tpp/Sound)\
+> Module: [Sound](/Entity_Reference/?/Tpp/Sound)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Sdx.SoundSourceBody → TppAmbientSourceBody
 
@@ -15,6 +15,7 @@ TppAmbientSourceBody : Fox.Sdx.SoundSourceBody
 ```
 
 TODO: Description
+
 
 
 

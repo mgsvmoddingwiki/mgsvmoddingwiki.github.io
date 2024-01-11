@@ -1,12 +1,12 @@
 <!--
 title: TppHeatHaze
-permalink: /Entity_Reference/Tpp/Effect/TppHeatHaze
+permalink: /Entity_Reference/?/Tpp/Effect/TppHeatHaze/
 tags: [Tpp, Effect, Reference]
 -->
 
 ## Definition
 > Project: Tpp\
-> Module: [Effect](/Entity_Reference/Tpp/Effect)\
+> Module: [Effect](/Entity_Reference/?/Tpp/Effect)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.Data → TppHeatHaze
 
@@ -44,4 +44,5 @@ TODO: Description
 | [hazeStartDistanceHalfResolution](#hazestartdistancehalfresolution) | TODO: Description |
 | [hazeEndDistanceHalfResolution](#hazeenddistancehalfresolution) | TODO: Description |
 | [hazeRangeAttenuationHalfResolution](#hazerangeattenuationhalfresolution) | TODO: Description |
+
 

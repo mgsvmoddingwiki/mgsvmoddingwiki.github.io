@@ -1,12 +1,12 @@
 <!--
 title: DemoFileProxy
-permalink: /Entity_Reference/Fox/Demo/DemoFileProxy
+permalink: /Entity_Reference/?/Fox/Demo/DemoFileProxy/
 tags: [Fox, Demo, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Demo](/Entity_Reference/Fox/Demo)\
+> Module: [Demo](/Entity_Reference/?/Fox/Demo)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.Data → DemoFileProxy
 
@@ -22,4 +22,5 @@ TODO: Description
 |-|-|
 | [fmdlFiles](#fmdlfiles) | TODO: Description |
 | [partsFiles](#partsfiles) | TODO: Description |
+
 

@@ -5,18 +5,18 @@ is_wiki_page: false
 
 import * as func from './functions.js';
 import { virtualIndex } from './virtualindex.js';
+import { mobileMainMenuToggle } from './general.js';
 
 const virtualRootUrls = {
-    // Trailing forwardslash added for reverse lookup
     {% for path in site.virtual_page_roots %}
-        url_{{ forloop.index }}: `{{ path }}/`,
+        url_{{ forloop.index }}: `{{ path }}`,
     {% endfor %}
 }
 
-var {curUrl, curUrlRoot} = func.getPageUrls(),
+export const isVirtualPage = checkForVirtualPage();
+var {curUrl, curUrlRoot} = func.getPageUrls(isVirtualPage),
     pageWrapper = body.querySelector('.git-wiki-page'),
     pageObj;
-export const isVirtualPage = checkForVirtualPage();
 
 if (isVirtualPage) {
     var contentWrapper = body.querySelector('#git-wiki-content'),
@@ -42,6 +42,7 @@ if (isVirtualPage) {
             if (tar.parentElement.classList.contains('section-hierarchy-link')) {
                 tarUrl = tar.parentElement.getAttribute('href');
             }
+            mobileMainMenuToggle();
             updateFromTarget(e, tarUrl);
             return
         }
@@ -62,12 +63,12 @@ if (isVirtualPage) {
             return
         }
         // Internal links within page content
+        if (tarUrl) { curUrl = func.getPageUrls(isVirtualPage).curUrl; } // update to current
         if (tar.closest('#' + contentWrapper.id) && tarUrl && tarUrl.startsWith(curUrlRoot)) {
             updateFromTarget(e, func.trimTrailFs(tarUrl) + '/');
             return
         }
-        if (tar.closest('#' + contentWrapper.id) && tarUrl && tarUrl.startsWith('#')) {
-            curUrl = func.getPageUrls().curUrl // update to current
+        if (tar.closest('#' + contentWrapper.id) && tarUrl && tarUrl.startsWith('#') && curUrl != curUrlRoot) {
             updateFromTarget(e, curUrl, true, tarUrl);
             return
         }
@@ -96,6 +97,7 @@ if (isVirtualPage) {
             contentLoaded(false);
             stylePage(tarObj);
             setCurPage(tarObj);
+            window.scrollTo(0,0);
         }
     }
 } else {
@@ -122,7 +124,6 @@ if (isVirtualPage) {
         filterAllUniqueTags().then(tagList => {
             const ul = autoIndexAllTags.querySelector('ul');
             ul.innerHTML = '';
-            console.log(tagList)
             tagList.forEach((tag) => {
                 let li = document.createElement('li'),
                     link = document.createElement('a');
@@ -197,7 +198,7 @@ async function fetchFile(filePath) {
 async function stylePage(item) {
     if (checkFileExists(item.filePath)) {
         await fetchFile(item.filePath);
-        console.clear(); // remove eg. any 404 link error messages generated on prior page
+        // console.clear(); // remove eg. any 404 link error messages generated on prior page
 
         pageHeading.textContent = item.title;
         document.title = item.title + ' | MGSV Modding Wiki';
@@ -246,16 +247,23 @@ function setTagLink(el, string) {
 function generateToc() {
     // Depth of hierarchy will be lowest heading element defined here
     var headings = pageWrapper.querySelectorAll('h2, h3'),
+        tocWrapper = pageWrapper.querySelector('.toc-toggle'),
+        toc = tocWrapper.querySelector('#git-wiki-toc'),
+        filler = document.createTextNode('.'),
         result = document.createElement('div'),
         curDepth = 0;
-    let tocWrapper = pageWrapper.querySelector('.toc-toggle'),
-        toc = tocWrapper.querySelector('#git-wiki-toc');
-    toc.innerHTML = '';
+    if (toc) {
+        toc.remove();
+        func.removeChildText(tocWrapper);
+    }
+    addChildText();
+    toc = document.createElement('ol');
+    toc.id = 'git-wiki-toc';
+    tocWrapper.appendChild(toc);
     toc.classList.toggle('hidden-generic', !headings.length);
     if (!headings.length) {
-        func.removeChildText(tocWrapper);
+        filler.remove();
     } else {
-        tocWrapper.textContent == '.'; // currently stylesheet margins expect text content (carryover from stock layout)
         headings.forEach((heading) => {
             heading.classList.add('heading');
         })
@@ -291,6 +299,10 @@ function generateToc() {
         result = olArr[olArr.length - 1]; // get last matching array
         let children = result.childNodes;
         toc.append(...children);
+    }
+
+    function addChildText() {
+        tocWrapper.appendChild(filler); // currently stylesheet margins expect text content (carryover from stock layout)
     }
 
     function filterByOl(input) {
@@ -334,7 +346,8 @@ function checkFileExists(path) {
 }
 
 function checkForVirtualPage() {
-    if (func.matchObjVal(virtualRootUrls, curUrlRoot)) {
+    // Since everything from `?` onward in URL is considered a search we can use `pathname` to obtain root page
+    if (func.matchObjVal(virtualRootUrls, window.location.pathname) && !document.title.includes('Page Not Found')) {
         return true
     }
 }
@@ -439,7 +452,9 @@ function breadcrumbs(item) {
             title: 'Home',
             url: '/'
         });
-        segments.pop(); // remove last item
+        segments.pop(); // remove last item (current page)
+        let q = { title: '?', url: curUrlRoot + '?/' }
+        segments.splice(segments.findIndex(a => a.title === q.title), 1); // remove root basis character
         return segments
     }
 }

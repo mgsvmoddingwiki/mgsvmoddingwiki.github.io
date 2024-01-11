@@ -1,8 +1,9 @@
 <!--
 title: Phx
-permalink: /Entity_Reference/Fox/Phx
+permalink: /Entity_Reference/?/Fox/Phx/
 tags: []
 -->
 
 {% include index-autolist type="section" %}
+
 

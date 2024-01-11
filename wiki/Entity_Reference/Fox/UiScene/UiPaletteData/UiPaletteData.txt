@@ -1,12 +1,12 @@
 <!--
 title: UiPaletteData
-permalink: /Entity_Reference/Fox/UiScene/UiPaletteData
+permalink: /Entity_Reference/?/Fox/UiScene/UiPaletteData/
 tags: [Fox, UiScene, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [UiScene](/Entity_Reference/Fox/UiScene)\
+> Module: [UiScene](/Entity_Reference/?/Fox/UiScene)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.Data → UiPaletteData
 
@@ -21,4 +21,5 @@ TODO: Description
 | | |
 |-|-|
 | [colors](#colors) | TODO: Description |
+
 

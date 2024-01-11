@@ -1,12 +1,12 @@
 <!--
 title: NavxAttributePathVolume
-permalink: /Entity_Reference/Fox/Navx/NavxAttributePathVolume
+permalink: /Entity_Reference/?/Fox/Navx/NavxAttributePathVolume/
 tags: [Fox, Navx, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Navx](/Entity_Reference/Fox/Navx)\
+> Module: [Navx](/Entity_Reference/?/Fox/Navx)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Graphx.GraphxPathVolume → NavxAttributePathVolume
 
@@ -22,4 +22,5 @@ TODO: Description
 |-|-|
 | [worldName](#worldname) | TODO: Description |
 | [attributeInfos](#attributeinfos) | TODO: Description |
+
 

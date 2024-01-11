@@ -1,12 +1,12 @@
 <!--
 title: NavxWorldGenerateParameter
-permalink: /Entity_Reference/Fox/Navx/NavxWorldGenerateParameter
+permalink: /Entity_Reference/?/Fox/Navx/NavxWorldGenerateParameter/
 tags: [Fox, Navx, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Navx](/Entity_Reference/Fox/Navx)\
+> Module: [Navx](/Entity_Reference/?/Fox/Navx)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.TransformData → NavxWorldGenerateParameter
 
@@ -42,4 +42,5 @@ TODO: Description
 | [searchSpaceBucketSizeHorizontal](#searchspacebucketsizehorizontal) | TODO: Description |
 | [collisionAttributes](#collisionattributes) | TODO: Description |
 | [loadFox2FileListScriptPath](#loadfox2filelistscriptpath) | TODO: Description |
+
 

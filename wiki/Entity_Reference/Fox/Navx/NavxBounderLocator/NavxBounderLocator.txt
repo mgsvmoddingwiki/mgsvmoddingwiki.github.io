@@ -1,12 +1,12 @@
 <!--
 title: NavxBounderLocator
-permalink: /Entity_Reference/Fox/Navx/NavxBounderLocator
+permalink: /Entity_Reference/?/Fox/Navx/NavxBounderLocator/
 tags: [Fox, Navx, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Navx](/Entity_Reference/Fox/Navx)\
+> Module: [Navx](/Entity_Reference/?/Fox/Navx)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.TransformData → NavxBounderLocator
 
@@ -24,4 +24,5 @@ TODO: Description
 | [sceneName](#scenename) | TODO: Description |
 | [worldName](#worldname) | TODO: Description |
 | [type](#type) | TODO: Description |
+
 

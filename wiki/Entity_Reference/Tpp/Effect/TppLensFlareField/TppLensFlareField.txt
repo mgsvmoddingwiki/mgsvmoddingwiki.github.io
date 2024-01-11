@@ -1,12 +1,12 @@
 <!--
 title: TppLensFlareField
-permalink: /Entity_Reference/Tpp/Effect/TppLensFlareField
+permalink: /Entity_Reference/?/Tpp/Effect/TppLensFlareField/
 tags: [Tpp, Effect, Reference]
 -->
 
 ## Definition
 > Project: Tpp\
-> Module: [Effect](/Entity_Reference/Tpp/Effect)\
+> Module: [Effect](/Entity_Reference/?/Tpp/Effect)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.Data → TppLensFlareField
 
@@ -31,4 +31,5 @@ TODO: Description
 | [centerValue](#centervalue) | TODO: Description |
 | [outerValue](#outervalue) | TODO: Description |
 | [reverse](#reverse) | TODO: Description |
+
 

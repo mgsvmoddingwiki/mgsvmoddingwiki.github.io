@@ -1,12 +1,12 @@
 <!--
 title: GeoTrapCondition
-permalink: /Entity_Reference/Fox/Geo/GeoTrapCondition
+permalink: /Entity_Reference/?/Fox/Geo/GeoTrapCondition/
 tags: [Fox, Geo, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Geo](/Entity_Reference/Fox/Geo)\
+> Module: [Geo](/Entity_Reference/?/Fox/Geo)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.TransformData → GeoTrapCondition
 
@@ -24,4 +24,5 @@ TODO: Description
 | [trapPriority](#trappriority) | TODO: Description |
 | [enable](#enable) | TODO: Description |
 | [isOnce](#isonce) | TODO: Description |
+
 

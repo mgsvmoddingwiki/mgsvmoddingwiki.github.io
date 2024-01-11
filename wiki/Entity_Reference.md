@@ -1,6 +1,6 @@
 ---
 title: Entity Reference
-permalink: /Entity_Reference
+permalink: /Entity_Reference/
 tags: [Entities, Reference]
 ---
 
@@ -13,7 +13,7 @@ and foremost, with information regarding Survive coming at a later date.
 
 Click a link below (when those exist) to learn more about that entity or
 subject. For the full, unsorted list, check the [bottom of the
-page](/Entity_Reference#all-tpp-entities-unsorted).
+page](#all-tpp-entities-unsorted).
 
 > **New:** Each entity now has its own page. These can be navigated by hierarchy in the sidebar, accessed via a search, or by viewing the complete linked list [here](/Reference#entity-reference). This page will be revised over time to reflect this.
 

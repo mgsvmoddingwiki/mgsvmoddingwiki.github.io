@@ -1,12 +1,12 @@
 <!--
 title: PhxVehicleTransmission
-permalink: /Entity_Reference/Fox/Phx/PhxVehicleTransmission
+permalink: /Entity_Reference/?/Fox/Phx/PhxVehicleTransmission/
 tags: [Fox, Phx, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Phx](/Entity_Reference/Fox/Phx)\
+> Module: [Phx](/Entity_Reference/?/Fox/Phx)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.Data → PhxVehicleTransmission
 
@@ -22,4 +22,5 @@ TODO: Description
 |-|-|
 | [gearRatios](#gearratios) | TODO: Description |
 | [finalGearRatio](#finalgearratio) | TODO: Description |
+
 

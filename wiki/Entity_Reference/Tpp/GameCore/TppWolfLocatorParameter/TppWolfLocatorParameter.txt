@@ -1,12 +1,12 @@
 <!--
 title: TppWolfLocatorParameter
-permalink: /Entity_Reference/Tpp/GameCore/TppWolfLocatorParameter
+permalink: /Entity_Reference/?/Tpp/GameCore/TppWolfLocatorParameter/
 tags: [Tpp, GameCore, Reference]
 -->
 
 ## Definition
 > Project: Tpp\
-> Module: [GameCore](/Entity_Reference/Tpp/GameCore)\
+> Module: [GameCore](/Entity_Reference/?/Tpp/GameCore)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.DataElement → TppWolfLocatorParameter
 
@@ -22,4 +22,5 @@ TODO: Description
 |-|-|
 | [count](#count) | TODO: Description |
 | [radius](#radius) | TODO: Description |
+
 

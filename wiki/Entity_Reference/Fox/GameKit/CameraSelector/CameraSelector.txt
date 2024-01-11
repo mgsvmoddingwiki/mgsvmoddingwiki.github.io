@@ -1,12 +1,12 @@
 <!--
 title: CameraSelector
-permalink: /Entity_Reference/Fox/GameKit/CameraSelector
+permalink: /Entity_Reference/?/Fox/GameKit/CameraSelector/
 tags: [Fox, GameKit, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [GameKit](/Entity_Reference/Fox/GameKit)\
+> Module: [GameKit](/Entity_Reference/?/Fox/GameKit)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.Entity → CameraSelector
 
@@ -15,6 +15,7 @@ CameraSelector : Fox.Core.Entity
 ```
 
 TODO: Description
+
 
 
 

@@ -1,12 +1,12 @@
 <!--
 title: PhWindActionParam
-permalink: /Entity_Reference/Fox/Ph/PhWindActionParam
+permalink: /Entity_Reference/?/Fox/Ph/PhWindActionParam/
 tags: [Fox, Ph, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Ph](/Entity_Reference/Fox/Ph)\
+> Module: [Ph](/Entity_Reference/?/Fox/Ph)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Ph.PhActionParam → PhWindActionParam
 
@@ -21,4 +21,5 @@ TODO: Description
 | | |
 |-|-|
 | [airResistanceRate](#airresistancerate) | TODO: Description |
+
 

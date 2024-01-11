@@ -1,12 +1,12 @@
 <!--
 title: DirectionalLight
-permalink: /Entity_Reference/Fox/Grx/DirectionalLight
+permalink: /Entity_Reference/?/Fox/Grx/DirectionalLight/
 tags: [Fox, Grx, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Grx](/Entity_Reference/Fox/Grx)\
+> Module: [Grx](/Entity_Reference/?/Fox/Grx)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.TransformData → DirectionalLight
 
@@ -44,4 +44,5 @@ TODO: Description
 | [isBounced](#isbounced) | TODO: Description |
 | [showObject](#showobject) | TODO: Description |
 | [enableDistanceFade](#enabledistancefade) | TODO: Description |
+
 

@@ -1,12 +1,12 @@
 <!--
 title: PluginAngleLimit
-permalink: /Entity_Reference/Fox/Animx/PluginAngleLimit
+permalink: /Entity_Reference/?/Fox/Animx/PluginAngleLimit/
 tags: [Fox, Animx, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Animx](/Entity_Reference/Fox/Animx)\
+> Module: [Animx](/Entity_Reference/?/Fox/Animx)\
 > Submodule: TODO: Submodule
 
 ```cpp
@@ -23,4 +23,5 @@ TODO: Description
 | [hriLimR](#hrilimr) | TODO: Description |
 | [verLimU](#verlimu) | TODO: Description |
 | [verLimD](#verlimd) | TODO: Description |
+
 

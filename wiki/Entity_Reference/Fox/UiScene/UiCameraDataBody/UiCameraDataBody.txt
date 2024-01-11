@@ -1,12 +1,12 @@
 <!--
 title: UiCameraDataBody
-permalink: /Entity_Reference/Fox/UiScene/UiCameraDataBody
+permalink: /Entity_Reference/?/Fox/UiScene/UiCameraDataBody/
 tags: [Fox, UiScene, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [UiScene](/Entity_Reference/Fox/UiScene)\
+> Module: [UiScene](/Entity_Reference/?/Fox/UiScene)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.DataBody → UiCameraDataBody
 
@@ -15,6 +15,7 @@ UiCameraDataBody : Fox.Core.DataBody
 ```
 
 TODO: Description
+
 
 
 

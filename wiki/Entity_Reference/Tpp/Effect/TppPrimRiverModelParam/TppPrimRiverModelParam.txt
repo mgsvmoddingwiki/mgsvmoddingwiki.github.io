@@ -1,12 +1,12 @@
 <!--
 title: TppPrimRiverModelParam
-permalink: /Entity_Reference/Tpp/Effect/TppPrimRiverModelParam
+permalink: /Entity_Reference/?/Tpp/Effect/TppPrimRiverModelParam/
 tags: [Tpp, Effect, Reference]
 -->
 
 ## Definition
 > Project: Tpp\
-> Module: [Effect](/Entity_Reference/Tpp/Effect)\
+> Module: [Effect](/Entity_Reference/?/Tpp/Effect)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.Data → TppPrimRiverModelParam
 
@@ -40,4 +40,5 @@ TODO: Description
 | [oilIntensity](#oilintensity) | TODO: Description |
 | [useHnmTexture](#usehnmtexture) | TODO: Description |
 | [debugReset](#debugreset) | TODO: Description |
+
 

@@ -1,12 +1,12 @@
 <!--
 title: NavWorldDaemon
-permalink: /Entity_Reference/Fox/Nav/NavWorldDaemon
+permalink: /Entity_Reference/?/Fox/Nav/NavWorldDaemon/
 tags: [Fox, Nav, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Nav](/Entity_Reference/Fox/Nav)\
+> Module: [Nav](/Entity_Reference/?/Fox/Nav)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.Entity → NavWorldDaemon
 
@@ -15,6 +15,7 @@ NavWorldDaemon : Fox.Core.Entity
 ```
 
 TODO: Description
+
 
 
 

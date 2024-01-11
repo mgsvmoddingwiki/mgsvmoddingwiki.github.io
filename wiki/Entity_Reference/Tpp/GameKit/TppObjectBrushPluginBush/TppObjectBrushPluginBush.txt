@@ -1,12 +1,12 @@
 <!--
 title: TppObjectBrushPluginBush
-permalink: /Entity_Reference/Tpp/GameKit/TppObjectBrushPluginBush
+permalink: /Entity_Reference/?/Tpp/GameKit/TppObjectBrushPluginBush/
 tags: [Tpp, GameKit, Reference]
 -->
 
 ## Definition
 > Project: Tpp\
-> Module: [GameKit](/Entity_Reference/Tpp/GameKit)\
+> Module: [GameKit](/Entity_Reference/?/Tpp/GameKit)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.GameKit.ObjectBrushPluginClone → TppObjectBrushPluginBush
 
@@ -24,4 +24,5 @@ TODO: Description
 | [upgradeLodRateForHighEnd](#upgradelodrateforhighend) | TODO: Description |
 | [gimmickParameter](#gimmickparameter) | TODO: Description |
 | [externalGimmickParameter](#externalgimmickparameter) | TODO: Description |
+
 

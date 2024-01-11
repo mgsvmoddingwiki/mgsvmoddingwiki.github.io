@@ -1,12 +1,12 @@
 <!--
 title: Vector3StringMapPropertyDifference
-permalink: /Entity_Reference/Fox/Core/Vector3StringMapPropertyDifference
+permalink: /Entity_Reference/?/Fox/Core/Vector3StringMapPropertyDifference/
 tags: [Fox, Core, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Core](/Entity_Reference/Fox/Core)\
+> Module: [Core](/Entity_Reference/?/Fox/Core)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.PropertyDifference → Vector3StringMapPropertyDifference
 
@@ -22,4 +22,5 @@ TODO: Description
 |-|-|
 | [originalValues](#originalvalues) | TODO: Description |
 | [values](#values) | TODO: Description |
+
 

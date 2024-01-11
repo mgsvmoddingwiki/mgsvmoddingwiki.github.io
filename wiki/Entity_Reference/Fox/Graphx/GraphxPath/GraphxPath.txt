@@ -1,12 +1,12 @@
 <!--
 title: GraphxPath
-permalink: /Entity_Reference/Fox/Graphx/GraphxPath
+permalink: /Entity_Reference/?/Fox/Graphx/GraphxPath/
 tags: [Fox, Graphx, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Graphx](/Entity_Reference/Fox/Graphx)\
+> Module: [Graphx](/Entity_Reference/?/Fox/Graphx)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Graphx.GraphxSpatialGraph → GraphxPath
 
@@ -15,6 +15,7 @@ GraphxPath : Fox.Graphx.GraphxSpatialGraph
 ```
 
 TODO: Description
+
 
 
 

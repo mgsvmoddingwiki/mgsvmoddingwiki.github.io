@@ -1,12 +1,12 @@
 <!--
 title: TppCoverPoint
-permalink: /Entity_Reference/Tpp/GameKit/TppCoverPoint
+permalink: /Entity_Reference/?/Tpp/GameKit/TppCoverPoint/
 tags: [Tpp, GameKit, Reference]
 -->
 
 ## Definition
 > Project: Tpp\
-> Module: [GameKit](/Entity_Reference/Tpp/GameKit)\
+> Module: [GameKit](/Entity_Reference/?/Tpp/GameKit)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Tactical.GkTacticalPoint → TppCoverPoint
 
@@ -28,4 +28,5 @@ TODO: Description
 | [isUseSniper](#isusesniper) | TODO: Description |
 | [isBreakDisable](#isbreakdisable) | TODO: Description |
 | [isBreakEnable](#isbreakenable) | TODO: Description |
+
 

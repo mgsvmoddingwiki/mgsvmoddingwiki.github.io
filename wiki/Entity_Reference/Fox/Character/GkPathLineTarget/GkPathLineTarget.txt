@@ -1,12 +1,12 @@
 <!--
 title: GkPathLineTarget
-permalink: /Entity_Reference/Fox/Character/GkPathLineTarget
+permalink: /Entity_Reference/?/Fox/Character/GkPathLineTarget/
 tags: [Fox, Character, Reference]
 -->
 
 ## Definition
 > Project: Fox\
-> Module: [Character](/Entity_Reference/Fox/Character)\
+> Module: [Character](/Entity_Reference/?/Fox/Character)\
 > Submodule: TODO: Submodule\
 > Inheritance: Fox.Graphx.GraphxPathData → GkPathLineTarget
 
@@ -15,6 +15,7 @@ GkPathLineTarget : Fox.Graphx.GraphxPathData
 ```
 
 TODO: Description
+
 
 
 
