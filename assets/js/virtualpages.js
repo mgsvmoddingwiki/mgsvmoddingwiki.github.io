@@ -51,7 +51,7 @@ if (isVirtualPage) {
             if (!tar.classList.contains('search-result-item')) {
                 tarUrl = tar.parentElement.getAttribute('href');
             }
-            if (tarUrl != func.trimTrailFs(curUrlRoot)) {
+            if (tarUrl != curUrlRoot) {
                 updateFromTarget(e, tarUrl);
             }
             return
@@ -387,10 +387,24 @@ function preParse(input) {
                         </li>
                     </ul>
                     `
+        },
+        {
+            name: `spoilerStart`,
+            orig: `{% raw %}{% include spoiler-start %}{% endraw %}`,
+            repl: `<details class="spoiler">
+                    <summary class="content-button">
+                    Expand for more
+                    </summary>
+                    `
+        },
+        {
+            name: `spoilerEnd`,
+            orig: `{% raw %}{% include spoiler-end %}{% endraw %}`,
+            repl: `</details>`
         }
     ];
     includes.forEach((include) => {
-        input = input.replace(include.orig,include.repl.replace(/^\s+/gm, '')) // trim leading whitespace per line from replacement to avoid Markdown parsing as code block
+        input = input.replaceAll(include.orig,include.repl.replace(/^\s+/gm, '')) // trim leading whitespace per line from replacement to avoid Markdown parsing as code block
     });
 
     return input
