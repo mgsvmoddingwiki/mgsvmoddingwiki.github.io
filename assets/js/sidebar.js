@@ -7,7 +7,7 @@ import { isVirtualPage } from './virtualpages.js';
 const sidebar = body.querySelector('.git-wiki-page-list');
 let counters = {
     guides: sidebar.querySelector('a[href^="/Guides"][data-count]'),
-    allPages: sidebar.querySelector('a[href^="/Meta-All_Pages"][data-count]')
+    allPages: sidebar.querySelector('a[href^="/Meta/All_Pages"][data-count]')
 }
 for (let key in counters) {
     counters[key].setAttribute('data-count',pageCounters[key]);

@@ -1186,6 +1186,16 @@ blockquote.important {
     background: var(--color-important);
 }
 
+blockquote.important a {
+    /* Increase contrast for links since harder to see otherwise */
+    color: var(--color-link-hover);
+    filter: brightness(0.8) contrast(1.4) saturate(3);
+}
+
+blockquote.important a:hover {
+    filter: brightness(1) contrast(2) saturate(3);
+}
+
 /* .index = for use on lists for index/category pages */
 .index {
     clear: both;
