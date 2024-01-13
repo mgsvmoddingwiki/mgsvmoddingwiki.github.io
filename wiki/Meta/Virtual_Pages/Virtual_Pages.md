@@ -12,7 +12,7 @@ This allows the wiki to save a *lot* of time when generating (building) the page
 
 > This is only relevant since longer build times means more waiting for changes to appear on the wiki and also Github seems to have issues with overly long builds.
 
-Keep in mind that there are limitations to this approach (outlined below) so it's only useful for scenarios where *hundreds* of pages need to added.
+Keep in mind that there are limitations to this approach (outlined below) so it's only useful for scenarios where *hundreds* of pages need to be added.
 
 ## Differences
 
@@ -25,6 +25,6 @@ To the reader the pages appear almost identical but under the hood there are som
 - Page metadata only supports `title`, `permalink` and `tags` (no redirection support). The metadata block is also formatted differently to avoid Jekyll parsing it.
 - Page files use a `.txt` extension rather than `.md` (due to Jekyll seemingly spending time reading `.md` files even if they lack a Jekyll metadata block).
 
-Because virtual pages differ enough from regular pages in these ways this section has its [own Formatting Reference](/Meta/Virtual_Pages/Formatting_Reference) and [Metadata/Organization](/Meta/Virtual_Pages/Metadata_Organization/) pages which lists the differences.
+Because virtual pages differ enough from regular pages in these ways this section has its [own Formatting Reference](/Meta/Virtual_Pages/Formatting_Reference) and [Metadata/Organization](/Meta/Virtual_Pages/Metadata_Organization/) pages which list the differences.
 
 {% include index-autolist type="section" %}

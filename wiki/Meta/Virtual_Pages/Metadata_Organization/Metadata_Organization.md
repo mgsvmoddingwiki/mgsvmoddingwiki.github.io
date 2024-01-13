@@ -35,7 +35,7 @@ Then the virtual page path is appended to the end of the `permalink` path with a
 So in the above example:
 
 - `/Example_Root_Page/` is the part of the path that represents the path of a 'real' root page.
-- `?/Example_Virtual_Page/` represents the virtual page.
+- `?/Example_Virtual_Page/` represents the virtual page. Any deeper paths desired like `?/Example_Virtual_Page/Another_Page/` should still use just a single `?/`.
 
 > **Tip:** live examples of multi-level virtual pages can be found in the [Entity Reference](/Entity_Reference) section, including deeper multi-level paths such as [TppCollectionLocatorArray](/Entity_Reference/?/Tpp/Collectible/TppCollectionLocatorArray/).
 
@@ -60,7 +60,7 @@ The way the virtual pages are detected by the wiki is two-fold:
 
 1. Navigate to the root of the site's files and open `_config.yml` in a text editor.
 2. Scroll to the `virtual_page_roots` array and add the path to the real root page that the virtual pages section will use as the basis, like the following:
-```
+```yaml
 virtual_page_roots:
 - '/Entity_Reference/'
 - '/Another_Example_Real_Page/'
@@ -70,7 +70,7 @@ virtual_page_roots:
 
 1. In the root of the site open `build-virtual-index.ps1` in a text editor.
 2. In the `$rootDirs` array add the path to the directory that contains the virtual page `.txt` files, like so:
-```
+```ps
 $rootDirs = [System.Collections.ArrayList]@(
     "wiki/Entity_Reference/"
     "wiki/Another_Example_Real_Page/"
@@ -88,4 +88,4 @@ Images and other files can be added to the `assets` directory as per the [regula
 
 ## Page redirections
 
-Page redirections aren't support on virtual pages.
+Page redirections aren't supported on virtual pages.

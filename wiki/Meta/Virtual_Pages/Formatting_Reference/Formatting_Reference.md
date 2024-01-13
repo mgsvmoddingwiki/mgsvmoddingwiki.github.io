@@ -58,7 +58,7 @@ This can be used to auto populate a list of direct child pages of a virtual page
     {% include index-autolist type="section" %}
     {% endraw %}
 
-> **Note:** nothing will appear in this example list since this page doesn't have a multi-level path with child pages.
+> **Note:** nothing will appear in this example list since this page contain child pages.
 
 {% include spoiler-end %}
 
@@ -104,4 +104,4 @@ So for the **Basic** heading on that linked page instead of being headerless it 
 
 ## Spoiler elements
 
-Lists share the same syntax as the [regular syntax](/Meta/Formatting_Reference/#spoiler-elements), with the exception of lacking support for custom titles.
+Spoiler elements share the same syntax as the [regular syntax](/Meta/Formatting_Reference/#spoiler-elements), with the exception of lacking support for custom titles.
