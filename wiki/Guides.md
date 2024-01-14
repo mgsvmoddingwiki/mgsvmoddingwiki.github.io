@@ -3,7 +3,7 @@ title: Guides
 permalink: /Guides/
 ---
 
-> See also the [Alphabetical](#alphabetical) subsection for a non-organized list of all guides.
+> See also the [Alphabetical](#alphabetical) subsection for an uncategorized list of all guides.
 
 - ## Getting Started
     - [SnakeBite Mod Manager](/SnakeBite_Mod_Manager)

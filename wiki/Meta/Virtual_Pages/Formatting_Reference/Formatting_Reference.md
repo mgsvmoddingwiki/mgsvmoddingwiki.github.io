@@ -58,7 +58,7 @@ This can be used to auto populate a list of direct child pages of a virtual page
     {% include index-autolist type="section" %}
     {% endraw %}
 
-> **Note:** nothing will appear in this example list since this page contain child pages.
+> **Note:** nothing will appear in this example list since this page doesn't contain child pages.
 
 {% include spoiler-end %}
 

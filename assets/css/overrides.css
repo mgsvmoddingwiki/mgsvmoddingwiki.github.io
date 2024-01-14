@@ -1390,7 +1390,7 @@ h2.heading-with-frag-id .heading-frag-id-link {
 .git-wiki-page .video-wrapper {
     margin: var(--spacing-secondary) auto var(--spacing-primary);
     display: block;
-    border-radius: var(--radius-secondary);
+    border-radius: var(--radius-primary);
 }
 
 .git-wiki-page p.center {
@@ -2569,6 +2569,10 @@ footer {
         max-width: 100%;
         margin: var(--spacing-secondary) auto var(--spacing-primary);
         float: none;
+    }
+
+    .git-wiki-page .image-wrapper:not(.inline) img:not(.inline) {
+        margin: 0;
     }
 
     .git-wiki-page .video-wrapper.thumb,
