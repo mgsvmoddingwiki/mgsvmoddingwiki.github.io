@@ -152,8 +152,8 @@ TBA
 | factorySouth | 20: Ngumba Industrial Zone, SW Guard Post | 17 |
 | hillWestNear | 21: Munoko ya Nioka Station, West Guard Post | 30 |
 | chicoVilWest | 22: Nova Braga Airport, South Guard Post | 33 |
-| hillSouth | 23: Munoko ya Nioka Station, SW Guard Post |  |
-| swampWestNear | n/a (removed) | 31 |
+| hillSouth | 23: Munoko ya Nioka Station, SW Guard Post | 31 |
+| swampWestNear | n/a (removed) | 32 |
 
 ## Cyprus/cypr
 
