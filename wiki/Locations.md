@@ -52,89 +52,54 @@ TBA
 
 ### <u>Large Blocks/Command Posts (cp)</u>
 
-Mountain Relay Base - bridge
-
-OKB Zero - citadel
-
-Sakhra Ee Village (Qarya Sakhra Ee) - cliffTown
-
-Eastern Communications Post - commFacility
-
-Wakh Sind Barracks - enemyBase
-
-Shago Village (Da Shago Kallai) - field
-
-Smasei Fort (Da Smasei Laman) - fort
-
-Serak Power Plant - powerPlant
-
-Lamar Khaate Palace - remnants
-
-Spugmay Keep - ruins
-
-Ghwandai Town (Da Ghwandai Khar) - slopedTown
-
-Afghanistan Central Base Camp - sovietBase
-
-Yakho Oboo Supply Outpost - tent
-
-Wialo Village (Da Wialo Kallai) - village
-
-Aabe Shifap Ruins - waterway
+| Name | In-game name | LRRP number |
+| ---- | ------------ | ----------- |
+| bridge | Mountain Relay Base | 33 |
+| citadel | OKB Zero | 30 |
+| cliffTown | Sakhra Ee Village (Qarya Sakhra Ee) | 23 |
+| commFacility | Eastern Communications Post | 34 |
+| enemyBase | Wakh Sind Barracks | 36 |
+| field | Shago Village (Da Shago Kallai) | 29 |
+| fort | Smasei Fort (Da Smasei Laman) | 31 |
+| powerPlant | Serak Power Plant | 26 |
+| remnants | Lamar Khaate Palace | 28 |
+| ruins | Spugmay Keep | n/a |
+| slopedTown | Ghwandai Town (Da Ghwandai Khar) | 35 |
+| sovietBase | Afghanistan Central Base Camp | 27 |
+| tent | Yakho Oboo Supply Outpost | 24 |
+| village | Wialo Village (Da Wialo Kallai) | 32 |
+| waterway | Aabe Shifap Ruins | 25 |
 
 ### <u>Guard Posts/Observation Posts (ob)</u>
 
-citadelSouth (1)
-
-sovietSouth (2)
-
-plantWest (3)
-
-waterwayEast (4)
-
-tentNorth (5)
-
-enemyNorth (6)
-
-cliffWest (7)
-
-tentEast (8)
-
-enemyEast (9)
-
-cliffEast (10)
-
-slopedWest (11)
-
-remnantsNorth (12)
-
-cliffSouth (13)
-
-fortWest (14)
-
-villageWest (15)
-
-slopedEast (16)
-
-fortSouth (17)
-
-villageNorth (18)
-
-commWest (19)
-
-bridgeWest (20)
-
-bridgeNorth (21)
-
-fieldWest (22)
-
-villageEast (23)
-
-ruinsNorth (24)
-
-fieldEast (25)
-
-plantSouth (removed)
+| Name | In-game name | LRRP number |
+| ---- | ------------ | ----------- |
+| citadelSouth | 01: Afghanistan Central Base Camp, East Guard Post | n/a |
+| sovietSouth | 02: Afghanistan Central Base Camp, South Guard Post | 39 |
+| plantWest | 03: Serak Power Plant, NW Guard Post | 19 |
+| waterwayEast | 04: Aabe Shifap Ruins, East Guard Post | 18 |
+| tentNorth | 05: Yakho Oboo Supply Outpost, NE Guard Post | 22 |
+| enemyNorth | 06: Wakh Sind Barracks, NE Guard Post | 07 |
+| cliffWest | 07: Sakhra Ee Village, NW Guard Post | 08 |
+| tentEast | 08: Yakho Oboo Supply Outpost, SE Guard Post | 06 |
+| enemyEast | 09: Wakh Sind Barracks, East Guard Post | 38 |
+| cliffEast | 10: Sakhra Ee Village, East Guard Post | 09 |
+| slopedWest | 11: Ghwandai Town, NW Guard Post | 15 |
+| remnantsNorth | 12: Lamar Khaate Palace, North Guard Post | 21 |
+| cliffSouth | 13: Sakhra Ee Village, South Guard Post | 03 |
+| fortWest | 14: Smasei Fort, West Guard Post | 10 |
+| villageWest | 15: Wialo Village, West Guard Post | 04 |
+| slopedEast | 16: Ghwandai Town, SE Guard Post | 11 |
+| fortSouth | 17: Smasei Fort, SW Guard Post | 12 |
+| villageNorth | 18: Wialo Village, NE Guard Post | 14 |
+| commWest | 19: Eastern Comm. Post, West Guard Post | 02 |
+| bridgeWest | 20: Mountain Relay Base, West Guard Post | 05 |
+| bridgeNorth | 21: Mountain Relay Base, SE Guard Post | 37 |
+| fieldWest | 22: Shago Village, North Guard Post | 20 |
+| villageEast | 23: Wialo Village, SE Guard Post | 01 |
+| ruinsNorth | 24: Spugmay Keep, East Guard Post | 13 |
+| fieldEast | 25: Shago Village, East Guard Post | 16 |
+| plantSouth | n/a (removed) | 17 |
 
 ## Middle Africa/mafr
 
@@ -147,77 +112,48 @@ TBA
 
 ### <u>Large Blocks/Command Posts (cp)</u>
 
-banana
-
-chicoVil (removed)
-
-diamond
-
-factory
-
-flowStation
-
-hill
-
-lab
-
-outland
-
-pfCamp
-
-savannah
-
-swamp
+| Name | In-game name | LRRP number |
+| ---- | ------------ | ----------- |
+| banana | Bampeve Plantation | 25 |
+| diamond | Kungenga Mine | 26 |
+| factory | Ngumba Industrial Zone | 28 |
+| flowStation | Mfinda Oilfield | 21 |
+| hill | Munoko ya Nioka Station | 27 |
+| lab | Lufwa Valley | 29 |
+| outland | Bwala ya Masa | 20 |
+| pfCamp | Nova Braga Airport | 23 |
+| savannah | Ditadi Abandoned Village | 24 |
+| swamp | Kiziba Camp | 22 |
+| chicoVil | n/a (removed) | 34 |
 
 ### <u>Guard Posts/Observation Posts (ob)</u>
 
-swampWest (1)
-
-diamondNorth (2)
-
-bananaEast (3)
-
-bananaSouth (4)
-
-savannahNorth (5)
-
-outlandNorth (6)
-
-diamondWest (7)
-
-labWest (8)
-
-savannahWest (9)
-
-swampEast (10)
-
-outlandEast (11)
-
-swampSouth (12)
-
-diamondSouth (13)
-
-pfCampNorth (14)
-
-savannahEast (15)
-
-hillNorth (16)
-
-factoryWest (17)
-
-pfCampEast (18)
-
-hillWest (19)
-
-factorySouth (20)
-
-hillWestNear (21)
-
-chicoVilWest (22)
-
-hillSouth (23)
-
-swampWestNear (removed)
+| Name | In-game name | LRRP number |
+| ---- | ------------ | ----------- |
+| swampWest | 01: Kiziba Camp, NW Guard Post | 02 |
+| diamondNorth | 02: Kungenga Mine, NE Guard Post | 18 |
+| bananaEast | 03: Bampeve Plantation, SE Guard Post | 08 |
+| bananaSouth | 04: Bampeve Plantation, SW Guard Post | 04 |
+| savannahNorth | 05: Ditadi Abandoned Village, NE Guard Post | 09 |
+| outlandNorth | 06: Masa Village, North Guard Post | 01 |
+| diamondWest | 07: Kungenga Mine, West Guard Post | 10 |
+| labWest | 08: Lufwa Valley, NW Guard Post | 19 |
+| savannahWest | 09: Ditadi Abandoned Village, North Guard Post | 07 |
+| swampEast | 10: Kiziba Camp, SE Guard Post | 06 |
+| outlandEast | 11: Masa Village, East Guard Post | 03 |
+| swampSouth | 12: Kiziba Camp, South Guard Post | 05 |
+| diamondSouth | 13: Kungenga Mine, SW Guard Post | 11 |
+| pfCampNorth | 14: Nova Braga Airport, NE Guard Post | 16 |
+| savannahEast | 15: Ditadi Abandoned Village, South Guard Post | 13 |
+| hillNorth | 16: Munoko ya Nioka Station, NE Guard Post | 12 |
+| factoryWest | 17: Ngumba Industrial Zone, West Guard Post | n/a |
+| pfCampEast | 18: Nova Braga Airport, East Guard Post | 15 |
+| hillWest | 19: Munoko ya Nioka Station, NW Guard Post | 14 |
+| factorySouth | 20: Ngumba Industrial Zone, SW Guard Post | 17 |
+| hillWestNear | 21: Munoko ya Nioka Station, West Guard Post | 30 |
+| chicoVilWest | 22: Nova Braga Airport, South Guard Post | 33 |
+| hillSouth | 23: Munoko ya Nioka Station, SW Guard Post |  |
+| swampWestNear | n/a (removed) | 31 |
 
 ## Cyprus/cypr
 
