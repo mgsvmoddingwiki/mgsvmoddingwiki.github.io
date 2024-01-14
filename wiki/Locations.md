@@ -1,7 +1,10 @@
 ---
 title: Locations
 permalink: /Locations/
-tags: [Locations, Reference]
+tags:
+  - Locations
+  - Reference
+published: true
 ---
 
 A location is part of the system that represents a map/playspace. For a
