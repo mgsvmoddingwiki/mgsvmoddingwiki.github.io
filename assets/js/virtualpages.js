@@ -42,7 +42,7 @@ if (isVirtualPage) {
             if (tar.parentElement.classList.contains('section-hierarchy-link')) {
                 tarUrl = tar.parentElement.getAttribute('href');
             }
-            if (!tar.closest('.index.sectiond')) {
+            if (!tar.closest('.index.section')) {
                 mobileMainMenuToggle();
             }
             updateFromTarget(e, tarUrl);
