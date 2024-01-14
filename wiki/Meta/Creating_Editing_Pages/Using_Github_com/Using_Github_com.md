@@ -4,9 +4,9 @@ permalink: /Meta/Creating_Editing_Pages/Using_Github_com/
 tags: [Meta, Guides]
 ---
 
-## Using Github.com to edit the wiki
+If you'd like to use the Github.com website to make contributions this guide explains how. The Github site has a few advantages over the simpler [Prose.io](/Meta/Creating_Editing_Pages/Using_Prose_io) site, including the ability to add new images and make changes to multiple pages/files more easily.
 
-If you'd like to use the Github.com website to make contributions this guide explains how. This method has a few advantages over the simpler [Prose.io](/Meta/Creating_Editing_Pages/Using_Prose_io), including the ability to add new images and make changes to multiple pages/files more easily.
+Alternatively you can use the official Desktop app to manage files using Windows File Explorer, which you may find easier, particularly if changing many files. See its guide [here](/Meta/Creating_Editing_Pages/Using_Github_Desktop).
 
 > At a simplified level, for most users, the process is forking (copying) the wiki on the site, making some changes on your own copy, then submitting the changes back to the original wiki for approval.
 

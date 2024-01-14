@@ -15,7 +15,7 @@ You'll need a Github account and to authorize Prose once for it but after that P
 > **Tip:** want to just edit an existing page? [Click here](#editing-an-existing-page) to jump to the steps.
 {:.important}
 
-> **Note:** a downside to this method is new images can't be added and you're limited to changing one file at a time. If you need that check out the [Using Github.com](/Meta/Creating_Editing_Pages/Using_Github_com) method.
+> **Note:** a downside to this method is new images can't be added and you're limited to changing one file at a time. If you need that check out the [Using Github Desktop](/Meta/Creating_Editing_Pages/Using_Github_Desktop) or [Using Github.com](/Meta/Creating_Editing_Pages/Using_Github_com) guide.
 
 ## Authorizing Prose.io for your account
 
