@@ -9,7 +9,7 @@ redirect_from:
 There are a few ways to create or edit wiki pages so this area covers each method. Check out the sidebar or the list below for the guides.
 
 - For those with little experience using Github and/or who only need to make text changes or adjust existing images check out the [Using Prose.io](/Meta/Creating_Editing_Pages/Using_Prose_io) guide.
-- For more flexibility and the ability to add new images check out the [Using Github.com](/Meta/Creating_Editing_Pages/Using_Github_com) guide.
+- For more flexibility and the ability to add new images check out the [Using Github Desktop](/Meta/Creating_Editing_Pages/Using_Github_Desktop) guide, which use Windows File Explorer to mange files, or the [Using Github.com](/Meta/Creating_Editing_Pages/Using_Github_com) guide which uses the website.
 
 > Each guide has screenshots/GIFs to try and be clear about every step.
 
