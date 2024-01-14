@@ -200,7 +200,7 @@ async function fetchFile(filePath) {
 async function stylePage(item) {
     if (checkFileExists(item.filePath)) {
         await fetchFile(item.filePath);
-        // console.clear(); // remove eg. any 404 link error messages generated on prior page
+        console.clear(); // remove eg. any 404 link error messages generated on prior page
 
         pageHeading.textContent = item.title;
         document.title = item.title + ' | MGSV Modding Wiki';
