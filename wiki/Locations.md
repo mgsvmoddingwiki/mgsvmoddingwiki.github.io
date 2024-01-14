@@ -40,180 +40,181 @@ More details for each location after the table.
 
 ## Afghanistan/afgh
 
-![Afghanistan. Location id 10](/assets/Latest.jpg){:.thumb .right}
-![Afghanistan. Large Blocks. White areas are auto fulton traps (leaving them triggers fulton of NPCs within 5m of player).](/assets/Afgh cp ob fltn hlf.png){:.thumb .right}
-![Afghanistan. Outposts](/assets/MGSV afgnMap.jpg){:.thumb .right}
+![Afghanistan. Location id 10. White areas are auto fulton traps (leaving them triggers fulton of NPCs within 5m of player). Numbers are LRRP indices.](/assets/afgh_cp_ob_fltn_lrrpNum.png){:.thumb .right}
 
 Afghanistan uses the standard **StageBlockControllerData**-class entity
 block streaming system.
 
 TBA
 
-### <u>Large Blocks (cp)</u>
+### <u>Large Blocks/Command Posts (cp)</u>
 
-afgh_bridge
+Mountain Relay Base - bridge
 
-afgh_citadel
+OKB Zero - citadel
 
-afgh_cliffTown
+Sakhra Ee Village (Qarya Sakhra Ee) - cliffTown
 
-afgh_commFacility
+Eastern Communications Post - commFacility
 
-afgh_enemyBase
+Wakh Sind Barracks - enemyBase
 
-afgh_field
+Shago Village (Da Shago Kallai) - field
 
-afgh_fort
+Smasei Fort (Da Smasei Laman) - fort
 
-afgh_powerPlant
+Serak Power Plant - powerPlant
 
-afgh_remnants
+Lamar Khaate Palace - remnants
 
-afgh_ruins
+Spugmay Keep - ruins
 
-afgh_slopedTown
+Ghwandai Town (Da Ghwandai Khar) - slopedTown
 
-afgh_sovietBase
+Afghanistan Central Base Camp - sovietBase
 
-afgh_tent
+Yakho Oboo Supply Outpost - tent
 
-afgh_village
+Wialo Village (Da Wialo Kallai) - village
 
-afgh_waterway
+Aabe Shifap Ruins - waterway
 
-### <u>Outposts (op)</u>
+### <u>Guard Posts/Observation Posts (ob)</u>
 
-afgh_citadelSouth (1)
+citadelSouth (1)
 
-afgh_sovietSouth (2)
+sovietSouth (2)
 
-afgh_plantWest (3)
+plantWest (3)
 
-afgh_waterwayEast (4)
+waterwayEast (4)
 
-afgh_tentNorth (5)
+tentNorth (5)
 
-afgh_enemyNorth (6)
+enemyNorth (6)
 
-afgh_cliffWest (7)
+cliffWest (7)
 
-afgh_tentEast (8)
+tentEast (8)
 
-afgh_enemyEast (9)
+enemyEast (9)
 
-afgh_cliffEast (10)
+cliffEast (10)
 
-afgh_slopedWest (11)
+slopedWest (11)
 
-afgh_remnantsNorth (12)
+remnantsNorth (12)
 
-afgh_cliffSouth (13)
+cliffSouth (13)
 
-afgh_fortWest (14)
+fortWest (14)
 
-afgh_villageWest (15)
+villageWest (15)
 
-afgh_slopedEast (16)
+slopedEast (16)
 
-afgh_fortSouth (17)
+fortSouth (17)
 
-afgh_villageNorth (18)
+villageNorth (18)
 
-afgh_commWest (19)
+commWest (19)
 
-afgh_bridgeWest (20)
+bridgeWest (20)
 
-afgh_bridgeNorth (21)
+bridgeNorth (21)
 
-afgh_fieldWest (22)
+fieldWest (22)
 
-afgh_villageEast (23)
+villageEast (23)
 
-afgh_ruinsNorth (24)
+ruinsNorth (24)
 
-afgh_fieldEast (25)
+fieldEast (25)
+
+plantSouth (removed)
 
 ## Middle Africa/mafr
 
-![Middle Africa. Location id 20](/assets/Latest-0.jpg){:.thumb .right}
-![Middle Africa. Large Blocks. White areas are auto fulton traps (leaving them triggers fulton of NPCs within 5m of player).](/assets/Mafr cp ob fltn hlf.png){:.thumb .right}
+![Middle Africa. Location id 20. White areas are auto fulton traps (leaving them triggers fulton of NPCs within 5m of player). Numbers are LRRP indices.](/assets/mafr_cp_ob_fltn_lrrpNum.png){:.thumb .right}
 
 Central Africa uses the standard **StageBlockControllerData**-class
 entity block streaming system.
 
 TBA
 
-### <u>Large Blocks (cp)</u>
+### <u>Large Blocks/Command Posts (cp)</u>
 
-mafr_banana
+banana
 
-mafr_chicoVil (removed)
+chicoVil (removed)
 
-mafr_diamond
+diamond
 
-mafr_factory
+factory
 
-mafr_flowStation
+flowStation
 
-mafr_hill
+hill
 
-mafr_lab
+lab
 
-mafr_outland
+outland
 
-mafr_pfCamp
+pfCamp
 
-mafr_savannah
+savannah
 
-mafr_swamp
+swamp
 
-### <u>Outposts (op)</u>
+### <u>Guard Posts/Observation Posts (ob)</u>
 
-mafr_swampWest (1)
+swampWest (1)
 
-mafr_diamondNorth (2)
+diamondNorth (2)
 
-mafr_bananaEast (3)
+bananaEast (3)
 
-mafr_bananaSouth (4)
+bananaSouth (4)
 
-mafr_savannahNorth (5)
+savannahNorth (5)
 
-mafr_outlandNorth (6)
+outlandNorth (6)
 
-mafr_diamondWest (7)
+diamondWest (7)
 
-mafr_labWest (8)
+labWest (8)
 
-mafr_savannahWest (9)
+savannahWest (9)
 
-mafr_swampEast (10)
+swampEast (10)
 
-mafr_outlandEast (11)
+outlandEast (11)
 
-mafr_swampSouth (12)
+swampSouth (12)
 
-mafr_diamondSouth (13)
+diamondSouth (13)
 
-mafr_pfCampNorth (14)
+pfCampNorth (14)
 
-mafr_savannahEast (15)
+savannahEast (15)
 
-mafr_hillNorth (16)
+hillNorth (16)
 
-mafr_factoryWest (17)
+factoryWest (17)
 
-mafr_pfCampEast (18)
+pfCampEast (18)
 
-mafr_hillWest (19)
+hillWest (19)
 
-mafr_factorySouth (20)
+factorySouth (20)
 
-mafr_hillWestNear (21)
+hillWestNear (21)
 
-mafr_chicoVilWest (22)
+chicoVilWest (22)
 
-mafr_hillSouth (23)
+hillSouth (23)
+
+swampWestNear (removed)
 
 ## Cyprus/cypr
 
