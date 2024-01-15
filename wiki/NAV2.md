@@ -2,6 +2,8 @@
 title: NAV2
 permalink: /NAV2/
 tags: [Missions, File Formats]
+redirect_from:
+    - /Nav2/
 ---
 
 NAV2 (.nav2) is a navigation file associated with NPC "navmesh" map
