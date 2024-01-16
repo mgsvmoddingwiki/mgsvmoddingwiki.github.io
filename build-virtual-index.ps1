@@ -28,10 +28,11 @@ ForEach($file in $files) {
 
         # Parse the metadata
         $item = [PSCustomObject]@{}
-        ForEach ($line in $($metadata -split "`r`n")) {
+        ForEach ($line in $($metadata -split "\r?\n")) {
             $strings = $line | Select-String -Pattern "^(.*): (.*)" -AllMatches
             $name = $strings | % { $_.Matches.groups[1] } | % { $_.Value }
             $value = $strings | % { $_.Matches.groups[2] } | % { $_.Value }
+ 
             if ($name -eq "title") {
                 # Capture everything between single quotes (if present in title) and ignore leading/trailing whitespace
                 $string = $value | Select-String -Pattern "^[\s]*[']?(.*?)['\s]*$" -AllMatches | % { $_.Matches.groups[1] } | % { $_.Value }
@@ -68,5 +69,4 @@ $json = $items | ConvertTo-Json
 
 # Generate new Javascript file
 "export const virtualIndex = {0}" -f $json | Set-Content -Path $indexFile
-
 
