@@ -1,7 +1,7 @@
 import * as func from './functions.js';
 import { searchIndex } from './searchindex.js';
 import { pageCounters } from './searchindex.js';
-import { isVirtualPage } from './virtualpages.js';
+import { checkForVirtualPage } from './virtualpages.js';
 
 // ---------------- Add page counters to Quick Menu items ---------------
 const sidebar = body.querySelector('.git-wiki-page-list');
@@ -15,7 +15,7 @@ for (let key in counters) {
 
 
 // -------------------- Page URL hierarchy navigation -------------------
-var {curUrl, curUrlRoot} = func.getPageUrls(isVirtualPage),
+var {curUrl, curUrlRoot} = func.getPageUrls(checkForVirtualPage()),
     curPage;
 export const sectionIndexFlat = pathTreeFilterArray(searchIndex, 'url', curUrlRoot); // check search index for shared root pages (assumes each path level has its own page)
 var sectionIndex = JSON.parse(JSON.stringify(sectionIndexFlat)); // creates separate reference for array copy so original array doesn't get retroactively modified by subsequent changes
@@ -125,7 +125,7 @@ function indexAutoListSection() {
     if (sectionIndexFlat.length > 1) {
         const autoIndexSection = body.querySelectorAll('.index.section ul');
         autoIndexSection.forEach((index) => {
-            var {curUrl, curUrlRoot} = func.getPageUrls(isVirtualPage); // always re-fetch current URL
+            var {curUrl, curUrlRoot} = func.getPageUrls(checkForVirtualPage()); // always re-fetch current URL
             const parent = getNestedObjFromValue(sectionIndex, 'children', 'url', curUrl);
             parent.children.forEach((child) => {
                 let item = document.createElement('li'),

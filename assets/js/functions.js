@@ -1,5 +1,3 @@
-import { isVirtualPage } from './virtualpages.js';
-
 // General reusable functions for Javascript modules (avoids race conditions for deferred scripts)
 
 export function getKeyByValue(object, value) {

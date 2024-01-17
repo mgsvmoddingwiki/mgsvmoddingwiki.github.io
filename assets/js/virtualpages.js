@@ -8,12 +8,6 @@ import { virtualIndex } from './virtualindex.js';
 import { mobileMainMenuToggle } from './general.js';
 import { resetAll as resetSearch } from './searchdata.js';
 
-const virtualRootUrls = {
-    {% for path in site.virtual_page_roots %}
-        url_{{ forloop.index }}: `{{ path }}`,
-    {% endfor %}
-}
-
 export const isVirtualPage = checkForVirtualPage();
 var {curUrl, curUrlRoot} = func.getPageUrls(isVirtualPage),
     pageWrapper = body.querySelector('.git-wiki-page'),
@@ -339,7 +333,12 @@ function checkFileExists(path) {
         });
 }
 
-function checkForVirtualPage() {
+export function checkForVirtualPage() {
+    const virtualRootUrls = {
+        {% for path in site.virtual_page_roots %}
+            url_{{ forloop.index }}: `{{ path }}`,
+        {% endfor %}
+    }
     // Since everything from `?` onward in URL is considered a search we can use `pathname` to obtain root page
     if (func.matchObjVal(virtualRootUrls, window.location.pathname) && !document.title.includes('Page Not Found')) {
         return true
