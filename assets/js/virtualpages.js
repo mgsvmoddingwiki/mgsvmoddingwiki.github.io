@@ -6,6 +6,7 @@ is_wiki_page: false
 import * as func from './functions.js';
 import { virtualIndex } from './virtualindex.js';
 import { mobileMainMenuToggle } from './general.js';
+import { resetAll as resetSearch } from './searchdata.js';
 
 const virtualRootUrls = {
     {% for path in site.virtual_page_roots %}
@@ -32,13 +33,14 @@ if (isVirtualPage) {
             contentLoaded(false);
             stylePage(stateObj);
             setCurPage(stateObj);
+            resetSearch();
         }
     });
 
     body.addEventListener('click', (e) => {
         const tar = e.target;
         var tarUrl = (tar.tagName == 'A') ? tar.getAttribute('href') : null; // reason for using `getAttribute` vs `.href` is latter resolves to full URL, including domain and protocol
-        if ((tar.classList.contains('section-hierarchy-link') && !tar.classList.contains('root-page')) || (tar.parentElement.classList.contains('section-hierarchy-link') && !tar.parentElement.classList.contains('root-page')) || tar.closest('.index.section')) {
+        if ((tar.classList.contains('section-hierarchy-link') && !tar.classList.contains('root-page')) || (tar.parentElement.classList.contains('section-hierarchy-link') && !tar.parentElement.classList.contains('root-page')) || (tar.closest('.index.section') && !tarUrl.startsWith('#'))) {
             if (tar.parentElement.classList.contains('section-hierarchy-link')) {
                 tarUrl = tar.parentElement.getAttribute('href');
             }
@@ -70,10 +72,6 @@ if (isVirtualPage) {
             updateFromTarget(e, func.trimTrailFs(tarUrl) + '/');
             return
         }
-        if (tar.closest('#' + contentWrapper.id) && tarUrl && tarUrl.startsWith('#') && curUrl != curUrlRoot) {
-            updateFromTarget(e, curUrl, true, tarUrl);
-            return
-        }
         e.stopPropagation();
     }, false);
 
@@ -87,20 +85,16 @@ if (isVirtualPage) {
         }
     });
 
-    function updateFromTarget(event, targetUrl, hasFrag, fragId) {
+    function updateFromTarget(event, targetUrl) {
         event.preventDefault();
         var tarIndex = func.getIndexByValue(virtualIndex, 'url', targetUrl),
-            tarObj = virtualIndex[tarIndex];
-        if (hasFrag) {
-            historyPush(tarObj, fragId);
-            fragIdScroll(fragId);
-        } else {
-            historyPush(tarObj);
-            contentLoaded(false);
-            stylePage(tarObj);
-            setCurPage(tarObj);
-            window.scrollTo(0,0);
-        }
+        tarObj = virtualIndex[tarIndex];
+        historyPush(tarObj);
+        contentLoaded(false);
+        stylePage(tarObj);
+        setCurPage(tarObj);
+        resetSearch();
+        window.scrollTo(0,0);
     }
 } else {
     // Tag and all pages auto index handling
@@ -326,10 +320,8 @@ function generateToc() {
     }
 }
 
-function historyPush(item, fragId) {
-    var fragment = '';
-    if (fragId) { fragment = fragId; }
-    history.pushState(item, '', item.url + fragment); // middle value always remains empty
+function historyPush(item) {
+    history.pushState(item, '', item.url); // middle value always remains empty
 }
 
 function contentLoaded(state) {
@@ -426,11 +418,6 @@ function defaultState(returningFromHistory) {
             stylePage(pageObj, true);
         }
     }
-}
-
-function fragIdScroll(fragId) {
-    let el = pageWrapper.querySelector('#' + fragIdFormat(fragId.replace('#','')));
-    el.scrollIntoView(true)
 }
 
 function fragIdFormat(string) {

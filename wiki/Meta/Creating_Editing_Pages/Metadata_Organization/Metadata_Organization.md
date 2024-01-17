@@ -10,6 +10,8 @@ There's also info on how to redirect pages to other pages [here](#page-redirecti
 
 > This page was made to just avoid duplicating the steps on other how-to guides and assumes you're coming from one of them (such as [Using Prose.io](/Meta/Creating_Editing_Pages/Using_Prose_io/) or [Using Github.com](/Meta/Creating_Editing_Pages/Using_Github_com/)). These give more context to the info here.
 
+> The only time some of the below info differs are for [Virtual Pages](/Meta/Virtual_Pages). Such pages are distinguished by a `/?/` in their URL and are currently exclusive to the Entity Reference section.
+
 ---
 
 ## Page filename

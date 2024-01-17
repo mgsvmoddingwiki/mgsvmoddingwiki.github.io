@@ -12,7 +12,7 @@ Its main advantage over [using the Github.com site](/Meta/Creating_Editing_Pages
 
 > There's also no limit to the number of files that can be submitted at once, unlike the Github.com web interface.
 
-> As Github Desktop syncs the original wiki files to a directory on your computer it consumes some drive space. At the time of writing it uses around 350MB.
+> As Github Desktop syncs the wiki files to a directory on your computer it consumes some drive space. At the time of writing it uses around 350MB.
 
 ---
 
@@ -41,13 +41,13 @@ Before installing Github Desktop it's easier (imo) for new users to create a for
 
 ## Getting started
 
-{% include spoiler-start title="Initially importing our fork to Windows" %}
+{% include spoiler-start title="Initially importing your fork to Windows" %}
 
 ![The initial screen after completing installation. Your fork of the wiki will appear in the list (mine is circled here).](/assets/Meta/Creating_Editing_Pages/Using_Github_Desktop/Getting started - Importing your fork to Windows.png)
 
 ### Pulling your fork into Windows
 
-1. On the main screen there's a *Your respositories* list. Click your fork of the wiki (it will begin with your username, mine is cicled in the above screenshot) and then click the blue *Clone mgsvmodmdingwiki...* at the bottom-right.
+1. On the main screen there's a *Your respositories* list. Click your fork of the wiki (it will begin with your username, mine is cicled in the above screenshot) and then click the blue *Clone mgsvmoddingwiki...* at the bottom-right.
 
 2. Following the import you'll get a screen asking how you're planning to use the fork. Just leave it on the default (*To contribute to the parent project*) and press Continue. 
 
@@ -61,8 +61,8 @@ Since you've likely just forked the wiki this probably isn't necessary but it's 
 
 {% include spoiler-start %}
 
-1. From the main menu click the *Branch* menu then select *Update from upstream/master*. This syncs the latest files to our local Windows copy.
-2. Now that the local copy is updated click the *Push origin* button from the main screen to push the changes to the online version of our wiki fork.
+1. From the main menu click the *Branch* menu then select *Update from upstream/master*. This syncs the latest files to the local Windows copy.
+2. Now that the local copy is updated click the *Push origin* button from the main screen to push the changes to the online version of your wiki fork.
 
 ![The main screen showing Push origin button](/assets/Meta/Creating_Editing_Pages/Using_Github_Desktop/Getting started - Syncing to original wiki - Push origin.png)
 
@@ -72,7 +72,7 @@ Since you've likely just forked the wiki this probably isn't necessary but it's 
 
 ## Making changes locally
 
-We can now do whatever we want with our copy of the wiki! By clicking the *Show in Explorer* button we can add, edit, rename, move and delete files. This will only change the files on our own computer for the time being.
+We can now do whatever we want with the copy of the wiki! By clicking the *Show in Explorer* button we can add, edit, rename, move and delete files. This will only change the files on your own computer for the time being.
 
 {% include spoiler-start %}
 
@@ -87,16 +87,16 @@ We can now do whatever we want with our copy of the wiki! By clicking the *Show 
 > As can be seen in the GIF above I already have an image directory for the *Meta* section that I created within `assets` (where all the images/non-page files reside).<br/><br/>
 Image sub-directories should be named after their wiki page (or the root wiki page if it's a multi-level section like *Meta* is). The rest of the existing images that lack their own sub-directories are just from older wiki pages (feel free to move them into their own sub-directories if adding new images to an existing wiki page).
 
-### Committing the local changes to our online fork
+### Committing the local changes to your online fork
 
 1. Once you're done with your changes write a commit summary in the *Summary* text box on the left side. You can optionally write a longer description in the *Description* box. This bundles the local changes as an item in the *History* tab.
 
 ![Writing a commit message](/assets/Meta/Creating_Editing_Pages/Using_Github_Desktop/Committing - Writing a commit message.png)
 
 {:start="2"}
-2. Next push the local commits back to our online fork by clicking *Push origin* from the main screen.
+2. Next push the local commits back to your online fork by clicking *Push origin* from the main screen.
 
-![Pushing the local changes to our online fork](/assets/Meta/Creating_Editing_Pages/Using_Github_Desktop/Committing - Pushing back to our online fork.png)
+![Pushing the local changes to your online fork](/assets/Meta/Creating_Editing_Pages/Using_Github_Desktop/Committing - Pushing back to our online fork.png)
 
 Great! Now the online version on Github.com matches the local version of the files we just changed on Windows.
 
@@ -106,7 +106,7 @@ Great! Now the online version on Github.com matches the local version of the fil
 
 ## Making a pull request
 
-Since our goal is getting the changes of our fork into the original wiki we'll request that by submitting a pull request (aka *PR*). This is the final step!
+Since the goal is getting the changes of your fork into the original wiki we'll request that by submitting a pull request (aka *PR*). This is the final step!
 
 {% include spoiler-start %}
 

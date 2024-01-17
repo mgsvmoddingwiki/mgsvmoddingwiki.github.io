@@ -20,7 +20,7 @@ var {curUrl, curUrlRoot} = func.getPageUrls(isVirtualPage),
 export const sectionIndexFlat = pathTreeFilterArray(searchIndex, 'url', curUrlRoot); // check search index for shared root pages (assumes each path level has its own page)
 var sectionIndex = JSON.parse(JSON.stringify(sectionIndexFlat)); // creates separate reference for array copy so original array doesn't get retroactively modified by subsequent changes
 
-if (sectionIndex.length > 1) {
+if (sectionIndex.length > 1 && !document.title.includes('Page Not Found')) {
     // Collapse any main sidebar spoiler elements besides the hierarchy section list
     const spoilerSiblings = sidebar.querySelectorAll('details');
     var spoilerClosedHeight = 0;
@@ -77,7 +77,7 @@ if (sectionIndex.length > 1) {
 
 // ----------------------- Scroll states detection ----------------------
 SimpleScrollbar.initEl(sidebar); // subsequently initialize custom scrollbar
-let scrollbarWrapper = sidebar.querySelector('.ss-content')
+let scrollbarWrapper = sidebar.querySelector('.ss-content');
 
 // Check for position sticky state of headings (expects `top: -1px` in element's CSS)
 const spoilerHeadings = sidebar.querySelectorAll('.spoiler-sidebar > .sidebar-heading');
@@ -93,23 +93,24 @@ spoilerHeadings.forEach((el) => {
 });
 
 // Determine scrollbar state for container faded edges styling
+var headingStickyState = false;
+setScrollbarFades(scrollbarWrapper, true); // initialize state on load
 scrollbarWrapper.addEventListener('scroll', e => {
     const {scrollHeight, scrollTop, clientHeight} = e.target;
-    let stickyState = false;
     // Since event is fired synchronously the new `stickied` class is undetected initially (most obvious in Chromium). So an asynchronous check is used.
     func.waitForElements(sidebar, '.stickied').then(stickies => {
         stickies.forEach(el => {
             // Check parent details element for `open` state in case heading is inside closed state (which would lead to false positives when toggling `hide-top` class)
             if (el.parentNode.hasAttribute('open')) {
-                stickyState = true;
+                headingStickyState = true;
+            } else {
+                headingStickyState = false;
             }
         });
-        sidebar.classList.toggle('has-scrollbar', scrollHeight != clientHeight);
-        sidebar.classList.toggle('hide-bottom', Math.abs(scrollHeight - clientHeight - scrollTop) <= 3);
-        sidebar.classList.toggle('hide-top', scrollTop == 0 || stickyState);
+        setScrollbarFades(e.target);
     });
     if (scrollTop == 0) {
-       sidebar.classList.add('hide-top'); // always remove even if heading lacks stickied class match above
+       sidebar.classList.add('hide-top'); // always hide at top even if heading lacks stickied class match above
     }
 });
 
@@ -140,6 +141,15 @@ function indexAutoListSection() {
 
 
 // ------------------------------ Functions -----------------------------
+function setScrollbarFades(el, forceHideTop) {
+    const {scrollHeight, scrollTop, clientHeight} = el;
+    let topState = headingStickyState;
+    if (forceHideTop) { topState = true; }
+    sidebar.classList.toggle('has-scrollbar', scrollHeight != clientHeight);
+    sidebar.classList.toggle('hide-bottom', Math.abs(scrollHeight - clientHeight - scrollTop) <= 3);
+    sidebar.classList.toggle('hide-top', scrollTop == 0 || topState);
+}
+
 export function expandSpoilerTree(collapseSiblings) {
     if (collapseSiblings) {
         let spoilers = sectionSpoiler.querySelectorAll('.section-hierarchy-spoiler');
@@ -173,16 +183,27 @@ function getNestedObjFromValue(array, nestingKey, itemKey, value) {
 }
 
 export function scrollCurrentItemIntoView(currentItem) {
-    scrollToCenter(currentItem, scrollbarWrapper, false, (sectionSpoiler.offsetTop + spoilerClosedHeight));
+    scrollToCenter(currentItem, scrollbarWrapper, false, (findPos(sectionSpoiler).top + spoilerClosedHeight));
 }
 
 function scrollToCenter(target, container, toTargetCenter, yOffset) {
     let targetCenter = 0; // by default use top coord to align
     if (toTargetCenter) { targetCenter = (target.clientHeight / 2); }
-    let top = (target.offsetTop + (yOffset || 0)) + targetCenter,
+    let top = (findPos(container).top + findPos(target).top - (yOffset || 0)) + targetCenter,
         center = top - (container.clientHeight / 2);
     container.scrollTo(0, center);
 }
+
+function findPos(el) {
+    var pos = {top: 0, left: 0};
+    // Recursively travel up parents to output total coords from top-most container
+    do {
+        pos.top += el.offsetTop;
+        pos.left += el.offsetLeft;
+    } while (el = el.offsetParent);
+    return pos
+}
+
 
 function pathTreeFilterArray(array, key, value) {
     var id = 1;

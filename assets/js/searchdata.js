@@ -191,7 +191,7 @@ function searchKeyNav(e) {
     }
 }
 
-function resetAll() {
+export function resetAll() {
     searchResultsShow(false);
     searchInput.blur();
     searchInput.value = null;

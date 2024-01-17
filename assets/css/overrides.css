@@ -3093,8 +3093,7 @@ footer {
     display: none;
 }
 
-.ss-container:hover .ss-scroll:not([style^="height: 100%"]),
-.ss-container:active .ss-scroll:not([style^="height: 100%"]) {
+.ss-container .ss-scroll:not([style^="height: 100%"]) {
     opacity: 1;
 }
 
