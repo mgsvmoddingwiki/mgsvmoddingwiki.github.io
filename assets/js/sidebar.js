@@ -16,7 +16,8 @@ for (let key in counters) {
 
 // -------------------- Page URL hierarchy navigation -------------------
 var {curUrl, curUrlRoot} = func.getPageUrls(checkForVirtualPage()),
-    curPage;
+    curPage,
+    hasSection;
 export const sectionIndexFlat = pathTreeFilterArray(searchIndex, 'url', curUrlRoot); // check search index for shared root pages (assumes each path level has its own page)
 var sectionIndex = JSON.parse(JSON.stringify(sectionIndexFlat)); // creates separate reference for array copy so original array doesn't get retroactively modified by subsequent changes
 
@@ -28,6 +29,8 @@ if (sectionIndex.length > 1 && !document.title.includes('Page Not Found')) {
         spoilerClosedHeight = el.getBoundingClientRect().height;
         el.removeAttribute('open');
     });
+
+    sidebar.classList.add('has-section');
 
     // Create initial container HTML
     var sectionSpoiler = document.createElement('details'),

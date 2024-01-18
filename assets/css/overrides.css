@@ -3093,7 +3093,10 @@ footer {
     display: none;
 }
 
-.ss-container .ss-scroll:not([style^="height: 100%"]) {
+/* Only display scrollbar at all times when a section is present and expanded */
+.ss-container.has-section .ss-scroll:not([style^="height: 100%"]),
+.ss-container:hover .ss-scroll:not([style^="height: 100%"]),
+.ss-container:active .ss-scroll:not([style^="height: 100%"]) {
     opacity: 1;
 }
 
