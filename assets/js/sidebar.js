@@ -16,8 +16,7 @@ for (let key in counters) {
 
 // -------------------- Page URL hierarchy navigation -------------------
 var {curUrl, curUrlRoot} = func.getPageUrls(checkForVirtualPage()),
-    curPage,
-    hasSection;
+    curPage;
 export const sectionIndexFlat = pathTreeFilterArray(searchIndex, 'url', curUrlRoot); // check search index for shared root pages (assumes each path level has its own page)
 var sectionIndex = JSON.parse(JSON.stringify(sectionIndexFlat)); // creates separate reference for array copy so original array doesn't get retroactively modified by subsequent changes
 
@@ -26,7 +25,7 @@ if (sectionIndex.length > 1 && !document.title.includes('Page Not Found')) {
     const spoilerSiblings = sidebar.querySelectorAll('details');
     var spoilerClosedHeight = 0;
     spoilerSiblings.forEach((el) => {
-        spoilerClosedHeight = el.getBoundingClientRect().height;
+        spoilerClosedHeight = func.getRect(el).height;
         el.removeAttribute('open');
     });
 
@@ -186,27 +185,16 @@ function getNestedObjFromValue(array, nestingKey, itemKey, value) {
 }
 
 export function scrollCurrentItemIntoView(currentItem) {
-    scrollToCenter(currentItem, scrollbarWrapper, false, (findPos(sectionSpoiler).top + spoilerClosedHeight));
+    scrollToCenter(currentItem, scrollbarWrapper, false, (func.getRect(sectionSpoiler).top + spoilerClosedHeight));
 }
 
 function scrollToCenter(target, container, toTargetCenter, yOffset) {
     let targetCenter = 0; // by default use top coord to align
     if (toTargetCenter) { targetCenter = (target.clientHeight / 2); }
-    let top = (findPos(container).top + findPos(target).top - (yOffset || 0)) + targetCenter,
+    let top = (func.getRect(container).top + func.getRect(target).top - (yOffset || 0)) + targetCenter,
         center = top - (container.clientHeight / 2);
     container.scrollTo(0, center);
 }
-
-function findPos(el) {
-    var pos = {top: 0, left: 0};
-    // Recursively travel up parents to output total coords from top-most container
-    do {
-        pos.top += el.offsetTop;
-        pos.left += el.offsetLeft;
-    } while (el = el.offsetParent);
-    return pos
-}
-
 
 function pathTreeFilterArray(array, key, value) {
     var id = 1;
