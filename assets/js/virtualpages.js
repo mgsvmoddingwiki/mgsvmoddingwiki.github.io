@@ -38,7 +38,8 @@ if (isVirtualPage) {
             if (tar.parentElement.classList.contains('section-hierarchy-link')) {
                 tarUrl = tar.parentElement.getAttribute('href');
             }
-            if (!tar.closest('.index.section')) {
+            let mobileHeader = body.querySelector('#git-wiki-mobile-header');
+            if (!tar.closest('.index.section') && getComputedStyle(mobileHeader).getPropertyValue('display') != 'none') {
                 mobileMainMenuToggle();
             }
             updateFromTarget(e, tarUrl);
