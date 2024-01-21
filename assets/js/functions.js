@@ -1,5 +1,9 @@
 // General reusable functions for Javascript modules (avoids race conditions for deferred scripts)
 
+export function getRect(el) {
+    return el.getBoundingClientRect()
+}
+
 export function getKeyByValue(object, value) {
     return Object.keys(object).find(key => object[key] === value)
 }
@@ -16,6 +20,14 @@ export function filterArrayByObjVal(array, key, value) {
 
 export function getIndexByValue(array, key, value) {
     return array.findIndex(obj => obj[key] == value);
+}
+
+export function clamp(num, min, max) {
+    return num <= min
+        ? min
+        : num >= max
+            ? max
+            : num
 }
 
 export function removeChildText(parent) {
@@ -83,4 +95,31 @@ export async function checkVp(funcName) {
     } else {
         funcName();
     }
+}
+
+export function htmlFromArray(array, targetEl) {
+    var parent;
+    if (typeof targetEl === 'object') {
+        parent = targetEl;
+    } else {
+        parent = document.createElement(targetEl)
+    }
+    array.forEach((el) => {
+        const node = document.createElement(el.tag);
+        if (el.text) { node.textContent = el.text; }
+        if (el.attr) {
+            Object.entries(el.attr).forEach(([key, value]) => {
+                if (key == 'class') {
+                    value = Array.from(value).join(' '); // for some reason arrays in loop aren't returned as arrays so this converts it
+                }
+                node.setAttribute(key, value);
+            });
+        }
+        if (el.html) { node.innerHTML = el.html; }
+        if (el.children) {
+            htmlFromArray(el.children, node);
+        }
+        parent.appendChild(node);
+    });
+    return parent
 }

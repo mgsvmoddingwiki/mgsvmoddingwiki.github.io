@@ -3,7 +3,7 @@
 :root {
     --width-sidebar: 280px;
     --height-mobile-header: 50px;
-    --height-menu-button: 39px;  /* static value based on current text size/padding settings */
+    --height-tooltip-min: 39px;  /* static value based on current text size/padding settings */
     --spacing-primary: 30px;
     --spacing-intermediate: 20px;
     --spacing-secondary: 15px;
@@ -241,7 +241,7 @@ pre code {
 table table *,
 pre code,
 table pre,
-.tools-button .tooltip {
+.tooltip {
     font-size: calc(var(--font-size-base) * 0.8);
 }
 
@@ -374,6 +374,215 @@ li::marker,
     display: none;
 }
 
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ TOOLTIPS ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.tooltip {
+    --offset-y: 40px;
+    --max-width-open: 210px;
+    width: max-content;
+    min-height: var(--height-tooltip-min);
+    background: var(--bg-tooltip);
+    color: var(--color-secondary);
+    font-weight: var(--font-weight-base);
+    line-height: calc(var(--font-line-height) * 1.25); /* to normalize regardless of inherited differences */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    cursor: default;
+    padding: var(--spacing-minor) var(--spacing-secondary);
+    border-radius: var(--radius-primary);
+    filter: var(--filter-shadow-secondary); /* to conform to entire shape of element, including pseudo-element */
+    position: fixed;
+    top: calc(var(--offset-y) + var(--top));
+    left: var(--left);
+    z-index: 2;
+    pointer-events: none; /* otherwise (for ::before at least) will block :active styling */
+    transform: translateX(-50%); /* center element to fixed coord */
+    transition: opacity 150ms ease-out, margin 150ms ease-in;
+}
+
+.tooltip.offset-add {
+    --offset-y: 50px; /* for `.primary-button` butttons, mainly to align toolbar buttons more pleasantly with search box edge */
+}
+
+.tooltip.hidden {
+    opacity: 0;
+    margin-top: 10px;
+}
+
+.tooltip.visible {
+    opacity: 1;
+    margin-top: 5px;
+}
+
+/* Tooltip/overflow menu pop-up */
+.tooltip.menu {
+    max-width: 150px; /* workaround as unit-less values can't be used with transitions */
+    max-height: var(--height-tooltip-min);
+    user-select: none; /* prevent text selection */
+    transition: max-width 150ms ease-in-out, max-height 200ms ease-out, opacity 150ms ease-out, margin 150ms ease-in, transform 200ms;
+}
+
+.tooltip.menu::before {
+    --height: 8px;
+    width: 20px;
+    height: var(--height);
+    background: var(--bg-tooltip);
+    content: '';
+    display: block;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%); /* triangle */
+    position: absolute;
+    top: 0;
+    transition: top 200ms ease-out, transform 200ms;
+}
+
+.tooltip.menu.tooltip-menu-open::before {
+    top: calc(-1 * var(--height));
+    transform: translateX(var(--menu-open-offset));
+}
+
+.tooltip.menu > div {
+    flex-basis: 100%; /* force wrapping top-level children */
+}
+
+.tooltip.menu.tooltip-menu-open {
+    max-width: var(--max-width-open);
+    max-height: 300px;
+    pointer-events: all;
+    padding-bottom: var(--spacing-secondary);
+    transform: translateX(calc(-50% - var(--menu-open-offset)));
+}
+
+.tooltip.menu .menu-content {
+    width: 0;
+    height: 0;
+    opacity: 0;
+    margin-top: var(--spacing-minor);
+    position: relative;
+    top: 5px;
+    transition: width 150ms ease-in-out, height 200ms ease-out, opacity 150ms ease-in, top 150ms ease-in; /* timing functions of dimensions to match parent */
+}
+
+.tooltip.menu.tooltip-menu-open .menu-content {
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    top: 0;
+}
+
+.tooltip.menu hr {
+    background: var(--bg-primary);
+    margin: var(--spacing-secondary) 0;
+}
+
+.tooltip.menu .menu-button {
+    width: 100%;
+    border-radius: var(--radius-full);
+    border: var(--border-width) solid var(--color-buttons-inset);
+}
+
+.tooltip.menu .menu-button.standalone:not(:last-child) {
+    margin-bottom: calc(var(--spacing-minor) * 2);
+}
+
+.tooltip.menu .menu-button:hover {
+    border-color: var(--color-buttons-hover);
+}
+
+.tooltip.menu .menu-button:active,
+.tooltip.menu .menu-button.active {
+    border-color: var(--color-accent);
+}
+
+.tooltip.menu .menu-button a {
+    width: 100%;
+    height: calc(var(--height-tooltip-min) - (var(--border-width) * 2));
+    color: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+    cursor: pointer;
+}
+
+.tooltip.menu .menu-button .iconed.label {
+    display: inline-flex;
+    align-items: center;
+}
+
+/* Radio buttons */
+.tooltip.menu .menu-radio {
+    display: flex;
+    gap: var(--spacing-minor);
+}
+
+.tooltip.menu .menu-radio ~ .menu-radio {
+    margin-top: calc(var(--spacing-minor) * 2);
+}
+
+.tooltip.menu .menu-radio .active {
+    position: relative;
+}
+
+/* Active setting badge indicator */
+.tooltip.menu .menu-radio .menu-button::before,
+.tooltip.menu .menu-radio .menu-button::after {
+    width: 18px;
+    height: 18px;
+    background: var(--color-accent);
+    content: '';
+    display: block;
+    opacity: 0;
+    border-radius: var(--radius-circle);
+    position: absolute;
+    top: calc(-1 * var(--border-width) - 3px);
+    right: calc(-1 * var(--border-width));
+    transform: scale(0);
+    transform-origin: 50% 50%;
+    transition: transform 200ms var(--timing-bezier-1);
+    z-index: 1;
+}
+
+.tooltip.menu .menu-radio .menu-button::before {
+    box-shadow: var(--shadow-secondary);
+}
+
+.tooltip.menu .menu-radio .menu-button::after {
+    background: var(--color-accent-foreground);
+    transition: opacity 200ms var(--timing-bezier-1);
+}
+
+.tooltip.menu .menu-radio .menu-button.active::before,
+.tooltip.menu .menu-radio .menu-button.active::after {
+    transform: scale(1);
+    opacity: 1;
+}
+
+/* Buttons - Graphic/image-based */
+.tooltip.menu .graphic-button::before {
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-accent);
+    background-repeat: no-repeat;
+    content: '';
+    display: block;
+    border-radius: var(--radius-full);
+}
+
+.tooltip.menu .header-graphic-switcher-default .graphic-button::before {
+    background-image: var(--header-graphic-default);
+    background-size: 80px; /* using absolute rather than relative units to avoid scaling when menu toggled */
+    background-position: 1px -26px;
+}
+
+.tooltip.menu .header-graphic-switcher-second .graphic-button::before {
+    background-image: var(--header-graphic-second);
+    background-size: 115px;
+    background-position: -30px -17px;
+}
+
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ EDITING TOOLBAR ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
@@ -438,178 +647,8 @@ li::marker,
     filter: var(--filter-button-active);
 }
 
-.tools-button .primary-button.iconed::before,
-.tools-button .tooltip {
+.tools-button .primary-button.iconed::before {
     pointer-events: none; /* otherwise (for ::before at least) will block :active styling */
-}
-
-.tools-button .tooltip,
-.git-wiki-tools.menu-visible .tools-button:not(.menu-open) .tooltip /* hide all other tooltips beside the one with a menu active, to avoid tooltip overlaps */
-{
-    opacity: 0;
-    top: 60px;
-}
-
-.tools-button .tooltip {
-    width: max-content;
-    background: var(--bg-tooltip);
-    color: var(--color-secondary);
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    cursor: default;
-    padding: var(--spacing-minor) var(--spacing-secondary);
-    border-radius: var(--radius-primary);
-    filter: var(--filter-shadow-secondary); /* to conform to entire shape of element, including pseudo-element */
-    position: absolute;
-    z-index: 2;
-    transition: opacity 150ms ease-out, top 150ms ease-in;
-}
-
-.tools-button .primary-button:hover ~ .tooltip,
-.tools-button .primary-button:active ~ .tooltip,
-.tools-button.menu-open .tooltip.menu {
-    opacity: 1;
-    top: 55px;
-}
-
-/* Tooltip/overflow menu pop-up */
-.tools-button .tooltip.menu {
-    max-width: 150px; /* workaround as unit-less values can't be used with transitions */
-    max-height: var(--height-menu-button);
-    user-select: none; /* prevent text selection */
-    transition: max-width 150ms ease-in-out, max-height 200ms ease-out, opacity 150ms ease-out, top 150ms ease-in;
-}
-
-.tools-button .tooltip.menu::before {
-    --height: 8px;
-    width: 20px;
-    height: var(--height);
-    background: var(--bg-tooltip);
-    content: '';
-    display: block;
-    clip-path: polygon(50% 0%, 0% 100%, 100% 100%); /* triangle */
-    position: absolute;
-    top: 0;
-    transition: top 200ms ease-out;
-}
-
-.tools-button.menu-open .tooltip.menu::before {
-    top: calc(-1 * var(--height));
-}
-
-.tools-button .tooltip.menu > div {
-    flex-basis: 100%; /* force wrapping top-level children */
-}
-
-.tools-button.menu-open .tooltip.menu {
-    max-width: 210px;
-    max-height: 300px;
-    pointer-events: all;
-    padding-bottom: var(--spacing-secondary);
-}
-
-.tools-button .tooltip.menu .menu-content {
-    width: 0;
-    height: 0;
-    opacity: 0;
-    margin-top: var(--spacing-minor);
-    position: relative;
-    top: 5px;
-    transition: width 150ms ease-in-out, height 200ms ease-out, opacity 150ms ease-in, top 150ms ease-in; /* timing functions of dimensions to match parent */
-}
-
-.tools-button.menu-open .tooltip.menu .menu-content {
-    width: 100%;
-    height: 100%;
-    opacity: 1;
-    top: 0;
-}
-
-.tools-button .tooltip.menu hr {
-    background: var(--bg-primary);
-    margin: var(--spacing-secondary) 0;
-}
-
-.tools-button .tooltip.menu .menu-button {
-    width: 100%;
-    border-radius: var(--radius-full);
-    border: var(--border-width) solid var(--color-buttons-inset);
-}
-
-.tools-button .tooltip.menu .menu-button:hover {
-    border-color: var(--color-buttons-hover);
-}
-
-.tools-button .tooltip.menu .menu-button:active,
-.tools-button .tooltip.menu .menu-button.active {
-    border-color: var(--color-accent);
-}
-
-.tools-button .tooltip.menu .menu-button a {
-    width: 100%;
-    height: calc(var(--height-menu-button) - (var(--border-width) * 2));
-    color: inherit;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 2px;
-    cursor: pointer;
-}
-
-.tools-button .tooltip.menu .menu-button .iconed.label {
-    display: inline-flex;
-    align-items: center;
-}
-
-/* Radio buttons */
-.tools-button .tooltip.menu .menu-radio {
-    display: flex;
-    gap: var(--spacing-minor);
-}
-
-.tools-button .tooltip.menu .menu-radio ~ .menu-radio {
-    margin-top: calc(var(--spacing-minor) * 2);
-}
-
-.tools-button .tooltip.menu .menu-radio .active {
-    position: relative;
-}
-
-/* Active setting badge indicator */
-.tools-button .tooltip.menu .menu-radio .menu-button::before,
-.tools-button .tooltip.menu .menu-radio .menu-button::after {
-    width: 18px;
-    height: 18px;
-    background: var(--color-accent);
-    content: '';
-    display: block;
-    opacity: 0;
-    border-radius: var(--radius-circle);
-    position: absolute;
-    top: calc(-1 * var(--border-width) - 3px);
-    right: calc(-1 * var(--border-width));
-    transform: scale(0);
-    transform-origin: 50% 50%;
-    transition: transform 200ms var(--timing-bezier-1);
-    z-index: 1;
-}
-
-.tools-button .tooltip.menu .menu-radio .menu-button::before {
-    box-shadow: var(--shadow-secondary);
-}
-
-.tools-button .tooltip.menu .menu-radio .menu-button::after {
-    background: var(--color-accent-foreground);
-    transition: opacity 200ms var(--timing-bezier-1);
-}
-
-.tools-button .tooltip.menu .menu-radio .menu-button.active::before,
-.tools-button .tooltip.menu .menu-radio .menu-button.active::after {
-    transform: scale(1);
-    opacity: 1;
 }
 
 /* Buttons - icons. Named such so they can also be reused in documentation */
@@ -622,15 +661,15 @@ li::marker,
 }
 
 /* For buttons with icon + text label */
-.tools-button .tooltip.menu .iconed.label::before {
+.tooltip.menu .iconed.label::before {
     margin-right: var(--spacing-minor);
 }
 
-.tools-button .tooltip.menu .iconed.label.dim::before {
+.tooltip.menu .iconed.label.dim::before {
     opacity: 0.5; /* dim icon to attract less attention. Made for delete button */
 }
 
-.tools-button .tooltip.menu .menu-radio .menu-button.active::after {
+.tooltip.menu .menu-radio .menu-button.active::after {
     -webkit-mask-image: url("/assets/images/ui.svg#icons-badge-tick");
     mask-image: url("/assets/images/ui.svg#icons-badge-tick");
 }
@@ -700,29 +739,6 @@ body.expanded-width-true .icon-toolbar.icon-expand::before {
 
 .tools-button.prose .primary-button.iconed::before {
     background: var(--color-accent-foreground);
-}
-
-/* Buttons - Graphic/image-based */
-.tools-button .graphic-button::before {
-    width: 100%;
-    height: 100%;
-    background-color: var(--color-accent);
-    background-repeat: no-repeat;
-    content: '';
-    display: block;
-    border-radius: var(--radius-full);
-}
-
-.tools-button .header-graphic-switcher-default .graphic-button::before {
-    background-image: var(--header-graphic-default);
-    background-size: 80px; /* using absolute rather than relative units to avoid scaling when menu toggled */
-    background-position: 1px -26px;
-}
-
-.tools-button .header-graphic-switcher-second .graphic-button::before {
-    background-image: var(--header-graphic-second);
-    background-size: 115px;
-    background-position: -30px -17px;
 }
 
 
@@ -2132,9 +2148,9 @@ h2.heading-with-frag-id .heading-frag-id-link {
     padding: 0;
 }
 
-/* `.menu-closed`/`.menu-open` classes via custom JS (overriding default JS) */
+/* `.mobile-menu-closed`/`.mobile-menu-open` classes via custom JS (overriding default JS) */
 #git-wiki-mobile-header > button::before,
-.menu-closed #git-wiki-mobile-header > button::before {
+.mobile-menu-closed #git-wiki-mobile-header > button::before {
     width: 24px;
     height: 24px;
     content: '';
@@ -2144,7 +2160,7 @@ h2.heading-with-frag-id .heading-frag-id-link {
     mask-image: url("/assets/images/ui.svg#icons-hamburger-menu");
 }
 
-.menu-open #git-wiki-mobile-header > button::before {
+.mobile-menu-open #git-wiki-mobile-header > button::before {
     -webkit-mask-image: url("/assets/images/ui.svg#icons-hamburger-menu-close");
     mask-image: url("/assets/images/ui.svg#icons-hamburger-menu-close");
 }
@@ -2409,14 +2425,14 @@ footer {
     }
 
     #git-wiki-sidebar,
-    .menu-closed #git-wiki-sidebar {
+    .mobile-menu-closed #git-wiki-sidebar {
         max-height: 100px;
         opacity: 0;
         top: calc(var(--height-mobile-header) + var(--spacing-minor) * 2);
         pointer-events: none;
     }
 
-    .menu-open #git-wiki-sidebar {
+    .mobile-menu-open #git-wiki-sidebar {
         max-height: 100vh;
         opacity: 1;
         top: calc(var(--height-mobile-header) + var(--spacing-minor));
@@ -2438,7 +2454,7 @@ footer {
         transition: top 200ms ease-out;
     }
 
-    .menu-open #git-wiki-sidebar::before {
+    .mobile-menu-open #git-wiki-sidebar::before {
         top: calc(-1 * var(--height));
     }
 
@@ -2458,11 +2474,11 @@ footer {
         transition: opacity 500ms;
     }
 
-    body > .wrapper.menu-open::before {
+    body > .wrapper.mobile-menu-open::before {
         opacity: 0.8;
     }
 
-    .menu-open .git-wiki-page > section {
+    .mobile-menu-open .git-wiki-page > section {
         pointer-events: none; /* prevent interactable elements being clicked behind menu */
     }
 
@@ -2615,8 +2631,8 @@ footer {
         top: 0; /* to align icon w/ new font size */
     }
 
-    .tools-button .tooltip:not(.tooltip.menu) {
-        display: none; /* hide tooltips at narrowest viewports to avoid page width issue from the text */
+    .tooltip:not(.tooltip.menu) {
+        display: none; /* hide tooltips at narrowest viewports */
     }
 
     .infobox {

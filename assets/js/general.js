@@ -1,51 +1,12 @@
 import * as func from './functions.js';
 
-// ---------------------- Toolbar: button functions ---------------------
-const buttonsMenu = body.querySelector('.git-wiki-tools');
-
-// Page width toggle
-const pageWidthToggleButton = buttonsMenu.querySelector('.page-width-toggle');
-
-expandPageWidthTooltip(checkPageWidth('body'));
-
-pageWidthToggleButton.addEventListener('click', (e) => {
-    expandPageWidth(!checkPageWidth('body'));
-    expandPageWidthTooltip(checkPageWidth('body'));
-});
-
-function expandPageWidthTooltip(expand) {
-    const tooltip = pageWidthToggleButton.querySelector('.tooltip');
-    if (expand) {
-        tooltip.textContent = 'Contract Page Width';
-    } else {
-        tooltip.textContent = 'Expand Page Width';
-    }
-}
-
-// Overflow menu
-const moreOptionsMenu = buttonsMenu.querySelector('.more-options');
 body.addEventListener('click', (e) => {
+    const tar = e.target;
+
     // Dismiss mobile menu if clicked outside it
-    if (e.target.closest('.menu-open .git-wiki-page')) {
+    if (tar.closest('.mobile-menu-open .git-wiki-page')) {
         mobileMainMenuToggle();
-    }
-
-    // Detect if clicked within overflow menu
-    if (e.target.closest('.more-options')) {
-        if (e.target.classList.contains('primary-button')) {
-            if (!moreOptionsMenu.classList.contains('menu-open')) {
-                moreOptionsVisible(true);
-            } else {
-                moreOptionsVisible(false);
-            }
-        }
-        return;
-    }
-    moreOptionsVisible(false); // Dismiss if clicked elsewhere
-
-    function moreOptionsVisible(state) {
-        moreOptionsMenu.classList.toggle('menu-open', state);
-        moreOptionsMenu.parentNode.classList.toggle('menu-visible', state);
+        return
     }
 });
 
@@ -58,55 +19,84 @@ function radioButtonActivate(buttonsArray, name) {
 }
 
 
-// --------------------------- Theme switching --------------------------
-const themeButtons = {
-    light: buttonsMenu.querySelector('.theme-light-switcher a'),
-    dark: buttonsMenu.querySelector('.theme-dark-switcher a'),
-}
-const themeRadio = themeButtons.light.closest('.menu-radio');
+// ---------------------- Toolbar: button functions ---------------------
+const buttonsMenu = body.querySelector('.git-wiki-tools'),
+      pageWidthToggleButton = buttonsMenu.querySelector('.page-width-toggle');
 
-radioButtonActivate(themeButtons, checkTheme());
-
-themeRadio.addEventListener('click', (e) => {
-    if (func.matchObjVal(themeButtons, e.target)) {
-        var themeType = func.getKeyByValue(themeButtons, e.target);
-        setClassSetting(body, themeType, themeClassPrefix);
-        radioButtonActivate(themeButtons, themeType);
-    }
+func.waitForElements(body, '.tooltip').then(() => {
+    expandPageWidthTooltip(checkPageWidth('body'));
+    pageWidthToggleButton.addEventListener('click', (e) => {
+        expandPageWidth(!checkPageWidth('body'));
+        expandPageWidthTooltip(checkPageWidth('body'));
+    });
 });
+
+function expandPageWidthTooltip(expand) {
+    let button = pageWidthToggleButton.querySelector('a'),
+        label = body.querySelector('.tooltip .tooltip-label'),
+        text = 'Expand',
+        suffix = ' Page Width';
+    if (expand) {
+        text = 'Contract';
+    }
+    button.setAttribute('data-tooltip-text', text + suffix);
+    label.textContent = text + suffix;
+}
+
+
+// --------------------------- Theme switching --------------------------
+export function themeSwitching(menu) {
+    const themeButtons = {
+        light: menu.querySelector('.theme-light-switcher a'),
+        dark: menu.querySelector('.theme-dark-switcher a'),
+    }
+    const themeRadio = themeButtons.light.closest('.menu-radio');
+
+    radioButtonActivate(themeButtons, checkTheme());
+
+    themeRadio.addEventListener('click', (e) => {
+        if (func.matchObjVal(themeButtons, e.target)) {
+            var themeType = func.getKeyByValue(themeButtons, e.target);
+            setClassSetting(body, themeType, themeClassPrefix);
+            radioButtonActivate(themeButtons, themeType);
+        }
+    });
+}
 
 
 // ---------------------- Header graphic switching ----------------------
-const graphicButtons = {
-    default: buttonsMenu.querySelector('.header-graphic-switcher-default a'),
-    second: buttonsMenu.querySelector('.header-graphic-switcher-second a'),
-}
-const graphicRadio = graphicButtons.default.closest('.menu-radio');
-const headerElements = {
-    desktop: body.querySelector('.header-graphic-desktop-image'),
-    mobile: body.querySelector('#git-wiki-mobile-header a'),
-}
+export function headerGraphicSwitching(menu) {
+    const graphicButtons = {
+        default: menu.querySelector('.header-graphic-switcher-default a'),
+        second: menu.querySelector('.header-graphic-switcher-second a'),
+    }
+    const graphicRadio = graphicButtons.default.closest('.menu-radio');
+    const headerElements = {
+        desktop: body.querySelector('.header-graphic-desktop-image'),
+        mobile: body.querySelector('#git-wiki-mobile-header a'),
+    }
 
-radioButtonActivate(graphicButtons, checkGraphic(Object.keys(graphicButtons)[0])); // return first key name if no match
+    radioButtonActivate(graphicButtons, checkGraphic(Object.keys(graphicButtons)[0])); // return first key name if no match
 
-graphicRadio.addEventListener('click', (e) => {
-    const defaultClass = graphicClassPrefix + '-' + Object.keys(graphicButtons)[0];
-    if (func.matchObjVal(graphicButtons, e.target)) {
-        var graphicType = func.getKeyByValue(graphicButtons, e.target);
-        var currentClass = graphicClassPrefix + '-' + graphicType;
-        var priorClass = checkPriorClass(body, graphicClassPrefix, defaultClass); // store the last used image class for transition purposes
-        var inlineStyle = '--header-graphic-from: var(--' + priorClass + '); --header-graphic-to: var(--' + currentClass + ')';
-        radioButtonActivate(graphicButtons, graphicType);
-        setClassSetting(body, graphicType, graphicClassPrefix);
-        for (let key in headerElements) {
-            headerElements[key].style.cssText = inlineStyle; // define CSS variables via inline style
-            if (priorClass != currentClass) {
-                animReflow(headerElements[key]); // prevent animation retrigger if clicking same button
-                animReflow(headerElements.desktop.parentNode.parentNode); // wrapper element
+    graphicRadio.addEventListener('click', (e) => {
+        const defaultClass = graphicClassPrefix + '-' + Object.keys(graphicButtons)[0];
+        if (func.matchObjVal(graphicButtons, e.target)) {
+            var graphicType = func.getKeyByValue(graphicButtons, e.target);
+            var currentClass = graphicClassPrefix + '-' + graphicType;
+            var priorClass = checkPriorClass(body, graphicClassPrefix, defaultClass); // store the last used image class for transition purposes
+            var inlineStyle = '--header-graphic-from: var(--' + priorClass + '); --header-graphic-to: var(--' + currentClass + ')';
+            radioButtonActivate(graphicButtons, graphicType);
+            setClassSetting(body, graphicType, graphicClassPrefix);
+            for (let key in headerElements) {
+                headerElements[key].style.cssText = inlineStyle; // define CSS variables via inline style
+                if (priorClass != currentClass) {
+                    animReflow(headerElements[key]); // prevent animation retrigger if clicking same button
+                    animReflow(headerElements.desktop.parentNode.parentNode); // wrapper element
+                }
             }
         }
-    }
-});
+    });
+}
 
 function animReflow(el) {
     // Trigger re-flow so CSS animation can play again
@@ -299,23 +289,23 @@ window.onscroll = function() {
 }
 
 // Override default hamburger menu inline onclick behavior
-var pageWrapper = body.querySelector('body > .wrapper'),
-    rootHtml = document.querySelector('html');
-const mobileHamburger = body.querySelector('#git-wiki-mobile-header > button');
+var pageWrapper = body.querySelector('body > .wrapper');
+const rootHtml = document.querySelector('html'),
+      mobileHamburger = body.querySelector('#git-wiki-mobile-header > button');
 mobileHamburger.removeAttribute('onclick'); // disable default theme onclick behavior
 mobileHamburger.addEventListener('click', (e) => {
     mobileMainMenuToggle();
 });
 
 export function mobileMainMenuToggle() {
-    if (pageWrapper.classList.contains('menu-open')) {
+    if (pageWrapper.classList.contains('mobile-menu-open')) {
         rootHtml.removeAttribute('style');
-        pageWrapper.classList.remove('menu-open');
-        pageWrapper.classList.add('menu-closed');
+        pageWrapper.classList.remove('mobile-menu-open');
+        pageWrapper.classList.add('mobile-menu-closed');
     } else {
         // Prevent underlying page from being scrollable so header doesn't get dismissed on scroll
         rootHtml.setAttribute('style','overflow: hidden');
-        pageWrapper.classList.remove('menu-closed');
-        pageWrapper.classList.add('menu-open');
+        pageWrapper.classList.remove('mobile-menu-closed');
+        pageWrapper.classList.add('mobile-menu-open');
     }
 }

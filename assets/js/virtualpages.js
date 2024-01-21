@@ -218,11 +218,19 @@ async function stylePage(item) {
             edit: toolbar.querySelector('.tools-button.edit:not(.prose) a'),
             history: toolbar.querySelector('.tools-button.history a'),
             source: toolbar.querySelector('.tools-button.source a'),
-            delete: toolbar.querySelector('.tools-button.more-options .delete a'),
+            delete: toolbar.querySelector('.tools-button.more-options a'),
             proseEdit: toolbar.querySelector('.tools-button.prose.edit a')
         }
         for (let key in buttonLinks) {
-            buttonLinks[key].href = buttonLinks[key].href.replace(/\/master\/+wiki\/(.*)/gm, '/master' + item.filePath)
+            if (key == 'delete') {
+                buttonLinks[key].setAttribute('data-delete-page-url', replaceLink(buttonLinks[key].getAttribute('data-delete-page-url')));
+            } else {
+                buttonLinks[key].href = replaceLink(buttonLinks[key].href)
+            }
+        }
+
+        function replaceLink(string) {
+            return string.replace(/\/master\/+wiki\/(.*)/gm, '/master' + item.filePath);
         }
 
         func.checkVp(generateToc);
