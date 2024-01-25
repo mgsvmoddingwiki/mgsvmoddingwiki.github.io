@@ -4,6 +4,8 @@ permissions:
   contents: write
 jobs:
   Prepare-Virtual-Pages-Index:
+    # Prevent running action unless it's the original wiki repo
+    if: github.repository == 'mgsvmoddingwiki/mgsvmoddingwiki.github.io'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
