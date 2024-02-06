@@ -26,7 +26,7 @@ In this guide we'll cover how to get a local version of your wiki fork running i
 ## Installing the wiki dependencies
 
 1. Now open the local version of your wiki fork (if you're unclear where that is open Github Desktop then click *Show in Explorer*).
-2. Double-click the `install.bat` script in the root directory of your fork. This installs the required Jekyll dependencies for the local wiki fork. It will take a moment before progress appears.
+2. Double-click the `install.bat` script in the root directory of your fork. This installs the required Jekyll dependencies for the local wiki fork and only has to be done once. It will take a moment before progress appears.
     > **Tip:** it's easier to distinguish file types by having file extensions visible in Windows File Explorer.
 
 ## Running the local server
