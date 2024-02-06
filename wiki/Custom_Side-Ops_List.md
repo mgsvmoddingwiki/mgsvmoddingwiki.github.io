@@ -29,7 +29,7 @@ See [MissionCodes](/MissionCodes#side-op-ids) for vanilla questIds. [Infinite He
 | q30210                     | tinmantex       | mtbs        | 1         | [Medical Pln2 Shooting Practice](https://www.nexusmods.com/metalgearsolidvtpp/mods/45)
 | q30211-q30299              | tinmantex       |             | 88        | Reserved
 | q30300-q30304              | CapLagRobin     | afgh, mafr  | 5         | [Side Op Demo Tape](https://www.nexusmods.com/metalgearsolidvtpp/mods/650)
-| q30305                     | CapLagRobin     |             | 1         | Reserved
+| q30305                     | CapLagRobin     |             | 1         | [LA Ops - SABOTAGE](https://www.nexusmods.com/metalgearsolidvtpp/mods/1781)
 | q30306-q30311              | CapLagRobin     | mafr, afgh  | 6         | [Side Op Demo Tape](https://www.nexusmods.com/metalgearsolidvtpp/mods/650)
 | q30312                     | CapLagRobin     | mafr        | 1         | [Prisoner Extraction 7780](https://www.nexusmods.com/metalgearsolidvtpp/mods/725)
 | q30313-q30314              | CapLagRobin     | mafr, afgh  | 2         | [Side Op Demo Tape](https://www.nexusmods.com/metalgearsolidvtpp/mods/650)
