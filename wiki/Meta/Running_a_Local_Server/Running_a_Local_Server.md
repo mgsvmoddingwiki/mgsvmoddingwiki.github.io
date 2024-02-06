@@ -54,7 +54,7 @@ You can then submit your changes back to the original wiki as per the [Github De
 
 > **Note:** it takes a moment to rebuild for each change so they'll be a medium delay between the change(s) and when they'll appear. The changes should automatically appear in the browser without requiring a refresh, once they've been built and are ready.
 
-> **Note:** certain changes that require building multiple pages (like category auto indexes) may not be detected with the default incremental buiild (since incremental builds only update the page/files that have been detected as modified). In such a case you can close the local server via CMD then re-run the `run.bat` which will build the entire site again.
+> **Note:** certain changes that affect 'includes' like category auto indexes may not be detected with the default incremental buiild (since incremental builds only update the page/files that have been detected as modified). In such a case you can close the local server via CMD then re-run the `run.bat` which will build the entire site again.
 
 > **Tip:** you can check what's happening by viewing the CMD window while the local server is running.
 
