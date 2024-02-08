@@ -4,4 +4,4 @@
 export BUNDLE_GEMFILE=".env-files/Gemfile.github"
 
 # Generate the site (also use 'live reload' so any file change in repo will automatically re-generate site)
-bundle exec jekyll serve --host localhost --force_polling --livereload
+bundle exec jekyll serve --host localhost --force_polling --livereload --incremental
