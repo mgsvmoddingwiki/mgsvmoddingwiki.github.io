@@ -51,7 +51,7 @@ TppBossQuiet2 (includes both boss Quiet and sniper Parasite Unit)
 | SetBossQuiet2Flag                  | flag, on                                 | no known lua reference                                                                 |
 | SetCombatGrade                     | defenseValue, offenseGrade, defenseGrade |                                                                                        |
 | SetCloseCombatMode                 | enabled                                  |                                                                                        |
-| SetDemoRoute                       | route                                    |                                                                                        |
+| SetDemoRoute                       | route                                    | route on death                                                                         |
 | SetForceUnrealze                   | flag                                     |                                                                                        |
 | SetFultonEnabled                   | enabled                                  |                                                                                        |
 | SetHumming                         | flag                                     |                                                                                        |
@@ -508,7 +508,7 @@ TppCommandPost2
 <tr class="odd">
 <td><p>RequestForceReinforce</p></td>
 <td><p>NA</p></td>
-<td></td>
+<td>Forces the enemy to call for Reinforcement. Used in EXTRAORDINARY (s10156)</td>
 </tr>
 <tr class="even">
 <td><p>RequestNotice</p></td>
@@ -608,7 +608,7 @@ TppCommandPost2
 <tr class="odd">
 <td><p>SetFultonLevel</p></td>
 <td><p>fultonLevel, isWormHole</p></td>
-<td><p>meant for FOBs. Don't know what this is for</p></td>
+<td><p>Enables enemies to fulton the player when unconscious, used in FOB</p></td>
 </tr>
 <tr class="even">
 <td><p>SetGrenadeTime</p></td>
@@ -633,7 +633,7 @@ TppCommandPost2
 <tr class="even">
 <td><p>SetIgnoreReinforce</p></td>
 <td><p>NA</p></td>
-<td></td>
+<td>Disables the ability for soliders to call for reinforcements</td>
 </tr>
 <tr class="odd">
 <td><p>SetIgnoreReinforceInCp</p></td>
@@ -713,7 +713,7 @@ TppCommandPost2
 <tr class="even">
 <td><p>SetReinforceCount</p></td>
 <td><p>count</p></td>
-<td><p>I think it controls how many waves of reinforcements are allowed?</p></td>
+<td><p>Controls how many waves of reinforcements are allowed, resets when reentering Alert Phase</p></td>
 </tr>
 <tr class="odd">
 <td><p>SetReinforceEnable</p></td>
@@ -733,7 +733,7 @@ TppCommandPost2
 <tr class="even">
 <td><p>SetReinforceTime</p></td>
 <td><p>time</p></td>
-<td><p>used in FOBs</p></td>
+<td><p>Controls the cooldown between reinforcements, used in FOBs</p></td>
 </tr>
 <tr class="odd">
 <td><p>SetRouteEnabled</p></td>
@@ -1134,17 +1134,17 @@ TppPlayer2
 | ---------------------------------- | ---------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
 | 44d414a9                           | level, equip, all      |                                                                                                                                          |
 | ea35c35b                           | level, equip, all      |                                                                                                                                          |
-| CreateWormhole                     | isEnter, isVfxDisabled |                                                                                                                                          |
+| CreateWormhole                     | isEnter, isVfxDisabled | Makes the player disappear with the wormhole affect, enemies can still spot the player.                                                  |
 | GetWormholePosition                | NA                     |                                                                                                                                          |
 | RequestCarryOff                    | NA                     |                                                                                                                                          |
 | SetBaseMotionSpeedRate             | speedRate              | Alters the animation speed of most player motions                                                                                        |
 | SetHesitatingFire                  | enabled                |                                                                                                                                          |
 | SetSpecialAttackMode               | \*WIP\*                | Puts player into special attack state (executing Quiet/Skull Face, attacking Volgin at hospital) and controls mission prepare animation. |
 | SetStandMoveSpeedLimit             | speedRateLimit         | Caps the speed of the running animation (not dash)                                                                                       |
-| SetWormhole                        | disp                   |                                                                                                                                          |
-| SetWormholeIcon                    | enable                 |                                                                                                                                          |
-| SetWormholeIconType                | enable                 |                                                                                                                                          |
-| SetWormholePosition                | position               |                                                                                                                                          |
+| SetWormhole                        | disp                   | Makes the FOB abort wormhole circle appear                                                                                               |
+| SetWormholeIcon                    | enable                 | The icon that enables you to interact with the Abort wormhole used in FOB                                                                |
+| SetWormholeIconType                | enable                 | Wormhole is useable if true, used in FOB to disable the ability to abort via wormhole if in Alert Phase.                                 |
+| SetWormholePosition                | position               | Abort WormHole circle position. if not given, it will be the player's position? not sure                                                 |
 | Warp                               | pos, rotY              |                                                                                                                                          |
 | WarpToStation                      | stationId              | Warps player between delivery points via cardboard box                                                                                   |
 
@@ -1263,7 +1263,7 @@ TppSoldier2
 <tr class="odd">
 <td><p>AddSpecialNoise</p></td>
 <td><p>noiseType, pos</p></td>
-<td><p>used in Root Cause - I think it plays a sound which enemies can respond to</p></td>
+<td><p>used in Root Cause - It makes the enemies react to the given position as if there was an explotion.</p></td>
 </tr>
 <tr class="even">
 <td><p>CallConversation</p></td>
@@ -1358,7 +1358,7 @@ TppSoldier2
 <tr class="even">
 <td><p>GetGameObjectIdUsingRoute</p></td>
 <td><p>route</p></td>
-<td></td>
+<td>Checks the soldier that is using the given route, and returns the soldier's id</td>
 </tr>
 <tr class="odd">
 <td><p>GetLangType</p></td>
@@ -2007,7 +2007,7 @@ TppSoldier2
 <tr class="odd">
 <td><p>UseExtendParts</p></td>
 <td><p>enabled</p></td>
-<td></td>
+<td>Used in 10240-SHINING LIGHTS for female soldiers and 10080-PITCH DARK for child soldiers. </td>
 </tr>
 </tbody>
 </table>
