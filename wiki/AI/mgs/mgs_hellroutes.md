@@ -1,6 +1,6 @@
 ---
 title: MG Hellbound Routes
-permalink: /AI_Stuff/mgs/mgs_hellroutes
+permalink: /AI/mgs/mgs_hellroutes/
 tags: [AI, Metal Gear]
 ---
 
@@ -183,13 +183,13 @@ First you need a dataset with the geotraps you want to use. the geotrap must hav
 		- funcName: `IsPlayer`
 
 Geotrap entity Parameters:
-![Make sure the Geotrap Entity is enabled](/assets/AI_Stuff/images/mgs/hellgeotrap.png)
+![Make sure the Geotrap Entity is enabled](/assets/AI/images/mgs/hellgeotrap.png)
 
 GeoModuleCondition Parameters:
-![](/assets/AI_Stuff/images/mgs/hellgeotrap_01.png)
+![](/assets/AI/images/mgs/hellgeotrap_01.png)
 
 TppTrapCheckIsPlayerCallbackDataElement Parameters:
-![](/assets/AI_Stuff/images/mgs/hellgeotrap_02.png)
+![](/assets/AI/images/mgs/hellgeotrap_02.png)
 
 Geotraps are assigned with Sahelanthropus like showed bellow: 
 ```lua
@@ -215,7 +215,7 @@ this.sahelanRouteTable = {
 {:.important}
 
 the name of the geotrap assigned on the script needs to be the name of that geotrap on the dataset
-![](/assets/AI_Stuff/images/mgs/hellgeotrap_03.png)
+![](/assets/AI/images/mgs/hellgeotrap_03.png)
 
 if everything is done correctly, every time the geotrap is triggered the game will update the routes with the routes assigned to the geotrap.
 

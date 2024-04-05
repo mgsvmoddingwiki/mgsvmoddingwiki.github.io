@@ -1,14 +1,12 @@
 ---
 title: Metal Gear Sahelanthropus
-permalink: /AI_Stuff/mgs/mgs_Main
+permalink: /AI/mgs/
 tags: [AI, Metal Gear]
 ---
 
-# Metal Gear Sahelanthropus
-
 ## General Information
 
-![Sahelanthropus art from "The Art of Metal Gear Solid V" (page 110)](/assets/AI_Stuff/images/mgs/sally art.png){:.thumb .right}
+![Sahelanthropus art from "The Art of Metal Gear Solid V" (page 110)](/assets/AI/images/mgs/sally art.png){:.thumb .right}
 
 Sahelanthropus, also known as "Sally" is the Metal Gear present on Metal Gear Solid V.<br>
 
@@ -18,7 +16,7 @@ Each attack varies with the AI being used on it, for example, using hellbound AI
 In the game, the guns that Sahelanthropus can use is controled by AI and Battle sequence, for example, the Railgun, Archaea blades and Archaea grenades are not used by Hellbound AI and the weapons that Dominion AI can use is controled by battle sequences<br><br>
 
 There is also an shield that is disabled by default, this shield was meant to be used on "Kingdom of the Flies" but since we never got that, we never got a working shield.<br>The shield is present on Sahelanthropus Main and Static models, there is also colision files for it but the mesh and colision are disabled by the .exe, unlike the Railgun and the Railgun Loader that are disabled only on Hellbound AI, the shield is fully disabled all the time.<br>
-![Sahelanthropus with the shield mesh visible](/assets/AI_Stuff/images/mgs/shln_shield example.png){:.thumb}
+![Sahelanthropus with the shield mesh visible](/assets/AI/images/mgs/shln_shield example.png){:.thumb}
 
 Sahelanthropus does have colision with the player, animals, soldiers and vehicles but can only deal damage to animals, vehicles and the player, and no, Sahelanthropus isn't coded to attack anything else besides the player and Huey(?) on Hellbound episode.<br>Funnily enough, if you use soldiers as a human shield while it attacks you with the vulcan guns, it will damage the soldiers and they will fall to the ground heavily wounded but no blood will be present.
 
@@ -230,23 +228,23 @@ PTRB     = 96,   -- Right Back Parasite/Propane? Tank
 
 {% include spoiler-start title="Parts with pictures" %}
 
-![Body](/assets/AI_Stuff/images/mgs/shln_hp body.png){:.thumb}
-![Bp](/assets/AI_Stuff/images/mgs/shln_hp bp.png){:.thumb}
-![Head](/assets/AI_Stuff/images/mgs/shln_hp head.png){:.thumb}
-![ArmR](/assets/AI_Stuff/images/mgs/shln_hp rarm.png){:.thumb}
-![ArmL](/assets/AI_Stuff/images/mgs/shln_hp larm.png){:.thumb}
-![ThighR](/assets/AI_Stuff/images/mgs/shln_hp rthigh.png){:.thumb}
-![ThighL](/assets/AI_Stuff/images/mgs/shln_hp lthigh.png){:.thumb}
-![LegR](/assets/AI_Stuff/images/mgs/shln_hp rleg.png){:.thumb}
-![LegL](/assets/AI_Stuff/images/mgs/shln_hp lleg.png){:.thumb}
-![RGun](/assets/AI_Stuff/images/mgs/shln_hp railgun.png){:.thumb}
-![Ldr](/assets/AI_Stuff/images/mgs/shln_hp loader.png){:.thumb}
-![Tnk](/assets/AI_Stuff/images/mgs/shln_hp flamet.png){:.thumb}
-![Shield](/assets/AI_Stuff/images/mgs/shln_hp shield.png){:.thumb}
-![PTLF](/assets/AI_Stuff/images/mgs/shln_hp PTLF.png){:.thumb}
-![PTRF](/assets/AI_Stuff/images/mgs/shln_hp PTRF.png){:.thumb}
-![PTLB](/assets/AI_Stuff/images/mgs/shln_hp PTLB.png){:.thumb}
-![PTRB](/assets/AI_Stuff/images/mgs/shln_hp PTRB.png){:.thumb}
+![Body](/assets/AI/images/mgs/shln_hp body.png){:.thumb}
+![Bp](/assets/AI/images/mgs/shln_hp bp.png){:.thumb}
+![Head](/assets/AI/images/mgs/shln_hp head.png){:.thumb}
+![ArmR](/assets/AI/images/mgs/shln_hp rarm.png){:.thumb}
+![ArmL](/assets/AI/images/mgs/shln_hp larm.png){:.thumb}
+![ThighR](/assets/AI/images/mgs/shln_hp rthigh.png){:.thumb}
+![ThighL](/assets/AI/images/mgs/shln_hp lthigh.png){:.thumb}
+![LegR](/assets/AI/images/mgs/shln_hp rleg.png){:.thumb}
+![LegL](/assets/AI/images/mgs/shln_hp lleg.png){:.thumb}
+![RGun](/assets/AI/images/mgs/shln_hp railgun.png){:.thumb}
+![Ldr](/assets/AI/images/mgs/shln_hp loader.png){:.thumb}
+![Tnk](/assets/AI/images/mgs/shln_hp flamet.png){:.thumb}
+![Shield](/assets/AI/images/mgs/shln_hp shield.png){:.thumb}
+![PTLF](/assets/AI/images/mgs/shln_hp PTLF.png){:.thumb}
+![PTRF](/assets/AI/images/mgs/shln_hp PTRF.png){:.thumb}
+![PTLB](/assets/AI/images/mgs/shln_hp PTLB.png){:.thumb}
+![PTRB](/assets/AI/images/mgs/shln_hp PTRB.png){:.thumb}
 
 {% include spoiler-end %}
 
@@ -335,13 +333,13 @@ Triggers an attack, Sahelanthropus will attack an antenna if the route node and 
 {% include spoiler-end %}
 
 ## Hellbound Documentation
-[Hellbound Debug Functions](/AI_Stuff/mgs/mgs_hellbound_Debug_Functions)<br>
-[Hellbound route assignment](/AI_Stuff/mgs/mgs_hellroutes)<br>
-[Hellbound Search Missiles](/AI_Stuff/mgs/mgs_hellsearchmissiles)<br>
-[Hellbound Heli attack sequence](/AI_Stuff/mgs/mgs_Hellheli)<br>
+[Hellbound Debug Functions](/AI/mgs/mgs_hellbound_Debug_Functions)<br>
+[Hellbound route assignment](/AI/mgs/mgs_hellroutes)<br>
+[Hellbound Search Missiles](/AI/mgs/mgs_hellsearchmissiles)<br>
+[Hellbound Heli attack sequence](/AI/mgs/mgs_Hellheli)<br>
 
 ## Dominion Documentation
-[Navmesh Params and Flags](/AI_Stuff/mgs/mgs_nav2_params)<br>
-[sahelan Navworld](/AI_Stuff/mgs/mgs_NavWorld)<br>
-[Dominion route assignment](/AI_Stuff/mgs/mgs_DomRoutes)<br>
-[Dominion REX mode](/AI_Stuff/mgs/mgs_rexmode)<br>
+[Navmesh Params and Flags](/AI/mgs/mgs_nav2_params)<br>
+[sahelan Navworld](/AI/mgs/mgs_NavWorld)<br>
+[Dominion route assignment](/AI/mgs/mgs_DomRoutes)<br>
+[Dominion REX mode](/AI/mgs/mgs_rexmode)<br>
