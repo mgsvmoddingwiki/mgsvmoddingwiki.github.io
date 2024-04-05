@@ -17,4 +17,5 @@ This is the central hub for information on modding the [Fox Engine](https://en.w
 [![Lua](/assets/Lua Icon.png){:.inline width="145px"}](/Lua)
 [![Guides](/assets/Guides Icon.png){:.inline width="145px"}](/Guides)
 [![Infinite Heaven](/assets/InfiniteHeaven Icon.webp){:.inline width="145px"}](/Infinite_Heaven)
+[![AI](/assets/AI_Stuff/images/AI Icon.png){:.inline width="145px"}](/AI_Stuff/AI_Main)
 {:.center}
