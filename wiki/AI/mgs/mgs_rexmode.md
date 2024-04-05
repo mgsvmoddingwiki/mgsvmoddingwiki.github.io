@@ -1,10 +1,11 @@
 ---
 title: MG Sahelanthropus REX mode
-permalink: /AI_Stuff/mgs/mgs_rexmode
+permalink: /AI/mgs/mgs_rexmode/
 tags: [AI, Metal Gear]
 ---
+
 ## Rex mode
-![Sahelanthropus Rex Mode Art from "The Art of Metal Gear Solid V" (page 111)](/assets/AI_Stuff/images/mgs/sally_art rex.png){:.thumb .right}
+![Sahelanthropus Rex Mode Art from "The Art of Metal Gear Solid V" (page 111)](/assets/AI/images/mgs/sally_art rex.png){:.thumb .right}
 
 REX mode is the name given to the sequence where Sahelanthropus changes its pose to an pose similar to MG REX to fire its railgun.<br><br>
 
@@ -21,16 +22,16 @@ You can add REX sniping points anywhere, even on sky, but make sure there is ter
 As written above, REX sniping points are managed on datasets with `TppHidePointData` entities, for this example im going to use Foxkit to add 1 more REX sniping point on Nova Braga to an already existing dataset.<br>
 In this example, i want the sniping point to be on the red cross facing the airport like in the picture bellow:
 
-![](/assets/AI_Stuff/images/mgs/shlb_rexpoint_example.png)
+![](/assets/AI/images/mgs/shlb_rexpoint_example.png)
 
 First thing to is to open the dataset that you are using to manage the REX sniping points, if you dont have one yet, create it.<br>
 After that add an `TppHidePointData`, on the Foxkit´s Entity tab, make sure the `type` is set to `Type 1` and create an Transform entity.<br>
 
-![](/assets/AI_Stuff/images/mgs/shlb_rexpoint_example_02.png)
+![](/assets/AI/images/mgs/shlb_rexpoint_example_02.png)
 
 Now with the `TppHidePointData` Transform entity created you can define the coordinates and rotation for the REX sniping point, in my case, i will place it on the end of the runway facing the airport.
 
-![](/assets/AI_Stuff/images/mgs/shlb_rexpoint_example_01.png)
+![](/assets/AI/images/mgs/shlb_rexpoint_example_01.png)
 
 >The direction of the blue arrow is the direction that Sahelanthropus will be facing
 {:.important}

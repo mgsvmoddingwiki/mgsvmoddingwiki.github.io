@@ -1,7 +1,7 @@
 ---
 title: Sahelanthropus Navmesh data
-permalink: /AI_Stuff/mgs/mgs_nav2_params
-tags: [AI,Metal Gear]
+permalink: /AI/mgs/mgs_nav2_params/
+tags: [AI, Metal Gear]
 ---
 
 

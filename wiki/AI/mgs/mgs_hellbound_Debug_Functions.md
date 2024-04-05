@@ -1,6 +1,6 @@
 ---
 title: Hellbound Debug Functions
-permalink: /AI_Stuff/mgs/mgs_hellbound_Debug_Functions
+permalink: /AI/mgs/mgs_hellbound_Debug_Functions/
 tags: [AI, Metal Gear]
 ---
 

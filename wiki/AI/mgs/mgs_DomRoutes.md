@@ -1,6 +1,6 @@
 ---
 title: MG Dominion Routes
-permalink: /AI_Stuff/mgs/mgs_DomRoutes
+permalink: /AI/mgs/mgs_DomRoutes/
 tags: [AI, Metal Gear]
 ---
 ## What are routes used for on Dominion AI ?
@@ -23,7 +23,7 @@ Start by creating a Routeset on foxkit and inside that routeset create the route
 
 As an example, im going to make a route inside Nova Braga Airport like the one bellow: 
 
-![The yellow line represents the route](/assets/AI_Stuff/images/mgs/shln_Domroute.png)
+![The yellow line represents the route](/assets/AI/images/mgs/shln_Domroute.png)
 
 >Use edge event type `Run Walk` for Dominion Base route
 {:.important}
