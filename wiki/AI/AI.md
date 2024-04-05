@@ -5,13 +5,13 @@ tags: []
 ---
 
 [![Metal Gear Sahelanthropus](/assets/AI/images/Shln Icon.png){:.inline width="145px"}](/AI/mgs)
-[![Volgin](/assets/AI/images/volgin Icon.png){:.inline width="145px"}](/AI/AI_Main)
-[![Quiet](/assets/AI/images/Quiet Icon.png){:.inline width="145px"}](/AI/AI_Main)
-[![Skull Units](/assets/AI/images/skulls Icon.png){:.inline width="145px"}](/AI/AI_Main)
-[![Soldiers](/assets/AI/images/Soldiers Icon.png){:.inline width="145px"}](/AI/AI_Main)
-[![Pequod](/assets/AI/images/Pequod Icon.png){:.inline width="145px"}](/AI/AI_Main)
-[![Enemy Vehicles](/assets/AI/images/EnemyHelis Icon.png){:.inline width="145px"}](/AI/AI_Main)
-[![Animals](/assets/AI/images/Animals Icon.png){:.inline width="145px"}](/AI/AI_Main)
+[![Volgin](/assets/AI/images/volgin Icon.png){:.inline width="145px"}](/AI)
+[![Quiet](/assets/AI/images/Quiet Icon.png){:.inline width="145px"}](/AI)
+[![Skull Units](/assets/AI/images/skulls Icon.png){:.inline width="145px"}](/AI)
+[![Soldiers](/assets/AI/images/Soldiers Icon.png){:.inline width="145px"}](/AI)
+[![Pequod](/assets/AI/images/Pequod Icon.png){:.inline width="145px"}](/AI)
+[![Enemy Vehicles](/assets/AI/images/EnemyHelis Icon.png){:.inline width="145px"}](/AI)
+[![Animals](/assets/AI/images/Animals Icon.png){:.inline width="145px"}](/AI)
 
 ## Metal Gear
 {% include index-autolist tag="Metal Gear" %}{:.small}
