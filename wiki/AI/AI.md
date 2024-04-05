@@ -12,6 +12,7 @@ tags: []
 [![Pequod](/assets/AI/images/Pequod Icon.png){:.inline width="145px"}](/AI)
 [![Enemy Vehicles](/assets/AI/images/EnemyHelis Icon.png){:.inline width="145px"}](/AI)
 [![Animals](/assets/AI/images/Animals Icon.png){:.inline width="145px"}](/AI)
+{:.center}
 
 ## Metal Gear
 {% include index-autolist tag="Metal Gear" %}{:.small}
