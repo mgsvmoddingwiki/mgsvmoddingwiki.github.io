@@ -47,14 +47,16 @@ Now we're ready to run the server. Any time you'd like to run it just do the fol
 
 1. In the root directory of your fork double-click the `run.bat` script. This will build the wiki then run a web server locally on Windows that can be accessed via a browser.
     > The server is only accessible on your system, not over the internet.
-2. Minimize the CMD window and launch a browser.
-3. Enter `localhost:4000` in the addressbar to visit the local wiki running on your system!
+2. The script will prompt for whether you'd like to use incremental or full builds for the current session. Press `1` or `Enter` key for the incremental build type (faster).  
+    > The alternative full build option will rebuild the whole wiki any time a change is detected. This is useful if you've changed some permalink metadata and need the search results and sidebar [sections](/Meta/Creating_Editing_Pages/Metadata_Organization/Creating_a_Section) to sync up with the changes.
+3. Minimize the CMD window and launch a browser.
+4. Enter `localhost:4000` in the addressbar to visit the local wiki running on your system!
 
 > You'll notice a new `_site` directory in the root of the wiki directory appear. This directory only contains the compiled versions of pages/files for the local server and is ignored by Github Desktop when detecting file changes, so avoid editing any of the files within.
 
 ### Closing the local server
 
-You can stop the local server running at any time by opening the CMD window you minimized and pressing `Ctrl+C` (the 'cancel' command) then confirming the two prompts by pressing `y` and `Enter`.
+You can stop the local server running at any time by opening the CMD window you minimized and pressing `Ctrl+C` (the 'cancel' command) twice to terminate the process.
 
 ## Making changes
 
@@ -67,8 +69,6 @@ You can then submit your changes back to the original wiki as per the [Github De
 ![The build time has been trimmed in the GIF for brevity](/assets/Meta/Running_a_Local_Server/Live changes example.gif)
 
 > **Note:** it takes a moment to rebuild for each change so there'll be a delay between the change(s) and when they'll appear. The changes should automatically appear in the browser without requiring a refresh, once they've been built and are ready.
-
-> **Note:** certain changes that affect 'includes' like category auto indexes may not be detected with the default incremental buiild (since incremental builds only update the page/files that have been detected as modified). In such a case you can close the local server via CMD then re-run the `run.bat` which will build the entire site again.
 
 > **Tip:** you can check what's happening by viewing the CMD window while the local server is running.
 
