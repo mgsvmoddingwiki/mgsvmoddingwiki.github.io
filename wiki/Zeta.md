@@ -1,7 +1,7 @@
 ---
 title: Zeta
 permalink: /Zeta/
-tags: [Infinite Heaven, Tools]
+tags: [Infinite Heaven, Tools, Lua, Guides]
 ---
 
 {% include infobox dev="ZipfsLaw" site="https://github.com/ZipfsLaw/Zeta" download="https://www.nexusmods.com/metalgearsolidvtpp/mods/1309" %}
@@ -16,7 +16,13 @@ It can manage weapons, vehicles, custom player models, buddies and more. [It's r
   - Non-Replacer Mods: Mods no longer conflict with one another! They can have their own unique assets without replacing vanilla content.
   - Mod Support: Playable characters, vehicles, buddies, soldiers, missions, weapons, items, camos, LUA scripts, and more!
   - Backwards Compatibility: Non-IH mods can be loaded by Zeta and used alongside other mods.
-  - Included Mods: Advanced Graphics Menu, Loadout Management, Unlocked Weapon Customization, Zeta Editor
+
+## Included Mods
+
+  - Advanced Graphics Menu: Allows you to create you own graphics preset by providing additional graphic settings to override all graphic presets.
+  - Loadout Management:  Import, export sortie loadouts. Can load each slot individually, or all slots.
+  - Unlocked Weapon Customization:  Unlocks all possible weapon customization options without instability issues.
+  - Zeta Editor:  A tool used to generate Zeta lua script templates using pre-existing entities in the game
 
 ## Installation
 
