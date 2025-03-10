@@ -1,10 +1,7 @@
 ---
 title: Custom Side-Ops List
 permalink: /Custom_Side-Ops_List/
-tags:
-  - Infinite Heaven
-  - Missions
-  - Reference
+tags: [Infinite Heaven, Missions, Reference]
 ---
 
 Custom / Addon Side-Ops / Quests created for Metal Gear Solid V: The Phantom Pain.
@@ -79,8 +76,8 @@ See [MissionCodes](/MissionCodes#side-op-ids) for vanilla questIds. [Infinite He
 | q36770-q37209              |                 |             |           | **Free**
 | q37210-q37214              | TaliKnight      |             | 5         | [Knight Heaven](https://www.nexusmods.com/metalgearsolidvtpp/mods/1219)
 | q37215-q37249              | TaliKnight      |             |           | Reserved
-| q37250-q39009              |                 |             |           | **Free**
-|  q39008                    | mgsvfan11122    |             |           |reserved
+| q37250-q39007, q39009      |                 |             |           | **Free**
+| q39008                     | mgsvfan11122    |             |           | Reserved
 | q39010                     | KJP / Base game |             |           | NOTE: Max questId for this block
 
 ## Side-Ops with conflicting IDs
