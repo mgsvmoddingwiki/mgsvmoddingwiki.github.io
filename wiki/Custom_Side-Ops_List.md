@@ -1,7 +1,10 @@
 ---
 title: Custom Side-Ops List
 permalink: /Custom_Side-Ops_List/
-tags: [Infinite Heaven, Missions, Reference]
+tags:
+  - Infinite Heaven
+  - Missions
+  - Reference
 ---
 
 Custom / Addon Side-Ops / Quests created for Metal Gear Solid V: The Phantom Pain.
@@ -77,6 +80,7 @@ See [MissionCodes](/MissionCodes#side-op-ids) for vanilla questIds. [Infinite He
 | q37210-q37214              | TaliKnight      |             | 5         | [Knight Heaven](https://www.nexusmods.com/metalgearsolidvtpp/mods/1219)
 | q37215-q37249              | TaliKnight      |             |           | Reserved
 | q37250-q39009              |                 |             |           | **Free**
+|  q39008                    | mgsvfan11122    |             |           |reserved
 | q39010                     | KJP / Base game |             |           | NOTE: Max questId for this block
 
 ## Side-Ops with conflicting IDs
@@ -97,4 +101,3 @@ List of ops using previously reserved/used questId(s).
 | q30400-q30403              | MgSolidus       |             |           | Doesn’t seem to have published them?
 | q36675                     | Ventos          |             | 1         | [Nuclear Quest](https://www.nexusmods.com/metalgearsolidvtpp/mods/814)
 | q36677                     | Ventos          |             | 1         | [Extract the Engineer](https://www.nexusmods.com/metalgearsolidvtpp/mods/845)
-   
