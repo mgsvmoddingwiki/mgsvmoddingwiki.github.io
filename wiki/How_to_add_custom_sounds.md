@@ -1,9 +1,7 @@
 ---
 title: How to add custom sounds
 permalink: /How_to_add_custom_sounds/
-tags:
-  - Guides
-  - Sound
+tags: [Guides, Sound]
 ---
 
 In this article I'll be explaining how to change sounds in MGSV. This
@@ -45,7 +43,7 @@ browse the ones you want and pick them out. So file monolith has tools
 that makes copies of the files within the MGSV archives and extracts
 them into a readable format. If you don't know how to use File Monolith
 refer to [this
-guide](https://metalgearmodding.fandom.com/wiki/File_Monolith) to
+guide](/File_Monolith) to
 familiarize yourself.
 
 **Ravioli Game Tools:** So this is an open source tool kit that comes
@@ -62,7 +60,7 @@ read, that being ".wem"
 **Snakebite Mod Manager:** Once you are done replacing the files it
 allows you to pack and install mods without damaging the original game
 files. Familiarize yourself with [this
-guide](https://metalgearmodding.fandom.com/wiki/SnakeBite_Mod_Manager).
+guide](/SnakeBite_Mod_Manager).
 
 **Audacity:** This is a generic audio editing tool, basically we need it
 to make any adjustments to sounds before we put them in the game. MGSV
@@ -130,7 +128,7 @@ know this is the vanilla game's sound bank.
 
 So before we go any further, you have two ways of identifying the sound
 you need to change. The first is by using the [sound
-codes](https://mgsvmoddingwiki.github.io/Sound_Codes/)
+codes](/Sound_Codes)
 page on the wiki. If you find the sound you're looking for keep node of
 it's file name.
 
@@ -158,7 +156,7 @@ but for now you can leave it alone.
 You only need to use Ravioli Explorer if you do not know which file you
 want to replace yet. That is- you have not found the sound file you are
 looking for in the sound [codes
-section](https://mgsvmoddingwiki.github.io/Sound_Codes/).
+section](/Sound_Codes).
 If you have not found it and need to look for the sound then you simply
 click on "Ravioli Explorer" and click open file at the top left then
 navigate to "Wwise_Output" then open "common_bank_01.bnk" from there
