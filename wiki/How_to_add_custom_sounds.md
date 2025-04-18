@@ -1,7 +1,9 @@
 ---
 title: How to add custom sounds
 permalink: /How_to_add_custom_sounds/
-tags: [Guides, Sound]
+tags:
+  - Guides
+  - Sound
 ---
 
 In this article I'll be explaining how to change sounds in MGSV. This
@@ -128,7 +130,7 @@ know this is the vanilla game's sound bank.
 
 So before we go any further, you have two ways of identifying the sound
 you need to change. The first is by using the [sound
-codes](https://metalgearmodding.fandom.com/wiki/Sound_Codes?venotify=created)
+codes](https://mgsvmoddingwiki.github.io/Sound_Codes/)
 page on the wiki. If you find the sound you're looking for keep node of
 it's file name.
 
