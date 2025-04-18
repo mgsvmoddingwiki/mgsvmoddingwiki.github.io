@@ -1,7 +1,9 @@
 ---
 title: How to add custom sounds
 permalink: /How_to_add_custom_sounds/
-tags: [Guides, Sound]
+tags:
+  - Guides
+  - Sound
 ---
 
 In this article I'll be explaining how to change sounds in MGSV. This
@@ -156,7 +158,7 @@ but for now you can leave it alone.
 You only need to use Ravioli Explorer if you do not know which file you
 want to replace yet. That is- you have not found the sound file you are
 looking for in the sound [codes
-section](https://metalgearmodding.fandom.com/wiki/Sound_Codes?venotify=created).
+section](https://mgsvmoddingwiki.github.io/Sound_Codes/).
 If you have not found it and need to look for the sound then you simply
 click on "Ravioli Explorer" and click open file at the top left then
 navigate to "Wwise_Output" then open "common_bank_01.bnk" from there
