@@ -37,20 +37,20 @@ export function removeChildText(parent) {
 }
 
 export function getPathLevels(url) {
-    let parts = [...String(url).replace('/?/','/').split('/')]; // in `String()` to avoid undefined errors, replace virtual page URL basis for consistency
-    let levels = parts.length - 2;
+    const parts = [...String(url).replace('/?/','/').split('/')], // in `String()` to avoid undefined errors, replace virtual page URL basis for consistency
+          levels = parts.length - 2;
     return {parts, levels}
 }
 
 export function getPageUrls(isVirtualPage) {
-    var location;
+    let location;
     if (isVirtualPage) {
         location = window.location.pathname + window.location.search;
     } else {
         location = window.location.pathname;
     }
-    var curUrl = trimTrailFs(location) + '/'; // always force trailing forwardslash since both search indexes force them, too, for consistency of lookups
-    var curUrlRoot = '/' + trimTrailFs(curUrl.split('/')[1]) + '/'; // obtain first-level path of current URL
+    const curUrl = trimTrailFs(location) + '/', // always force trailing forwardslash since both search indexes force them, too, for consistency of lookups
+          curUrlRoot = '/' + trimTrailFs(curUrl.split('/')[1]) + '/'; // obtain first-level path of current URL
     return {curUrl, curUrlRoot} // return object will have keys named after these vars
 }
 
@@ -79,7 +79,7 @@ export function waitForElements(parent, selector) {
 }
 
 export async function checkVp(funcName) {
-    var { isVirtualPage } = await import('./virtualpages.js');
+    const { isVirtualPage } = await import('./virtualpages.js');
     if (isVirtualPage) {
         waitForElements(body, '.vp-loaded').then(nodes => {
             nodes.forEach(el => {
@@ -98,7 +98,7 @@ export async function checkVp(funcName) {
 }
 
 export function htmlFromArray(array, targetEl) {
-    var parent;
+    let parent;
     if (typeof targetEl === 'object') {
         parent = targetEl;
     } else {
@@ -122,4 +122,23 @@ export function htmlFromArray(array, targetEl) {
         parent.appendChild(node);
     });
     return parent
+}
+
+export function debounce(fn,timeframe = 200,immediate = true) {
+    let timeoutId;
+
+    return function(...args) {
+        const callNow = immediate && !timeoutId;
+        clearTimeout(timeoutId);
+        timeoutId = setTimeout(() => {
+            timeoutId = null;
+            if (!immediate) {
+                fn.apply(this,args);
+            }
+        },timeframe);
+
+        if (callNow) {
+            fn.apply(this,args);
+        }
+    }
 }

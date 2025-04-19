@@ -5,22 +5,35 @@ is_wiki_page: false
 
 {% if site.search_engine == "js" %}
 
-const searchWrapper = body.querySelector('.git-wiki-search-js'),
-      searchInput = searchWrapper.querySelector('#search-input');
-initHtml()
-const searchClear = searchWrapper.querySelector('.search-clear-query'),
-      searchFilter = searchWrapper.querySelector('.search-section-filter'),
-      resultsContainer = searchWrapper.querySelector('#results-container'),
-      resultsMax = 10;
-
 import * as func from './functions.js';
 import { searchIndex } from './searchindex.js';
 import { sectionIndexFlat } from './sidebar.js';
 import { getParentPath } from './sidebar.js';
 import { isVirtualPage } from './virtualpages.js';
 
-var enableSectionIndex = false,
-    lookupIndex = useSectionIndex(enableSectionIndex);
+const searchWrapper = body.querySelector('.git-wiki-search-js'),
+      searchInput = searchWrapper.querySelector('#search-input');
+
+initHtml();
+
+const searchClear = searchWrapper.querySelector('.search-clear-query'),
+      searchFilter = searchWrapper.querySelector('.search-section-filter'),
+      resultsContainer = searchWrapper.querySelector('#results-container'),
+      resultsMax = 10,
+      keyNavCodes = {
+          arrowUp: 38,
+          arrowDown: 40,
+          enter: 13,
+          esc: 27,
+          tab: 9,
+          shift: 16 // for whatever reason the keyup listener doesn't detect `shiftKey` but does detect the raw keycode so it's added here
+      }
+
+let enableSectionIndex = false,
+    lookupIndex,
+    keyNavCurItem; // currently selected item for keyboard nav;
+
+useSectionIndex(enableSectionIndex);
 
 // Switch to section index by default if detected
 if (sectionIndexFlat.length > 1) {
@@ -30,29 +43,25 @@ if (sectionIndexFlat.length > 1) {
     searchFilterActive(true);
 }
 
-var fuse = fuseConfig(enableSectionIndex),
-    keyNavCurItem, // currently selected item for keyboard nav
-    keyNavCodes = {
-        arrowUp: 38,
-        arrowDown: 40,
-        enter: 13,
-        esc: 27,
-        tab: 9,
-        shift: 16 // for whatever reason the keyup listener doesn't detect `shiftKey` but does detect the raw keycode so it's added here
+var fuse = fuseConfig(enableSectionIndex);
+
+const queryHandlingDebounced = func.debounce((val,keyCode) => {
+    if (typeof val != 'undefined' && val != null && val.length != 0) {
+        outputResults(fuse.search(val),keyCode);
+        searchResultsShow(true); // retrigger visibility check on character deletion
+    } else {
+        searchClearShow(false);
+        searchNoResults(false);
+        searchResultsShow(false);
     }
+},300,false);
 
 searchInput.addEventListener('keyup', (e) => {
     const val = e.target.value;
+
     // Trigger on every key except those used for nav
     if (!func.matchObjVal(keyNavCodes, e.keyCode)) {
-        if (typeof val != 'undefined' && val != null && val.length != 0) {
-            outputResults(fuse.search(val), e.keyCode);
-            searchResultsShow(true); // retrigger visibility check on character deletion
-        } else {
-            searchClearShow(false);
-            searchNoResults(false);
-            searchResultsShow(false);
-        }
+        queryHandlingDebounced(val,e.keyCode);
     } else {
         // Defocus input
         if (e.keyCode == keyNavCodes.esc) {
@@ -95,11 +104,11 @@ searchClear.addEventListener('click', (e) => {
 });
 
 function initHtml() {
-    let actions = document.createElement('div'),
-        noResults = document.createElement('span'),
-        sectionFilter = document.createElement('span'),
-        clear = document.createElement('button'),
-        results = document.createElement('ul');
+    const actions = document.createElement('div'),
+          noResults = document.createElement('span'),
+          sectionFilter = document.createElement('span'),
+          clear = document.createElement('button'),
+          results = document.createElement('ul');
     actions.classList.add('search-actions');
     noResults.classList.add('search-no-results');
     sectionFilter.classList.add('search-section-filter');
@@ -133,7 +142,7 @@ function fuseConfig(indexState) {
 // https://stackoverflow.com/a/71951738
 function searchKeyNav(e) {
     const a = resultsContainer.getElementsByTagName('a');
-    var priorItem = keyNavCurItem;
+    let priorItem = keyNavCurItem;
     if (e.keyCode == keyNavCodes.arrowDown || (e.keyCode == keyNavCodes.tab && !e.shiftKey)) {
         keyNavCurItem++;
         if (keyNavCurItem >= a.length) {
