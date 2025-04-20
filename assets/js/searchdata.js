@@ -265,6 +265,9 @@ function outputResults(input, key) {
                 link = document.createElement('a'),
                 labelTitle = document.createElement('span');
             link.classList.add('search-result-item');
+            if (result.item.virtualPage) {
+                link.classList.add('search-result-item-virtual-page');
+            }
             link.setAttribute('href', result.item.url);
             labelTitle.classList.add('search-result-title');
             labelTitle.textContent = result.item.title;
@@ -277,7 +280,7 @@ function outputResults(input, key) {
                 let labelPath = document.createElement('span'),
                     parentPath = getParentPath(path, parts);
                 labelPath.classList.add('search-result-path');
-                labelPath.textContent = func.trimTrailFs(parentPath).replace('/?/','/').replace('/',' ').replaceAll('/',' / ').replaceAll('_',' ').replaceAll('-',' ');
+                labelPath.textContent = func.trimTrailFs(parentPath).replace('/?/','/').replace('/',' ').replaceAll('/',' / ').replaceAll('_',' ').replaceAll('-',' ').replaceAll('/ ?','');
                 link.appendChild(labelPath);
             }
 

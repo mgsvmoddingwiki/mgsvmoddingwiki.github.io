@@ -76,7 +76,11 @@ if (isVirtualPage) {
             // For some reason querying for the results container returns null so used `body` instead
             let result = body.querySelector('.search-result-item.highlight'),
                 tarUrl = result.getAttribute('href');
-            updateFromTarget(e, tarUrl);
+            if (result.classList.contains('search-result-item-virtual-page')) {
+                updateFromTarget(e, tarUrl); // if virtual page
+            } else {
+                window.location.href = tarUrl; // otherwise go directly to page
+            }
         }
     });
 
