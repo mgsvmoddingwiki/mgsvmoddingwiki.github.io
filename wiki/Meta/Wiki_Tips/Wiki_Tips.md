@@ -19,7 +19,7 @@ There are a number of search operators that can be used to refine queries:
 | ` ` | `inf hook` | Spaces act as an *and*. Strings can be partial and still match. |
 | `|` | `hair | sound` | Pipes act as an *or*, returning results of either string. |
 | `""` | `"infinite heaven"` | Wrapping in double quotes returns exact match. |
-| `!` | `inf heaven !guide` | Prefixing an exclamation mark before a string will exclude results that contain the string. To exclude multiple words wrap the string in double quotes like `!"some term"`. |
+| `!` | `inf heaven !guide` | Prefixing an exclamation mark before a string will exclude results that contain the string. To exclude multiple words wrap the string in double quotes like `!"some term"`.<br/><br/> Keep in mind this matches also against page URLs, so if a result continues to display it may be the URL differs from the string (eg: if the string `some_term` is unique to the URL path then using `!"some term"` won't exclude it from result, only `!"some_term"`).  |
 | `^` | `^meta` | Returns results beginning with string. |
 | `$` | `entries$` | Returns results ending with string. Note: this can match things like tag fields that end with a particular tag. |
 {:.stretch}
