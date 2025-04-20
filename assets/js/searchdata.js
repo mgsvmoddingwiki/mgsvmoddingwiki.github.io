@@ -47,7 +47,7 @@ var fuse = fuseConfig(enableSectionIndex);
 
 const queryHandlingDebounced = func.debounce((val,keyCode) => {
     if (typeof val != 'undefined' && val != null && val.length != 0) {
-        outputResults(fuse.search(val),keyCode);
+        outputResults(val,fuse.search(val),keyCode);
         searchResultsShow(true); // retrigger visibility check on character deletion
     } else {
         searchClearShow(false);
@@ -230,7 +230,7 @@ function searchFilterActive(state) {
     searchClear.parentNode.classList.toggle('filtered', state);
     fuse = fuseConfig(state);
     let inputVal = searchInput.value;
-    outputResults(fuse.search(inputVal), '');
+    outputResults(inputVal,fuse.search(inputVal), '');
     if (!inputVal) {
         searchClearShow(false);
         searchNoResults(false);
@@ -250,8 +250,65 @@ function searchClearShow(state) {
     searchClear.parentNode.classList.toggle('clear', state);
 }
 
-function outputResults(input, key) {
+// Custom exclusion handling since fuse.js' exclusion operator handling is unreliable
+function exclusionTokens(query) {
+    const excluded = [];
+
+    // Obtain multi-word exclusion strings (like `!"some term"`)
+    const multiwordRegex = /!"([^"]+?)"/g;
+    let match;
+    while ((match = multiwordRegex.exec(query)) !== null) {
+        excluded.push(match[1]); // obtain the string within the quotes
+    }
+    const querySansMultiwordExclusions = query.replace(multiwordRegex, '');
+
+    // Strip sub-strings that are wrapped in double quotes (to avoid parsing any `!` within the remaining query that aren't meant to be exclusion operators)
+    const querySansLiterals = querySansMultiwordExclusions.replace(/"[^"]*"/g, '');
+
+    // Parse remaining query
+    const tokens = querySansLiterals.split(/\s+/); // delimit by spaces
+    tokens.forEach(token => {
+        token = token.trim();
+        if (token.startsWith('!') && token.length > 1) {
+            excluded.push(token.substring(1));
+        }
+    });
+
+    return excluded
+}
+
+function exclusionFilter(results, exclusionArray) {
+    return results.filter(obj => {
+        const toExclude = exclusionArray.some(token => {
+            for (let key in obj.item) {
+                const value = obj.item[key];
+                token = token.toLowerCase();
+
+                if (typeof value === 'string' && value.toLowerCase().includes(token)) {
+                    return true
+                }
+
+                // Parse arrays (for tags)
+                if (Array.isArray(value)) {
+                    if (value.some(elem => typeof elem === 'string' && elem.toLowerCase().includes(token))) {
+                        return true
+                    }
+                }
+            }
+            return false
+        });
+
+        return !toExclude // include item only if it contains no exclusion tokens
+    });
+}
+
+function outputResults(query, input, key) {
     searchClearShow(true);
+
+    // Apply custom filters to returned fuse results
+    const excluded = exclusionTokens(query);
+    input = exclusionFilter(input,excluded);
+
     if (input.length != 0) {
         // Avoid resetting unless a non-shift key is pressed
         if (key != keyNavCodes.shift) {
