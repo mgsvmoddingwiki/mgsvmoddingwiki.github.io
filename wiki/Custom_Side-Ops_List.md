@@ -1,7 +1,10 @@
 ---
 title: Custom Side-Ops List
 permalink: /Custom_Side-Ops_List/
-tags: [Infinite Heaven, Missions, Reference]
+tags:
+  - Infinite Heaven
+  - Missions
+  - Reference
 ---
 
 Custom / Addon Side-Ops / Quests created for Metal Gear Solid V: The Phantom Pain.
@@ -60,7 +63,8 @@ See [MissionCodes](/MissionCodes#side-op-ids) for vanilla questIds. [Infinite He
 | q30622                     | amars464        |             |           | Reserved
 | q30630-q30699              | amars464        |             |           | Reserved
 | q30700-q30750              | WaffleOleg      |             | 51        | Waffle's SideOps
-| q30751-q31068              |                 |             |           | **Free**
+| q30651-q30652              | Nonebit         |             |           | Reserved
+| q30753-q31068              |                 |             |           | **Free**
 | q31069-q31086              | jackwall        |             | 18        | [Diamond Girls](https://www.nexusmods.com/metalgearsolidvtpp/mods/582)
 | q31087-q31099              | jackwall        |             |           | Reserved
 | q31100-q3102               | Adam_Online     |             | 3         | [Tales From Motherbase 1-3](https://www.nexusmods.com/metalgearsolidvtpp/mods/764)
