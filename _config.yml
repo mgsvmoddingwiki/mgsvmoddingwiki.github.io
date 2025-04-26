@@ -1,6 +1,8 @@
 remote_theme: Drassil/git-wiki-theme@master
 # (string) Title of your wiki
 title: "MGSV Modding Wiki"
+# (string) Respository owner and name for github-metadata plugin
+repository: "mgsvmoddingwiki/mgsvmoddingwiki.github.io"
 # (string) if you've installed your wiki in subfolder, you must change this configuration
 # with your folder name, otherwise leave it empty
 baseurl: ""
