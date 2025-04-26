@@ -1,1 +1,2 @@
+# Sets base domain for URLs for site. Added to this separate file so this config be separately passed as an argument only during the Github Actions workflow, rather than when running a server locally.
 url: "https://mgsvmoddingwiki.github.io"
