@@ -220,7 +220,7 @@ $extraFiles = [System.Collections.ArrayList]@(
 
 # Output to final rendered site directory
 # Note: requires full output directory structure exists prior to script running, hence why the Jekyll hook from `run-index-build.rb` plugin, that calls this script, is set to run after the rest of the site has been generated.
-$indexFile = "assets/js/mainindex.js"
+$indexFile = "_site/assets/js/mainindex.js"
 
 $items = Generate-Index -PathDirs $rootDirs -PathExtraFiles $extraFiles
 
@@ -236,7 +236,7 @@ $rootDirs = [System.Collections.ArrayList]@(
     "wiki/Entity_Reference/"
 )
 
-$indexFile = "assets/js/virtualindex.js"
+$indexFile = "_site/assets/js/virtualindex.js"
 
 $items = Generate-Index -PathDirs $rootDirs -IsVirtualPage $true
 
