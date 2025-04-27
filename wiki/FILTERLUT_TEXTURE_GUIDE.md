@@ -2,7 +2,7 @@
 # Metal Gear Solid V LUT Modding Guide
 ---
 
-![](https://static.wikia.nocookie.net/metalgearmodding/images/c/c4/Screenshot_2024-08-12_234945.png/revision/latest?cb=20240813035019)
+![](/assets/FILTERLUT_TEXTURE_GUIDE/Screenshot_texture_exporter.png)
 
 *This guide was written a long time ago for an inquisitive user who wanted to learn more about the steps for creating [I Can't Believe It's Not ReShade](https://www.nexusmods.com/metalgearsolidvtpp/mods/406). It touches on the different lookup tables that are in the base game, their interactions (stacking) with each other, and how to save the changes with Photoshop's DDS Plugin. FILTERLUT files use a special format: 8.8.8.8 ARGB 32 bpp | unsigned / BC7. This format is unsupported in GIMP (as of 2.10.38), thus the Adobe Photoshop Plugin is recommended for editing lookup tables.*
 
@@ -21,7 +21,7 @@ You'll find 6 filter lookup tables.
 
 FILTERLUTs don't have mipmaps, so there's only going to be a `.ftex` and a `.1.ftexs` file for each of them. Convert them with [ftex tool](https://github.com/Atvaark/FtexTool/releases) (note: ftextool versions before v0.3.3 did not support A8R8G8B8. v0.3.3 specifically fixed FILTERLUT modding) and open up the `.dds` texture with Photoshop. It'll look like 16 tiles ranging from black/green/red to white/blue/purple.
 
-![](https://static.wikia.nocookie.net/metalgearmodding/images/7/7e/Common_base_a_FILTERLUT.dds.png/revision/latest?cb=20240813035631)
+![](/assets/FILTERLUT_TEXTURE_GUIDE/Common_base_a_FILTERLUT.dds.png)
 
 ## In-Game Effects
 Here's my current understanding of how the filters are set up:
@@ -71,11 +71,11 @@ When tweaking a lookup table, I would:
 
 Example:
 
-![](https://static.wikia.nocookie.net/metalgearmodding/images/e/ec/AFGH_DAY_1.png/revision/latest/scale-to-width-down/180?cb=20240819140120)
+![](/assets/FILTERLUT_TEXTURE_GUIDE/AFGH_DAY_1.png)
 
 Once I had the changes, I would drag and drop the adjustment layer from the screenshot onto the LUT texture:
 
-![](https://static.wikia.nocookie.net/metalgearmodding/images/c/cb/Afgh_filter_2.png/revision/latest/scale-to-width-down/180?cb=20240819140327)
+![](/assets/FILTERLUT_TEXTURE_GUIDE/Afgh_filter_2.png)
 
 When you're finished with an edit:
 - Save the `.dds` as "8.8.8.8 ARGB 32 bpp | unsigned"
@@ -83,7 +83,7 @@ When you're finished with an edit:
 
 Example:
 
-![](https://static.wikia.nocookie.net/metalgearmodding/images/7/73/Dds_format.png/revision/latest/scale-to-width-down/423?cb=20240813041301)
+![](/assets/FILTERLUT_TEXTURE_GUIDE/Dds_format.png)
 
 Then:
 - Repack the `.pftxs`
