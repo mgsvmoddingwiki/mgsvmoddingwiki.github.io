@@ -54,7 +54,7 @@ Directory structure for virtual page text files themselves is the same as the ou
 The way the virtual pages are detected by the wiki is two-fold:
 
 - The `permalink` path of the 'real' page used as the basis is defined as a custom variable in the `_config.yml` file.
-- The physical directory path to the virtual pages directory, defined in the `build-virtual-index.ps1` Powershell script used to generate an Javascript index all virtual pages. 
+- The physical directory path to the virtual pages directory, defined in the `build-search-indexes.ps1` Powershell script used to auto generate the Javascript index for all virtual pages. 
 
 #### Defining a root page variable
 
@@ -68,8 +68,8 @@ virtual_page_roots:
 
 #### Defining a root directory for the virtual page files
 
-1. In the root of the site open `build-virtual-index.ps1` in a text editor.
-2. In the `$rootDirs` array add the path to the directory that contains the virtual page `.txt` files, like so:
+1. In the root of the site open `build-search-indexes.ps1` in a text editor.
+2. In the `$rootDirs` array under the `Generate virtual index` section add the path to the directory that contains the virtual page `.txt` files, like so:
 ```ps
 $rootDirs = [System.Collections.ArrayList]@(
     "wiki/Entity_Reference/"
