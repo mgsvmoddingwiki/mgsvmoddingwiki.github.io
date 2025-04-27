@@ -3,3 +3,5 @@ Gemfile.*.lock
 .sass-cache
 public
 .jekyll-metadata
+assets\js\mainindex.js
+assets\js\virtualindex.js
