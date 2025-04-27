@@ -1,5 +1,7 @@
 ---
-# Metal Gear Solid V LUT Modding Guide
+title: FILTERLUT Texture Guide
+permalink: /FILTERLUT_Texture_Guide/
+tags: [Guides, Rendering]
 ---
 
 ![](/assets/FILTERLUT_TEXTURE_GUIDE/Screenshot_texture_exporter.png)
