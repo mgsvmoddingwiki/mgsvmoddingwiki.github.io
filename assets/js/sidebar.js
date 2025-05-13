@@ -17,7 +17,7 @@ for (let key in counters) {
 // -------------------- Page URL hierarchy navigation -------------------
 var {curUrl, curUrlRoot} = func.getPageUrls(checkForVirtualPage()),
     curPage;
-export const sectionIndexFlat = pathTreeFilterArray(searchIndex, 'url', curUrlRoot); // check search index for shared root pages (assumes each path level has its own page)
+export const sectionIndexFlat = filterArrayForSection(searchIndex, 'url', curUrlRoot); // check search index for shared root pages (assumes each path level has its own page)
 var sectionIndex = JSON.parse(JSON.stringify(sectionIndexFlat)); // creates separate reference for array copy so original array doesn't get retroactively modified by subsequent changes
 
 if (sectionIndex.length > 1 && !document.title.includes('Page Not Found')) {
@@ -196,12 +196,12 @@ function scrollToCenter(target, container, toTargetCenter, yOffset) {
     container.scrollTo(0, center);
 }
 
-function pathTreeFilterArray(array, key, value) {
+export function filterArrayForSection(array, key, substring) {
     var id = 1;
     let arr = array.filter(function (obj) {
         for (let i in obj) {
             // Match to beginning of path
-            if (obj[key].indexOf(value) === 0) {
+            if (obj[key].indexOf(substring) === 0) {
                 obj.id = id++;
                 obj.parentId = 0;
                 return obj

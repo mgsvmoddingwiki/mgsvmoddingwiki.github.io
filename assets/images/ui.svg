@@ -280,6 +280,19 @@
             <path d="M204.027,28L210,35L204.027,42"/>
         </g>
 
+        <g id="icons-search-filters-expand-path" class="stroke" transform="translate(-47 -73)">
+            <path d="M56,84.692L61,89.119L66,84.692"/>
+        </g>
+
+        <g id="icons-search-filters-contract-path" class="stroke" transform="translate(-47 -73)">
+            <path d="M56,88.314L61,83.887L66,88.314"/>
+        </g>
+
+        <g id="icons-search-show-all-arrow-path" class="stroke" transform="translate(-143 -21)">
+            <path d="M145,29L156.56,29"/>
+            <path d="M152.665,24L156.56,29.005L156.56,29L152.832,34.005"/>
+        </g>
+
         <style><![CDATA[
 
             * {
@@ -413,6 +426,9 @@
     <use class="output" id="icons-themes-light" xlink:href="#icons-themes-light-path"/>
 
     <use class="output" id="icons-searchbox-clear" xlink:href="#icons-searchbox-clear-path"/>
+    <use class="output" id="icons-search-filters-expand" xlink:href="#icons-search-filters-expand-path"/>
+    <use class="output" id="icons-search-filters-contract" xlink:href="#icons-search-filters-contract-path"/>
+    <use class="output" id="icons-search-show-all-arrow" xlink:href="#icons-search-show-all-arrow-path"/>
     <use class="output" id="icons-breadcrumb" xlink:href="#icons-breadcrumb-path"/>
 
     <!-- Sidebar icons -->

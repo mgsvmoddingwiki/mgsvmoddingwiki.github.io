@@ -34,7 +34,7 @@ if (isVirtualPage) {
     body.addEventListener('click', (e) => {
         const tar = e.target;
         var tarUrl = (tar.tagName == 'A') ? tar.getAttribute('href') : null; // reason for using `getAttribute` vs `.href` is latter resolves to full URL, including domain and protocol
-        if ((tar.classList.contains('section-hierarchy-link') && !tar.classList.contains('root-page')) || (tar.parentElement.classList.contains('section-hierarchy-link') && !tar.parentElement.classList.contains('root-page')) || (tar.closest('.index.section') && !tarUrl.startsWith('#'))) {
+        if ((tar.closest('.section-hierarchy-link') && !tar.closest('.root-page')) || (tar.closest('.index.section') && !tarUrl.startsWith('#'))) {
             if (tar.parentElement.classList.contains('section-hierarchy-link')) {
                 tarUrl = tar.parentElement.getAttribute('href');
             }
@@ -46,12 +46,9 @@ if (isVirtualPage) {
             return
         }
         // Only handle clicks to search results that are filtered to section
-        if ((tar.classList.contains('search-result-item') || tar.parentElement.classList.contains('search-result-item')) && tar.closest('.git-wiki-search').querySelector('.search-actions.filtered')) {
-            if (!tar.classList.contains('search-result-item')) {
+        if (tar.closest('.search-suggestions-item')) {
+            if (!tar.classList.contains('search-suggestions-item')) {
                 tarUrl = tar.parentElement.getAttribute('href');
-            }
-            if (tarUrl != curUrlRoot) {
-                updateFromTarget(e, tarUrl);
             }
             return
         }
@@ -74,9 +71,9 @@ if (isVirtualPage) {
     searchInput.addEventListener('keydown', (e) => {
         if (e.key === 'Enter') {
             // For some reason querying for the results container returns null so used `body` instead
-            let result = body.querySelector('.search-result-item.highlight'),
-                tarUrl = result.getAttribute('href');
-            if (result.classList.contains('search-result-item-virtual-page')) {
+            const result = body.querySelector('.search-suggestions-item.highlight'),
+                  tarUrl = result.getAttribute('href');
+            if (result.classList.contains('search-suggestions-item-virtual-page')) {
                 updateFromTarget(e, tarUrl); // if virtual page
             } else {
                 window.location.href = tarUrl; // otherwise go directly to page
