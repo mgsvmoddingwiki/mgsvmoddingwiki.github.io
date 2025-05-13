@@ -2675,6 +2675,7 @@ footer {
 }
 
 .search-result-image-container::after {
+    width: 100%;
     background-image: linear-gradient(165deg, var(--color-result-blue) 20%, transparent 50%);
     background-color: transparent;
     opacity: 0.5;
