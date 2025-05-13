@@ -6,13 +6,17 @@ redirect_from:
     - /Meta-Wiki_Tips/
 ---
 
-This page covers tips for using the wiki, some of which are non-obvious so worth skimming through even as a savvy user.
-
 ## Search
 
-The search box returns results in the form of autocomplete suggestions. As it peforms a full text search it can be little sluggish on Firefox-based browsers. The results can also be navigated using keyboard arrow or tab keys.
+The search suggestions can be navigated using keyboard arrow or tab keys. Word matches appear beside each result.
 
-There are a number of search operators that can be used to refine queries:
+Pressing Enter without navigating via keys through the list opens the full results, or they can be opened via the *See all \<n\> results* item at the bottom of the suggestions.
+
+> The highlighted match text beside results always ignores markup to reduce visual noise, however the full original text is still searched. Strings hidden include some HTML tags, Markdown syntax (including URLs/images but not title text) and Liquid tags. Any results that have a no visible match text will instead display labels about which metadata was matched.
+
+### Search operators
+
+The following operators can be entered in the search box to adjust results.
 
 | Operator | Example | Description |
 |-|-|-|
@@ -24,8 +28,24 @@ There are a number of search operators that can be used to refine queries:
 | `$` | `entries$` | Returns results ending with string. Note: this can match things like tag fields that end with a particular tag. |
 {:.stretch}
 
-> **Tip:** if you still can't find what you're after you can try the [All Pages](/Meta-All_Pages) list, where there's a list of all pages by title and a list of all categories to browse.
+> **Tip:**  Results will match substrings too (eg: `ai` in `contain`). To only match whole words you can double quote the query with spaces, like `"ai "` or `" ai "`.
 
+### Filters
+
+In the search box suggestions and search results page are some filters that adjust results.
+
+> Toggling any of the filters in the suggestions drop-down menu will save the user preference for subsequent searches.
+
+| Filter | Description |
+|-|-|
+| Search within section | Only visible on [section](/Meta/Creating_Editing_Pages/Metadata_Organization/Creating_a_Section/) pages that have multiple parts to the page URL. Enabled by default if no user preference has been toggled yet. |
+| Exclude Entity Reference | Excludes the entire [Entity Reference](/Entity_Reference) section. Helpful to reduce that section populating other results. |
+| Ignore markup | When enabled will match the search query against a cleaned version of wiki page content text, which basically strips everything non-visual from the text, like URLs, Liquid/Kramdown/Markdown/HTML tags. It's the same patterns used to clean the highlighted match text beside results but applied to the search itself.<br/><br/>This filter is useful when the visual text differs from the markup code of the page (eg: raw page content of `C\#` but visually is `C#`). |
+| Has media | Includes only pages that contain images/videos.<br/><br/>**Note:** if the *Ignore markup* filter is also enabled results will be omitted due to that filter stripping markup (image/video links) from the search. |
+
+> **Tip:** for a complete list of all page titles for checking, see the [All Pages](/Meta-All_Pages) list, which includes links to all categories/tags.
+
+---
 
 ## Top toolbar buttons
 

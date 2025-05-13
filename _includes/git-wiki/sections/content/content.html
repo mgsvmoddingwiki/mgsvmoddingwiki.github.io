@@ -4,12 +4,20 @@
     {% endif %}
 {% endfor %}
 
+{% comment %}Checks for a custom YAML front matter value of pages set up to display search results (search, 404).{% endcomment %}
+{% assign is_search = page.is_search | default: false %}
+
 <div class="git-wiki-page {% if virtualpage %}vp-content first-load{% endif %}">
   <section>
 
     {% include git-wiki/sections/tools/tools.html %}
 
-    {% include git-wiki/components/toc/toc.html %}
+    {% if is_search == false %}
+        {% include git-wiki/components/toc/toc.html %}
+    {% else %}
+        <h1 class="page-heading">{{ page.title }}</h1>
+        <hr>
+    {% endif %}
 
     {% if site.inc_before_content %}
     {% include {{ site.inc_before_content }} %}

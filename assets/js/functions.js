@@ -42,9 +42,9 @@ export function getPathLevels(url) {
     return {parts, levels}
 }
 
-export function getPageUrls(isVirtualPage) {
+export function getPageUrls(includeParams) {
     let location;
-    if (isVirtualPage) {
+    if (includeParams) {
         location = window.location.pathname + window.location.search;
     } else {
         location = window.location.pathname;
@@ -141,4 +141,39 @@ export function debounce(fn,timeframe = 200,immediate = true) {
             fn.apply(this,args);
         }
     }
+}
+
+export function setClasses(el,classes) {
+    if (Array.isArray(classes)) {
+        el.classList.add(...classes);
+    } else {
+        el.classList.add(classes);
+    }
+}
+
+export function removeClasses(el,classes) {
+    if (Array.isArray(classes)) {
+        el.classList.remove(...classes);
+    } else {
+        el.classList.remove(classes);
+    }
+}
+
+export function createEl(type,classes) {
+    let el = document.createElement(type.toLowerCase());
+    if (classes) { setClasses(el,classes); }
+    return el
+}
+
+export function pluralize(count, mapping, locale = 'en-US') {
+    const pluralRules = new Intl.PluralRules(locale),
+          category = pluralRules.select(count);
+    let word;
+
+    if (mapping.has(category)) {
+        word = mapping.get(category); // by not using an OR operator inline it can output deliberately empty strings
+    } else {
+        word = mapping.get('other'); // otherwise try fallback category
+    }
+    return word
 }
