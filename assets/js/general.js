@@ -122,7 +122,7 @@ function captureClass(el, prefix) {
 // --------------------------- Image handling ---------------------------
 func.checkVp(images);
 function images() {
-    var imgs = body.querySelectorAll('.git-wiki-page img');
+    var imgs = document.querySelectorAll('body:not(.search-page) .git-wiki-page img');
     imgs.forEach(img => {
 
         // Wrap images in container

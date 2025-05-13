@@ -71,8 +71,8 @@ if (isVirtualPage) {
     searchInput.addEventListener('keydown', (e) => {
         if (e.key === 'Enter') {
             // For some reason querying for the results container returns null so used `body` instead
-            const result = body.querySelector('.search-suggestions-item.highlight'),
-                  tarUrl = result.getAttribute('href');
+            const result = body.querySelector('.search-suggestions-item-container.highlight'),
+                  tarUrl = result.querySelector('.search-suggestions-item').getAttribute('href');
             if (result.classList.contains('search-suggestions-item-virtual-page')) {
                 updateFromTarget(e, tarUrl); // if virtual page
             } else {
