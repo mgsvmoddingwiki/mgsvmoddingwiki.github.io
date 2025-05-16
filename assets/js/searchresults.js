@@ -143,31 +143,34 @@ function presentResults(results) {
     queryInfoQuery.textContent = urlParams.query;
     queryInfoCont.replaceChildren(queryInfoPrefix, queryInfoQuery);
 
-    // Filters list
-    const filtersListCont = func.createEl('ul','search-results-filters-list-container'),
-          filtersLabel = func.createEl('span','search-results-filters-label');
-    filtersLabel.textContent = 'Filters';
+    // Filters list (only generate once)
+    if (!filtersCont.hasChildNodes()) {
+        const filtersListCont = func.createEl('ul','search-results-filters-list-container'),
+              filtersLabel = func.createEl('span','search-results-filters-label');
+        filtersLabel.textContent = 'Filters';
 
-    resultsFilters.forEach((filter, state) => {
-        if (filter === 'limitToSection' && !urlParams.section) return
-        const item = func.createEl('li','search-results-filter-item'),
-              button = func.createEl('span','search-filter-button');
-        button.textContent = resultsFilters.getString(filter);
-        if (filter === 'limitToSection') {
-            button.setAttribute('data-tooltip-text', `Section: ${urlParams.section}`);
-        }
-        if (state) {
-            button.classList.toggle('active', state);
-        }
-        button.addEventListener('click', (e) => {
-            resultsFilters.toggle(filter);
-            outputResults();
+        resultsFilters.forEach((filter, state) => {
+            if (filter === 'limitToSection' && !urlParams.section) return
+            const item = func.createEl('li','search-results-filter-item'),
+                  button = func.createEl('span','search-filter-button');
+            button.textContent = resultsFilters.getString(filter);
+            if (filter === 'limitToSection') {
+                button.setAttribute('data-tooltip-text', `Section: ${urlParams.section}`);
+            }
+            if (state) {
+                button.classList.toggle('active', state);
+            }
+            button.addEventListener('click', (e) => {
+                button.classList.toggle('active');
+                resultsFilters.toggle(filter);
+                outputResults();
+            });
+            item.appendChild(button);
+            filtersListCont.appendChild(item);
         });
-        item.appendChild(button);
-        filtersListCont.appendChild(item);
-    });
 
-    filtersCont.replaceChildren(filtersLabel, filtersListCont);
+        filtersCont.replaceChildren(filtersLabel, filtersListCont);
+    }
 
     // Pagination list
     const pages = [];
