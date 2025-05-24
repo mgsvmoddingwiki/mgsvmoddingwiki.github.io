@@ -70,13 +70,15 @@ if (isVirtualPage) {
     const searchInput = body.querySelector('#search-input');
     searchInput.addEventListener('keydown', (e) => {
         if (e.key === 'Enter') {
-            // For some reason querying for the results container returns null so used `body` instead
-            const result = body.querySelector('.search-suggestions-item-container.highlight'),
-                  tarUrl = result.querySelector('.search-suggestions-item').getAttribute('href');
-            if (result.classList.contains('search-suggestions-item-virtual-page')) {
-                updateFromTarget(e, tarUrl); // if virtual page
-            } else {
-                window.location.href = tarUrl; // otherwise go directly to page
+            const result = body.querySelector('.search-suggestions-item-container.highlight');
+            // Check if selector exists, as otherwise implies results page has been triggered via Enter (ie: before any item has been selected)
+            if (result) {
+                const tarUrl = result.querySelector('.search-suggestions-item').getAttribute('href');
+                if (result.classList.contains('search-suggestions-item-virtual-page')) {
+                    updateFromTarget(e, tarUrl); // if virtual page
+                } else {
+                    window.location.href = tarUrl; // otherwise go directly to page
+                }
             }
         }
     });

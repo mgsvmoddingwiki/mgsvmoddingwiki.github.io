@@ -17,7 +17,6 @@ let inputPeripheral = {},
     filterActions = {},
     filtersExpanded = false,
     suggestCont,
-    suggestContPriorWidth,
     suggestList,
     keyNavCurItem,
     pluralAll = new Map([['one', ''], ['other', 'all']]),
@@ -225,6 +224,10 @@ function createSearchUrl() {
 
             if (activeFilters.length > 0) {
                 activeFilters.forEach(filter => {
+                    // Override any stored user preference for section limiting if page that triggers search isn't a section
+                    if (filter === 'limitToSection' && searchFilterLimitToSectionCheck() === false) {
+                        return
+                    }
                     params.append('filter', filter);
                 });
             }
