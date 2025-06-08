@@ -53,7 +53,7 @@ can be found [here](https://github.com/kapuragu/FoxEngineTemplates).
 | [ftex](/FTEXS) | Fox Texture | Textures, pftxs(88957), fpk(2) | FtexTool |  |
 | [ftexs](/FTEXS) | Fox Sub-texture | Textures, pftxs(89005) | FtexTool | Includes .1.ftexs,....6.ftexs |
 | [fv2](/FV2) | FormVariationFile2 | fpk(2280) | [FvTwool](https://github.com/BobDoleOwndU/FvTwool) | Defines an appearance variation, including texture swaps and attachable meshes. |
-| gani | AnimFile | mtar(7933), gz fpk(260) | Generic animation file (in-game characters, environment, etc.) |  |
+| [gani](/GANI) | AnimFile | mtar(7933), gz fpk(260) | Generic animation file (in-game characters, environment, etc.) |  |
 | geobv | GeoBoundingVolumeFile | fpk(26) | Level collision grid set |  |
 | geom | GeoGeomFile | fpk(9818) | Generic collision data. Includes definition of fulton ceilings. |  |
 | geoms | GeoxGeomSetFile | fpk(3464) | Level collision data. .geom but not specific to a model. |  |
