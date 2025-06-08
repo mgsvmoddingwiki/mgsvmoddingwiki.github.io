@@ -6,7 +6,7 @@ tags: [File Formats, Animation]
 
 The .mtar or **M**o**t**ion **Ar**chive, is the archive format used to
 store Metal Gear Solid V: Ground Zeroes and Metal Gear Solid V: The
-Phantom Pain's animation files (.gani). There are two different formats
+Phantom Pain's animation files ([.gani](/GANI)). There are two different formats
 used for .mtar files, referred to as Mtar Type 1 and Mtar Type 2. Ground
 Zeroes only makes use of Mtar Type 1 files, while The Phantom Pain uses
 both Mtar Type 1 and Mtar Type 2 files. The .mtar format is
@@ -103,3 +103,12 @@ Entries immediately follow after the number of entries. Each entry is
     0xFC50000000000000 from the hashed filename value. I.e. if the
     listed value is 0xFC53AFFADA200C63, subtract 0xFC50000000000000 to
     get 0x3AFFADA200C63. The file's name would be 3AFFADA200C63.gani.
+
+
+## Resources
+
+  - [010 Editor Template](https://github.com/kapuragu/FoxEngineTemplates/blob/main/mtar.bt)
+
+## See also
+
+  - [gani](/GANI)
