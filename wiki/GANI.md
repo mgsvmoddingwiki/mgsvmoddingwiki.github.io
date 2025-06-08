@@ -6,7 +6,7 @@ tags: [File Formats, Animation]
 
 Generic Animation file, stored in [MTAR](/MTAR/).
 
-Stock file descriptions: https://github.com/chocmake/chocmake.github.io/tree/main/guides/mgsv-adding-player-motions/files/gani-descriptions
+Stock file descriptions: [Link](https://github.com/chocmake/chocmake.github.io/tree/main/guides/mgsv-adding-player-motions/files/gani-descriptions)
 
 ### Resources
 
