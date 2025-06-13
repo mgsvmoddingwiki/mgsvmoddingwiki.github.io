@@ -1,6 +1,6 @@
 ---
-title: CQC Damage Tables
-permalink: /CQC_Damage_Tables/
+title: Damage Tables
+permalink: /Damage_Tables/
 tags: [Weapons, Lua, Reference]
 ---
 
@@ -19,71 +19,38 @@ self-documenting:
 
 ```lua
     this.DamageParameter={
-
     -- I'm trying to make sense of this mess. For now I gave up so yeah.
-
     -- {TppDamage.ATK_10001, -- D114/M1911 ATTACK
-
     -- 750,-- Displays Lethal Damage UI
-
     -- 500, -- ???
-
     -- 40,-- ???
-
     -- 0,-- ???
-
     -- 0,-- ???
-
     -- 300,-- ???
-
     -- 90,-- ???
-
     -- TppDamage.INJ_TYPE_BULLET,
-
     -- TppDamage.INJ_PART_ALL,
-
     -- 15,-- ???
-
     -- 2,-- ???
-
     -- 1,-- Projectile Hitting NPCs Boolean
-
     -- 0,
-
     -- 0,-- Vortex Ring Boolean?
-
     -- 0,-- Tranquilizer Boolean, Requires Non-Lethal Damage Value
-
     -- 0,-- Stun Damage Boolean, Requires Non-Lethal Damage Value
-
     -- 0,
-
     -- 0,
-
     -- 0,
-
     -- 0, -- Fire Boolean
-
     -- 0,
-
     -- 0,-- Gas Boolean?
-
     -- 0,
-
     -- 0,
-
     -- 0,-- Electric Boolean?
-
     -- 0,
-
     -- 0,
-
     -- TppDamage.DAM_SOURCE_Handgun,
-
     -- 400,-- Lethal Damage Value
-
     -- 0,-- Non-Lethal Damage Value
-
     -- 300},-- Impact Force
 ```
 
