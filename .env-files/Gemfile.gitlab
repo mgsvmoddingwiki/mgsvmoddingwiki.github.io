@@ -1,4 +1,4 @@
-source 'http://rubygems.org'
+source 'https://rubygems.org'
 gem "jekyll-avatar"
 gem "jekyll-coffeescript"
 gem "jekyll-default-layout"
@@ -16,3 +16,8 @@ gem "jekyll-sitemap"
 gem "jekyll-titles-from-headings"
 gem "jemoji"
 gem "jekyll-gitlab-metadata"
+
+# ffi-1.17.0-x86_64-linux-musl requires rubygems version >= 3.3.22, which is
+# incompatible with the current version, 3.0.6
+# see https://github.com/ffi/ffi/issues/1103
+gem "ffi", "= 1.16.3"
