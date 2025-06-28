@@ -4,7 +4,11 @@ permalink: /Memory_Tags/
 tags: [EXE, Reference]
 ---
 
+Memory tags are used by various memory allocation functions, such as `BlockHeapAlloc`. These tags are used during garbage collection.
+
 ## TPP (PS4)
+
+{% include spoiler-start %}
 
   - Fs: 0x1c
   - Fs: 0x1c
@@ -921,3 +925,5 @@ tags: [EXE, Reference]
   - Network Ncl System: 0x70018
   - Network Nt System: 0x50018
   - Sound File: 0xc0007
+
+{% include spoiler-end %}
