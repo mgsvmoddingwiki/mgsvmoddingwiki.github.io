@@ -31,4 +31,4 @@ Keys are strings encoded with StrCode64 (see [Hash Wrangling](/Hash_Wrangling/))
 
 #### Resources
 
-  - List of quark hashes with some of them resolved: [quark_hashes.txt](/assets/quark_hashes.txt).
+  - List of quark hashes with some of them resolved: [quark_hashes.txt](/assets/QuarkSystem/quark_hashes.txt).
