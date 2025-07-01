@@ -67,6 +67,8 @@ file.
 
 ### afgh
 
+{% include spoiler-start %}
+
   - default
   - indoor
   - indoor_noSkySpe
@@ -120,19 +122,17 @@ file.
   - cypr_Night_RLR2
   - citadel_color2
   - kypr_drizzle
+
+{% include spoiler-end %}
 
 ### mafr
 
+{% include spoiler-start %}
+
   - default
-
-<!-- end list -->
-
   - indoor
   - indoor_noSkySpe
   - indoor_noSkySpe_RLR
-
-<!-- end list -->
-
   - indoor_RLR
   - indoor_RLR_paz
   - fort_shadow_inside
@@ -182,9 +182,13 @@ file.
   - cypr_Night_RLR2
   - citadel_color2
   - kypr_drizzle
+
+{% include spoiler-end %}
 
 ### mtbs
 
+{% include spoiler-start %}
+
   - default
   - indoor
   - indoor_noSkySpe
@@ -239,7 +243,11 @@ file.
   - citadel_color2
   - kypr_drizzle
 
+{% include spoiler-end %}
+
 ### cypr
+
+{% include spoiler-start %}
 
   - default
   - indoor
@@ -296,7 +304,11 @@ file.
   - edit_2
   - kypr_drizzle
 
+{% include spoiler-end %}
+
 ### gntn
+
+{% include spoiler-start %}
 
   - default
   - under
@@ -306,7 +318,7 @@ file.
   - bake_sky
   - e20060_lightOff
 
-
+{% include spoiler-end %}
 
 ## ParameterNames
 
