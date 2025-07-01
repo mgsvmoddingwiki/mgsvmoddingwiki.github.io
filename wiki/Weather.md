@@ -1,3 +1,8 @@
+---
+title: Weather
+permalink: /Weather/
+tags: [Lua, Reference, Effects]
+---
 
 Through Lua scripting, the weather, atmosphere, and mood of the game can
 be customized in side ops. This page lists some tips and tricks for
