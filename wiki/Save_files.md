@@ -27,4 +27,4 @@ Save file name is set in lua, `00_dat/Assets/tpp/script/lib/TppDefine.lua`. You 
 
 Save files are encrypted with symmetric algorithm. Their contents are player-specific variables (like GMP, staff etc.) and lua variables encoded in strcode32.
 
-Use [TNT](https://github.com/unknown321/tnt) to decode/encode files and inspect their contents.
+Use [squib](https://github.com/unknown321/squib) to decode/encode files and inspect their contents.
