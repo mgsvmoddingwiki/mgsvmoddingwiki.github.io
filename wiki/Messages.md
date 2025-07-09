@@ -37,7 +37,7 @@ can be found in the Infinite Heavens [InfLookup.lua](https://github.com/kapuragu
 Sender → MessageID → Arguments
 
   - **GameObject**
-      - **1746381789**
+      - **VehicleTrouble**
           - *Description*
               - called when two tires on a vehicle (including 6-wheel
                 trucks) are shot out, no other unknown event is raised
@@ -45,7 +45,7 @@ Sender → MessageID → Arguments
               - presumably, denotes reduced handling
           - *Args*
               - arg0: gameId -- the affected vehicle
-              - arg1: unknown -- example value: 1936681293
+              - arg1: unknown -- example value: `CanNotMove`
   - **Radio**
       - **3116057018**
           - *Description*
