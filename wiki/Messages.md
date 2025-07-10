@@ -37,7 +37,7 @@ can be found in the Infinite Heavens [InfLookup.lua](https://github.com/kapuragu
 Sender → MessageID → Arguments
 
   - **GameObject**
-      - **1746381789**
+      - **VehicleTrouble**
           - *Description*
               - called when two tires on a vehicle (including 6-wheel
                 trucks) are shot out, no other unknown event is raised
@@ -45,9 +45,9 @@ Sender → MessageID → Arguments
               - presumably, denotes reduced handling
           - *Args*
               - arg0: gameId -- the affected vehicle
-              - arg1: unknown -- example value: 1936681293
+              - arg1: unknown -- example value: `CanNotMove`
   - **Radio**
-      - **3116057018**
+      - **EspionageRadioCandidate**
           - *Description*
               - called when using the Inf-Scope to view a target with
                 radio information set, which changes the information
@@ -91,13 +91,13 @@ Sender → MessageID → Arguments
                 arg0=0 -- after menu fully closes
           - *Args*
               - arg0: number
-      - **316563185**
+      - **CallMenuMessage_ShowCallMenu**
           - *Description*
               - occurs when the <Call Radio> button is held and the menu
                 opens
           - *Args*
               - arg0: number -- seemingly always 0
-      - **4213428578**
+      - **CallMenuMessage_HideCallMenu**
           - *Description*
               - occurs when the <Call Radio> button is released and the
                 menu closes
@@ -110,7 +110,7 @@ Sender → MessageID → Arguments
           - *Args*
               - arg0: number -- seemingly always 0
               - arg1: gameId -- the gameId of the instigating animal
-      - **2526961808**
+      - **EnableCQC**
           - *Description*
               - occurs every game tick while being lunged at by an
                 animal, beginning with Message **2533923076**, concludes
