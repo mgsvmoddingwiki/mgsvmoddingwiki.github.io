@@ -12,7 +12,8 @@ On Windows, `<Steam-folder>` is `%PROGRAMFILES(X86)%\Steam`. On Linux: `$HOME/.s
 
 TPP uses GZ directory (311340) to store actual save files and backs them up in TPP directory (287700) for Steam Cloud sync.
 First, game creates files with index `0` in `287700\local\`. After server login (code proof?) another file created with 
-index `1`. That file is then copied to `311340\remote\` and used for Steam Cloud sync.
+index `1`. That file is then copied to `311340\remote\` and used for Steam Cloud sync. Save data manipulations (editing/replacing)
+must be performed on files in `311340` directory.
 
 You can remove all save data by turning Steam Cloud sync off and removing `287700` and `311340` directories.
 
