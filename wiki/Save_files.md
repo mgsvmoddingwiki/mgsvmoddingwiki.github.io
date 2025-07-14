@@ -8,6 +8,8 @@ PC save files are located at:
   - `<Steam-folder>\userdata\<user-id>\287700\local\`
   - `<Steam-folder>\userdata\<user-id>\311340\remote\`
 
+On Windows, `<Steam-folder>` is `%PROGRAMFILES(X86)%\Steam`. On Linux: `$HOME/.steam/steam/`.
+
 TPP uses GZ directory (311340) to store actual save files and backs them up in TPP directory (287700) for Steam Cloud sync.
 
 Save file names:
