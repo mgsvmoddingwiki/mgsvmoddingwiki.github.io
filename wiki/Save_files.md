@@ -23,8 +23,11 @@ Save file names:
     - TPP_GAME_DATA
     - `TPP_GAME_DATA<index>`
 
-Save file name is set in lua, `00_dat/Assets/tpp/script/lib/TppDefine.lua`. You can change it to keep main save file safe.
+`TPP_GRAPHICS_CONFIG` is a plain json file with graphics settings (resolution, effects etc.).
 
-Save files are encrypted with symmetric algorithm. Their contents are player-specific variables (like GMP, staff etc.) and lua variables encoded in strcode32.
+Others are encrypted with symmetric algorithm. Their contents are player-specific variables (like GMP, staff etc.) and 
+lua variables encoded in strcode32. Save file name is set in lua, `00_dat/Assets/tpp/script/lib/TppDefine.lua`.
+You can change it to keep main save file safe. More information about saves can be found in `0/00/Assets/tpp/script/lib/TppSave.lua`.
+In the exe you'll be looking for `tpp::gm::impl::ScriptVar_*` functions.
 
 Use [squib](https://github.com/unknown321/squib) to decode/encode files and inspect their contents.
