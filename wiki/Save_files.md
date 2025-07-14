@@ -11,6 +11,10 @@ PC save files are located at:
 On Windows, `<Steam-folder>` is `%PROGRAMFILES(X86)%\Steam`. On Linux: `$HOME/.steam/steam/`.
 
 TPP uses GZ directory (311340) to store actual save files and backs them up in TPP directory (287700) for Steam Cloud sync.
+First, game creates files with index `0` in `287700\local\`. After server login (code proof?) another file created with 
+index `1`. That file is then copied to `311340\remote\` and used for Steam Cloud sync.
+
+You can remove all save data by turning Steam Cloud sync off and removing `287700` and `311340` directories.
 
 Save file names:
   - 287700 (TPP):
@@ -23,7 +27,6 @@ Save file names:
     - PERSONAL_DATA
     - TPP_CONFIG_DATA
     - TPP_GAME_DATA
-    - `TPP_GAME_DATA<index>`
 
 `TPP_GRAPHICS_CONFIG` is a plain json file with graphics settings (resolution, effects etc.).
 
