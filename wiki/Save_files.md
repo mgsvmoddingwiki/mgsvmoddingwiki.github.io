@@ -15,6 +15,8 @@ First, game creates files with index `0` in `287700\local\`. After server login 
 index `1`. That file is then copied to `311340\remote\` and used for Steam Cloud sync. Save data manipulations (editing/replacing)
 must be performed on files in `311340` directory.
 
+File with index `0` is a previous version of a save file; game recovers data from it in case your main save (`1`) is corrupted.
+
 You can remove all save data by turning Steam Cloud sync off and removing `287700` and `311340` directories.
 
 Save file names:
