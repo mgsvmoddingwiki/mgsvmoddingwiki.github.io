@@ -8,7 +8,29 @@ Markers are hud elements attached to various game entites such as: soldiers, pla
 location fields, etc. Markers are created automatically when player zooms in on the 
 entity, uses binoculars or your intel team detects enemy presence.
 
-![Map markers: player, plants, resources, wall cracks, target area, user-placed marker (A)](/assets/marker/map.png)
+![Map markers: player, plants, resources, wall cracks, target area, user-placed marker [A]](/assets/marker/map.png)
+
+### User-placed markers
+
+User can place a marker using binoculars or iDroid (up to 5). That marker will be labeled (A-Z).
+
+There are two types:
+  - fixed position
+  - follow object (soldier, truck...)
+
+Values are available in lua:
+
+```lua
+vars.userMarkerGameObjId[]
+vars.userMarkerPosX[]
+vars.userMarkerPosY[]
+vars.userMarkerPosZ[]
+vars.userMarkerSaveCount
+vars.userMarkerLocationId
+vars.userMarkerAddFlag[]
+```
+
+Arrays start with 0, not 1.
 
 ### Lua
 
