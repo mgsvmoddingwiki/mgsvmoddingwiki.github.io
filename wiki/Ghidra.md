@@ -1,7 +1,7 @@
 ---
 title: Ghidra tips
 permalink: /GhidraTips/
-tags: [EXE]
+tags: [EXE, Guides]
 ---
 
 Ghidra is a software reverse engineering (SRE) framework used by MGSV researchers to reverse

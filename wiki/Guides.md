@@ -10,7 +10,8 @@ permalink: /Guides/
     - [Infinite Heaven](/Infinite_Heaven)
     - [IHHook](/IHHook)
     - [Zeta](/Zeta)
-    - [Steam Deck](/Steam_Deck)
+    - [Steam Deck / Linux](/Steam_Deck)
+    - [Ghidra](/GhidraTips)
 - ## References
     - [Collision Attributes](/Collision_Attributes)
     - [Entity Reference](/Entity_Reference)
@@ -29,7 +30,6 @@ permalink: /Guides/
     - [Mission Objectives](/Mission_Objectives)
     - [Mission Table Subscripts](/Mission_Table_Subscripts)
     - [Route Set](/Route_Set)
-    - [Sahelanthropus Mission Files and Usage](/Sahelanthropus_Mission_Files_and_Usage)
     - [Create a Custom Map](/Create_a_Custom_Map)
     - [Using UAVs in Side-Ops](/Using_UAVs_in_Side_Ops)
 - ## Rendering
