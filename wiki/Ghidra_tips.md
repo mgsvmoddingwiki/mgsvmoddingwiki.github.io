@@ -1,7 +1,9 @@
 ---
 title: Ghidra tips
-permalink: /GhidraTips/
+permalink: /Ghidra_tips/
 tags: [EXE, Guides]
+redirect_from:
+  - /GhidraTips/
 ---
 
 Ghidra is a software reverse engineering (SRE) framework used by MGSV researchers to reverse
@@ -21,7 +23,7 @@ Debug exe = `Tpp_main_win64.exe`
 After getting connection info on Discord, select the exe you are interested in and click on checkout
 button - the only active button on the panel.
 
-![Checkout](/assets/ghidra/checkout1.png)
+![Checkout](/assets/Ghidra_tips/checkout1.png)
 
 That will download the file and set you into checkout mode. Do not drag the unchecked file into decompiler
 window - Ghidra will do something weird instead, slowly analyzing the file every time you do it.
@@ -29,14 +31,14 @@ window - Ghidra will do something weird instead, slowly analyzing the file every
 After checking out do whatever you wanted to do. After finishing you can check in 
 the file or undo the checkout.
 
-![Undo checkout](/assets/ghidra/checkout2.png)
+![Undo checkout](/assets/Ghidra_tips/checkout2.png)
 
 Undoing the checkout will cause Ghidra to forget about the data you downloaded.
 
 If you made some changes, saved them and have a write access, a new version of the file will be created 
 by checking in (indicated by number and asterisk in parentheses in project window).
 
-![Check in](/assets/ghidra/checkin.png)
+![Check in](/assets/Ghidra_tips/checkin.png)
 
 If you've made a mistake and realized that after saving the file (but before checking in), undo the changes
 by undoing checkout. You cannot revert changes in tool window (with Ctrl+Z) after saving the file.
@@ -49,7 +51,7 @@ Let's say you are looking for something related to how soldiers respawn.
 
 First, look for "Respawn" in debug exe: 
 
-![Filter settings](/assets/ghidra/ghidra_filter.png)
+![Filter settings](/assets/Ghidra_tips/ghidra_filter.png)
 
 Check `Use Path` and `Allow Globbing` in filter properties (button next to filter text input), then look for `soldier*/*respawn`.
 Use namespaces tree - it shows more info; `Impl` class usually has the code you are interested in.
@@ -58,7 +60,7 @@ All right, you've found a function in the debug exe that looks like it - `tpp::g
 but we need the code in production executable. Load `mgsvtpp.exe`, press `g` (or `Navigation -> Go To`), paste full 
 function name and click OK.
 
-![Function not found](/assets/ghidra/ghidra_goto.png)
+![Function not found](/assets/Ghidra_tips/ghidra_goto.png)
 
 Function was not discovered before, Ghidra doesn't know anything about it. There are several approaches to this problem.
 
@@ -76,12 +78,12 @@ then select continuous list of corresponding instructions in `Listing` window. U
 Ghidra will automatically open a search window and form a binary string to look for. Search for it in debug exe first to
 make sure that there are not too many matches.
 
-![](/assets/ghidra/ghidra_binsearch1.png)
+![](/assets/Ghidra_tips/ghidra_binsearch1.png)
 
 As you can see, we found 4 entries and only 2 functions. Good enough. Open search window in production exe by
 pressing `s`, change search type to binary, paste the search string and search for it.
 
-![](/assets/ghidra/ghidra_binsearch2.png)
+![](/assets/Ghidra_tips/ghidra_binsearch2.png)
 
 Now you need to compare decompiled code in debug and production exe. Usually it looks almost the same, but you **must** 
 make sure that this is the same function. Giving function a name adds context that will be used by other people; adding
@@ -93,7 +95,7 @@ other named functions in same places. Put cursor on function name in `Decompile`
 Rename Function). Paste full function name into name field, set namespace to `Global`. Ghidra will automatically 
 create proper namespaces for you; do not create namespaces by hand - this results in weird side effects.
 
-![](/assets/ghidra/ghidra_rename.png)
+![](/assets/Ghidra_tips/ghidra_rename.png)
 
 Now the function is properly named. Save the project by pressing `Ctrl+S` (and do it often). 
 You *may* change parameter types by right-clicking on function name and selecting `Edit Function Signature`. This is not
@@ -118,12 +120,12 @@ Another problem: function has some weird patterns that do not match at all. You 
 Click on `Enter bytes manually` icon (paper with pencil, left to home button, second on the right). Copy binary code, 
 close the window.
 
-![Binary pattern](/assets/ghidra/ghidra_pattern2.png)
+![Binary pattern](/assets/Ghidra_tips/ghidra_pattern2.png)
 
 Open search pattern window in prod exe, paste copied bytes into same window. Addresses in prod and debug exes differ, 
 so you must exclude them by clicking on them. Registers may be different too, mnemonic stays the same.
 
-![Operands with static addresses excluded](/assets/ghidra/ghidra_pattern1.png)
+![Operands with static addresses excluded](/assets/Ghidra_tips/ghidra_pattern1.png)
 
 After tuning the pattern, click `Search All`, look through the results, compare them etc.
 
@@ -132,24 +134,24 @@ After tuning the pattern, click `Search All`, look through the results, compare 
 All right, pattern matching failed too. Third approach is vtable entries. Select the function in `Listing` window and 
 click on the first XREF (or thunk function (with `(T)`)). Usually it points to the function reference in class' vtable.
 
-![Location in vtable](/assets/ghidra/ghidra_xref1.png)
+![Location in vtable](/assets/Ghidra_tips/ghidra_xref1.png)
 
-![Vtable entries](/assets/ghidra/ghidra_xref2.png)
+![Vtable entries](/assets/Ghidra_tips/ghidra_xref2.png)
 
 Look for `Soldier2Impl` in prod exe, select some function (`tpp::gm::soldier::impl::Soldier2Impl::Authorize`) and 
 navigate to its position in vtable:
 
-![Authorize in prod vtable](/assets/ghidra/ghidra_vtable1.png)
+![Authorize in prod vtable](/assets/Ghidra_tips/ghidra_vtable1.png)
 
 Find same function in debug exe, navigate to vtable.
 
-![Authorize in debug vtable](/assets/ghidra/ghidra_vtable2.png)
+![Authorize in debug vtable](/assets/Ghidra_tips/ghidra_vtable2.png)
 
 `Authorize` is #17 and `Respawn` is #55. They should be in the same position in production exe. Scroll production vtable
 to the beginning, usually it has a label and referenced in other places. Create an array 
 (right click -> `Data -> Create Array`) with same size as vtable in debug exe:
 
-![Array creation in prod](/assets/ghidra/ghidra_vtable3.png)
+![Array creation in prod](/assets/Ghidra_tips/ghidra_vtable3.png)
 
 Navigate to entry #55, compare decompiled code, etc. Once again, make sure that code matches - production exe differs 
 from debug exe, some code was added and some removed. Vtable function order is not guaranteed, mistakes were made.
@@ -176,7 +178,7 @@ things; it also has no direct references. This function is located at `0x140fe96
 avoid it. Start the game in the debugger, add a breakpoint at `0x140fe9630` and wait for it. After breakpoint was 
 triggered, get a stacktrace (`printstack` in `Log` tab):
 
-![x64dbg, log window with stacktrace](/assets/ghidra/stacktrace1.png)
+![x64dbg, log window with stacktrace](/assets/Ghidra_tips/stacktrace1.png)
 
 There are no function names, only addresses. Copy stacktrace and save it into a file, I use `C:\stack.txt`.
 
@@ -208,7 +210,7 @@ def stack():
 
 Change `C:\\stack.txt` to whatever file path you saved your stack into. Then, call `stack()` function:
 
-![Jython interpreter, Ghidra](/assets/ghidra/stacktrace2.png)
+![Jython interpreter, Ghidra](/assets/Ghidra_tips/stacktrace2.png)
 
 All functions are already named, so you get a nice stacktrace:
 
@@ -230,16 +232,16 @@ Addresses are off by one instruction. Navigate to `0x1409C1E18` in `Player2GameO
 instruction up and leave a `Pre Comment` on `CALL` instruction (`;` button or right-click -> `Comments -> Set Pre Comment`).
 Other types of comments are either too big (like plate) or have bad visibility (end of line).
 
-![Adding comment using listing window](/assets/ghidra/stacktrace3.png)
+![Adding comment using listing window](/assets/Ghidra_tips/stacktrace3.png)
 
 Now vtable calls in `ExecuteSerially` are documented:
 
-![Annotated vtable calls](/assets/ghidra/stacktrace4.png)
+![Annotated vtable calls](/assets/Ghidra_tips/stacktrace4.png)
 
 Make sure you put the comment on `CALL` instruction - `Decompile` window may put comment text somewhere else, 
 it must not be trusted. Do not use `Decompile` window to select addresses, it selects too much:
 
-![Decompile window selection selects 2 more instructions](/assets/ghidra/stacktrace5.png)
+![Decompile window selection selects 2 more instructions](/assets/Ghidra_tips/stacktrace5.png)
 
 Function name comments in `Listing` window are clickable as long as they are fully displayed (not truncated); 
 you can use them to navigate between functions.
@@ -262,12 +264,12 @@ Production exe was researched in Ghidra before the debug exe so there are some m
 
 An example:
 
-![](/assets/ghidra/badname1.png)
+![](/assets/Ghidra_tips/badname1.png)
 
 `fox::gamekit::CameraSelector::s_MainInstance` is not a real variable name. Debug exe has a proper name 
 for it: `fox::gk::CameraSelector::s_mainInstance`. Let's rename it by pressing `l`:
 
-![](/assets/ghidra/badname2.png)
+![](/assets/Ghidra_tips/badname2.png)
 
 Make sure to set namespace to `Global`, otherwise new namespace will be added to old one.
 
@@ -278,7 +280,7 @@ Let's say you are looking for a StrCode32 message "PlayerDamaged". Press `s` to 
 You might be tempted to set that hex value to "PlayerDamaged" string using right click -> `Set Equate`, so decompiled
 view would be more readable.
 
-![Don't do that](/assets/ghidra/equate.png)
+![Don't do that](/assets/Ghidra_tips/equate.png)
 
 This is a bad idea for two reasons. First, Ghidra takes a lot of time renaming that hex in the whole project - it 
 takes tens of minutes, locking ui. Second, it adds more confusion - searches usually start with hex value, but there is 
@@ -291,7 +293,7 @@ window and limiting it to comments.
 Sometimes, your stacktrace might point to some garbage area without any code. In that case hold "Shift" and 
 click on "F" button on the toolbar:
 
-![](/assets/ghidra/fbutton.png)
+![](/assets/Ghidra_tips/fbutton.png)
 
 It will navigate you to the closest function above that point in code. Most likely that function will appear to be 
 shorter than expected, breaking on `fox::SharedString::~SharedString` or `EntityPtr::Set`. Listing window looks like this:
@@ -317,11 +319,11 @@ Ghidra does the right thing and function ends where it ends.
 
 Vtables usually contain addresses of thunk functions that lead to real functions:
 
-![Unnamed label](/assets/ghidra/thunk_label.png)
+![Unnamed label](/assets/Ghidra_tips/thunk_label.png)
 
 Instead of renaming the label, turn it into a thunk function by pressing `f` on it:
 
-![Thunk function](/assets/ghidra/thunk_function.png)
+![Thunk function](/assets/Ghidra_tips/thunk_function.png)
 
 It will automatically add comments, rename the label and do things right from Ghidra's point of view.
 
@@ -329,7 +331,7 @@ It will automatically add comments, rename the label and do things right from Gh
 
 Right click on instruction in `Listing` window, select `Show Label History`.
 
-![](/assets/ghidra/history.png)
+![](/assets/Ghidra_tips/history.png)
 
 ## x64dbg on Linux
 

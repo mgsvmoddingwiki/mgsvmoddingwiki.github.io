@@ -8,7 +8,7 @@ Markers are hud elements attached to various game entites such as: soldiers, pla
 location fields, etc. Markers are created automatically when player zooms in on the 
 entity, uses binoculars or your intel team detects enemy presence.
 
-![Map markers: player, plants, resources, wall cracks, target area, user-placed marker [A]](/assets/marker/map.png)
+![Map markers: player, plants, resources, wall cracks, target area, user-placed marker [A]](/assets/Marker/map.png)
 
 ### User-placed markers
 
@@ -96,7 +96,7 @@ SetHideAll
 
 ### EXE
 
-![](/assets/marker/icons.png){:.thumb .legacy-small width="200px"}
+![](/assets/Marker/icons.png){:.thumb .legacy-small width="200px"}
 
 &nbsp;
 
@@ -166,4 +166,4 @@ Updating marker state (always runs):
 You can override all marker types by changing `EAX` at `0x140936686` to `0x1c` to set all markers to D-Dog.
 More identificators are available in `tpp::ui::hud::impl::UiMarkerCommonDataImpl::GetUiMarkerTypeFromSystemType2`:
 
-![](/assets/marker/original.png){:.inline width="auto"} ![](/assets/marker/sahelan.png){:.inline width="auto"} ![DD logo with fuzzy filter](/assets/marker/dd_filter.png){:.inline width="auto"} 
+![](/assets/Marker/original.png){:.inline width="auto"} ![](/assets/Marker/sahelan.png){:.inline width="auto"} ![DD logo with fuzzy filter](/assets/Marker/dd_filter.png){:.inline width="auto"} 
