@@ -1,7 +1,9 @@
 ---
-title: Quark system
-permalink: /QuarkSystem/
+title: Quark System
+permalink: /Quark_System/
 tags: [EXE]
+redirect_from:
+  - /QuarkSystem/
 ---
 
 Quark system is a global table allowing game subsystems to communicate with each other

@@ -1,7 +1,9 @@
 ---
 title: Export Symbols
-permalink: /ExportSymbols/
+permalink: /Export_Symbols/
 tags: [EXE, Lua, Guides]
+redirect_from:
+  - /ExportSymbols/
 ---
 
 ### Fox.ExportSymbols
@@ -22,5 +24,5 @@ You can also dump xml-serialized info without any patches:
 Create directory `tmp` in same directory as exe and call `Fox.ExportSerializeInfo()` from lua. Output is in `tmp/Tpp_edb_win64.xml`.
 
 Sample data: 
-  - [Tpp_edb_win64.xml](/assets/Tpp_edb_win64.xml)
-  - [modules.txt](/assets/modules.txt)
+  - [Tpp_edb_win64.xml](/assets/Export_Symbols/Tpp_edb_win64.xml)
+  - [modules.txt](/assets/Export_Symbols/modules.txt)
