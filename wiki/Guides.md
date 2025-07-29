@@ -11,7 +11,7 @@ permalink: /Guides/
     - [IHHook](/IHHook)
     - [Zeta](/Zeta)
     - [Steam Deck / Linux](/Steam_Deck)
-    - [Ghidra](/GhidraTips)
+    - [Ghidra](/Ghidra_tips)
 - ## References
     - [Collision Attributes](/Collision_Attributes)
     - [Entity Reference](/Entity_Reference)
