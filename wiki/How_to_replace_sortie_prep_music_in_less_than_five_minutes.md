@@ -20,6 +20,8 @@ Tool](https://mega.nz/file/SVxHWQ6D#Y9UcP0t61XG5q_I3ObTZxMTsGnupNBMUZ0-llfz3aFs)
 **[Sound
 Converter](https://mega.nz/file/uZxjWaga#H9blO_Zdw_s75ghccGKOKFIMlKtDpR5Bma7bQq2pVq8)**
 
+Alternative to Sound Converter, [vgmstream](https://github.com/vgmstream/vgmstream-releases/releases/download/nightly/vgmstream-win64.zip)
+
 [Wwise 2015](https://mega.nz/file/HcxVBYjC#KBYOI1EQ54iFYgwF-oWi0tTuPAPlDgf-Y743CzQdTRI)
 
 
