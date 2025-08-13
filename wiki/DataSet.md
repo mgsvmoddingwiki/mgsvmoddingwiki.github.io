@@ -1,21 +1,18 @@
 ---
 title: DataSet
 permalink: /DataSet/
-tags: [Entities, Reference]
+tags: [Entities, Reference, File Formats]
+redirect_from:
+  - "/FOX2"
 ---
 
-The entity of type **DataSet** is common to all .fox2 files and is
-mandatory if any entities are placed in the .fox2 file. It contains a
-list of every entity used in that particular .fox2, presumably used as a
-table referenced by the editor to enumerate the various objects placed
-therein.
+DataSet / DataSet2 entities are represented as .fox2 files.
+It contains a list of every entity used in that particular dataset, presumably used as a
+table referenced by the editor to enumerate the various objects placed therein.
 
 ## Usage
 
-Only one entity of type **DataSet** has ever been observed to exist in a
-given .fox2, and it is assumed due to the nature of this entity that
-only one is allowed. An entity block defining the **DataSet** has the
-following header:
+Header:
 
 ```xml
 <entity class="DataSet" classVersion="0" addr="0x02D7DFA0" unknown1="232" unknown2="89171">
