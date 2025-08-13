@@ -18,7 +18,7 @@ This article lists the presumed names of extensions used in MGSV, as well as som
 |---|---|---|---|---|
 | adm | fpk(5258), gz fpk(1) | Mentioned in exe in with other extensions: vpc,twss,tmss,adm,tetl,tmsl, tlsp,tmsu,tmsf,twpf,cani. Related to ambient sound somehow. |  |  |
 | atsh | Atmosphere Spherical Harmonics | fpk(1), gz fpk(9) | Defines ambient sky lighting, or more specifically, it defines the bounce lighting from the sky. reference in: resident_common_sky.fox2 |  |
-| [bnk](/BNK) | [Wwise SoundBank](https://www.audiokinetic.com/library/edge/?source=WwiseFundamentalApproach&id=understanding_soundbanks_understanding_soundbanks) | data1(1), sbp(214) | [Ravioli Game Tools](https://github.com/themeldingwars/Documentation/wiki/Ravioli-Game-Tools) | [Soundswapping](https://bobdoleowndu.github.io/mgsv/documentation/soundswapping.html) for sound swaps, and to replace sounds with new ones, use this tool instead: [Sound Replacement Tool](https://www.nexusmods.com/metalgearsolidvtpp/mods/826) |
+| bnk | [Wwise SoundBank](https://www.audiokinetic.com/library/edge/?source=WwiseFundamentalApproach&id=understanding_soundbanks_understanding_soundbanks) | data1(1), sbp(214) | [Ravioli Game Tools](https://github.com/themeldingwars/Documentation/wiki/Ravioli-Game-Tools) | [Soundswapping](https://bobdoleowndu.github.io/mgsv/documentation/soundswapping.html) for sound swaps, and to replace sounds with new ones, use this tool instead: [Sound Replacement Tool](https://www.nexusmods.com/metalgearsolidvtpp/mods/826) |
 | bnd | Bounder (fox2) | fpkd(19) gz fpkd(30) | [FoxTool](/FoxTool) | NavxSquareGraphBounderData , on vehicles. Only used in GZ. |
 | caar | Camera Animation Archive | fpk(9) | Contains .cani? Likely similar to mtar for camera animations. |  |
 | cani | Camera Animation | gz fpk(92) | Likely similar to .gani for camera animations. |  |
@@ -40,8 +40,8 @@ This article lists the presumed names of extensions used in MGSV, as well as som
 | [fmdl](/FMDL) | FmdlFile | fpk(14384) | [Fmdl Studio v2](https://github.com/BobDoleOwndU/FMDL-Studio-v2) | Model, includes mesh, bone, and material data. |
 | [fmtt](https://mgsvmoddingwiki.github.io/FMTT) | Material parameters | data1(2) | [FoxKit](https://github.com/youarebritish/FoxKit/) | GrTools.SetMaterialParamBinary |
 | fnt | Font | fpk(7) | UiFontDataElement entity, fontFile common_art.fox2,*_art.fox2 In exe section with uil,uif,uia,fnt,utxl |  |
-| fox2 | DataSetFile2 | fpkd(75167), gz fpkd(450) | [FoxTool](/FoxTool) | Translated comment in pc init.lua 'Object arrangement / property data file' |
-| fpk | Fox Package | Chunks(16637) | [FPK Tool](https://web.archive.org/web/20230517070053/https://forum.xentax.com/viewtopic.php?t=12407&start=690#p110644), [GzsTool](/GzsTool) | Usually contains compiled files that have no associated editing tools. Must have a matching fpkd (which may be empty) |
+| [fox2](/FOX2) | DataSetFile2 | fpkd(75167), gz fpkd(450) | [FoxTool](/FoxTool) | Translated comment in pc init.lua 'Object arrangement / property data file' |
+| fpk | Fox Package / fox::PackFile | Chunks(16637) | [FPK Tool](https://web.archive.org/web/20230517070053/https://forum.xentax.com/viewtopic.php?t=12407&start=690#p110644), [GzsTool](/GzsTool) | Usually contains compiled files that have no associated editing tools. Must have a matching fpkd (which may be empty) |
 | fpkd | Fox Package Data | Chunks(16637) | [FPK Tool](https://web.archive.org/web/20230517070053/https://forum.xentax.com/viewtopic.php?t=12407&start=690#p110644), [GzsTool](/GzsTool) | Archive that allows changes to physics or sound associations; data archive. Must have a matching fpk (which may be empty) |
 | fpkl | Fox Package Link | fpk(1), gz fpk(3) | Any text editor | Only one instance in chunk0 col_common_tpp.fpk Seems to define required files to load. |
 | frdv | HelpBoneFile | fpk(664) | Related to helper bone rotations. |  |
