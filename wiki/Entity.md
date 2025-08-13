@@ -12,7 +12,10 @@ anywhere in .fox2 files, but referenced as an included class in the
 
 ## Format
 
-There is no known format for placed entities of type **Entity**.
+Serialized representation - [010 Editor template](https://github.com/kapuragu/FoxEngineTemplates/blob/c40c5d4e5cf556a0fed14b57d3f2a5653cbd0ecc/fox2.bt#L21).
+
+Entity is supposedly serializable into xml via built-in method `fox::EntitySerializationFormatterV2::Save`.
+All attempts to invoke that function without errors were unsuccessful.
 
 ## Usage
 
@@ -24,10 +27,11 @@ unknown at this time (if any such exist).
 
 The only known usage of the entity of type **Entity** is as a reference
 in the `<classes>` header block.
+
 ### Example
+
 ```xml
 <classes>
   <class name="Entity" super="" version="2" />
 </classes>
 ```
-
