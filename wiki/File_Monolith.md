@@ -9,7 +9,7 @@ Morbidslinky" site="https://github.com/Morbidslinky/FileMonolith" download="http
 
 File Monolith is a set of open-source tools which provide support for
 file management and folder formatting for MGSV:TPP. File Monolith
-consists of six separate tools as of v0.4.0.0:
+consists of seven separate tools as of v0.5.0.0 which all use WinForms and Microsoft .NET 8 Framework:
 
   - Archive Unpacker: The user can select Archive (.dat) files, which
     the tool will unpack into a target directory. Then, the tool will
@@ -34,6 +34,8 @@ consists of six separate tools as of v0.4.0.0:
     (.pftxs) file, and the tool will attempt to automatically complete
     the textures partially contained in the .pftxs, and then convert the
     textures to DirectDraw Surface (.dds) format.
+  - Regex File Copier: The user can copy files and their directory
+    structures to another folder using regular expressions.
 
 ## Archive Unpacker
 
@@ -267,3 +269,10 @@ Notes:
   - I recommend using the SageThumbs Plugin in order to preview the .dds
     files in their thumbnails without opening them in GIMP or Photoshop.
       - <https://www.cherubicsoft.com/en/projects/sagethumbs>
+
+## Regex File Copier
+
+More for researching, exploring and referencing files than creating mods.
+Given a regular expression (try https://regexr.com/), the tool will copy
+files that match the regular expression from one specified folder into
+another, retaining the subdirectory nesting of the copied files.
