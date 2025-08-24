@@ -27,7 +27,9 @@ Links to assorted MGSV modding references. See also: [External Guides](/Guides#e
 | [MockFox](https://github.com/TinManTex/MockFox) | Framework to load MGSV TPP lua scripts outside of mgstpp |
 | [mgsv-lookup-strings](https://github.com/TinManTex/mgsv-lookup-strings) | Strings scraped and manually gathered from mgsv, useful for trying to match against hashes |
 | [Nuke watcher](https://unknown321.github.io/mgsv_nuke_watcher/) | |
-| [Server emulator](https://github.com/unknown321/mgsv_emulator) | |
+| [fuse](https://github.com/unknown321/fuse) | TPP master server implementation |
+| [dynamite](https://github.com/unknown321/dynamite) | Co-op mod |
+| [tpp-tracking](https://github.com/unknown321/tpp-tracking) | 00.dat lua changes in git |
 | [BobDoleOwndU's MGSV documentation](https://bobdoleowndu.github.io/mgsv/documentation/index.html) | Including: [EquipDevelopFlowSetting.lua Information](https://bobdoleowndu.github.io/mgsv/documentation/equipdevelopflowsetting.html), [Getting FMDLs to Load Custom Texture Names](https://bobdoleowndu.github.io/mgsv/documentation/customtexturenames.html) |
 | [Poster modding resource](https://drive.google.com/file/d/0B4HIOk1QhmKAZnBSUVZ5bnY5SzA/view?usp=sharing) | For those interested in editing the 6 collectible posters and their cardboard box cutouts |
 {:.stretch}
