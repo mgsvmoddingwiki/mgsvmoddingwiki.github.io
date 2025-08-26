@@ -66,11 +66,3 @@ editing them infeasible as well.
 
 The motion graph format, which controls animation states, is completely
 undocumented. This limits animation editing to swapping files.
-
-## Player Mechanics
-
-### Dual-Wielding
-
-It is unknown how Ocelot's dual-wielding mechanic is triggered, making
-it impossible to dual-wield the Tornadoes in mods that allow him to be
-used outside of FOB missions.
