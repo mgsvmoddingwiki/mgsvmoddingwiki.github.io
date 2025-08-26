@@ -1,0 +1,49 @@
+---
+title: "I want to mod:"
+permalink: /I_want_to_mod/
+---
+
+  - ## Missions
+    - [Mission objectives](/Mission_Objectives)
+    - [Creating a basic custom route](/Creating_a_basic_custom_route/)
+    - [Create a custom location](/Create_a_Custom_Map)
+    - [Using UAVs in Side-Ops](/Using_UAVs_in_Side_Ops)
+  - ## Models
+    - [FMDL Studio v2 [incl. Blender pipeline notes]](/FMDL_Studio_V2)
+    - [Swap model parts](/Mesh_Mashup)
+    - [Custom weapon models](/Custom_weapons)
+  - ## Textures
+    - Need a guide!
+  - ## Weapons
+    - [Weapon part combinations](/Chimera_Weapon_System/)
+    - [Iron Sight adjustments, fire-rate, draw and reload speeds](/Iron_Sight_adjustments,_fire-rate,_draw_and_reload_speeds/)
+    - [Enable NPC Weapons](/Enabling_CS_Weapons/)
+    - [Change damage](/Damage_Tables/)
+    - [Custom models](/Custom_weapons)
+    - [Development requirements](/EquipDevelopSetting/)
+  - ## Sound
+    - [How to add custom sounds](/How_to_add_custom_sounds)
+    - [How To Find & Change Audio Files](/How_To_Find_&_Change_Audio_Files)
+    - [How to replace sortie prep music in less than five minutes](/How_to_replace_sortie_prep_music_in_less_than_five_minutes)
+    - [Creating a Custom Sound Bank](/Creating_a_Custom_Sound_Bank)
+  - ## Radio
+    - Need a guide!
+  - ## Animations
+    - Need a guide!
+  - ## UI
+    - Need a guide!
+  - ## Language / Text
+    - [How to create custom lang entries](/How_to_create_custom_lang_entries)
+    - Need a subtitles guide!
+  - ## Rendering
+    - [Color processing](/FILTERLUT_Texture_Guide/)
+    - [Textures](/Textures)
+  - ## Cutscenes
+    - Need a guide!
+  - ## Effects
+    - Need a guide!
+  - ## Fonts
+    - Need a guide!
+  - ## Vehicles
+    - Need a guide!
+{:.index}
