@@ -37,23 +37,23 @@ The base texture is prefixed with the bsm word for calling it the base colour ma
 
 This picture below just show's the diffuse map without the alpha texture:
 
-![](/assets/Hair_Materials/hair_diffuse_example.jpg){:.thumb}
+![](/assets/Hair_Materials/hair_diffuse_example.jpg){:width="828px"}
 
 This picture show's how the alpha texture looks:
 
-![](/assets/Hair_Materials/hair_diffuse_example-alpha.jpg)
+![](/assets/Hair_Materials/hair_diffuse_example-alpha.jpg){:width="828px"}
 
 
 ### SpecularMap_Tex_LIN(srm)
 The specular map mostly will give your hair it's reflection on the material.In this case we will only be using a roughness map and a specular occlusion map for the SRM texture.
 
-![](/assets/Hair_Materials/hair_srm_example.jpg)
+![](/assets/Hair_Materials/hair_srm_example.jpg){:width="828px"}
 
 
 ### Translucent_Tex_LIN(trm)
 The trm map ,is a fairly important texture to make your hair look snazzy as most people might know ,this map is responsible for the Subsurface Scattering effect softer materials will have when light hits the material instead of deflecting it ,it will absorb the light usually this will cause the material to glow.What this basically does is it will highlight strand's giving it more depth ,since fox engine's dedicated hair material doesn't support normal map's it would end up looking flat well if your trm texture is done correctly it might just give you the edge to make hair look nice and 3d.
 
-![](/assets/Hair_Materials/hair_trm_example.jpg)
+![](/assets/Hair_Materials/hair_trm_example.jpg){:width="828px"}
 
 **Example the TRM texture effect in game**
 
@@ -64,7 +64,7 @@ The trm map ,is a fairly important texture to make your hair look snazzy as most
 The shm is responsible for the anisotropic diffusion, well what does that do?
 This gives the hair a real bright reflection.Real life hair has a shiny reflection to it, people with longer hair, pony tails for example will really give of the anisotropic effect, the same with weed in weed fields will give of the same effects the important part of this texture is it can practically highlight individual strands giving it a better in depth look, highlighting strands and deflecting light with more contrast and sharpness.Good example is the small grey hair's you might see when you are getting older they will pop-out and shine more than the darker one's with much more reflection to them.
 
-![](/assets/Hair_Materials/hair_shm_example.jpg)
+![](/assets/Hair_Materials/hair_shm_example.jpg){:width="828px"}
 
 
 **Example of a SHM texture compared to hair without one in the game**
@@ -137,7 +137,7 @@ Now that we composed the layers you can export the texture take note of the expo
 
 **Custom Diffuse Map, without the Alpha channel(This is just for demonstration on the wiki ,but your Alpha texture is always in the Alpha channel of your diffuse map)**
 
-![](/assets/Hair_Materials/hair_diffuse_example.jpg)
+![](/assets/Hair_Materials/hair_diffuse_example.jpg){:width="828px"}
 
 
 ### Specular Map (SRM) ###
@@ -146,11 +146,11 @@ If your custom hair model has a lot of different texture's you'll have to try an
 For Example the two pictures down below.
 **Custom SRM for Snake**
 
-![](/assets/Hair_Materials/delta_hair_srm.jpg)
+![](/assets/Hair_Materials/delta_hair_srm.jpg){:width="828px"}
 
 **Custom SRM For Ashley**
 
-![](/assets/Hair_Materials/hair_srm_example.jpg)
+![](/assets/Hair_Materials/hair_srm_example.jpg){:width="828px"}
 
 As you can see Ashley's hair is a bit more yellow than that of Snake's srm which will give it a bit more reflection.
 
@@ -161,7 +161,7 @@ In my case the albedo map for Ashley's hair had a certain amount of strands that
 
 **Custom TRM for Ashley**
 
-![](/assets/Hair_Materials/hair_trm_example.jpg)
+![](/assets/Hair_Materials/hair_trm_example.jpg){:width="828px"}
 
 
 ### Anistropic Texture Map (SHM)
@@ -173,7 +173,7 @@ In my case I used the trm texture and started to adjust the colours ,to get the 
 
 **Custom SHM for Ashley**
 
-![](/assets/Hair_Materials/hair_shm_example.jpg)
+![](/assets/Hair_Materials/hair_shm_example.jpg){:width="828px"}
 
 **Ay there is a tip!**
 Most game's might have a extra map for some individual hair strand pop-outs.In my case I used the roughness map of Ashley's hair now of course you might not have this so it is possible that you might need to improvise.In that case you could actually use the diffuse map or even the alpha map and turn the contrast way up and adjust it's brightness to use it as a alpha texture to paste it over your shm.
@@ -216,8 +216,8 @@ Check the result in game!
 ## Final result!
 Here was the final result of Ashley's hair in the FOX Engine.
 
-![](/assets/Hair_Materials/Ingame_Hair_Result_1.jpg)
-![](/assets/Hair_Materials/Ingame_Hair_Result_2.jpg)
+![](/assets/Hair_Materials/Ingame_Hair_Result_1.jpg){:.inline width="300px"} ![](/assets/Hair_Materials/Ingame_Hair_Result_2.jpg){:.inline width="300px"}
+{:.center}
 
 
 ## A couple of Notes!
