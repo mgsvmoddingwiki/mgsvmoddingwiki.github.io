@@ -37,7 +37,7 @@ The base texture is prefixed with the bsm word for calling it the base colour ma
 
 This picture below just show's the diffuse map without the alpha texture:
 
-![](/assets/Hair_Materials/hair_diffuse_example.jpg)
+![](/assets/Hair_Materials/hair_diffuse_example.jpg){:.thumb}
 
 This picture show's how the alpha texture looks:
 
