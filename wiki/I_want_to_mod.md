@@ -12,6 +12,7 @@ permalink: /I_want_to_mod/
     - [FMDL Studio v2 [incl. Blender pipeline notes]](/FMDL_Studio_V2)
     - [Swap model parts](/Mesh_Mashup)
     - [Custom weapon models](/Custom_weapons)
+    - [Hair](/Hair_Materials)
   - ## Textures
     - Need a guide!
   - ## Weapons
@@ -46,4 +47,6 @@ permalink: /I_want_to_mod/
     - Need a guide!
   - ## Vehicles
     - Need a guide!
+  - ## Exe
+    - [Ghidra](/Ghidra_tips)
 {:.index}
