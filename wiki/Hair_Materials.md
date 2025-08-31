@@ -178,13 +178,73 @@ Basically what I do in this video is what I explained above. Now perhaps it coul
 ## Adding the shaders inside of FMDL Studio!
 
 **This is the simple part!**
-I like to use what is in the game so in this example I imported Quiet's XOF model which uses a normal hair shader. Drag and drop Quiet's hair onto your custom hair model. Now that it has Quiet's hair shaders you can drag and drop the textures into the corresponding texture slots. If you're unsure which texture goes where, you can look at the explanation I made above.
+
+**Creating a directory to store your textures**
+
+*If you already know how to add a directory for your custom textures then you can skip this part and move on to the Import of the fmdl file*
+
+Firstly we need to add the textures we just created into FMDL Studio. We will start by creating a file directory in the `Assets` folder in the console at the bottom of FMDL studio, go into your `Assets` folder and right click and select `Create` -> `Folder` and rename the folder just created in my case I wanted to store my textures in `/Assets/tpp/tutorial/Pictures` so I repeated this process until the entire directory structure is created.
+You can make your own directory path and store your custom hair texture in there just be sure to have the exact same file path to your textures in your mod.
+
+![Creating texture directory in FMDL studio](/assets/Hair_Materials/1_a_create_file_dir.jpg){:.thumb}
+
+After creating your directory navigate to where you exported your custom textures in an file explorer, select all the textures and drag and drop it into the `Pictures` folder (Depending on what your child directory is of your custom directory mine is `Pictures`).
+
+![Navigate to the directory containing the textures drag and drop all the textures in your folder(More clarification with the blue arrow)](/assets/Hair_Materials/1_c_select_text_dnd_into_dir.jpg){:.thumb}
+
+After you dragged in the textures your folder should look like this:
+
+![Final outcome of your texture directory](/assets/Hair_Materials/1_d_result_af_dnd.jpg){:.thumb}
+
+
+**Importing fmdl file**
+
+Now that we have our textures in FMDL studio we can import a vanilla model to use it's hair materials.
+
+Go to `FMDL studio` -> `Import FMDL` navigate to the vanilla fmdl file you will be using in your unpacked game files.
+
+![FMDL studio import button location](/assets/Hair_Materials/a_import_button.jpg){:.thumb}
+
+![Navigating to your fmdl file of choice and import the fmdl](/assets/Hair_Materials/b_locate_model_import.jpg){:.thumb}
+
+![Import of your fmdl in Unity](/assets/Hair_Materials/c_quiets_model_aft_imp.jpg){:.thumb}
+
+**Applying the materials onto your custom hair model**
+
+Selecting the vanilla model hair mesh, navigate to the shader properties in the bottom right hand side and drag the material onto your custom hair mesh.
+
+![Dragging and dropping the material onto your custom hair mesh](/assets/Hair_Materials/d_drag_drop_hair_mat.jpg){:.thumb}
+
+Repeat this process depending on how many parts your hair mesh has. After you are done you can delete the vanilla model it is no longer needed.
+
+![Outcome after adding the hair material to all parts of the custom hair mesh](/assets/Hair_Materials/e_result_after_finis_dnd.jpg){:.thumb}
+
+Now that we have added all the materials needed we can drop our custom hair textures into the texture slots of the material settings.
+Expand the material settings by clicking on the small arrow, that will expose 4 texture slots that we will drag our custom textures into.
+
+![The arrow mentioned above is underlined in red](/assets/Hair_Materials/expand_mat_settings.jpg){:.thumb}
+
+Drag and drop your custom textures from the directory you made into the corresponding texture slots.
+
+![Take note of where the textures will be dragged and dropped in](/assets/Hair_Materials/f_dnd_hair_into_tex_slot.jpg){:.thumb}
+
+After you added your custom textures to all texture slots in the shader settings, you will have to fix the tilling right now the hair might look strange on the model. Why is that?
+Well Unity flips the tilling around of the texture so right now it's mirrored.
+
+![Texture tilling with a value of `-1` meaning the texture is mirrored on the y-axis](/assets/Hair_Materials/g_notice_text_tilling.jpg){:.thumb}
+
+We can fix that by swapping the tilling around which will have a tilling value of `1`, now you will see that the texture orientation will be correctly orientated on the mesh. Repeat that for all the textures.
+
+![Texture tilling with a value of `1`](/assets/Hair_Materials/h_correct_tilling.jpg){:.thumb}
+
+Great! We have applied the textures and materials to our custom hair mesh!
+
 
 **Well great now it's applied. Where do we go from here?**
 
 Depending on what your custom model is (male hair, female hair, etc), you might need to adjust some shader settings for your hair.
 
-This will depend on what result you are looking for, in my case the only setting I changed was the `Incidence_Colour` valuees. I changed the `x, y` and `z` values to be all 1. As I mentioned previously it's so far the preferred colour for black hair and in general most hair, unless you are looking for a specific SSS colour it must be.
+This will depend on what result you are looking for, in my case the only setting I changed was the `Incidence_Colour` values. I changed the `x, y` and `z` values to be all 1. As I mentioned previously it's so far the preferred colour for black hair and in general most hair, unless you are looking for a specific SSS colour it must be.
 
 **Importantly well what Fox Model component settings must be used?**
 
