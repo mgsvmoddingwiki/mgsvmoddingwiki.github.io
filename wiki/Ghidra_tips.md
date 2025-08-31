@@ -337,3 +337,9 @@ Right click on instruction in `Listing` window, select `Show Label History`.
 
 Install [protontricks](https://github.com/Matoking/protontricks), run it, select MGSV:TPP. Select default prefix, run debug console,
 navigate to x64dbg.exe and run it: `wine x64dbg.exe`.
+
+Faster alternative:
+
+```
+protontricks-launch --appid=287700 <path to x64dbg.exe>
+```
