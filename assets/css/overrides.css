@@ -1717,6 +1717,12 @@ h2.heading-with-frag-id .heading-frag-id-link {
     border-radius: var(--radius-primary);
 }
 
+.git-wiki-page .image-wrapper,
+.git-wiki-page img,
+.git-wiki-page .video-wrapper {
+    max-height: 850px; /* same width as computed size of default content wrapper, to avoid excessive height when extended width toggle option enabled */
+}
+
 .git-wiki-page p.center {
     display: flex;
     flex-wrap: wrap;
@@ -1741,6 +1747,10 @@ h2.heading-with-frag-id .heading-frag-id-link {
 }
 
 /* Preset max width so users don't have to bother adding dimension attributes if they don't want */
+.git-wiki-page .thumb {
+    max-height: 500px;
+}
+
 .git-wiki-page .thumb:not(.legacy-small) {
     max-width: 50%;
 }
@@ -1778,6 +1788,7 @@ h2.heading-with-frag-id .heading-frag-id-link {
 }
 
 .git-wiki-page .image-wrapper img {
+    max-height: inherit;
     margin: 0;
 }
 
@@ -1795,20 +1806,22 @@ h2.heading-with-frag-id .heading-frag-id-link {
 /* Video specific */
 .git-wiki-page .video-wrapper {
     width: 100%;
-    display: table;
-    overflow: hidden;
+    max-width: 1280px; /* to force constrain aspect ratio (incl. controls) */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     clear: both;
 }
 
 .git-wiki-page .video-wrapper video {
-    width: 100%;
     max-width: 100%;
+    max-height: inherit;
 }
 
 .git-wiki-page .video-wrapper.iframe-type iframe {
     width: 100%;
     height: auto;
-    aspect-ratio: 16 /9; /* modern method */
+    aspect-ratio: 16 / 9; /* modern method */
 }
 
 .git-wiki-page .video-wrapper.thumb {
@@ -1829,6 +1842,7 @@ h2.heading-with-frag-id .heading-frag-id-link {
 
 .git-wiki-page .video-wrapper.has-caption.left .caption,
 .git-wiki-page .video-wrapper.has-caption.right .caption {
+    width: 100%;
     text-align: left;
 }
 

@@ -25,6 +25,8 @@ Since Github Desktop isn't available for Linux you'll have to use an alternative
 
 > You can alternatively run Linux in a virtual machine on a Windows host and manage files/git on the Windows side, by cloning the wiki to a directory on the host and sharing it with the VM.
 
+> **Note:** the build process uses Powershell for generating the search index files, to populate the search results. Powershell is available in Linux packages. Otherwise not strictly necessary if search not needed for local testing.
+
 {% include spoiler-end %}
 
 ## Installing Jekyll and Ruby

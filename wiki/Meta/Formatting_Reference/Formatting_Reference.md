@@ -555,7 +555,7 @@ Some other text
 
 **Changing width and placement:**
 
-Similiar to the images section we can use classes to change the width/position. Here using the `.thumb` class to make the video smaller. We can also use `.left`/`.right`.
+Similiar to the images section we can use classes to change the width/position. Here using the `.thumb` class to set its max width to around half the page width. We can also additionally use `.left`/`.right` to set position.
 
 {% include video url="/assets/VideoGimmick01.webm" %}{:.thumb}
 
