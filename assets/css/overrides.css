@@ -1807,9 +1807,8 @@ h2.heading-with-frag-id .heading-frag-id-link {
 .git-wiki-page .video-wrapper {
     width: 100%;
     max-width: 1280px; /* to force constrain aspect ratio (incl. controls) */
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    text-align: center;
+    display: table;
     clear: both;
 }
 
@@ -1824,15 +1823,16 @@ h2.heading-with-frag-id .heading-frag-id-link {
     aspect-ratio: 16 / 9; /* modern method */
 }
 
-.git-wiki-page .video-wrapper.thumb {
+.git-wiki-page .video-wrapper.thumb,
+.git-wiki-page .video-wrapper.thumb.left,
+.git-wiki-page .video-wrapper.thumb.right {
     width: 60%;
-    max-width: 100%; /* override image .thumb styling */
+    max-width: fit-content; /* override image .thumb styling */
 }
 
 .git-wiki-page .video-wrapper.thumb.left,
 .git-wiki-page .video-wrapper.thumb.right {
     width: 50%;
-    max-width: 100%; /* override image .thumb styling */
 }
 
 .git-wiki-page .video-wrapper.has-caption .caption {
@@ -1842,7 +1842,6 @@ h2.heading-with-frag-id .heading-frag-id-link {
 
 .git-wiki-page .video-wrapper.has-caption.left .caption,
 .git-wiki-page .video-wrapper.has-caption.right .caption {
-    width: 100%;
     text-align: left;
 }
 
