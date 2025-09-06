@@ -90,9 +90,8 @@ this.missionObjectiveDefine = {
 #### photoId
 
 The `photoId` parameter will add a photo to the iDroid mission info
-section. Its additional parameters are a little backwards, though: if
-`addFirst` is true, it will use the vertical photo. If `addSecond` is
-false, it will use a horizontal photo. There is also a seemingly unused
+section. If `addFirst` is true, it will use the vertical photo on the left. If `addSecond` is
+true, it will use a vertical photo on the right. There is also a seemingly unused
 (non-functional, orphaned) `isComplete` parameter.
 
 The photo index is generated into this `.ftex` texture path:
@@ -108,8 +107,8 @@ generated example would be:
 this.missionObjectiveDefine = {
     default_photo_target_a = {
         photoId = 10, --Photo index:
-        addFirst = true,--If true, use a vertical photo. False if unassigned
-        addSecond = false, --If false, use a horizontal photo. Confusing, I know. False if unassigned
+        addFirst = true,--If true, use a vertical photo on the left. False if unassigned
+        addSecond = false, --If true, use a vertical photo on the right. False if unassigned
         isComplete = false, --Unused flag that doesn't do anything
         photoRadioName = "s0093_mirg0010", --Photo radio label
     },
