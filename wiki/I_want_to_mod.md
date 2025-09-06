@@ -39,6 +39,7 @@ permalink: /I_want_to_mod/
   - ## Rendering
     - [Color processing](/FILTERLUT_Texture_Guide/)
     - [Textures](/Textures)
+    - [NVG filter](/NVG_Filter)
   - ## Cutscenes
     - Need a guide!
   - ## Effects
