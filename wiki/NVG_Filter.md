@@ -7,7 +7,6 @@ tags: [Rendering, Guides]
 ### Night vision goggles
 
 NVG filter is applied on equipping night vision goggles. Highlights destructibles and living beings. It is made of two parts: noise filter and LUT. 
-There is no info on tuning noise filter, it might be set in the exe.
 
 ![NVG off](/assets/NVG_Filter/nvg_off.jpg){:.inline width="300px"}![NVG on](/assets/NVG_Filter/nvg_on.jpg){:.inline width="300px"}
 {:.center}
