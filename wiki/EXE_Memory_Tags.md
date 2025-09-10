@@ -10,920 +10,912 @@ Memory tags are used by various memory allocation functions, such as `BlockHeapA
 
 {% include spoiler-start %}
 
-  - Fs: 0x1c
-  - Fs: 0x1c
-  - Network: 0x18
-  - Network System: 0x10018
-  - Network Debug: 0x20018
-  - Network Nt System: 0x50018
-  - Fs File: 0x1001c
-  - Fs Path Resolver: 0x2001c
+  - Unnamed: 0x1
+  - String: 0x2
+  - JobTask: 0x3
+  - Kernel Core: 0x4
   - Lua: 0x5
-  - Block: 0x1d
-  - Core Entity: 0x60004
-  - Lua Entity: 0x70004
-  - Entity Info: 0x80004
-  - Entity Dynamic Property: 0x90004
-  - Core Entity Archive: 0xa0004
-  - Core File: 0xb0004
-  - Core Entity File: 0xc0004
-  - Core Raw File: 0xd0004
-  - Core Handle: 0xe0004
-  - Core Bvh: 0xf0004
-  - Core Skeleton: 0x100004
-  - Connect Point File: 0x110004
-  - Core Serializer: 0x120004
-  - Core Container: 0x130004
-  - Core Data: 0x140004
-  - Core Data Body: 0x150004
-  - Core Save: 0x160004
-  - Core Message: 0x170004
-  - Core Label: 0x180004
-  - Core Locator: 0x190004
-  - Misc System: 0x1a0004
-  - Core Temp: 0x1b0004
-  - Debug: 0x1c0004
-  - Core Test: 0x1d0004
-  - Unnamed Entity: 0x90001
-  - Unnamed Data: 0xa0001
-  - Unnamed Data Body: 0xb0001
-  - Unnamed File: 0xc0001
-  - Unnamed Array: 0xd0001
-  - Unnamed List: 0xe0001
-  - Unnamed Graph: 0xf0001
-  - Unnamed GraphX: 0x100001
-  - Block System: 0x2001d
-  - Block Internal System: 0x3001d
-  - Block Package System: 0x4001d
-  - Block Memory: 0x5001d
-  - Block Head Files: 0x6001d
-  - Block Tail Files: 0x7001d
-  - Block Stage Common: 0x8001d
-  - Block Stage Large: 0x9001d
-  - Block Stage Small: 0xa001d
-  - GrSystem: 0xf
-  - Gr Plugin: 0x1000f
-  - Gr PluginResource: 0x2000f
-  - Gr ResourceWork: 0x3000f
-  - Gr ResidentResourceWork: 0x4000f
-  - Gr Font: 0x5000f
-  - Gr StringBuffer: 0x6000f
-  - Gr TextureStream: 0x7000f
-  - Gr RenderBuffer: 0x8000f
-  - Gr RenderTarget: 0x9000f
-  - Gr Command: 0xa000f
-  - Gr CommandBuffer: 0xb000f
-  - Gr CommandCluster: 0xc000f
-  - Gr MacroPacket: 0xd000f
-  - Gr SubComamndContext: 0xe000f
-  - Gr Instance: 0xf000f
-  - Gr Daemon: 0x10000f
-  - Gr GeTools: 0x11000f
-  - Gr DgInstance: 0x12000f
-  - Gr ShrinkBuffer: 0x13000f
-  - Gr GBuffer: 0x14000f
-  - Gr MemoryObject: 0x15000f
-  - Gr DynamicVertexBuffer: 0x16000f
-  - Gr DynamicIndexBuffer: 0x17000f
-  - Gr ShadowBuffer: 0x18000f
-  - Gr ShadowConstantRegister: 0x19000f
-  - Gr Render: 0x1a000f
-  - Gr RenderStateResource: 0x1b000f
-  - Gr ModelBuffer: 0x1c000f
-  - GrResource: 0x10
-  - Gr Resource: 0x10010
-  - Gr Fmdl: 0x20010
-  - Gr ModelResource: 0x30010
-  - Gr CloneResource: 0x40010
-  - Gr MaterialResource: 0x50010
-  - Gr RenderStateResource: 0x60010
-  - Gr ShaderResource: 0x70010
-  - Gr ShaderFileResource: 0x80010
-  - Gr ShaderObjectResource: 0x90010
-  - Gr ShaderTechnique: 0xa0010
-  - Gr IndexBufferResource: 0xb0010
-  - Gr VertexBufferResource: 0xc0010
-  - Gr VertexStreamResource: 0xd0010
-  - Gr InputLayoutResource: 0xe0010
-  - Gr TextureResource: 0xf0010
-  - Gr ModelTransform: 0x100010
-  - Gr TextrueStream: 0x110010
-  - Gr TextrueStreamStatus: 0x120010
-  - Gr TextrueRequest: 0x130010
-  - Gr Job: 0x140010
-  - Gr JobPascket: 0x150010
-  - Gr JobSyncPacket: 0x160010
-  - Gr gd: 0x170010
-  - Gr MappedMemory: 0x180010
-  - Gr Umbra: 0x190010
-  - GrResource: 0x11
-  - Gr Model: 0x10011
-  - Gr ModelArray: 0x20011
-  - Gr ModelCut: 0x30011
-  - Gr ModelVertexColor: 0x40011
-  - Gr ModelDeform: 0x50011
-  - Gr ModelExtMatrix: 0x60011
-  - Gr ModelReader: 0x70011
-  - Gr OptCamModel: 0x80011
-  - Gr OverlayModel: 0x90011
-  - Gr Clone: 0xa0011
-  - Gr Decal: 0xb0011
-  - Gr Terrain: 0xc0011
-  - Gr Primitive: 0xd0011
-  - Gr Draw2D: 0xe0011
-  - Gr ShLight: 0xf0011
-  - Gr Light: 0x100011
-  - Gr LightSearch: 0x110011
-  - Gr LightVolume: 0x120011
-  - Gr ApproximatedLight: 0x130011
-  - Gr Bounding: 0x140011
-  - Gr VisibilityTest: 0x150011
-  - Gr Material: 0x160011
-  - Gr Shader: 0x170011
-  - Gr Occluder: 0x180011
-  - Gr Texture: 0x190011
-  - Gr Scene: 0x1a0011
-  - Gr SceneObject: 0x1b0011
-  - Gr Viewport: 0x1c0011
-  - Gr Camera: 0x1d0011
-  - Gr Temporary: 0x1e0011
-  - Gr Debug: 0x1f0011
   - Sound: 0x7
-  - Sound Core System: 0x10007
-  - Sound Core Control: 0x20007
-  - Sound Core Debug: 0x30007
   - Audio: 0x8
-  - Audio System: 0x10008
-  - Audio Object: 0x20008
-  - Audio Object: 0x30008
-  - Audio Object: 0x40008
-  - Audio Object: 0x50008
-  - Audio Frame: 0x60008
-  - Audio Physical: 0x70008
-  - Audio AllocHook: 0x80008
+  - Anim: 0x9
+  - Geo: 0xa
+  - Cc: 0xb
+  - Nav: 0xc
+  - Fx: 0xd
+  - Ui: 0xe
+  - GrSystem: 0xf
+  - GrResource: 0x10
+  - GrResource: 0x11
   - FoxGameKit: 0x12
-  - GkSystem: 0x10012
-  - GkPartsData: 0x20012
-  - GkPartsBuilder: 0x30012
-  - GkPartsDirector: 0x40012
-  - GkEnvironment: 0x50012
-  - GkWind: 0x60012
-  - GkTerrain: 0x70012
-  - GkPad: 0x80012
-  - GkCollectible: 0x90012
-  - GkTargetData: 0xa0012
-  - GkObjectBrush: 0xb0012
-  - GkGameScript: 0xc0012
-  - GkVoice: 0xd0012
-  - GkEventTimer: 0xe0012
-  - GkFacial: 0xf0012
-  - GkSubtitles: 0x100012
-  - GkFx: 0x110012
-  - GkFova: 0x120012
-  - GkSimpleCoverAndConnect: 0x130012
-  - GkVoiceChat: 0x140012
-  - GkLanguage: 0x150012
-  - GkDebug: 0x160012
+  - Ph: 0x15
+  - Sim: 0x16
+  - Des: 0x17
+  - Network: 0x18
+  - Demo: 0x19
+  - Grx: 0x1b
+  - Fs: 0x1c
+  - Block: 0x1d
+  - UiScene: 0x1e
+  - GameCore: 0x20
+  - FoxQuark: 0x21
   - GameService: 0x22
-  - GameService System: 0x10022
-  - GameService GsRoute: 0x20022
-  - GameService GsSightCheck: 0x30022
-  - tpp MBCoreUnNamed: 0x2002a
-  - tpp MBCoreConstruct: 0x3002a
   - TppSystemBase: 0x29
-  - tpp System: 0x2d
   - tpp MotherBase: 0x2a
   - tpp MotherBaseStage: 0x2b
-  - tpp Effect: 0x6e
-  - tpp MissionBlockSystem: 0x3002d
-  - tpp SystemLocation: 0x4002d
-  - tpp SystemMission: 0x5002d
-  - tpp SystemGameSequence: 0x6002d
-  - tpp SystemWeather: 0x7002d
-  - tpp SystemWeatherWork: 0x8002d
-  - tpp SystemEvent: 0x9002d
-  - tpp SystemCheckPoint: 0xa002d
-  - tpp DefaultParameter: 0xb002d
-  - tpp EventSequenceManager: 0xc002d
-  - tpp GameConfig: 0xd002d
-  - tpp PlayerInfo: 0xe002d
-  - tpp Storage: 0xf002d
-  - tpp SystemDebug: 0x10002d
-  - tpp StoryFlag: 0x11002d
-  - tpp GzSaveData: 0x12002d
-  - tpp GzSaveLoadManager: 0x13002d
-  - tpp PlayRecord: 0x14002d
-  - tpp Video: 0x15002d
-  - tpp Gk: 0x75
-  - tpp Gk System: 0x20075
-  - tpp Gk Marker: 0x40075
-  - tpp Gk CoverPoint: 0x50075
-  - tpp Gk Bush: 0x60075
-  - tpp Gk Grass: 0x70075
-  - tpp Gk Grass Work: 0x80075
-  - tpp Gk obr skl: 0x90075
-  - tpp Gk SmartDevice: 0xa0075
-  - tpp Gk DiscoverSensor: 0xb0075
-  - tpp Gk NoticeSensor: 0xd0075
-  - tpp HighSpeedCamera: 0x6a
-  - tpp Gk Searchable Light: 0xe0075
-  - tpp Gk GZ: 0xf0075
-  - tpp Gk Route: 0x100075
-  - tpp Gk OldLight: 0x110075
-  - tpp Gk Emblem: 0x120075
-  - Gimmick: 0x6b
-  - Gimmick Base: 0x1006b
-  - Gimmick Save: 0x2006b
-  - Gimmick System: 0x3006b
-  - Gimmick Ladder: 0x4006b
-  - Gimmick Shared: 0x5006b
-  - Gimmick Permanent: 0x6006b
-  - Gimmick Online: 0x9006b
-  - Gimmick Identifier: 0x7006b
-  - Gimmick GameObject: 0x8006b
-  - Gimmick etc: 0xa006b
-  - Gimmick Editor: 0xb006b
-  - Gimmick Debug: 0xc006b
-  - Tpp Effect Uncategorized: 0x1006e
-  - Tpp Effect Filter2D: 0x2006e
-  - Tpp Effect LensFlareData: 0x3006e
-  - Tpp Effect LensFlareInstance: 0x4006e
-  - Tpp Effect BridgeFunctor: 0x5006e
-  - Tpp Effect FxModule: 0x6006e
-  - Tpp Effect Weather: 0x7006e
-  - Tpp Effect DebugOnly: 0x8006e
-  - Tpp Effect System: 0x9006e
-  - Tpp Effect ChPlugin: 0xa006e
-  - Tpp Effect Ocean: 0xb006e
-  - Tpp Effect DirtyModel: 0xc006e
-  - Tpp Effect VfxEffectCollect: 0xd006e
-  - Tpp Effect CigaretteSmoke: 0xe006e
-  - Tpp Effect Atmosphere: 0xf006e
-  - Tpp Effect LightProbe: 0x10006e
-  - Tpp Effect Fire: 0x11006e
-  - Tpp Effect Light: 0x12006e
-  - Tpp Effect FootPrint: 0x13006e
-  - Tpp Effect Skidmarks: 0x14006e
-  - Tpp Effect Fire Lights: 0x15006e
-  - Tpp Effect FxLocatorTppCustomWork: 0x16006e
-  - tpp Ui: 0x70
-  - tpp Ui UnNamed: 0x10070
-  - tpp Ui System: 0x20070
-  - tpp Ui CommonData: 0x30070
-  - tpp Ui MenuTermina;: 0x40070
-  - tpp Ui CustomNode: 0x50070
-  - tpp Ui SaveData: 0x60070
-  - tpp Ui Ending: 0x70070
-  - tpp Ui Callback: 0x80070
-  - Tpp Sound: 0x6f
-  - Tpp Sound System: 0x1006f
-  - Tpp Sound Ambient: 0x2006f
-  - Tpp Sound Area: 0x3006f
-  - Tpp Sound Music: 0x4006f
-  - Tpp Sound Interference: 0x6006f
-  - TppSystem2: 0x2e
-  - TppSystem2Mission: 0x1002e
-  - TppSystem2Location: 0x2002e
-  - TppSystem2GameService: 0x3002e
-  - TppSystem2Luxury: 0x4002e
-  - TppSystem2Script: 0x5002e
-  - TppSystem2Misc: 0x6002e
-  - TppSystem2Debug: 0x7002e
-  - TppNewCharacter: 0x41
-  - NewChara System: 0x20041
-  - NewChara System Anim: 0x30041
-  - NewChara System Effect: 0x40041
-  - NewChara System AiController: 0x50041
-  - NewChara System AiNode: 0x60041
-  - NewChara System AiKnowLedge: 0x70041
-  - NewChara System Situation: 0x80041
-  - NewChara System Sound: 0x90041
-  - NewChara System SightController: 0xa0041
-  - NewChara System SpeechController: 0xb0041
-  - NewChara System ResponseController: 0xc0041
-  - NewChara System NaviController: 0xd0041
-  - NewChara System RouteController: 0xe0041
-  - NewChara System DamageController: 0xf0041
-  - NewChara System RailController: 0x100041
-  - NewChara System DemoAnimController: 0x110041
-  - NewChara System GameObjectInfo: 0x120041
-  - NewChara System GameObjectRealizer: 0x130041
-  - NewChara System FacialUtility: 0x140041
-  - NewChara System DirtyModelService: 0x150041
-  - NewChara System NoiseArea: 0x160041
-  - NewChara System AuthorityState: 0x170041
-  - NewChara System HumanLightSimModule: 0x180041
-  - NewChara System PassengerInfo: 0x10041
-  - NewChara System Base: 0x1b0041
-  - NewChara System Debug: 0x1f0041
-  - TppPlayer: 0x48
-  - Player System: 0x20048
-  - Player Base: 0x1b0048
-  - Player Plugin: 0x1c0048
-  - Player Component: 0x1d0048
-  - Player Data: 0x1e0048
-  - Player Debug: 0x1f0048
-  - Player Avator: 0x30048
-  - TppRadio: 0x71
-  - TppRadioSystem: 0x20071
-  - TppRadioEspionage: 0x1a0071
-  - Vehicle: 0x3d
-  - Vehicle System: 0x1003d
-  - Vehicle Data: 0x2003d
-  - Vehicle GameObject: 0x3003d
-  - Vehicle UnrealInstance: 0x4003d
-  - Vehicle Constant: 0x5003d
-  - Vehicle Realizer: 0x6003d
-  - Vehicle RealInstance: 0x7003d
-  - Vehicle Body: 0x8003d
-  - Vehicle Attachment: 0x9003d
-  - Vehicle Weapon: 0xa003d
-  - Vehicle AnimationController: 0xb003d
-  - Vehicle ManeuverController: 0xc003d
-  - Vehicle SkidmarksController: 0xd003d
-  - Vehicle ReliefBlock: 0xe003d
-  - Vehicle ProcedureController: 0xf003d
-  - Vehicle Synchronizer: 0x10003d
-  - Vehicle VantagePointSystem: 0x11003d
-  - Vehicle DEPRECATED: 0x12003d
-  - Vehicle EDIT: 0x13003d
-  - Vehicle DEBUG: 0x14003d
-  - Vehicle DUMMY: 0x15003d
-  - Uav: 0x32
-  - Uav System: 0x10032
-  - Uav Ai: 0x20032
-  - Uav Action: 0x30032
-  - Uav DEBUG: 0x40032
-  - Uav DUMMY: 0x50032
-  - Animal: 0x39
-  - Animal System: 0x10039
-  - Animal Base: 0x20039
-  - Animal Controller: 0x30039
-  - Animal Ai: 0x40039
-  - Animal Plugin: 0x50039
-  - Animal DEBUG: 0x60039
-  - Animal DUMMY Data: 0x70039
-  - Animal DUMMY Instace: 0x80039
-  - Animal DUMMY Realize: 0x90039
-  - Bird Base: 0xa0039
-  - Bird Controller: 0xb0039
-  - Bird Ai: 0xc0039
-  - Bird Plugin: 0xd0039
-  - Bird DEBUG: 0xe0039
-  - Bird DUMMY: 0xf0039
-  - Buddy: 0x35
-  - Buddy System: 0x10035
-  - Buddy Base: 0x20035
-  - Buddy Controller: 0x40035
-  - Buddy Ai: 0x50035
-  - Buddy Plugin: 0x60035
-  - Buddy DEBUG: 0x70035
-  - Buddy DUMMY: 0x80035
-  - SecurityCamera: 0x33
-  - SecurityCamera System: 0x10033
-  - SecurityCamera Base: 0x20033
-  - SecurityCamera Ai: 0x30033
-  - SecurityCamera Plugin: 0x40033
-  - SecurityCamera DEBUG: 0x50033
-  - SecurityCamera DUMMY: 0x60033
-  - Parasite: 0x49
-  - Parasite System: 0x10049
-  - Parasite Base: 0x20049
-  - Parasite Controller: 0x30049
-  - Parasite Ai: 0x40049
-  - Parasite Plugin: 0x50049
-  - Parasite DEBUG: 0x60049
-  - Parasite DUMMY: 0x70049
-  - Heli: 0x4a
-  - Heli System: 0x1004a
-  - Heli Base: 0x2004a
-  - Heli Controller: 0x3004a
-  - Heli Ai: 0x4004a
-  - Heli Plugin: 0x5004a
-  - Heli DEBUG: 0x6004a
-  - Heli DUMMY: 0x7004a
-  - MbQuiet: 0x4e
-  - MbQuiet System: 0x1004e
-  - MbQuiet Ai: 0x2004e
-  - MbQuiet Action: 0x3004e
-  - MbQuiet DEBUG: 0x4004e
-  - MbQuiet DUMMY: 0x5004e
-  - Boss: 0x37
-  - Boss System: 0x10037
-  - Boss Controller: 0x20037
-  - Boss Ai: 0x30037
-  - Boss Plugin: 0x40037
-  - Boss Action: 0x50037
-  - Boss DEBUG: 0x60037
-  - Boss DUMMY: 0x70037
   - MotherBaseManagement: 0x2c
-  - MotherBaseManagement System: 0x1002c
-  - MotherBaseManagement Staff: 0x2002c
-  - MotherBaseManagement EquipDevelop: 0x3002c
-  - MotherBaseManagement WeaponPartsDevelop: 0x4002c
-  - MotherBaseManagement Base: 0x5002c
-  - MotherBaseManagement Resource: 0x6002c
-  - MotherBaseManagement DataBase: 0x7002c
-  - MotherBaseStageSystem: 0x3002b
-  - CommandPost2: 0x4d
-  - CommandPost2 GameObject: 0x1004d
-  - CommandPost2 Impl: 0x2004d
-  - CommandPost2 RoleController: 0x3004d
-  - CommandPost2 RoleCoder: 0x4004d
-  - CommandPost2 RadioController: 0x5004d
-  - CommandPost2 SpeechHandler: 0x6004d
-  - CommandPost2 ActionController: 0x7004d
-  - CommandPost2 Core Ai: 0x8004d
-  - CommandPost2 Sneak Ai: 0x9004d
-  - CommandPost2 Alert Ai: 0xa004d
-  - CommandPost2 Caution Ai: 0xb004d
-  - CommandPost2 Evasion Ai: 0xc004d
-  - CommandPost2 DEBUG: 0xd004d
-  - Equip: 0x58
-  - Equip System: 0x10058
-  - Equip Base: 0x20058
-  - Equip Data: 0x30058
-  - Equip Debug: 0x50058
-  - Equip Todo Delete: 0x60058
-  - EquipPreview: 0x59
-  - EquipPreview System: 0x10059
-  - EquipPreview Debug: 0x50059
-  - Bullet: 0x5a
-  - Bullet System: 0x1005a
-  - Bullet Base: 0x2005a
-  - Bullet Data: 0x3005a
-  - Bullet Debug: 0x5005a
-  - Pickable: 0x5b
-  - Pickable System: 0x1005b
-  - Pickable Base: 0x2005b
-  - Pickable Debug: 0x5005b
-  - Throwing: 0x5c
-  - Throwing System: 0x1005c
-  - Throwing Base: 0x2005c
-  - Throwing Debug: 0x5005c
-  - Shell: 0x5d
-  - Shell System: 0x1005d
-  - Shell Base: 0x2005d
-  - Shell Debug: 0x5005d
-  - Placed: 0x5e
-  - Placed System: 0x1005e
-  - Placed Base: 0x2005e
-  - Placed Debug: 0x5005e
-  - Collection: 0x5f
-  - Collection System: 0x1005f
-  - Collection Base: 0x2005f
-  - Collection Debug: 0x5005f
-  - FultonBalloon: 0x60
-  - FultonBalloon System: 0x10060
-  - FultonBalloon Base: 0x20060
-  - FultonBalloon Debug: 0x50060
-  - SupportAttack: 0x62
-  - RangeAttack: 0x63
-  - Decoy: 0x65
-  - Casing: 0x66
-  - Casing System: 0x10066
-  - Casing Base: 0x20066
-  - Casing Debug: 0x50066
-  - Dung: 0x67
-  - Gc Gimmick: 0x6c
-  - Collectible: 0x6d
+  - tpp System: 0x2d
+  - TppSystem2: 0x2e
+  - Uav: 0x32
+  - SecurityCamera: 0x33
+  - Buddy: 0x35
+  - Boss: 0x37
+  - Animal: 0x39
+  - Vehicle: 0x3d
   - MultiPlayer: 0x3f
-  - MultiPlayer System: 0x2003f
-  - POI Core: 0x78
-  - POI Base: 0x20078
-  - Script Util: 0x7a
-  - Script Util System: 0x2007a
-  - Ruleset Core: 0x79
-  - Corpse: 0x4b
-  - Corpse: 0x4c
-  - Corpse System: 0x1004b
-  - Corpse Synchronizer: 0x2004b
-  - Corpse FovaResource: 0x3004b
-  - Corpse Quark: 0x4004b
-  - Corpse Realizer: 0x5004b
-  - Corpse Authorizer: 0x6004b
-  - Corpse PlugCore: 0x7004b
-  - Corpse PlugActionCore: 0x8004b
-  - Corpse UnrealPlugCore: 0x9004b
-  - Corpse StateCollector: 0xa004b
-  - Corpse DamageHandler: 0xb004b
-  - Corpse FlagInfo: 0xc004b
-  - Corpse ParamCoder: 0xd004b
-  - Corpse ResponseHandler: 0xe004b
-  - Corpse ActionController: 0xf004b
-  - Corpse UnrealActionController: 0x10004b
-  - Corpse SoundController: 0x11004b
-  - Corpse RealizedCorpse: 0x12004b
-  - Corpse GameObject: 0x14004b
-  - Corpse DEBUG: 0x15004b
-  - Corpse Ai: 0x1004c
-  - Corpse CoreAi: 0x2004c
-  - Corpse CarriedAi: 0x3004c
-  - Corpse StandbyVehicleAi: 0x4004c
-  - Corpse DamageAi: 0x5004c
-  - Corpse NormalAi: 0x6004c
-  - Corpse DEBUG Ai: 0x7004c
-  - Corpse UnrealBasic: 0x8004c
-  - Corpse RealBasic: 0x9004c
-  - Corpse UnrealStdbyVehicle: 0xa004c
-  - Corpse RealStdbyVehicle: 0xb004c
-  - Corpse UnrealCarried: 0xc004c
+  - TppNewCharacter: 0x41
   - Soldier: 0x42
   - Soldier: 0x43
   - Soldier: 0x44
   - Soldier: 0x45
   - Soldier: 0x46
-  - Soldier System: 0x10042
-  - Soldier ParamTable: 0x20042
-  - Soldier FaceSystem: 0x30042
-  - Soldier FovaSystem: 0x40042
-  - Soldier FovaResource: 0x50042
-  - Soldier Synchronizer: 0x60042
-  - Soldier Quark: 0x70042
-  - Soldier Realizer: 0x80042
-  - Soldier Authorizer: 0x90042
-  - Soldier PlugCore: 0xa0042
-  - Soldier PlugActionCore: 0xb0042
-  - Soldier UnrealPlugCore: 0xc0042
-  - Soldier InfoCollector: 0xd0042
-  - Soldier AuthorityCollector: 0xe0042
-  - Soldier DamageHandler: 0xf0042
-  - Soldier Conversation: 0x100042
-  - Soldier FlagInfo: 0x110042
-  - Soldier ParamCoder: 0x120042
-  - Soldier ResponseHandler: 0x130042
-  - Soldier DiscoverManager: 0x140042
-  - Soldier Noiselistener: 0x150042
-  - Soldier ActionController: 0x160042
-  - Soldier UnrealActionController: 0x170042
-  - Soldier CollisionController: 0x180042
-  - Soldier DiscoveryController: 0x190042
-  - Soldier EquipController: 0x1a0042
-  - Soldier LifeController: 0x1b0042
-  - Soldier NoticeController: 0x1c0042
-  - Soldier SoundController: 0x1d0042
-  - Soldier RealizedSoldier: 0x1e0042
-  - Soldier GameObject: 0x10043
-  - Soldier Ai: 0x20043
-  - Soldier DEBUG: 0x30043
-  - Soldier SysUtil: 0x40043
-  - Soldier SysFace: 0x50043
-  - Soldier BlockController: 0x60043
-  - Soldier BlockControllerImpl: 0x70043
-  - Soldier BlockGroup: 0x80043
-  - Soldier ParamTable: 0x90043
-  - Soldier UnrealBasic: 0x10044
-  - Soldier RealBasic: 0x20044
-  - Soldier UnrealAttack: 0x30044
-  - Soldier RealAttack: 0x40044
-  - Soldier UnrealMeleelAttack: 0x50044
-  - Soldier RealMelleeAttack: 0x60044
-  - Soldier UnrealGrenade: 0x70044
-  - Soldier RealGrenade: 0x80044
-  - Soldier UnrealCover: 0x90044
-  - Soldier RealCover: 0xa0044
-  - Soldier UnrealDamage: 0xb0044
-  - Soldier RealDamage: 0xc0044
-  - Soldier UnrealFulton: 0xd0044
-  - Soldier RealFulton: 0xe0044
-  - Soldier UnrealHoldup: 0xf0044
-  - Soldier RealHoldup: 0x100044
-  - Soldier UnrealNotice: 0x110044
-  - Soldier RealNotice: 0x120044
-  - Soldier UnrealSearch: 0x130044
-  - Soldier RealSearch: 0x140044
-  - Soldier UnrealActing: 0x150044
-  - Soldier RealActing: 0x160044
-  - Soldier UnrealRadio: 0x170044
-  - Soldier RealRadio: 0x180044
-  - Soldier UnrealReload: 0x190044
-  - Soldier RealReload: 0x1a0044
-  - Soldier UnrealUnholster: 0x1b0044
-  - Soldier RealUnholster: 0x1c0044
-  - Soldier UnrealCarried: 0x1d0044
-  - Soldier RealCarried: 0x1e0044
-  - Soldier UnrealCqc: 0x10045
-  - Soldier RealCqc: 0x20045
-  - Soldier UnrealLadder: 0x30045
-  - Soldier RealLadder: 0x40045
-  - Soldier UnrealStep: 0x50045
-  - Soldier RealStep: 0x60045
-  - Soldier UnrealStdbyVehicle: 0x70045
-  - Soldier RealStdbyVehicle: 0x80045
-  - Soldier UnrealSearchLight: 0x90045
-  - Soldier RealSearchLight: 0xa0045
-  - Soldier UnrealMortar: 0xb0045
-  - Soldier RealMortar: 0xc0045
-  - Soldier UnrealTurret: 0xd0045
-  - Soldier RealTurret: 0xe0045
-  - Soldier UnrealRideVehicle: 0xf0045
-  - Soldier RealRideVehicle: 0x100045
-  - Soldier UnrealDown: 0x110045
-  - Soldier RealDown: 0x120045
-  - Soldier UnrealRideHeli: 0x150045
-  - Soldier RealRideHeli: 0x160045
-  - Soldier UnrealOthers: 0x190045
-  - Soldier RealOthers: 0x1a0045
   - Hostage: 0x47
-  - Hostage System: 0x10047
-  - Hostage base: 0x20047
-  - Hostage fova: 0x30047
-  - Hostage Controller: 0x40047
-  - Hostage Ai: 0x50047
-  - Hostage Plugin: 0x60047
-  - Hostage DEBUG: 0x70047
-  - FoxQuark: 0x21
-  - GameCore: 0x20
-  - GameCoreSystem: 0x10020
-  - GameCoreObject: 0x20020
-  - GameCorePlugin: 0x30020
-  - GameCoreAgent: 0x40020
-  - GameCoreSynchronizer: 0x50020
-  - Unnamed: 0x1
+  - TppPlayer: 0x48
+  - Parasite: 0x49
+  - Heli: 0x4a
+  - Corpse: 0x4b
+  - Corpse: 0x4c
+  - CommandPost2: 0x4d
+  - MbQuiet: 0x4e
+  - Equip: 0x58
+  - EquipPreview: 0x59
+  - Bullet: 0x5a
+  - Pickable: 0x5b
+  - Throwing: 0x5c
+  - Shell: 0x5d
+  - Placed: 0x5e
+  - Collection: 0x5f
+  - FultonBalloon: 0x60
+  - SupportAttack: 0x62
+  - RangeAttack: 0x63
+  - Decoy: 0x65
+  - Casing: 0x66
+  - Dung: 0x67
+  - tpp HighSpeedCamera: 0x6a
+  - Gimmick: 0x6b
+  - Gc Gimmick: 0x6c
+  - Collectible: 0x6d
+  - tpp Effect: 0x6e
+  - Tpp Sound: 0x6f
+  - tpp Ui: 0x70
+  - TppRadio: 0x71
+  - tpp Network: 0x73
+  - tpp Gk: 0x75
+  - POI Core: 0x78
+  - Ruleset Core: 0x79
+  - Script Util: 0x7a
   - Unnamed Object: 0x10001
-  - Unnamed HashMap: 0x20001
-  - Unnamed StringMap: 0x30001
-  - Unnamed SharedObject: 0x40001
-  - Unnamed STL: 0x50001
-  - Unnamed SPContainer: 0x60001
-  - Unnamed MemoryAnalyzer: 0x70001
-  - Unnamed Others: 0x80001
-  - String: 0x2
   - CString Data(String): 0x10002
-  - CString Data(Const String): 0x20002
-  - CString Data(Path): 0x30002
-  - KernelString: 0x40002
-  - SharedString: 0x50002
-  - SharedStringPool: 0x60002
-  - SharedPathPool: 0x70002
-  - SharedPathPoolSub: 0x80002
-  - SharedPathPoolBin: 0x90002
-  - JobTask: 0x3
   - Job: 0x10003
-  - Task: 0x20003
-  - Perf: 0x30003
-  - Scratch: 0x40003
-  - Kernel Core: 0x4
   - Kernel: 0x10004
-  - Log: 0x20004
-  - Hid: 0x30004
-  - Crypt: 0x40004
-  - Fs: 0x1c
-  - Network: 0x18
-  - Network System: 0x10018
-  - Network Debug: 0x20018
-  - Anim: 0x9
+  - Sound Core System: 0x10007
+  - Audio System: 0x10008
   - AnimControl: 0x10009
-  - AnimPlugin: 0xb0009
-  - AnimPlayControl: 0xc0009
-  - AnimFile: 0x20009
-  - AnimSystem: 0x70009
-  - GraphControl: 0x30009
-  - GraphDataFile: 0x50009
-  - GraphElementFile: 0x80009
-  - GraphRawFile: 0x90009
-  - GraphEditorFile: 0xa0009
-  - GraphContainer: 0xd0009
-  - MotionGraph System: 0x40009
-  - MotionGraph File: 0x60009
-  - MotionGraph Debug: 0xe0009
-  - AnimJobPacket: 0xf0009
-  - AnimDebug: 0x100009
-  - Cc: 0xb
-  - CcControl: 0x1000b
-  - CcModules: 0x2000b
-  - Demo: 0x19
-  - DemoEntity: 0x10019
-  - DemoObject: 0x20019
-  - DemoFunctor: 0x30019
-  - DemoEditor: 0x40019
-  - DemoLocator: 0x50019
-  - DemoStreamAnim: 0x60019
-  - DemoStreamLocator: 0x70019
-  - DemoStreamParts: 0x80019
-  - DemoStreamBonelessModel: 0x90019
-  - DemoStreamOneMesh: 0xa0019
-  - DemoStreamCamera: 0xb0019
-  - DemoStreamIndex: 0xc0019
-  - DemoStreamFova: 0xd0019
-  - DemoStreamControllerAnim: 0xe0019
-  - DemoStreamControllerNode: 0xf0019
-  - DemoStreamControllerModel: 0x100019
-  - DemoStreamControllerLocator: 0x110019
-  - DemoDesc: 0x120019
-  - DemoLocateObject: 0x130019
-  - DemoPlaybackAddon: 0x140019
-  - DemoFunctorCollector: 0x150019
-  - DemoConstraint: 0x160019
-  - DemoCommand: 0x170019
-  - DemoEventConText: 0x180019
-  - DemoEventParameter: 0x190019
-  - DemoBuffer: 0x1a0019
-  - DemoCallback: 0x1b0019
-  - DemoParameter: 0x1c0019
-  - DemoPacketPlugin: 0x1d0019
-  - DemoJob: 0x1e0019
-  - Des: 0x17
-  - Des Object: 0x10017
-  - Des Util: 0x20017
-  - Des File: 0x30017
-  - Des Job: 0x40017
-  - Fx: 0xd
-  - FxTempWork: 0x1000d
-  - FxJob: 0x2000d
-  - FxEffectUser: 0x3000d
-  - FxUnnamedContainer: 0x4000d
-  - FxFootPrint: 0x5000d
-  - FxInstanceBlock: 0x6000d
-  - FxInstance: 0x7000d
-  - FxInstancePreData: 0x8000d
-  - FxData: 0x9000d
-  - FxLocator: 0xa000d
-  - FxEdData: 0xb000d
-  - FxSystem: 0xc000d
-  - FxReservableObject: 0xd000d
-  - Geo: 0xa
   - Geo File: 0x1000a
-  - Geo System: 0x2000a
-  - Geo BVH: 0x3000a
-  - Geo Collision: 0x4000a
-  - Geo Trap: 0x5000a
-  - Geo TrapModule: 0x6000a
-  - Geo Target: 0x7000a
-  - Geo Area: 0x8000a
-  - Geo Path: 0x9000a
-  - Geo Search: 0xa000a
-  - Geo Geom: 0xb000a
-  - Geox Voxel: 0xc000a
-  - Geox Debug: 0xd000a
-  - Geo Material: 0xe000a
-  - Geo Col Resource: 0xf000a
-  - Geo Col Job: 0x10000a
-  - Geo Col Decal: 0x11000a
-  - Geo Col Cache: 0x12000a
-  - Geo Col util: 0x13000a
-  - Geo Attach: 0x14000a
-  - Geo Poly Cache: 0x15000a
-  - Geo Rail: 0x16000a
-  - Geo JobPacket: 0x17000a
-  - Geo SweepMain: 0x18000a
-  - Geo SweepBlock: 0x19000a
-  - Geo CheckControl: 0x1a000a
-  - Geo JobTiny: 0x1b000a
-  - Geo JobMulti: 0x1c000a
-  - Geo JobMultiWork: 0x1d000a
-  - Grx: 0x1b
-  - Grx System: 0x1001b
-  - Grx Atmosphere: 0x2001b
-  - Grx ColorCorrection: 0x3001b
-  - Grx FacialTexture: 0x4001b
-  - Grx Fog: 0x5001b
-  - Grx Light: 0x6001b
-  - Grx LightAccessor: 0x7001b
-  - Grx LightArray: 0x8001b
-  - Grx LightArrayFile: 0x9001b
-  - Grx LightCapture: 0xa001b
-  - Grx LightProbe: 0xb001b
-  - Grx ModelConvert: 0xc001b
-  - Grx ModelCut: 0xd001b
-  - Grx ModelDeform: 0xe001b
-  - Grx Occluder: 0xf001b
-  - Grx OccluderArray: 0x10001b
-  - Grx OccluderArrayFile: 0x11001b
-  - Grx OccluderEx: 0x12001b
-  - Grx PeriodicActor: 0x13001b
-  - Grx PluginSetting: 0x14001b
-  - Grx RainFilter: 0x15001b
-  - Grx Reflection: 0x16001b
-  - Grx ShMath: 0x17001b
-  - Grx SkyCapture: 0x18001b
-  - Grx SSAO: 0x19001b
-  - Grx TextureConverter: 0x1a001b
-  - Grx TmpActor: 0x1b001b
-  - Grx Utility: 0x1c001b
-  - Grx JobSyncPacket: 0x1d001b
-  - Grx Debug: 0x1e001b
-  - Grx Temporary: 0x1f001b
-  - Nav: 0xc
+  - CcControl: 0x1000b
   - NavSystem: 0x1000c
-  - NavPathfind: 0x2000c
-  - NavNavigation: 0x3000c
-  - NavNavigationFile: 0x4000c
-  - NavBounder: 0x5000c
-  - NavGeneration: 0x6000c
-  - NavDebug: 0x7000c
-  - NavWorld: 0x8000c
-  - NavData: 0x9000c
-  - NavTactical: 0xa000c
-  - DataChunk: 0xb000c
-  - NavmeshChunk: 0xc000c
-  - WorkInfo: 0xd000c
-  - NavmeshWorkInfo: 0xe000c
-  - NavigationGraphWorkInfo: 0xf000c
-  - SegmentChunk: 0x10000c
-  - SegmentGraphWorkInfo: 0x11000c
-  - DynamicNavigationGraph: 0x12000c
-  - DynamicSegmentGraph: 0x13000c
-  - DynamicDataChunkBucket: 0x14000c
-  - DynamicArraySetContainer::Handle: 0x15000c
-  - DynamicArraySetContainer::Header: 0x16000c
-  - DynamicArraySetContainer::Array: 0x17000c
-  - FileUnit: 0x18000c
-  - Map: 0x19000c
-  - Ph: 0x15
-  - Ph Core: 0x10015
-  - Ph World Memory: 0x20015
-  - Ph Core Resource: 0x30015
-  - Ph Object: 0x40015
-  - Ph Data: 0x50015
-  - Ph Param: 0x60015
-  - Ph Association: 0x70015
-  - Ph Association Data: 0x80015
-  - Ph Util: 0x90015
-  - Ph Job: 0xa0015
-  - Ph Other: 0xb0015
-  - Sound System: 0x40007
-  - Sound Action: 0x50007
-  - Sound Anim: 0x60007
-  - Sound Area: 0x70007
-  - Sound Physics: 0x80007
-  - Sound Source: 0x90007
-  - Sound Stream: 0xa0007
-  - Sound Trap: 0xb0007
-  - Sim: 0x16
-  - Sim Work: 0x20016
-  - Sim Object: 0x10016
-  - Sim Data: 0x30016
-  - Sim Param: 0x40016
-  - Sim Util: 0x50016
-  - Sim Association: 0x60016
-  - Sim Cloth: 0x70016
-  - Sim Job: 0x80016
-  - Sim BinaryFile: 0x90016
-  - Ui: 0xe
+  - FxTempWork: 0x1000d
   - UiFile: 0x1000e
-  - UiGraphFile: 0x2000e
-  - UiLayoutFile: 0x3000e
-  - UiModelFile: 0x4000e
-  - UiAnimFile: 0x5000e
-  - UiEditData: 0x6000e
-  - UiFont: 0x7000e
-  - UiGraph: 0x8000e
-  - LangFile: 0x9000e
-  - UiSound: 0xa000e
-  - UiWindow: 0xb000e
-  - UiEd: 0xc000e
-  - UixPrefab: 0xd000e
-  - UixSystem: 0xe000e
-  - UixUtility: 0xf000e
-  - UiCtrl: 0x10000e
-  - UiTexture: 0x11000e
-  - UiTextUnit: 0x12000e
-  - UiTextUnitText: 0x13000e
-  - UiScene: 0x1e
+  - Gr Plugin: 0x1000f
+  - Gr Resource: 0x10010
+  - Gr Model: 0x10011
+  - GkSystem: 0x10012
+  - Ph Core: 0x10015
+  - Sim Object: 0x10016
+  - Des Object: 0x10017
+  - Network System: 0x10018
+  - DemoEntity: 0x10019
+  - Grx System: 0x1001b
+  - Fs File: 0x1001c
   - UiColorGrp: 0x1001e
+  - GameCoreSystem: 0x10020
+  - FoxQuarkSystem: 0x10021
+  - GameService System: 0x10022
+  - MotherBaseManagement System: 0x1002c
+  - TppSystem2Mission: 0x1002e
+  - Uav System: 0x10032
+  - SecurityCamera System: 0x10033
+  - Buddy System: 0x10035
+  - Boss System: 0x10037
+  - Animal System: 0x10039
+  - Vehicle System: 0x1003d
+  - NewChara System PassengerInfo: 0x10041
+  - Soldier System: 0x10042
+  - Soldier GameObject: 0x10043
+  - Soldier UnrealBasic: 0x10044
+  - Soldier UnrealCqc: 0x10045
+  - Hostage System: 0x10047
+  - Parasite System: 0x10049
+  - Heli System: 0x1004a
+  - Corpse System: 0x1004b
+  - Corpse Ai: 0x1004c
+  - CommandPost2 GameObject: 0x1004d
+  - MbQuiet System: 0x1004e
+  - Equip System: 0x10058
+  - EquipPreview System: 0x10059
+  - Bullet System: 0x1005a
+  - Pickable System: 0x1005b
+  - Throwing System: 0x1005c
+  - Shell System: 0x1005d
+  - Placed System: 0x1005e
+  - Collection System: 0x1005f
+  - FultonBalloon System: 0x10060
+  - Casing System: 0x10066
+  - Gimmick Base: 0x1006b
+  - Tpp Effect Uncategorized: 0x1006e
+  - Tpp Sound System: 0x1006f
+  - tpp Ui UnNamed: 0x10070
+  - Unnamed HashMap: 0x20001
+  - CString Data(Const String): 0x20002
+  - Task: 0x20003
+  - Log: 0x20004
+  - Sound Core Control: 0x20007
+  - Audio Object: 0x20008
+  - AnimFile: 0x20009
+  - Geo System: 0x2000a
+  - CcModules: 0x2000b
+  - NavPathfind: 0x2000c
+  - FxJob: 0x2000d
+  - UiGraphFile: 0x2000e
+  - Gr PluginResource: 0x2000f
+  - Gr Fmdl: 0x20010
+  - Gr ModelArray: 0x20011
+  - GkPartsData: 0x20012
+  - Ph World Memory: 0x20015
+  - Sim Work: 0x20016
+  - Des Util: 0x20017
+  - Network Debug: 0x20018
+  - DemoObject: 0x20019
+  - Grx Atmosphere: 0x2001b
+  - Fs Path Resolver: 0x2001c
+  - Block System: 0x2001d
   - UiCamera: 0x2001e
-  - UiCameraData: 0x3001e
-  - UiAnim: 0x4001e
-  - UiAnimData: 0x5001e
-  - UiModel: 0x6001e
-  - UiModelData: 0x7001e
-  - UiModelNode: 0x8001e
-  - UiModelMesh: 0x9001e
-  - UiModelNull: 0xa001e
-  - UiModelText: 0xb001e
-  - UiModelStencil: 0xc001e
-  - UiModelVertex: 0xe001e
-  - UiLayout: 0xf001e
-  - UiModelLayoutData: 0x10001e
-  - UiModelTexPrefetch: 0x11001e
-  - UiPlayControlPool: 0x12001e
-  - UiAnimNode: 0x13001e
-  - UiMeshParam: 0x14001e
-  - UiStencilParam: 0x15001e
+  - GameCoreObject: 0x20020
+  - GameService GsRoute: 0x20022
+  - tpp MBCoreUnNamed: 0x2002a
+  - MotherBaseManagement Staff: 0x2002c
+  - TppSystem2Location: 0x2002e
+  - Uav Ai: 0x20032
+  - SecurityCamera Base: 0x20033
+  - Buddy Base: 0x20035
+  - Boss Controller: 0x20037
+  - Animal Base: 0x20039
+  - Vehicle Data: 0x2003d
+  - MultiPlayer System: 0x2003f
+  - NewChara System: 0x20041
+  - Soldier ParamTable: 0x20042
+  - Soldier Ai: 0x20043
+  - Soldier RealBasic: 0x20044
+  - Soldier RealCqc: 0x20045
+  - Hostage base: 0x20047
+  - Player System: 0x20048
+  - Parasite Base: 0x20049
+  - Heli Base: 0x2004a
+  - Corpse Synchronizer: 0x2004b
+  - Corpse CoreAi: 0x2004c
+  - CommandPost2 Impl: 0x2004d
+  - MbQuiet Ai: 0x2004e
+  - Equip Base: 0x20058
+  - Bullet Base: 0x2005a
+  - Pickable Base: 0x2005b
+  - Throwing Base: 0x2005c
+  - Shell Base: 0x2005d
+  - Placed Base: 0x2005e
+  - Collection Base: 0x2005f
+  - FultonBalloon Base: 0x20060
+  - Casing Base: 0x20066
+  - Gimmick Save: 0x2006b
+  - Tpp Effect Filter2D: 0x2006e
+  - Tpp Sound Ambient: 0x2006f
+  - tpp Ui System: 0x20070
+  - TppRadioSystem: 0x20071
+  - tpp Gk System: 0x20075
+  - POI Base: 0x20078
+  - Ruleset Base: 0x20079
+  - Script Util System: 0x2007a
+  - Unnamed StringMap: 0x30001
+  - CString Data(Path): 0x30002
+  - Perf: 0x30003
+  - Hid: 0x30004
+  - Sound Core Debug: 0x30007
+  - Audio Object: 0x30008
+  - GraphControl: 0x30009
+  - Geo BVH: 0x3000a
+  - NavNavigation: 0x3000c
+  - FxEffectUser: 0x3000d
+  - UiLayoutFile: 0x3000e
+  - Gr ResourceWork: 0x3000f
+  - Gr ModelResource: 0x30010
+  - Gr ModelCut: 0x30011
+  - GkPartsBuilder: 0x30012
+  - Ph Core Resource: 0x30015
+  - Sim Data: 0x30016
+  - Des File: 0x30017
+  - DemoFunctor: 0x30019
+  - Grx ColorCorrection: 0x3001b
   - Fs Debug: 0x3001c
-  - Audio AllocHook: 0x80008
+  - Block Internal System: 0x3001d
+  - UiCameraData: 0x3001e
+  - GameCorePlugin: 0x30020
+  - GameService GsSightCheck: 0x30022
+  - tpp MBCoreConstruct: 0x3002a
+  - MotherBaseStageSystem: 0x3002b
+  - MotherBaseManagement EquipDevelop: 0x3002c
+  - tpp MissionBlockSystem: 0x3002d
+  - TppSystem2GameService: 0x3002e
+  - Uav Action: 0x30032
+  - SecurityCamera Ai: 0x30033
+  - Boss Ai: 0x30037
+  - Animal Controller: 0x30039
+  - Vehicle GameObject: 0x3003d
+  - NewChara System Anim: 0x30041
+  - Soldier FaceSystem: 0x30042
+  - Soldier DEBUG: 0x30043
+  - Soldier UnrealAttack: 0x30044
+  - Soldier UnrealLadder: 0x30045
+  - Hostage fova: 0x30047
+  - Player Avator: 0x30048
+  - Parasite Controller: 0x30049
+  - Heli Controller: 0x3004a
+  - Corpse FovaResource: 0x3004b
+  - Corpse CarriedAi: 0x3004c
+  - CommandPost2 RoleController: 0x3004d
+  - MbQuiet Action: 0x3004e
+  - Equip Data: 0x30058
+  - Bullet Data: 0x3005a
+  - Gimmick System: 0x3006b
+  - Tpp Effect LensFlareData: 0x3006e
+  - Tpp Sound Area: 0x3006f
+  - tpp Ui CommonData: 0x30070
+  - Unnamed SharedObject: 0x40001
+  - KernelString: 0x40002
+  - Scratch: 0x40003
+  - Crypt: 0x40004
+  - Sound System: 0x40007
+  - Audio Object: 0x40008
+  - MotionGraph System: 0x40009
+  - Geo Collision: 0x4000a
+  - NavNavigationFile: 0x4000c
+  - FxUnnamedContainer: 0x4000d
+  - UiModelFile: 0x4000e
+  - Gr ResidentResourceWork: 0x4000f
+  - Gr CloneResource: 0x40010
+  - Gr ModelVertexColor: 0x40011
+  - GkPartsDirector: 0x40012
+  - Ph Object: 0x40015
+  - Sim Param: 0x40016
+  - Des Job: 0x40017
+  - DemoEditor: 0x40019
+  - Grx FacialTexture: 0x4001b
+  - Block Package System: 0x4001d
+  - UiAnim: 0x4001e
+  - GameCoreAgent: 0x40020
   - GameService Debug: 0x40022
   - tpp MBCoreNetwork: 0x4002a
-  - Gimmick Old: 0xd006b
-  - Tpp Effect Container: 0x17006e
-  - tpp Network: 0x73
-  - tpp Ui PrefabCallFunc: 0x90070
-  - Tpp Sound Music Player: 0x5006f
-  - Ruleset Base: 0x20079
-  - Corpse RealCarried: 0xd004c
-  - Soldier RealDemo: 0x1b0045
-  - Hostage DUMMY: 0x80047
   - tpp MotherBaseStageBlockSystem: 0x4002b
-  - FoxQuarkSystem: 0x10021
-  - GameCoreDebug: 0x60020
+  - MotherBaseManagement WeaponPartsDevelop: 0x4002c
+  - tpp SystemLocation: 0x4002d
+  - TppSystem2Luxury: 0x4002e
+  - Uav DEBUG: 0x40032
+  - SecurityCamera Plugin: 0x40033
+  - Buddy Controller: 0x40035
+  - Boss Plugin: 0x40037
+  - Animal Ai: 0x40039
+  - Vehicle UnrealInstance: 0x4003d
+  - NewChara System Effect: 0x40041
+  - Soldier FovaSystem: 0x40042
+  - Soldier SysUtil: 0x40043
+  - Soldier RealAttack: 0x40044
+  - Soldier RealLadder: 0x40045
+  - Hostage Controller: 0x40047
+  - Parasite Ai: 0x40049
+  - Heli Ai: 0x4004a
+  - Corpse Quark: 0x4004b
+  - Corpse StandbyVehicleAi: 0x4004c
+  - CommandPost2 RoleCoder: 0x4004d
+  - MbQuiet DEBUG: 0x4004e
+  - Gimmick Ladder: 0x4006b
+  - Tpp Effect LensFlareInstance: 0x4006e
+  - Tpp Sound Music: 0x4006f
+  - tpp Ui MenuTermina;: 0x40070
+  - tpp Gk Marker: 0x40075
+  - Unnamed STL: 0x50001
+  - SharedString: 0x50002
   - Debug: 0x50004
-  - Fs: 0x1c
-  - DemoOther: 0x1f0019
-  - FxFile: 0xe000d
-  - PriorityQueueDesc: 0x1a000c
-  - Network Ncl System: 0x70018
+  - Sound Action: 0x50007
+  - Audio Object: 0x50008
+  - GraphDataFile: 0x50009
+  - Geo Trap: 0x5000a
+  - NavBounder: 0x5000c
+  - FxFootPrint: 0x5000d
+  - UiAnimFile: 0x5000e
+  - Gr Font: 0x5000f
+  - Gr MaterialResource: 0x50010
+  - Gr ModelDeform: 0x50011
+  - GkEnvironment: 0x50012
+  - Ph Data: 0x50015
+  - Sim Util: 0x50016
   - Network Nt System: 0x50018
+  - DemoLocator: 0x50019
+  - Grx Fog: 0x5001b
+  - Block Memory: 0x5001d
+  - UiAnimData: 0x5001e
+  - GameCoreSynchronizer: 0x50020
+  - MotherBaseManagement Base: 0x5002c
+  - tpp SystemMission: 0x5002d
+  - TppSystem2Script: 0x5002e
+  - Uav DUMMY: 0x50032
+  - SecurityCamera DEBUG: 0x50033
+  - Buddy Ai: 0x50035
+  - Boss Action: 0x50037
+  - Animal Plugin: 0x50039
+  - Vehicle Constant: 0x5003d
+  - NewChara System AiController: 0x50041
+  - Soldier FovaResource: 0x50042
+  - Soldier SysFace: 0x50043
+  - Soldier UnrealMeleelAttack: 0x50044
+  - Soldier UnrealStep: 0x50045
+  - Hostage Ai: 0x50047
+  - Parasite Plugin: 0x50049
+  - Heli Plugin: 0x5004a
+  - Corpse Realizer: 0x5004b
+  - Corpse DamageAi: 0x5004c
+  - CommandPost2 RadioController: 0x5004d
+  - MbQuiet DUMMY: 0x5004e
+  - Equip Debug: 0x50058
+  - EquipPreview Debug: 0x50059
+  - Bullet Debug: 0x5005a
+  - Pickable Debug: 0x5005b
+  - Throwing Debug: 0x5005c
+  - Shell Debug: 0x5005d
+  - Placed Debug: 0x5005e
+  - Collection Debug: 0x5005f
+  - FultonBalloon Debug: 0x50060
+  - Casing Debug: 0x50066
+  - Gimmick Shared: 0x5006b
+  - Tpp Effect BridgeFunctor: 0x5006e
+  - Tpp Sound Music Player: 0x5006f
+  - tpp Ui CustomNode: 0x50070
+  - tpp Gk CoverPoint: 0x50075
+  - Unnamed SPContainer: 0x60001
+  - SharedStringPool: 0x60002
+  - Core Entity: 0x60004
+  - Sound Anim: 0x60007
+  - Audio Frame: 0x60008
+  - MotionGraph File: 0x60009
+  - Geo TrapModule: 0x6000a
+  - NavGeneration: 0x6000c
+  - FxInstanceBlock: 0x6000d
+  - UiEditData: 0x6000e
+  - Gr StringBuffer: 0x6000f
+  - Gr RenderStateResource: 0x60010
+  - Gr ModelExtMatrix: 0x60011
+  - GkWind: 0x60012
+  - Ph Param: 0x60015
+  - Sim Association: 0x60016
+  - DemoStreamAnim: 0x60019
+  - Grx Light: 0x6001b
+  - Block Head Files: 0x6001d
+  - UiModel: 0x6001e
+  - GameCoreDebug: 0x60020
+  - MotherBaseManagement Resource: 0x6002c
+  - tpp SystemGameSequence: 0x6002d
+  - TppSystem2Misc: 0x6002e
+  - SecurityCamera DUMMY: 0x60033
+  - Buddy Plugin: 0x60035
+  - Boss DEBUG: 0x60037
+  - Animal DEBUG: 0x60039
+  - Vehicle Realizer: 0x6003d
+  - NewChara System AiNode: 0x60041
+  - Soldier Synchronizer: 0x60042
+  - Soldier BlockController: 0x60043
+  - Soldier RealMelleeAttack: 0x60044
+  - Soldier RealStep: 0x60045
+  - Hostage Plugin: 0x60047
+  - Parasite DEBUG: 0x60049
+  - Heli DEBUG: 0x6004a
+  - Corpse Authorizer: 0x6004b
+  - Corpse NormalAi: 0x6004c
+  - CommandPost2 SpeechHandler: 0x6004d
+  - Equip Todo Delete: 0x60058
+  - Gimmick Permanent: 0x6006b
+  - Tpp Effect FxModule: 0x6006e
+  - Tpp Sound Interference: 0x6006f
+  - tpp Ui SaveData: 0x60070
+  - tpp Gk Bush: 0x60075
+  - Unnamed MemoryAnalyzer: 0x70001
+  - SharedPathPool: 0x70002
+  - Lua Entity: 0x70004
+  - Sound Area: 0x70007
+  - Audio Physical: 0x70008
+  - AnimSystem: 0x70009
+  - Geo Target: 0x7000a
+  - NavDebug: 0x7000c
+  - FxInstance: 0x7000d
+  - UiFont: 0x7000e
+  - Gr TextureStream: 0x7000f
+  - Gr ShaderResource: 0x70010
+  - Gr ModelReader: 0x70011
+  - GkTerrain: 0x70012
+  - Ph Association: 0x70015
+  - Sim Cloth: 0x70016
+  - Network Ncl System: 0x70018
+  - DemoStreamLocator: 0x70019
+  - Grx LightAccessor: 0x7001b
+  - Block Tail Files: 0x7001d
+  - UiModelData: 0x7001e
+  - MotherBaseManagement DataBase: 0x7002c
+  - tpp SystemWeather: 0x7002d
+  - TppSystem2Debug: 0x7002e
+  - Buddy DEBUG: 0x70035
+  - Boss DUMMY: 0x70037
+  - Animal DUMMY Data: 0x70039
+  - Vehicle RealInstance: 0x7003d
+  - NewChara System AiKnowLedge: 0x70041
+  - Soldier Quark: 0x70042
+  - Soldier BlockControllerImpl: 0x70043
+  - Soldier UnrealGrenade: 0x70044
+  - Soldier UnrealStdbyVehicle: 0x70045
+  - Hostage DEBUG: 0x70047
+  - Parasite DUMMY: 0x70049
+  - Heli DUMMY: 0x7004a
+  - Corpse PlugCore: 0x7004b
+  - Corpse DEBUG Ai: 0x7004c
+  - CommandPost2 ActionController: 0x7004d
+  - Gimmick Identifier: 0x7006b
+  - Tpp Effect Weather: 0x7006e
+  - tpp Ui Ending: 0x70070
+  - tpp Gk Grass: 0x70075
+  - Unnamed Others: 0x80001
+  - SharedPathPoolSub: 0x80002
+  - Entity Info: 0x80004
+  - Sound Physics: 0x80007
+  - Audio AllocHook: 0x80008
+  - GraphElementFile: 0x80009
+  - Geo Area: 0x8000a
+  - NavWorld: 0x8000c
+  - FxInstancePreData: 0x8000d
+  - UiGraph: 0x8000e
+  - Gr RenderBuffer: 0x8000f
+  - Gr ShaderFileResource: 0x80010
+  - Gr OptCamModel: 0x80011
+  - GkPad: 0x80012
+  - Ph Association Data: 0x80015
+  - Sim Job: 0x80016
+  - DemoStreamParts: 0x80019
+  - Grx LightArray: 0x8001b
+  - Block Stage Common: 0x8001d
+  - UiModelNode: 0x8001e
+  - tpp SystemWeatherWork: 0x8002d
+  - Buddy DUMMY: 0x80035
+  - Animal DUMMY Instace: 0x80039
+  - Vehicle Body: 0x8003d
+  - NewChara System Situation: 0x80041
+  - Soldier Realizer: 0x80042
+  - Soldier BlockGroup: 0x80043
+  - Soldier RealGrenade: 0x80044
+  - Soldier RealStdbyVehicle: 0x80045
+  - Hostage DUMMY: 0x80047
+  - Corpse PlugActionCore: 0x8004b
+  - Corpse UnrealBasic: 0x8004c
+  - CommandPost2 Core Ai: 0x8004d
+  - Gimmick GameObject: 0x8006b
+  - Tpp Effect DebugOnly: 0x8006e
+  - tpp Ui Callback: 0x80070
+  - tpp Gk Grass Work: 0x80075
+  - Unnamed Entity: 0x90001
+  - SharedPathPoolBin: 0x90002
+  - Entity Dynamic Property: 0x90004
+  - Sound Source: 0x90007
+  - GraphRawFile: 0x90009
+  - Geo Path: 0x9000a
+  - NavData: 0x9000c
+  - FxData: 0x9000d
+  - LangFile: 0x9000e
+  - Gr RenderTarget: 0x9000f
+  - Gr ShaderObjectResource: 0x90010
+  - Gr OverlayModel: 0x90011
+  - GkCollectible: 0x90012
+  - Ph Util: 0x90015
+  - Sim BinaryFile: 0x90016
+  - DemoStreamBonelessModel: 0x90019
+  - Grx LightArrayFile: 0x9001b
+  - Block Stage Large: 0x9001d
+  - UiModelMesh: 0x9001e
+  - tpp SystemEvent: 0x9002d
+  - Animal DUMMY Realize: 0x90039
+  - Vehicle Attachment: 0x9003d
+  - NewChara System Sound: 0x90041
+  - Soldier Authorizer: 0x90042
+  - Soldier ParamTable: 0x90043
+  - Soldier UnrealCover: 0x90044
+  - Soldier UnrealSearchLight: 0x90045
+  - Corpse UnrealPlugCore: 0x9004b
+  - Corpse RealBasic: 0x9004c
+  - CommandPost2 Sneak Ai: 0x9004d
+  - Gimmick Online: 0x9006b
+  - Tpp Effect System: 0x9006e
+  - tpp Ui PrefabCallFunc: 0x90070
+  - tpp Gk obr skl: 0x90075
+  - Unnamed Data: 0xa0001
+  - Core Entity Archive: 0xa0004
+  - Sound Stream: 0xa0007
+  - GraphEditorFile: 0xa0009
+  - Geo Search: 0xa000a
+  - NavTactical: 0xa000c
+  - FxLocator: 0xa000d
+  - UiSound: 0xa000e
+  - Gr Command: 0xa000f
+  - Gr ShaderTechnique: 0xa0010
+  - Gr Clone: 0xa0011
+  - GkTargetData: 0xa0012
+  - Ph Job: 0xa0015
+  - DemoStreamOneMesh: 0xa0019
+  - Grx LightCapture: 0xa001b
+  - Block Stage Small: 0xa001d
+  - UiModelNull: 0xa001e
+  - tpp SystemCheckPoint: 0xa002d
+  - Bird Base: 0xa0039
+  - Vehicle Weapon: 0xa003d
+  - NewChara System SightController: 0xa0041
+  - Soldier PlugCore: 0xa0042
+  - Soldier RealCover: 0xa0044
+  - Soldier RealSearchLight: 0xa0045
+  - Corpse StateCollector: 0xa004b
+  - Corpse UnrealStdbyVehicle: 0xa004c
+  - CommandPost2 Alert Ai: 0xa004d
+  - Gimmick etc: 0xa006b
+  - Tpp Effect ChPlugin: 0xa006e
+  - tpp Gk SmartDevice: 0xa0075
+  - Unnamed Data Body: 0xb0001
+  - Core File: 0xb0004
+  - Sound Trap: 0xb0007
+  - AnimPlugin: 0xb0009
+  - Geo Geom: 0xb000a
+  - DataChunk: 0xb000c
+  - FxEdData: 0xb000d
+  - UiWindow: 0xb000e
+  - Gr CommandBuffer: 0xb000f
+  - Gr IndexBufferResource: 0xb0010
+  - Gr Decal: 0xb0011
+  - GkObjectBrush: 0xb0012
+  - Ph Other: 0xb0015
+  - DemoStreamCamera: 0xb0019
+  - Grx LightProbe: 0xb001b
+  - UiModelText: 0xb001e
+  - tpp DefaultParameter: 0xb002d
+  - Bird Controller: 0xb0039
+  - Vehicle AnimationController: 0xb003d
+  - NewChara System SpeechController: 0xb0041
+  - Soldier PlugActionCore: 0xb0042
+  - Soldier UnrealDamage: 0xb0044
+  - Soldier UnrealMortar: 0xb0045
+  - Corpse DamageHandler: 0xb004b
+  - Corpse RealStdbyVehicle: 0xb004c
+  - CommandPost2 Caution Ai: 0xb004d
+  - Gimmick Editor: 0xb006b
+  - Tpp Effect Ocean: 0xb006e
+  - tpp Gk DiscoverSensor: 0xb0075
+  - Unnamed File: 0xc0001
+  - Core Entity File: 0xc0004
   - Sound File: 0xc0007
+  - AnimPlayControl: 0xc0009
+  - Geox Voxel: 0xc000a
+  - NavmeshChunk: 0xc000c
+  - FxSystem: 0xc000d
+  - UiEd: 0xc000e
+  - Gr CommandCluster: 0xc000f
+  - Gr VertexBufferResource: 0xc0010
+  - Gr Terrain: 0xc0011
+  - GkGameScript: 0xc0012
+  - DemoStreamIndex: 0xc0019
+  - Grx ModelConvert: 0xc001b
+  - UiModelStencil: 0xc001e
+  - tpp EventSequenceManager: 0xc002d
+  - Bird Ai: 0xc0039
+  - Vehicle ManeuverController: 0xc003d
+  - NewChara System ResponseController: 0xc0041
+  - Soldier UnrealPlugCore: 0xc0042
+  - Soldier RealDamage: 0xc0044
+  - Soldier RealMortar: 0xc0045
+  - Corpse FlagInfo: 0xc004b
+  - Corpse UnrealCarried: 0xc004c
+  - CommandPost2 Evasion Ai: 0xc004d
+  - Gimmick Debug: 0xc006b
+  - Tpp Effect DirtyModel: 0xc006e
+  - Unnamed Array: 0xd0001
+  - Core Raw File: 0xd0004
+  - GraphContainer: 0xd0009
+  - Geox Debug: 0xd000a
+  - WorkInfo: 0xd000c
+  - FxReservableObject: 0xd000d
+  - UixPrefab: 0xd000e
+  - Gr MacroPacket: 0xd000f
+  - Gr VertexStreamResource: 0xd0010
+  - Gr Primitive: 0xd0011
+  - GkVoice: 0xd0012
+  - DemoStreamFova: 0xd0019
+  - Grx ModelCut: 0xd001b
+  - tpp GameConfig: 0xd002d
+  - Bird Plugin: 0xd0039
+  - Vehicle SkidmarksController: 0xd003d
+  - NewChara System NaviController: 0xd0041
+  - Soldier InfoCollector: 0xd0042
+  - Soldier UnrealFulton: 0xd0044
+  - Soldier UnrealTurret: 0xd0045
+  - Corpse ParamCoder: 0xd004b
+  - Corpse RealCarried: 0xd004c
+  - CommandPost2 DEBUG: 0xd004d
+  - Gimmick Old: 0xd006b
+  - Tpp Effect VfxEffectCollect: 0xd006e
+  - tpp Gk NoticeSensor: 0xd0075
+  - Unnamed List: 0xe0001
+  - Core Handle: 0xe0004
+  - MotionGraph Debug: 0xe0009
+  - Geo Material: 0xe000a
+  - NavmeshWorkInfo: 0xe000c
+  - FxFile: 0xe000d
+  - UixSystem: 0xe000e
+  - Gr SubComamndContext: 0xe000f
+  - Gr InputLayoutResource: 0xe0010
+  - Gr Draw2D: 0xe0011
+  - GkEventTimer: 0xe0012
+  - DemoStreamControllerAnim: 0xe0019
+  - Grx ModelDeform: 0xe001b
+  - UiModelVertex: 0xe001e
+  - tpp PlayerInfo: 0xe002d
+  - Bird DEBUG: 0xe0039
+  - Vehicle ReliefBlock: 0xe003d
+  - NewChara System RouteController: 0xe0041
+  - Soldier AuthorityCollector: 0xe0042
+  - Soldier RealFulton: 0xe0044
+  - Soldier RealTurret: 0xe0045
+  - Corpse ResponseHandler: 0xe004b
+  - Tpp Effect CigaretteSmoke: 0xe006e
+  - tpp Gk Searchable Light: 0xe0075
+  - Unnamed Graph: 0xf0001
+  - Core Bvh: 0xf0004
+  - AnimJobPacket: 0xf0009
+  - Geo Col Resource: 0xf000a
+  - NavigationGraphWorkInfo: 0xf000c
+  - UixUtility: 0xf000e
+  - Gr Instance: 0xf000f
+  - Gr TextureResource: 0xf0010
+  - Gr ShLight: 0xf0011
+  - GkFacial: 0xf0012
+  - DemoStreamControllerNode: 0xf0019
+  - Grx Occluder: 0xf001b
+  - UiLayout: 0xf001e
+  - tpp Storage: 0xf002d
+  - Bird DUMMY: 0xf0039
+  - Vehicle ProcedureController: 0xf003d
+  - NewChara System DamageController: 0xf0041
+  - Soldier DamageHandler: 0xf0042
+  - Soldier UnrealHoldup: 0xf0044
+  - Soldier UnrealRideVehicle: 0xf0045
+  - Corpse ActionController: 0xf004b
+  - Tpp Effect Atmosphere: 0xf006e
+  - tpp Gk GZ: 0xf0075
+  - Unnamed GraphX: 0x100001
+  - Core Skeleton: 0x100004
+  - AnimDebug: 0x100009
+  - Geo Col Job: 0x10000a
+  - SegmentChunk: 0x10000c
+  - UiCtrl: 0x10000e
+  - Gr Daemon: 0x10000f
+  - Gr ModelTransform: 0x100010
+  - Gr Light: 0x100011
+  - GkSubtitles: 0x100012
+  - DemoStreamControllerModel: 0x100019
+  - Grx OccluderArray: 0x10001b
+  - UiModelLayoutData: 0x10001e
+  - tpp SystemDebug: 0x10002d
+  - Vehicle Synchronizer: 0x10003d
+  - NewChara System RailController: 0x100041
+  - Soldier Conversation: 0x100042
+  - Soldier RealHoldup: 0x100044
+  - Soldier RealRideVehicle: 0x100045
+  - Corpse UnrealActionController: 0x10004b
+  - Tpp Effect LightProbe: 0x10006e
+  - tpp Gk Route: 0x100075
+  - Connect Point File: 0x110004
+  - Geo Col Decal: 0x11000a
+  - SegmentGraphWorkInfo: 0x11000c
+  - UiTexture: 0x11000e
+  - Gr GeTools: 0x11000f
+  - Gr TextrueStream: 0x110010
+  - Gr LightSearch: 0x110011
+  - GkFx: 0x110012
+  - DemoStreamControllerLocator: 0x110019
+  - Grx OccluderArrayFile: 0x11001b
+  - UiModelTexPrefetch: 0x11001e
+  - tpp StoryFlag: 0x11002d
+  - Vehicle VantagePointSystem: 0x11003d
+  - NewChara System DemoAnimController: 0x110041
+  - Soldier FlagInfo: 0x110042
+  - Soldier UnrealNotice: 0x110044
+  - Soldier UnrealDown: 0x110045
+  - Corpse SoundController: 0x11004b
+  - Tpp Effect Fire: 0x11006e
+  - tpp Gk OldLight: 0x110075
+  - Core Serializer: 0x120004
+  - Geo Col Cache: 0x12000a
+  - DynamicNavigationGraph: 0x12000c
+  - UiTextUnit: 0x12000e
+  - Gr DgInstance: 0x12000f
+  - Gr TextrueStreamStatus: 0x120010
+  - Gr LightVolume: 0x120011
+  - GkFova: 0x120012
+  - DemoDesc: 0x120019
+  - Grx OccluderEx: 0x12001b
+  - UiPlayControlPool: 0x12001e
+  - tpp GzSaveData: 0x12002d
+  - Vehicle DEPRECATED: 0x12003d
+  - NewChara System GameObjectInfo: 0x120041
+  - Soldier ParamCoder: 0x120042
+  - Soldier RealNotice: 0x120044
+  - Soldier RealDown: 0x120045
+  - Corpse RealizedCorpse: 0x12004b
+  - Tpp Effect Light: 0x12006e
+  - tpp Gk Emblem: 0x120075
+  - Core Container: 0x130004
+  - Geo Col util: 0x13000a
+  - DynamicSegmentGraph: 0x13000c
+  - UiTextUnitText: 0x13000e
+  - Gr ShrinkBuffer: 0x13000f
+  - Gr TextrueRequest: 0x130010
+  - Gr ApproximatedLight: 0x130011
+  - GkSimpleCoverAndConnect: 0x130012
+  - DemoLocateObject: 0x130019
+  - Grx PeriodicActor: 0x13001b
+  - UiAnimNode: 0x13001e
+  - tpp GzSaveLoadManager: 0x13002d
+  - Vehicle EDIT: 0x13003d
+  - NewChara System GameObjectRealizer: 0x130041
+  - Soldier ResponseHandler: 0x130042
+  - Soldier UnrealSearch: 0x130044
+  - Tpp Effect FootPrint: 0x13006e
+  - Core Data: 0x140004
+  - Geo Attach: 0x14000a
+  - DynamicDataChunkBucket: 0x14000c
+  - Gr GBuffer: 0x14000f
+  - Gr Job: 0x140010
+  - Gr Bounding: 0x140011
+  - GkVoiceChat: 0x140012
+  - DemoPlaybackAddon: 0x140019
+  - Grx PluginSetting: 0x14001b
+  - UiMeshParam: 0x14001e
+  - tpp PlayRecord: 0x14002d
+  - Vehicle DEBUG: 0x14003d
+  - NewChara System FacialUtility: 0x140041
+  - Soldier DiscoverManager: 0x140042
+  - Soldier RealSearch: 0x140044
+  - Corpse GameObject: 0x14004b
+  - Tpp Effect Skidmarks: 0x14006e
+  - Core Data Body: 0x150004
+  - Geo Poly Cache: 0x15000a
+  - DynamicArraySetContainer::Handle: 0x15000c
+  - Gr MemoryObject: 0x15000f
+  - Gr JobPascket: 0x150010
+  - Gr VisibilityTest: 0x150011
+  - GkLanguage: 0x150012
+  - DemoFunctorCollector: 0x150019
+  - Grx RainFilter: 0x15001b
+  - UiStencilParam: 0x15001e
+  - tpp Video: 0x15002d
+  - Vehicle DUMMY: 0x15003d
+  - NewChara System DirtyModelService: 0x150041
+  - Soldier Noiselistener: 0x150042
+  - Soldier UnrealActing: 0x150044
+  - Soldier UnrealRideHeli: 0x150045
+  - Corpse DEBUG: 0x15004b
+  - Tpp Effect Fire Lights: 0x15006e
+  - Core Save: 0x160004
+  - Geo Rail: 0x16000a
+  - DynamicArraySetContainer::Header: 0x16000c
+  - Gr DynamicVertexBuffer: 0x16000f
+  - Gr JobSyncPacket: 0x160010
+  - Gr Material: 0x160011
+  - GkDebug: 0x160012
+  - DemoConstraint: 0x160019
+  - Grx Reflection: 0x16001b
+  - NewChara System NoiseArea: 0x160041
+  - Soldier ActionController: 0x160042
+  - Soldier RealActing: 0x160044
+  - Soldier RealRideHeli: 0x160045
+  - Tpp Effect FxLocatorTppCustomWork: 0x16006e
+  - Core Message: 0x170004
+  - Geo JobPacket: 0x17000a
+  - DynamicArraySetContainer::Array: 0x17000c
+  - Gr DynamicIndexBuffer: 0x17000f
+  - Gr gd: 0x170010
+  - Gr Shader: 0x170011
+  - DemoCommand: 0x170019
+  - Grx ShMath: 0x17001b
+  - NewChara System AuthorityState: 0x170041
+  - Soldier UnrealActionController: 0x170042
+  - Soldier UnrealRadio: 0x170044
+  - Tpp Effect Container: 0x17006e
+  - Core Label: 0x180004
+  - Geo SweepMain: 0x18000a
+  - FileUnit: 0x18000c
+  - Gr ShadowBuffer: 0x18000f
+  - Gr MappedMemory: 0x180010
+  - Gr Occluder: 0x180011
+  - DemoEventConText: 0x180019
+  - Grx SkyCapture: 0x18001b
+  - NewChara System HumanLightSimModule: 0x180041
+  - Soldier CollisionController: 0x180042
+  - Soldier RealRadio: 0x180044
+  - Core Locator: 0x190004
+  - Geo SweepBlock: 0x19000a
+  - Map: 0x19000c
+  - Gr ShadowConstantRegister: 0x19000f
+  - Gr Umbra: 0x190010
+  - Gr Texture: 0x190011
+  - DemoEventParameter: 0x190019
+  - Grx SSAO: 0x19001b
+  - Soldier DiscoveryController: 0x190042
+  - Soldier UnrealReload: 0x190044
+  - Soldier UnrealOthers: 0x190045
+  - Misc System: 0x1a0004
+  - Geo CheckControl: 0x1a000a
+  - PriorityQueueDesc: 0x1a000c
+  - Gr Render: 0x1a000f
+  - Gr Scene: 0x1a0011
+  - DemoBuffer: 0x1a0019
+  - Grx TextureConverter: 0x1a001b
+  - Soldier EquipController: 0x1a0042
+  - Soldier RealReload: 0x1a0044
+  - Soldier RealOthers: 0x1a0045
+  - TppRadioEspionage: 0x1a0071
+  - Core Temp: 0x1b0004
+  - Geo JobTiny: 0x1b000a
+  - Gr RenderStateResource: 0x1b000f
+  - Gr SceneObject: 0x1b0011
+  - DemoCallback: 0x1b0019
+  - Grx TmpActor: 0x1b001b
+  - NewChara System Base: 0x1b0041
+  - Soldier LifeController: 0x1b0042
+  - Soldier UnrealUnholster: 0x1b0044
+  - Soldier RealDemo: 0x1b0045
+  - Player Base: 0x1b0048
+  - Debug: 0x1c0004
+  - Geo JobMulti: 0x1c000a
+  - Gr ModelBuffer: 0x1c000f
+  - Gr Viewport: 0x1c0011
+  - DemoParameter: 0x1c0019
+  - Grx Utility: 0x1c001b
+  - Soldier NoticeController: 0x1c0042
+  - Soldier RealUnholster: 0x1c0044
+  - Player Plugin: 0x1c0048
+  - Core Test: 0x1d0004
+  - Geo JobMultiWork: 0x1d000a
+  - Gr Camera: 0x1d0011
+  - DemoPacketPlugin: 0x1d0019
+  - Grx JobSyncPacket: 0x1d001b
+  - Soldier SoundController: 0x1d0042
+  - Soldier UnrealCarried: 0x1d0044
+  - Player Component: 0x1d0048
+  - Gr Temporary: 0x1e0011
+  - DemoJob: 0x1e0019
+  - Grx Debug: 0x1e001b
+  - Soldier RealizedSoldier: 0x1e0042
+  - Soldier RealCarried: 0x1e0044
+  - Player Data: 0x1e0048
+  - Gr Debug: 0x1f0011
+  - DemoOther: 0x1f0019
+  - Grx Temporary: 0x1f001b
+  - NewChara System Debug: 0x1f0041
+  - Player Debug: 0x1f0048
 
 {% include spoiler-end %}
