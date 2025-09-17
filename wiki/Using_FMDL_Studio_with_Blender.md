@@ -133,6 +133,12 @@ that have worked several times over:
     Export as Collada and this time do not tick the global transform
     box.
 
+---
+
+## Video guide
+
+{% include youtube id="0Z5Pt9EkUZM" %}
+
 [1]: https://github.com/BobDoleOwndU/FMDL-Studio-v2/wiki
 [2]: https://developer.blender.org/T49814
 [3]: https://www.autodesk.com/developer-network/platform-technologies/fbx-converter-archives
