@@ -2,6 +2,8 @@
 title: Using FMDL Studio with Blender
 permalink: /Using_FMDL_Studio_with_Blender/
 tags: [Tools, Models, Guides]
+redirect_from:
+    - /Blender_and_Unity_3D_modelling_pipeline_notes/
 ---
 
 Blender: [https://www.blender.org/](https://www.blender.org/)
