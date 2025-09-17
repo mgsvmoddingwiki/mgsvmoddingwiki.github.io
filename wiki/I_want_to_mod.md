@@ -9,7 +9,7 @@ permalink: /I_want_to_mod/
     - [Create a custom location](/Create_a_Custom_Map)
     - [Using UAVs in Side-Ops](/Using_UAVs_in_Side_Ops)
   - ## Models
-    - [FMDL Studio v2 [incl. Blender pipeline notes]](/FMDL_Studio_V2)
+    - [Export and modify models](/Using_FMDL_Studio_with_Blender/)
     - [Swap model parts](/Mesh_Mashup)
     - [Custom weapon models](/Custom_weapons)
     - [Hair](/Hair_Materials)
