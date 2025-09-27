@@ -55,6 +55,7 @@
     --dark-theme-color-buttons-hover: hsl(240, 6%, 31%);
     --dark-theme-color-buttons-inset: var(--dark-theme-color-buttons);
     --dark-theme-color-important: hsl(154,65%,32%);
+    --dark-theme-color-important-hover: hsl(154,67%,37%);
     --dark-theme-color-shadow: hsla(0,0%,0%,.2);
 
     --dark-theme-filter-button-active: brightness(0.8);
@@ -82,6 +83,7 @@
     --light-theme-color-buttons-hover: hsl(0, 0%, 100%);
     --light-theme-color-buttons-inset: var(--light-theme-bg-input);
     --light-theme-color-important: hsl(154, 61%, 61%);
+    --light-theme-color-important-hover: hsl(154, 65%, 68%);
     --light-theme-color-shadow: hsla(230, 26%, 61%, .3);
 
     --light-theme-filter-button-active: brightness(0.9);
@@ -109,6 +111,7 @@ body, body.theme-dark {
     --color-buttons-hover: var(--dark-theme-color-buttons-hover);
     --color-buttons-inset: var(--dark-theme-color-buttons-inset);
     --color-important: var(--dark-theme-color-important);
+    --color-important-hover: var(--dark-theme-color-important-hover);
     --color-shadow: var(--dark-theme-color-shadow);
 
     --shadow-primary: 0 2px 20px 0 var(--color-shadow);
@@ -141,6 +144,7 @@ body.theme-light {
     --color-buttons-hover: var(--light-theme-color-buttons-hover);
     --color-buttons-inset: var(--light-theme-color-buttons-inset);
     --color-important: var(--light-theme-color-important);
+    --color-important-hover: var(--light-theme-color-important-hover);
     --color-shadow: var(--light-theme-color-shadow);
 
     --filter-button-active: var(--light-theme-filter-button-active);
@@ -1505,9 +1509,18 @@ ul.index,
     break-inside: avoid-column;
 }
 
-/* Call more attention to a blockquote */
-blockquote.important {
+/* Call more attention to a blockquote, spoiler */
+blockquote.important,
+.spoiler.important .content-button {
     background: var(--color-important);
+}
+
+.spoiler.important .content-button:hover {
+    background: var(--color-important-hover);
+}
+
+.spoiler.important .content-button::before {
+    background: currentColor;
 }
 
 blockquote.important a {
@@ -1641,6 +1654,20 @@ h2.heading-with-frag-id .heading-frag-id-link {
     display: block;
     -webkit-mask-image: url("/assets/images/ui.svg#icons-heading-frag-id");
     mask-image: url("/assets/images/ui.svg#icons-heading-frag-id");
+}
+
+/* Fragment link targets styling (makes it clearer which heading has been linked in scenarios where heading position on page can't align to top of viewport) */
+.heading-with-frag-id:target .heading-frag-id-link {
+    background: var(--color-accent);
+    opacity: 1;
+}
+
+.heading-with-frag-id:target .heading-frag-id-link::before {
+    background: var(--color-accent-foreground);
+}
+
+.heading-with-frag-id:target .heading-frag-id-link:hover {
+    background: var(--color-accent-hover);
 }
 
 
@@ -2967,6 +2994,7 @@ footer {
         --color-buttons-hover: var(--light-theme-color-buttons-hover);
         --color-buttons-inset: var(--light-theme-color-buttons-inset);
         --color-important: var(--light-theme-color-important);
+        --color-important-hover: var(--light-theme-color-important-hover);
         --color-shadow: var(--light-theme-color-shadow);
 
         --filter-button-active: var(--light-theme-filter-button-active);
@@ -2998,6 +3026,7 @@ footer {
         --color-buttons-hover: var(--dark-theme-color-buttons-hover);
         --color-buttons-inset: var(--dark-theme-color-buttons-inset);
         --color-important: var(--dark-theme-color-important);
+        --color-important-hover: var(--dark-theme-color-important-hover);
         --color-shadow: var(--dark-theme-color-shadow);
 
         --shadow-primary: 0 2px 20px 0 var(--color-shadow);

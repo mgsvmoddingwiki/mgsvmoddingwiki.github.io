@@ -501,6 +501,24 @@ It's best to only use spoilers for secondary information that would otherwise ta
 
 > **Tip:** anything can be added between the `spoiler-start` and `spoiler-end`. Multiple lines, elements, etc.
 
+**With important class**
+
+{% include spoiler-start title="Draw attention" %}
+
+Something relevant.
+
+{% include spoiler-end %}
+{:.important}
+
+    {% raw %}
+    {% include spoiler-start title="Draw attention" %}
+
+    Something relevant.
+
+    {% include spoiler-end %}
+    {:.important}
+    {% endraw %}
+
 **Nested spoilers:**
 
 {% include spoiler-start title="Outer spoiler" %}

@@ -33,11 +33,13 @@ permalink: /Guides/
     - [Create a Custom Map](/Create_a_Custom_Map)
     - [Using UAVs in Side-Ops](/Using_UAVs_in_Side_Ops)
 - ## Rendering
-    - [FMDL Studio v2 [incl. Blender pipeline notes]](/FMDL_Studio_V2)
+    - [Using FMDL Studio with Blender](/Using_FMDL_Studio_with_Blender)
     - [Custom weapons](/Custom_weapons)
     - [Fx Nodes](/Fx_Nodes)
     - [Hair Materials](/Hair_Materials)
-    - [How to save your .DDS image](/How_to_save_your_.DDS_image)
+    - [Retexturing the Bionic Arm](/Retexturing_the_Bionic_Arm)
+    - [Working with DDS Files](/Working_With_DDS_Files)
+    - [Converting Between FTEX and DDS](/Converting_Between_FTEX_and_DDS)
     - [Mesh Mashup](/Mesh_Mashup)
     - [Textures](/Textures)
 - ## Sound
