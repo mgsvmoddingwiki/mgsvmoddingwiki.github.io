@@ -14,7 +14,7 @@ permalink: /I_want_to_mod/
     - [Custom weapon models](/Custom_weapons)
     - [Hair](/Hair_Materials)
   - ## Textures
-    - Need a guide!
+    - [Retexturing models](/Retexturing_the_Bionic_Arm/)
   - ## Weapons
     - [Weapon part combinations](/Chimera_Weapon_System/)
     - [Iron Sight adjustments, fire-rate, draw and reload speeds](/Iron_Sight_adjustments,_fire-rate,_draw_and_reload_speeds/)
