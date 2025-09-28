@@ -3,18 +3,18 @@ title: Pre-Release Build
 permalink: /Pre-release_build/
 tags: [EXE]
 ---
-# August 4, 2015 Pre-Release
+## August 4, 2015 Pre-Release
 
 [Download on Hidden Palace.](https://hiddenpalace.org/Metal_Gear_Solid_V:_The_Phantom_Pain_(Aug_4,_2015_prototype))
 
-## Notes
+### Notes
 This build comes with packing logs, a Steam and Steam-less executable, and a .map file with function signatures for each. Otherwise, it's nearly identical to the release version.
 
 The Steam executable requires a Steam license for the game, will not connect to the server due to being an out of date version, and will not read the latest version's save data, and may even overwrite them if you don't back them up.
 
 The Steamless executable requires a "fox" folder in the %TEMP% directory of the current user to save progress data. That's "%TEMP%\fox\", or usually, "C:\Users\(username)\AppData\Local\Temp\fox\".
 
-## Bugs
+### Bugs
 
 - Terrain pattern blend parsing appears to be completely broken. It's especially visible in and around Shago Village.
 
