@@ -38,20 +38,22 @@ If successful you'll see new `.dds` files created within.
 
 {% include spoiler-start title="Other notes" %}
 
-FtexTool is recursive and will convert all FTEX found in every sub-directory of the input directory.
+For directory inputs FtexTool is recursive and will convert all FTEX found in every sub-directory of the input directory.
 
-Also FtexTool doesn't support DDS to FTEX conversion for whole directories. It only supports FTEX to DDS conversion when inputting directories.
+Also FtexTool doesn't support DDS to FTEX conversion for directory inputs, only FTEX to DDS conversion. To batch convert a entire directory from DDS to FTEX would require a custom batch script.
 
-> For the sake of representing general use cases drag-and-dropping has been used in the steps but obviously being command-line based the program also supports CLI usage (see the tool's Github readme).
+For the sake of representing general use cases drag-and-dropping has been suggested the steps above but obviously being command-line based the program also supports CLI usage (see the tool's Github readme).
 
 {% include spoiler-end %}
 
 > **Tip:** if any of the above doesn't produce the expected output check the [troubleshooting](#ftextool-troubleshooting) section below.
+{:.important}
 
 ### FtexTool troubleshooting
 
 {% include spoiler-start %}
 
+- If you've exported a DDS file via an image editor it must be the correct pixel format/encoding in order to successfully convert back to FTEX (see [this page](/Working_With_DDS_Files) for what to save your DDS files as), otherwise FtexTool will throw an unhandled error.
 - If dragging a `.ftex` file onto the program and it doesn't output a `.dds` file check that you have all the associated `.ftexs` (note the `s` at the end) files.
 	- Large textures with mipmaps will have have 3 FTEXS files, while smaller textures will have fewer. All the related FTEXS are required to be present in order to convert the FTEX to a DDS.
 - When dragging files onto the program make sure only a single DDS or FTEX file is dragged onto the program. Otherwise the program will throw an error and exit without converting anything.
