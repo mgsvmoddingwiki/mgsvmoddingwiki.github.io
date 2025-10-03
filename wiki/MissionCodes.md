@@ -33,6 +33,7 @@ See also [Custom Missions List](/Custom_Missions_List "wikilink")
 
   - 30010: Northern Kabul, Afghanistan
   - 30020: Angola-Zaire Border Region, Central Africa
+  - 30040: U.S. Naval Prison Facility, Cuba *(only in asset_version.txt)*
   - 30050: Mother Base, Seychelles Waters
   - 30051: Mother Base MissionPackLabel "DemoStage" *(Not used as an
     actual mission code)*
@@ -55,14 +56,35 @@ See also [Custom Missions List](/Custom_Missions_List "wikilink")
 
 ### Shows/Select
 
-  - 60000: Select
+  - 60000 : Select
+  - 64000 : LevelDesignerBlockTestStage *(only in asset_version.txt)*
+  - 64001
+  - 64002
+  - 64003
+  - 64004
+  - 64005
+  - 64006 : All above, ditto
   - 65020 : E3 2014, Afghanistan
   - 65030 : E3 2014, Mother Base
-  - 65050 : E3 2014
+  - 65040 : E3 2014 *(only in asset_version.txt)*
+  - 65050 : E3 2014, Mother Base *(asset_version.txt mentions UAVs)*
   - 65060 : TGS 2014, Africa
+  - 65400 : E3 2014 *(only in asset_version.txt)*
+  - 65401
+  - 65402
+  - 65404
+  - 65405
+  - 65406
+  - 65407
+  - 65408
+  - 65409
+  - 65410
+  - 65411
+  - 65412
+  - 65413 : All above, ditto
   - 65414 : gamescom 2014
-  - 65415 : TGS 2014
-  - 65416 : TGS 2014
+  - 65415 : TGS 2014, Mother Base demo
+  - 65416 : TGS 2014, Mother Base demo
 
 ## Sequence mission codes
 
@@ -125,24 +147,57 @@ TppUiCommand.RegistMissionEpisodeNo(missionCode,episodeNumber)
 
 ### "Missing" Missions
 
-Sources: [Excel
-document](https://docs.google.com/spreadsheets/d/1f4PLyHsO4Alo1PFCKqtjN2m90LH4b9Hmq-Mvz_umCDE) *\\Assets\\tpp\\script\\lib\\TppDefine.lua*, *TppStory.lua*
-
   - 10230: - KINGDOM OF THE FLIES - *(No substantial assets exist at all
     in TPP, not even any langids) *Set in its own eponymous and also
     missing map, *FLYK*.
-  - 10034: - Mentioned in TppDefine.lua, set in Afghanistan.
-  - 10060: - Mentioned in TppDefine.lua, set in Afghanistan.
-  - 10153: - Mentioned in TppDefine.lua, set in Afghanistan.
-  - 10154: - Mentioned in TppDefine.lua, set in Middle Africa
-  - 10160: - Mentioned in TppDefine.lua, set in Middle Africa. Cassette
-    tapes relating to the child soldiers escaping also bear this mission
-    code in their names.
-  - 10162: - Mentioned in TppDefine.lua, set in Middle Africa.
-  - 10164: - Mentioned in TppDefine.lua, set in Afghanistan.
+  - 10034: - TppDefine.LOCATION_HAVE_MISSION_LIST sets it in Afghanistan. Featured *enemyBase*, *field*, *fieldhillEast* and *village*.
+  - 10042: - Featured *commFacility*, *enemyBase*, *slopedTown* and *village* in Afghanistan.
+  - 10046: - Featured *tent* in Afghanistan.
+  - 10060: - TppDefine.LOCATION_HAVE_MISSION_LIST sets it in Afghanistan.
+  - 10083
+  - 10084: - Featured *outland* in Middle Africa.
+  - 10092
+  - 10101
+  - 10122
+  - 10123: - Featured "fort" in Afghanistan.
+  - 10145: - Featured "sovietBase" in Afghanistan.
+  - 10151: - In the final game, Episode 31: SAHELANTHROPUS. In asset_version.txt's "mission" folder, featured *banana*, *flowStation*, *outland*, *savannah* and *swamp* in Africa.
+  - 10152
+  - 10153: - TppDefine.LOCATION_HAVE_MISSION_LIST sets it in Afghanistan.
+  - 10154: - TppDefine.LOCATION_HAVE_MISSION_LIST sets it in Africa. Featured *lab*.
+  - 10155
+  - 10160: - TppDefine.LOCATION_HAVE_MISSION_LIST sets it in Africa. Cassette tapes relating to the child soldiers escaping also bear this mission code in their names. Featured *flowStation*, *banana* and *outland*.
+  - 10161
+  - 10162: - TppDefine.LOCATION_HAVE_MISSION_LIST sets it in Africa. Featured *savannah*.
+  - 10163
+  - 10164: - TppDefine.LOCATION_HAVE_MISSION_LIST sets it in Afghanistan.
+  - 10165: - Featured *tent* in Afghanistan.
+  - 10170: - Featured *diamond*, *diamondSouth*, *hill*, *hillNorth* and *swamp* in Africa.
+  - 10180
+  - 10181
+  - 10182: - Featured *citadel* in Afghanistan.
   - 10190: - Cassette tapes relating to Huey's exile bear this mission
     code in their names.
-  - 10199: - Mentioned in TppDefine.lua, set in Afghanistan.
+  - 10191: - Featured *outland* and *pfCamp* in Africa.
+  - 10192
+  - 10193
+  - 10194: - Featured *enemyBase* in Afghanistan.
+  - 10198
+  - 10199: - TppDefine.LOCATION_HAVE_MISSION_LIST sets it in Afghanistan. Featured *fort*.
+  - 10201: - Featured *banana* and *savannah* in Africa.
+  - 10203
+  - 10204
+  - 10205
+  - 10206
+  - 10207
+  - 10208
+  - 10210: - Featured *hill* in Africa.
+  - 10220
+  - 10250
+  - 10270
+  - 10290
+  - 10300
+  - 10310
 
 ### "Missing" Replay Missions
 
@@ -189,6 +244,21 @@ document](https://docs.google.com/spreadsheets/d/1f4PLyHsO4Alo1PFCKqtjN2m90LH4b9
   - 20050: Destroy the Anti-Air Emplacements
   - 20060: Déjà-Vu
   - 20070: Jamais Vu
+
+#### "Missing" Missions
+
+  - 20090: Featured *village* in Afghanistan.
+  - 20101: Featured *swampWest* in Africa.
+  - 20110: Featured *lab* in Africa.
+  - 20120: Featured *swamp* in Africa.
+  - 20130: Featured *diamond* in Africa.
+  - 20155: Featured *pfCamp* in Africa.
+  - 20210: Featured *lab* in Africa.
+  - 20510: KJP LA 2013 demo.
+  - 20520: TGS (?)
+  - 20530
+  - 20540: Had *guantanamo* vehicles.
+  - 20550
 
 ### Survive Missions
 
@@ -465,7 +535,7 @@ name_q10010)
 
   - mtbs_wait_quiet: ? Never enabled by canOpenQuestChecks. Seems to
     just wake up Quiet when entering her room.
-  - mtbs_return_quiet: ? Never enabled by canOpenQuestChecks.
+  - mtbs_return_quiet: ? Never enabled by canOpenQuestChecks. Files not in final game.
   - Mtbs_child_dog: Puppy DD block on Mother Base's Command platform.
   - Mtbs_ddog_walking: Walking adult DD block on Mother Base's Command
     platform.
@@ -478,6 +548,14 @@ name_q10010)
   - quest_smoking/Mtbs_SmokingSoldierCombat: Seems to manage Mother
     Base smoke break routes on the Combat platform.
 
+  - 20070 : Set in sovietBase.
+  - 71100 : Set in outland.
+  - 80030 : Set in ruins.
+  - 80050 : Set in cliffTown.
+  - 80070 : Set in sovietBase.
+  - 80300 : Set in savannah.
+  - 80500 : Set in banana.
+
 ## References
 
 TppDefine.lua TppStory.lua
@@ -489,3 +567,8 @@ tpp_quest.eng.lng2
 xentax
 
 reddit
+
+[Excel
+document](https://docs.google.com/spreadsheets/d/1f4PLyHsO4Alo1PFCKqtjN2m90LH4b9Hmq-Mvz_umCDE) *\\Assets\\tpp\\script\\lib\\TppDefine.lua*, *TppStory.lua*
+
+[Pre-release build](https://mgsvmoddingwiki.github.io/Pre-release_build/) *asset_version.txt*
