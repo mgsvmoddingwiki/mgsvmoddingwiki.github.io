@@ -37,6 +37,7 @@ permalink: /I_want_to_mod/
     - [How to create custom lang entries](/How_to_create_custom_lang_entries)
     - Need a subtitles guide!
   - ## Rendering
+    - [Attaching graphics debuggers](/Attaching_graphics_debuggers/)
     - [Color processing](/FILTERLUT_Texture_Guide/)
     - [Textures](/Textures)
     - [NVG filter](/NVG_Filter)
