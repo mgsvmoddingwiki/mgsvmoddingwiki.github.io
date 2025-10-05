@@ -1196,6 +1196,14 @@ this.missionLevelDesigner = {
 }
 ```
 
+### NO_MISSION_TELOP_ON_START_HELICOPTER
+
+Skips DD logo with mission name on mission start if set to true.
+
+```lua
+this.NO_MISSION_TELOP_ON_START_HELICOPTER = true
+```
+
 ## Score
 
 The `score` subscript defines time limits for certain mission ranks and
