@@ -4,7 +4,7 @@ permalink: /GzsTool/
 tags: [Tools, File Tools]
 ---
 
-{% include infobox dev="Atvaark" site="https://github.com/Atvaark/GzsTool" download="https://github.com/Atvaark/GzsTool/releases" %}
+{% include infobox dev="Atvaark" site="https://github.com/Atvaark/GzsTool" download="https://github.com/Atvaark/GzsTool/releases/tag/v0.5.3" %}
 
 GzsTool is an open-source archive unpacker and repacker for Metal Gear
 Solid V: Ground Zeroes and Metal Gear Solid V: The Phantom Pain written
@@ -13,6 +13,9 @@ by Atvaark. It supports unpacking and repacking QAR .dat, .fpk, .fpkd,
 decrypts encrypted text files. It can also calculate file name hashes on
 the fly, allowing it to add new files to archives without needing a
 pre-calculated hash.
+
+> **Note:** version 0.6 of Atvaark's version has an [issue](https://github.com/Atvaark/GzsTool/issues/9) with repacking. Use the [linked](https://github.com/Atvaark/GzsTool/releases/tag/v0.5.3) v0.5.3 for the time being, or check out Bob's fork [below](#bobdoleowndus-fork).
+{:.important}
 
 > **Ground Zeroes compatibility:** if wanting to mod Ground Zeroes, the current version of GzsTool does not support Ground Zeroes .g0s files, you must use an earlier version: [GzsTool v0.2](https://github.com/Atvaark/GzsTool/releases/tag/v0.2)
 {:.important}
