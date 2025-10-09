@@ -20,14 +20,14 @@ TODO: Description
 
 | | |
 |-|-|
-| [language](#language) | TODO: Description |
-| [fontName](#fontname) | TODO: Description |
-| [fontFile](#fontfile) | TODO: Description |
-| [texturePath](#texturepath) | TODO: Description |
-| [fontWidth](#fontwidth) | TODO: Description |
-| [fontHeight](#fontheight) | TODO: Description |
-| [textSpace](#textspace) | TODO: Description |
-| [lineSpace](#linespace) | TODO: Description |
+| [language](#language) | The language that uses the settings, if left empty, the settings will be applied to all languages |
+| [fontName](#fontname) | The text that will use the settings (e.g cmn-mb-sys-M) |
+| [fontFile](#fontfile) | Path to the font, usually `.fnt`. If left empty, it will use the language's ffnt that is located in `/Assets/tpp/font` |
+| [texturePath](#texturepath) | The `.ftex` path to the corresponding `.fnt`|
+| [fontWidth](#fontwidth) | Width of text |
+| [fontHeight](#fontheight) | Height of text |
+| [textSpace](#textspace) | Space between characters |
+| [lineSpace](#linespace) | Spaces between each line |
 | [fontEdge](#fontedge) | TODO: Description |
 
 
