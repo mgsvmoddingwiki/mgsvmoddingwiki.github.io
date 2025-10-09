@@ -4,7 +4,7 @@ permalink: /Entity_Reference/?/Fox/UiScene/UiPaletteData/
 tags: [Fox, UiScene, Reference]
 -->
 
-### Definition
+## Definition
 > Project: Fox\
 > Module: [UiScene](/Entity_Reference/?/Fox/UiScene)\
 > Inheritance: Fox.Core.Data → UiPaletteData
@@ -15,15 +15,15 @@ UiPaletteData : Fox.Core.Data
 
 Contains a palette of UI colors.
 
-### Properties
+## Properties
 
 | Name | Description |
 |-|-|
 | [colors](#colors) | Array of Color |
 
-### Referenced in
+## Referenced in
 
-#### TPP
+### TPP
 
 ```
 master/chunk0.dat/Assets/tpp/pack/ui/ui_resident_data.fpkd/Assets/tpp/ui/GraphAsset/Common/data/mb_dvc_art.fox2

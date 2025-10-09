@@ -14,7 +14,11 @@ Click the spoiler labels to show each section.
 
 ## Headings
 
-Headings are identical to the [regular syntax](/Meta/Formatting_Reference/#headings). 
+Headings are identical to the [regular syntax](/Meta/Formatting_Reference/#headings).
+
+> **Note:** small thing to keep in mind is making sure the first heading on the page is higher hierarchy than any the second heading (if there is one), since the Javascript-based table of contents generation for virtual pages will fail otherwise.\
+\
+Eg: h2 followed by a h3 (or another h2) is fine, just not starting with h3 and then having a h2 second.
 
 ---
 
