@@ -7,19 +7,26 @@ tags: [Fox, UiScene, Reference]
 ## Definition
 > Project: Fox\
 > Module: [UiScene](/Entity_Reference/?/Fox/UiScene)\
-> Submodule: TODO: Submodule\
 > Inheritance: Fox.Core.Data → UiPaletteData
 
 ```cpp
 UiPaletteData : Fox.Core.Data 
 ```
 
-TODO: Description
+Contains a palette of UI colors.
 
 ## Properties
 
-| | |
+| Name | Description |
 |-|-|
-| [colors](#colors) | TODO: Description |
+| [colors](#colors) | Array of Color |
 
+## Referenced in
 
+#### TPP
+
+```
+master/chunk0.dat/Assets/tpp/pack/ui/ui_resident_data.fpkd/Assets/tpp/ui/GraphAsset/Common/data/mb_dvc_art.fox2
+master/chunk0.dat/Assets/tpp/pack/ui/ui_resident_data.fpkd/Assets/tpp/ui/GraphAsset/Common/data/common_art.fox2
+master/chunk0.dat/Assets/tpp/pack/ui/ui_resident_data.fpkd/Assets/tpp/ui/GraphAsset/Common/data/hud_art.fox2
+```
