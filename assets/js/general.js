@@ -120,136 +120,146 @@ function captureClass(el, prefix) {
 
 document.addEventListener('DOMContentLoaded',() => {
     // --------------------------- Image handling ---------------------------
-    let imgs = document.querySelectorAll('body:not(.search-page) .git-wiki-page img');
-        imgs.forEach(img => {
-            // Wrap images in container
-            // Check if image already wrapped in link element (to not override it)
-            let wrapper,
-                wrapperExists;
-            if (img.parentElement.tagName.toLowerCase() === 'a') {
-                wrapperExists = true;
-                wrapper = img.parentElement;
-            } else {
-                wrapper = document.createElement('div');
-            }
+    func.checkVp(() => {
+        let imgs = document.querySelectorAll('body:not(.search-page) .git-wiki-page img');
+            imgs.forEach(img => {
+                // Wrap images in container
+                // Check if image already wrapped in link element (to not override it)
+                let wrapper,
+                    wrapperExists;
+                if (img.parentElement.tagName.toLowerCase() === 'a') {
+                    wrapperExists = true;
+                    wrapper = img.parentElement;
+                } else {
+                    wrapper = document.createElement('div');
+                }
 
-            wrapper.classList.add(...img.classList); // copy img classes to link instead
-            wrapper.classList.add('image-wrapper');
-            img.removeAttribute('class');
-            if (!wrapperExists) {
-                img.setAttribute('data-zoomable','');
-                wrapper.appendChild(img.cloneNode(true));
-                img.parentNode.replaceChild(wrapper, img);
-            }
+                wrapper.classList.add(...img.classList); // copy img classes to link instead
+                wrapper.classList.add('image-wrapper');
+                img.removeAttribute('class');
+                if (!wrapperExists) {
+                    img.setAttribute('data-zoomable','');
+                    wrapper.appendChild(img.cloneNode(true));
+                    img.parentNode.replaceChild(wrapper, img);
+                }
 
-            // Create caption element if image has alt text
-            if (img.getAttribute('alt')) {
-                const caption = document.createElement('small');
-                caption.classList.add('caption');
-                caption.textContent += img.getAttribute('alt');
-                wrapper.appendChild(caption);
-            }
+                // Create caption element if image has alt text
+                if (img.getAttribute('alt')) {
+                    const caption = document.createElement('small');
+                    caption.classList.add('caption');
+                    caption.textContent += img.getAttribute('alt');
+                    wrapper.appendChild(caption);
+                }
 
-        });
+            });
+    });
 
     // ---------------------- Image handling: lightbox ----------------------
     const cssStyle = getComputedStyle(body),
           cssSpacing = Number(cssStyle.getPropertyValue('--spacing-lightbox').replace('px','')); // obtain variable from CSS, convert to integer
 
-    const zoom = mediumZoom('[data-zoomable]', {
-        margin: cssSpacing
-    });
+    func.checkVp(() => {
+        const zoom = mediumZoom('[data-zoomable]', {
+            margin: cssSpacing
+        });
 
-    // Detect arrow left/right presses for image navigation
-    const attachKeyEvents = e => {
-        document.addEventListener('keyup', handleKey, false)
-    }
-    const detachKeyEvents = e => {
-        document.removeEventListener('keyup', handleKey, false)
-    }
-    const handleKey = e => {
-        const images = zoom.getImages();
-        const currentImageIndex = images.indexOf(zoom.getZoomedImage());
-        let target
-
-        if (images.length <= 1) {
-            return
+        // Detect arrow left/right presses for image navigation
+        const attachKeyEvents = e => {
+            document.addEventListener('keyup', handleKey, false)
         }
-
-        switch (e.code) {
-            case 'ArrowLeft':
-                target = currentImageIndex - 1 < 0 ?
-                    images[images.length - 1] : images[currentImageIndex - 1]
-                switchNav();
-                break;
-            case 'ArrowRight':
-                target = currentImageIndex + 1 >= images.length ?
-                    images[0] : images[currentImageIndex + 1]
-                switchNav();
-                break;
-            default:
-                break;
+        const detachKeyEvents = e => {
+            document.removeEventListener('keyup', handleKey, false)
         }
+        const handleKey = e => {
+            const images = zoom.getImages();
+            const currentImageIndex = images.indexOf(zoom.getZoomedImage());
+            let target
 
-        function switchNav() {
-            // Check if element descendant of spoiler element and if it's in open state. If not, open it, to avoid image navigation glitches when spoiler is closed.
-            if (target.closest('details')) {
-                if (target.closest('details').open != open) {
-                    target.closest('details').open = true;
-                }
-                // Account for two-level nested spoilers
-                if (target.closest('details details')) {
-                    if (target.closest('details').parentElement.open != open) {
-                        target.closest('details').parentElement.open = true;
-                    }
-                }
+            if (images.length <= 1) {
+                return
             }
 
-            target.scrollIntoView({
-                block: 'nearest',
-                behavior: 'smooth',
-            });
-            zoom.close().then(() => {
-                zoom.open({
-                    target: target
+            switch (e.code) {
+                case 'ArrowLeft':
+                    target = currentImageIndex - 1 < 0 ?
+                        images[images.length - 1] : images[currentImageIndex - 1]
+                    switchNav();
+                    break;
+                case 'ArrowRight':
+                    target = currentImageIndex + 1 >= images.length ?
+                        images[0] : images[currentImageIndex + 1]
+                    switchNav();
+                    break;
+                default:
+                    break;
+            }
+
+            function switchNav() {
+                // Check if element descendant of spoiler element and if it's in open state. If not, open it, to avoid image navigation glitches when spoiler is closed.
+                if (target.closest('details')) {
+                    if (target.closest('details').open != open) {
+                        target.closest('details').open = true;
+                    }
+                    // Account for two-level nested spoilers
+                    if (target.closest('details details')) {
+                        if (target.closest('details').parentElement.open != open) {
+                            target.closest('details').parentElement.open = true;
+                        }
+                    }
+                }
+
+                target.scrollIntoView({
+                    block: 'nearest',
+                    behavior: 'smooth',
                 });
-            });
+                zoom.close().then(() => {
+                    zoom.open({
+                        target: target
+                    });
+                });
+
+            }
 
         }
 
-    }
-
-    zoom.on('open', attachKeyEvents);
-    zoom.on('close', detachKeyEvents);
+        zoom.on('open', attachKeyEvents);
+        zoom.on('close', detachKeyEvents);
+    });
 
     // ------------------------------- Infobox ------------------------------
     // Replace 'Site', 'Download' link names with names of hostname from URL
-    let iblinks = body.querySelectorAll('.infobox a');
-    iblinks.forEach(iblink => {
-        // https://stackoverflow.com/a/8498629
-        const matches = iblink.href.match(/^https?\:\/\/([^\/?#]+)(?:[\/?#]|$)/i),
-              domain = matches && matches[1];  // domain will be null if no match is found
-        iblink.innerHTML = domain.replace('www.','');
+    func.checkVp(() => {
+        let iblinks = body.querySelectorAll('.infobox a');
+        iblinks.forEach(iblink => {
+            // https://stackoverflow.com/a/8498629
+            const matches = iblink.href.match(/^https?\:\/\/([^\/?#]+)(?:[\/?#]|$)/i),
+                  domain = matches && matches[1];  // domain will be null if no match is found
+            iblink.innerHTML = domain.replace('www.','');
+        });
     });
 
     // ----------------------------- Index lists ----------------------------
-    let listIndexes = body.querySelectorAll('.git-wiki-page .index');
-    listIndexes.forEach(listIndex => {
-        // Add unique class if only has single first-level list item
-        if (!listIndex.children[1]) {
-            listIndex.classList.add('full-width');
-        }
+    func.checkVp(() => {
+        let listIndexes = body.querySelectorAll('.git-wiki-page .index');
+        listIndexes.forEach(listIndex => {
+            // Add unique class if only has single first-level list item
+            if (!listIndex.children[1]) {
+                listIndex.classList.add('full-width');
+            }
+        });
     });
 
     // -------------------------- Content headings --------------------------
     // Add fragment identifier links on hover
-    let contentHeadings = body.querySelectorAll('.git-wiki-page h2, .git-wiki-page h3, .git-wiki-page h4'); // add to h4, too, even if not included in ToC
-    contentHeadings.forEach(heading => {
-        heading.classList.add('heading-with-frag-id');
-        const link = document.createElement('a');
-        link.classList.add('heading-frag-id-link','iconed');
-        link.setAttribute('href', '#' + heading.getAttribute('id'));
-        heading.appendChild(link);
+    func.checkVp(() => {
+        var contentHeadings = body.querySelectorAll('.git-wiki-page h2, .git-wiki-page h3, .git-wiki-page h4'); // add to h4, too, even if not included in ToC
+        contentHeadings.forEach(heading => {
+            heading.classList.add('heading-with-frag-id');
+            let link = document.createElement('a');
+            link.classList.add('heading-frag-id-link','iconed');
+            link.setAttribute('href', '#' + heading.getAttribute('id'));
+            heading.appendChild(link);
+        });
     });
 
 
