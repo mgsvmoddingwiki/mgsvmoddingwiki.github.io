@@ -217,3 +217,54 @@ This is a list of some animation act ids that can be used by SPCH files.
 | `2289914935`          | Ocelot animation                                                                        | `ocelot_g`                 |
 | `3574747766`          | Ocelot waves goodbye to leaving helicopter (not used in vanilla .spch, but used by lua) | `ocelot_go_heli`           |
 | `3423893682`          | Ocelot animation (not used in vanilla .spch)                                            | `ocelot_h`                 |
+## Radio callsign param wildcards
+These are the values used in the .exe to stand in for the callsign voice clips during radio communcation speech labels.
+||||||
+|-|-|-|-|-|
+|uint|chara|voiceId|desc|text|
+|`1213215976`|cp|CEA0010|End (continues): Engaging enemy|Over!!|
+|`3434381957`|enemy|CEA0010|End (continues): Engaging enemy|Over!!|
+|`365330910`|cp|CEA0020|End (finishing): Engaging enemy|Out!!|
+|`884595133`|enemy|CEA0020|End (finishing): Engaging enemy|Out!!|
+|`348583075`|cp|CEC0010|End (continues): Caution status|Over!|
+|`854076898`|enemy|CEC0010|End (continues): Caution status|Over!|
+|`3551973937`|cp|CEC0020|End (finishing): Caution status|Out!|
+|`442391802`|enemy|CEC0020|End (finishing): Caution status|Out!|
+|`1434401699`|cp|CEN0010|End (continues): Situation normal|Over.|
+|`3622427360`|enemy|CEN0010|End (continues): Situation normal|Over.|
+|`932012133`|cp|CEN0020|End (finishing): Situation normal|Out.|
+|`3388597016`|enemy|CEN0020|End (finishing): Situation normal|Out.|
+|`367198950`|cp|CPR0200|Reactions to radio trooper being shot during transmission, cutting it short./Engaging enemy|Patrol, what's wrong? Come in, patrol!|
+|`2872943061`|cp|CSA0100|Start (Call for attention & self-identification): CP > Soldier /Engaging enemy|Patrol, this is CP!!|
+|`3495247209`|enemy|CSA0100|Start (Call for attention & self-identification): Soldier > CP /Engaging enemy|CP, CP, this is patrol!!|
+|`2907562658`|cp|CSA0110|Start (Call for attention & self-identification): CP > Soldier /Engaging enemy|All fireteams, this is CP!|
+|`3385565124`|cp|CSA0200|Start (Self-identification, copy): CP > Soldier /Engaging enemy|This is CP - understood!!|
+|`2521236585`|enemy|CSA0200|Start (Self-identification, copy): Soldier > CP /Engaging enemy|This is patrol, copy!!|
+|`2901637249`|cp|CSA0300|Start (Self-identification, copy): CP > Soldier /Engaging enemy|CP - understood!!|
+|`1609925378`|enemy|CSA0300|Start (No "this is," copy): Soldier > CP /Engaging enemy|Patrol copies!!|
+|`6190386`|cp|CSC0100|Start (Call for attention & self-identification): CP > Soldier /Caution status|Patrol, this is CP!|
+|`1774348542`|enemy|CSC0100|Start (Call for attention & self-identification): Soldier > CP /Caution status|CP, this is patrol!|
+|`2458855629`|cp|CSC0110|Start (Call for attention & self-identification): CP > Soldier /Caution status|All fireteams, this is CP!|
+|`2558089895`|cp|CSC0200|Start (Self-identification, copy): CP > Soldier /Caution status|This is CP - understood!|
+|`1623394302`|enemy|CSC0200|Start (Self-identification, copy): Soldier > CP /Caution status|This is patrol, copy!|
+|`2720577430`|cp|CSC0300|Start (Self-identification, copy): CP > Soldier /Caution status|CP - understood!|
+|`1439914157`|enemy|CSC0300|Start (No "this is," copy): Soldier > CP /Caution status|Patrol copies!|
+|`78712560`|cp|CSN0100|Start (Call for attention & self-identification): CP > Soldier /Situation normal|Patrol, this is CP.|
+|`2386932356`|enemy|CSN0100|Start (Call for attention & self-identification): Soldier > CP /Situation normal|CP, this is patrol.|
+|`87327801`|cp|CSN0110|Start (Call for attention & self-identification): CP > Soldier /Situation normal|All fireteams, this is CP.|
+|`1987888591`|cp|CSN0200|Start (Self-identification, copy): CP > Soldier /Situation normal|This is CP - understood.|
+|`702674820`|enemy|CSN0200|Start (Self-identification, copy): Soldier > CP /Situation normal|This is patrol, copy.|
+|`2262682492`|cp|CSN0300|Start (No "this is," copy): CP > Soldier /Situation normal|CP - understood.|
+|`3809894425`|enemy|CSN0300|Start (No "this is," copy): Soldier > CP /Situation normal|Patrol copies.|
+|`1372754819`|hq|HEC0010|Requesting response/caution phase|Over!|
+|`662546577`|hq|HEC0020|Ending conversation/caution phase|Out!|
+|`1286612739`|hq|HEN0010|Requesting response/normal status|Over.|
+|`3953815365`|hq|HEN0020|Ending conversation/normal status|Out.|
+|`70191719`|cp|HSC0010|Calling & self-identification - CP→HQ/caution phase|HQ, HQ, this is CP!|
+|`2140409707`|hq|HSC0011|Calling & self-identification - HQ→CP/caution phase|CP, this is HQ!|
+|`2321717165`|hq|HSC0012|Calling & self-identification - HQ→CP/caution phase|All bases, this is HQ!|
+|`1437954934`|hq|HSC0013|Self-identification & acknowledgement - HQ/caution phase|HQ copies!|
+|`3931792783`|cp|HSN0010|Calling & self-identification - CP→HQ/normal status|HQ, this is CP.|
+|`676881547`|hq|HSN0011|Calling & self-identification - HQ→CP/normal status|CP, this is HQ.|
+|`646808857`|hq|HSN0012|Calling & self-identification - HQ→CP/normal status|All bases, this is HQ.|
+|`2525393500`|hq|HSN0013|Self-identification & acknowledgement - HQ/normal status|HQ copies.|
