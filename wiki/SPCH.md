@@ -217,8 +217,11 @@ This is a list of some animation act ids that can be used by SPCH files.
 | `2289914935`          | Ocelot animation                                                                        | `ocelot_g`                 |
 | `3574747766`          | Ocelot waves goodbye to leaving helicopter (not used in vanilla .spch, but used by lua) | `ocelot_go_heli`           |
 | `3423893682`          | Ocelot animation (not used in vanilla .spch)                                            | `ocelot_h`                 |
+
 ## Radio callsign param wildcards
+
 These are the values used in the .exe to stand in for the callsign voice clips during radio communcation speech labels.
+
 ||||||
 |-|-|-|-|-|
 |uint|chara|voiceId|desc|text|
