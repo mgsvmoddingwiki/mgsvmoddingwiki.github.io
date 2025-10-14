@@ -292,5 +292,5 @@ These are the values used in the .exe to stand in for the callsign voice clips d
 |`365330910`|`cp`|`CEA0020`|CP|Out!!|
 |`884595133`|`enemy`|`CEA0020`|Soldier|Out!!|
 ||||||
-||||Reactions to radio trooper being shot during transmission, cutting it short.||
+||||Transmission cut short.||
 |`367198950`|`cp`|`CPR0200`|CP|Patrol, what's wrong? Come in, patrol!|
