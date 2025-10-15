@@ -28,7 +28,7 @@ master server response (FOB).
 
 Save file variables:
 
-| name | value | example |
+| Name | Value | Example |
 | --- | --- | --- |
 | emblemTextureTag | strcode32 hash | base5,fd776fc4 |
 | emblemColorL | RGBA value | 0x00b4b4b4 |
@@ -53,4 +53,14 @@ TppUiCommand.CreateEmblem("MyEmblem") -- creates MyEmblem and MyEmblem_S
 ```
 
 On FOBs another pair of textures is made: `OpponentEmblem` and `OpponentEmblem_S`. These names are hardcoded in the exe and not referenced in lua; 
-for attacker they are created on FOB selection list after selecting the attack target.
+they are encoded using `strcode64` (HashWrangler) (`fox::FoxStrHash32`)
+
+| Name | Hash |
+| --- | --- |
+| OpponentEmblem | 90bb6285c23c |
+| OpponentEmblem_S | d2ee491abe8f |
+| MyEmblem | 2ad823030e6b |
+| MyEmblem_S | d7e35d0e4c8 |
+
+
+For attacker opponent emblem is created on FOB selection list after selecting the attack target.
