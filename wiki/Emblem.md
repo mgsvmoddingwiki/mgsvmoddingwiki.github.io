@@ -49,7 +49,7 @@ Emblem can be recreated anywhere except during online session after both players
 Player emblem is created on game start from lua in `0/00.dat/Assets/tpp/pack/mission2/init/init_fpkd/Assets/tpp/level/mission2/init/init_sequence.lua`:
 
 ```lua
-TppUiCommand.CreateEmblem("MyEmblem")
+TppUiCommand.CreateEmblem("MyEmblem") -- creates MyEmblem and MyEmblem_S
 ```
 
 On FOBs another pair of textures is made: `OpponentEmblem` and `OpponentEmblem_S`. These names are hardcoded in the exe and not referenced in lua; 
