@@ -54,8 +54,8 @@ This article lists the presumed names of extensions used in MGSV, as well as som
 | fsop | Fox Shader Object(?) Pack | data1(4) | Shader source code in HLSL format. |  |
 | fstb | StageBlockFile | fpk(3) | Specifies fpks to load in a level and which small block indices they correspond to. |  |
 | ftdp | FoxTerrainDecalPackFile | fpk(732) | Defines decals used by the terrain. |  |
-| [ftex](/FTEXS) | Fox Texture | Textures, pftxs(88957), fpk(2) | FtexTool |  |
-| [ftexs](/FTEXS) | Fox Sub-texture | Textures, pftxs(89005) | FtexTool | Includes .1.ftexs,....6.ftexs |
+| [ftex](/FTEXS) | Fox Texture | Textures, pftxs(88957), fpk(2) | [FtexTool](/FtexTool) |  |
+| [ftexs](/FTEXS) | Fox Sub-texture | Textures, pftxs(89005) | [FtexTool](/FtexTool) | Includes .1.ftexs,....6.ftexs |
 | [fv2](/FV2) | FormVariationFile2 | fpk(2280) | [FvTwool](https://github.com/BobDoleOwndU/FvTwool) | Defines an appearance variation, including texture swaps and attachable meshes. |
 | [gani](/GANI) | AnimFile | mtar(7933), gz fpk(260) | Generic animation file (in-game characters, environment, etc.) |  |
 | geobv | GeoBoundingVolumeFile | fpk(26) | Level collision grid set |  |
@@ -70,9 +70,9 @@ This article lists the presumed names of extensions used in MGSV, as well as som
 | lad | Lip Adjust Data (fox2) | gz fpkd(12) | [FoxTool](/FoxTool) | In-game dialogue lip sync sound definition data. |
 | ladb | LadbFile | fpk(241) | Binary version of .lad |  |
 | las | gz fpk(1) | [FoxTool](/FoxTool) | Seems to be alias for .fox2 Other references to .las files are via entityLinks in same manner as fox2 And references to .las seem to be to equivalent named .fox2 The single GZ .las is just a .fox file. |  |
-| [lba](/LBA) | Locator Binary Array | fpk(14622), gz fpk(4) | FoxLib](https://github.com/youarebritish/FoxLib) | Location data used to place gimmicks. |
-| [lng](/Lang_Files) | LangFile | fpkd(64) | [LangTool](https://mgsvmoddingwiki.github.io/LangTool) | Localized text mostly used for UI.Usage. Tpp Includes language prefix (ex .eng.lng), GZ suffix (.lng#eng) eng,fre,ger,ita,jpn,por,rus,spa (GZ deu instead of ger) Files typically located under "Assets   pp\pack\ui\lang". |
-| [lng2](/Lang_Files) | Language 2 | fpk(240) | [LangTool](https://mgsvmoddingwiki.github.io/LangTool) | See lng table entry. |
+| [lba](/LBA) | Locator Binary Array | fpk(14622), gz fpk(4) | [FoxLib](https://github.com/youarebritish/FoxLib) | Location data used to place gimmicks. |
+| [lng](/Lang_Files) | LangFile | fpkd(64) | [LangTool](https://mgsvmoddingwiki.github.io/LangTool)<br>[datfpk](https://github.com/unknown321/datfpk) | Localized text.<br>TPP includes language prefix (ex `.eng.lng`), GZ suffix (`.lng#eng`)<br>(GZ uses `deu` instead of `ger`)|
+| [lng2](/Lang_Files) | LangFile2 | fpk(240) | [LangTool](https://mgsvmoddingwiki.github.io/LangTool)<br>[datfpk](https://github.com/unknown321/datfpk) | See lng table entry. |
 | lpsh | Light Probe Spherical Harmonics | fpk(8245) | Ambient light data encoded into second-order spherical harmonics. |  |
 | ls | Lip Sync | .sab, .stp | Lip sync track file. In the .sab for embedded sounds, in the .stp for streamed sounds in TPP, only in the .sab in GZ for all sounds. The .sab version is slightly different. |  |
 | [lua](/Lua) | Lua | data1(120), fpkd(1081) | Any text editor | Open source scripting language used by the game. For more info check the [Lua documentation page](https://www.lua.org/docs.html). |
