@@ -4,6 +4,12 @@ permalink: /How_to_create_custom_lang_entries/
 tags: [Guides, Lang]
 ---
 
+> This page is a mess and needs either a rewrite or a complete removal.
+>
+> You should use [Lang_Files](/Lang_Files) instead.
+{:.important}
+
+
 This tutorial will help you create your own lang entries instead of
 replacing them. This can be useful for when you create your own custom
 equips, staff members, or missions/locations. It is recommended that you

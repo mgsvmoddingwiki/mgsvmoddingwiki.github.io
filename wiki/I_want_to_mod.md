@@ -35,7 +35,7 @@ permalink: /I_want_to_mod/
   - ## UI
     - Need a guide!
   - ## Language / Text
-    - [How to create custom lang entries](/How_to_create_custom_lang_entries)
+    - [Changing and adding localized text](/Lang_Files)
     - Need a subtitles guide!
   - ## Rendering
     - [Attaching graphics debuggers](/Attaching_graphics_debuggers/)
