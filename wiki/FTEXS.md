@@ -185,6 +185,12 @@ the image chunk data.
 <td><p>Blood/Dirt/Water Overlay</p></td>
 <td><p>R: Blood, G: Dirt, B: Water</p></td>
 </tr>
+<tr class="odd">
+<td><p>Shift_Tex_LIN</p></td>
+<td><p>shm</p></td>
+<td><p></p></td>
+<td><p></p>Used for hair</td>
+</tr>
 </tbody>
 </table>
 
