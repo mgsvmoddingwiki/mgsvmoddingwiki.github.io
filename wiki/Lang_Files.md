@@ -98,7 +98,7 @@ functions are less restricted.
 ### Lua usage
 
 ```lua
-TppUICommand.AnnounceLogViewLangId("announce_get_gravure", "key_poster_3500", 500)
+TppUiCommand.AnnounceLogViewLangId("announce_get_gravure", "key_poster_3500", 500)
 TppUiCommand.ShowPopup("key_poster_3500", Popup.TYPE_ONE_BUTTON)
 ```
 
