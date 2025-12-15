@@ -1,7 +1,7 @@
 ---
 title: Localization
 permalink: /Localization/
-tags: [Guides]
+tags: [Guides, Lang]
 ---
 
 This guide will teach you how to localize *Metal Gear Solid V: The Phantom Pain* and *Metal Gear Solid V: Ground Zeroes*.  
@@ -63,7 +63,7 @@ Example:
 ### Tip
 Some display text properties are stored in `.fox2` files, which can be found in `\Assets\tpp\pack\ui\ui_resident_data_fpkd\Assets\tpp\ui\GraphAsset\Common\data`.
 
-For more details, check out the [UiFontDataElement](https://mgsvmoddingwiki.github.io/Entity_Reference/?/Fox/Ui/UiFontDataElement/) documentation.
+For more details, check out the [UiFontDataElement](/Entity_Reference/?/Fox/Ui/UiFontDataElement/) documentation.
 
 # Subtitles
 
