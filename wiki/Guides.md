@@ -24,6 +24,7 @@ permalink: /Guides/
     - [Unsolved problems](/Unsolved_problems)
     - [Unpacking and Organizing Game Files](/Unpacking_and_Organizing_Game_Files)
 - ## Miscellaneous
+    - [Localization](/Localization)
     - [How to create custom lang entries](/How_to_create_custom_lang_entries)
     - [External modding resources](/External_modding_resources)
 - ## Mission Design
@@ -79,3 +80,4 @@ permalink: /Guides/
 {:.index}
 
 {% include index-autolist heading="alpha" tag="Guides" %}
+
