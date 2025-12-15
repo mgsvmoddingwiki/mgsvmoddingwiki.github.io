@@ -36,7 +36,7 @@ permalink: /I_want_to_mod/
     - Need a guide!
   - ## Language / Text
     - [Changing and adding localized text](/Lang_Files)
-    - Need a subtitles guide!
+    - [Localization](/Localization)
   - ## Rendering
     - [Attaching graphics debuggers](/Attaching_graphics_debuggers/)
     - [Color processing](/FILTERLUT_Texture_Guide/)
