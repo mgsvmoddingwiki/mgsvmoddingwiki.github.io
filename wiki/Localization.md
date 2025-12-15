@@ -10,20 +10,20 @@ This guide will teach you how to localize *Metal Gear Solid V: The Phantom Pain*
 
 Currently, there is no straightforward way to *add* an entirely new language as an option in the game. This is due to the fact that language-related assets are embedded in `.exe` files and some UI components that have not yet been fully reversed. This guide will focus on what is achievable, such as modifying existing language packs and text files.
 
-### Needed Tools
+## Needed Tools
 
-#### To unpack game files
+### To unpack game files
 We recommend using the [File Monolith Modmaker Toolset (Recommended)](https://www.nexusmods.com/metalgearsolidvtpp/mods/739) to unpack The Phantom Pain’s files.  
 Alternatively, use the latest version of [GzTool](https://github.com/Atvaark/GzsTool/releases/tag/v0.6.0) to unpack and repack `FPK/FPKD` and `.dat` files for The Phantom Pain.  
 For *Ground Zeroes*, use [GzTool v0.2](https://github.com/Atvaark/GzsTool/releases/tag/v0.2).
 
 For more detailed instructions, see [Unpacking and Organizing Game Files](https://mgsvmoddingwiki.github.io/Unpacking_and_Organizing_Game_Files/).
 
-#### To unpack/repack `.ffnt`, `.subp`, `.lng/lng2` files
+### To unpack/repack `.ffnt`, `.subp`, `.lng/lng2` files
 Use [FoxEngine.TranslationTool](https://github.com/kapuragu/FoxEngine.TranslationTool/releases/tag/v0.2.9) to unpack `.ffnt`, `.subp`, and `.lng/lng2` files in *The Phantom Pain*.  
 For *Ground Zeroes*, you can use the same tool except for `.lng` files, where only version [FoxEngine.TranslationTool v0.1.3](https://github.com/Atvaark/FoxEngine.TranslationTool/releases/tag/v0.1.3) works.
 
-#### To unpack/repack `.fox2` files
+### To unpack/repack `.fox2` files
 Use [FoxTool](https://github.com/Atvaark/FoxTool/releases/tag/v0.2.6) to unpack `.Fox2` (DataSetFile2).
 
 ### Tip
@@ -32,7 +32,7 @@ Always refer to the `README` section inside each tool for specific instructions 
 # Editing Fonts
 
 The game uses two types of font files:
-
+x    
 1. **`.ffnt` (Fox Font)** - This is the default font file, found in `\Assets\tpp\font\`.
 2. **`.fnt` (Font)** - These are additional fonts used for specific UI elements (e.g., ZZZ, STN, or LOCKED during homing missile use).
 
@@ -60,7 +60,7 @@ Example:
 ## `.fnt` (Font)
 *This section is TBA (To Be Added)*.
 
-### Tip
+## Tip
 Some display text properties are stored in `.fox2` files, which can be found in `\Assets\tpp\pack\ui\ui_resident_data_fpkd\Assets\tpp\ui\GraphAsset\Common\data`.
 
 For more details, check out the [UiFontDataElement](https://mgsvmoddingwiki.github.io/Entity_Reference/?/Fox/Ui/UiFontDataElement/) documentation.
@@ -76,7 +76,7 @@ When you open the `.fox2` file, you’ll find a class called `SubtitlesPackage` 
 To edit `.subp` files, use *SubpTool* from [FoxEngine.TranslationTool](https://github.com/kapuragu/FoxEngine.TranslationTool/releases/tag/v0.2.9).  
 *SubpTool* generates an `.xml` file with the text to edit.
 
-### Tip
+## Tip
 In `tape.subp`, text will appear as `[C=XX]`, where `XX` represents the speaker’s name. For example:
 
 ```xml
