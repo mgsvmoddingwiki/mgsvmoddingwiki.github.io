@@ -217,3 +217,80 @@ This is a list of some animation act ids that can be used by SPCH files.
 | `2289914935`          | Ocelot animation                                                                        | `ocelot_g`                 |
 | `3574747766`          | Ocelot waves goodbye to leaving helicopter (not used in vanilla .spch, but used by lua) | `ocelot_go_heli`           |
 | `3423893682`          | Ocelot animation (not used in vanilla .spch)                                            | `ocelot_h`                 |
+
+## Radio callsign param wildcards
+
+These are the values used in the .exe to stand in for the callsign voice clips during radio communcation speech labels.
+
+||||||
+|-|-|-|-|-|
+|uint|chara|voiceId|desc|text|
+||||||
+||||Normal phase||
+||||(1) Start (Call for attention & self-identification): ||
+|`78712560`|`cp`|`CSN0100`|CP > Soldier|Patrol, this is CP.|
+|`2386932356`|`enemy`|`CSN0100`|Soldier > CP|CP, this is patrol.|
+|`87327801`|`cp`|`CSN0110`|CP > Soldier|All fireteams, this is CP.|
+|`3931792783`|`cp`|`HSN0010`|CP→HQ|HQ, this is CP.|
+|`676881547`|`hq`|`HSN0011`|HQ→CP|CP, this is HQ.|
+|`646808857`|`hq`|`HSN0012`|HQ→CP|All bases, this is HQ.|
+||||(2) Start (Self-identification, copy): ||
+|`1987888591`|`cp`|`CSN0200`|CP|This is CP - understood.|
+|`702674820`|`enemy`|`CSN0200`|Soldier|This is patrol, copy.|
+||||(3) Start (No "this is," copy): ||
+|`2262682492`|`cp`|`CSN0300`|CP|CP - understood.|
+|`3809894425`|`enemy`|`CSN0300`|Soldier|Patrol copies.|
+|`2525393500`|`hq`|`HSN0013`|HQ|HQ copies.|
+||||(4) End (continues, requesting response): ||
+|`1434401699`|`cp`|`CEN0010`|CP|Over.|
+|`3622427360`|`enemy`|`CEN0010`|Soldier|Over.|
+|`1286612739`|`hq`|`HEN0010`|HQ|Over.|
+||||(5) End (finishing, ending conversation)||
+|`932012133`|`cp`|`CEN0020`|CP|Out.|
+|`3388597016`|`enemy`|`CEN0020`|Soldier|Out.|
+|`3953815365`|`hq`|`HEN0020`|HQ|Out.|
+||||||
+||||Caution phase||
+||||(1) Start (Call for attention & self-identification): ||
+|`6190386`|`cp`|`CSC0100`|CP > Soldier|Patrol, this is CP!|
+|`1774348542`|`enemy`|`CSC0100`|Soldier > CP|CP, this is patrol!|
+|`2458855629`|`cp`|`CSC0110`|CP > Soldier|All fireteams, this is CP!|
+|`70191719`|`cp`|`HSC0010`|CP→HQ|HQ, HQ, this is CP!|
+|`2140409707`|`hq`|`HSC0011`|HQ→CP|CP, this is HQ!|
+|`2321717165`|`hq`|`HSC0012`|HQ→CP|All bases, this is HQ!|
+||||(2) Start (Self-identification, copy): ||
+|`2558089895`|`cp`|`CSC0200`|CP|This is CP - understood!|
+|`1623394302`|`enemy`|`CSC0200`|Soldier|This is patrol, copy!|
+||||(3) Start (No "this is," copy): ||
+|`2720577430`|`cp`|`CSC0300`|CP|CP - understood!|
+|`1439914157`|`enemy`|`CSC0300`|Soldier|Patrol copies!|
+|`1437954934`|`hq`|`HSC0013`|HQ|HQ copies!|
+||||(4) End (continues, requesting response): ||
+|`348583075`|`cp`|`CEC0010`|CP|Over!|
+|`854076898`|`enemy`|`CEC0010`|Soldier|Over!|
+|`1372754819`|`hq`|`HEC0010`|HQ|Over!|
+||||(5) End (finishing, ending conversation)||
+|`3551973937`|`cp`|`CEC0020`|CP|Out!|
+|`442391802`|`enemy`|`CEC0020`|Soldier|Out!|
+|`662546577`|`hq`|`HEC0020`|HQ|Out!|
+||||||
+||||Alert phase||
+||||(1) Start (Call for attention & self-identification): ||
+|`2872943061`|`cp`|`CSA0100`|CP > Soldier|Patrol, this is CP!!|
+|`3495247209`|`enemy`|`CSA0100`|Soldier > CP|CP, CP, this is patrol!!|
+|`2907562658`|`cp`|`CSA0110`|CP > Soldier|All fireteams, this is CP!|
+||||(2) Start (Self-identification, copy): ||
+|`3385565124`|`cp`|`CSA0200`|CP|This is CP - understood!!|
+|`2521236585`|`enemy`|`CSA0200`|Soldier|This is patrol, copy!!|
+||||(3) Start (No "this is," copy): ||
+|`2901637249`|`cp`|`CSA0300`|CP|CP - understood!!|
+|`1609925378`|`enemy`|`CSA0300`|Soldier|Patrol copies!!|
+||||(4) End (continues, requesting response): ||
+|`1213215976`|`cp`|`CEA0010`|CP|Over!!|
+|`3434381957`|`enemy`|`CEA0010`|Soldier|Over!!|
+||||(5) End (finishing, ending conversation)||
+|`365330910`|`cp`|`CEA0020`|CP|Out!!|
+|`884595133`|`enemy`|`CEA0020`|Soldier|Out!!|
+||||||
+||||Transmission cut short.||
+|`367198950`|`cp`|`CPR0200`|CP|Patrol, what's wrong? Come in, patrol!|

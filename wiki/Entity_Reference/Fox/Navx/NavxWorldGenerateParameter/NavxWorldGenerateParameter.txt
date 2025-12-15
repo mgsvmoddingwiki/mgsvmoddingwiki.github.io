@@ -20,7 +20,7 @@ TODO: Description
 
 | | |
 |-|-|
-| [resolution](#resolution) | TODO: Description |
+| [resolution](#resolution) | (voxel?) resolution of nav grid. Two NavigationGraphNodes are equivalent if their distance is < resolution. |
 | [verticalThreshold](#verticalthreshold) | TODO: Description |
 | [doesDivideIslandWithSector](#doesdivideislandwithsector) | TODO: Description |
 | [doesHoleSimplification](#doesholesimplification) | TODO: Description |
@@ -34,12 +34,12 @@ TODO: Description
 | [doesGenerateFillNavVolumeInRadius](#doesgeneratefillnavvolumeinradius) | TODO: Description |
 | [roughGraphFilePath](#roughgraphfilepath) | TODO: Description |
 | [roughGraphFilePtr](#roughgraphfileptr) | TODO: Description |
-| [worldName](#worldname) | TODO: Description |
-| [maxFileSizeInKb](#maxfilesizeinkb) | TODO: Description |
+| [worldName](#worldname) | Name of NavWorld. |
+| [maxFileSizeInKb](#maxfilesizeinkb) | If the file is larger, a .1.nav2 will be generated. |
 | [parameters](#parameters) | TODO: Description |
-| [sectorSizeHorizontal](#sectorsizehorizontal) | TODO: Description |
-| [tileSizeHorizontal](#tilesizehorizontal) | TODO: Description |
-| [searchSpaceBucketSizeHorizontal](#searchspacebucketsizehorizontal) | TODO: Description |
+| [sectorSizeHorizontal](#sectorsizehorizontal) | Height and width, in meters, of a single 2D grid cell used to generate SegmentChunks. |
+| [tileSizeHorizontal](#tilesizehorizontal) | Height and width, in meters, of a single tile. By default, the same as the size of a small block. |
+| [searchSpaceBucketSizeHorizontal](#searchspacebucketsizehorizontal) | Height and width, in meters, of a single SearchSpace bucket. |
 | [collisionAttributes](#collisionattributes) | TODO: Description |
 | [loadFox2FileListScriptPath](#loadfox2filelistscriptpath) | TODO: Description |
 
