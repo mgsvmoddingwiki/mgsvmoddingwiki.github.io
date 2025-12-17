@@ -30,6 +30,7 @@ permalink: /Guides/
 - ## Mission Design
     - [Mission Objectives](/Mission_Objectives)
     - [Mission Table Subscripts](/Mission_Table_Subscripts)
+    - [Create a Custom Mission](/Create_Custom_Mission)
     - [Route Set](/Route_Set)
     - [Create a Custom Map](/Create_a_Custom_Map)
     - [Using UAVs in Side-Ops](/Using_UAVs_in_Side_Ops)

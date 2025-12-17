@@ -1,5 +1,5 @@
 ---
-title: Localization
+title: Create a Custom Mission
 permalink: /Create_Custom_Mission/
 tags: [Guides, Mission Design]
 ---
