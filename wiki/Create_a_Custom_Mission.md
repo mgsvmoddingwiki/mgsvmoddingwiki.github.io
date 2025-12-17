@@ -1,25 +1,22 @@
 ---
 title: Create a Custom Mission
 permalink: /Create_Custom_Mission/
-tags: [Guides, Mission Design]
+tags: [Guides, Missions]
 ---
 
-This guide will help you create an empty working mission.  
-And will require the mission to be packed using [MakeBite](https://www.nexusmods.com/metalgearsolidvtpp/mods/106).  
-As well as a tutorial on [how to use it MakeBite](https://mgsvmoddingwiki.github.io/SnakeBite_Mod_Manager/#makebite)
+This guide will help you create an empty working mission.  The mission should be packed using [MakeBite](https://www.nexusmods.com/metalgearsolidvtpp/mods/106) (see [this tutorial]((https://mgsvmoddingwiki.github.io/SnakeBite_Mod_Manager/#makebite) on how to use MakeBite).
 
 # Creating the Mod Folder
 
-there are two main folders for each custom mission, Assets and GameDir (Game Directory)  
-Here is a ready mission that can be used as a base to make any mission.  
-https://drive.google.com/file/d/1DFVEL_g7R0glkKKQvlua4L2qM3XMSEYa/view?usp=sharing
+There are two main folders for each custom mission, Assets and GameDir (Game Directory).
+
+Check this [Google Drive link](https://drive.google.com/file/d/1DFVEL_g7R0glkKKQvlua4L2qM3XMSEYa/view?usp=sharing) for a template mission that can be used as a base to make any mission.  
 
 ![Mod Folder Example](/assets/Create_Custom_Mission/Main_Mod_Folders.png)
 
 ## GameDir folder Setup
 
-GameDir will have `lua` files that will act as the heart of our mission, it will add the mission's core "area" pack.  
-and in order for [Infinite Heaven](https://www.nexusmods.com/metalgearsolidvtpp/mods/45) we need to set that lua file in a specific path.
+GameDir will have `lua` files that will act as the heart of our mission, it will add the mission's core "area" pack. In order to support [Infinite Heaven](https://www.nexusmods.com/metalgearsolidvtpp/mods/45) we need to set that lua file in a specific path.
 
 ![External Lua Path](/assets/Create_Custom_Mission/GameDir_Path.png)  
 
@@ -129,26 +126,23 @@ MissionCodes or missionIds are used in MGSV to identify missions in .lua and fil
 
 The missionCode is seemingly stored as an unsigned short integer, so it runs out at its max value. Hard story missions (extreme, total stealth, subsistence) have a mission code 1k higher than the original mission.
 
-> **Note for mission authors:** Due to how the engine uses missionCodes must be unique for each mission. So if you are creating missions you should make sure you don't conflict with existing ones, and update this page with the ids you intend to use.
+> **Note for mission authors:** Due to how the engine uses missionCodes must be unique for each mission. So if you are creating missions you should make sure you don't conflict with existing ones, and update [this page](/Custom_Missions_List) with the ids you intend to use.
 
-Detailed information about [missionCode](https://mgsvmoddingwiki.github.io/MissionCodes/)
+Detailed information about [missionCode](/MissionCodes/)
 
 #### location
 
-A string value location tthat is a part of the system that represents a map/playspace. For a
-given location there may be one or more
-Missions
+A string value location that is a part of the system that represents a map/playspace. For agiven location there may be one or more Missions.
 
-See also [Custom Locations List](https://mgsvmoddingwiki.github.io/Custom_Locations_List/)
+See also [Custom Locations List](/Custom_Locations_List/)
 
-Detailed information about [Locations](https://mgsvmoddingwiki.github.io/Locations/)
+Detailed information about [Locations](/Locations/)
 
 #### hideMission
 
-A boolean value that makes the mission hidden if set to `true`, it can be later opened using `TppStory.SetMissionOpenFlag`.
-Here is a full example of a moudle that opens a hidden custom mission.
+A boolean value that makes the mission hidden if set to `true`, it can be later opened using `TppStory.SetMissionOpenFlag`. Below is a full example of a module that opens a hidden custom mission.
 
-It check if that mission with the Uniqe missionCode `13105` has been cleared, if so open the other mission with the missionCode `13106`
+It checks if that mission with the Uniqe missionCode `13105` has been cleared, if so open the other mission with the missionCode `13106`
 ```lua
 local this = {}
 
@@ -167,7 +161,7 @@ end
 return this
 ```
 
-Main Vanilla missions can also be checked if it's clear, creating a unique story proggrestion!
+Main Vanilla missions can also be checked if it's clear, creating a unique story progression!
 
 #### `this.packs = function(missionCode)`
     
@@ -190,13 +184,12 @@ A boolean value that will enable out of bounds system (innerZone, outerZone, hot
 
 #### missionMapParams
 
-is a table that containts other tables that will have information about differnant things like the mission area,
-mission start point and heli land points.
+A table that containts other tables that will have information about differnant things like the mission area, mission start point and heli land points.
 
 ##### missionArea2
-Normal mission area zones as they appear on the iDroid, the actual in-game check traps are in a `.trap` file.  
-and leaving it will **only warn** the player that they're leaving.
-More info about [.trap](https://mgsvmoddingwiki.github.io/TRAP/).
+Normal mission area zones as they appear on the iDroid, the actual in-game check traps are in a `.trap` file. Leaving it will **only warn** the player that they're leaving.
+
+More info about [.trap](/TRAP/).
 
 **You can get the coordinates using Infinite heaven by holding the Call Button and the Stance button.**
 
@@ -230,10 +223,10 @@ More info about [.trap](https://mgsvmoddingwiki.github.io/TRAP/).
 ```
 
 ##### safetyArea2
-Hot zone as it appears on the iDroid.  
-and remember that this only affects it visually.
+Hot zone as it appears on the iDroid. Remember that this only affects it visually.
 
 **You can get the coordinates using Infinite heaven by holding the Call Button and the Stance button.**
+
 ```lua
 safetyArea2 = {
 	{
@@ -250,8 +243,8 @@ safetyArea2 = {
 ```
 
 ##### missionStartPoint
-It sets where the player spawns if in `Infinite Heaven`, the option to start missions on foot is enabled.
-It it can take a single `Vector3`.
+It sets where the player spawns if in `Infinite Heaven`, the option to start missions on foot is enabled. It it can take a single `Vector3`.
+
 ```lua
 missionStartPoint = {
     point = Vector3(141.47,275.51,2353.44),
@@ -260,6 +253,7 @@ missionStartPoint = {
 
 ##### heliLandPoint
 The landing zones that the player can select from the Idroid while in the ACC.
+
 ```lua
 heliLandPoint = {
 	{
@@ -273,6 +267,7 @@ heliLandPoint = {
 
 ##### heliSpaceFlags
 Sortie/mission prep screen feature flags
+
 ```lua
 heliSpaceFlags = {
 	SkipMissionPreparetion = false,   --No sortie prep, like vanilla Mother Base.
@@ -282,9 +277,8 @@ heliSpaceFlags = {
 },
 ```
 
-And that's everything you need to make it work, there are of course tons of other options that you can do.
-For example setting the`GMP Reward` when the mission is completed.
-Or even how many` Mission Tasks` the mission has, but that of course needs extra steps.
+And that's everything you need to make it work, there are of course tons of other options that you can do. For example setting the `GMP Reward` when the mission is completed, or even how many` Mission Tasks` the mission has, but that of course needs extra steps.
+
 ```lua
 missionGuaranteeGMP=600000,
 ```
@@ -309,6 +303,6 @@ The `_fpk` folder  will contain assets, like models, the routes that the GameObj
 
 ### fpkd
 The `_fpkd` folder  will contain data, like fox2, effects and lua files that will controll everything with mission.
-More info about that can be found in [Mission Objectives](https://mgsvmoddingwiki.github.io/Mission_Objectives/) and [Mission Table Subscripts](https://mgsvmoddingwiki.github.io/Mission_Table_Subscripts/) wiki pages.
+More info about that can be found in [Mission Objectives](/Mission_Objectives/) and [Mission Table Subscripts](/Mission_Table_Subscripts/) wiki pages.
 
-**For a ready zip file that contains everything explained here, check the google drive link above.**
+**For a ready zip file that contains everything explained here, check the Google Drive link near the top of the page.**
