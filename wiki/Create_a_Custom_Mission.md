@@ -4,13 +4,13 @@ permalink: /Create_Custom_Mission/
 tags: [Guides, Missions]
 ---
 
-This guide will help you create an empty working mission.  The mission should be packed using [MakeBite](https://www.nexusmods.com/metalgearsolidvtpp/mods/106) (see [this tutorial]((https://mgsvmoddingwiki.github.io/SnakeBite_Mod_Manager/#makebite) on how to use MakeBite).
+This guide will help you create an empty working mission.  The mission should be packed using [MakeBite](https://www.nexusmods.com/metalgearsolidvtpp/mods/106) (see [this tutorial](/SnakeBite_Mod_Manager/#makebite) on how to use MakeBite).
+
+For a **ready-to-use template** of everything explained on this page check out this [Google Drive link](https://drive.google.com/file/d/1DFVEL_g7R0glkKKQvlua4L2qM3XMSEYa/view?usp=sharing), which can be used as a base to make any mission.
 
 # Creating the Mod Folder
 
 There are two main folders for each custom mission, Assets and GameDir (Game Directory).
-
-Check this [Google Drive link](https://drive.google.com/file/d/1DFVEL_g7R0glkKKQvlua4L2qM3XMSEYa/view?usp=sharing) for a template mission that can be used as a base to make any mission.  
 
 ![Mod Folder Example](/assets/Create_Custom_Mission/Main_Mod_Folders.png)
 
@@ -304,5 +304,3 @@ The `_fpk` folder  will contain assets, like models, the routes that the GameObj
 ### fpkd
 The `_fpkd` folder  will contain data, like fox2, effects and lua files that will controll everything with mission.
 More info about that can be found in [Mission Objectives](/Mission_Objectives/) and [Mission Table Subscripts](/Mission_Table_Subscripts/) wiki pages.
-
-**For a ready zip file that contains everything explained here, check the Google Drive link near the top of the page.**
