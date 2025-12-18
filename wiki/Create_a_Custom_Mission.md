@@ -6,7 +6,9 @@ tags: [Guides, Missions]
 
 This guide will help you create an empty working mission.  The mission should be packed using [MakeBite](https://www.nexusmods.com/metalgearsolidvtpp/mods/106) (see [this tutorial](/SnakeBite_Mod_Manager/#makebite) on how to use MakeBite).
 
-For a **ready-to-use template** of everything explained on this page check out this [Google Drive link](https://drive.google.com/file/d/1DFVEL_g7R0glkKKQvlua4L2qM3XMSEYa/view?usp=sharing), which can be used as a base to make any mission.
+For a **ready-to-use template** of everything explained on this page download the following zip, which can be used as a base to make any mission.
+
+{% include download file="/assets/Create_Custom_Mission/Mission_Example.zip" %}
 
 # Creating the Mod Folder
 
