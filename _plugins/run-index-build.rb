@@ -1,7 +1,7 @@
 module BuildSearchIndexes
     def self.process(site, payload)
         return if @processed
-        system "powershell build-search-indexes.ps1" # `powershell` rather than `pwsh` prefix to support older versions (eg: on W10)
+        system "powershell -ep Bypass ./build-search-indexes.ps1" # `powershell` rather than `pwsh` prefix to support older versions (eg: on W10)
         @processed = true
     end
 end
