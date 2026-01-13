@@ -4,7 +4,7 @@ permalink: /Infinite_Heaven/
 tags: [Lua, Guides, Tools, Infinite Heaven]
 ---
 
-{% include infobox dev="TinManTex" site="https://www.nexusmods.com/metalgearsolidvtpp/mods/45" download="https://www.nexusmods.com/metalgearsolidvtpp/mods/45?tab=files" GitHub="https://github.com/TinManTex/InfiniteHeaven" sourcecode="https://github.com/TinManTex/InfiniteHeaven https://github.com/kapuragu/InfiniteHeaven" %}
+{% include infobox dev="TinManTex" site="https://www.nexusmods.com/metalgearsolidvtpp/mods/45" download="https://www.nexusmods.com/metalgearsolidvtpp/mods/45?tab=files" sourcecode="https://github.com/TinManTex/InfiniteHeaven https://github.com/kapuragu/InfiniteHeaven" %}
 
 Infinite Heaven is a mod for Metal Gear Solid V: The Phantom Pain intended to extend gameplay through customizable settings and features.
 
