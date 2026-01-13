@@ -42,5 +42,16 @@
                 </div>
             </li>
         {% endif %}
+        {% if include.sourcecode %}
+           {% assign infoboxsourcecode = include.sourcecode | split: " " %}
+           <li class="sourcecode">
+               <span class="label">Source code</span>
+               <div class="value-wrapper">
+                   {% for url in infoboxsourcecode %}
+                   <span class="value"><a href="{{ url }}">Link</a></span>
+                   {% endfor %}
+               </div>
+           </li>
+       {% endif %}
     </ul>
 </div>
