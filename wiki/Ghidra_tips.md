@@ -343,3 +343,7 @@ Faster alternative:
 ```
 protontricks-launch --appid=287700 <path to x64dbg.exe>
 ```
+
+## Xbox360
+
+Use [X360 XEX Loader](https://github.com/zeroKilo/XEXLoaderWV) for binary analysis.
