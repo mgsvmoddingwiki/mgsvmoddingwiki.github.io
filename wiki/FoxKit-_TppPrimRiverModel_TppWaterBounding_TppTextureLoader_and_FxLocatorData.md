@@ -6,14 +6,13 @@ tags: [FoxKit, Entities, Guides, Rendering]
 
 Guide for FoxKit 1.0.
 
-This guide will continue the Mod Folder created in [FoxKit: StaticModel
-and
-GeoxCollisionFreeShape](/FoxKit-_StaticModel_and_GeoxCollisionFreeShape "wikilink").
-Please, see **Setting the Mod Folder** and **Creating a Fox2 file.** Now
-we'll meet four entities building water in-game and adding a vfx.
+This guide will continue the Mod Folder created in [FoxKit: StaticModel and GeoxCollisionFreeShape](/FoxKit-_StaticModel_and_GeoxCollisionFreeShape "wikilink").
+Please, see [Setting the Mod Folder](/FoxKit-_StaticModel_and_GeoxCollisionFreeShape/#setting-the-mod-folder)
+and [Creating a Fox2 file](/FoxKit-_StaticModel_and_GeoxCollisionFreeShape/#creating-a-fox2-file).
+Now we'll meet four entities building water in-game and adding a vfx.
 
 # **TppPrimRiverModel** and TppPrimRiverModelParam
-This Entity creates the visual and moviment of water in-game. A second Entity called
+This Entity creates the visual and movement of water in-game. A second Entity called
 TppPrimRiverModelParam deals with more options. The Entity also needs to
 load a texture which TppTextureLoader should come in hand.
 
@@ -252,5 +251,15 @@ Pack the fixed fox2 file again. Make the .mgsv file in MakeBite,
 building the **LoadingStairsInGame folder.** Open with SnakeBite and see
 it in-game.
 
-![](/assets/Ingame01.jpg){:width="1328px"}
+![](/assets/Ingame01.jpg)
 
+
+## Doing it without FoxKit
+
+Alternatively, you can do it without using FoxKit.
+
+Immidiately spawning chaff effect from lua:
+
+1. Create a custom fpkd with a custom Fox2 effects file and the `/Assets/tpp/effect/vfx_data/weapon/fx_tpp_wepchf01_s3.vfx` file from chaff strikes (`0/00_dat/Assets/tpp/pack/collectible/common/col_common_tpp.fpkd`)
+2. This fox2 file has a `FxLocatorData` entity that points to said vfx file and has an `effectInstanceName`
+3. With that, calling `TppDataUtility.CreateEffectFromId` with the `effectInstanceName` should load in said effects
