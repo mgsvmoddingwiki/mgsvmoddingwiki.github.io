@@ -45,7 +45,7 @@ permalink: /I_want_to_mod/
   - ## Cutscenes
     - Need a guide!
   - ## Effects
-    - Need a guide!
+    - [Spawning a custom effect using FoxKit](/FoxKit-_TppPrimRiverModel_TppWaterBounding_TppTextureLoader_and_FxLocatorData)
   - ## Fonts
     - Need a guide!
   - ## Vehicles
