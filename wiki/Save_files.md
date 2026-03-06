@@ -39,3 +39,7 @@ You can change it to keep main save file safe. More information about saves can 
 In the exe you'll be looking for `tpp::gm::impl::ScriptVar_*` functions.
 
 Use [squib](https://github.com/unknown321/squib) to decode/encode files and inspect their contents.
+
+### Resources
+
+  - [Save games from the first mission to the last, sort by last modified date](https://drive.google.com/file/d/1VN0-LjATsIGWfpAF0SfMCM4KPRPS0nr1/view?usp=sharing)
