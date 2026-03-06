@@ -234,3 +234,6 @@ Gimp is similar.
         fine though it still functions as it should. Save it as a DDS,
         and then convert it with ftex tool.
 
+### Resources
+
+  -  [Site for making normal maps](https://cpetry.github.io/NormalMap-Online/)
