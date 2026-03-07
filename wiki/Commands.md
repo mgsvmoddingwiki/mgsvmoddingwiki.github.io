@@ -1877,7 +1877,24 @@ TppSoldier2
 <tr class="odd">
 <td><p>SetSoldier2Flag</p></td>
 <td><p>flag, on</p></td>
-<td><p>many possible flags, some unknown ex flags: <code>highRank</code> (TppEnemy.lua) <code>inLocator</code> (s10211), <code>forceDeadMessageOwnerPlayer</code>, <code>forceDeadMessageOwnerInvalid</code>, <code>forceFriendlyMarker</code> (s10240)</p></td>
+<td><p>flags:
+<ul>
+    <li><code>highRank</code> (TppEnemy.lua)</li>
+    <li><code>inLocator</code> (s10211)</li>
+    <li><code>forceDeadMessageOwnerPlayer</code></li>
+    <li><code>forceDeadMessageOwnerInvalid</code></li>
+    <li><code>forceFriendlyMarker</code> (s10240)</li>
+    <li><code>isVip</code></li>
+</ul></p>
+<p>flag hashes (names unknown):
+<ul>
+    <li><code>3989d37d</code></li>
+    <li><code>89c7a418</code></li>
+    <li><code>97442223</code></li>
+    <li><code>d5c9786d</code></li>
+</ul>
+</p>
+</td>
 </tr>
 <tr class="even">
 <td><p>SetSoldier2SubType</p></td>
