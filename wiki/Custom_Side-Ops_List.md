@@ -71,7 +71,9 @@ See [MissionCodes](/MissionCodes#side-op-ids) for vanilla questIds. [Infinite He
 | q31103-q31149              | Adam_Online     |             |           | Reserved
 | q31150                     | Adam_Online     |             | 1         | [TFMB - Caught In The Crossfire](https://www.nexusmods.com/metalgearsolidvtpp/mods/1257)
 | q31151-q31199              | Adam_Online     |             |           | Reserved
-| q31200-q31250              | To4oo4/Tora     |             | 50        | [Tora's Sideop Pack 01](https://www.nexusmods.com/metalgearsolidvtpp/mods/1506/)
+| q31200-q31211              | To4oo4/Tora     |             | 12        | [Tora's Sideop Pack 01](https://www.nexusmods.com/metalgearsolidvtpp/mods/1506/)
+| q31212-q31230              | To4oo4/Tora     |             | 19        | Tora's Sideop Pack 02
+| q31231-q31250              | To4oo4/Tora     |             | 20        | Tora's Sideop Pack 03
 | q31251-q35600              |                 |             |           | Reserved
 | q35648-q34651              | Ventos          |             | 4         | [Boss Sheep ](https://www.nexusmods.com/metalgearsolidvtpp/mods/624)
 | q36660-q36677              | Ventos          |             | 12        | [Quest Sand - Side Ops](https://www.nexusmods.com/metalgearsolidvtpp/mods/643)
