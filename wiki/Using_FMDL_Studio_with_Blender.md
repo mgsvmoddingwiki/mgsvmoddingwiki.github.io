@@ -6,11 +6,14 @@ redirect_from:
     - /Blender_and_Unity_3D_modelling_pipeline_notes/
 ---
 
-Blender: [https://www.blender.org/](https://www.blender.org/)
+## Things you'll need
 
-FMDL Studio: [https://github.com/BobDoleOwndU/FMDL-Studio-v2](https://github.com/BobDoleOwndU/FMDL-Studio-v2)
+- [Blender](https://www.blender.org/)
+- [FMDL Studio](https://github.com/BobDoleOwndU/FMDL-Studio-v2)
 
 Please consult [FMDL Studio wiki][1] before starting.
+
+> **Note:** Blender removed native support for Collada file import/export beginning with versions 4.5 LTS and 5.0. For working with FMDL exported to Collada in Blender use a version earlier than these. Older downloads available [here](https://download.blender.org/release/) (for Windows choose installers ending in `windows-x64.msi`). Multiple Blender versions can be installed without conflicting with each other.
 
 ## Blender 2.81+
 
