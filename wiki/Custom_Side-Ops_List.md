@@ -36,7 +36,7 @@ See [MissionCodes](/MissionCodes#side-op-ids) for vanilla questIds. [Infinite He
 | q30306-q30311              | CapLagRobin     | mafr, afgh  | 6         | [Side Op Demo Tape](https://www.nexusmods.com/metalgearsolidvtpp/mods/650)
 | q30312                     | CapLagRobin     | mafr        | 1         | [Prisoner Extraction 7780](https://www.nexusmods.com/metalgearsolidvtpp/mods/725)
 | q30313-q30314              | CapLagRobin     | mafr, afgh  | 2         | [Side Op Demo Tape](https://www.nexusmods.com/metalgearsolidvtpp/mods/650)
-| q30315                     | CapLagRobin     |             | 1         | Reserved
+| q30315                     | CapLagRobin     |             | 1         | [LA Ops - COMM CONTROL](https://www.nexusmods.com/metalgearsolidvtpp/mods/1781)
 | q30316-q30317              | CapLagRobin     | afgh        | 2         | [XOF Ops 1-2 ](https://www.nexusmods.com/metalgearsolidvtpp/mods/718)
 | q30318                     | CapLagRobin     |             | 1         | Reserved
 | q30319-q30320              | CapLagRobin     | mafr, afgh  | 2         | [XOF Ops 3-4](https://www.nexusmods.com/metalgearsolidvtpp/mods/718)
