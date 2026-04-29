@@ -93,6 +93,8 @@ needs to be deflated prior to concatenation.
   - 0x2 - 0x3 (uint16): Uncompressed chunk size.
   - 0x4 - 0x7 (uint32): Data offset.<sup>\[1\]</sup>
 
+This is the information for a single chunk. Beginning at **the mipmap's .ftexs offset field** in its desired .ftexs file, there is an array of these chunk information structs, with the length being the mipmap's **chunk count** field. Once this table is read you can seek then read zlib chunks according to each chunk's data offset.<sup>\[1\]</sup>
+
 <sup>\[1\]</sup>This offset accounts for the size of the chunk
 information array, and adding the base offset (as specified in the .ftex
 file via the mipmap information) to the data offset yields the start of
