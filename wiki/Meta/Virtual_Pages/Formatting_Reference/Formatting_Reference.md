@@ -28,6 +28,12 @@ General is the same as the [regular syntax](/Meta/Formatting_Reference/#lists), 
 
 ---
 
+## Footnotes
+
+Automatic footnotes are unsupported in virtual pages.
+
+---
+
 ## Images
 
 Unlike regular page syntax there's no support for scaling the images smaller or aligning them to the left/right. So all images will appear their full width and centered.

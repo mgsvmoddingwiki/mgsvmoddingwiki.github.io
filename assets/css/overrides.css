@@ -387,6 +387,7 @@ body.expanded-width-instant {
 li::marker,
 .content-button::before,
 .iconed::before,
+.reversefootnote::before,
 #git-wiki-content a[href^="http"]::before {
     opacity: 0.88; /* to optically match color of text. Same for all icons using `--color-secondary` */
 }
@@ -1609,7 +1610,9 @@ blockquote.important a:hover {
 
 /* Heading fragment identifier links (added via JS) */
 .heading-frag-id-link,
-.index .heading-frag-id-link {
+.index .heading-frag-id-link,
+.reversefootnote /* if I could find the part of the Kramdown Ruby class affecting this HTML I could add some CSS classes but otherwise adding it as a selector here */
+{
     width: 32px;
     height: 32px;
     background: var(--color-buttons);
@@ -1634,19 +1637,23 @@ h2.heading-with-frag-id .heading-frag-id-link {
     margin-top: 0;
 }
 
-.heading-with-frag-id:hover .heading-frag-id-link {
+.heading-with-frag-id:hover .heading-frag-id-link,
+.footnotes li:hover .reversefootnote {
     opacity: 1;
 }
 
-.heading-frag-id-link:hover {
+.heading-frag-id-link:hover,
+.reversefootnote:hover {
     background: var(--color-buttons-hover);
 }
 
-.heading-frag-id-link:active {
+.heading-frag-id-link:active,
+.reversefootnote:active {
     filter: var(--filter-button-active);
 }
 
-.heading-frag-id-link::before {
+.heading-frag-id-link::before,
+.reversefootnote::before {
     width: 16px;
     height: 16px;
     background: var(--color-secondary);
@@ -1913,6 +1920,92 @@ h2.heading-with-frag-id .heading-frag-id-link {
     cursor: zoom-out;
     position: relative;
     will-change: transform;
+}
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ FOOTNOTES ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.footnote {
+    height: 18px;
+    background: var(--color-buttons);
+    color: var(--color-primary);
+    font-size: var(--font-size-small);
+    font-weight: var(--font-weight-semibold);
+    line-height: 100%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 6px;
+    border-radius: var(--radius-secondary);
+    box-shadow: var(--shadow-secondary);
+    margin-left: 2px;
+    position: relative;
+    top: -5px;
+}
+
+.footnote:hover {
+    background: var(--color-buttons-hover);
+}
+
+.footnote:active {
+    filter: var(--filter-button-active);
+}
+
+.footnote:hover,
+.footnote:active {
+    color: inherit;
+}
+
+/* Since Kramdown wraps footnote in parent sup element */
+sup[role="doc-noteref"]:target .footnote {
+    background: var(--color-accent);
+    color: var(--color-accent-foreground);
+}
+
+sup[role="doc-noteref"]:target .footnote:hover {
+    background: var(--color-accent-hover);
+}
+
+
+sup[role="doc-noteref"]:target .footnote:active {
+    filter: var(--filter-button-active)
+}
+
+.footnotes ol {
+    --list-inset: 40px; /* already the browser default at least in Chromium/FF but made explicit so target pseudo-element offset remains exact */
+    padding-inline-start: var(--list-inset);
+}
+
+.footnotes li {
+    position: relative;
+}
+
+.footnotes li:target::before {
+    width: var(--border-width);
+    height: 100%;
+    background: var(--color-accent);
+    content: '';
+    display: block;
+    border-radius: var(--radius-secondary);
+    position: absolute;
+    left: calc(-1 * var(--list-inset));
+}
+
+.reversefootnote {
+    font-size: 0 !important;
+    margin-left: calc(var(--spacing-minor) / 2);
+    position: relative; /* can't be absolute since there can be multiple backlinks if the footnote name used multiple places in the text */
+}
+
+.reversefootnote::before {
+    -webkit-mask-image: url("/assets/images/ui.svg#icons-footnotes-backlink");
+    mask-image: url("/assets/images/ui.svg#icons-footnotes-backlink");
+}
+
+.reversefootnote,
+.reversefootnote:hover,
+.reversefootnote:active {
+    color: transparent; /* hide Kramdown inserted string */
 }
 
 

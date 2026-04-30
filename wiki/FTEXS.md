@@ -93,12 +93,9 @@ needs to be deflated prior to concatenation.
   - 0x2 - 0x3 (uint16): Uncompressed chunk size.
   - 0x4 - 0x7 (uint32): Data offset.<sup>\[1\]</sup>
 
-This is the information for a single chunk. Beginning at **the mipmap's .ftexs offset field** in its desired .ftexs file, there is an array of these chunk information structs, with the length being the mipmap's **chunk count** field. Once this table is read you can seek then read zlib chunks according to each chunk's data offset.<sup>\[1\]</sup>
+This is the information for a single chunk. Beginning at **the mipmap's .ftexs offset field** in its desired .ftexs file, there is an array of these chunk information structs, with the length being the mipmap's **chunk count** field. Once this table is read you can seek then read zlib chunks according to each chunk's data offset[^chunk-ref].
 
-<sup>\[1\]</sup>This offset accounts for the size of the chunk
-information array, and adding the base offset (as specified in the .ftex
-file via the mipmap information) to the data offset yields the start of
-the image chunk data.
+[^chunk-ref]: This offset accounts for the size of the chunk information array, and adding the base offset (as specified in the .ftex file via the mipmap information) to the data offset yields the start of the image chunk data.
 
 ## Map Types
 
@@ -198,8 +195,6 @@ the image chunk data.
 
 ## Normal Map Conversion
 
-### Normal Map Conversion
-
 To convert a Fox Engine texture to a standard normal map, do the
 following:
 
@@ -236,6 +231,6 @@ Gimp is similar.
         fine though it still functions as it should. Save it as a DDS,
         and then convert it with ftex tool.
 
-### Resources
+## Resources
 
   -  [Site for making normal maps](https://cpetry.github.io/NormalMap-Online/)

@@ -141,6 +141,48 @@ Code block with syntax highlighting:
 
 ---
 
+## Footnotes
+
+{% include spoiler-start %}
+
+To add a footnote first add a footnote name like {% raw %}`[^my-footnote-name]`{% endraw %} among the text. The same name can be reused throughout the text to refer to the same footnote definition.
+
+> Footnote names can be in any case (not just lowercase) but can't use spaces.
+
+Then for the definition add the the same syntax but suffixed with a colon, like {% raw %}`[^my-footnote-name]:`{% endraw %}, followed by the definition text.
+
+**Example:**
+
+This is one reference[^example].
+
+[^example]: And the definition here.
+
+And some another reference[^another] in following text. This[^example] reference reuses the earlier one.
+
+[^another]: Here's another definition.
+
+```
+{% raw %}
+This is one reference[^example].
+
+[^example]: And the definition here.
+
+And some another reference[^another] in following text. This[^example] reference reuses the earlier one.
+
+[^another]: Here's another definition.
+{% endraw %}
+```
+
+> **Tip:** as you can see from the example the definition can be placed anywhere in the text, it doesn't have to be at the bottom of the page. The processor will itself remove the definition and always place it in a [References](#meta-references) section at the bottom of the page.
+
+> **Tip:** after clicking on the reference you can return to the text that included the footnote link by hovering over the defintion text and clicking the return arrow backlink button. If the footnote was used multiple times in the text there will be multiple backlinks.
+
+> **Note:** indented code immediately following a footnote definition will become part of the definition. If this is unintended it can be avoided by wrapping the code block in the three backtick ({% raw %}```{% endraw %}) syntax.
+
+{% include spoiler-end %}
+
+---
+
 ## Images
 
 {% include spoiler-start %}
