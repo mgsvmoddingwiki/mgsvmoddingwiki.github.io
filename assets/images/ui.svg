@@ -293,6 +293,11 @@
             <path d="M152.665,24L156.56,29.005L156.56,29L152.832,34.005"/>
         </g>
 
+        <g id="icons-footnotes-backlink-path" class="stroke" transform="translate(-68 -27)">
+            <path d="M76,29L76,39C76,40.667 74.667,42 73,42L72,42"/>
+            <path d="M70.5,33.5L76,28L81.5,33.5"/>
+        </g>
+
         <style><![CDATA[
 
             * {
@@ -446,6 +451,8 @@
     <use class="output" id="icons-sidebar-youtube" xlink:href="#icons-sidebar-youtube-path"/>
     <use class="output" id="icons-sidebar-page" xlink:href="#icons-editing-add-path"/>
     <use class="output" id="icons-sidebar-nodes" xlink:href="#icons-sidebar-nodes-path"/>
+
+    <use class="output" id="icons-footnotes-backlink" xlink:href="#icons-footnotes-backlink-path"/>
 
 
     <!-- Inserted here so animation only plays when referenced via fragment identifier -->

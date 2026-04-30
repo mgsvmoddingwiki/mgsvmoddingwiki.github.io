@@ -141,6 +141,48 @@ Code block with syntax highlighting:
 
 ---
 
+## Footnotes
+
+{% include spoiler-start %}
+
+To add a footnote first add a footnote name like {% raw %}`[^my-footnote-name]`{% endraw %} among the text. The same name can be reused throughout the text to refer to the same footnote definition.
+
+> Footnote names can be in any case (not just lowercase) but can't use spaces.
+
+Then for the definition add the the same syntax but suffixed with a colon, like {% raw %}`[^my-footnote-name]:`{% endraw %}, followed by the definition text.
+
+**Example:**
+
+This is one reference[^example].
+
+[^example]: And the definition here.
+
+And some another reference[^another] in following text. This[^example] reference reuses the earlier one.
+
+[^another]: Here's another definition.
+
+```
+{% raw %}
+This is one reference[^example].
+
+[^example]: And the definition here.
+
+And some another reference[^another] in following text. This[^example] reference reuses the earlier one.
+
+[^another]: Here's another definition.
+{% endraw %}
+```
+
+> **Tip:** as you can see from the example the definition can be placed anywhere in the text, it doesn't have to be at the bottom of the page. The processor will itself remove the definition and always place it in a [References](#meta-references) section at the bottom of the page.
+
+> **Tip:** after clicking on the reference you can return to the text that included the footnote link by hovering over the defintion text and clicking the return arrow backlink button. If the footnote was used multiple times in the text there will be multiple backlinks.
+
+> **Note:** indented code immediately following a footnote definition will become part of the definition. If this is unintended it can be avoided by wrapping the code block in the three backtick ({% raw %}```{% endraw %}) syntax.
+
+{% include spoiler-end %}
+
+---
+
 ## Images
 
 {% include spoiler-start %}
@@ -431,17 +473,17 @@ Floating sidebar for program/tool/script information.
 
 {% include spoiler-start %}
 
-{% include infobox dev="choc, Joey" site="https://mgsvmoddingwiki.github.io/" download="https://mgsvmoddingwiki.github.io/Meta/Formatting_Reference" sourcecode="https://github.com/mgsvmoddingwiki/mgsvmoddingwiki.github.io" %}
+{% include infobox dev="choc, Joey" site="https://mgsvmoddingwiki.github.io/" download="https://mgsvmoddingwiki.github.io/Meta/Formatting_Reference" %}
 
 - By default the name will be detected from the page it's included on but this can be overridden by adding a `title=""` attribute and value.
 
-- The `dev`, `site`, `download` and `sourcecode` values are all optional and can be removed/added as needed. Javascript will automatically detect the base domain names from provided URLs and will show them for the visible link names.
+- The `dev`, `site` and `download` values are all optional and can be removed/added as needed. Javascript will automatically detect the base domain names from provided URLs and will show them for the visible link names.
 
-- To add multiple names to the `dev` item separate each name by a comma and a space (`, `). Multiple URLs can also be added to the `site`, `download` and `sourcecode` items by separating the URLs with a space (any literal spaces in a URL can be replaced with `%20`).
+- To add multiple names to the `dev` item separate each name by a comma and a space (`, `). Multiple URLs can also be added to the `site` and `download` items by separating the URLs with a space (any literal spaces in a URL can be replaced with `%20`).
 
 ```
 {% raw %}
-{% include infobox dev="choc, Joey" site="https://mgsvmoddingwiki.github.io/" download="https://mgsvmoddingwiki.github.io/Meta/Formatting_Reference" sourcecode="https://github.com/mgsvmoddingwiki/mgsvmoddingwiki.github.io" %}
+{% include infobox dev="choc, Joey" site="https://mgsvmoddingwiki.github.io/" download="https://mgsvmoddingwiki.github.io/Meta/Formatting_Reference" %}
 {% endraw %}
 ```
 {:.clear}
