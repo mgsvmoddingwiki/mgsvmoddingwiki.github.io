@@ -293,8 +293,8 @@
             <path d="M152.665,24L156.56,29.005L156.56,29L152.832,34.005"/>
         </g>
 
-        <g id="icons-footnotes-backlink-path" class="stroke" transform="translate(-68 -27)">
-            <path d="M76,29L76,39C76,40.667 74.667,42 73,42L72,42"/>
+        <g id="icons-footnotes-backlink-path" class="stroke intermediate" transform="scale(0.8) translate(-68.5 -26)">
+            <path transform="translate(0 -0.6)" d="M76,29L76,39C76,40.667 74.667,42 73,42L72,42"/>
             <path d="M70.5,33.5L76,28L81.5,33.5"/>
         </g>
 
@@ -325,6 +325,10 @@
 
             .stroke.thin {
                 stroke-width: 1px;
+            }
+
+            .stroke.intermediate {
+                stroke-width: 1.5px; /* use when line aligned so it's only 2px wide at 100% DPI but allows rest to be thicker */
             }
 
             .stroke.miter-sharp {
@@ -400,8 +404,7 @@
             ]]></style>
     </defs>
 
-    <!-- <rect width="100%" height="100%" fill="lightblue"/> -->
-
+    <!-- <rect width="100%" height="100%" fill="black"/> -->
 
     <use class="output" id="icons-toc" xlink:href="#icons-toc-path"/>
     <use class="output" id="icons-download-file" xlink:href="#icons-download-file-path"/>

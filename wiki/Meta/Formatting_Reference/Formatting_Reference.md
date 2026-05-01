@@ -177,7 +177,7 @@ And some another reference[^another] in following text. This[^example] reference
 
 > **Tip:** after clicking on the reference you can return to the text that included the footnote link by hovering over the defintion text and clicking the return arrow backlink button. If the footnote was used multiple times in the text there will be multiple backlinks.
 
-> **Note:** indented code immediately following a footnote definition will become part of the definition. If this is unintended it can be avoided by wrapping the code block in the three backtick ({% raw %}```{% endraw %}) syntax.
+> **Note:** indented code immediately following a footnote definition will become part of the definition. If this is unintended it can be avoided by removing the indentation and instead wrapping the code block in the three backtick ({% raw %}```{% endraw %}) syntax.
 
 {% include spoiler-end %}
 

@@ -14,7 +14,7 @@ This article lists the presumed names of extensions used in MGSV, as well as som
 
 > **Tip:** tables can be more comfortably viewed on widescreen monitors by pressing the *Expand Page Width* button at the top of the page.
 
-| Extension | Full Name | Location(count)[[1]](#references) | Tool | Description |
+| Extension | Full Name | Location(count)[^count-explained] | Tool | Description |
 |---|---|---|---|---|
 | adm | fpk(5258), gz fpk(1) | Mentioned in exe in with other extensions: vpc,twss,tmss,adm,tetl,tmsl, tlsp,tmsu,tmsf,twpf,cani. Related to ambient sound somehow. |  |  |
 | atsh | Atmosphere Spherical Harmonics | fpk(1), gz fpk(9) | Defines ambient sky lighting, or more specifically, it defines the bounce lighting from the sky. reference in: resident_common_sky.fox2 |  |
@@ -109,7 +109,7 @@ This article lists the presumed names of extensions used in MGSV, as well as som
 | uia | UiAnimFile | fpk(3755), gz fpk(1813) | UI model asset image transition data? |  |
 | uif | UiFile | fpk(1979) gzfpk(600) | UI model asset base image? |  |
 | [uigb](/UIGB) | UiGraphFile | fpk(289) | UI graph asset? |  |
-| [uilb](/UILB) | UiLayoutFile | fpk(1904) | Based on vehicle .fox2 DataSet entries.[[2]](#references) |  |
+| [uilb](/UILB) | UiLayoutFile | fpk(1904) | Based on vehicle .fox2 DataSet entries.[^uilb-source] |  |
 | veh | Vehicle | fpkd(87) | [FoxTool](/FoxTool) |  |
 | [vfx](/VFX) | FxVfxFile | fpkd(6378) | [VfxTool](https://github.com/youarebritish/VfxTool) | Visual effect graph. |
 | [vfxlb](/VFXLB) | fpkd(133) | FxLocatorArrayData entity, vfxlbFile lba for vfx? |  |  |
@@ -135,7 +135,7 @@ This article lists the presumed names of extensions used in MGSV, as well as som
 | vdp | Vehicle Driving Parameter | gz fpkd(20) | [FoxTool](/FoxTool) | GZ |
 | vfxdb | gz fpk(30) | GZ, .vfx class database? |  |  |
 | vpc | data_02.g0s(3) | GZ |  |  |
-| Other[[3]](#references) |  |  |  |  |
+| Other[^gz-filetypes] |  |  |  |  |
 | ag | exe ag.evf |  |  |  |
 | aia | exe |  |  |  |
 | aib | AI behavior / definition file | Reference in init.lua RegisterPackageExtensionInfo Translated from comment in PT init.lua |  |  |
@@ -192,13 +192,12 @@ This article lists the presumed names of extensions used in MGSV, as well as som
 | vfxbin | exe FxVfxBinaryFile |  |  |  |
 | vnav | exe |  |  |  |
 | vo | exe vo.evf |  |  |  |
-| xml | Extensible Markup Language | Any text editor | This is may appear to not be used anywhere in the game files, but is listed in the .exe and the fox2 files are just compiled XML files.[[4]](#references) |  |
+| xml | Extensible Markup Language | Any text editor | This is may appear to not be used anywhere in the game files, but is listed in the .exe and the fox2 files are just compiled XML files.[^foxtool-cite] |  |
 
 
-## References
+[^count-explained]: Counts for archives like fpks contains duplicates. Counts only include files from \master, not master\0,\1 Counts for formats common to both TPP and GZ only added where ineresting (GZ only formats complete counts)
 
-1. Counts for archives like fpks contains duplicates. Counts only include files from \master, not master\0,\1 Counts for formats common to both TPP and GZ only added where ineresting (GZ only formats complete counts)
-2. Source: `chunk1.dat/Assets/tpp/pack/vehicle/veh_rl_east_wav.fpkd/Assets/tpp/level_asset/vehicle/veh_rl_east_wav.fox2`
+[^uilb-source]: Source: `chunk1.dat/Assets/tpp/pack/vehicle/veh_rl_east_wav.fpkd/Assets/tpp/level_asset/vehicle/veh_rl_east_wav.fox2`
 
     ```xml
     <entity class="UiGraphEntry" classVersion="1" addr="0x073F06A0" unknown1="96" unknown2="3058">
@@ -219,6 +218,7 @@ This article lists the presumed names of extensions used in MGSV, as well as som
       <dynamicProperties />
     </entity>
     ```
-3.  File types from GZ (to be split further) or referenced in exe or lua
-    but not yet found/extracted as seperate files.
-4.  <https://github.com/Atvaark/FoxTool>
+
+[^gz-filetypes]: File types from GZ (to be split further) or referenced in exe or lua but not yet found/extracted as seperate files.
+
+[^foxtool-cite]: <https://github.com/Atvaark/FoxTool>
