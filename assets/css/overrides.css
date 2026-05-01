@@ -387,7 +387,6 @@ body.expanded-width-instant {
 li::marker,
 .content-button::before,
 .iconed::before,
-.reversefootnote::before,
 #git-wiki-content a[href^="http"]::before {
     opacity: 0.88; /* to optically match color of text. Same for all icons using `--color-secondary` */
 }
@@ -1929,7 +1928,6 @@ h2.heading-with-frag-id .heading-frag-id-link {
     height: 18px;
     background: var(--color-buttons);
     color: var(--color-primary);
-    font-size: var(--font-size-small);
     font-weight: var(--font-weight-semibold);
     line-height: 100%;
     display: inline-flex;
@@ -1940,7 +1938,6 @@ h2.heading-with-frag-id .heading-frag-id-link {
     box-shadow: var(--shadow-secondary);
     margin-left: 2px;
     position: relative;
-    top: -5px;
 }
 
 .footnote:hover {
@@ -1992,12 +1989,17 @@ sup[role="doc-noteref"]:target .footnote:active {
 }
 
 .reversefootnote {
+    width: 22px;
+    height: 24px;
     font-size: 0 !important;
+    border-radius: var(--radius-secondary);
     margin-left: calc(var(--spacing-minor) / 2);
     position: relative; /* can't be absolute since there can be multiple backlinks if the footnote name used multiple places in the text */
 }
 
 .reversefootnote::before {
+    width: 12px;
+    height: 14px;
     -webkit-mask-image: url("/assets/images/ui.svg#icons-footnotes-backlink");
     mask-image: url("/assets/images/ui.svg#icons-footnotes-backlink");
 }

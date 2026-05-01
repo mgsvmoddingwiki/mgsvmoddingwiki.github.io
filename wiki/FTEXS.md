@@ -41,11 +41,11 @@ the texture\#.dat files.
   - 0xC - 0xD (uint16): Texture width.
   - 0xE - 0xF (uint16): Texture depth.
   - 0x10 (byte): Mipmap count.
-  - 0x11 (byte): Nrt flag.<sup>\[1\]</sup>
-  - 0x12 - 0x13 (uint16): Unknown flags.<sup>\[2\]</sup>
+  - 0x11 (byte): Nrt flag[^nrt-flag].
+  - 0x12 - 0x13 (uint16): Unknown flags[^0x12-0x13].
   - 0x14 - 0x7 (uint32): Unknown (always 1.)
   - 0x18 - 0x1B (uint32): Unknown (always 0.)
-  - 0x1C - 0x1F (uint32): Texture type.<sup>\[3\]</sup>
+  - 0x1C - 0x1F (uint32): Texture type[^0x1C-0x1F].
   - 0x20 (byte): .ftexs file count (not including the .ftex file.)
   - 0x21 (byte): Unknown (always .ftexs file count - 1.)
   - 0x22 - 0x2F (byte\[14\]): Padding.
@@ -55,17 +55,11 @@ the texture\#.dat files.
 The header is preceded by an array of mip map information blocks - one
 for each mipmap in the texture.
 
-<sup>\[1\]</sup>What this flag does is unknown but it is 0x02 for all
-files except for ones suffixed with "_nrt".
+[^nrt-flag]: What this flag does is unknown but it is 0x02 for all files except for ones suffixed with "_nrt".
 
-<sup>\[2\]</sup>What this flag does is unknown but for most files it is
-0x111, for a *very* small amount of files it is 0x0, and for an
-*extremely* (almost no files have this flag) it is 0x11.
+[^0x12-0x13]: What this flag does is unknown but for most files it is 0x111, for a *very* small amount of files it is 0x0, and for an *extremely* (almost no files have this flag) it is 0x11.
 
-<sup>\[3\]</sup>This flag tells the game some information about texture.
-The flag is 0x01000001 for linear-space textures, 0x01000003 for
-sRGB-space textures, 0x01000007 for cubemap textures, and 0x01000009 for
-normal map textures.
+[^0x1C-0x1F]: This flag tells the game some information about texture. The flag is 0x01000001 for linear-space textures, 0x01000003 for sRGB-space textures, 0x01000007 for cubemap textures, and 0x01000009 for normal map textures.
 
 ### Mipmap Information
 
