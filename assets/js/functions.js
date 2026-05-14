@@ -1,4 +1,4 @@
-// General reusable functions for Javascript modules (avoids race conditions for deferred scripts)
+// General reusable functions
 
 export function getRect(el) {
     return el.getBoundingClientRect()
@@ -12,10 +12,18 @@ export function matchObjVal(object, value) {
     return Object.values(object).includes(value)
 }
 
+// Expects string, array of strings or boolean/number inputs
 export function filterArrayByObjVal(array, key, value) {
-    return array.filter(item => item[key].findIndex(val => {
-        return val.toLowerCase() === value.toLowerCase();
-        }) !== -1)
+    const target = typeof value === 'string' ? value.toLowerCase() : value;
+    return array.filter((item) => {
+        const v = item[key];
+        const check = Array.isArray(v) ? v : v == null ? [] : [v]; // wrap value in array if not already one
+        return check.some((c) =>
+            typeof c === 'string' && typeof target === 'string'
+                ? c.toLowerCase() === target
+                : c === target
+        );
+    })
 }
 
 export function getIndexByValue(array, key, value) {
@@ -58,6 +66,10 @@ export function trimTrailFs(string) {
     return string.replace(/(\/)?$/gm, '');
 }
 
+export function formatTagAsLink(tagString) {
+    return '/' + tagString.replaceAll(' ','_')
+}
+
 export function waitForElements(parent, selector) {
     return new Promise(resolve => {
         if (parent.querySelectorAll(selector).length) {
@@ -78,22 +90,22 @@ export function waitForElements(parent, selector) {
     });
 }
 
-export async function checkVp(funcName) {
+export async function checkVp(callback) {
     const { isVirtualPage } = await import('./virtualpages.js');
     if (isVirtualPage) {
         waitForElements(body, '.vp-loaded').then(nodes => {
             nodes.forEach(el => {
-                funcName();
+                callback();
                 // Watch for history changes to re-trigger
                 new MutationObserver((mutations) => {
                   if (mutations[0].attributeName === 'class') {
-                    funcName();
+                    callback();
                   }
                 }).observe(el, { attributes: true });
             });
         });
     } else {
-        funcName();
+        callback();
     }
 }
 
@@ -176,4 +188,15 @@ export function pluralize(count, mapping, locale = 'en-US') {
         word = mapping.get('other'); // otherwise try fallback category
     }
     return word
+}
+
+export function appendStylesheet(url) {
+    // Check if it already exists
+    if (document.querySelector(`link[href="${url}"]`)) return
+
+    const link = createEl('link');
+    link.rel = 'stylesheet';
+    link.href = url;
+
+    document.head.appendChild(link);
 }

@@ -4,6 +4,8 @@ import {
     pluralResults,
     filterStatesInit,
     fuseDefaultOptions,
+    yamlLookupPrefilter,
+    yamlKeyMap,
     createResizeObserver,
     createFilterController,
     createLookupIndex,
@@ -31,38 +33,27 @@ initSetup();
 
 const filterHandlers = {
     limitToSection: {
-        handler: (key, state) => {
-            fuse = fuseConfig({});
-        }
+        handler: (key, state) => {}
     },
     excludeEntityRef: {
-        handler: (key, state) => {
-            fuse = fuseConfig({});
-        }
+        handler: (key, state) => {}
     },
     ignoreMarkup: {
-        handler: (key, state) => {
-            fuse = fuseConfig({});
-        }
+        handler: (key, state) => {}
     },
     hasMedia: {
-        handler: (key, state) => {
-            fuse = fuseConfig({});
-        }
+        handler: (key, state) => {}
     }
 }
 
 const resultsFilters = createFilterController(filterStatesInit, filterHandlers),
       lookupIndex = createLookupIndex(resultsFilters);
 
-function fuseConfig({
-    indexState = resultsFilters.getState('limitToSection'),
-    input = lookupIndex(resultsFilters.getState('limitToSection'), urlParams.section),
-    options = fuseDefaultOptions
-}) {
-    return new Fuse(input, options);
+function queryPrefixHandling(val) {
+    const index = lookupIndex(resultsFilters.getState('limitToSection'), urlParams.section),
+          { filtered, queryTokens } = yamlLookupPrefilter(index, val, yamlKeyMap, fuseDefaultOptions);
+    return { filtered, queryTokens }
 }
-var fuse = fuseConfig({});
 
 initHtmlResults();
 outputResults();
@@ -84,10 +75,10 @@ function initSetup() {
 }
 
 function initHtmlResults() {
-    queryInfoCont = func.createEl('div','search-results-query-info-container');
-    resultsCont = func.createEl('ul','search-results-container');
-    filtersCont = func.createEl('div','search-results-filters-container');
-    paginationCont = func.createEl('ul','search-results-pagination-container');
+    queryInfoCont = func.createEl('div','search-results-query-info-wrapper');
+    resultsCont = func.createEl('ul','search-results-wrapper');
+    filtersCont = func.createEl('div','search-results-filters-wrapper');
+    paginationCont = func.createEl('ul','search-results-pagination-wrapper');
 
     wikiContentCont.append(
         queryInfoCont,
@@ -120,8 +111,8 @@ function decodeUrl() {
 
 function getResults(range) {
     return parseResults({
-        query: urlParams.query,
-        input: fuse.search(urlParams.query),
+        query: queryPrefixHandling(urlParams.query).queryTokens.leftover,
+        input: queryPrefixHandling(urlParams.query).filtered,
         range: range
     });
 }
@@ -145,7 +136,7 @@ function presentResults(results) {
 
     // Filters list (only generate once)
     if (!filtersCont.hasChildNodes()) {
-        const filtersListCont = func.createEl('ul','search-results-filters-list-container'),
+        const filtersListCont = func.createEl('ul','search-results-filters-list-wrapper'),
               filtersLabel = func.createEl('span','search-results-filters-label');
         filtersLabel.textContent = 'Filters';
 
@@ -210,14 +201,14 @@ function presentResultItems(results) {
 
     if (results) {
         results.forEach((result) => {
-            const resultCont = func.createEl('li','search-result-container'),
+            const resultCont = func.createEl('li','search-result-wrapper'),
                   firstArea = func.createEl('div','search-result-first-area'),
                   secondArea = func.createEl('div','search-result-second-area'),
-                  imageCont = func.createEl('div','search-result-image-container'),
+                  imageCont = func.createEl('div','search-result-image-wrapper'),
                   title = func.createEl('a','search-result-title'),
                   sectionLabel = func.createEl('span','search-result-section-path'),
-                  tagsCont = func.createEl('ul','search-result-tags-container'),
-                  matchesContClass = 'search-result-matches-container',
+                  tagsCont = func.createEl('ul','search-result-tags-list'),
+                  matchesContClass = 'search-result-matches-wrapper',
                   matchesCont = func.createEl('div', matchesContClass),
                   matchesList = func.createEl('ul','search-result-matches-list'),
                   matchesMore = func.createEl('span','search-result-match-more');
@@ -228,7 +219,8 @@ function presentResultItems(results) {
 
                 image.src = imagePath;
                 imageCont.appendChild(image);
-                resultCont.classList.add('has-image');
+                resultCont.classList.add('has-image','ib');
+                tagsCont.classList.add('ib-tags-list');
             } else {
                 imageCont.classList.add('hidden-generic');
             }
@@ -239,18 +231,28 @@ function presentResultItems(results) {
             sectionLabel.textContent = result.details.sectionLabel;
 
             result.details.tags.forEach((tag) => {
-                const item = func.createEl('li','search-result-tag-item'),
-                      link = func.createEl('a',['search-result-tag', 'tag-list-tag']);
-                link.href = '/' + tag.replaceAll(' ','_');
+                const item = func.createEl('li','search-result-tag-list-item'),
+                      link = func.createEl('a',['search-result-tag-list-tag', 'tag-list-tag']);
+
+                if (result.details.firstImage) {
+                    item.classList.add('ib-tag-list-item');
+                    link.classList.add('ib-tag-list-tag')
+                }
+
+                link.href = func.formatTagAsLink(tag);
                 link.textContent = tag;
                 item.appendChild(link);
                 tagsCont.appendChild(item);
             });
 
             function regenHighlights() {
-                const els = generateHighlightEls(result, matchWidthBasis, 'search-result-match-string'),
-                      moreInfo = moreMatchesCheck(result.matches.length, els.length),
+                let els = [];
+                if (result.meta.query) {
+                    els = generateHighlightEls(result, matchWidthBasis, 'search-result-match-string');
+                }
+                const moreInfo = moreMatchesCheck(result.matches.length, els.length),
                       list = [];
+
                 els.forEach((el) => {
                     const li =  func.createEl('li','search-result-match');
                     li.appendChild(el);

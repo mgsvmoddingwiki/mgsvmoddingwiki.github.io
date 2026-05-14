@@ -44,7 +44,7 @@ wiki/Example_Page.md
 
 Within the Markdown page itself it needs some metadata for the wiki to understand info about it.
 
-At the top of every page should contain a metadata block so the wiki can check what title a page should have, its URL and what its categories it should be tagged with (if any). This block is hidden on the visible page.
+At the top of every page should contain a metadata block (aka YAML frontmatter) so the wiki can check what title a page should have, its URL and what its categories it should be tagged with (if any). This block is hidden on the visible page.
 
 The metadata block begins and ends with three dashes (`---`) and should always begin on the *very first* line of the page.
 
@@ -66,6 +66,15 @@ tags: [Missions, Guides]
 
 - `tags` = Add tag(s) if you want the page to be automatically discoverable via category pages. A list of existing tags to use can be found in the All Pages [Categories list](/Meta/All_Pages/#categories). If you've chosen multiple tags then separate them by a comma and space (`, `).
 > Tags can also have spaces (eg: `Infinite Heaven`).
+
+#### Additional metadata properties
+
+- `image` = Define an image path that will be used for embed widgets (otherwise will fall back to whatever the first image in the page is).
+> Eg: `image = /assets/AI/images/mgs/Sally_Section_Meta_Image.jpg`\
+\
+> **Note:** make sure to compress the image to something reasonable so it loads faster. 100-300KB recommended.
+
+- `featured` = if defined should be a boolean `true`. Used for when the community decides a page is good fit for being featured.
 
 ### Page content
 

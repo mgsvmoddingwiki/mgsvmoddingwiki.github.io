@@ -55,7 +55,11 @@ jobs:
           JEKYLL_ENV: production
       - name: Run search index build script
         run: |
-          ./build-search-indexes.ps1
+          ./_scripts/build-search-indexes.ps1
+        shell: pwsh
+      - name: Run recent changes build script
+        run: |
+          ./_scripts/build-recent-changes.ps1
         shell: pwsh
       - name: Upload artifact
         # Automatically uploads an artifact from the './_site' directory by default

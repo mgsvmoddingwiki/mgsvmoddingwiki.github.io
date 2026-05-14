@@ -56,6 +56,8 @@ permalink: /Guides/
     - [Creating/Editing Pages](/Meta/Creating_Editing_Pages)
 {:.index}
 
+{% include embed-page-highlight type="tag" tag="Guides" %}
+
 ## External Guides
 
 - ## Getting Started

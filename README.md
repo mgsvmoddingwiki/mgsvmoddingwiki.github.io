@@ -2,11 +2,19 @@
 title: Welcome to the MGSV Modding and Research Wiki!
 ---
 
-This is the central hub for information on modding the [Fox Engine](https://en.wikipedia.org/wiki/Fox_Engine) [Metal Gear](https://en.wikipedia.org/wiki/Metal_Gear) games: 
+{% include layout-grid-triple-start %}
 
+{% include recent-changes %}
+
+> This is the central hub for information on modding the [Fox Engine](https://en.wikipedia.org/wiki/Fox_Engine) [Metal Gear](https://en.wikipedia.org/wiki/Metal_Gear) games:
+<br/>
 - [Metal Gear Solid V: Ground Zeroes](https://en.wikipedia.org/wiki/Metal_Gear_Solid_V:_Ground_Zeroes)
 - [Metal Gear Solid V: The Phantom Pain](https://en.wikipedia.org/wiki/Metal_Gear_Solid_V:_The_Phantom_Pain)
 - [Metal Gear Survive](https://en.wikipedia.org/wiki/Metal_Gear_Survive)
+
+{% include embed-page-highlight type="featured" %}
+
+{% include layout-grid-triple-end %}
 
 ## Main Categories
 

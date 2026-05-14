@@ -1,10 +1,16 @@
 {% include breadcrumbs.html %}
 
-<h1 class="page-heading">{{ page.title }}</h1>
+<div class="page-heading-wrapper {% if page.featured == true %}is-featured{% endif %}">
+    <h1 class="page-heading">{{ page.title }}</h1>
+    {% if page.featured == true %}
+    <a class="page-featured-indicator" href="/search?q=wiki-featured:true" data-tooltip-text="Featured page"></a>
+    {% endif %}
+</div>
+
 
 <div id="tag-list">
-    <!-- Jekyll templating all on one line to avoid adding HTML whitespace per item -->
-    {% if page.tags %}<span class="tag-list-heading">Categories:</span>{% endif %}{% for tag in page.tags %}{% capture tag_name %}{{ tag }}{% endcapture %}<a class="tag-list-tag" href="/{{ tag_name | replace: " ", "_" }}">{{ tag_name }}</a>{% endfor %}
+    <!-- Templating all on one line to avoid adding HTML whitespace per item -->
+    {% if page.tags and page.tags != empty %}<span class="tag-list-heading">Categories:</span>{% endif %}{% for tag in page.tags %}{% capture tag_name %}{{ tag }}{% endcapture %}<a class="tag-list-tag" href="/{{ tag_name | replace: " ", "_" }}">{{ tag_name }}</a>{% endfor %}
 </div>
 
 <hr>

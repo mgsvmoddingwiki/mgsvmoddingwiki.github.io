@@ -1,6 +1,8 @@
 ---
 title: Hair Materials
 permalink: /Hair_Materials/
+image: /assets/Hair_Materials/Meta_Image.jpg
+featured: true
 tags: [Rendering, Guides]
 ---
 
@@ -30,8 +32,8 @@ First, let's understand what texture maps Fox engine uses for hair materials.
 | FMDL Studion texture Names  | Sufixes | Compression Format |
 |-----------------------------|---------|--------------------|
 | Base_Tex_SRGB               | bsm     | DXT5               |
-| SpecularMap_Tex_LIN 		  |	srm 	| DXT1				 |
-| Translucent_Tex_LIN 	      | trm     | DXT1               |
+| SpecularMap_Tex_LIN       | srm   | DXT1         |
+| Translucent_Tex_LIN         | trm     | DXT1               |
 | Shift_Tex_LIN               | shm     | DXT1               |
 
 Let's explore each texture!
@@ -102,11 +104,11 @@ Incidence colour is basically the Subsurface Scattering colour in `x, y, z` valu
 
 #### Example of the Incidence_Colouring
 
-| Incidence_Colour  | X 	| Y		| Z 	| W   |
+| Incidence_Colour  | X   | Y   | Z   | W   |
 |-------------------|-------|-------|-------|-----|
-|	White			| 1 	| 1 	| 1 	| 0.25|
-|	Brown			| 0.976 | 1 	| 0.996 | 0.25|
-|	Light Red 		| 1 	| 0.773 | 0.541 | 0.3 |
+| White     | 1   | 1   | 1   | 0.25|
+| Brown     | 0.976 | 1   | 0.996 | 0.25|
+| Light Red     | 1   | 0.773 | 0.541 | 0.3 |
 
 You can adjust the W value to be more if you wish to have a larger Subsurface Scattering (SSS) radius on the hair.
 
@@ -115,7 +117,7 @@ You can adjust the W value to be more if you wish to have a larger Subsurface Sc
 Before we dive into a practical example take note of the naming convention to use. This isn't needed but it is good practice to keep a good naming convention when naming your textures for the game.
 I like to keep a good practice of exporting the texture with the name tag of `chara_hair_bsm`
 
-| Texture Map  | alias 			| Example	   |
+| Texture Map  | alias      | Example    |
 |--------------|----------------|--------------|
 | diffuse      | chara_hair_bsm | sna_hair_bsm |
 | specular     | chara_hair_srm | sna_hair_srm |
@@ -129,7 +131,7 @@ Now that we have an understanding of what we are working with, we can do a pract
 We can start with converting the textures of our custom model to be properly utilized in Fox Engines material settings.
 In the practice example that we will be doing I was using Ashley's hair (from Resident Evil 4 Remake) over Ada Wong's head, so I named it `ada_hair0_bsm`. This is just part of good organizing of texture names.
 
-### Diffuse Map (BSM) ###
+### Diffuse Map (BSM)
 Let's start with the diffuse map. Depending on what custom hair model you will be using we are going to import the diffuse map into a texture editing program either using GIMP, PhotoShop or Paint.Net. This is the simplest one to do, decompose the RGB values of the diffuse map then compose them as `RGBA` add the corresponding layers to where they were so RED -> Red channel, BLUE -> Blue Channel and GREEN-> Green Channel only extra channel now is the Alpha texture most games will have the diffuse and Alpha texture separated but some will have them combined like MGSV! The alpha texture will be added to the Alpha channel to add the transparency to the hair.
 Now that we composed the layers you can export the texture take note of the export settings in the screen shot below, it's very important!
 
@@ -137,7 +139,7 @@ Now that we composed the layers you can export the texture take note of the expo
 
 ![Custom Diffuse Map, without the Alpha channel (this is just for demonstration on the wiki, but your Alpha texture is always in the Alpha channel of your diffuse map)](/assets/Hair_Materials/hair_diffuse_example.jpg){:.thumb}
 
-### Specular Map (SRM) ###
+### Specular Map (SRM)
 If your custom hair model has a lot of different textures, you'll have to try and find the roughness map and specular occlusion. This can depend from texture to texture that you have. In my case, I used the base albedo for the red channel, this channel should not be very bright. The only thing in the red channel that must be a little bit bright is the hair strands themselves, so I dragged down the brightness and increased the contrast, which will make the strands brighter but not too much. For the Green channel I took the roughness texture and inverted it, but depending on how it looks some games might have it already inverted. The strands in the green channel are usually darker for the most with the surrounding background being bright white. Basically the inverse of what the red channel has. The srm output with all textures combined should have the hair strands either be a really light yellow or very light grey. For female hair I use a balance between the two for more reflection so the strands would be a light yellow, for males usually I use a specular map that highlights the strands as dark grey for less reflection.
 
 For Example the two pictures down below.

@@ -121,8 +121,12 @@ function captureClass(el, prefix) {
 document.addEventListener('DOMContentLoaded',() => {
     // --------------------------- Image handling ---------------------------
     func.checkVp(() => {
+        const exclusions = [
+        ];
         let imgs = document.querySelectorAll('body:not(.search-page) .git-wiki-page img');
             imgs.forEach(img => {
+                if (exclusions.some(el => img.closest(el))) return
+
                 // Wrap images in container
                 // Check if image already wrapped in link element (to not override it)
                 let wrapper,
@@ -286,6 +290,15 @@ document.addEventListener('DOMContentLoaded',() => {
     mobileHamburger.addEventListener('click', (e) => {
         mobileMainMenuToggle();
     });
+
+    // -------------------------- Widget detection --------------------------
+    const widgets = body.querySelectorAll('.widget');
+    if (widgets.length > 0) {
+        import('./widgets.js')
+            .then((module) => {
+                module.init();
+            });
+    }
 });
 
 export function mobileMainMenuToggle() {
