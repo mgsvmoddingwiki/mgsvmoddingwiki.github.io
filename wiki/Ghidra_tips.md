@@ -1,6 +1,7 @@
 ---
 title: Ghidra tips
 permalink: /Ghidra_tips/
+featured: true
 tags: [EXE, Guides]
 redirect_from:
   - /GhidraTips/
