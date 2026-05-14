@@ -15,6 +15,8 @@
     --radius-secondary: 3px;
     --radius-full: 100px;
     --radius-circle: 100%;
+    --primary-button-diameter: 38px;
+    --secondary-button-diameter: 30px;
 
     --font-sans: Kibur, "Segoe UI", sans-serif;
     --font-size-base: 16px;
@@ -56,6 +58,7 @@
     --dark-theme-color-buttons-inset: var(--dark-theme-color-buttons);
     --dark-theme-color-important: hsl(154,65%,32%);
     --dark-theme-color-important-hover: hsl(154,67%,37%);
+
     --dark-theme-color-shadow: hsla(0,0%,0%,.2);
 
     --dark-theme-filter-button-active: brightness(0.8);
@@ -152,7 +155,7 @@ body.theme-light {
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ GENERAL ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
-* {
+*,::before,::after {
     box-sizing: border-box;
 }
 
@@ -184,7 +187,8 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: var(--font-weight-semibold);
 }
 
-h1, h2 {
+h1, h2,
+.header-title-desktop {
     letter-spacing: -0.01em;
 }
 
@@ -422,7 +426,7 @@ li::marker,
     position: fixed;
     top: calc(var(--offset-y) + var(--top));
     left: var(--left);
-    z-index: 3;
+    z-index: 5;
     pointer-events: none; /* otherwise (for ::before at least) will block :active styling */
     transform: translateX(-50%); /* center element to fixed coord */
     transition: opacity 100ms ease-out, margin 100ms ease-in;
@@ -609,6 +613,68 @@ li::marker,
 }
 
 
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ BUTTONS: PRIMARY ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.tools-button,
+.primary-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.primary-button {
+    width: var(--primary-button-diameter);
+    height: var(--primary-button-diameter);
+    cursor: pointer;
+    border: none;
+    border-radius: var(--radius-circle);
+    box-shadow: var(--shadow-secondary);
+}
+
+.primary-button.secondary,
+.ib-primary-button.secondary {
+    width: var(--secondary-button-diameter);
+    height: var(--secondary-button-diameter);
+}
+
+.primary-button,
+.primary-button:active,
+.primary-button:active:hover {
+    background: var(--color-buttons);
+}
+
+.primary-button:hover {
+    background: var(--color-buttons-hover);
+}
+
+.primary-button:active {
+    filter: var(--filter-button-active);
+}
+
+.primary-button.iconed::before {
+    pointer-events: none; /* otherwise (for ::before at least) will block :active styling */
+}
+
+/* Buttons - icons. Named such so they can also be reused in documentation */
+.primary-button.iconed::before,
+.icon-toolbar.iconed::before {
+    width: 24px;
+    height: 24px;
+    background: var(--color-secondary);
+    content: '';
+    display: block;
+}
+
+/* For use on buttons above bg-subtle backgrounds to provide more contrast */
+.primary-button.contrast:not(:active) {
+    background: var(--bg-subtle-alt);
+}
+
+.primary-button.contrast:hover:not(:active) {
+    filter: brightness(1.1);
+}
+
+
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ EDITING TOOLBAR ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 #tools-buttons {
@@ -632,57 +698,14 @@ li::marker,
 }
 
 /* HTML/classes modified via custom `page_actions.html` */
-.tools-button,
-.tools-button .primary-button {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-}
-
 .tools-button {
     padding: 0;
     margin: 0 var(--spacing-minor) calc(var(--spacing-minor) * 2) 0;
     z-index: 3; /* so tooltip doesn't dip below search box when :active */
 }
 
-.tools-button .primary-button {
-    width: 38px;
-    height: 38px;
-    cursor: pointer;
-    border: none;
-    border-radius: var(--radius-circle);
-    box-shadow: var(--shadow-secondary);
-}
-
 .tools-button.prose.new {
     margin-left: var(--spacing-secondary);
-}
-
-.tools-button .primary-button,
-.tools-button .primary-button:active,
-.tools-button .primary-button:active:hover {
-    background: var(--color-buttons);
-}
-
-.tools-button .primary-button:hover {
-    background: var(--color-buttons-hover);
-}
-
-.tools-button .primary-button:active {
-    filter: var(--filter-button-active);
-}
-
-.tools-button .primary-button.iconed::before {
-    pointer-events: none; /* otherwise (for ::before at least) will block :active styling */
-}
-
-/* Buttons - icons. Named such so they can also be reused in documentation */
-.iconed.icon-toolbar::before {
-    width: 24px;
-    height: 24px;
-    background: var(--color-secondary);
-    content: '';
-    display: block;
 }
 
 /* For buttons with icon + text label */
@@ -779,7 +802,7 @@ body.expanded-width-true .icon-toolbar.icon-expand::before {
     width: 100%;
     position: relative;
     padding-right: calc(var(--spacing-secondary) + var(--clear-width) + var(--extra-padding));
-    z-index: 2;
+    z-index: 3;
 }
 
 #search-input:focus {
@@ -796,7 +819,7 @@ body.expanded-width-true .icon-toolbar.icon-expand::before {
     position: absolute;
     top: calc(var(--spacing-minor) + var(--offset-top));
     right: calc(var(--spacing-secondary) - 7px); /* to match text padding of input while still having extra clickable area of button */
-    z-index: 3;
+    z-index: 4;
     pointer-events: none;
 }
 
@@ -856,7 +879,7 @@ body.expanded-width-true .icon-toolbar.icon-expand::before {
 .search-input-peripheral.filters-active .search-filters-counter,
 .search-filter-button,
 .search-input-peripheral.clear .search-clear-query,
-#suggestions-container .search-filter-actions-container.show-expansion-toggle .search-filter-actions-expand {
+#suggestions-wrapper .search-filter-actions-wrapper.show-expansion-toggle .search-filter-actions-expand {
     opacity: 0.5;
 }
 
@@ -922,7 +945,7 @@ body.expanded-width-true .icon-toolbar.icon-expand::before {
     filter: var(--filter-button-active);
 }
 
-#suggestions-container {
+#suggestions-wrapper {
     --results-cont-padding-outer: 5px;
     width: calc(100% + var(--results-cont-padding-outer) * 2);
     background: var(--bg-tooltip);
@@ -936,16 +959,16 @@ body.expanded-width-true .icon-toolbar.icon-expand::before {
     left: calc(-1 * var(--results-cont-padding-outer));;
     transition: opacity 150ms ease-out;
     pointer-events: none;
-    z-index: 1;
+    z-index: 2;
 }
 
 /* Only show when input field focused or list clicked */
-#suggestions-container.visible {
+#suggestions-wrapper.visible {
     opacity: 1;
     pointer-events: auto;
 }
 
-#suggestions-container .search-filter-actions-container {
+#suggestions-wrapper .search-filter-actions-wrapper {
     --padding-bottom: var(--spacing-secondary);
     display: grid;
     grid-template-columns: min-content 1fr; /* <label width> <filter list width> */
@@ -954,29 +977,29 @@ body.expanded-width-true .icon-toolbar.icon-expand::before {
     padding: calc(var(--spacing-secondary) - var(--spacing-minor)) var(--spacing-minor) var(--padding-bottom);
 }
 
-#suggestions-container.empty-query .search-filter-actions-container {
+#suggestions-wrapper.empty-query .search-filter-actions-wrapper {
     --padding-bottom: calc(var(--spacing-minor) * 2);
 }
 
 /* Horizontal dividers, which allow for semi-opaque color variables if wanted */
-.search-suggestions-item-container::after,
-#suggestions-container .search-filter-actions-container::after {
+.search-suggestions-item-wrapper::after,
+#suggestions-wrapper .search-filter-actions-wrapper::after {
     height: var(--border-width-thin);
     background: var(--bg-list-hover); /* using this instead of the border color var (with 0.5 opacity) to make hiding on highlighted items less obvious, as it matches the hover background */
     content: '';
     display: block;
 }
 
-#suggestions-container .search-filter-actions-container::after {
+#suggestions-wrapper .search-filter-actions-wrapper::after {
     margin-top: var(--spacing-secondary);
     grid-column: 1 / -1; /* span both grid columns */
 }
 
-#suggestions-container.empty-query .search-filter-actions-container::after {
+#suggestions-wrapper.empty-query .search-filter-actions-wrapper::after {
     display: none;
 }
 
-#suggestions-container .search-filter-actions-label {
+#suggestions-wrapper .search-filter-actions-label {
     color: var(--color-secondary);
     font-size: var(--font-size-small);
     font-weight: var(--font-weight-semibold);
@@ -984,7 +1007,7 @@ body.expanded-width-true .icon-toolbar.icon-expand::before {
     padding-left: var(--spacing-minor);
 }
 
-#suggestions-container .search-filter-actions-list {
+#suggestions-wrapper .search-filter-actions-list {
     --gradient: linear-gradient(90deg,hsl(0, 0%, 0%) calc(100% - (var(--clear-width) + 20px)), hsla(0,0%,0%,0) calc(100% - var(--clear-width)), hsla(0,0%,0%,0) 100%); /* fixed pixel width gradient stop fade on right side */
     display: flex;
     flex-wrap: nowrap;
@@ -997,29 +1020,29 @@ body.expanded-width-true .icon-toolbar.icon-expand::before {
     top: calc(var(--border-width) / 2);
 }
 
-#suggestions-container .search-filter-actions-list li {
+#suggestions-wrapper .search-filter-actions-list li {
     height: min-content;
     display: flex; /* fixes border clipping from parent container in Firefox when list expanded */
 }
 
-#suggestions-container .search-filter-actions-list .hidden {
+#suggestions-wrapper .search-filter-actions-list .hidden {
     display: none;
 }
 
-#suggestions-container .search-filter-actions-container.show-expansion-toggle .search-filter-actions-list {
+#suggestions-wrapper .search-filter-actions-wrapper.show-expansion-toggle .search-filter-actions-list {
     -webkit-mask-image: var(--gradient);
     mask-image: var(--gradient);
 }
 
-#suggestions-container .search-filter-actions-container.expand-filters .search-filter-actions-list {
+#suggestions-wrapper .search-filter-actions-wrapper.expand-filters .search-filter-actions-list {
     flex-wrap: wrap;
 }
 
-#suggestions-container .search-filter-actions-container.expand-filters .search-filter-actions-list li {
+#suggestions-wrapper .search-filter-actions-wrapper.expand-filters .search-filter-actions-list li {
     width: 100%; /* force full width so the expanded visual state persists even if viewport resized wider (otherwise with enough width buttons would return back to inline visual state despite contract icon remaining) */
 }
 
-#suggestions-container .search-filter-actions-expand {
+#suggestions-wrapper .search-filter-actions-expand {
     width: var(--clear-width);
     height: var(--clear-width);
     background: var(--color-primary);
@@ -1033,7 +1056,7 @@ body.expanded-width-true .icon-toolbar.icon-expand::before {
     z-index: 2;
 }
 
-#suggestions-container .search-filter-actions-container.expand-filters .search-filter-actions-expand {
+#suggestions-wrapper .search-filter-actions-wrapper.expand-filters .search-filter-actions-expand {
     -webkit-mask-image: url("/assets/images/ui.svg#icons-search-filters-contract");
     mask-image: url("/assets/images/ui.svg#icons-search-filters-contract");
 }
@@ -1045,21 +1068,21 @@ body.expanded-width-true .icon-toolbar.icon-expand::before {
 }
 
 /* Horizontal divider */
-.search-suggestions-item-container::after {
+.search-suggestions-item-wrapper::after {
     width: calc(100% - var(--spacing-minor) * 2);
     position: relative;
     left: var(--spacing-minor);
 }
 
-.search-suggestions-item-container:nth-last-of-type(-n+1)::after {
+.search-suggestions-item-wrapper:nth-last-of-type(-n+1)::after {
     display: none;
 }
 
 /* Hide on hover/highlight/active, for both prior sibling and current item */
-.search-suggestions-item-container:has(+ li:hover)::after,
-.search-suggestions-item-container:has(+ li.highlight)::after,
-.search-suggestions-item-container:hover::after,
-.search-suggestions-item-container.highlight::after {
+.search-suggestions-item-wrapper:has(+ li:hover)::after,
+.search-suggestions-item-wrapper:has(+ li.highlight)::after,
+.search-suggestions-item-wrapper:hover::after,
+.search-suggestions-item-wrapper.highlight::after {
     opacity: 0;
 }
 
@@ -1077,29 +1100,29 @@ body.expanded-width-true .icon-toolbar.icon-expand::before {
     position: relative; /* position text above background pseudo-element */
 }
 
-.search-suggestions-item-container:hover .search-suggestions-item,
-.search-suggestions-item-container.highlight .search-suggestions-item {
+.search-suggestions-item-wrapper:hover .search-suggestions-item,
+.search-suggestions-item-wrapper.highlight .search-suggestions-item {
     color: currentColor;
     background: var(--bg-list-hover);
 }
 
-.search-suggestions-item-container:active .search-suggestions-item,
-.search-suggestions-item-container.active .search-suggestions-item {
+.search-suggestions-item-wrapper:active .search-suggestions-item,
+.search-suggestions-item-wrapper.active .search-suggestions-item {
     background: var(--color-accent);
     color: var(--color-accent-foreground);
 }
 
-.search-suggestions-title-container,
-.search-suggestions-matches-container {
+.search-suggestions-title-wrapper,
+.search-suggestions-matches-wrapper {
     display: flex;
     flex-direction: column;
 }
 
-.search-suggestions-title-container {
+.search-suggestions-title-wrapper {
     justify-content: flex-start; /* align to top of result container so any results not part of a section with non-wrapping titles match style of those that do */
 }
 
-.search-suggestions-matches-container {
+.search-suggestions-matches-wrapper {
     --more-matches-width: 30px; /* fallback value, between 1 and 2 digit width so during label initialization/resizes the mask width basis has something to default to before the JS obtains the true width */
     list-style: none;
     justify-content: center; /* align children vertically to parent */
@@ -1107,7 +1130,7 @@ body.expanded-width-true .icon-toolbar.icon-expand::before {
     padding: 0;
 }
 
-.search-suggestions-matches-container.labels-only {
+.search-suggestions-matches-wrapper.labels-only {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
@@ -1189,20 +1212,20 @@ body.expanded-width-true .icon-toolbar.icon-expand::before {
     margin-bottom: 4px;
 }
 
-.search-suggestions-item-container:active .search-secondary-string,
-.search-suggestions-item-container.active .search-secondary-string,
-.search-suggestions-item-container:active .search-more-matches-label,
-.search-suggestions-item-container.active .search-more-matches-label,
-.search-suggestions-item-container:active .search-more-matches-label.has-counter::after,
-.search-suggestions-item-container.active .search-more-matches-label.has-counter::after,
-.search-suggestions-item-container:active .search-suggestions-matches-more,
-.search-suggestions-item-container.active .search-suggestions-matches-more {
+.search-suggestions-item-wrapper:active .search-secondary-string,
+.search-suggestions-item-wrapper.active .search-secondary-string,
+.search-suggestions-item-wrapper:active .search-more-matches-label,
+.search-suggestions-item-wrapper.active .search-more-matches-label,
+.search-suggestions-item-wrapper:active .search-more-matches-label.has-counter::after,
+.search-suggestions-item-wrapper.active .search-more-matches-label.has-counter::after,
+.search-suggestions-item-wrapper:active .search-suggestions-matches-more,
+.search-suggestions-item-wrapper.active .search-suggestions-matches-more {
     color: currentColor;
     outline-color: currentColor;
 }
 
 /* Non-result below-search/filters elements */
-#suggestions-container .search-no-results-container {
+#suggestions-wrapper .search-no-results-wrapper {
     height: 60px;
     color: var(--color-secondary);
     font-weight: var(--font-weight-semibold);
@@ -1240,6 +1263,7 @@ body.expanded-width-true .icon-toolbar.icon-expand::before {
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ MAIN CONTENT ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 body > .wrapper {
+    max-width: 2000px;
     min-height: calc(100vh - var(--spacing-primary) * 4);
     background: var(--bg-primary);
     display: flex;
@@ -1329,9 +1353,59 @@ body > .wrapper {
 }
 
 /* Page heading, category tag list */
+.page-heading-wrapper {
+    position: relative;
+}
+
 .page-heading {
     word-break: break-word;
     margin-bottom: var(--spacing-secondary);
+}
+
+.page-heading-wrapper.is-featured .page-heading {
+    padding-right: calc(var(--primary-button-diameter) + var(--spacing-intermediate));
+}
+
+.page-featured-indicator {
+    width: var(--primary-button-diameter);
+    height: var(--primary-button-diameter);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    overflow: hidden;
+    border-radius: var(--radius-circle);
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.page-featured-indicator::before {
+    width: 100%;
+    height: 100%;
+    background: var(--color-link);
+    content: '';
+    display: block;
+    opacity: 0.12;
+    grid-row: 1;
+    grid-column: 1;
+}
+
+.page-featured-indicator::after {
+    width: 24px;
+    height: 24px;
+    background: var(--color-link);
+    content: '';
+    display: block;
+    grid-row: 1;
+    grid-column: 1;
+    justify-self: center;
+    -webkit-mask-image: url("/assets/images/ui.svg#icons-star");
+    mask-image: url("/assets/images/ui.svg#icons-star");
+}
+
+.page-featured-indicator:hover::after {
+    background: var(--color-link-hover);
 }
 
 #tag-list {
@@ -1674,6 +1748,63 @@ h2.heading-with-frag-id .heading-frag-id-link {
 
 .heading-with-frag-id:target .heading-frag-id-link:hover {
     background: var(--color-accent-hover);
+}
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ SPECIAL LAYOUTS ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.home-grid-tri-layout {
+    container-type: inline-size;
+    container-name: home-grid-tri-layout-cont;
+    margin: var(--spacing-secondary) auto var(--spacing-intermediate);
+}
+
+/* For recent changes widget (first element), about text (second) and random featured widget (third) */
+.home-grid-tri-layout .grid {
+    min-height: 500px; /* default height if top-right's content doesn't push it taller */
+    display: grid;
+    gap: var(--spacing-intermediate);
+    grid-template-columns: clamp(260px, 40%, 800px) 1fr; /* min (500px) and max (800px) with fluid in-between, for recent changes widget column */
+    grid-template-rows: auto 0fr; /* this is non-obvious but the 0fr makes the first element collapse its height (desired behavior) even if it would normally expand to fill its max height, while still allowing it to expand to fill the grid height if the second's height expands. */
+    grid-template-areas:
+        "a b"
+        "a c";
+}
+
+.home-grid-tri-layout .grid > :nth-child(1),
+.home-grid-tri-layout .grid > :nth-child(2),
+.home-grid-tri-layout .grid > :nth-child(3) {
+    margin: 0;
+}
+
+.home-grid-tri-layout .grid > :nth-child(1) {
+    min-height: 400px;
+    max-height: none;
+    grid-area: a;
+}
+
+.home-grid-tri-layout .grid > :nth-child(2) {
+    min-height: 100px;
+    grid-area: b;
+}
+
+.home-grid-tri-layout .grid > :nth-child(3) {
+    min-height: 300px;
+    grid-area: c;
+}
+
+@container home-grid-tri-layout-cont (max-width: 700px) {
+    .home-grid-tri-layout .grid {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "b"
+            "a"
+            "c";
+    }
+
+    .home-grid-tri-layout .grid > :nth-child(1) {
+        max-height: 400px;
+    }
 }
 
 
@@ -2088,12 +2219,12 @@ sup[role="doc-noteref"]:target .footnote:active {
 
 .header-graphic-desktop-image.animate::before,
 .header-graphic-desktop-image.animate::after {
-    --gradient: linear-gradient(45deg, #fff 45%, #0000 55%);  /* Unclear why `#0000` works but `#000` doesn't */
+    --gradient: linear-gradient(45deg, #fff 45%, transparent 55%);
     animation: anim-header-graphic-swipe 500ms forwards;
 }
 
 .header-graphic-desktop-image.animate::after {
-    --gradient: linear-gradient(45deg, #0000 45%, #fff 55%);
+    --gradient: linear-gradient(45deg, transparent 45%, #fff 55%);
     display: block;
 }
 
@@ -2560,7 +2691,7 @@ sup[role="doc-noteref"]:target .footnote:active {
     box-shadow: var(--shadow-primary);
     top: 0;
     left: 0;
-    z-index: 4;
+    z-index: 10;
     transform: translateY(0);
     transition: transform 500ms var(--timing-bezier-1),
                 box-shadow 300ms;
@@ -2665,17 +2796,17 @@ footer {
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ SEARCH RESULTS PAGE ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
-.search-results-container,
-.search-results-filters-list-container,
-.search-result-tags-container,
+.search-results-wrapper,
+.search-results-filters-list-wrapper,
 .search-result-matches-list,
-.search-results-pagination-container {
+.search-result-tags-list,
+.search-results-pagination-wrapper {
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
-.search-results-query-info-container {
+.search-results-query-info-wrapper {
     display: flex;
     gap: var(--spacing-minor);
 }
@@ -2685,7 +2816,7 @@ footer {
     font-style: italic;
 }
 
-.search-results-filters-container {
+.search-results-filters-wrapper {
     background: var(--bg-subtle);
     display: flex;
     gap: var(--spacing-secondary);
@@ -2700,7 +2831,7 @@ footer {
     font-weight: var(--font-weight-semibold);
 }
 
-.search-results-filters-list-container {
+.search-results-filters-list-wrapper {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -2712,24 +2843,24 @@ footer {
     display: flex;
 }
 
-.search-results-filters-container .search-filter-button {
+.search-results-filters-wrapper .search-filter-button {
     z-index: auto;
 }
 
-.search-results-filters-container .search-filter-button:not(.active):not(:active):not(:hover) {
+.search-results-filters-wrapper .search-filter-button:not(.active):not(:active):not(:hover) {
     color: var(--color-secondary);
     opacity: 0.75;
 }
 
 /* Clearer :active state for dark theme when filter container has background */
-.search-results-filters-container .search-filter-button:active {
+.search-results-filters-wrapper .search-filter-button:active {
     background: var(--color-buttons);
     filter: var(--filter-button-active);
     opacity: 1;
     border-color: var(--color-buttons);
 }
 
-.search-results-container {
+.search-results-wrapper {
     display: flex;
     flex-direction: column;
     gap: calc(var(--spacing-minor) * 2);
@@ -2737,7 +2868,7 @@ footer {
 }
 
 /* Items */
-.search-result-container {
+.search-result-wrapper {
     background: var(--color-buttons);
     display: grid;
     grid-template-columns: 1fr var(--border-width) minmax(60%, 1fr); /* middle column is for vertical divider */
@@ -2748,12 +2879,7 @@ footer {
     position: relative; /* to align vertical divider to */
 }
 
-.search-result-container.has-image {
-    --color-result-blue: hsl(217,65%,58%); /* light theme's link color so both themes have consistent hue/brightness */
-    --color-result-border: hsla(216.8, 64.6%, 67.8%,0.8);
-    --color-result-light-regular: hsl(0,0%,89%);
-    --color-result-light-hover: hsl(0,0%,97%);
-    --text-shadow-result: 0 0 1px hsla(0,0%,0%,0.2), 0 1px 2px hsla(0,0%,0%,0.2);
+.search-result-wrapper.has-image {
     min-height: 150px;
 }
 
@@ -2779,11 +2905,11 @@ footer {
     left: 0;
 }
 
-.search-result-container.has-image .search-result-second-area::before {
+.search-result-wrapper.has-image .search-result-second-area::before {
     opacity: 0;
 }
 
-.search-result-image-container {
+.search-result-image-wrapper {
     /* All dimensions/offsets based on result container padding offsets */
     --result-width-offset: var(--spacing-primary);
     width: calc(100% + var(--result-width-offset) + var(--spacing-intermediate) + (var(--border-width) / 2));
@@ -2799,19 +2925,19 @@ footer {
     z-index: 0;
 }
 
-.search-result-image-container::before,
-.search-result-image-container::after {
+.search-result-image-wrapper::before,
+.search-result-image-wrapper::after {
     width: 500px;
     height: 500px;
-    background-image: radial-gradient(circle at -60% -80%, var(--color-result-blue) 45%, transparent 75%);
+    background-image: radial-gradient(circle at -60% -80%, var(--color-blue-mid) 45%, transparent 75%);
     content: '';
     display: block;
     position: absolute;
 }
 
-.search-result-image-container::after {
+.search-result-image-wrapper::after {
     width: 100%;
-    background-image: linear-gradient(165deg, var(--color-result-blue) 20%, transparent 50%);
+    background-image: linear-gradient(165deg, var(--color-blue-mid) 20%, transparent 50%);
     background-color: transparent;
     opacity: 0.5;
     mix-blend-mode: hue;
@@ -2820,7 +2946,7 @@ footer {
 .search-result-image {
     width: 100%;
     height: 100%;
-    background: var(--color-result-blue);
+    background: var(--color-blue-mid);
     object-fit: cover;
     object-position: top;
     opacity: 0.2;
@@ -2837,14 +2963,14 @@ footer {
     position: relative;
 }
 
-.search-result-container.has-image .search-result-title {
-    color: var(--color-result-light-regular);
-    text-shadow: var(--text-shadow-result);
+.search-result-wrapper.has-image .search-result-title {
+    color: var(--color-blue-content-light-regular);
+    text-shadow: var(--color-blue-content-light-text-shadow);
 }
 
-.search-result-container.has-image .search-result-title:hover,
-.search-result-container.has-image .search-result-title:active {
-    color: var(--color-result-light-hover);
+.search-result-wrapper.has-image .search-result-title:hover,
+.search-result-wrapper.has-image .search-result-title:active {
+    color: var(--color-blue-content-light-hover);
 }
 
 .search-result-section-path {
@@ -2852,31 +2978,16 @@ footer {
     font-size: var(--font-size-small);
 }
 
-.search-result-container.has-image .search-result-section-path {
-    color: var(--color-result-light-regular);
+.search-result-wrapper.has-image .search-result-section-path {
+    color: var(--color-blue-content-light-regular);
     position: relative;
 }
 
-.search-result-tags-container {
+.search-result-tags-list {
     display: flex;
     flex-wrap: wrap;
     gap: var(--spacing-minor);
     margin-top: var(--spacing-minor);
-}
-
-.search-result-container.has-image .tag-list-tag {
-    color: var(--color-result-light-regular);
-    text-shadow: var(--text-shadow-result);
-    outline: var(--border-width-thin) solid var(--color-result-border);
-}
-
-.search-result-container.has-image .tag-list-tag:hover {
-    color: var(--color-result-light-hover);
-}
-
-.search-result-container.has-image .tag-list-tag::before {
-    background: hsla(217,100%,83%); /* unique lighter blue */
-    opacity: 0.2;
 }
 
 .search-result-matches-list {
@@ -2911,19 +3022,19 @@ footer {
     margin-top: calc(var(--spacing-minor) * 2);
 }
 
-.search-result-matches-container .search-more-matches-label,
-.search-result-matches-container .search-more-matches-label.has-counter::after {
+.search-result-matches-wrapper .search-more-matches-label,
+.search-result-matches-wrapper .search-more-matches-label.has-counter::after {
     outline: none;
 }
 
-.search-result-matches-container .search-more-matches-label {
+.search-result-matches-wrapper .search-more-matches-label {
     color: var(--color-secondary);
     overflow: hidden;
     opacity: 1;
     position: relative;
 }
 
-.search-result-matches-container .search-more-matches-label::before {
+.search-result-matches-wrapper .search-more-matches-label::before {
     width: 100%;
     height: 100%;
     background: var(--color-secondary);
@@ -2935,14 +3046,14 @@ footer {
     left: 0;
 }
 
-.search-result-matches-container .search-more-matches-label.has-counter::after {
+.search-result-matches-wrapper .search-more-matches-label.has-counter::after {
     background: var(--color-buttons);
     position: relative;
     z-index: 0; /* prevent ::before overlapping */
 }
 
 /* Pagination */
-.search-results-pagination-container {
+.search-results-pagination-wrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -2971,7 +3082,164 @@ footer {
 }
 
 
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 404 PAGE ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ FOR IMAGE BACKGROUND ELEMENTS ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* Rules placed here to take precedence over other same-specificity classes for the same element */
+
+.ib {
+    --color-blue-mid: hsl(217,65%,58%); /* light theme's link color so both themes have consistent hue/brightness */
+    --color-blue-border: hsla(216.8, 64.6%, 67.8%,0.8);
+    --color-blue-translucent-bg: hsla(217,100%,83%);
+    --color-blue-content-light-regular: hsl(0,0%,89%);
+    --color-blue-content-light-hover: hsl(0,0%,97%);
+    --color-blue-content-light-heading: #fefeff;
+
+    --color-blue-dark: hsl(215.91,55.47%,48.43%);
+    --color-blue-darkest: hsl(216.2, 73.9%, 18%); /* for background of text only embed page items on light theme */
+    --color-blue-light: hsl(216.55, 100%, 82.94%); /* similar in tone to link hover but not same blue, only used for shuffled page embed highlight progress bar atm */
+
+    --color-blue-content-light-text-shadow: 0 0 1px hsla(0,0%,0%,0.2), 0 1px 2px hsla(0,0%,0%,0.2);
+    --color-blue-content-light-icon-shadow: drop-shadow(0 0 1px hsla(0,0%,0%,0.2)) drop-shadow(0 1px 2px hsla(0,0%,0%,0.2));
+}
+
+.ib-tags-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: calc(var(--spacing-minor) + var(--border-width-thin) * 2);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.ib-primary-button,
+.ib-tag-list-tag {
+    outline: var(--border-width-thin) solid var(--color-blue-border);
+    backdrop-filter: blur(5px); /* note: causes slightly blurry foreground text on element in Chromium */
+}
+
+.ib-tag-list-tag {
+    color: var(--color-blue-content-light-regular);
+    text-shadow: var(--color-blue-content-light-text-shadow);
+}
+
+.ib-primary-button:hover,
+.ib-tag-list-tag:hover {
+    color: var(--color-blue-content-light-hover);
+}
+
+.ib-tag-list-tag:hover,
+.ib-tag-list-tag:active {
+    outline-width: var(--border-width-thin); /* override of default stylesheet */
+}
+
+.ib-tag-list-tag:active {
+    color: var(--color-blue-content-light-regular);
+}
+
+.ib-primary-button::before,
+.ib-tag-list-tag::before {
+    background: var(--color-blue-translucent-bg);
+    opacity: 0.2;
+}
+
+.ib-primary-button:hover::before,
+.ib-tag-list-tag:hover::before {
+    opacity: 0.25;
+    filter: contrast(1.1);
+}
+
+.ib-primary-button:active::before,
+.ib-tag-list-tag:active::before {
+    background: var(--color-blue-mid);
+    opacity: 0.2;
+}
+
+.ib-primary-button {
+    width: var(--primary-button-diameter);
+    height: var(--primary-button-diameter);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: var(--radius-circle);
+    position: relative;
+}
+
+.ib-primary-button::before {
+    width: 100%;
+    height: 100%;
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* Icon container used to support drop-shadow() filter to wrap to mask shape */
+.ib-primary-button.iconed .icon-wrapper {
+    width: 24px;
+    height: 24px;
+    filter: var(--color-blue-content-light-icon-shadow);
+    pointer-events: none;
+}
+
+.ib-primary-button.iconed .icon-wrapper::before {
+    width: 100%;
+    height: 100%;
+    content: '';
+    display: block;
+    background: var(--color-blue-content-light-regular);
+}
+
+.ib-primary-button.iconed:hover .icon-wrapper::before {
+    background: var(--color-blue-content-light-hover);
+}
+
+.ib-primary-button.iconed:active .icon-wrapper::before {
+    background: var(--color-blue-content-light-regular);
+}
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ WIDGET INCLUDES (INIT STYLING) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.widget {
+    min-height: 200px;
+    min-width: 200px;
+    margin: var(--spacing-secondary) 0 var(--spacing-intermediate);
+    border-radius: var(--radius-primary);
+}
+
+.widget.hidden {
+    background: var(--bg-subtle);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.widget.hidden > * {
+    display: none !important;
+}
+
+.widget.hidden::before {
+    max-width: 50%;
+    color: var(--color-secondary);
+    content: '';
+    display: block;
+    animation: anim-widget-delayed-show-meta 2s steps(2, end) forwards; /* essentially just for users with JS disabled, delayed so doesn't appear for users with JS enabled immediately */
+}
+
+.widget.hidden.error::before {
+    content: attr(data-error);
+    animation: none;
+}
+
+@keyframes anim-widget-delayed-show-meta {
+    0%   { content: ''; }
+    100% { content: attr(data-meta-description); }
+}
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 404 PAGE ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 .pagenotfound-results {
     list-style: none;
@@ -3052,11 +3320,11 @@ footer {
     filter: brightness(0.75) saturate(1.2);
 }
 
-.theme-dark .search-results-filters-container .search-filter-button {
+.theme-dark .search-results-filters-wrapper .search-filter-button {
     filter: brightness(1.2);
 }
 
-.theme-dark .search-results-filters-container .search-filter-button.active:not(:active) {
+.theme-dark .search-results-filters-wrapper .search-filter-button.active:not(:active) {
     filter: brightness(1.1);
 }
 
@@ -3198,6 +3466,7 @@ footer {
         left: 0;
         filter: var(--filter-shadow-secondary);
         transition: max-height 200ms ease-out, opacity 150ms ease-out, top 150ms ease-in;
+        z-index: 10;
     }
 
     #git-wiki-sidebar,
@@ -3246,7 +3515,7 @@ footer {
         right: 0;
         bottom: 0;
         pointer-events: none;
-        z-index: 4;
+        z-index: 9;
         transition: opacity 500ms;
     }
 
@@ -3417,12 +3686,12 @@ footer {
         float: none;
     }
 
-    .search-result-container {
+    .search-result-wrapper {
         gap: var(--spacing-secondary);
         padding: calc(var(--spacing-minor) * 2) var(--spacing-secondary) var(--spacing-secondary);
     }
 
-    .search-result-image-container {
+    .search-result-image-wrapper {
         --result-width-offset: var(--spacing-secondary);
     }
 
@@ -3436,11 +3705,11 @@ footer {
     }
 
     .search-suggestions-item,
-    .search-result-container {
+    .search-result-wrapper {
         grid-template-columns: 1fr;
     }
 
-    .search-suggestions-matches-container,
+    .search-suggestions-matches-wrapper,
     .search-result-second-area::before {
         display: none;
     }
@@ -3449,7 +3718,7 @@ footer {
         grid-column: inherit;
     }
 
-    .search-result-container.has-image .search-result-second-area {
+    .search-result-wrapper.has-image .search-result-second-area {
         margin-top: var(--spacing-intermediate);
     }
 

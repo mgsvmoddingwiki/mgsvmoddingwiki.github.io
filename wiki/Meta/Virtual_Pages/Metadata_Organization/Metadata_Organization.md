@@ -68,15 +68,15 @@ virtual_page_roots:
 
 #### Defining a root directory for the virtual page files
 
-1. In the root of the site open `build-search-indexes.ps1` in a text editor.
-2. In the `$rootDirs` array under the `Generate virtual index` section add the path to the directory that contains the virtual page `.txt` files, like so:
+1. In the root of the site directory open the `_scripts` sub-directory, then open `shared-config.ps1` in a text editor.
+2. In the `$virtualPageDirs` array add the base path to the directory that contains the virtual page `.txt` files, like so:
 ```ps
-$rootDirs = [System.Collections.ArrayList]@(
+$virtualPageDirs = @(
     "wiki/Entity_Reference/"
     "wiki/Another_Example_Real_Page/"
 )
 ```
-> **Note:** no comma is needed to be added between path values in the Powershell array.
+> **Tip:** when an array is defined in Powershell with each string on a new line no comma is needed to be added between values.
 
 > As per the usual advice on [adding a directory](/Meta/Creating_Editing_Pages/Metadata_Organization/Creating_a_Section/#organizing-the-files) for sections the base directory for the virtual pages should use the name as the 'real' page used for the root (in the above examples that's `Another_Example_Real_Page`).
 

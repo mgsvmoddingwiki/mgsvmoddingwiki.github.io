@@ -1,0 +1,16 @@
+<div class="widget recent-changes hidden" data-meta-description="Recent wiki changes">
+    <div class="heading">
+        <div class="heading-text-wrapper">
+            <strong class="heading-text">Recent changes</strong>
+            <span class="heading-subtext">15 days</span>
+        </div>
+        <div class="nav-buttons-wrapper">
+            <div class="primary-button secondary contrast iconed icon-small-full-arrow-up nav-button up"></div>
+            <div class="primary-button secondary contrast iconed icon-small-full-arrow-down nav-button down"></div>
+        </div>
+    </div>
+    <div class="scrollable-wrapper">
+        <div class="sticky-absolute"></div>
+        <ul class="outer-list"></ul>
+    </div>
+</div>

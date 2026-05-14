@@ -18,6 +18,8 @@ Pressing Enter without navigating via keys through the list opens the full resul
 
 The following operators can be entered in the search box to adjust results.
 
+#### Default
+
 | Operator | Example | Description |
 |-|-|-|
 | ` ` | `inf hook` | Spaces act as an *and*. Strings can be partial and still match. |
@@ -30,9 +32,23 @@ The following operators can be entered in the search box to adjust results.
 
 > **Tip:**  Results will match substrings too (eg: `ai` in `contain`). To only match whole words you can double quote the query with spaces, like `"ai "` or `" ai "`.
 
-### Filters
+#### YAML key specific
 
-In the search box suggestions and search results page are some filters that adjust results.
+| Operator | Example | Description |
+|-|-|-|
+| `wiki-title:` | `wiki-title:"infinite heaven"` | Filters results to those containing matches for the given string in any page titles. |
+| `wiki-url:` | `wiki-url:fox` | Filters to matches in any permalinks. |
+| `wiki-tags:` | `wiki-tags:guides` | Filters to matches in page tags. |
+| `wiki-featured:` | `wiki-featured:true` | Filters to matches for featured pages. |
+{:.stretch}
+
+> For any YAML key searches can use either single unquoted string or wrap in double quotes for strings with spaces. They can also be combined with default searches like `wiki-tags:guides fox` to search for all guides containing the string `fox` anywhere.
+
+> **Tip:** all the YAML key operators support negation, in the form of an exclamation prefix, eg: `!wiki-title:fox` to exclude all pages containing `fox` anywhere in the title.
+
+### Filter toggle buttons
+
+In the search box suggestions and search results page are some filter buttons that adjust results.
 
 > Toggling any of the filters in the suggestions drop-down menu will save the user preference for subsequent searches.
 

@@ -298,6 +298,54 @@
             <path d="M70.5,33.5L76,28L81.5,33.5"/>
         </g>
 
+        <g id="icons-small-full-arrow-up-path" class="stroke" transform="translate(-64 -23)">
+            <path d="M76,31L76,40.25"/>
+            <path d="M71.199,34.801L76,30L80.795,34.795"/>
+        </g>
+
+        <g id="icons-small-full-arrow-down-path" class="stroke" transform="translate(-64 -23)">
+            <path d="M76,39L76,29.75"/>
+            <path d="M71.199,35.199L76,40L80.795,35.205"/>
+        </g>
+
+        <g id="icons-small-refresh-group">
+            <rect id="icons-small-refresh-path-exclusion" x="69" y="34" width="14" height="2" transform="translate(-64 -23)"/>
+            <mask id="icons-small-refresh-mask">
+                <use xlink:href="#mask-fill"/>
+                <use class="fill exclusion" xlink:href="#icons-small-refresh-path-exclusion"/>
+            </mask>
+            <g id="icons-small-refresh-path">
+                <g mask="url(#icons-small-refresh-mask)">
+                    <g transform="translate(-64 -23)">
+                        <circle class="stroke" cx="76" cy="35" r="5"/>
+                        <path class="stroke miter-sharp" d="M81,31.656L81,33L79.656,33"/>
+                        <path class="stroke miter-sharp" d="M71,38.344L71,37L72.344,37"/>
+                    </g>
+                </g>
+            </g>
+        </g>
+
+        <g id="icons-refresh-group">
+            <rect id="icons-refresh-path-exclusion" x="66" y="34" width="20" height="2" transform="translate(-64 -23)"/>
+            <mask id="icons-refresh-mask">
+                <use xlink:href="#mask-fill"/>
+                <use class="fill exclusion" xlink:href="#icons-refresh-path-exclusion"/>
+            </mask>
+            <g id="icons-refresh-path">
+                <g mask="url(#icons-refresh-mask)">
+                    <g transform="translate(-64 -23)">
+                        <circle class="stroke" cx="76" cy="35" r="7"/>
+                        <path class="stroke miter-sharp" d="M83,30.375L83,33L80.75,33"/>
+                        <path class="stroke miter-sharp" d="M69,39.625L69,37L71.25,37"/>
+                    </g>
+                </g>
+            </g>
+        </g>
+
+        <g id="icons-star-path" class="stroke linecap-butt" transform="translate(-64 -23)">
+            <path d="M76,26.5L78.702,31.61L84.176,32.761L80.372,37.028L81.053,42.89L76,40.376L70.947,42.89L71.628,37.028L67.824,32.761L73.298,31.61L76,26.5Z"/>
+        </g>
+
         <style><![CDATA[
 
             * {
@@ -456,6 +504,11 @@
     <use class="output" id="icons-sidebar-nodes" xlink:href="#icons-sidebar-nodes-path"/>
 
     <use class="output" id="icons-footnotes-backlink" xlink:href="#icons-footnotes-backlink-path"/>
+    <use class="output" id="icons-small-full-arrow-up" xlink:href="#icons-small-full-arrow-up-path"/>
+    <use class="output" id="icons-small-full-arrow-down" xlink:href="#icons-small-full-arrow-down-path"/>
+    <use class="output" id="icons-small-refresh" xlink:href="#icons-small-refresh-path"/>
+    <use class="output" id="icons-refresh" xlink:href="#icons-refresh-path"/>
+    <use class="output" id="icons-star" xlink:href="#icons-star-path"/>
 
 
     <!-- Inserted here so animation only plays when referenced via fragment identifier -->

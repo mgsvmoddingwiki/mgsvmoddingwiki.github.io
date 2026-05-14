@@ -1,0 +1,13 @@
+<div class="widget embed-page-highlight
+	{% if include.type == "featured" %}type-featured shuffle
+	{% elsif include.type == "tag" %}type-tag shuffle
+	{% elsif include.type == "single" %}type-single
+	{% endif %}
+	hidden"
+	{% if include.type == "tag" and include.tag %}data-tag="{{ include.tag }}"{% endif %}
+	{% if include.type == "single" and include.permalink %}data-permalink="{{ include.permalink }}"
+	{% endif %}
+	{% if include.height %}data-height={{ include.height }}{% endif %}
+	data-meta-description="Embed page highlight"
+	>
+</div>

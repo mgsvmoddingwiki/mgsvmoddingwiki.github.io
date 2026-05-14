@@ -1,6 +1,8 @@
 ---
 title: 'Retexturing the Bionic Arm'
 permalink: /Retexturing_the_Bionic_Arm/
+image: /assets/Retexturing_the_Bionic_Arm/Intro_graphic.jpg
+featured: true
 tags: [Rendering]
 ---
 

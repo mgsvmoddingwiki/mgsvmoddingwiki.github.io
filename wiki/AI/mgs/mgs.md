@@ -1,6 +1,8 @@
 ---
 title: Metal Gear Sahelanthropus
 permalink: /AI/mgs/
+image: /assets/AI/images/mgs/Sally_Section_Meta_Image.jpg
+featured: true
 tags: [AI, Metal Gear]
 ---
 

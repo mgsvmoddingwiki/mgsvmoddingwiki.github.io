@@ -1,0 +1,572 @@
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ GENERAL ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.widget {
+    --font-size-widget-heading: 23px;
+    --font-spacing-widget-heading: -0.02em;
+}
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ RECENT CHANGES ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.recent-changes {
+    --heading-fade-height: 140px;
+    --last-child-extra-height: calc(var(--heading-fade-height) / 2);
+    --color-wrapper-bg: var(--bg-subtle);
+    --color-timeline-standard: var(--color-border);
+    --color-timeline-snapped: var(--color-secondary);
+    --color-timeline-active: var(--color-accent);
+    min-width: 260px;
+    max-height: 600px; /* only if used outside the intended home page grid layout */
+    min-height: 400px;
+    background: var(--color-wrapper-bg);
+    opacity: 1;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+
+.recent-changes,
+.recent-changes li a {
+    color: var(--color-secondary);
+}
+
+.recent-changes li a:hover {
+    color: var(--color-link);
+}
+
+.recent-changes li a:active {
+    color: var(--color-link-hover);
+}
+
+.recent-changes .heading {
+    width: 100%;
+    height: var(--heading-fade-height);
+    background: linear-gradient(0deg, var(--color-wrapper-bg) 60%, transparent 100%);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 20px;
+    grid-row: 1;
+    grid-column: 1;
+    margin-top: auto; /* push down to bottom */
+    position: relative;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.recent-changes .heading-text-wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: var(--spacing-secondary);
+    position: relative;
+    z-index: 1;
+    pointer-events: auto;
+}
+
+.recent-changes .heading-text {
+    color: var(--color-primary);
+    font-size: var(--font-size-widget-heading);
+    font-weight: var(--font-weight-semibold);
+    letter-spacing: var(--font-spacing-widget-heading);
+    line-height: 100%;
+}
+
+.recent-changes .heading-subtext {
+    font-size: var(--font-size-small);
+    font-weight: var(--font-weight-semibold);
+    line-height: 100%;
+}
+
+.recent-changes .nav-buttons-wrapper {
+    display: flex;
+    gap: var(--spacing-minor);
+    position: relative;
+    pointer-events: auto;
+}
+
+.recent-changes .nav-button.icon-small-full-arrow-up::before {
+    -webkit-mask-image: url("/assets/images/ui.svg#icons-small-full-arrow-up");
+    mask-image: url("/assets/images/ui.svg#icons-small-full-arrow-up");
+}
+
+.recent-changes .nav-button.icon-small-full-arrow-down::before {
+    -webkit-mask-image: url("/assets/images/ui.svg#icons-small-full-arrow-down");
+    mask-image: url("/assets/images/ui.svg#icons-small-full-arrow-down");
+}
+
+.recent-changes .scrollable-wrapper {
+    --padding: var(--spacing-intermediate);
+    height: calc(100% - var(--last-child-extra-height));
+    grid-row: 1;
+    grid-column: 1;
+    overflow: hidden;
+    padding: var(--padding) var(--padding) 0;
+    position: relative;
+}
+
+/* Workaround for removing space consumed by position sticky */
+.recent-changes .sticky-absolute {
+    height: 0px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.recent-changes .sticky-absolute::before {
+    width: 100%;
+    height: calc(var(--padding) - 5px);
+    background: linear-gradient(0deg, transparent 0%, var(--color-wrapper-bg) 80% 100%);
+    content: '';
+    display: block;
+    opacity: 1;
+    position: absolute;
+    top: calc(-1 * var(--padding));
+    left: 0;
+}
+
+.recent-changes .outer-list {
+    --label-width: 95px;
+    --circle-diameter: 8px;
+    --circle-vert-offset: 8px;
+    --line-width: var(--border-width);
+    --line-gap: 5px;
+    --list-vert-gap: calc(var(--spacing-minor) * 2);
+    --list-vert-offset: 1px; /* varies based on typeface/line-height and can't use baseline align for parent flexbox since throws off calculations */
+    --hori-gap: 20px;
+    list-style: none;
+    margin: calc(-1 * var(--padding) / 2) 0 0;
+    padding: 0;
+}
+
+.recent-changes .outer-list > li {
+    font-size: var(--font-size-small);
+    font-weight: var(--font-weight-semibold);
+    display: flex;
+    align-items: flex-start;
+    padding: var(--list-vert-gap) 0;
+    position: relative;
+}
+
+.recent-changes .outer-list .snapped:not(:first-child) .label-text::before,
+.recent-changes .outer-list .snapped:not(:first-child) .url-list::before {
+    background: var(--color-timeline-snapped);
+    opacity: 1;
+}
+
+.recent-changes .outer-list .snapped:not(:first-child) .label-text {
+    color: var(--bg-primary);
+}
+
+.recent-changes .outer-list > li:first-child .label-text {
+    color: var(--color-accent-foreground);
+}
+
+.recent-changes .outer-list > li:first-child .label-text::before {
+    background: var(--color-timeline-active);
+    opacity: 1;
+}
+
+.recent-changes .outer-list > li:first-child .url-list::before {
+    background: var(--color-timeline-active);
+}
+
+.recent-changes .outer-list > li:last-child .label::before {
+    --extra-height: calc(var(--last-child-extra-height) / 2);
+}
+
+.recent-changes .url-list {
+    min-width: 0; /* allow list to shrink to fit remaining space */
+    flex: 1 1 auto;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+.recent-changes .url-list-item {
+    --link-padding: var(--spacing-minor);
+    line-height: var(--font-line-height);
+    margin-bottom: calc(var(--spacing-minor) * 2 - (var(--link-padding) * 2)); /* just enough to distinguish line breaks from separate list items (without hovering) */
+    position: relative;
+    top: var(--list-vert-offset);
+}
+
+.recent-changes .url-list-link {
+    width: calc(100% + var(--link-padding));
+    height: 100%;
+    display: inline-block;
+    padding: var(--link-padding) calc(var(--link-padding) * 2);
+    border-radius: var(--radius-primary);
+    position: relative;
+    top: calc(-1 * var(--link-padding)); /* to align text to label/dot the padding has to be compensated for, even if it means slightly incorrect in relation to base widget top edge padding when hovered */
+    left: calc(-1 * var(--link-padding));
+}
+
+.recent-changes .url-list-link:hover {
+    background: var(--color-buttons-hover);
+}
+
+.recent-changes .label {
+    width: var(--label-width);
+    text-align: center;
+    line-height: 100%;
+    white-space: nowrap;
+    display: inline-block;
+    flex: 0 0 auto;
+    border-radius: var(--radius-full);
+    margin-right: calc(var(--hori-gap) * 2);
+    cursor: default;
+}
+
+.recent-changes .label-text {
+    padding: calc(var(--spacing-minor) / 1.2) calc(var(--spacing-minor) * 2);
+    position: relative;
+    top: var(--spacing-minor); /* to account for the space occupieed by the absolutely positioned pseudo element background */
+    z-index: 0;
+}
+
+.recent-changes .label-text::before {
+    width: 100%;
+    height: 100%;
+    background: var(--color-secondary);
+    content: '';
+    display: block;
+    opacity: 0.1; /* so matches on both light/dark themes */
+    border-radius: var(--radius-full);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+/* Timeline dots */
+.recent-changes .url-list::before {
+    width: var(--circle-diameter);
+    height: var(--circle-diameter);
+    background: var(--color-secondary);
+    content: '';
+    display: inline-block;
+    border-radius: var(--radius-circle);
+    margin: var(--circle-vert-offset) 0 0;
+    position: absolute;
+    left: calc(-1 * (var(--circle-diameter) / 2) - var(--hori-gap) + (var(--line-width) / 2));
+}
+
+.recent-changes .outer-list > li:not(.snapped):not(:first-child) .url-list::before {
+    opacity: 0.75; /* to optically match text */
+}
+
+/* Timeline vertical lines */
+.recent-changes .label::before {
+    --extra-height: 0px;
+    width: var(--line-width);
+    height: calc(100% - ((var(--line-gap) * 2) + var(--circle-diameter)) + var(--extra-height));
+    background: var(--color-timeline-standard);
+    content: '';
+    border-radius: var(--radius-full);
+    position: absolute;
+    left: calc(var(--label-width) + var(--hori-gap));
+    top: calc(var(--line-gap) + var(--list-vert-gap) + var(--circle-vert-offset) + var(--circle-diameter));
+}
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ EMBED HIGHLIGHTS ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.embed-page-highlight {
+    --nav-offset: 50px;
+    --nav-image-scale-default: 1.1;
+    --nav-image-scale-shrink: 1.08;
+    --nav-text-scale-shrink: 0.98;
+    background: var(--bg-subtle);
+    overflow: hidden;
+    user-select: none;
+    position: relative;
+}
+
+.embed-page-highlight .item {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    position: absolute;
+}
+
+.embed-page-highlight .item.fore-item {
+    z-index: 1;
+}
+
+.embed-page-highlight .item.back-item {
+    z-index: 0;
+    pointer-events: none;
+}
+
+.embed-page-highlight .background-link {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 0;
+}
+
+.embed-page-highlight .background-wrapper {
+    width: 100%;
+    height: 100%;
+    background: var(--bg-primary);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    justify-content: center;
+    filter: contrast(1) brightness(1);
+    transition: filter 0.2s, scale 0.2s var(--timing-bezier-1);
+}
+
+.embed-page-highlight .background-wrapper::before {
+    width: 100%;
+    height: 100%;
+    content: '';
+    display: block;
+    position: absolute;
+}
+
+/* Since this widget is JS-based I can get away with just relying on the body class for targeting themes */
+.embed-page-highlight .background-wrapper:not(.has-image)::before {
+    background: var(--color-blue-darkest);
+}
+
+.theme-dark .embed-page-highlight .background-wrapper:not(.has-image)::before {
+    mix-blend-mode: hard-light;
+    opacity: 0.6;
+}
+
+.theme-light .embed-page-highlight .background-wrapper:not(.has-image)::before {
+    opacity: 0.9;
+}
+
+.theme-dark .embed-page-highlight .background-wrapper.has-image::before {
+    background: var(--color-blue-dark);
+}
+
+.theme-light .embed-page-highlight .background-wrapper.has-image::before {
+    background: var(--color-blue-mid);
+}
+
+/* Applied to root instead of link per se to avoid transitions triggering when tag/featured button links hovered */
+.embed-page-highlight:hover .background-wrapper {
+    filter: contrast(1.1) brightness(1.1); /* to give screen-like effect */
+}
+
+.embed-page-highlight .background-text-wrapper {
+    width: 100%;
+    height: 100%;
+    font-size: 26px;
+    font-weight: var(--font-weight-base);
+    grid-column: 1;
+    grid-row: 1;
+    opacity: 0.4;
+    overflow: hidden;
+    padding: calc(var(--spacing-secondary) * 1.5) var(--spacing-primary);
+}
+
+/* Since it's wrapped in a parent link it inherits the regular link styling */
+.theme-dark .embed-page-highlight .background-text-wrapper {
+    color: var(--color-blue-dark) !important;
+}
+
+.theme-light .embed-page-highlight .background-text-wrapper {
+    color: var(--color-blue-mid) !important;
+}
+
+.embed-page-highlight .page-image {
+    height: 100%;
+    width: 100%;
+    background: var(--color-blue-darkest); /* for any images with alpha */
+    grid-column: 1;
+    grid-row: 1;
+    opacity: 0.5;
+    object-fit: cover;
+    margin: 0;
+    position: absolute;
+    scale: var(--nav-image-scale-default); /* increased scale above 1 for little boundary buffer so nav anim can scale smaller without shrinking bounds inward */
+    transition: opacity 0.2s;
+}
+
+.embed-page-highlight .page-image.hidden {
+    opacity: 0;
+}
+
+.embed-page-highlight .info-wrapper {
+    width: 100%;
+    padding: var(--spacing-intermediate);
+    position: relative;
+    pointer-events: none;
+}
+
+.embed-page-highlight .info-wrapper::before {
+    --extra-height: 50px;
+    width: 100%;
+    height: calc(100% + var(--extra-height));
+    background: linear-gradient(0deg, var(--color-blue-dark) 0%, transparent 100%);
+    content: '';
+    display: block;
+    position: absolute;
+    top: calc(-1 * var(--extra-height));
+    left: 0;
+}
+
+.embed-page-highlight .title {
+    color: var(--color-blue-content-light-heading);
+    font-size: var(--font-size-widget-heading);
+    font-weight: var(--font-weight-semibold);
+    letter-spacing: var(--font-spacing-widget-heading);
+    position: relative;
+}
+
+.embed-page-highlight .tags-wrapper {
+    margin-top: calc(var(--spacing-minor) * 2.4);
+}
+
+.embed-page-highlight .tag-list-item {
+    pointer-events: auto;
+}
+
+/* Progress bar for timed shuffles */
+.embed-page-highlight .progress-bar {
+    --width: 30%;
+    width: var(--width);
+    height: 4px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    overflow: hidden;
+    mix-blend-mode: plus-lighter;
+    opacity: 0.5; /* for the plus-lighter blend mode specifically */
+    border-radius: var(--radius-full);
+    position: absolute;
+    top: 32px;
+    left: calc(50% - var(--width) / 2);
+    z-index: 1;
+    transition: opacity 0.2s ease-out;
+    pointer-events: none;
+}
+
+.embed-page-highlight .progress-bar::before {
+    width: 100%;
+    height: 100%;
+    background: var(--color-blue-light);
+    content: '';
+    display: block;
+    grid-column: 1;
+    grid-row: 1;
+    opacity: 0.2;
+}
+
+.embed-page-highlight .progress-fill {
+    width: var(--progress, 0%);
+    height: 100%;
+    background: var(--color-blue-light);
+    grid-column: 1;
+    grid-row: 1;
+    opacity: 0.4;
+    border-radius: var(--radius-full);
+    translate: var(--delay-progress, 0%) 0;
+    transition: opacity 0.2s;
+}
+
+.embed-page-highlight .complete .progress-fill {
+    opacity: 0.2;
+}
+
+.embed-page-highlight .actions-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: calc(var(--spacing-minor) * 1.4 + var(--border-width-thin) * 2);
+    position: absolute;
+    top: var(--spacing-intermediate);
+    right: var(--spacing-intermediate);
+    z-index: 1;
+}
+
+.icon-star .icon-wrapper::before {
+    -webkit-mask-image: url("/assets/images/ui.svg#icons-star");
+    mask-image: url("/assets/images/ui.svg#icons-star");
+}
+
+.icon-refresh .icon-wrapper::before {
+    -webkit-mask-image: url("/assets/images/ui.svg#icons-refresh");
+    mask-image: url("/assets/images/ui.svg#icons-refresh");
+}
+
+.icon-small-refresh .icon-wrapper::before {
+    -webkit-mask-image: url("/assets/images/ui.svg#icons-small-refresh");
+    mask-image: url("/assets/images/ui.svg#icons-small-refresh");
+}
+
+
+/* Nav anims */
+.embed-page-highlight .item.next-item-swap {
+    --gradient: linear-gradient(225deg, #fff 45%, transparent 55%);
+    animation: anim-item-mask-trans-swipe 0.3s;
+}
+
+.embed-page-highlight .item.next-item-swap .ib-primary-button,
+.embed-page-highlight .item.next-item-swap .ib-tag-list-tag {
+    backdrop-filter: none; /* disable during anim as workaround for Firefox bug */
+}
+
+.embed-page-highlight.item-swap-occurring .back-item .page-image {
+    animation: anim-item-back-trans-image 0.3s;
+}
+
+.embed-page-highlight.item-swap-occurring .fore-item .page-image {
+    animation: anim-item-fore-trans-image 0.3s;
+}
+
+.embed-page-highlight.item-swap-occurring .back-item .background-text-wrapper {
+    animation: anim-item-back-trans-text 0.3s;
+}
+
+.embed-page-highlight.item-swap-occurring .fore-item .background-text-wrapper {
+    animation: anim-item-fore-trans-text 0.3s;
+}
+
+@keyframes anim-item-mask-trans-swipe {
+    0%,100% {
+        -webkit-mask-image: var(--gradient);
+        mask-image: var(--gradient);
+        -webkit-mask-size: 300% 100%;
+        mask-size: 300% 100%;
+        -webkit-mask-position: -50% 0;
+        mask-position: -50% 0;
+    }
+    100% {
+        -webkit-mask-position: -150% 0;
+        mask-position: -150% 0;
+    }
+}
+
+@keyframes anim-item-back-trans-image {
+    0%   { scale: var(--nav-image-scale-shrink); translate: calc(-1 * var(--nav-offset)) 0 }
+    50%  { scale: var(--nav-image-scale-shrink); }
+    100% { scale: var(--nav-image-scale-default); translate: 0 0 }
+}
+
+@keyframes anim-item-fore-trans-image {
+    0%   { scale: var(--nav-image-scale-default); translate: 0 0 }
+    50%  { scale: var(--nav-image-scale-shrink); translate: 0 0 }
+    100% { translate: var(--nav-offset) 0 }
+}
+
+@keyframes anim-item-back-trans-text {
+    0%   { scale: var(--nav-text-scale-shrink); translate: calc(-1 * var(--nav-offset)) 0 }
+    50%  { scale: var(--nav-text-scale-shrink); }
+    100% { scale: 1; translate: 0 0 }
+}
+
+@keyframes anim-item-fore-trans-text {
+    0%   { scale: 1; translate: 0 0 }
+    50%  { scale: var(--nav-text-scale-shrink); translate: 0 0 }
+    100% { translate: var(--nav-offset) 0 }
+}

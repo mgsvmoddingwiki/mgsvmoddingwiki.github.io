@@ -673,6 +673,46 @@ You can link files like regular links however a download button is useful when y
 
 ---
 
+## Widgets
+
+{% include spoiler-start %}
+
+### Embedded page highlight
+
+**All featured pages:**
+
+{% include embed-page-highlight type="featured" %}
+
+    {% raw %}{% include embed-page-highlight type="featured" %}{% endraw %}
+
+**All pages of a specific tag:**
+
+{% include embed-page-highlight type="tag" tag="FoxKit" %}
+
+    {% raw %}{% include embed-page-highlight type="tag" tag="FoxKit" %}{% endraw %}
+
+**Single page, with custom height:**
+
+{% include embed-page-highlight type="single" permalink="/File_Formats" height="300" %}
+
+    {% raw %}{% include embed-page-highlight type="single" permalink="/File_Formats" height="300" %}{% endraw %}
+
+> The `permalink` value uses the same path as you'd link other pages with.
+
+> As you can see if a page lacks an image (none in its metadata, no image in the content, or if the image fails to load) then the page text will be used for the background.
+
+### Recent wiki changes
+
+This is currently expected to be on the home page, within a particular grid layout but it can be embedded standalone, too.
+
+{% include recent-changes %}
+
+    {% raw %}{% include recent-changes %}{% endraw %}
+
+{% include spoiler-end %}
+
+---
+
 ## Sidebar menu icons
 
 For those editing the sidebar of the wiki itself these are a list of available custom icons to choose from.
