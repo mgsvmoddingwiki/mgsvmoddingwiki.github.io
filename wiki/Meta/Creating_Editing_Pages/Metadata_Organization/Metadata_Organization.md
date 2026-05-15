@@ -69,7 +69,7 @@ tags: [Missions, Guides]
 
 #### Additional metadata properties
 
-- `image` = Define an image path that will be used for embed widgets (otherwise will fall back to whatever the first image in the page is).
+- `image` = Define an image path that will be used for embed widgets on the wiki and for Open Graph/Twitter third-party link embeds. If none defined embed widgets on the wiki will fall back to whatever the first image in the page is (if there is one).
 > Eg: `image = /assets/AI/images/mgs/Sally_Section_Meta_Image.jpg`\
 \
 > **Note:** make sure to compress the image to something reasonable so it loads faster. 100-300KB recommended.

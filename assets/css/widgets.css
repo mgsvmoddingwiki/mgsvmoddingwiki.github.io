@@ -24,6 +24,8 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
+    container-type: inline-size;
+    container-name: recent-changes-cont;
 }
 
 .recent-changes,
@@ -149,6 +151,10 @@
     position: relative;
 }
 
+.recent-changes .outer-list > li:last-child {
+    margin-bottom: calc(var(--last-child-extra-height) - var(--spacing-primary));
+}
+
 .recent-changes .outer-list .snapped:not(:first-child) .label-text::before,
 .recent-changes .outer-list .snapped:not(:first-child) .url-list::before {
     background: var(--color-timeline-snapped);
@@ -188,12 +194,51 @@
 .recent-changes .url-list-item {
     --link-padding: var(--spacing-minor);
     line-height: var(--font-line-height);
+    display: flex;
+    gap: var(--spacing-secondary);
     margin-bottom: calc(var(--spacing-minor) * 2 - (var(--link-padding) * 2)); /* just enough to distinguish line breaks from separate list items (without hovering) */
     position: relative;
     top: var(--list-vert-offset);
 }
 
-.recent-changes .url-list-link {
+.recent-changes .url-list-repo-link {
+    width: 36px;
+    height: 23px; /* same computed height as current label styling */
+    display: flex;
+    flex: 0 0 auto;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: var(--radius-full);
+    position: relative;
+}
+
+.recent-changes .url-list-repo-link::before {
+    width: 100%;
+    height: 100%;
+    background: var(--color-link);
+    content: '';
+    display: block;
+    opacity: var(--color-link-bg-opacity) !important;
+    position: absolute;
+}
+
+.recent-changes .url-list-repo-link::after {
+    width: 24px;
+    height: 24px;
+    background: var(--color-link);
+    content: '';
+    display: block;
+    -webkit-mask-image: url("/assets/images/ui.svg#icons-small-git-commit");
+    mask-image: url("/assets/images/ui.svg#icons-small-git-commit");
+    position: absolute;
+}
+
+.recent-changes .url-list-repo-link:hover::after {
+    background: var(--color-link-hover);
+}
+
+.recent-changes .url-list-page-link {
     width: calc(100% + var(--link-padding));
     height: 100%;
     display: inline-block;
@@ -204,7 +249,7 @@
     left: calc(-1 * var(--link-padding));
 }
 
-.recent-changes .url-list-link:hover {
+.recent-changes .url-list-page-link:hover {
     background: var(--color-buttons-hover);
 }
 
@@ -269,6 +314,25 @@
     position: absolute;
     left: calc(var(--label-width) + var(--hori-gap));
     top: calc(var(--line-gap) + var(--list-vert-gap) + var(--circle-vert-offset) + var(--circle-diameter));
+}
+
+/* For full-length version for dedicated recent changes page */
+.recent-changes.type-full {
+    max-height: 100%;
+}
+
+.recent-changes.type-full .heading {
+    display: none;
+}
+
+.recent-changes.type-full .scrollable-wrapper {
+    height: 100%;
+}
+
+@container recent-changes-cont (max-width: 500px) {
+    .recent-changes .url-list-repo-link {
+        display: none;
+    }
 }
 
 

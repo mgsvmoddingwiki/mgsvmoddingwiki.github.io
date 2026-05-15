@@ -1,4 +1,4 @@
-<div class="widget recent-changes hidden" data-meta-description="Recent wiki changes">
+<div class="widget recent-changes hidden {% if include.type == "full" %}type-full{% endif %}" data-meta-description="Recent wiki changes">
     <div class="heading">
         <div class="heading-text-wrapper">
             <strong class="heading-text">Recent changes</strong>

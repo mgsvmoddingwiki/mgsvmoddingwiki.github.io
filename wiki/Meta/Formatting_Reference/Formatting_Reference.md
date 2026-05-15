@@ -709,6 +709,8 @@ This is currently expected to be on the home page, within a particular grid layo
 
     {% raw %}{% include recent-changes %}{% endraw %}
 
+> Optionally can add `type="full"` to expand fully and hide heading. This is intended only for the dedicated [Recent Changes](/Meta/Recent_Changes) page.
+
 {% include spoiler-end %}
 
 ---
