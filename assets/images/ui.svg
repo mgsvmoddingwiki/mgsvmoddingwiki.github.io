@@ -346,6 +346,23 @@
             <path d="M76,26.5L78.702,31.61L84.176,32.761L80.372,37.028L81.053,42.89L76,40.376L70.947,42.89L71.628,37.028L67.824,32.761L73.298,31.61L76,26.5Z"/>
         </g>
 
+        <g id="icons-small-git-commit-group">
+            <circle id="icons-small-git-commit-path-exclusion" cx="76" cy="35" r="1.297" transform="translate(-64 -23)"/>
+            <!-- For whatever reason mask height clipped in Chromium to adjusted here -->
+            <mask id="icons-small-git-commit-mask" y="-50%" height="200%">
+                <use xlink:href="#mask-fill"/>
+                <use class="fill exclusion" xlink:href="#icons-small-git-commit-path-exclusion"/>
+            </mask>
+            <g id="icons-small-git-commit-path">
+                <g mask="url(#icons-small-git-commit-mask)">
+                    <g transform="translate(-64 -23)" class="stroke">
+                        <path d="M71,35L81,35"/>
+                        <circle cx="76" cy="35" r="2"/>
+                    </g>
+                </g>
+            </g>
+        </g>
+
         <style><![CDATA[
 
             * {
@@ -507,6 +524,7 @@
     <use class="output" id="icons-small-full-arrow-up" xlink:href="#icons-small-full-arrow-up-path"/>
     <use class="output" id="icons-small-full-arrow-down" xlink:href="#icons-small-full-arrow-down-path"/>
     <use class="output" id="icons-small-refresh" xlink:href="#icons-small-refresh-path"/>
+    <use class="output" id="icons-small-git-commit" xlink:href="#icons-small-git-commit-path"/>
     <use class="output" id="icons-refresh" xlink:href="#icons-refresh-path"/>
     <use class="output" id="icons-star" xlink:href="#icons-star-path"/>
 

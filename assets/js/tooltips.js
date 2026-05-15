@@ -2,51 +2,56 @@ import * as func from './functions.js';
 import { themeSwitching, headerGraphicSwitching } from './general.js';
 
 const rootHtml = document.querySelector('html'); // this can't be added to `settings.js` since it slows down immediacy of initial page styling
-var curActive,
+let curActive,
     curActiveMenu,
-    allTriggers,
+    targets,
     tooltip,
     tooltipMenu;
 
 func.checkVp(init);
+
+function attachListeners(tooltip) {
+    tooltip.addEventListener('mouseover', (e) => {
+        let tar = e.target,
+            element = tooltip;
+            if (tar.classList.contains('tooltip-hide')) {
+                return
+            }
+            if (tar.hasAttribute('data-tooltip-menu')) {
+                // Prevent other menus from activating on hover if one menu already open
+                if (!tooltipMenu.classList.contains('tooltip-menu-open')) {
+                    genMenuContent(tar);
+                    element = tooltipMenu;
+                    curActive = tar;
+                    styleContent(tar, true);
+                }
+            } else {
+                curActive = tar;
+                styleContent(tar, true);
+            }
+    });
+
+    tooltip.addEventListener('mouseout', (e) => {
+        let tar = e.target;
+        if (tar.hasAttribute('data-tooltip-menu') && tooltipMenu.classList.contains('tooltip-menu-open')) {
+            return
+        } else {
+            styleContent(tar, false);
+        }
+    });
+}
+
 async function init() {
     if (tooltip) {
         // Remove in case on virtual page (to avoid duplication)
         tooltip.remove();
         tooltipMenu.remove();
     }
-    allTriggers = body.querySelectorAll('[data-tooltip-text]');
+    targets = Array.from(body.querySelectorAll('[data-tooltip-text]'));
     await genPlaceholders();
 
-    allTriggers.forEach((trigger) => {
-        trigger.addEventListener('mouseover', (e) => {
-            let tar = e.target,
-                element = tooltip;
-                if (tar.classList.contains('tooltip-hide')) {
-                    return
-                }
-                if (tar.hasAttribute('data-tooltip-menu')) {
-                    // Prevent other menus from activating on hover if one menu already open
-                    if (!tooltipMenu.classList.contains('tooltip-menu-open')) {
-                        genMenuContent(tar);
-                        element = tooltipMenu;
-                        curActive = tar;
-                        styleContent(tar, true);
-                    }
-                } else {
-                    curActive = tar;
-                    styleContent(tar, true);
-                }
-        });
-
-        trigger.addEventListener('mouseout', (e) => {
-            let tar = e.target;
-            if (tar.hasAttribute('data-tooltip-menu') && tooltipMenu.classList.contains('tooltip-menu-open')) {
-                return
-            } else {
-                styleContent(tar, false);
-            }
-        });
+    targets.forEach((target) => {
+        attachListeners(target);
     });
 }
 
@@ -84,14 +89,14 @@ async function genPlaceholders() {
     tooltipMenu = body.querySelector('.tooltip.menu');
 }
 
-function genMenuContent(trigger) {
-    let menu = trigger.getAttribute('data-tooltip-menu'),
+function genMenuContent(target) {
+    let menu = target.getAttribute('data-tooltip-menu'),
         content = tooltipMenu.querySelector('.menu-content'),
         html;
     content.innerHTML = '';
 
     if (menu == 'more-options') {
-        let deleteUrl = trigger.getAttribute('data-delete-page-url');
+        let deleteUrl = target.getAttribute('data-delete-page-url');
         html = `
             <div class="menu-radio">
                 <div class="menu-button theme-light-switcher"><a class="iconed icon-toolbar icon-themes-light"></a></div>
@@ -114,12 +119,12 @@ function genMenuContent(trigger) {
     }
 }
 
-function styleContent(trigger, state) {
-    let menu = trigger.hasAttribute('data-tooltip-menu'),
+function styleContent(target, state) {
+    let menu = target.hasAttribute('data-tooltip-menu'),
         element = menu ? tooltipMenu : tooltip,
         menuOpen = element.classList.contains('tooltip-menu-open');
     toggleVis(element, state);
-    let triggerRect = func.getRect(trigger),
+    let targetRect = func.getRect(target),
         tooltipRect = func.getRect(element),
 
         // Since `getComputedStyle` outputs the immediate rendered width on click (prior to any transitions/anims ending) the final width can't be obtained ASAP so this checks the max menu width instead
@@ -128,14 +133,14 @@ function styleContent(trigger, state) {
         min = (element.getAttribute('data-last-width') / 2) - (spacing / 2),
         max = (window.innerWidth - (element.getAttribute('data-last-width') / 2)) - (spacing / 2),
         menuWidthDiff = menuOpen ? Math.round((maxMenu - tooltipRect.width) / 2) : 0,
-        menuOpenOffset = ((menuWidthDiff * 2) + triggerRect.left > max) ? menuWidthDiff : 0, // right-most menus
+        menuOpenOffset = ((menuWidthDiff * 2) + targetRect.left > max) ? menuWidthDiff : 0, // right-most menus
 
-        top = Math.round(triggerRect.top - body.scrollTop),
-        left = Math.round(func.clamp(triggerRect.left + (triggerRect.width / 2), min, max)),
+        top = Math.round(targetRect.height + targetRect.top - body.scrollTop),
+        left = Math.round(func.clamp(targetRect.left + (targetRect.width / 2), min, max)),
         label = element.querySelector('.tooltip-label');
 
     // Left-most menus
-    if (menuOpenOffset == 0 && (triggerRect.left - (menuWidthDiff * 2) < min)) {
+    if (menuOpenOffset == 0 && (targetRect.left - (menuWidthDiff * 2) < min)) {
         menuOpenOffset = (-1 * menuWidthDiff);
     }
 
@@ -146,8 +151,8 @@ function styleContent(trigger, state) {
         element.style.cssText = '--top: ' + top + 'px; --left: ' + left + 'px; --menu-open-offset: ' + menuOpenOffset + 'px;';
     }
 
-    element.classList.toggle('offset-add', trigger.classList.contains('primary-button'));
-    label.textContent = trigger.getAttribute('data-tooltip-text');
+    element.classList.toggle('offset-add', target.classList.contains('primary-button'));
+    label.textContent = target.getAttribute('data-tooltip-text');
 }
 
 function toggleVis(el, state) {
@@ -163,7 +168,7 @@ function toggleVis(el, state) {
 }
 
 function menuOpen(state, el) {
-    var target;
+    let target;
     if (el) {
         target = el;
         toggle(target);
@@ -217,36 +222,63 @@ body.addEventListener('click', (e) => {
     tooltipMenu.setAttribute('data-last-width','');
 });
 
+function updatePos() {
+    if (curActive) { styleContent(curActive); }
+    if (curActiveMenu) { styleContent(curActiveMenu); }
+}
+
 // Account for new position on scroll and viewport/body resizing
 let scrollPriorPos = 0,
     ticking = false;
 document.addEventListener("scroll", (event) => {
-  scrollPriorPos = window.scrollY;
-  if (!ticking) {
-    // Throttle scroll event updates
-    window.requestAnimationFrame(() => {
-      updatePos();
-      ticking = false;
-    });
-    ticking = true;
-  }
+    scrollPriorPos = window.scrollY;
+    if (!ticking) {
+        // Throttle scroll event updates
+        window.requestAnimationFrame(() => {
+            updatePos();
+            ticking = false;
+        });
+        ticking = true;
+    }
 });
 
-var resizePriorWidth = 0;
+let resizePriorWidth = 0;
 const resize = new ResizeObserver(entries => {
-  for (const entry of entries) {
-    const width = entry.borderBoxSize?.[0].inlineSize;
-    if (typeof width === 'number' && width !== resizePriorWidth) {
-        resizePriorWidth = width;
-        updatePos();
+    for (const entry of entries) {
+        const width = entry.borderBoxSize?.[0].inlineSize;
+        if (typeof width === 'number' && width !== resizePriorWidth) {
+            resizePriorWidth = width;
+            updatePos();
+        }
     }
-  }
 });
 
 resize.observe(rootHtml, {box: 'border-box'});
 resize.observe(body, {box: 'border-box'}); // necessary since page width toggle can affect body width independently of viewport width
 
-function updatePos() {
-    if (curActive) { styleContent(curActive); }
-    if (curActiveMenu) { styleContent(curActiveMenu); }
+// For elements added via JS later
+function checkNodeForTarget(node) {
+    if (node.nodeType === Node.ELEMENT_NODE && node.hasAttribute('data-tooltip-text') && !targets.includes(node)) {
+        attachListeners(node);
+        targets.push(node);
+    }
 }
+
+const checkNewTargets = new MutationObserver((mutations) => {
+    for (const mutation of mutations) {
+        for (const node of mutation.addedNodes) {
+            checkNodeForTarget(node);
+            // Check children for targets
+            if (node.querySelectorAll) {
+                node.querySelectorAll('*').forEach((child) => {
+                    checkNodeForTarget(child);
+                });
+            }
+        }
+    }
+});
+
+checkNewTargets.observe(body, {
+    subtree: true,
+    childList: true,
+});

@@ -17,6 +17,7 @@
     --radius-circle: 100%;
     --primary-button-diameter: 38px;
     --secondary-button-diameter: 30px;
+    --color-link-bg-opacity: 0.12;
 
     --font-sans: Kibur, "Segoe UI", sans-serif;
     --font-size-base: 16px;
@@ -406,7 +407,7 @@ li::marker,
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ TOOLTIPS ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 .tooltip {
-    --offset-y: 40px;
+    --offset-y: 10px;
     --max-width-open: 210px;
     width: max-content;
     min-height: var(--height-tooltip-min);
@@ -433,7 +434,7 @@ li::marker,
 }
 
 .tooltip.offset-add {
-    --offset-y: 50px; /* for `.primary-button` butttons, mainly to align toolbar buttons more pleasantly with search box edge */
+    --offset-y: 12px; /* for `.primary-button` butttons, mainly to align toolbar buttons more pleasantly with search box edge */
 }
 
 .tooltip.hidden {
@@ -1376,7 +1377,7 @@ body > .wrapper {
     overflow: hidden;
     border-radius: var(--radius-circle);
     position: absolute;
-    top: 0;
+    top: calc(-1 * var(--spacing-minor) / 2); /* to align more centrally to top heading line */
     right: 0;
 }
 
@@ -1386,7 +1387,7 @@ body > .wrapper {
     background: var(--color-link);
     content: '';
     display: block;
-    opacity: 0.12;
+    opacity: var(--color-link-bg-opacity);
     grid-row: 1;
     grid-column: 1;
 }
@@ -1439,7 +1440,7 @@ body > .wrapper {
     background: var(--color-link);
     content: '';
     display: block;
-    opacity: 0.12;
+    opacity: var(--color-link-bg-opacity);
     position: absolute;
     top: 0;
     left: 0;

@@ -22,7 +22,6 @@ function embedPageHighlightHandling(widgets) {
             widget.removeAttribute('data-height');
         }
 
-
         // Reason for dual containers is both so the next item can pre-load any image in the background and also to give more freedom with transitions (for shuffle types only)
         const itemA = func.createEl('div',['item', 'item-a']),
               itemB = func.createEl('div',['item', 'item-b']);
@@ -269,6 +268,7 @@ function embedShuffled(widget, elms) {
     revealWidget(widget);
 
     if (type === 'featured') {
+        elms.featuredButton.setAttribute('data-tooltip-text', 'See all featured');
         elms.featuredButton.addEventListener('click', () => {
             window.location.href = `/search?q=wiki-featured:true`
         });
@@ -353,14 +353,18 @@ function recentChangesHandling(widgets) {
                     label.append(labelText);
 
                     items.forEach((item) => {
-                        const title = item.title,
-                              url = item.permalink,
-                              listItem = func.createEl('li','url-list-item'),
-                              link = func.createEl('a','url-list-link');
+                        const listItem = func.createEl('li','url-list-item'),
+                              repoLink = func.createEl('a','url-list-repo-link'),
+                              pageLink = func.createEl('a','url-list-page-link');
 
-                        link.textContent = title;
-                        link.href = url;
-                        listItem.append(link);
+                        repoLink.href = item.repolink;
+                        repoLink.setAttribute('data-tooltip-text', `See version from commit ${item.checksum.slice(0,7)}`);
+                        pageLink.textContent = item.title;
+                        pageLink.href = item.permalink;
+                        listItem.append(
+                            repoLink,
+                            pageLink
+                        );
                         urlList.append(listItem);
                     });
 

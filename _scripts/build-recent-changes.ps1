@@ -27,6 +27,9 @@ function Get-LinkTitlePair {
     )
     process {
         $combo = @{}
+        $repolinkbase = "https://github.com/mgsvmoddingwiki/mgsvmoddingwiki.github.io/blob" # will only be valid for matching commits to this repo obviously
+        $combo['checksum'] = ${CommitChecksum}
+        $combo['repolink'] = "${repolinkbase}/${CommitChecksum}/${FilePath}"
 
         # Special handling for readme which lacks a permalink
         if ($FilePath -eq "README.md") {
