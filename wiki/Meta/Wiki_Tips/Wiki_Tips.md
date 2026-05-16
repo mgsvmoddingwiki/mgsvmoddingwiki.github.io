@@ -46,6 +46,8 @@ The following operators can be entered in the search box to adjust results.
 
 > **Tip:** all the YAML key operators support negation, in the form of an exclamation prefix, eg: `!wiki-title:fox` to exclude all pages containing `fox` anywhere in the title.
 
+> **Note:** any invalid/mistyped YAML key operators with a value (eg: `wiki-example:something`) will be treated as ignored from the rest of the query.
+
 ### Filter toggle buttons
 
 In the search box suggestions and search results page are some filter buttons that adjust results.
