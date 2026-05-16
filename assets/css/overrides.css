@@ -2988,6 +2988,10 @@ footer {
     display: flex;
     flex-wrap: wrap;
     gap: var(--spacing-minor);
+}
+
+.search-result-tags-list,
+.search-result-tags-list.ib-tags-list {
     margin-top: var(--spacing-minor);
 }
 

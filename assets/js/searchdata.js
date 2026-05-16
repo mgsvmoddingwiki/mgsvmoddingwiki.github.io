@@ -733,9 +733,12 @@ function checkOverflow(el) {
 function outputSuggestions(queryTokens, input, key) {
     const query = queryTokens.leftover;
 
-    if (query || queryTokens.includes.length > 0 || queryTokens.includes.length > 0) {
+    // Only show suggestions if matching a valid YAML prefilter or has non-empty query
+    if (query || queryTokens.includes.length > 0 || queryTokens.excludes.length > 0) {
         searchClearShow(true);
     } else {
+        searchResultsReset();
+        searchNoResults(false);
         searchClearShow(false);
         return
     }
@@ -881,6 +884,13 @@ function generateHighlightEls(result, matchWidthBasis, textClasses) {
 
 function generateMatchLabels(result) {
     const list = [];
+    if (!result.meta.query) {
+        const label = func.createEl('li','search-more-matches-label');
+        label.textContent = `Matched filter`;
+        list.push(label);
+        return list
+    }
+
     // Check if string has been excluded from matched strings due to markup cleaning
     if (result.matches.length > result.matchesCleaned.length) {
         const matchedMarkup = func.createEl('li',['search-more-matches-label','has-counter']);
@@ -944,11 +954,17 @@ function parseResults({
             newResult.details.sectionLabel = formatted;
         }
 
-        const { queryCleaned, contentCleaned, matches, matchesCleaned } = parseMatches({
-            query: query,
-            queryExclusions: queryExclusions,
-            item: result
-        });
+        let queryCleaned,
+            contentCleaned,
+            matches = [],
+            matchesCleaned = [];
+        if (query) {
+            ({ queryCleaned, contentCleaned, matches, matchesCleaned } = parseMatches({
+                query: query,
+                queryExclusions: queryExclusions,
+                item: result
+            }));
+        }
 
         newResult.details.contentCleaned = contentCleaned;
         newResult.details.firstImage = result.image ?? getFirstImageFromText(result.content);
@@ -1604,13 +1620,13 @@ function extractPrefilterPrefixes(list, query, keyMap = {}) {
                 !mappedExcludes.some((token) => tokenMatchesItem(item, token))
             );
         }
-        return results
+        return { includes: mappedIncludes, excludes: mappedExcludes, results }
     }
 
     const { includes, excludes, leftover } = extractTokens(query),
-          results = applyPreFilters(list, includes, excludes);
+          filtered = applyPreFilters(list, includes, excludes);
 
-    return { includes, excludes, leftover, results }
+    return { includes: filtered.includes, excludes: filtered.excludes, leftover, results: filtered.results }
 }
 
 
