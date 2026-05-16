@@ -243,28 +243,41 @@ function getParentPath(string, parts) {
     }
 }
 
-// https://stackoverflow.com/a/31247960
-function pathTreeNestArray(array) {
+function pathTreeNestArray(array, sortKey = 'title') {
     const tree = [],
-          mapped = {};
-    let mappedEl;
+          mapped = new Map();
 
-    array.forEach((el) => {
-        mapped[el.id] = el;
-        mapped[el.id]['children'] = [];
-    });
+    for (const item of array) {
+        item.children = [];
+        mapped.set(item.id, item);
+    }
 
-    Object.keys(mapped).forEach((id) => {
-        if (mapped.hasOwnProperty(id)) {
-            mappedEl = mapped[id];
-            if (mappedEl.parentId) {
-                mapped[mappedEl['parentId']]['children'].push(mappedEl);
+    for (const item of mapped.values()) {
+        if (item.parentId != null) {
+            const parent = mapped.get(item.parentId);
+            if (parent) {
+                parent.children.push(item);
+            } else {
+                tree.push(item);
             }
-            else {
-                tree.push(mappedEl);
-            }
+        } else {
+            tree.push(item);
         }
-    });
+    }
+
+    const sortRecursively = (list) => {
+        list.sort((a, b) => {
+            const valA = a[sortKey] ?? '',
+                  valB = b[sortKey] ?? '';
+            return valA < valB ? -1 : valA > valB ? 1 : 0
+        });
+
+        for (const item of list) {
+            if (item.children.length) sortRecursively(item.children);
+        }
+    };
+
+    sortRecursively(tree);
     return tree
 }
 
