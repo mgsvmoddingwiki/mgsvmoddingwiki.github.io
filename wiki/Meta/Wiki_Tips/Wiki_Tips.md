@@ -36,17 +36,19 @@ The following operators can be entered in the search box to adjust results.
 
 | Operator | Example | Description |
 |-|-|-|
-| `wiki-title:` | `wiki-title:"infinite heaven"` | Filters results to those containing matches for the given string in any page titles. |
-| `wiki-url:` | `wiki-url:fox` | Filters to matches in any permalinks. |
-| `wiki-tags:` | `wiki-tags:guides` | Filters to matches in page tags. |
-| `wiki-featured:` | `wiki-featured:true` | Filters to matches for featured pages. |
+| `title:` | `title:"infinite heaven"` | Filters results to those containing matches for the given string in any page titles. |
+| `url:` | `url:fox` | Filters to matches in any permalinks. |
+| `tags:` | `tags:guides` | Filters to matches in page tags. |
+| `featured:` | `featured:true` | Filters to matches for featured pages. |
 {:.stretch}
 
-> For any YAML key searches can use either single unquoted string or wrap in double quotes for strings with spaces. They can also be combined with default searches like `wiki-tags:guides fox` to search for all guides containing the string `fox` anywhere.
+> For any YAML key searches can use either single unquoted string or wrap in double quotes for strings with spaces. They can also be combined with default searches like `tags:guides fox` to search for all guides containing the string `fox` anywhere.
 
-> **Tip:** all the YAML key operators support negation, in the form of an exclamation prefix, eg: `!wiki-title:fox` to exclude all pages containing `fox` anywhere in the title.
+> **Tip:** all the YAML key operators support negation, in the form of an exclamation prefix, eg: `!title:fox` to exclude all pages containing `fox` anywhere in the title.
 
-> **Note:** any invalid/mistyped YAML key operators with a value (eg: `wiki-example:something`) will be treated as ignored from the rest of the query.
+> **Tip:** to search literally for an operator + value, such as `title:fox`, wrap them both inside double quotes, like `"title:fox"`.
+
+> **Note:** any invalid/mistyped YAML key operators with a value (eg: `example:something`) will be treated as just a regular string of the query. Like the [default](#default) operators above any leading/trailing operator (beside double quotes, spaces and pipes) will display a subtle background highlight for its associated value (eg. the `fox` part in `title:fox`).
 
 ### Filter toggle buttons
 

@@ -1,11 +1,14 @@
 import * as func from './functions.js';
 import {
     searchInput,
+    searchInputChange,
     pluralResults,
     filterStatesInit,
     fuseDefaultOptions,
     yamlLookupPrefilter,
     yamlKeyMap,
+    styleTokens,
+    updateQueryTokens,
     createResizeObserver,
     createFilterController,
     createLookupIndex,
@@ -19,8 +22,12 @@ import {
 } from './searchdata.js';
 
 const wikiContentCont = document.getElementById('git-wiki-content'),
-      urlParams = decodeUrl();
-let queryInfoCont,
+      urlParams = decodeUrl(),
+      disabledTokenRanges = new Set();
+let queryCur,
+    queryTokens,
+    queryInfoCont,
+    queryInfoPrefix,
     filtersCont,
     resultsCont,
     resultsContPriorWidth,
@@ -51,8 +58,8 @@ const resultsFilters = createFilterController(filterStatesInit, filterHandlers),
 
 function queryPrefixHandling(val) {
     const index = lookupIndex(resultsFilters.getState('limitToSection'), urlParams.section),
-          { filtered, queryTokens } = yamlLookupPrefilter(index, val, yamlKeyMap, fuseDefaultOptions);
-    return { filtered, queryTokens }
+          { filtered } = yamlLookupPrefilter(index, queryTokens, yamlKeyMap, fuseDefaultOptions);
+    return filtered
 }
 
 initHtmlResults();
@@ -71,10 +78,12 @@ function initSetup() {
     });
 
     // Pre-fill query in search input for easy modification (keep in mind this doesn't adjust of the filters for the suggestions since they're independent)
-    searchInput.value = urlParams.query;
+    searchInputChange(urlParams.query);
 }
 
 function initHtmlResults() {
+    queryCur = urlParams.query;
+    queryTokens = updateQueryTokens(queryCur);
     queryInfoCont = func.createEl('div','search-results-query-info-wrapper');
     resultsCont = func.createEl('ul','search-results-wrapper');
     filtersCont = func.createEl('div','search-results-filters-wrapper');
@@ -111,8 +120,8 @@ function decodeUrl() {
 
 function getResults(range) {
     return parseResults({
-        query: queryPrefixHandling(urlParams.query).queryTokens.leftover,
-        input: queryPrefixHandling(urlParams.query).filtered,
+        queryTokens: queryTokens,
+        input: queryPrefixHandling(queryCur),
         range: range
     });
 }
@@ -124,17 +133,83 @@ function outputResults() {
     presentResults(parsedResults);
 }
 
+function styleQueryResult(text, items, cont) {
+    const queryTokenButtonLookup = new Map(); // for keeping related items in the same button
+    styleTokens(text, items, cont, {
+        mergeNegated: (meta, index) => { return true },
+        shouldMergeItem: (meta, index) => {
+            const item = items[index];
+            if (item) return true // wrap all
+        },
+        spanClassFor: (meta, kind) => {
+            const base = 'search-results-query-info-token',
+                  kindSel = `token-${kind}`;
+            return `${base} ${kindSel}`
+        },
+        makeWrapper: (meta, start, end, segments) => {
+            const key = meta.itemIndex;
+            if (queryTokenButtonLookup.has(key)) return queryTokenButtonLookup.get(key)
+            const button = func.createEl('span','search-results-query-info-token-button');
+            queryTokenButtonLookup.set(key, button);
+            meta.wrapperStart = start;
+            meta.wrapperEnd = end;
+
+            button.addEventListener('click', (e) => {
+                const key = rangeKey(start, end);
+                if (disabledTokenRanges.has(key)) {
+                    disabledTokenRanges.delete(key);
+                    button.classList.remove('disabled');
+                } else {
+                    disabledTokenRanges.add(key);
+                    button.classList.add('disabled');
+                }
+                const newQuery = genNewQuery(segments);
+                queryTokens = updateQueryTokens(newQuery);
+                outputResults();
+            });
+
+            return button
+        }
+    })
+}
+
+function rangeKey(start, end) {
+    return `${start}:${end}`
+}
+
+function genNewQuery(segments) {
+    const chars = Array.from(urlParams.query);
+    segments.forEach((seg) => {
+        const s = seg.meta.wrapperStart,
+              e = seg.meta.wrapperEnd,
+              key = rangeKey(s, e);
+        if (!disabledTokenRanges.has(key)) return
+        // Replace toggled excluded ranges with same length whitespace then later collapse whitespace for new output query
+        for (let i = s; i < e && i < chars.length; i++) {
+            chars[i] = ' ';
+        }
+    });
+    return chars.join('').replace(/\s+/g, ' ').trim();
+}
+
+function updateResultsCounter() {
+    queryInfoPrefix.textContent = `${totalResults} ${func.pluralize(totalResults, pluralResults)} for:`
+}
+
 function presentResults(results) {
     presentResultItems(results);
 
-    // Query info text
-    const queryInfoPrefix = func.createEl('span','search-results-query-info-prefix'),
-          queryInfoQuery = func.createEl('span','search-results-query-info-query');
-    queryInfoPrefix.textContent = `${totalResults} ${func.pluralize(totalResults, pluralResults)} for:`
-    queryInfoQuery.textContent = urlParams.query;
-    queryInfoCont.replaceChildren(queryInfoPrefix, queryInfoQuery);
+    // Query info
+    if (!queryInfoCont.hasChildNodes()) {
+        queryInfoPrefix = func.createEl('span','search-results-query-info-prefix');
+        const queryInfoQuery = func.createEl('div','search-results-query-info-query');
+        styleQueryResult(urlParams.query, [...queryTokens.keyPrefixes, ...queryTokens.standalone], queryInfoQuery);
+        queryInfoCont.replaceChildren(queryInfoPrefix, queryInfoQuery);
+    }
 
-    // Filters list (only generate once)
+    updateResultsCounter();
+
+    // Filters list
     if (!filtersCont.hasChildNodes()) {
         const filtersListCont = func.createEl('ul','search-results-filters-list-wrapper'),
               filtersLabel = func.createEl('span','search-results-filters-label');
@@ -247,7 +322,7 @@ function presentResultItems(results) {
 
             function regenHighlights() {
                 let els = [];
-                if (result.meta.query) {
+                if (result.meta.queryPositives?.tokens?.length > 0) {
                     els = generateHighlightEls(result, matchWidthBasis, 'search-result-match-string');
                 }
                 const moreInfo = moreMatchesCheck(result.matches.length, els.length),

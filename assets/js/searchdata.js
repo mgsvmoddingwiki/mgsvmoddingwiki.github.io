@@ -7,15 +7,19 @@ is_wiki_page: false
 
 import * as func from './functions.js';
 import { searchIndex } from './searchindex.js';
+import { parseQuery } from './searchparsequery.js';
 import { sectionIndexFlat, filterArrayForSection } from './sidebar.js';
 import { getParentPath } from './sidebar.js';
 import { isVirtualPage } from './virtualpages.js';
 
 const searchCont = body.querySelector('.git-wiki-search-js'),
       searchInput = searchCont.querySelector('#search-input');
-let inputPeripheral = {},
+let queryTokens,
+    inputPeripheral = {},
     filterActions = {},
     filtersExpanded = false,
+    searchMirrorCont,
+    searchMirror,
     suggestCont,
     suggestList,
     keyNavCurItem,
@@ -175,7 +179,7 @@ const queryHandlingDebounced = func.debounce((val,keyCode) => {
 // Any search operators of the remaining ('leftover') query fuse will handle, with an additional post-search filter function for enforcing exclusions on those remainders (since fuse doesn't handle them correctly).
 function queryPrefixHandling(val, keyCode) {
     const index = lookupIndex(searchFilterLimitToSectionCheck()),
-          { filtered, queryTokens } = yamlLookupPrefilter(index, val, yamlKeyMap, fuseDefaultOptions);
+          { filtered } = yamlLookupPrefilter(index, queryTokens, yamlKeyMap, fuseDefaultOptions);
     outputSuggestions(queryTokens, filtered, keyCode);
 }
 
@@ -391,6 +395,32 @@ function createLookupIndex(filtersController) {
 }
 
 function setListeners() {
+    // Redirect clicks outside the input area but within the mirror input container to behave like the input was focused (since the input is now a shorter width so string mirroring works)
+    searchMirrorCont.addEventListener('pointerdown', (e) => {
+        if (e.target == searchInput) return // let actual input handle focus directly
+        e.preventDefault();
+
+        const rect = func.getRect(searchInput),
+              x = e.clientX;
+
+        searchInput.focus();
+        searchInput.dispatchEvent(new FocusEvent('focus'));
+
+        // For clicks outside left/right of input set caret to the start/end (like occurs naturally if input were full width with padding)
+        // Caveat: where this currently differs from natural behavior if when the query is longer than the input width (overflows), as clicking outside will jump the caret to the start/end, rather than closest visible character to pointer within string.
+        if (x < rect.left) {
+            searchInput.setSelectionRange(0,0);
+        } else if (x > rect.right) {
+            const l = searchInput.value.length;
+            searchInput.setSelectionRange(l, l);
+        }
+    });
+
+    searchInput.addEventListener('input', (e) => {
+        queryTokens = updateQueryTokens(e.target.value);
+        mirrorText(e.target.value, [...queryTokens.keyPrefixes, ...queryTokens.standalone], searchMirror);
+    });
+
     searchInput.addEventListener('focus', (e) => {
         const val = e.target.value;
         // Trigger output if a value has been pre-filled at page launch
@@ -438,6 +468,7 @@ function setListeners() {
         }
         if (
             e.target == searchInput ||
+            e.target == searchMirrorCont ||
             e.target.closest('.search-filter-actions-wrapper') ||
             e.target.closest('.search-no-results-wrapper') ||
             e.target == suggestCont ||
@@ -479,7 +510,7 @@ function setListeners() {
     });
 
     inputPeripheral.clear.addEventListener('click', (e) => {
-        searchInput.value = null;
+        searchInputChange(null);
         searchClearShow(false);
         searchNoResults(false);
         searchResultsReset();
@@ -487,6 +518,8 @@ function setListeners() {
 }
 
 function initHtmlSearch() {
+    searchMirrorCont = func.createEl('div','search-input-mirror-wrapper');
+    searchMirror = func.createEl('span','search-input-mirror');
     inputPeripheral.cont = func.createEl('div','search-input-peripheral');
     inputPeripheral.clear = func.createEl('button','search-clear-query');
     inputPeripheral.filtersCounter = func.createEl('span','search-filters-counter');
@@ -510,15 +543,14 @@ function initHtmlSearch() {
     for (let [key] of Object.entries(filterActions.buttons)) {
         const l = document.createElement('li');
         filterActions.buttons[key].textContent = suggestionsFilters.getString(key);
-        l.appendChild(filterActions.buttons[key]);
-        filterActions.list.appendChild(l);
+        l.append(filterActions.buttons[key]);
+        filterActions.list.append(l);
     }
 
     inputPeripheral.cont.append(
         inputPeripheral.filtersCounter,
         inputPeripheral.clear
     );
-    searchCont.insertBefore(inputPeripheral.cont, searchInput);
     filterActions.cont.append(
         filterActions.label,
         filterActions.expand,
@@ -528,11 +560,26 @@ function initHtmlSearch() {
         filterActions.cont,
         suggestList
     );
-    searchCont.appendChild(suggestCont);
+    searchCont.append(
+        searchMirrorCont,
+        suggestCont
+    );
+    searchMirrorCont.append(
+        searchMirror,
+        searchInput
+    );
+    searchCont.insertBefore(inputPeripheral.cont, searchMirrorCont);
 
     suggestCont.style.setProperty('--search-input-height',`${searchInput.offsetHeight}px`);
     searchFiltersInitialStates();
     searchClearShow(false);
+    queryTokens = updateQueryTokens(searchInput.value);
+    mirrorText(searchInput.value, [...queryTokens.keyPrefixes, ...queryTokens.standalone], searchMirror);
+}
+
+function updateQueryTokens(val) {
+    const tokens = parseQuery(searchIndex, val, yamlKeyMap);
+    return tokens
 }
 
 // Keyboard navigation
@@ -607,9 +654,14 @@ function resetAll() {
     searchResultsShow(false);
     searchResultsReset();
     searchInput.blur();
-    searchInput.value = null;
+    searchInputChange(null);
     searchClearShow(false);
     searchNoResults(false);
+}
+
+function searchInputChange(val) {
+    searchInput.value = val;
+    searchInput.dispatchEvent(new Event('input', { bubbles: true })); // trigger event firing so mirror text can be updated
 }
 
 function searchResultsReset() {
@@ -731,10 +783,8 @@ function checkOverflow(el) {
 }
 
 function outputSuggestions(queryTokens, input, key) {
-    const query = queryTokens.leftover;
-
     // Only show suggestions if matching a valid YAML prefilter or has non-empty query
-    if (query || queryTokens.includes.length > 0 || queryTokens.excludes.length > 0) {
+    if (queryTokens.leftover || queryTokens.keyPrefixes.length > 0) {
         searchClearShow(true);
     } else {
         searchResultsReset();
@@ -761,7 +811,7 @@ function outputSuggestions(queryTokens, input, key) {
         searchNoResults(false);
 
         const parsedResults = parseResults({
-            query: query,
+            queryTokens: queryTokens,
             input: input,
             range: {
                 max: maxSuggestions
@@ -804,7 +854,7 @@ function presentSuggestions(results, matchWidthBasis) {
 
         function regenHighlights() {
             let els = [];
-            if (result.meta.query) {
+            if (result.meta.queryPositives?.tokens?.length > 0) {
                 els = generateHighlightEls(result, matchWidthBasis, ['search-suggestions-match-string','search-secondary-string']);
             }
             const matchesMore = func.createEl('span','search-suggestions-matches-more'),
@@ -867,7 +917,7 @@ function presentSuggestions(results, matchWidthBasis) {
 // Generate match string elements
 function generateHighlightEls(result, matchWidthBasis, textClasses) {
     const highlightStrings = parseHighlights({
-        query: result.meta.query,
+        queryPositivesSingle: result.meta.queryPositives.single,
         content: result.details.contentCleaned,
         indices: result.matchesCleaned,
         expansionWidth: getExpansionWidth(matchWidthBasis)
@@ -876,7 +926,7 @@ function generateHighlightEls(result, matchWidthBasis, textClasses) {
     const highlightEls = [];
     highlightStrings.forEach((string, i) => {
         const text = func.createEl('span',textClasses);
-        text.appendChild(highlightSubstring(string,result.meta.queryCleaned.replaceAll('"','')));
+        text.appendChild(highlightSubstring(string,result.meta.queryPositives.single));
         highlightEls.push(text);
     });
     return highlightEls
@@ -884,7 +934,7 @@ function generateHighlightEls(result, matchWidthBasis, textClasses) {
 
 function generateMatchLabels(result) {
     const list = [];
-    if (!result.meta.query) {
+    if (!result.meta.queryPositives?.tokens?.length > 0) {
         const label = func.createEl('li','search-more-matches-label');
         label.textContent = `Matched filter`;
         list.push(label);
@@ -900,7 +950,7 @@ function generateMatchLabels(result) {
     }
 
     // Check if string appears in other keys
-    const otherMatches = findKeysWithMatches(result.details, ['title','url','tags'], tokenizeQuery(result.meta.queryCleaned));
+    const otherMatches = findKeysWithMatches(result.details, ['title','url','tags'], result.meta.queryPositives.tokens);
     if (otherMatches) {
         otherMatches.forEach((match) => {
             const label = func.createEl('li','search-more-matches-label');
@@ -920,7 +970,7 @@ function getExpansionWidth(matchWidthBasis) {
 }
 
 function parseResults({
-    query,
+    queryTokens,
     input,
     range = {
         min: 0,
@@ -929,8 +979,12 @@ function parseResults({
 }) {
     let source = JSON.parse(JSON.stringify(input)), /* deep copy */
         totalResults = 0;
-    const queryExclusions = exclusionTokens(query),
-          parsedArray = [];
+    const queryExclusions = queryTokens.standalone.flatMap((q) =>
+        q && q.value && q.negated === true
+            ? [q.value]
+            : []
+    );
+    const parsedArray = [];
 
     // Apply custom filters to results input
     source = filterResultsByExclusionStrings(source,queryExclusions);
@@ -954,14 +1008,13 @@ function parseResults({
             newResult.details.sectionLabel = formatted;
         }
 
-        let queryCleaned,
+        let queryPositives = {},
             contentCleaned,
             matches = [],
             matchesCleaned = [];
-        if (query) {
-            ({ queryCleaned, contentCleaned, matches, matchesCleaned } = parseMatches({
-                query: query,
-                queryExclusions: queryExclusions,
+        if (queryTokens.leftover) {
+            ({ queryPositives, contentCleaned, matches, matchesCleaned } = parseMatches({
+                queryTokens: queryTokens,
                 item: result
             }));
         }
@@ -970,9 +1023,8 @@ function parseResults({
         newResult.details.firstImage = result.image ?? getFirstImageFromText(result.content);
         newResult.matches = matches;
         newResult.matchesCleaned = matchesCleaned;
-        newResult.meta.query = query;
-        newResult.meta.queryCleaned = queryCleaned;
-        newResult.meta.queryExclusions = queryExclusions;
+        newResult.meta.queryTokens = queryTokens;
+        newResult.meta.queryPositives = queryPositives;
         newResult.meta.totalResults = totalResults; // store total results independent of range slice
 
         parsedArray.push(newResult);
@@ -1015,14 +1067,18 @@ function getFirstImageFromText(input) {
 }
 
 function parseMatches({
-    query,
-    queryExclusions = [],
+    queryTokens,
     item
 }) {
-    const queryCleaned = cleanQuery(query,queryExclusions),
-          tokens = tokenizeQuery(queryCleaned);
+    const collapse = s => String(s).replace(/\s+/g, ' ').trim();
+    const tokens = queryTokens.standalone.flatMap((q) =>
+        q && q.value && q.negated !== true
+            ? [collapse(q.value)]
+            : []
+    ); // filter for non-negated values
 
-    const contentCleaned = applyMarkupExclusionsToString(item.content),
+    const tokensSingleString = tokens.map((s) => s.replace(/"/g, '')).join(' '),
+          contentCleaned = applyMarkupExclusionsToString(item.content),
           tokenIndices = getTokenIndices(item.content,tokens),
           tokenIndicesCleaned = getTokenIndices(contentCleaned,tokens),
           flatIndices = Object.values(tokenIndices).flat(), // combine all per-token indices into one array
@@ -1031,18 +1087,26 @@ function parseMatches({
 
     const matches = flatIndices,
           matchesCleaned = filteredIndices;
-    return { queryCleaned, contentCleaned, matches, matchesCleaned }
+    return {
+        queryPositives: {
+            tokens: tokens,
+            single: tokensSingleString
+        },
+        contentCleaned,
+        matches,
+        matchesCleaned
+    }
 }
 
 function parseHighlights({
-    query,
+    queryPositivesSingle,
     content,
     indices,
     totalHighlights = 2,
     expansionWidth
 }) {
     let strings = matchGetHighlights(content, indices, expansionWidth);
-    strings = sortStringsByRelevancy(strings,query.replaceAll('"',''));
+    strings = sortStringsByRelevancy(strings,queryPositivesSingle);
 
     // Check similarity of strings to avoid showing multiple too similar matches
     const similarityThreshold = 0.5,
@@ -1102,17 +1166,6 @@ function findKeysWithMatches(obj, keysToCheck, tokens) {
     return matchingKeys
 }
 
-function tokenizeQuery(query) {
-    const tokenRegex = /"([^"]+)"|\S+/ig;
-    const tokens = [];
-    let match;
-    while ((match = tokenRegex.exec(query)) !== null) {
-        // If token is doublequoted then use the captured group otherwise use whole match
-        tokens.push(match[1] || match[0]);
-    }
-    return tokens
-}
-
 function getTokenIndices(string, tokens) {
     const results = {};
     // Escape tokens for use in regex
@@ -1131,32 +1184,6 @@ function getTokenIndices(string, tokens) {
         }
     }
     return results
-}
-
-function exclusionTokens(query) {
-    const excluded = [];
-
-    // Obtain multi-word exclusion strings (like `!"some term"`)
-    const multiwordRegex = /!"([^"]+?)"/g;
-    let match;
-    while ((match = multiwordRegex.exec(query)) !== null) {
-        excluded.push(match[1]);
-    }
-    const querySansMultiwordExclusions = query.replace(multiwordRegex, '');
-
-    // Strip substrings that are wrapped in double quotes (to avoid parsing any `!` within the remaining query that aren't meant to be exclusion operators)
-    const querySansLiterals = querySansMultiwordExclusions.replace(/"[^"]*"/g, '');
-
-    // Parse remaining query
-    const tokens = querySansLiterals.split(/\s+/); // space delimited
-    tokens.forEach(token => {
-        token = token.trim();
-        if (token.startsWith('!') && token.length > 1) {
-            excluded.push(token.substring(1));
-        }
-    });
-
-    return excluded
 }
 
 // The reason why is used as a post-search filter is for years fuse couldn't handle exclusions across multiple keys (a known issue, they'd get included in results since exclusions weren't treated as global override)
@@ -1561,75 +1588,6 @@ function applyMarkupExclusionsToString(string) {
 }
 
 // Handling for YAML search parameter prefix prefiltering
-
-function extractPrefilterPrefixes(list, query, keyMap = {}) {
-    const prefixPattern = /(?:^|\s)(!?wiki-([a-z0-9_-]+):(?:"([^"]+)"|([^\s"]+)))(?=\s|$)/gi;
-
-    function extractTokens(q) {
-        const includes = [],
-              excludes = [];
-        let m;
-        while ((m = prefixPattern.exec(q)) !== null) {
-            const raw = m[1],
-                  negated = raw.startsWith('!'),
-                  key = m[2],
-                  value = (m[3] ?? m[4]).trim(),
-                  quoted = Boolean(m[3]),
-                  token = { raw, key, value, quoted, negated };
-            if (negated) {
-                excludes.push(token);
-            } else {
-                includes.push(token);
-            }
-        }
-        const leftover = q.replace(prefixPattern, ' ').trim().replace(/\s+/g, ' ');
-        return { includes, excludes, leftover }
-    }
-
-    function getPathValue(obj, path) {
-        return path.split('.').reduce((acc, p) => (acc == null ? undefined : acc[p]), obj)
-    }
-
-    function inputMatches(input, token) {
-        if (input == null) return false
-        const s = String(input).toLowerCase(),
-              v = token.value.toLowerCase();
-        return s.indexOf(v) !== -1 // match token anywhere in key value
-    }
-
-    function tokenMatchesItem(item, token) {
-        const fieldPath = keyMap[token.key];
-        if (!fieldPath) return null // signal unknown prefix instead of false
-        const val = getPathValue(item, fieldPath);
-        if (Array.isArray(val)) return val.some((el) => inputMatches(el, token))
-        return inputMatches(val, token)
-    }
-
-    function applyPreFilters(items, includes, excludes) {
-        let results = items;
-        // Only keep includes that are mapped (ie: ignore unsupported prefixes instead of leaving them in the leftover part of the query)
-        const mappedIncludes = includes.filter((t) => keyMap[t.key]);
-        if (mappedIncludes.length > 0) {
-            results = results.filter((item) =>
-                mappedIncludes.every((token) => tokenMatchesItem(item, token))
-            );
-        }
-        const mappedExcludes = excludes.filter((t) => keyMap[t.key]);
-        if (mappedExcludes.length > 0) {
-            results = results.filter((item) =>
-                !mappedExcludes.some((token) => tokenMatchesItem(item, token))
-            );
-        }
-        return { includes: mappedIncludes, excludes: mappedExcludes, results }
-    }
-
-    const { includes, excludes, leftover } = extractTokens(query),
-          filtered = applyPreFilters(list, includes, excludes);
-
-    return { includes: filtered.includes, excludes: filtered.excludes, leftover, results: filtered.results }
-}
-
-
 function searchPrefilteredResults(results, leftover, fuseOptions = {}) {
     if (!Array.isArray(results) || results.length === 0) return []
 
@@ -1642,29 +1600,162 @@ function searchPrefilteredResults(results, leftover, fuseOptions = {}) {
     if (!leftover) return results // return direct prefiltered array since fuse doesn't rank empty queries
 }
 
-function yamlLookupPrefilter(index, query, keyMap, fuseOptions) {
-    const { includes, excludes, leftover, results } =
-        extractPrefilterPrefixes(index, query, keyMap);
+function applyYamlPrefilters(items, prefixes, keyMap) {
+    function getPathValue(obj, path) {
+        return path.split('.').reduce((acc, p) => (acc == null ? undefined : acc[p]), obj)
+    }
 
-    const queryTokens = { includes: includes, excludes: excludes, leftover: leftover };
+    function inputMatches(input, token) {
+        if (input == null) return false
+        const s = String(input).toLowerCase(),
+              v = (token.value ?? '').toLowerCase();
+        return v.length > 0 && s.indexOf(v) !== -1 // match token anywhere in input
+    }
 
-    // console.log(includes, excludes, leftover, results)
+    function tokenMatchesItem(item, token) {
+        const fieldPath = keyMap[token.key];
+        if (!fieldPath) return null
+        const keyVal = getPathValue(item, fieldPath);
+        if (Array.isArray(keyVal)) return keyVal.some((arrayVal) => inputMatches(arrayVal, token))
+        return inputMatches(keyVal, token)
+    }
 
-    if (!results || results.length === 0) return { filtered: [], queryTokens }
+    const mapped = prefixes.filter((token) => token.key && keyMap[token.key]),
+          includes = mapped.filter((token) => !token.negated),
+          excludes = mapped.filter((token) => token.negated);
+    let results = items;
+    if (includes.length) {
+        results = results.filter((item) => includes.every((token) => tokenMatchesItem(item, token)));
+    }
+    if (excludes.length) {
+        results = results.filter((item) => !excludes.some((token) => tokenMatchesItem(item, token)));
+    }
+    return results
+}
+
+function yamlLookupPrefilter(index, queryTokens, keyMap, fuseOptions) {
+    const filtered = applyYamlPrefilters(index, queryTokens.keyPrefixes, keyMap);
+
+    console.log(queryTokens.keyPrefixes, queryTokens.standalone, queryTokens.leftover);
+
+    if (!filtered || filtered.length === 0) return { filtered: [], queryTokens }
 
     return {
-        filtered: searchPrefilteredResults(results, leftover, fuseOptions),
-        queryTokens
+        filtered: searchPrefilteredResults(filtered, queryTokens.leftover, fuseOptions)
     }
 }
 
+// Search input string mirroring handling for styling query sub-strings
+function mirrorText(text, items, mirrorEl) {
+    styleTokens(text, items, mirrorEl, {
+        mergeNegated: (meta, index) => { return true },
+        spanClassFor: (meta, kind) => {
+            const base = 'search-input-mirror-token',
+                  kindSel = `token-${kind}`;
+            return `${base} ${kindSel}`
+        }
+    })
+}
+
+function styleTokens(text, items, containerEl, callbacks = {}) {
+    containerEl.textContent = '';
+    const frag = document.createDocumentFragment(),
+          segments = [];
+
+    items.forEach((item, i) => {
+        if (!item || !item.indices) return
+
+        const makePair = (pair) => {
+            if (!Array.isArray(pair) || pair.length !== 2) return null
+            const s = Math.max(0, Math.floor(pair[0])),
+                  e = Math.min(text.length, Math.floor(pair[1]));
+            return s < e ? [s, e] : null
+        };
+
+        const opPair = makePair(item.indices.operator),
+              valPair = makePair(item.indices.value);
+
+        if (item.negated && opPair && valPair && callbacks.mergeNegated) {
+            const s = opPair[0], e = Math.max(opPair[1], valPair[1]);
+            segments.push({ start: s, end: e, meta: { operator: item.operator, kind: 'negated', itemIndex: i }});
+        } else {
+            if (opPair) segments.push({ start: opPair[0], end: opPair[1], meta: { operator: item.operator, kind: 'operator', itemIndex: i }});
+            if (valPair) segments.push({ start: valPair[0], end: valPair[1], meta: { operator: item.operator, kind: 'value', itemIndex: i }});
+        }
+    });
+
+    segments.sort((a, b) => a.start - b.start || a.end - b.end); // without sorting here leftover segment operators won't get parsed correctly when intermingled with key prefix operators (at least with how I'm merging the two queryTokens' arrays for the input)
+
+    const groups = new Map();
+    segments.forEach((seg) => {
+        const index = seg.meta.itemIndex;
+        if (!groups.has(index)) groups.set(index, []);
+        groups.get(index).push(seg);
+
+    });
+
+    const mergedMap = new Map();
+    groups.forEach((peers, i) => {
+        const meta = peers[0].meta,
+              item = items[i];
+        if (typeof callbacks.shouldMergeItem === 'function' && callbacks.shouldMergeItem(meta, i)) {
+            const ms = Math.min(...peers.map(p => p.start)),
+                  me = Math.max(...peers.map(p => p.end));
+            mergedMap.set(i, [ms, me]);
+        }
+    });
+
+    let last = 0;
+    segments.forEach((seg) => {
+        const s = seg.start,
+              e = seg.end;
+        if (last < s) frag.appendChild(document.createTextNode(text.slice(last, s)));
+        const sClamped = Math.max(s, last);  // needed so a query like `!example title:fox` doesn't cause the previous negated sub-string to be duplicated after the key prefix sub-string
+
+        if (sClamped < e) {
+            const sel = (callbacks.spanClassFor ? callbacks.spanClassFor(seg.meta, seg.meta.kind) : `token token-${seg.meta.kind}`);
+            const merged = mergedMap.get(seg.meta.itemIndex),
+                  wrapperRange = merged ? merged : null;
+            const wrapper = wrapperRange && typeof callbacks.makeWrapper === 'function'
+                ? callbacks.makeWrapper(seg.meta, wrapperRange[0], wrapperRange[1], segments)
+                : null;
+
+            const span = func.createEl('span');
+            span.className = sel;
+            if (seg.meta.operator) span.setAttribute('data-operator', seg.meta.operator);
+            span.appendChild(document.createTextNode(text.slice(sClamped, e)));
+
+            if (wrapper) {
+                wrapper.appendChild(span);
+                frag.appendChild(wrapper);
+            } else {
+                frag.appendChild(span);
+            }
+
+            last = Math.max(last, e);
+        }
+    });
+    if (last < text.length) frag.appendChild(document.createTextNode(text.slice(last)));
+    if (!frag.childNodes.length) {
+        const span = func.createEl('span','placeholder');
+        span.textContent = searchInput.placeholder;
+        frag.appendChild(span);
+    }
+    containerEl.appendChild(frag);
+}
+
+
+
 export {
     searchInput,
+    searchInputChange,
     pluralResults,
     filterStatesInit,
     fuseDefaultOptions,
     yamlLookupPrefilter,
     yamlKeyMap,
+    styleTokens,
+    updateQueryTokens,
     createResizeObserver,
     createFilterController,
     createLookupIndex,

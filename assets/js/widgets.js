@@ -270,7 +270,7 @@ function embedShuffled(widget, elms) {
     if (type === 'featured') {
         elms.featuredButton.setAttribute('data-tooltip-text', 'See all featured');
         elms.featuredButton.addEventListener('click', () => {
-            window.location.href = `/search?q=wiki-featured:true`
+            window.location.href = `/search?q=featured:true`
         });
         elms.shuffleButtonSmall.addEventListener('click', () => {
             if (!swapIsAnimating) shuffler.next();
