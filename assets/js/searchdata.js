@@ -1636,7 +1636,7 @@ function applyYamlPrefilters(items, prefixes, keyMap) {
 function yamlLookupPrefilter(index, queryTokens, keyMap, fuseOptions) {
     const filtered = applyYamlPrefilters(index, queryTokens.keyPrefixes, keyMap);
 
-    console.log(queryTokens.keyPrefixes, queryTokens.standalone, queryTokens.leftover);
+    // console.log(queryTokens.keyPrefixes, queryTokens.standalone, queryTokens.leftover);
 
     if (!filtered || filtered.length === 0) return { filtered: [], queryTokens }
 
