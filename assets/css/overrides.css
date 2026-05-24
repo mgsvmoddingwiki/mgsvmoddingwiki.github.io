@@ -17,7 +17,9 @@
     --radius-circle: 100%;
     --primary-button-diameter: 38px;
     --secondary-button-diameter: 30px;
+
     --color-link-bg-opacity: 0.12;
+    --color-query-dim: hsl(0,0%,53%);
 
     --font-sans: Kibur, "Segoe UI", sans-serif;
     --font-size-base: 16px;
@@ -798,20 +800,90 @@ body.expanded-width-true .icon-toolbar.icon-expand::before {
     margin-bottom: calc(var(--spacing-primary) - var(--spacing-minor));
 }
 
-#search-input {
+.search-input-mirror-wrapper {
     --extra-padding: 0px;
+    --pad-right: calc(var(--spacing-secondary) + var(--clear-width) + var(--extra-padding));
+    --pad-left: var(--spacing-secondary);
+    width: calc(100% - var(--pad-right) - var(--pad-left));
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    overflow: hidden;
+    margin: 0 var(--pad-right) 0 var(--pad-left);
+    cursor: text;
+}
+
+/* Is now the search field background fill */
+.search-input-mirror-wrapper::before {
     width: 100%;
-    position: relative;
-    padding-right: calc(var(--spacing-secondary) + var(--clear-width) + var(--extra-padding));
+    height: 100%;
+    background: var(--bg-input);
+    content: '';
+    border-radius: var(--radius-primary);
+    position: absolute; /* aligns to .git-wiki-search so that it's full width */
+    left: 0;
+    top: 0;
     z-index: 3;
+}
+
+.search-input-mirror,
+#search-input {
+    grid-column: 1;
+    grid-row: 1;
+    padding: var(--spacing-minor) 0;
+    position: relative;
+    z-index: 3;
+}
+
+.search-input-mirror {
+    color: var(--color-primary);
+    white-space: pre; /* otherwise multiple spaces will be collapsed */
+    pointer-events: none;
+}
+
+.search-input-mirror-token {
+    position: relative;
+}
+
+.search-input-mirror-token.token-negated {
+    color: var(--color-query-dim);
+}
+
+.search-input-mirror-token.token-value[data-operator]::before,
+.search-input-mirror-token.key-prefix.token-value::before {
+    width: calc(100% + 2px);
+    height: calc(100% + 4px);
+    background: var(--color-secondary);
+    content: '';
+    display: inline-block;
+    opacity: 0.1;
+    border-radius: 3px;
+    position: absolute;
+    top: -2px;
+    left: -1px;
+    z-index: -1;
+}
+
+.search-input-mirror .placeholder {
+    opacity: 0.55; /* matches default input placeholder style */
+}
+
+.search-input-peripheral.filters-active ~ .search-input-mirror-wrapper {
+    --extra-padding: calc(var(--filters-counter-width) + var(--spacing-minor)); /* inline CSS var set via JS */
+}
+
+#search-input {
+    width: 100%;
+    background: transparent;
+    color: transparent;
+    caret-color: var(--color-primary);
+    font: inherit;
+    border: 0;
+    outline: none;
 }
 
 #search-input:focus {
     box-shadow: none;
-}
-
-.search-input-peripheral.filters-active ~ #search-input {
-    --extra-padding: calc(var(--filters-counter-width) + var(--spacing-minor)); /* inline CSS var set via JS */
 }
 
 .search-input-peripheral {
@@ -2815,6 +2887,26 @@ footer {
 .search-results-query-info-query {
     font-weight: var(--font-weight-semibold);
     font-style: italic;
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-minor) 0;
+}
+
+.search-results-query-info-token-button {
+    display: inline-flex;
+    padding: 0 calc(var(--spacing-minor) / 1.5);
+    border-radius: var(--radius-secondary);
+    cursor: pointer;
+    position: relative;
+}
+
+
+.search-results-query-info-token-button:hover .search-results-query-info-token {
+    color: var(--color-secondary);
+}
+
+.search-results-query-info-token-button.disabled {
+    text-decoration: line-through;
 }
 
 .search-results-filters-wrapper {
