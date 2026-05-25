@@ -183,10 +183,12 @@ function queryPrefixHandling(val, keyCode) {
     outputSuggestions(queryTokens, filtered, keyCode);
 }
 
-const searchInputResultsResizeObserver = createResizeObserver(searchFiltersExpandButton);
+const searchInputResultsResizeObserver = createResizeObserver(searchFiltersExpandButton),
+      searchInputWidthResizeObserver = createResizeObserver(searchInputWidthHandler);
 
 setListeners();
 searchInputResultsResizeObserver.observe(suggestCont);
+searchInputWidthResizeObserver.observe(searchCont);
 
 function createResizeObserver(callback) {
     let priorElWidth;
@@ -418,10 +420,7 @@ function setListeners() {
 
     // Keep mirror in sync for drag-selection scrolls. Requires the input be same absolute unit width as full visual input field width minus the pseudo padding on the sides (calculated in CSS).
     searchInput.addEventListener('scroll', (e) => {
-        const width = searchCont.clientWidth,
-              scroll = -searchInput.scrollLeft;
-        searchInput.style.setProperty('--input-width', `${width}px`);
-        searchMirror.style.setProperty('--trans-x', `${scroll}px`);
+        searchMirror.style.setProperty('--trans-x', `${-searchInput.scrollLeft}px`);
     });
 
     searchInput.addEventListener('input', (e) => {
@@ -760,6 +759,15 @@ function searchFiltersExpandButton() {
     if (filtersExpanded === true) {
         filterActions.cont.classList.add('show-expansion-toggle');
     }
+}
+
+function searchInputWidthHandler() {
+    // This is for handling the edge case where the following is all true:
+        // A long input is made in the search field that overflows the visible input.
+        // Some filter is active so the filters counter is visible and shrinking the editable input area on the right side.
+        // A viewport width change occurs following that narrows the input container (browser window shrinks or touch device rotated).
+        // Then the filters counter area clicked. If the viewport width never changed then the caret would jump to the end and a scroll occur but without keeping the absolute input width up-to-date it won't scroll correctly. So this resize observer callback keeps the value fresh.
+    searchInput.style.setProperty('--input-width', `${searchCont.clientWidth}px`);
 }
 
 function searchNoResults(state) {
