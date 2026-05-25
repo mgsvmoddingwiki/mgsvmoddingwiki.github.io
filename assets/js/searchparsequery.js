@@ -217,9 +217,9 @@ export function parseQuery(list, query, keyMap = {}) {
 
     // Trailing fuse operator (`$`)
     const trailingPattern = /(?:^|\s)(?:"((?:[^"\\]|\\.)*)"|([^\s"]+))(\$)(?=\s|$)/g;
-    const trailing = parseLeftoverOperators(query, trailingPattern, occupied, quotedRanges, (m, rawStart, rawEnd, q) => {
+    const trailing = parseLeftoverOperators(query, trailingPattern, occupied, quotedRanges, (m, rawStart, rawEnd) => {
         const quotedText = m[1], unquoted = m[2], op = m[3],
-              operatorIndex = rawStart + rawEnd - rawStart - 1; // rawEnd - 1
+              operatorIndex = rawEnd - 1;
         return {
             operatorIndex,
             operator: op,
