@@ -839,6 +839,7 @@ body.expanded-width-true .icon-toolbar.icon-expand::before {
     color: var(--color-primary);
     white-space: pre; /* otherwise multiple spaces will be collapsed */
     pointer-events: none;
+    translate: var(--trans-x, 0px) 0;
 }
 
 .search-input-mirror-token {
@@ -873,13 +874,21 @@ body.expanded-width-true .icon-toolbar.icon-expand::before {
 }
 
 #search-input {
-    width: 100%;
+    width: calc(var(--input-width, 100%) - var(--pad-right) - var(--pad-left)); /* JS sets the absolute width of the full visual input field so drag-selection scrolling can sync between input and mirror */
     background: transparent;
     color: transparent;
     caret-color: var(--color-primary);
     font: inherit;
     border: 0;
     outline: none;
+}
+
+/* Styling when JS disabled/briefly before JS init kicks in (while direct descendant of root container) */
+.git-wiki-search-js > #search-input {
+    width: 100%;
+    background: var(--bg-input);
+    color: inherit;
+    padding: var(--spacing-minor) var(--spacing-secondary);
 }
 
 #search-input:focus {
@@ -923,6 +932,11 @@ body.expanded-width-true .icon-toolbar.icon-expand::before {
     right: 0;
     transition: opacity 150ms, right 150ms;
     pointer-events: none;
+}
+
+/* For search results page where pre-filled input value will appear but no transition needed for counter */
+.search-input-peripheral.clear-instant .search-filters-counter {
+    transition: none;
 }
 
 .search-filters-counter::after {

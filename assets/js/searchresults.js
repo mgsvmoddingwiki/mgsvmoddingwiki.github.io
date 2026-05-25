@@ -2,6 +2,7 @@ import * as func from './functions.js';
 import {
     searchInput,
     searchInputChange,
+    searchClearShow,
     pluralResults,
     filterStatesInit,
     fuseDefaultOptions,
@@ -79,6 +80,7 @@ function initSetup() {
 
     // Pre-fill query in search input for easy modification (keep in mind this doesn't adjust of the filters for the suggestions since they're independent)
     searchInputChange(urlParams.query);
+    searchClearShow(true, true);
 }
 
 function initHtmlResults() {

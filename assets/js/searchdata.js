@@ -416,6 +416,14 @@ function setListeners() {
         }
     });
 
+    // Keep mirror in sync for drag-selection scrolls. Requires the input be same absolute unit width as full visual input field width minus the pseudo padding on the sides (calculated in CSS).
+    searchInput.addEventListener('scroll', (e) => {
+        const width = searchCont.clientWidth,
+              scroll = -searchInput.scrollLeft;
+        searchInput.style.setProperty('--input-width', `${width}px`);
+        searchMirror.style.setProperty('--trans-x', `${scroll}px`);
+    });
+
     searchInput.addEventListener('input', (e) => {
         queryTokens = updateQueryTokens(e.target.value);
         mirrorText(e.target.value, [...queryTokens.keyPrefixes, ...queryTokens.standalone], searchMirror);
@@ -770,7 +778,16 @@ function searchNoResults(state) {
     }
 }
 
-function searchClearShow(state) {
+function searchClearShow(state, instant) {
+    if (instant) {
+        // Use when pre-filling input value and don't want any filter counter transition to occur on init
+        inputPeripheral.cont.classList.add('clear-instant');
+        setTimeout(() => {
+            inputPeripheral.cont.classList.remove('clear-instant');
+        },300);
+    } else {
+            inputPeripheral.cont.classList.remove('clear-instant');
+        }
     inputPeripheral.cont.classList.toggle('clear', state);
     suggestCont.classList.toggle('empty-query', !state);
 }
@@ -1749,6 +1766,7 @@ function styleTokens(text, items, containerEl, callbacks = {}) {
 export {
     searchInput,
     searchInputChange,
+    searchClearShow,
     pluralResults,
     filterStatesInit,
     fuseDefaultOptions,
