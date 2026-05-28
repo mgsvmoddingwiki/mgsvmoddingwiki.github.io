@@ -6,7 +6,8 @@ tags: [Rendering, Guides]
 
 ![](/assets/Retexturing_the_Bionic_Arm/Intro_graphic.jpg)
 
-> **Tip:** there are multiple versions of this guide, covering different approaches. See the side bar for others.
+> There are multiple versions of this guide, covering different approaches. See the side bar for others.
+{:.tip}
 
 In this guide we'll be retexturing Snake's bionic arm in *Metal Gear Solid V: The Phantom Pain* from its original red/black to all dark, to suit various black outfit retextures (such as [this](https://www.nexusmods.com/metalgearsolidvtpp/mods/307)).
 
@@ -51,7 +52,8 @@ Let's get started!
 - An image editor and plugin or tool to import/export DDS textures
     - See [this page](/Working_With_DDS_Files) for suggestions.
 
-> **Tip:** for those unfamiliar with downloading programs from Github just download the topmost file in the linked pages, with the package/cube icon.
+> For those unfamiliar with downloading programs from Github just download the topmost file in the linked pages, with the package/cube icon.
+{:.tip}
 
 ---
 
@@ -138,17 +140,19 @@ Obviously the key part of any retexture mod.
 
 > Check out the steps [here](/Retexturing_the_Bionic_Arm/Common_Steps/#editing-the-texture-file) then return back.
 
-> **Tip:** it's useful keeping the base name of the texture files generic. You could leave it as `sna0_arm0_def_bsm` or rename it to something like `Retexture` (eg: `Retexture.ftex`, `Retexture.1.ftexs`, etc).\
+> It's useful keeping the base name of the texture files generic. You could leave it as `sna0_arm0_def_bsm` or rename it to something like `Retexture` (eg: `Retexture.ftex`, `Retexture.1.ftexs`, etc).\
 \
 This way if you want to change the color of the arm to something else in the future the entire texture path can remain the same, which avoids having to re-edit the model file with a different texture path.
+{:.tip}
 
 ---
 
 ## Editing the model file
 
-> **Note:** you'll notice in the steps and video below the arm has the original red/black base texture already applied. This was done by following [these](https://github.com/BobDoleOwndU/FMDL-Studio-v2/wiki/Setting-up-Fmdl-Studio-v2#setting-up-the-texture-folder) steps.\
+> You'll notice in the steps and video below the arm has the original red/black base texture already applied. This was done by following [these](https://github.com/BobDoleOwndU/FMDL-Studio-v2/wiki/Setting-up-Fmdl-Studio-v2#setting-up-the-texture-folder) steps.\
 \
 However it's not relevant for this guide and was only done to more visually show the red to dark texture replacement in Unity and makes no difference for the final output. When you import the FMDL you'll instead see a checkerboard pattern on both the model and *Base_Tex_SRGB* square texture tile until you replace the texture as shown.
+{:.note}
 
 ### Copying the texture structure to the Unity project
 
@@ -213,7 +217,8 @@ Now we can import the FMDL arm model, replace its texture and export to a new FM
 
 {% include video url="/assets/Retexturing_the_Bionic_Arm/FMDL_Studio_2/FMDL Studio 2 - Texture swapping start to finish.webm" caption="Replacing the base texture, after importing the FMDL" %}
 
-> **Note:** also in the video you'll see the *Tiling* *Y* value changed to `1` instead of the default `-1`. This is to flip the retextured DDS in Unity to the correct orientation. It's entirely optional as it **doesn't** affect the FMDL export, it's only to display the replacement texture correctly within Unity itself (since it may be confusing when seeing the texture map applied upside down).
+> Also in the video you'll see the *Tiling* *Y* value changed to `1` instead of the default `-1`. This is to flip the retextured DDS in Unity to the correct orientation. It's entirely optional as it **doesn't** affect the FMDL export, it's only to display the replacement texture correctly within Unity itself (since it may be confusing when seeing the texture map applied upside down).
+{:.note}
 
 ---
 

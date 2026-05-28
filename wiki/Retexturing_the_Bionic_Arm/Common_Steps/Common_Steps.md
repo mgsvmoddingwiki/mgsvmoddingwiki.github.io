@@ -127,7 +127,7 @@ There are a couple ways to find related texture files for a model:
 
 - By looking at the unpacked game files and searching for PFTXS archive or loose textures that match the same base filename as the FPK or FMDL file. In our case `sna0_arm0`. The [Things Code](/Things_Codes) page lists the abbreviations the game uses for various characters/objects.
     - Or similarly by searching File Monolith's `TppMasterFileList.txt` that includes a (giant) list of unpacked game file paths.
-    > **Tip:** the Windows search tool [Everything](https://www.voidtools.com) is useful for quickly finding files, moreso than the native Windows search.
+        <blockquote class="tip"><p>The Windows search tool <a href="https://www.voidtools.com">Everything</a> is useful for quickly finding files, moreso than the native Windows search.</p></blockquote>
 - If you have [FMDL Studio 2](/FMDL_Studio_V2) installed for Unity the FMDL can be imported then by selecting the mesh a list of all related textures will appear in the right side panel and double-clicking the texture square will list what texture path is used. Mostly useful if already using FMDL Studio 2 for modding.
 
 {% include spoiler-end %}
@@ -165,7 +165,8 @@ So let's create them and also copy in the original model and texture files. Foll
     mkdir "Assets\tpp\Mods\Custom\BionicArmVariants"
     ```
 
-    > **Note:** the `Custom` part of the path is intended to be replaced with your username. However you can customize the modded texture path any way you want (for more info see the *Important things to know about paths* in the spoiler below).
+    > The `Custom` part of the path is intended to be replaced with your username. However you can customize the modded texture path any way you want (for more info see the *Important things to know about paths* spoiler below).
+    {:.note}
 
 6. Then press Enter. This creates all the sub-directories in one action.
 7. Next do the same but for the following command:
@@ -201,7 +202,7 @@ Lastly copy in the model and texture files:
 
 - For the path replacer script you can create a different custom directory structure if you want for the modded texture, it just requires the texture be placed anywhere within at least the `Assets` directory.
     
-    > **Note:** this is different from how FMDL Studio 2 handle paths. With FMDL Studio 2 it requires custom texture paths be within `Assets/tpp` or else the texture won't show up in-game.
+    > This is different from how FMDL Studio 2 handle paths. With FMDL Studio 2 it requires custom texture paths be within `Assets/tpp` or else the texture won't show up in-game.
     {:.important}
 
 - MGSV is case-sensitive with its directories and filenames. So `assets` is different from `Assets`.
@@ -254,7 +255,7 @@ This is where we'll do the first modding, by converting the original texture so 
 2. Keep the `.dds` file if you're following the FMDL Studio 2 guide, otherwise you can delete it if you want.
 
 {% include spoiler-end %}
-
+ 
 ---
 
 ## Packaging and installing the mod
@@ -267,7 +268,7 @@ This is where we'll do the first modding, by converting the original texture so 
 
 2. In the right half of the program, under *Mod Files*, click the `...` button and navigate to the `Modded` directory that was created and click the *Select Folder* button to  confirm.
     - After this you'll see some files appear in the right side of MakeBite. These are the files we modded being detected.
-    > **Note:** (for *PFTXS Only* guide) the MakeBite included with the latest SnakeBite version at the time of writing (0.9.2.2) doesn't display loose `.ftexs` files in the *Mod Files* panel of the GUI. However they're still packaged during build.
+        <blockquote class="note"><p>(For <em>PFTXS Only</em> guide) the MakeBite included with the latest SnakeBite version at the time of writing (0.9.2.2) doesn't display loose <code>.ftexs</code> files in the <em>Mod Files</em> panel of the GUI. However they're still packaged during build.</p></blockquote>
 
 ![Example files from FMDL-based guides and metadata](/assets/Retexturing_the_Bionic_Arm/SnakeBite - MakeBite window.png)
 
@@ -295,4 +296,5 @@ This is where we'll do the first modding, by converting the original texture so 
 
 The mod is now ready to see in-game!
 
-> **Tip:** SnakeBite `.mgsv` packages are just renamed `.zip` files. You can open them in a zip program to view their content.
+> SnakeBite `.mgsv` packages are just renamed `.zip` files. You can open them in a zip program to view their content.
+{:.tip}

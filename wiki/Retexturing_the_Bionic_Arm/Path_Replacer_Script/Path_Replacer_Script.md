@@ -6,7 +6,8 @@ tags: [Rendering, Guides]
 
 ![](/assets/Retexturing_the_Bionic_Arm/Intro_graphic.jpg)
 
-> **Tip:** there are multiple versions of this guide, covering different approaches. See the side bar for others.
+> There are multiple versions of this guide, covering different approaches. See the side bar for others.
+{:.tip}
 
 In this guide we'll be retexturing Snake's bionic arm in *Metal Gear Solid V: The Phantom Pain* from its original red/black to all dark, to suit various black outfit retextures (such as [this](https://www.nexusmods.com/metalgearsolidvtpp/mods/307)).
 
@@ -58,7 +59,8 @@ Let's get started!
 - An image editor and plugin or tool to import/export DDS textures
     - See [this page](/Working_With_DDS_Files) for suggestions.
 
-> **Tip:** for those unfamiliar with downloading programs from Github just download the topmost file in the linked pages, with the package/cube icon.
+> For those unfamiliar with downloading programs from Github just download the topmost file in the linked pages, with the package/cube icon.
+{:.tip}
 
 ---
 
@@ -117,9 +119,10 @@ There are only two directory paths needed for the mod so we'll set them up now.
 
 > Check out the steps [here](/Retexturing_the_Bionic_Arm/Common_Steps/#setting-up-the-mod-directories) then return back.
 
-> **Tip:** unlike FMDL Studio 2 the script we're using for this guide actually supports a custom texture path (the first path in the above link) directly within `Assets` without the need to be inside a `tpp` sub-directory (eg: `Assets\Mods` would be valid).\
+> Unlike FMDL Studio 2 the script we're using for this guide actually supports a custom texture path (the first path in the above link) directly within `Assets` without the need to be inside a `tpp` sub-directory (eg: `Assets\Mods` would be valid).\
 \
 However to make the steps consistent for both the *Path Replacer Script* and *FMDL Studio 2* guides the custom texture path in the linked steps has been set to within `Assets\tpp` for both.
+{:.tip}
 
 ---
 
@@ -129,9 +132,10 @@ Obviously the key part of any retexture mod.
 
 > Check out the steps [here](/Retexturing_the_Bionic_Arm/Common_Steps/#editing-the-texture-file) then return back.
 
-> **Tip:** it's useful keeping the base name of the texture files generic. You could leave it as `sna0_arm0_def_bsm` or rename it to something like `Retexture` (eg: `Retexture.ftex`, `Retexture.1.ftexs`, etc).\
+> It's useful keeping the base name of the texture files generic. You could leave it as `sna0_arm0_def_bsm` or rename it to something like `Retexture` (eg: `Retexture.ftex`, `Retexture.1.ftexs`, etc).\
 \
 This way if you want to change the color of the arm to something else in the future the entire texture path can remain the same, which avoids having to re-edit the model file with a different texture path.
+{:.tip}
 
 ---
 

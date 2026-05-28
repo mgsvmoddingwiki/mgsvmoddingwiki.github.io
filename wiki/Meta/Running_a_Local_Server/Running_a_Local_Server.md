@@ -25,9 +25,13 @@ Since Github Desktop isn't available for Linux you'll have to use an alternative
 
 > You can alternatively run Linux in a virtual machine on a Windows host and manage files/git on the Windows side, by cloning the wiki to a directory on the host and sharing it with the VM.
 
-> **Note:** the build process uses Powershell for generating the search index files, to populate the search results. Powershell is available in Linux packages. Otherwise not strictly necessary if search not needed for local testing.
+> **The build process uses Powershell scripts** for generating the search index and recent changes files, to populate the search results and any section's sidebar items (like can be seen in this Meta section).<br/>
+<br/>
+Powershell is available in Linux packages but if you don't want to install it just keep in mind those aspects won't behave as expected.
+{:.note}
 
 {% include spoiler-end %}
+{:.important}
 
 ## Installing Jekyll and Ruby
 
@@ -41,7 +45,8 @@ Since Github Desktop isn't available for Linux you'll have to use an alternative
 
 1. Now open the local version of your wiki fork (if you're unclear where that is open Github Desktop then click *Show in Explorer*).
 2. Double-click the `install.bat` script in the root directory of your fork. This installs the required Jekyll dependencies for the local wiki fork and only has to be done once. It will take a moment before progress appears.
-    > **Tip:** it's easier to distinguish file types by having file extensions visible in Windows File Explorer.
+    > It's easier to distinguish file types by having file extensions visible in Windows File Explorer.
+    {:.tip}
 
 ## Running the local server
 
@@ -58,7 +63,7 @@ Now we're ready to run the server. Any time you'd like to run it just do the fol
 
 ### Closing the local server
 
-You can stop the local server running at any time by opening the CMD window you minimized and pressing `Ctrl+C` (the 'cancel' command) twice to terminate the process.
+You can stop the local server running at any time by closing the CMD window you minimized, or by focusing the CMD window and pressing `Ctrl+C` (the 'cancel' command) twice to terminate the process.
 
 ## Making changes
 
@@ -70,7 +75,8 @@ You can then submit your changes back to the original wiki as per the [Github De
 
 ![The build time has been trimmed in the GIF for brevity](/assets/Meta/Running_a_Local_Server/Live changes example.gif)
 
-> **Note:** it takes a moment to rebuild for each change so there'll be a delay between the change(s) and when they'll appear. The changes should automatically appear in the browser without requiring a refresh, once they've been built and are ready.
+> It takes a moment to rebuild for each change so there'll be a delay between the change(s) and when they'll appear. The changes should automatically appear in the browser without requiring a refresh, once they've been built and are ready.
+{:.note}
 
-> **Tip:** you can check what's happening by viewing the CMD window while the local server is running.
-
+> You can check what's happening by viewing the CMD window while the local server is running.
+{:.tip}

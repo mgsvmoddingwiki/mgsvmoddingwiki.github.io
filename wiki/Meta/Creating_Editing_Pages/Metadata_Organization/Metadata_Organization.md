@@ -70,9 +70,10 @@ tags: [Missions, Guides]
 #### Additional metadata properties
 
 - `image` = Define an image path that will be used for embed widgets on the wiki and for Open Graph/Twitter third-party link embeds. If none defined embed widgets on the wiki will fall back to whatever the first image in the page is (if there is one).
-> Eg: `image = /assets/AI/images/mgs/Sally_Section_Meta_Image.jpg`\
-\
-> **Note:** make sure to compress the image to something reasonable so it loads faster. 100-300KB recommended.
+    > Eg: `image = /assets/AI/images/mgs/Sally_Section_Meta_Image.jpg`
+
+    > Make sure to compress the image to something reasonable so it loads faster. 100-300KB recommended.
+    {:.important}
 
 - `featured` = if defined should be a boolean `true`. Used for when the community decides a page is good fit for being featured.
 
@@ -151,7 +152,8 @@ redirect_from:
 
 This auto creates a redirection from (in the above example) `/Original_Page_Link/` to `/Current_Page_Link/`.
 
-> **Tip:** redirections are useful for if you've had an existing page up for a while but needed to rename/move it, to allow users to be taken to the new page automatically.
+> Redirections are useful for if you've had an existing page up for a while but needed to rename/move it, to allow users to be taken to the new page automatically.
+{:.tip}
 
 #### Redirect to
 
