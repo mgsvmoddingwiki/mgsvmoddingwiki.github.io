@@ -7,7 +7,7 @@ tags: [Guides, Lang]
 > This page is a mess and needs either a rewrite or a complete removal.
 >
 > You should use [Lang_Files](/Lang_Files) instead.
-{:.important}
+{:.needs-revision}
 
 
 This tutorial will help you create your own lang entries instead of

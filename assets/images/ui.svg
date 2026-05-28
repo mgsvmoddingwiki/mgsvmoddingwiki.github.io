@@ -76,7 +76,8 @@
             </g>
         </g>
 
-        <g id="icons-sidebar-lightbulb-path" class="stroke" transform="translate(-26 -274)">
+        <!-- Stroke not added here so can be scaled for small version w/ separate stroke -->
+        <g id="icons-sidebar-lightbulb-path" transform="translate(-26 -274)">
             <path d="M35.356,288.995C35.356,288.204 35.268,288.172 34.134,287.277C32.994,286.377 32.226,285.398 31.983,284.4C31.755,283.465 31.733,282.492 31.997,281.303C32.342,279.749 34.541,278.005 36.887,278.005L39.113,278.005C41.459,278.005 43.658,279.749 44.003,281.303C44.267,282.492 44.245,283.465 44.017,284.4C43.774,285.398 43.006,286.377 41.866,287.277C40.732,288.172 40.644,288.204 40.644,288.995L35.356,288.995Z"/>
             <path d="M35.815,292L40.185,292"/>
             <path d="M38,284.85L38,288.995"/>
@@ -94,7 +95,7 @@
                 <use xlink:href="#mask-fill"/>
                 <use class="fill exclusion" xlink:href="#icons-sidebar-text-caret-path-exclusion"/>
             </mask>
-            <g id="icons-sidebar-text-caret-path" class="stroke linecap-square">
+            <g id="icons-sidebar-text-caret-path">
                 <g mask="url(#icons-sidebar-text-caret-path-exclusion-mask)">
                     <g transform="translate(-26 -309)">
                         <path d="M41.99,313L40.72,313C39.219,313 38,314.219 38,315.72L38,324.28C38,325.781 39.219,327 40.72,327L41.99,327"/>
@@ -258,7 +259,7 @@
             <path d="M28,33L33,33L33,28"/>
         </g>
 
-        <g id="icons-editing-edit-path" class="stroke" transform="translate(-64 -23)">
+        <g id="icons-editing-edit-path" transform="translate(-64 -23)">
             <path d="M82.886,32.377C83.666,31.597 83.666,30.329 82.886,29.549L81.511,28.174C80.73,27.393 79.463,27.393 78.682,28.174L69.001,37.855L69.006,42.005L73.26,42.004L82.886,32.377Z"/>
             <path d="M81.008,34.008L76.973,29.973"/>
         </g>
@@ -361,6 +362,23 @@
                     </g>
                 </g>
             </g>
+        </g>
+
+        <g id="icons-small-exclamation-path">
+            <line class="stroke linecap-butt" x1="9px" x2="9px" y1="3px" y2="11px"/>
+            <line class="stroke linecap-butt" x1="9px" x2="9px" y1="13px" y2="15px"/>
+        </g>
+
+        <g id="icons-small-lightbulb-path">
+            <use class="stroke intermediate" xlink:href="#icons-sidebar-lightbulb-path" transform="scale(0.75)"/>
+        </g>
+
+        <g id="icons-small-note-path">
+            <use class="stroke intermediate" xlink:href="#icons-editing-edit-path" transform="scale(0.75)"/>
+        </g>
+
+        <g id="icons-small-text-caret-path">
+            <use class="stroke intermediate linecap-square" xlink:href="#icons-sidebar-text-caret-path" transform="scale(0.75 0.72) translate(0 0.2)"/>
         </g>
 
         <style><![CDATA[
@@ -486,7 +504,7 @@
     <use class="output" id="icons-hamburger-menu-close" xlink:href="#icons-hamburger-menu-close-path"/>
 
     <use class="output" id="icons-editing-add" xlink:href="#icons-editing-add-path"/>
-    <use class="output" id="icons-editing-edit" xlink:href="#icons-editing-edit-path"/>
+    <use class="output stroke" id="icons-editing-edit" xlink:href="#icons-editing-edit-path"/>
     <use class="output" id="icons-editing-delete" xlink:href="#icons-editing-delete-path"/>
     <use class="output" id="icons-editing-history" xlink:href="#icons-editing-history-path"/>
     <use class="output" id="icons-editing-source" xlink:href="#icons-editing-source-path"/>
@@ -509,9 +527,9 @@
     <use class="output" id="icons-sidebar-open-pages" xlink:href="#icons-sidebar-open-pages-path"/>
     <use class="output" id="icons-sidebar-package" xlink:href="#icons-sidebar-package-path"/>
     <use class="output" id="icons-sidebar-tag" xlink:href="#icons-sidebar-tag-path"/>
-    <use class="output" id="icons-sidebar-text-caret" xlink:href="#icons-sidebar-text-caret-path"/>
+    <use class="output stroke linecap-square" id="icons-sidebar-text-caret" xlink:href="#icons-sidebar-text-caret-path"/>
     <use class="output" id="icons-sidebar-curly-brackets" xlink:href="#icons-sidebar-curly-brackets-path"/>
-    <use class="output" id="icons-sidebar-lightbulb" xlink:href="#icons-sidebar-lightbulb-path"/>
+    <use class="output stroke" id="icons-sidebar-lightbulb" xlink:href="#icons-sidebar-lightbulb-path"/>
     <use class="output" id="icons-sidebar-globe" xlink:href="#icons-sidebar-globe-path"/>
     <use class="output" id="icons-sidebar-discord" xlink:href="#icons-sidebar-discord-path"/>
     <use class="output" id="icons-sidebar-nexusmods" xlink:href="#icons-sidebar-nexusmods-path"/>
@@ -525,6 +543,12 @@
     <use class="output" id="icons-small-full-arrow-down" xlink:href="#icons-small-full-arrow-down-path"/>
     <use class="output" id="icons-small-refresh" xlink:href="#icons-small-refresh-path"/>
     <use class="output" id="icons-small-git-commit" xlink:href="#icons-small-git-commit-path"/>
+
+    <use class="output" id="icons-small-lightbulb" xlink:href="#icons-small-lightbulb-path"/>
+    <use class="output" id="icons-small-note" xlink:href="#icons-small-note-path"/>
+    <use class="output" id="icons-small-exclamation" xlink:href="#icons-small-exclamation-path"/>
+    <use class="output" id="icons-small-text-caret" xlink:href="#icons-small-text-caret-path"/>
+
     <use class="output" id="icons-refresh" xlink:href="#icons-refresh-path"/>
     <use class="output" id="icons-star" xlink:href="#icons-star-path"/>
 

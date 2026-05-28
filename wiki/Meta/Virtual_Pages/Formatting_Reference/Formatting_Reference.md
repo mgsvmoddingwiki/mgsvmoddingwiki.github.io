@@ -24,7 +24,7 @@ Eg: h2 followed by a h3 (or another h2) is fine, just not starting with h3 and t
 
 ## General
 
-General is the same as the [regular syntax](/Meta/Formatting_Reference/#lists), with the exception of lacking an `{% raw %}{:.important}{% endraw %}` class feature for blockquotes.
+General is the same as the [regular syntax](/Meta/Formatting_Reference/#lists), with the exception of lacking support for blockquote classes.
 
 ---
 
@@ -115,3 +115,9 @@ So for the **Basic** heading on that linked page instead of being headerless it 
 ## Spoiler elements
 
 Spoiler elements share the same syntax as the [regular syntax](/Meta/Formatting_Reference/#spoiler-elements), with the exception of lacking support for custom titles.
+
+---
+
+## Widgets
+
+Widgets are unsupported in virtual pages.

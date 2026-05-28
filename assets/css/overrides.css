@@ -60,7 +60,6 @@
     --dark-theme-color-buttons-hover: hsl(240, 6%, 31%);
     --dark-theme-color-buttons-inset: var(--dark-theme-color-buttons);
     --dark-theme-color-important: hsl(154,65%,32%);
-    --dark-theme-color-important-hover: hsl(154,67%,37%);
 
     --dark-theme-color-shadow: hsla(0,0%,0%,.2);
 
@@ -89,7 +88,7 @@
     --light-theme-color-buttons-hover: hsl(0, 0%, 100%);
     --light-theme-color-buttons-inset: var(--light-theme-bg-input);
     --light-theme-color-important: hsl(154, 61%, 61%);
-    --light-theme-color-important-hover: hsl(154, 65%, 68%);
+
     --light-theme-color-shadow: hsla(230, 26%, 61%, .3);
 
     --light-theme-filter-button-active: brightness(0.9);
@@ -117,7 +116,6 @@ body, body.theme-dark {
     --color-buttons-hover: var(--dark-theme-color-buttons-hover);
     --color-buttons-inset: var(--dark-theme-color-buttons-inset);
     --color-important: var(--dark-theme-color-important);
-    --color-important-hover: var(--dark-theme-color-important-hover);
     --color-shadow: var(--dark-theme-color-shadow);
 
     --shadow-primary: 0 2px 20px 0 var(--color-shadow);
@@ -150,7 +148,6 @@ body.theme-light {
     --color-buttons-hover: var(--light-theme-color-buttons-hover);
     --color-buttons-inset: var(--light-theme-color-buttons-inset);
     --color-important: var(--light-theme-color-important);
-    --color-important-hover: var(--light-theme-color-important-hover);
     --color-shadow: var(--light-theme-color-shadow);
 
     --filter-button-active: var(--light-theme-filter-button-active);
@@ -1670,30 +1667,6 @@ ul.index,
     break-inside: avoid-column;
 }
 
-/* Call more attention to a blockquote, spoiler */
-blockquote.important,
-.spoiler.important .content-button {
-    background: var(--color-important);
-}
-
-.spoiler.important .content-button:hover {
-    background: var(--color-important-hover);
-}
-
-.spoiler.important .content-button::before {
-    background: currentColor;
-}
-
-blockquote.important a {
-    /* Increase contrast for links since harder to see otherwise */
-    color: var(--color-link-hover);
-    filter: brightness(0.8) contrast(1.4) saturate(3);
-}
-
-blockquote.important a:hover {
-    filter: brightness(1) contrast(2) saturate(3);
-}
-
 /* .index = for use on lists for index/category pages */
 .index {
     clear: both;
@@ -1835,6 +1808,83 @@ h2.heading-with-frag-id .heading-frag-id-link {
 
 .heading-with-frag-id:target .heading-frag-id-link:hover {
     background: var(--color-accent-hover);
+}
+
+/* Blockquote special classes styling */
+blockquote.needs-revision,
+blockquote.note,
+blockquote.tip,
+blockquote.important,
+.spoiler.important .content-button {
+    --first-child-margin-top: var(--spacing-minor);
+    --top: 2px;
+    --color: var(--color-important);
+    border-left: var(--border-width) solid var(--color);
+    position: relative;
+}
+
+blockquote.note,
+blockquote.tip {
+    --color: var(--color-link);
+}
+
+blockquote.needs-revision {
+    --color: var(--color-accent);
+}
+
+blockquote.needs-revision::before,
+blockquote.note::before,
+blockquote.tip::before,
+blockquote.important::before {
+    width: 24px;
+    height: 24px;
+    background: var(--color);
+    content: '';
+    display: block;
+    float: left;
+    margin-right: calc(var(--spacing-minor) * 2);
+    border-radius: var(--radius-circle);
+    position: relative;
+    top: var(--top);
+}
+
+blockquote.needs-revision::after,
+blockquote.note::after,
+blockquote.tip::after,
+blockquote.important::after {
+    width: 24px;
+    height: 24px;
+    background: var(--color-primary);
+    content: '';
+    display: block;
+    mask-position: 3px 3px;
+    position: absolute;
+    top: calc(var(--spacing-intermediate) + var(--top));
+}
+
+blockquote.important::after {
+    -webkit-mask-image: url("/assets/images/ui.svg#icons-small-exclamation");
+    mask-image: url("/assets/images/ui.svg#icons-small-exclamation");
+}
+
+blockquote.note::after,
+blockquote.tip::after {
+    background: var(--bg-subtle);
+    -webkit-mask-image: url("/assets/images/ui.svg#icons-small-note");
+    mask-image: url("/assets/images/ui.svg#icons-small-note");
+}
+
+blockquote.tip::after {
+    -webkit-mask-image: url("/assets/images/ui.svg#icons-small-lightbulb");
+    mask-image: url("/assets/images/ui.svg#icons-small-lightbulb");
+    mask-position: 3px 4px; /* unfortunately can't just use `mask-position-y` since Chromium lacks support for it */
+}
+
+blockquote.needs-revision::after {
+    background: var(--color-accent-foreground);
+    -webkit-mask-image: url("/assets/images/ui.svg#icons-small-text-caret");
+    mask-image: url("/assets/images/ui.svg#icons-small-text-caret");
+    mask-position: 3px 4px;
 }
 
 
@@ -3418,8 +3468,8 @@ footer {
 }
 
 /* Code block within blockquote */
-.theme-light blockquote:not(.important) > .highlighter-rouge > .highlight > pre {
-    border: var(--border-width) solid var(--color-border);
+.theme-light blockquote > .highlighter-rouge > .highlight > pre {
+    border: var(--border-width-thin) solid var(--color-border);
 }
 
 .theme-light blockquote > .highlighter-rouge > .highlight > pre code {
@@ -3468,7 +3518,6 @@ footer {
         --color-buttons-hover: var(--light-theme-color-buttons-hover);
         --color-buttons-inset: var(--light-theme-color-buttons-inset);
         --color-important: var(--light-theme-color-important);
-        --color-important-hover: var(--light-theme-color-important-hover);
         --color-shadow: var(--light-theme-color-shadow);
 
         --filter-button-active: var(--light-theme-filter-button-active);
@@ -3500,7 +3549,6 @@ footer {
         --color-buttons-hover: var(--dark-theme-color-buttons-hover);
         --color-buttons-inset: var(--dark-theme-color-buttons-inset);
         --color-important: var(--dark-theme-color-important);
-        --color-important-hover: var(--dark-theme-color-important-hover);
         --color-shadow: var(--dark-theme-color-shadow);
 
         --shadow-primary: 0 2px 20px 0 var(--color-shadow);

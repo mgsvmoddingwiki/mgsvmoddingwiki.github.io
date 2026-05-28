@@ -14,6 +14,7 @@ There are a few ways to create or edit wiki pages so this area covers each metho
 
 > Each guide has screenshots/GIFs to try and be clear about every step.
 
-> **Note:** if you have Collaborator status you can add and edit pages on the wiki directly using the non-colored *Add New Page* and *Edit Page* buttons in the toolbar at the top of every wiki page. Or make other changes to the [repository](https://github.com/mgsvmoddingwiki/mgsvmoddingwiki.github.io) directly.
+> If you have Collaborator status you can add and edit pages on the wiki directly using the non-colored *Add New Page* and *Edit Page* buttons in the toolbar at the top of every wiki page. Or make other changes to the [repository](https://github.com/mgsvmoddingwiki/mgsvmoddingwiki.github.io) directly.
+{:.tip}
 
 {% include index-autolist type="section" %}
