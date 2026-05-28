@@ -152,7 +152,9 @@ Code block with syntax highlighting:
 > Can also search for pages which have this by using the query `.needs-revision` (assuming the *Ignore markup* search filter isn't enabled).
 {:.needs-revision}
 
-    > Blockquote with `note` class.
+    > Blockquote with `needs-revision` class. For noting where a page needs editing or expansion.
+    > 
+    > Can also search for pages which have this by using the query `.needs-revision` (assuming the *Ignore markup* search filter isn't enabled).
     {:.needs-revision}
 
 ### Miscellaneous
