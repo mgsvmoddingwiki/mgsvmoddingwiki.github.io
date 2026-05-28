@@ -10,8 +10,8 @@ Alternatively you can use the official Desktop app to manage files using Windows
 
 > At a simplified level, for most users, the process is forking (copying) the wiki on the site, making some changes on your own copy, then submitting the changes back to the original wiki for approval.
 
-> **Tip:** want to just edit an existing page? [Click here](#editing-a-page) to jump to the steps.
-{:.important}
+> Want to just edit an existing page? [Click here](#editing-a-page) to jump to the steps.
+{:.tip}
 
 ## Forking the wiki
 
@@ -61,7 +61,8 @@ For new images to the wiki the advice is to place it in a sub-directory named af
 
 I'll be using a text editor to create the wiki page offline before later uploading it to Github. In it I'll be referencing the screenshot image.
 
-> **Tip:** you can alternatively use Github's site to directly create pages but since I'll also be uploading an image it'll need to be in a new sub-directory which Github's website UI doesn't provide a way to add on its own.
+> You can alternatively use Github's site to directly create pages but since I'll also be uploading an image it'll need to be in a new sub-directory which Github's website UI doesn't provide a way to add on its own.
+{:.tip}
 
 1. Firstly create a directory on Windows called `wiki`.
 2. Inside the `wiki` directory create a new text file, then change its extension from `.txt` to `.md`.
@@ -85,10 +86,11 @@ tags: [Guides]
 
 ![How my finished text file looks, after adding a caption and custom width to the image, too](/assets/Meta/Creating_Editing_Pages/Using_Github_com/Manual PRs - Creating files - Text file.png)
 
-> **Tip:** to understand how text/content will appear on the wiki refer to the [Formatting Reference](/Meta/Formatting_Reference) guide, which displays all the possible styling for text, lists, images, video, tables, etc.
-{:.important}
+> To understand how text/content will appear on the wiki refer to the [Formatting Reference](/Meta/Formatting_Reference) guide, which displays all the possible styling for text, lists, images, video, tables, etc.
+{:.tip}
 
-> **Tip:** you can also check out the source of existing wiki pages for inspiration by clicking the circular *Page Source* button in the toolbar at the top of every wiki page.
+> You can also check out the source of existing wiki pages for inspiration by clicking the circular *Page Source* button in the toolbar at the top of every wiki page.
+{:.tip}
 
 > For clarity: this guide was written when the *Wiki Tips* page was had its original path so ignore such differences in naming to the current site.
 
@@ -154,7 +156,8 @@ With [my fork](#forking-the-wiki) of the wiki I wanted to edit the existing `Gui
 
 ![GIF showing the whole process using the slightly older version of the site (apart from clicking the Commit button)](/assets/Meta/Creating_Editing_Pages/Using_Github_com/Manual PRs - Editing files - Whole process.gif)
 
-> **Note:** more recently Github changed the position of the *Commit changes* button when editing a file to the top of the page instead of the bottom, with the description text box now within a popup. The GIF above was made prior to this change but the text steps reflect the latest design.
+> More recently Github changed the position of the *Commit changes* button when editing a file to the top of the page instead of the bottom, with the description text box now within a popup. The GIF above was made prior to this change but the text steps reflect the latest design.
+{:.note}
 
 ### Creating a pull request
 

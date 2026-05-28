@@ -16,9 +16,10 @@ Click the spoiler labels to show each section.
 
 Headings are identical to the [regular syntax](/Meta/Formatting_Reference/#headings).
 
-> **Note:** small thing to keep in mind is making sure the first heading on the page is higher hierarchy than any the second heading (if there is one), since the Javascript-based table of contents generation for virtual pages will fail otherwise.\
+> Small thing to keep in mind is making sure the first heading on the page is higher hierarchy than any the second heading (if there is one), since the Javascript-based table of contents generation for virtual pages will fail otherwise.\
 \
-Eg: h2 followed by a h3 (or another h2) is fine, just not starting with h3 and then having a h2 second.
+Eg: h2 (`##`) followed by a h3 (`###`, or another h2) is fine, just not starting with h3 and then having a h2 second.
+{:.note}
 
 ---
 
@@ -68,7 +69,8 @@ This can be used to auto populate a list of direct child pages of a virtual page
     {% include index-autolist type="section" %}
     {% endraw %}
 
-> **Note:** nothing will appear in this example list since this page doesn't contain child pages.
+> Nothing will appear in this example list since this page doesn't contain child pages.
+{:.note}
 
 {% include spoiler-end %}
 

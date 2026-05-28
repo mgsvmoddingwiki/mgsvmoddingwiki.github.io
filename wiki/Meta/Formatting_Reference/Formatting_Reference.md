@@ -152,10 +152,40 @@ Code block with syntax highlighting:
 > Can also search for pages which have this by using the query `.needs-revision` (assuming the *Ignore markup* search filter isn't enabled).
 {:.needs-revision}
 
-    > Blockquote with `needs-revision` class. For noting where a page needs editing or expansion.
-    > 
-    > Can also search for pages which have this by using the query `.needs-revision` (assuming the *Ignore markup* search filter isn't enabled).
+    > Blockquote with `needs-revision` class.
     {:.needs-revision}
+
+{% include spoiler-start title="Issue with blockquote styling within sub-list items" %}
+
+If the blockquote is inside a sub-list item the classes **won't apply** the custom style due to what seems to be a Kramdown bug. Eg:
+
+```
+1. Parent list item.
+    - Sub-list item.
+    > Blockquote here with class
+    {:.tip}
+```
+
+However if placed as a direct child of the parent list item (instead of sub-list item) it *will* style correctly:
+```
+1. Parent list item.
+    > Blockquote here with class
+    {:.tip}
+```
+
+If you *really* need the styled blockquote inside a sub-list item you can use raw HTML instead, per the following code. You'll also need to indent it in the code one extra inward than how the Markdown blockquotes are defined.
+
+```
+1. Parent list item.
+    - Sub-list item.
+        <blockquote class="note"><p>Blockquote here with class.</p></blockquote>
+```
+
+> **Keep in mind** no Markdown will render within the blockquote so you'll have to know how to style text inside as HTML instead (for italics, links, etc).
+{:.note}
+
+{% include spoiler-end %}
+{:.important}
 
 ### Miscellaneous
 

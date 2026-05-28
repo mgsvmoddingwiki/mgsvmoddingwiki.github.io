@@ -6,7 +6,8 @@ tags: [Rendering, Guides]
 
 ![](/assets/Retexturing_the_Bionic_Arm/Intro_graphic.jpg)
 
-> **Tip:** there are multiple versions of this guide, covering different approaches. See the side bar for others.
+> There are multiple versions of this guide, covering different approaches. See the side bar for others.
+{:.tip}
 
 In this guide we'll be retexturing Snake's bionic arm in *Metal Gear Solid V: The Phantom Pain* from its original red/black to all dark, to suit various black outfit retextures (such as [this](https://www.nexusmods.com/metalgearsolidvtpp/mods/307)).
 
@@ -50,7 +51,8 @@ Let's get started!
 - An image editor and plugin or tool to import/export DDS textures
     - See [this page](/Working_With_DDS_Files) for suggestions.
 
-> **Tip:** for those unfamiliar with downloading programs from Github just download the topmost file in the linked pages, with the package/cube icon.
+> For those unfamiliar with downloading programs from Github just download the topmost file in the linked pages, with the package/cube icon.
+{:.tip}
 
 ---
 
