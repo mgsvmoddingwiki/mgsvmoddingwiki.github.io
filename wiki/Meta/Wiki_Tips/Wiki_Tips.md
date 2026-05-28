@@ -12,6 +12,9 @@ The search suggestions can be navigated using keyboard arrow or tab keys. Word m
 
 Pressing Enter without navigating via keys through the list opens the full results, or they can be opened via the *See all \<n\> results* item at the bottom of the suggestions.
 
+> On the standalone search results page you can click parts of the bolded query to toggle them on/off and see new results.
+{:.tip}
+
 > The highlighted match text beside results always ignores markup to reduce visual noise, however the full original text is still searched. Strings hidden include some HTML tags, Markdown syntax (including URLs/images but not title text) and Liquid tags. Any results that have a no visible match text will instead display labels about which metadata was matched.
 
 ### Search operators
@@ -30,7 +33,8 @@ The following operators can be entered in the search box to adjust results.
 | `$` | `entries$` | Returns results ending with string. Note: this can match things like tag fields that end with a particular tag. |
 {:.stretch}
 
-> **Tip:**  Results will match substrings too (eg: `ai` in `contain`). To only match whole words you can double quote the query with spaces, like `"ai "` or `" ai "`.
+> Results will match substrings too (eg: `ai` in `contain`). To only match whole words you can double quote the query with spaces, like `"ai "` or `" ai "`.
+{:.tip}
 
 #### YAML key specific
 
@@ -44,11 +48,13 @@ The following operators can be entered in the search box to adjust results.
 
 > For any YAML key searches can use either single unquoted string or wrap in double quotes for strings with spaces. They can also be combined with default searches like `tags:guides fox` to search for all guides containing the string `fox` anywhere.
 
-> **Tip:** all the YAML key operators support negation, in the form of an exclamation prefix, eg: `!title:fox` to exclude all pages containing `fox` anywhere in the title.
+> All the YAML key operators support an exclusion prefix, like `!title:fox`.
+{:.tip}
 
-> **Tip:** to search literally for an operator + value, such as `title:fox`, wrap them both inside double quotes, like `"title:fox"`.
+> To search literally for an operator + value, such as `title:fox`, wrap them both inside double quotes, like `"title:fox"`.
+{:.tip}
 
-> **Note:** any invalid/mistyped YAML key operators with a value (eg: `example:something`) will be treated as just a regular string of the query. Like the [default](#default) operators above any leading/trailing operator (beside double quotes, spaces and pipes) will display a subtle background highlight for its associated value (eg. the `fox` part in `title:fox`).
+> Any invalid/mistyped YAML key operators with a value (eg: `example:something`) will be treated as just a regular string of the query. Like the [default](#default) operators above any leading/trailing operator (beside double quotes, spaces and pipes) will display a subtle background highlight for its associated value (eg. the `fox` part in `title:fox`).
 
 ### Filter toggle buttons
 
@@ -63,7 +69,8 @@ In the search box suggestions and search results page are some filter buttons th
 | Ignore markup | When enabled will match the search query against a cleaned version of wiki page content text, which basically strips everything non-visual from the text, like URLs, Liquid/Kramdown/Markdown/HTML tags. It's the same patterns used to clean the highlighted match text beside results but applied to the search itself.<br/><br/>This filter is useful when the visual text differs from the markup code of the page (eg: raw page content of `C\#` but visually is `C#`). |
 | Has media | Includes only pages that contain images/videos.<br/><br/>**Note:** if the *Ignore markup* filter is also enabled results will be omitted due to that filter stripping markup (image/video links) from the search. |
 
-> **Tip:** for a complete list of all page titles for checking, see the [All Pages](/Meta-All_Pages) list, which includes links to all categories/tags.
+> For a complete list of all page titles for checking, see the [All Pages](/Meta-All_Pages) list, which includes links to all categories/tags.
+{:.tip}
 
 ---
 
@@ -71,7 +78,8 @@ In the search box suggestions and search results page are some filter buttons th
 
 At the top of every page are a row of icons. This table explains them from left to right.
 
-> **Tip:** for simple, text-only page edits or new pages the Prose.io buttons with the colored backgrounds are the easiest way. It just requires a single authorization with your Github account and then it can handle submissions on your behalf. For more about creating/editing pages see the [Creating/Editing a Page](/Meta-Creating_Editing_a_Page) guide.
+> For simple, text-only page edits or new pages the Prose.io buttons with the colored backgrounds are the easiest way. It just requires a single authorization with your Github account and then it can handle submissions on your behalf. For more about creating/editing pages see the [Creating/Editing a Page](/Meta-Creating_Editing_a_Page) guide.
+{:.tip}
 
 | Icon | Title | Description |
 |-|-|-|

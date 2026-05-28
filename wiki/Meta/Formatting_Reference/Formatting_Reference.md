@@ -27,7 +27,8 @@ Each example first shows how it looks on the page, followed by the raw code used
     #### Headings - Lower importance (h4)
 
 
-> **Note:** h1 headings that use a single `#` are intended to be reserved for only the page title not section headings. It's recommended to use `h2` style and lower.
+> H1 headings that use a single `#` are intended to be reserved for only the page title not section headings. It's recommended to use `h2` style and lower.
+{:.note}
 
 {% include spoiler-end %}
 
@@ -38,6 +39,8 @@ Each example first shows how it looks on the page, followed by the raw code used
 Most of this section will be familiar to Discord users.
 
 {% include spoiler-start %}
+
+### Text
 
 **Bold**
 
@@ -51,6 +54,8 @@ Most of this section will be familiar to Discord users.
 
     ~~Strike-through~~
 
+### Links
+
 [Link - internal](/Meta)
 
     [Link - internal](/Meta)
@@ -59,11 +64,14 @@ Most of this section will be familiar to Discord users.
 
     [Link - jump to section on same page](#tables)
 
-> **Tip:** if linking to another page can use eg: `[Name](/Page#section)` or `[Name](/Page/#section)` but these are easily copied via the table of contents or heading links.
+> If linking to another page can use eg: `[Name](/Page#section)` or `[Name](/Page/#section)`.
+{:.tip}
 
 [Link - external](https://wikipedia.org)
 
     [Link - external](https://wikipedia.org)
+
+### Code
 
 `Inline code`
 
@@ -83,7 +91,8 @@ Code block:
     </safiles>
     ```
 
-> **Tip:** you can alternatively indent any line of text by four spaces and it will become a code block.
+> You can alternatively indent any line of text by four spaces and it will become a code block.
+{:.tip}
 
 ```xml
 Code block with syntax highlighting:
@@ -99,35 +108,54 @@ Code block with syntax highlighting:
     </safiles>
     ```
 
-> **Note:** replace `xml` with whatever the filetype you want highlighted. Eg: you'd use `lua` if the code was Lua.
+> Replace `xml` with whatever the filetype you want highlighted. Eg: you'd use `lua` if the code was Lua.
+{:.not}
+
+### Blockquotes
 
 > Blockquote
 
     > Blockquote
 
-> Blockquote with multiple lines and `.important` class.
+**With classes to draw attention:**
+
+> Blockquote with multiple lines and `important` class.
 >
-> Correct:
+> Code block:
 > ```xml
 > <file code="16355565633005451293"/>
-> ```
-> Incorrect:
-> ```xml
-> <file code="snafu"/>
 > ```
 {:.important}
 
     > Blockquote with multiple lines and `.important` class.
     >
-    > Correct:
+    > Code block:
     > ```xml
     > <file code="16355565633005451293"/>
     > ```
-    > Incorrect:
-    > ```xml
-    > <file code="snafu"/>
-    > ```
     {:.important}
+
+> Blockquote with `tip` class.
+{:.tip}
+
+    > Blockquote with `tip` class.
+    {:.tip}
+
+> Blockquote with `note` class.
+{:.note}
+
+    > Blockquote with `note` class.
+    {:.note}
+
+> Blockquote with `needs-revision` class. For noting where a page needs editing or expansion.
+> 
+> Can also search for pages which have this by using the query `.needs-revision` (assuming the *Ignore markup* search filter isn't enabled).
+{:.needs-revision}
+
+    > Blockquote with `note` class.
+    {:.needs-revision}
+
+### Miscellaneous
 
 **Horizontal rule (dividing line):**
 
@@ -173,11 +201,14 @@ And some another reference[^another] in following text. This[^example] reference
 {% endraw %}
 ```
 
-> **Tip:** as you can see from the example the definition can be placed anywhere in the text, it doesn't have to be at the bottom of the page. The processor will itself remove the definition and always place it in a [References](#meta-references) section at the bottom of the page.
+> As you can see from the example the definition can be placed anywhere in the text, it doesn't have to be at the bottom of the page. The processor will itself remove the definition and always place it in a [References](#meta-references) section at the bottom of the page.
+{:.tip}
 
-> **Tip:** after clicking on the reference you can return to the text that included the footnote link by hovering over the defintion text and clicking the return arrow backlink button. If the footnote was used multiple times in the text there will be multiple backlinks.
+> After clicking on the reference you can return to the text that included the footnote link by hovering over the defintion text and clicking the return arrow backlink button. If the footnote was used multiple times in the text there will be multiple backlinks.
+{:.tip}
 
-> **Note:** indented code immediately following a footnote definition will become part of the definition. If this is unintended it can be avoided by removing the indentation and instead wrapping the code block in the three backtick ({% raw %}```{% endraw %}) syntax.
+> Indented code immediately following a footnote definition will become part of the definition. If this is unintended it can be avoided by removing the indentation and instead wrapping the code block in the three backtick ({% raw %}```{% endraw %}) syntax.
+{:.note}
 
 {% include spoiler-end %}
 
@@ -202,7 +233,8 @@ And some another reference[^another] in following text. This[^example] reference
 
     ![Caption text](/assets/45-0-1448484425.jpg){:.thumb}
 
-> **Note:** the `.thumb` class limits images to 50% of the page width by default, and 30% width if combined with `.left` or `.right` classes (shown in code below). It's useful if you don't want to define a custom width but would like a smaller image.
+> The `.thumb` class limits images to 50% of the page width by default, and 30% width if combined with `.left` or `.right` classes (shown in code below). It's useful if you don't want to define a custom width but would like a smaller image.
+{:.note}
 
 **Aligned right and `.thumb` width:**
 
@@ -211,12 +243,13 @@ And some another reference[^another] in following text. This[^example] reference
     ![](/assets/45-0-1448484425.jpg){:.thumb .right}
 {:.clear}
 
-> **Note:** if you need to make an element to not flow around an aligned left/right element but instead clear past it you can add a `.clear` class to the element. Eg:
+> If you need to make an element to not flow around an aligned left/right element but instead clear past it you can add a `.clear` class to the element. Eg:
 > 
 > ```
 > > Example blockquote
 > {:.clear}
 > ```
+{:.note}
 
 **Aligned left and `.thumb` width:**
 
@@ -231,7 +264,8 @@ And some another reference[^another] in following text. This[^example] reference
 
     ![](/assets/45-0-1448484425.jpg){:.thumb .center}
 
-> **Note:** by default images will be aligned center anyway, if no alignment specified.
+> By default images will be aligned center anyway, if no alignment specified.
+{:.note}
 
 **Inline with custom width and caption:**
 
@@ -269,7 +303,8 @@ And some another reference[^another] in following text. This[^example] reference
     - Sub-item
 ```
 
-> **Tip:** alternatively `*` or `+` can be used as unordered list characters instead of `-`.
+> Alternatively `*` or `+` can be used as unordered list characters instead of `-`.
+{:.tip}
 
 **Ordered list with sub-items:**
 
@@ -287,12 +322,13 @@ And some another reference[^another] in following text. This[^example] reference
     1. Sub-item
 ```
 
-> **Tip:** if you'd like to begin an ordered list at a different starting number then prefix the list with `{:start="<number>"}`, like so:
+> If you'd like to begin an ordered list at a different starting number then prefix the list with `{:start="<number>"}`, like so:
 >   ```
 >   {:start="8"}
 >   8. Item
 >   9. Item
 >   ```
+{:.tip}
 
 **Adding multi-line breaks for a single list item:**
 - Item<br/>
@@ -309,7 +345,7 @@ Second line of same list item
 We can insert empty lines, too
 ```
 
-> **Note:** such line breaks aren't rendered correctly if the list is inside a [spoiler element](#spoiler-elements). Use `<br/>` instead of `\` if inside a spoiler element.
+> Such line breaks aren't rendered correctly if the list is inside a [spoiler element](#spoiler-elements). Use `<br/>` instead of `\` if inside a spoiler element.
 {:.important}
 
 **Split style with `.split` class:**
@@ -356,9 +392,10 @@ These are intended for category/quasi-category pages which have related tags or 
 {:.index}
 ```
 
-> **Note:** the `.index` class automatically uses split styling without the need for an additional class.
+> The `.index` class automatically uses split styling without the need for an additional class.
+{:.note}
 
-> **Note:** it's also recommended for the `.index` lists to use h2 headings (`##`) since if using h3 (`###`) Jekyll's table of contents list doesn't correctly pick up on the heading directly following the list, affecting the table of contents hierarchy.
+> It's also recommended for the `.index` lists to use h2 headings (`##`) since if using h3 (`###`) Jekyll's table of contents list doesn't correctly pick up on the heading directly following the list, affecting the table of contents hierarchy.
 {:.important}
 
 **Auto-generated index for category pages:**
@@ -371,9 +408,11 @@ To show all pages of a given tag we can use the `index-autolist` include like th
     {% include index-autolist tag="Infinite Heaven" %}
     {% endraw %}
 
-> **Tip:** for a more discreet list size you can add a `.small` class to the end of the include (`{% raw %}{% include ... %}{:.small}{% endraw %}`) to decrease the font size.
+> For a more discreet list size you can add a `.small` class to the end of the include (`{% raw %}{% include ... %}{:.small}{% endraw %}`) to decrease the font size.
+{:.tip}
 
-> **Tip:** for tag indexes you can also add `heading="alpha"` within the Jekyll include line to change the heading of a list to 'Alphabetical' instead of 'Related pages'.
+> For tag indexes you can also add `heading="alpha"` within the Jekyll include line to change the heading of a list to 'Alphabetical' instead of 'Related pages'.
+{:.tip}
 
 **Auto-generated index for multi-level section pages:**
 
@@ -385,7 +424,8 @@ For multi-level path pages (eg: `/Example_Page/Second_Level/`), where we want a 
     {% include index-autolist type="section" %}
     {% endraw %}
 
-> **Note:** nothing will appear in this example list since this page doesn't have a multi-level path with child pages. Also unlike the tag index the content of section indexes is generated by Javascript.
+> Nothing will appear in this example list since this page doesn't have a multi-level path with child pages. Also unlike the tag index the content of section indexes is generated by Javascript.
+{:.note}
 
 {% include spoiler-end %}
 
@@ -449,7 +489,8 @@ For multi-level path pages (eg: `/Example_Page/Second_Level/`), where we want a 
 | First row text<br/>Another line  | `Code example {`<br/>`Another line`<br/>`}`  | First row text    |
 ```
 
-> **Note:** manual line breaks within table cells have to use the HTML `<br/>` line break. Empty new lines can be made by doubling the line breaks (`<br/><br/>`).
+> Manual line breaks within table cells have to use the HTML `<br/>` line break. Empty new lines can be made by doubling the line breaks (`<br/><br/>`).
+{:.note}
 
 **Stretched:**
 
@@ -461,7 +502,8 @@ For multi-level path pages (eg: `/Example_Page/Second_Level/`), where we want a 
 {:.stretch}
 ```
 
-> **Note:** this class can be applied to a table to force it to expand to the page width. Keep in mind this prevents any horizontal scrollbar at narrower browser widths if there are too many table columns, so use thoughtfully.
+> This class can be applied to a table to force it to expand to the page width. Keep in mind this prevents any horizontal scrollbar at narrower browser widths if there are too many table columns, so use thoughtfully.
+{:.note}
 
 {% include spoiler-end %}
 
@@ -488,7 +530,8 @@ Floating sidebar for program/tool/script information.
 ```
 {:.clear}
 
-> **Note:** place the include line before the opening paragraphs so text properly flows around it.
+> Place the include line before the opening paragraphs so text properly flows around it.
+{:.note}
 
 {% include spoiler-end %}
 
@@ -520,7 +563,7 @@ It's best to only use spoilers for secondary information that would otherwise ta
     {% include spoiler-end %}
     {% endraw %}
 
-> **Note:** always leave an empty line after the `spoiler-start` line.
+> Always leave an empty line after the `spoiler-start` line.
 {:.important}
 
 **With custom title:**
@@ -541,11 +584,12 @@ It's best to only use spoilers for secondary information that would otherwise ta
     {% include spoiler-end %}
     {% endraw %}
 
-> **Tip:** anything can be added between the `spoiler-start` and `spoiler-end`. Multiple lines, elements, etc.
+> Anything can be added between the `spoiler-start` and `spoiler-end`. Multiple lines, elements, etc.
+{:.tip}
 
 **With important class**
 
-{% include spoiler-start title="Draw attention" %}
+{% include spoiler-start %}
 
 Something relevant.
 
@@ -553,7 +597,7 @@ Something relevant.
 {:.important}
 
     {% raw %}
-    {% include spoiler-start title="Draw attention" %}
+    {% include spoiler-start %}
 
     Something relevant.
 
@@ -587,12 +631,14 @@ Some other text
     {% include spoiler-end %}
     {% endraw %}
 
-> **Note:** nested spoilers are best avoided unless there's a good reason for them but they're demonstrated here to show it's possible.
+> Nested spoilers are best avoided unless there's a good reason for them but they're demonstrated here to show it's possible.
+{:.note}
 
-> **Note:** spoilers within other types of elements (like within tables and list items) aren't supported.
+> Spoilers within other types of elements (like within tables and list items) aren't supported.
 {:.important}
 
-> **Note:** any list within a spoiler element that has a code block (wrapped in ```` ``` ````) in it beginning with a `<` character will cause the everything past that point to render incorrectly. In such a case you can prefix a non-breaking space character (alt+255) to resolve this issue (` <`).
+> Any list within a spoiler element that has a code block (wrapped in ```` ``` ````) in it beginning with a `<` character will cause the everything past that point to render incorrectly. In such a case you can prefix a non-breaking space character (alt+255) to resolve this issue (` <`).
+{:.note}
 
 {% include spoiler-end %}
 
@@ -608,9 +654,10 @@ Some other text
 
     {% raw %}{% include video url="/assets/VideoGimmick01.webm" %}{% endraw %}
 
-> **Note:** use the URL of the video for the `url` value. Here showing a video hosted on the wiki itself so using the root path format, like for images.
+> Use the URL of the video for the `url` value. Here showing a video hosted on the wiki itself so using the root path format, like for images.
+{:.note}
 
-> **Note:** video embeds are best avoided being placed within lists. It breaks the formatting of subsquent list items. Placing them around regular paragraph text is fine though.
+> Video embeds are best avoided being placed within lists. It breaks the formatting of subsquent list items. Placing them around regular paragraph text is fine though.
 {:.important}
 
 **Changing width and placement:**
@@ -621,7 +668,8 @@ Similiar to the images section we can use classes to change the width/position. 
 
     {% raw %}{% include video url="/assets/VideoGimmick01.webm" %}{:.thumb}{% endraw %}
 
-> **Note:** changing size via `width=""` isn't supported for videos.
+> Changing size via `width=""` isn't supported for videos.
+{:.note}
 
 **Adding a caption:**
 
@@ -635,9 +683,11 @@ Similiar to the images section we can use classes to change the width/position. 
 
     {% raw %}{% include youtube id="pHjgbENgnvA" %}{% endraw %}
 
-> **Note:** use the ID of the video for the `id` value.
+> Use the ID of the video for the `id` value.
+{:.note}
 
-> **Tip:** like the native video file embeds the Youtube embeds support adding the same classes as above and also captions.
+> Like the native video file embeds the Youtube embeds support adding the same classes as above and also captions.
+{:.tip}
 
 **Vimeo embeds:**
 
@@ -645,9 +695,11 @@ Similiar to the images section we can use classes to change the width/position. 
 
     {% raw %}{% include vimeo id="123281253" %}{% endraw %}
 
-> **Note:** use the ID of the video for the `id` value.
+> Use the ID of the video for the `id` value.
+{:.note}
 
-> **Tip:** like the native video file embeds the Vimeo embeds support adding the same classes as above and also captions.
+> Like the native video file embeds the Vimeo embeds support adding the same classes as above and also captions.
+{:.tip}
 
 {% include spoiler-end %}
 

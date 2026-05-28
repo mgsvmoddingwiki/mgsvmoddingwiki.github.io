@@ -20,7 +20,7 @@ The purpose of this article is to provide installation steps, notes about the mo
 
 {% include youtube id="pHjgbENgnvA" caption="daften_23's tutorial on Snakebite and Infinite Heaven Installation" %}
 
-> **Note:** the video above was made prior to [IHHook](https://www.nexusmods.com/metalgearsolidvtpp/mods/1226) being split off into a separate download. When installing Infinite Heaven via Snakebite made sure to also install IHHook or the GUI won't load.
+> The video above was made prior to [IHHook](https://www.nexusmods.com/metalgearsolidvtpp/mods/1226) being split off into a separate download. When installing Infinite Heaven via Snakebite make sure to also install IHHook or the GUI won't load.
 {:.important}
 
 **Text version:**
@@ -68,12 +68,13 @@ Either find and restore your original game `00.dat`/`01.dat` backup or revalidat
 - Right click on the game in steam library, choose properties from bottom of menu, local files tab, verify integrity of game cache button.<br/>
     - Or paste this to File Explorer or your browser [<steam://validate/287700>](<steam://validate/287700>)
 
-> **Note:** If it gets stuck at 0% for more than a few minutes Steam is being
+> If it gets stuck at 0% for more than a few minutes Steam is being
 stupid, validate one of the Valve games first, Half Life 2, Portal, etc, then try
 validating MGSV again.
 > 
 > It should say 1 or two files need to be redownloaded, so go to steam
 downloads and make sure that is happening.
+{:.note}
 
 ### Downloading Infinite Heaven and IHHook
 
@@ -109,9 +110,10 @@ downloads and make sure that is happening.
 ---
 
 > **Troubleshooting:** if experiencing issues refer to the `Troubleshooting.txt` found in the `docs` directory of the Infinite Heaven zip you downloaded, or the [Troubleshooting section](#troubleshooting) further below on this page.
-{:.important}
+{:.tip}
 
 > **Online/multiplayer:** all settings are reset to off on doing a FOB mission. It's recommended to play offline while the mod is installed. Snakebite mod manager allows easy toggling of mods.
+{:.note}
 
 ---
 
@@ -123,7 +125,8 @@ For the full and up-to-date documentation of features, options and notes check o
 
 Also check out TinManTex's [Youtube playlist](https://www.youtube.com/playlist?list=PLSKlVTXYh6F_fmq0u9UmN2XTnfdfcHKJF) where they demonstrate many of the features and options of Infinite Heaven.
 
-> **Note:** if Infinite Heaven was not installed correctly the in-game menu will not appear while in the ACC.
+> If Infinite Heaven was not installed correctly the in-game menu will not appear while in the ACC.
+{:.note}
 
 ---
 
@@ -139,7 +142,8 @@ You can also convert many mods to Snakebite yourself either by trying the *Insta
 
 {% include youtube id="tYPi_kj3F8g" %}
 
-> **Tip:** if you want to manually check to see if a mod conflicts unzip the Infinite Heaven `.mgsv` file with a zip tool of your choice and check to see if any of the files match files in the other mod.
+> If you want to manually check to see if a mod conflicts unzip the Infinite Heaven `.mgsv` file with a zip tool of your choice and check to see if any of the files match files in the other mod.
+{:.tip}
 
 ---
 
@@ -178,7 +182,8 @@ For other issues can you please provide the following files to help me test:
 
     - The entire `MGS_TPP\mod` directory (as this contains the `ih_save` as well as debug logs).
 
-> **Tip:** if you need a place to upload [mega.co.nz](https://mega.co.nz) works well, as does Dropbox. You can message me the link if you wish.
+> If you need a place to upload [mega.co.nz](https://mega.co.nz) works well, as does Dropbox. You can message me the link if you wish.
+{:.tip}
 
 {% include spoiler-end %}
 
@@ -210,7 +215,8 @@ After you have done so there's a couple of things you can try:
 - **Install Infinite Heaven only.**
     - Test again to see if the issue still occurs.
 
-> **Note:** if the game save is in-mission and not in ACC you may need to Abort to ACC from title (see above).
+> If the game save is in-mission and not in ACC you may need to Abort to ACC from title (see above).
+{:.note}
 
 ---
 

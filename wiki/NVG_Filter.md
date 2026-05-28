@@ -26,7 +26,8 @@ You have several approaches:
 
 #### Entity properties
 
-<p class="iconed icon-sidebar icon-lightbulb">Need examples!</p>
+> Need examples!
+{:.needs-revision}
 
 Properties are defined in `chunk0/Assets/tpp/pack/collectible/common/col_common_tpp_fpkd/Assets/tpp/level_asset/weapon/NightVisions.fox2`
 
