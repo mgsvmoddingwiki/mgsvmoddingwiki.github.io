@@ -58,7 +58,9 @@ Example:
 
 
 ## `.fnt` (Font)
-*This section is TBA (To Be Added)*.
+
+> *This section is TBA (To Be Added)*.
+{:.needs-revision}
 
 ## Tip
 Some display text properties are stored in `.fox2` files, which can be found in `\Assets\tpp\pack\ui\ui_resident_data_fpkd\Assets\tpp\ui\GraphAsset\Common\data`.
