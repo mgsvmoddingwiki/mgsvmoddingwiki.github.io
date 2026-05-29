@@ -58,15 +58,14 @@ counter-clockwise.
 | ------------------ | ------------------------- | ---------------------------------------------- |
 | Name string        | StrCode32 hash in decimal | Description and notes                          |
 | StandActNormal     | 496717012                 | Looking forward                                |
+| StandActIdleStill  | 1049359963                | Standing still, no acting                      |
+| StandActKick       | 2135364818                | Relaxed kick with a sound effect               |
+| TBA                | 3641544758                | Slow start, sneak into caution, left and right |
+| TBA                | 4293802043                | Attack box with rifle (10040)                  |
 | StandActWalkAround | 2277088634                | Stepping around                                |
 | StandActSmoking    | 2014502296                | Smoking                                        |
 | TBA                | 911690047                 | Sleeping in a bed                              |
-| TBA                | 4113090604                | This needs some testing                        |
-| TBA                | 3641544758                | Looking left and right, caution-like           |
-| StandActKick       | 2135364818                | Relaxed kick with a sound effect               |
-| StandActIdleStill  | 1049359963                | TBA                                            |
-| TBA                | 3641544758                | Slow start, sneak into caution, left and right |
-| TBA                | 4293802043                | TBA                                            |
+| TBA                | 4113090604                | Guy sleeping sitting                           |
 
 ### **Relaxed Stand Idle**
 
