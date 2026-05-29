@@ -168,7 +168,7 @@ This is a list of some animation act ids that can be used by SPCH files.
 | `3471431647`          | Wiping face                                                                             | `Sweat`                    |
 | `3935815178`          | Yawn                                                                                    | `Yawn`                     |
 | `1484142220`          | Sneeze (not used in vanilla .spch files)                                                | `Sneezing`                 |
-| `1081954141`          | Foot step (looking at feet while stepping in place a bit)                               | TBA                        |
+| `1081954141`          | Foot step (looking at feet while stepping in place a bit)                               | `Stamping`                        |
 | `1004728074`          | Cough (not used in vanilla .spch files)                                                 | `Coughing`                 |
 | `3632669033`          | Scratch head                                                                            | `ScratchHead`              |
 | `4066632199`          | Repositioning self by about half a meter and back, to the left                          | TBA                        |
@@ -191,13 +191,13 @@ This is a list of some animation act ids that can be used by SPCH files.
 | `584751270`           | Hitting the kneeling prisoner with the barrel of gun, then looks down at him            | TBA                        |
 | `3434724606`          | Hitting with barrel of rifle, prisoner standing on knees reacts                         | `AttackToHead`             |
 | `3982806036`          | Greeting with left hand raised up in the air                                            | `Greeting`                 |
-| `2573116818`          | Frustrated "damn\!" fist motion, caution-y                                              | TBA                        |
+| `2573116818`          | Frustrated "damn\!" fist motion, caution-y                                              | `Damn`                        |
 | `3249773322`          | Caution looking around                                                                  | TBA                        |
 | `393714603`           | Caution looking around, more exaggerated body movement, left and right                  | TBA                        |
 | `911835617`           | Moving curtain (not used in vanilla .spch files)                                        | `CurtainIn`                |
 | `500855846`           | Moving curtain (not used in vanilla .spch files)                                        | `CurtainOut`               |
 | `3672734274`          | Cautiony, looking behind and aggresively waving to people behind him                    | TBA                        |
-| `1155425596`          | Repositioning self, much more relaxed and tamer                                         | TBA                        |
+| `1155425596`          | Repositioning self, much more relaxed and tamer                                         | `Idly`                        |
 | `2267025732`          | Relaxed, resting gun on neck                                                            | `Relax`                    |
 | `767686818`           | Reacting to rain (not used in vanilla .spch files)                                      | `NoticeRain`               |
 | `2857040360`          | Looking at comrade hanging by fulton balloon (not used in vanilla .spch files)          | `DiscoveryFultonRecovered` |
