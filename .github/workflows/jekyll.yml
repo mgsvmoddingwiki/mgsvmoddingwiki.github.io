@@ -55,6 +55,15 @@ jobs:
         run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}" --config _config.yml,_config-github.yml
         env:
           JEKYLL_ENV: production
+        # These scripts are necessary to run via the workflow itself as the Ruby plugin Jekyll hook that executes them via local builds doesn't behave the same way when built via Github Actions
+      - name: Run search index build script
+        run: |
+          ./_scripts/build-search-indexes.ps1
+        shell: pwsh
+      - name: Run recent changes build script
+        run: |
+          ./_scripts/build-recent-changes.ps1
+        shell: pwsh
       - name: Upload artifact
         # Automatically uploads an artifact from the './_site' directory by default
         uses: actions/upload-pages-artifact@v3
