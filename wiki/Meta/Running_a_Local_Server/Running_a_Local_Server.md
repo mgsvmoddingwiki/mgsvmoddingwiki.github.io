@@ -33,6 +33,8 @@ Powershell is available in Linux packages but if you don't want to install it ju
 {% include spoiler-end %}
 {:.important}
 
+---
+
 ## Installing Jekyll and Ruby
 
 1. Download RubyInstaller from [here](https://rubyinstaller.org/downloads/). Select the *With Devkit* x64 version that's bolded.
@@ -41,12 +43,16 @@ Powershell is available in Linux packages but if you don't want to install it ju
 3. At the end of the installer you'll be prompted by default to install the dev components. Confirm and a CMD window will appear. Press `Enter` key to continue.
     - After it states `succeeded` you'll be prompted a second time to press `Enter`. This just exits the CMD window since it's already complete.
 
+---
+
 ## Installing the wiki dependencies
 
 1. Now open the local version of your wiki fork (if you're unclear where that is open Github Desktop then click *Show in Explorer*).
 2. Double-click the `install.bat` script in the root directory of your fork. This installs the required Jekyll dependencies for the local wiki fork and only has to be done once. It will take a moment before progress appears.
     > It's easier to distinguish file types by having file extensions visible in Windows File Explorer.
     {:.tip}
+
+---
 
 ## Running the local server
 
@@ -65,6 +71,8 @@ Now we're ready to run the server. Any time you'd like to run it just do the fol
 
 You can stop the local server running at any time by closing the CMD window you minimized, or by focusing the CMD window and pressing `Ctrl+C` (the 'cancel' command) twice to terminate the process.
 
+---
+
 ## Making changes
 
 You can make changes to the wiki as you would normally, by editing/adding/deleting files on your local fork via Windows Explorer.
@@ -78,5 +86,17 @@ You can then submit your changes back to the original wiki as per the [Github De
 > It takes a moment to rebuild for each change so there'll be a delay between the change(s) and when they'll appear. The changes should automatically appear in the browser without requiring a refresh, once they've been built and are ready.
 {:.note}
 
-> You can check what's happening by viewing the CMD window while the local server is running.
-{:.tip}
+---
+
+## Troubleshooting
+
+- If you updated your fork of the repo to sync to the upstream version and aren't seeing the updated changes try hard reloading your browser cache (typically with the hotkey `Ctrl+Shift+R` or in some browsers holding `Shift` and clicking the reload button).
+
+- If you've made a change to something that affects the search results or a section sidebar tree a rebuild of the search index files is necessary, if you need to see those changes (eg: if you've deleted a page or changed its tag/title and wondering why it's not updating in the search/sidebar).
+    
+    - This requires **fully** exiting the local server 'run' script and relaunching it and selecting option 2 (full build) when prompted. After it's built once you can exit the 'run' script again and go back to using the incremental build (option 1).
+        
+    > The reason this is needed is because those particular build scripts only get triggered on a fresh, complete build (via a Jekyll hook in the Ruby plugin) and not on just a full build per se.\
+    \
+    Ie: even if you're using option 2 of the run script only the first build will run the scripts but not on subsequently detected changes even though Jekyll is still rebuilding the rest of the site.
+    {:.note}

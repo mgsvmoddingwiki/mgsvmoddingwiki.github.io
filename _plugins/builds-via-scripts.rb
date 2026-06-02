@@ -2,7 +2,7 @@ module BuildsViaScripts
     def self.process(site, payload)
         return if @processed
 
-        scripts = ["./_scripts/build-search-indexes.ps1", "./_scripts/build-recent-changes.ps1"]
+        scripts = ["./_scripts/build-search-indexes.ps1", "./_scripts/build-recent-changes.ps1", "./_scripts/copy-includes-for-js.ps1"]
 
         scripts.each do |script|
             success = system "powershell -ep Bypass #{script}" # `powershell` rather than `pwsh` prefix to support older versions (eg: on W10)

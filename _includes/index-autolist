@@ -50,22 +50,22 @@
     <li>
         {% if include.heading == "alpha" %}<h2 id="alphabetical">Alphabetical{% else %}<h2 id="related-pages">Related pages{% endif %}</h2>
         <ul>
-        {% for input_tag in include.tag %}
-            {% for page in site.pages %}
-                {% for tag in page.tags %}
-                    {% comment Case insensitive comparison for when tag differences exist like `Ui` vs `UI` %}{% endcomment %}
-                    {% assign tag_lower = tag | downcase %}
-                    {% assign input_tag_lower = input_tag | downcase %}
-                    {% assign title_lower = page.title | downcase %}
-                    {% if tag_lower == input_tag_lower %}
-                        {% if input_tag_lower == title_lower %}
+        {%- for input_tag in include.tag -%}
+            {%- for page in site.pages -%}
+                {%- for tag in page.tags -%}
+                    {%- comment Case insensitive comparison for when tag differences exist like `Ui` vs `UI` -%}{%- endcomment -%}
+                    {%- assign tag_lower = tag | downcase -%}
+                    {%- assign input_tag_lower = input_tag | downcase -%}
+                    {%- assign title_lower = page.title | downcase -%}
+                    {%- if tag_lower == input_tag_lower -%}
+                        {%- if input_tag_lower == title_lower -%}
                         {% else %}
                         <li><a href="{{ page.url }}">{{ page.title }}</a></li>
-                        {% endif %}
-                    {% endif %}
-                {% endfor %}
-            {% endfor %}
-        {% endfor %}
+                        {%- endif -%}
+                    {%- endif -%}
+                {%- endfor -%}
+            {%- endfor -%}
+        {%- endfor -%}
         </ul>
     </li>
 </ul>
