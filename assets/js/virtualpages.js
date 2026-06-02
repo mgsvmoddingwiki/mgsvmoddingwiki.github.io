@@ -4,6 +4,7 @@ is_wiki_page: false
 ---
 
 import * as func from './functions.js';
+import { searchIndex } from './searchindex.js';
 import { virtualIndex } from './virtualindex.js';
 import { mobileMainMenuToggle } from './general.js';
 import { resetAll as resetSearch } from './searchdata.js';
@@ -115,17 +116,16 @@ if (isVirtualPage) {
     }
 
     if (autoIndexAllTags) {
-        filterAllUniqueTags().then(tagList => {
-            const ul = autoIndexAllTags.querySelector('ul');
-            ul.innerHTML = '';
-            tagList.forEach((tag) => {
-                let li = document.createElement('li'),
-                    link = document.createElement('a');
-                setTagLink(link, tag);
-                link.textContent = tag;
-                li.appendChild(link)
-                ul.appendChild(li);
-            });
+        const tagList = filterAllUniqueTags(),
+              ul = autoIndexAllTags.querySelector('ul');
+        ul.innerHTML = '';
+        tagList.forEach((tag) => {
+            let li = document.createElement('li'),
+                link = document.createElement('a');
+            setTagLink(link, tag);
+            link.textContent = tag;
+            li.appendChild(link)
+            ul.appendChild(li);
         });
     }
 
@@ -156,8 +156,7 @@ if (isVirtualPage) {
     }
 }
 
-async function filterAllUniqueTags() {
-    const { searchIndex } = await import('./searchindex.js');
+function filterAllUniqueTags() {
     let foo = searchIndex.map(({ tags }) => tags).flat(); // create new array based on sub-arrays, then concatenate
     // Boolean filter returns only truthy values (avoiding undefined tags)
     let unique = foo.filter(Boolean).reduce(function (acc, curVal) {
@@ -171,18 +170,57 @@ async function filterAllUniqueTags() {
     return unique.sort()
 }
 
+async function parseMarkdown(item) {
+    const liquidMod = await import('https://cdn.jsdelivr.net/npm/liquidjs@10.27.0/+esm'),
+          { default: markdownIt } = await import('https://cdn.jsdelivr.net/npm/markdown-it@14.0.0/+esm'),
+          { Liquid, Hash, toPromise } = liquidMod;
 
-async function fetchFile(filePath) {
-    const { default: markdownIt } = await import('https://cdn.jsdelivr.net/npm/markdown-it@14.0.0/+esm');
-    const md = markdownIt(
-        {
-            html: true // enable HTML parsing from input, as otherwise Liquid includes don't reliably get replaced via `preParse()`
-        });
+    const md = markdownIt({
+        html: true
+    });
 
+    const ljs = new Liquid({
+        root: '/assets/js/js-includes/'
+    });
+
+    ljs.registerTag('include', {
+        parse: function(tagToken) {
+            const raw = tagToken.args || ''; // filename + any args
+
+            // It's more straightforward using regex for this split
+            const m  = /^\s*([^\s]+)([\s\S]*)$/.exec(raw || '') || [],
+                  filename = m[1] || '',
+                  args = (m[2] || '').trim();
+
+            this.filename = filename;
+            this.args = new Hash(args, true); // bool is to enable parsing of Jekyll-style include key-value pairs
+        },
+        render: async function(scope) {
+            const env = (typeof scope.getAll === 'function') ? scope.getAll() : scope,
+                  includeArgs = await toPromise(this.args.render(scope)); // output as plain key-value object
+
+            const context = Object.assign({}, env, {
+                page: env.page || {},
+                include: includeArgs
+            });
+
+            try {
+                return await this.liquid.renderFile(this.filename, context);
+            } catch (error) {
+                console.error(error)
+            }
+        }
+    });
+
+    // Fetching the body text from file instead of via the page's object in the index as it makes local server testing *much* more convenient. Otherwise every single change to the body text of a virtual page requires rebuilding the entire site from scratch (full termination of the run script and relaunch, can't merely use the full build option for this since the Jekyll hook that triggers the build scripts only executes on initial build not follow-ups).
+        // For the page context object passed to LiquidJS it'll be out-of-sync but the user is more likely to make body text changes not tag/title changes when testing locally.
+        // For Github workflows none of this matters since the site gets a full build each time but it's painful when locally testing without doing this.
     Promise.all([
-        fetch(filePath).then(file => file.text())
-    ]).then(([textResponse]) => {
-        const result = md.render(preParse(textResponse));
+        fetch(item.filePath).then((file) => file.text())
+    ]).then(async ([text]) => {
+        // The `site.pages` here is just providing the full search index, in whatever state it is at this point. The only include that uses this context atm is the index-autolist's tag option but the large loop perf is horrendous with LiquidJS so it's almost useless providing the site context.
+        const liquidParsed = await ljs.parseAndRender(text, { site: { pages: searchIndex }, page: item });
+        const result = md.render(liquidParsed);
         contentWrapper.innerHTML = result;
         postParse(); // parse certain content prior to `stylePage()` that depends on other modules' parsing
         contentLoaded(true); // class detected by function that other modules listen with
@@ -191,8 +229,8 @@ async function fetchFile(filePath) {
 
 async function stylePage(item) {
     if (checkFileExists(item.filePath)) {
-        await fetchFile(item.filePath);
         console.clear(); // remove eg. any 404 link error messages generated on prior page
+        await parseMarkdown(item);
 
         pageHeading.textContent = item.title;
         document.title = item.title + ' | MGSV Modding Wiki';
@@ -376,43 +414,6 @@ function postParse() {
         // Unlike Jekyll method this doesn't check for duplicate heading titles to add a distinguishing counter
         heading.id = fragIdFormat(heading.textContent);
     });
-}
-
-function preParse(input) {
-    // Limited selection of Liquid includes to replace
-    let includes = [
-        {
-            name: 'indexAutoListSection',
-            orig: `{% raw %}{% include index-autolist type="section" %}{% endraw %}`,
-            repl: `<ul class="index section">
-                        <li>
-                            <h2 id="section-pages">Section pages</h2>
-                            <ul>
-                            </ul>
-                        </li>
-                    </ul>
-                    `
-        },
-        {
-            name: `spoilerStart`,
-            orig: `{% raw %}{% include spoiler-start %}{% endraw %}`,
-            repl: `<details class="spoiler">
-                    <summary class="content-button">
-                    Expand for more
-                    </summary>
-                    `
-        },
-        {
-            name: `spoilerEnd`,
-            orig: `{% raw %}{% include spoiler-end %}{% endraw %}`,
-            repl: `</details>`
-        }
-    ];
-    includes.forEach((include) => {
-        input = input.replaceAll(include.orig,include.repl.replace(/^\s+/gm, '')) // trim leading whitespace per line from replacement to avoid Markdown parsing as code block
-    });
-
-    return input
 }
 
 function defaultState(returningFromHistory) {
