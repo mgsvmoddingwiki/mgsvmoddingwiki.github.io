@@ -4,7 +4,7 @@ permalink: /Meta/Virtual_Pages/Formatting_Reference/
 tags: [Meta]
 ---
 
-This page covers formatting for [Virtual Pages](/Meta/Virtual_Pages/) and the differences to the [regular syntax](/Meta/Formatting_Reference/). The differences mostly affect tables syntax and lack of custom classes. Most Markdown formatting is identical though.
+This page covers formatting for [Virtual Pages](/Meta/Virtual_Pages/) and the differences to the [regular syntax](/Meta/Formatting_Reference/).
 
 Click the spoiler labels to show each section.
 
@@ -12,7 +12,7 @@ Click the spoiler labels to show each section.
 
 ## Headings
 
-Headings are identical to the [regular syntax](/Meta/Formatting_Reference/#headings).
+Headings share the [regular syntax](/Meta/Formatting_Reference/#headings).
 
 > Small thing to keep in mind is making sure the first heading on the page is higher hierarchy than any the second heading (if there is one), since the Javascript-based table of contents generation for virtual pages will fail otherwise.\
 \
@@ -23,7 +23,13 @@ Eg: h2 (`##`) followed by a h3 (`###`, or another h2) is fine, just not starting
 
 ## General
 
-General is the same as the [regular syntax](/Meta/Formatting_Reference/#lists), with the exception of lacking support for blockquote classes.
+General styling shares the [regular syntax](/Meta/Formatting_Reference/#lists), with the following differences:
+
+> Blockquote classes don't get applied if the blockquote is within any list item (even if only one level deep).
+{:.important}
+
+> Code syntax highlighting isn't supported in virtual pages currently.
+{:.note}
 
 ---
 
@@ -35,24 +41,35 @@ Footnotes are unsupported in virtual pages.
 
 ## Images
 
-Unlike the [regular syntax](/Meta/Formatting_Reference/#images) there's no support for scaling the images smaller or aligning them to the left/right. So all images will appear their full width and centered.
+Images share the [regular syntax](/Meta/Formatting_Reference/#images), with the following caveat:
 
-{% include spoiler-start %}
-
-![Caption text](/assets/45-0-1448484425.jpg)
-
-    ![Caption text](/assets/45-0-1448484425.jpg)
-
-> As you can see captions are still supported.
-{:.tip}
-
-{% include spoiler-end %}
+> Unlike the Jekyll-based Kramdown parsing of images any filenames containing spaces have to be manually escaped in virtual pages, using `%20` in place of any space character.\
+\
+Eg: `![](/assets/Example%20with%20spaces.jpg)` instead of `![](/assets/Example with spaces.jpg)`.
+{:.important}
 
 ---
 
 ## Lists
 
-Lists share the same syntax as the [regular syntax](/Meta/Formatting_Reference/#lists), with the exception of lacking a `{% raw %}{:.split}{% endraw %}` class feature.
+Lists share the [regular syntax](/Meta/Formatting_Reference/#lists), with the following differences:
+
+> Any nested lists where you want to add a class to the outermost list you need to add a single empty new line between the end of the list and the class, instead of the class being flush beneath the last item. Eg:
+> ```
+> - Parent item
+>    - Child item
+> - Parent item
+>     - Child item
+>
+> {:.split}
+> ```
+{:.note}
+
+> No support for starting an ordered list from a different number (ie: `{:start="<number>"}` is unsupported).
+{:.note}
+
+> Line breaks of list items within spoiler elements **don't** require using `<br/>` (though these are still supported). Instead you can use the typical `\` that would be used outside spoiler elements.
+{:.note}
 
 ---
 
@@ -62,11 +79,14 @@ Lists share the same syntax as the [regular syntax](/Meta/Formatting_Reference/#
 
 **Unique split style with headings using .index class:**
 
-Unsupported in virtual pages.
+Same as [regular syntax](/Meta/Formatting_Reference/#index-lists-incl-auto-generated), with the following caveat:
+
+> As noted in the above [lists](#lists) section caveats you'll need to add the `{:.index}` line with a single empty new line above it, between the end of the last list item and the class line, or else on virtual pages the class won't get applied to the root parent list.
+{:.note}
 
 **Auto-generated index for category pages:**
 
-Same syntax as [regular](/Meta/Formatting_Reference/#index-lists-incl-auto-generated).
+Same as [regular syntax](/Meta/Formatting_Reference/#index-lists-incl-auto-generated).
 
 > **Important:** it's not recommended using this tag-based index include in virtual pages as the LiquidJS parser used for virtual pages struggles with performance of large Liquid loops, causing multi-second page load hitches.<br/>
 <br/>
@@ -92,9 +112,7 @@ This can be used to auto populate a list of direct child pages of a virtual page
 
 ## Tables
 
-Tables differ in their syntax compared to the [regular formatting](/Meta/Formatting_Reference/#tables), in that they *always require* headings (even if they're empty) in order for the entire table to be rendered.
-
-Also the `{% raw %}{:.stretch}{% endraw %}` class feature is unsupported.
+Tables differ in their syntax compared to the [regular formatting](/Meta/Formatting_Reference/#tables), in that they *always require* headings (even if they're empty) in order for the entire table to be rendered. Also a difference in using the `.stretch` class.
 
 {% include spoiler-start %}
 
@@ -124,31 +142,47 @@ So for the **Basic** heading on that linked page instead of being headerless it 
 | Second row text | Second row text | Second row text |
 ```
 
+**Stretched:**
+
+| First row text | First row text | First row text |
+{:.stretch}
+
+```
+| | | |
+|-|-|-|
+| First row text | First row text | First row text |
+
+{:.stretch}
+```
+
+> The stretch class only works if adding an empty new line between the end of the last table cell and the class line, similar to the caveat for adding classes to [lists](#lists) in virtual pages.
+{:.note}
+
 {% include spoiler-end %}
 
 ---
 
 ## Infobox
 
-Infobox shares same syntax as the [regular syntax](/Meta/Formatting_Reference/#infobox).
+Infobox shares the [regular syntax](/Meta/Formatting_Reference/#infobox).
 
 ---
 
 ## Spoiler elements
 
-Spoiler elements share same syntax as the [regular syntax](/Meta/Formatting_Reference/#spoiler-elements).
+Spoiler elements share the [regular syntax](/Meta/Formatting_Reference/#spoiler-elements).
 
 ---
 
 ## Videos
 
-Videos share same syntax as the [regular syntax](/Meta/Formatting_Reference/#videos) with the exeption of lacking classes to change their size/position/caption.
+Videos share the [regular syntax](/Meta/Formatting_Reference/#videos), with the exeption of not supporting adding classes/attributes to change their size/position (so they'll always be full width).
 
 ---
 
 ## Download button
 
-Download button shares same syntax as the [regular syntax](/Meta/Formatting_Reference/#download-button).
+Download buttons share the [regular syntax](/Meta/Formatting_Reference/#download-button).
 
 ---
 
