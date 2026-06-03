@@ -20,8 +20,8 @@ To the reader the pages appear almost identical but under the hood there are som
 
 - Virtual pages require a single 'real', Jekyll-based page to serve as the root basis for all child virtual pages. Eg: the [Entity Reference](/Entity_Reference) page is a real page, while all its child pages are virtual.
 - The URLs have a `/?/` following the real page basis. Such as `/Entity_Reference/?/Fox/`.
-- Virtual pages use a different and more limited kind of Markdown formatting (CommonMark/Github Flavored Markdown) than the version Jekyll uses (Kramdown). This means less options for content styling and some code differences.
-- Page metadata supports fewer values (eg: no redirection support). The metadata block is also formatted differently to avoid Jekyll parsing it.
+- Virtual pages use a different kind of Markdown formatting (CommonMark/Github Flavored Markdown) than the version Jekyll uses (Kramdown). Most styling features remain the same but with some code differences and a few unsupported features.
+- Page metadata doesn't support page redirects. The metadata block is also formatted differently to avoid Jekyll parsing it.
 - Page files use a `.txt` extension rather than `.md` (due to Jekyll seemingly spending time reading `.md` files even if they lack a Jekyll metadata block).
 
 Because virtual pages differ enough from regular pages in these ways this section has its [own Formatting Reference](/Meta/Virtual_Pages/Formatting_Reference) and [Metadata/Organization](/Meta/Virtual_Pages/Metadata_Organization/) pages which list the differences.

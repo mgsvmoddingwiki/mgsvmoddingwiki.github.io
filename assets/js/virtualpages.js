@@ -10,18 +10,20 @@ import { mobileMainMenuToggle } from './general.js';
 import { resetAll as resetSearch } from './searchdata.js';
 
 export const isVirtualPage = checkForVirtualPage();
-var {curUrl, curUrlRoot} = func.getPageUrls(isVirtualPage),
-    pageWrapper = body.querySelector('.git-wiki-page'),
+const pageWrapper = body.querySelector('.git-wiki-page');
+let {curUrl, curUrlRoot} = func.getPageUrls(isVirtualPage),
+    contentWrapper,
+    pageHeading,
     pageObj;
 
 if (isVirtualPage) {
-    var contentWrapper = body.querySelector('#git-wiki-content'),
-        pageHeading = body.querySelector('h1.page-heading');
+    contentWrapper = body.querySelector('#git-wiki-content');
+    pageHeading = body.querySelector('h1.page-heading');
     defaultState();
 
     // Listen for prior history state data on back/forward navigation
     window.addEventListener('popstate', (e) => {
-        var stateObj = e.state;
+        const stateObj = e.state;
         if (stateObj == null) {
             defaultState(true);
         } else {
@@ -34,7 +36,7 @@ if (isVirtualPage) {
 
     body.addEventListener('click', (e) => {
         const tar = e.target;
-        var tarUrl = (tar.tagName == 'A') ? tar.getAttribute('href') : null; // reason for using `getAttribute` vs `.href` is latter resolves to full URL, including domain and protocol
+        let tarUrl = (tar.tagName == 'A') ? tar.getAttribute('href') : null; // reason for using `getAttribute` vs `.href` is latter resolves to full URL, including domain and protocol
         if ((tar.closest('.section-hierarchy-link') && !tar.closest('.root-page')) || (tar.closest('.index.section') && !tarUrl.startsWith('#'))) {
             if (tar.parentElement.classList.contains('section-hierarchy-link')) {
                 tarUrl = tar.parentElement.getAttribute('href');
@@ -65,7 +67,6 @@ if (isVirtualPage) {
             updateFromTarget(e, func.trimTrailFs(tarUrl) + '/');
             return
         }
-        e.stopPropagation();
     }, false);
 
     const searchInput = body.querySelector('#search-input');
@@ -86,7 +87,7 @@ if (isVirtualPage) {
 
     function updateFromTarget(event, targetUrl) {
         event.preventDefault();
-        var tarIndex = func.getIndexByValue(virtualIndex, 'url', targetUrl),
+        const tarIndex = func.getIndexByValue(virtualIndex, 'url', targetUrl),
         tarObj = virtualIndex[tarIndex];
         historyPush(tarObj);
         contentLoaded(false);
@@ -97,7 +98,7 @@ if (isVirtualPage) {
     }
 } else {
     // Tag and all pages auto index handling
-    var autoIndexTags = pageWrapper.querySelectorAll('.index.tags'),
+    const autoIndexTags = pageWrapper.querySelectorAll('.index.tags'),
         autoIndexAllPages = pageWrapper.querySelector('.index.all-pages'),
         autoIndexAllTags = pageWrapper.querySelector('.index.all-tags');
 
@@ -131,9 +132,9 @@ if (isVirtualPage) {
 
     function addItems(parentList, array) {
         parentList.classList.add('full-width');
-        var wrapper = document.createElement('li'),
-            ul = document.createElement('ul'),
-            heading = document.createElement('h2');
+        const wrapper = document.createElement('li'),
+              ul = document.createElement('ul'),
+              heading = document.createElement('h2');
 
         // Note: this heading actually represents all virtual pages but since they're all Entity Reference currently it uses that name (this may change in future if other virtual sections are added)
         heading.id = 'entity-reference';
@@ -143,12 +144,12 @@ if (isVirtualPage) {
         array.sort((a, b) => (a.title > b.title) ? 1: -1); // sort alphabetically by title key
 
         array.forEach((item) => {
-            let wrapper = document.createElement('li'),
-                link = document.createElement('a');
-            link.href = item.url;
-            link.textContent = item.title;
-            wrapper.appendChild(link);
-            ul.appendChild(wrapper);
+            const li = document.createElement('li'),
+                  link = document.createElement('a');
+            link.href = li.url;
+            link.textContent = li.title;
+            li.appendChild(link);
+            ul.appendChild(li);
         });
 
         wrapper.appendChild(ul);
@@ -173,10 +174,16 @@ function filterAllUniqueTags() {
 async function parseMarkdown(item) {
     const liquidMod = await import('https://cdn.jsdelivr.net/npm/liquidjs@10.27.0/+esm'),
           { default: markdownIt } = await import('https://cdn.jsdelivr.net/npm/markdown-it@14.0.0/+esm'),
+          { default: markdownItAttrs } = await import('https://cdn.jsdelivr.net/npm/markdown-it-attrs@5.0.0/+esm'),
           { Liquid, Hash, toPromise } = liquidMod;
 
     const md = markdownIt({
         html: true
+    });
+
+    md.use(markdownItAttrs, {
+        leftDelimiter: '{:', // use Kramdown style opening
+        rightDelimiter: '}'
     });
 
     const ljs = new Liquid({
@@ -205,7 +212,7 @@ async function parseMarkdown(item) {
             });
 
             try {
-                return await this.liquid.renderFile(this.filename, context);
+                return await this.liquid.renderFile(this.filename, context)
             } catch (error) {
                 console.error(error)
             }
@@ -229,8 +236,8 @@ async function parseMarkdown(item) {
 
 async function stylePage(item) {
     if (checkFileExists(item.filePath)) {
-        console.clear(); // remove eg. any 404 link error messages generated on prior page
         await parseMarkdown(item);
+        console.clear(); // remove eg. any 404 link error messages generated on prior page
 
         pageHeading.textContent = item.title;
         document.title = item.title + ' | MGSV Modding Wiki';
@@ -272,7 +279,7 @@ async function stylePage(item) {
         }
 
         function replaceLink(string) {
-            return string.replace(/\/master\/+wiki\/(.*)/gm, '/master' + item.filePath);
+            return string.replace(/\/master\/+wiki\/(.*)/gm, '/master' + item.filePath)
         }
 
         func.checkVp(generateToc);
@@ -286,10 +293,10 @@ function setTagLink(el, string) {
 // https://stackoverflow.com/a/498018
 function generateToc() {
     // Depth of hierarchy will be lowest heading element defined here
-    var headings = pageWrapper.querySelectorAll('h2, h3'),
-        tocWrapper = pageWrapper.querySelector('.toc-toggle'),
+    const tocWrapper = pageWrapper.querySelector('.toc-toggle'),
+          filler = document.createTextNode('.');
+    let headings = pageWrapper.querySelectorAll('h2, h3'),
         toc = tocWrapper.querySelector('#git-wiki-toc'),
-        filler = document.createTextNode('.'),
         result = document.createElement('div'),
         curDepth = 0;
     if (toc) {
@@ -309,28 +316,28 @@ function generateToc() {
         })
         headings = pageWrapper.querySelectorAll('.heading'); // now obtain list in document order
         headings.forEach((heading) => {
-            var li = document.createElement('li'),
-                link = document.createElement('a'),
-                depth = parseInt(heading.tagName.substring(1));
+            const item = document.createElement('li'),
+                  link = document.createElement('a'),
+                  depth = parseInt(heading.tagName.substring(1));
             link.textContent = heading.textContent;
             link.href = '#' + heading.id;
-            li.appendChild(link);
+            item.appendChild(link);
 
             if (depth > curDepth) {
                 // Deeper
-                var ol = document.createElement('ol');
-                ol.appendChild(li);
-                result.appendChild(ol);
-                result = li;
+                const list = document.createElement('ol');
+                list.appendChild(item);
+                result.appendChild(list);
+                result = item;
             } else if (depth < curDepth) {
                 // Shallower
                 let olArr = filterByOl(result);
-                olArr[curDepth - depth].appendChild(li);
-                result = li;
+                olArr[curDepth - depth].appendChild(item);
+                result = item;
             } else {
                 // Same level
-                result.parentNode.appendChild(li);
-                result = li;
+                result.parentNode.appendChild(item);
+                result = item;
             }
             curDepth = depth;
         });
@@ -346,7 +353,7 @@ function generateToc() {
     }
 
     function filterByOl(input) {
-        return filterArrayByObjAttr(parents(input), 'tagName', 'OL');
+        return filterArrayByObjAttr(parents(input), 'tagName', 'OL')
     }
 
     function filterArrayByObjAttr(array, key, attribute) {
@@ -424,7 +431,7 @@ function defaultState(returningFromHistory) {
             contentLoaded(true); // auto reveal root page content
         }
     } else {
-        var pageIndex = func.getIndexByValue(virtualIndex, 'url', curUrl);
+        const pageIndex = func.getIndexByValue(virtualIndex, 'url', curUrl);
         if (pageIndex != -1) {
             pageObj = virtualIndex[pageIndex];
             stylePage(pageObj, true);
@@ -433,7 +440,7 @@ function defaultState(returningFromHistory) {
 }
 
 function fragIdFormat(string) {
-    return string.replace(/[^0-9a-z]/gi,'-').toLowerCase(); // replace all non-alphanumeric characters
+    return string.replace(/[^0-9a-z]/gi,'-').toLowerCase() // replace all non-alphanumeric characters
 }
 
 function breadcrumbs(item) {
@@ -456,12 +463,12 @@ function breadcrumbs(item) {
     pageHeading.parentNode.insertBefore(wrapper, pageHeading);
 
     function splitBreadcrumbs(path) {
-        var paths = removeEmptyArrayItems(path.split('/'));
+        const paths = removeEmptyArrayItems(path.split('/'));
         const segments = paths.map((seg, i) => {
             return {
                 title: seg.replace('_',' ').replace('-',' '),
                 url: '/' + paths.slice(0, i + 1).join('/') + '/'
-            };
+            }
         });
         segments.unshift({
             title: 'Home',
@@ -476,7 +483,7 @@ function breadcrumbs(item) {
 
 function removeEmptyArrayItems(array) {
     let filtered = array.filter(function (item) {
-        return item != '';
+        return item != ''
     });
-    return filtered;
+    return filtered
 }
