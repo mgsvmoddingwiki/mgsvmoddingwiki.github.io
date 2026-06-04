@@ -168,8 +168,8 @@ if (isVirtualPage) {
 }
 
 function removeFragPseudoClass(el) {
-    prev = document.querySelector('.vp-frag-pseudo-target');
-    if (!el || (prev && prev !== el)) prev.classList.remove('vp-frag-pseudo-target')
+    const prev = document.querySelector('.vp-frag-pseudo-target');
+    if (!el || (prev && prev !== el)) prev.classList.remove('vp-frag-pseudo-target');
 }
 
 function applyFragPseudoTargeting() {
