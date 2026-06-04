@@ -10,10 +10,6 @@ Click the spoiler labels to show each section.
 
 ---
 
-```cpp
-Terrain : Fox.Core.TransformData 
-```
-
 ## Headings
 
 Headings share the [regular syntax](/Meta/Formatting_Reference/#headings).
