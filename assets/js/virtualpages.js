@@ -182,7 +182,10 @@ function applyFragPseudoTargeting() {
         return
     }
     const el = document.getElementById(id);
-    if (!el) return
+    if (!el) {
+        removeFragPseudoClass();
+        return
+    }
 
     const rect = func.getRect(el),
           y = window.scrollY + rect.top - targetTopSpacing;
