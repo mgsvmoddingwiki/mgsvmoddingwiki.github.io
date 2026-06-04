@@ -75,7 +75,8 @@ if (isVirtualPage) {
         // Internal links within page content
         if (tarUrl) { curUrl = func.getPageUrls(isVirtualPage).curUrl; } // update to current
         if (tar.closest('#' + contentWrapper.id) && tarUrl && tarUrl.startsWith(curUrlRoot)) {
-            updateFromTarget(e, func.trimTrailFs(tarUrl) + '/');
+            const [base, frag] = tarUrl.split('#');
+            updateFromTarget(e, func.trimTrailFs(base) + '/', frag);
             return
         }
     }, false);
@@ -96,12 +97,13 @@ if (isVirtualPage) {
         }
     });
 
-    function updateFromTarget(event, targetUrl) {
+    function updateFromTarget(event, targetUrl, frag) {
         event.preventDefault();
         const tarIndex = func.getIndexByValue(virtualIndex, 'url', targetUrl),
         tarObj = virtualIndex[tarIndex];
-        historyPush(tarObj);
+        historyPush(tarObj, frag);
         contentLoaded(false);
+        window.scrollTo(0,0); // scroll to top initially
         stylePage(tarObj);
         setCurPage(tarObj);
         resetSearch();
@@ -169,7 +171,7 @@ if (isVirtualPage) {
 
 function removeFragPseudoClass(el) {
     const prev = document.querySelector('.vp-frag-pseudo-target');
-    if (!el || (prev && prev !== el)) prev.classList.remove('vp-frag-pseudo-target');
+    if ((prev && !el) || (prev && prev !== el)) prev.classList.remove('vp-frag-pseudo-target');
 }
 
 function applyFragPseudoTargeting() {
@@ -411,8 +413,9 @@ function generateToc() {
     }
 }
 
-function historyPush(item) {
-    history.pushState(item, '', item.url); // middle value always remains empty
+function historyPush(item, frag) {
+    let url = frag ? `${item.url}#${frag}` : item.url;
+    history.pushState(item, '', url); // middle value always remains empty
 }
 
 function contentLoaded(state) {
