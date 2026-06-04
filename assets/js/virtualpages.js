@@ -10,8 +10,11 @@ import { mobileMainMenuToggle } from './general.js';
 import { resetAll as resetSearch } from './searchdata.js';
 
 export const isVirtualPage = checkForVirtualPage();
-const pageWrapper = body.querySelector('.git-wiki-page');
+const pageWrapper = body.querySelector('.git-wiki-page'),
+      cssStyle = getComputedStyle(body),
+      targetTopSpacing = parseInt(cssStyle.getPropertyValue('--spacing-target-top'));
 let {curUrl, curUrlRoot} = func.getPageUrls(isVirtualPage),
+    lastUrl = window.location.href,
     contentWrapper,
     pageHeading,
     pageObj;
@@ -23,6 +26,9 @@ if (isVirtualPage) {
 
     // Listen for prior history state data on back/forward navigation
     window.addEventListener('popstate', (e) => {
+        if (window.location.href.split('#')[0] === lastUrl.split('#')[0]) return // ignore frag ID only changes (so navigating between identifiers doesn't cause whole content reloads, losing the :target behavior)
+        lastUrl = window.location.href;
+
         const stateObj = e.state;
         if (stateObj == null) {
             defaultState(true);
@@ -32,6 +38,11 @@ if (isVirtualPage) {
             setCurPage(stateObj);
             resetSearch();
         }
+    });
+
+    window.addEventListener('hashchange', (e) => {
+        lastUrl = window.location.href;
+        applyFragPseudoTargeting();
     });
 
     body.addEventListener('click', (e) => {
@@ -94,7 +105,6 @@ if (isVirtualPage) {
         stylePage(tarObj);
         setCurPage(tarObj);
         resetSearch();
-        window.scrollTo(0,0);
     }
 } else {
     // Tag and all pages auto index handling
@@ -155,6 +165,28 @@ if (isVirtualPage) {
         wrapper.appendChild(ul);
         parentList.appendChild(wrapper);
     }
+}
+
+function applyFragPseudoTargeting() {
+    const id = window.location.hash.slice(1);
+    if (!id) {
+        window.scrollTo(0,0);
+        return
+    }
+    const el = document.getElementById(id);
+    if (!el) return
+
+    const rect = func.getRect(el),
+          y = window.scrollY + rect.top - targetTopSpacing,
+          prev = document.querySelector('.vp-frag-pseudo-target');
+    if (prev && prev !== el) prev.classList.remove('vp-frag-pseudo-target');
+
+    el.classList.add('vp-frag-pseudo-target');
+
+    window.scrollTo({
+        top: Math.max(0, Math.floor(y)),
+        behavior: 'auto'
+    });
 }
 
 function filterAllUniqueTags() {
@@ -232,13 +264,15 @@ async function parseMarkdown(item) {
         contentWrapper.innerHTML = result;
         postParse(); // parse certain content prior to `stylePage()` that depends on other modules' parsing
         contentLoaded(true); // class detected by function that other modules listen with
+
+        applyFragPseudoTargeting();
     });
 }
 
 async function stylePage(item) {
     if (checkFileExists(item.filePath)) {
         await parseMarkdown(item);
-        console.clear(); // remove eg. any 404 link error messages generated on prior page
+        // console.clear(); // remove eg. any 404 link error messages generated on prior page
 
         pageHeading.textContent = item.title;
         document.title = item.title + ' | MGSV Modding Wiki';

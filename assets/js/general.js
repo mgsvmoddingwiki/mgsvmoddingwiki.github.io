@@ -160,7 +160,7 @@ document.addEventListener('DOMContentLoaded',() => {
 
     // ---------------------- Image handling: lightbox ----------------------
     const cssStyle = getComputedStyle(body),
-          cssSpacing = Number(cssStyle.getPropertyValue('--spacing-lightbox').replace('px','')); // obtain variable from CSS, convert to integer
+          cssSpacing = parseInt(cssStyle.getPropertyValue('--spacing-lightbox'));
 
     func.checkVp(() => {
         const zoom = mediumZoom('[data-zoomable]', {
