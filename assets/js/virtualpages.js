@@ -158,8 +158,8 @@ if (isVirtualPage) {
         array.forEach((item) => {
             const li = document.createElement('li'),
                   link = document.createElement('a');
-            link.href = li.url;
-            link.textContent = li.title;
+            link.href = item.url;
+            link.textContent = item.title;
             li.appendChild(link);
             ul.appendChild(li);
         });
