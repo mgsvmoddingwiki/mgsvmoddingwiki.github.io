@@ -1,5 +1,12 @@
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ GLOBAL VARIABLES ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
+/* To allow JS to parse calc() set on this variable via getComputedStyle() */
+@property --spacing-target-top {
+    syntax: "<length>";
+    inherits: true;
+    initial-value: 0px;
+}
+
 :root {
     --width-sidebar: 280px;
     --height-mobile-header: 50px;
@@ -9,6 +16,7 @@
     --spacing-secondary: 15px;
     --spacing-minor: 5px;
     --spacing-lightbox: var(--spacing-primary);
+    --spacing-target-top: var(--spacing-primary);
     --border-width: 2px;
     --border-width-thin: 1px;
     --radius-primary: 5px;
@@ -397,7 +405,7 @@ li::marker,
 }
 
 :target {
-    scroll-margin-top: var(--spacing-primary); /* set distance that fragment identifier links should be from viewport top */
+    scroll-margin-top: var(--spacing-target-top); /* set distance that fragment identifier links should be from viewport top */
 }
 
 .hidden-generic {
@@ -1798,16 +1806,19 @@ h2.heading-with-frag-id .heading-frag-id-link {
 }
 
 /* Fragment link targets styling (makes it clearer which heading has been linked in scenarios where heading position on page can't align to top of viewport) */
-.heading-with-frag-id:target .heading-frag-id-link {
+.heading-with-frag-id:target .heading-frag-id-link,
+.heading-with-frag-id.vp-frag-pseudo-target .heading-frag-id-link {
     background: var(--color-accent);
     opacity: 1;
 }
 
-.heading-with-frag-id:target .heading-frag-id-link::before {
+.heading-with-frag-id:target .heading-frag-id-link::before,
+.heading-with-frag-id.vp-frag-pseudo-target .heading-frag-id-link::before {
     background: var(--color-accent-foreground);
 }
 
-.heading-with-frag-id:target .heading-frag-id-link:hover {
+.heading-with-frag-id:target .heading-frag-id-link:hover,
+.heading-with-frag-id.vp-frag-pseudo-target .heading-frag-id-link:hover {
     background: var(--color-accent-hover);
 }
 
@@ -3579,6 +3590,7 @@ footer {
 
     :root {
         --spacing-lightbox: var(--spacing-secondary);
+        --spacing-target-top: calc(var(--height-mobile-header) + var(--spacing-primary));
         --font-size-base: 15px;
     }
 
@@ -3586,10 +3598,6 @@ footer {
         margin-top: calc(30px + var(--height-mobile-header));
         padding-left: calc(var(--spacing-primary) * 2);
         padding-right: calc(var(--spacing-primary) * 2);
-    }
-
-    :target {
-        scroll-margin-top: calc(var(--height-mobile-header) + var(--spacing-primary));
     }
 
     .git-wiki-tools {
