@@ -10,6 +10,10 @@ Click the spoiler labels to show each section.
 
 ---
 
+```cpp
+Terrain : Fox.Core.TransformData 
+```
+
 ## Headings
 
 Headings share the [regular syntax](/Meta/Formatting_Reference/#headings).
@@ -28,7 +32,7 @@ General styling shares the [regular syntax](/Meta/Formatting_Reference/#lists), 
 > Blockquote classes don't get applied if the blockquote is within any list item (even if only one level deep).
 {:.important}
 
-> Code syntax highlighting isn't supported in virtual pages currently.
+> Minor code syntax highlighting differences due to a simpler parser used on virtual pages.
 {:.note}
 
 ---

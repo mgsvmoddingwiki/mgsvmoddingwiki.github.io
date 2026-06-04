@@ -158,10 +158,9 @@ if (isVirtualPage) {
 }
 
 function filterAllUniqueTags() {
-    let foo = searchIndex.map(({ tags }) => tags).flat(); // create new array based on sub-arrays, then concatenate
+    let foo = searchIndex.map(({ tags }) => tags).flat();
     // Boolean filter returns only truthy values (avoiding undefined tags)
     let unique = foo.filter(Boolean).reduce(function (acc, curVal) {
-        // Map entire array on-the-fly to lowercase for case insensitive string comparison.
         if (!acc.map(val => val.toLowerCase()).includes(curVal.toLowerCase())) {
         acc.push(curVal);
       }
@@ -175,16 +174,18 @@ async function parseMarkdown(item) {
     const liquidMod = await import('https://cdn.jsdelivr.net/npm/liquidjs@10.27.0/+esm'),
           { default: markdownIt } = await import('https://cdn.jsdelivr.net/npm/markdown-it@14.0.0/+esm'),
           { default: markdownItAttrs } = await import('https://cdn.jsdelivr.net/npm/markdown-it-attrs@5.0.0/+esm'),
+          { default: markdownItHighlightJs } = await import('https://cdn.jsdelivr.net/npm/markdown-it-highlightjs@4.3.0/+esm'),
           { Liquid, Hash, toPromise } = liquidMod;
 
     const md = markdownIt({
         html: true
-    });
+    })
+        .use(markdownItHighlightJs)
+        .use(markdownItAttrs, {
+            leftDelimiter: '{:', // use Kramdown style opening
+            rightDelimiter: '}'
+        })
 
-    md.use(markdownItAttrs, {
-        leftDelimiter: '{:', // use Kramdown style opening
-        rightDelimiter: '}'
-    });
 
     const ljs = new Liquid({
         root: '/assets/js/js-includes/'
