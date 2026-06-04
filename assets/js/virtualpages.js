@@ -167,9 +167,15 @@ if (isVirtualPage) {
     }
 }
 
+function removeFragPseudoClass(el) {
+    prev = document.querySelector('.vp-frag-pseudo-target');
+    if (!el || (prev && prev !== el)) prev.classList.remove('vp-frag-pseudo-target')
+}
+
 function applyFragPseudoTargeting() {
     const id = window.location.hash.slice(1);
     if (!id) {
+        removeFragPseudoClass();
         window.scrollTo(0,0);
         return
     }
@@ -177,10 +183,9 @@ function applyFragPseudoTargeting() {
     if (!el) return
 
     const rect = func.getRect(el),
-          y = window.scrollY + rect.top - targetTopSpacing,
-          prev = document.querySelector('.vp-frag-pseudo-target');
-    if (prev && prev !== el) prev.classList.remove('vp-frag-pseudo-target');
+          y = window.scrollY + rect.top - targetTopSpacing;
 
+    removeFragPseudoClass(el);
     el.classList.add('vp-frag-pseudo-target');
 
     window.scrollTo({
