@@ -281,12 +281,16 @@ table pre,
 }
 
 /* Links */
-a {
+a,
+a > code /* for inline code which is also linked */
+{
     color: var(--color-link);
 }
 
 a:hover,
-a:active {
+a:active,
+a:hover > code,
+a:active > code {
     color: var(--color-link-hover);
 }
 

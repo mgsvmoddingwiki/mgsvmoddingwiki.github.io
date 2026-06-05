@@ -80,6 +80,8 @@ function Generate-Index {
                         $name = $entry.Key
                         $value = $entry.Value
 
+                        if ($name -eq "redirect_to") { continue } # ignore 'redirect to' pages
+
                         if ($name -eq "title") {
                             $string = Parse-Title -Title $value -FallbackPath $file
                             $item | Add-Member -Name "title" -Value $string -Type NoteProperty
@@ -108,7 +110,7 @@ function Generate-Index {
                     }
 
                     # Add fallback values for missing keys
-                    if (!$item.PSObject.Properties['tags']) {
+                    if ($item.PSObject.Properties.Count -gt 0 -and !$item.PSObject.Properties['tags']) {
                         $item | Add-Member -Name "tags" -Value @() -Type NoteProperty
                     }
 
@@ -120,13 +122,17 @@ function Generate-Index {
                     }
 
                     # Add remaining keys
-                    $item | Add-Member -Name "content" -value $body -Type NoteProperty
+                    if ($item.PSObject.Properties.Count -gt 0) {
+                        $item | Add-Member -Name "content" -value $body -Type NoteProperty
+                    }
                     if ($IsVirtualPage) {
                         $item | Add-Member -Name "filePath" -value $filePath -Type NoteProperty
                         $item | Add-Member -Name "virtualPage" -value $true -Type NoteProperty
                     }
 
-                    $items.Add($item) | Out-Null
+                    if ($item.PSObject.Properties.Count -gt 0) {
+                        $items.Add($item) | Out-Null
+                    }
                 }
             }
         }
