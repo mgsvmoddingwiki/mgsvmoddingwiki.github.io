@@ -49,9 +49,10 @@ function Parse-Metadata {
     process {
         $metadata = @{}
         $lines = $MetaBlock -split "`n"
-        # Tag names of YAML arrays to handle
+        # Key names of YAML arrays to handle
         $arrayTagNames = [System.Collections.ArrayList]@(
             "tags"
+            "redirect_to"
         )
 
         for ($i = 0; $i -lt $lines.Count; $i++) {

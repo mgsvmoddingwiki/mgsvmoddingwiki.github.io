@@ -274,7 +274,7 @@ async function parseMarkdown(item) {
         const stub = func.checkStub(true);
         contentWrapper.innerHTML = result;
         if (stub) contentWrapper.prepend(stub);
-        postParse(); // parse certain content prior to `stylePage()` that depends on other modules' parsing
+        postParse();
         contentLoaded(true); // class detected by function that other modules listen with
 
         applyFragPseudoTargeting();
@@ -464,10 +464,21 @@ async function setCurPage(item) {
 
 function postParse() {
     // Add fragment identifiers to headings, since Markdown conversion lacks this feature
+    // Checks for dupe headings and adds counter, to match the way the Jekyll ToC gen handles it
     let headings = contentWrapper.querySelectorAll('h2, h3, h4');
+    const idMap = new Map();
     headings.forEach((heading) => {
-        // Unlike Jekyll method this doesn't check for duplicate heading titles to add a distinguishing counter
-        heading.id = fragIdFormat(heading.textContent);
+        const baseId = heading.textContent
+            .trim()
+            .toLowerCase()
+            .replace(/[^0-9a-z]/gi,'-') // replace all non-alphanumeric characters
+        if (idMap[baseId] === undefined) {
+            heading.id = baseId;
+            idMap[baseId] = 0;
+        } else {
+            idMap[baseId] += 1;
+            heading.id = `${baseId}-${idMap[baseId]}`;
+        }
     });
 }
 
@@ -485,10 +496,6 @@ function defaultState(returningFromHistory) {
             stylePage(pageObj, true);
         }
     }
-}
-
-function fragIdFormat(string) {
-    return string.replace(/[^0-9a-z]/gi,'-').toLowerCase() // replace all non-alphanumeric characters
 }
 
 function breadcrumbs(item) {

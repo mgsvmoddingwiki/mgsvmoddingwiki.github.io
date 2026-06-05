@@ -166,6 +166,9 @@ redirect_to:
     - /Page_Link_To_Redirect_To/
 ```
 
+> This is useful if redirecting from a Jekyll-based wiki page to a [virtual page](/Meta/Virtual_Pages/) (eg: if porting a guide), since virtual pages don't support redirection themselves.
+{:.tip}
+
 {% include spoiler-end %}
 
 ---
