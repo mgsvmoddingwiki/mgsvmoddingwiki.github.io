@@ -1,6 +1,7 @@
 <!--
 title: TppCombatLocatorDataBody
 permalink: /Entity_Reference/?/Tpp/GameKit/TppCombatLocatorDataBody/
+stub: true
 tags: [Tpp, GameKit, Reference]
 -->
 
@@ -15,6 +16,7 @@ TppCombatLocatorDataBody : Fox.Core.TransformDataBody
 ```
 
 TODO: Description
+
 
 
 

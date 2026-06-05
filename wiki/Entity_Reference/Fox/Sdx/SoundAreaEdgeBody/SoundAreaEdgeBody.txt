@@ -1,6 +1,7 @@
 <!--
 title: SoundAreaEdgeBody
 permalink: /Entity_Reference/?/Fox/Sdx/SoundAreaEdgeBody/
+stub: true
 tags: [Fox, Sdx, Reference]
 -->
 
@@ -15,6 +16,7 @@ SoundAreaEdgeBody : Fox.Core.DataBody
 ```
 
 TODO: Description
+
 
 
 

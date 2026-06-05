@@ -1,6 +1,7 @@
 <!--
 title: TppPlayer2AdditionalMtarData
 permalink: /Entity_Reference/?/Tpp/GameCore/TppPlayer2AdditionalMtarData/
+stub: true
 tags: [Tpp, GameCore, Reference]
 -->
 
@@ -21,5 +22,6 @@ TODO: Description
 | | |
 |-|-|
 | [mtarFiles](#mtarfiles) | TODO: Description |
+
 
 

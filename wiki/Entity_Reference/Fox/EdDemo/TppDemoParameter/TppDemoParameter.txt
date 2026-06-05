@@ -1,6 +1,7 @@
 <!--
 title: TppDemoParameter
 permalink: /Entity_Reference/?/Fox/EdDemo/TppDemoParameter/
+stub: true
 tags: [Fox, EdDemo, Reference]
 -->
 
@@ -31,5 +32,6 @@ TODO: Description
 | [minute](#minute) | TODO: Description |
 | [second](#second) | TODO: Description |
 | [weatherType](#weathertype) | TODO: Description |
+
 
 

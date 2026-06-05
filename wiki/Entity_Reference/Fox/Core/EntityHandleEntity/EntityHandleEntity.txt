@@ -1,6 +1,7 @@
 <!--
 title: EntityHandleEntity
 permalink: /Entity_Reference/?/Fox/Core/EntityHandleEntity/
+stub: true
 tags: [Fox, Core, Reference]
 -->
 
@@ -21,5 +22,6 @@ TODO: Description
 | | |
 |-|-|
 | [value](#value) | TODO: Description |
+
 
 

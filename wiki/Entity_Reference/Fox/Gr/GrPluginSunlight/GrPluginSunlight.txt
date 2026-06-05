@@ -1,6 +1,7 @@
 <!--
 title: GrPluginSunlight
 permalink: /Entity_Reference/?/Fox/Gr/GrPluginSunlight/
+stub: true
 tags: [Fox, Gr, Reference]
 -->
 
@@ -15,6 +16,7 @@ GrPluginSunlight : Fox.Gr.GrRenderPlugin
 ```
 
 TODO: Description
+
 
 
 

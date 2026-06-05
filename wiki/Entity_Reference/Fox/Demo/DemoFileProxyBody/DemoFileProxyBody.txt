@@ -1,6 +1,7 @@
 <!--
 title: DemoFileProxyBody
 permalink: /Entity_Reference/?/Fox/Demo/DemoFileProxyBody/
+stub: true
 tags: [Fox, Demo, Reference]
 -->
 
@@ -15,6 +16,7 @@ DemoFileProxyBody : Fox.Core.DataBody
 ```
 
 TODO: Description
+
 
 
 

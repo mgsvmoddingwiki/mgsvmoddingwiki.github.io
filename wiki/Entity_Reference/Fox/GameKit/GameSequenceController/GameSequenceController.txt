@@ -1,6 +1,7 @@
 <!--
 title: GameSequenceController
 permalink: /Entity_Reference/?/Fox/GameKit/GameSequenceController/
+stub: true
 tags: [Fox, GameKit, Reference]
 -->
 
@@ -15,6 +16,7 @@ GameSequenceController : Fox.Core.Entity
 ```
 
 TODO: Description
+
 
 
 

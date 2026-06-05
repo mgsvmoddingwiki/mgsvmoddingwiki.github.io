@@ -1,6 +1,7 @@
 <!--
 title: Transform
 permalink: /Entity_Reference/?/Fox/Core/Transform/
+stub: true
 tags: [Fox, Core, Reference]
 -->
 
@@ -22,5 +23,6 @@ TODO: Description
 | [scale](#scale) | TODO: Description |
 | [rotation_quat](#rotation-quat) | TODO: Description |
 | [translation](#translation) | TODO: Description |
+
 
 

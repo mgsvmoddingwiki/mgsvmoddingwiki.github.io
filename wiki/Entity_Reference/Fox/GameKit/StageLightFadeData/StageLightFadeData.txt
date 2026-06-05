@@ -1,6 +1,7 @@
 <!--
 title: StageLightFadeData
 permalink: /Entity_Reference/?/Fox/GameKit/StageLightFadeData/
+stub: true
 tags: [Fox, GameKit, Reference]
 -->
 
@@ -23,5 +24,6 @@ TODO: Description
 | [lightGroup](#lightgroup) | TODO: Description |
 | [colorList](#colorlist) | TODO: Description |
 | [requirdTime](#requirdtime) | TODO: Description |
+
 
 

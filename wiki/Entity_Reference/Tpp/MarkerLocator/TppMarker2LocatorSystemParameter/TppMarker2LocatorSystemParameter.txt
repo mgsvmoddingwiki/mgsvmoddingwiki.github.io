@@ -1,6 +1,7 @@
 <!--
 title: TppMarker2LocatorSystemParameter
 permalink: /Entity_Reference/?/Tpp/MarkerLocator/TppMarker2LocatorSystemParameter/
+stub: true
 tags: [Tpp, MarkerLocator, Reference]
 -->
 
@@ -15,6 +16,7 @@ TppMarker2LocatorSystemParameter : Fox.Core.DataElement
 ```
 
 TODO: Description
+
 
 
 

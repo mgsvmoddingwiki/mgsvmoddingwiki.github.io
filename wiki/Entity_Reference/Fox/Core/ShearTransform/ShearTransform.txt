@@ -1,6 +1,7 @@
 <!--
 title: ShearTransform
 permalink: /Entity_Reference/?/Fox/Core/ShearTransform/
+stub: true
 tags: [Fox, Core, Reference]
 -->
 
@@ -20,5 +21,6 @@ TODO: Description
 | | |
 |-|-|
 | [shear](#shear) | TODO: Description |
+
 
 

@@ -1,6 +1,7 @@
 <!--
 title: DirectionalLightBody
 permalink: /Entity_Reference/?/Fox/Grx/DirectionalLightBody/
+stub: true
 tags: [Fox, Grx, Reference]
 -->
 
@@ -21,5 +22,6 @@ TODO: Description
 | | |
 |-|-|
 | [enable](#enable) | TODO: Description |
+
 
 

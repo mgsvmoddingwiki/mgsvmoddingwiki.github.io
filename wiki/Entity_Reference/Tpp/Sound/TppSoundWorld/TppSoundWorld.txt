@@ -1,6 +1,7 @@
 <!--
 title: TppSoundWorld
 permalink: /Entity_Reference/?/Tpp/Sound/TppSoundWorld/
+stub: true
 tags: [Tpp, Sound, Reference]
 -->
 
@@ -43,5 +44,6 @@ TODO: Description
 | [unlinkedObstruction](#unlinkedobstruction) | TODO: Description |
 | [unlinkedOcclusion](#unlinkedocclusion) | TODO: Description |
 | [interferenceSlope](#interferenceslope) | TODO: Description |
+
 
 

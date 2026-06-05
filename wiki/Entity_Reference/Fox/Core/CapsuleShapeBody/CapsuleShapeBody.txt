@@ -1,6 +1,7 @@
 <!--
 title: CapsuleShapeBody
 permalink: /Entity_Reference/?/Fox/Core/CapsuleShapeBody/
+stub: true
 tags: [Fox, Core, Reference]
 -->
 
@@ -22,5 +23,6 @@ TODO: Description
 |-|-|
 | [shape_p0](#shape-p0) | TODO: Description |
 | [shape_p1](#shape-p1) | TODO: Description |
+
 
 

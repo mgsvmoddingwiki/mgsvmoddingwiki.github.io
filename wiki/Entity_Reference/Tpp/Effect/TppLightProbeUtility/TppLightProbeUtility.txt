@@ -1,6 +1,7 @@
 <!--
 title: TppLightProbeUtility
 permalink: /Entity_Reference/?/Tpp/Effect/TppLightProbeUtility/
+stub: true
 tags: [Tpp, Effect, Reference]
 -->
 
@@ -15,6 +16,7 @@ TppLightProbeUtility : Fox.Core.Entity
 ```
 
 TODO: Description
+
 
 
 

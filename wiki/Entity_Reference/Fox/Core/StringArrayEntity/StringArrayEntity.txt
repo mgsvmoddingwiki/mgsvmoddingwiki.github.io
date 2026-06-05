@@ -1,6 +1,7 @@
 <!--
 title: StringArrayEntity
 permalink: /Entity_Reference/?/Fox/Core/StringArrayEntity/
+stub: true
 tags: [Fox, Core, Reference]
 -->
 
@@ -21,5 +22,6 @@ TODO: Description
 | | |
 |-|-|
 | [array](#array) | TODO: Description |
+
 
 

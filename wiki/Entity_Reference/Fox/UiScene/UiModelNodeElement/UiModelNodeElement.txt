@@ -1,6 +1,7 @@
 <!--
 title: UiModelNodeElement
 permalink: /Entity_Reference/?/Fox/UiScene/UiModelNodeElement/
+stub: true
 tags: [Fox, UiScene, Reference]
 -->
 
@@ -36,5 +37,6 @@ TODO: Description
 | [initTranslate](#inittranslate) | TODO: Description |
 | [initColor](#initcolor) | TODO: Description |
 | [initBlendType](#initblendtype) | TODO: Description |
+
 
 

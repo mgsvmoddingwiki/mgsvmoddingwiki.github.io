@@ -1,6 +1,7 @@
 <!--
 title: PointLight
 permalink: /Entity_Reference/?/Fox/Grx/PointLight/
+stub: true
 tags: [Fox, Grx, Reference]
 -->
 
@@ -46,5 +47,6 @@ TODO: Description
 | [showRange](#showrange) | TODO: Description |
 | [isDebugLightVolumeBound](#isdebuglightvolumebound) | TODO: Description |
 | [hasSpecular](#hasspecular) | TODO: Description |
+
 
 

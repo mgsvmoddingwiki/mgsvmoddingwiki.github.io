@@ -1,6 +1,7 @@
 <!--
 title: TppStar
 permalink: /Entity_Reference/?/Tpp/Effect/TppStar/
+stub: true
 tags: [Tpp, Effect, Reference]
 -->
 
@@ -30,5 +31,6 @@ TODO: Description
 | [latitudeArray](#latitudearray) | TODO: Description |
 | [longitudeArray](#longitudearray) | TODO: Description |
 | [scaleArray](#scalearray) | TODO: Description |
+
 
 

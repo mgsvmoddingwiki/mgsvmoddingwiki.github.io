@@ -1,6 +1,7 @@
 <!--
 title: DemoModelDataNode
 permalink: /Entity_Reference/?/Fox/Demo/DemoModelDataNode/
+stub: true
 tags: [Fox, Demo, Reference]
 -->
 
@@ -22,5 +23,6 @@ TODO: Description
 |-|-|
 | [partNames](#partnames) | TODO: Description |
 | [target](#target) | TODO: Description |
+
 
 

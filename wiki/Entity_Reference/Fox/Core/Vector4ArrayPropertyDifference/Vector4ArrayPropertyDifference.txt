@@ -1,6 +1,7 @@
 <!--
 title: Vector4ArrayPropertyDifference
 permalink: /Entity_Reference/?/Fox/Core/Vector4ArrayPropertyDifference/
+stub: true
 tags: [Fox, Core, Reference]
 -->
 
@@ -22,5 +23,6 @@ TODO: Description
 |-|-|
 | [originalValues](#originalvalues) | TODO: Description |
 | [values](#values) | TODO: Description |
+
 
 

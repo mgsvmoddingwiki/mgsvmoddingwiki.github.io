@@ -347,6 +347,11 @@
             <path d="M76,26.5L78.702,31.61L84.176,32.761L80.372,37.028L81.053,42.89L76,40.376L70.947,42.89L71.628,37.028L67.824,32.761L73.298,31.61L76,26.5Z"/>
         </g>
 
+        <g id="icons-leaf-path" transform="translate(-64 -23)">
+            <path d="M68,42C71.079,41.341 71.719,34.337 77,32"/>
+            <path d="M70.832,39.05C70.832,39.05 72.063,40 73.771,40C75.479,40 77.178,39.743 79,38.181C80.705,36.72 82,34.624 82,31.685L82,28L76.295,28C72.012,28 69,31.39 69,34.286L69,35.5C69,37.543 70.48,38.795 70.48,38.795"/>
+        </g>
+
         <g id="icons-small-git-commit-group">
             <circle id="icons-small-git-commit-path-exclusion" cx="76" cy="35" r="1.297" transform="translate(-64 -23)"/>
             <!-- For whatever reason mask height clipped in Chromium to adjusted here -->
@@ -379,6 +384,10 @@
 
         <g id="icons-small-text-caret-path">
             <use class="stroke intermediate linecap-square" xlink:href="#icons-sidebar-text-caret-path" transform="scale(0.75 0.72) translate(0 0.2)"/>
+        </g>
+
+        <g id="icons-small-leaf-path">
+            <use class="stroke intermediate" xlink:href="#icons-leaf-path" transform="scale(0.75) translate(0.75 0)"/>
         </g>
 
         <style><![CDATA[
@@ -548,9 +557,11 @@
     <use class="output" id="icons-small-note" xlink:href="#icons-small-note-path"/>
     <use class="output" id="icons-small-exclamation" xlink:href="#icons-small-exclamation-path"/>
     <use class="output" id="icons-small-text-caret" xlink:href="#icons-small-text-caret-path"/>
+    <use class="output" id="icons-small-leaf" xlink:href="#icons-small-leaf-path"/>
 
     <use class="output" id="icons-refresh" xlink:href="#icons-refresh-path"/>
     <use class="output" id="icons-star" xlink:href="#icons-star-path"/>
+    <use class="output stroke" id="icons-leaf" xlink:href="#icons-leaf-path"/>
 
 
     <!-- Inserted here so animation only plays when referenced via fragment identifier -->

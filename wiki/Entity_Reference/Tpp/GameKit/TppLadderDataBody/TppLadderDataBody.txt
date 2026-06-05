@@ -1,6 +1,7 @@
 <!--
 title: TppLadderDataBody
 permalink: /Entity_Reference/?/Tpp/GameKit/TppLadderDataBody/
+stub: true
 tags: [Tpp, GameKit, Reference]
 -->
 
@@ -15,6 +16,7 @@ TppLadderDataBody : Fox.Core.TransformDataBody
 ```
 
 TODO: Description
+
 
 
 

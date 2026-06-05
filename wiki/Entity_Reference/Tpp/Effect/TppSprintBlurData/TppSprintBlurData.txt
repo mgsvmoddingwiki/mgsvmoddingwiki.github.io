@@ -1,6 +1,7 @@
 <!--
 title: TppSprintBlurData
 permalink: /Entity_Reference/?/Tpp/Effect/TppSprintBlurData/
+stub: true
 tags: [Tpp, Effect, Reference]
 -->
 
@@ -26,5 +27,6 @@ TODO: Description
 | [filterGradientSquare](#filtergradientsquare) | TODO: Description |
 | [filterGradinetOffset](#filtergradinetoffset) | TODO: Description |
 | [filterPower](#filterpower) | TODO: Description |
+
 
 

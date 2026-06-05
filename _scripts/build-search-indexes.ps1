@@ -98,6 +98,10 @@ function Generate-Index {
                             $item | Add-Member -Name "featured" -Value $value -Type NoteProperty
                         }
 
+                        if ($name -eq "stub") {
+                            $item | Add-Member -Name "stub" -Value $value -Type NoteProperty
+                        }
+
                         if ($name -eq "tags") {
                             $item | Add-Member -Name "tags" -Value $value -Type NoteProperty
                         }

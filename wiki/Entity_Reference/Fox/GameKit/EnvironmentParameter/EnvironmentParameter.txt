@@ -1,6 +1,7 @@
 <!--
 title: EnvironmentParameter
 permalink: /Entity_Reference/?/Fox/GameKit/EnvironmentParameter/
+stub: true
 tags: [Fox, GameKit, Reference]
 -->
 
@@ -21,5 +22,6 @@ TODO: Description
 | | |
 |-|-|
 | [decayRate](#decayrate) | TODO: Description |
+
 
 

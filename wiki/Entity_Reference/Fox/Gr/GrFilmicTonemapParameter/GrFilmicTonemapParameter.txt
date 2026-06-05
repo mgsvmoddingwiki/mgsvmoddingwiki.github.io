@@ -1,6 +1,7 @@
 <!--
 title: GrFilmicTonemapParameter
 permalink: /Entity_Reference/?/Fox/Gr/GrFilmicTonemapParameter/
+stub: true
 tags: [Fox, Gr, Reference]
 -->
 
@@ -22,5 +23,6 @@ TODO: Description
 |-|-|
 | [enable](#enable) | TODO: Description |
 | [parameters](#parameters) | TODO: Description |
+
 
 

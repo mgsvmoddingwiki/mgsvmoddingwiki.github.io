@@ -1,6 +1,7 @@
 <!--
 title: GeoCollisionFreeShape
 permalink: /Entity_Reference/?/Fox/Geo/GeoCollisionFreeShape/
+stub: true
 tags: [Fox, Geo, Reference]
 -->
 
@@ -15,6 +16,7 @@ GeoCollisionFreeShape : Fox.Geo.CollisionObject
 ```
 
 TODO: Description
+
 
 
 

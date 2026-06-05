@@ -1,6 +1,7 @@
 <!--
 title: PathMapper
 permalink: /Entity_Reference/?/Fox/Core/PathMapper/
+stub: true
 tags: [Fox, Core, Reference]
 -->
 
@@ -15,6 +16,7 @@ PathMapper : Fox.Core.Entity
 ```
 
 TODO: Description
+
 
 
 

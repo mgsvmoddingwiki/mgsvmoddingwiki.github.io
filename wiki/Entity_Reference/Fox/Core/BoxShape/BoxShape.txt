@@ -1,6 +1,7 @@
 <!--
 title: BoxShape
 permalink: /Entity_Reference/?/Fox/Core/BoxShape/
+stub: true
 tags: [Fox, Core, Reference]
 -->
 
@@ -21,5 +22,6 @@ TODO: Description
 | | |
 |-|-|
 | [size](#size) | TODO: Description |
+
 
 

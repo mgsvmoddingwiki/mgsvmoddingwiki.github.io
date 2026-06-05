@@ -1,6 +1,7 @@
 <!--
 title: SimClothSettingData
 permalink: /Entity_Reference/?/Fox/Sim/SimClothSettingData/
+stub: true
 tags: [Fox, Sim, Reference]
 -->
 
@@ -29,5 +30,6 @@ TODO: Description
 | [inertialRate](#inertialrate) | TODO: Description |
 | [inertialMax](#inertialmax) | TODO: Description |
 | [noHitSkinMesh](#nohitskinmesh) | TODO: Description |
+
 
 

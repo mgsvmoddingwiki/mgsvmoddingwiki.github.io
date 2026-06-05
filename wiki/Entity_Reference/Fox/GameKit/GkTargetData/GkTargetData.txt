@@ -1,6 +1,7 @@
 <!--
 title: GkTargetData
 permalink: /Entity_Reference/?/Fox/GameKit/GkTargetData/
+stub: true
 tags: [Fox, GameKit, Reference]
 -->
 
@@ -21,5 +22,6 @@ TODO: Description
 | | |
 |-|-|
 | [characterObjectHandle](#characterobjecthandle) | TODO: Description |
+
 
 

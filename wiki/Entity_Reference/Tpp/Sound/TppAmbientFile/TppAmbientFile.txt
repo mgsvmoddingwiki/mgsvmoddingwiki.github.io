@@ -1,6 +1,7 @@
 <!--
 title: TppAmbientFile
 permalink: /Entity_Reference/?/Tpp/Sound/TppAmbientFile/
+stub: true
 tags: [Tpp, Sound, Reference]
 -->
 
@@ -15,6 +16,7 @@ TppAmbientFile : Fox.Core.RawFile
 ```
 
 TODO: Description
+
 
 
 

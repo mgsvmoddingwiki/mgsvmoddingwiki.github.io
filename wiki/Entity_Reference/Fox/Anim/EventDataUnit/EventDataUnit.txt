@@ -1,6 +1,7 @@
 <!--
 title: EventDataUnit
 permalink: /Entity_Reference/?/Fox/Anim/EventDataUnit/
+stub: true
 tags: [Fox, Anim, Reference]
 -->
 
@@ -25,5 +26,6 @@ TODO: Description
 | [paramString](#paramstring) | TODO: Description |
 | [paramInt](#paramint) | TODO: Description |
 | [paramFloat](#paramfloat) | TODO: Description |
+
 
 

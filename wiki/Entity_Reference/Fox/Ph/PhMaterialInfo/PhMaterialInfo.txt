@@ -1,6 +1,7 @@
 <!--
 title: PhMaterialInfo
 permalink: /Entity_Reference/?/Fox/Ph/PhMaterialInfo/
+stub: true
 tags: [Fox, Ph, Reference]
 -->
 
@@ -23,5 +24,6 @@ TODO: Description
 | [friction](#friction) | TODO: Description |
 | [restitution](#restitution) | TODO: Description |
 | [density](#density) | TODO: Description |
+
 
 

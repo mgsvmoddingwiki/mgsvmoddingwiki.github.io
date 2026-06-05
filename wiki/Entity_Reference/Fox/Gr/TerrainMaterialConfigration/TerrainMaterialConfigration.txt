@@ -1,6 +1,7 @@
 <!--
 title: TerrainMaterialConfigration
 permalink: /Entity_Reference/?/Fox/Gr/TerrainMaterialConfigration/
+stub: true
 tags: [Fox, Gr, Reference]
 -->
 
@@ -24,5 +25,6 @@ TODO: Description
 | [slot1](#slot1) | TODO: Description |
 | [slot2](#slot2) | TODO: Description |
 | [slot3](#slot3) | TODO: Description |
+
 
 

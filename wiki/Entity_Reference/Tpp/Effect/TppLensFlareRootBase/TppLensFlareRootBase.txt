@@ -1,6 +1,7 @@
 <!--
 title: TppLensFlareRootBase
 permalink: /Entity_Reference/?/Tpp/Effect/TppLensFlareRootBase/
+stub: true
 tags: [Tpp, Effect, Reference]
 -->
 
@@ -15,6 +16,7 @@ TppLensFlareRootBase : Fox.Core.TransformData
 ```
 
 TODO: Description
+
 
 
 

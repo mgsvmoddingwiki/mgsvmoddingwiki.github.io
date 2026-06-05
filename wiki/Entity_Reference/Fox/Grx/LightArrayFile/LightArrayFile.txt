@@ -1,6 +1,7 @@
 <!--
 title: LightArrayFile
 permalink: /Entity_Reference/?/Fox/Grx/LightArrayFile/
+stub: true
 tags: [Fox, Grx, Reference]
 -->
 
@@ -15,6 +16,7 @@ LightArrayFile : Fox.Core.RawFile
 ```
 
 TODO: Description
+
 
 
 

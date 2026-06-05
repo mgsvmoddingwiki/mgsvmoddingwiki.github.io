@@ -1,6 +1,7 @@
 <!--
 title: AmbientOcclusionSettings
 permalink: /Entity_Reference/?/Fox/Grx/AmbientOcclusionSettings/
+stub: true
 tags: [Fox, Grx, Reference]
 -->
 
@@ -24,5 +25,6 @@ TODO: Description
 | [attachment](#attachment) | TODO: Description |
 | [lineSSAOParameters](#linessaoparameters) | TODO: Description |
 | [areaSSAOParameters](#areassaoparameters) | TODO: Description |
+
 
 

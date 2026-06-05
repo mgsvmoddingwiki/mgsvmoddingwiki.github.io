@@ -1,6 +1,7 @@
 <!--
 title: Actor
 permalink: /Entity_Reference/?/Fox/Core/Actor/
+stub: true
 tags: [Fox, Core, Reference]
 -->
 
@@ -23,5 +24,6 @@ TODO: Description
 | [name](#name) | TODO: Description |
 | [actorLevelName](#actorlevelname) | TODO: Description |
 | [sceneName](#scenename) | TODO: Description |
+
 
 

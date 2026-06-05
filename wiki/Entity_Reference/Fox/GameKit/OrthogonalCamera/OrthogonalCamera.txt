@@ -1,6 +1,7 @@
 <!--
 title: OrthogonalCamera
 permalink: /Entity_Reference/?/Fox/GameKit/OrthogonalCamera/
+stub: true
 tags: [Fox, GameKit, Reference]
 -->
 
@@ -22,5 +23,6 @@ TODO: Description
 |-|-|
 | [type](#type) | TODO: Description |
 | [scale](#scale) | TODO: Description |
+
 
 

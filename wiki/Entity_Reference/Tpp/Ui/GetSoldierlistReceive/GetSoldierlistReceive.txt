@@ -1,6 +1,7 @@
 <!--
 title: GetSoldierlistReceive
 permalink: /Entity_Reference/?/Tpp/Ui/GetSoldierlistReceive/
+stub: true
 tags: [Tpp, Ui, Reference]
 -->
 
@@ -15,6 +16,7 @@ GetSoldierlistReceive : Fox.Core.Entity
 ```
 
 TODO: Description
+
 
 
 

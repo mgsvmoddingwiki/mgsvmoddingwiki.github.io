@@ -1,6 +1,7 @@
 <!--
 title: PrecomputeSkyFile
 permalink: /Entity_Reference/?/Tpp/Effect/PrecomputeSkyFile/
+stub: true
 tags: [Tpp, Effect, Reference]
 -->
 
@@ -15,6 +16,7 @@ PrecomputeSkyFile : Fox.Core.RawFile
 ```
 
 TODO: Description
+
 
 
 

@@ -1,6 +1,7 @@
 <!--
 title: CollisionLocator
 permalink: /Entity_Reference/?/Fox/Geox/CollisionLocator/
+stub: true
 tags: [Fox, Geox, Reference]
 -->
 
@@ -22,5 +23,6 @@ TODO: Description
 |-|-|
 | [modelFile](#modelfile) | TODO: Description |
 | [geomFile](#geomfile) | TODO: Description |
+
 
 

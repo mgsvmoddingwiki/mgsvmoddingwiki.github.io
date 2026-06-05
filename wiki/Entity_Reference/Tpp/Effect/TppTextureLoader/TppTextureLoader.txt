@@ -1,6 +1,7 @@
 <!--
 title: TppTextureLoader
 permalink: /Entity_Reference/?/Tpp/Effect/TppTextureLoader/
+stub: true
 tags: [Tpp, Effect, Reference]
 -->
 
@@ -22,5 +23,6 @@ TODO: Description
 |-|-|
 | [textures](#textures) | TODO: Description |
 | [forceLargeTextures](#forcelargetextures) | TODO: Description |
+
 
 

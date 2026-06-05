@@ -1,6 +1,7 @@
 <!--
 title: OpticalCamoBody
 permalink: /Entity_Reference/?/Fox/GameKit/OpticalCamoBody/
+stub: true
 tags: [Fox, GameKit, Reference]
 -->
 
@@ -15,6 +16,7 @@ OpticalCamoBody : Fox.Core.DataBody
 ```
 
 TODO: Description
+
 
 
 

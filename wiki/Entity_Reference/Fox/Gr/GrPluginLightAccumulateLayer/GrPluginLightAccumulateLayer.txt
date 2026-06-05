@@ -1,6 +1,7 @@
 <!--
 title: GrPluginLightAccumulateLayer
 permalink: /Entity_Reference/?/Fox/Gr/GrPluginLightAccumulateLayer/
+stub: true
 tags: [Fox, Gr, Reference]
 -->
 
@@ -15,6 +16,7 @@ GrPluginLightAccumulateLayer : Fox.Gr.GrRenderPlugin
 ```
 
 TODO: Description
+
 
 
 

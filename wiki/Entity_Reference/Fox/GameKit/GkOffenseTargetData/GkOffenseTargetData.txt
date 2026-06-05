@@ -1,6 +1,7 @@
 <!--
 title: GkOffenseTargetData
 permalink: /Entity_Reference/?/Fox/GameKit/GkOffenseTargetData/
+stub: true
 tags: [Fox, GameKit, Reference]
 -->
 
@@ -27,5 +28,6 @@ TODO: Description
 | [through](#through) | TODO: Description |
 | [attackDirection](#attackdirection) | TODO: Description |
 | [isAttackDirection](#isattackdirection) | TODO: Description |
+
 
 

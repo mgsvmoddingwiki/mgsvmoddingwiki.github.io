@@ -1,6 +1,7 @@
 <!--
 title: GeoCollisionPyramidFreeShape
 permalink: /Entity_Reference/?/Fox/Geo/GeoCollisionPyramidFreeShape/
+stub: true
 tags: [Fox, Geo, Reference]
 -->
 
@@ -15,6 +16,7 @@ GeoCollisionPyramidFreeShape : Fox.Geo.CollisionObject
 ```
 
 TODO: Description
+
 
 
 

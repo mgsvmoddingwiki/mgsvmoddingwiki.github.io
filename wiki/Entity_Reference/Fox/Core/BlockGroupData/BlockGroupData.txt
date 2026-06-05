@@ -1,6 +1,7 @@
 <!--
 title: BlockGroupData
 permalink: /Entity_Reference/?/Fox/Core/BlockGroupData/
+stub: true
 tags: [Fox, Core, Reference]
 -->
 
@@ -27,5 +28,6 @@ TODO: Description
 | [block](#block) | TODO: Description |
 | [relatedBlockGroups](#relatedblockgroups) | TODO: Description |
 | [prerequisiteBlockGroups](#prerequisiteblockgroups) | TODO: Description |
+
 
 

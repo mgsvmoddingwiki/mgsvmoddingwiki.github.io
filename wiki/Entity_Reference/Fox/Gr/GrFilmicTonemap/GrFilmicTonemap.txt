@@ -1,6 +1,7 @@
 <!--
 title: GrFilmicTonemap
 permalink: /Entity_Reference/?/Fox/Gr/GrFilmicTonemap/
+stub: true
 tags: [Fox, Gr, Reference]
 -->
 
@@ -28,5 +29,6 @@ TODO: Description
 | [toeNumerator](#toenumerator) | TODO: Description |
 | [toeDenominator](#toedenominator) | TODO: Description |
 | [whitePointValue](#whitepointvalue) | TODO: Description |
+
 
 

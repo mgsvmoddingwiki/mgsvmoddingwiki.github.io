@@ -1,6 +1,7 @@
 <!--
 title: GkSightCheckParam
 permalink: /Entity_Reference/?/Fox/GameKit/GkSightCheckParam/
+stub: true
 tags: [Fox, GameKit, Reference]
 -->
 
@@ -15,6 +16,7 @@ GkSightCheckParam : Fox.Core.Entity
 ```
 
 TODO: Description
+
 
 
 

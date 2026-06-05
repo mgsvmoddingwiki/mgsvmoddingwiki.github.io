@@ -1,6 +1,7 @@
 <!--
 title: SimObject
 permalink: /Entity_Reference/?/Fox/Sim/SimObject/
+stub: true
 tags: [Fox, Sim, Reference]
 -->
 
@@ -23,5 +24,6 @@ TODO: Description
 | [objectParam](#objectparam) | TODO: Description |
 | [engineParam](#engineparam) | TODO: Description |
 | [controls](#controls) | TODO: Description |
+
 
 

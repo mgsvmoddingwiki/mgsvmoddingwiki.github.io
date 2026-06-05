@@ -1,6 +1,7 @@
 <!--
 title: GeoTrapInfo
 permalink: /Entity_Reference/?/Fox/Geo/GeoTrapInfo/
+stub: true
 tags: [Fox, Geo, Reference]
 -->
 
@@ -32,5 +33,6 @@ TODO: Description
 | [trapFlagString](#trapflagstring) | TODO: Description |
 | [trapFlag](#trapflag) | TODO: Description |
 | [moverGameObjectId](#movergameobjectid) | TODO: Description |
+
 
 

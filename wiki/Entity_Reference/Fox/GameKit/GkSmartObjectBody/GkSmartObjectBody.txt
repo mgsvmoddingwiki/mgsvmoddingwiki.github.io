@@ -1,6 +1,7 @@
 <!--
 title: GkSmartObjectBody
 permalink: /Entity_Reference/?/Fox/GameKit/GkSmartObjectBody/
+stub: true
 tags: [Fox, GameKit, Reference]
 -->
 
@@ -15,6 +16,7 @@ GkSmartObjectBody : Fox.Core.DataBody
 ```
 
 TODO: Description
+
 
 
 

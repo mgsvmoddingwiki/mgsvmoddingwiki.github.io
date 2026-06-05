@@ -1,6 +1,7 @@
 <!--
 title: TppWeatherRainData
 permalink: /Entity_Reference/?/Tpp/Effect/TppWeatherRainData/
+stub: true
 tags: [Tpp, Effect, Reference]
 -->
 
@@ -25,5 +26,6 @@ TODO: Description
 | [vfxFileFallRain](#vfxfilefallrain) | TODO: Description |
 | [vfxFileFallRainSlow](#vfxfilefallrainslow) | TODO: Description |
 | [vfxFileCameraFog](#vfxfilecamerafog) | TODO: Description |
+
 
 

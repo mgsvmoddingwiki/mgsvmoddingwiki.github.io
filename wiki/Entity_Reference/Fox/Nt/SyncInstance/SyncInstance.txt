@@ -1,6 +1,7 @@
 <!--
 title: SyncInstance
 permalink: /Entity_Reference/?/Fox/Nt/SyncInstance/
+stub: true
 tags: [Fox, Nt, Reference]
 -->
 
@@ -15,6 +16,7 @@ SyncInstance : Fox.Core.Entity
 ```
 
 TODO: Description
+
 
 
 

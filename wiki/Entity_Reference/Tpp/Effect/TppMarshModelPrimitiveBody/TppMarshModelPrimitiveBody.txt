@@ -1,6 +1,7 @@
 <!--
 title: TppMarshModelPrimitiveBody
 permalink: /Entity_Reference/?/Tpp/Effect/TppMarshModelPrimitiveBody/
+stub: true
 tags: [Tpp, Effect, Reference]
 -->
 
@@ -15,6 +16,7 @@ TppMarshModelPrimitiveBody : Fox.Core.DataBody
 ```
 
 TODO: Description
+
 
 
 

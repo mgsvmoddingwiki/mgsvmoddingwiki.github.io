@@ -1,6 +1,7 @@
 <!--
 title: MotherBaseConstructDivisionLocator
 permalink: /Entity_Reference/?/Tpp/MotherBaseCore/MotherBaseConstructDivisionLocator/
+stub: true
 tags: [Tpp, MotherBaseCore, Reference]
 -->
 
@@ -23,5 +24,6 @@ TODO: Description
 | [type](#type) | TODO: Description |
 | [isLowModel](#islowmodel) | TODO: Description |
 | [staticModels](#staticmodels) | TODO: Description |
+
 
 

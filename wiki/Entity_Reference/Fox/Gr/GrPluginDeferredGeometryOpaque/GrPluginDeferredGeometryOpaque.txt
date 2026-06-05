@@ -1,6 +1,7 @@
 <!--
 title: GrPluginDeferredGeometryOpaque
 permalink: /Entity_Reference/?/Fox/Gr/GrPluginDeferredGeometryOpaque/
+stub: true
 tags: [Fox, Gr, Reference]
 -->
 
@@ -15,6 +16,7 @@ GrPluginDeferredGeometryOpaque : Fox.Gr.GrRenderPlugin
 ```
 
 TODO: Description
+
 
 
 

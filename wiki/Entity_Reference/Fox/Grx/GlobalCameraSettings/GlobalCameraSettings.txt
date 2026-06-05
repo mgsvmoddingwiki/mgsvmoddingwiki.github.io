@@ -1,6 +1,7 @@
 <!--
 title: GlobalCameraSettings
 permalink: /Entity_Reference/?/Fox/Grx/GlobalCameraSettings/
+stub: true
 tags: [Fox, Grx, Reference]
 -->
 
@@ -27,5 +28,6 @@ TODO: Description
 | [flags](#flags) | TODO: Description |
 | [isIgnoreDofCameraSetting](#isignoredofcamerasetting) | TODO: Description |
 | [isIgnoreMotionBlurCameraSetting](#isignoremotionblurcamerasetting) | TODO: Description |
+
 
 

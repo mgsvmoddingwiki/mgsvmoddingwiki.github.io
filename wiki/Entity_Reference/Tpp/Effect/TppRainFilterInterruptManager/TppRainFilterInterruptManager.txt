@@ -1,6 +1,7 @@
 <!--
 title: TppRainFilterInterruptManager
 permalink: /Entity_Reference/?/Tpp/Effect/TppRainFilterInterruptManager/
+stub: true
 tags: [Tpp, Effect, Reference]
 -->
 
@@ -15,6 +16,7 @@ TppRainFilterInterruptManager : Fox.Core.Entity
 ```
 
 TODO: Description
+
 
 
 

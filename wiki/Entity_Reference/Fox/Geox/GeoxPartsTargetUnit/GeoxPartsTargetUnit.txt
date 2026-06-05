@@ -1,6 +1,7 @@
 <!--
 title: GeoxPartsTargetUnit
 permalink: /Entity_Reference/?/Fox/Geox/GeoxPartsTargetUnit/
+stub: true
 tags: [Fox, Geox, Reference]
 -->
 
@@ -21,5 +22,6 @@ TODO: Description
 | | |
 |-|-|
 | [objectArray](#objectarray) | TODO: Description |
+
 
 

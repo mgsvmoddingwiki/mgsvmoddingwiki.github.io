@@ -1,6 +1,7 @@
 <!--
 title: GrPluginScreenCapture
 permalink: /Entity_Reference/?/Fox/Gr/GrPluginScreenCapture/
+stub: true
 tags: [Fox, Gr, Reference]
 -->
 
@@ -15,6 +16,7 @@ GrPluginScreenCapture : Fox.Gr.GrRenderPlugin
 ```
 
 TODO: Description
+
 
 
 

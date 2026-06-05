@@ -1,6 +1,7 @@
 <!--
 title: TppDemoIntelligenceObject
 permalink: /Entity_Reference/?/Tpp/Effect/TppDemoIntelligenceObject/
+stub: true
 tags: [Tpp, Effect, Reference]
 -->
 
@@ -21,5 +22,6 @@ TODO: Description
 | | |
 |-|-|
 | [debugDraw](#debugdraw) | TODO: Description |
+
 
 

@@ -1,6 +1,7 @@
 <!--
 title: TppGuardTargetData
 permalink: /Entity_Reference/?/Tpp/GameKit/TppGuardTargetData/
+stub: true
 tags: [Tpp, GameKit, Reference]
 -->
 
@@ -23,5 +24,6 @@ TODO: Description
 | [radius](#radius) | TODO: Description |
 | [memberCount](#membercount) | TODO: Description |
 | [aimPoints](#aimpoints) | TODO: Description |
+
 
 

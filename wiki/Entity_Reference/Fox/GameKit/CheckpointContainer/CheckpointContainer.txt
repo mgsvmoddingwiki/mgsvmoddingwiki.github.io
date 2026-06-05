@@ -1,6 +1,7 @@
 <!--
 title: CheckpointContainer
 permalink: /Entity_Reference/?/Fox/GameKit/CheckpointContainer/
+stub: true
 tags: [Fox, GameKit, Reference]
 -->
 
@@ -23,5 +24,6 @@ TODO: Description
 | [checkPointUnits](#checkpointunits) | TODO: Description |
 | [passedCheckpoints](#passedcheckpoints) | TODO: Description |
 | [latestCheckpointTag](#latestcheckpointtag) | TODO: Description |
+
 
 

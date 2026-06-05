@@ -1,6 +1,7 @@
 <!--
 title: TppBushManager
 permalink: /Entity_Reference/?/Tpp/GameKit/TppBushManager/
+stub: true
 tags: [Tpp, GameKit, Reference]
 -->
 
@@ -33,5 +34,6 @@ TODO: Description
 | [existMaterials](#existmaterials) | TODO: Description |
 | [noiseSeType](#noisesetype) | TODO: Description |
 | [noiseSeEventNames](#noiseseeventnames) | TODO: Description |
+
 
 

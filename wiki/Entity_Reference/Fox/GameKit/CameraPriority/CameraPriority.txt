@@ -1,6 +1,7 @@
 <!--
 title: CameraPriority
 permalink: /Entity_Reference/?/Fox/GameKit/CameraPriority/
+stub: true
 tags: [Fox, GameKit, Reference]
 -->
 
@@ -15,6 +16,7 @@ CameraPriority : Fox.Core.Entity
 ```
 
 TODO: Description
+
 
 
 

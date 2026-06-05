@@ -1,6 +1,7 @@
 <!--
 title: TppPrimRiverModelParamOverlay
 permalink: /Entity_Reference/?/Tpp/Effect/TppPrimRiverModelParamOverlay/
+stub: true
 tags: [Tpp, Effect, Reference]
 -->
 
@@ -38,5 +39,6 @@ TODO: Description
 | [maskDistortionRate](#maskdistortionrate) | TODO: Description |
 | [useHnmTexture](#usehnmtexture) | TODO: Description |
 | [debugReset](#debugreset) | TODO: Description |
+
 
 

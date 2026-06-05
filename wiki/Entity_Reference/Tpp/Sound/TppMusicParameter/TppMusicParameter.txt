@@ -1,6 +1,7 @@
 <!--
 title: TppMusicParameter
 permalink: /Entity_Reference/?/Tpp/Sound/TppMusicParameter/
+stub: true
 tags: [Tpp, Sound, Reference]
 -->
 
@@ -40,5 +41,6 @@ TODO: Description
 | [safetyCautionNoticeSwitchEvent](#safetycautionnoticeswitchevent) | TODO: Description |
 | [safetyAlertToCautionSwitchEvent](#safetyalerttocautionswitchevent) | TODO: Description |
 | [neutralSwitchEvent](#neutralswitchevent) | TODO: Description |
+
 
 

@@ -1,6 +1,7 @@
 <!--
 title: FoxTerrainDecalPackFile
 permalink: /Entity_Reference/?/Fox/GameKit/FoxTerrainDecalPackFile/
+stub: true
 tags: [Fox, GameKit, Reference]
 -->
 
@@ -15,6 +16,7 @@ FoxTerrainDecalPackFile : Fox.Core.RawFile
 ```
 
 TODO: Description
+
 
 
 

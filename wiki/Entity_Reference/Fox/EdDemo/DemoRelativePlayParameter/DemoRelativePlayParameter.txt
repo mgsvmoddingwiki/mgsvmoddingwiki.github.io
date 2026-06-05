@@ -1,6 +1,7 @@
 <!--
 title: DemoRelativePlayParameter
 permalink: /Entity_Reference/?/Fox/EdDemo/DemoRelativePlayParameter/
+stub: true
 tags: [Fox, EdDemo, Reference]
 -->
 
@@ -22,5 +23,6 @@ TODO: Description
 |-|-|
 | [rootCharacterId](#rootcharacterid) | TODO: Description |
 | [lookAtCharacterId](#lookatcharacterid) | TODO: Description |
+
 
 

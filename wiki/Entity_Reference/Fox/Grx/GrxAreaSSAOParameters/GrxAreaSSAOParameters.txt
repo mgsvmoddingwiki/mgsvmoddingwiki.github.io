@@ -1,6 +1,7 @@
 <!--
 title: GrxAreaSSAOParameters
 permalink: /Entity_Reference/?/Fox/Grx/GrxAreaSSAOParameters/
+stub: true
 tags: [Fox, Grx, Reference]
 -->
 
@@ -31,5 +32,6 @@ TODO: Description
 | [blurRadius](#blurradius) | TODO: Description |
 | [blurSharpness](#blursharpness) | TODO: Description |
 | [blurSceneScale](#blurscenescale) | TODO: Description |
+
 
 

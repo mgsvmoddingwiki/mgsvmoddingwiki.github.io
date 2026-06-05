@@ -1,6 +1,7 @@
 <!--
 title: StaticModelBody
 permalink: /Entity_Reference/?/Fox/GameKit/StaticModelBody/
+stub: true
 tags: [Fox, GameKit, Reference]
 -->
 
@@ -23,5 +24,6 @@ TODO: Description
 | [geom](#geom) | TODO: Description |
 | [isVisible](#isvisible) | TODO: Description |
 | [isGeomActive](#isgeomactive) | TODO: Description |
+
 
 

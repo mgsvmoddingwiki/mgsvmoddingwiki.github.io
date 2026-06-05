@@ -1,6 +1,7 @@
 <!--
 title: WindGlobal
 permalink: /Entity_Reference/?/Fox/GameKit/WindGlobal/
+stub: true
 tags: [Fox, GameKit, Reference]
 -->
 
@@ -15,6 +16,7 @@ WindGlobal : Fox.GameKit.EnvironmentGlobal
 ```
 
 TODO: Description
+
 
 
 

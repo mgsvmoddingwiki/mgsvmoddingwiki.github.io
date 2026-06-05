@@ -1,6 +1,7 @@
 <!--
 title: TppObjectBrushPluginBush
 permalink: /Entity_Reference/?/Tpp/GameKit/TppObjectBrushPluginBush/
+stub: true
 tags: [Tpp, GameKit, Reference]
 -->
 
@@ -24,5 +25,6 @@ TODO: Description
 | [upgradeLodRateForHighEnd](#upgradelodrateforhighend) | TODO: Description |
 | [gimmickParameter](#gimmickparameter) | TODO: Description |
 | [externalGimmickParameter](#externalgimmickparameter) | TODO: Description |
+
 
 

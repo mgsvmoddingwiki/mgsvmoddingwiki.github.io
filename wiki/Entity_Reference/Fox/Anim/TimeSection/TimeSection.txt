@@ -1,6 +1,7 @@
 <!--
 title: TimeSection
 permalink: /Entity_Reference/?/Fox/Anim/TimeSection/
+stub: true
 tags: [Fox, Anim, Reference]
 -->
 
@@ -22,5 +23,6 @@ TODO: Description
 |-|-|
 | [startFrame](#startframe) | TODO: Description |
 | [endFrame](#endframe) | TODO: Description |
+
 
 

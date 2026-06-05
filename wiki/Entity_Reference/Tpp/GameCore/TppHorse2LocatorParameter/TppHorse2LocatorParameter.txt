@@ -1,6 +1,7 @@
 <!--
 title: TppHorse2LocatorParameter
 permalink: /Entity_Reference/?/Tpp/GameCore/TppHorse2LocatorParameter/
+stub: true
 tags: [Tpp, GameCore, Reference]
 -->
 
@@ -21,5 +22,6 @@ TODO: Description
 | | |
 |-|-|
 | [identifier](#identifier) | TODO: Description |
+
 
 

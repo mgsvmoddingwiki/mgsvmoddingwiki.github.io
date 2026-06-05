@@ -46,6 +46,9 @@ const filterHandlers = {
     excludeEntityRef: {
         handler: (key, state) => {}
     },
+    excludeStubs: {
+        handler: (key, state) => {}
+    },
     ignoreMarkup: {
         handler: (key, state) => {}
     },

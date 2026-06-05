@@ -1,6 +1,7 @@
 <!--
 title: GeoxPath2
 permalink: /Entity_Reference/?/Fox/Geox/GeoxPath2/
+stub: true
 tags: [Fox, Geox, Reference]
 -->
 
@@ -23,5 +24,6 @@ TODO: Description
 | [selectIndex](#selectindex) | TODO: Description |
 | [enable](#enable) | TODO: Description |
 | [tags](#tags) | TODO: Description |
+
 
 

@@ -1,6 +1,7 @@
 <!--
 title: TppVolumetricFogManager
 permalink: /Entity_Reference/?/Tpp/Effect/TppVolumetricFogManager/
+stub: true
 tags: [Tpp, Effect, Reference]
 -->
 
@@ -15,6 +16,7 @@ TppVolumetricFogManager : Fox.Core.Entity
 ```
 
 TODO: Description
+
 
 
 

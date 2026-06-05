@@ -1,6 +1,7 @@
 <!--
 title: TppBuddy2BlockControllerData
 permalink: /Entity_Reference/?/Tpp/GameCore/TppBuddy2BlockControllerData/
+stub: true
 tags: [Tpp, GameCore, Reference]
 -->
 
@@ -15,6 +16,7 @@ TppBuddy2BlockControllerData : Fox.Core.Data
 ```
 
 TODO: Description
+
 
 
 

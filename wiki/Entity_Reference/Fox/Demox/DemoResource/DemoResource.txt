@@ -1,6 +1,7 @@
 <!--
 title: DemoResource
 permalink: /Entity_Reference/?/Fox/Demox/DemoResource/
+stub: true
 tags: [Fox, Demox, Reference]
 -->
 
@@ -30,5 +31,6 @@ TODO: Description
 | [soundPacketNum](#soundpacketnum) | TODO: Description |
 | [demoPacketSizeInKbytes](#demopacketsizeinkbytes) | TODO: Description |
 | [demoPacketNum](#demopacketnum) | TODO: Description |
+
 
 

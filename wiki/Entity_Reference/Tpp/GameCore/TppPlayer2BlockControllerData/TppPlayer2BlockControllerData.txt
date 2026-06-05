@@ -1,6 +1,7 @@
 <!--
 title: TppPlayer2BlockControllerData
 permalink: /Entity_Reference/?/Tpp/GameCore/TppPlayer2BlockControllerData/
+stub: true
 tags: [Tpp, GameCore, Reference]
 -->
 
@@ -31,5 +32,6 @@ TODO: Description
 | [instanceSettings_commonMotionTypeName](#instancesettings-commonmotiontypename) | TODO: Description |
 | [instanceSettings_partsTypeNames](#instancesettings-partstypenames) | TODO: Description |
 | [instanceSettings_partsTypeInitial](#instancesettings-partstypeinitial) | TODO: Description |
+
 
 

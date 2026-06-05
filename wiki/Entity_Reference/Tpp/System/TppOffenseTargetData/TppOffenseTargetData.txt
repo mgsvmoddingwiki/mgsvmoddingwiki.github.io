@@ -1,6 +1,7 @@
 <!--
 title: TppOffenseTargetData
 permalink: /Entity_Reference/?/Tpp/System/TppOffenseTargetData/
+stub: true
 tags: [Tpp, System, Reference]
 -->
 
@@ -15,6 +16,7 @@ TppOffenseTargetData : Fox.GameKit.GkTargetData
 ```
 
 TODO: Description
+
 
 
 

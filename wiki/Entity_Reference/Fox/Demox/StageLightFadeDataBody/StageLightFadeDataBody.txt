@@ -1,6 +1,7 @@
 <!--
 title: StageLightFadeDataBody
 permalink: /Entity_Reference/?/Fox/Demox/StageLightFadeDataBody/
+stub: true
 tags: [Fox, Demox, Reference]
 -->
 
@@ -15,6 +16,7 @@ StageLightFadeDataBody : Fox.Core.DataBody
 ```
 
 TODO: Description
+
 
 
 

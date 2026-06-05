@@ -1,6 +1,7 @@
 <!--
 title: PhMultiShoulderConstraintParam
 permalink: /Entity_Reference/?/Fox/Ph/PhMultiShoulderConstraintParam/
+stub: true
 tags: [Fox, Ph, Reference]
 -->
 
@@ -28,5 +29,6 @@ TODO: Description
 | [torqueMax](#torquemax) | TODO: Description |
 | [velocityRate](#velocityrate) | TODO: Description |
 | [isPoweredFlag](#ispoweredflag) | TODO: Description |
+
 
 

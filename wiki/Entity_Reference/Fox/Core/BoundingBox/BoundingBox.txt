@@ -1,6 +1,7 @@
 <!--
 title: BoundingBox
 permalink: /Entity_Reference/?/Fox/Core/BoundingBox/
+stub: true
 tags: [Fox, Core, Reference]
 -->
 
@@ -21,5 +22,6 @@ TODO: Description
 |-|-|
 | [min](#min) | TODO: Description |
 | [max](#max) | TODO: Description |
+
 
 

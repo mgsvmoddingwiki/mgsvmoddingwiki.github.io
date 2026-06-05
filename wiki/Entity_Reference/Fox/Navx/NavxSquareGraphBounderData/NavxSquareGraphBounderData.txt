@@ -1,6 +1,7 @@
 <!--
 title: NavxSquareGraphBounderData
 permalink: /Entity_Reference/?/Fox/Navx/NavxSquareGraphBounderData/
+stub: true
 tags: [Fox, Navx, Reference]
 -->
 
@@ -15,6 +16,7 @@ NavxSquareGraphBounderData : Fox.Navx.NavxBounderData
 ```
 
 TODO: Description
+
 
 
 

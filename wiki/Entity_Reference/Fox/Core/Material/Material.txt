@@ -1,6 +1,7 @@
 <!--
 title: Material
 permalink: /Entity_Reference/?/Fox/Core/Material/
+stub: true
 tags: [Fox, Core, Reference]
 -->
 
@@ -31,5 +32,6 @@ TODO: Description
 | [specularColor](#specularcolor) | TODO: Description |
 | [fmtrPath](#fmtrpath) | TODO: Description |
 | [residentFlag](#residentflag) | TODO: Description |
+
 
 

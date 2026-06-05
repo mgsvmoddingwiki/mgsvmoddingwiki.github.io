@@ -1,6 +1,7 @@
 <!--
 title: TppPlayer2AdditionalMotionBlockData
 permalink: /Entity_Reference/?/Tpp/GameCore/TppPlayer2AdditionalMotionBlockData/
+stub: true
 tags: [Tpp, GameCore, Reference]
 -->
 
@@ -28,5 +29,6 @@ TODO: Description
 | [weaponVramSyncBufferSize](#weaponvramsyncbuffersize) | TODO: Description |
 | [fpkPath](#fpkpath) | TODO: Description |
 | [vramFpkPath](#vramfpkpath) | TODO: Description |
+
 
 

@@ -1,6 +1,7 @@
 <!--
 title: PhysicsDescription
 permalink: /Entity_Reference/?/Fox/PartsBuilder/PhysicsDescription/
+stub: true
 tags: [Fox, PartsBuilder, Reference]
 -->
 
@@ -21,5 +22,6 @@ TODO: Description
 | | |
 |-|-|
 | [physicsFile](#physicsfile) | TODO: Description |
+
 
 

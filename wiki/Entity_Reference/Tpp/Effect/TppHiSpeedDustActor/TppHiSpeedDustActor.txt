@@ -1,6 +1,7 @@
 <!--
 title: TppHiSpeedDustActor
 permalink: /Entity_Reference/?/Tpp/Effect/TppHiSpeedDustActor/
+stub: true
 tags: [Tpp, Effect, Reference]
 -->
 
@@ -15,6 +16,7 @@ TppHiSpeedDustActor : Fox.Core.Actor
 ```
 
 TODO: Description
+
 
 
 

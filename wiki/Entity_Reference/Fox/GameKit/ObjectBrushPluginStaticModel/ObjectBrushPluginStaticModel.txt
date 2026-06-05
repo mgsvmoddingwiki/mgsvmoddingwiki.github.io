@@ -1,6 +1,7 @@
 <!--
 title: ObjectBrushPluginStaticModel
 permalink: /Entity_Reference/?/Fox/GameKit/ObjectBrushPluginStaticModel/
+stub: true
 tags: [Fox, GameKit, Reference]
 -->
 
@@ -28,5 +29,6 @@ TODO: Description
 | [lodNearSize](#lodnearsize) | TODO: Description |
 | [drawRejectionLevel](#drawrejectionlevel) | TODO: Description |
 | [isGeomActivity](#isgeomactivity) | TODO: Description |
+
 
 

@@ -1,6 +1,7 @@
 <!--
 title: ShapeData
 permalink: /Entity_Reference/?/Fox/Core/ShapeData/
+stub: true
 tags: [Fox, Core, Reference]
 -->
 
@@ -15,6 +16,7 @@ ShapeData : Fox.Core.TransformData
 ```
 
 TODO: Description
+
 
 
 

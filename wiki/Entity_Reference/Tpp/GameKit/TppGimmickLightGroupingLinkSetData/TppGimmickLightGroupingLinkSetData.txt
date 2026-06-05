@@ -1,6 +1,7 @@
 <!--
 title: TppGimmickLightGroupingLinkSetData
 permalink: /Entity_Reference/?/Tpp/GameKit/TppGimmickLightGroupingLinkSetData/
+stub: true
 tags: [Tpp, GameKit, Reference]
 -->
 
@@ -23,5 +24,6 @@ TODO: Description
 | [ownerGimmickList](#ownergimmicklist) | TODO: Description |
 | [gimmickNameList](#gimmicknamelist) | TODO: Description |
 | [light](#light) | TODO: Description |
+
 
 

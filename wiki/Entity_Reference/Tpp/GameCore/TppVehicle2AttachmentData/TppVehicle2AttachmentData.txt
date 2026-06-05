@@ -1,6 +1,7 @@
 <!--
 title: TppVehicle2AttachmentData
 permalink: /Entity_Reference/?/Tpp/GameCore/TppVehicle2AttachmentData/
+stub: true
 tags: [Tpp, GameCore, Reference]
 -->
 
@@ -27,5 +28,6 @@ TODO: Description
 | [bodyCnpName](#bodycnpname) | TODO: Description |
 | [attachmentBoneName](#attachmentbonename) | TODO: Description |
 | [weaponParams](#weaponparams) | TODO: Description |
+
 
 

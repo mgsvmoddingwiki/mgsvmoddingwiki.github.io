@@ -1,6 +1,7 @@
 <!--
 title: TppPermanentGimmickGatlingGunParameter
 permalink: /Entity_Reference/?/Tpp/GameKit/TppPermanentGimmickGatlingGunParameter/
+stub: true
 tags: [Tpp, GameKit, Reference]
 -->
 
@@ -27,5 +28,6 @@ TODO: Description
 | [minYAxisAngle](#minyaxisangle) | TODO: Description |
 | [animPath](#animpath) | TODO: Description |
 | [mtarFile](#mtarfile) | TODO: Description |
+
 
 

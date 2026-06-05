@@ -1,6 +1,7 @@
 <!--
 title: TppVolgin2Parameter
 permalink: /Entity_Reference/?/Tpp/GameCore/TppVolgin2Parameter/
+stub: true
 tags: [Tpp, GameCore, Reference]
 -->
 
@@ -23,5 +24,6 @@ TODO: Description
 | [partsFile](#partsfile) | TODO: Description |
 | [motionGraphFile](#motiongraphfile) | TODO: Description |
 | [mtarFile](#mtarfile) | TODO: Description |
+
 
 

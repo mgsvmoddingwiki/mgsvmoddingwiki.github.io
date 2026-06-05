@@ -1,6 +1,7 @@
 <!--
 title: MotherBaseConstructConnectLocatorBody
 permalink: /Entity_Reference/?/Tpp/MotherBaseCore/MotherBaseConstructConnectLocatorBody/
+stub: true
 tags: [Tpp, MotherBaseCore, Reference]
 -->
 
@@ -15,6 +16,7 @@ MotherBaseConstructConnectLocatorBody : Fox.Core.TransformDataBody
 ```
 
 TODO: Description
+
 
 
 

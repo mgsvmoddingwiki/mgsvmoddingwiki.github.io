@@ -1,6 +1,7 @@
 <!--
 title: PadMapping
 permalink: /Entity_Reference/?/Fox/GameKit/PadMapping/
+stub: true
 tags: [Fox, GameKit, Reference]
 -->
 
@@ -15,6 +16,7 @@ PadMapping : Fox.Core.Entity
 ```
 
 TODO: Description
+
 
 
 

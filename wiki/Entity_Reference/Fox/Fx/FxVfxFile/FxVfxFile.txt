@@ -1,6 +1,7 @@
 <!--
 title: FxVfxFile
 permalink: /Entity_Reference/?/Fox/Fx/FxVfxFile/
+stub: true
 tags: [Fox, Fx, Reference]
 -->
 
@@ -15,6 +16,7 @@ FxVfxFile : Fox.Core.DataSetFile2
 ```
 
 TODO: Description
+
 
 
 

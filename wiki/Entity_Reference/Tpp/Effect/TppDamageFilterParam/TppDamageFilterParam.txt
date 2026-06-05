@@ -1,6 +1,7 @@
 <!--
 title: TppDamageFilterParam
 permalink: /Entity_Reference/?/Tpp/Effect/TppDamageFilterParam/
+stub: true
 tags: [Tpp, Effect, Reference]
 -->
 
@@ -28,5 +29,6 @@ TODO: Description
 | [burnSpritePosition](#burnspriteposition) | TODO: Description |
 | [damageColorCorrectionTextureName](#damagecolorcorrectiontexturename) | TODO: Description |
 | [injuryColorCorrectionTextureName](#injurycolorcorrectiontexturename) | TODO: Description |
+
 
 

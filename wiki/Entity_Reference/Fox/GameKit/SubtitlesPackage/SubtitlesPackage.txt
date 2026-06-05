@@ -1,6 +1,7 @@
 <!--
 title: SubtitlesPackage
 permalink: /Entity_Reference/?/Fox/GameKit/SubtitlesPackage/
+stub: true
 tags: [Fox, GameKit, Reference]
 -->
 
@@ -23,5 +24,6 @@ TODO: Description
 | [subtitlesPackage](#subtitlespackage) | TODO: Description |
 | [subtitlesStreamData](#subtitlesstreamdata) | TODO: Description |
 | [subtitlesStreamPath](#subtitlesstreampath) | TODO: Description |
+
 
 

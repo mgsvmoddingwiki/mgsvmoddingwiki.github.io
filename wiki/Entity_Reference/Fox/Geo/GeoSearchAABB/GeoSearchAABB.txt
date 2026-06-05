@@ -1,6 +1,7 @@
 <!--
 title: GeoSearchAABB
 permalink: /Entity_Reference/?/Fox/Geo/GeoSearchAABB/
+stub: true
 tags: [Fox, Geo, Reference]
 -->
 
@@ -22,5 +23,6 @@ TODO: Description
 |-|-|
 | [min](#min) | TODO: Description |
 | [max](#max) | TODO: Description |
+
 
 

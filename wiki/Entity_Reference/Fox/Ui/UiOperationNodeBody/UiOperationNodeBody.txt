@@ -1,6 +1,7 @@
 <!--
 title: UiOperationNodeBody
 permalink: /Entity_Reference/?/Fox/Ui/UiOperationNodeBody/
+stub: true
 tags: [Fox, Ui, Reference]
 -->
 
@@ -15,6 +16,7 @@ UiOperationNodeBody : Fox.Ui.UiNodeDataBody
 ```
 
 TODO: Description
+
 
 
 

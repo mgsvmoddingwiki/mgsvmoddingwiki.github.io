@@ -1,6 +1,7 @@
 <!--
 title: NavNavigationParameterHolder
 permalink: /Entity_Reference/?/Fox/Nav/NavNavigationParameterHolder/
+stub: true
 tags: [Fox, Nav, Reference]
 -->
 
@@ -15,6 +16,7 @@ NavNavigationParameterHolder : Fox.Core.Entity
 ```
 
 TODO: Description
+
 
 
 

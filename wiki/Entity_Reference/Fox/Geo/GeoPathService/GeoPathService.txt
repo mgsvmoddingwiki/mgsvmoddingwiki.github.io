@@ -1,6 +1,7 @@
 <!--
 title: GeoPathService
 permalink: /Entity_Reference/?/Fox/Geo/GeoPathService/
+stub: true
 tags: [Fox, Geo, Reference]
 -->
 
@@ -15,6 +16,7 @@ GeoPathService : Fox.Core.Entity
 ```
 
 TODO: Description
+
 
 
 

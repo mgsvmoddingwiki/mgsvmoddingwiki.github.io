@@ -1,6 +1,7 @@
 <!--
 title: TppParasite2Parameter
 permalink: /Entity_Reference/?/Tpp/GameCore/TppParasite2Parameter/
+stub: true
 tags: [Tpp, GameCore, Reference]
 -->
 
@@ -28,5 +29,6 @@ TODO: Description
 | [fmdlFiles](#fmdlfiles) | TODO: Description |
 | [geomFiles](#geomfiles) | TODO: Description |
 | [fovaFiles](#fovafiles) | TODO: Description |
+
 
 

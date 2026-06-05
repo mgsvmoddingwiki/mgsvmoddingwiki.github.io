@@ -1,6 +1,7 @@
 <!--
 title: HudBootData
 permalink: /Entity_Reference/?/Tpp/Ui/HudBootData/
+stub: true
 tags: [Tpp, Ui, Reference]
 -->
 
@@ -22,5 +23,6 @@ TODO: Description
 |-|-|
 | [uigFiles](#uigfiles) | TODO: Description |
 | [rawFiles](#rawfiles) | TODO: Description |
+
 
 

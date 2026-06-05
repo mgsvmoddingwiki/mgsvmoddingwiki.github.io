@@ -1,6 +1,7 @@
 <!--
 title: ParametersFile
 permalink: /Entity_Reference/?/Tpp/System/ParametersFile/
+stub: true
 tags: [Tpp, System, Reference]
 -->
 
@@ -15,6 +16,7 @@ ParametersFile : Fox.Core.RawFile
 ```
 
 TODO: Description
+
 
 
 

@@ -1,6 +1,7 @@
 <!--
 title: TppEyelidFilterStateManager
 permalink: /Entity_Reference/?/Tpp/Effect/TppEyelidFilterStateManager/
+stub: true
 tags: [Tpp, Effect, Reference]
 -->
 
@@ -15,6 +16,7 @@ TppEyelidFilterStateManager : Fox.Core.Entity
 ```
 
 TODO: Description
+
 
 
 

@@ -1,6 +1,7 @@
 <!--
 title: CallbackProcedureTransformDataBody
 permalink: /Entity_Reference/?/Fox/Core/CallbackProcedureTransformDataBody/
+stub: true
 tags: [Fox, Core, Reference]
 -->
 
@@ -22,5 +23,6 @@ TODO: Description
 |-|-|
 | [boundingBox_min](#boundingbox-min) | TODO: Description |
 | [boundingBox_max](#boundingbox-max) | TODO: Description |
+
 
 

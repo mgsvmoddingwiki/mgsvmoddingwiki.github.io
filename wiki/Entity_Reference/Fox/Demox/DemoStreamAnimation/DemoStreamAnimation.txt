@@ -1,6 +1,7 @@
 <!--
 title: DemoStreamAnimation
 permalink: /Entity_Reference/?/Fox/Demox/DemoStreamAnimation/
+stub: true
 tags: [Fox, Demox, Reference]
 -->
 
@@ -36,5 +37,6 @@ TODO: Description
 | [dynamicModel](#dynamicmodel) | TODO: Description |
 | [dynamicParts](#dynamicparts) | TODO: Description |
 | [dynamicFv2](#dynamicfv2) | TODO: Description |
+
 
 

@@ -1,6 +1,7 @@
 <!--
 title: TppReflectionSettingTrapCallbackDataElement
 permalink: /Entity_Reference/?/Tpp/Effect/TppReflectionSettingTrapCallbackDataElement/
+stub: true
 tags: [Tpp, Effect, Reference]
 -->
 
@@ -22,5 +23,6 @@ TODO: Description
 |-|-|
 | [reflectionTexturePath](#reflectiontexturepath) | TODO: Description |
 | [reflectionTexturePathForGoOut](#reflectiontexturepathforgoout) | TODO: Description |
+
 
 

@@ -1,6 +1,7 @@
 <!--
 title: TppWolfLocatorParameter
 permalink: /Entity_Reference/?/Tpp/GameCore/TppWolfLocatorParameter/
+stub: true
 tags: [Tpp, GameCore, Reference]
 -->
 
@@ -22,5 +23,6 @@ TODO: Description
 |-|-|
 | [count](#count) | TODO: Description |
 | [radius](#radius) | TODO: Description |
+
 
 

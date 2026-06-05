@@ -1,6 +1,7 @@
 <!--
 title: PhShoulderConstraint
 permalink: /Entity_Reference/?/Fox/Ph/PhShoulderConstraint/
+stub: true
 tags: [Fox, Ph, Reference]
 -->
 
@@ -28,5 +29,6 @@ TODO: Description
 | [refA1](#refa1) | TODO: Description |
 | [refB1](#refb1) | TODO: Description |
 | [limit1](#limit1) | TODO: Description |
+
 
 

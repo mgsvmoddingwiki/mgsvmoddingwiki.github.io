@@ -1,6 +1,7 @@
 <!--
 title: TppCorpseLocatorParameter
 permalink: /Entity_Reference/?/Tpp/GameCore/TppCorpseLocatorParameter/
+stub: true
 tags: [Tpp, GameCore, Reference]
 -->
 
@@ -22,5 +23,6 @@ TODO: Description
 |-|-|
 | [identifier](#identifier) | TODO: Description |
 | [isEmplaced](#isemplaced) | TODO: Description |
+
 
 

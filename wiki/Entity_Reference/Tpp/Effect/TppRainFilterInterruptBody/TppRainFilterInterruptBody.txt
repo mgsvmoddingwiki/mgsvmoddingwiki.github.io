@@ -1,6 +1,7 @@
 <!--
 title: TppRainFilterInterruptBody
 permalink: /Entity_Reference/?/Tpp/Effect/TppRainFilterInterruptBody/
+stub: true
 tags: [Tpp, Effect, Reference]
 -->
 
@@ -15,6 +16,7 @@ TppRainFilterInterruptBody : Fox.Core.DataBody
 ```
 
 TODO: Description
+
 
 
 

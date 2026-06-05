@@ -1,6 +1,7 @@
 <!--
 title: TppDamageFilterExposure
 permalink: /Entity_Reference/?/Tpp/Effect/TppDamageFilterExposure/
+stub: true
 tags: [Tpp, Effect, Reference]
 -->
 
@@ -26,5 +27,6 @@ TODO: Description
 | [beatExposureCompensation](#beatexposurecompensation) | TODO: Description |
 | [minBeatInterval](#minbeatinterval) | TODO: Description |
 | [maxBeatInterval](#maxbeatinterval) | TODO: Description |
+
 
 

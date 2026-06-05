@@ -1,6 +1,7 @@
 <!--
 title: EffectDescription
 permalink: /Entity_Reference/?/Fox/PartsBuilder/EffectDescription/
+stub: true
 tags: [Fox, PartsBuilder, Reference]
 -->
 
@@ -35,5 +36,6 @@ TODO: Description
 | [effectVariationName](#effectvariationname) | TODO: Description |
 | [effectFileFromVfxFileLoader](#effectfilefromvfxfileloader) | TODO: Description |
 | [effectFileFromFilePtr](#effectfilefromfileptr) | TODO: Description |
+
 
 

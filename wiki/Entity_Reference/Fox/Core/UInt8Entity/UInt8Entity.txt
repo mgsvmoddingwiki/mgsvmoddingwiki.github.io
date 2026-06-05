@@ -1,6 +1,7 @@
 <!--
 title: UInt8Entity
 permalink: /Entity_Reference/?/Fox/Core/UInt8Entity/
+stub: true
 tags: [Fox, Core, Reference]
 -->
 
@@ -21,5 +22,6 @@ TODO: Description
 | | |
 |-|-|
 | [value](#value) | TODO: Description |
+
 
 

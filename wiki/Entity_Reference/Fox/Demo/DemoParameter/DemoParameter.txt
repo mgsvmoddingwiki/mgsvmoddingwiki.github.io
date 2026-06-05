@@ -1,6 +1,7 @@
 <!--
 title: DemoParameter
 permalink: /Entity_Reference/?/Fox/Demo/DemoParameter/
+stub: true
 tags: [Fox, Demo, Reference]
 -->
 
@@ -15,6 +16,7 @@ DemoParameter : Fox.Core.DataElement
 ```
 
 TODO: Description
+
 
 
 

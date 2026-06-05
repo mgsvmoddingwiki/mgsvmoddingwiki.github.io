@@ -16,6 +16,7 @@ Pressing Enter without navigating via keys through the list opens the full resul
 {:.tip}
 
 > The highlighted match text beside results always ignores markup to reduce visual noise, however the full original text is still searched. Strings hidden include some HTML tags, Markdown syntax (including URLs/images but not title text) and Liquid tags. Any results that have a no visible match text will instead display labels about which metadata was matched.
+{:.note}
 
 ### Search operators
 
@@ -44,14 +45,16 @@ The following operators can be entered in the search box to adjust results.
 | `url:` | `url:fox` | Filters to matches in any permalinks. |
 | `tags:` | `tags:guides` | Filters to matches in page tags. |
 | `featured:` | `featured:true` | Filters to matches for featured pages. |
+| `stub:` | `stub:true` | Filters to matches for [stub](/Meta/Creating_Editing_Pages/Metadata_Organization/#stubs) pages. |
 {:.stretch}
-
-> For any YAML key searches can use either single unquoted string or wrap in double quotes for strings with spaces. They can also be combined with default searches like `tags:guides fox` to search for all guides containing the string `fox` anywhere.
 
 > All the YAML key operators support an exclusion prefix, like `!title:fox`.
 {:.tip}
 
 > To search literally for an operator + value, such as `title:fox`, wrap them both inside double quotes, like `"title:fox"`.
+{:.tip}
+
+> For any YAML key searches can use either single unquoted string or wrap in double quotes for strings with spaces. They can also be combined with default searches like `tags:guides fox` to search for all guides containing the string `fox` anywhere.
 {:.tip}
 
 > Any invalid/mistyped YAML key operators with a value (eg: `example:something`) will be treated as just a regular string of the query. Like the [default](#default) operators above any leading/trailing operator (beside double quotes, spaces and pipes) will display a subtle background highlight for its associated value (eg. the `fox` part in `title:fox`).

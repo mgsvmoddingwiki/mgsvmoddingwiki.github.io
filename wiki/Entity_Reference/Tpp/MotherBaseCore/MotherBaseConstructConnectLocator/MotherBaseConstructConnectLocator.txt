@@ -1,6 +1,7 @@
 <!--
 title: MotherBaseConstructConnectLocator
 permalink: /Entity_Reference/?/Tpp/MotherBaseCore/MotherBaseConstructConnectLocator/
+stub: true
 tags: [Tpp, MotherBaseCore, Reference]
 -->
 
@@ -23,5 +24,6 @@ TODO: Description
 | [plantId](#plantid) | TODO: Description |
 | [buildingPoint](#buildingpoint) | TODO: Description |
 | [isOn](#ison) | TODO: Description |
+
 
 

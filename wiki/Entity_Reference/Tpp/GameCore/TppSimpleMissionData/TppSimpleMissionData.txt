@@ -1,6 +1,7 @@
 <!--
 title: TppSimpleMissionData
 permalink: /Entity_Reference/?/Tpp/GameCore/TppSimpleMissionData/
+stub: true
 tags: [Tpp, GameCore, Reference]
 -->
 
@@ -22,5 +23,6 @@ TODO: Description
 |-|-|
 | [script](#script) | TODO: Description |
 | [subScripts](#subscripts) | TODO: Description |
+
 
 

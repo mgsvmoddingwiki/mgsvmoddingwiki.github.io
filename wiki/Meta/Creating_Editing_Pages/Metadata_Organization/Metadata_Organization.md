@@ -77,6 +77,8 @@ tags: [Missions, Guides]
 
 - `featured` = if defined should be a boolean `true`. Used for when the community decides a page is good fit for being featured.
 
+- `stub` = if defined should be a boolean `true`. Used for pages with too little content/info to be useful. Remove from metadata when page content is expanded. See more notes on stubs [below](#stubs).
+    
 ### Page content
 
 After the metadata block you can add the page content that will be visible. For a full reference of what you can add check out the [Formatting Reference](/Meta/Formatting_Reference) page. You can also check out how others made their pages by clicking the *Page Source* button at the top of any wiki page.
@@ -165,3 +167,17 @@ redirect_to:
 ```
 
 {% include spoiler-end %}
+
+---
+
+## Stubs
+
+A page with `stub: true` metadata will have a note automatically prepended to the page informing that its content needs expanding to become useful. The note looks similar to the following:
+
+> This page is a stub
+{:.stub}
+
+For regular pages this could be because a page was intended to be fleshed out but was left as a placeholder, or in the case of the [Entity Reference](/Entity_Reference) section where it has many placeholder pages with minimal content.
+
+> Once a stub page has been expanded, by adding a guide or sections describing the subject, you should then remove the `stub: true` from the page metadata so the stub notice will be removed and it won't get filtered out when searching with a stub exclusion filter enabled.
+{:.tip}

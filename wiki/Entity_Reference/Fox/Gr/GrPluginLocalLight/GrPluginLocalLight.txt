@@ -1,6 +1,7 @@
 <!--
 title: GrPluginLocalLight
 permalink: /Entity_Reference/?/Fox/Gr/GrPluginLocalLight/
+stub: true
 tags: [Fox, Gr, Reference]
 -->
 
@@ -15,6 +16,7 @@ GrPluginLocalLight : Fox.Gr.GrRenderPlugin
 ```
 
 TODO: Description
+
 
 
 

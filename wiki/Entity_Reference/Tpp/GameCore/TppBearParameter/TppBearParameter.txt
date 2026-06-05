@@ -1,6 +1,7 @@
 <!--
 title: TppBearParameter
 permalink: /Entity_Reference/?/Tpp/GameCore/TppBearParameter/
+stub: true
 tags: [Tpp, GameCore, Reference]
 -->
 
@@ -24,5 +25,6 @@ TODO: Description
 | [mtarFile](#mtarfile) | TODO: Description |
 | [mogFile](#mogfile) | TODO: Description |
 | [fovaFiles](#fovafiles) | TODO: Description |
+
 
 

@@ -1,6 +1,7 @@
 <!--
 title: UiNodeData
 permalink: /Entity_Reference/?/Fox/Ui/UiNodeData/
+stub: true
 tags: [Fox, Ui, Reference]
 -->
 
@@ -35,5 +36,6 @@ TODO: Description
 | [category](#category) | TODO: Description |
 | [type](#type) | TODO: Description |
 | [nodeName](#nodename) | TODO: Description |
+
 
 

@@ -1,6 +1,7 @@
 <!--
 title: Pad2
 permalink: /Entity_Reference/?/Fox/GameKit/Pad2/
+stub: true
 tags: [Fox, GameKit, Reference]
 -->
 
@@ -15,6 +16,7 @@ Pad2 : Fox.Core.Entity
 ```
 
 TODO: Description
+
 
 
 

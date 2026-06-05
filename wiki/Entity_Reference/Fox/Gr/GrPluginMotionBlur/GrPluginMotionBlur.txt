@@ -1,6 +1,7 @@
 <!--
 title: GrPluginMotionBlur
 permalink: /Entity_Reference/?/Fox/Gr/GrPluginMotionBlur/
+stub: true
 tags: [Fox, Gr, Reference]
 -->
 
@@ -15,6 +16,7 @@ GrPluginMotionBlur : Fox.Gr.GrRenderPlugin
 ```
 
 TODO: Description
+
 
 
 

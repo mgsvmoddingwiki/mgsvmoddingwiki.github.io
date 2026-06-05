@@ -1,6 +1,7 @@
 <!--
 title: TppVehicle2BodyData
 permalink: /Entity_Reference/?/Tpp/GameCore/TppVehicle2BodyData/
+stub: true
 tags: [Tpp, GameCore, Reference]
 -->
 
@@ -27,5 +28,6 @@ TODO: Description
 | [bodyInstanceCount](#bodyinstancecount) | TODO: Description |
 | [weaponParams](#weaponparams) | TODO: Description |
 | [fovaFiles](#fovafiles) | TODO: Description |
+
 
 

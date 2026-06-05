@@ -1,6 +1,7 @@
 <!--
 title: BoxShapeBody
 permalink: /Entity_Reference/?/Fox/Core/BoxShapeBody/
+stub: true
 tags: [Fox, Core, Reference]
 -->
 
@@ -23,5 +24,6 @@ TODO: Description
 | [shape_center](#shape-center) | TODO: Description |
 | [shape_size](#shape-size) | TODO: Description |
 | [shape_rotation](#shape-rotation) | TODO: Description |
+
 
 

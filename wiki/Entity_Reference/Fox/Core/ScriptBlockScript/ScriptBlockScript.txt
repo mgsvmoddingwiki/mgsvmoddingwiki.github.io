@@ -1,6 +1,7 @@
 <!--
 title: ScriptBlockScript
 permalink: /Entity_Reference/?/Fox/Core/ScriptBlockScript/
+stub: true
 tags: [Fox, Core, Reference]
 -->
 
@@ -21,5 +22,6 @@ TODO: Description
 | | |
 |-|-|
 | [script](#script) | TODO: Description |
+
 
 

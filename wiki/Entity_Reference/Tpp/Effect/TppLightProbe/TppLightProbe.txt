@@ -1,6 +1,7 @@
 <!--
 title: TppLightProbe
 permalink: /Entity_Reference/?/Tpp/Effect/TppLightProbe/
+stub: true
 tags: [Tpp, Effect, Reference]
 -->
 
@@ -44,5 +45,6 @@ TODO: Description
 | [enableRelatedLightSH](#enablerelatedlightsh) | TODO: Description |
 | [enableOcclusionMode](#enableocclusionmode) | TODO: Description |
 | [packingGeneration](#packinggeneration) | TODO: Description |
+
 
 

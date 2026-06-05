@@ -1,6 +1,7 @@
 <!--
 title: PropertyValueEntity
 permalink: /Entity_Reference/?/Fox/Core/PropertyValueEntity/
+stub: true
 tags: [Fox, Core, Reference]
 -->
 
@@ -15,6 +16,7 @@ PropertyValueEntity : Fox.Core.Entity
 ```
 
 TODO: Description
+
 
 
 

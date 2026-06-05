@@ -1,6 +1,7 @@
 <!--
 title: DesParamData
 permalink: /Entity_Reference/?/Fox/Des/DesParamData/
+stub: true
 tags: [Fox, Des, Reference]
 -->
 
@@ -27,5 +28,6 @@ TODO: Description
 | [desCondition](#descondition) | TODO: Description |
 | [desImpactPowerThreshold](#desimpactpowerthreshold) | TODO: Description |
 | [physicalCoefficient](#physicalcoefficient) | TODO: Description |
+
 
 

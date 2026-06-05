@@ -1,6 +1,7 @@
 <!--
 title: SimClothControl
 permalink: /Entity_Reference/?/Fox/Sim/SimClothControl/
+stub: true
 tags: [Fox, Sim, Reference]
 -->
 
@@ -24,5 +25,6 @@ TODO: Description
 | [clothControlUnits](#clothcontrolunits) | TODO: Description |
 | [windCoefficient](#windcoefficient) | TODO: Description |
 | [isLoop](#isloop) | TODO: Description |
+
 
 

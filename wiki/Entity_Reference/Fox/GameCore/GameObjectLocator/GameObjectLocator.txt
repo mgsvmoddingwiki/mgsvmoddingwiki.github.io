@@ -1,6 +1,7 @@
 <!--
 title: GameObjectLocator
 permalink: /Entity_Reference/?/Fox/GameCore/GameObjectLocator/
+stub: true
 tags: [Fox, GameCore, Reference]
 -->
 
@@ -23,5 +24,6 @@ TODO: Description
 | [typeName](#typename) | TODO: Description |
 | [groupId](#groupid) | TODO: Description |
 | [parameters](#parameters) | TODO: Description |
+
 
 

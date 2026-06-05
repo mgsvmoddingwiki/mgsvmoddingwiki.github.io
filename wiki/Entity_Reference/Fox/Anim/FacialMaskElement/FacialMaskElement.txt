@@ -1,6 +1,7 @@
 <!--
 title: FacialMaskElement
 permalink: /Entity_Reference/?/Fox/Anim/FacialMaskElement/
+stub: true
 tags: [Fox, Anim, Reference]
 -->
 
@@ -22,5 +23,6 @@ TODO: Description
 |-|-|
 | [skelList](#skellist) | TODO: Description |
 | [shaderList](#shaderlist) | TODO: Description |
+
 
 

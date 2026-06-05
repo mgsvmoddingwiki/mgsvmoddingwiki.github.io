@@ -1,6 +1,7 @@
 <!--
 title: TppPrimRiverModel
 permalink: /Entity_Reference/?/Tpp/Effect/TppPrimRiverModel/
+stub: true
 tags: [Tpp, Effect, Reference]
 -->
 
@@ -25,5 +26,6 @@ TODO: Description
 | [depthBlendLength](#depthblendlength) | TODO: Description |
 | [raise](#raise) | TODO: Description |
 | [staticModels](#staticmodels) | TODO: Description |
+
 
 

@@ -1,6 +1,7 @@
 <!--
 title: SimDaemon
 permalink: /Entity_Reference/?/Fox/Sim/SimDaemon/
+stub: true
 tags: [Fox, Sim, Reference]
 -->
 
@@ -24,5 +25,6 @@ TODO: Description
 | [maxActiveClothNum](#maxactiveclothnum) | TODO: Description |
 | [inertialMax](#inertialmax) | TODO: Description |
 | [isClothLocked](#isclothlocked) | TODO: Description |
+
 
 

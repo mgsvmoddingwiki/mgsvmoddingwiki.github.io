@@ -1,6 +1,7 @@
 <!--
 title: NavEdgeHandleEntity
 permalink: /Entity_Reference/?/Fox/Nav/NavEdgeHandleEntity/
+stub: true
 tags: [Fox, Nav, Reference]
 -->
 
@@ -21,5 +22,6 @@ TODO: Description
 | | |
 |-|-|
 | [type](#type) | TODO: Description |
+
 
 

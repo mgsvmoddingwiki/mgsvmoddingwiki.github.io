@@ -1,6 +1,7 @@
 <!--
 title: PartDescription
 permalink: /Entity_Reference/?/Fox/PartsBuilder/PartDescription/
+stub: true
 tags: [Fox, PartsBuilder, Reference]
 -->
 
@@ -23,5 +24,6 @@ TODO: Description
 | [depends](#depends) | TODO: Description |
 | [partName](#partname) | TODO: Description |
 | [buildType](#buildtype) | TODO: Description |
+
 
 

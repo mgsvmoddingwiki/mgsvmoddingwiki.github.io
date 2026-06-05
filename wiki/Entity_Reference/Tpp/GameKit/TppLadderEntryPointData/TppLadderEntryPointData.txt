@@ -1,6 +1,7 @@
 <!--
 title: TppLadderEntryPointData
 permalink: /Entity_Reference/?/Tpp/GameKit/TppLadderEntryPointData/
+stub: true
 tags: [Tpp, GameKit, Reference]
 -->
 
@@ -22,5 +23,6 @@ TODO: Description
 |-|-|
 | [entryType](#entrytype) | TODO: Description |
 | [locateStep](#locatestep) | TODO: Description |
+
 
 

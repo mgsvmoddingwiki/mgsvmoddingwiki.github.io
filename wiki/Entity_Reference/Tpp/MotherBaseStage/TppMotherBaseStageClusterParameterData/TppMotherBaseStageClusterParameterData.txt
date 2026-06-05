@@ -1,6 +1,7 @@
 <!--
 title: TppMotherBaseStageClusterParameterData
 permalink: /Entity_Reference/?/Tpp/MotherBaseStage/TppMotherBaseStageClusterParameterData/
+stub: true
 tags: [Tpp, MotherBaseStage, Reference]
 -->
 
@@ -40,5 +41,6 @@ TODO: Description
 | [cluster05loadAreaVertices](#cluster05loadareavertices) | TODO: Description |
 | [cluster06loadAreaVertices](#cluster06loadareavertices) | TODO: Description |
 | [cluster07loadAreaVertices](#cluster07loadareavertices) | TODO: Description |
+
 
 

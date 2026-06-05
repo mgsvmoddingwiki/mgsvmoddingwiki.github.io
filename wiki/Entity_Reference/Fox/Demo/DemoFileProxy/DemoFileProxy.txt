@@ -1,6 +1,7 @@
 <!--
 title: DemoFileProxy
 permalink: /Entity_Reference/?/Fox/Demo/DemoFileProxy/
+stub: true
 tags: [Fox, Demo, Reference]
 -->
 
@@ -22,5 +23,6 @@ TODO: Description
 |-|-|
 | [fmdlFiles](#fmdlfiles) | TODO: Description |
 | [partsFiles](#partsfiles) | TODO: Description |
+
 
 

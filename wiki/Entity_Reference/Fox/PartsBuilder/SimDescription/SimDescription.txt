@@ -1,6 +1,7 @@
 <!--
 title: SimDescription
 permalink: /Entity_Reference/?/Fox/PartsBuilder/SimDescription/
+stub: true
 tags: [Fox, PartsBuilder, Reference]
 -->
 
@@ -22,5 +23,6 @@ TODO: Description
 |-|-|
 | [simFile](#simfile) | TODO: Description |
 | [isActive](#isactive) | TODO: Description |
+
 
 

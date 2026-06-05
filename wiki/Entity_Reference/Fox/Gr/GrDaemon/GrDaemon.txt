@@ -1,6 +1,7 @@
 <!--
 title: GrDaemon
 permalink: /Entity_Reference/?/Fox/Gr/GrDaemon/
+stub: true
 tags: [Fox, Gr, Reference]
 -->
 
@@ -15,6 +16,7 @@ GrDaemon : Fox.Core.Actor
 ```
 
 TODO: Description
+
 
 
 

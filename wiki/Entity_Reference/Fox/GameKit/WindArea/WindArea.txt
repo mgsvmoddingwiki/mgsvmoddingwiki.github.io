@@ -1,6 +1,7 @@
 <!--
 title: WindArea
 permalink: /Entity_Reference/?/Fox/GameKit/WindArea/
+stub: true
 tags: [Fox, GameKit, Reference]
 -->
 
@@ -21,5 +22,6 @@ TODO: Description
 | | |
 |-|-|
 | [influenceOfGlobal](#influenceofglobal) | TODO: Description |
+
 
 

@@ -1,6 +1,7 @@
 <!--
 title: GrPluginDeferredGeometryMasked
 permalink: /Entity_Reference/?/Fox/Gr/GrPluginDeferredGeometryMasked/
+stub: true
 tags: [Fox, Gr, Reference]
 -->
 
@@ -15,6 +16,7 @@ GrPluginDeferredGeometryMasked : Fox.Gr.GrPluginDeferredGeometryOpaque
 ```
 
 TODO: Description
+
 
 
 

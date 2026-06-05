@@ -1,6 +1,7 @@
 <!--
 title: CyprusBlockControllerData
 permalink: /Entity_Reference/?/Tpp/GameKit/CyprusBlockControllerData/
+stub: true
 tags: [Tpp, GameKit, Reference]
 -->
 
@@ -33,5 +34,6 @@ TODO: Description
 | [smallMissionBlockSizeInByte](#smallmissionblocksizeinbyte) | TODO: Description |
 | [demoBlockCount](#demoblockcount) | TODO: Description |
 | [demoBlockSizeInByte](#demoblocksizeinbyte) | TODO: Description |
+
 
 

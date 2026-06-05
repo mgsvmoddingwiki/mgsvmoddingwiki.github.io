@@ -1,6 +1,7 @@
 <!--
 title: GrPluginPrimitive
 permalink: /Entity_Reference/?/Fox/Gr/GrPluginPrimitive/
+stub: true
 tags: [Fox, Gr, Reference]
 -->
 
@@ -15,6 +16,7 @@ GrPluginPrimitive : Fox.Gr.GrRenderPlugin
 ```
 
 TODO: Description
+
 
 
 

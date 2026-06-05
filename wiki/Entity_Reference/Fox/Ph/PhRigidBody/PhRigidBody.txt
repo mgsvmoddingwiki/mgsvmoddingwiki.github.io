@@ -1,6 +1,7 @@
 <!--
 title: PhRigidBody
 permalink: /Entity_Reference/?/Fox/Ph/PhRigidBody/
+stub: true
 tags: [Fox, Ph, Reference]
 -->
 
@@ -41,5 +42,6 @@ TODO: Description
 | [centerOfMassOffset](#centerofmassoffset) | TODO: Description |
 | [motionType](#motiontype) | TODO: Description |
 | [material](#material) | TODO: Description |
+
 
 

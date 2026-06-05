@@ -1,6 +1,7 @@
 <!--
 title: GeoxCollisionFreeShapeBody
 permalink: /Entity_Reference/?/Fox/Geox/GeoxCollisionFreeShapeBody/
+stub: true
 tags: [Fox, Geox, Reference]
 -->
 
@@ -15,6 +16,7 @@ GeoxCollisionFreeShapeBody : Fox.Core.TransformDataBody
 ```
 
 TODO: Description
+
 
 
 

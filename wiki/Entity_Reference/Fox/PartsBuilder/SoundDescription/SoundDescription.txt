@@ -1,6 +1,7 @@
 <!--
 title: SoundDescription
 permalink: /Entity_Reference/?/Fox/PartsBuilder/SoundDescription/
+stub: true
 tags: [Fox, PartsBuilder, Reference]
 -->
 
@@ -21,5 +22,6 @@ TODO: Description
 | | |
 |-|-|
 | [soundFile](#soundfile) | TODO: Description |
+
 
 

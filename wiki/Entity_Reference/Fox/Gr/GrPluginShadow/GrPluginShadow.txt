@@ -1,6 +1,7 @@
 <!--
 title: GrPluginShadow
 permalink: /Entity_Reference/?/Fox/Gr/GrPluginShadow/
+stub: true
 tags: [Fox, Gr, Reference]
 -->
 
@@ -15,6 +16,7 @@ GrPluginShadow : Fox.Gr.GrRenderPlugin
 ```
 
 TODO: Description
+
 
 
 

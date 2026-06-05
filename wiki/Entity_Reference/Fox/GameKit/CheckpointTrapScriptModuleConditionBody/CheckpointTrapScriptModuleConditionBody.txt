@@ -1,6 +1,7 @@
 <!--
 title: CheckpointTrapScriptModuleConditionBody
 permalink: /Entity_Reference/?/Fox/GameKit/CheckpointTrapScriptModuleConditionBody/
+stub: true
 tags: [Fox, GameKit, Reference]
 -->
 
@@ -21,5 +22,6 @@ TODO: Description
 | | |
 |-|-|
 | [checkpointName](#checkpointname) | TODO: Description |
+
 
 

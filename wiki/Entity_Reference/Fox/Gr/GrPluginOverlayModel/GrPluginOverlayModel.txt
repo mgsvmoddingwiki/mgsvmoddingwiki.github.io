@@ -1,6 +1,7 @@
 <!--
 title: GrPluginOverlayModel
 permalink: /Entity_Reference/?/Fox/Gr/GrPluginOverlayModel/
+stub: true
 tags: [Fox, Gr, Reference]
 -->
 
@@ -15,6 +16,7 @@ GrPluginOverlayModel : Fox.Gr.GrRenderPlugin
 ```
 
 TODO: Description
+
 
 
 

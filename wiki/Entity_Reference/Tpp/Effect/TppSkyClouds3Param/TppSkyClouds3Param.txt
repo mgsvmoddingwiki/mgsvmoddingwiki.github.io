@@ -1,6 +1,7 @@
 <!--
 title: TppSkyClouds3Param
 permalink: /Entity_Reference/?/Tpp/Effect/TppSkyClouds3Param/
+stub: true
 tags: [Tpp, Effect, Reference]
 -->
 
@@ -43,5 +44,6 @@ TODO: Description
 | [lowCylinderTexture](#lowcylindertexture) | TODO: Description |
 | [colorSpace](#colorspace) | TODO: Description |
 | [textureColorHandling](#texturecolorhandling) | TODO: Description |
+
 
 

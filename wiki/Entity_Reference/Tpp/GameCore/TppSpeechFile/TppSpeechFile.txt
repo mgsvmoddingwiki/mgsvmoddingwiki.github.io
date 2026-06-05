@@ -1,6 +1,7 @@
 <!--
 title: TppSpeechFile
 permalink: /Entity_Reference/?/Tpp/GameCore/TppSpeechFile/
+stub: true
 tags: [Tpp, GameCore, Reference]
 -->
 
@@ -15,6 +16,7 @@ TppSpeechFile : Fox.Core.RawFile
 ```
 
 TODO: Description
+
 
 
 

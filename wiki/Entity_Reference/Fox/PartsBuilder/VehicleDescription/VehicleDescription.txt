@@ -1,6 +1,7 @@
 <!--
 title: VehicleDescription
 permalink: /Entity_Reference/?/Fox/PartsBuilder/VehicleDescription/
+stub: true
 tags: [Fox, PartsBuilder, Reference]
 -->
 
@@ -21,5 +22,6 @@ TODO: Description
 | | |
 |-|-|
 | [vehicleFile](#vehiclefile) | TODO: Description |
+
 
 

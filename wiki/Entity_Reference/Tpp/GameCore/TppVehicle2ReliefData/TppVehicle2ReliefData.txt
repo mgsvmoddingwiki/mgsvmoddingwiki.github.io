@@ -1,6 +1,7 @@
 <!--
 title: TppVehicle2ReliefData
 permalink: /Entity_Reference/?/Tpp/GameCore/TppVehicle2ReliefData/
+stub: true
 tags: [Tpp, GameCore, Reference]
 -->
 
@@ -21,5 +22,6 @@ TODO: Description
 | | |
 |-|-|
 | [blockSizeInBytes](#blocksizeinbytes) | TODO: Description |
+
 
 

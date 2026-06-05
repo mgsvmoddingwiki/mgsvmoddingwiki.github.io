@@ -1,6 +1,7 @@
 <!--
 title: TppSystemUtility
 permalink: /Entity_Reference/?/Tpp/System/TppSystemUtility/
+stub: true
 tags: [Tpp, System, Reference]
 -->
 
@@ -15,6 +16,7 @@ TppSystemUtility : Fox.Core.Entity
 ```
 
 TODO: Description
+
 
 
 

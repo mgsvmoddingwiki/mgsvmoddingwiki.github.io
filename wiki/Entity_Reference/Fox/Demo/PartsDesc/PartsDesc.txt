@@ -1,6 +1,7 @@
 <!--
 title: PartsDesc
 permalink: /Entity_Reference/?/Fox/Demo/PartsDesc/
+stub: true
 tags: [Fox, Demo, Reference]
 -->
 
@@ -24,5 +25,6 @@ TODO: Description
 | [partsFile](#partsfile) | TODO: Description |
 | [modelPath](#modelpath) | TODO: Description |
 | [partName](#partname) | TODO: Description |
+
 
 

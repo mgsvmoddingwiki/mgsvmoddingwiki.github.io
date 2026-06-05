@@ -1,6 +1,7 @@
 <!--
 title: CheckpointData
 permalink: /Entity_Reference/?/Fox/GameKit/CheckpointData/
+stub: true
 tags: [Fox, GameKit, Reference]
 -->
 
@@ -15,6 +16,7 @@ CheckpointData : Fox.Core.Entity
 ```
 
 TODO: Description
+
 
 
 

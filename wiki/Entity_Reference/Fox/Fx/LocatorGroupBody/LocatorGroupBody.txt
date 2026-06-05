@@ -1,6 +1,7 @@
 <!--
 title: LocatorGroupBody
 permalink: /Entity_Reference/?/Fox/Fx/LocatorGroupBody/
+stub: true
 tags: [Fox, Fx, Reference]
 -->
 
@@ -15,6 +16,7 @@ LocatorGroupBody : Fox.Core.TransformDataBody
 ```
 
 TODO: Description
+
 
 
 

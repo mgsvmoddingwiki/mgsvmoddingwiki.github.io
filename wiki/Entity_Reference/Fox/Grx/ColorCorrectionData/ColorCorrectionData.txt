@@ -1,6 +1,7 @@
 <!--
 title: ColorCorrectionData
 permalink: /Entity_Reference/?/Fox/Grx/ColorCorrectionData/
+stub: true
 tags: [Fox, Grx, Reference]
 -->
 
@@ -26,5 +27,6 @@ TODO: Description
 | [showBaseLUT](#showbaselut) | TODO: Description |
 | [showFilterLUT](#showfilterlut) | TODO: Description |
 | [colorScale](#colorscale) | TODO: Description |
+
 
 

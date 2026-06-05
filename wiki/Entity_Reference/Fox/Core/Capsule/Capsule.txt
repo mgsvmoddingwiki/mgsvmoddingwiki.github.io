@@ -1,6 +1,7 @@
 <!--
 title: Capsule
 permalink: /Entity_Reference/?/Fox/Core/Capsule/
+stub: true
 tags: [Fox, Core, Reference]
 -->
 
@@ -21,5 +22,6 @@ TODO: Description
 |-|-|
 | [p0](#p0) | TODO: Description |
 | [p1](#p1) | TODO: Description |
+
 
 

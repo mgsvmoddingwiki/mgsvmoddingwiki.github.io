@@ -1,6 +1,7 @@
 <!--
 title: SoundAreaEdge
 permalink: /Entity_Reference/?/Fox/Sdx/SoundAreaEdge/
+stub: true
 tags: [Fox, Sdx, Reference]
 -->
 
@@ -23,5 +24,6 @@ TODO: Description
 | [parameter](#parameter) | TODO: Description |
 | [prevArea](#prevarea) | TODO: Description |
 | [nextArea](#nextarea) | TODO: Description |
+
 
 

@@ -1,6 +1,7 @@
 <!--
 title: NavUnitHandleEntity
 permalink: /Entity_Reference/?/Fox/Nav/NavUnitHandleEntity/
+stub: true
 tags: [Fox, Nav, Reference]
 -->
 
@@ -22,5 +23,6 @@ TODO: Description
 |-|-|
 | [uid](#uid) | TODO: Description |
 | [index](#index) | TODO: Description |
+
 
 

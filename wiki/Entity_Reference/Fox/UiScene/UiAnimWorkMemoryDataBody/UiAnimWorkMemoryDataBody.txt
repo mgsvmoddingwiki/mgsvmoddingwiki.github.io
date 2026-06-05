@@ -1,6 +1,7 @@
 <!--
 title: UiAnimWorkMemoryDataBody
 permalink: /Entity_Reference/?/Fox/UiScene/UiAnimWorkMemoryDataBody/
+stub: true
 tags: [Fox, UiScene, Reference]
 -->
 
@@ -15,6 +16,7 @@ UiAnimWorkMemoryDataBody : Fox.Core.DataBody
 ```
 
 TODO: Description
+
 
 
 

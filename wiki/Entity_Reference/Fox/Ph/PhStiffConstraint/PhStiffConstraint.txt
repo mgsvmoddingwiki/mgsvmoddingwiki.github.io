@@ -1,6 +1,7 @@
 <!--
 title: PhStiffConstraint
 permalink: /Entity_Reference/?/Fox/Ph/PhStiffConstraint/
+stub: true
 tags: [Fox, Ph, Reference]
 -->
 
@@ -22,5 +23,6 @@ TODO: Description
 |-|-|
 | [endurancePower](#endurancepower) | TODO: Description |
 | [enduranceTorque](#endurancetorque) | TODO: Description |
+
 
 

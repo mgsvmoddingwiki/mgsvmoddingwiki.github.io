@@ -1,6 +1,7 @@
 <!--
 title: EnvironmentArea
 permalink: /Entity_Reference/?/Fox/GameKit/EnvironmentArea/
+stub: true
 tags: [Fox, GameKit, Reference]
 -->
 
@@ -24,5 +25,6 @@ TODO: Description
 | [priority](#priority) | TODO: Description |
 | [enable](#enable) | TODO: Description |
 | [shapes](#shapes) | TODO: Description |
+
 
 

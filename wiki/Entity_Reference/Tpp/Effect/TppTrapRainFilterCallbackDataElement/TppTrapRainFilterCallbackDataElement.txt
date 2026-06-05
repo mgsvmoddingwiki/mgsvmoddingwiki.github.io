@@ -1,6 +1,7 @@
 <!--
 title: TppTrapRainFilterCallbackDataElement
 permalink: /Entity_Reference/?/Tpp/Effect/TppTrapRainFilterCallbackDataElement/
+stub: true
 tags: [Tpp, Effect, Reference]
 -->
 
@@ -15,6 +16,7 @@ TppTrapRainFilterCallbackDataElement : Fox.Geo.GeoTrapModuleCallbackDataElement
 ```
 
 TODO: Description
+
 
 
 

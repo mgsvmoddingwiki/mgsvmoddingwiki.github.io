@@ -1,6 +1,7 @@
 <!--
 title: GetWormholeListReceive
 permalink: /Entity_Reference/?/Tpp/Ui/GetWormholeListReceive/
+stub: true
 tags: [Tpp, Ui, Reference]
 -->
 
@@ -15,6 +16,7 @@ GetWormholeListReceive : Fox.Core.Entity
 ```
 
 TODO: Description
+
 
 
 

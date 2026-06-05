@@ -1,6 +1,7 @@
 <!--
 title: UiCommonDataManager
 permalink: /Entity_Reference/?/Tpp/Ui/UiCommonDataManager/
+stub: true
 tags: [Tpp, Ui, Reference]
 -->
 
@@ -15,6 +16,7 @@ UiCommonDataManager : Fox.Core.Entity
 ```
 
 TODO: Description
+
 
 
 

@@ -1,6 +1,7 @@
 <!--
 title: SoundPackage
 permalink: /Entity_Reference/?/Fox/Sdx/SoundPackage/
+stub: true
 tags: [Fox, Sdx, Reference]
 -->
 
@@ -22,5 +23,6 @@ TODO: Description
 |-|-|
 | [soundDataFile](#sounddatafile) | TODO: Description |
 | [syncLoad](#syncload) | TODO: Description |
+
 
 

@@ -1,6 +1,7 @@
 <!--
 title: LangFile
 permalink: /Entity_Reference/?/Fox/Ui/LangFile/
+stub: true
 tags: [Fox, Ui, Reference]
 -->
 
@@ -15,6 +16,7 @@ LangFile : Fox.Core.RawFile
 ```
 
 TODO: Description
+
 
 
 

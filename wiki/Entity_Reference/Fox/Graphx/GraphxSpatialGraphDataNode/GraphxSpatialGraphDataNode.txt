@@ -1,6 +1,7 @@
 <!--
 title: GraphxSpatialGraphDataNode
 permalink: /Entity_Reference/?/Fox/Graphx/GraphxSpatialGraphDataNode/
+stub: true
 tags: [Fox, Graphx, Reference]
 -->
 
@@ -23,5 +24,6 @@ TODO: Description
 | [position](#position) | TODO: Description |
 | [inlinks](#inlinks) | TODO: Description |
 | [outlinks](#outlinks) | TODO: Description |
+
 
 

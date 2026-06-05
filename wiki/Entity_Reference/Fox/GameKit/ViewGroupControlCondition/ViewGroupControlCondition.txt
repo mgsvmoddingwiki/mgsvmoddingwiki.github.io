@@ -1,6 +1,7 @@
 <!--
 title: ViewGroupControlCondition
 permalink: /Entity_Reference/?/Fox/GameKit/ViewGroupControlCondition/
+stub: true
 tags: [Fox, GameKit, Reference]
 -->
 
@@ -23,5 +24,6 @@ TODO: Description
 | [flags](#flags) | TODO: Description |
 | [condition](#condition) | TODO: Description |
 | [identify](#identify) | TODO: Description |
+
 
 

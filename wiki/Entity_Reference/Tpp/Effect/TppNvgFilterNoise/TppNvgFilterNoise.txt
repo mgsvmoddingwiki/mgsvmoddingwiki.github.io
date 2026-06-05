@@ -1,6 +1,7 @@
 <!--
 title: TppNvgFilterNoise
 permalink: /Entity_Reference/?/Tpp/Effect/TppNvgFilterNoise/
+stub: true
 tags: [Tpp, Effect, Reference]
 -->
 
@@ -29,5 +30,6 @@ TODO: Description
 | [color](#color) | TODO: Description |
 | [radialSlope](#radialslope) | TODO: Description |
 | [radialShift](#radialshift) | TODO: Description |
+
 
 

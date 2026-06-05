@@ -1,6 +1,7 @@
 <!--
 title: SimControlElement
 permalink: /Entity_Reference/?/Fox/Sim/SimControlElement/
+stub: true
 tags: [Fox, Sim, Reference]
 -->
 
@@ -21,5 +22,6 @@ TODO: Description
 | | |
 |-|-|
 | [bones](#bones) | TODO: Description |
+
 
 

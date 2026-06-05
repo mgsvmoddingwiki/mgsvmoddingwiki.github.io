@@ -1,6 +1,7 @@
 <!--
 title: GrxOccluderBody
 permalink: /Entity_Reference/?/Fox/Grx/GrxOccluderBody/
+stub: true
 tags: [Fox, Grx, Reference]
 -->
 
@@ -15,6 +16,7 @@ GrxOccluderBody : Fox.Core.TransformDataBody
 ```
 
 TODO: Description
+
 
 
 

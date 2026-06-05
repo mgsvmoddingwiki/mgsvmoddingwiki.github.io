@@ -1,6 +1,7 @@
 <!--
 title: NavNavigationParameter
 permalink: /Entity_Reference/?/Fox/Nav/NavNavigationParameter/
+stub: true
 tags: [Fox, Nav, Reference]
 -->
 
@@ -15,6 +16,7 @@ NavNavigationParameter : Fox.Core.Entity
 ```
 
 TODO: Description
+
 
 
 

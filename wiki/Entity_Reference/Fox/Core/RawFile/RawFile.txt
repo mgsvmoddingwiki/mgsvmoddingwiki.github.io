@@ -1,6 +1,7 @@
 <!--
 title: RawFile
 permalink: /Entity_Reference/?/Fox/Core/RawFile/
+stub: true
 tags: [Fox, Core, Reference]
 -->
 
@@ -15,6 +16,7 @@ RawFile : Fox.Core.File
 ```
 
 TODO: Description
+
 
 
 

@@ -1,6 +1,7 @@
 <!--
 title: SimClothControlParam
 permalink: /Entity_Reference/?/Fox/Sim/SimClothControlParam/
+stub: true
 tags: [Fox, Sim, Reference]
 -->
 
@@ -22,5 +23,6 @@ TODO: Description
 |-|-|
 | [windCoefficient](#windcoefficient) | TODO: Description |
 | [isLoop](#isloop) | TODO: Description |
+
 
 

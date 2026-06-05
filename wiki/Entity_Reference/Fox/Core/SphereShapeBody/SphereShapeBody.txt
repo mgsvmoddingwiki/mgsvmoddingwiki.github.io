@@ -1,6 +1,7 @@
 <!--
 title: SphereShapeBody
 permalink: /Entity_Reference/?/Fox/Core/SphereShapeBody/
+stub: true
 tags: [Fox, Core, Reference]
 -->
 
@@ -21,5 +22,6 @@ TODO: Description
 | | |
 |-|-|
 | [shape_p](#shape-p) | TODO: Description |
+
 
 

@@ -1,6 +1,7 @@
 <!--
 title: GrPluginLocelReflection
 permalink: /Entity_Reference/?/Fox/Gr/GrPluginLocelReflection/
+stub: true
 tags: [Fox, Gr, Reference]
 -->
 
@@ -15,6 +16,7 @@ GrPluginLocelReflection : Fox.Gr.GrRenderPlugin
 ```
 
 TODO: Description
+
 
 
 

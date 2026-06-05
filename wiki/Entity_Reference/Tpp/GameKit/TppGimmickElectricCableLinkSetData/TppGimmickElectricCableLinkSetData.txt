@@ -1,6 +1,7 @@
 <!--
 title: TppGimmickElectricCableLinkSetData
 permalink: /Entity_Reference/?/Tpp/GameKit/TppGimmickElectricCableLinkSetData/
+stub: true
 tags: [Tpp, GameKit, Reference]
 -->
 
@@ -25,5 +26,6 @@ TODO: Description
 | [electricCable](#electriccable) | TODO: Description |
 | [pole](#pole) | TODO: Description |
 | [cnpIndex](#cnpindex) | TODO: Description |
+
 
 

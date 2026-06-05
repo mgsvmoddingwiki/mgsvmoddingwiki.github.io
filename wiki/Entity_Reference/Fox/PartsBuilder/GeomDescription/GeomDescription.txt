@@ -1,6 +1,7 @@
 <!--
 title: GeomDescription
 permalink: /Entity_Reference/?/Fox/PartsBuilder/GeomDescription/
+stub: true
 tags: [Fox, PartsBuilder, Reference]
 -->
 
@@ -25,5 +26,6 @@ TODO: Description
 | [offsetScale](#offsetscale) | TODO: Description |
 | [offsetRotQuat](#offsetrotquat) | TODO: Description |
 | [offsetTranslation](#offsettranslation) | TODO: Description |
+
 
 

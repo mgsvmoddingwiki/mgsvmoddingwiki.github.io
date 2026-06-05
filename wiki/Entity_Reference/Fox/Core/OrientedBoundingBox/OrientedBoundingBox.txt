@@ -1,6 +1,7 @@
 <!--
 title: OrientedBoundingBox
 permalink: /Entity_Reference/?/Fox/Core/OrientedBoundingBox/
+stub: true
 tags: [Fox, Core, Reference]
 -->
 
@@ -22,5 +23,6 @@ TODO: Description
 | [center](#center) | TODO: Description |
 | [size](#size) | TODO: Description |
 | [rotation](#rotation) | TODO: Description |
+
 
 

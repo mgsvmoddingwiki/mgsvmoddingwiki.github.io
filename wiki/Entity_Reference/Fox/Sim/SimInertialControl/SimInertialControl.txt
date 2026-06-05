@@ -1,6 +1,7 @@
 <!--
 title: SimInertialControl
 permalink: /Entity_Reference/?/Fox/Sim/SimInertialControl/
+stub: true
 tags: [Fox, Sim, Reference]
 -->
 
@@ -22,5 +23,6 @@ TODO: Description
 |-|-|
 | [controlParam](#controlparam) | TODO: Description |
 | [inertialCoefficient](#inertialcoefficient) | TODO: Description |
+
 
 

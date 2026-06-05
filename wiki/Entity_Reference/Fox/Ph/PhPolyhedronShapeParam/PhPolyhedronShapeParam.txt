@@ -1,6 +1,7 @@
 <!--
 title: PhPolyhedronShapeParam
 permalink: /Entity_Reference/?/Fox/Ph/PhPolyhedronShapeParam/
+stub: true
 tags: [Fox, Ph, Reference]
 -->
 
@@ -22,5 +23,6 @@ TODO: Description
 |-|-|
 | [verts](#verts) | TODO: Description |
 | [polys](#polys) | TODO: Description |
+
 
 

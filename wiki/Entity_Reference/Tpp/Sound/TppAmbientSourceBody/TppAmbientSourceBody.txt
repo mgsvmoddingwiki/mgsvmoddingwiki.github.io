@@ -1,6 +1,7 @@
 <!--
 title: TppAmbientSourceBody
 permalink: /Entity_Reference/?/Tpp/Sound/TppAmbientSourceBody/
+stub: true
 tags: [Tpp, Sound, Reference]
 -->
 
@@ -15,6 +16,7 @@ TppAmbientSourceBody : Fox.Sdx.SoundSourceBody
 ```
 
 TODO: Description
+
 
 
 

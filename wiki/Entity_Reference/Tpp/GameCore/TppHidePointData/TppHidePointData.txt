@@ -1,6 +1,7 @@
 <!--
 title: TppHidePointData
 permalink: /Entity_Reference/?/Tpp/GameCore/TppHidePointData/
+stub: true
 tags: [Tpp, GameCore, Reference]
 -->
 
@@ -21,5 +22,6 @@ TODO: Description
 | | |
 |-|-|
 | [type](#type) | TODO: Description |
+
 
 

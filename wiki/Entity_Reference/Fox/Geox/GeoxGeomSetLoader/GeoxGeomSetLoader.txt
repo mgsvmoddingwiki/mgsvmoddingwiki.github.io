@@ -1,6 +1,7 @@
 <!--
 title: GeoxGeomSetLoader
 permalink: /Entity_Reference/?/Fox/Geox/GeoxGeomSetLoader/
+stub: true
 tags: [Fox, Geox, Reference]
 -->
 
@@ -21,5 +22,6 @@ TODO: Description
 | | |
 |-|-|
 | [geomSetFile](#geomsetfile) | TODO: Description |
+
 
 

@@ -1,6 +1,7 @@
 <!--
 title: TppAmbientSoundSource
 permalink: /Entity_Reference/?/Tpp/Sound/TppAmbientSoundSource/
+stub: true
 tags: [Tpp, Sound, Reference]
 -->
 
@@ -22,5 +23,6 @@ TODO: Description
 |-|-|
 | [volumeRtpc](#volumertpc) | TODO: Description |
 | [ambientIndex](#ambientindex) | TODO: Description |
+
 
 

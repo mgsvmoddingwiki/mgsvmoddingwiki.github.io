@@ -1,6 +1,7 @@
 <!--
 title: FxVfxBinaryFile
 permalink: /Entity_Reference/?/Fox/Fx/FxVfxBinaryFile/
+stub: true
 tags: [Fox, Fx, Reference]
 -->
 
@@ -15,6 +16,7 @@ FxVfxBinaryFile : Fox.Core.RawFile
 ```
 
 TODO: Description
+
 
 
 

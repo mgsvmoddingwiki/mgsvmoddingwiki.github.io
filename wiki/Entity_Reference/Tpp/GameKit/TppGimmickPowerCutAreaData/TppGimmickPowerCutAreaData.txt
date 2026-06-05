@@ -1,6 +1,7 @@
 <!--
 title: TppGimmickPowerCutAreaData
 permalink: /Entity_Reference/?/Tpp/GameKit/TppGimmickPowerCutAreaData/
+stub: true
 tags: [Tpp, GameKit, Reference]
 -->
 
@@ -21,5 +22,6 @@ TODO: Description
 | | |
 |-|-|
 | [locaterFile](#locaterfile) | TODO: Description |
+
 
 

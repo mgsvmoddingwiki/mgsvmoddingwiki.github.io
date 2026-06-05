@@ -1,6 +1,7 @@
 <!--
 title: TppLensFlareShapeArray
 permalink: /Entity_Reference/?/Tpp/Effect/TppLensFlareShapeArray/
+stub: true
 tags: [Tpp, Effect, Reference]
 -->
 
@@ -28,5 +29,6 @@ TODO: Description
 | [randomColorMin](#randomcolormin) | TODO: Description |
 | [randomColorMax](#randomcolormax) | TODO: Description |
 | [randomSeed](#randomseed) | TODO: Description |
+
 
 

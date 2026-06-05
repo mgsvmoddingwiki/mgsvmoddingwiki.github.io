@@ -1,6 +1,7 @@
 <!--
 title: TppGrenadeShockDataBody
 permalink: /Entity_Reference/?/Tpp/Effect/TppGrenadeShockDataBody/
+stub: true
 tags: [Tpp, Effect, Reference]
 -->
 
@@ -15,6 +16,7 @@ TppGrenadeShockDataBody : Fox.Core.DataBody
 ```
 
 TODO: Description
+
 
 
 

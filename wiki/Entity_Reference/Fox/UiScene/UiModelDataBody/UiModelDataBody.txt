@@ -1,6 +1,7 @@
 <!--
 title: UiModelDataBody
 permalink: /Entity_Reference/?/Fox/UiScene/UiModelDataBody/
+stub: true
 tags: [Fox, UiScene, Reference]
 -->
 
@@ -15,6 +16,7 @@ UiModelDataBody : Fox.Core.TransformDataBody
 ```
 
 TODO: Description
+
 
 
 

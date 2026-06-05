@@ -1,6 +1,7 @@
 <!--
 title: UiEdgeData
 permalink: /Entity_Reference/?/Fox/Ui/UiEdgeData/
+stub: true
 tags: [Fox, Ui, Reference]
 -->
 
@@ -33,5 +34,6 @@ TODO: Description
 | [virtualTargetNode](#virtualtargetnode) | TODO: Description |
 | [isInvalid](#isinvalid) | TODO: Description |
 | [connectRealEdge](#connectrealedge) | TODO: Description |
+
 
 

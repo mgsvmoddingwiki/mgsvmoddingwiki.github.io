@@ -1,6 +1,7 @@
 <!--
 title: TppMuddledFilter2
 permalink: /Entity_Reference/?/Tpp/Effect/TppMuddledFilter2/
+stub: true
 tags: [Tpp, Effect, Reference]
 -->
 
@@ -15,6 +16,7 @@ TppMuddledFilter2 : Fox.Core.Entity
 ```
 
 TODO: Description
+
 
 
 

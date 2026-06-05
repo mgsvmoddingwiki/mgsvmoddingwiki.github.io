@@ -1823,6 +1823,7 @@ h2.heading-with-frag-id .heading-frag-id-link {
 }
 
 /* Blockquote special classes styling */
+blockquote.stub,
 blockquote.needs-revision,
 blockquote.note,
 blockquote.tip,
@@ -1840,10 +1841,12 @@ blockquote.tip {
     --color: var(--color-link);
 }
 
+blockquote.stub,
 blockquote.needs-revision {
     --color: var(--color-accent);
 }
 
+blockquote.stub::before,
 blockquote.needs-revision::before,
 blockquote.note::before,
 blockquote.tip::before,
@@ -1860,6 +1863,7 @@ blockquote.important::before {
     top: var(--top);
 }
 
+blockquote.stub::after,
 blockquote.needs-revision::after,
 blockquote.note::after,
 blockquote.tip::after,
@@ -1892,11 +1896,18 @@ blockquote.tip::after {
     mask-position: 3px 4px; /* unfortunately can't just use `mask-position-y` since Chromium lacks support for it */
 }
 
+blockquote.stub::after,
 blockquote.needs-revision::after {
     background: var(--color-accent-foreground);
     -webkit-mask-image: url("/assets/images/ui.svg#icons-small-text-caret");
     mask-image: url("/assets/images/ui.svg#icons-small-text-caret");
     mask-position: 3px 4px;
+}
+
+blockquote.stub::after {
+    -webkit-mask-image: url("/assets/images/ui.svg#icons-small-leaf");
+    mask-image: url("/assets/images/ui.svg#icons-small-leaf");
+    mask-position: 3px 3px;
 }
 
 

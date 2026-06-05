@@ -1,6 +1,7 @@
 <!--
 title: FoxDataLinkCollectorDataBody
 permalink: /Entity_Reference/?/Fox/Core/FoxDataLinkCollectorDataBody/
+stub: true
 tags: [Fox, Core, Reference]
 -->
 
@@ -15,6 +16,7 @@ FoxDataLinkCollectorDataBody : Fox.Core.DataBody
 ```
 
 TODO: Description
+
 
 
 

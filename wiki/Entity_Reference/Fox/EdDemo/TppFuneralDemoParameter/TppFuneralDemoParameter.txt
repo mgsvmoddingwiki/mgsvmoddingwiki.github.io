@@ -1,6 +1,7 @@
 <!--
 title: TppFuneralDemoParameter
 permalink: /Entity_Reference/?/Fox/EdDemo/TppFuneralDemoParameter/
+stub: true
 tags: [Fox, EdDemo, Reference]
 -->
 
@@ -22,5 +23,6 @@ TODO: Description
 |-|-|
 | [fova2File](#fova2file) | TODO: Description |
 | [mtarFile](#mtarfile) | TODO: Description |
+
 
 

@@ -1,6 +1,7 @@
 <!--
 title: PhPrimitiveShape
 permalink: /Entity_Reference/?/Fox/Ph/PhPrimitiveShape/
+stub: true
 tags: [Fox, Ph, Reference]
 -->
 
@@ -25,5 +26,6 @@ TODO: Description
 | [radius](#radius) | TODO: Description |
 | [height](#height) | TODO: Description |
 | [radius2](#radius2) | TODO: Description |
+
 
 

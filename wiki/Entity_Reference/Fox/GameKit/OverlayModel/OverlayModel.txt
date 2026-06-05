@@ -1,6 +1,7 @@
 <!--
 title: OverlayModel
 permalink: /Entity_Reference/?/Fox/GameKit/OverlayModel/
+stub: true
 tags: [Fox, GameKit, Reference]
 -->
 
@@ -22,5 +23,6 @@ TODO: Description
 |-|-|
 | [target](#target) | TODO: Description |
 | [isOn](#ison) | TODO: Description |
+
 
 

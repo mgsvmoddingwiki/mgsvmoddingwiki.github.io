@@ -1,6 +1,7 @@
 <!--
 title: TppPermanentGimmickEventAnimationParameter
 permalink: /Entity_Reference/?/Tpp/GameKit/TppPermanentGimmickEventAnimationParameter/
+stub: true
 tags: [Tpp, GameKit, Reference]
 -->
 
@@ -24,5 +25,6 @@ TODO: Description
 | [defaultAnimPath](#defaultanimpath) | TODO: Description |
 | [eventAnimPath](#eventanimpath) | TODO: Description |
 | [fadeTime](#fadetime) | TODO: Description |
+
 
 

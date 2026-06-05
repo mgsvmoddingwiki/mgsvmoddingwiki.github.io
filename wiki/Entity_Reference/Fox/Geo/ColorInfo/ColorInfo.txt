@@ -1,6 +1,7 @@
 <!--
 title: ColorInfo
 permalink: /Entity_Reference/?/Fox/Geo/ColorInfo/
+stub: true
 tags: [Fox, Geo, Reference]
 -->
 
@@ -15,6 +16,7 @@ ColorInfo : Fox.Geo.MaterialInfoBase
 ```
 
 TODO: Description
+
 
 
 

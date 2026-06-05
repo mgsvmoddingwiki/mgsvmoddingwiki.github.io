@@ -271,7 +271,9 @@ async function parseMarkdown(item) {
         // The `site.pages` here is just providing the full search index, in whatever state it is at this point. The only include that uses this context atm is the index-autolist's tag option but the large loop perf is horrendous with LiquidJS so it's almost useless providing the site context.
         const liquidParsed = await ljs.parseAndRender(text, { site: { pages: searchIndex }, page: item });
         const result = md.render(liquidParsed);
+        const stub = func.checkStub(true);
         contentWrapper.innerHTML = result;
+        if (stub) contentWrapper.prepend(stub);
         postParse(); // parse certain content prior to `stylePage()` that depends on other modules' parsing
         contentLoaded(true); // class detected by function that other modules listen with
 

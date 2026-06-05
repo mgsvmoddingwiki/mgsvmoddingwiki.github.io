@@ -1,6 +1,7 @@
 <!--
 title: TppHeli2Parameter
 permalink: /Entity_Reference/?/Tpp/GameCore/TppHeli2Parameter/
+stub: true
 tags: [Tpp, GameCore, Reference]
 -->
 
@@ -27,5 +28,6 @@ TODO: Description
 | [vfxFiles](#vfxfiles) | TODO: Description |
 | [fovaFiles](#fovafiles) | TODO: Description |
 | [mtarFile](#mtarfile) | TODO: Description |
+
 
 

@@ -1,6 +1,7 @@
 <!--
 title: MbdvcBootData
 permalink: /Entity_Reference/?/Tpp/Ui/MbdvcBootData/
+stub: true
 tags: [Tpp, Ui, Reference]
 -->
 
@@ -22,5 +23,6 @@ TODO: Description
 |-|-|
 | [uigFile](#uigfile) | TODO: Description |
 | [rawFile](#rawfile) | TODO: Description |
+
 
 

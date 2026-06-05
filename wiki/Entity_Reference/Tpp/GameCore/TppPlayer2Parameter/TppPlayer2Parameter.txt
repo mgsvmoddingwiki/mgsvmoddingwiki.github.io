@@ -1,6 +1,7 @@
 <!--
 title: TppPlayer2Parameter
 permalink: /Entity_Reference/?/Tpp/GameCore/TppPlayer2Parameter/
+stub: true
 tags: [Tpp, GameCore, Reference]
 -->
 
@@ -30,5 +31,6 @@ TODO: Description
 | [lifeRecoveryCooldownTimer](#liferecoverycooldowntimer) | TODO: Description |
 | [partsType](#partstype) | TODO: Description |
 | [TODO_trapTags](#todo-traptags) | TODO: Description |
+
 
 

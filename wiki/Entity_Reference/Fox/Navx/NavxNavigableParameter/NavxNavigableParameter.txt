@@ -1,6 +1,7 @@
 <!--
 title: NavxNavigableParameter
 permalink: /Entity_Reference/?/Fox/Navx/NavxNavigableParameter/
+stub: true
 tags: [Fox, Navx, Reference]
 -->
 
@@ -28,5 +29,6 @@ TODO: Description
 | [maxClimbableAngle](#maxclimbableangle) | TODO: Description |
 | [maxStepSize](#maxstepsize) | TODO: Description |
 | [minArea](#minarea) | TODO: Description |
+
 
 

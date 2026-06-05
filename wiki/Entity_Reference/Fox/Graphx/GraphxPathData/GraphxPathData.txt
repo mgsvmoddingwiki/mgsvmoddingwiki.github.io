@@ -1,6 +1,7 @@
 <!--
 title: GraphxPathData
 permalink: /Entity_Reference/?/Fox/Graphx/GraphxPathData/
+stub: true
 tags: [Fox, Graphx, Reference]
 -->
 
@@ -15,6 +16,7 @@ GraphxPathData : Fox.Graphx.GraphxSpatialGraphData
 ```
 
 TODO: Description
+
 
 
 

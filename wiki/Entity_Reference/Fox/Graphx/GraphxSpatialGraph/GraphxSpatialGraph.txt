@@ -1,6 +1,7 @@
 <!--
 title: GraphxSpatialGraph
 permalink: /Entity_Reference/?/Fox/Graphx/GraphxSpatialGraph/
+stub: true
 tags: [Fox, Graphx, Reference]
 -->
 
@@ -15,6 +16,7 @@ GraphxSpatialGraph : Fox.Core.TransformDataBody
 ```
 
 TODO: Description
+
 
 
 

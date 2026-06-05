@@ -1,6 +1,7 @@
 <!--
 title: GeoTrapFile
 permalink: /Entity_Reference/?/Fox/Geo/GeoTrapFile/
+stub: true
 tags: [Fox, Geo, Reference]
 -->
 
@@ -15,6 +16,7 @@ GeoTrapFile : Fox.Core.RawFile
 ```
 
 TODO: Description
+
 
 
 

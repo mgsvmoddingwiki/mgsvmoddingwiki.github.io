@@ -1,6 +1,7 @@
 <!--
 title: NavxAttributeInfo
 permalink: /Entity_Reference/?/Fox/Navx/NavxAttributeInfo/
+stub: true
 tags: [Fox, Navx, Reference]
 -->
 
@@ -22,5 +23,6 @@ TODO: Description
 |-|-|
 | [name](#name) | TODO: Description |
 | [simplificationThreshold](#simplificationthreshold) | TODO: Description |
+
 
 

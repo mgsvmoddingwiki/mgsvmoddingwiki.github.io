@@ -1,6 +1,7 @@
 <!--
 title: FoxFlagContainer
 permalink: /Entity_Reference/?/Fox/Core/FoxFlagContainer/
+stub: true
 tags: [Fox, Core, Reference]
 -->
 
@@ -22,5 +23,6 @@ TODO: Description
 |-|-|
 | [status](#status) | TODO: Description |
 | [string](#string) | TODO: Description |
+
 
 

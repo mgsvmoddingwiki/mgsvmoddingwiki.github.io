@@ -1,6 +1,7 @@
 <!--
 title: SimHitGroupControl
 permalink: /Entity_Reference/?/Fox/Sim/SimHitGroupControl/
+stub: true
 tags: [Fox, Sim, Reference]
 -->
 
@@ -21,5 +22,6 @@ TODO: Description
 | | |
 |-|-|
 | [controlParam](#controlparam) | TODO: Description |
+
 
 
