@@ -1,6 +1,7 @@
 <!--
 title: TppDirtyModelController
 permalink: /Entity_Reference/?/Tpp/Effect/TppDirtyModelController/
+stub: true
 tags: [Tpp, Effect, Reference]
 -->
 
@@ -15,6 +16,7 @@ TppDirtyModelController : Fox.Core.Entity
 ```
 
 TODO: Description
+
 
 
 

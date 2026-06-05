@@ -1,6 +1,7 @@
 <!--
 title: TppPrimRiverModelParam
 permalink: /Entity_Reference/?/Tpp/Effect/TppPrimRiverModelParam/
+stub: true
 tags: [Tpp, Effect, Reference]
 -->
 
@@ -40,5 +41,6 @@ TODO: Description
 | [oilIntensity](#oilintensity) | TODO: Description |
 | [useHnmTexture](#usehnmtexture) | TODO: Description |
 | [debugReset](#debugreset) | TODO: Description |
+
 
 

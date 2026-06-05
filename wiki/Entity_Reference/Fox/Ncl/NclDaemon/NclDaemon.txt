@@ -1,6 +1,7 @@
 <!--
 title: NclDaemon
 permalink: /Entity_Reference/?/Fox/Ncl/NclDaemon/
+stub: true
 tags: [Fox, Ncl, Reference]
 -->
 
@@ -22,5 +23,6 @@ TODO: Description
 |-|-|
 | [exIp](#exip) | TODO: Description |
 | [inIp](#inip) | TODO: Description |
+
 
 

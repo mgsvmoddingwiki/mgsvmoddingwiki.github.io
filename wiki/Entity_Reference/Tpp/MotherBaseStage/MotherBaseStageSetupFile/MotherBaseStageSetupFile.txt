@@ -1,6 +1,7 @@
 <!--
 title: MotherBaseStageSetupFile
 permalink: /Entity_Reference/?/Tpp/MotherBaseStage/MotherBaseStageSetupFile/
+stub: true
 tags: [Tpp, MotherBaseStage, Reference]
 -->
 
@@ -15,6 +16,7 @@ MotherBaseStageSetupFile : Fox.Core.RawFile
 ```
 
 TODO: Description
+
 
 
 

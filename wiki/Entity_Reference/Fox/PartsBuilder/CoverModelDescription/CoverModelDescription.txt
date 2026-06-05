@@ -1,6 +1,7 @@
 <!--
 title: CoverModelDescription
 permalink: /Entity_Reference/?/Fox/PartsBuilder/CoverModelDescription/
+stub: true
 tags: [Fox, PartsBuilder, Reference]
 -->
 
@@ -15,6 +16,7 @@ CoverModelDescription : Fox.PartsBuilder.ModelDescription
 ```
 
 TODO: Description
+
 
 
 

@@ -1,6 +1,7 @@
 <!--
 title: TppMarker2LocatorParameter
 permalink: /Entity_Reference/?/Tpp/MarkerLocator/TppMarker2LocatorParameter/
+stub: true
 tags: [Tpp, MarkerLocator, Reference]
 -->
 
@@ -22,5 +23,6 @@ TODO: Description
 |-|-|
 | [markerType](#markertype) | TODO: Description |
 | [markerId](#markerid) | TODO: Description |
+
 
 

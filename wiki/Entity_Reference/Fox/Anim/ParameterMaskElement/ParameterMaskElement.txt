@@ -1,6 +1,7 @@
 <!--
 title: ParameterMaskElement
 permalink: /Entity_Reference/?/Fox/Anim/ParameterMaskElement/
+stub: true
 tags: [Fox, Anim, Reference]
 -->
 
@@ -22,5 +23,6 @@ TODO: Description
 |-|-|
 | [unitNameList](#unitnamelist) | TODO: Description |
 | [nodeName](#nodename) | TODO: Description |
+
 
 

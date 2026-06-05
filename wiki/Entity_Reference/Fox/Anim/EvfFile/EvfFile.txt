@@ -1,6 +1,7 @@
 <!--
 title: EvfFile
 permalink: /Entity_Reference/?/Fox/Anim/EvfFile/
+stub: true
 tags: [Fox, Anim, Reference]
 -->
 
@@ -15,6 +16,7 @@ EvfFile : Fox.Core.DataSetFile2
 ```
 
 TODO: Description
+
 
 
 

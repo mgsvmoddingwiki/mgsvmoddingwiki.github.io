@@ -1,6 +1,7 @@
 <!--
 title: ObjectBrushPluginBushDataElement
 permalink: /Entity_Reference/?/Tpp/GameKit/ObjectBrushPluginBushDataElement/
+stub: true
 tags: [Tpp, GameKit, Reference]
 -->
 
@@ -43,5 +44,6 @@ TODO: Description
 | [bulletEffect](#bulleteffect) | TODO: Description |
 | [fairEffect](#faireffect) | TODO: Description |
 | [rainEffect](#raineffect) | TODO: Description |
+
 
 

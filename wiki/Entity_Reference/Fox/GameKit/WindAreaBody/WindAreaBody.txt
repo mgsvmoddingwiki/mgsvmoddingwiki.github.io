@@ -1,6 +1,7 @@
 <!--
 title: WindAreaBody
 permalink: /Entity_Reference/?/Fox/GameKit/WindAreaBody/
+stub: true
 tags: [Fox, GameKit, Reference]
 -->
 
@@ -15,6 +16,7 @@ WindAreaBody : Fox.GameKit.EnvironmentAreaBody
 ```
 
 TODO: Description
+
 
 
 

@@ -1,6 +1,7 @@
 <!--
 title: GkConeSightCheckParam
 permalink: /Entity_Reference/?/Fox/GameKit/GkConeSightCheckParam/
+stub: true
 tags: [Fox, GameKit, Reference]
 -->
 
@@ -24,5 +25,6 @@ TODO: Description
 | [angleLeftRight](#angleleftright) | TODO: Description |
 | [angleUpDown](#angleupdown) | TODO: Description |
 | [headBackDistance](#headbackdistance) | TODO: Description |
+
 
 

@@ -1,6 +1,7 @@
 <!--
 title: UiGraphEntry
 permalink: /Entity_Reference/?/Fox/Ui/UiGraphEntry/
+stub: true
 tags: [Fox, Ui, Reference]
 -->
 
@@ -22,5 +23,6 @@ TODO: Description
 |-|-|
 | [files](#files) | TODO: Description |
 | [rawFiles](#rawfiles) | TODO: Description |
+
 
 

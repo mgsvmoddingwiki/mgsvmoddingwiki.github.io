@@ -1,6 +1,7 @@
 <!--
 title: TppHighSpeedFilter
 permalink: /Entity_Reference/?/Tpp/Effect/TppHighSpeedFilter/
+stub: true
 tags: [Tpp, Effect, Reference]
 -->
 
@@ -15,6 +16,7 @@ TppHighSpeedFilter : Fox.Core.Entity
 ```
 
 TODO: Description
+
 
 
 

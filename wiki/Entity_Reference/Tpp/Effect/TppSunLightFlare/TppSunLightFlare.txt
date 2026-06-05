@@ -1,6 +1,7 @@
 <!--
 title: TppSunLightFlare
 permalink: /Entity_Reference/?/Tpp/Effect/TppSunLightFlare/
+stub: true
 tags: [Tpp, Effect, Reference]
 -->
 
@@ -21,5 +22,6 @@ TODO: Description
 | | |
 |-|-|
 | [flareName](#flarename) | TODO: Description |
+
 
 

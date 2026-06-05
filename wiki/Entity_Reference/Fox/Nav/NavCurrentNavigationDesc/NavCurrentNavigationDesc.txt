@@ -1,6 +1,7 @@
 <!--
 title: NavCurrentNavigationDesc
 permalink: /Entity_Reference/?/Fox/Nav/NavCurrentNavigationDesc/
+stub: true
 tags: [Fox, Nav, Reference]
 -->
 
@@ -33,5 +34,6 @@ TODO: Description
 | [pathUpdateDist](#pathupdatedist) | TODO: Description |
 | [pathfindOptionEnableFlags](#pathfindoptionenableflags) | TODO: Description |
 | [enableAutoIncrementStep](#enableautoincrementstep) | TODO: Description |
+
 
 

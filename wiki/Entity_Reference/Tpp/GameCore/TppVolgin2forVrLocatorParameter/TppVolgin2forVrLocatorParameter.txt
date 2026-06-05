@@ -1,6 +1,7 @@
 <!--
 title: TppVolgin2forVrLocatorParameter
 permalink: /Entity_Reference/?/Tpp/GameCore/TppVolgin2forVrLocatorParameter/
+stub: true
 tags: [Tpp, GameCore, Reference]
 -->
 
@@ -21,5 +22,6 @@ TODO: Description
 | | |
 |-|-|
 | [identifier](#identifier) | TODO: Description |
+
 
 

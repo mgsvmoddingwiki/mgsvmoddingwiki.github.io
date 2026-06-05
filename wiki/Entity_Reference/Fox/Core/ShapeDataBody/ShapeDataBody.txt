@@ -1,6 +1,7 @@
 <!--
 title: ShapeDataBody
 permalink: /Entity_Reference/?/Fox/Core/ShapeDataBody/
+stub: true
 tags: [Fox, Core, Reference]
 -->
 
@@ -15,6 +16,7 @@ ShapeDataBody : Fox.Core.TransformDataBody
 ```
 
 TODO: Description
+
 
 
 

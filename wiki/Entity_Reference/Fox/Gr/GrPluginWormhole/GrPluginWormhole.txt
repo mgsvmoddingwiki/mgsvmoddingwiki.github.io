@@ -1,6 +1,7 @@
 <!--
 title: GrPluginWormhole
 permalink: /Entity_Reference/?/Fox/Gr/GrPluginWormhole/
+stub: true
 tags: [Fox, Gr, Reference]
 -->
 
@@ -15,6 +16,7 @@ GrPluginWormhole : Fox.Gr.GrRenderPlugin
 ```
 
 TODO: Description
+
 
 
 

@@ -1,6 +1,7 @@
 <!--
 title: UiFontDataBody
 permalink: /Entity_Reference/?/Fox/Ui/UiFontDataBody/
+stub: true
 tags: [Fox, Ui, Reference]
 -->
 
@@ -15,6 +16,7 @@ UiFontDataBody : Fox.Core.DataBody
 ```
 
 TODO: Description
+
 
 
 

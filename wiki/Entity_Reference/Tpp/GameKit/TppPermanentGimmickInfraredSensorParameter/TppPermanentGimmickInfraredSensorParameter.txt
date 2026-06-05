@@ -1,6 +1,7 @@
 <!--
 title: TppPermanentGimmickInfraredSensorParameter
 permalink: /Entity_Reference/?/Tpp/GameKit/TppPermanentGimmickInfraredSensorParameter/
+stub: true
 tags: [Tpp, GameKit, Reference]
 -->
 
@@ -23,5 +24,6 @@ TODO: Description
 | [flag](#flag) | TODO: Description |
 | [checkHostAndLocalPlayer](#checkhostandlocalplayer) | TODO: Description |
 | [checkPlayer](#checkplayer) | TODO: Description |
+
 
 

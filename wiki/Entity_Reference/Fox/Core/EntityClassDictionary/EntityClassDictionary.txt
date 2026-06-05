@@ -1,6 +1,7 @@
 <!--
 title: EntityClassDictionary
 permalink: /Entity_Reference/?/Fox/Core/EntityClassDictionary/
+stub: true
 tags: [Fox, Core, Reference]
 -->
 
@@ -15,6 +16,7 @@ EntityClassDictionary : Fox.Core.Entity
 ```
 
 TODO: Description
+
 
 
 

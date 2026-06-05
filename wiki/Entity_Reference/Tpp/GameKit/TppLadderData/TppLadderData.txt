@@ -1,6 +1,7 @@
 <!--
 title: TppLadderData
 permalink: /Entity_Reference/?/Tpp/GameKit/TppLadderData/
+stub: true
 tags: [Tpp, GameKit, Reference]
 -->
 
@@ -23,5 +24,6 @@ TODO: Description
 | [numSteps](#numsteps) | TODO: Description |
 | [tacticalActionId](#tacticalactionid) | TODO: Description |
 | [entryPoints](#entrypoints) | TODO: Description |
+
 
 

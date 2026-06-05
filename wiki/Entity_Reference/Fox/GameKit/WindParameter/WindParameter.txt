@@ -1,6 +1,7 @@
 <!--
 title: WindParameter
 permalink: /Entity_Reference/?/Fox/GameKit/WindParameter/
+stub: true
 tags: [Fox, GameKit, Reference]
 -->
 
@@ -28,5 +29,6 @@ TODO: Description
 | [rotTurbulentRate](#rotturbulentrate) | TODO: Description |
 | [rotTurbulentCycle](#rotturbulentcycle) | TODO: Description |
 | [influenceOfGlobal](#influenceofglobal) | TODO: Description |
+
 
 

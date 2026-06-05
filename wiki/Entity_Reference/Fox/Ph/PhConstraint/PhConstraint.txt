@@ -1,6 +1,7 @@
 <!--
 title: PhConstraint
 permalink: /Entity_Reference/?/Fox/Ph/PhConstraint/
+stub: true
 tags: [Fox, Ph, Reference]
 -->
 
@@ -24,5 +25,6 @@ TODO: Description
 | [bodyA](#bodya) | TODO: Description |
 | [bodyB](#bodyb) | TODO: Description |
 | [defaultPosition](#defaultposition) | TODO: Description |
+
 
 

@@ -1,6 +1,7 @@
 <!--
 title: UiPaletteData
 permalink: /Entity_Reference/?/Fox/UiScene/UiPaletteData/
+stub: true
 tags: [Fox, UiScene, Reference]
 -->
 
@@ -30,3 +31,4 @@ master/chunk0.dat/Assets/tpp/pack/ui/ui_resident_data.fpkd/Assets/tpp/ui/GraphAs
 master/chunk0.dat/Assets/tpp/pack/ui/ui_resident_data.fpkd/Assets/tpp/ui/GraphAsset/Common/data/common_art.fox2
 master/chunk0.dat/Assets/tpp/pack/ui/ui_resident_data.fpkd/Assets/tpp/ui/GraphAsset/Common/data/hud_art.fox2
 ```
+

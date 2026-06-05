@@ -1,3 +1,5 @@
+import { searchIndex } from './searchindex.js';
+
 // General reusable functions
 
 export function getRect(el) {
@@ -199,4 +201,16 @@ export function appendStylesheet(url) {
     link.href = url;
 
     document.head.appendChild(link);
+}
+
+export function checkStub(includeUrlParams) {
+    const m = filterArrayByObjVal(searchIndex, 'url', getPageUrls(includeUrlParams).curUrl);
+    if (!m[0] || !m[0].stub) return
+
+    const b = createEl('blockquote','stub'),
+          p = createEl('p');
+    p.innerHTML = `This page is a stub. Improve it by expanding its content to be useful. <a href="/Meta/Creating_Editing_Pages/Metadata_Organization/#stubs">Learn more</a>.`
+    b.appendChild(p);
+
+    return b
 }

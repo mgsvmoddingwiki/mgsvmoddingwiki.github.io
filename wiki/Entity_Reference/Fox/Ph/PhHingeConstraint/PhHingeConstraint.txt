@@ -1,6 +1,7 @@
 <!--
 title: PhHingeConstraint
 permalink: /Entity_Reference/?/Fox/Ph/PhHingeConstraint/
+stub: true
 tags: [Fox, Ph, Reference]
 -->
 
@@ -24,5 +25,6 @@ TODO: Description
 | [limitedFlag](#limitedflag) | TODO: Description |
 | [limitHi](#limithi) | TODO: Description |
 | [limitLo](#limitlo) | TODO: Description |
+
 
 

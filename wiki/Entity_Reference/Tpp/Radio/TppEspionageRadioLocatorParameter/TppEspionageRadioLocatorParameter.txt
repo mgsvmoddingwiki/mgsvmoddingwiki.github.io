@@ -1,6 +1,7 @@
 <!--
 title: TppEspionageRadioLocatorParameter
 permalink: /Entity_Reference/?/Tpp/Radio/TppEspionageRadioLocatorParameter/
+stub: true
 tags: [Tpp, Radio, Reference]
 -->
 
@@ -24,5 +25,6 @@ TODO: Description
 | [minDistance](#mindistance) | TODO: Description |
 | [maxDistance](#maxdistance) | TODO: Description |
 | [angle](#angle) | TODO: Description |
+
 
 

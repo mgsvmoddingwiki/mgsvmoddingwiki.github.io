@@ -1,6 +1,7 @@
 <!--
 title: GeoCollisionCircle
 permalink: /Entity_Reference/?/Fox/Geo/GeoCollisionCircle/
+stub: true
 tags: [Fox, Geo, Reference]
 -->
 
@@ -15,6 +16,7 @@ GeoCollisionCircle : Fox.Geo.GeoCollisionPrimitiveBase
 ```
 
 TODO: Description
+
 
 
 

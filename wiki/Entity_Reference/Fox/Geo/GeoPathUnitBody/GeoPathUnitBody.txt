@@ -1,6 +1,7 @@
 <!--
 title: GeoPathUnitBody
 permalink: /Entity_Reference/?/Fox/Geo/GeoPathUnitBody/
+stub: true
 tags: [Fox, Geo, Reference]
 -->
 
@@ -21,5 +22,6 @@ TODO: Description
 | | |
 |-|-|
 | [isGeomActive](#isgeomactive) | TODO: Description |
+
 
 

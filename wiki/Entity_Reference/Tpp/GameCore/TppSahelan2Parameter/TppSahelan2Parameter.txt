@@ -1,6 +1,7 @@
 <!--
 title: TppSahelan2Parameter
 permalink: /Entity_Reference/?/Tpp/GameCore/TppSahelan2Parameter/
+stub: true
 tags: [Tpp, GameCore, Reference]
 -->
 
@@ -24,5 +25,6 @@ TODO: Description
 | [motionGraphFile](#motiongraphfile) | TODO: Description |
 | [mtarFile](#mtarfile) | TODO: Description |
 | [vfxFiles](#vfxfiles) | TODO: Description |
+
 
 

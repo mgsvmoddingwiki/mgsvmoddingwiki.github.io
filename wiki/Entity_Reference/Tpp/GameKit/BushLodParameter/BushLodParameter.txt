@@ -1,6 +1,7 @@
 <!--
 title: BushLodParameter
 permalink: /Entity_Reference/?/Tpp/GameKit/BushLodParameter/
+stub: true
 tags: [Tpp, GameKit, Reference]
 -->
 
@@ -23,5 +24,6 @@ TODO: Description
 | [farLodSize](#farlodsize) | TODO: Description |
 | [middleLodSize](#middlelodsize) | TODO: Description |
 | [nearLodSize](#nearlodsize) | TODO: Description |
+
 
 

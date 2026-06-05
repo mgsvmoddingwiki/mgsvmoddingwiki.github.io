@@ -1,6 +1,7 @@
 <!--
 title: EndingSettingFile
 permalink: /Entity_Reference/?/Tpp/Ui/EndingSettingFile/
+stub: true
 tags: [Tpp, Ui, Reference]
 -->
 
@@ -15,6 +16,7 @@ EndingSettingFile : Fox.Core.RawFile
 ```
 
 TODO: Description
+
 
 
 

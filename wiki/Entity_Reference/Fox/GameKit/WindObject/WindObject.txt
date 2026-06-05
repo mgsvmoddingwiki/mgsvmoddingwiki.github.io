@@ -1,6 +1,7 @@
 <!--
 title: WindObject
 permalink: /Entity_Reference/?/Fox/GameKit/WindObject/
+stub: true
 tags: [Fox, GameKit, Reference]
 -->
 
@@ -15,6 +16,7 @@ WindObject : Fox.GameKit.EnvironmentObject
 ```
 
 TODO: Description
+
 
 
 

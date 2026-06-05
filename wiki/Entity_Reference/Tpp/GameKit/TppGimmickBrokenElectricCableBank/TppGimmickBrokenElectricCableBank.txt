@@ -1,6 +1,7 @@
 <!--
 title: TppGimmickBrokenElectricCableBank
 permalink: /Entity_Reference/?/Tpp/GameKit/TppGimmickBrokenElectricCableBank/
+stub: true
 tags: [Tpp, GameKit, Reference]
 -->
 
@@ -24,5 +25,6 @@ TODO: Description
 | [modelFile](#modelfile) | TODO: Description |
 | [connectPointFile](#connectpointfile) | TODO: Description |
 | [instanceCount](#instancecount) | TODO: Description |
+
 
 

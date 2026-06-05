@@ -1,6 +1,7 @@
 <!--
 title: FacialSettingData
 permalink: /Entity_Reference/?/Fox/Anim/FacialSettingData/
+stub: true
 tags: [Fox, Anim, Reference]
 -->
 
@@ -24,5 +25,6 @@ TODO: Description
 | [mouthMask](#mouthmask) | TODO: Description |
 | [lipMask](#lipmask) | TODO: Description |
 | [rootName](#rootname) | TODO: Description |
+
 
 

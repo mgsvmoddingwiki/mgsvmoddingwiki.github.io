@@ -1,6 +1,7 @@
 <!--
 title: GeoxDynamicBoundingVolumeActivator
 permalink: /Entity_Reference/?/Fox/Geox/GeoxDynamicBoundingVolumeActivator/
+stub: true
 tags: [Fox, Geox, Reference]
 -->
 
@@ -22,5 +23,6 @@ TODO: Description
 |-|-|
 | [gridSize](#gridsize) | TODO: Description |
 | [allocateSize](#allocatesize) | TODO: Description |
+
 
 

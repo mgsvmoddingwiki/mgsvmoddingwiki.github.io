@@ -1,6 +1,7 @@
 <!--
 title: SubtitlesTrapCondition
 permalink: /Entity_Reference/?/Fox/GameKit/SubtitlesTrapCondition/
+stub: true
 tags: [Fox, GameKit, Reference]
 -->
 
@@ -23,5 +24,6 @@ TODO: Description
 | [targetTags](#targettags) | TODO: Description |
 | [enterSubtitlesFileName](#entersubtitlesfilename) | TODO: Description |
 | [outSubtitlesFileName](#outsubtitlesfilename) | TODO: Description |
+
 
 

@@ -1,6 +1,7 @@
 <!--
 title: FxLocator
 permalink: /Entity_Reference/?/Fox/Fx/FxLocator/
+stub: true
 tags: [Fox, Fx, Reference]
 -->
 
@@ -15,6 +16,7 @@ FxLocator : Fox.Core.TransformDataBody
 ```
 
 TODO: Description
+
 
 
 

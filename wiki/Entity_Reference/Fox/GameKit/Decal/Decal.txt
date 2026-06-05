@@ -1,6 +1,7 @@
 <!--
 title: Decal
 permalink: /Entity_Reference/?/Fox/GameKit/Decal/
+stub: true
 tags: [Fox, GameKit, Reference]
 -->
 
@@ -39,5 +40,6 @@ TODO: Description
 | [showObject](#showobject) | TODO: Description |
 | [isVisibleGeom](#isvisiblegeom) | TODO: Description |
 | [isSSDecal](#isssdecal) | TODO: Description |
+
 
 

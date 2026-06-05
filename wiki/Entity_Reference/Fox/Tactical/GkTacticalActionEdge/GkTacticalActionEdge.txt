@@ -1,6 +1,7 @@
 <!--
 title: GkTacticalActionEdge
 permalink: /Entity_Reference/?/Fox/Tactical/GkTacticalActionEdge/
+stub: true
 tags: [Fox, Tactical, Reference]
 -->
 
@@ -22,5 +23,6 @@ TODO: Description
 |-|-|
 | [actionName](#actionname) | TODO: Description |
 | [actionDirection](#actiondirection) | TODO: Description |
+
 
 

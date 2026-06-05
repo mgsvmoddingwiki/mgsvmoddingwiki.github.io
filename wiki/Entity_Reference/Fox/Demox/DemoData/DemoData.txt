@@ -1,6 +1,7 @@
 <!--
 title: DemoData
 permalink: /Entity_Reference/?/Fox/Demox/DemoData/
+stub: true
 tags: [Fox, Demox, Reference]
 -->
 
@@ -67,5 +68,6 @@ TODO: Description
 | [highestTexture](#highesttexture) | TODO: Description |
 | [objectNum](#objectnum) | TODO: Description |
 | [blockPositionSetter](#blockpositionsetter) | TODO: Description |
+
 
 

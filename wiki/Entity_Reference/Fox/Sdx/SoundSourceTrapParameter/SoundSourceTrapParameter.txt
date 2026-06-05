@@ -1,6 +1,7 @@
 <!--
 title: SoundSourceTrapParameter
 permalink: /Entity_Reference/?/Fox/Sdx/SoundSourceTrapParameter/
+stub: true
 tags: [Fox, Sdx, Reference]
 -->
 
@@ -23,5 +24,6 @@ TODO: Description
 | [source](#source) | TODO: Description |
 | [enterEvent](#enterevent) | TODO: Description |
 | [outEvent](#outevent) | TODO: Description |
+
 
 

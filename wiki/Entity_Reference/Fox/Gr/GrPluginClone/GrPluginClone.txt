@@ -1,6 +1,7 @@
 <!--
 title: GrPluginClone
 permalink: /Entity_Reference/?/Fox/Gr/GrPluginClone/
+stub: true
 tags: [Fox, Gr, Reference]
 -->
 
@@ -15,6 +16,7 @@ GrPluginClone : Fox.Gr.GrRenderPlugin
 ```
 
 TODO: Description
+
 
 
 

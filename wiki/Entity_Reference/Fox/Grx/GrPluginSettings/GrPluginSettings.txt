@@ -1,6 +1,7 @@
 <!--
 title: GrPluginSettings
 permalink: /Entity_Reference/?/Fox/Grx/GrPluginSettings/
+stub: true
 tags: [Fox, Grx, Reference]
 -->
 
@@ -45,5 +46,6 @@ TODO: Description
 | [isLightAdaptationFromLACC](#islightadaptationfromlacc) | TODO: Description |
 | [isShowDecals](#isshowdecals) | TODO: Description |
 | [isShrinkSHBuffer](#isshrinkshbuffer) | TODO: Description |
+
 
 

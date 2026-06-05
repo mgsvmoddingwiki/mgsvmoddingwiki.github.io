@@ -1,6 +1,7 @@
 <!--
 title: DesEffectData
 permalink: /Entity_Reference/?/Fox/Des/DesEffectData/
+stub: true
 tags: [Fox, Des, Reference]
 -->
 
@@ -27,5 +28,6 @@ TODO: Description
 | [connectPointName](#connectpointname) | TODO: Description |
 | [effectFlag](#effectflag) | TODO: Description |
 | [randomSeed](#randomseed) | TODO: Description |
+
 
 

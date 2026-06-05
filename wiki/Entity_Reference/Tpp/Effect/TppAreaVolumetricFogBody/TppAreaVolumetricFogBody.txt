@@ -1,6 +1,7 @@
 <!--
 title: TppAreaVolumetricFogBody
 permalink: /Entity_Reference/?/Tpp/Effect/TppAreaVolumetricFogBody/
+stub: true
 tags: [Tpp, Effect, Reference]
 -->
 
@@ -15,6 +16,7 @@ TppAreaVolumetricFogBody : Fox.Core.TransformDataBody
 ```
 
 TODO: Description
+
 
 
 

@@ -1,6 +1,7 @@
 <!--
 title: UiEdgeDataBody
 permalink: /Entity_Reference/?/Fox/Ui/UiEdgeDataBody/
+stub: true
 tags: [Fox, Ui, Reference]
 -->
 
@@ -28,5 +29,6 @@ TODO: Description
 | [targetPortIndex](#targetportindex) | TODO: Description |
 | [isConnect](#isconnect) | TODO: Description |
 | [isVirtual](#isvirtual) | TODO: Description |
+
 
 

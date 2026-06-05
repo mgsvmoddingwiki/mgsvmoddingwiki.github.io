@@ -1,6 +1,7 @@
 <!--
 title: TppTrapCheckIsPlayerAndHostCallbackDataElement
 permalink: /Entity_Reference/?/Tpp/GameKit/TppTrapCheckIsPlayerAndHostCallbackDataElement/
+stub: true
 tags: [Tpp, GameKit, Reference]
 -->
 
@@ -15,6 +16,7 @@ TppTrapCheckIsPlayerAndHostCallbackDataElement : Fox.Geo.GeoTrapModuleCallbackDa
 ```
 
 TODO: Description
+
 
 
 

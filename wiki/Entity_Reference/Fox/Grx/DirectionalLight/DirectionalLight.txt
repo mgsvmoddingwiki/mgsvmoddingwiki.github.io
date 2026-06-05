@@ -1,6 +1,7 @@
 <!--
 title: DirectionalLight
 permalink: /Entity_Reference/?/Fox/Grx/DirectionalLight/
+stub: true
 tags: [Fox, Grx, Reference]
 -->
 
@@ -44,5 +45,6 @@ TODO: Description
 | [isBounced](#isbounced) | TODO: Description |
 | [showObject](#showobject) | TODO: Description |
 | [enableDistanceFade](#enabledistancefade) | TODO: Description |
+
 
 

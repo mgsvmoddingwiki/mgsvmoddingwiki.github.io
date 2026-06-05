@@ -1,6 +1,7 @@
 <!--
 title: BucketCollector
 permalink: /Entity_Reference/?/Fox/Core/BucketCollector/
+stub: true
 tags: [Fox, Core, Reference]
 -->
 
@@ -22,5 +23,6 @@ TODO: Description
 |-|-|
 | [buckets](#buckets) | TODO: Description |
 | [mainBucket](#mainbucket) | TODO: Description |
+
 
 

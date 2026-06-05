@@ -1,6 +1,7 @@
 <!--
 title: DemoStreamAnimationBody
 permalink: /Entity_Reference/?/Fox/Demox/DemoStreamAnimationBody/
+stub: true
 tags: [Fox, Demox, Reference]
 -->
 
@@ -15,6 +16,7 @@ DemoStreamAnimationBody : Fox.Core.DataBody
 ```
 
 TODO: Description
+
 
 
 

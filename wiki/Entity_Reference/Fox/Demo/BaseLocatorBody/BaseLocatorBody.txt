@@ -1,6 +1,7 @@
 <!--
 title: BaseLocatorBody
 permalink: /Entity_Reference/?/Fox/Demo/BaseLocatorBody/
+stub: true
 tags: [Fox, Demo, Reference]
 -->
 
@@ -15,6 +16,7 @@ BaseLocatorBody : Fox.Core.TransformDataBody
 ```
 
 TODO: Description
+
 
 
 

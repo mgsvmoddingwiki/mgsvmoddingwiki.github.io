@@ -1,6 +1,7 @@
 <!--
 title: EntityDifference
 permalink: /Entity_Reference/?/Fox/Core/EntityDifference/
+stub: true
 tags: [Fox, Core, Reference]
 -->
 
@@ -22,5 +23,6 @@ TODO: Description
 |-|-|
 | [entityDifferences](#entitydifferences) | TODO: Description |
 | [propertyDifferences](#propertydifferences) | TODO: Description |
+
 
 

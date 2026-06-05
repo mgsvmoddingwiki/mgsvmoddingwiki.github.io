@@ -1,6 +1,7 @@
 <!--
 title: GrPluginViewCallback
 permalink: /Entity_Reference/?/Fox/Gr/GrPluginViewCallback/
+stub: true
 tags: [Fox, Gr, Reference]
 -->
 
@@ -15,6 +16,7 @@ GrPluginViewCallback : Fox.Gr.GrRenderPlugin
 ```
 
 TODO: Description
+
 
 
 

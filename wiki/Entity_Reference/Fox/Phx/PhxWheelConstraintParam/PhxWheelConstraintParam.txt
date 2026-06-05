@@ -1,6 +1,7 @@
 <!--
 title: PhxWheelConstraintParam
 permalink: /Entity_Reference/?/Fox/Phx/PhxWheelConstraintParam/
+stub: true
 tags: [Fox, Phx, Reference]
 -->
 
@@ -33,5 +34,6 @@ TODO: Description
 | [friction](#friction) | TODO: Description |
 | [restitution](#restitution) | TODO: Description |
 | [inertia](#inertia) | TODO: Description |
+
 
 

@@ -1,6 +1,7 @@
 <!--
 title: TppSpeechData
 permalink: /Entity_Reference/?/Tpp/GameCore/TppSpeechData/
+stub: true
 tags: [Tpp, GameCore, Reference]
 -->
 
@@ -22,5 +23,6 @@ TODO: Description
 |-|-|
 | [enabled](#enabled) | TODO: Description |
 | [files](#files) | TODO: Description |
+
 
 

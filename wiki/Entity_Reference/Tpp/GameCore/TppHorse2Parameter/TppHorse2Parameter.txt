@@ -1,6 +1,7 @@
 <!--
 title: TppHorse2Parameter
 permalink: /Entity_Reference/?/Tpp/GameCore/TppHorse2Parameter/
+stub: true
 tags: [Tpp, GameCore, Reference]
 -->
 
@@ -26,5 +27,6 @@ TODO: Description
 | [extensionMtarFile](#extensionmtarfile) | TODO: Description |
 | [vfxFiles](#vfxfiles) | TODO: Description |
 | [fovaFiles](#fovafiles) | TODO: Description |
+
 
 

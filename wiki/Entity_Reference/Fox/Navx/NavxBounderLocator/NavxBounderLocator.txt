@@ -1,6 +1,7 @@
 <!--
 title: NavxBounderLocator
 permalink: /Entity_Reference/?/Fox/Navx/NavxBounderLocator/
+stub: true
 tags: [Fox, Navx, Reference]
 -->
 
@@ -24,5 +25,6 @@ TODO: Description
 | [sceneName](#scenename) | TODO: Description |
 | [worldName](#worldname) | TODO: Description |
 | [type](#type) | TODO: Description |
+
 
 

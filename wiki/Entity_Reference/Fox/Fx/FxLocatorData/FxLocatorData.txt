@@ -1,6 +1,7 @@
 <!--
 title: FxLocatorData
 permalink: /Entity_Reference/?/Fox/Fx/FxLocatorData/
+stub: true
 tags: [Fox, Fx, Reference]
 -->
 
@@ -28,5 +29,6 @@ TODO: Description
 | [createOnInitialize](#createoninitialize) | TODO: Description |
 | [blockMemoryAllocation](#blockmemoryallocation) | TODO: Description |
 | [vfxFile](#vfxfile) | TODO: Description |
+
 
 

@@ -1,6 +1,7 @@
 <!--
 title: TerrainDecal
 permalink: /Entity_Reference/?/Fox/GameKit/TerrainDecal/
+stub: true
 tags: [Fox, GameKit, Reference]
 -->
 
@@ -36,5 +37,6 @@ TODO: Description
 | [isDisableAlbedo](#isdisablealbedo) | TODO: Description |
 | [hasSerializedNodes](#hasserializednodes) | TODO: Description |
 | [serializedGraphNodes](#serializedgraphnodes) | TODO: Description |
+
 
 

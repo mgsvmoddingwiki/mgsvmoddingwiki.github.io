@@ -1,6 +1,7 @@
 <!--
 title: TppPermanentGimmickMachineGunParameter
 permalink: /Entity_Reference/?/Tpp/GameKit/TppPermanentGimmickMachineGunParameter/
+stub: true
 tags: [Tpp, GameKit, Reference]
 -->
 
@@ -26,5 +27,6 @@ TODO: Description
 | [minXAxisAngle](#minxaxisangle) | TODO: Description |
 | [weaponPartsFile](#weaponpartsfile) | TODO: Description |
 | [flags1](#flags1) | TODO: Description |
+
 
 

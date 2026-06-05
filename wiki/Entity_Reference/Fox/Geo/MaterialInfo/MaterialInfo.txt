@@ -1,6 +1,7 @@
 <!--
 title: MaterialInfo
 permalink: /Entity_Reference/?/Fox/Geo/MaterialInfo/
+stub: true
 tags: [Fox, Geo, Reference]
 -->
 
@@ -15,6 +16,7 @@ MaterialInfo : Fox.Geo.MaterialInfoBase
 ```
 
 TODO: Description
+
 
 
 

@@ -1,6 +1,7 @@
 <!--
 title: EditableBlockPackageBase
 permalink: /Entity_Reference/?/Fox/Core/EditableBlockPackageBase/
+stub: true
 tags: [Fox, Core, Reference]
 -->
 
@@ -15,6 +16,7 @@ EditableBlockPackageBase : Fox.Core.Entity
 ```
 
 TODO: Description
+
 
 
 

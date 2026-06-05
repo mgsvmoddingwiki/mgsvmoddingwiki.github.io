@@ -1,6 +1,7 @@
 <!--
 title: DestructionModelDescription
 permalink: /Entity_Reference/?/Fox/PartsBuilder/DestructionModelDescription/
+stub: true
 tags: [Fox, PartsBuilder, Reference]
 -->
 
@@ -22,5 +23,6 @@ TODO: Description
 |-|-|
 | [fdesFile](#fdesfile) | TODO: Description |
 | [desDataSetFile](#desdatasetfile) | TODO: Description |
+
 
 

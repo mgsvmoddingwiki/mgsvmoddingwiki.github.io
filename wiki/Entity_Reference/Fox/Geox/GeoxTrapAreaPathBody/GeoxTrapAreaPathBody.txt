@@ -1,6 +1,7 @@
 <!--
 title: GeoxTrapAreaPathBody
 permalink: /Entity_Reference/?/Fox/Geox/GeoxTrapAreaPathBody/
+stub: true
 tags: [Fox, Geox, Reference]
 -->
 
@@ -15,6 +16,7 @@ GeoxTrapAreaPathBody : Fox.Graphx.GraphxPath
 ```
 
 TODO: Description
+
 
 
 

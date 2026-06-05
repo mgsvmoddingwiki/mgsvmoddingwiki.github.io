@@ -1,6 +1,7 @@
 <!--
 title: CheckpointUnit
 permalink: /Entity_Reference/?/Fox/GameKit/CheckpointUnit/
+stub: true
 tags: [Fox, GameKit, Reference]
 -->
 
@@ -23,5 +24,6 @@ TODO: Description
 | [checkPointParam](#checkpointparam) | TODO: Description |
 | [checkPointData](#checkpointdata) | TODO: Description |
 | [isReplacable](#isreplacable) | TODO: Description |
+
 
 

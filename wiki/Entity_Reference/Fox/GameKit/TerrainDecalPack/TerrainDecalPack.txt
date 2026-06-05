@@ -1,6 +1,7 @@
 <!--
 title: TerrainDecalPack
 permalink: /Entity_Reference/?/Fox/GameKit/TerrainDecalPack/
+stub: true
 tags: [Fox, GameKit, Reference]
 -->
 
@@ -22,5 +23,6 @@ TODO: Description
 |-|-|
 | [terrainDecalPackFile](#terraindecalpackfile) | TODO: Description |
 | [materialLinks](#materiallinks) | TODO: Description |
+
 
 

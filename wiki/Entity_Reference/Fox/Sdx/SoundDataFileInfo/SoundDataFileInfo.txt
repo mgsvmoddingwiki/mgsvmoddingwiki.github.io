@@ -1,6 +1,7 @@
 <!--
 title: SoundDataFileInfo
 permalink: /Entity_Reference/?/Fox/Sdx/SoundDataFileInfo/
+stub: true
 tags: [Fox, Sdx, Reference]
 -->
 
@@ -23,5 +24,6 @@ TODO: Description
 | [loadBanks](#loadbanks) | TODO: Description |
 | [prepareBanks](#preparebanks) | TODO: Description |
 | [prepareEvents](#prepareevents) | TODO: Description |
+
 
 

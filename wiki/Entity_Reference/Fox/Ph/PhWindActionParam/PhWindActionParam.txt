@@ -1,6 +1,7 @@
 <!--
 title: PhWindActionParam
 permalink: /Entity_Reference/?/Fox/Ph/PhWindActionParam/
+stub: true
 tags: [Fox, Ph, Reference]
 -->
 
@@ -21,5 +22,6 @@ TODO: Description
 | | |
 |-|-|
 | [airResistanceRate](#airresistancerate) | TODO: Description |
+
 
 

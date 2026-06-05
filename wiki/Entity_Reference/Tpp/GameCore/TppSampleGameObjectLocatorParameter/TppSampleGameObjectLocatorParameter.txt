@@ -1,6 +1,7 @@
 <!--
 title: TppSampleGameObjectLocatorParameter
 permalink: /Entity_Reference/?/Tpp/GameCore/TppSampleGameObjectLocatorParameter/
+stub: true
 tags: [Tpp, GameCore, Reference]
 -->
 
@@ -21,5 +22,6 @@ TODO: Description
 | | |
 |-|-|
 | [text](#text) | TODO: Description |
+
 
 

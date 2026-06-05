@@ -1,6 +1,7 @@
 <!--
 title: TerrainHoleBody
 permalink: /Entity_Reference/?/Fox/GameKit/TerrainHoleBody/
+stub: true
 tags: [Fox, GameKit, Reference]
 -->
 
@@ -15,6 +16,7 @@ TerrainHoleBody : Fox.Core.TransformDataBody
 ```
 
 TODO: Description
+
 
 
 

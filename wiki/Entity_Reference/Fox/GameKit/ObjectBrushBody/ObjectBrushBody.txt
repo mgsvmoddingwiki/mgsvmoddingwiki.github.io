@@ -1,6 +1,7 @@
 <!--
 title: ObjectBrushBody
 permalink: /Entity_Reference/?/Fox/GameKit/ObjectBrushBody/
+stub: true
 tags: [Fox, GameKit, Reference]
 -->
 
@@ -22,5 +23,6 @@ TODO: Description
 |-|-|
 | [pluginBodyHandle](#pluginbodyhandle) | TODO: Description |
 | [numPlugins](#numplugins) | TODO: Description |
+
 
 

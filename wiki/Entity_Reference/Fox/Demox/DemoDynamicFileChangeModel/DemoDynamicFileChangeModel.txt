@@ -1,6 +1,7 @@
 <!--
 title: DemoDynamicFileChangeModel
 permalink: /Entity_Reference/?/Fox/Demox/DemoDynamicFileChangeModel/
+stub: true
 tags: [Fox, Demox, Reference]
 -->
 
@@ -24,5 +25,6 @@ TODO: Description
 | [extraScaleJoints](#extrascalejoints) | TODO: Description |
 | [helpBoneParamSrcMax](#helpboneparamsrcmax) | TODO: Description |
 | [modelNum](#modelnum) | TODO: Description |
+
 
 

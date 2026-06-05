@@ -1,6 +1,7 @@
 <!--
 title: Watermark
 permalink: /Entity_Reference/?/Fox/GameKit/Watermark/
+stub: true
 tags: [Fox, GameKit, Reference]
 -->
 
@@ -28,5 +29,6 @@ TODO: Description
 | [textureScaleY](#texturescaley) | TODO: Description |
 | [alphaBlend](#alphablend) | TODO: Description |
 | [texturePath](#texturepath) | TODO: Description |
+
 
 

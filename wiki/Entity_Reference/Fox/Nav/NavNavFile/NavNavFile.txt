@@ -1,6 +1,7 @@
 <!--
 title: NavNavFile
 permalink: /Entity_Reference/?/Fox/Nav/NavNavFile/
+stub: true
 tags: [Fox, Nav, Reference]
 -->
 
@@ -15,6 +16,7 @@ NavNavFile : Fox.Core.RawFile
 ```
 
 TODO: Description
+
 
 
 

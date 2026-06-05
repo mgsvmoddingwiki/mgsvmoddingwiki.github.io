@@ -119,6 +119,11 @@ function captureClass(el, prefix) {
 }
 
 document.addEventListener('DOMContentLoaded',() => {
+    // ---------------------------- Stub handling ---------------------------
+    const contentWrapper = document.getElementById('git-wiki-content'),
+          stub = func.checkStub();
+    if (stub) contentWrapper.prepend(stub);
+
     // --------------------------- Image handling ---------------------------
     func.checkVp(() => {
         const exclusions = [

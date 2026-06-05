@@ -1,6 +1,7 @@
 <!--
 title: TransformComponentSet
 permalink: /Entity_Reference/?/Fox/Core/TransformComponentSet/
+stub: true
 tags: [Fox, Core, Reference]
 -->
 
@@ -15,6 +16,7 @@ TransformComponentSet : Fox.Core.ComponentSet
 ```
 
 TODO: Description
+
 
 
 

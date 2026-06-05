@@ -1,6 +1,7 @@
 <!--
 title: UiAnimWorkMemoryData
 permalink: /Entity_Reference/?/Fox/UiScene/UiAnimWorkMemoryData/
+stub: true
 tags: [Fox, UiScene, Reference]
 -->
 
@@ -23,5 +24,6 @@ TODO: Description
 | [nodeAnimNum](#nodeanimnum) | TODO: Description |
 | [shaderAnimNum](#shaderanimnum) | TODO: Description |
 | [vertexAnimNum](#vertexanimnum) | TODO: Description |
+
 
 

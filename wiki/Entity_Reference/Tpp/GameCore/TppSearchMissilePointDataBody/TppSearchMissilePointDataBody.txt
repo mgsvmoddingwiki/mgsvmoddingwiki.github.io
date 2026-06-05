@@ -1,6 +1,7 @@
 <!--
 title: TppSearchMissilePointDataBody
 permalink: /Entity_Reference/?/Tpp/GameCore/TppSearchMissilePointDataBody/
+stub: true
 tags: [Tpp, GameCore, Reference]
 -->
 
@@ -15,6 +16,7 @@ TppSearchMissilePointDataBody : Fox.Core.TransformDataBody
 ```
 
 TODO: Description
+
 
 
 

@@ -1,6 +1,7 @@
 <!--
 title: PhRigidBodyParam
 permalink: /Entity_Reference/?/Fox/Ph/PhRigidBodyParam/
+stub: true
 tags: [Fox, Ph, Reference]
 -->
 
@@ -41,5 +42,6 @@ TODO: Description
 | [motionType](#motiontype) | TODO: Description |
 | [material](#material) | TODO: Description |
 | [isNoGravity](#isnogravity) | TODO: Description |
+
 
 

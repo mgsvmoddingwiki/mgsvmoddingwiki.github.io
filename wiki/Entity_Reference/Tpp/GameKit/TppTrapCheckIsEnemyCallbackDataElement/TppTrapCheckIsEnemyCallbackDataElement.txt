@@ -1,6 +1,7 @@
 <!--
 title: TppTrapCheckIsEnemyCallbackDataElement
 permalink: /Entity_Reference/?/Tpp/GameKit/TppTrapCheckIsEnemyCallbackDataElement/
+stub: true
 tags: [Tpp, GameKit, Reference]
 -->
 
@@ -15,6 +16,7 @@ TppTrapCheckIsEnemyCallbackDataElement : Fox.Geo.GeoTrapModuleCallbackDataElemen
 ```
 
 TODO: Description
+
 
 
 

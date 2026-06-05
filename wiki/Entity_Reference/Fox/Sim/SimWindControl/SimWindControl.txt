@@ -1,6 +1,7 @@
 <!--
 title: SimWindControl
 permalink: /Entity_Reference/?/Fox/Sim/SimWindControl/
+stub: true
 tags: [Fox, Sim, Reference]
 -->
 
@@ -22,5 +23,6 @@ TODO: Description
 |-|-|
 | [controlParam](#controlparam) | TODO: Description |
 | [windCoefficient](#windcoefficient) | TODO: Description |
+
 
 

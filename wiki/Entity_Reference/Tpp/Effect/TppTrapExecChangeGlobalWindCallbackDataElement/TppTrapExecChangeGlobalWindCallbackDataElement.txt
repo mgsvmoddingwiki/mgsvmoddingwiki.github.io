@@ -1,6 +1,7 @@
 <!--
 title: TppTrapExecChangeGlobalWindCallbackDataElement
 permalink: /Entity_Reference/?/Tpp/Effect/TppTrapExecChangeGlobalWindCallbackDataElement/
+stub: true
 tags: [Tpp, Effect, Reference]
 -->
 
@@ -27,5 +28,6 @@ TODO: Description
 | [rotTurbulentRate](#rotturbulentrate) | TODO: Description |
 | [rotTurbulentCycle](#rotturbulentcycle) | TODO: Description |
 | [interpTime](#interptime) | TODO: Description |
+
 
 

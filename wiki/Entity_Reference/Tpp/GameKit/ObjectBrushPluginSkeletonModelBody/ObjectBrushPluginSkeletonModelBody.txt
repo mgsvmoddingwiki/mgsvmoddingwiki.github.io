@@ -1,6 +1,7 @@
 <!--
 title: ObjectBrushPluginSkeletonModelBody
 permalink: /Entity_Reference/?/Tpp/GameKit/ObjectBrushPluginSkeletonModelBody/
+stub: true
 tags: [Tpp, GameKit, Reference]
 -->
 
@@ -15,6 +16,7 @@ ObjectBrushPluginSkeletonModelBody : Fox.GameKit.ObjectBrushPluginBody
 ```
 
 TODO: Description
+
 
 
 

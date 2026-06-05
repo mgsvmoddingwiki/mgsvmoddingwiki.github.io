@@ -1,6 +1,7 @@
 <!--
 title: SubtitlesPackageBody
 permalink: /Entity_Reference/?/Fox/GameKit/SubtitlesPackageBody/
+stub: true
 tags: [Fox, GameKit, Reference]
 -->
 
@@ -15,6 +16,7 @@ SubtitlesPackageBody : Fox.Core.DataBody
 ```
 
 TODO: Description
+
 
 
 

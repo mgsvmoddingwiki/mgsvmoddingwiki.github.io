@@ -55,7 +55,8 @@ const yamlKeyMap = {
     title: 'title',
     url: 'url',
     tags: 'tags',
-    featured: 'featured'
+    featured: 'featured',
+    stub: 'stub'
 }
 
 const regexHasMedia = {
@@ -140,6 +141,11 @@ const filterHandlers = {
             searchFilterRequery(key, state);
         }
     },
+    excludeStubs: {
+        handler: (key, state) => {
+            searchFilterRequery(key, state);
+        }
+    },
     ignoreMarkup: {
         handler: (key, state) => {
             searchFilterRequery(key, state);
@@ -155,6 +161,7 @@ const filterHandlers = {
 const filterStatesInit = {
     limitToSection: { state: false, string: 'Search within section' },
     excludeEntityRef: { state: false, string: 'Exclude Entity Reference' },
+    excludeStubs: { state: false, string: 'Exclude stubs' },
     ignoreMarkup: { state: false, string: 'Ignore markup' },
     hasMedia: { state: false, string: 'Has media' }
 }
@@ -368,6 +375,12 @@ function createLookupIndex(filtersController) {
             );
         }
 
+        if (filtersController.getState('excludeStubs') === true) {
+            index = index.filter(page =>
+                !page.stub
+            );
+        }
+
         if (filtersController.getState('ignoreMarkup') === true) {
             index = JSON.parse(JSON.stringify(index)); // deep copy otherwise changes remain when toggled
             index.forEach(page => {
@@ -498,6 +511,10 @@ function setListeners() {
         suggestionsFilters.toggle('excludeEntityRef', true);
     });
 
+    filterActions.buttons.excludeStubs.addEventListener('click', (e) => {
+        suggestionsFilters.toggle('excludeStubs', true);
+    });
+
     filterActions.buttons.ignoreMarkup.addEventListener('click', (e) => {
         suggestionsFilters.toggle('ignoreMarkup', true);
     });
@@ -540,6 +557,7 @@ function initHtmlSearch() {
     filterActions.buttons = {
         limitToSection: func.createEl('span','search-filter-button'),
         excludeEntityRef: func.createEl('span','search-filter-button'),
+        excludeStubs: func.createEl('span','search-filter-button'),
         ignoreMarkup: func.createEl('span','search-filter-button'),
         hasMedia: func.createEl('span','search-filter-button')
     }

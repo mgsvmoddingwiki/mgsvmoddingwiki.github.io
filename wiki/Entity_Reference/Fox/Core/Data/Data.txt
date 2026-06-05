@@ -1,6 +1,7 @@
 <!--
 title: Data
 permalink: /Entity_Reference/?/Fox/Core/Data/
+stub: true
 tags: [Fox, Core, Reference]
 -->
 
@@ -23,5 +24,6 @@ TODO: Description
 | [name](#name) | TODO: Description |
 | [dataSet](#dataset) | TODO: Description |
 | [referencePath](#referencepath) | TODO: Description |
+
 
 

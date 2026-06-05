@@ -1,6 +1,7 @@
 <!--
 title: TppDecoyAssetsLoader
 permalink: /Entity_Reference/?/Tpp/GameCore/TppDecoyAssetsLoader/
+stub: true
 tags: [Tpp, GameCore, Reference]
 -->
 
@@ -23,5 +24,6 @@ TODO: Description
 | [decoyAssets](#decoyassets) | TODO: Description |
 | [playerDecoyType](#playerdecoytype) | TODO: Description |
 | [enemyDecoyType](#enemydecoytype) | TODO: Description |
+
 
 

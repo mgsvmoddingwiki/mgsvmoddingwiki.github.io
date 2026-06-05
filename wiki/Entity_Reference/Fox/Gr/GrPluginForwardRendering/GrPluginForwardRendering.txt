@@ -1,6 +1,7 @@
 <!--
 title: GrPluginForwardRendering
 permalink: /Entity_Reference/?/Fox/Gr/GrPluginForwardRendering/
+stub: true
 tags: [Fox, Gr, Reference]
 -->
 
@@ -15,6 +16,7 @@ GrPluginForwardRendering : Fox.Gr.GrRenderPlugin
 ```
 
 TODO: Description
+
 
 
 

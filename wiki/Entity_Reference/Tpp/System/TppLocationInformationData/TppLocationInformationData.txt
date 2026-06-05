@@ -1,6 +1,7 @@
 <!--
 title: TppLocationInformationData
 permalink: /Entity_Reference/?/Tpp/System/TppLocationInformationData/
+stub: true
 tags: [Tpp, System, Reference]
 -->
 
@@ -24,5 +25,6 @@ TODO: Description
 | [locationPathString](#locationpathstring) | TODO: Description |
 | [locationType](#locationtype) | TODO: Description |
 | [loadScriptPath](#loadscriptpath) | TODO: Description |
+
 
 

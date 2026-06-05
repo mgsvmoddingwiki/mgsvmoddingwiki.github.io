@@ -1,6 +1,7 @@
 <!--
 title: UiEventNode
 permalink: /Entity_Reference/?/Fox/Ui/UiEventNode/
+stub: true
 tags: [Fox, Ui, Reference]
 -->
 
@@ -26,5 +27,6 @@ TODO: Description
 | [useStopOperation](#usestopoperation) | TODO: Description |
 | [isReEnter](#isreenter) | TODO: Description |
 | [kind](#kind) | TODO: Description |
+
 
 

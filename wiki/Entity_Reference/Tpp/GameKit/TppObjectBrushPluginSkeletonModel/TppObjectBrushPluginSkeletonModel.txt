@@ -1,6 +1,7 @@
 <!--
 title: TppObjectBrushPluginSkeletonModel
 permalink: /Entity_Reference/?/Tpp/GameKit/TppObjectBrushPluginSkeletonModel/
+stub: true
 tags: [Tpp, GameKit, Reference]
 -->
 
@@ -35,5 +36,6 @@ TODO: Description
 | [reserveResourcePerBlock](#reserveresourceperblock) | TODO: Description |
 | [lodLength](#lodlength) | TODO: Description |
 | [lodLengthForHighEnd](#lodlengthforhighend) | TODO: Description |
+
 
 

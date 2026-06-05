@@ -1,6 +1,7 @@
 <!--
 title: SubtitlesDaemon
 permalink: /Entity_Reference/?/Fox/GameKit/SubtitlesDaemon/
+stub: true
 tags: [Fox, GameKit, Reference]
 -->
 
@@ -15,6 +16,7 @@ SubtitlesDaemon : Fox.Core.Entity
 ```
 
 TODO: Description
+
 
 
 

@@ -1,6 +1,7 @@
 <!--
 title: GeoxPathWallBody
 permalink: /Entity_Reference/?/Fox/Geox/GeoxPathWallBody/
+stub: true
 tags: [Fox, Geox, Reference]
 -->
 
@@ -21,5 +22,6 @@ TODO: Description
 | | |
 |-|-|
 | [isGeomActive](#isgeomactive) | TODO: Description |
+
 
 

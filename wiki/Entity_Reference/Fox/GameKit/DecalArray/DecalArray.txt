@@ -1,6 +1,7 @@
 <!--
 title: DecalArray
 permalink: /Entity_Reference/?/Fox/GameKit/DecalArray/
+stub: true
 tags: [Fox, GameKit, Reference]
 -->
 
@@ -44,5 +45,6 @@ TODO: Description
 | [showObject](#showobject) | TODO: Description |
 | [isVisibleGeom](#isvisiblegeom) | TODO: Description |
 | [isSSDecal](#isssdecal) | TODO: Description |
+
 
 

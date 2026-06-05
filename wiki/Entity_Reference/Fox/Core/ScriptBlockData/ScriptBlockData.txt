@@ -1,6 +1,7 @@
 <!--
 title: ScriptBlockData
 permalink: /Entity_Reference/?/Fox/Core/ScriptBlockData/
+stub: true
 tags: [Fox, Core, Reference]
 -->
 
@@ -23,5 +24,6 @@ TODO: Description
 | [enabled](#enabled) | TODO: Description |
 | [sizeInBytes](#sizeinbytes) | TODO: Description |
 | [prerequisites](#prerequisites) | TODO: Description |
+
 
 

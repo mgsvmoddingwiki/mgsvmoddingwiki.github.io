@@ -1,6 +1,7 @@
 <!--
 title: UiLayoutDataBody
 permalink: /Entity_Reference/?/Fox/UiScene/UiLayoutDataBody/
+stub: true
 tags: [Fox, UiScene, Reference]
 -->
 
@@ -15,6 +16,7 @@ UiLayoutDataBody : Fox.Core.TransformDataBody
 ```
 
 TODO: Description
+
 
 
 

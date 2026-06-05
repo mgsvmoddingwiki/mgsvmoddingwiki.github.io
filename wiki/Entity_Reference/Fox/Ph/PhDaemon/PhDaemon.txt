@@ -1,6 +1,7 @@
 <!--
 title: PhDaemon
 permalink: /Entity_Reference/?/Fox/Ph/PhDaemon/
+stub: true
 tags: [Fox, Ph, Reference]
 -->
 
@@ -25,5 +26,6 @@ TODO: Description
 | [defaultRestitution](#defaultrestitution) | TODO: Description |
 | [isParallel](#isparallel) | TODO: Description |
 | [isUseSmallJob](#isusesmalljob) | TODO: Description |
+
 
 

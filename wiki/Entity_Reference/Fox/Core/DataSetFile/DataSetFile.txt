@@ -1,6 +1,7 @@
 <!--
 title: DataSetFile
 permalink: /Entity_Reference/?/Fox/Core/DataSetFile/
+stub: true
 tags: [Fox, Core, Reference]
 -->
 
@@ -15,6 +16,7 @@ DataSetFile : Fox.Core.File
 ```
 
 TODO: Description
+
 
 
 

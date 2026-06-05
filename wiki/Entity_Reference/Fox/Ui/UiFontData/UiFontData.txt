@@ -1,6 +1,7 @@
 <!--
 title: UiFontData
 permalink: /Entity_Reference/?/Fox/Ui/UiFontData/
+stub: true
 tags: [Fox, Ui, Reference]
 -->
 
@@ -23,5 +24,6 @@ TODO: Description
 | [fontName](#fontname) | TODO: Description |
 | [texturePath](#texturepath) | TODO: Description |
 | [fontFile](#fontfile) | TODO: Description |
+
 
 

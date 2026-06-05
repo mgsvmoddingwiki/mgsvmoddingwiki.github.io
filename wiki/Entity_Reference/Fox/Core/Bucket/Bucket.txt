@@ -1,6 +1,7 @@
 <!--
 title: Bucket
 permalink: /Entity_Reference/?/Fox/Core/Bucket/
+stub: true
 tags: [Fox, Core, Reference]
 -->
 
@@ -31,5 +32,6 @@ TODO: Description
 | [editableDataBodySet](#editabledatabodyset) | TODO: Description |
 | [editableDataSetChanged](#editabledatasetchanged) | TODO: Description |
 | [isEditableLocked](#iseditablelocked) | TODO: Description |
+
 
 

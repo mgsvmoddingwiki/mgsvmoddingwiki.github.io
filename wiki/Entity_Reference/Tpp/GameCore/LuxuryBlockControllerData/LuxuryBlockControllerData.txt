@@ -1,6 +1,7 @@
 <!--
 title: LuxuryBlockControllerData
 permalink: /Entity_Reference/?/Tpp/GameCore/LuxuryBlockControllerData/
+stub: true
 tags: [Tpp, GameCore, Reference]
 -->
 
@@ -27,5 +28,6 @@ TODO: Description
 | [blockLoadMargin](#blockloadmargin) | TODO: Description |
 | [maxBlockIndexMapCount](#maxblockindexmapcount) | TODO: Description |
 | [maxPathListCount](#maxpathlistcount) | TODO: Description |
+
 
 

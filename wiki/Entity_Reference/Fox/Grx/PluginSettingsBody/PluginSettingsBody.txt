@@ -1,6 +1,7 @@
 <!--
 title: PluginSettingsBody
 permalink: /Entity_Reference/?/Fox/Grx/PluginSettingsBody/
+stub: true
 tags: [Fox, Grx, Reference]
 -->
 
@@ -15,6 +16,7 @@ PluginSettingsBody : Fox.Core.DataBody
 ```
 
 TODO: Description
+
 
 
 

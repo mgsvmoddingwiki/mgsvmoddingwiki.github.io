@@ -1,6 +1,7 @@
 <!--
 title: ClothDescription
 permalink: /Entity_Reference/?/Fox/PartsBuilder/ClothDescription/
+stub: true
 tags: [Fox, PartsBuilder, Reference]
 -->
 
@@ -23,5 +24,6 @@ TODO: Description
 | [clothFile](#clothfile) | TODO: Description |
 | [clothSettingFile](#clothsettingfile) | TODO: Description |
 | [clothHitFile](#clothhitfile) | TODO: Description |
+
 
 

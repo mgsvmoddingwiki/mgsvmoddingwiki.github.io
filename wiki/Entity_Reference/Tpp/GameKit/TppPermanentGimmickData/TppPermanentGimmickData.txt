@@ -1,6 +1,7 @@
 <!--
 title: TppPermanentGimmickData
 permalink: /Entity_Reference/?/Tpp/GameKit/TppPermanentGimmickData/
+stub: true
 tags: [Tpp, GameKit, Reference]
 -->
 
@@ -25,5 +26,6 @@ TODO: Description
 | [parameters](#parameters) | TODO: Description |
 | [flags1](#flags1) | TODO: Description |
 | [flags2](#flags2) | TODO: Description |
+
 
 

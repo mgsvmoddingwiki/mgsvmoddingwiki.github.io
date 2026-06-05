@@ -1,6 +1,7 @@
 <!--
 title: GeoxPartsTargetDefenseObject
 permalink: /Entity_Reference/?/Fox/Geox/GeoxPartsTargetDefenseObject/
+stub: true
 tags: [Fox, Geox, Reference]
 -->
 
@@ -15,6 +16,7 @@ GeoxPartsTargetDefenseObject : Fox.Geox.GeoxPartsTargetObject
 ```
 
 TODO: Description
+
 
 
 

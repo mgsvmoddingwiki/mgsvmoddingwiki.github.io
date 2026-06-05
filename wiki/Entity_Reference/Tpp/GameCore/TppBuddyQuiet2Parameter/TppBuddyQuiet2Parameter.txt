@@ -1,6 +1,7 @@
 <!--
 title: TppBuddyQuiet2Parameter
 permalink: /Entity_Reference/?/Tpp/GameCore/TppBuddyQuiet2Parameter/
+stub: true
 tags: [Tpp, GameCore, Reference]
 -->
 
@@ -25,5 +26,6 @@ TODO: Description
 | [mtarFile](#mtarfile) | TODO: Description |
 | [extensionMtarFile](#extensionmtarfile) | TODO: Description |
 | [vfxFiles](#vfxfiles) | TODO: Description |
+
 
 

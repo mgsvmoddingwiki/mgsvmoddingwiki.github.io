@@ -1,6 +1,7 @@
 <!--
 title: GraphxPathVolume
 permalink: /Entity_Reference/?/Fox/Graphx/GraphxPathVolume/
+stub: true
 tags: [Fox, Graphx, Reference]
 -->
 
@@ -21,5 +22,6 @@ TODO: Description
 | | |
 |-|-|
 | [topPos](#toppos) | TODO: Description |
+
 
 

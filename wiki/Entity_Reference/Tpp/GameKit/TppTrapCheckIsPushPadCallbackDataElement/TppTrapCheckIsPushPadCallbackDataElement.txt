@@ -1,6 +1,7 @@
 <!--
 title: TppTrapCheckIsPushPadCallbackDataElement
 permalink: /Entity_Reference/?/Tpp/GameKit/TppTrapCheckIsPushPadCallbackDataElement/
+stub: true
 tags: [Tpp, GameKit, Reference]
 -->
 
@@ -22,5 +23,6 @@ TODO: Description
 |-|-|
 | [padNumber](#padnumber) | TODO: Description |
 | [checkButtons](#checkbuttons) | TODO: Description |
+
 
 

@@ -1,6 +1,7 @@
 <!--
 title: TppLensFlareRoot
 permalink: /Entity_Reference/?/Tpp/Effect/TppLensFlareRoot/
+stub: true
 tags: [Tpp, Effect, Reference]
 -->
 
@@ -25,5 +26,6 @@ TODO: Description
 | [lightPositionY](#lightpositiony) | TODO: Description |
 | [shieldCheckLength](#shieldchecklength) | TODO: Description |
 | [shapes](#shapes) | TODO: Description |
+
 
 

@@ -1,6 +1,7 @@
 <!--
 title: SubtitlesGenerator
 permalink: /Entity_Reference/?/Fox/GameKit/SubtitlesGenerator/
+stub: true
 tags: [Fox, GameKit, Reference]
 -->
 
@@ -31,5 +32,6 @@ TODO: Description
 | [bAlign](#balign) | TODO: Description |
 | [fontName](#fontname) | TODO: Description |
 | [autoLineFeed](#autolinefeed) | TODO: Description |
+
 
 

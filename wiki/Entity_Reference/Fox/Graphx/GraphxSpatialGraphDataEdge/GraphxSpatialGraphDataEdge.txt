@@ -1,6 +1,7 @@
 <!--
 title: GraphxSpatialGraphDataEdge
 permalink: /Entity_Reference/?/Fox/Graphx/GraphxSpatialGraphDataEdge/
+stub: true
 tags: [Fox, Graphx, Reference]
 -->
 
@@ -22,5 +23,6 @@ TODO: Description
 |-|-|
 | [prevNode](#prevnode) | TODO: Description |
 | [nextNode](#nextnode) | TODO: Description |
+
 
 

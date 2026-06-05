@@ -1,6 +1,7 @@
 <!--
 title: GkPathLineTarget
 permalink: /Entity_Reference/?/Fox/Character/GkPathLineTarget/
+stub: true
 tags: [Fox, Character, Reference]
 -->
 
@@ -15,6 +16,7 @@ GkPathLineTarget : Fox.Graphx.GraphxPathData
 ```
 
 TODO: Description
+
 
 
 

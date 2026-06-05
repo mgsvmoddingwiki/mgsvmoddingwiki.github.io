@@ -1,6 +1,7 @@
 <!--
 title: TppSkyEffectControler
 permalink: /Entity_Reference/?/Tpp/Effect/TppSkyEffectControler/
+stub: true
 tags: [Tpp, Effect, Reference]
 -->
 
@@ -24,5 +25,6 @@ TODO: Description
 | [hour](#hour) | TODO: Description |
 | [minute](#minute) | TODO: Description |
 | [second](#second) | TODO: Description |
+
 
 

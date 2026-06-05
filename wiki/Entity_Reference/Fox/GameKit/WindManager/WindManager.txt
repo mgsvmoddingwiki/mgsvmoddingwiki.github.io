@@ -1,6 +1,7 @@
 <!--
 title: WindManager
 permalink: /Entity_Reference/?/Fox/GameKit/WindManager/
+stub: true
 tags: [Fox, GameKit, Reference]
 -->
 
@@ -15,6 +16,7 @@ WindManager : Fox.GameKit.EnvironmentManager
 ```
 
 TODO: Description
+
 
 
 

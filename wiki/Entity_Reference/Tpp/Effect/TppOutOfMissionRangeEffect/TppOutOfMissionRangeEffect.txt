@@ -1,6 +1,7 @@
 <!--
 title: TppOutOfMissionRangeEffect
 permalink: /Entity_Reference/?/Tpp/Effect/TppOutOfMissionRangeEffect/
+stub: true
 tags: [Tpp, Effect, Reference]
 -->
 
@@ -33,5 +34,6 @@ TODO: Description
 | [noiseColor](#noisecolor) | TODO: Description |
 | [cinemaScopeSlope](#cinemascopeslope) | TODO: Description |
 | [cinemaScopeShift](#cinemascopeshift) | TODO: Description |
+
 
 

@@ -1,6 +1,7 @@
 <!--
 title: EvSubtitlesNode
 permalink: /Entity_Reference/?/Fox/GameKit/EvSubtitlesNode/
+stub: true
 tags: [Fox, GameKit, Reference]
 -->
 
@@ -15,6 +16,7 @@ EvSubtitlesNode : Fox.Ui.UiEventNode
 ```
 
 TODO: Description
+
 
 
 

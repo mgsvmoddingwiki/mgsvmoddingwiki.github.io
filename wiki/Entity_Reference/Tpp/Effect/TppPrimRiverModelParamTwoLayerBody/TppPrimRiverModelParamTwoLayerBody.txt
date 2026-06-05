@@ -1,6 +1,7 @@
 <!--
 title: TppPrimRiverModelParamTwoLayerBody
 permalink: /Entity_Reference/?/Tpp/Effect/TppPrimRiverModelParamTwoLayerBody/
+stub: true
 tags: [Tpp, Effect, Reference]
 -->
 
@@ -15,6 +16,7 @@ TppPrimRiverModelParamTwoLayerBody : Fox.Core.DataBody
 ```
 
 TODO: Description
+
 
 
 

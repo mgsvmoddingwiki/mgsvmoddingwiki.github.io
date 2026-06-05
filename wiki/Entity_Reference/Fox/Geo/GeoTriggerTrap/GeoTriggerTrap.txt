@@ -1,6 +1,7 @@
 <!--
 title: GeoTriggerTrap
 permalink: /Entity_Reference/?/Fox/Geo/GeoTriggerTrap/
+stub: true
 tags: [Fox, Geo, Reference]
 -->
 
@@ -24,5 +25,6 @@ TODO: Description
 | [stateFlag](#stateflag) | TODO: Description |
 | [uniqueId](#uniqueid) | TODO: Description |
 | [groupTags](#grouptags) | TODO: Description |
+
 
 

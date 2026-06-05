@@ -1,6 +1,7 @@
 <!--
 title: GeoTrap
 permalink: /Entity_Reference/?/Fox/Geo/GeoTrap/
+stub: true
 tags: [Fox, Geo, Reference]
 -->
 
@@ -22,5 +23,6 @@ TODO: Description
 |-|-|
 | [conditionArray](#conditionarray) | TODO: Description |
 | [enable](#enable) | TODO: Description |
+
 
 

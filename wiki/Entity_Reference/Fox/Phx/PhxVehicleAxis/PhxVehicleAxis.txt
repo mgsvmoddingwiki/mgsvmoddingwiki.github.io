@@ -1,6 +1,7 @@
 <!--
 title: PhxVehicleAxis
 permalink: /Entity_Reference/?/Fox/Phx/PhxVehicleAxis/
+stub: true
 tags: [Fox, Phx, Reference]
 -->
 
@@ -39,5 +40,6 @@ TODO: Description
 | [maxBreakTorqueCoeff](#maxbreaktorquecoeff) | TODO: Description |
 | [useDifferential](#usedifferential) | TODO: Description |
 | [AssignedBoneNames](#assignedbonenames) | TODO: Description |
+
 
 

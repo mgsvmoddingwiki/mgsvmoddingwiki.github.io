@@ -1,6 +1,7 @@
 <!--
 title: GkTacticalPoint
 permalink: /Entity_Reference/?/Fox/Tactical/GkTacticalPoint/
+stub: true
 tags: [Fox, Tactical, Reference]
 -->
 
@@ -22,5 +23,6 @@ TODO: Description
 |-|-|
 | [tags](#tags) | TODO: Description |
 | [userData](#userdata) | TODO: Description |
+
 
 

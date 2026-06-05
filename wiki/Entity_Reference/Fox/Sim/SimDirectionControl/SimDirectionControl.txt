@@ -1,6 +1,7 @@
 <!--
 title: SimDirectionControl
 permalink: /Entity_Reference/?/Fox/Sim/SimDirectionControl/
+stub: true
 tags: [Fox, Sim, Reference]
 -->
 
@@ -23,5 +24,6 @@ TODO: Description
 | [controlParam](#controlparam) | TODO: Description |
 | [refBone](#refbone) | TODO: Description |
 | [offset](#offset) | TODO: Description |
+
 
 

@@ -1,6 +1,7 @@
 <!--
 title: ObjectBrushPluginCloneBody
 permalink: /Entity_Reference/?/Fox/GameKit/ObjectBrushPluginCloneBody/
+stub: true
 tags: [Fox, GameKit, Reference]
 -->
 
@@ -15,6 +16,7 @@ ObjectBrushPluginCloneBody : Fox.GameKit.ObjectBrushPluginBody
 ```
 
 TODO: Description
+
 
 
 

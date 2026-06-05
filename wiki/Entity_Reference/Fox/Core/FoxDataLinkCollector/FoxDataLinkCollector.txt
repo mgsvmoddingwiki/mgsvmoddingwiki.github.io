@@ -1,6 +1,7 @@
 <!--
 title: FoxDataLinkCollector
 permalink: /Entity_Reference/?/Fox/Core/FoxDataLinkCollector/
+stub: true
 tags: [Fox, Core, Reference]
 -->
 
@@ -15,6 +16,7 @@ FoxDataLinkCollector : Fox.Core.Entity
 ```
 
 TODO: Description
+
 
 
 

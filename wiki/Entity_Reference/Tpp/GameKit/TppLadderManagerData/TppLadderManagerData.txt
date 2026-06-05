@@ -1,6 +1,7 @@
 <!--
 title: TppLadderManagerData
 permalink: /Entity_Reference/?/Tpp/GameKit/TppLadderManagerData/
+stub: true
 tags: [Tpp, GameKit, Reference]
 -->
 
@@ -22,5 +23,6 @@ TODO: Description
 |-|-|
 | [maxLadderCount](#maxladdercount) | TODO: Description |
 | [maxBreakableLadderCount](#maxbreakableladdercount) | TODO: Description |
+
 
 

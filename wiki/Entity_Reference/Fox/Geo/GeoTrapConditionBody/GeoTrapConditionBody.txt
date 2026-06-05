@@ -1,6 +1,7 @@
 <!--
 title: GeoTrapConditionBody
 permalink: /Entity_Reference/?/Fox/Geo/GeoTrapConditionBody/
+stub: true
 tags: [Fox, Geo, Reference]
 -->
 
@@ -23,5 +24,6 @@ TODO: Description
 | [trapCategory](#trapcategory) | TODO: Description |
 | [trapPriority](#trappriority) | TODO: Description |
 | [isDone](#isdone) | TODO: Description |
+
 
 

@@ -1,6 +1,7 @@
 <!--
 title: SoundPackageBody
 permalink: /Entity_Reference/?/Fox/Sdx/SoundPackageBody/
+stub: true
 tags: [Fox, Sdx, Reference]
 -->
 
@@ -15,6 +16,7 @@ SoundPackageBody : Fox.Core.DataBody
 ```
 
 TODO: Description
+
 
 
 

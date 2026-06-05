@@ -1,6 +1,7 @@
 <!--
 title: GrPluginModelSetup
 permalink: /Entity_Reference/?/Fox/Gr/GrPluginModelSetup/
+stub: true
 tags: [Fox, Gr, Reference]
 -->
 
@@ -15,6 +16,7 @@ GrPluginModelSetup : Fox.Gr.GrRenderPlugin
 ```
 
 TODO: Description
+
 
 
 

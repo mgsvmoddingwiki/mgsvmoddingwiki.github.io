@@ -1,6 +1,7 @@
 <!--
 title: TppSandWindDataBody
 permalink: /Entity_Reference/?/Tpp/Effect/TppSandWindDataBody/
+stub: true
 tags: [Tpp, Effect, Reference]
 -->
 
@@ -15,6 +16,7 @@ TppSandWindDataBody : Fox.Core.DataBody
 ```
 
 TODO: Description
+
 
 
 

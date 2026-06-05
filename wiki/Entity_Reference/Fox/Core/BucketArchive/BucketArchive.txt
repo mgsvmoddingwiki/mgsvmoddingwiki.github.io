@@ -1,6 +1,7 @@
 <!--
 title: BucketArchive
 permalink: /Entity_Reference/?/Fox/Core/BucketArchive/
+stub: true
 tags: [Fox, Core, Reference]
 -->
 
@@ -24,5 +25,6 @@ TODO: Description
 | [dataSetFiles](#datasetfiles) | TODO: Description |
 | [dataBodySets](#databodysets) | TODO: Description |
 | [editableDataBodySet](#editabledatabodyset) | TODO: Description |
+
 
 

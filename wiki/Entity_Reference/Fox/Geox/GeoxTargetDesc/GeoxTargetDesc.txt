@@ -1,6 +1,7 @@
 <!--
 title: GeoxTargetDesc
 permalink: /Entity_Reference/?/Fox/Geox/GeoxTargetDesc/
+stub: true
 tags: [Fox, Geox, Reference]
 -->
 
@@ -33,5 +34,6 @@ TODO: Description
 | [groupArray](#grouparray) | TODO: Description |
 | [objIndexForgroupTagArray](#objindexforgrouptagarray) | TODO: Description |
 | [applicationDataLinkArray](#applicationdatalinkarray) | TODO: Description |
+
 
 

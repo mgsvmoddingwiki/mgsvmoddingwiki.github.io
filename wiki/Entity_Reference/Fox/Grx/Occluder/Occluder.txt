@@ -1,6 +1,7 @@
 <!--
 title: Occluder
 permalink: /Entity_Reference/?/Fox/Grx/Occluder/
+stub: true
 tags: [Fox, Grx, Reference]
 -->
 
@@ -24,5 +25,6 @@ TODO: Description
 | [basePoint0](#basepoint0) | TODO: Description |
 | [basePoint1](#basepoint1) | TODO: Description |
 | [height](#height) | TODO: Description |
+
 
 

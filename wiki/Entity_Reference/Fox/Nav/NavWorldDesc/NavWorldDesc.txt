@@ -1,6 +1,7 @@
 <!--
 title: NavWorldDesc
 permalink: /Entity_Reference/?/Fox/Nav/NavWorldDesc/
+stub: true
 tags: [Fox, Nav, Reference]
 -->
 
@@ -22,5 +23,6 @@ TODO: Description
 |-|-|
 | [sceneName](#scenename) | TODO: Description |
 | [worldName](#worldname) | TODO: Description |
+
 
 

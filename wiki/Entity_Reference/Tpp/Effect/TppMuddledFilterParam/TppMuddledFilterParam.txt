@@ -1,6 +1,7 @@
 <!--
 title: TppMuddledFilterParam
 permalink: /Entity_Reference/?/Tpp/Effect/TppMuddledFilterParam/
+stub: true
 tags: [Tpp, Effect, Reference]
 -->
 
@@ -28,5 +29,6 @@ TODO: Description
 | [moveSpeedMin](#movespeedmin) | TODO: Description |
 | [moveSpeedMax](#movespeedmax) | TODO: Description |
 | [power](#power) | TODO: Description |
+
 
 

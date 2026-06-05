@@ -1,6 +1,7 @@
 <!--
 title: PassiveBlockControllerData
 permalink: /Entity_Reference/?/Fox/Core/PassiveBlockControllerData/
+stub: true
 tags: [Fox, Core, Reference]
 -->
 
@@ -26,5 +27,6 @@ TODO: Description
 | [blockGroups](#blockgroups) | TODO: Description |
 | [isAddRelatedBlockGroupEachOther](#isaddrelatedblockgroupeachother) | TODO: Description |
 | [prerequisiteBlockGroupName](#prerequisiteblockgroupname) | TODO: Description |
+
 
 

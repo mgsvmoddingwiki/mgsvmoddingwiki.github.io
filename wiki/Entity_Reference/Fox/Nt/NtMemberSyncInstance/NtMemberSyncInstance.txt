@@ -1,6 +1,7 @@
 <!--
 title: NtMemberSyncInstance
 permalink: /Entity_Reference/?/Fox/Nt/NtMemberSyncInstance/
+stub: true
 tags: [Fox, Nt, Reference]
 -->
 
@@ -15,6 +16,7 @@ NtMemberSyncInstance : Fox.Nt.SyncInstance
 ```
 
 TODO: Description
+
 
 
 

@@ -1,6 +1,7 @@
 <!--
 title: GrPluginSphericalHarmonics
 permalink: /Entity_Reference/?/Fox/Gr/GrPluginSphericalHarmonics/
+stub: true
 tags: [Fox, Gr, Reference]
 -->
 
@@ -15,6 +16,7 @@ GrPluginSphericalHarmonics : Fox.Gr.GrRenderPlugin
 ```
 
 TODO: Description
+
 
 
 

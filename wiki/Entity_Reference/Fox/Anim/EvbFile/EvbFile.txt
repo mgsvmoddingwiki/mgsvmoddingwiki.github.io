@@ -1,6 +1,7 @@
 <!--
 title: EvbFile
 permalink: /Entity_Reference/?/Fox/Anim/EvbFile/
+stub: true
 tags: [Fox, Anim, Reference]
 -->
 
@@ -15,6 +16,7 @@ EvbFile : Fox.Core.RawFile
 ```
 
 TODO: Description
+
 
 
 

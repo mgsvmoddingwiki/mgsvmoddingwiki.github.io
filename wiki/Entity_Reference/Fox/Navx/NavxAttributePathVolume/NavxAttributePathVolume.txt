@@ -1,6 +1,7 @@
 <!--
 title: NavxAttributePathVolume
 permalink: /Entity_Reference/?/Fox/Navx/NavxAttributePathVolume/
+stub: true
 tags: [Fox, Navx, Reference]
 -->
 
@@ -22,5 +23,6 @@ TODO: Description
 |-|-|
 | [worldName](#worldname) | TODO: Description |
 | [attributeInfos](#attributeinfos) | TODO: Description |
+
 
 

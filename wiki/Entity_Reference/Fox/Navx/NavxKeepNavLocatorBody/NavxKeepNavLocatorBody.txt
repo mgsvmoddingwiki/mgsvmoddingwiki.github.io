@@ -1,6 +1,7 @@
 <!--
 title: NavxKeepNavLocatorBody
 permalink: /Entity_Reference/?/Fox/Navx/NavxKeepNavLocatorBody/
+stub: true
 tags: [Fox, Navx, Reference]
 -->
 
@@ -15,6 +16,7 @@ NavxKeepNavLocatorBody : Fox.Core.TransformDataBody
 ```
 
 TODO: Description
+
 
 
 

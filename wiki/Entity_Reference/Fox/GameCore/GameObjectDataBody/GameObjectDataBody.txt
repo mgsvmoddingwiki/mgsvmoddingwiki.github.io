@@ -1,6 +1,7 @@
 <!--
 title: GameObjectDataBody
 permalink: /Entity_Reference/?/Fox/GameCore/GameObjectDataBody/
+stub: true
 tags: [Fox, GameCore, Reference]
 -->
 
@@ -15,6 +16,7 @@ GameObjectDataBody : Fox.Core.DataBody
 ```
 
 TODO: Description
+
 
 
 

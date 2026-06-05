@@ -1,6 +1,7 @@
 <!--
 title: TppPermanentGimmickBank
 permalink: /Entity_Reference/?/Tpp/GameKit/TppPermanentGimmickBank/
+stub: true
 tags: [Tpp, GameKit, Reference]
 -->
 
@@ -23,5 +24,6 @@ TODO: Description
 | [partsFile](#partsfile) | TODO: Description |
 | [flags](#flags) | TODO: Description |
 | [instanceCount](#instancecount) | TODO: Description |
+
 
 

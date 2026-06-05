@@ -1,6 +1,7 @@
 <!--
 title: TppSky
 permalink: /Entity_Reference/?/Tpp/Effect/TppSky/
+stub: true
 tags: [Tpp, Effect, Reference]
 -->
 
@@ -54,5 +55,6 @@ TODO: Description
 | [cylWindInfluence](#cylwindinfluence) | TODO: Description |
 | [cylDensityLayerPower](#cyldensitylayerpower) | TODO: Description |
 | [cylDensityLayerWindInfluence](#cyldensitylayerwindinfluence) | TODO: Description |
+
 
 

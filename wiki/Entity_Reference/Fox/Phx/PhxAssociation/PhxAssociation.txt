@@ -1,6 +1,7 @@
 <!--
 title: PhxAssociation
 permalink: /Entity_Reference/?/Fox/Phx/PhxAssociation/
+stub: true
 tags: [Fox, Phx, Reference]
 -->
 
@@ -24,5 +25,6 @@ TODO: Description
 | [connections](#connections) | TODO: Description |
 | [param](#param) | TODO: Description |
 | [connectType](#connecttype) | TODO: Description |
+
 
 

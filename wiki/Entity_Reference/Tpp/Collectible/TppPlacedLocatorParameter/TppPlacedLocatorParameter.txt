@@ -1,6 +1,7 @@
 <!--
 title: TppPlacedLocatorParameter
 permalink: /Entity_Reference/?/Tpp/Collectible/TppPlacedLocatorParameter/
+stub: true
 tags: [Tpp, Collectible, Reference]
 -->
 
@@ -21,5 +22,6 @@ TODO: Description
 | | |
 |-|-|
 | [equipIdStrCode32](#equipidstrcode32) | TODO: Description |
+
 
 

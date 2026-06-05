@@ -1,6 +1,7 @@
 <!--
 title: NavxNavFilterBody
 permalink: /Entity_Reference/?/Fox/Navx/NavxNavFilterBody/
+stub: true
 tags: [Fox, Navx, Reference]
 -->
 
@@ -15,6 +16,7 @@ NavxNavFilterBody : Fox.Core.TransformDataBody
 ```
 
 TODO: Description
+
 
 
 

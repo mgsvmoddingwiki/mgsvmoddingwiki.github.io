@@ -1,6 +1,7 @@
 <!--
 title: PivotTransformEntity
 permalink: /Entity_Reference/?/Fox/Core/PivotTransformEntity/
+stub: true
 tags: [Fox, Core, Reference]
 -->
 
@@ -24,5 +25,6 @@ TODO: Description
 | [pivotTransform_pivotTranslation](#pivottransform-pivottranslation) | TODO: Description |
 | [pivot](#pivot) | TODO: Description |
 | [pivotTranslation](#pivottranslation) | TODO: Description |
+
 
 

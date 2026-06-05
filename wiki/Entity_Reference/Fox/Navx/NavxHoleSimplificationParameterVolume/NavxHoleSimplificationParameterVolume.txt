@@ -1,6 +1,7 @@
 <!--
 title: NavxHoleSimplificationParameterVolume
 permalink: /Entity_Reference/?/Fox/Navx/NavxHoleSimplificationParameterVolume/
+stub: true
 tags: [Fox, Navx, Reference]
 -->
 
@@ -27,5 +28,6 @@ TODO: Description
 | [obbToAabbThreshold](#obbtoaabbthreshold) | TODO: Description |
 | [smoothingThreshold](#smoothingthreshold) | TODO: Description |
 | [isNotClosePassage](#isnotclosepassage) | TODO: Description |
+
 
 

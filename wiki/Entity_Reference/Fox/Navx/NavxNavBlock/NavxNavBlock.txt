@@ -1,6 +1,7 @@
 <!--
 title: NavxNavBlock
 permalink: /Entity_Reference/?/Fox/Navx/NavxNavBlock/
+stub: true
 tags: [Fox, Navx, Reference]
 -->
 
@@ -38,5 +39,6 @@ TODO: Description
 | [holeSimplificationSmoothingThreshold](#holesimplificationsmoothingthreshold) | TODO: Description |
 | [isHoleSimplificationDoesNotClosePassage](#isholesimplificationdoesnotclosepassage) | TODO: Description |
 | [holeSimplificationReduceCount](#holesimplificationreducecount) | TODO: Description |
+
 
 

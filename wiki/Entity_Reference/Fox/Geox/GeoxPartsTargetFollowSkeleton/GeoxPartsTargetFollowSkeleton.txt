@@ -1,6 +1,7 @@
 <!--
 title: GeoxPartsTargetFollowSkeleton
 permalink: /Entity_Reference/?/Fox/Geox/GeoxPartsTargetFollowSkeleton/
+stub: true
 tags: [Fox, Geox, Reference]
 -->
 
@@ -23,5 +24,6 @@ TODO: Description
 | [skeletonNames](#skeletonnames) | TODO: Description |
 | [objectLinks](#objectlinks) | TODO: Description |
 | [partsTargetUnitHandle](#partstargetunithandle) | TODO: Description |
+
 
 

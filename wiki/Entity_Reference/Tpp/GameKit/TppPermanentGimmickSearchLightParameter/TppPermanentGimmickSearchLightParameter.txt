@@ -1,6 +1,7 @@
 <!--
 title: TppPermanentGimmickSearchLightParameter
 permalink: /Entity_Reference/?/Tpp/GameKit/TppPermanentGimmickSearchLightParameter/
+stub: true
 tags: [Tpp, GameKit, Reference]
 -->
 
@@ -29,5 +30,6 @@ TODO: Description
 | [rangeDim](#rangedim) | TODO: Description |
 | [rangeLeftRightDim](#rangeleftrightdim) | TODO: Description |
 | [rangeUpDownDim](#rangeupdowndim) | TODO: Description |
+
 
 

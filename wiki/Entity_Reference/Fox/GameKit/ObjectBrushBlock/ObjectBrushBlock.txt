@@ -1,6 +1,7 @@
 <!--
 title: ObjectBrushBlock
 permalink: /Entity_Reference/?/Fox/GameKit/ObjectBrushBlock/
+stub: true
 tags: [Fox, GameKit, Reference]
 -->
 
@@ -24,5 +25,6 @@ TODO: Description
 | [obrbFile](#obrbfile) | TODO: Description |
 | [blockId](#blockid) | TODO: Description |
 | [objectBrushName](#objectbrushname) | TODO: Description |
+
 
 

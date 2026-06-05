@@ -1,6 +1,7 @@
 <!--
 title: UiModelData
 permalink: /Entity_Reference/?/Fox/UiScene/UiModelData/
+stub: true
 tags: [Fox, UiScene, Reference]
 -->
 
@@ -33,5 +34,6 @@ TODO: Description
 | [color](#color) | TODO: Description |
 | [inheritanceSetting](#inheritancesetting) | TODO: Description |
 | [modelNodes](#modelnodes) | TODO: Description |
+
 
 

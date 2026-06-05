@@ -1,6 +1,7 @@
 <!--
 title: GeoxPartsTargetExtensionBody
 permalink: /Entity_Reference/?/Fox/Geox/GeoxPartsTargetExtensionBody/
+stub: true
 tags: [Fox, Geox, Reference]
 -->
 
@@ -15,6 +16,7 @@ GeoxPartsTargetExtensionBody : Fox.Core.DataBody
 ```
 
 TODO: Description
+
 
 
 

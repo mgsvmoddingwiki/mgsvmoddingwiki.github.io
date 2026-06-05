@@ -1,6 +1,7 @@
 <!--
 title: MusicFader
 permalink: /Entity_Reference/?/Tpp/Sound/MusicFader/
+stub: true
 tags: [Tpp, Sound, Reference]
 -->
 
@@ -23,5 +24,6 @@ TODO: Description
 | [shapes](#shapes) | TODO: Description |
 | [rtpcName](#rtpcname) | TODO: Description |
 | [fadeRange](#faderange) | TODO: Description |
+
 
 

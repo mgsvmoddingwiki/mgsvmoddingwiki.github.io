@@ -1,6 +1,7 @@
 <!--
 title: ObjectBrush
 permalink: /Entity_Reference/?/Fox/GameKit/ObjectBrush/
+stub: true
 tags: [Fox, GameKit, Reference]
 -->
 
@@ -26,5 +27,6 @@ TODO: Description
 | [loadFilePath](#loadfilepath) | TODO: Description |
 | [obrFile](#obrfile) | TODO: Description |
 | [numBlocks](#numblocks) | TODO: Description |
+
 
 

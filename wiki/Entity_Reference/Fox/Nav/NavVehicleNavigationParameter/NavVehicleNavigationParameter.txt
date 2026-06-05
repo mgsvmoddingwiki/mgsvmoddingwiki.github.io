@@ -1,6 +1,7 @@
 <!--
 title: NavVehicleNavigationParameter
 permalink: /Entity_Reference/?/Fox/Nav/NavVehicleNavigationParameter/
+stub: true
 tags: [Fox, Nav, Reference]
 -->
 
@@ -22,5 +23,6 @@ TODO: Description
 |-|-|
 | [turningRadii](#turningradii) | TODO: Description |
 | [turningSpeeds](#turningspeeds) | TODO: Description |
+
 
 

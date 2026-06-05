@@ -1,6 +1,7 @@
 <!--
 title: PhBallsocketConstraint
 permalink: /Entity_Reference/?/Fox/Ph/PhBallsocketConstraint/
+stub: true
 tags: [Fox, Ph, Reference]
 -->
 
@@ -30,5 +31,6 @@ TODO: Description
 | [springConstant](#springconstant) | TODO: Description |
 | [flexibility](#flexibility) | TODO: Description |
 | [stopTwist](#stoptwist) | TODO: Description |
+
 
 

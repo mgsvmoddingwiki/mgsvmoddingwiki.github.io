@@ -1,6 +1,7 @@
 <!--
 title: TppBirdParameter2
 permalink: /Entity_Reference/?/Tpp/GameCore/TppBirdParameter2/
+stub: true
 tags: [Tpp, GameCore, Reference]
 -->
 
@@ -24,5 +25,6 @@ TODO: Description
 | [mtarFile](#mtarfile) | TODO: Description |
 | [fovaFiles](#fovafiles) | TODO: Description |
 | [vfxFiles](#vfxfiles) | TODO: Description |
+
 
 

@@ -1,6 +1,7 @@
 <!--
 title: LadbFile
 permalink: /Entity_Reference/?/Fox/GameKit/LadbFile/
+stub: true
 tags: [Fox, GameKit, Reference]
 -->
 
@@ -15,6 +16,7 @@ LadbFile : Fox.Core.RawFile
 ```
 
 TODO: Description
+
 
 
 

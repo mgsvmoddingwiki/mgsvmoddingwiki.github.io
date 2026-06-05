@@ -1,6 +1,7 @@
 <!--
 title: CollisionPoly
 permalink: /Entity_Reference/?/Fox/Geo/CollisionPoly/
+stub: true
 tags: [Fox, Geo, Reference]
 -->
 
@@ -22,5 +23,6 @@ TODO: Description
 |-|-|
 | [attribute](#attribute) | TODO: Description |
 | [vertices](#vertices) | TODO: Description |
+
 
 

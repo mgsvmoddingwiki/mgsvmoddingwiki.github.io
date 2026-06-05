@@ -1,6 +1,7 @@
 <!--
 title: RigFile
 permalink: /Entity_Reference/?/Fox/Anim/RigFile/
+stub: true
 tags: [Fox, Anim, Reference]
 -->
 
@@ -15,6 +16,7 @@ RigFile : Fox.Core.RawFile
 ```
 
 TODO: Description
+
 
 
 

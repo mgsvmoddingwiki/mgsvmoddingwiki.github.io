@@ -1,6 +1,7 @@
 <!--
 title: TppPlayer2InstanceSettings
 permalink: /Entity_Reference/?/Tpp/GameCore/TppPlayer2InstanceSettings/
+stub: true
 tags: [Tpp, GameCore, Reference]
 -->
 
@@ -24,5 +25,6 @@ TODO: Description
 | [commonMotionTypeName](#commonmotiontypename) | TODO: Description |
 | [partsTypeNames](#partstypenames) | TODO: Description |
 | [partsTypeInitial](#partstypeinitial) | TODO: Description |
+
 
 

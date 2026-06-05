@@ -1,6 +1,7 @@
 <!--
 title: RailFile
 permalink: /Entity_Reference/?/Fox/Geo/RailFile/
+stub: true
 tags: [Fox, Geo, Reference]
 -->
 
@@ -15,6 +16,7 @@ RailFile : Fox.Core.RawFile
 ```
 
 TODO: Description
+
 
 
 

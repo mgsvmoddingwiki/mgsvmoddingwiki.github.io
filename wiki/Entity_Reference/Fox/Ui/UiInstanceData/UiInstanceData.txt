@@ -1,6 +1,7 @@
 <!--
 title: UiInstanceData
 permalink: /Entity_Reference/?/Fox/Ui/UiInstanceData/
+stub: true
 tags: [Fox, Ui, Reference]
 -->
 
@@ -22,5 +23,6 @@ TODO: Description
 |-|-|
 | [createWindowParams](#createwindowparams) | TODO: Description |
 | [windowFactoryName](#windowfactoryname) | TODO: Description |
+
 
 

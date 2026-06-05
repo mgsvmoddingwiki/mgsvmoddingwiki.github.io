@@ -1,6 +1,7 @@
 <!--
 title: TppLocationData
 permalink: /Entity_Reference/?/Tpp/System/TppLocationData/
+stub: true
 tags: [Tpp, System, Reference]
 -->
 
@@ -23,5 +24,6 @@ TODO: Description
 | [locationId](#locationid) | TODO: Description |
 | [scriptPath](#scriptpath) | TODO: Description |
 | [weatherParametersFile](#weatherparametersfile) | TODO: Description |
+
 
 

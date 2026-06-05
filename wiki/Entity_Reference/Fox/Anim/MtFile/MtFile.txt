@@ -1,6 +1,7 @@
 <!--
 title: MtFile
 permalink: /Entity_Reference/?/Fox/Anim/MtFile/
+stub: true
 tags: [Fox, Anim, Reference]
 -->
 
@@ -15,6 +16,7 @@ MtFile : Fox.Anim.GaniBaseFile
 ```
 
 TODO: Description
+
 
 
 

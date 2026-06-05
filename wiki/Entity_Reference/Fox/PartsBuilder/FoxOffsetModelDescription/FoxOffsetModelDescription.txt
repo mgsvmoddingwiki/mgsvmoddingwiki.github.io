@@ -1,6 +1,7 @@
 <!--
 title: FoxOffsetModelDescription
 permalink: /Entity_Reference/?/Fox/PartsBuilder/FoxOffsetModelDescription/
+stub: true
 tags: [Fox, PartsBuilder, Reference]
 -->
 
@@ -22,5 +23,6 @@ TODO: Description
 |-|-|
 | [offsetTranslation](#offsettranslation) | TODO: Description |
 | [offsetRotQuat](#offsetrotquat) | TODO: Description |
+
 
 

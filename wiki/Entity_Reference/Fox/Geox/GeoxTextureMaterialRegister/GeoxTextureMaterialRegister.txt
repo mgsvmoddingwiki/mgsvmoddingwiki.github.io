@@ -1,6 +1,7 @@
 <!--
 title: GeoxTextureMaterialRegister
 permalink: /Entity_Reference/?/Fox/Geox/GeoxTextureMaterialRegister/
+stub: true
 tags: [Fox, Geox, Reference]
 -->
 
@@ -23,5 +24,6 @@ TODO: Description
 | [materialLink](#materiallink) | TODO: Description |
 | [collisionMaterialName](#collisionmaterialname) | TODO: Description |
 | [collisionColorName](#collisioncolorname) | TODO: Description |
+
 
 

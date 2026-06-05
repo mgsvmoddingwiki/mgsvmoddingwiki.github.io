@@ -1,6 +1,7 @@
 <!--
 title: GeoSearchCapsule
 permalink: /Entity_Reference/?/Fox/Geo/GeoSearchCapsule/
+stub: true
 tags: [Fox, Geo, Reference]
 -->
 
@@ -22,5 +23,6 @@ TODO: Description
 |-|-|
 | [p0](#p0) | TODO: Description |
 | [p1](#p1) | TODO: Description |
+
 
 

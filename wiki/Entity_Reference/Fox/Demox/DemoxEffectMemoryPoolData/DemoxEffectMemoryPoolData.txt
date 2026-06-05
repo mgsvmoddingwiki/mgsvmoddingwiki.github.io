@@ -1,6 +1,7 @@
 <!--
 title: DemoxEffectMemoryPoolData
 permalink: /Entity_Reference/?/Fox/Demox/DemoxEffectMemoryPoolData/
+stub: true
 tags: [Fox, Demox, Reference]
 -->
 
@@ -21,5 +22,6 @@ TODO: Description
 | | |
 |-|-|
 | [poolSize](#poolsize) | TODO: Description |
+
 
 

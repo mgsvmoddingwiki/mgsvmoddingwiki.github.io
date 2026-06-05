@@ -1,6 +1,7 @@
 <!--
 title: GeoxPathEdge
 permalink: /Entity_Reference/?/Fox/Geox/GeoxPathEdge/
+stub: true
 tags: [Fox, Geox, Reference]
 -->
 
@@ -21,5 +22,6 @@ TODO: Description
 | | |
 |-|-|
 | [edgeTags](#edgetags) | TODO: Description |
+
 
 

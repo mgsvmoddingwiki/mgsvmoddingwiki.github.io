@@ -1,6 +1,7 @@
 <!--
 title: GrViewportColorCorrectionParameters
 permalink: /Entity_Reference/?/Fox/Gr/GrViewportColorCorrectionParameters/
+stub: true
 tags: [Fox, Gr, Reference]
 -->
 
@@ -15,6 +16,7 @@ GrViewportColorCorrectionParameters : Fox.Gr.GrViewportParameter
 ```
 
 TODO: Description
+
 
 
 

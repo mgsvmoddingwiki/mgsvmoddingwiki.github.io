@@ -1,6 +1,7 @@
 <!--
 title: TppTrapCheckIsCharacterCallbackDataElement
 permalink: /Entity_Reference/?/Tpp/GameKit/TppTrapCheckIsCharacterCallbackDataElement/
+stub: true
 tags: [Tpp, GameKit, Reference]
 -->
 
@@ -21,5 +22,6 @@ TODO: Description
 | | |
 |-|-|
 | [checkLocator](#checklocator) | TODO: Description |
+
 
 

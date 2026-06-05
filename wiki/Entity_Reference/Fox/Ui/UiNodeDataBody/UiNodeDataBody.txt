@@ -1,6 +1,7 @@
 <!--
 title: UiNodeDataBody
 permalink: /Entity_Reference/?/Fox/Ui/UiNodeDataBody/
+stub: true
 tags: [Fox, Ui, Reference]
 -->
 
@@ -23,5 +24,6 @@ TODO: Description
 | [inputEdges](#inputedges) | TODO: Description |
 | [outputEdges](#outputedges) | TODO: Description |
 | [uigName](#uigname) | TODO: Description |
+
 
 

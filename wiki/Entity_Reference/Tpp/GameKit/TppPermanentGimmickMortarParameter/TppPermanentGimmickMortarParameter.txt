@@ -1,6 +1,7 @@
 <!--
 title: TppPermanentGimmickMortarParameter
 permalink: /Entity_Reference/?/Tpp/GameKit/TppPermanentGimmickMortarParameter/
+stub: true
 tags: [Tpp, GameKit, Reference]
 -->
 
@@ -25,5 +26,6 @@ TODO: Description
 | [rotationLimitDown](#rotationlimitdown) | TODO: Description |
 | [defaultShellPartsFile](#defaultshellpartsfile) | TODO: Description |
 | [flareShellPartsFile](#flareshellpartsfile) | TODO: Description |
+
 
 

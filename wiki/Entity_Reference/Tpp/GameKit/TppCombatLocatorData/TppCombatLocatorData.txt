@@ -1,6 +1,7 @@
 <!--
 title: TppCombatLocatorData
 permalink: /Entity_Reference/?/Tpp/GameKit/TppCombatLocatorData/
+stub: true
 tags: [Tpp, GameKit, Reference]
 -->
 
@@ -27,5 +28,6 @@ TODO: Description
 | [memberCount](#membercount) | TODO: Description |
 | [memberCountFront](#membercountfront) | TODO: Description |
 | [subLocators](#sublocators) | TODO: Description |
+
 
 

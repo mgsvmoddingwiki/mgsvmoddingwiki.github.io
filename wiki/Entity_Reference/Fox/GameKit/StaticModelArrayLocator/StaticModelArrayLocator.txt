@@ -1,6 +1,7 @@
 <!--
 title: StaticModelArrayLocator
 permalink: /Entity_Reference/?/Fox/GameKit/StaticModelArrayLocator/
+stub: true
 tags: [Fox, GameKit, Reference]
 -->
 
@@ -15,6 +16,7 @@ StaticModelArrayLocator : Fox.Core.TransformData
 ```
 
 TODO: Description
+
 
 
 

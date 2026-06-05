@@ -1,6 +1,7 @@
 <!--
 title: GkTargetHitInfo
 permalink: /Entity_Reference/?/Fox/GameKit/GkTargetHitInfo/
+stub: true
 tags: [Fox, GameKit, Reference]
 -->
 
@@ -26,5 +27,6 @@ TODO: Description
 | [hitNormal](#hitnormal) | TODO: Description |
 | [hitDirection](#hitdirection) | TODO: Description |
 | [attackDirection](#attackdirection) | TODO: Description |
+
 
 

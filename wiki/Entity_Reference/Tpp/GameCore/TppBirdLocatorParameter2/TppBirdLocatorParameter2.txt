@@ -1,6 +1,7 @@
 <!--
 title: TppBirdLocatorParameter2
 permalink: /Entity_Reference/?/Tpp/GameCore/TppBirdLocatorParameter2/
+stub: true
 tags: [Tpp, GameCore, Reference]
 -->
 
@@ -25,5 +26,6 @@ TODO: Description
 | [perchPoints](#perchpoints) | TODO: Description |
 | [radius](#radius) | TODO: Description |
 | [height](#height) | TODO: Description |
+
 
 

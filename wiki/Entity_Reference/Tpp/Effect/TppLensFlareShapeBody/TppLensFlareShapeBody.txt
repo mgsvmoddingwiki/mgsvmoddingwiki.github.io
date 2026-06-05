@@ -1,6 +1,7 @@
 <!--
 title: TppLensFlareShapeBody
 permalink: /Entity_Reference/?/Tpp/Effect/TppLensFlareShapeBody/
+stub: true
 tags: [Tpp, Effect, Reference]
 -->
 
@@ -15,6 +16,7 @@ TppLensFlareShapeBody : Fox.Core.TransformDataBody
 ```
 
 TODO: Description
+
 
 
 

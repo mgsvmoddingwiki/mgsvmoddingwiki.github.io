@@ -1,6 +1,7 @@
 <!--
 title: Sphere
 permalink: /Entity_Reference/?/Fox/Core/Sphere/
+stub: true
 tags: [Fox, Core, Reference]
 -->
 
@@ -20,5 +21,6 @@ TODO: Description
 | | |
 |-|-|
 | [p](#p) | TODO: Description |
+
 
 

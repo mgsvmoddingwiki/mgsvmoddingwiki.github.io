@@ -1,6 +1,7 @@
 <!--
 title: PhShapeParam
 permalink: /Entity_Reference/?/Fox/Ph/PhShapeParam/
+stub: true
 tags: [Fox, Ph, Reference]
 -->
 
@@ -24,5 +25,6 @@ TODO: Description
 | [rotation](#rotation) | TODO: Description |
 | [size](#size) | TODO: Description |
 | [type](#type) | TODO: Description |
+
 
 

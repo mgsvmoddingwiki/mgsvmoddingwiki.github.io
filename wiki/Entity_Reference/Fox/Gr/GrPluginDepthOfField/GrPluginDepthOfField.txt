@@ -1,6 +1,7 @@
 <!--
 title: GrPluginDepthOfField
 permalink: /Entity_Reference/?/Fox/Gr/GrPluginDepthOfField/
+stub: true
 tags: [Fox, Gr, Reference]
 -->
 
@@ -15,6 +16,7 @@ GrPluginDepthOfField : Fox.Gr.GrRenderPlugin
 ```
 
 TODO: Description
+
 
 
 

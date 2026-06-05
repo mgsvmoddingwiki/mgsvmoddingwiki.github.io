@@ -1,6 +1,7 @@
 <!--
 title: ClipData
 permalink: /Entity_Reference/?/Fox/Demo/ClipData/
+stub: true
 tags: [Fox, Demo, Reference]
 -->
 
@@ -25,5 +26,6 @@ TODO: Description
 | [startFrame](#startframe) | TODO: Description |
 | [endFrame](#endframe) | TODO: Description |
 | [offsetFrame](#offsetframe) | TODO: Description |
+
 
 

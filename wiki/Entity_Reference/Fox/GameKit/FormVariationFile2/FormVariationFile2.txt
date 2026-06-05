@@ -1,6 +1,7 @@
 <!--
 title: FormVariationFile2
 permalink: /Entity_Reference/?/Fox/GameKit/FormVariationFile2/
+stub: true
 tags: [Fox, GameKit, Reference]
 -->
 
@@ -15,6 +16,7 @@ FormVariationFile2 : Fox.Core.RawFile
 ```
 
 TODO: Description
+
 
 
 

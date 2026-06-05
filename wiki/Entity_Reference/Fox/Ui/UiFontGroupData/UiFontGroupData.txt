@@ -1,6 +1,7 @@
 <!--
 title: UiFontGroupData
 permalink: /Entity_Reference/?/Fox/Ui/UiFontGroupData/
+stub: true
 tags: [Fox, Ui, Reference]
 -->
 
@@ -21,5 +22,6 @@ TODO: Description
 | | |
 |-|-|
 | [fonts](#fonts) | TODO: Description |
+
 
 

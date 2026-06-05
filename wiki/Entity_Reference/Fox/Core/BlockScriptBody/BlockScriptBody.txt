@@ -1,6 +1,7 @@
 <!--
 title: BlockScriptBody
 permalink: /Entity_Reference/?/Fox/Core/BlockScriptBody/
+stub: true
 tags: [Fox, Core, Reference]
 -->
 
@@ -15,6 +16,7 @@ BlockScriptBody : Fox.Core.DataBody
 ```
 
 TODO: Description
+
 
 
 

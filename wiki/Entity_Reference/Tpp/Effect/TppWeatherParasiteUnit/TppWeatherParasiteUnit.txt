@@ -1,6 +1,7 @@
 <!--
 title: TppWeatherParasiteUnit
 permalink: /Entity_Reference/?/Tpp/Effect/TppWeatherParasiteUnit/
+stub: true
 tags: [Tpp, Effect, Reference]
 -->
 
@@ -15,6 +16,7 @@ TppWeatherParasiteUnit : Tpp.Effect.TppWeatherEffectBase
 ```
 
 TODO: Description
+
 
 
 

@@ -1,6 +1,7 @@
 <!--
 title: OpticalCamo
 permalink: /Entity_Reference/?/Fox/GameKit/OpticalCamo/
+stub: true
 tags: [Fox, GameKit, Reference]
 -->
 
@@ -25,5 +26,6 @@ TODO: Description
 | [lightBendColor](#lightbendcolor) | TODO: Description |
 | [lightBendUOffset](#lightbenduoffset) | TODO: Description |
 | [lightBendVOffset](#lightbendvoffset) | TODO: Description |
+
 
 

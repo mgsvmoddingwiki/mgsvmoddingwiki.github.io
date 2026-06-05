@@ -1,6 +1,7 @@
 <!--
 title: TppBuddyPuppyLocatorParameter
 permalink: /Entity_Reference/?/Tpp/GameCore/TppBuddyPuppyLocatorParameter/
+stub: true
 tags: [Tpp, GameCore, Reference]
 -->
 
@@ -15,6 +16,7 @@ TppBuddyPuppyLocatorParameter : Fox.Core.DataElement
 ```
 
 TODO: Description
+
 
 
 

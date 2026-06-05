@@ -1,6 +1,7 @@
 <!--
 title: TppPauseMenu
 permalink: /Entity_Reference/?/Tpp/System/TppPauseMenu/
+stub: true
 tags: [Tpp, System, Reference]
 -->
 
@@ -15,6 +16,7 @@ TppPauseMenu : Fox.Core.Actor
 ```
 
 TODO: Description
+
 
 
 

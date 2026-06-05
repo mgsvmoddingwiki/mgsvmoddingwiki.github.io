@@ -1,6 +1,7 @@
 <!--
 title: NavNavigationGraphHandleEntity
 permalink: /Entity_Reference/?/Fox/Nav/NavNavigationGraphHandleEntity/
+stub: true
 tags: [Fox, Nav, Reference]
 -->
 
@@ -21,5 +22,6 @@ TODO: Description
 | | |
 |-|-|
 | [subId](#subid) | TODO: Description |
+
 
 

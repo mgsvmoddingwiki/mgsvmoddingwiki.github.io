@@ -1,6 +1,7 @@
 <!--
 title: CapsuleShape
 permalink: /Entity_Reference/?/Fox/Core/CapsuleShape/
+stub: true
 tags: [Fox, Core, Reference]
 -->
 
@@ -23,5 +24,6 @@ TODO: Description
 | [point0](#point0) | TODO: Description |
 | [point1](#point1) | TODO: Description |
 | [radius](#radius) | TODO: Description |
+
 
 

@@ -1,6 +1,7 @@
 <!--
 title: TppPermeableStaticModel
 permalink: /Entity_Reference/?/Tpp/GameKit/TppPermeableStaticModel/
+stub: true
 tags: [Tpp, GameKit, Reference]
 -->
 
@@ -15,6 +16,7 @@ TppPermeableStaticModel : Fox.GameKit.StaticModelArrayPathFilter
 ```
 
 TODO: Description
+
 
 
 

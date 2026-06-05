@@ -1,6 +1,7 @@
 <!--
 title: Int8ArrayPropertyDifference
 permalink: /Entity_Reference/?/Fox/Core/Int8ArrayPropertyDifference/
+stub: true
 tags: [Fox, Core, Reference]
 -->
 
@@ -22,5 +23,6 @@ TODO: Description
 |-|-|
 | [originalValues](#originalvalues) | TODO: Description |
 | [values](#values) | TODO: Description |
+
 
 

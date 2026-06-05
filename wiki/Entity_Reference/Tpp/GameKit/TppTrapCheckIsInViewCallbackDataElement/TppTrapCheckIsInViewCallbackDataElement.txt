@@ -1,6 +1,7 @@
 <!--
 title: TppTrapCheckIsInViewCallbackDataElement
 permalink: /Entity_Reference/?/Tpp/GameKit/TppTrapCheckIsInViewCallbackDataElement/
+stub: true
 tags: [Tpp, GameKit, Reference]
 -->
 
@@ -22,5 +23,6 @@ TODO: Description
 |-|-|
 | [checkLocator](#checklocator) | TODO: Description |
 | [checkAreaSize](#checkareasize) | TODO: Description |
+
 
 

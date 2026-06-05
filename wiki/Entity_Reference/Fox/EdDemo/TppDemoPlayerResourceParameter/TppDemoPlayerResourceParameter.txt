@@ -1,6 +1,7 @@
 <!--
 title: TppDemoPlayerResourceParameter
 permalink: /Entity_Reference/?/Fox/EdDemo/TppDemoPlayerResourceParameter/
+stub: true
 tags: [Fox, EdDemo, Reference]
 -->
 
@@ -26,5 +27,6 @@ TODO: Description
 | [headFv2File](#headfv2file) | TODO: Description |
 | [camoFv2File](#camofv2file) | TODO: Description |
 | [needReload](#needreload) | TODO: Description |
+
 
 

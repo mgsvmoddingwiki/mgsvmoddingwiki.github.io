@@ -1,6 +1,7 @@
 <!--
 title: UiCameraData
 permalink: /Entity_Reference/?/Fox/UiScene/UiCameraData/
+stub: true
 tags: [Fox, UiScene, Reference]
 -->
 
@@ -30,5 +31,6 @@ TODO: Description
 | [fov](#fov) | TODO: Description |
 | [fovType](#fovtype) | TODO: Description |
 | [debug](#debug) | TODO: Description |
+
 
 

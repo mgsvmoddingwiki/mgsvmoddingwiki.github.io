@@ -1,6 +1,7 @@
 <!--
 title: TppTrapExecCombatLocatorCallbackDataElement
 permalink: /Entity_Reference/?/Tpp/GameCore/TppTrapExecCombatLocatorCallbackDataElement/
+stub: true
 tags: [Tpp, GameCore, Reference]
 -->
 
@@ -22,5 +23,6 @@ TODO: Description
 |-|-|
 | [frontLineName](#frontlinename) | TODO: Description |
 | [inactiveLocators](#inactivelocators) | TODO: Description |
+
 
 

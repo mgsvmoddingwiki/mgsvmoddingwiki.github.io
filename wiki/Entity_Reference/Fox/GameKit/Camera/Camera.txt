@@ -1,6 +1,7 @@
 <!--
 title: Camera
 permalink: /Entity_Reference/?/Fox/GameKit/Camera/
+stub: true
 tags: [Fox, GameKit, Reference]
 -->
 
@@ -45,5 +46,6 @@ TODO: Description
 | [bloomBrightnessExtraction](#bloombrightnessextraction) | TODO: Description |
 | [cancelCameraBlur](#cancelcamerablur) | TODO: Description |
 | [keyValue](#keyvalue) | TODO: Description |
+
 
 

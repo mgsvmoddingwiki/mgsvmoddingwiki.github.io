@@ -1,6 +1,7 @@
 <!--
 title: NavxNavBlockBody
 permalink: /Entity_Reference/?/Fox/Navx/NavxNavBlockBody/
+stub: true
 tags: [Fox, Navx, Reference]
 -->
 
@@ -15,6 +16,7 @@ NavxNavBlockBody : Fox.Core.DataBody
 ```
 
 TODO: Description
+
 
 
 

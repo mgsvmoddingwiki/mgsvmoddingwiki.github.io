@@ -1,6 +1,7 @@
 <!--
 title: GrxLineSSAOParameters
 permalink: /Entity_Reference/?/Fox/Grx/GrxLineSSAOParameters/
+stub: true
 tags: [Fox, Grx, Reference]
 -->
 
@@ -34,5 +35,6 @@ TODO: Description
 | [falloffRange](#falloffrange) | TODO: Description |
 | [gainonStart](#gainonstart) | TODO: Description |
 | [gainonRange](#gainonrange) | TODO: Description |
+
 
 

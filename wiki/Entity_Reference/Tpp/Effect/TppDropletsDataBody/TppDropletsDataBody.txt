@@ -1,6 +1,7 @@
 <!--
 title: TppDropletsDataBody
 permalink: /Entity_Reference/?/Tpp/Effect/TppDropletsDataBody/
+stub: true
 tags: [Tpp, Effect, Reference]
 -->
 
@@ -15,6 +16,7 @@ TppDropletsDataBody : Fox.Core.DataBody
 ```
 
 TODO: Description
+
 
 
 

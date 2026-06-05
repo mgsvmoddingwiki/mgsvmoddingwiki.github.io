@@ -1,6 +1,7 @@
 <!--
 title: TppVehicle2WeaponParameter
 permalink: /Entity_Reference/?/Tpp/GameCore/TppVehicle2WeaponParameter/
+stub: true
 tags: [Tpp, GameCore, Reference]
 -->
 
@@ -34,5 +35,6 @@ TODO: Description
 | [minPitch](#minpitch) | TODO: Description |
 | [maxPitch](#maxpitch) | TODO: Description |
 | [rotSpeed](#rotspeed) | TODO: Description |
+
 
 

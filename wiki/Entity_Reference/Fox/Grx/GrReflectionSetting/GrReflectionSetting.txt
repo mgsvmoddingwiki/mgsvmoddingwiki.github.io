@@ -1,6 +1,7 @@
 <!--
 title: GrReflectionSetting
 permalink: /Entity_Reference/?/Fox/Grx/GrReflectionSetting/
+stub: true
 tags: [Fox, Grx, Reference]
 -->
 
@@ -21,5 +22,6 @@ TODO: Description
 | | |
 |-|-|
 | [reflectionTexturePath](#reflectiontexturepath) | TODO: Description |
+
 
 

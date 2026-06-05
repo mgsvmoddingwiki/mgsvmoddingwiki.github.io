@@ -1,6 +1,7 @@
 <!--
 title: Project
 permalink: /Entity_Reference/?/Fox/Core/Project/
+stub: true
 tags: [Fox, Core, Reference]
 -->
 
@@ -22,5 +23,6 @@ TODO: Description
 |-|-|
 | [dataSetPaths](#datasetpaths) | TODO: Description |
 | [currentDataSetPath](#currentdatasetpath) | TODO: Description |
+
 
 

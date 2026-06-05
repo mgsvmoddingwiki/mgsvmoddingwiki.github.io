@@ -1,6 +1,7 @@
 <!--
 title: Int16Entity
 permalink: /Entity_Reference/?/Fox/Core/Int16Entity/
+stub: true
 tags: [Fox, Core, Reference]
 -->
 
@@ -21,5 +22,6 @@ TODO: Description
 | | |
 |-|-|
 | [value](#value) | TODO: Description |
+
 
 

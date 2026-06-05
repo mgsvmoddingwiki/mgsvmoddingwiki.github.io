@@ -1,6 +1,7 @@
 <!--
 title: TppWalkerGear2Parameter
 permalink: /Entity_Reference/?/Tpp/GameCore/TppWalkerGear2Parameter/
+stub: true
 tags: [Tpp, GameCore, Reference]
 -->
 
@@ -26,5 +27,6 @@ TODO: Description
 | [extensionMtarFile](#extensionmtarfile) | TODO: Description |
 | [vfxFiles](#vfxfiles) | TODO: Description |
 | [extraPartsFiles](#extrapartsfiles) | TODO: Description |
+
 
 

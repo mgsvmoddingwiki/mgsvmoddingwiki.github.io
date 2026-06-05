@@ -1,6 +1,7 @@
 <!--
 title: GkDefenseTargetData
 permalink: /Entity_Reference/?/Fox/GameKit/GkDefenseTargetData/
+stub: true
 tags: [Fox, GameKit, Reference]
 -->
 
@@ -22,5 +23,6 @@ TODO: Description
 |-|-|
 | [name](#name) | TODO: Description |
 | [skeletonName](#skeletonname) | TODO: Description |
+
 
 

@@ -1,6 +1,7 @@
 <!--
 title: UiPaletteDataBody
 permalink: /Entity_Reference/?/Fox/UiScene/UiPaletteDataBody/
+stub: true
 tags: [Fox, UiScene, Reference]
 -->
 
@@ -15,6 +16,7 @@ UiPaletteDataBody : Fox.Core.DataBody
 ```
 
 TODO: Description
+
 
 
 

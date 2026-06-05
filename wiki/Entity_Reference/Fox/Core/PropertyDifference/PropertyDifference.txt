@@ -1,6 +1,7 @@
 <!--
 title: PropertyDifference
 permalink: /Entity_Reference/?/Fox/Core/PropertyDifference/
+stub: true
 tags: [Fox, Core, Reference]
 -->
 
@@ -15,6 +16,7 @@ PropertyDifference : Fox.Core.Entity
 ```
 
 TODO: Description
+
 
 
 

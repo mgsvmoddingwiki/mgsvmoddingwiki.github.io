@@ -1,6 +1,7 @@
 <!--
 title: GeoSearchOBB
 permalink: /Entity_Reference/?/Fox/Geo/GeoSearchOBB/
+stub: true
 tags: [Fox, Geo, Reference]
 -->
 
@@ -23,5 +24,6 @@ TODO: Description
 | [center](#center) | TODO: Description |
 | [size](#size) | TODO: Description |
 | [rotation](#rotation) | TODO: Description |
+
 
 

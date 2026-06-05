@@ -1,6 +1,7 @@
 <!--
 title: StaticModel
 permalink: /Entity_Reference/?/Fox/GameKit/StaticModel/
+stub: true
 tags: [Fox, GameKit, Reference]
 -->
 
@@ -31,5 +32,6 @@ TODO: Description
 | [drawRejectionLevel](#drawrejectionlevel) | TODO: Description |
 | [drawMode](#drawmode) | TODO: Description |
 | [rejectFarRangeShadowCast](#rejectfarrangeshadowcast) | TODO: Description |
+
 
 

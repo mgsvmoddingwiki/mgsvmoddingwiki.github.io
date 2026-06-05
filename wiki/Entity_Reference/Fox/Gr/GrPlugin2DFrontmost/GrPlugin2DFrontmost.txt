@@ -1,6 +1,7 @@
 <!--
 title: GrPlugin2DFrontmost
 permalink: /Entity_Reference/?/Fox/Gr/GrPlugin2DFrontmost/
+stub: true
 tags: [Fox, Gr, Reference]
 -->
 
@@ -15,6 +16,7 @@ GrPlugin2DFrontmost : Fox.Gr.GrPlugin2D
 ```
 
 TODO: Description
+
 
 
 

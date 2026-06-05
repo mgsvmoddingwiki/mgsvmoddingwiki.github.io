@@ -1,6 +1,7 @@
 <!--
 title: TppPermanentGimmickDoorParameter
 permalink: /Entity_Reference/?/Tpp/GameKit/TppPermanentGimmickDoorParameter/
+stub: true
 tags: [Tpp, GameKit, Reference]
 -->
 
@@ -21,5 +22,6 @@ TODO: Description
 | | |
 |-|-|
 | [attribute](#attribute) | TODO: Description |
+
 
 

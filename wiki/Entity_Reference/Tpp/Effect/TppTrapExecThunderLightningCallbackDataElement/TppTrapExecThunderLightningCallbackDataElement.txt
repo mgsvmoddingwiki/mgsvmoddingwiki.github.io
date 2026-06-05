@@ -1,6 +1,7 @@
 <!--
 title: TppTrapExecThunderLightningCallbackDataElement
 permalink: /Entity_Reference/?/Tpp/Effect/TppTrapExecThunderLightningCallbackDataElement/
+stub: true
 tags: [Tpp, Effect, Reference]
 -->
 
@@ -23,5 +24,6 @@ TODO: Description
 | [type](#type) | TODO: Description |
 | [positionLocator](#positionlocator) | TODO: Description |
 | [power](#power) | TODO: Description |
+
 
 
