@@ -169,6 +169,9 @@ redirect_to:
 > This is useful if redirecting from a Jekyll-based wiki page to a [virtual page](/Meta/Virtual_Pages/) (eg: if porting a guide), since virtual pages don't support redirection themselves.
 {:.tip}
 
+> One issue with `redirect_to` is if entering the original URL with a trailing forwardslash (eg: `/GeoTrap/`, like it would be normally) Jekyll fails to redirect to the new page, instead showing a 404. However if entering the original URL without a trailing forwardslash (eg: `/GeoTrap`) the redirect behaves as expected.
+{:.important}
+
 {% include spoiler-end %}
 
 ---
