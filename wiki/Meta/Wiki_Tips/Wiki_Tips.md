@@ -69,6 +69,7 @@ In the search box suggestions and search results page are some filter buttons th
 |-|-|
 | Search within section | Only visible on [section](/Meta/Creating_Editing_Pages/Metadata_Organization/Creating_a_Section/) pages that have multiple parts to the page URL. Enabled by default if no user preference has been toggled yet. |
 | Exclude Entity Reference | Excludes the entire [Entity Reference](/Entity_Reference) section. Helpful to reduce that section populating other results. |
+| Exclude stubs | Excludes [stub](/Meta/Creating_Editing_Pages/Metadata_Organization/#stubs) pages. Helpful to only shows results for complete/non-placeholder pages. |
 | Ignore markup | When enabled will match the search query against a cleaned version of wiki page content text, which basically strips everything non-visual from the text, like URLs, Liquid/Kramdown/Markdown/HTML tags. It's the same patterns used to clean the highlighted match text beside results but applied to the search itself.<br/><br/>This filter is useful when the visual text differs from the markup code of the page (eg: raw page content of `C\#` but visually is `C#`). |
 | Has media | Includes only pages that contain images/videos.<br/><br/>**Note:** if the *Ignore markup* filter is also enabled results will be omitted due to that filter stripping markup (image/video links) from the search. |
 

@@ -1582,12 +1582,26 @@ body > .wrapper {
 }
 
 .content-button.file-download {
-    width: max-content;
+    background: var(--color-accent);
+    color: var(--color-accent-foreground);
+    display: inline-flex;
 }
 
 .content-button.file-download::before {
+    background: var(--color-accent-foreground);
+    flex-shrink: 0;
     -webkit-mask-image: url("/assets/images/ui.svg#icons-download-file");
     mask-image: url("/assets/images/ui.svg#icons-download-file");
+}
+
+.content-button.file-download:hover {
+    background: var(--color-accent-hover);
+}
+
+.content-button.file-download:hover:active,
+.content-button.file-download:active {
+    background: var(--color-accent);
+    filter: var(--filter-button-active);
 }
 
 /* Spoiler boxes */
@@ -1821,9 +1835,15 @@ h2.heading-with-frag-id .heading-frag-id-link {
     background: var(--color-accent-foreground);
 }
 
+
 .heading-with-frag-id:target .heading-frag-id-link:hover,
 .heading-with-frag-id.vp-frag-pseudo-target .heading-frag-id-link:hover {
     background: var(--color-accent-hover);
+}
+
+.heading-with-frag-id:target .heading-frag-id-link:hover:active,
+.heading-with-frag-id.vp-frag-pseudo-target .heading-frag-id-link:hover:active {
+    background: var(--color-accent);
 }
 
 /* Blockquote special classes styling */
@@ -2043,6 +2063,9 @@ blockquote.stub::after {
     margin: var(--spacing-secondary) auto var(--spacing-primary);
     display: block;
     border-radius: var(--radius-primary);
+    /* To stack above any blockquotes with classes that otherwise due to position relative get a higher stacking order (only relevant if img/video floated) */
+    position: relative;
+    z-index: 1;
 }
 
 .git-wiki-page .image-wrapper,

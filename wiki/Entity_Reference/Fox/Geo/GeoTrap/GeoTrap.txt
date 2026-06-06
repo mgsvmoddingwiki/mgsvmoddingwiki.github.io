@@ -39,6 +39,9 @@ A `execFuncNames` can be to add some weatherTag with `TppRequestWeatherTagTrapEx
 
 For a better understand about it. Let's build a Trap. We can use now [FoxKit](/FoxKit) to write fox2 files better than just write from scratch with XML which is very time consuming. With FoxKit is just plenty simple and friendly.
 
+> See also [this related video guide](/FoxKit-_GeoTrap_GeoModuleCondition_and_BoxShape/) on making a custom GeoTrap using the same location as seen in the above screenshot.
+{:.tip}
+
 ---
 
 ## **GeoTrap** Entity
@@ -234,6 +237,6 @@ this.Seq_Example = {
    }
    end,
    OnEnter = function() end,   
-   OnLeave = function () end,
+   OnLeave = function() end,
 }
 ```

@@ -12,11 +12,16 @@ Click the spoiler labels to show each section.
 
 ## Headings
 
-Headings share the [regular syntax](/Meta/Formatting_Reference/#headings).
+Headings share the [regular syntax](/Meta/Formatting_Reference/#headings), with the following caveats:
 
-> Small thing to keep in mind is making sure the first heading on the page is higher hierarchy than any the second heading (if there is one), since the Javascript-based table of contents generation for virtual pages will fail otherwise.\
+> Make sure the first heading on the page is higher hierarchy than any the second heading (if there is one), since the Javascript-based table of contents generation for virtual pages will fail otherwise.\
 \
 Eg: h2 (`##`) followed by a h3 (`###`, or another h2) is fine, just not starting with h3 and then having a h2 second.
+{:.note}
+
+> Using `clear` class (explained in the [images](/Meta/Formatting_Reference/#images) section) on headings requires it be added on same line as the heading text, rather than under it.\
+\
+Eg: `## Example {:.clear}`
 {:.note}
 
 ---
@@ -30,6 +35,7 @@ General styling shares the [regular syntax](/Meta/Formatting_Reference/#lists), 
 
 > Minor code syntax highlighting differences due to a simpler parser used on virtual pages.
 {:.note}
+
 
 ---
 
