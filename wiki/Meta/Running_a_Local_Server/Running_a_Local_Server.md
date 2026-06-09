@@ -37,10 +37,13 @@ Powershell is available in Linux packages but if you don't want to install it ju
 
 ## Installing Jekyll and Ruby
 
-1. Download RubyInstaller from [here](https://rubyinstaller.org/downloads/). Select the *With Devkit* x64 version that's bolded.
+> **Important:** The latest Ruby version (v4) has breaking changes with building the site locally. Use Ruby v3 instead for the time being. The steps below have been adjusted to link to the v3.4 installer.
+{:.important}
+
+1. Go to the Ruby installer page [here](https://rubyinstaller.org/downloads/archives/). Select the *Ruby+Devkit 3.4.8-1 (x64)* version ([direct download link](https://github.com/oneclick/rubyinstaller2/releases/download/RubyInstaller-3.4.8-1/rubyinstaller-devkit-3.4.8-1-x64.exe)).
 2. Run the installer and click through the defaults. It consumes around 900MB of space.
     > If you get a Windows SmartScreen message blocking the installer click the underlined *More info* text then click the *Run anyway* button.
-3. At the end of the installer you'll be prompted by default to install the dev components. Confirm and a CMD window will appear. Press `Enter` key to continue.
+3. At the end of the installer you'll be prompted by default to install the dev components. Confirm and a CMD window will appear. Press `Enter` key to continue when asked.
     - After it states `succeeded` you'll be prompted a second time to press `Enter`. This just exits the CMD window since it's already complete.
 
 ---
@@ -48,7 +51,7 @@ Powershell is available in Linux packages but if you don't want to install it ju
 ## Installing the wiki dependencies
 
 1. Now open the local version of your wiki fork (if you're unclear where that is open Github Desktop then click *Show in Explorer*).
-2. Double-click the `install.bat` script in the root directory of your fork. This installs the required Jekyll dependencies for the local wiki fork and only has to be done once. It will take a moment before progress appears.
+2. Double-click the `install.bat` script in the root directory of your fork. This installs the required Jekyll dependencies for the local wiki fork and only has to be done once. It will take a moment before progress appears. The window will auto close when finished.
     > It's easier to distinguish file types by having file extensions visible in Windows File Explorer.
     {:.tip}
 
