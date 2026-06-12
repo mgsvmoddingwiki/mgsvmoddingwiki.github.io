@@ -189,19 +189,27 @@ Sahelanthropus does have colision with the player, animals, soldiers and vehicle
 	- `SAHELAN2_PARTS_PT_RF`
 	- `SAHELAN2_PARTS_PT_LB`
 	- `SAHELAN2_PARTS_PT_RB`
-- Route events
-	- Edge event: `All`
-	- Edge event: `Run Walk`
-	- Edge event: `Walk Only`
-	- Edge event: `Run Only`
-	- Edge event: `Jump Only`
-	- Edge event: `Jump Walk`
-	- Node event: `Stand Search`
-	- Node event: `Search Missile`
-	- Node event: `Stand Idle`
-	- Node event: `On The Hill`
-	- Node event: `Pile Bunker`
-	- Node event: `4257632892 (Break Steel Tower)`
+- Route Edge Events
+	- `All`
+	- `StandWalk`
+	- `RunWalk`
+	- `RunOnly`
+	- `WalkOnly`
+	- `JumpOnly` (Scrapped)
+	- `JumpWalk`
+	- `JumpRun`
+- Route Node Events
+	- `StandSearch`
+	- `SearchMissile` (Scrapped)
+	- `StandIdle`
+	- `OnTheHill` (Scrapped)
+	- `PileBunker`
+	- `BreakSteelTower`
+	- `Peep1`
+	- `Peep2`
+	- `Peep3`
+	- `PeepLeft`
+	- `PeepRight`
 
 {% include spoiler-end %}
 
@@ -262,8 +270,9 @@ There is 3 types of Stages available to be used:<br><br>
 `1` --> Dominion AI (Normal) -- Used on Episode 31 - SAHELANTHROPUS<br>
 `2` --> Dominion AI (Extreme) -- Used on Episode 50 - (EXTREME) SAHELANTHROPUS<br>
 
-> **Note:** Hellbound AI and Dominion AI are names given by me (retali8), they are not official names for the AIs.
-> There is an 4th type of AI for Sahelanthropus with index `3`, unfortunately nothing happens when we use it, could have been created for "Kingdom of the Flies".
+> Hellbound AI and Dominion AI are names given by me (retali8), they are not official names for the AIs.
+> Internaly, both Ai modes are complex with many other "AIs" being part of them (Ex: RoarAI)
+{:.important}
 
 The stage type can be changed with the next lua code:<br>
 ```lua
@@ -281,57 +290,74 @@ The index value Inside the command variable will determine the stage type
 ## Route Events
 
 ### Edge Events
-**Edge event: `All`**<br>
-Used on base routes for Hellbound AI, allows it to run, walk and jump?<br><br>
-**Edge event: `Run Walk`**<br>
-Used on Caution and Sneak routes for Hellbound AI, allows both walk and run. Its also used on routes for Dominion AI but its unclear what it does since Dominion AI uses navmesh to move around.<br><br>
-**Edge event: `Walk Only`**<br>
-Can be used on Caution and Sneak routes, allows Sahelanthropus to only walk.<br><br>
-**Edge event: `Run Only`**<br>
-Only allows Sahelanthropus to run.<br><br> 
-**Edge event: `Jump Only`**<br>
-Only allows Sahelanthropus to jump to the next node.<br><br>
-**Edge event: `Jump Walk`**<br>
-Allows Sahelanthropus to either jump to the next node or walk to it.<br><br>
 
->Sahelanthropus will only run if the player is far away, even if the event is set to `Run Only`<br>
->Hellbound AI cant jump, if you use `Jump only` as an event, it will walk and not jump<br>
->On Dominion AI, routes are only used to Mantis Jump Attacks, Dominion AI uses navmesh to walk, run and jump<br>
+Edge Events are used by ```tpp::gm::sahelan::impl::`anonymous_namespace'::RouteAiImpl::GetSpeedWithRouteEventId``` and they seem to control Sahelanthropus speed <br>
+
+**Edge event: `All`** Can return `2` or `3`<br>
+**Edge event: `StandWalk`** Returns `2`<br>
+**Edge event: `RunWalk`** Can return `2` or `3`<br>
+**Edge event: `RunOnly`** Returns `3`<br>
+**Edge event: `WalkOnly`** Returns `2`<br>
+**Edge event: `JumpWalk`** Returns `2`<br>
+**Edge event: `JumpRun`** Returns `3`<br>
+
+There was also a **Edge event: `Jump Only`** but it was scrapped<br>
+
+![GetSpeedWithRouteEventId preview in ghidra (pre-release exe)](/assets/AI/images/mgs/ShlnGetSpeedPreview.webp){:.thumb}
+
+>On Dominion AI, routes are only used for Railgun Jump Attack were Mantis appears, Dominion AI uses navmesh to walk, run and jump<br>
 {:.important}
 
 ### Node Events
 
-**Node event: `Stand Search`**<br>
+**Node event: `StandSearch`**<br>
 Triggers an animations where Sahelanthropus searches for the player with an spotlight.
 
-{% include spoiler-start title="Stand Search Example" %}
-
+{% include spoiler-start title="StandSearch Example" %}
 {% include youtube id="MY68hoGsTog" %}
-
 {% include spoiler-end %}
 
-**Node event: `Search Missile`**<br>
-TODO<br><br>
-**Node event: `Stand Idle`**<br>
-TODO<br><br>
-**Node event: `On The Hill`**<br>
-Nothing?<br><br>
-**Node event: `Pile Bunker`**<br>
+**Node event: `SearchMissile`**<br>
+Scrapped, does nothing.<br><br>
+**Node event: `StandIdle`**<br>
+Makes Sahelanthropus Idle facing towards the direction of the node for as long as the duration is set to<br><br>
+**Node event: `OnTheHill`**<br>
+Scrapped, does nothing.<br><br>
+**Node event: `PileBunker`**<br>
 Triggers an attack, Sahelanthropus will attack with the pile bunker, it can affect rock gimmicks if its set up properly.
 
-{% include spoiler-start title="Pile Bunker Example" %}
-
+{% include spoiler-start title="PileBunker Example" %}
 {% include youtube id="Bp7Eyhgqry0" %}
-
 {% include spoiler-end %}
 
-**Node event: `4257632892 (Break Steel Tower)`**<br>
+**Node event: `BreakSteelTower`**<br>
 Triggers an attack, Sahelanthropus will attack an antenna if the route node and antenna are set up properly.
 
-{% include spoiler-start title="4257632892 (Break Steel Tower) Example" %}
-
+{% include spoiler-start title="BreakSteelTower Example" %}
 {% include youtube id="uqhU47nRlUk" %}
+{% include spoiler-end %}
 
+**Node event: `Peep1`**<br>
+**Node event: `Peep2`**<br>
+**Node event: `Peep3`**<br>
+Triggers a special search animation, all 3 seem to do the same thing
+
+{% include spoiler-start title="Peep1, Peep2 and Peep3 Example" %}
+{% include youtube id="DuIh4fPLZjA" %}
+{% include spoiler-end %}
+
+**Node event: `PeepLeft`**<br>
+Triggers a animation where Sahelanthropus leans to the left while searching
+
+{% include spoiler-start title="PeepLeft Example" %}
+{% include youtube id="Cms-vfyFs6w" %}
+{% include spoiler-end %}
+
+**Node event: `PeepRight`**<br>
+Triggers a animation where Sahelanthropus leans to the right while searching
+
+{% include spoiler-start title="PeepRight Example" %}
+{% include youtube id="UH01Z1XtHbY" %}
 {% include spoiler-end %}
 
 ## Hellbound Documentation
