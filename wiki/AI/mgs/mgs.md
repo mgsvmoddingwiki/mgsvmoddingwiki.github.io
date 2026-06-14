@@ -325,7 +325,7 @@ Makes Sahelanthropus Idle facing towards the direction of the node for as long a
 **Node event: `OnTheHill`**<br>
 Scrapped, does nothing.<br><br>
 **Node event: `OnBaseRoute`**<br>
-Used alot on Hellbound, what it exactly does is unclear<br><br>
+Used a lot on Hellbound, what it exactly does is unclear<br><br>
 **Node event: `PileBunker`**<br>
 Triggers an attack, Sahelanthropus will attack with the pile bunker, it can affect rock gimmicks if its set up properly.
 
