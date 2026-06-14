@@ -33,7 +33,7 @@ These work the moment V_Framework is installed — no scripting required:
     persistent hair layer that clips through helmets and headgear.
     V_Framework corrects this so female hair behaves properly under
     headgear, the same way male soldiers do.
-  - **Sahelanthropus Dual Tornado** — the dual-tornado attack is enabled
+  - **Ocelot Dual Tornado** — the dual-tornado attack is enabled
     by default.
   - **Enemies, Soldiers & VIPs** VIPs in missions — VIPs in mission such as Red Brass or War Economy will have their voice pitch down and comrades react to them differently than to a regular soldier 
 Custom callsigns — Makes soldiers who have the RADIO revenge power use the call sign "Patrol".
