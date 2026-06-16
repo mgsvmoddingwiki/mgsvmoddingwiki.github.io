@@ -4,348 +4,528 @@ permalink: /V_FrameWork_Lua_API/
 tags: [Lua, Reference, Infinite Heaven]
 ---
 
-This is the Lua API reference for [V_Framework](/V_FrameWork "wikilink").
-For an overview of the mod and its automatic fixes, see the
-[V_Framework](/V_FrameWork "wikilink") page.
 
-## How to use
+# How to use
 
 V_Framework loads as an [Infinite Heaven](/Infinite_Heaven "wikilink")
 module. Once it's loaded, every library below is a **global table** you
 can call from your Infinite Heaven mission modules (or any loaded Lua):
 
+For example:
 ```lua
-V_TppUi.SetEmergencyMissionPopup("Emergency!", "An urgent situation has developed.")
-V_TppUi.SetMissionEmergency(10070, true)
+V_TppUiCommand.SetEmergencyMissionPopup("Emergency!", "Mother base is under attack!")
+V_TppUiCommand.SetMissionEmergency(10070, true)
 ```
 
 Anything you set per-mission is reset automatically on each mission
 reload, so you rarely need to clean up by hand — but every library still
 provides `Clear*`/`Unset*` functions if you want to. **Soldiers and
 hostages** can be referenced by their **name** (e.g. `"sol_enemyBase_0000"`) or
-by their **game-object ID**.
+by their **gameObjectId**.
 
-## Parameters & `nil`
+# Lua functions
 
-The wrappers validate their inputs, so behavior is consistent:
 
-- **Required parameters** (paths, equip IDs, mission codes, soldier/hostage
-  references, labels) — if `nil` or the wrong type, the function **logs a
-  warning and does nothing**; getters return `nil`, `0`, or `false` instead.
-- **Optional parameters** can be omitted or passed `nil`, and the wrapper
-  substitutes a default:
+## Fox Utilities
 
-| Optional parameter | Default when `nil` / omitted |
-|---|---|
-| `colored`, `opacity` — equip backgrounds | no color tint / default opacity |
-| `a` (alpha) — `V_TppSahelan` colors & disco | default alpha |
-| `mode` / `phase` — `V_TppSahelan` colors | `-1` — applies to **all** phases |
-| `speed` — `V_TppSahelan` disco | `2.0` |
-| `isLoop`, `playAll` — `PlayCassetteTape` | `false` |
-| `fadeSec` — cassette pause / resume / stop | `0` (no fade) |
-| `stopByUser` — `StopCassette` | `false` |
-| `enable` — `SetCassetteSpeakerEnabled` | `true` |
-| `title`, `body` — `ShowMissionIcon` | no text |
-| `time` — `ShowMissionIcon` | `6` seconds |
-| `chara`, `dialogueEvent` — `SetAnnounceLogSE` | none — plays just the sound/event |
-| `line2` — `PilotCallRadio` | single-line radio |
-| `gender` — `SetLostHostage` | `0` (male) |
-| `hostageLostLabel` — `SetLostHostage` | a default lost label |
-| `isOfficer` — `SetVIPImportant` | `false` |
-| `foundDeadBodyRadioLabel` — `SetVIPImportant` | no radio line on body discovery |
-| `enable` — `EnableSoldierStealthCamo`, `SetUseConcernedHoldupRecovery` | `true` |
+| Function | Parameters | Description |
+|---|---|---|
+| `V_Fox.FNVHash32` | `wwiseEventName` | Returns the FNVHash32 value for a Wwise event name. |
+| `V_Fox.SetPickableCountRawByIndex` | `locatorIndex`, `countRaw` | Updates the raw count of a `TppPickable` locator during the current session. |
+| `V_Fox.GetPickableCountRawByIndex` | `locatorIndex` | Returns the raw count of a `TppPickable` locator. |
 
-- **Conditionally required:**
-  - `SetEnableHeliVoice(isEnable, voiceEvent, radioEvent)` — `voiceEvent` and
-    `radioEvent` are **required when `isEnable` is `true`**, and ignored when
-    disabling.
-  - `SetGameOverMusic(isEnable, gameOverType, playEvent, stopEvent)` —
-    `gameOverType` is **required** (`0`–`3`); `playEvent`/`stopEvent` are
-    required when enabling and ignored when disabling.
-  - The `V_TppCommandPost` getters and `UnsetCautionPhaseDuration` need a
-    `cpId` — passing `nil` does nothing. Use `SetGlobalCautionPhaseDuration`
-    to affect every command post.
+## Helicopter
 
-| Library | Covers |
-|---|---|
-| [V_TppUi](#v_tppui) | Equip backgrounds & icons, splashes, popups, emergency missions, mission icons, announce-log SFX, time-cigarette UI |
-| [V_TppEnemy](#v_tppenemy) | VIPs, callsigns, optical camo, enemy names & info, soldier chatter |
-| [V_TppHostage](#v_tpphostage) | Lost-hostage tracking + custom labels |
-| [V_TppSahelan](#v_tppsahelan) | Sahelanthropus eye-lamp & heart-light colors, fova, phase |
-| [V_TppCassette](#v_tppcassette) | Cassette playback |
-| [V_TppSound](#v_tppsound) | Per-soldier voice pitch |
-| [V_TppMusicManager](#v_tppmusicmanager) | Custom Game Over music |
-| [V_TppCommandPost](#v_tppcommandpost) | Caution-phase duration |
-| [V_TppHelicopter](#v_tpphelicopter) | Pilot voice/radio, free-roam taxi |
-| [V_TppPlayer](#v_tppplayer) | Player voice-FPK overrides |
-| [V_TppPickable](#v_tpppickable) | Pickable counts |
+| Function | Parameters | Description |
+|---|---|---|
+| `V_Helicopter.SetEnableHeliVoice` | `isEnable`, `voiceEvent`, `radioEvent` | Overrides the voice and radio events used by Pequod with events from a custom `.sbp`, avoiding the need to replace the vanilla `.sbp`. |
+| `V_Helicopter.PilotCallVoice` | `label` | Plays a voice line using the hardcoded `DD_vox_SH_voice` source. |
+| `V_Helicopter.PilotCallRadio` | `label1`, `label2` | Plays a radio line using the hardcoded `DD_vox_SH_radio` source. A second line can be played sequentially. The support helicopter must be rendered. |
+| `V_Helicopter.SetFieldTaxiMissionEnabled` | `missionCode`, `isEnable` | Enables or disables the Taxi system for a specific mission. |
+| `V_Helicopter.SetTaxiLandingZoneHidden` | `lzName`, `isEnable` | Shows or hides a landing zone on the Taxi map only. |
+| `V_Helicopter.SetTaxiRideState` | `state` (`1`–`3`) | Changes the pose used by the player during Taxi rides. |
+| `V_Helicopter.SetTaxiRideLog` | `isEnable` | Enables or disables logging for Taxi ride poses. |
 
----
+## Player
 
-## V_TppUi
+| Function | Parameters | Description |
+|---|---|---|
+| `V_Player.SetPlayerVoiceFpkPathForType` | `playerType`, `fpkPath` | Loads a custom `.fpk` for the specified player type during gameplay. |
+| `V_Player.ClearPlayerVoiceFpkPathForType` | `playerType` | Restores the vanilla voice `.fpk` for the specified player type. |
+| `V_Player.ClearAllPlayerVoiceFpkOverrides` | — | Restores the vanilla voice `.fpk` for all player types. |
 
-UI and HUD features.
+## Cassette
 
-### Equip-screen backgrounds
+### Playback
 
-Replace the background behind weapons/items on the equip screen. `colored`
-(optional) tints it; `opacity` (optional, `0`–`10`) sets transparency.
+| Function | Parameters | Description |
+|---|---|---|
+| `V_CassetteCommand.PlayCassetteTapeByTrackId` | `trackId`, `isLoop`, `playAll` | Immediately starts playing a cassette tape. |
+| `V_CassetteCommand.GetTapeTrackId` | `trackFileName` | Returns a cassette tape's track ID using the filename defined in `PreinstallTape.lua`. |
+| `V_CassetteCommand.GetCassettePlayingTime` | — | Returns the current playback time of the active cassette tape. |
+| `V_CassetteCommand.GetCassettePlayingTrackId` | — | Returns the track ID of the active cassette tape. |
+| `V_CassetteCommand.PauseCassette` | `fadeSec` | Pauses the active cassette tape. Set `fadeSec` to `0` to disable the fade-out. |
+| `V_CassetteCommand.ResumeCassette` | `fadeSec` | Resumes the paused cassette tape. Set `fadeSec` to `0` to disable the fade-in. |
+| `V_CassetteCommand.StopCassette` | `fadeSec`, `stopByUser` | Stops the active cassette tape. A stopped tape cannot be resumed. |
+| `V_CassetteCommand.IsCassetteSpeakerEnabled` | — | Returns `true` when cassette speaker playback is enabled. |
+| `V_CassetteCommand.SetCassetteSpeakerEnabled` | `isEnable` | Enables or disables cassette speaker playback. |
 
-| Function | Description |
-|---|---|
-| `SetDefaultEquipBgTexturePath(path, colored, opacity)` | Background for every equip slot |
-| `SetEquipBgTexturePath(equipId, path, colored, opacity)` | Background for one specific equip ID |
-| `SetEnemyWeaponBgTexturePath(path, colored, opacity)` | Background for enemy / non-sortie weapons |
-| `SetEnemyEquipBgTexturePath(equipId, path, colored, opacity)` | Per-equip enemy background |
-| `ClearDefaultEquipBgTexture()` · `ClearEquipBgTexture(equipId)` · `ClearEnemyWeaponBgTexture()` · `ClearEnemyEquipBgTexture(equipId)` · `ClearAllEquipBgTextures()` | Remove overrides |
+### Custom Tapes
 
-### Equip icons
+| Function | Parameters | Description |
+|---|---|---|
+| `V_CassetteCommand.RegisterCustomTapes` | — | Registers a completely new custom cassette tape.|
+| `V_CassetteCommand.RegisterRadioCassette` | `gimmickName`, `fox2Path`, `wwiseEvent`, `fileName` | Allows a custom cassette tape to be collected from a radio, similarly to vanilla music tapes. |
+| `V_CassetteCommand.AddPhotoAdditionalText` | — | TBD. |
 
-| Function | Description |
-|---|---|
-| `SetEquipIdIconFtexPath(equipId, path)` | Replace an equip's icon (`.ftex`) |
-| `ClearIconFtexPath(equipId)` · `ClearAllIconFtexPaths()` | Remove icon overrides |
+## Mother Base Management
 
-### Splash screens
+| Function | Parameters | Description |
+|---|---|---|
+| `V_TppMotherBaseManagement.AddToChangeLocationMenu` | — | TBD. |
 
-| Function | Description |
-|---|---|
-| `SetLoadingSplashMainTexturePath(path)` · `SetLoadingSplashBlurTexturePath(path)` · `SetLoadingTexturePath(path)` | Custom loading screen |
-| `SetGameOverSplashMainTexturePath(path)` · `SetGameOverSplashBlurTexturePath(path)` | Custom Game Over screen |
-| `ClearLoadingSplashTextures()` · `ClearGameOverSplashTextures()` | Restore defaults |
+## Sahelanthropus
 
-### Popups
+| Function | Parameters | Description |
+|---|---|---|
+| `V_Sahelan.SetEyeLampColorLogging` | `isEnable` | Enables or disables logging when Sahelanthropus's eye color changes. |
 
-| Function | Description |
-|---|---|
-| `ShowMbDvcAnnouncePopupReport(title, body)` · `ShowMbDvcAnnouncePopupReportLangId(titleLangId, bodyLangId)` | "Report"-style announce popup (text or lang IDs) |
-| `ShowMbDvcAnnouncePopupReward(title, body)` · `ShowMbDvcAnnouncePopupRewardLangId(titleLangId, bodyLangId)` | "Reward"-style announce popup |
+## Sound
 
-### Emergency missions
+| Function | Parameters | Description |
+|---|---|---|
+| `V_TppSoundDaemon.SetSoldierVoicePitch` | `gameObjectId`, `cents` | Changes the voice pitch of a specific soldier. |
+| `V_TppSoundDaemon.UnsetSoldierVoicePitch` | `gameObjectId` | Removes the voice-pitch override from a specific soldier. |
+| `V_TppSoundDaemon.SetGameOverMusic` | `isEnable`, `gameOverType` (`0`–`3`), `playEvent`, `stopEvent` | Replaces the Game Over music with a custom or existing Wwise event. |
 
-| Function | Description |
-|---|---|
-| `SetMissionEmergency(missionCode, enabled)` | Flag a mission as an Emergency mission |
-| `IsMissionEmergency(missionCode)` | Returns `true`/`false` |
-| `ClearAllMissionEmergencies()` | Clear all flags |
-| `SetEmergencyMissionPopup(title, body)` · `SetEmergencyMissionPopupLangId(titleLabel, bodyLabel)` | Customize the emergency-mission popup |
-| `ClearEmergencyMissionPopupOverride()` | Restore the default popup |
+## UI
 
-### Mission icon
+### Player Equipment Backgrounds
 
-| Function | Description |
-|---|---|
-| `ShowMissionIcon(title, body, time)` | Show a mission banner for `time` seconds |
-| `HideMissionIcon()` | Hide it |
+| Function | Parameters | Description |
+|---|---|---|
+| `V_TppUiCommand.SetDefaultEquipBgTexturePath` | `ftexPath`, `isColored`, `opacity` | Sets the default background texture used by player equipment icons. |
+| `V_TppUiCommand.ClearDefaultEquipBgTexture` | — | Restores the default player equipment background texture. |
+| `V_TppUiCommand.SetEquipBgTexturePath` | `equipId`, `ftexPath`, `isColored`, `opacity` | Sets the background texture for a specific player equipment item. |
+| `V_TppUiCommand.ClearEquipBgTexture` | `equipId` | Restores the default background texture for a specific player equipment item. |
 
-### Announce-log sound effects
+### Enemy Equipment Backgrounds
 
-`SetAnnounceLogSE(label, value, chara, dialogueEvent)` — play a sound the
-moment a HUD announce-log notification (identified by its lang `label`)
-appears. `value` is a built-in **sound-id number** or a **custom Wwise
-event-name string**; `chara`/`dialogueEvent` (optional numbers) play a
-**dialogue line** instead.
+| Function | Parameters | Description |
+|---|---|---|
+| `V_TppUiCommand.SetEnemyWeaponBgTexturePath` | `ftexPath`, `isColored`, `opacity` | Sets the default background texture used by enemy weapon icons. |
+| `V_TppUiCommand.ClearEnemyWeaponBgTexture` | — | Restores the default enemy weapon background texture. |
+| `V_TppUiCommand.SetEnemyEquipBgTexturePath` | `equipId`, `ftexPath`, `isColored`, `opacity` | Sets the background texture for a specific enemy equipment item. |
+| `V_TppUiCommand.ClearEnemyEquipBgTexture` | `equipId` | Restores the default background texture for a specific enemy equipment item. |
+| `V_TppUiCommand.ClearAllEquipBgTextures` | — | Restores all player and enemy equipment background textures to their defaults. |
 
-### Time-cigarette UI
+### Loading Screen
 
-`ShowTimeCigaretteUi()` · `HideTimeCigaretteUi()`
+| Function | Parameters | Description |
+|---|---|---|
+| `V_TppUiCommand.SetLoadingSplashMainTexturePath` | `ftexPath` | Sets the main loading-screen texture. |
+| `V_TppUiCommand.SetLoadingSplashBlurTexturePath` | `ftexPath` | Sets the blurred loading-screen texture. |
+| `V_TppUiCommand.ClearLoadingSplashTextures` | — | Restores the default loading-screen textures. |
 
-```lua
--- Custom loading screen + a custom sound when the "mission clear" log appears
-V_TppUi.SetLoadingTexturePath("/Assets/tpp/pack/mymod/loading.ftex")
-V_TppUi.SetAnnounceLogSE("announce_mission_clear", "mymod_fanfare")  -- custom Wwise event
-```
+### Game Over Screen
 
----
+| Function | Parameters | Description |
+|---|---|---|
+| `V_TppUiCommand.SetGameOverSplashMainTexturePath` | `ftexPath` | Sets the main Game Over texture. |
+| `V_TppUiCommand.SetGameOverSplashBlurTexturePath` | `ftexPath` | Sets the blurred Game Over texture. |
+| `V_TppUiCommand.ClearGameOverSplashTextures` | — | Restores the default Game Over textures. |
 
-## V_TppEnemy
+### Equipment Icons
 
-Control enemy soldiers. Also an **Infinite Heaven mission module** — add it
-to your mission's module list, then configure it with the functions below.
+| Function | Parameters | Description |
+|---|---|---|
+| `V_TppUiCommand.SetEquipIdIconFtexPath` | `equipId`, `ftexPath` | Changes the icon of a specific equipment item. |
+| `V_TppUiCommand.ClearIconFtexPath` | `equipId` | Restores the default icon for a specific equipment item. |
+| `V_TppUiCommand.ClearAllIconFtexPaths` | — | Restores the default icons for all equipment items. |
 
-### VIPs
+### Emergency Missions
 
-| Function | Description |
-|---|---|
-| `SetVIPImportant(soldierNameOrId, isOfficer, foundDeadBodyRadioLabel)` | Mark a soldier as an important VIP. `isOfficer` flags them as an officer; `foundDeadBodyRadioLabel` plays if their body is found |
-| `RemoveVIPImportant(soldierNameOrId)` · `ClearVIPImportant()` | Remove VIP status |
-| `SetUseConcernedHoldupRecovery(enable)` | VIPs recover from holdups in a "concerned" manner |
+| Function | Parameters | Description |
+|---|---|---|
+| `V_TppUiCommand.SetMissionEmergency` | `missionCode`, `isEnable` | Enables or disables emergency status for a mission. |
+| `V_TppUiCommand.SetEmergencyMissionPopup` | `title`, `body` | Overrides the Emergency Mission iDroid popup using raw text. |
+| `V_TppUiCommand.SetEmergencyMissionPopupLangId` | `title`, `body` | Overrides the Emergency Mission iDroid popup using language IDs. |
+| `V_TppUiCommand.ClearEmergencyMissionPopupOverride` | — | Restores the default Emergency Mission popup text used by the Retake the Platform mission. |
+| `V_TppUiCommand.ShowMissionIcon` | `title`, `body`, `time` | Shows the Emergency Mission icon and overrides its title, body, and time. Any argument set to `nil` uses its vanilla hardcoded value. |
 
-### Callsigns
+### Time Cigarette
 
-| Function | Description |
-|---|---|
-| `AddCallSignPatrolSoldier(gameId)` · `RemoveCallSignPatrolSoldier(gameId)` · `ClearCallSignPatrolSoldiers()` | Give patrol soldiers their own callsigns |
+| Function | Parameters | Description |
+|---|---|---|
+| `V_TppUiCommand.ShowTimeCigaretteUi` | — | Shows the Time Cigarette UI. |
+| `V_TppUiCommand.HideTimeCigaretteUi` | — | Hides the Time Cigarette UI. |
 
-### Optical camo
+### iDroid Announcement Popups
 
-| Function | Description |
-|---|---|
-| `EnableSoldierStealthCamo(soldierNameOrId, enable)` | Make a soldier invisible |
-| `ClearSoldierStealthCamoOverrides()` | Remove all camo overrides |
+| Function | Parameters | Description |
+|---|---|---|
+| `V_TppUiCommand.ShowMbDvcAnnouncePopupReport` | `title`, `body` | Shows an iDroid announcement popup with the Report sound effect using raw text. |
+| `V_TppUiCommand.ShowMbDvcAnnouncePopupReportLangId` | `title`, `body` | Shows an iDroid announcement popup with the Report sound effect using language IDs. |
+| `V_TppUiCommand.ShowMbDvcAnnouncePopupReward` | `title`, `body` | Shows an iDroid announcement popup with the Reward sound effect using raw text. |
+| `V_TppUiCommand.ShowMbDvcAnnouncePopupRewardLangId` | `title`, `body` | Shows an iDroid announcement popup with the Reward sound effect using language IDs. |
 
-### Enemy names & info text
+### Enemy Information
 
-| Function | Description |
-|---|---|
-| `SetEnemyUnitName(langId)` · `ClearEnemyUnitName()` | Unit name for **all** enemies |
-| `SetEnemyInformationLangId(langId)` · `ClearEnemyInformationLangId()` | Binocular info text for **all** enemies |
-| `SetEnemyUnitNameForSoldier(soldierNameOrId, langId)` · `ClearEnemyUnitNameForSoldier(...)` · `ClearAllEnemyUnitNameForSoldiers()` | Per-soldier unit name |
-| `SetEnemyInformationLangIdForSoldier(soldierNameOrId, langId)` · `ClearEnemyInformationLangIdForSoldier(...)` · `ClearAllEnemyInformationLangIdForSoldiers()` | Per-soldier info text |
+| Function | Parameters | Description |
+|---|---|---|
+| `V_TppUiCommand.SetEnemyInformationLangId` | `langId` | Overrides the enemy information name shown through the binoculars. |
+| `V_TppUiCommand.ClearEnemyInformationLangId` | — | Restores the default enemy information name shown through the binoculars. |
+| `V_TppUiCommand.SetEnemyUnitName` | `langId` | Overrides the enemy unit name shown on the map. |
+| `V_TppUiCommand.ClearEnemyUnitName` | — | Restores the default enemy unit name shown on the map. |
+| `V_TppUiCommand.SetEnemyInformationLangIdForSoldier` | `gameObjectId`, `langId` | Overrides the binoculars information name for a specific soldier. |
+| `V_TppUiCommand.ClearEnemyInformationLangIdForSoldier` | `gameObjectId` | Restores the default binoculars information name for a specific soldier. |
+| `V_TppUiCommand.ClearAllEnemyInformationLangIdForSoldiers` | — | Clears all soldier-specific binoculars information-name overrides. |
+| `V_TppUiCommand.SetEnemyUnitNameForSoldier` | `gameObjectId`, `langId` | Overrides the map unit name for a specific soldier. |
+| `V_TppUiCommand.ClearEnemyUnitNameForSoldier` | `gameObjectId` | Restores the default map unit name for a specific soldier. |
+| `V_TppUiCommand.ClearAllEnemyUnitNameForSoldiers` | — | Clears all soldier-specific map unit-name overrides. |
 
-### Soldier chatter
+### Announcement Log Sound Effects
 
-| Function | Description |
-|---|---|
-| `SetOccasionalChatList(labels)` | Set the occasional-chat lines (a table of labels) |
-| `InsertToOccasionalChatList(labels)` · `RemoveFromOccasionalChatList(labels)` · `ResetOccasionalChatList()` | Add / remove / reset |
+| Function | Parameters | Description |
+|---|---|---|
+| `V_TppUiCommand.SetAnnounceLogSE` | `langId`, `conditionOrStateId` | Assigns a Wwise sound effect to an announcement-log entry. |
+| `V_TppUiCommand.RegisterAnnounceLogSfx` | `sfxLabel` | Registers a sound-effect label for use with `SetAnnounceLogSE`. Example: `"sfx_s_enemytag_main_tgt"`. |
+| `V_TppUiCommand.UnsetAnnounceLogSE` | — | Removes the sound-effect override from the announcement log. |
+| `V_TppUiCommand.UnregisterAnnounceLogSfx` | — | Unregisters the announcement-log sound effect. |
 
-```lua
--- Officer VIP with optical camo and a custom binocular name
-V_TppEnemy.SetVIPImportant("sol_vip_0000", true, "V_CPRGZ0040")
-V_TppEnemy.EnableSoldierStealthCamo("sol_vip_0000", true)
-V_TppEnemy.SetEnemyUnitNameForSoldier("sol_vip_0000", "my_vip_name") -- my_vip_name is a langId
-```
 
----
+# SendCommands
 
-## V_TppHostage
-
-Track "lost" hostages and give them custom radio labels. Also an
-**Infinite Heaven mission module**.
-
-| Function | Description |
-|---|---|
-| `SetLostHostage(hostageNameOrId, gender, hostageLostLabel)` | Track a hostage as "lost", with `gender` and the radio `label` used when reported missing |
-| `RemoveLostHostage(hostageNameOrId)` · `ClearLostHostages()` | Stop tracking |
-| `SetLostHostageFromPlayer(hostageNameOrId, enable)` | Track a hostage the player is carrying/Fultoning |
-| `AutoSetLostHostage()` · `AutoSetLostHostageFromPlayer(enable)` | Auto-track the mission's hostages |
-| `BuildHostageList()` | (Re)build the internal hostage list |
-| `IsHostageFemale(hostageNameOrId)` · `IsHostageChild(hostageNameOrId)` | Returns `true`/`false` |
-| `SetCustomLostLabel(key, value)` · `ClearCustomLostLabel(key)` · `ClearAllCustomLostLabels()` · `RegisterCustomLostLabels(t)` · `RefreshCustomLabels()` | Custom lost-labels |
+## Usage
 
 ```lua
-V_TppHostage.SetLostHostage("hostage_woman_0", "FEMALE", "mymod_radio_woman_missing") -- mymod_radio_woman_missing can be left nil for the default.
--- ...or just track every hostage the mission spawns:
-V_TppHostage.AutoSetLostHostage()
-```
+GameObject.SendCommand(target, {
+    id = "CommandName",
+    -- command-specific fields
+})
+````
 
----
+The `target` argument is separate from the command table. Some commands interpret it as a game object ID, mapped index, or Command Post target, while global commands ignore it.
 
-## V_TppSahelan
+## Sahelanthropus
 
-Customize the Sahelanthropus boss. Colors are `r, g, b, a` floats `0`–`1`
-(`a` optional). `mode`/`phase` selects the battle phase
-(`TppSahelan2.SAHELAN2_PHASE_*`); pass `-1`/`nil` for all phases.
+### Phase Control
 
-| Function | Description |
-|---|---|
-| `SetSahelanFova(fv2Path)` · `ClearSahelanFova()` | Apply / clear a custom `.fv2` fova |
-| `SetEyeLampColor(r, g, b, a, mode)` · `ClearEyeLampColor()` | Eye-lamp color override |
-| `SetEyeLampDisco(enabled, speed, a)` | Cycle the eye lamp through colors (`speed` default `2.0`) |
-| `SetHeartLightColor(r, g, b, a, phase)` · `ClearHeartLightColor()` | Heart-light color override |
-| `SetHeartLightDisco(enabled, speed, a)` | Cycle the heart light through colors |
-| `SetPhase(phase)` · `GetPhase()` | Force / read the battle phase |
-| `SetEyeLampColorLogging(enabled)` | Toggle eye-color debug logging |
+| Command           | Target  | Fields  | Returns  | Description                                          |
+| ----------------- | ------- | ------- | -------- | ---------------------------------------------------- |
+| `SetSahelanPhase` | `{ type = "TppSahelan2", group = 0, index = 0 }` | `phase` | —        | Forces Sahelanthropus to use the specified AI phase. |
+| `GetSahelanPhase` | `{ type = "TppSahelan2", group = 0, index = 0 }` | —       | `number` | Returns Sahelanthropus's current AI phase.           |
 
-```lua
-V_TppSahelan.SetEyeLampColor(1.0, 0.0, 0.0, 1.0)       -- red eye, all phases
-V_TppSahelan.SetHeartLightColor(0.0, 0.4, 1.0, 1.0)    -- blue heart, all phases
-V_TppSahelan.SetEyeLampDisco(true, 3.0)                -- fast color cycling
-```
+### FOVA Override
 
----
+| Command            | Target  | Fields | Returns | Description                                     |
+| ------------------ | ------- | ------ | ------- | ----------------------------------------------- |
+| `SetSahelanFova`   | `{ type = "TppSahelan2", group = 0, index = 0 }` | `fv2`  | —       | Sets a custom `.fv2` path for Sahelanthropus.   |
+| `ClearSahelanFova` | `{ type = "TppSahelan2", group = 0, index = 0 }` | —      | —       | Clears the custom Sahelanthropus FOVA override. |
 
-## V_TppCassette
+### Eye Lamp
 
-Play, pause and stop cassette tapes.
+| Command             | Target  | Fields                           | Returns | Description                                                                                             |
+| ------------------- | ------- | -------------------------------- | ------- | ------------------------------------------------------------------------------------------------------- |
+| `SetEyeLampColor`   | `{ type = "TppSahelan2", group = 0, index = 0 }` | `color`, optional `phase`        | —       | Overrides the eye-lamp color. `Phase` defaults to `-1`, which will apply it to ALL phases. |
+| `ClearEyeLampColor` | `{ type = "TppSahelan2", group = 0, index = 0 }` | —                                | —       | Clears all eye-lamp color overrides.                                                                    |
+| `SetEyeLampDisco`   | `{ type = "TppSahelan2", group = 0, index = 0 }` | `enabled`, `speed`, optional `a` | —       | Enables or disables the eye-lamp color-cycling effect. `a` controls opacity and defaults to `1`.        |
 
-| Function | Description |
-|---|---|
-| `PlayCassetteTape(trackOrName, isLoop, playAll)` | Play a tape by track **name** (e.g. `"tp_sp_01_03"`) or **direct-play ID** |
-| `PauseCassette(fadeSec)` · `ResumeCassette(fadeSec)` | Pause / resume with optional fade |
-| `StopCassette(fadeSec, stopByUser)` | Stop playback |
-| `GetCassettePlayingTime()` · `GetCassettePlayingTrackId()` | Playback queries |
-| `SetCassetteSpeakerEnabled(enable)` · `IsCassetteSpeakerEnabled()` | Route through the in-world cassette speaker |
+Example:
 
 ```lua
-V_TppCassette.PlayCassetteTape("tp_sp_01_03", true, false)
+GameObject.SendCommand(sahelanId, {
+    id = "SetEyeLampColor",
+    Phase = -1,
+    color = {
+        r = 255,
+        g = 0,
+        b = 0,
+        a = 255,
+    },
+})
 ```
 
----
+### Heart Light
 
-## V_TppSound
+| Command                | Target  | Fields                           | Returns | Description                                                                                           |
+| ---------------------- | ------- | -------------------------------- | ------- | ----------------------------------------------------------------------------------------------------- |
+| `SetHeartLightColor`   | `{ type = "TppSahelan2", group = 0, index = 0 }` | `color`, optional `phase`        | —       | Overrides the heart-light color. `phase` defaults to `-1`. Note that this field uses a lowercase `p`. |
+| `ClearHeartLightColor` | `{ type = "TppSahelan2", group = 0, index = 0 }` | —                                | —       | Clears all heart-light color overrides.                                                               |
+| `SetHeartLightDisco`   | `{ type = "TppSahelan2", group = 0, index = 0 }` | `enabled`, `speed`, optional `a` | —       | Enables or disables the heart-light color-cycling effect. `a` controls opacity and defaults to `1`.   |
 
-| Function | Description |
-|---|---|
-| `SetSoldierVoicePitch(soldierNameOrId, cents)` | Shift a soldier's voice pitch by `cents` (positive = higher) |
-| `UnsetSoldierVoicePitch()` | Clear all voice-pitch overrides |
+### Color Format
+
+The `color` field is a table containing:
+
+| Field | Description                       |
+| ----- | --------------------------------- |
+| `r`   | Red component.                    |
+| `g`   | Green component.                  |
+| `b`   | Blue component.                   |
+| `a`   | Alpha component. Defaults to `1`. |
+
+Colors may use either normalized values from `0` to `1` or byte values from `0` to `255`.
+
+When any RGB component is greater than `1`, all three RGB components are divided by `255`. Alpha is scaled independently when it is greater than `1`.
+
+## Occasional Chats
+
+| Command                        | Target  | Fields   | Returns | Description                                                          |
+| ------------------------------ | ------- | -------- | ------- | -------------------------------------------------------------------- |
+| `SetOccasionalChatList`        | `{ type = "TppSoldier2" }` | `labels` | —       | Replaces the occasional-chat override list with the supplied labels. |
+| `InsertToOccasionalChatList`   | `{ type = "TppSoldier2" }` | `labels` | —       | Adds the supplied labels to the occasional-chat override list.       |
+| `RemoveFromOccasionalChatList` | `{ type = "TppSoldier2" }` | `labels` | —       | Removes the supplied labels from the occasional-chat override list.  |
+| `ResetOccasionalChatList`      | `{ type = "TppSoldier2" }` | —        | —       | Clears the occasional-chat override and restores default behavior.   |
+
+The `labels` field must be an array containing up to 255 entries. Each entry may be either a label string or an existing `StrCode32` value.
 
 ```lua
-V_TppSound.SetSoldierVoicePitch("sol_vip_0000", -200)  -- deeper voice
+GameObject.SendCommand(target, {
+    id = "SetOccasionalChatList",
+    labels = {
+        "speech_label_1",
+        "speech_label_2",
+    },
+})
 ```
 
----
+## Caution Phase
 
-## V_TppMusicManager
-
-| Function | Description |
-|---|---|
-| `SetGameOverMusic(isEnable, gameOverType, playEvent, stopEvent)` | Custom Game Over track. `gameOverType` selects which Game Over; `playEvent`/`stopEvent` are the Wwise events |
+| Command                     | Target                 | Fields     | Returns  | Description                                                                                                                |
+| --------------------------- | ---------------------- | ---------- | -------- | -------------------------------------------------------------------------------------------------------------------------- |
+| `SetCautionPhaseDuration`   | Global or Command Post gameObjectId | `duration` | —        | Sets the caution-phase duration in seconds. The target determines whether the override is global or Command Post-specific. |
+| `GetCautionPhaseDuration`   | Global or Command Post gameObjectId | —          | `number` | Returns the configured caution-phase duration in seconds.                                                                  |
+| `UnsetCautionPhaseDuration` | Global or Command Post gameObjectId | —          | —        | Removes the caution-duration override and restores default behavior.                                                       |
+| `GetCautionPhaseRemaining`  | Global or Command Post gameObjectId | —          | `number` | Returns the remaining caution-phase time in seconds.                                                                       |
 
 ```lua
-V_TppMusicManager.SetGameOverMusic(true, V_TppGameObject.GAME_OVER_GENERAL, "Play_bgm_s10010_gameover", "Stop_bgm_s10010_gameover")
+GameObject.SendCommand(GameObject.GetGameObjectId("afgh_enemyBase_cp"), { -- for a specific CP
+    id = "SetCautionPhaseDuration",
+    duration = 99,
+})
+
+-- OR
+GameObject.SendCommand({type="TppCommandPost2"}, { -- for ALL CPs
+    id = "SetCautionPhaseDuration",
+    duration = 99,
+})
 ```
+## Hostages
 
----
+### Escape State
 
-## V_TppCommandPost
-
-Tune how long a command post stays in **Caution**. Pass a command-post ID
-as `cpId`, or omit it / pass `nil` for all posts globally.
-
-| Function | Description |
-|---|---|
-| `SetGlobalCautionPhaseDuration(seconds)` | Caution duration for every command post |
-| `SetCautionPhaseDuration(cpId, seconds)` | Caution duration for one post |
-| `GetCautionPhaseDuration(cpId)` · `GetRemainingCautionPhaseTime(cpId)` | Queries |
-| `UnsetCautionPhaseDuration(cpId)` | Restore vanilla behavior |
+| Command          | Target                 | Fields   | Returns | Description                                                     |
+| ---------------- | ---------------------- | -------- | ------- | --------------------------------------------------------------- |
+| `SetEscapeState` | Hostage `gameObjectId` | `enable` | —       | When enabled, the enemy will report the lost prison was *taken* by the player rather than just *escaped*. |
 
 ```lua
-V_TppCommandPost.SetGlobalCautionPhaseDuration(180)  -- enemies stay alert for 3 minutes
+GameObject.SendCommand(hostageGameObjectId, {
+    id = "SetEscapeState",
+    enable = true,
+})
 ```
 
----
+### Lost Hostages
 
-## V_TppHelicopter
+| Command             | Target                 | Fields                           | Returns | Description                                                                                                 |
+| ------------------- | ---------------------- | -------------------------------- | ------- | ----------------------------------------------------------------------------------------------------------- |
+| `SetLostHostage`    | Hostage `gameObjectId` | `hostageType`, `customLostLabel` | —       | Registers the target as a lost hostage and configures its hostage type and optional custom discovery label. |
+| `RemoveLostHostage` | Hostage `gameObjectId` | —                                | —       | Removes the target from the lost-hostage trap and discovery systems.                                        |
+| `ClearLostHostages` | Ignored                | —                                | —       | Removes all registered lost-hostage overrides.                                                              |
 
-| Function | Description |
-|---|---|
-| `SetEnableHeliVoice(isEnable, voiceEvent, radioEvent)` | Enable/disable heli voice, optionally overriding the events |
-| `PilotCallVoice(voice)` | Play a pilot **voice** line |
-| `PilotCallRadio(line1, line2)` | Play a pilot **radio** line, Pequad must be realized. |
-| `SetTaxiLandingZoneHidden(lz, hidden)` | Hide/show a taxi landing zone |
-| `SetTaxiRidePose(option)` | Player pose while riding |
-| `SetTaxiRideLog(enabled)` | Toggle taxi ride debug logging |
+```lua
+GameObject.SendCommand(GameObject.GetGameObjectId("hos_0000"), {
+    id = "SetLostHostage",
+    hostageType = 1, -- MALE = 0, FEMALE = 1, CHILD = 2.
+})
+```
 
----
+`customLostLabel` may be either a label string or an existing `StrCode32` value.
 
-## V_TppPlayer
+## VIP Soldiers
 
-Override the voice FPK loaded for a player type.
+| Command              | Target                 | Fields                       | Returns | Description                                                                    |
+| -------------------- | ---------------------- | ---------------------------- | ------- | ------------------------------------------------------------------------------ |
+| `SetVIPImportant`    | Soldier `gameObjectId` | `isOfficer`, `deadBodyLabel` | —       | Registers a soldier as important for sleep, faint, holdup, and radio handling. |
+| `RemoveVIPImportant` | Soldier `gameObjectId` | —                            | —       | Removes a soldier from all VIP-important handling systems.                     |
+| `ClearVIPImportant`  | Ignored                | —                            | —       | Removes all registered VIP-important soldiers.                                 |
 
-| Function | Description |
-|---|---|
-| `SetPlayerVoiceFpkPathForType(playerType, path)` | Use a custom voice `.fpk` for a player type |
-| `ClearPlayerVoiceFpkPathForType(playerType)` · `ClearAllPlayerVoiceFpkOverrides()` | Remove overrides |
+`deadBodyLabel` may be either a label string or an existing `StrCode32` value.
 
----
+```lua
+GameObject.SendCommand(soldierGameObjectId, {
+    id = "SetVIPImportant",
+    isOfficer = true,
+    deadBodyLabel = "speech_dead_body_found",
+})
+```
 
-## V_TppPickable
+## Holdup Recovery
 
-Read/set the raw count of a pickable-item locator.
+| Command                         | Target  | Fields   | Returns | Description                                                                                     |
+| ------------------------------- | ------- | -------- | ------- | ----------------------------------------------------------------------------------------------- |
+| `SetUseConcernedHoldupRecovery` | `{ type = "TppSoldier2" }` | `enable` | —       | Enables or disables the custom concerned-soldier holdup recovery behavior for non-VIP soldiers. |
 
-| Function | Description |
-|---|---|
-| `SetCountRaw(locator, countRaw)` | Set the raw stored count |
-| `GetCountRaw(locator)` | Return the raw stored count |
+## Call-Sign Patrol Soldiers
+
+| Command                       | Target                 | Fields | Returns | Description                                             |
+| ----------------------------- | ---------------------- | ------ | ------- | ------------------------------------------------------- |
+| `AddCallSignPatrolSoldier`    | Soldier `gameObjectId` | —      | —       | Adds a soldier to the extra call-sign patrol list.      |
+| `RemoveCallSignPatrolSoldier` | Soldier `gameObjectId` | —      | —       | Removes a soldier from the extra call-sign patrol list. |
+| `ClearCallSignPatrolSoldiers` | `{ type = "TppSoldier2" }`                | —      | —       | Clears all extra call-sign patrol soldiers.             |
+
+## Soldier Stealth Camo
+
+| Command                            | Target                | Fields   | Returns | Description                                                                    |
+| ---------------------------------- | --------------------- | -------- | ------- | ------------------------------------------------------------------------------ |
+| `EnableSoldierStealthCamo`         | Soldier `gameObjectId` | `enable` | —       | Enables or disables optical camouflage for the specified soldier mapped index. |
+| `ClearSoldierStealthCamoOverrides` | `{ type = "TppSoldier2" }`               | —        | —       | Clears all soldier optical-camouflage overrides.                               |
+
+```lua
+GameObject.SendCommand(GameObject.GetGameObjectId("sol_enemyBase_0000"), {
+    id = "EnableSoldierStealthCamo",
+    enable = true,
+})
+```
+
+## Accepted Value Types
+
+### Boolean Fields
+
+Boolean fields such as `enable`, `enabled`, and `isOfficer` accept:
+
+* `true` or `false`.
+* A number, where `0` is false and any nonzero value is true.
+
+### String-Code Fields
+
+The following fields accept either a string or a numeric `StrCode32` value:
+
+* `deadBodyLabel`
+* `customLostLabel`
+* Entries in `labels`
+
+String values are automatically converted using `FoxHashes.StrCode32`.
+
+
+
+
+### Custom Tape Registration
+
+| Function | Parameters | Returns | Description |
+|---|---|---|---|
+| `V_CassetteCommand.RegisterCustomTapes` | `definition` | `boolean` | Registers custom cassette albums and tracks. Returns `true` when registration succeeds; otherwise returns `false`. |
+
+#### Definition Format
+
+```lua
+local success = V_CassetteCommand.RegisterCustomTapes({
+    albums = {
+        {
+            albumId = "custom_album",
+            langId = "custom_album_name",
+            type = "music",
+        },
+    },
+
+    tracks = {
+        {
+            albumId = "custom_album",
+            langId = "custom_track_name",
+            fileName = "custom_track",
+            dataTimeJp = 0,
+            dataTimeEn = 0,
+            important = 0,
+            special = 0,
+            unlocked = 1,
+        },
+    },
+})
+````
+
+The function accepts one table containing two arrays:
+
+| Field    | Type      | Required | Description                    |
+| -------- | --------- | -------: | ------------------------------ |
+| `albums` | `table[]` |       No | Album definitions to register. |
+| `tracks` | `table[]` |       No | Track definitions to register. |
+
+At least one valid album or track should normally be supplied. Invalid entries are skipped rather than causing the entire Lua call to fail immediately.
+
+#### Album Definition
+
+| Field       | Type      |    Required | Default | Description                                                                                           |
+| ----------- | --------- | ----------: | ------: | ----------------------------------------------------------------------------------------------------- |
+| `albumId`   | `string`  |         Yes |       — | Internal identifier used to associate tracks with the album.                                          |
+| `langId`    | `string`  |         Yes |       — | Language ID used for the album's displayed name.                                                      |
+| `type`      | `string`  | Conditional |       — | String representation of the album type. Either `type` or a nonnegative `typeValue` must be supplied. |
+| `typeValue` | `integer` | Conditional |    `-1` | Numeric album-type value. Used as an alternative to `type`.                                           |
+
+An album is accepted only when:
+
+* `albumId` is a valid string.
+* `langId` is a valid string.
+* `type` is a valid string.
+
+
+#### Track Definition
+
+| Field        | Type      | Required | Default | Description                                                                    |
+| ------------ | --------- | -------: | ------: | ------------------------------------------------------------------------------ |
+| `albumId`    | `string`  |      Yes |       — | ID of the album that contains the track.                                       |
+| `langId`     | `string`  |      Yes |       — | langId used for the track's displayed name.                               |
+| `fileName`   | `string`  |      Yes |       — | Internal cassette track filename.                                              |
+| `dataTimeJp` | `integer` |       No |     `0` | Japanese track-time metadata.                                                  |
+| `dataTimeEn` | `integer` |       No |     `0` | English track-time metadata.                                                   |
+| `important`  | `integer` |       No |     `0` | Value stored in the track's `important` field.                                 |
+| `special`    | `integer` |       No |     `0` | Value stored in the track's `special` field.                                   |
+| `unlocked`   | `integer` |       No |     `0` | Sets the initial unlocked state. `0` is locked; any nonzero value is unlocked. |
+
+A track is accepted only when `albumId`, `langId`, and `fileName` are valid strings.
+
+The track's internal `saveIndex` is automatically initialized to `-1` and cannot be set through this registration table.
+
+#### Complete Example
+
+```lua
+-- type Values
+-- PREINSTALL_MISSION_INFO
+-- PREINSTALL_MUSIC
+-- PREINSTALL_BASE
+-- PREINSTALL_BRIEFING 
+-- PREINSTALL_SPECIAL
+
+V_CassetteCommand.RegisterCustomTapes({
+    albums = {
+        {
+            albumId = "GZ_Album",
+            langId = "GZ_Album_lang",
+            type = "PREINSTALL_MUSIC",
+        },
+        {
+            albumId = "ZOE_Album",
+            type = "ZOE_Album_lang",
+            type = "PREINSTALL_MUSIC",
+        },
+    },
+
+    tracks = {
+        {
+            albumId = "GZ_Album",
+            langId = "HeresToYou_Lang",
+            fileName = "tp_bgm_03_01",
+            dataTimeJp = 188e3,
+            dataTimeEn = 188e3,
+            important = 0,
+            special = 0,
+            unlocked = 1,
+        },
+        {
+            albumId = "ZOE_Album",
+            langId = "ZOE_tp_bgm_01_lang",
+            fileName = "ZOE_tp_bgm_01",
+            unlocked = 0,
+        },
+    },
+})
