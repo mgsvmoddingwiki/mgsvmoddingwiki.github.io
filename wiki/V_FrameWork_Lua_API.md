@@ -76,13 +76,13 @@ by their **gameObjectId**.
 |---|---|---|
 | `V_CassetteCommand.RegisterCustomTapes` | — | Registers a completely new custom cassette tape.|
 | `V_CassetteCommand.RegisterRadioCassette` | `gimmickName`, `fox2Path`, `wwiseEvent`, `fileName` | Allows a custom cassette tape to be collected from a radio, similarly to vanilla music tapes. |
-| `V_CassetteCommand.AddPhotoAdditionalText` | — | TBD. |
 
 ## Mother Base Management
 
 | Function | Parameters | Description |
 |---|---|---|
 | `V_TppMotherBaseManagement.AddToChangeLocationMenu` | — | TBD. |
+| `V_CassetteCommand.AddPhotoAdditionalText` | — | TBD. |
 
 ## Sahelanthropus
 
