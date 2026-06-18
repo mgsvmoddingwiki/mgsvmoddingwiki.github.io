@@ -13,7 +13,7 @@ tags: [Tools, Reference]
 - ### Modding Frameworks
     - [Infinite Heaven](/Infinite_Heaven)
     - [Zeta](/Zeta)
-    - [V_Framework](/V_FrameWork)
+    - [V Framework](/V_Framework)
 - ### Resources
     - [Links to Useful Github Repos](/Links_to_Useful_Github_Repos)
 {:.index}
