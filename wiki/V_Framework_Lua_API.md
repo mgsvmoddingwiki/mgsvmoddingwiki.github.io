@@ -1,6 +1,6 @@
 ---
 title: V Framework Lua API
-permalink: /V_FrameWork_Lua_API/
+permalink: /V_Framework_Lua_API/
 tags: [Lua, Reference, Infinite Heaven]
 ---
 
