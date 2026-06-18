@@ -4,7 +4,7 @@ permalink: /V_Framework/
 tags: [Lua, Tools, Infinite Heaven]
 ---
 
-{% include infobox dev="Yazed0071" site="https://www.nexusmods.com/metalgearsolidvtpp/mods/2486" download="https://www.nexusmods.com/metalgearsolidvtpp/mods/2486?tab=files" sourcecode="https://github.com/Yazed0071/V_FrameWork" %}
+{% include infobox dev="Yazed0071" site="https://www.nexusmods.com/metalgearsolidvtpp/mods/2486" download="https://www.nexusmods.com/metalgearsolidvtpp/mods/2486?tab=files" sourcecode="https://github.com/Yazed0071/V_Framework" %}
 
 V Framework is a modding framework that "breaks the wall" between Lua and
 the game's executable. It loads as an [Infinite
