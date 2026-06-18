@@ -1,5 +1,5 @@
 ---
-title: V_Framework
+title: V Framework
 permalink: /V_FrameWork/
 tags: [Lua, Tools, Infinite Heaven]
 ---
@@ -8,7 +8,7 @@ tags: [Lua, Tools, Infinite Heaven]
 
 V Framework is a modding framework that "breaks the wall" between Lua and
 the game's executable. It loads as an [Infinite
-Heaven](/Infinite_Heaven "wikilink") module and exposes native Fox Engine
+Heaven](/Infinite_Heaven) module and exposes native Fox Engine
 features — UI, sound, soldiers, bosses and vehicles — to Lua scripts that
 the game never opened up to modding.
 
@@ -19,7 +19,7 @@ single memory address.
 ## Requirements
 
   - Metal Gear Solid V: The Phantom Pain (1.0.15.4 or 1.0.15.3, EN or JP)
-  - [Infinite Heaven](/Infinite_Heaven "wikilink") (V Framework registers
+  - [Infinite Heaven](/Infinite_Heaven) (V Framework registers
     as an IH module)
 
 See the [Nexus page](https://www.nexusmods.com/metalgearsolidvtpp/mods/2486)
@@ -40,8 +40,8 @@ These work the moment V Framework is installed:
 
 ## Lua API
 
-V_Framework's features are exposed as lua functions, brand new DoMessages and GameObject, Lua Exported Constants, SendCommand - with examples - is documented
-in the **[V_Framework Lua API](/V_FrameWork_Lua_API)** reference.
+V Framework's features are exposed as lua functions, brand new DoMessages and GameObject, Lua Exported Constants, SendCommand - with examples - is documented
+in the **[V Framework Lua API](/V_FrameWork_Lua_API)** reference.
 
 ```lua
 -- Flag Mission 10070, true as an Emergency mission with a custom popup and a HUD banner

@@ -261,7 +261,7 @@ document.addEventListener('DOMContentLoaded',() => {
     // -------------------------- Content headings --------------------------
     // Add fragment identifier links on hover
     func.checkVp(() => {
-        var contentHeadings = body.querySelectorAll('.git-wiki-page h2, .git-wiki-page h3, .git-wiki-page h4'); // add to h4, too, even if not included in ToC
+        var contentHeadings = body.querySelectorAll('.git-wiki-page h2, .git-wiki-page h3, .git-wiki-page h4, .git-wiki-page h5'); // add to h4/5, too, even if not included in ToC
         contentHeadings.forEach(heading => {
             heading.classList.add('heading-with-frag-id');
             let link = document.createElement('a');

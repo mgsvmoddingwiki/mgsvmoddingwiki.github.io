@@ -1,13 +1,13 @@
 ---
-title: V_Framework Lua API
+title: V Framework Lua API
 permalink: /V_FrameWork_Lua_API/
 tags: [Lua, Reference, Infinite Heaven]
 ---
 
 
-# How to use
+## How to use
 
-V_Framework loads as an [Infinite Heaven](/Infinite_Heaven "wikilink")
+[V Framework](/V_Framework) loads as an [Infinite Heaven](/Infinite_Heaven)
 module. Once it's loaded, every library below is a **global table** you
 can call from your Infinite Heaven mission modules (or any loaded Lua):
 
@@ -23,10 +23,12 @@ provides `Clear*`/`Unset*` functions if you want to. **Soldiers and
 hostages** can be referenced by their **name** (e.g. `"sol_enemyBase_0000"`) or
 by their **gameObjectId**.
 
-# Lua functions
+---
+
+## Lua functions
 
 
-## Fox Utilities
+### Fox Utilities
 
 | Function | Parameters | Description |
 |---|---|---|
@@ -34,7 +36,7 @@ by their **gameObjectId**.
 | `V_Fox.SetPickableCountRawByIndex` | `locatorIndex`, `countRaw` | Updates the raw count of a `TppPickable` locator during the current session. |
 | `V_Fox.GetPickableCountRawByIndex` | `locatorIndex` | Returns the raw count of a `TppPickable` locator. |
 
-## Helicopter
+### Helicopter
 
 | Function | Parameters | Description |
 |---|---|---|
@@ -46,7 +48,7 @@ by their **gameObjectId**.
 | `V_Helicopter.SetTaxiRideState` | `state` (`1`–`3`) | Changes the pose used by the player during Taxi rides. |
 | `V_Helicopter.SetTaxiRideLog` | `isEnable` | Enables or disables logging for Taxi ride poses. |
 
-## Player
+### Player
 
 | Function | Parameters | Description |
 |---|---|---|
@@ -54,9 +56,9 @@ by their **gameObjectId**.
 | `V_Player.ClearPlayerVoiceFpkPathForType` | `playerType` | Restores the vanilla voice `.fpk` for the specified player type. |
 | `V_Player.ClearAllPlayerVoiceFpkOverrides` | — | Restores the vanilla voice `.fpk` for all player types. |
 
-## Cassette
+### Cassette
 
-### Playback
+#### Playback
 
 | Function | Parameters | Description |
 |---|---|---|
@@ -70,27 +72,27 @@ by their **gameObjectId**.
 | `V_CassetteCommand.IsCassetteSpeakerEnabled` | — | Returns `true` when cassette speaker playback is enabled. |
 | `V_CassetteCommand.SetCassetteSpeakerEnabled` | `isEnable` | Enables or disables cassette speaker playback. |
 
-### Custom Tapes
+#### Custom Tapes
 
 | Function | Parameters | Description |
 |---|---|---|
 | `V_CassetteCommand.RegisterCustomTapes` | — | Registers a completely new custom cassette tape.|
 | `V_CassetteCommand.RegisterRadioCassette` | `gimmickName`, `fox2Path`, `wwiseEvent`, `fileName` | Allows a custom cassette tape to be collected from a radio, similarly to vanilla music tapes. |
 
-## Mother Base Management
+### Mother Base Management
 
 | Function | Parameters | Description |
 |---|---|---|
 | `V_TppMotherBaseManagement.AddToChangeLocationMenu` | — | TBD. |
 | `V_CassetteCommand.AddPhotoAdditionalText` | — | TBD. |
 
-## Sahelanthropus
+### Sahelanthropus
 
 | Function | Parameters | Description |
 |---|---|---|
 | `V_Sahelan.SetEyeLampColorLogging` | `isEnable` | Enables or disables logging when Sahelanthropus's eye color changes. |
 
-## Sound
+### Sound
 
 | Function | Parameters | Description |
 |---|---|---|
@@ -98,9 +100,9 @@ by their **gameObjectId**.
 | `V_TppSoundDaemon.UnsetSoldierVoicePitch` | `gameObjectId` | Removes the voice-pitch override from a specific soldier. |
 | `V_TppSoundDaemon.SetGameOverMusic` | `isEnable`, `gameOverType` (`0`–`3`), `playEvent`, `stopEvent` | Replaces the Game Over music with a custom or existing Wwise event. |
 
-## UI
+### UI
 
-### Player Equipment Backgrounds
+#### Player Equipment Backgrounds
 
 | Function | Parameters | Description |
 |---|---|---|
@@ -109,7 +111,7 @@ by their **gameObjectId**.
 | `V_TppUiCommand.SetEquipBgTexturePath` | `equipId`, `ftexPath`, `isColored`, `opacity` | Sets the background texture for a specific player equipment item. |
 | `V_TppUiCommand.ClearEquipBgTexture` | `equipId` | Restores the default background texture for a specific player equipment item. |
 
-### Enemy Equipment Backgrounds
+#### Enemy Equipment Backgrounds
 
 | Function | Parameters | Description |
 |---|---|---|
@@ -119,7 +121,7 @@ by their **gameObjectId**.
 | `V_TppUiCommand.ClearEnemyEquipBgTexture` | `equipId` | Restores the default background texture for a specific enemy equipment item. |
 | `V_TppUiCommand.ClearAllEquipBgTextures` | — | Restores all player and enemy equipment background textures to their defaults. |
 
-### Loading Screen
+#### Loading Screen
 
 | Function | Parameters | Description |
 |---|---|---|
@@ -127,7 +129,7 @@ by their **gameObjectId**.
 | `V_TppUiCommand.SetLoadingSplashBlurTexturePath` | `ftexPath` | Sets the blurred loading-screen texture. |
 | `V_TppUiCommand.ClearLoadingSplashTextures` | — | Restores the default loading-screen textures. |
 
-### Game Over Screen
+#### Game Over Screen
 
 | Function | Parameters | Description |
 |---|---|---|
@@ -135,7 +137,7 @@ by their **gameObjectId**.
 | `V_TppUiCommand.SetGameOverSplashBlurTexturePath` | `ftexPath` | Sets the blurred Game Over texture. |
 | `V_TppUiCommand.ClearGameOverSplashTextures` | — | Restores the default Game Over textures. |
 
-### Equipment Icons
+#### Equipment Icons
 
 | Function | Parameters | Description |
 |---|---|---|
@@ -143,7 +145,7 @@ by their **gameObjectId**.
 | `V_TppUiCommand.ClearIconFtexPath` | `equipId` | Restores the default icon for a specific equipment item. |
 | `V_TppUiCommand.ClearAllIconFtexPaths` | — | Restores the default icons for all equipment items. |
 
-### Emergency Missions
+#### Emergency Missions
 
 | Function | Parameters | Description |
 |---|---|---|
@@ -153,14 +155,14 @@ by their **gameObjectId**.
 | `V_TppUiCommand.ClearEmergencyMissionPopupOverride` | — | Restores the default Emergency Mission popup text used by the Retake the Platform mission. |
 | `V_TppUiCommand.ShowMissionIcon` | `title`, `body`, `time` | Shows the Emergency Mission icon and overrides its title, body, and time. Any argument set to `nil` uses its vanilla hardcoded value. |
 
-### Time Cigarette
+#### Time Cigarette
 
 | Function | Parameters | Description |
 |---|---|---|
 | `V_TppUiCommand.ShowTimeCigaretteUi` | — | Shows the Time Cigarette UI. |
 | `V_TppUiCommand.HideTimeCigaretteUi` | — | Hides the Time Cigarette UI. |
 
-### iDroid Announcement Popups
+#### iDroid Announcement Popups
 
 | Function | Parameters | Description |
 |---|---|---|
@@ -169,7 +171,7 @@ by their **gameObjectId**.
 | `V_TppUiCommand.ShowMbDvcAnnouncePopupReward` | `title`, `body` | Shows an iDroid announcement popup with the Reward sound effect using raw text. |
 | `V_TppUiCommand.ShowMbDvcAnnouncePopupRewardLangId` | `title`, `body` | Shows an iDroid announcement popup with the Reward sound effect using language IDs. |
 
-### Enemy Information
+#### Enemy Information
 
 | Function | Parameters | Description |
 |---|---|---|
@@ -184,7 +186,7 @@ by their **gameObjectId**.
 | `V_TppUiCommand.ClearEnemyUnitNameForSoldier` | `gameObjectId` | Restores the default map unit name for a specific soldier. |
 | `V_TppUiCommand.ClearAllEnemyUnitNameForSoldiers` | — | Clears all soldier-specific map unit-name overrides. |
 
-### Announcement Log Sound Effects
+#### Announcement Log Sound Effects
 
 | Function | Parameters | Description |
 |---|---|---|
@@ -194,9 +196,12 @@ by their **gameObjectId**.
 | `V_TppUiCommand.UnregisterAnnounceLogSfx` | — | Unregisters the announcement-log sound effect. |
 
 
-# SendCommands
+---
 
-## Usage
+
+## SendCommands
+
+### Usage
 
 ```lua
 GameObject.SendCommand(target, {
@@ -207,23 +212,23 @@ GameObject.SendCommand(target, {
 
 The `target` argument is separate from the command table. Some commands interpret it as a game object ID, mapped index, or Command Post target, while global commands ignore it.
 
-## Sahelanthropus
+### Sahelanthropus
 
-### Phase Control
+#### Phase Control
 
 | Command           | Target  | Fields  | Returns  | Description                                          |
 | ----------------- | ------- | ------- | -------- | ---------------------------------------------------- |
 | `SetSahelanPhase` | `{ type = "TppSahelan2", group = 0, index = 0 }` | `phase` | —        | Forces Sahelanthropus to use the specified AI phase. |
 | `GetSahelanPhase` | `{ type = "TppSahelan2", group = 0, index = 0 }` | —       | `number` | Returns Sahelanthropus's current AI phase.           |
 
-### FOVA Override
+#### FOVA Override
 
 | Command            | Target  | Fields | Returns | Description                                     |
 | ------------------ | ------- | ------ | ------- | ----------------------------------------------- |
 | `SetSahelanFova`   | `{ type = "TppSahelan2", group = 0, index = 0 }` | `fv2`  | —       | Sets a custom `.fv2` path for Sahelanthropus.   |
 | `ClearSahelanFova` | `{ type = "TppSahelan2", group = 0, index = 0 }` | —      | —       | Clears the custom Sahelanthropus FOVA override. |
 
-### Eye Lamp
+#### Eye Lamp
 
 | Command             | Target  | Fields                           | Returns | Description                                                                                             |
 | ------------------- | ------- | -------------------------------- | ------- | ------------------------------------------------------------------------------------------------------- |
@@ -246,7 +251,7 @@ GameObject.SendCommand(sahelanId, {
 })
 ```
 
-### Heart Light
+#### Heart Light
 
 | Command                | Target  | Fields                           | Returns | Description                                                                                           |
 | ---------------------- | ------- | -------------------------------- | ------- | ----------------------------------------------------------------------------------------------------- |
@@ -254,7 +259,7 @@ GameObject.SendCommand(sahelanId, {
 | `ClearHeartLightColor` | `{ type = "TppSahelan2", group = 0, index = 0 }` | —                                | —       | Clears all heart-light color overrides.                                                               |
 | `SetHeartLightDisco`   | `{ type = "TppSahelan2", group = 0, index = 0 }` | `enabled`, `speed`, optional `a` | —       | Enables or disables the heart-light color-cycling effect. `a` controls opacity and defaults to `1`.   |
 
-### Color Format
+#### Color Format
 
 The `color` field is a table containing:
 
@@ -269,7 +274,7 @@ Colors may use either normalized values from `0` to `1` or byte values from `0` 
 
 When any RGB component is greater than `1`, all three RGB components are divided by `255`. Alpha is scaled independently when it is greater than `1`.
 
-## Occasional Chats
+### Occasional Chats
 
 | Command                        | Target  | Fields   | Returns | Description                                                          |
 | ------------------------------ | ------- | -------- | ------- | -------------------------------------------------------------------- |
@@ -290,7 +295,7 @@ GameObject.SendCommand(target, {
 })
 ```
 
-## Caution Phase
+### Caution Phase
 
 | Command                     | Target                 | Fields     | Returns  | Description                                                                                                                |
 | --------------------------- | ---------------------- | ---------- | -------- | -------------------------------------------------------------------------------------------------------------------------- |
@@ -311,9 +316,9 @@ GameObject.SendCommand({type="TppCommandPost2"}, { -- for ALL CPs
     duration = 99,
 })
 ```
-## Hostages
+### Hostages
 
-### Escape State
+#### Escape State
 
 | Command          | Target                 | Fields   | Returns | Description                                                     |
 | ---------------- | ---------------------- | -------- | ------- | --------------------------------------------------------------- |
@@ -326,7 +331,7 @@ GameObject.SendCommand(hostageGameObjectId, {
 })
 ```
 
-### Lost Hostages
+#### Lost Hostages
 
 | Command             | Target                 | Fields                           | Returns | Description                                                                                                 |
 | ------------------- | ---------------------- | -------------------------------- | ------- | ----------------------------------------------------------------------------------------------------------- |
@@ -343,7 +348,7 @@ GameObject.SendCommand(GameObject.GetGameObjectId("hos_0000"), {
 
 `customLostLabel` may be either a label string or an existing `StrCode32` value.
 
-## VIP Soldiers
+### VIP Soldiers
 
 | Command              | Target                 | Fields                       | Returns | Description                                                                    |
 | -------------------- | ---------------------- | ---------------------------- | ------- | ------------------------------------------------------------------------------ |
@@ -361,13 +366,13 @@ GameObject.SendCommand(soldierGameObjectId, {
 })
 ```
 
-## Holdup Recovery
+### Holdup Recovery
 
 | Command                         | Target  | Fields   | Returns | Description                                                                                     |
 | ------------------------------- | ------- | -------- | ------- | ----------------------------------------------------------------------------------------------- |
 | `SetUseConcernedHoldupRecovery` | `{ type = "TppSoldier2" }` | `enable` | —       | Enables or disables the custom concerned-soldier holdup recovery behavior for non-VIP soldiers. |
 
-## Call-Sign Patrol Soldiers
+### Call-Sign Patrol Soldiers
 
 | Command                       | Target                 | Fields | Returns | Description                                             |
 | ----------------------------- | ---------------------- | ------ | ------- | ------------------------------------------------------- |
@@ -375,7 +380,7 @@ GameObject.SendCommand(soldierGameObjectId, {
 | `RemoveCallSignPatrolSoldier` | Soldier `gameObjectId` | —      | —       | Removes a soldier from the extra call-sign patrol list. |
 | `ClearCallSignPatrolSoldiers` | `{ type = "TppSoldier2" }`                | —      | —       | Clears all extra call-sign patrol soldiers.             |
 
-## Soldier Stealth Camo
+### Soldier Stealth Camo
 
 | Command                            | Target                | Fields   | Returns | Description                                                                    |
 | ---------------------------------- | --------------------- | -------- | ------- | ------------------------------------------------------------------------------ |
@@ -389,16 +394,16 @@ GameObject.SendCommand(GameObject.GetGameObjectId("sol_enemyBase_0000"), {
 })
 ```
 
-## Accepted Value Types
+### Accepted Value Types
 
-### Boolean Fields
+#### Boolean Fields
 
 Boolean fields such as `enable`, `enabled`, and `isOfficer` accept:
 
 * `true` or `false`.
 * A number, where `0` is false and any nonzero value is true.
 
-### String-Code Fields
+#### String-Code Fields
 
 The following fields accept either a string or a numeric `StrCode32` value:
 
@@ -411,13 +416,13 @@ String values are automatically converted using `FoxHashes.StrCode32`.
 
 
 
-### Custom Tape Registration
+#### Custom Tape Registration
 
 | Function | Parameters | Returns | Description |
 |---|---|---|---|
 | `V_CassetteCommand.RegisterCustomTapes` | `definition` | `boolean` | Registers custom cassette albums and tracks. Returns `true` when registration succeeds; otherwise returns `false`. |
 
-#### Definition Format
+##### Definition Format
 
 ```lua
 local success = V_CassetteCommand.RegisterCustomTapes({
@@ -453,7 +458,7 @@ The function accepts one table containing two arrays:
 
 At least one valid album or track should normally be supplied. Invalid entries are skipped rather than causing the entire Lua call to fail immediately.
 
-#### Album Definition
+##### Album Definition
 
 | Field       | Type      |    Required | Default | Description                                                                                           |
 | ----------- | --------- | ----------: | ------: | ----------------------------------------------------------------------------------------------------- |
@@ -469,7 +474,7 @@ An album is accepted only when:
 * `type` is a valid string.
 
 
-#### Track Definition
+##### Track Definition
 
 | Field        | Type      | Required | Default | Description                                                                    |
 | ------------ | --------- | -------: | ------: | ------------------------------------------------------------------------------ |
@@ -486,7 +491,7 @@ A track is accepted only when `albumId`, `langId`, and `fileName` are valid stri
 
 The track's internal `saveIndex` is automatically initialized to `-1` and cannot be set through this registration table.
 
-#### Complete Example
+##### Complete Example
 
 ```lua
 -- type Values
@@ -529,3 +534,4 @@ V_CassetteCommand.RegisterCustomTapes({
         },
     },
 })
+```
