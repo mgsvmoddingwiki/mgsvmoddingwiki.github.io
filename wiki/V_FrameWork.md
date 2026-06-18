@@ -1,6 +1,6 @@
 ---
 title: V Framework
-permalink: /V_FrameWork/
+permalink: /V_Framework/
 tags: [Lua, Tools, Infinite Heaven]
 ---
 
@@ -41,7 +41,7 @@ These work the moment V Framework is installed:
 ## Lua API
 
 V Framework's features are exposed as lua functions, brand new DoMessages and GameObject, Lua Exported Constants, SendCommand - with examples - is documented
-in the **[V Framework Lua API](/V_FrameWork_Lua_API)** reference.
+in the **[V Framework Lua API](/V_Framework_Lua_API)** reference.
 
 ```lua
 -- Flag Mission 10070, true as an Emergency mission with a custom popup and a HUD banner
