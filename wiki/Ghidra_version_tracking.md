@@ -1,7 +1,7 @@
 ---
 title: Ghidra version tracking
 permalink: /Ghidra_version_tracking/
-featured: true
+featured: false
 tags: [EXE, Guides]
 ---
 
