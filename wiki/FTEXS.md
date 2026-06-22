@@ -227,4 +227,5 @@ Gimp is similar.
 
 ## Resources
 
-  -  [Site for making normal maps](https://cpetry.github.io/NormalMap-Online/)
+  - [Site for making normal maps](https://cpetry.github.io/NormalMap-Online/)
+- [NormalMap AI - free normal map and PBR texture generator](https://normalmap.ai/?utm_source=mgsv_wiki&utm_medium=referral&utm_campaign=backlink_2026)
