@@ -555,19 +555,22 @@ Similar to the vanilla message system, V Framework also emits messages from the 
 Here is a full guide on how to use [Messages](https://mgsvmoddingwiki.github.io/Messages/).
 
 ### GameObject
-| msg                       | Params                 | discription |
+
+| msg                       | Params                 | Description |
 | ----------------------------- | ---------------------- | ------ |
 | AntiAir    | cpId, isEnable | Fires when CP notices Support Heli.| 
 | HoldupCancelLookToPlayer    | gameObjectId | Fires when the player aims at a soldier that was about to cancel a hold-up.| 
 
 ### Radio
-| msg                       | Params                 | discription |
+
+| msg                       | Params                 | Description |
 | ----------------------------- | ---------------------- | ------ |
 | HeliStart    | label1, label2, voiceType | Fires when pequad uses one of his radio/voice lines.| 
 | HeliFinish    | label1, label2, voiceType | Fires when pequad finishes one of his radio/voice lines.| 
 
 ### Player
-| msg                       | Params                 | discription |
+
+| msg                       | Params                 | Description |
 | ----------------------------- | ---------------------- | ------ |
 | OnPlayerLockPickStart    | playerIndex, gimmickId, Doorside | Fires when the player starts lock picking.| 
 | OnPlayerLockPickEnd    | playerIndex, gimmickId, Doorside | Fires when the player finishes lock picking.| 
@@ -575,6 +578,7 @@ Here is a full guide on how to use [Messages](https://mgsvmoddingwiki.github.io/
 | CrawlSideRoll    | playerIndex, rollPhase, rollCount, Direction | Fires when the player rolls.| 
 
 ### UI
-| msg                       | Params                 | discription |
+
+| msg                       | Params                 | Description |
 | ----------------------------- | ---------------------- | ------ |
 | TimeCigaretteUi    | playerIndex | Fires when the Phantom Cigar time UI shows (named it `TimeCigaretteUi` because that's the litral name of the function in exe).| 
