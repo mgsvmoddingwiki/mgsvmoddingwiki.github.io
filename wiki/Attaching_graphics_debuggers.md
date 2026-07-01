@@ -11,6 +11,7 @@ File offsets:
 |Version|File Offset|Memory Offset|
 | - | - | - |
 |1.0.15.3 English|0x2ba642|0x1402bb242|
+|1.0.15.4 Japanese|0x2ba130|0x1402ba130|
 |1.0.15.4 English|0x2b9a10|0x1402b9a10|
 
 Using a hex editor, navigate to `mgsvtpp.exe+0x(file offset)` or `0x14(memory offset)`:
