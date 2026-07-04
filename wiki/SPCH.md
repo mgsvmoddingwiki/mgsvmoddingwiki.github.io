@@ -181,8 +181,8 @@ This is a list of some animation act ids that can be used by SPCH files.
 | `1421134289`          | Aggressive nodding, agreeing | TBA | `51841676397009` |
 | `828605126`           | Spooked by something to the left                                                        | TBA                        ||
 | `2975103228`          | Spooked by something to the right                                                       | TBA                        ||
-| `213441558`           | Directing someone with left arm palm and wide gesture, to the left                      | TBA                        ||
-| `544521629`           | Saying hi to someone to the right, with right hand | TBA | `128312361409558` |
+| `213441558`           | Directing someone with left arm pointing, direction is random                      | TBA                        ||
+| `544521629`           | Saying hi to someone, with right hand. Direction is random! | TBA | `128312361409558` |
 | `1873952626`          | Telling the other to come closer, wide gesture, left arm                                | TBA                        |
 | `1715719024`          | TBA                                                                                     | TBA                        |
 | `1081228083`          | "Get up" motion                                                                         | TBA                        |
