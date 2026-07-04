@@ -159,30 +159,30 @@ This is a list of some voice types that can be used by SPCH files.
 
 This is a list of some animation act ids that can be used by SPCH files.
 
-|                       |                                                                                         |                            |
-| --------------------- | --------------------------------------------------------------------------------------- | -------------------------- |
-| StrCode32 Hash as int | Description                                                                             | Unhashed String            |
-| `104983832`           | None                                                                                    | `None`                     |
-| `2653120201`          | Saluting                                                                                | `Salute`                   |
-| `19913283`            | Looking at watch                                                                        | `Watch`                    |
-| `3471431647`          | Wiping face                                                                             | `Sweat`                    |
-| `3935815178`          | Yawn                                                                                    | `Yawn`                     |
-| `1484142220`          | Sneeze (not used in vanilla .spch files)                                                | `Sneezing`                 |
-| `1081954141`          | Foot step (looking at feet while stepping in place a bit)                               | `Stamping`                        |
-| `1004728074`          | Cough (not used in vanilla .spch files)                                                 | `Coughing`                 |
-| `3632669033`          | Scratch head                                                                            | `ScratchHead`              |
-| `4066632199`          | Repositioning self by about half a meter and back, to the left                          | TBA                        |
-| `1351632722`          | Repositioning self by about half a meter and back, to the right                         | TBA                        |
-| `1606603300`          | Wiping brow/eyes (sandstorm reaction?)                                                  | TBA                        |
-| `1017266580`          | TBA                                                                                     | TBA                        |
-| `1350228116`          | Pointing                                                                                | TBA                        |
-| `508960638`           | TBA                                                                                     | TBA                        |
-| `3575825406`          | Point away, to the left                                                                 | `GiveWarning`              |
-| `1421134289`          | Aggressive nodding, agreeing                                                            | TBA                        |
-| `828605126`           | Spooked by something to the left                                                        | TBA                        |
-| `2975103228`          | Spooked by something to the right                                                       | TBA                        |
-| `213441558`           | Directing someone with left arm palm and wide gesture, to the left                      | TBA                        |
-| `544521629`           | Saying hi to someone to the right, with right hand                                      | TBA                        |
+|                       |                                                                                         |                            ||
+| --------------------- | --------------------------------------------------------------------------------------- | -------------------------- |-|
+| StrCode32 Hash as int | Description                                                                             | Unhashed String            |GZ state|
+| `104983832`           | None                                                                                    | `None`                     ||
+| `2653120201`          | Saluting                                                                                | `Salute`                   ||
+| `19913283`            | Looking at watch                                                                        | `Watch`                    ||
+| `3471431647`          | Wiping face                                                                             | `Sweat`                    ||
+| `3935815178`          | Yawn                                                                                    | `Yawn`                     ||
+| `1484142220`          | Sneeze (not used in vanilla .spch files)                                                | `Sneezing`                 ||
+| `1081954141`          | Foot step (looking at feet while stepping in place a bit)                               | `Stamping`                 ||
+| `1004728074`          | Cough (not used in vanilla .spch files)                                                 | `Coughing`                 ||
+| `3632669033`          | Scratch head                                                                            | `ScratchHead`              ||
+| `4066632199`          | Repositioning self by about half a meter and back, to the left                          | TBA                        ||
+| `1351632722`          | Repositioning self by about half a meter and back, to the right                         | TBA                        ||
+| `1606603300`          | Wiping brow/eyes (sandstorm reaction?)                                                  | TBA                        ||
+| `1017266580`          | Small right shoulder bump, talking with some shaking | TBA | `53671881156558` |
+| `1350228116`          | Pointing at friend with left hand | TBA | `136070209132692` |
+| `508960638`           | Shaking left and right, disagreeing, saying no | TBA | `14066526855038` |
+| `3575825406`          | Point away, to the left | `GiveWarning` | `172297093532226` |
+| `1421134289`          | Aggressive nodding, agreeing | TBA | `51841676397009` |
+| `828605126`           | Spooked by something to the left                                                        | TBA                        ||
+| `2975103228`          | Spooked by something to the right                                                       | TBA                        ||
+| `213441558`           | Directing someone with left arm palm and wide gesture, to the left                      | TBA                        ||
+| `544521629`           | Saying hi to someone to the right, with right hand | TBA | `128312361409558` |
 | `1873952626`          | Telling the other to come closer, wide gesture, left arm                                | TBA                        |
 | `1715719024`          | TBA                                                                                     | TBA                        |
 | `1081228083`          | "Get up" motion                                                                         | TBA                        |
@@ -204,8 +204,13 @@ This is a list of some animation act ids that can be used by SPCH files.
 | `2643791617`          | Aggressively kicking the ground, relaxed otherwise                                      | TBA                        |
 | `2114182719`          | Spinning left arm like a windmill (Part of the LookWatch cycle for child soldiers)      | TBA                        |
 | `859906857`           | TBA (not used in vanilla .spch files)                                                   | `Surprise`                 |
-| `3029125695`          | TBA                                                                                     | TBA                        |
-| `2357847038`          | TBA                                                                                     | TBA                        |
+| `3029125695`          | Talking with a bit of shaking | TBA | `12150073685120` |
+| `2357847038`          | Tilting head around all smug | TBA | `188287345343957` |
+| TBA | talking with small bit of shake | TBA | `227858136100581` |
+| TBA | right hand "give" gesture | TBA | `228398145069710` |
+| TBA | intense tilting right arm point at the eyes | TBA | `228777436589485` |
+| TBA | quick left hand "salute" greeting gesture | TBA | `272450800457580` |
+| TBA | quick nod, few small nods | TBA | `98579340013771` |
 | `3628252758`          | Ocelot animation                                                                        | `ocelot_a`                 |
 | `3655687608`          | Ocelot animation (not used in vanilla .spch files)                                      | `ocelot_aa`                |
 | `779601008`           | Ocelot animation                                                                        | `ocelot_b`                 |
