@@ -9,9 +9,9 @@ Phantom Pain to make in-game characters speak specified voice clips,
 either in enemy soldier conversations, prisoner carrying monologues or
 unique story characters' monologues. It functions when called by
 [commands](/Commands) CallVoice, CallMonologue, CallRadio,
-CallConversation or other with a label, making the specified in-game
-character play a voice clip, with an option for the character to play
-unique animations while doing so. The format is Little-Endian, meaning
+CallConversation or other with a label string, making the specified in-game
+character play a voice clip part, with the option for the character to play
+unique body or face animations while doing so. The format is Little-Endian on PC, meaning
 bytes are written in reverse order of significance.
 
 These files can be decompiled and compiled with
@@ -19,16 +19,16 @@ These files can be decompiled and compiled with
 
 ## Header
 
-`0x00-0x03 - "spch"`
-`0x04-0x05 - Padding`
-`0x06-0x07 - (uint16) Amount of labels in the file`
-`0x08-0x0F - Padding - 0x07 bytes of padding per label.`
+`0x00-0x03 - "spch" signature`
+`0x04-0x05 - 00 on PC, 01 on PS3`
+`0x06-0x07 - (uint16) Amount of sequences in the file`
+`0x08-0x0F - Padding - 8 bytes of padding per label.`
 
-## Label entry definition
+## Sequence definition
 
-`0x00-0x03 - (uint32) StrCode32 hash of the label's name`
-`0x04-0x07 - (uint32) FNV132 hash of the Voice Event name from the soundbanks`
-`0x08 - (uint8) Number of voice clip entries in this label`
+`0x00-0x03 - (uint32) StrCode32 hash of the sequence's label name`
+`0x04-0x07 - (uint32) FNV132 hash of the Dynamic Dialogue Voice Event name from the soundbanks`
+`0x08 - (uint8) Number of voice clip parts in this sequence`
 `0x09 - 0x0B - Padding`
 
 The Voice Event name hashes can be found inside the HIRC sections of
@@ -38,12 +38,14 @@ SecaProject's SBP_Tool. The Voice Event is always followed up by
 list specified here. Sometimes, the Voice Event in the label entry
 definition is null, specifically in CpRadioSeqCommon.spch.
 
-### Voice clip entry
+In Wwise, the Voice Event parameter will be the name of your custom Dynamic Dialogue event. You can have only one per seequence.
+
+### Part entry
 
 `0x00-0x03 - (uint32) StrCode32 of the speaker's voice type`
-`0x04-0x07 - (uint32) FNV132 hash of the Voice Id from the .sbp soundbanks `
-`0x08-0x0B - (uint32) StrCode32 hash of animation act`
-`0x0C-0x0F - (uint32) StrCode32 hash of facial animation`
+`0x04-0x07 - (uint32) FNV132 hash of the "condition" Voice Parameter from the .sbp soundbanks `
+`0x08-0x0B - (uint32) StrCode32 hash of the body action animation`
+`0x0C-0x0F - (uint32) StrCode32 hash of the facial animation`
 `0x10-0x13 - (float) Pause before the next voice clip is played, in seconds`
 
 As previously mentioned, the Voice Id can be found in a list in the HIRC
@@ -55,6 +57,9 @@ object name to another much earlier object where .wem sound file names
 row, of course, in Little-Endian, twelve bytes after the link mentioned
 in the Voice Ids, however this manual method of locating sound files'
 Voice Ids doesn't always apply.
+
+In Wwise, the "chara" state in your related Dynamic Dialogue event will be decided based on the speaker hash.
+The "condition" state will be the exact string value of the Voice Parameter given in the .spch part entry.
 
 Animation act ids for each entity are listed in Metal Gear Solid V's
 .exe, as Little-Endian StrCode32 hashes.
@@ -69,16 +74,20 @@ be acquired manually.
 Decompiled label entries are represented like this:
 
 ``` xml
-  <label labelName="CT10041_03c" sbpListId="3445964925">
-    <voiceClip voiceType="ene_a" sbpVoiceClipId="585221331" animationAct="0" beforePause="0" afterPause="0" />
-    <voiceClip voiceType="ene_a" sbpVoiceClipId="585221330" animationAct="0" beforePause="0" afterPause="0" />
-    <voiceClip voiceType="ene_c" sbpVoiceClipId="585221341" animationAct="0" beforePause="0" afterPause="0" />
-    <voiceClip voiceType="ene_a" sbpVoiceClipId="585221340" animationAct="0" beforePause="0" afterPause="0" />
-    <voiceClip voiceType="ene_a" sbpVoiceClipId="568443746" animationAct="0" beforePause="0" afterPause="0" />
-  </label>
+<sequence label="CTF0000_0030" voiceEvent="dd_vox_ene_conversation_gz">
+  <part speaker="ene_b" voiceParam="ctg0010_0030" action="Greeting" facial="greet" intervalNext="0.5" />
+  <part speaker="ene_b" voiceParam="ctf0000_0030_1" action="1081228083" intervalNext="3" />
+  <part speaker="ene_c" voiceParam="ctf0000_0030_2" action="Relax" />
+  <part speaker="ene_b" voiceParam="ctf0000_0030_3" action="AskQuestion" facial="chuckle" intervalNext="3" />
+  <part speaker="ene_c" voiceParam="ctf0000_0030_4" />
+  <part speaker="ene_b" voiceParam="ctf0000_0030_5" action="Conversation2" facial="smile" intervalNext="3" />
+  <part speaker="ene_c" voiceParam="ctf0000_0030_6" action="Watch" facial="storm_lp" />
+  <part speaker="ene_b" voiceParam="ctf0000_0030_7" action="GiveOrder" facial="desperate" />
+  <part speaker="ene_c" voiceParam="ctf0000_0030_8" action="Damn" facial="irritated" />
+</sequence>
 ```
 
-The labelName are be used by Lua [Commands](/Commands "wikilink")
+The labels are be used by Lua [Commands](/Commands "wikilink")
 `RequestRadio`, `CallRadio`, `CallMonologue` and `CallConversation`, and
 with some cases like CP radio conversations, by the .exe. Sometimes
 they're hashed in StrCode32. The sbpListId FNV132 hash can be found in
@@ -159,69 +168,127 @@ This is a list of some voice types that can be used by SPCH files.
 
 This is a list of some animation act ids that can be used by SPCH files.
 
-|                       |                                                                                         |                            ||
-| --------------------- | --------------------------------------------------------------------------------------- | -------------------------- |-|
-| StrCode32 Hash as int | Description                                                                             | Unhashed String            |GZ state|
-| `104983832`           | None                                                                                    | `None`                     ||
-| `2653120201`          | Saluting                                                                                | `Salute`                   ||
-| `19913283`            | Looking at watch                                                                        | `Watch`                    ||
-| `3471431647`          | Wiping face                                                                             | `Sweat`                    ||
-| `3935815178`          | Yawn                                                                                    | `Yawn`                     ||
-| `1484142220`          | Sneeze (not used in vanilla .spch files)                                                | `Sneezing`                 ||
-| `1081954141`          | Foot step (looking at feet while stepping in place a bit)                               | `Stamping`                 ||
-| `1004728074`          | Cough (not used in vanilla .spch files)                                                 | `Coughing`                 ||
-| `3632669033`          | Scratch head                                                                            | `ScratchHead`              ||
-| `4066632199`          | Repositioning self by about half a meter and back, to the left                          | TBA                        ||
-| `1351632722`          | Repositioning self by about half a meter and back, to the right                         | TBA                        ||
-| `1606603300`          | Wiping brow/eyes (sandstorm reaction?)                                                  | TBA                        ||
-| `1017266580`          | Small right shoulder bump, talking with some shaking | `AskQuestion` | `53671881156558` |
-| `1350228116`          | Pointing at friend with left hand | `GiveOrder` | `136070209132692` |
-| `508960638`           | Shaking left and right, disagreeing, saying no | TBA | `14066526855038` |
-| `3575825406`          | Point away, to the left | `GiveWarning` | `172297093532226` |
-| `1421134289`          | Aggressive nodding, agreeing | TBA | `51841676397009` |
-| `828605126`           | Spooked by something to the left                                                        | TBA                        ||
-| `2975103228`          | Spooked by something to the right                                                       | TBA                        ||
-| `213441558`           | Directing someone with left arm pointing, direction is random                      | TBA                        ||
-| `544521629`           | Saying hi to someone, with right hand. Direction is random! | TBA | `128312361409558` |
-| `1873952626`          | Telling the other to come closer, wide gesture, left arm                                | TBA                        ||
-| `1715719024`          | stern point with left hand finger | TBA ||
-| `1081228083`          | "Get up" motion                                                                         | TBA                        ||
-| `2834988863`          | Telling the other to come closer, close and shorter gesture, left arm                   | TBA                        ||
-| `1334263530`          | Walks around the other, from the right, kicking the spoken to prisoner in the back      | TBA                        ||
-| `584751270`           | Hitting the kneeling prisoner with the barrel of gun, then looks down at him            | TBA                        ||
-| `3434724606`          | Hitting with barrel of rifle, prisoner standing on knees reacts                         | `AttackToHead`             ||
-| `3982806036`          | Greeting with left hand raised up in the air                                            | `Greeting`                 ||
-| `2573116818`          | Frustrated "damn\!" fist motion, caution-y                                              | `Damn`                     ||
-| `3249773322`          | Caution looking around                                                                  | TBA                        ||
-| `393714603`           | Caution looking around, more exaggerated body movement, left and right                  | TBA                        ||
-| `911835617`           | Moving curtain (not used in vanilla .spch files)                                        | `CurtainIn`                ||
-| `500855846`           | Moving curtain (not used in vanilla .spch files)                                        | `CurtainOut`               ||
-| `3672734274`          | Cautiony, looking behind and aggresively waving to people behind him                    | `CeaseFire`                        ||
-| `1155425596`          | Repositioning self, much more relaxed and tamer                                         | `Idly`                     ||
-| `2267025732`          | Relaxed, resting gun on neck                                                            | `Relax`                    ||
-| `767686818`           | Reacting to rain (not used in vanilla .spch files)                                      | `NoticeRain`               ||
-| `2857040360`          | Looking at comrade hanging by fulton balloon (not used in vanilla .spch files)          | `DiscoveryFultonRecovered` ||
-| `2643791617`          | Aggressively kicking the ground, relaxed otherwise                                      | TBA                        ||
-| `2114182719`          | Spinning left arm like a windmill (Part of the LookWatch cycle for child soldiers)      | TBA                        ||
-| `859906857`           | TBA (not used in vanilla .spch files)                                                   | `Surprise`                 ||
-| `3029125695`          | Talking with a bit of shaking | `Conversation1` | `12150073685120` |
-| `2357847038`          | Tilting head around all smug | `Conversation2` | `188287345343957` |
+|||||
+| - | - | - | - |
+| StrCode32 Hash as uint | Description | Unhashed String | GZ state |
+| `104983832` | None | `None` | |
+||Loop actions|||
+| `3029125695` | Talking with a bit of shaking | `Conversation1` | `12150073685120` |
+| `2357847038` | Tilting head around all smug | `Conversation2` | `188287345343957` |
+| `2653120201` | Saluting | `Salute` ||
+||Single actions|||
+| `19913283` | Looking at watch | `Watch` ||
+| `3471431647` | Wiping face | `Sweat` ||
+| `3935815178` | Yawn | `Yawn` ||
+| `1484142220` | Sneeze (not used in vanilla .spch files) | `Sneezing` ||
+| `1081954141` | Foot step (looking at feet while stepping in place a bit) | `Stamping` ||
+| `1004728074` | Cough (not used in vanilla .spch files) | `Coughing`                 ||
+| `3632669033` | Scratch head | `ScratchHead` ||
+| `4066632199` | Repositioning self by about half a meter and back, to the left | TBA ||
+| `1351632722` | Repositioning self by about half a meter and back, to the right | TBA ||
+| `1606603300` | Wiping brow/eyes (sandstorm reaction?) | TBA ||
+| `1017266580` | Small right shoulder bump, talking with some shaking | `AskQuestion` | `53671881156558` |
+| `1350228116` | Pointing at friend with left hand | `GiveOrder` | `136070209132692` |
+| `508960638` | Shaking left and right, disagreeing, saying no | TBA | `14066526855038` |
+| `3575825406` | Point away, to the left | `GiveWarning` | `172297093532226` |
+| `1421134289` | Aggressive nodding, agreeing | TBA | `51841676397009` |
+| `828605126` | Spooked by something to the left | TBA ||
+| `2975103228` | Spooked by something to the right | TBA ||
+| `213441558` | Directing someone with left arm pointing, direction is random | TBA ||
+| `544521629` | Saying hi to someone, with right hand. Direction is random! | TBA | `128312361409558` |
+| `1873952626` | Telling the other to come closer, wide gesture, left arm | TBA ||
+| `1715719024` | stern point with left hand finger | TBA ||
+| `1081228083` | "Get up" motion | TBA ||
+| `2834988863` | Telling the other to come closer, close and shorter gesture, left arm | TBA ||
+| `1334263530` | Walks around the other, from the right, kicking the spoken to prisoner in the back | TBA ||
+| `584751270` | Hitting the kneeling prisoner with the barrel of gun, then looks down at him | TBA ||
+| `3434724606` | Hitting with barrel of rifle, prisoner standing on knees reacts | `AttackToHead` ||
+| `3982806036` | Greeting with left hand raised up in the air | `Greeting` ||
+| `2573116818` | Frustrated "damn\!" fist motion, caution-y | `Damn` ||
+| `3249773322` | Caution looking around | TBA ||
+| `393714603` | Caution looking around, more exaggerated body movement, left and right | TBA ||
+| `911835617` | Moving curtain (not used in vanilla .spch files) | `CurtainIn` ||
+| `500855846` | Moving curtain (not used in vanilla .spch files) | `CurtainOut` ||
+| `3672734274` | Cautiony, looking behind and aggresively waving to people behind him | `CeaseFire` ||
+| `1155425596` | Repositioning self, much more relaxed and tamer | `Idly` ||
+| `2267025732` | Relaxed, resting gun on neck | `Relax` ||
+| `767686818` | Reacting to rain (not used in vanilla .spch files) | `NoticeRain` ||
+| `2857040360` | Looking at comrade hanging by fulton balloon (not used in vanilla .spch files) | `DiscoveryFultonRecovered` ||
+| `2643791617` | Aggressively kicking the ground, relaxed otherwise. Child soldier route idle | TBA ||
+| `2114182719` | Spinning left arm like a windmill (Part of the LookWatch cycle for child soldiers) | TBA ||
+| `859906857` | TBA (not used in vanilla .spch files) | `Surprise` ||
+||Speech actions (special characters)|||
+||Ocelot|||
+| `3628252758` | Ocelot animation (not in .exe but is in .spch) | `ocelot_a` ||
+| `779601008` | Ocelot animation | `ocelot_b` ||
+| `3655687608` | Ocelot animation (not used in vanilla .spch files) | `ocelot_aa` ||
+| `2931446809` | Ocelot animation | `ocelot_c` ||
+| `3879139826` | Ocelot animation | `ocelot_d` ||
+| `1994854644` | Ocelot animation | `ocelot_e` ||
+| `3541609199` | Ocelot animation | `ocelot_f` ||
+| `2289914935` | Ocelot animation | `ocelot_g` ||
+| `3423893682` | Ocelot animation (not used in vanilla .spch) | `ocelot_h` ||
+| `773709529` | TBA | TBA ||
+| `1714642760` | TBA | TBA ||
+| `3844657989` | TBA | TBA ||
+| `631594499` | Ocelot takes something from the other character and disarms it. | `ocelot_cqc` ||
+| `3574747766` | Ocelot waves goodbye to leaving helicopter (not used in vanilla .spch, but used by lua) | `ocelot_go_heli` ||
+||Skull Face|||
+| `3601388065` | Used in .spch | TBA ||
+| `3641692078` | Used in .spch | TBA ||
+| `1600328193` | Used in .spch | TBA ||
+| `1178727191` | Used in .spch | TBA ||
+| `1122450761` | Used in .spch | TBA ||
+| `3694604647` | Used in .spch | TBA ||
+| `3090331193` | Used in .spch | TBA ||
+| `2814632016` | exe, TBA | TBA ||
+| `2421159727` | exe, TBA | TBA ||
+| `2204356204` | exe, TBA | TBA ||
+| `203039143` | exe, TBA | TBA ||
+| `649209146` | exe, TBA | TBA ||
+| `376561994` | exe, TBA | TBA ||
+| `2148314896` | exe, TBA | TBA ||
+| `3817661764` | exe, TBA | TBA ||
+| `1461113096` | exe, TBA | TBA ||
+| `273417305` | exe, TBA | TBA ||
+| `782495120` | exe, TBA | TBA ||
+| `3996600343` | exe, TBA | TBA ||
+| `4256214378` | exe, TBA | TBA ||
+| `1628554459` | exe, TBA | TBA ||
+| `1131812723` | exe, TBA | TBA ||
+| `1447724063` | exe, TBA | TBA ||
+| `421208123` | exe, TBA | TBA ||
+| `4267069497` | exe, TBA | TBA ||
+| `3159482895` | exe, TBA | TBA ||
+| `825112619` | exe, TBA | TBA ||
+| `16500010` | exe, TBA | TBA ||
+| `3810783117` | exe, TBA | TBA ||
+| `4087604842` | exe, TBA | TBA ||
+| `1051725899` | exe, TBA | TBA ||
+| `789922051` | exe, TBA | TBA ||
+| `2331924788` | exe, TBA | TBA ||
+| `2017981767` | exe, TBA | TBA ||
+||Kaz (prisoner)|||
+| `4075576870` | Dead idle, after 4 days have passed | `kaz_dead` ||
+| `679773368` | exe, TBA | TBA ||
+| `4290341734` | exe, TBA | TBA ||
+| `1914717017` | exe, TBA | TBA ||
+| `3270076323` | exe, TBA | TBA ||
+| `3792277781` | exe, TBA | TBA ||
+| `2740470963` | exe, TBA | TBA ||
+||Paz|||
+| `809469417` | Used in .spch | TBA ||
+| `693517848` | Used in .spch | TBA ||
+| `4574962` | exe, TBA | TBA ||
+| `2429334541` | exe, TBA | TBA ||
+| `1370767770` | exe, TBA | TBA ||
+| `1133894051` | exe, TBA | TBA ||
+||GZ|||
 | TBA | talking with small bit of shake | TBA | `227858136100581` |
 | TBA | right hand "give" gesture | TBA | `228398145069710` |
 | TBA | intense tilting right arm point at the eyes | TBA | `228777436589485` |
 | TBA | quick left hand "salute" greeting gesture | TBA | `272450800457580` |
 | TBA | quick nod, few small nods | TBA | `98579340013771` |
-| `3628252758`          | Ocelot animation                                                                        | `ocelot_a`                 ||
-| `3655687608`          | Ocelot animation (not used in vanilla .spch files)                                      | `ocelot_aa`                ||
-| `779601008`           | Ocelot animation                                                                        | `ocelot_b`                 ||
-| `2931446809`          | Ocelot animation                                                                        | `ocelot_c`                 ||
-| `631594499`           | Ocelot takes something from the other character and disarms it.                         | `ocelot_cqc`               ||
-| `3879139826`          | Ocelot animation                                                                        | `ocelot_d`                 ||
-| `1994854644`          | Ocelot animation                                                                        | `ocelot_e`                 ||
-| `3541609199`          | Ocelot animation                                                                        | `ocelot_f`                 ||
-| `2289914935`          | Ocelot animation                                                                        | `ocelot_g`                 ||
-| `3574747766`          | Ocelot waves goodbye to leaving helicopter (not used in vanilla .spch, but used by lua) | `ocelot_go_heli`           ||
-| `3423893682`          | Ocelot animation (not used in vanilla .spch)                                            | `ocelot_h`                 ||
 
 ## Facial animation dictionary
 
