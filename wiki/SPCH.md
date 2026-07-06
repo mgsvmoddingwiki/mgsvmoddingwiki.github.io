@@ -241,32 +241,32 @@ This is a list of some animation act ids that can be used by SPCH files.
 | `1122450761` | Used in .spch | TBA ||
 | `3694604647` | Used in .spch | TBA ||
 | `3090331193` | Used in .spch | TBA ||
-| `2814632016` | exe, TBA | TBA ||
-| `2421159727` | exe, TBA | TBA ||
-| `2204356204` | exe, TBA | TBA ||
-| `203039143` | exe, TBA | TBA ||
-| `649209146` | exe, TBA | TBA ||
-| `376561994` | exe, TBA | TBA ||
-| `2148314896` | exe, TBA | TBA ||
-| `3817661764` | exe, TBA | TBA ||
-| `1461113096` | exe, TBA | TBA ||
-| `273417305` | exe, TBA | TBA ||
-| `782495120` | exe, TBA | TBA ||
-| `3996600343` | exe, TBA | TBA ||
-| `4256214378` | exe, TBA | TBA ||
-| `1628554459` | exe, TBA | TBA ||
-| `1131812723` | exe, TBA | TBA ||
-| `1447724063` | exe, TBA | TBA ||
-| `421208123` | exe, TBA | TBA ||
-| `4267069497` | exe, TBA | TBA ||
-| `3159482895` | exe, TBA | TBA ||
-| `825112619` | exe, TBA | TBA ||
-| `16500010` | exe, TBA | TBA ||
-| `3810783117` | exe, TBA | TBA ||
-| `4087604842` | exe, TBA | TBA ||
-| `1051725899` | exe, TBA | TBA ||
+| `2814632016` | exe, TBA | `skullface_ba` ||
+| `2421159727` | exe, TBA | `skullface_ba_m` ||
+| `2204356204` | exe, TBA | `skullface_bb` ||
+| `203039143` | exe, TBA | `skullface_ea` ||
+| `649209146` | exe, TBA | `skullface_ea_m` ||
+| `376561994` | exe, TBA | `skullface_eb` ||
+| `2148314896` | exe, TBA | `skullface_eb_m` ||
+| `3817661764` | exe, TBA | `skullface_fa` ||
+| `1461113096` | exe, TBA | `skullface_fb` ||
+| `273417305` | exe, TBA | `skullface_c` ||
+| `782495120` | exe, TBA | `skullface_c_m` ||
+| `3996600343` | exe, TBA | `skullface_d` ||
+| `4256214378` | exe, TBA | `skullface_g` ||
+| `1628554459` | exe, TBA | `skullface_h` ||
+| `1131812723` | exe, TBA | `skullface_ia` ||
+| `1447724063` | exe, TBA | `skullface_ib` ||
+| `421208123` | exe, TBA | `skullface_j` ||
+| `4267069497` | exe, TBA | `skullface_k` ||
+| `3159482895` | exe, TBA | `skullface_l` ||
+| `825112619` | exe, TBA | `skullface_l_m` ||
+| `16500010` | exe, TBA | `skullface_m` ||
+| `3810783117` | exe, TBA | `skullface_n` ||
+| `4087604842` | exe, TBA | `skullface_n_m` ||
+| `1051725899` | exe, TBA | `skullface_o_r` ||
 | `789922051` | exe, TBA | TBA ||
-| `2331924788` | exe, TBA | TBA ||
+| `2331924788` | exe, TBA | `skullface_o_l` ||
 | `2017981767` | exe, TBA | TBA ||
 ||Kaz, prisoners|||
 | `4075576870` | Dead idle, after 4 days have passed | `kaz_dead` ||
