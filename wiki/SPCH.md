@@ -268,7 +268,7 @@ This is a list of some animation act ids that can be used by SPCH files.
 | `789922051` | exe, TBA | TBA ||
 | `2331924788` | exe, TBA | TBA ||
 | `2017981767` | exe, TBA | TBA ||
-||Kaz (prisoner)|||
+||Kaz, prisoners|||
 | `4075576870` | Dead idle, after 4 days have passed | `kaz_dead` ||
 | `679773368` | exe, TBA | TBA ||
 | `4290341734` | exe, TBA | TBA ||
@@ -279,10 +279,11 @@ This is a list of some animation act ids that can be used by SPCH files.
 ||Paz|||
 | `809469417` | Used in .spch | TBA ||
 | `693517848` | Used in .spch | TBA ||
+||Mantis|||
 | `4574962` | exe, TBA | TBA ||
+||Mob|||
 | `2429334541` | exe, TBA | TBA ||
 | `1370767770` | exe, TBA | TBA ||
-| `1133894051` | exe, TBA | TBA ||
 ||GZ|||
 | TBA | talking with small bit of shake | TBA | `227858136100581` |
 | TBA | right hand "give" gesture | TBA | `228398145069710` |
