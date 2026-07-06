@@ -43,7 +43,7 @@ definition is null, specifically in CpRadioSeqCommon.spch.
 `0x00-0x03 - (uint32) StrCode32 of the speaker's voice type`
 `0x04-0x07 - (uint32) FNV132 hash of the Voice Id from the .sbp soundbanks `
 `0x08-0x0B - (uint32) StrCode32 hash of animation act`
-`0x0C-0x0F - Padding?`
+`0x0C-0x0F - (uint32) StrCode32 hash of facial animation`
 `0x10-0x13 - (float) Pause before the next voice clip is played, in seconds`
 
 As previously mentioned, the Voice Id can be found in a list in the HIRC
@@ -196,7 +196,7 @@ This is a list of some animation act ids that can be used by SPCH files.
 | `393714603`           | Caution looking around, more exaggerated body movement, left and right                  | TBA                        ||
 | `911835617`           | Moving curtain (not used in vanilla .spch files)                                        | `CurtainIn`                ||
 | `500855846`           | Moving curtain (not used in vanilla .spch files)                                        | `CurtainOut`               ||
-| `3672734274`          | Cautiony, looking behind and aggresively waving to people behind him                    | TBA                        ||
+| `3672734274`          | Cautiony, looking behind and aggresively waving to people behind him                    | `CeaseFire`                        ||
 | `1155425596`          | Repositioning self, much more relaxed and tamer                                         | `Idly`                     ||
 | `2267025732`          | Relaxed, resting gun on neck                                                            | `Relax`                    ||
 | `767686818`           | Reacting to rain (not used in vanilla .spch files)                                      | `NoticeRain`               ||
@@ -222,6 +222,45 @@ This is a list of some animation act ids that can be used by SPCH files.
 | `2289914935`          | Ocelot animation                                                                        | `ocelot_g`                 ||
 | `3574747766`          | Ocelot waves goodbye to leaving helicopter (not used in vanilla .spch, but used by lua) | `ocelot_go_heli`           ||
 | `3423893682`          | Ocelot animation (not used in vanilla .spch)                                            | `ocelot_h`                 ||
+
+## Facial animation dictionary
+
+This part of .spch is entirely unused, but it works perfectly well in custom .spch files. This uses a facial animation to play under the lip sync animation of the voice clip.
+
+||||
+|-|-|-|
+|hash|desc|string|
+||||
+|`4273958362`|Closed eyes, gritted teeth (restraint?)|`chork_lp`|
+|`906448398`||`quest_lp`|
+|`4185159514`|Wide gritted teeth and frown in pain, furrowed brow|`dying_lp`|
+|`875969379`||`hold_lp`|
+|`2413225066`||`sleepy_st`|
+|`2370764116`||`sleepy`|
+|`534101553`||`sleepy_ed`|
+|`3637848969`|Closed eyes, low open mouth|`sleep_lp`|
+|`942521988`|Furrowed brow, mouth open with disgust|`storm_lp`|
+|`2004836561`|Furrowed brow, slightly open frown|`radio_n_lp`|
+|`1270273108`|Furrowed brow, low open mouth|`radio_t_lp`|
+|`4189128720`||`normal`|
+|`3540382066`||`relax`|
+|`670785982`||`smoke_st`|
+|`1602722026`||`smoke_lp`|
+|`450841444`|Mouth open as if blowing out smoke|`smoke_ed`|
+|`995823487`|Gritted teeth, closed eyes|`damage_l`|
+|`1659817747`||`damage_h`|
+|`1177901058`|Mouth hanging open, eyelids drooping|`faint`|
+|`3893246598`||`greet`|
+|`1225486477`|Open mouth, lifted eyebrows|`surprise`|
+|`223061766`||`surprise_big`|
+|`1401225578`|Gritted teeth|`desperate`|
+|`2432373368`|Furrowed brow, low open mouth|`suspects`|
+|`2333752989`||`prick`|
+|`472678494`|Open mouth, eyes rolled up and somewhat open|`dead`|
+|`2020921055`|Furrowed brow, open mouth frown|`dazzle`|
+|`2147014128`||`irritated`|
+|`4233967713`|Open-mouth laugh smile|`smile`|
+|`105229588`|Smirk|`chuckle`|
 
 ## Radio callsign param wildcards
 
