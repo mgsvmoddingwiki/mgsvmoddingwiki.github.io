@@ -174,8 +174,8 @@ This is a list of some animation act ids that can be used by SPCH files.
 | `4066632199`          | Repositioning self by about half a meter and back, to the left                          | TBA                        ||
 | `1351632722`          | Repositioning self by about half a meter and back, to the right                         | TBA                        ||
 | `1606603300`          | Wiping brow/eyes (sandstorm reaction?)                                                  | TBA                        ||
-| `1017266580`          | Small right shoulder bump, talking with some shaking | TBA | `53671881156558` |
-| `1350228116`          | Pointing at friend with left hand | TBA | `136070209132692` |
+| `1017266580`          | Small right shoulder bump, talking with some shaking | `AskQuestion` | `53671881156558` |
+| `1350228116`          | Pointing at friend with left hand | `GiveOrder` | `136070209132692` |
 | `508960638`           | Shaking left and right, disagreeing, saying no | TBA | `14066526855038` |
 | `3575825406`          | Point away, to the left | `GiveWarning` | `172297093532226` |
 | `1421134289`          | Aggressive nodding, agreeing | TBA | `51841676397009` |
@@ -204,8 +204,8 @@ This is a list of some animation act ids that can be used by SPCH files.
 | `2643791617`          | Aggressively kicking the ground, relaxed otherwise                                      | TBA                        |
 | `2114182719`          | Spinning left arm like a windmill (Part of the LookWatch cycle for child soldiers)      | TBA                        |
 | `859906857`           | TBA (not used in vanilla .spch files)                                                   | `Surprise`                 |
-| `3029125695`          | Talking with a bit of shaking | TBA | `12150073685120` |
-| `2357847038`          | Tilting head around all smug | TBA | `188287345343957` |
+| `3029125695`          | Talking with a bit of shaking | `Conversation1` | `12150073685120` |
+| `2357847038`          | Tilting head around all smug | `Conversation2` | `188287345343957` |
 | TBA | talking with small bit of shake | TBA | `227858136100581` |
 | TBA | right hand "give" gesture | TBA | `228398145069710` |
 | TBA | intense tilting right arm point at the eyes | TBA | `228777436589485` |
