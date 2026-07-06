@@ -182,7 +182,7 @@ This is a list of some animation act ids that can be used by SPCH files.
 | `3935815178` | Yawn | `Yawn` ||
 | `1484142220` | Sneeze (not used in vanilla .spch files) | `Sneezing` ||
 | `1081954141` | Foot step (looking at feet while stepping in place a bit) | `Stamping` ||
-| `1004728074` | Cough (not used in vanilla .spch files) | `Coughing`                 ||
+| `1004728074` | Cough (not used in vanilla .spch files) | `Coughing` ||
 | `3632669033` | Scratch head | `ScratchHead` ||
 | `4066632199` | Repositioning self by about half a meter and back, to the left | TBA ||
 | `1351632722` | Repositioning self by about half a meter and back, to the right | TBA ||
@@ -228,46 +228,46 @@ This is a list of some animation act ids that can be used by SPCH files.
 | `3541609199` | Ocelot animation | `ocelot_f` ||
 | `2289914935` | Ocelot animation | `ocelot_g` ||
 | `3423893682` | Ocelot animation (not used in vanilla .spch) | `ocelot_h` ||
-| `773709529` | TBA | TBA ||
-| `1714642760` | TBA | TBA ||
-| `3844657989` | TBA | TBA ||
+| `773709529` | TBA | `ocelot_prv_a` ||
+| `1714642760` | TBA | `ocelot_prv_b` ||
+| `3844657989` | TBA | `ocelot_prv_c` ||
 | `631594499` | Ocelot takes something from the other character and disarms it. | `ocelot_cqc` ||
 | `3574747766` | Ocelot waves goodbye to leaving helicopter (not used in vanilla .spch, but used by lua) | `ocelot_go_heli` ||
 ||Skull Face|||
-| `3601388065` | Used in .spch | TBA ||
-| `3641692078` | Used in .spch | TBA ||
-| `1600328193` | Used in .spch | TBA ||
-| `1178727191` | Used in .spch | TBA ||
-| `1122450761` | Used in .spch | TBA ||
-| `3694604647` | Used in .spch | TBA ||
-| `3090331193` | Used in .spch | TBA ||
-| `2814632016` | exe, TBA | `skullface_ba` ||
-| `2421159727` | exe, TBA | `skullface_ba_m` ||
-| `2204356204` | exe, TBA | `skullface_bb` ||
-| `203039143` | exe, TBA | `skullface_ea` ||
-| `649209146` | exe, TBA | `skullface_ea_m` ||
-| `376561994` | exe, TBA | `skullface_eb` ||
-| `2148314896` | exe, TBA | `skullface_eb_m` ||
-| `3817661764` | exe, TBA | `skullface_fa` ||
-| `1461113096` | exe, TBA | `skullface_fb` ||
-| `273417305` | exe, TBA | `skullface_c` ||
-| `782495120` | exe, TBA | `skullface_c_m` ||
-| `3996600343` | exe, TBA | `skullface_d` ||
-| `4256214378` | exe, TBA | `skullface_g` ||
-| `1628554459` | exe, TBA | `skullface_h` ||
-| `1131812723` | exe, TBA | `skullface_ia` ||
-| `1447724063` | exe, TBA | `skullface_ib` ||
-| `421208123` | exe, TBA | `skullface_j` ||
-| `4267069497` | exe, TBA | `skullface_k` ||
-| `3159482895` | exe, TBA | `skullface_l` ||
-| `825112619` | exe, TBA | `skullface_l_m` ||
-| `16500010` | exe, TBA | `skullface_m` ||
-| `3810783117` | exe, TBA | `skullface_n` ||
-| `4087604842` | exe, TBA | `skullface_n_m` ||
-| `1051725899` | exe, TBA | `skullface_o_r` ||
-| `789922051` | exe, TBA | TBA ||
-| `2331924788` | exe, TBA | `skullface_o_l` ||
-| `2017981767` | exe, TBA | TBA ||
+| `3601388065` | "Torn from my elders, I was made to speak their language."  | `skullface_vcl_b` ||
+| `3641692078` | "He and the codes he chose as basis for control." | `skullface_vcl_c` ||
+| `1600328193` | "As one born into this world, he's afflicted." | `skullface_vcl_d` ||
+| `1178727191` | "To unite America and the entire world." | `skullface_vcl_e` ||
+| `1122450761` | "I was invaded by words, burrowing and breeding inside me." | `skullface_vcl_f` ||
+| `3694604647` | "All that's left is the future." | `skullface_vcl_g` ||
+| `3090331193` | "Words are... peculiar." | `skullface_vcl_h` ||
+| `2814632016` | Looking left behind. | `skullface_ba` ||
+| `2421159727` | Looking left behind. Warning player | `skullface_ba_m` ||
+| `2204356204` | Looking up | `skullface_bb` ||
+| `203039143` | Looking left behind, both hands on chest. "I've known you since your time at Langley." | `skullface_ea` ||
+| `649209146` | TBA | `skullface_ea_m` ||
+| `376561994` | Looking left behind, left hand on heart. | `skullface_eb` ||
+| `2148314896` | TBA | `skullface_eb_m` ||
+| `3817661764` | Both hands on self. "America is a country of liberty." | `skullface_fa` ||
+| `1461113096` | Right hand on chest. "Their roots are varied. Diverse." | `skullface_fb` ||
+| `273417305` | Looking left behind, right hand gesture. | `skullface_c` ||
+| `782495120` | TBA | `skullface_c_m` ||
+| `3996600343` | Right hand gesture. | `skullface_d` ||
+| `4256214378` | Right hand gesture to the side. "I'd like to... redirect it." | `skullface_g` ||
+| `1628554459` | Right hand first up gesture. "Cipher." | `skullface_h` ||
+| `1131812723` | Right hand sweeping gesture upward. "The idea that every citizen would use free will to unite behind their country..." | `skullface_ia` ||
+| `1447724063` | Both hands sweeping gesture. "His goal was an organization dedicated solely - covertly - to supporting America." | `skullface_ib` ||
+| `421208123` | Slowly shaking head left and right. "With it, our futures became - more or less - set in stone." | `skullface_j` ||
+| `4267069497` | Right hand on heart, looking down left and right. "To him, it was mourning - the loss of his friend." | `skullface_k` ||
+| `3159482895` | Looking left behind, right hand pointing. | `skullface_l` ||
+| `825112619` | Looking left behind, right hand pointing. "And then the Major came to me with an idea." | `skullface_l_m` ||
+| `16500010` | Right hand pointing. "America's never been made up of just one people." | `skullface_m` ||
+| `3810783117` | Walking back and to the side, his left, gesturing you to go first. Unused. | `skullface_n` ||
+| `4087604842` | TBA | `skullface_n_m` ||
+| `1051725899` | Looking right, gesturing to come along. Warning player. | `skullface_o_r` ||
+| `789922051` | TBA | `skullface_o_r_m` ||
+| `2331924788` | Looking left, gesturing to come along. Warning player. | `skullface_o_l` ||
+| `2017981767` | TBA | `skullface_o_l_m` ||
 ||Kaz, prisoners|||
 | `4075576870` | Dead idle, after 4 days have passed | `kaz_dead` ||
 | `679773368` | exe, TBA | TBA ||
