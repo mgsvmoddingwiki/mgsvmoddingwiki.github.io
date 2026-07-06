@@ -183,27 +183,27 @@ This is a list of some animation act ids that can be used by SPCH files.
 | `2975103228`          | Spooked by something to the right                                                       | TBA                        ||
 | `213441558`           | Directing someone with left arm pointing, direction is random                      | TBA                        ||
 | `544521629`           | Saying hi to someone, with right hand. Direction is random! | TBA | `128312361409558` |
-| `1873952626`          | Telling the other to come closer, wide gesture, left arm                                | TBA                        |
-| `1715719024`          | TBA                                                                                     | TBA                        |
-| `1081228083`          | "Get up" motion                                                                         | TBA                        |
-| `2834988863`          | Telling the other to come closer, close and shorter gesture, left arm                   | TBA                        |
-| `1334263530`          | Walks around the other, from the right, kicking the spoken to prisoner in the back      | TBA                        |
-| `584751270`           | Hitting the kneeling prisoner with the barrel of gun, then looks down at him            | TBA                        |
-| `3434724606`          | Hitting with barrel of rifle, prisoner standing on knees reacts                         | `AttackToHead`             |
-| `3982806036`          | Greeting with left hand raised up in the air                                            | `Greeting`                 |
-| `2573116818`          | Frustrated "damn\!" fist motion, caution-y                                              | `Damn`                        |
-| `3249773322`          | Caution looking around                                                                  | TBA                        |
-| `393714603`           | Caution looking around, more exaggerated body movement, left and right                  | TBA                        |
-| `911835617`           | Moving curtain (not used in vanilla .spch files)                                        | `CurtainIn`                |
-| `500855846`           | Moving curtain (not used in vanilla .spch files)                                        | `CurtainOut`               |
-| `3672734274`          | Cautiony, looking behind and aggresively waving to people behind him                    | TBA                        |
-| `1155425596`          | Repositioning self, much more relaxed and tamer                                         | `Idly`                        |
-| `2267025732`          | Relaxed, resting gun on neck                                                            | `Relax`                    |
-| `767686818`           | Reacting to rain (not used in vanilla .spch files)                                      | `NoticeRain`               |
-| `2857040360`          | Looking at comrade hanging by fulton balloon (not used in vanilla .spch files)          | `DiscoveryFultonRecovered` |
-| `2643791617`          | Aggressively kicking the ground, relaxed otherwise                                      | TBA                        |
-| `2114182719`          | Spinning left arm like a windmill (Part of the LookWatch cycle for child soldiers)      | TBA                        |
-| `859906857`           | TBA (not used in vanilla .spch files)                                                   | `Surprise`                 |
+| `1873952626`          | Telling the other to come closer, wide gesture, left arm                                | TBA                        ||
+| `1715719024`          | stern point with left hand finger | TBA ||
+| `1081228083`          | "Get up" motion                                                                         | TBA                        ||
+| `2834988863`          | Telling the other to come closer, close and shorter gesture, left arm                   | TBA                        ||
+| `1334263530`          | Walks around the other, from the right, kicking the spoken to prisoner in the back      | TBA                        ||
+| `584751270`           | Hitting the kneeling prisoner with the barrel of gun, then looks down at him            | TBA                        ||
+| `3434724606`          | Hitting with barrel of rifle, prisoner standing on knees reacts                         | `AttackToHead`             ||
+| `3982806036`          | Greeting with left hand raised up in the air                                            | `Greeting`                 ||
+| `2573116818`          | Frustrated "damn\!" fist motion, caution-y                                              | `Damn`                     ||
+| `3249773322`          | Caution looking around                                                                  | TBA                        ||
+| `393714603`           | Caution looking around, more exaggerated body movement, left and right                  | TBA                        ||
+| `911835617`           | Moving curtain (not used in vanilla .spch files)                                        | `CurtainIn`                ||
+| `500855846`           | Moving curtain (not used in vanilla .spch files)                                        | `CurtainOut`               ||
+| `3672734274`          | Cautiony, looking behind and aggresively waving to people behind him                    | TBA                        ||
+| `1155425596`          | Repositioning self, much more relaxed and tamer                                         | `Idly`                     ||
+| `2267025732`          | Relaxed, resting gun on neck                                                            | `Relax`                    ||
+| `767686818`           | Reacting to rain (not used in vanilla .spch files)                                      | `NoticeRain`               ||
+| `2857040360`          | Looking at comrade hanging by fulton balloon (not used in vanilla .spch files)          | `DiscoveryFultonRecovered` ||
+| `2643791617`          | Aggressively kicking the ground, relaxed otherwise                                      | TBA                        ||
+| `2114182719`          | Spinning left arm like a windmill (Part of the LookWatch cycle for child soldiers)      | TBA                        ||
+| `859906857`           | TBA (not used in vanilla .spch files)                                                   | `Surprise`                 ||
 | `3029125695`          | Talking with a bit of shaking | `Conversation1` | `12150073685120` |
 | `2357847038`          | Tilting head around all smug | `Conversation2` | `188287345343957` |
 | TBA | talking with small bit of shake | TBA | `227858136100581` |
@@ -211,17 +211,17 @@ This is a list of some animation act ids that can be used by SPCH files.
 | TBA | intense tilting right arm point at the eyes | TBA | `228777436589485` |
 | TBA | quick left hand "salute" greeting gesture | TBA | `272450800457580` |
 | TBA | quick nod, few small nods | TBA | `98579340013771` |
-| `3628252758`          | Ocelot animation                                                                        | `ocelot_a`                 |
-| `3655687608`          | Ocelot animation (not used in vanilla .spch files)                                      | `ocelot_aa`                |
-| `779601008`           | Ocelot animation                                                                        | `ocelot_b`                 |
-| `2931446809`          | Ocelot animation                                                                        | `ocelot_c`                 |
-| `631594499`           | Ocelot takes something from the other character and disarms it.                         | `ocelot_cqc`               |
-| `3879139826`          | Ocelot animation                                                                        | `ocelot_d`                 |
-| `1994854644`          | Ocelot animation                                                                        | `ocelot_e`                 |
-| `3541609199`          | Ocelot animation                                                                        | `ocelot_f`                 |
-| `2289914935`          | Ocelot animation                                                                        | `ocelot_g`                 |
-| `3574747766`          | Ocelot waves goodbye to leaving helicopter (not used in vanilla .spch, but used by lua) | `ocelot_go_heli`           |
-| `3423893682`          | Ocelot animation (not used in vanilla .spch)                                            | `ocelot_h`                 |
+| `3628252758`          | Ocelot animation                                                                        | `ocelot_a`                 ||
+| `3655687608`          | Ocelot animation (not used in vanilla .spch files)                                      | `ocelot_aa`                ||
+| `779601008`           | Ocelot animation                                                                        | `ocelot_b`                 ||
+| `2931446809`          | Ocelot animation                                                                        | `ocelot_c`                 ||
+| `631594499`           | Ocelot takes something from the other character and disarms it.                         | `ocelot_cqc`               ||
+| `3879139826`          | Ocelot animation                                                                        | `ocelot_d`                 ||
+| `1994854644`          | Ocelot animation                                                                        | `ocelot_e`                 ||
+| `3541609199`          | Ocelot animation                                                                        | `ocelot_f`                 ||
+| `2289914935`          | Ocelot animation                                                                        | `ocelot_g`                 ||
+| `3574747766`          | Ocelot waves goodbye to leaving helicopter (not used in vanilla .spch, but used by lua) | `ocelot_go_heli`           ||
+| `3423893682`          | Ocelot animation (not used in vanilla .spch)                                            | `ocelot_h`                 ||
 
 ## Radio callsign param wildcards
 
