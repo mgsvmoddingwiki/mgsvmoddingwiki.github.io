@@ -205,8 +205,8 @@ This is a list of some animation act ids that can be used by SPCH files.
 | `3434724606` | Hitting with barrel of rifle, prisoner standing on knees reacts | `AttackToHead` ||
 | `3982806036` | Greeting with left hand raised up in the air | `Greeting` ||
 | `2573116818` | Frustrated "damn\!" fist motion, caution-y | `Damn` ||
-| `3249773322` | Caution looking around | TBA ||
-| `393714603` | Caution looking around, more exaggerated body movement, left and right | TBA ||
+| `3249773322` | Caution looking around | `Caution1` ||
+| `393714603` | Caution looking around, more exaggerated body movement, left and right | `Caution2` ||
 | `911835617` | Moving curtain (not used in vanilla .spch files) | `CurtainIn` ||
 | `500855846` | Moving curtain (not used in vanilla .spch files) | `CurtainOut` ||
 | `3672734274` | Cautiony, looking behind and aggresively waving to people behind him | `CeaseFire` ||
