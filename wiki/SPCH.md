@@ -33,9 +33,7 @@ These files can be decompiled and compiled with
 
 `0x04-0x07 - (uint32) FNV132 hash of the Dynamic Dialogue Voice Event name from the soundbanks`
 
-`0x08 - (uint8) Number of voice clip parts in this sequence`
-
-`0x09 - 0x0B - Padding`
+`0x08-0x0B - (uint32) Number of voice clip parts in this sequence`
 
 The Voice Event name hashes can be found inside the HIRC sections of
 .sbp soundbank files, separated into HIRC.dat if extracted by
@@ -49,10 +47,15 @@ In Wwise, the Voice Event parameter will be the name of your custom Dynamic Dial
 ### Part entry
 
 `0x00-0x03 - (uint32) StrCode32 of the speaker's voice type`
+
 `0x04-0x07 - (uint32) FNV132 hash of the "condition" Voice Parameter from the .sbp soundbanks `
+
 `0x08-0x0B - (uint32) StrCode32 hash of the body action animation`
+
 `0x0C-0x0F - (uint32) StrCode32 hash of the facial animation`
+
 `0x10-0x13 - (float) Pause before the next voice clip is played, in seconds`
+
 
 As previously mentioned, the Voice Id can be found in a list in the HIRC
 sections of .sbp soundbank files, after the label entry definition's
