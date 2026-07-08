@@ -207,10 +207,10 @@ This is a list of some animation act ids that can be used by SPCH files.
 | `544521629` | Saying hi to someone, with right hand. Direction is random! | TBA | `128312361409558` |
 | `1873952626` | Telling the other to come closer, wide gesture, left arm | `HandSignCome` ||
 | `1715719024` | Stern point with left hand finger | `HandSignGo` ||
-| `1081228083` | "Get up" motion | TBA ||
+| `1081228083` | Telling a prisoner to get down | TBA ||
 | `2834988863` | Telling the other to come closer, close and shorter gesture, left arm | TBA ||
 | `1334263530` | Walks around the other, from the right, kicking the spoken to prisoner in the back | TBA ||
-| `584751270` | Hitting the kneeling prisoner with the barrel of gun, then looks down at him | TBA ||
+| `584751270` | Hitting the kneeling prisoner with the barrel of gun, then looks down at him | `AttackToStomach` ||
 | `3434724606` | Hitting with barrel of rifle, prisoner standing on knees reacts | `AttackToHead` ||
 | `3982806036` | Greeting with left hand raised up in the air | `Greeting` ||
 | `2573116818` | Frustrated "damn\!" fist motion, caution-y | `Damn` ||
