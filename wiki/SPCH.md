@@ -225,21 +225,21 @@ This is a list of some animation act ids that can be used by SPCH files.
 | `2857040360` | Looking at comrade hanging by fulton balloon (not used in vanilla .spch files) | `DiscoveryFultonRecovered` ||
 | `2643791617` | Aggressively kicking the ground, relaxed otherwise. Child soldier route idle | TBA ||
 | `2114182719` | Spinning left arm like a windmill (Part of the LookWatch cycle for child soldiers) | TBA ||
-| `859906857` | TBA (not used in vanilla .spch files) | `Surprise` ||
+| `859906857` | Doesn't work (not used in vanilla .spch files) | `Surprise` ||
 ||Speech actions (special characters)|||
 ||Ocelot|||
-| `3628252758` | Ocelot animation (not in .exe but is in .spch) | `ocelot_a` ||
-| `779601008` | Ocelot animation | `ocelot_b` ||
-| `3655687608` | Ocelot animation (not used in vanilla .spch files) | `ocelot_aa` ||
-| `2931446809` | Ocelot animation | `ocelot_c` ||
-| `3879139826` | Ocelot animation | `ocelot_d` ||
-| `1994854644` | Ocelot animation | `ocelot_e` ||
-| `3541609199` | Ocelot animation | `ocelot_f` ||
-| `2289914935` | Ocelot animation | `ocelot_g` ||
-| `3423893682` | Ocelot animation (not used in vanilla .spch) | `ocelot_h` ||
-| `773709529` | TBA | `ocelot_prv_a` ||
-| `1714642760` | TBA | `ocelot_prv_b` ||
-| `3844657989` | TBA | `ocelot_prv_c` ||
+| `3628252758` | Not in .exe but is in .spch. Idle | `ocelot_a` ||
+| `779601008` | Speaking, gesturing | `ocelot_b` ||
+| `3655687608` | Not used in vanilla .spch files | `ocelot_aa` ||
+| `2931446809` | Speaking, gesturing | `ocelot_c` ||
+| `3879139826` | Ditto | `ocelot_d` ||
+| `1994854644` | Ditto | `ocelot_e` ||
+| `3541609199` | Ditto | `ocelot_f` ||
+| `2289914935` | Ditto | `ocelot_g` ||
+| `3423893682` | Pulls an item out from back and hands it over (not used in vanilla .spch) | `ocelot_h` ||
+| `773709529` | Provokes into attacking him (unused) | `ocelot_prv_a` ||
+| `1714642760` | Provokes into attacking him (unused)| `ocelot_prv_b` ||
+| `3844657989` | Provokes into attacking him (unused) | `ocelot_prv_c` ||
 | `631594499` | Ocelot takes something from the other character and disarms it. | `ocelot_cqc` ||
 | `3574747766` | Ocelot waves goodbye to leaving helicopter (not used in vanilla .spch, but used by lua) | `ocelot_go_heli` ||
 ||Skull Face|||
@@ -279,7 +279,7 @@ This is a list of some animation act ids that can be used by SPCH files.
 | `2017981767` | TBA | `skullface_o_l_m` ||
 ||Prisoners|||
 | `4075576870` | Dead idle, after 4 days have passed | `kaz_dead` ||
-| `679773368` | Unused, lua uses a path | `volgin_dead` ||
+| `679773368` | Unused, lua uses a filepath | `volgin_dead` ||
 | `4290341734` | exe, TBA | TBA ||
 | `1914717017` | exe, TBA | TBA ||
 | `3270076323` | exe, TBA | TBA ||
