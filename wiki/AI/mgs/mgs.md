@@ -1,7 +1,7 @@
 ---
 title: Metal Gear Sahelanthropus
 permalink: /AI/mgs/
-image: /assets/AI/images/mgs/Sally_Section_Meta_Image.jpg
+image: /assets/AI/images/mgs/Sally_Section_Meta_Image.webp
 featured: true
 tags: [AI, Metal Gear]
 ---
@@ -362,6 +362,9 @@ Triggers a animation where Sahelanthropus leans to the right while searching
 {% include spoiler-start title="PeepRight Example" %}
 {% include youtube id="UH01Z1XtHbY" %}
 {% include spoiler-end %}
+
+## Other Documentation
+[Sahelanthropus Visual Effects](/AI/mgs/mgs_vfx)<br>
 
 ## Hellbound Documentation
 [Hellbound Debug Functions](/AI/mgs/mgs_hellbound_Debug_Functions)<br>
