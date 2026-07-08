@@ -20,15 +20,21 @@ These files can be decompiled and compiled with
 ## Header
 
 `0x00-0x03 - "spch" signature`
+
 `0x04-0x05 - 00 on PC, 01 on PS3`
+
 `0x06-0x07 - (uint16) Amount of sequences in the file`
-`0x08-0x0F - Padding - 8 bytes of padding per label.`
+
+`0x08-0x0F - Padding - 8 bytes of padding per label. Pointer space?`
 
 ## Sequence definition
 
 `0x00-0x03 - (uint32) StrCode32 hash of the sequence's label name`
+
 `0x04-0x07 - (uint32) FNV132 hash of the Dynamic Dialogue Voice Event name from the soundbanks`
+
 `0x08 - (uint8) Number of voice clip parts in this sequence`
+
 `0x09 - 0x0B - Padding`
 
 The Voice Event name hashes can be found inside the HIRC sections of
