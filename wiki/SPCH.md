@@ -205,8 +205,8 @@ This is a list of some animation act ids that can be used by SPCH files.
 | `2975103228` | Spooked by something to the right | TBA ||
 | `213441558` | Directing someone with left arm pointing, direction is random | TBA ||
 | `544521629` | Saying hi to someone, with right hand. Direction is random! | TBA | `128312361409558` |
-| `1873952626` | Telling the other to come closer, wide gesture, left arm | TBA ||
-| `1715719024` | stern point with left hand finger | TBA ||
+| `1873952626` | Telling the other to come closer, wide gesture, left arm | `HandSignCome` ||
+| `1715719024` | Stern point with left hand finger | `HandSignGo` ||
 | `1081228083` | "Get up" motion | TBA ||
 | `2834988863` | Telling the other to come closer, close and shorter gesture, left arm | TBA ||
 | `1334263530` | Walks around the other, from the right, kicking the spoken to prisoner in the back | TBA ||
