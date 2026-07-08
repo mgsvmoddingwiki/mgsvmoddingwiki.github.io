@@ -268,9 +268,9 @@ This is a list of some animation act ids that can be used by SPCH files.
 | `789922051` | TBA | `skullface_o_r_m` ||
 | `2331924788` | Looking left, gesturing to come along. Warning player. | `skullface_o_l` ||
 | `2017981767` | TBA | `skullface_o_l_m` ||
-||Kaz, prisoners|||
+||Prisoners|||
 | `4075576870` | Dead idle, after 4 days have passed | `kaz_dead` ||
-| `679773368` | exe, TBA | TBA ||
+| `679773368` | Unused, lua uses a path | `volgin_dead` ||
 | `4290341734` | exe, TBA | TBA ||
 | `1914717017` | exe, TBA | TBA ||
 | `3270076323` | exe, TBA | TBA ||
