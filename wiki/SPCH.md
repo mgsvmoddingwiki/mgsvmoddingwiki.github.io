@@ -390,7 +390,7 @@ This part of .spch is entirely unused, but it works perfectly well in custom .sp
 |`1270273108`|`radio_t_lp`|Furrowed brow, low open mouth|<video width="213" height="160" controls><source src="/assets/tpp/gm/soldier/facial/radio_t_lp.webm" type="video/webm"></video>|
 |`4189128720`|`normal`||<video width="213" height="160" controls><source src="/assets/tpp/gm/soldier/facial/normal.webm" type="video/webm"></video>|
 |`3540382066`|`relax`||<video width="213" height="160" controls><source src="/assets/tpp/gm/soldier/facial/relax.webm" type="video/webm"></video>|
-|`670785982`|`smoke_st`|<video width="213" height="160" controls><source src="/assets/tpp/gm/soldier/facial/smoke_st.webm" type="video/webm"></video>|
+|`670785982`|`smoke_st`||<video width="213" height="160" controls><source src="/assets/tpp/gm/soldier/facial/smoke_st.webm" type="video/webm"></video>|
 |`1602722026`|`smoke_lp`||<video width="213" height="160" controls><source src="/assets/tpp/gm/soldier/facial/smoke_lp.webm" type="video/webm"></video>|
 |`450841444`|`smoke_ed`|Mouth open as if blowing out smoke|<video width="213" height="160" controls><source src="/assets/tpp/gm/soldier/facial/smoke_ed.webm" type="video/webm"></video>|
 |`995823487`|`damage_l`|Gritted teeth, closed eyes|<video width="213" height="160" controls><source src="/assets/tpp/gm/soldier/facial/damage_l.webm" type="video/webm"></video>|
