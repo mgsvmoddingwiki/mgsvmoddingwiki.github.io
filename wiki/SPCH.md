@@ -188,22 +188,26 @@ This is a list of some voice types that can be used by SPCH files.
 
 This is a list of some animation act ids that can be used by SPCH files.
 
+### Common
+
 ||||
 | - | - | - |
 | hash | string | description |
 | `104983832` | `None` | None |
 
+### Loop actions
+
 |||||
 | - | - | - | - |
-|||Loop actions||
 | hash | string | description | video | GZ hash |
 | `3029125695` | `Conversation1` | Talking with a bit of shaking | <video width="213" height="160" controls><source src="/assets/tpp/gm/soldier/action/Conversation1.webm" type="video/webm"></video> | `12150073685120` |
 | `2357847038` | `Conversation2` | Tilting head around all smug | <video width="213" height="160" controls><source src="/assets/tpp/gm/soldier/action/Conversation2.webm" type="video/webm"></video> | `188287345343957` |
 | `2653120201`| `Salute` | Saluting (doesn't always work?) |||
 
+### Single actions
+
 ||||||
 | - | - | - | - | - |
-|||Single actions|||
 | hash | string | description | video | GZ hash |
 | `19913283` | `Watch` | Looking at watch | <video width="213" height="160" controls><source src="/assets/tpp/gm/soldier/action/Watch.webm" type="video/webm"></video> ||
 | `3471431647` | `Sweat` | Wiping face | <video width="213" height="160" controls><source src="/assets/tpp/gm/soldier/action/Sweat.webm" type="video/webm"></video> ||
@@ -246,11 +250,13 @@ This is a list of some animation act ids that can be used by SPCH files.
 | `2114182719` | TBA | Spinning left arm like a windmill. Child idle | <video width="213" height="160" controls><source src="/assets/tpp/gm/soldier/action/2114182719.webm" type="video/webm"></video> ||
 | `859906857` | `Surprise` | Doesn't work (not used in .spch) |||
 
+### Special character actions
+
+#### Ocelot
+
 ||||
 | - | - | - |
-|||Single actions|
 | hash | string | description |
-|||Ocelot|
 | `3628252758` | `ocelot_a` | Not in .exe but is in .spch. Idle |
 | `779601008` | `ocelot_b` | Speaking, gesturing |
 | `3655687608` | `ocelot_aa` | Not used in vanilla .spch files |
@@ -266,9 +272,10 @@ This is a list of some animation act ids that can be used by SPCH files.
 | `631594499` | `ocelot_cqc` | Ocelot takes something from the other character and disarms it. |
 | `3574747766` | `ocelot_go_heli` | Ocelot waves goodbye to leaving helicopter (not used in vanilla .spch, but used by lua) |
 
+#### Skull Face
+
 ||||
 | - | - | - |
-|||Skull Face|
 | hash | string | description |
 | `3601388065` | `skullface_vcl_b` | "Torn from my elders, I was made to speak their language." |
 | `3641692078` | `skullface_vcl_c` | "He and the codes he chose as basis for control." |
@@ -305,9 +312,10 @@ This is a list of some animation act ids that can be used by SPCH files.
 | `2331924788` | `skullface_o_l` | Looking left, gesturing to come along. Warning player. |
 | `2017981767 | `skullface_o_l_m`` | TBA |
 
+#### Prisoners
+
 ||||
 | - | - | - |
-|||Prisoners|
 | hash | string | description |
 | `4075576870` | `kaz_dead` | Dead idle, after 4 days have passed |
 | `679773368` | `volgin_dead` | Unused, lua uses a filepath |
@@ -317,25 +325,30 @@ This is a list of some animation act ids that can be used by SPCH files.
 | `3792277781` | TBA | exe, TBA |
 | `2740470963` | TBA | exe, TBA |
 
+#### Paz
+
 ||||
 | - | - | - |
-|||Paz|
 | hash | string | description |
 | `809469417` | TBA | Used in .spch |
 | `693517848` | TBA | Used in .spch |
 
-||||
-| - | - | - |
-|||Mantis|
-| hash | string | description |
-| `4574962` | TBA | exe, TBA |
+#### Mantis
 
 ||||
 | - | - | - |
-|||Mob|
+| hash | string | description |
+| `4574962` | TBA | exe, TBA |
+
+#### Mob
+
+||||
+| - | - | - |
 | hash | string | description |
 | `2429334541` | TBA | exe, TBA |
 | `1370767770` | TBA | exe, TBA |
+
+### GZ .mog states
 
 |||
 | - | - |
@@ -350,6 +363,8 @@ This is a list of some animation act ids that can be used by SPCH files.
 ## Facial animations
 
 This part of .spch is entirely unused, but it works perfectly well in custom .spch files. This uses a facial animation to play under the lip sync animation of the voice clip.
+
+### Soldier/Prisoner
 
 ||||
 |-|-|-|
