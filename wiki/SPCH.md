@@ -374,8 +374,8 @@ This part of .spch is entirely unused, but it works perfectly well in custom .sp
 |`995823487`|`damage_l`|Gritted teeth, closed eyes|<video width="213" height="160" controls><source src="/assets/tpp/gm/soldier/facial/damage_l.webm" type="video/webm"></video>|
 |`1659817747`|`damage_h`||<video width="213" height="160" controls><source src="/assets/tpp/gm/soldier/facial/damage_h.webm" type="video/webm"></video>|
 |`1177901058`|`faint`|Mouth hanging open, eyelids drooping|<video width="213" height="160" controls><source src="/assets/tpp/gm/soldier/facial/faint.webm" type="video/webm"></video>|
-|`3893246598`|`greet`||Mouth hanging open, eyelids drooping|<video width="213" height="160" controls><source src="/assets/tpp/gm/soldier/facial/greet.webm" type="video/webm"></video>|
-|`1225486477`|`surprise`|Open mouth, lifted eyebrows|Mouth hanging open, eyelids drooping|<video width="213" height="160" controls><source src="/assets/tpp/gm/soldier/facial/surprise.webm" type="video/webm"></video>|
+|`3893246598`|`greet`|Open mouth, lifted eyebrows|<video width="213" height="160" controls><source src="/assets/tpp/gm/soldier/facial/greet.webm" type="video/webm"></video>|
+|`1225486477`|`surprise`||<video width="213" height="160" controls><source src="/assets/tpp/gm/soldier/facial/surprise.webm" type="video/webm"></video>|
 |`223061766`|`surprise_big`||<video width="213" height="160" controls><source src="/assets/tpp/gm/soldier/facial/surprise_big.webm" type="video/webm"></video>|
 |`1401225578`|`desperate`|Gritted teeth|<video width="213" height="160" controls><source src="/assets/tpp/gm/soldier/facial/desperate.webm" type="video/webm"></video>|
 |`2432373368`|`suspects`|Furrowed brow, low open mouth|<video width="213" height="160" controls><source src="/assets/tpp/gm/soldier/facial/suspects.webm" type="video/webm"></video>|
