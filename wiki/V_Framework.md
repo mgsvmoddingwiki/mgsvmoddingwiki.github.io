@@ -9,7 +9,7 @@ tags: [Lua, Tools, Infinite Heaven]
 V Framework is a modding framework that "breaks the wall" between Lua and
 the game's executable. It loads as an [Infinite
 Heaven](/Infinite_Heaven) module and exposes native Fox Engine
-features — UI, sound, soldiers, bosses and vehicles — to Lua scripts that
+features - UI, sound, soldiers, bosses and vehicles - to Lua scripts that
 the game never opened up to modding.
 
 It ships with a handful of automatic fixes and a library of ready-made
@@ -34,18 +34,22 @@ These work the moment V Framework is installed:
     V Framework corrects this so female hair behaves properly under
     headgear, the same way male soldiers do.
   - **Ocelot Dual Tornado**
-  - **Enemies, Soldiers & VIPs** VIPs in missions — VIPs in mission such as Red Brass or War Economy will have their voice pitch down (Similar to GZ) and comrades react to them differently than to a regular soldiers. 
-  Custom callsigns — Makes soldiers who have the RADIO revenge power use the call sign "Patrol".
-  
+  - **VIP soldiers** - VIPs in missions such as Red Brass or War Economy have their
+    voices pitched down (GZ-style), and nearby comrades react to them differently
+    than to regular soldiers.
+  - **Custom callsigns** - soldiers who have the RADIO revenge ability use the
+    "Patrol" call sign.
+
 
 ## Lua API
 
-V Framework's features are exposed as lua functions, brand new DoMessages and GameObject, Lua Exported Constants, SendCommand - with examples - is documented
-in the **[V Framework Lua API](/V_Framework_Lua_API)** reference.
+V Framework's features are exposed as Lua functions, brand-new DoMessages, GameObject
+SendCommands, and exported constants. All of it is documented, with examples, in the
+**[V Framework Lua API](/V_Framework_Lua_API)** reference.
 
 ```lua
 -- Flag Mission 10070, true as an Emergency mission with a custom popup and a HUD banner
-V_TppUi.SetEmergencyMissionPopupLangId("hud_emergency_mission", "another_langId") -- hud_emergency_mission is a langId in .lng2 files
-V_TppUi.SetMissionEmergency(10070, true)
-V_TppUi.ShowMissionIcon("another_langId", "another_langId", 6.0)
+V_TppUiCommand.SetEmergencyMissionPopupLangId("hud_emergency_mission", "another_langId") -- hud_emergency_mission is a langId in .lng2 files
+V_TppUiCommand.SetMissionEmergency(10070, true)
+V_TppUiCommand.ShowMissionIcon("another_langId", "another_langId", 6.0)
 ```
