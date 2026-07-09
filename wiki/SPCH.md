@@ -178,7 +178,7 @@ This is a list of some voice types that can be used by SPCH files.
 This is a list of some animation act ids that can be used by SPCH files.
 
 ||||
-| - | - | -  - |
+| - | - | - |
 | hash | description | string |
 | `104983832` | None | `None` |
 
@@ -186,7 +186,7 @@ This is a list of some animation act ids that can be used by SPCH files.
 | - | - | - | - |
 ||Loop actions|||
 | hash | description | string | GZ hash |
-| `3029125695` | Talking with a bit of shaking | `Conversation1` | `12150073685120` |
+| `3029125695` | ![](/assets/tpp/gm/soldier/action/Conversation1.webm) | `Conversation1` | `12150073685120` |
 | `2357847038` | Tilting head around all smug | `Conversation2` | `188287345343957` |
 | `2653120201` | Saluting (doesn't always work?) | `Salute` ||
 
