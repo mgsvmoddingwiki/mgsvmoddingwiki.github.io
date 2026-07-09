@@ -955,7 +955,8 @@ Similar to the vanilla message system, V Framework also emits messages from the 
 Here is a full guide on how to use [Messages](https://mgsvmoddingwiki.github.io/Messages/).
 
 ### GameObject
-| msg                       | Params                 | description |
+
+| msg                       | Params                 | Description |
 | ----------------------------- | ---------------------- | ------ |
 | AntiAir    | cpId, isEnable | Fires when CP notices Support Heli.| 
 | HoldupCancelLookToPlayer    | gameObjectId | Fires when the player aims at a soldier that was about to cancel a hold-up.| 
@@ -964,13 +965,15 @@ Here is a full guide on how to use [Messages](https://mgsvmoddingwiki.github.io/
 | RequestedHeliTaxi    | heliId, currentLzHash, destinationLzHash | Fires when a destination is requested from the Taxi map (landing-zone cluster StrCode32 hashes).| 
 
 ### Radio
-| msg                       | Params                 | description |
+
+| msg                       | Params                 | Description |
 | ----------------------------- | ---------------------- | ------ |
 | HeliStart    | label1, label2, voiceType | Fires when Pequod uses one of his radio/voice lines.| 
 | HeliFinish    | label1, label2, voiceType | Fires when Pequod finishes one of his radio/voice lines.| 
 
 ### Player
-| msg                       | Params                 | description |
+
+| msg                       | Params                 | Description |
 | ----------------------------- | ---------------------- | ------ |
 | OnPlayerLockPickStart    | playerIndex, gimmickId, Doorside | Fires when the player starts lock picking.| 
 | OnPlayerLockPickEnd    | playerIndex, gimmickId, Doorside | Fires when the player finishes lock picking.| 
@@ -979,11 +982,7 @@ Here is a full guide on how to use [Messages](https://mgsvmoddingwiki.github.io/
 | BarrierDamage    | playerIndex, before, after | Fires when the player's Energy Wall barrier takes damage (shield health before/after).| 
 
 ### UI
-| msg                       | Params                 | description |
-| ----------------------------- | ---------------------- | ------ |
-| TimeCigaretteUi    | playerIndex | Fires when the Phantom Cigar time UI shows (named it `TimeCigaretteUi` because that's the literal name of the function in exe).| 
 
-### Subtitles
-| msg                       | Params                 | description |
+| msg                       | Params                 | Description |
 | ----------------------------- | ---------------------- | ------ |
 | SubtitlesEventMessage    | message | Fires when the subtitle in `.subp` files use `[m= myMessage]`.| 

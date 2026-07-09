@@ -477,6 +477,14 @@ For multi-level path pages (eg: `/Example_Page/Second_Level/`), where we want a 
 | Second row text | Second row text | Second row text   |
 ```
 
+> If adding a table that follows a section heading add an empty new line between the section heading and the table, otherwise the table won't get parsed correctly. The following is a correct example:
+> ```
+> ## Some section heading
+> 
+> | Row text | Row text |
+> ```
+{:.note}
+
 **With headings:**
 
 | Heading One     | Heading Two     | Heading Three     |
