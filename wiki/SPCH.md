@@ -186,7 +186,7 @@ This is a list of some animation act ids that can be used by SPCH files.
 | - | - | - | - |
 ||Loop actions|||
 | hash | description | string | GZ hash |
-| `3029125695` | <video src="https://github.com/mgsvmoddingwiki/mgsvmoddingwiki.github.io/raw/refs/heads/master/assets/tpp/gm/soldier/action/Conversation1.webm"> | `12150073685120` |
+| `3029125695` | Talking with a bit of shaking <video width="320" height="240" controls><source src="/assets/tpp/gm/soldier/action/Conversation1.webm" type="video/webm"></video> | `12150073685120` |
 | `2357847038` | Tilting head around all smug | `Conversation2` | `188287345343957` |
 | `2653120201` | Saluting (doesn't always work?) | `Salute` ||
 
