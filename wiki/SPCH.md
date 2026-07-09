@@ -253,7 +253,7 @@ This is a list of some animation act ids that can be used by SPCH files.
 ||Ocelot||
 | `3628252758` | `ocelot_a` | Not in .exe but is in .spch. Idle |
 | `779601008` | `ocelot_b` | Speaking, gesturing |
-| `3655687608 | `ocelot_aa` | Not used in vanilla .spch files |
+| `3655687608` | `ocelot_aa` | Not used in vanilla .spch files |
 | `2931446809` | `ocelot_c` | Speaking, gesturing |
 | `3879139826` | `ocelot_d` | Ditto |
 | `1994854644` | `ocelot_e` | Ditto |
