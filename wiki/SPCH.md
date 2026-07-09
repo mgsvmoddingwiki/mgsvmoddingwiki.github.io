@@ -195,15 +195,15 @@ This is a list of some animation act ids that can be used by SPCH files.
 
 |||||
 | - | - | - | - |
-||Loop actions|||
+|||Loop actions||
 | hash | string | description | video | GZ hash |
 | `3029125695` | `Conversation1` | Talking with a bit of shaking | <video width="213" height="160" controls><source src="/assets/tpp/gm/soldier/action/Conversation1.webm" type="video/webm"></video> | `12150073685120` |
 | `2357847038` | `Conversation2` | Tilting head around all smug | <video width="213" height="160" controls><source src="/assets/tpp/gm/soldier/action/Conversation2.webm" type="video/webm"></video> | `188287345343957` |
 | `2653120201`| `Salute` | Saluting (doesn't always work?) |||
 
-|||||
-| - | - | - | - |
-||Single actions|||
+||||||
+| - | - | - | - | - |
+|||Single actions|||
 | hash | string | description | video | GZ hash |
 | `19913283` | `Watch` | Looking at watch | <video width="213" height="160" controls><source src="/assets/tpp/gm/soldier/action/Watch.webm" type="video/webm"></video> ||
 | `3471431647` | `Sweat` | Wiping face | <video width="213" height="160" controls><source src="/assets/tpp/gm/soldier/action/Sweat.webm" type="video/webm"></video> ||
@@ -248,9 +248,9 @@ This is a list of some animation act ids that can be used by SPCH files.
 
 ||||
 | - | - | - |
-||Single actions||
+|||Single actions|
 | hash | string | description |
-||Ocelot||
+|||Ocelot|
 | `3628252758` | `ocelot_a` | Not in .exe but is in .spch. Idle |
 | `779601008` | `ocelot_b` | Speaking, gesturing |
 | `3655687608` | `ocelot_aa` | Not used in vanilla .spch files |
@@ -268,7 +268,7 @@ This is a list of some animation act ids that can be used by SPCH files.
 
 ||||
 | - | - | - |
-||Skull Face||
+|||Skull Face|
 | hash | string | description |
 | `3601388065` | `skullface_vcl_b` | "Torn from my elders, I was made to speak their language." |
 | `3641692078` | `skullface_vcl_c` | "He and the codes he chose as basis for control." |
@@ -307,7 +307,7 @@ This is a list of some animation act ids that can be used by SPCH files.
 
 ||||
 | - | - | - |
-||Prisoners||
+|||Prisoners|
 | hash | string | description |
 | `4075576870` | `kaz_dead` | Dead idle, after 4 days have passed |
 | `679773368` | `volgin_dead` | Unused, lua uses a filepath |
@@ -319,27 +319,27 @@ This is a list of some animation act ids that can be used by SPCH files.
 
 ||||
 | - | - | - |
-||Paz||
+|||Paz|
 | hash | string | description |
 | `809469417` | TBA | Used in .spch |
 | `693517848` | TBA | Used in .spch |
 
 ||||
 | - | - | - |
-||Mantis||
+|||Mantis|
 | hash | string | description |
 | `4574962` | TBA | exe, TBA |
 
 ||||
 | - | - | - |
-||Mob||
+|||Mob|
 | hash | string | description |
 | `2429334541` | TBA | exe, TBA |
 | `1370767770` | TBA | exe, TBA |
 
-|||||
-| - | - | - | - |
-||GZ|||
+|||
+| - | - |
+||GZ|
 | GZ hash | description |
 | `227858136100581` | talking with small bit of shake |
 | `228398145069710` | right hand "give" gesture |
