@@ -131,8 +131,8 @@ possibly not be the inverse of afterPause.
 
 This is a list of some voice types that can be used by SPCH files.
 
-||||
-|-|-|-|
+|||||
+|-|-|-|-|
 |Hash|String|Wwise `chara` state|Description|
 | `2982222512` | `Ishmael` | `Ishmael` | Ishmael |
 | `3160899738` | `ocelot` | `ocelot` | Ocelot |
