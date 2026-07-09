@@ -177,15 +177,23 @@ This is a list of some voice types that can be used by SPCH files.
 
 This is a list of some animation act ids that can be used by SPCH files.
 
+||||
+| - | - | -  - |
+| hash | description | string |
+| `104983832` | None | `None` |
+
 |||||
 | - | - | - | - |
-| StrCode32 Hash as uint | Description | Unhashed String | GZ state |
-| `104983832` | None | `None` | |
 ||Loop actions|||
+| hash | description | string | GZ hash |
 | `3029125695` | Talking with a bit of shaking | `Conversation1` | `12150073685120` |
 | `2357847038` | Tilting head around all smug | `Conversation2` | `188287345343957` |
 | `2653120201` | Saluting (doesn't always work?) | `Salute` ||
+
+|||||
+| - | - | - | - |
 ||Single actions|||
+| hash | description | string | GZ hash |
 | `19913283` | Looking at watch | `Watch` ||
 | `3471431647` | Wiping face | `Sweat` ||
 | `3935815178` | Yawn | `Yawn` ||
@@ -226,74 +234,102 @@ This is a list of some animation act ids that can be used by SPCH files.
 | `2643791617` | Aggressively kicking the ground, relaxed otherwise. Child soldier route idle | TBA ||
 | `2114182719` | Spinning left arm like a windmill (Part of the LookWatch cycle for child soldiers) | TBA ||
 | `859906857` | Doesn't work (not used in vanilla .spch files) | `Surprise` ||
-||Speech actions (special characters)|||
-||Ocelot|||
-| `3628252758` | Not in .exe but is in .spch. Idle | `ocelot_a` ||
-| `779601008` | Speaking, gesturing | `ocelot_b` ||
-| `3655687608` | Not used in vanilla .spch files | `ocelot_aa` ||
-| `2931446809` | Speaking, gesturing | `ocelot_c` ||
-| `3879139826` | Ditto | `ocelot_d` ||
-| `1994854644` | Ditto | `ocelot_e` ||
-| `3541609199` | Ditto | `ocelot_f` ||
-| `2289914935` | Ditto | `ocelot_g` ||
-| `3423893682` | Pulls an item out from back and hands it over (not used in vanilla .spch) | `ocelot_h` ||
-| `773709529` | Provokes into attacking him (unused) | `ocelot_prv_a` ||
-| `1714642760` | Provokes into attacking him (unused)| `ocelot_prv_b` ||
-| `3844657989` | Provokes into attacking him (unused) | `ocelot_prv_c` ||
-| `631594499` | Ocelot takes something from the other character and disarms it. | `ocelot_cqc` ||
-| `3574747766` | Ocelot waves goodbye to leaving helicopter (not used in vanilla .spch, but used by lua) | `ocelot_go_heli` ||
-||Skull Face|||
-| `3601388065` | "Torn from my elders, I was made to speak their language."  | `skullface_vcl_b` ||
-| `3641692078` | "He and the codes he chose as basis for control." | `skullface_vcl_c` ||
-| `1600328193` | "As one born into this world, he's afflicted." | `skullface_vcl_d` ||
-| `1178727191` | "To unite America and the entire world." | `skullface_vcl_e` ||
-| `1122450761` | "I was invaded by words, burrowing and breeding inside me." | `skullface_vcl_f` ||
-| `3694604647` | "All that's left is the future." | `skullface_vcl_g` ||
-| `3090331193` | "Words are... peculiar." | `skullface_vcl_h` ||
-| `2814632016` | Looking left behind. | `skullface_ba` ||
-| `2421159727` | Looking left behind. Warning player | `skullface_ba_m` ||
-| `2204356204` | Looking up | `skullface_bb` ||
-| `203039143` | Looking left behind, both hands on chest. "I've known you since your time at Langley." | `skullface_ea` ||
-| `649209146` | TBA | `skullface_ea_m` ||
-| `376561994` | Looking left behind, left hand on heart. | `skullface_eb` ||
-| `2148314896` | TBA | `skullface_eb_m` ||
-| `3817661764` | Both hands on self. "America is a country of liberty." | `skullface_fa` ||
-| `1461113096` | Right hand on chest. "Their roots are varied. Diverse." | `skullface_fb` ||
-| `273417305` | Looking left behind, right hand gesture. | `skullface_c` ||
-| `782495120` | TBA | `skullface_c_m` ||
-| `3996600343` | Right hand gesture. | `skullface_d` ||
-| `4256214378` | Right hand gesture to the side. "I'd like to... redirect it." | `skullface_g` ||
-| `1628554459` | Right hand first up gesture. "Cipher." | `skullface_h` ||
-| `1131812723` | Right hand sweeping gesture upward. "The idea that every citizen would use free will to unite behind their country..." | `skullface_ia` ||
-| `1447724063` | Both hands sweeping gesture. "His goal was an organization dedicated solely - covertly - to supporting America." | `skullface_ib` ||
-| `421208123` | Slowly shaking head left and right. "With it, our futures became - more or less - set in stone." | `skullface_j` ||
-| `4267069497` | Right hand on heart, looking down left and right. "To him, it was mourning - the loss of his friend." | `skullface_k` ||
-| `3159482895` | Looking left behind, right hand pointing. | `skullface_l` ||
-| `825112619` | Looking left behind, right hand pointing. "And then the Major came to me with an idea." | `skullface_l_m` ||
-| `16500010` | Right hand pointing. "America's never been made up of just one people." | `skullface_m` ||
-| `3810783117` | Walking back and to the side, his left, gesturing you to go first. Unused. | `skullface_n` ||
-| `4087604842` | TBA | `skullface_n_m` ||
-| `1051725899` | Looking right, gesturing to come along. Warning player. | `skullface_o_r` ||
-| `789922051` | TBA | `skullface_o_r_m` ||
-| `2331924788` | Looking left, gesturing to come along. Warning player. | `skullface_o_l` ||
-| `2017981767` | TBA | `skullface_o_l_m` ||
-||Prisoners|||
-| `4075576870` | Dead idle, after 4 days have passed | `kaz_dead` ||
-| `679773368` | Unused, lua uses a filepath | `volgin_dead` ||
-| `4290341734` | exe, TBA | TBA ||
-| `1914717017` | exe, TBA | TBA ||
-| `3270076323` | exe, TBA | TBA ||
-| `3792277781` | exe, TBA | TBA ||
-| `2740470963` | exe, TBA | TBA ||
-||Paz|||
-| `809469417` | Used in .spch | TBA ||
-| `693517848` | Used in .spch | TBA ||
-||Mantis|||
-| `4574962` | exe, TBA | TBA ||
-||Mob|||
-| `2429334541` | exe, TBA | TBA ||
-| `1370767770` | exe, TBA | TBA ||
+
+||||
+| - | - | - |
+||Single actions||
+| hash | description | string |
+||Ocelot||
+| `3628252758` | Not in .exe but is in .spch. Idle | `ocelot_a` |
+| `779601008` | Speaking, gesturing | `ocelot_b` |
+| `3655687608` | Not used in vanilla .spch files | `ocelot_aa` |
+| `2931446809` | Speaking, gesturing | `ocelot_c` |
+| `3879139826` | Ditto | `ocelot_d` |
+| `1994854644` | Ditto | `ocelot_e` |
+| `3541609199` | Ditto | `ocelot_f` |
+| `2289914935` | Ditto | `ocelot_g` |
+| `3423893682` | Pulls an item out from back and hands it over (not used in vanilla .spch) | `ocelot_h` |
+| `773709529` | Provokes into attacking him (unused) | `ocelot_prv_a` |
+| `1714642760` | Provokes into attacking him (unused)| `ocelot_prv_b` |
+| `3844657989` | Provokes into attacking him (unused) | `ocelot_prv_c` |
+| `631594499` | Ocelot takes something from the other character and disarms it. | `ocelot_cqc` |
+| `3574747766` | Ocelot waves goodbye to leaving helicopter (not used in vanilla .spch, but used by lua) | `ocelot_go_heli` |
+
+||||
+| - | - | - |
+||Skull Face||
+| hash | description | string |
+| `3601388065` | "Torn from my elders, I was made to speak their language."  | `skullface_vcl_b` |
+| `3641692078` | "He and the codes he chose as basis for control." | `skullface_vcl_c` |
+| `1600328193` | "As one born into this world, he's afflicted." | `skullface_vcl_d` |
+| `1178727191` | "To unite America and the entire world." | `skullface_vcl_e` |
+| `1122450761` | "I was invaded by words, burrowing and breeding inside me." | `skullface_vcl_f` |
+| `3694604647` | "All that's left is the future." | `skullface_vcl_g` |
+| `3090331193` | "Words are... peculiar." | `skullface_vcl_h` |
+| `2814632016` | Looking left behind. | `skullface_ba` |
+| `2421159727` | Looking left behind. Warning player | `skullface_ba_m` |
+| `2204356204` | Looking up | `skullface_bb` |
+| `203039143` | Looking left behind, both hands on chest. "I've known you since your time at Langley." | `skullface_ea` |
+| `649209146` | TBA | `skullface_ea_m` |
+| `376561994` | Looking left behind, left hand on heart. | `skullface_eb` |
+| `2148314896` | TBA | `skullface_eb_m` |
+| `3817661764` | Both hands on self. "America is a country of liberty." | `skullface_fa` |
+| `1461113096` | Right hand on chest. "Their roots are varied. Diverse." | `skullface_fb` |
+| `273417305` | Looking left behind, right hand gesture. | `skullface_c` |
+| `782495120` | TBA | `skullface_c_m` |
+| `3996600343` | Right hand gesture. | `skullface_d` |
+| `4256214378` | Right hand gesture to the side. "I'd like to... redirect it." | `skullface_g` |
+| `1628554459` | Right hand first up gesture. "Cipher." | `skullface_h` |
+| `1131812723` | Right hand sweeping gesture upward. "The idea that every citizen would use free will to unite behind their country..." | `skullface_ia` |
+| `1447724063` | Both hands sweeping gesture. "His goal was an organization dedicated solely - covertly - to supporting America." | `skullface_ib` |
+| `421208123` | Slowly shaking head left and right. "With it, our futures became - more or less - set in stone." | `skullface_j` |
+| `4267069497` | Right hand on heart, looking down left and right. "To him, it was mourning - the loss of his friend." | `skullface_k` |
+| `3159482895` | Looking left behind, right hand pointing. | `skullface_l` |
+| `825112619` | Looking left behind, right hand pointing. "And then the Major came to me with an idea." | `skullface_l_m` |
+| `16500010` | Right hand pointing. "America's never been made up of just one people." | `skullface_m` |
+| `3810783117` | Walking back and to the side, his left, gesturing you to go first. Unused. | `skullface_n` |
+| `4087604842` | TBA | `skullface_n_m` |
+| `1051725899` | Looking right, gesturing to come along. Warning player. | `skullface_o_r` |
+| `789922051` | TBA | `skullface_o_r_m` |
+| `2331924788` | Looking left, gesturing to come along. Warning player. | `skullface_o_l` |
+| `2017981767` | TBA | `skullface_o_l_m` |
+
+||||
+| - | - | - |
+||Prisoners||
+| hash | description | string |
+| `4075576870` | Dead idle, after 4 days have passed | `kaz_dead` |
+| `679773368` | Unused, lua uses a filepath | `volgin_dead` |
+| `4290341734` | exe, TBA | TBA |
+| `1914717017` | exe, TBA | TBA |
+| `3270076323` | exe, TBA | TBA |
+| `3792277781` | exe, TBA | TBA |
+| `2740470963` | exe, TBA | TBA |
+
+||||
+| - | - | - |
+||Paz||
+| hash | description | string |
+| `809469417` | Used in .spch | TBA |
+| `693517848` | Used in .spch | TBA |
+
+||||
+| - | - | - |
+||Mantis||
+| hash | description | string |
+| `4574962` | exe, TBA | TBA |
+
+||||
+| - | - | - |
+||Mob||
+| hash | description | string |
+| `2429334541` | exe, TBA | TBA |
+| `1370767770` | exe, TBA | TBA |
+
+|||||
+| - | - | - | - |
 ||GZ|||
+| hash | description | string | GZ hash |
 | TBA | talking with small bit of shake | TBA | `227858136100581` |
 | TBA | right hand "give" gesture | TBA | `228398145069710` |
 | TBA | intense tilting right arm point at the eyes | TBA | `228777436589485` |
