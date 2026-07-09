@@ -318,3 +318,115 @@ Vfx path: `/Assets/tpp/effect/vfx_data/weapon/fx_tpp_wepltb04_s0.vfx` <br>
 {% include spoiler-start title="Preview" %}
 {% include video url="/assets/AI/videos/mgs/shln_effects/video_SahelanEffectParts_SparkActive.webm" %}
 {% include spoiler-end %}
+
+### "Middle Missile" parts file
+
+List of Visual effects loaded in `/Assets/tpp/parts/mecha/mgs/mgs0_miss0_def.parts` <br>
+
+Effects: <br>
+
+- `Active` <br> 
+Vfx path: `/Assets/tpp/effect/vfx_data/weapon/fx_tpp_wepexprpg01_s2LG.vfx` <br>
+{% include spoiler-start title="Preview" %}
+{% include video url="/assets/AI/videos/mgs/shln_effects/video_SahelanEffectExtra_miss0_Active.webm" %}
+{% include spoiler-end %}
+
+- `TailSmoke` <br> 
+Vfx path: `/Assets/tpp/effect/vfx_data/mecha/fx_tpp_mchmgsmsljet01_s1.vfx` <br>
+{% include spoiler-start title="Preview" %}
+{% include video url="/assets/AI/videos/mgs/shln_effects/video_SahelanEffectExtra_miss0_TailSmoke.webm" %}
+{% include spoiler-end %}
+
+
+### "Small Missile" parts file
+
+List of Visual effects loaded in `/Assets/tpp/parts/mecha/mgs/mgs0_miss1_def.parts` <br>
+
+Effects: <br>
+
+- `Active` <br> 
+Vfx path: `/Assets/tpp/effect/vfx_data/weapon/fx_tpp_wepgreexp01_s2LG.vfx` <br>
+{% include spoiler-start title="Preview" %}
+{% include video url="/assets/AI/videos/mgs/shln_effects/video_SahelanEffectExtra_miss1_Active.webm" %}
+{% include spoiler-end %}
+
+- `TailSmoke` <br> 
+Vfx path: `/Assets/tpp/effect/vfx_data/mecha/fx_tpp_mchmgsmsljet01_s1.vfx` <br>
+{% include spoiler-start title="Preview" %}
+{% include video url="/assets/AI/videos/mgs/shln_effects/video_SahelanEffectExtra_miss1_TailSmoke.webm" %}
+{% include spoiler-end %}
+
+
+### "Large Missile" parts file
+
+List of Visual effects loaded in `/Assets/tpp/parts/mecha/mgs/mgs0_miss2_def.parts` <br>
+
+Effects: <br>
+
+- `Active` <br> 
+Vfx path: `/Assets/tpp/effect/vfx_data/explosion/fx_tpp_expmot00_s8LG.vfx` <br>
+{% include spoiler-start title="Preview" %}
+{% include video url="/assets/AI/videos/mgs/shln_effects/video_SahelanEffectExtra_miss2_Active.webm" %}
+{% include spoiler-end %}
+
+- `TailSmoke` <br> 
+Vfx path: `/Assets/tpp/effect/vfx_data/mecha/fx_tpp_mchmgsmsljet01_s1.vfx` <br>
+Effect Variation Name: `Large` <br>
+{% include spoiler-start title="Preview" %}
+{% include video url="/assets/AI/videos/mgs/shln_effects/video_SahelanEffectExtra_miss2_TailSmoke.webm" %}
+{% include spoiler-end %}
+
+
+### "Search Missile" parts file
+
+List of Visual effects loaded in `/Assets/tpp/parts/mecha/mgs/mgs0_srcm0_def_v00.parts` <br>
+
+Effects: <br>
+
+- `BackFire` <br> 
+Vfx path: `/Assets/tpp/effect/vfx_data/mecha/fx_tpp_mchmgssrcjet01_s1.vfx` <br>
+{% include spoiler-start title="Preview" %}
+{% include video url="/assets/AI/videos/mgs/shln_effects/video_SahelanEffectExtra_Srcm_fire.webm" %}
+{% include spoiler-end %}
+
+- `MoveFire` <br> 
+Vfx path: `/Assets/tpp/effect/vfx_data/mecha/fx_tpp_mchmgssrcjet01_s1.vfx` <br>
+Effect Variation Name: `Small` <br>
+{% include spoiler-start title="Preview" %}
+{% include video url="/assets/AI/videos/mgs/shln_effects/video_SahelanEffectExtra_Srcm_fire_small.webm" %}
+{% include spoiler-end %}
+
+- `TailSmoke` <br> 
+Vfx path: `/Assets/tpp/effect/vfx_data/mecha/fx_tpp_mchmgssrcjet02_s3.vfx` <br>
+{% include spoiler-start title="Preview" %}
+{% include video url="/assets/AI/videos/mgs/shln_effects/video_SahelanEffectExtra_Srcm_TailSmoke.webm" %}
+{% include spoiler-end %}
+
+### "Blade" parts file
+
+List of Visual effects loaded in `/Assets/tpp/parts/mecha/mgs/mgs0_msbl0_def.parts` <br>
+
+Effects: <br>
+
+- `Active` <br> 
+Vfx path: `/Assets/tpp/effect/vfx_data/mecha/fx_tpp_mchmgswep01_l1.vfx` <br>
+{% include spoiler-start title="Preview" %}
+{% include video url="/assets/AI/videos/mgs/shln_effects/video_SahelanEffectExtra_Sword_Active.webm" %}
+{% include spoiler-end %}
+
+- `ActiveBlade` <br> 
+Vfx path: `/Assets/tpp/effect/vfx_data/mecha/fx_tpp_mchmgswep03_m2.vfx` <br>
+{% include spoiler-start title="Preview" %}
+{% include video url="/assets/AI/videos/mgs/shln_effects/video_SahelanEffectExtra_Sword_ActiveBlade.webm" %}
+{% include spoiler-end %}
+
+- `BladeFinish` <br> 
+Vfx path: `/Assets/tpp/effect/vfx_data/mecha/fx_tpp_mchmgswep08_l1.vfx` <br>
+????? <br>
+
+- `BladeLaunch` <br> 
+Vfx path: `/Assets/tpp/effect/vfx_data/mecha/fx_tpp_mchmgswep05_l1.vfx` <br>
+{% include spoiler-start title="Preview" %}
+{% include video url="/assets/AI/videos/mgs/shln_effects/video_SahelanEffectExtra_Sword_BladeLaunch.webm" %}
+{% include spoiler-end %}
+
