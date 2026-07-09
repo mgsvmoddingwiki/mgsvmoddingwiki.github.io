@@ -131,47 +131,58 @@ possibly not be the inverse of afterPause.
 
 This is a list of some voice types that can be used by SPCH files.
 
-|                              |                                                           |                 |
-| ---------------------------- | --------------------------------------------------------- | --------------- |
-| Little-Endian StrCode32 hash | Description                                               | Unhashed String |
-| `B0 1A C1 B1`                | Ishmael                                                   | `Ishmael`       |
-| `9A 80 67 BC`                | Ocelot                                                    | `ocelot`        |
-| `86 2B 2D 96`                | Miller                                                    | `miller`        |
-| `1E FA 8B 4C`                | Paz                                                       | `paz`           |
-| `19 D4 CC 09`                | Code Talker                                               | `codetalker`    |
-| `9B DE 82 52`                | Skull Face                                                | `skullface`     |
-| `93 85 B1 BF`                | Huey                                                      | `huey`          |
-| `2B 29 F3 BF`                | POW(English)A                                             | `hostage_a`     |
-| `8F AE 91 6C`                | POW(English)B                                             | `hostage_b`     |
-| `30 FA 15 20`                | POW(English)C                                             | `hostage_c`     |
-| `43 1D C5 7E`                | POW(English)D                                             | `hostage_d`     |
-| `B4 86 C3 3E`                | Female POW(English)A                                      | `hostage_a_fml` |
-| `ad a5 5f f6`                | Female POW(English)B                                      | `hostage_b_fml` |
-| `82 5c ee 9c`                | Female POW(English)C                                      | `hostage_c_fml` |
-| `49 84 27 aa`                | Female POW(English)D                                      | `hostage_d_fml` |
-| `9C AF 9F BA`                | POW(Russian)A                                             | `hostage_a_ru`  |
-| `1b 0f 29 07`                | POW(Russian)B                                             | `hostage_b_ru`  |
-| `15 ed 0c fb`                | POW(Afrikaans)A                                           | `hostage_a_af`  |
-| `c8 03 91 07`                | POW(Afrikaans)B                                           | `hostage_b_af`  |
-| `B1 F0 DA 7A`                | POW(Pashto)A                                              | `hostage_a_ps`  |
-| `91 5b 16 d7`                | POW(Pashto)B                                              | `hostage_b_ps`  |
-| `7e c4 8c f1`                | POW(Kikongo)A                                             | `hostage_a_kg`  |
-| `C9 B1 C9 8D`                | POW(Kikongo)B                                             | `hostage_b_kg`  |
-| `2C 8A F4 DA`                | Enemy A (Language is autoassigned if applicable)          | `ene_a`         |
-| `83 A1 C2 77`                | Enemy B (Language is autoassigned if applicable)          | `ene_b`         |
-| `88 BA D9 43`                | Enemy C (Language is autoassigned if applicable)          | `ene_c`         |
-| `D8 66 AC 61`                | Enemy D (Language is autoassigned if applicable)          | `ene_d`         |
-| `EC EF 8C D5`                | Female DD Soldier A                                       | `ene_a_fml`     |
-| `52 9D 43 5C`                | Female DD Soldier B                                       | `ene_b_fml`     |
-| `36 64 CB 9C`                | Female DD Soldier C                                       | `ene_c_fml`     |
-| `8b 51 eb a9`                | Female DD Soldier D                                       | `ene_d_fml`     |
-| `8D 3C A9 B8`                | Child Soldier A                                           | `chsol_a`       |
-| `52 9D 43 5C`                | Child Soldier B                                           | `chsol_b`       |
-| `36 64 CB 9C`                | Child Soldier C                                           | `chsol_c`       |
-| `68 7F 0D 37`                | Child Soldier D                                           | `chsol_d`       |
-| `57 BF 86 8E`                | Enemy (Voice and language are autoassigned if applicable) | `enemy`         |
-| `9D FB 79 DB`                | CP (Language is autoassigned if applicable)               | `cp`            |
-| `95 3B C4 B0`                | HQ (Language is autoassigned if applicable)               | `hq`            |
+||||
+|-|-|-|
+|Hash|String|Wwise `chara` state|Description|
+| `2982222512` | `Ishmael` | `Ishmael` | Ishmael |
+| `3160899738` | `ocelot` | `ocelot` | Ocelot |
+| `2519542662` | `miller` | `miller` | Miller |
+| `1284241950` | `paz` | `paz` | Paz |
+| `164418585` | `codetalker` | `codetalker` | Code Talker |
+| `1384308379` | `skullface` | `skullface` | Skull Face |
+| `3216082323` | `huey` | `huey` | Huey |
+| `3220384043` | `hostage_a` | `hostage_a` | POW(English)A |
+| `1821486735` | `hostage_b` | `hostage_b` | POW(English)B |
+| `538311216` | `hostage_c` | `hostage_c` | POW(English)C |
+| `2126847299` | `hostage_d` | `hostage_d` | POW(English)D |
+| `2203168598` | `hostage_a_fml` | `hostage_a_fml` | Female POW(English)A |
+| `4133463469` | `hostage_b_fml` | `hostage_b_fml` | Female POW(English)B |
+| `2632866946` | `hostage_c_fml` | `hostage_c_fml` | Female POW(English)C |
+| `2854716489` | `hostage_d_fml` | `hostage_d_fml` | Female POW(English)D |
+| `3131027356` | `hostage_a_ru` | `hostage_a_ru` | POW(Russian)A |
+| `120131355` | `hostage_b_ru` | `hostage_b_ru` | POW(Russian)B |
+| `4211928341` | `hostage_a_af` | `hostage_a_af` | POW(Afrikaans)A |
+| `126944200` | `hostage_b_af` | `hostage_b_af` | POW(Afrikaans)B |
+| `2061168817` | `hostage_a_ps` | `hostage_a_ps` | POW(Pashto)A |
+| `3608566673` | `hostage_b_ps` | `hostage_b_ps` | POW(Pashto)B |
+| `4052534398` | `hostage_a_kg` | `hostage_a_kg` | POW(Kikongo)A |
+| `2378805705` | `hostage_b_kg` | `hostage_b_kg` | POW(Kikongo)B |
+| `3673459244` | `ene_a` | `ene_a` | Enemy A (English, male) |
+| `2009244035` | `ene_b` | `ene_b` | Enemy B (English, male) |
+| `1138342536` | `ene_c` | `ene_c` | Enemy C (English, male) |
+| `1638688472` | `ene_d` | `ene_d` | Enemy D (English, male) |
+| `3673459244` | `ene_a` | `ene_a_af` | Enemy A (Afrikaans, male) |
+| `2009244035` | `ene_b` | `ene_b_af` | Enemy B (Afrikaans, male) |
+| `1138342536` | `ene_c` | `ene_c_af` | Enemy C (Afrikaans, male) |
+| `1638688472` | `ene_d` | `ene_d_af` | Enemy D (Afrikaans, male) |
+| `3673459244` | `ene_a` | `ene_a_ru` | Enemy A (Russian, male) |
+| `2009244035` | `ene_b` | `ene_b_ru` | Enemy B (Russian, male) |
+| `1138342536` | `ene_c` | `ene_c_ru` | Enemy C (Russian, male) |
+| `1638688472` | `ene_d` | `ene_d_ru` | Enemy D (Russian, male) |
+| `3582783468` | `ene_a_fml` | `ene_a_fml` | Female DD Soldier A |
+| `2995112853` | `ene_b_fml` | `ene_b_fml` | Female DD Soldier B |
+| `1474976801` | `ene_c_fml` | `ene_c_fml` | Female DD Soldier C |
+| `2850771339` | `ene_d_fml` | `ene_d_fml` | Female DD Soldier D |
+| `3098098829` | `chsol_a` | `chsol_a` | Child Soldier A |
+| `1547935058` | `chsol_b` | `chsol_b` | Child Soldier B |
+| `2630575158` | `chsol_c` | `chsol_c` | Child Soldier C |
+| `923631464` | `chsol_d` | `chsol_d` | Child Soldier D |
+| `2391195479` | `enemy` | See "ene" | Enemy (Voice/language are autoassigned) |
+| `3682204573` | `cp` | `cp_a` | CP (English) |
+| `3682204573` | `cp` | `cp_a_af` | CP (Afrikaans) |
+| `3682204573` | `cp` | `cp_a_ru` | CP (Russian) |
+| `2965650325` | `hq` | `hq_a_af` | HQ (Afrikaans) |
+| `2965650325` | `hq` | `hq_a_ru` | HQ (Russian) |
 
 ## Actions
 
@@ -203,7 +214,7 @@ This is a list of some animation act ids that can be used by SPCH files.
 | `3632669033` | `ScratchHead` | Scratches head | <video width="213" height="160" controls><source src="/assets/tpp/gm/soldier/action/ScratchHead.webm" type="video/webm"></video> ||
 | `4066632199` | TBA | Stepping left | <video width="213" height="160" controls><source src="/assets/tpp/gm/soldier/action/4066632199.webm" type="video/webm"></video> ||
 | `1351632722` | TBA | Stepping right | <video width="213" height="160" controls><source src="/assets/tpp/gm/soldier/action/1351632722.webm" type="video/webm"></video> ||
-| `1606603300` | Wiping brow/eyes | <video width="213" height="160" controls><source src="/assets/tpp/gm/soldier/action/1606603300.webm" type="video/webm"></video> | TBA ||
+| `1606603300` | TBA | Wiping brow/eyes | <video width="213" height="160" controls><source src="/assets/tpp/gm/soldier/action/1606603300.webm" type="video/webm"></video> ||
 | `1017266580` | `AskQuestion` | Small right shoulder bump | <video width="213" height="160" controls><source src="/assets/tpp/gm/soldier/action/AskQuestion.webm" type="video/webm"></video> | `53671881156558` |
 | `1350228116` | `GiveOrder` | Pointing with left hand | <video width="213" height="160" controls><source src="/assets/tpp/gm/soldier/action/GiveOrder.webm" type="video/webm"></video> | `136070209132692` |
 | `508960638` | TBA  | Shaking left and right, disagreeing, saying no | <video width="213" height="160" controls><source src="/assets/tpp/gm/soldier/action/508960638.webm" type="video/webm"></video>| `14066526855038` |
