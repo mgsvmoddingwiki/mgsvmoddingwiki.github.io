@@ -235,6 +235,16 @@ document.addEventListener('DOMContentLoaded',() => {
         zoom.on('close', detachKeyEvents);
     });
 
+    // --------------------------- Video handling ---------------------------
+    func.checkVp(() => {
+        // For videos added as HTML to table cells, to avoid having to add these attributes via markup
+        let tabVideos = document.querySelectorAll('body:not(.search-page) .git-wiki-page table video');
+        tabVideos.forEach(video => {
+            video.controls = true;
+            video.playsinline = true;
+        });
+    });
+
     // ------------------------------- Infobox ------------------------------
     // Replace 'Site', 'Download' link names with names of hostname from URL
     func.checkVp(() => {

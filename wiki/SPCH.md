@@ -131,9 +131,8 @@ possibly not be the inverse of afterPause.
 
 This is a list of some voice types that can be used by SPCH files.
 
-|||||
+| Hash | String | Wwise `chara` state | Description |
 |-|-|-|-|
-|Hash|String|Wwise `chara` state|Description|
 | `2982222512` | `Ishmael` | `Ishmael` | Ishmael |
 | `3160899738` | `ocelot` | `ocelot` | Ocelot |
 | `2519542662` | `miller` | `miller` | Miller |
@@ -190,73 +189,69 @@ This is a list of some animation act ids that can be used by SPCH files.
 
 ### Common
 
-||||
-| - | - | - |
 | hash | string | description |
+| - | - | - |
 | `104983832` | `None` | None |
 
 ### Loop actions
 
-|||||
-| - | - | - | - |
 | hash | string | description | video |
-| `3029125695` | `Conversation1` | Talking with a bit of shaking | <video width="213" height="160" controls><source src="/assets/tpp/gm/soldier/action/Conversation1.webm" type="video/webm"></video> |
-| `2357847038` | `Conversation2` | Tilting head around all smug | <video width="213" height="160" controls><source src="/assets/tpp/gm/soldier/action/Conversation2.webm" type="video/webm"></video> |
+| - | - | - | - |
+| `3029125695` | `Conversation1` | Talking with a bit of shaking | <video src="/assets/tpp/gm/soldier/action/Conversation1.webm"></video> |
+| `2357847038` | `Conversation2` | Tilting head around all smug | <video src="/assets/tpp/gm/soldier/action/Conversation2.webm"></video> |
 | `2653120201`| `Salute` | Saluting (doesn't always work?) ||
 
 ### Single actions
 
-|||||
-| - | - | - | - |
 | hash | string | description | video |
-| `19913283` | `Watch` | Looking at watch | <video width="213" height="160" controls><source src="/assets/tpp/gm/soldier/action/Watch.webm" type="video/webm"></video> |
-| `3471431647` | `Sweat` | Wiping face | <video width="213" height="160" controls><source src="/assets/tpp/gm/soldier/action/Sweat.webm" type="video/webm"></video> |
-| `3935815178` | `Yawn` | Yawning | <video width="213" height="160" controls><source src="/assets/tpp/gm/soldier/action/Yawn.webm" type="video/webm"></video> |
-| `1484142220` | `Sneezing` | Sneeze | <video width="213" height="160" controls><source src="/assets/tpp/gm/soldier/action/Sneezing.webm" type="video/webm"></video> |
-| `1081954141` | `Stamping` | Looking at feet while stepping in place | <video width="213" height="160" controls><source src="/assets/tpp/gm/soldier/action/Stamping.webm" type="video/webm"></video> |
-| `1004728074` | `Coughing` | Cough | <video width="213" height="160" controls><source src="/assets/tpp/gm/soldier/action/Coughing.webm" type="video/webm"></video> |
-| `3632669033` | `ScratchHead` | Scratches head | <video width="213" height="160" controls><source src="/assets/tpp/gm/soldier/action/ScratchHead.webm" type="video/webm"></video> |
-| `4066632199` | TBA | Stepping left | <video width="213" height="160" controls><source src="/assets/tpp/gm/soldier/action/4066632199.webm" type="video/webm"></video> |
-| `1351632722` | TBA | Stepping right | <video width="213" height="160" controls><source src="/assets/tpp/gm/soldier/action/1351632722.webm" type="video/webm"></video> |
-| `1606603300` | TBA | Wiping brow/eyes | <video width="213" height="160" controls><source src="/assets/tpp/gm/soldier/action/1606603300.webm" type="video/webm"></video> |
-| `1017266580` | `AskQuestion` | Small right shoulder bump | <video width="213" height="160" controls><source src="/assets/tpp/gm/soldier/action/AskQuestion.webm" type="video/webm"></video> |
-| `1350228116` | `GiveOrder` | Pointing with left hand | <video width="213" height="160" controls><source src="/assets/tpp/gm/soldier/action/GiveOrder.webm" type="video/webm"></video> |
-| `508960638` | TBA  | Shaking left and right, disagreeing, saying no | <video width="213" height="160" controls><source src="/assets/tpp/gm/soldier/action/508960638.webm" type="video/webm"></video>|
-| `3575825406` | `GiveWarning` | Point away, to the left | <video width="213" height="160" controls><source src="/assets/tpp/gm/soldier/action/GiveWarning.webm" type="video/webm"></video> |
-| `1421134289` | TBA | Aggressive nodding, agreeing | <video width="213" height="160" controls><source src="/assets/tpp/gm/soldier/action/1421134289.webm" type="video/webm"></video> |
-| `828605126` | TBA | Spooked by something to the left | <video width="213" height="160" controls><source src="/assets/tpp/gm/soldier/action/828605126.webm" type="video/webm"></video> |
-| `2975103228` | TBA | Spooked by something to the right | <video width="213" height="160" controls><source src="/assets/tpp/gm/soldier/action/2975103228.webm" type="video/webm"></video> |
-| `213441558` | TBA | Directing someone with left arm pointing, direction is random | <video width="213" height="160" controls><source src="/assets/tpp/gm/soldier/action/213441558.webm" type="video/webm"></video> |
-| `544521629` | TBA | Saying hi to someone, with right hand. Direction is random! | <video width="213" height="160" controls><source src="/assets/tpp/gm/soldier/action/544521629.webm" type="video/webm"></video> |
-| `1873952626` | `HandSignCome` | Telling to come closer, left arm | <video width="213" height="160" controls><source src="/assets/tpp/gm/soldier/action/HandSignCome.webm" type="video/webm"></video> |
-| `1715719024` | `HandSignGo` | Stern point with left hand finger | <video width="213" height="160" controls><source src="/assets/tpp/gm/soldier/action/HandSignGo.webm" type="video/webm"></video> |
-| `1081228083` | TBA | Telling a prisoner to get down | <video width="213" height="160" controls><source src="/assets/tpp/gm/soldier/action/1081228083.webm" type="video/webm"></video> |
-| `2834988863` | TBA | Telling a prisoner to get up, left arm | <video width="213" height="160" controls><source src="/assets/tpp/gm/soldier/action/2834988863.webm" type="video/webm"></video> |
-| `1334263530` | TBA | Walks around from the right, kicking the prisoner in the back | <video width="213" height="160" controls><source src="/assets/tpp/gm/soldier/action/1334263530.webm" type="video/webm"></video> |
-| `584751270` | `AttackToStomach` | Hitting to stomach with gun | <video width="213" height="160" controls><source src="/assets/tpp/gm/soldier/action/AttackToStomach.webm" type="video/webm"></video> |
-| `3434724606` | `AttackToHead` | Hitting in the head | <video width="213" height="160" controls><source src="/assets/tpp/gm/soldier/action/AttackToHead.webm" type="video/webm"></video> |
-| `3982806036` | `Greeting` | Greeting with left hand raised up | <video width="213" height="160" controls><source src="/assets/tpp/gm/soldier/action/Greeting.webm" type="video/webm"></video> |
-| `2573116818` | `Damn` | Frustrated fist | <video width="213" height="160" controls><source src="/assets/tpp/gm/soldier/action/Damn.webm" type="video/webm"></video> |
-| `3249773322` | `Caution1` | Looking around | <video width="213" height="160" controls><source src="/assets/tpp/gm/soldier/action/Caution1.webm" type="video/webm"></video> |
-| `393714603` | `Caution2` | Looking around, more exaggerated | <video width="213" height="160" controls><source src="/assets/tpp/gm/soldier/action/Caution2.webm" type="video/webm"></video> |
+| - | - | - | - |
+| `19913283` | `Watch` | Looking at watch | <video src="/assets/tpp/gm/soldier/action/Watch.webm"></video> |
+| `3471431647` | `Sweat` | Wiping face | <video src="/assets/tpp/gm/soldier/action/Sweat.webm"></video> |
+| `3935815178` | `Yawn` | Yawning | <video src="/assets/tpp/gm/soldier/action/Yawn.webm"></video> |
+| `1484142220` | `Sneezing` | Sneeze | <video src="/assets/tpp/gm/soldier/action/Sneezing.webm"></video> |
+| `1081954141` | `Stamping` | Looking at feet while stepping in place | <video src="/assets/tpp/gm/soldier/action/Stamping.webm"></video> |
+| `1004728074` | `Coughing` | Cough | <video src="/assets/tpp/gm/soldier/action/Coughing.webm"></video> |
+| `3632669033` | `ScratchHead` | Scratches head | <video src="/assets/tpp/gm/soldier/action/ScratchHead.webm"></video> |
+| `4066632199` | TBA | Stepping left | <video src="/assets/tpp/gm/soldier/action/4066632199.webm"></video> |
+| `1351632722` | TBA | Stepping right | <video src="/assets/tpp/gm/soldier/action/1351632722.webm"></video> |
+| `1606603300` | TBA | Wiping brow/eyes | <video src="/assets/tpp/gm/soldier/action/1606603300.webm"></video> |
+| `1017266580` | `AskQuestion` | Small right shoulder bump | <video src="/assets/tpp/gm/soldier/action/AskQuestion.webm"></video> |
+| `1350228116` | `GiveOrder` | Pointing with left hand | <video src="/assets/tpp/gm/soldier/action/GiveOrder.webm"></video> |
+| `508960638` | TBA  | Shaking left and right, disagreeing, saying no | <video src="/assets/tpp/gm/soldier/action/508960638.webm"></video>|
+| `3575825406` | `GiveWarning` | Point away, to the left | <video src="/assets/tpp/gm/soldier/action/GiveWarning.webm"></video> |
+| `1421134289` | TBA | Aggressive nodding, agreeing | <video src="/assets/tpp/gm/soldier/action/1421134289.webm"></video> |
+| `828605126` | TBA | Spooked by something to the left | <video src="/assets/tpp/gm/soldier/action/828605126.webm"></video> |
+| `2975103228` | TBA | Spooked by something to the right | <video src="/assets/tpp/gm/soldier/action/2975103228.webm"></video> |
+| `213441558` | TBA | Directing someone with left arm pointing, direction is random | <video src="/assets/tpp/gm/soldier/action/213441558.webm"></video> |
+| `544521629` | TBA | Saying hi to someone, with right hand. Direction is random! | <video src="/assets/tpp/gm/soldier/action/544521629.webm"></video> |
+| `1873952626` | `HandSignCome` | Telling to come closer, left arm | <video src="/assets/tpp/gm/soldier/action/HandSignCome.webm"></video> |
+| `1715719024` | `HandSignGo` | Stern point with left hand finger | <video src="/assets/tpp/gm/soldier/action/HandSignGo.webm"></video> |
+| `1081228083` | TBA | Telling a prisoner to get down | <video src="/assets/tpp/gm/soldier/action/1081228083.webm"></video> |
+| `2834988863` | TBA | Telling a prisoner to get up, left arm | <video src="/assets/tpp/gm/soldier/action/2834988863.webm"></video> |
+| `1334263530` | TBA | Walks around from the right, kicking the prisoner in the back | <video src="/assets/tpp/gm/soldier/action/1334263530.webm"></video> |
+| `584751270` | `AttackToStomach` | Hitting to stomach with gun | <video src="/assets/tpp/gm/soldier/action/AttackToStomach.webm"></video> |
+| `3434724606` | `AttackToHead` | Hitting in the head | <video src="/assets/tpp/gm/soldier/action/AttackToHead.webm"></video> |
+| `3982806036` | `Greeting` | Greeting with left hand raised up | <video src="/assets/tpp/gm/soldier/action/Greeting.webm"></video> |
+| `2573116818` | `Damn` | Frustrated fist | <video src="/assets/tpp/gm/soldier/action/Damn.webm"></video> |
+| `3249773322` | `Caution1` | Looking around | <video src="/assets/tpp/gm/soldier/action/Caution1.webm"></video> |
+| `393714603` | `Caution2` | Looking around, more exaggerated | <video src="/assets/tpp/gm/soldier/action/Caution2.webm"></video> |
 | `911835617` | `CurtainIn` | Moving curtain? Doesn't work (not used in .spch files) ||
 | `500855846` | `CurtainOut` | Moving curtain? Doesn't work (not used in .spch files) ||
-| `3672734274` | `CeaseFire` | Looking behind and signalling to cease fire | <video width="213" height="160" controls><source src="/assets/tpp/gm/soldier/action/CeaseFire.webm" type="video/webm"></video> |
-| `1155425596` | `Idly` | Repositioning, more tame | <video width="213" height="160" controls><source src="/assets/tpp/gm/soldier/action/Idly.webm" type="video/webm"></video> ||
-| `2267025732` | `Relax` | Resting gun on neck | <video width="213" height="160" controls><source src="/assets/tpp/gm/soldier/action/Relax.webm" type="video/webm"></video> |
-| `767686818` | `NoticeRain` | Noticing with hand that it's raining. Not used in .spch | <video width="213" height="160" controls><source src="/assets/tpp/gm/soldier/action/NoticeRain.webm" type="video/webm"></video> |
-| `2857040360` | `DiscoveryFultonRecovered` | Seeing a comrade hanging on a balloon. Not used in .spch | <video width="213" height="160" controls><source src="/assets/tpp/gm/soldier/action/DiscoveryFultonRecovered.webm" type="video/webm"></video> |
-| `2643791617` | TBA | Aggressively kicking the ground. Child idle | <video width="213" height="160" controls><source src="/assets/tpp/gm/soldier/action/2643791617.webm" type="video/webm"></video> |
-| `2114182719` | TBA | Spinning left arm like a windmill. Child idle | <video width="213" height="160" controls><source src="/assets/tpp/gm/soldier/action/2114182719.webm" type="video/webm"></video> |
+| `3672734274` | `CeaseFire` | Looking behind and signalling to cease fire | <video src="/assets/tpp/gm/soldier/action/CeaseFire.webm"></video> |
+| `1155425596` | `Idly` | Repositioning, more tame | <video src="/assets/tpp/gm/soldier/action/Idly.webm"></video> |
+| `2267025732` | `Relax` | Resting gun on neck | <video src="/assets/tpp/gm/soldier/action/Relax.webm"></video> |
+| `767686818` | `NoticeRain` | Noticing with hand that it's raining. Not used in .spch | <video src="/assets/tpp/gm/soldier/action/NoticeRain.webm"></video> |
+| `2857040360` | `DiscoveryFultonRecovered` | Seeing a comrade hanging on a balloon. Not used in .spch | <video src="/assets/tpp/gm/soldier/action/DiscoveryFultonRecovered.webm"></video> |
+| `2643791617` | TBA | Aggressively kicking the ground. Child idle | <video src="/assets/tpp/gm/soldier/action/2643791617.webm"></video> |
+| `2114182719` | TBA | Spinning left arm like a windmill. Child idle | <video src="/assets/tpp/gm/soldier/action/2114182719.webm"></video> |
 | `859906857` | `Surprise` | Doesn't work (not used in .spch) ||
 
 ### Special character actions
 
 #### Ocelot
 
-||||
-| - | - | - |
 | hash | string | description |
+| - | - | - |
 | `3628252758` | `ocelot_a` | Not in .exe but is in .spch. Idle |
 | `779601008` | `ocelot_b` | Speaking, gesturing |
 | `3655687608` | `ocelot_aa` | Not used in vanilla .spch files |
@@ -274,9 +269,8 @@ This is a list of some animation act ids that can be used by SPCH files.
 
 #### Skull Face
 
-||||
-| - | - | - |
 | hash | string | description |
+| - | - | - |
 | `3601388065` | `skullface_vcl_b` | "Torn from my elders, I was made to speak their language." |
 | `3641692078` | `skullface_vcl_c` | "He and the codes he chose as basis for control." |
 | `1600328193` | `skullface_vcl_d` | "As one born into this world, he's afflicted." |
@@ -314,9 +308,8 @@ This is a list of some animation act ids that can be used by SPCH files.
 
 #### Prisoners
 
-||||
-| - | - | - |
 | hash | string | description |
+| - | - | - |
 | `4075576870` | `kaz_dead` | Dead idle, after 4 days have passed |
 | `679773368` | `volgin_dead` | Unused, lua uses a filepath |
 | `4290341734` | TBA | exe, TBA |
@@ -327,32 +320,28 @@ This is a list of some animation act ids that can be used by SPCH files.
 
 #### Paz
 
-||||
-| - | - | - |
 | hash | string | description |
+| - | - | - |
 | `809469417` | TBA | Used in .spch |
 | `693517848` | TBA | Used in .spch |
 
 #### Mantis
 
-||||
-| - | - | - |
 | hash | string | description |
+| - | - | - |
 | `4574962` | TBA | exe, TBA |
 
 #### Mob
 
-||||
-| - | - | - |
 | hash | string | description |
+| - | - | - |
 | `2429334541` | TBA | exe, TBA |
 | `1370767770` | TBA | exe, TBA |
 
 ### GZ .mog states
 
-||||
-| - | - | - |
 | GZ hash | description | TPP equivalent ||
+| - | - | - |
 | `12150073685120` | | `Conversation1` |
 | `188287345343957` | | `Conversation2` |
 | `53671881156558` | | `AskQuestion` |
@@ -373,40 +362,38 @@ This part of .spch is entirely unused, but it works perfectly well in custom .sp
 
 ### Soldier/Prisoner
 
-||||
+| hash | string | description | video |
 |-|-|-|
-|hash|string|description|video|
-||||
-|`4273958362`|`chork_lp`|Closed eyes, gritted teeth (restraint?)|<video width="213" height="160" controls><source src="/assets/tpp/gm/soldier/facial/chork_lp.webm" type="video/webm"></video>|
-|`906448398`|`quest_lp`||<video width="213" height="160" controls><source src="/assets/tpp/gm/soldier/facial/quest_lp.webm" type="video/webm"></video>|
-|`4185159514`|`dying_lp`|Wide gritted teeth and frown in pain, furrowed brow|<video width="213" height="160" controls><source src="/assets/tpp/gm/soldier/facial/dying_lp.webm" type="video/webm"></video>|
-|`875969379`|`hold_lp`||<video width="213" height="160" controls><source src="/assets/tpp/gm/soldier/facial/hold_lp.webm" type="video/webm"></video>|
-|`2413225066`|`sleepy_st`||<video width="213" height="160" controls><source src="/assets/tpp/gm/soldier/facial/sleepy_st.webm" type="video/webm"></video>|
-|`2370764116`|`sleepy`||<video width="213" height="160" controls><source src="/assets/tpp/gm/soldier/facial/sleepy.webm" type="video/webm"></video>|
-|`534101553`|`sleepy_ed`||<video width="213" height="160" controls><source src="/assets/tpp/gm/soldier/facial/sleepy_ed.webm" type="video/webm"></video>|
-|`3637848969`|`sleep_lp`|Closed eyes, low open mouth|<video width="213" height="160" controls><source src="/assets/tpp/gm/soldier/facial/sleep_lp.webm" type="video/webm"></video>|
-|`942521988`|`storm_lp`|Furrowed brow, mouth open with disgust|<video width="213" height="160" controls><source src="/assets/tpp/gm/soldier/facial/storm_lp.webm" type="video/webm"></video>|
-|`2004836561`|`radio_n_lp`|Furrowed brow, slightly open frown|<video width="213" height="160" controls><source src="/assets/tpp/gm/soldier/facial/radio_n_lp.webm" type="video/webm"></video>|
-|`1270273108`|`radio_t_lp`|Furrowed brow, low open mouth|<video width="213" height="160" controls><source src="/assets/tpp/gm/soldier/facial/radio_t_lp.webm" type="video/webm"></video>|
-|`4189128720`|`normal`||<video width="213" height="160" controls><source src="/assets/tpp/gm/soldier/facial/normal.webm" type="video/webm"></video>|
-|`3540382066`|`relax`||<video width="213" height="160" controls><source src="/assets/tpp/gm/soldier/facial/relax.webm" type="video/webm"></video>|
-|`670785982`|`smoke_st`||<video width="213" height="160" controls><source src="/assets/tpp/gm/soldier/facial/smoke_st.webm" type="video/webm"></video>|
-|`1602722026`|`smoke_lp`||<video width="213" height="160" controls><source src="/assets/tpp/gm/soldier/facial/smoke_lp.webm" type="video/webm"></video>|
-|`450841444`|`smoke_ed`|Mouth open as if blowing out smoke|<video width="213" height="160" controls><source src="/assets/tpp/gm/soldier/facial/smoke_ed.webm" type="video/webm"></video>|
-|`995823487`|`damage_l`|Gritted teeth, closed eyes|<video width="213" height="160" controls><source src="/assets/tpp/gm/soldier/facial/damage_l.webm" type="video/webm"></video>|
-|`1659817747`|`damage_h`||<video width="213" height="160" controls><source src="/assets/tpp/gm/soldier/facial/damage_h.webm" type="video/webm"></video>|
-|`1177901058`|`faint`|Mouth hanging open, eyelids drooping|<video width="213" height="160" controls><source src="/assets/tpp/gm/soldier/facial/faint.webm" type="video/webm"></video>|
-|`3893246598`|`greet`|Open mouth, lifted eyebrows|<video width="213" height="160" controls><source src="/assets/tpp/gm/soldier/facial/greet.webm" type="video/webm"></video>|
-|`1225486477`|`surprise`||<video width="213" height="160" controls><source src="/assets/tpp/gm/soldier/facial/surprise.webm" type="video/webm"></video>|
-|`223061766`|`surprise_big`||<video width="213" height="160" controls><source src="/assets/tpp/gm/soldier/facial/surprise_big.webm" type="video/webm"></video>|
-|`1401225578`|`desperate`|Gritted teeth|<video width="213" height="160" controls><source src="/assets/tpp/gm/soldier/facial/desperate.webm" type="video/webm"></video>|
-|`2432373368`|`suspects`|Furrowed brow, low open mouth|<video width="213" height="160" controls><source src="/assets/tpp/gm/soldier/facial/suspects.webm" type="video/webm"></video>|
-|`2333752989`|`prick`||<video width="213" height="160" controls><source src="/assets/tpp/gm/soldier/facial/prick.webm" type="video/webm"></video>|
-|`472678494`|`dead`|Open mouth, eyes rolled up and somewhat open|<video width="213" height="160" controls><source src="/assets/tpp/gm/soldier/facial/dead.webm" type="video/webm"></video>|
-|`2020921055`|`dazzle`|Furrowed brow, open mouth frown|<video width="213" height="160" controls><source src="/assets/tpp/gm/soldier/facial/dazzle.webm" type="video/webm"></video>|
-|`2147014128`|`irritated`||<video width="213" height="160" controls><source src="/assets/tpp/gm/soldier/facial/irritated.webm" type="video/webm"></video>|
-|`4233967713`|`smile`|Open-mouth laugh smile|<video width="213" height="160" controls><source src="/assets/tpp/gm/soldier/facial/smile.webm" type="video/webm"></video>|
-|`105229588`|`chuckle`|Smirk|<video width="213" height="160" controls><source src="/assets/tpp/gm/soldier/facial/chuckle.webm" type="video/webm"></video>|
+| `4273958362` | `chork_lp` | Closed eyes, gritted teeth (restraint?) | <video src="/assets/tpp/gm/soldier/facial/chork_lp.webm"></video> |
+| `906448398` | `quest_lp` | | <video src="/assets/tpp/gm/soldier/facial/quest_lp.webm"></video> |
+| `4185159514` | `dying_lp` | Wide gritted teeth and frown in pain, furrowed brow | <video src="/assets/tpp/gm/soldier/facial/dying_lp.webm"></video> |
+| `875969379` | `hold_lp` | | <video src="/assets/tpp/gm/soldier/facial/hold_lp.webm"></video> |
+| `2413225066` | `sleepy_st` | | <video src="/assets/tpp/gm/soldier/facial/sleepy_st.webm"></video> |
+| `2370764116` | `sleepy` | | <video src="/assets/tpp/gm/soldier/facial/sleepy.webm"></video> |
+| `534101553` | `sleepy_ed` | | <video src="/assets/tpp/gm/soldier/facial/sleepy_ed.webm"></video> |
+| `3637848969` | `sleep_lp` | Closed eyes, low open mouth | <video src="/assets/tpp/gm/soldier/facial/sleep_lp.webm"></video> |
+| `942521988` | `storm_lp` | Furrowed brow, mouth open with disgust | <video src="/assets/tpp/gm/soldier/facial/storm_lp.webm"></video> |
+| `2004836561` | `radio_n_lp` | Furrowed brow, slightly open frown | <video src="/assets/tpp/gm/soldier/facial/radio_n_lp.webm"></video> |
+| `1270273108` | `radio_t_lp` | Furrowed brow, low open mouth | <video src="/assets/tpp/gm/soldier/facial/radio_t_lp.webm"></video> |
+| `4189128720` | `normal` | | <video src="/assets/tpp/gm/soldier/facial/normal.webm"></video> |
+| `3540382066` | `relax` | | <video src="/assets/tpp/gm/soldier/facial/relax.webm"></video> |
+| `670785982` | `smoke_st` | | <video src="/assets/tpp/gm/soldier/facial/smoke_st.webm"></video> |
+| `1602722026` | `smoke_lp` | | <video src="/assets/tpp/gm/soldier/facial/smoke_lp.webm"></video> |
+| `450841444` | `smoke_ed` | Mouth open as if blowing out smoke | <video src="/assets/tpp/gm/soldier/facial/smoke_ed.webm"></video> |
+| `995823487` | `damage_l` | Gritted teeth, closed eyes | <video src="/assets/tpp/gm/soldier/facial/damage_l.webm"></video> |
+| `1659817747` | `damage_h` | | <video src="/assets/tpp/gm/soldier/facial/damage_h.webm"></video> |
+| `1177901058` | `faint` | Mouth hanging open, eyelids drooping | <video src="/assets/tpp/gm/soldier/facial/faint.webm"></video> |
+| `3893246598` | `greet` | Open mouth, lifted eyebrows | <video src="/assets/tpp/gm/soldier/facial/greet.webm"></video> |
+| `1225486477` | `surprise` | | <video src="/assets/tpp/gm/soldier/facial/surprise.webm"></video> |
+| `223061766` | `surprise_big` | | <video src="/assets/tpp/gm/soldier/facial/surprise_big.webm"></video> |
+| `1401225578` | `desperate` | Gritted teeth | <video src="/assets/tpp/gm/soldier/facial/desperate.webm"></video> |
+| `2432373368` | `suspects` | Furrowed brow, low open mouth | <video src="/assets/tpp/gm/soldier/facial/suspects.webm"></video> |
+| `2333752989` | `prick` | | <video src="/assets/tpp/gm/soldier/facial/prick.webm"></video> |
+| `472678494` | `dead` | Open mouth, eyes rolled up and somewhat open | <video src="/assets/tpp/gm/soldier/facial/dead.webm"></video> |
+| `2020921055` | `dazzle` | Furrowed brow, open mouth frown | <video src="/assets/tpp/gm/soldier/facial/dazzle.webm"></video> |
+| `2147014128` | `irritated` | | <video src="/assets/tpp/gm/soldier/facial/irritated.webm"></video> |
+| `4233967713` | `smile` | Open-mouth laugh smile | <video src="/assets/tpp/gm/soldier/facial/smile.webm"></video> |
+| `105229588` | `chuckle` | Smirk | <video src="/assets/tpp/gm/soldier/facial/chuckle.webm"></video> |
 
 ![Facial animation key frames](/assets/tpp/gm/soldier/facial/facial_collage.png)
 
@@ -414,11 +401,10 @@ This part of .spch is entirely unused, but it works perfectly well in custom .sp
 
 These are the values used in the .exe to stand in for the callsign voice clips during radio communcation speech labels.
 
-||||||
+| uint | chara | voiceId | desc | text |
 |-|-|-|-|-|
-|uint|chara|voiceId|desc|text|
 ||||||
-||||Normal phase||
+||||**Normal phase**||
 ||||(1) Start (Call for attention & self-identification): ||
 |`78712560`|`cp`|`CSN0100`|CP > Soldier|Patrol, this is CP.|
 |`2386932356`|`enemy`|`CSN0100`|Soldier > CP|CP, this is patrol.|
@@ -442,7 +428,7 @@ These are the values used in the .exe to stand in for the callsign voice clips d
 |`3388597016`|`enemy`|`CEN0020`|Soldier|Out.|
 |`3953815365`|`hq`|`HEN0020`|HQ|Out.|
 ||||||
-||||Caution phase||
+||||**Caution phase**||
 ||||(1) Start (Call for attention & self-identification): ||
 |`6190386`|`cp`|`CSC0100`|CP > Soldier|Patrol, this is CP!|
 |`1774348542`|`enemy`|`CSC0100`|Soldier > CP|CP, this is patrol!|
@@ -466,7 +452,7 @@ These are the values used in the .exe to stand in for the callsign voice clips d
 |`442391802`|`enemy`|`CEC0020`|Soldier|Out!|
 |`662546577`|`hq`|`HEC0020`|HQ|Out!|
 ||||||
-||||Alert phase||
+||||**Alert phase**||
 ||||(1) Start (Call for attention & self-identification): ||
 |`2872943061`|`cp`|`CSA0100`|CP > Soldier|Patrol, this is CP!!|
 |`3495247209`|`enemy`|`CSA0100`|Soldier > CP|CP, CP, this is patrol!!|
@@ -484,5 +470,5 @@ These are the values used in the .exe to stand in for the callsign voice clips d
 |`365330910`|`cp`|`CEA0020`|CP|Out!!|
 |`884595133`|`enemy`|`CEA0020`|Soldier|Out!!|
 ||||||
-||||Transmission cut short.||
+||||**Transmission cut short**||
 |`367198950`|`cp`|`CPR0200`|CP|Patrol, what's wrong? Come in, patrol!|
