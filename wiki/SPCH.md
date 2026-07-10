@@ -347,14 +347,15 @@ This is a list of some animation act ids that can be used by SPCH files.
 | `53671881156558` | | `AskQuestion` |
 | `136070209132692` | | `GiveOrder` |
 | `14066526855038` | | `508960638` |
-| `172297093532226` | | `GiveWarning` |
 | `51841676397009` | | `1421134289` |
-| `128312361409558` | | `544521629` |
-| `227858136100581` | talking with small bit of shake | N/A |
+| `128312361409558` | | `213441558` |
+| `172297093532226` | left hand sign up forward | N/A |
+| `227858136100581` | looks like Conversation1 but skipped first second | N/A |
 | `228398145069710` | right hand "give" gesture | N/A |
 | `228777436589485` | intense tilting right arm point at the eyes | N/A |
 | `272450800457580` | quick left hand "salute" greeting gesture | N/A |
 | `98579340013771` | quick nod, few small nods | N/A |
+| `193206393106895` | right hand sign forward | N/A |
 
 ## Facial animations
 
