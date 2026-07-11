@@ -8,14 +8,14 @@ By default, TPP checks the loaded d3d11.dll before and after it creates necessar
 
 Offsets:
 
-|Version|File (Japanese)|Memory (Japanese)|File (English)|Memory (English)|
-| - | - | - | - | - |
-|1.0.15.3|TBA|0x1402ba1c0|0x2ba642|0x1402bb242|
-|1.0.15.4|TBA|0x1402ba130|TBA|0x1402b9a10|
+|Version|File (Japanese)|Memory (Japanese)|File (English)|Memory (English)|Original JZ|Replace JMP|
+| - | - | - | - | - | - | - |
+|1.0.15.3|`0x2B96CB`|`0x1402ba1c0`|`0x2B9C2B`|`0x1402bb242`|`75 2D`|`EB 2D`|
+|1.0.15.4|`0x2B963B`|`0x1402ba130`|`0x2B90AB`|`0x1402b9a10`|`75 2D`|`EB 2D`|
 
 Using a hex editor, navigate to `mgsvtpp.exe+0x(file offset)` or `0x14(memory offset)`:
 ![Before](/assets/Attaching_graphics_debuggers/BeforeCheckModuleHookFix.png)
 
-and set the following six bytes (`0F 84 1F 04 00 00`, (JZ LAB_1402bb667)) to `48 E9 00 00 00 00` (JMP LAB_1402bb248):
+and set the following six bytes (`0F 84 1F 04 00 00`, (JZ LAB_1402bb667), or Original JZ) to `48 E9 00 00 00 00` (JMP LAB_1402bb248), or Replace JMP:
 
 ![After](/assets/Attaching_graphics_debuggers/AfterCheckModuleHookFix.png)
