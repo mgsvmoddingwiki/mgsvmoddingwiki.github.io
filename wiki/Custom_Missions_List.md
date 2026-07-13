@@ -18,7 +18,7 @@ See [MissionCodes](/MissionCodes#sequence-mission-codes) for vanilla missionCode
 | 13001       | afgh     | CapLagRobin     | [The Phantom Pain (E3 Version)](https://www.nexusmods.com/metalgearsolidvtpp/mods/1245)
 | 13002       | mafr     | CapLagRobin     | [Secure the Hidden Tape](https://www.nexusmods.com/metalgearsolidvtpp/mods/1665)
 | 13005       | afgh     | Ventos          | [Yellow Asset](https://www.nexusmods.com/metalgearsolidvtpp/mods/929)
-| 13050       | mafr     | retali8         | Sahelanthropus Dominion
+| 13050       | shdv     | retali8         | [Sahelanthropus test mission](https://github.com/TheHuntingParty/Tpp_Shln_BossEvents)
 | 13100       | afgh     | Yazed0071       | [Secure the hidden tape (yet again)](https://www.nexusmods.com/metalgearsolidvtpp/mods/1888)
 | 13101       | mafr     | Yazed0071       | [Nuclear Network](https://www.nexusmods.com/metalgearsolidvtpp/mods/1783)
 | 13102       | mafr     | Yazed0071       | [Whispers](https://www.nexusmods.com/metalgearsolidvtpp/mods/1820)
