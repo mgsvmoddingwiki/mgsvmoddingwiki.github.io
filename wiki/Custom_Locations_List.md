@@ -23,3 +23,4 @@ See [Locations](/Locations) for vanilla locationIds. [Infinite Heaven](/Infinite
 | 120          | smpl         | caplagrobin          | Sample empty map
 | 139          | UNSA         | retali8              | [Test Area for NPCs](https://github.com/TheHuntingParty/TPP-sahelanthropus) / [Vehicles](https://www.nexusmods.com/metalgearsolidvtpp/mods/1750)
 | 140          | EXPL         | retali8              | [expl sample map](https://github.com/TheHuntingParty/EXPL-MAP-TPP)
+| 141          | SHDV         | retali8              | [Empty Black dome](https://github.com/TheHuntingParty/Tpp_Shln_BossEvents)
