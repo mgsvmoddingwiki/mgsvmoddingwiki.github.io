@@ -2196,6 +2196,12 @@ blockquote.stub::after {
     text-align: left;
 }
 
+/* For videos manually added as HTML to tables (sans video container) */
+table video {
+    width: 214px;
+    height: auto;
+}
+
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ IMAGES: LIGHTBOX ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
