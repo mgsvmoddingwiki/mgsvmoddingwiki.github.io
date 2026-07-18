@@ -590,6 +590,7 @@ V_TppEquip.SetGunBasic{
   barrelId       = TppEquip.BA_Example,
   ammoId         = TppEquip.AM_Example,
   stockId        = TppEquip.SK_Example,
+  muzzleId       = TppEquip.MZ_None, -- There is still no way to make a custom one yet.
   muzzleOptionId = TppEquip.MO_Example,
   scope1Id       = TppEquip.ST_Example,
   underBarrelId  = TppEquip.UB_Example,
@@ -610,7 +611,7 @@ A row missing `receiverId`, `barrelId`, or `ammoId` is rejected - a weapon
 cannot be assembled without all three. Vanilla part IDs work fine here
 (e.g. `barrelId = TppEquip.BA_10102`).
 
-`weaponGrade` affects weapon **ACTUAL** stats, but the R&D menu grade comes from the Develop
+`weaponGrade` affects weapon **ACTUAL** stats, but the R&D menu grade that comes from the Develop
 row and doesn't actually effect it.
 
 ---
