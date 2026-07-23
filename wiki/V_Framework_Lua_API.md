@@ -41,9 +41,72 @@ Soldiers and hostages may usually be referenced by name or `gameObjectId`.
 | Function | Description |
 |---|---|
 | `V_Fox.FNVHash32(name)` | Returns the FNVHash32 of a Wwise event name. |
-| `V_Fox.SetPickableCountRawByIndex(index, count)` | Changes a pickable locator's raw count for the session. |
-| `V_Fox.GetPickableCountRawByIndex(index)` | Returns a pickable locator's raw count. |
 | `V_Fox.ShowConsole(enabled)` | Shows or hides the log console. |
+
+---
+
+## Pickable
+
+Live editing of pickables placed in the stage (weapons, items and supplies
+lying in the world). Address a pickable either by its locator index (the
+same index domain as `TppPickable.GetLocatorIndex`) or directly by its
+stage locator name.
+
+| Function | Description |
+|---|---|
+| `V_Pickable.SetCountRawByLocatorIndex(index, count)` | Sets a pickable's contained count/ammo (0–4095). |
+| `V_Pickable.GetCountRawByLocatorIndex(index)` | Returns the live count, or `nil`. |
+| `V_Pickable.SetCountRawByLocatorName(name, count)` | Same, addressed by locator name. |
+| `V_Pickable.GetCountRawByLocatorName(name)` | Same, addressed by locator name. |
+| `V_Pickable.SetEquipIdByLocatorIndex(index, equipId)` | Changes which equip the pickable grants (0–2047). |
+| `V_Pickable.GetEquipIdByLocatorIndex(index)` | Returns the pickable's equip id, or `nil`. |
+| `V_Pickable.SetEquipIdByLocatorName(name, equipId)` | Same, addressed by locator name. |
+| `V_Pickable.GetEquipIdByLocatorName(name)` | Same, addressed by locator name. |
+| `V_Pickable.SetInfoByLocatorIndex(index, info)` | Sets any subset of pickable fields from a table. |
+| `V_Pickable.SetInfoByLocatorName(name, info)` | Same, addressed by locator name. |
+| `V_Pickable.GetInfoByLocatorIndex(index)` | Returns the full info table, or `nil`. |
+| `V_Pickable.GetInfoByLocatorName(name)` | Same, addressed by locator name. |
+
+Keys of the `info` table (every key is optional in setters; getters return
+them all plus `locatorIndex`):
+
+| Key | Meaning |
+|---|---|
+| `equipId` | Which equip the pickup grants (0–2047). |
+| `countRaw` | Contained count/ammo added to the player's stock (0–4095). |
+| `secondCountRaw` | Secondary (paired) count, e.g. underslung ammo. |
+| `countMax` | Cap on rounds loaded into the picked-up weapon's magazine. |
+| `secondCountMax` | Secondary magazine cap. |
+| `infoType` | The record's type byte. |
+| `flags` | Raw flags word. |
+
+```lua
+local idx = TppPickable.GetLocatorIndex("wp_loc0001")
+V_Pickable.SetInfoByLocatorIndex(idx, {
+  countRaw = 300,
+  countMax = 300,
+})
+
+V_Pickable.SetInfoByLocatorName("wp_loc0002", {
+  equipId = 44,       -- any equip id, e.g. a TppEquip constant
+  countRaw = 90,
+  countMax = 90,
+})
+
+-- read everything back
+local info = V_Pickable.GetInfoByLocatorIndex(idx)
+if info then
+  V_FrameWork.Log("equip " .. info.equipId .. " count " .. info.countRaw)
+end
+```
+
+Overrides persist for the whole game session and re-apply whenever the
+stage rebuilds its pickables. They are keyed by locator index, so an
+index-based override set on one map also applies to that index on other
+maps. When raising a weapon pickup's ammo, set `countMax` together with
+`countRaw`, otherwise the magazine fill stays clamped at the vanilla
+value. Ammo boxes do not use `countRaw` as a quantity — leave those
+untouched.
 
 ---
 
@@ -115,6 +178,11 @@ V_TppEquip.AddToEquipIdTable({
 Malformed rows are skipped. Valid custom rows are reapplied after the game reloads
 its equip table.
 
+Only weapons may use the `EQP_WP_` name prefix - the allocator routes those names
+into the equip table's weapon id band. The per-boot log line
+`[EquipIdCompression] native occupancy: item band N free of 559, weapon band N free of 89`
+shows the shared budget all installed mods draw from.
+
 ### Weapon-part declarations
 
 Each function creates named constants and returns the assigned value or `false`.
@@ -136,6 +204,24 @@ Each function creates named constants and returns the assigned value or `false`.
 See [V Framework Custom Weapons](/V_Framework_Custom_Weapons) for the complete
 weapon-building guide.
 
+`SetReceiver`'s `receiverParamSetsSound` accepts a root string, a vanilla row
+index, or a table `{ name, middle, event, sup, supEvent }` - `sup` (a root) and
+`supEvent` (an exact event name) pick the **suppressed**-shot sound independently
+of the loud one. See
+[Fire sound](/V_Framework_Custom_Weapons/#fire-sound-receiverparamsetssound)
+for every form.
+
+### Cross-family handling
+
+| Function | Description |
+|---|---|
+| `V_TppEquip.SetWeaponHandling{equipId, familyFrom}` | Makes a custom weapon hold, aim, and reload like the vanilla weapon `familyFrom` while keeping its own model, bullet, damage, and menu category. |
+
+
+Unusable donors are refused with a log message. See
+[Cross-family handling](/V_Framework_Custom_Weapons/#cross-family-handling-setweaponhandling)
+for donor screening, the family support table, and required `.fpk` files.
+
 ---
 
 ## Mother Base Management
@@ -144,6 +230,30 @@ weapon-building guide.
 |---|---|
 | `V_TppMotherBaseManagement.AddToChangeLocationMenu(def)` | Adds a location to the ACC free-roam list. |
 | `V_TppMotherBaseManagement.AddPhotoAdditionalText(rows)` | Adds text to VI photos. |
+
+`AddToChangeLocationMenu` takes a plain array of numeric location codes; each one
+becomes an entry in the ACC change-location menu:
+
+```lua
+V_TppMotherBaseManagement.AddToChangeLocationMenu{
+  40,   -- Gntn
+}
+```
+
+`AddPhotoAdditionalText` takes an array of row tables. `missionCode`, `photoId`,
+and `photoType` are required numbers - a row missing any of them is skipped.
+`targetTypeLangId` is the language-entry name of the text shown on the photo:
+
+```lua
+V_TppMotherBaseManagement.AddPhotoAdditionalText{
+  {
+    missionCode      = 10043,
+    photoId          = 0,
+    photoType        = 0,
+    targetTypeLangId = "example_photo_text",
+  },
+}
+```
 
 ### Develop record state
 
@@ -288,7 +398,7 @@ writes a warning to the log.
 | `GetCassettePlayingTrackId()` | Returns the active track ID. |
 | `PauseCassette(fadeSec)` | Pauses playback. |
 | `ResumeCassette(fadeSec)` | Resumes playback. |
-| `StopCassette(fadeSec, stopByUser)` | Stops playback permanently. |
+| `StopCassette(fadeSec)` | Stops playback permanently. |
 | `IsCassetteSpeakerEnabled()` | Returns speaker-playback state. |
 | `SetCassetteSpeakerEnabled(enabled)` | Enables or disables speaker playback. |
 
@@ -452,6 +562,28 @@ All functions below belong to `V_TppUiCommand`.
 | `SetAnnounceLogSE(label, conditionOrStateId)` | Assigns the sound to an announcement entry. |
 | `UnsetAnnounceLogSE()` | Removes the active override. |
 | `UnregisterAnnounceLogSfx()` | Unregisters the sound label. |
+
+### Mission-select warnings
+
+Add a custom warning line to a mission in the iDroid mission list, keyed by
+mission code. Both are addressed by the numeric mission code (e.g. `11082` =
+Episode 36, `13006` = a side op), take a lang-id key whose text you supply in
+your own lang file, and take an optional color-name string.
+
+| Function | Description |
+|---|---|
+| `SetMissionAcceptWarning(missionCode, langId, color)` | Red warning line in the **"Accept this mission?"** deploy-confirm popup. |
+| `ClearMissionAcceptWarning(missionCode)` | Removes the popup override for one mission. |
+| `SetMissionMenuHelp(missionCode, langId, color)` | Yellow help/caution line at the **bottom of the mission list** (the `[TOTAL STEALTH]` / `[EXTREME]` slot). |
+| `ClearMissionMenuHelp(missionCode)` | Removes the help override for one mission. |
+
+```lua
+-- red accept-popup warning, in a custom color
+V_TppUiCommand.SetMissionAcceptWarning(13006, "MustOwnRockets", "cmn-col-red")
+
+-- yellow mission-list help, default color
+V_TppUiCommand.SetMissionMenuHelp(11082, "MustOwnRockets")
+```
 
 ---
 
@@ -703,6 +835,32 @@ GameObject.SendCommand(
 
 ---
 
+## Interrogation voice
+
+`AssignInterrogationWithVoice` is a native command; V Framework adds one optional
+field, `soundDialogueEvent`, that overrides the Wwise dialogue event played while the
+soldier is interrogated (vanilla plays `DD_vox_ene`).
+
+| Command | Field | Purpose |
+|---|---|---|
+| `AssignInterrogationWithVoice` | `soundDialogueEvent` *(optional)* | Wwise voice event to play during the interrogation. Omit or set `nil` to use the vanilla `DD_vox_ene`. |
+
+`soundDialogueEvent` accepts a Wwise event name (string) or its FNV1-32 hash (number).
+The override is remembered per interrogated command post, so different soldiers can be
+given different voices.
+
+```lua
+GameObject.SendCommand(
+  GameObject.GetGameObjectId("sol_enemyBase_0000"),
+  {
+    id = "AssignInterrogationWithVoice",
+    soundDialogueEvent = "DD_vox_ene", -- name string, or its FNV1-32 hash as a number
+  }
+)
+```
+
+---
+
 ## Accepted command value types
 
 Boolean fields accept:
@@ -739,7 +897,24 @@ See the [Messages guide](https://mgsvmoddingwiki.github.io/Messages/).
 | `HoldupCancelLookToPlayer` | `gameObjectId` | The player aims at a soldier about to cancel a holdup. |
 | `NoticeNoise` | `gameObjectId` | A soldier notices a noise. |
 | `NoticeIndis` | `gameObjectId` | A soldier notices something related to the player. |
+| `AnimalNotice` | `gameObjectId, noticeKind` | Any wildlife animal notices something. |
 | `RequestedHeliTaxi` | `heliId, currentLzHash, destinationLzHash` | A Taxi destination is requested. |
+
+`NoticeNoise` and `NoticeIndis` are **soldiers only** — they come from the soldier
+notice AI, which animals never run. Wildlife uses a single `AnimalNotice` message
+instead, covering every species through one handler.
+
+`noticeKind` says what the animal reacted to:
+
+| Value | Kind | Meaning |
+|---|---|---|
+| `0` | `NearThreat` | Herbivore: something came too close. |
+| `1` | `NoiseAlert` | Herbivore: startled by a noise. |
+| `2` | `NearGameObject` | Wolf or bear: sighted a creature, player, or vehicle. |
+| `3` | `Noise` | Wolf or bear: heard a noise. |
+
+Coverage is **goats, sheep, wolves and bears**. Birds, rats and D-Dog have no
+per-animal notice node and do not fire this message.
 
 ## Radio messages
 
@@ -762,6 +937,23 @@ See the [Messages guide](https://mgsvmoddingwiki.github.io/Messages/).
 
 | Message | Parameters | Fires when |
 |---|---|---|
+| `TimeCigaretteUi` | `playerIndex` | The time-passing cigarette UI becomes visible. |
+| `StartWalkMan` | `trackId, isStartByUser` | A cassette tape starts playing (fresh play or resume). |
+| `StopWalkMan` | `trackId, isStopByUser` | Cassette playback stops. |
+| `PauseWalkMan` | `trackId, isPauseByUser` | Cassette playback is paused. |
+| `SpeakerWalkMan` | `trackId, isEnable, isOnByUser` | The walkman speaker mode is toggled (`isEnable` = the mode being switched to). |
+
+`trackId` is the cassette track id (the same value `V_CassetteCommand.GetTapeTrackId`
+returns). `isXByUser` is `1` when the action came from the in-game walkman UI, and
+`0` when it came from a `V_CassetteCommand` function (`PlayCassetteTapeByTrackId`,
+`StopCassette`, `PauseCassette`, `ResumeCassette`, `SetCassetteSpeakerEnabled`).
+
+## Subtitles messages
+
+| Message | Parameters | Fires when |
+|---|---|---|
 | `SubtitlesEventMessage` | `message` | A `.subp` subtitle uses `[m=myMessage]`. |
+
+`message` is the `StrCode32` hash of the name inside the `[m=…]` tag.
 
 ---

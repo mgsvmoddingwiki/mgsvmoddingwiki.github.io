@@ -113,11 +113,60 @@ V_TppEquip.SetDamage{
 }
 ```
 
-Common flags are `isSniper`, `isShotgun`, `isTranq`, `isStun`, `isExplosive`,
-`isMelee`, `isBlade`, `isFire`, `isWater`, `isElectric`, `isParasite`, `isGas`,
-`isVehicleHit`, and `isPenetrating`.
+Set only what applies. Unspecified values default to `0`.
 
-Set only the flags that apply. Unspecified values default to `0`.
+### Full field list, in vanilla column order
+
+Vanilla `DamageParameterTables.lua` rows are positional arrays of 32 values. The table
+below lists every `SetDamage` field in that same column order, so a vanilla row can be
+transcribed straight down. Column 1 is the attack id itself.
+
+| Col | `SetDamage` field | Native | Notes |
+|----:|---|---|---|
+| 1 | `damageId` | row index | `TppDamage.ATK_*` |
+| 2 | `oldLethalDamageVsSoldier` | +0x06 |  vs soldiers and animals; stored x 0.1. Old name `lethalDamageUI` still accepted |
+| 3 | `oldLethalDamageVsPlayer` | +0x08 |  vs the player, buddies, and player-owned life pools (cbox, decoy, supply crate); stored x 0.1 |
+| 4 | `oldLethalDamageVsVehicle` | +0x0A |  vs breakable vehicles and Sahelanthropus; stored x 0.1 |
+| 5 | `oldStaminaDamageVsSoldier` | +0x0C | legacy stamina vs soldiers; raw u16, clamp to 65535 |
+| 6 | `oldStaminaDamageVsPlayer` | +0x0E | legacy stamina vs player and buddies. |
+| 7 | `blowPower` | +0x10 | knockback impulse. 1000 or above triggers a blow/stagger reaction, below it only a flinch |
+| 8 | `shieldDamage` | +0x12 | shield-breaking power, compared against the engine's shield endurance table |
+| 9 | `injureType` | +0x17 low nibble | `TppDamage.INJ_TYPE_*` |
+| 10 | `injurePart` | +0x17 high nibble | `TppDamage.INJ_PART_*` |
+| 11 | `injureMaxDistance` | +0x18 | metres. The injury is only used below this bullet travel distance; 0 = never. **u8, truncates** |
+| 12 | `injureRate` | +0x19 | injury chance in percent, stored x 2 (200 = 100%). Used only when the hit is lethal |
+| 13 | `isBullet` | +0x14 bit 0 | `0x0001`, Set it on any bullet attack |
+| 14 | `isSniper` | +0x14 bit 1 | `0x0002` |
+| 15 | `isShotgun` | +0x14 bit 2 | `0x0004` |
+| 16 | `isTranq` | +0x14 bit 3 | `0x0008` |
+| 17 | `isStun` | +0x14 bit 4 | `0x0010` |
+| 18 | `isExplosive` | +0x14 bit 5 | `0x0020` |
+| 19 | `isMelee` | +0x14 bit 6 | `0x0040` |
+| 20 | `isBlade` | +0x14 bit 7 | `0x0080` |
+| 21 | `isFire` | +0x14 bit 8 | `0x0100` |
+| 22 | `isParasite` | +0x14 bit 11 | `0x0800` |
+| 23 | `isGas` | +0x14 bit 12 | `0x1000` |
+| 24 | `isVehicleHit` | +0x14 bit 13 | `0x2000` |
+| 25 | `unk25` | +0x14 bit 14 | `0x4000`, unused |
+| 26 | `isElectric` | +0x14 bit 10 | `0x0400` |
+| 27 | `isWater` | +0x14 bit 9 | `0x0200` |
+| 28 | `isPenetrating` | +0x14 bit 15 | `0x8000` |
+| 29 | `damageSource` | +0x16 | `TppDamage.DAM_SOURCE_*` |
+| 30 | `lethalDamage` | +0x00 | |
+| 31 | `staminaDamage` | +0x02 | |
+| 32 | `impactForce` | +0x04 | |
+
+Columns 22 to 28 are **not** in bit order. The engine parser writes bits 11, 12, 13, 14
+and only then doubles back for bits 10 and 9, finishing on bit 15. Read the Native column,
+not the row position, when mapping a flag to its bit.
+
+### Two traps worth knowing
+
+**Non-lethal weapons must set `oldStaminaDamageVsPlayer`.** If `oldStaminaDamageVsSoldier`
+is above zero while `oldStaminaDamageVsPlayer` is zero, the player routes onto the legacy
+path and takes **no stamina damage at all**, while soldiers behave normally. This is why
+every vanilla tranq weapon carries a flat 245 there. A custom tranq that omits it will look
+like it works right up until someone shoots the player with it.
 
 ---
 
@@ -218,8 +267,11 @@ gets a `_m` segment, and whether a sound plays at all. Families
 [`receiverParamSetsSound`](#fire-sound-receiverparamsetssound) - set it to pick any
 sound you want.
 
-> `motionFrom` selects a vanilla animation set, but the matching receiver `.mtar`
-> must also exist in the custom weapon's `.fpk`.<br>
+
+> `motionFrom` copies the `.mtar` file used by the specified receiver, so you must include the correct `.mtar` file in the `.fpk`.
+> The `equipType` in `V_TppEquip.AddToEquipIdTable` must also match the receiver type used by `motionFrom`.
+> For example, if you use `TppEquip.EQP_TYPE_Handgun`, `motionFrom` must reference a handgun receiver. To use a shotgun receiver instead and have your weapon in the handgun menu, you must make the game treat the weapon as `TppEquip.EQP_TYPE_Shotgun`.
+> For more information, see [`SetWeaponHandling`](#cross-family-handling-setweaponhandling).<br>
 {:.important}
 
 ### Fire sound (`receiverParamSetsSound`)
@@ -278,13 +330,30 @@ If the sound is silent, the name didn't resolve - flip `middle`, or try a
 neighbouring root (`ms00` -> `ms01`/`ms02`). Missiles/rockets have no suppressed
 variant, so a suppressor on such a weapon will silence its fire until you remove it.
 
+#### Picking the suppressed sound (`sup` / `supEvent`)
+
+The suppressed shot normally follows the same root: attaching a suppressor plays
+`sfx_w_p_<root>_sup_active` (no `_m` segment). To pick the suppressed sound
+**independently** of the loud one, add `sup` (a root) or `supEvent` (an exact
+event name) to the table form:
+
+```lua
+receiverParamSetsSound = { event = "ar01", supEvent = "sfx_w_p_ar01_sup_active" },
+```
+
+- `sup` - suppressed-sound root; plays `sfx_w_p_<sup>_sup_active`. Use any vanilla
+  weapon's root whose suppressed variant you want.
+- `supEvent` - exact event name for the suppressed shot, hashed verbatim.
+- Both work together with `name`/`middle`/`event` for the loud shot; each side is
+  chosen independently.
+
 #### Playing an exact event name (`event`)
 
 To fire a sound event by its **exact** name - no `sfx_w_p_` wrapping, no `_m` - use
 `event`. The full name is hashed straight into the fire-sound slots:
 
 ```lua
-receiverParamSetsSound = { event = "sfx_w_p_ar01_m_active" },   -- verbatim, no wrapping
+receiverParamSetsSound = { event = "sfx_w_p_ar01_m_active" },
 ```
 
 This is the form to use when you already have a complete event name (e.g. copied from
@@ -329,6 +398,10 @@ V_TppEquip.SetBarrel{
 | `rangeUIMult` | R&D menu range. |
 | `spreadMaxMult` | Maximum bloom. |
 | `percentOverride` | Unknown; copy a suitable vanilla value. |
+
+Multipliers are **not** limited to the engine's native `2.55` ceiling: values like
+`fireRateMult = 5.0` work - the engine applies its part, and the framework applies
+the remainder to the assembled gun at setup.
 
 ---
 
@@ -411,7 +484,7 @@ V_TppEquip.SetBullet{
 | `bulletType` | Normal, spread, blast, shell, water, or airshock. |
 | `blastId` | Explosion ID for explosive projectiles. |
 | `isLethal` | `1` lethal, `0` non-lethal. |
-| `ammoPerShot` | Ammunition consumed per trigger pull. |
+| `ammoPerShot` | Ammunition consumed per trigger pull: `1` to `1023`. Values past the engine's native 255 are fired as chunked re-triggers; a mag running empty stops the burst. |
 
 Each falloff channel uses:
 
@@ -642,6 +715,23 @@ calculated from the configured parts.
 See
 [AddToEquipDevelopTable](/V_Framework_Lua_API/#addtoequipdeveloptable)
 for every optional R&D field.
+
+---
+
+## Cross-family handling (`SetWeaponHandling`)
+
+By default a custom weapon handles like the family its parts imply. With
+`SetWeaponHandling` it can borrow the **hold, aim, and reload behavior of any
+vanilla weapon** while keeping its own identity - model, bullet, damage, stats,
+menu category, and name all stay yours.
+
+```lua
+V_TppEquip.SetWeaponHandling{
+  equipId    = TppEquip.EQP_WP_Example,      -- your weapon
+  familyFrom = TppEquip.EQP_WP_West_sm_010,  -- vanilla weapon to handle like
+}
+```
+Creative stuff can be done with this, like make a handgun that acts like a shotgun
 
 ---
 
