@@ -331,12 +331,15 @@ or a raw camo number from `0-116`.
 A raw `partsType` may be used for head options only. Use `outfit` for variants,
 because several fatigue camos share one parts type.
 
+Head options follow the same rule. Named with `outfit`, they are offered on that
+camo alone; given a raw `partsType`, they are offered on every camo sharing it.
+
 ### Branch fields
 
 | Field | Purpose |
 |---|---|
 | `variants` | Extra variation cells. Maximum 14. |
-| `headOptions` | Heads added to the suit. Maximum 8. |
+| `headOptions` | Heads added to the suit, scoped to the named camo. Maximum 8. |
 | `voiceFpk` | Voice override for the entire suit and player type. |
 
 A branch-level voice override affects the base suit, native variants, custom
