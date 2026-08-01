@@ -937,7 +937,7 @@ per-animal notice node and do not fire this message.
 
 | Message | Parameters | Fires when |
 |---|---|---|
-| `TimeCigaretteUi` | `playerIndex` | The time-passing cigarette UI becomes visible. |
+| `TimeCigaretteUi` | `playerIndex, isShown` | The Phantom Cigar time-skip overlay is shown (`isShown` = 1) or hidden (`isShown` = 0). |
 | `StartWalkMan` | `trackId, isStartByUser` | A cassette tape starts playing (fresh play or resume). |
 | `StopWalkMan` | `trackId, isStopByUser` | Cassette playback stops. |
 | `PauseWalkMan` | `trackId, isPauseByUser` | Cassette playback is paused. |

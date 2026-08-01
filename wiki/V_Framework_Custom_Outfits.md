@@ -64,13 +64,14 @@ A branch missing either field is skipped.
 | `diamondFpk`, `diamondFv2` | Diamond Dogs emblem or overlay assets. |
 | `voiceFpk` | Outfit voice package. |
 | `faceFpk`, `skinFv2` | Branch-level face and skin assets. |
-| `enableArm` | Keep Snake or Avatar's bionic arm. Default: `true`. |
+| `iconFtexPath` | Suit-list icon for this branch. |
+| `enableArm` | Keep Snake or Avatar's bionic arm. Default: `true`. Ignored on `ddMale` and `ddFemale`, where the arm is always off. |
 | `enableHead` | Keep the character head. Default: `true`. |
 | `displayName` / `displayNameHash` | Outfit-cell label. |
 | `camoBonusType` | Vanilla camo profile name or number `0-116`. |
 | `camoBonusValues` | Per-material camo values. |
-| `headOptions` | Available heads. Maximum 8. |
-| `variants` | Additional outfit variations. Maximum 14. (With base one + 1 = 15) |
+| `headOptions` | Available heads. Maximum 120. |
+| `variants` | Additional outfit variations. Maximum 254. (With the base one = 255 cells) |
 
 ```lua
 V_Player.RegisterOutfit({
@@ -105,6 +106,11 @@ none, bandana, infinitebandana, balaclava, spheadgear, hpheadgear
 
 ## Outfit variants
 
+Variants are extra variation cells on the same suit - the alternative appearances
+you cycle through on one outfit entry. They are **not** R&D grades: adding variants
+does not create development levels, and the grade shown in R&D is unrelated to how
+many variants a suit has.
+
 ```lua
 variants = {
   {
@@ -125,14 +131,19 @@ Variant fields:
 | `diamondFpk`, `diamondFv2` | Variant emblem assets. |
 | `voiceFpk` | Variant voice. |
 | `displayName` / `displayNameHash` | Variant label. |
+| `iconFtexPath` | Suit-list icon for this variant. |
 | `default` | Make this the initial variation. |
 | `enableArm`, `enableHead` | Override the branch toggles. |
 | `headOptions` | This variant's own head list. |
 
-Only the model paths and body toggles inherit from the base branch. Other variant
-assets use their own defaults.
+> The icon falls back in order: the variant's `iconFtexPath`, then the branch's,
+> then the `iconFtexPath` in the R&D row. Omit it at every level and the R&D icon
+> is used, exactly as before. This applies to the customize and loadout suit list;
+> the R&D menu always shows its own icon.<br>
+{:.important}
 
-An omitted `headOptions` list means the variant has no selectable heads.
+
+>When `headOptions` list is not used means the variant has no selectable heads.
 
 ---
 
@@ -338,12 +349,21 @@ camo alone; given a raw `partsType`, they are offered on every camo sharing it.
 
 | Field | Purpose |
 |---|---|
-| `variants` | Extra variation cells. Maximum 14. |
-| `headOptions` | Heads added to the suit, scoped to the named camo. Maximum 8. |
+| `variants` | Extra variation cells. Maximum 254. |
+| `headOptions` | Heads added to the suit, scoped to the named camo. Maximum 120. |
 | `voiceFpk` | Voice override for the entire suit and player type. |
+| `enableArm` | `false` hides the bionic arm on this suit. Snake and Avatar only. |
+| `enableHead` | `false` hides the character head on this suit. Snake and Avatar only. |
 
 A branch-level voice override affects the base suit, native variants, custom
 variants, and FOB.
+
+`enableArm` and `enableHead` are only read when you set them, so suits you do not
+touch are unchanged. They apply to `snake` and `avatar` branches only; on `ddMale`
+and `ddFemale` they are ignored, and the bionic arm is always off for those two.
+`enableArm` persists in FOB; `enableHead` reverts to the vanilla head online. A
+suit may attach head or hair geometry that this does not reach, so verify the
+result in game.
 
 ### Vanilla-outfit variant fields
 
