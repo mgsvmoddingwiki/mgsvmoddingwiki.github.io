@@ -139,7 +139,7 @@ If you want you can manually add Github Desktop's git directory to the Windows P
 Then in the window select the *Path* item, click the *Edit* button, then in the new window click the *Add* button and paste in the following directory path as a new entry (replace the `<version number>` in the example with the Github Desktop version, eg. `3.4.2` or whatever the version of Github Desktop is currently installed).
 
 ```
-`%USERPROFILE%\AppData\Local\GitHubDesktop\app-<version number>\resources\app\git\cmd`
+%USERPROFILE%\AppData\Local\GitHubDesktop\app-<version number>\resources\app\git\cmd
 ```
 
 > Note that since the version number in the directory path changes with each Github Desktop update this isn't a very robust approach compared to say installing standalone git for Windows.
