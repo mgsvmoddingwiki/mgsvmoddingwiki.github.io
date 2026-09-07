@@ -1,20 +1,26 @@
 ---
 title: V Framework Custom Weapons
 permalink: /V_Framework_Custom_Weapons/
-tags: [Lua, Reference, Infinite Heaven, Weapons]
+tags: [Lua, Reference, Guides, Infinite Heaven, Weapons, V Framework]
 ---
 
-A custom MGSV weapon is assembled from parts such as a receiver, barrel, magazine,
-bullet, sight, stock, muzzle, laser/light, and underbarrel.
+A custom MGSV weapon is assembled from parts such as a receiver, barrel,
+magazine, bullet, sight, stock, muzzle, laser/light, and underbarrel.
 
-Place all registration calls inside your module's `this.LoadLibraries()`.
+Place all registration calls inside your module's
+`this.LoadLibraries()`.
 
 ## Workflow
 
-1. **Register and declare IDs**
-2. **Configure damage and parts**
-3. **Assemble the weapon with `SetGunBasic`**
-4. **Add an R&D row**
+1. **[Register and declare IDs](#register-and-declare-ids)**
+2. **Configure damage and parts** - [Damage](#damage-setdamage),
+   [Receiver](#receiver-setreceiver), [Fire
+   sound](#fire-sound-receiverparamsetssound),
+   [Barrel](#barrel-setbarrel), [Magazine](#magazine-setmagazine),
+   [Bullet](#bullet-setbullet), and any [optional
+   attachments](#optional-attachments)
+3. **[Assemble with `SetGunBasic`](#assemble-with-setgunbasic)**
+4. **[Add the R&D row](#add-the-rd-row-addtoequipdeveloptable)**
 
 ```lua
 function this.LoadLibraries()
@@ -37,16 +43,21 @@ function this.LoadLibraries()
 end
 ```
 
-> **Beginner option:** reuse vanilla part IDs in `SetGunBasic`, such as
-> `TppEquip.RC_10102` or `TppEquip.BA_10102`. Configure only the parts you want to
-> replace.
+Each custom part name must be created with its matching `Declare*` call
+before it is used by a `Set*` function.
 
-Each custom part name must be created with its matching `Declare*` call before it is
-used by a `Set*` function.
+Each parameter set accepts either:
+
+  - a **number** to reuse a vanilla pool row; or
+  - a **table** to define custom values.
+
+> **Beginner option:** reuse vanilla part IDs in `SetGunBasic`, such as
+> `TppEquip.RC_10102` or `TppEquip.BA_10102`. Configure only the parts
+> you want to replace.
 
 ---
 
-## 1. Register and declare IDs
+## Register and declare IDs
 
 ```lua
 V_TppEquip.RegisterConstantEquipId("EQP_WP_Example")
@@ -65,8 +76,8 @@ V_TppEquip.DeclareBLs     { "BL_Example" }
 V_TppEquip.DeclareDamages { "ATK_Example" }
 ```
 
-`DeclareDamages` creates `TppDamage.ATK_Example`; all other declarations create
-constants under `TppEquip`.
+`DeclareDamages` creates `TppDamage.ATK_Example`; all other declarations
+create constants under `TppEquip`.
 
 Map equip IDs to their model and pack:
 
@@ -91,11 +102,12 @@ V_TppEquip.AddToEquipIdTable{
 }
 ```
 
-See [Equipment](/V_Framework_Lua_API/#equipment) for the complete row format.
+See [Equipment](/V_Framework_Lua_API#equipment) for the complete row
+format.
 
 ---
 
-## 2. Damage
+## Damage (`SetDamage`)
 
 `SetDamage` creates the attack used by the receiver.
 
@@ -117,9 +129,12 @@ Set only what applies. Unspecified values default to `0`.
 
 ### Full field list, in vanilla column order
 
-Vanilla `DamageParameterTables.lua` rows are positional arrays of 32 values. The table
-below lists every `SetDamage` field in that same column order, so a vanilla row can be
-transcribed straight down. Column 1 is the attack id itself.
+Vanilla `DamageParameterTables.lua` rows are positional arrays of 32
+values. The table below lists the `SetDamage` fields that map to those
+columns, in that same column order, so a vanilla row can be transcribed
+straight down. Column 1 is the attack id itself. It is not a complete
+list of `SetDamage` fields - `hitNPC`, used in the example above, has no
+column here.
 
 | Col | `SetDamage` field | Native | Notes |
 |----:|---|---|---|
@@ -156,28 +171,26 @@ transcribed straight down. Column 1 is the attack id itself.
 | 31 | `staminaDamage` | +0x02 | |
 | 32 | `impactForce` | +0x04 | |
 
-Columns 22 to 28 are **not** in bit order. The engine parser writes bits 11, 12, 13, 14
-and only then doubles back for bits 10 and 9, finishing on bit 15. Read the Native column,
-not the row position, when mapping a flag to its bit.
-
 ### Two traps worth knowing
 
-**Non-lethal weapons must set `oldStaminaDamageVsPlayer`.** If `oldStaminaDamageVsSoldier`
-is above zero while `oldStaminaDamageVsPlayer` is zero, the player routes onto the legacy
-path and takes **no stamina damage at all**, while soldiers behave normally. This is why
-every vanilla tranq weapon carries a flat 245 there. A custom tranq that omits it will look
-like it works right up until someone shoots the player with it.
+**The flag columns are not in bit order.** The engine parser writes bits
+11, 12, 13, 14 and only then doubles back for bits 10 and 9, finishing
+on bit 15. Read the Native column, not the row position, when mapping a
+flag to its bit.
+
+**Non-lethal weapons must set `oldStaminaDamageVsPlayer`.** If
+`oldStaminaDamageVsSoldier` is above zero while
+`oldStaminaDamageVsPlayer` is zero, the player routes onto the legacy
+path and takes **no stamina damage at all**, while soldiers behave
+normally. This is why every vanilla tranq weapon carries a flat 245
+there. A custom tranq that omits it will look like it works right up
+until someone shoots the player with it.
 
 ---
 
-## 3. Receiver
+## Receiver (`SetReceiver`)
 
 The receiver controls firing behavior, handling, and the attack ID.
-
-Each parameter set accepts either:
-
-- a **number** to reuse a vanilla pool row; or
-- a **table** to define custom values.
 
 ```lua
 V_TppEquip.SetReceiver{
@@ -229,7 +242,7 @@ V_TppEquip.SetReceiver{
 
 | Field | Purpose |
 |---|---|
-| `fireRate` | It's the fire rate... |
+| `fireRate` | Rounds per minute. |
 | `aimAssistDist` | Aim-assist distance. |
 | `gunAimAdjust` | Auto-aim correction strength. |
 | `effectiveRange` | Runtime effective range. |
@@ -252,121 +265,142 @@ V_TppEquip.SetReceiver{
 
 The main fields are:
 
-- `eqpType`: weapon family
-- `reticleUiId`: HUD reticle
-- `triggerId`: cocking, semi-auto, burst, or full-auto
-- `plusOneChamber`: allows one round in the chamber
+  - `eqpType`: weapon family
+  - `reticleUiId`: HUD reticle
+  - `triggerId`: cocking, semi-auto, burst, or full-auto
+  - `plusOneChamber`: allows one round in the chamber
 
 The remaining flags mainly control model meshes or loading behavior.
 
-`eqpType` also decides two things about your weapon's fire sound: whether the name
-gets a `_m` segment, and whether a sound plays at all. Families
-`Assault/Sniper/Shotgun/Machinegun/GrenadeLauncher/Missile` build the name with `_m`
-(`sfx_w_p_<root>_m_active`); `Handgun` and the rocket family build it without
-(`sfx_w_p_<root>_active`). The `<root>` itself comes from
-[`receiverParamSetsSound`](#fire-sound-receiverparamsetssound) - set it to pick any
-sound you want.
+`eqpType` also shapes your weapon's fire-sound name; the `<root>` it
+wraps comes from
+[`receiverParamSetsSound`](#fire-sound-receiverparamsetssound), which
+has the details.
 
+### Borrowing motion (`motionFrom`)
 
-> `motionFrom` copies the `.mtar` file used by the specified receiver, so you must include the correct `.mtar` file in the `.fpk`.
-> The `equipType` in `V_TppEquip.AddToEquipIdTable` must also match the receiver type used by `motionFrom`.
-> For example, if you use `TppEquip.EQP_TYPE_Handgun`, `motionFrom` must reference a handgun receiver. To use a shotgun receiver instead and have your weapon in the handgun menu, you must make the game treat the weapon as `TppEquip.EQP_TYPE_Shotgun`.
-> For more information, see [`SetWeaponHandling`](#cross-family-handling-setweaponhandling).<br>
+> `motionFrom` copies the `.mtar` file used by the specified receiver,
+> so you must include the correct `.mtar` file in the `.fpk`. The
+> `equipType` in `V_TppEquip.AddToEquipIdTable` must also match the
+> receiver type used by `motionFrom`. For example, if you use
+> `TppEquip.EQP_TYPE_Handgun`, `motionFrom` must reference a handgun
+> receiver. To use a shotgun receiver instead and have your weapon in
+> the handgun menu, you must make the game treat the weapon as
+> `TppEquip.EQP_TYPE_Shotgun`. For more information, see
+> [`SetWeaponHandling`](#cross-family-handling-setweaponhandling).
 {:.important}
 
-### Fire sound (`receiverParamSetsSound`)
+A receiver can also carry animation of its own instead of borrowing any:
+hand clips, gun clips, and per-shot slide, bolt and hammer rows. See
+[Custom gun motion](#custom-gun-motion-setreceivermotion).
 
-`receiverParamSetsSound` is the weapon's fire-sound **name root**, not the full
-event name. The game wraps it: it builds `sfx_w_p_<root>_m_active` (and the enemy
-`sfx_w_e_`, suppressed `_sup`, etc.) around whatever you set. So the root is only the
-middle piece:
+---
+
+## Fire sound (`receiverParamSetsSound`)
+
+`receiverParamSetsSound` is the weapon's fire-sound **name root**, not
+the full event name. The game wraps it: it builds
+`sfx_w_p_<root>_m_active` (and the enemy `sfx_w_e_`, suppressed `_sup`,
+etc.) around whatever you set. So the root is only the middle piece:
 
 ```lua
 receiverParamSetsSound = "ar01",   -- fires sfx_w_p_ar01_m_active, etc.
 ```
 
-> **Common mistake:** passing a full event name here. `"sfx_w_p_ar01_m_active"`
-> becomes `sfx_w_p_`**`sfx_w_p_ar01_m_active`**`_m_active` - which doesn't exist, so
-> the weapon is silent. Pass just `"ar01"`. If you want to name an event exactly as-is
-> (including non-weapon sounds), use the `event` form below.<br>
+> **Common mistake:** passing a full event name here.
+> `"sfx_w_p_ar01_m_active"` becomes
+> `sfx_w_p_`**`sfx_w_p_ar01_m_active`**`_m_active` - which doesn't
+> exist, so the weapon is silent. Pass just `"ar01"`. If you want to
+> name an event exactly as-is (including non-weapon sounds), use the
+> `event` form below.
 {:.important}
 
 It accepts:
 
-- a **string** - the fire-sound root (e.g. `"ar01"`). Vanilla roots are short
-  `<family><NN>` codes: `ar01` (assault), `hg00` (handgun), and so on. Roots up to 7
-  characters ride in the native sound row; longer roots still work (see the table
-  form below);
-- a **number** - reuse an existing vanilla sound row by index; or
-- a **table** `{ name = "root", middle = true|false }` - for full control (below).
+  - a **string** - the fire-sound root (e.g. `"ar01"`). Vanilla roots
+    are short `<family><NN>` codes: `ar01` (assault), `hg00` (handgun),
+    and so on. Roots up to 7 characters ride in the native sound row;
+    longer roots still work (see the table form below);
+  - a **number** - reuse an existing vanilla sound row by index; or
+  - a **table** `{ name = "root", middle = true|false }` - for full
+    control (below).
 
-Pass any vanilla weapon's root here to borrow its fire sound, independent of the
-weapon's part IDs or damage. The gameplay family, recoil, reload, and ballistics
-are untouched.
+Pass any vanilla weapon's root here to borrow its fire sound,
+independent of the weapon's part IDs or damage. The gameplay family,
+recoil, reload, and ballistics are untouched.
 
 By default the `_m` segment and whether a sound plays follow
 `receiverParamSetsSystem.eqpType`: families
-`Assault/Sniper/Shotgun/Machinegun/GrenadeLauncher/Missile` build `sfx_w_p_<root>_m_active`;
-`Handgun` and the rocket family omit the `_m`; families with no sound template are
-silent. So a root from any `_m` family plays on any other `_m`-family weapon with
-just the string form.
+`Assault/Sniper/Shotgun/Machinegun/GrenadeLauncher/Missile` build
+`sfx_w_p_<root>_m_active`; `Handgun` and the rocket family omit the
+`_m`; families with no sound template are silent. So a root from any
+`_m` family plays on any other `_m`-family weapon with just the string
+form.
 
-#### Overriding the `_m` template (table form)
+### Playing an exact event name (`event`)
 
-To use a sound whose name does **not** match your weapon's family - e.g. a no-`_m`
-rocket/missile sound on an Assault-family weapon - pass a table and set `middle`:
+To fire a sound event by its **exact** name - no `sfx_w_p_` wrapping, no
+`_m` - use `event`. The full name is hashed straight into the fire-sound
+slots:
+
+```lua
+receiverParamSetsSound = { event = "sfx_w_p_ar01_m_active" },
+```
+
+This is the form to use when you already have a complete event name
+(e.g. copied from the game's sound data). It also lets you try
+non-weapon sound events. Caveat: the shot is played through the weapon's
+SE emitter, so other weapon/`sfx_*` SE events generally work, but events
+from unrelated subsystems (BGM/`Play_bgm_*`, some UI cues) may not sound
+even with a correct name - they aren't routed through the weapon
+emitter.
+
+### Overriding the `_m` template (table form)
+
+To use a sound whose name does **not** match your weapon's family - e.g.
+a no-`_m` rocket/missile sound on an Assault-family weapon - pass a
+table and set `middle`:
 
 ```lua
 -- an Assault-family AK that fires the missile launch sound (no _m):
 receiverParamSetsSound = { name = "ms00", middle = false },
 ```
 
-- `name` - the fire-sound root (any length; not limited to 7 chars here).
-- `middle` - forces the `_m` segment regardless of `eqpType`: `true` =
-  `sfx_w_p_<root>_m_active`, `false` = `sfx_w_p_<root>_active`. Omit it to follow the
-  weapon's family.
+  - `name` - the fire-sound root (any length; not limited to 7 chars
+    here).
+  - `middle` - forces the `_m` segment regardless of `eqpType`: `true` =
+    `sfx_w_p_<root>_m_active`, `false` = `sfx_w_p_<root>_active`. Omit
+    it to follow the weapon's family.
 
-If the sound is silent, the name didn't resolve - flip `middle`, or try a
-neighbouring root (`ms00` -> `ms01`/`ms02`). Missiles/rockets have no suppressed
-variant, so a suppressor on such a weapon will silence its fire until you remove it.
+If the sound is silent, the name didn't resolve - flip `middle`, or try
+a neighbouring root (`ms00` -> `ms01`/`ms02`). Missiles/rockets have no
+suppressed variant, so a suppressor on such a weapon will silence its
+fire until you remove it.
 
-#### Picking the suppressed sound (`sup` / `supEvent`)
+### Picking the suppressed sound (`sup` / `supEvent`)
 
-The suppressed shot normally follows the same root: attaching a suppressor plays
-`sfx_w_p_<root>_sup_active` (no `_m` segment). To pick the suppressed sound
-**independently** of the loud one, add `sup` (a root) or `supEvent` (an exact
-event name) to the table form:
-
-```lua
-receiverParamSetsSound = { event = "ar01", supEvent = "sfx_w_p_ar01_sup_active" },
-```
-
-- `sup` - suppressed-sound root; plays `sfx_w_p_<sup>_sup_active`. Use any vanilla
-  weapon's root whose suppressed variant you want.
-- `supEvent` - exact event name for the suppressed shot, hashed verbatim.
-- Both work together with `name`/`middle`/`event` for the loud shot; each side is
-  chosen independently.
-
-#### Playing an exact event name (`event`)
-
-To fire a sound event by its **exact** name - no `sfx_w_p_` wrapping, no `_m` - use
-`event`. The full name is hashed straight into the fire-sound slots:
+The suppressed shot normally follows the same root: attaching a
+suppressor plays `sfx_w_p_<root>_sup_active` (no `_m` segment). To pick
+the suppressed sound **independently** of the loud one, add `sup` (a
+root) or `supEvent` (an exact event name) to the table form:
 
 ```lua
-receiverParamSetsSound = { event = "sfx_w_p_ar01_m_active" },
+receiverParamSetsSound = { name = "ar01", supEvent = "sfx_w_p_ar01_sup_active" },
 ```
 
-This is the form to use when you already have a complete event name (e.g. copied from
-the game's sound data). It also lets you try non-weapon sound events. Caveat: the shot
-is played through the weapon's SE emitter, so other weapon/`sfx_*` SE events generally
-work, but events from unrelated subsystems (BGM/`Play_bgm_*`, some UI cues) may not
-sound even with a correct name - they aren't routed through the weapon emitter.
+  - `sup` - suppressed-sound root; plays `sfx_w_p_<sup>_sup_active`. Use
+    any vanilla weapon's root whose suppressed variant you want.
+  - `supEvent` - exact event name for the suppressed shot, hashed
+    verbatim.
+  - Both work together with `name`/`middle`/`event` for the loud shot;
+    each side is chosen independently.
 
 ---
 
-## 4. Barrel
+## Barrel (`SetBarrel`)
 
-The barrel applies multipliers to receiver stats and enables attachment mounts.
+The barrel applies multipliers to receiver stats and enables attachment
+mounts.
 
 ```lua
 V_TppEquip.SetBarrel{
@@ -388,9 +422,10 @@ V_TppEquip.SetBarrel{
 }
 ```
 
-`1.0` is neutral. `barrelParamSetsBase` may also be a vanilla pool index.
+`1.0` is neutral. `barrelParamSetsBase` may also be a vanilla pool
+index.
 
-| Field | Effect |
+| Field | Purpose |
 |---|---|
 | `fireRateMult` | Fire rate. |
 | `gunAimAdjustMult` | Aim adjustment. |
@@ -399,13 +434,13 @@ V_TppEquip.SetBarrel{
 | `spreadMaxMult` | Maximum bloom. |
 | `percentOverride` | Unknown; copy a suitable vanilla value. |
 
-Multipliers are **not** limited to the engine's native `2.55` ceiling: values like
-`fireRateMult = 5.0` work - the engine applies its part, and the framework applies
-the remainder to the assembled gun at setup.
+Multipliers are **not** limited to the engine's native `2.55` ceiling:
+values like `fireRateMult = 5.0` work - the engine applies its part, and
+the framework applies the remainder to the assembled gun at setup.
 
 ---
 
-## 5. Magazine
+## Magazine (`SetMagazine`)
 
 ```lua
 V_TppEquip.SetMagazine{
@@ -429,10 +464,10 @@ A vanilla `EQP_AM_*` or `BL_*` may be reused.
 
 ---
 
-## 6. Bullet
+## Bullet (`SetBullet`)
 
-`SetBullet` controls speed, drop, falloff, penetration, tracer effects, and bullet
-type.
+`SetBullet` controls speed, drop, falloff, penetration, tracer effects,
+and bullet type.
 
 ```lua
 V_TppEquip.SetBullet{
@@ -470,7 +505,7 @@ V_TppEquip.SetBullet{
 }
 ```
 
-### Main fields
+### Base fields (`SetBullet`)
 
 | Field | Purpose |
 |---|---|
@@ -492,8 +527,8 @@ Each falloff channel uses:
 near distance -> far distance -> residual strength
 ```
 
-For example, damage remains full until `damageNear`, fades by `damageFar`, then
-stays at `damageResidual`.
+For example, damage remains full until `damageNear`, fades by
+`damageFar`, then stays at `damageResidual`.
 
 Penetration order:
 
@@ -501,7 +536,7 @@ Penetration order:
 MINIMUM < TRANQ < HANDGUN < RIFLE < SNIPER < AMRIFLE
 ```
 
-### Optional homing bullets
+### Homing bullets (`lockOn`)
 
 Add `lockOn` to a Bullet3 projectile:
 
@@ -512,6 +547,8 @@ lockOn = {
   turnRate = 120,
   minRange = 0,
   maxRange = 100,
+  canLockOnSoldier = true,
+  canLockOnVehicle = false,
 }
 ```
 
@@ -530,22 +567,11 @@ Useful fields:
 | `canLockOnSoldier` | Enable or disable soldier targets. |
 | `canLockOnVehicle` | Enable or disable vehicle targets. |
 
-Example:
+Homing works on Bullet3 weapons such as rifles, pistols, SMGs, MGs, and
+shotguns. It does not replace the separate shell system used by
+launchers.
 
-```lua
-lockOn = {
-  count = 1,
-  time = 0.5,
-  turnRate = 360,
-  canLockOnSoldier = true,
-  canLockOnVehicle = false,
-}
-```
-
-Homing works on Bullet3 weapons such as rifles, pistols, SMGs, MGs, and shotguns.
-It does not replace the separate shell system used by launchers.
-
-### Lock-on HUD files
+#### Lock-on HUD files
 
 For the visible lock marker, add this to the weapon `.fpkd`:
 
@@ -556,15 +582,21 @@ For the visible lock marker, add this to the weapon `.fpkd`:
 Add the lock-marker `.uilb`, `.uif`, and all eight `.uia` files from
 `hud_marker_lockon` to the weapon `.fpk`.
 
-Use `TppEquip.RETICLE_UI_MISSILE` in the receiver only when you also want the
-launcher-style hip-fire reticle.
+Use `TppEquip.RETICLE_UI_MISSILE` in the receiver only when you also
+want the launcher-style hip-fire reticle.
 
 ---
 
-## 7. Muzzle option
+## Optional attachments
 
-`SetMuzzle` controls suppressor or compensator behavior. The model itself is stored
-in the weapon pack.
+Only the receiver, barrel and ammo/magazine are required. Everything
+below is optional - fit a weapon with as many or as few of these parts
+as you like.
+
+### Muzzle option (`SetMuzzle`)
+
+`SetMuzzle` controls suppressor or compensator behavior. The model
+itself is stored in the weapon pack.
 
 ```lua
 V_TppEquip.SetMuzzle{
@@ -581,9 +613,7 @@ V_TppEquip.SetMuzzle{
 | `durability` | Suppressor life in shots; `-1` is infinite. |
 | `suppressor` | `1` suppressor, `0` brake/compensator. |
 
----
-
-## 8. Sight
+### Sight (`SetSight`)
 
 ```lua
 V_TppEquip.SetSight{
@@ -600,12 +630,11 @@ V_TppEquip.SetSight{
 }
 ```
 
-Use `zoom1` to `zoom3` for zoom steps; `0` disables a step. Other fields enable
-the booster, NVG, built-in status, range finder, and bullet-drop display.
+Use `zoom1` to `zoom3` for zoom steps; `0` disables a step. Other fields
+enable the booster, NVG, built-in status, range finder, and bullet-drop
+display.
 
----
-
-## 9. Stock
+### Stock (`SetStock`)
 
 ```lua
 V_TppEquip.SetStock{
@@ -615,13 +644,11 @@ V_TppEquip.SetStock{
 }
 ```
 
-- `spreadRecovery`: higher is better.
-- `movementSway`: lower is steadier.
-- `1.0` is neutral.
+  - `spreadRecovery`: higher is better.
+  - `movementSway`: lower is steadier.
+  - `1.0` is neutral.
 
----
-
-## 10. Laser or flashlight
+### Laser or flashlight (`SetOption`)
 
 ```lua
 V_TppEquip.SetOption{
@@ -635,11 +662,118 @@ V_TppEquip.SetOption{
 }
 ```
 
----
+#### Laser colour
 
-## 11. Underbarrel
+Vanilla lasers are always red. `laserColor` overrides that per option, and
+takes either a single colour or one colour per weapon. Components are
+`0.0`-`1.0`.
 
-An underbarrel reuses a receiver for firing behavior and a magazine for ammunition.
+```lua
+-- named
+V_TppEquip.SetOption{
+  optionId   = TppEquip.LS_Example,
+  isLaser    = 1,
+  laserColor = { r = 0, g = 1, b = 0, a = 0.5 },
+}
+
+-- positional, same thing
+V_TppEquip.SetOption{
+  optionId   = TppEquip.LS_Example,
+  isLaser    = 1,
+  laserColor = { 0, 1, 0, 0.5 },
+}
+
+-- one laser part, a different colour on each gun that mounts it
+V_TppEquip.SetOption{
+  optionId   = TppEquip.LS_Example,
+  isLaser    = 1,
+  laserColor = {
+    default                    = { 1, 0, 0, 0.5 },
+    [TppEquip.EQP_WP_Example1] = { 0, 1, 0, 0.5 },
+    [TppEquip.EQP_WP_Example2] = { 0, 0.4, 1, 0.5 },
+  },
+}
+```
+
+A table whose values are themselves tables is read as the per-weapon form;
+otherwise it is a single colour. `a` is the alpha the beam and the dot are
+drawn with - `0` makes the dot invisible, and the engine's own value is `0.5`.
+
+The colour must be declared alongside `isLaser = 1`. An option without the
+laser flag never reaches the laser code, so its colour is ignored.
+
+#### Laser appearance
+
+These tune the same laser. Every field is optional and independent: omit one
+and the engine's own value is left alone. The values below are the stock ones,
+so the block as written changes nothing.
+
+```lua
+V_TppEquip.SetOption{
+  optionId = TppEquip.LS_Example,
+  isLaser  = 1,
+
+  laserThickness        = 4.0,
+  laserFadeIn           = 8.0,
+  laserOvershoot        = 3.0,
+  laserOvershootBlocked = 0.1,
+
+  laserScrollU          = -0.6,
+  laserScrollV          = 0.2,
+  laserScrollU2         = -0.5,
+  laserScrollV2         = -0.11,
+
+  laserTilingAlong      = 0.2,
+  laserTilingAcross     = 0.8,
+  laserTilingAlong2     = 0.3,
+  laserTilingAcross2    = 1.2,
+
+  laserDotCone          = 0.06,
+  laserDotLuminance     = 600.0,
+  laserDotLuminanceMin  = 1.0,
+  laserExposureMax      = -13.6,
+  laserExposureMin      = -4.0,
+}
+```
+
+| Field | Stock | What it does |
+|---|---|---|
+| `laserThickness` | `4.0` | Beam width. See the note below - this is **not** a world-space size. |
+| `laserFadeIn` | `8.0` | Metres over which the beam ramps up from the muzzle. A beam shorter than this is dimmed overall. |
+| `laserOvershoot` | `3.0` | Metres the beam carries on past its end point and fades out, when it is not hitting anything. |
+| `laserOvershootBlocked` | `0.1` | The same overshoot when the beam does land on something. Keeping it small is what stops the beam poking through walls. |
+| `laserScrollU` / `laserScrollV` | `-0.6` / `0.2` | Texture scroll speed of the first layer, in UV per second. |
+| `laserScrollU2` / `laserScrollV2` | `-0.5` / `-0.11` | The same for the second texture layer. |
+| `laserTilingAlong` | `0.2` | First layer's tiling along the beam, in UV per metre. `0.2` is one repeat every 5 m. |
+| `laserTilingAcross` | `0.8` | First layer's tiling across the beam's width. Barely visible at stock thickness. |
+| `laserTilingAlong2` / `laserTilingAcross2` | `0.3` / `1.2` | The same for the second layer. |
+| `laserDotCone` | `0.06` | Cone angle of the light the dot casts. Widens or tightens the glow, not the dot itself. |
+| `laserDotLuminance` | `600.0` | Dot brightness at the bright end of the exposure range. |
+| `laserDotLuminanceMin` | `1.0` | Dot brightness at the dim end. |
+| `laserExposureMax` / `laserExposureMin` | `-13.6` / `-4.0` | The scene exposure values the two brightnesses are interpolated between. |
+
+Three things worth knowing before tuning:
+
+  - **`laserThickness` is measured on screen, not in the world.** The beam is
+    drawn at a constant pixel width whatever the distance, so it does not get
+    thinner as it goes away from you. It is also silently doubled while night
+    vision is on.
+  - **There is no range setting.** How far the laser reaches is decided by the
+    game when it traces the beam, not by the laser part, so it cannot be set
+    here.
+  - **A non-red laser has no muzzle flare.** The engine only creates the flare
+    when the colour is reddish, and that decision is made once when the laser
+    is built.
+
+Colour and appearance are applied when the laser is created and again every
+frame. One consequence: if you swap weapons mid-mission, the dot follows the
+new weapon's colour but the beam keeps the colour it was built with, because
+the game creates one laser per character rather than one per gun.
+
+### Underbarrel (`SetUnderBarrel`)
+
+An underbarrel reuses a receiver for firing behavior and a magazine for
+ammunition.
 
 ```lua
 V_TppEquip.SetUnderBarrel{
@@ -654,7 +788,7 @@ The receiver and magazine may be vanilla or custom.
 
 ---
 
-## 12. Assemble with `SetGunBasic`
+## Assemble with `SetGunBasic`
 
 ```lua
 V_TppEquip.SetGunBasic{
@@ -675,21 +809,21 @@ V_TppEquip.SetGunBasic{
 
 **Required** fields:
 
-- `weaponId`
-- `receiverId`
-- `barrelId`
-- `ammoId`
+  - `weaponId`
+  - `receiverId`
+  - `barrelId`
+  - `ammoId`
 
-A row missing `receiverId`, `barrelId`, or `ammoId` is rejected - a weapon
-cannot be assembled without all three. Vanilla part IDs work fine here
-(e.g. `barrelId = TppEquip.BA_10102`).
+A row missing `receiverId`, `barrelId`, or `ammoId` is rejected - a
+weapon cannot be assembled without all three. Vanilla part IDs work fine
+here (e.g. `barrelId = TppEquip.BA_10102`).
 
-`weaponGrade` affects weapon **ACTUAL** stats, but the R&D menu grade that comes from the Develop
-row and doesn't actually effect it.
+`weaponGrade` sets the weapon's **actual** stats. The grade shown in the
+R&D menu comes from the Develop row instead, and does not affect them.
 
 ---
 
-## 13. Add the R&D row
+## Add the R&D row (`AddToEquipDevelopTable`)
 
 ```lua
 V_TppMotherBaseManagement.AddToEquipDevelopTable("MyMod:Example", {
@@ -709,36 +843,19 @@ V_TppMotherBaseManagement.AddToEquipDevelopTable("MyMod:Example", {
 })
 ```
 
-This makes the weapon appear in the Mother Base development tree. Its stat bars are
-calculated from the configured parts.
+This makes the weapon appear in the Mother Base development tree. Its
+stat bars are calculated from the configured parts.
 
 See
-[AddToEquipDevelopTable](/V_Framework_Lua_API/#addtoequipdeveloptable)
+[AddToEquipDevelopTable](/V_Framework_Lua_API#addtoequipdeveloptable)
 for every optional R&D field.
-
----
-
-## Cross-family handling (`SetWeaponHandling`)
-
-By default a custom weapon handles like the family its parts imply. With
-`SetWeaponHandling` it can borrow the **hold, aim, and reload behavior of any
-vanilla weapon** while keeping its own identity - model, bullet, damage, stats,
-menu category, and name all stay yours.
-
-```lua
-V_TppEquip.SetWeaponHandling{
-  equipId    = TppEquip.EQP_WP_Example,      -- your weapon
-  familyFrom = TppEquip.EQP_WP_West_sm_010,  -- vanilla weapon to handle like
-}
-```
-Creative stuff can be done with this, like make a handgun that acts like a shotgun
 
 ---
 
 ## Minimal complete example
 
-This example creates a basic assault rifle while reusing vanilla parts where
-possible.
+This example creates a basic assault rifle while reusing vanilla parts
+where possible.
 
 ```lua
 local this = {}
@@ -870,3 +987,236 @@ end
 
 return this
 ```
+
+---
+
+## Cross-family handling (`SetWeaponHandling`)
+
+By default a custom weapon handles like the family its parts imply. With
+`SetWeaponHandling` it can borrow the **hold, aim, and reload behavior
+of any vanilla weapon** while keeping its own identity - model, bullet,
+damage, stats, menu category, and name all stay yours.
+
+```lua
+V_TppEquip.SetWeaponHandling{
+  equipId    = TppEquip.EQP_WP_SkullFace_010,
+  familyFrom = TppEquip.EQP_WP_SP_sg_010,
+}
+```
+
+This allows some creative combinations, such as a handgun that handles
+like a shotgun.
+
+---
+
+## Custom gun motion (`SetReceiverMotion`)
+
+A custom receiver normally borrows the animation of a vanilla one
+through [`motionFrom`](#borrowing-motion-motionfrom) or
+`SetWeaponHandling` above. With `V_TppEquip.SetReceiverMotion` a
+receiver gets animation of its own instead: the hand clips Snake plays,
+the clips the gun model plays, and the per-shot slide, bolt and hammer
+movement. Nothing is borrowed from a vanilla family.
+
+Place the call inside your module's `this.LoadLibraries()`, after the
+`SetReceiver` and `SetGunBasic` calls that declare the receiver and the
+weapons built on it. Build support is limited; see [Current
+limits](#current-limits).
+
+### The three layers
+
+| Layer | Key | What it animates | Where it comes from |
+|---|---|---|---|
+| Player | `playerMotion` | Snake's hands and arms: hold, fire, reload, cock, grip | `.gani` clips inside your player-side `.mtar` |
+| Gun | `weaponMotion` | The gun model itself during a clip: magazine drop, slide release | `.gani` clips inside your gun-side `.mtar` |
+| Part motion | `partMotion` | Slide, bolt and hammer on every shot, and the idle pose | Rows the engine plays natively, no clip needed |
+
+Each layer is optional, but note that a receiver registered here with no
+`partMotion` gets **no** slide or bolt movement at all, not the vanilla
+one.
+
+### Full example
+
+Every path below is a vanilla asset of the hg00 pistol family, so the
+example runs without authoring any archive. The player-side pack is
+mounted straight from the game data. The gun-side archive is not, so
+pack a copy of `hg00_asm.mtar` inside your weapon's own `.fpk` under
+that same path.
+
+```lua
+V_TppEquip.SetReceiverMotion{
+  receiverId = TppEquip.RC_Example,
+
+  playerMotion = {
+    mtar = "/Assets/tpp/motion/mtar/player2/Receiver/pl_rcvr_hg00.mtar",
+    pack = "/Assets/tpp/pack/player/motion/equip/receiver/pl_rcvr_hg00.fpk",
+    clips = {
+      hold        = "/Assets/tpp/motion/SI_game/fani/bodies/snap/snaphg00/snaphg00_s_fre.gani",
+      fire        = "/Assets/tpp/motion/SI_game/fani/bodies/snap/snaphg00/snaphg00_s_fre.gani",
+      cock        = "/Assets/tpp/motion/SI_game/fani/bodies/snap/snaphg00/snaphg00_s_fre.gani",
+      reload      = "/Assets/tpp/motion/SI_game/fani/bodies/snap/snaphg00/snaphg00_s_fre_emp_rld.gani",
+      reloadEmpty = "/Assets/tpp/motion/SI_game/fani/bodies/snap/snaphg00/snaphg00_s_fre_emp_rld.gani",
+      grip        = "/Assets/tpp/motion/SI_game/fani/bodies/snap/snaphg00/snaphg00_s_fre.gani",
+    },
+    oneHand = {
+      hold   = "/Assets/tpp/motion/SI_game/fani/bodies/snap/snapcry/snapcry_s_hag_fre.gani",
+      fire   = "/Assets/tpp/motion/SI_game/fani/bodies/snap/snapcry/snapcry_s_hag_fre.gani",
+      reload = "/Assets/tpp/motion/SI_game/fani/bodies/snap/snapcry/snapcry_s_hag_fre_rld.gani",
+      grip   = "/Assets/tpp/motion/SI_game/fani/bodies/snap/snapcry/snapcry_s_hag_fre.gani",
+    },
+    oneHandCqc = {
+      hold   = "/Assets/tpp/motion/SI_game/fani/bodies/snap/snapcqc/snapcqc_s_chk_fre.gani",
+      fire   = "/Assets/tpp/motion/SI_game/fani/bodies/snap/snapcqc/snapcqc_s_chk_fre.gani",
+      reload = "/Assets/tpp/motion/SI_game/fani/bodies/snap/snapcqc/snapcqc_s_chk_fre_rld.gani",
+      grip   = "/Assets/tpp/motion/SI_game/fani/bodies/snap/snapcqc/snapcqc_s_chk_fre.gani",
+    },
+    horse = {
+      hold   = "/Assets/tpp/motion/SI_game/fani/bodies/snap/snapcry/snapcry_s_hag_fre.gani",
+      fire   = "/Assets/tpp/motion/SI_game/fani/bodies/snap/snapcry/snapcry_s_hag_fre.gani",
+      reload = "/Assets/tpp/motion/SI_game/fani/bodies/snap/snapcry/snapcry_s_hag_fre_rld.gani",
+    },
+  },
+
+  weaponMotion = {
+    mtar  = "/Assets/tpp/motion/mtar/equip/chimera/assemble/hg00_asm.mtar",
+    clips = {
+      reloadEmpty = "/Assets/tpp/motion/SI_game/fani/props/hg00/hg00snap/hg00snap_s_fre_emp_rld.gani",
+    },
+  },
+
+  partMotion = {
+    shoot      = { { "SKL_001_SLIDE",  TppEquip.AXIS_Z_TRANS, TppEquip.MOVE_ROUND,  0, 0.10, -0.033 },
+                   { "SKL_004_HAMMER", TppEquip.AXIS_X_ROT,   TppEquip.MOVE_ONEWAY, 0, 0.05, -62 } },
+    shootLast  = { { "SKL_001_SLIDE",  TppEquip.AXIS_Z_TRANS, TppEquip.MOVE_ONEWAY, 0, 0.05, -0.033 },
+                   { "SKL_004_HAMMER", TppEquip.AXIS_X_ROT,   TppEquip.MOVE_ONEWAY, 0, 0.05, -62 } },
+    poseLoaded = { { "SKL_004_HAMMER", TppEquip.AXIS_X_ROT,   -62 } },
+    poseEmpty  = { { "SKL_001_SLIDE",  TppEquip.AXIS_Z_TRANS, -0.033 },
+                   { "SKL_004_HAMMER", TppEquip.AXIS_X_ROT,   -62 } },
+    casing     = { shoot = true, shootLast = true },
+  },
+}
+```
+
+### Path fields
+
+Every path field accepts either the asset path as a string or the
+finished 64-bit path id written as `"0x"` followed by 16 hex digits. A
+Lua number cannot carry the id and is ignored.
+
+### `receiverId`
+
+The custom receiver declared with `SetReceiver`. Leave `motionFrom` out
+of that receiver; the log line `no motionFrom - anim type defaulted to
+0` is expected for a receiver animated this way. The first
+`SetReceiverMotion` for a receiver gives it a private animation type, so
+the vanilla hand tables never answer for it and only your clips play. A
+second call for the same receiver replaces the clips but does not
+republish part rows that were already published in that session, so
+register everything at boot.
+
+### `playerMotion`
+
+| Field | Purpose |
+|---|---|
+| `mtar` | Archive holding the hand clips. It is added to the player's archive list for every weapon built on this receiver. |
+| `pack` | The `.fpk` that contains that archive. **Required.** Without it the engine never mounts the archive and no hand clip plays. |
+| `clips` | The two-hand set, used in the normal stance. |
+| `oneHand` | Used whenever the engine puts the weapon in one-hand mode, carrying a body for example. Missing fields fall back to `clips`. |
+| `oneHandCqc` | Used in one-hand mode while holding someone in a CQC hold. Missing fields fall back to `oneHand`, then `clips`. |
+| `horse` | Used on horseback. Missing fields fall back to `clips`. Vanilla rides a handgun one-handed, so a handgun gives `horse` the same clips as `oneHand`, as in the example. Rifles and other two-handed weapons use their normal set on horseback and can leave `horse` out. |
+
+### Clip fields
+
+All four sets accept the same fields. A field left out falls through to
+the vanilla selector, which answers nothing for a receiver animated this
+way, except where a fallback is listed.
+
+| Field | When the engine asks for it | Fallback |
+|---|---|---|
+| `hold` | Aim and idle hold. Also answers any request not listed below. | none |
+| `fire` | GunFire | `hold` |
+| `cock` | GunCock, chambering a round after an empty reload or a bolt cycle | `hold` |
+| `reload` | Reload with rounds still in the magazine | none |
+| `reloadEmpty` | Reload with the magazine empty | `reload` |
+| `dualReload` | Reload with a dual magazine fitted | `reload` |
+| `grip` | Support-hand grip, normal and per-category grip selectors | none |
+| `magazineGrip` | Support hand on the magazine | none |
+| `magazineGripDual` | Same, with a dual magazine fitted | `magazineGrip` |
+| `underBarrelGrip` | Grip with an under-barrel attachment fitted | none |
+| `stepReload` | Round-by-round reload, one-handed handguns | none |
+
+Inside `oneHand`, `oneHandCqc` and `horse` only `hold`, `fire`,
+`reload`, `reloadEmpty`, `cock`, `dualReload`, `grip` and `stepReload`
+are consulted. The three magazine and under-barrel grip fields are read
+from the two-hand `clips` only, and `horse.grip` / `horse.stepReload`
+are never used.
+
+### `weaponMotion`
+
+| Field | Purpose |
+|---|---|
+| `mtar` | The gun-side archive: what the gun model does during a clip. It is written into the weapon's motion-entry slot, so the archive must be inside a package the weapon mounts, normally the weapon's own `.fpk` from its equip-id row. A vanilla family archive works too, as in the example, as long as a copy of it is packed in your `.fpk` under the vanilla path. Families with an `_asm` archive: ar00/01/03, hg00/03/05/08/10, sm00/01/02, sg01/04, sr00..03, mg01..03, ms02/03; the others use `chimera/receiver/<family>_default.mtar`. |
+| `clips` | Same field names and requests as the hand clips, but only `hold`, `fire`, `reload`, `reloadEmpty`, `cock` and `dualReload` are reachable on the gun side. |
+
+Leaving a gun clip out means the gun model stays still during that
+action while the hands still play theirs. For the vanilla look, declare
+the gun-side reload clips alongside the hand ones.
+
+### `partMotion`
+
+These rows are appended to the engine's own per-shot part-motion table,
+the same one the vanilla `EquipMotionDataForChimera.lua` fills, so the
+engine plays them natively. Each list takes at most two rows. A third
+row is silently dropped, and rows are positional, without named fields.
+
+| List | Played when |
+|---|---|
+| `shoot` | A normal shot, rounds remaining |
+| `shootLast` | The shot that empties the magazine |
+| `poseLoaded` | Re-applied every idle frame while rounds remain |
+| `poseEmpty` | Re-applied every idle frame while the magazine is empty |
+
+A motion row is `{ bone, axis, moveType, start, end, value }`. A pose
+row is `{ bone, axis, value }`.
+
+| Position | Meaning |
+|---|---|
+| `bone` | Bone name in the receiver model, for example `SKL_001_SLIDE`, `SKL_004_HAMMER`, `SKL_002_BOLT`, `SKL_002_CYLINDER`. The bone must exist in your model. |
+| `axis` | `TppEquip.AXIS_Z_TRANS` moves along the bone's Z in metres. `TppEquip.AXIS_X_ROT` and `TppEquip.AXIS_Z_ROT` rotate in degrees. |
+| `moveType` | `TppEquip.MOVE_ROUND` goes out and comes back. `TppEquip.MOVE_ONEWAY` goes and stays until a pose or the next row moves it. `TppEquip.MOVE_ONEWAY_REV` is the reverse. |
+| `start`, `end` | Seconds after the shot when the movement begins and ends, 0 to 2.55. |
+| `value` | Amplitude from the bone's rest position. |
+
+`casing.shoot` and `casing.shootLast` decide whether a casing is ejected
+on that shot type. Both default to `true`. Revolvers set them `false`.
+
+The vanilla rows are a good starting point. The pistol family uses a 3.3
+cm slide round trip over 0.10 s with the hammer dropping and re-cocking
+over 0.05 s, the assault rifles a 9.2 cm bolt round trip over 0.10 s.
+
+### Reading the log
+
+| Line | Meaning |
+|---|---|
+| `[PartMotionRows] receiverId=N part-motion rows published natively (motions ...)` | Your rows reached the engine table. |
+| `[ChimeraMotion] receiverId=N part-motion row -> donor receiverId=41` | No `partMotion` was published for that receiver, so it got the empty row. |
+| `BoltBone GET-IDX ... -> -1 ... NO BONE BOUND` | A row or clip names a bone your model does not have. |
+| `[ReceiverMotion] equipId=N weapon archive ... bound to its motion-entry slot` | The gun-side archive is in place. |
+| `[ReceiverMotion] WARN: receiverId=N playerMotion.mtar has no pack` | Add `pack`, the hands will play nothing until you do. |
+| `[ReceiverMotion] ERROR: ... hook failed` | The selector hooks did not install, usually a trampoline shortage at boot. |
+
+### Current limits
+
+  - EN 1.0.15.4 and 1.0.15.4a only. The JP and 1.0.15.3 builds have no
+    addresses for these hooks yet.
+  - The support-hand grip chosen at the start of a hold still comes from
+    the engine's built-in default rather than `grip` in some stances.
+  - Horseback clips are wired but have not been verified in game.
+
+---
+
+## See also
+
+  - [V Framework](/V_Framework)
+  - [V Framework Lua API](/V_Framework_Lua_API)
+  - [V Framework Custom Outfits](/V_Framework_Custom_Outfits)
