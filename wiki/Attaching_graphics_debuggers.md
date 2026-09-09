@@ -11,7 +11,11 @@ Offsets:
 |Version|File (Japanese)|Memory (Japanese)|File (English)|Memory (English)|Original JZ|Replace JMP|
 | - | - | - | - | - | - | - |
 |1.0.15.3|`0x2B96CB`|`0x1402ba1c0`|`0x2B9C2B`|`0x1402bb242`|`75 2D`|`EB 2D`|
-|1.0.15.4|`0x2B963B`|`0x1402ba130`|`0x2B90AB`|`0x1402b9a10`|`75 2D`|`EB 2D`|
+|1.0.15.4|`0x2B963B`|`0x1402ba130`|`0x2B90AB`|`0x1402BA612`|`75 2D`|`EB 2D`|
+
+memory pattern / signature for the jz: 
+for (IDA or ghidra or x64dbg) tested with 1.0.15.4 and 1.0.15.3 both English and Japenese executables
+`0F 84 1F 04 00 00 C7 44 24 48 40 00 00 00`
 
 Using a hex editor, navigate to `mgsvtpp.exe+0x(file offset)` or `0x14(memory offset)`:
 ![Before](/assets/Attaching_graphics_debuggers/BeforeCheckModuleHookFix.png)
