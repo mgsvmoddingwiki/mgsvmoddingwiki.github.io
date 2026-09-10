@@ -73,7 +73,7 @@ function Generate-Index {
                     # Capture everything following the metadata and remove some unnecessary sub-strings
                     $body = ($fileContent | Get-ContentAfterMetadata -IsVirtualPage $IsVirtualPage) -replace '`n',' ' -replace '`r',' ' -replace '\s+',' ' -replace '``',''
 
-                    $filePath = $file | Select-String -Pattern '(wiki/.*)' -AllMatches | % { $_.Matches.groups[1] } | % { '/' + $_.Value }
+                    $filePath = $file -replace '\\','/' | Select-String -Pattern '(wiki/.*)' -AllMatches | % { $_.Matches.groups[1] } | % { '/' + $_.Value } # first normalize any Windows paths to match Linux syntax
 
                     $item = [PSCustomObject]@{}
                     ForEach ($entry in $metadata.GetEnumerator()) {
