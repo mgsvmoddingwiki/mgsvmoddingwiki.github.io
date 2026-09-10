@@ -1187,6 +1187,7 @@ what those defaults already are.
 | `minSpeed` | `0` | clamped to `0`..`100`; `0` = engine default | Slowest the missile flies, in the engine's own speed unit. |
 | `maxSpeed` | `0` | clamped to `0`..`100`; `0` = engine default | Fastest the missile flies. Full boost settles here. |
 | `fireVoiceId` | none | clip-name string, or the pre-hashed id as a number | **Optional.** The player shouts this voice clip when the weapon fires, the way the Rocket Arm shouts its line. Omitted means nothing plays. |
+
 ---
 
 ## See also
