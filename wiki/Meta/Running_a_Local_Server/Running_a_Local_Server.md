@@ -19,6 +19,8 @@ In this guide we'll cover how to get a local version of your wiki fork running i
 
 Official Jekyll and Ruby install instructions can be found for Ubuntu [here](https://jekyllrb.com/docs/installation/ubuntu/) (other distro info [here](https://jekyllrb.com/docs/installation/other-linux/)).
 
+For installing git check the relevant install command for your package manager.
+
 If using Linux run the bash (`.sh`) versions of the `install` and `run` scripts mentioned in the steps below.
 
 Since Github Desktop isn't available for Linux you'll have to use an alternative git front-end or just the git CLI, to make the initial fork clone and (optionally but recommended) manage commits.
@@ -45,6 +47,44 @@ Powershell is available in Linux packages but if you don't want to install it ju
     > If you get a Windows SmartScreen message blocking the installer click the underlined *More info* text then click the *Run anyway* button.
 3. At the end of the installer you'll be prompted by default to install the dev components. Confirm and a CMD window will appear. Press `Enter` key to continue when asked.
     - After it states `succeeded` you'll be prompted a second time to press `Enter`. This just exits the CMD window since it's already complete.
+
+---
+
+## Adding git
+
+Git, the open source version control software, is required for the github-metadata plugin used, along with the script that builds the recent wiki changes list. Trying to run the local server without git will error early and exit the run script.
+
+### Installing git for Windows
+
+This is the most common way to add git support.
+
+{% include spoiler-start %}
+
+1. Go to the official git for Windows [download page](https://git-scm.com/install/windows) and click the first download link to get the installer.
+2. Run the installer and click through the defaults. It consumes around 300MB of space.
+    - On the *Choosing the default editor used by Git* it's suggested to choose a GUI text editor if you have one installed and it shows up in the list. In my case I picked *Use Sublime Text* as I have that installed.
+3. On the last step uncheck *View Release Notes* and click *Finish*.
+
+{% include spoiler-end %}
+
+### Using Github Desktop's version of git
+
+If you don't want to install git for Windows above you can alternatively use Github Desktop's own version of git which is already present. However Github Desktop doesn't itself add that version to the Windows PATH environment variables and creates separate versions for each Github Desktop update, which means each time Github Desktop updates you'll have to update the PATH value.
+
+If you don't mind having to update the value periodically then this is perfectly fine, too.
+
+{% include spoiler-start %}
+
+1. Open the Windows start menu and search for `environment` and select *Edit environment variables for your account* (the 'for your account' is important so it's added to the specific account you're logged into).
+
+2. Then in the window select the *Path* item and click the *Edit* button.
+3. In the new window that pops up click the *Add* button and paste in the following directory path as a new entry (replace the `<version number>` in the example with the Github Desktop version, eg. `3.4.2` or whatever the version of Github Desktop is currently installed).
+
+```
+%USERPROFILE%\AppData\Local\GitHubDesktop\app-<version number>\resources\app\git\cmd
+```
+
+{% include spoiler-end %}
 
 ---
 
@@ -100,6 +140,8 @@ You can then submit your changes back to the original wiki as per the [Github De
 
 ## Troubleshooting
 
+- If you get an error when using the run script of `git : The term 'git' is not recognized...`, it means the git binary isn't detected in your environment variables. See the [Adding git](#adding-git) section above to add git to the Windows environment variables.
+
 - Running an older version of Ruby 3 instead of the currently recommended version 3.4.8 will produce errors when trying to use the run script and the window will auto close and the local server won't run. In this case follow the steps in the spoiler below.
 
 {% include spoiler-start title="How to change your installed Ruby version (Windows)" %}
@@ -125,24 +167,3 @@ The run script window should now remain open and the local server work.
     \
     Ie: even if you're already using option 2 of the run script only the first build upon launching the script will run the scripts but not on subsequently detected changes even though Jekyll is still rebuilding the rest of the site.
     {:.note}
-
-- If you get an error when using the run script of `git : The term 'git' is not recognized...`, it means the git binary isn't detected in your environment variables. You can **ignore this** if you don't care about the Recent Changes widget not working as it only affects building that list, the rest of the wiki will still work. Otherwise see the notes in the spoiler below.
-
-{% include spoiler-start title="Notes about git for the building process" %}
-
-You may be wondering why git isn't already in the environment variables when Github Desktop is installed. That's because Github Desktop deliberately doesn't add it to the PATH in case you have a separate git binary installed.
-
-As mentioned though, the only thing git is used for when building the wiki is for the recent changes widget, so if you don't care about that you can ignore the error.
-
-If you want you can manually add Github Desktop's git directory to the Windows PATH so the error doesn't occur by searching the start menu for `environment` and selecting *Edit environment variables for your account*.
-
-Then in the window select the *Path* item, click the *Edit* button, then in the new window click the *Add* button and paste in the following directory path as a new entry (replace the `<version number>` in the example with the Github Desktop version, eg. `3.4.2` or whatever the version of Github Desktop is currently installed).
-
-```
-%USERPROFILE%\AppData\Local\GitHubDesktop\app-<version number>\resources\app\git\cmd
-```
-
-> Note that since the version number in the directory path changes with each Github Desktop update this isn't a very robust approach compared to say installing standalone git for Windows.
-{:.note}
-
-{% include spoiler-end %}
