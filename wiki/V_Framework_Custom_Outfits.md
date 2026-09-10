@@ -68,7 +68,8 @@ A branch missing either field is skipped.
 |---|---|
 | `camoFpk`, `camoFv2` | Camo assets. |
 | `diamondFpk`, `diamondFv2` | Diamond Dogs emblem or overlay assets. |
-| `voiceFpk` | Outfit voice package. |
+| [`voiceFpk`](#outfit-voice) | Outfit voice package. A single path, or a table keyed by voice type. |
+| [`voiceType`](#outfit-voice) | Force the voice the game speaks with while this outfit is worn. |
 | `chickenCapFpk`, `chickenCapFv2` | Chicken Hat assets used while this outfit is worn. |
 | `lilChickCapFpk`, `lilChickCapFv2` | Lil' Chick Hat assets used while this outfit is worn. |
 | `faceFpk`, `skinFv2` | Branch-level face and skin assets. |
@@ -164,7 +165,8 @@ Variant fields:
 | `partsPath`, `fpkPath` | Variant model and package. Inherit the base model when omitted. |
 | `camoFpk`, `camoFv2` | Variant camo assets. |
 | `diamondFpk`, `diamondFv2` | Variant emblem assets. |
-| `voiceFpk` | Variant voice. |
+| [`voiceFpk`](#outfit-voice) | Variant voice package. A single path, or a table keyed by voice type. |
+| [`voiceType`](#outfit-voice) | Variant voice type. Falls back to the branch when omitted. |
 | `chickenCapFpk`, `chickenCapFv2` | Variant Chicken Hat assets. |
 | `lilChickCapFpk`, `lilChickCapFv2` | Variant Lil' Chick Hat assets. |
 | `displayName` | Variant label. |
@@ -330,6 +332,65 @@ stands in for. The engine asks for clips by name inside the archive, so
 a file missing one leaves that animation broken. The practical way to
 build one is to start from the vanilla `.mtar` and edit the clips you
 want to change.
+
+### Outfit voice
+
+```lua
+V_Player.RegisterOutfit({
+  key = "MyMod:MySuit",
+
+  ddMale = {
+    partsPath = "/Assets/tpp/parts/chara/mymod/body.parts",
+    fpkPath   = "/Assets/tpp/pack/mymod/body.fpk",
+
+    voiceFpk  = "/Assets/tpp/pack/mymod/voice_a.fpk",
+    voiceType = "ddmsoldiera",
+  },
+})
+```
+
+#### Voice types
+
+| Player type | Voice | Number |
+|---|---|---|
+| `snake`, `avatar` | `snak` | `0x3CF677C6` |
+| `ddMale` | `ddmsoldiera` | `0x2EED93D9` |
+| `ddMale` | `ddmsoldierb` | `0x2EED93DA` |
+| `ddMale` | `ddmsoldierc` | `0x2EED93DB` |
+| `ddMale` | `ddmsoldierd` | `0x2EED93DC` |
+| `ddFemale` | `ddfsoldiera` | `0x80400AFA` |
+| `ddFemale` | `ddfsoldierb` | `0x80400AF9` |
+| `ddFemale` | `ddfsoldierc` | `0x80400AF8` |
+| `ddFemale` | `ddfsoldierd` | `0x80400AFF` |
+| `ocelot` | `ocelot` | `0x1BF9CBC1` |
+| `quiet` | `quiet` | `0x5D5262DF` |
+
+#### One package per voice
+
+```lua
+V_Player.RegisterOutfit({
+  key = "MyMod:MySuit",
+
+  ddMale = {
+    partsPath = "/Assets/tpp/parts/chara/mymod/body.parts",
+    fpkPath   = "/Assets/tpp/pack/mymod/body.fpk",
+
+    voiceFpk = {
+      ddmsoldiera = "/Assets/tpp/pack/mymod/voice_a.fpk",
+      ddmsoldierb = "/Assets/tpp/pack/mymod/voice_b.fpk",
+      ddmsoldierc = "/Assets/tpp/pack/mymod/voice_c.fpk",
+      ddmsoldierd = "/Assets/tpp/pack/mymod/voice_d.fpk",
+    },
+
+    variants = {
+      { partsPath = "/Assets/tpp/parts/chara/mymod/body_alt.parts",
+        voiceType = "ddmsoldierc" },
+    },
+  },
+})
+```
+
+
 
 ### Outfit R&D row
 

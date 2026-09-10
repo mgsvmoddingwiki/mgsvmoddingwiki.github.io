@@ -186,6 +186,14 @@ V_TppCollection.AddCollection("MyCollect_00", "MyMod:Collect", 185.1, 336.3, 156
 | `V_Player.SetPlayerVoiceFpkPathForType(playerType, fpkPath)` | Loads a custom voice package for a player type. |
 | `V_Player.ClearPlayerVoiceFpkPathForType(playerType)` | Restores one player type's vanilla voice package. |
 | `V_Player.ClearAllPlayerVoiceFpkOverrides()` | Restores all vanilla player voices. |
+| `V_Player.SetPlayerVoiceTypeForType(playerType, voiceType)` | Forces the voice a player type speaks with. `voiceType` is a name such as `"ddmsoldiera"` or its number. |
+| `V_Player.ClearPlayerVoiceTypeForType(playerType)` | Restores one player type's normal voice. |
+| `V_Player.ClearAllPlayerVoiceTypeOverrides()` | Restores all normal player voices. |
+
+The package and the voice type have to agree, or the package loads
+silent. The voice type names and numbers, and the per-voice `voiceFpk`
+table, are covered under
+[Outfit voice](/V_Framework_Custom_Outfits#outfit-voice).
 
 ### Energy Wall
 
@@ -399,10 +407,20 @@ for the full description.
 
 | Function | Description |
 |---|---|
-| `V_TppEquip.SetReceiverMotion{receiverId, playerMotion, weaponMotion, partMotion}` | Gives a custom receiver its own hand clips, gun clips and per-shot slide, bolt and hammer rows instead of borrowing a vanilla family. |
+| `V_TppEquip.SetReceiverMotion{receiverId, playerMotion, weaponMotion, partMotion}` | Gives a custom receiver its own hand clips, gun clips and per-shot slide, bolt and hammer rows instead of borrowing from a vanilla weapon. |
 
 Every field is documented in [Custom gun
 motion](/V_Framework_Custom_Weapons#custom-gun-motion-setreceivermotion).
+
+### Remote-controlled missile
+
+| Function | Returns | Description |
+|---|---|---|
+| `V_TppEquip.SetRemoteMissile{receiverId \| equipId, ...}` | - | Makes a weapon's shell steerable like a rocket arm. |
+| `V_TppEquip.AbortRemoteMissile()` | - | Ends the current flight and gives the camera back. |
+| `V_TppEquip.IsRemoteMissileFlying()` | `boolean` | Whether a steerable missile is in the air. |
+
+Only `equipId`/`receiverId  ` is required.
 
 ---
 
@@ -602,6 +620,10 @@ V_TppMotherBaseManagement.SetDataBaseDisplay{
   docImage    = "/Assets/tpp/ui/texture/Resource/keyitem/image/ui_kit_devdata_sr.ftex",
   tab         = V_TppDataBase.TAB_BLUEPRINT,
 }
+
+TppTerminal.BLUE_PRINT_LANG_ID[bpId] = "langId_name"
+TppTerminal.keyItemAnnounceLogTable[bpId] = "langId_name"
+TppTerminal.keyItemRewardTable[bpId] = "langId_name"
 ```
 
 | Field | Purpose |
@@ -868,19 +890,31 @@ All functions below belong to `V_TppUiCommand`.
 
 | Function | Description |
 |---|---|
-| `SetLoadingSplashMainTexturePath(path)` | Sets the main loading image. |
-| `SetLoadingSplashBlurTexturePath(path)` | Sets the blurred loading image. |
-| `ClearLoadingSplashTextures()` | Restores loading textures. |
-| `SetMissionTelopSplashTexturePath(path)` | Sets the Mission Telop texture. |
-| `UnsetMissionTelopSplashTexturePath()` | Restores the Mission Telop texture. |
-| `SetGameOverSplashMainTexturePath(path)` | Sets the main Game Over image. |
-| `SetGameOverSplashBlurTexturePath(path)` | Sets the blurred Game Over image. |
-| `ClearGameOverSplashTextures()` | Restores Game Over textures. |
-| `SetRewardPopupBgTexturePath(path, missionCode)` | Sets the mission-reward popup background. |
-| `ClearRewardPopupBgTexture(missionCode)` | Restores the reward popup background. |
+| `SetLoadingSplashMainTexturePath(path, missionCode)` | Sets the main loading image. |
+| `SetLoadingSplashBlurTexturePath(path, missionCode)` | Sets the blurred loading image. |
+| `ClearLoadingSplashTextures(missionCode)` | Restores the loading textures. |
+| `SetMissionTelopSplashTexturePath(path, missionCode)` | Sets the Mission Telop texture. Returns a boolean: `false` means `path` was empty and nothing was set. |
+| `UnsetMissionTelopSplashTexturePath(missionCode)` | Restores the Mission Telop texture. |
+| `SetGameOverSplashMainTexturePath(path, missionCode)` | Sets the main Game Over image. |
+| `SetGameOverSplashBlurTexturePath(path, missionCode)` | Sets the blurred Game Over image. |
+| `ClearGameOverSplashTextures(missionCode)` | Restores the Game Over textures. |
 
-`missionCode` is optional on both. Omitted or `0` applies to every
-mission; otherwise the override is scoped to that mission alone.
+`missionCode` is optional on every function above, but it does not mean
+the same thing to a setter as it does to a clear.
+
+**Setting.** Omit it, or pass `0`, and you set the **global default**.
+That is a fallback, not a blanket: a mission that has its own entry keeps
+using that entry, because a per-mission texture always wins over the
+global one. Pass a mission code to set that mission's entry.
+
+**Clearing.** Omit it, or pass `0`, and `ClearLoadingSplashTextures`,
+`ClearGameOverSplashTextures` and `UnsetMissionTelopSplashTexturePath`
+drop the global default **and every per-mission entry** with it. Pass a
+mission code to clear only that mission and leave the rest standing.
+
+A path is hashed as given. The Mission Telop path has `.ftex` appended
+when it does not already end in it; the loading and Game Over paths do
+not, so pass those exactly as the asset is named.
 
 ### Equipment icons
 

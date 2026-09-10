@@ -1031,9 +1031,6 @@ limits](#current-limits).
 | Gun | `weaponMotion` | The gun model itself during a clip: magazine drop, slide release | `.gani` clips inside your gun-side `.mtar` |
 | Part motion | `partMotion` | Slide, bolt and hammer on every shot, and the idle pose | Rows the engine plays natively, no clip needed |
 
-Each layer is optional, but note that a receiver registered here with no
-`partMotion` gets **no** slide or bolt movement at all, not the vanilla
-one.
 
 ### Full example
 
@@ -1097,23 +1094,6 @@ V_TppEquip.SetReceiverMotion{
 }
 ```
 
-### Path fields
-
-Every path field accepts either the asset path as a string or the
-finished 64-bit path id written as `"0x"` followed by 16 hex digits. A
-Lua number cannot carry the id and is ignored.
-
-### `receiverId`
-
-The custom receiver declared with `SetReceiver`. Leave `motionFrom` out
-of that receiver; the log line `no motionFrom - anim type defaulted to
-0` is expected for a receiver animated this way. The first
-`SetReceiverMotion` for a receiver gives it a private animation type, so
-the vanilla hand tables never answer for it and only your clips play. A
-second call for the same receiver replaces the clips but does not
-republish part rows that were already published in that session, so
-register everything at boot.
-
 ### `playerMotion`
 
 | Field | Purpose |
@@ -1126,10 +1106,6 @@ register everything at boot.
 | `horse` | Used on horseback. Missing fields fall back to `clips`. Vanilla rides a handgun one-handed, so a handgun gives `horse` the same clips as `oneHand`, as in the example. Rifles and other two-handed weapons use their normal set on horseback and can leave `horse` out. |
 
 ### Clip fields
-
-All four sets accept the same fields. A field left out falls through to
-the vanilla selector, which answers nothing for a receiver animated this
-way, except where a fallback is listed.
 
 | Field | When the engine asks for it | Fallback |
 |---|---|---|
@@ -1145,22 +1121,6 @@ way, except where a fallback is listed.
 | `underBarrelGrip` | Grip with an under-barrel attachment fitted | none |
 | `stepReload` | Round-by-round reload, one-handed handguns | none |
 
-Inside `oneHand`, `oneHandCqc` and `horse` only `hold`, `fire`,
-`reload`, `reloadEmpty`, `cock`, `dualReload`, `grip` and `stepReload`
-are consulted. The three magazine and under-barrel grip fields are read
-from the two-hand `clips` only, and `horse.grip` / `horse.stepReload`
-are never used.
-
-### `weaponMotion`
-
-| Field | Purpose |
-|---|---|
-| `mtar` | The gun-side archive: what the gun model does during a clip. It is written into the weapon's motion-entry slot, so the archive must be inside a package the weapon mounts, normally the weapon's own `.fpk` from its equip-id row. A vanilla family archive works too, as in the example, as long as a copy of it is packed in your `.fpk` under the vanilla path. Families with an `_asm` archive: ar00/01/03, hg00/03/05/08/10, sm00/01/02, sg01/04, sr00..03, mg01..03, ms02/03; the others use `chimera/receiver/<family>_default.mtar`. |
-| `clips` | Same field names and requests as the hand clips, but only `hold`, `fire`, `reload`, `reloadEmpty`, `cock` and `dualReload` are reachable on the gun side. |
-
-Leaving a gun clip out means the gun model stays still during that
-action while the hands still play theirs. For the vanilla look, declare
-the gun-side reload clips alongside the hand ones.
 
 ### `partMotion`
 
@@ -1190,29 +1150,43 @@ row is `{ bone, axis, value }`.
 `casing.shoot` and `casing.shootLast` decide whether a casing is ejected
 on that shot type. Both default to `true`. Revolvers set them `false`.
 
-The vanilla rows are a good starting point. The pistol family uses a 3.3
-cm slide round trip over 0.10 s with the hammer dropping and re-cocking
-over 0.05 s, the assault rifles a 9.2 cm bolt round trip over 0.10 s.
+---
 
-### Reading the log
+## Remote-controlled missile (`SetRemoteMissile`)
 
-| Line | Meaning |
-|---|---|
-| `[PartMotionRows] receiverId=N part-motion rows published natively (motions ...)` | Your rows reached the engine table. |
-| `[ChimeraMotion] receiverId=N part-motion row -> donor receiverId=41` | No `partMotion` was published for that receiver, so it got the empty row. |
-| `BoltBone GET-IDX ... -> -1 ... NO BONE BOUND` | A row or clip names a bone your model does not have. |
-| `[ReceiverMotion] equipId=N weapon archive ... bound to its motion-entry slot` | The gun-side archive is in place. |
-| `[ReceiverMotion] WARN: receiverId=N playerMotion.mtar has no pack` | Add `pack`, the hands will play nothing until you do. |
-| `[ReceiverMotion] ERROR: ... hook failed` | The selector hooks did not install, usually a trampoline shortage at boot. |
+`V_TppEquip.SetRemoteMissile` Turns a weapon's shell steerable like a rocket arm.
 
-### Current limits
+```lua
+V_TppEquip.SetRemoteMissile{
+    receiverId       = TppEquip.RC_Nikita_010,
+    maxFlightSeconds = 20,
+    maxRange         = 0,
+    cameraDistance   = 4.0,
+    cameraHeight     = 0.0,
+    minSpeed         = 0,
+    maxSpeed         = 0,
+}
+```
 
-  - EN 1.0.15.4 and 1.0.15.4a only. The JP and 1.0.15.3 builds have no
-    addresses for these hooks yet.
-  - The support-hand grip chosen at the start of a hold still comes from
-    the engine's built-in default rather than `grip` in some stances.
-  - Horseback clips are wired but have not been verified in game.
+Give it **exactly one key**, `receiverId` or `equipId`.
 
+Every other field has a working default, and the call above spells out
+what those defaults already are.
+
+### Full field list
+
+| Field | Default | Accepted | Purpose |
+|---|---|---|---|
+| `receiverId` | - | must be `> 0` | **One key required.** Every weapon whose `SetGunBasic` declares this receiver fires a steerable shell. |
+| `equipId` | - | must be `> 0` | **One key required.** Binds the spec to a single weapon equip instead of a whole receiver. |
+| `attackId` | none | `1`..`1023` | **Optional.** Charges the blast and the direct hit to this damage row instead of the one the receiver carries. Omitted, nothing is written and the receiver's own id is used. |
+| `maxFlightSeconds` | `20` | clamped to `1`..`90` | How long the missile may fly before control is handed back. |
+| `maxRange` | `0` | clamped to `0`..`100000`; `0` = unlimited | Straight-line metres from the launch point. |
+| `cameraDistance` | `4.0` | clamped to `0`..`50` | Chase camera sits behind the missile. |
+| `cameraHeight` | `0.0` | clamped to `-50`..`50` | Chase camera sits above (positive) or below (negative) the missile. |
+| `minSpeed` | `0` | clamped to `0`..`100`; `0` = engine default | Slowest the missile flies, in the engine's own speed unit. |
+| `maxSpeed` | `0` | clamped to `0`..`100`; `0` = engine default | Fastest the missile flies. Full boost settles here. |
+| `fireVoiceId` | none | clip-name string, or the pre-hashed id as a number | **Optional.** The player shouts this voice clip when the weapon fires, the way the Rocket Arm shouts its line. Omitted means nothing plays. |
 ---
 
 ## See also
