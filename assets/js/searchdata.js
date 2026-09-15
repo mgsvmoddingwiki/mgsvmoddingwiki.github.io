@@ -1348,35 +1348,6 @@ function regexGetMatchIndices(string, pattern) {
     return indices
 }
 
-function cleanQuery(query, exclusionArray) {
-    exclusionArray.forEach(exclusion => {
-        const escapedExclusion = regexEscapeString(exclusion),
-              regex = new RegExp(`!(?:"${escapedExclusion}"|${escapedExclusion})`, 'g'); // matches double quotes or sans, prefixes exclamation mark for the pattern since they're stripped from the input array
-        query = query.replaceAll(regex, '');
-      });
-
-    return stripOperators(query)
-}
-
-function stripOperators(string) {
-    const tokenRegex = /"[^"]*"|\S+/g, // match either double-quoted substring or a non-space substring
-          tokens = string.match(tokenRegex) || [];
-
-    const processedTokens = tokens.map(token => {
-        if (token.startsWith('"') && token.endsWith('"')) {
-            token = token.replace(/^"(\^)/, '"'); // remove `^` if appears after opening quote
-            token = token.replace(/\$(?="$)/, ''); // remove `$` if appears before  closing quote
-        } else {
-            token = token.replace(/^\^/, '').replace(/\$/, ''); // otherwise remove chars if they appear in their leading/trailing positions
-        }
-        token = token.replaceAll('|',''); // remove pipe characters as fuse.js seems to handle them as OR operators even within doublequoted tokens
-        token = token.replaceAll(/\s+/g,' '); // collapse consecutive whitespace
-        return token
-    });
-
-    return processedTokens.join(' ')
-}
-
 // Expand each string match by n length on both sides for context. If near start/end expand from other side.
 function matchExpandContext(indices, contextExtraLength, stringLength) {
     const extra = contextExtraLength;
