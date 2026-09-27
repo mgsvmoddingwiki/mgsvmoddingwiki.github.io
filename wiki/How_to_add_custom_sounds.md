@@ -22,7 +22,7 @@ we actually do anything let's go over a checklist.
     access location, preferably within the workstation folder.
 4.  Have
     [Wwise 2015.1.9](https://archive.org/details/wwise-2015.1.9)
-    downloaded. (This requires more depth and will be explained below)
+    downloaded. While The Phantom Pain internally uses is Wwise 2013.2.9, this guide is written with 2015.1.9 in mind. Both **should** be compatible, for what we're doing (This requires more depth and will be explained below)
 5.  Have [Snakebite Mod
     Manager](https://www.nexusmods.com/metalgearsolidvtpp/mods/106)
     downloaded and installed.
