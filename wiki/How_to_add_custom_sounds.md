@@ -76,7 +76,7 @@ guide.
 
 **<big>Downloading Wwise:</big>**
 
-When you try and download Wwise 2015.1.9 from their website, it'll likely prompt you to make an account and sign in, then you'll find out that those rat bastards decided to remove the installer from the website. You're either gonna have to use [Wwise 2013.2.9](https://www.nexusmods.com/witcher3/mods/3234), or this [installer](https://archive.org/details/wwise-2015.1.9) from archive.org. I can't comment on how safe the archive.org installer is, so you're own your own. ¯\_(ツ)_/¯ The guide was designed with Wwise 2015.1.9 in mind. If you're running the archive.org installer, you'll have to first run "Authoring_Data.msi", then "Authoring_x64.msi", then "Wwise_v2015.1.9_Setup.exe" **offline**. 
+When you try and download Wwise 2015.1.9 from their website, it'll likely prompt you to make an account and sign in, then you'll find out that they decided to remove the installer from the website. You're either gonna have to use [Wwise 2013.2.9](https://www.nexusmods.com/witcher3/mods/3234), or this [installer](https://archive.org/details/wwise-2015.1.9) from archive.org. I can't comment on how safe the archive.org installer is, so you're own your own. ¯\_(ツ)_/¯ The guide was designed with Wwise 2015.1.9 in mind. If you're running the archive.org installer, you'll have to first run "Authoring_Data.msi", then "Authoring_x64.msi", then "Wwise_v2015.1.9_Setup.exe" **offline**. 
 
 ## **Step 1: Find a sound you want to add**
 
