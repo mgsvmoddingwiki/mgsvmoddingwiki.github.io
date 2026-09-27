@@ -21,7 +21,7 @@ we actually do anything let's go over a checklist.
     tools](https://www.scampers.org/steve/sms/other.htm) in an easy to
     access location, preferably within the workstation folder.
 4.  Have
-    [Wwise 2015.1.9](https://www.audiokinetic.com/downloads/previous/)
+    [Wwise 2015.1.9](https://archive.org/details/wwise-2015.1.9)
     downloaded. (This requires more depth and will be explained below)
 5.  Have [Snakebite Mod
     Manager](https://www.nexusmods.com/metalgearsolidvtpp/mods/106)
@@ -76,33 +76,7 @@ guide.
 
 **<big>Downloading Wwise:</big>**
 
-When you try and download Wwise 2015.1.9 from their website, it'll
-likely prompt you to make an account and sign in, unfortunately to avoid
-legal altercations you're gonna have to do that. Make an account and
-sign in and it should take you [to this
-page](https://www.audiokinetic.com/download/):
-![](/assets/Wwise%20home%20screen.png){:.thumb width="524px"} Using the
-image on above as a guide, click on "older versions", alternatively
-click [here](https://www.audiokinetic.com/downloads/previous/).
-![](/assets/Wwise%20shit2.png){:.thumb width="522px"}
-
-It should now take you to the page in the above screenshot. Download
-"Windows Web Installer". Then click "Offline Setup for windows" to
-expand the category and download "Wwise Authoring (64-bit)" "Wwise
-Authoring Data" and "VC 2013 Redistributable (64-bit)". You may have the
-"VC 2013" file installed already but just download and run it anyways to
-be sure.
-
-Next step is to run all these files one at a time **except** the
-"windows web installer" that is last, because it will run a check if you
-have all these components installed.
-
-If you have all those parts installed then here is the kicker. You need
-to now turn off your internet and run the installer. Otherwise it will
-try and download the files and fail and kick you out.
-
-Once you have Wwise installed then you can turn the internet back on and
-move on. This is the hardest part of the process.
+When you try and download Wwise 2015.1.9 from their website, it'll likely prompt you to make an account and sign in, then you'll find out that those rat bastards decided to remove the installer from the website. You're either gonna have to use [Wwise 2013.2.9](https://www.nexusmods.com/witcher3/mods/3234), or this [installer](https://archive.org/details/wwise-2015.1.9) from archive.org. I can't comment on how safe the archive.org installer is, so you're own your own. ¯\_(ツ)_/¯ The guide was designed with Wwise 2015.1.9 in mind. If you're running the archive.org installer, you'll have to first run "Authoring_Data.msi", then "Authoring_x64.msi", then "Wwise_v2015.1.9_Setup.exe" **offline**. 
 
 ## **Step 1: Find a sound you want to add**
 
