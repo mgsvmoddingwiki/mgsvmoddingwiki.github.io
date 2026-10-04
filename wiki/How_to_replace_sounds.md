@@ -1,7 +1,9 @@
 ---
-title: How to add custom sounds
-permalink: /How_to_add_custom_sounds/
+title: How to replace sounds
+permalink: /How_to_replace_sounds/
 tags: [Guides, Sound]
+redirect_from:
+    - /How_to_add_custom_sounds/
 ---
 
 In this article I'll be explaining how to change sounds in MGSV. This
