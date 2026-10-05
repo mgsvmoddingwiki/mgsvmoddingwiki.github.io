@@ -57,8 +57,7 @@ LOD faces for custom models.
 
 ### Game Animations
 
-The .gani format has almost no public documentation, meaning custom
-animations cannot be created. The other chunks of data contained by
+The .gani format has almost no public documentation; despite this [a tool](https://github.com/mctrollin/fox_engine_mtar_tools_blender) has been made to import, and modify gani files, however there is no user friendly guide on how it should be used. The other chunks of data contained by
 .mtar files are also undocumented (.trk, .exchnk, .enchnk), making
 editing them infeasible as well.
 
