@@ -46,7 +46,7 @@ permalink: /Guides/
     - [Textures](/Textures)
 - ## Sound
     - [Creating a Custom Sound Bank](/Creating_a_Custom_Sound_Bank)
-    - [How to add custom sounds](/How_to_add_custom_sounds)
+    - [How to replace sounds](/How_to_replace_sounds)
     - [How To Find & Change Audio Files](/How_To_Find_&_Change_Audio_Files)
     - [How to replace sortie prep music in less than five minutes](/How_to_replace_sortie_prep_music_in_less_than_five_minutes)
     - [Sound Codes](/Sound_Codes)

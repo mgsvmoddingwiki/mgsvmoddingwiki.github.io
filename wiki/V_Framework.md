@@ -1,55 +1,54 @@
 ---
 title: V Framework
 permalink: /V_Framework/
-tags: [Lua, Tools, Infinite Heaven]
+tags: [Lua, Tools, Infinite Heaven, V Framework]
 ---
 
 {% include infobox dev="Yazed0071" site="https://www.nexusmods.com/metalgearsolidvtpp/mods/2486" download="https://www.nexusmods.com/metalgearsolidvtpp/mods/2486?tab=files" sourcecode="https://github.com/Yazed0071/V_Framework" %}
 
-V Framework is a modding framework that "breaks the wall" between Lua and
-the game's executable. It loads as an [Infinite
-Heaven](/Infinite_Heaven) module and exposes native Fox Engine
-features - UI, sound, soldiers, bosses and vehicles - to Lua scripts that
-the game never opened up to modding.
+V Framework is an [Infinite Heaven](/Infinite_Heaven) module that gives
+Lua access to UI, sound, soldiers, bosses and vehicles.
 
-It ships with a handful of automatic fixes and a library of ready-made
-Lua APIs you can call from your own missions and mods, without touching a
-single memory address.
+## Documentation
+
+  - **[Lua API](/V_Framework_Lua_API)** - functions, DoMessages,
+    SendCommands and constants.
+  - **[Custom Weapons](/V_Framework_Custom_Weapons)** - build a weapon
+    from parts.
+  - **[Custom Outfits](/V_Framework_Custom_Outfits)** - build an outfit
+    from a body model and package.
 
 ## Requirements
 
-  - Metal Gear Solid V: The Phantom Pain (1.0.15.4 or 1.0.15.3, EN or JP)
-  - [Infinite Heaven](/Infinite_Heaven) (V Framework registers
-    as an IH module)
+  - MGSV: TPP 1.0.15.3 or 1.0.15.4, EN or JP.
+  - [Infinite Heaven](/Infinite_Heaven).
+  - [IHHook](/IHHook) r25+, with `enable_dll_loader=true` in
+    `ihhook_config.lua`.
 
-See the [Nexus page](https://www.nexusmods.com/metalgearsolidvtpp/mods/2486)
-for full installation instructions.
+## Installation
 
-## Automatic fixes
+Put V Framework in `MGS_TPP\plugins\`. Full steps on the
+[Nexus page](https://www.nexusmods.com/metalgearsolidvtpp/mods/2486).
 
-These work the moment V Framework is installed:
+## Built-in changes
 
-  - **Female Hair Fix** - in vanilla, female soldiers keep a separate
-    persistent hair layer that clips through helmets and headgear.
-    V Framework corrects this so female hair behaves properly under
-    headgear, the same way male soldiers do.
-  - **Ocelot Dual Tornado**
-  - **VIP soldiers** - VIPs in missions such as Red Brass or War Economy have their
-    voices pitched down (GZ-style), and nearby comrades react to them differently
-    than to regular soldiers.
-  - **Custom callsigns** - soldiers who have the RADIO revenge ability use the
-    "Patrol" call sign.
+Always on, no setup:
 
-
-## Lua API
-
-V Framework's features are exposed as Lua functions, brand-new DoMessages, GameObject
-SendCommands, and exported constants. All of it is documented, with examples, in the
-**[V Framework Lua API](/V_Framework_Lua_API)** reference.
-
-```lua
--- Flag Mission 10070, true as an Emergency mission with a custom popup and a HUD banner
-V_TppUiCommand.SetEmergencyMissionPopupLangId("hud_emergency_mission", "another_langId") -- hud_emergency_mission is a langId in .lng2 files
-V_TppUiCommand.SetMissionEmergency(10070, true)
-V_TppUiCommand.ShowMissionIcon("another_langId", "another_langId", 6.0)
-```
+  - **Female hair** - no longer clips through helmets.
+  - **Ocelot and Quiet** - playable in single player.
+  - **Ocelot Dual Tornado** - enabled.
+  - **[VIP soldiers](/V_Framework_Lua_API#vip-soldiers)** - VIPs (e.g.
+    Red Brass, War Economy) get GZ-style deep voices; comrades react to
+    them differently.
+  - **[Call signs](/V_Framework_Lua_API#radio-call-sign)** - soldiers
+    with the RADIO revenge ability use "Patrol".
+  - **[Dying enemies](/V_Framework_Lua_API#head-mark-colours)** - marker
+    turns `"cmn-col-marker-enemy-dying"`.
+  - **Custom sound banks** - no longer go silent when sound memory runs
+    out.
+  - **[Call em](/V_Framework_Lua_API#call-menu-items)** - from GZ: while
+    you hold an enemy, the call menu's knock row makes him call a nearby
+    comrade over.
+  - **[Lie to them](/V_Framework_Lua_API#radio-the-cp)** - grab or hold
+    up an enemy while he radios in. When his CP calls him back, the
+    sonar row makes him say all is clear and the CP stands down.

@@ -1,6 +1,8 @@
 ---
 title: Creating a Custom Sound Bank
 permalink: /Creating_a_Custom_Sound_Bank/
+featured: true
+image: /assets/Configuring%20soundbank.gif
 tags: [Guides, Sound, FoxKit]
 ---
 

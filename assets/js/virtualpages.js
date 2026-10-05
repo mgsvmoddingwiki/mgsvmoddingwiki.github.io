@@ -84,7 +84,7 @@ if (isVirtualPage) {
     const searchInput = body.querySelector('#search-input');
     searchInput.addEventListener('keydown', (e) => {
         if (e.key === 'Enter') {
-            const result = body.querySelector('.search-suggestions-item-container.highlight');
+            const result = body.querySelector('.search-suggestions-item-wrapper.highlight');
             // Check if selector exists, as otherwise implies results page has been triggered via Enter (ie: before any item has been selected)
             if (result) {
                 const tarUrl = result.querySelector('.search-suggestions-item').getAttribute('href');

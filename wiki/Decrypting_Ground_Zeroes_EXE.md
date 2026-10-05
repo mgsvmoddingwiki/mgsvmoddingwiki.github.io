@@ -1,7 +1,7 @@
 ---
-title: 'Decrypting GZ EXE'
-permalink: /Decrypting_GZ_EXE/
-tags: [EXE, Guides]
+title: 'Decrypting Ground Zeroes EXE'
+permalink: /Decrypting_Ground_Zeroes_EXE/
+tags: [EXE, Guides, Ground Zeroes]
 ---
 
 Ground Zeroes EXE is encrypted with [SteamStub DRM](https://partner.steamgames.com/doc/features/drm); since game code is encrypted, analysis or binary patching is impossible (the only functions you will see in the encrypted EXE in Ghidra are from SteamStub).

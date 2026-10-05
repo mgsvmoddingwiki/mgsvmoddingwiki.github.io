@@ -6,12 +6,23 @@ tags: [EXE, Guides, Rendering]
 
 By default, TPP checks the loaded d3d11.dll before and after it creates necessary D3D11 interfaces to confirm d3d11.dll hasn't been hooked. This is likely meant as a countermeasure against cheating in MGO but a side effect is that tools like graphics debuggers (RenderDoc) and mod packages (ReShade) generally do not work. The fix is to simply ignore the result of `fox::gr::dg::CheckModuleHook` by patching a conditional jump to simply always jump to the `true` case.
 
-Offsets:
 
+memory pattern / signature for `fox::gr::dg::CheckModuleHook`: 
+tested with 1.0.15.4 and 1.0.15.3 both English and Japenese executables
+`75 2D FF 15 ?? ?? ?? ?? 49 8B 14 FF` 
+
+this will directly lead to the bytes need patching inside the fuction
+Offsets:
 |Version|File (Japanese)|Memory (Japanese)|File (English)|Memory (English)|Original JZ|Replace JMP|
 | - | - | - | - | - | - | - |
-|1.0.15.3|`0x2B96CB`|`0x1402ba1c0`|`0x2B9C2B`|`0x1402bb242`|`75 2D`|`EB 2D`|
-|1.0.15.4|`0x2B963B`|`0x1402ba130`|`0x2B90AB`|`0x1402b9a10`|`75 2D`|`EB 2D`|
+|1.0.15.3|`0x2B96CB`|`0x1402ba1c0`|`0x2B9C2B`|`0x1402BA82B`|`75 2D`|`EB 2D`|
+|1.0.15.4|`0x2B963B`|`0x1402ba130`|`0x2B90AB`|`0x1402B9CAB`|`75 2D`|`EB 2D`|
+
+
+patch `fox::gr::dg::DgDx11::Initialize` to return true ignoring results of `fox::gr::dg::CheckModuleHook`
+memory pattern / signature for `fox::gr::dg::DgDx11::Initialize`: 
+tested with 1.0.15.4 and 1.0.15.3 both English and Japenese executables
+`0F 84 1F 04 00 00 C7 44 24 48 40 00 00 00`
 
 Using a hex editor, navigate to `mgsvtpp.exe+0x(file offset)` or `0x14(memory offset)`:
 ![Before](/assets/Attaching_graphics_debuggers/BeforeCheckModuleHookFix.png)
