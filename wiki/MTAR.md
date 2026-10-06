@@ -108,6 +108,7 @@ Entries immediately follow after the number of entries. Each entry is
 ## Resources
 
   - [010 Editor Template](https://github.com/kapuragu/FoxEngineTemplates/blob/main/mtar.bt)
+  - [Fox Engine MTAR Tools (Blender)](https://github.com/mctrollin/fox_engine_mtar_tools_blender)
 
 ## See also
 

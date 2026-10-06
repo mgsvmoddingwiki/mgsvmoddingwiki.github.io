@@ -11,6 +11,7 @@ Stock file descriptions: [Link](https://github.com/chocmake/chocmake.github.io/t
 ### Resources
 
 [010 Editor Template](https://github.com/kapuragu/FoxEngineTemplates/blob/main/gani.bt)
+[Fox Engine MTAR Tools (Blender)](https://github.com/mctrollin/fox_engine_mtar_tools_blender)
 
 ### See also
 
