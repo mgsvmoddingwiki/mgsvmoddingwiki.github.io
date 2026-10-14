@@ -62,10 +62,12 @@ Returns `partsType, developId, flowIndex`, or `false`.
 | [`voiceFpk`, `voiceType`](#outfit-voice) | No (vanilla) | Outfit voice. |
 | `faceFpk`, `skinFv2` | No (vanilla) | Face and skin. |
 | `iconFtexPath` | No (R&D icon) | Suit-list icon. |
-| `displayName` | No | Outfit-cell label. |
+| `displayName` | No (R&D name) | Outfit-cell label. |
 | `enableArm` | No (`true`) | Keep Snake or Avatar's bionic arm. Always off on `ddMale` and `ddFemale`. |
 | `enableHead` | No (`true`) | Keep the character head. |
+| [`eyeFv2`, `eyeColor`](#iris-colour) | No (none) | Iris colour on the outfit's body. |
 | [`headOptions`](#head-options) | No (none) | Selectable heads. Max 120. |
+| [`colors`](#colours) | No (none) | Colours for the Sortie Prep colour palette. |
 | [`variants`](#variants) | No (none) | Alternative looks you cycle through. Max 254. |
 | [`camoBonusType`](#camo-bonus) | No (none) | Use a vanilla camo's concealment. |
 | [`camoBonusValues`](#camo-bonus) | No (none) | Own concealment per material. |
@@ -84,6 +86,48 @@ none, bandana, infinitebandana, balaclava, spheadgear, hpheadgear
 ```lua
 headOptions = { "balaclava", "MyMod:MyHead" },
 ```
+
+### Iris colour
+
+`eyeFv2` is an fv2 with an iris group (id 110, one unit per iris), packed with the outfit. DD staff then keep their
+own iris colour on the outfit; `eyeColor = n` (`0-31`) shows unit `n` instead, for every character, and `false`
+turns the iris off.
+
+```lua
+ddMale = {
+  -- partsPath, fpkPath ...
+  eyeFv2 = "/Assets/tpp/fova/chara/sna/sna4_plym0_def_v00.fv2",
+},
+```
+
+`eyeFv2` may hold only the iris group, plus the skin group (id 100) on DD soldiers, who get their own skin tone.
+The body needs the `eye` material of the DD player bodies. Vanilla's `sna4_plym0_def_v00.fv2` works as `eyeFv2`.
+
+### Colours
+
+In Sortie Prep, press Triangle (Y) on the uniform to open the colour
+palette. The picked colour's fv2 is applied over the outfit and saved per
+outfit, character and channel. The second channel goes on top of the first,
+so give the channels different materials. A variant's `colors` replace the branch's.
+
+```lua
+colors = {
+  primary = {
+    { fv2 = "/Assets/tpp/fova/mymod/olive.fv2", icon = "/Assets/tpp/ui/texture/mymod/olive.ftex" },
+  },
+  secondary = { count = 12, fv2 = "/Assets/tpp/fova/mymod/trim_%02d.fv2" },
+},
+```
+
+| Field | Required | Purpose |
+|---|---|---|
+| `primary`, `secondary` | At least one | Colour channels, one palette tab each. Max 1024 colours. |
+| `fv2` | Yes | Applied when picked. Must be in a loaded package: the outfit's, `camoFpk` or the colour's `fpk`. |
+| `fpk` | No (none) | Package with the fv2 and its textures, loaded as the camo package. Not installed: the colour isn't applied. |
+| `icon` | No (empty swatch) | Swatch picture. |
+| `count` | No (none) | Builds `count` colours from fields with one `%d` (or `%02d`), numbered from 0. |
+
+Read or pick colours from Lua: [outfit colours](/V_Framework_Lua_API#outfit-colours).
 
 ### Variants
 
@@ -105,11 +149,13 @@ All variant fields are optional.
 | `partsPath`, `fpkPath` | base model | Variant model and package. |
 | `camoFpk`, `camoFv2`, `diamondFpk`, `diamondFv2` | none | Variant camo and emblem. An `*Fpk` not installed: its pair is not used. |
 | [`voiceFpk`, `voiceType`](#outfit-voice) | branch's | Variant voice. |
-| `displayName` | - | Variant label on the cycle button. |
+| `displayName` | none | Variant label on the cycle button. |
 | `iconFtexPath` | branch's | Suit-list icon. |
 | `default` | `false` | `true` makes this the initial variant. |
 | `enableArm`, `enableHead` | branch's | Override the branch values. |
+| [`eyeFv2`, `eyeColor`](#iris-colour) | branch's | This variant's iris. |
 | `headOptions` | none | This variant's heads. |
+| [`colors`](#colours) | branch's | This variant's colours. |
 | [`motionMtars`](#outfit-motion) | branch's | Motion while this variant is worn. |
 
 ### Camo bonus
@@ -154,9 +200,11 @@ All ability fields are optional.
 |---|---|---|
 | `quietMovement` | boolean (`false`) | Move like Quiet. |
 | `silentFootsteps` | boolean (`false`) | Footsteps one level quieter. |
-| `raidenSprint` | boolean (`false`) | Sprint like the Raiden suit: faster dash and its dash sound. |
-| `ninjaSprint` | boolean (`false`) | Sprint like the Cyborg Ninja suit: a smaller dash boost and the same sound. |
-| `sprintSpark` | string (none) | `.vfx` at each dashing footstep, packed with the outfit; needs `raidenSprint` or `ninjaSprint`. Raiden's: `/Assets/tpp/effect/vfx_data/chara/fx_tpp_chrfotspk01_s5.vfx`. |
+| `sprintSpeed` | number (suit's own) | Sprint speed, `0.1-10`. Ninja suit `1.3`, Raiden suit `1.5`. |
+| `raidenRun` | boolean (`false`) | Raiden's sprint animation. |
+| `dashAttack` | boolean or `TppDamage.ATK_*` (`false`) | Sprinting into an enemy knocks them down, as with the Ninja and Raiden suits. An `ATK_` id hits with that attack instead. |
+| `sprintSound` | boolean (`false`) | The Ninja and Raiden sprint sound. |
+| `sprintSpark` | string (none) | `.vfx` at each sprinting footstep, packed with the outfit. Raiden's: `/Assets/tpp/effect/vfx_data/chara/fx_tpp_chrfotspk01_s5.vfx`. |
 | `defense` | number `0-9` (`0`, off) | Damage reduction. |
 | `lifeRecovery` | number `0-9` (`0`, off) | Health regeneration rate. |
 | `rattleSuit` | string or number (`"nom"`) | Cloth-rustle sound: `"nom"`, `"bony"`, `"snk"`, `"amr"`. |
@@ -275,7 +323,8 @@ V_Player.RegisterHeadOption({
 |---|---|---|---|
 | `fv2`, `fpk` | `snake`, `avatar` | Yes | Head model. |
 | `TppEnemyFaceId` | `ddMale`, `ddFemale` | No (balaclava) | Soldier face worn as the head. |
-| `fv2`, `fpk` | `ddMale`, `ddFemale` | No | Own head model. Wins over `TppEnemyFaceId`. |
+| `fv2`, `fpk` | `ddMale`, `ddFemale` | No (none) | Own head model. Wins over `TppEnemyFaceId`. |
+| [`colors`](#colours) | any | No (none) | Head colours (Triangle (Y) in the HEAD list). Their fv2s and textures go in the head's own `fpk`; needs the branch's `fv2` and `fpk`. |
 
 ```lua
 ddMale = {
@@ -291,7 +340,7 @@ ddFemale = {
 ### Head motion
 
 A branch can animate the head and attach effects; play them with
-[`PlayHeadMotion`, `PlayHeadEffect` and `PlayHeadSound`](/V_Framework_Lua_API).
+[`PlayHeadMotion`, `PlayHeadEffect` and `PlayHeadSound`](/V_Framework_Lua_API#custom-outfits).
 
 ```lua
 snake = {
@@ -334,6 +383,8 @@ V_Player.RegisterHeadOption({
   abilities = { infiniteAmmo = true },
 })
 ```
+
+All optional.
 
 | Field | Type (default) | Effect |
 |---|---|---|
@@ -569,3 +620,4 @@ return this
   - [V Framework](/V_Framework)
   - [V Framework Lua API](/V_Framework_Lua_API)
   - [V Framework Custom Weapons](/V_Framework_Custom_Weapons)
+  - [V Framework Buddy Outfits](/V_Framework_Buddy_Outfits)

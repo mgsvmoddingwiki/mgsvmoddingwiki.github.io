@@ -73,13 +73,13 @@ The attack a receiver deals.
 ```lua
 V_TppEquip.SetDamage{
   damageId       = TppDamage.ATK_Example,
-  lethalDamage   = 700,
-  lethalDamageUI = 700,
-  impactForce    = 40,
-  damageSource   = TppDamage.DAM_SOURCE_Assault,
-  injureType     = TppDamage.INJ_TYPE_BULLET,
-  injurePart     = TppDamage.INJ_PART_ALL,
-  hitNPC         = 1,
+  lethalDamage             = 700,
+  oldLethalDamageVsSoldier = 7000,
+  impactForce              = 40,
+  damageSource             = TppDamage.DAM_SOURCE_Assault,
+  injureType               = TppDamage.INJ_TYPE_BULLET,
+  injurePart               = TppDamage.INJ_PART_ALL,
+  isBullet                 = 1,
 }
 ```
 
@@ -91,7 +91,7 @@ row can be copied straight down:
 | Col | Field | Notes |
 |----:|---|---|
 | 1 | `damageId` | `TppDamage.ATK_*` |
-| 2 | `oldLethalDamageVsSoldier` | vs soldiers and animals. Old name `lethalDamageUI` also works. |
+| 2 | `oldLethalDamageVsSoldier` | vs soldiers and animals. Old name `lethalDamageUI` takes a tenth of this. |
 | 3 | `oldLethalDamageVsPlayer` | vs the player, buddies, cbox, decoy, supply crate. |
 | 4 | `oldLethalDamageVsVehicle` | vs vehicles and Sahelanthropus. |
 | 5 | `oldStaminaDamageVsSoldier` | Stamina vs soldiers. |
@@ -101,15 +101,13 @@ row can be copied straight down:
 | 9 | `injureType` | `TppDamage.INJ_TYPE_*` |
 | 10 | `injurePart` | `TppDamage.INJ_PART_*` |
 | 11 | `injureMaxDistance` | Metres the injury applies within, `0-255`; `0` = never. |
-| 12 | `injureRate` | Injury chance x2 (`200` = 100%), lethal hits only. |
-| 13 | `isBullet` | Set on any bullet attack. |
-| 14-28 | `isSniper`, `isShotgun`, `isTranq`, `isStun`, `isExplosive`, `isMelee`, `isBlade`, `isFire`, `isParasite`, `isGas`, `isVehicleHit`, `unk25`, `isElectric`, `isWater`, `isPenetrating` | `0`/`1` flags, in this order. `unk25` is unused. |
+| 12 | `injureRate` | Injury chance in %, lethal hits only. |
+| 13 | `isBullet` | Set on any bullet attack. Old name `hitNPC`. |
+| 14-28 | `isSniper`, `isShotgun`, `isTranq`, `isStun`, `isExplosive`, `isMelee`, `isBlade`, `isFire`, `isParasite`, `isGas`, `isVehicleHit`, `unk25`, `isElectric`, `isWater`, `isPenetrating` | `0`/`1` flags, in this order; `unk25` unused. |
 | 29 | `damageSource` | `TppDamage.DAM_SOURCE_*` |
 | 30 | `lethalDamage` | |
 | 31 | `staminaDamage` | |
 | 32 | `impactForce` | |
-
-`hitNPC` has no column.
 
 > **Non-lethal weapons:** set `oldStaminaDamageVsPlayer` too, or the
 > player takes no stamina damage from them.
@@ -166,8 +164,8 @@ V_TppEquip.SetReceiver{
 | `gunAimAdjust` | No (`0`) | Auto-aim strength. |
 | `effectiveRange` | No (`0`) | Effective range. |
 | `effectiveRangeUI` | No (`0`) | Range shown in R&D. |
-| `adsZoom` | No (`0`) | ADS zoom. |
-| `adsFov` | No (`0`) | ADS field of view. |
+| `adsZoom` | No (`0`) | Zoom while aiming. |
+| `adsFov` | No (`0`) | Field of view while aiming. |
 | `reloadSpeed` | No (`0`) | Reload speed; `1.0` normal. |
 
 ### Wobbling fields
@@ -260,6 +258,7 @@ row number; `1.0` is neutral and values above `2.55` work.
 | `percentOverride` | No (`0`) | Unknown; use a vanilla value. |
 | `barrelLength` | No (`0`) | `TppEquip.BARREL_LENGTH_*`. |
 | `hasScopeMount`, `hasSideMount`, `hasUnderMount` | No (`0`) | `1` enables that mount. |
+| `unk2` | No (`0`) | Unknown; use a vanilla value. |
 
 ---
 
@@ -328,6 +327,7 @@ V_TppEquip.SetBullet{
 | `bulletParamSetsBase` | No (`0`) | Player falloff and penetration (table or vanilla row). |
 | `npcBulletParamSetsBase` | No (`0`) | NPC falloff and penetration. Always set it. |
 | `bulletTrailEffect` | No (`0`) | Trail index or `.vfx` path. |
+| `unk09` | No (`0`) | Unknown; use a vanilla value. |
 | `ricochetSize` | No (`0`) | Impact size. |
 | `bulletType` | No (`0`) | Normal, spread, blast, shell, water or airshock. |
 | `blastId` | No (`0`) | Explosion for explosive projectiles. A shell with `0` never detonates. |
@@ -365,7 +365,7 @@ For the lock marker, add
 `/Assets/tpp/ui/GraphAsset/entry_datas/reticle/reticle_lockon.fox2` to
 the weapon `.fpkd`, and the `hud_marker_lockon` `.uilb`, `.uif` and all
 eight `.uia` files to the `.fpk`. `TppEquip.RETICLE_UI_MISSILE` gives
-the launcher hip-fire reticle.
+the launcher reticle.
 
 ---
 
@@ -574,7 +574,7 @@ V_TppEquip.SetGunBasic{
 | Field | Required | Purpose |
 |---|---|---|
 | `weaponId` | Yes | Weapon to assemble. |
-| `ammoId` | Yes | Magazine. Missing: rejected. |
+| `ammoId` | Yes | Magazine. Missing: rejected, and the weapon stays out of R&D. |
 | `receiverId` | No (vanilla part) | Receiver. |
 | `barrelId` | No (vanilla part) | Barrel; `0` for none. |
 | `stockId`, `muzzleId`, `muzzleOptionId`, `scope1Id`, `scope2Id`, `underBarrelId`, `laserFlash1Id`, `laserFlash2Id` | No (none) | Attachments. No custom `muzzleId` yet. |
@@ -633,14 +633,14 @@ function this.LoadLibraries()
   }
 
   V_TppEquip.SetDamage{
-    damageId       = TppDamage.ATK_Example,
-    lethalDamage   = 680,
-    lethalDamageUI = 680,
-    impactForce    = 300,
-    damageSource   = TppDamage.DAM_SOURCE_Assault,
-    injureType     = TppDamage.INJ_TYPE_BULLET,
-    injurePart     = TppDamage.INJ_PART_ALL,
-    hitNPC         = 1,
+    damageId                 = TppDamage.ATK_Example,
+    lethalDamage             = 680,
+    oldLethalDamageVsSoldier = 6800,
+    impactForce              = 300,
+    damageSource             = TppDamage.DAM_SOURCE_Assault,
+    injureType               = TppDamage.INJ_TYPE_BULLET,
+    injurePart               = TppDamage.INJ_PART_ALL,
+    isBullet                 = 1,
   }
 
   V_TppEquip.SetReceiver{
@@ -808,6 +808,7 @@ V_TppEquip.SetReceiverMotion{
 |---|---|---|
 | `mtar` | Yes | Archive with the hand clips. |
 | `pack` | Yes | `.fpk` holding that archive. Missing: no hand clip plays. |
+| `extraArchives` | No (none) | More hand-clip archives, `{ mtar = ..., pack = ... }` each in its own `.fpk`. Clips play only from these or `mtar`; don't reuse vanilla clip names. |
 | `clips` | Yes | Normal two-hand stance. |
 | `oneHand` | No (`clips`) | One-hand mode, e.g. carrying a body. |
 | `oneHandCqc` | No (`oneHand`) | One-hand while holding someone in CQC, standing or crouched. |
@@ -831,7 +832,7 @@ All optional.
 | `magazineGrip` | Support hand on the magazine | none |
 | `magazineGripDual` | Same, dual magazine | `magazineGrip` |
 | `underBarrelGrip` | Grip with an underbarrel | none |
-| `stepReload` | Round-by-round reload | none |
+| `stepReload` | Round-by-round reload: `{ start, loop, loop, end }` (the loops alternate per round) | none |
 | `stepReloadEmpty` | Same, when empty | none |
 
 A clip is an asset path (`/Assets/.../x.gani`), the id MtarTool prints
@@ -894,6 +895,96 @@ V_TppEquip.SetRemoteMissile{
 | `cameraHeight` | No (`0.0`) | Camera height, `-50-50`. |
 | `minSpeed` / `maxSpeed` | No (`0`, game default) | Speed limits, `0-100`. Full boost reaches `maxSpeed`. |
 | `fireVoiceId` | No (none) | Voice clip the player shouts on firing. |
+
+---
+
+## Support weapons (`SetSupportWeapon`)
+
+A custom grenade or other thrown item. It is held, thrown and flies like a
+vanilla item (`throwAs`), but that item's effect never runs: you script the
+effect on the [Throwing messages](/V_Framework_Lua_API#throwing-messages).
+
+```lua
+V_TppEquip.RegisterConstantEquipId("EQP_SWP_ChaffGrenade")
+V_TppEquip.DeclareSWPs { "SWP_ChaffGrenade" }
+
+V_TppEquip.SetSupportWeaponParameter{ swpId = TppEquip.SWP_ChaffGrenade, ammo = 2, fuseTime = 4, activeTime = 10, grade = 3 }
+
+V_TppEquip.AddToEquipIdTable{
+  { TppEquip.EQP_SWP_ChaffGrenade, TppEquip.EQP_TYPE_Throwing, TppEquip.SWP_ChaffGrenade, TppEquip.EQP_BLOCK_COMMON,
+    "/Assets/tpp/parts/weapon/thr/tr00_main0_def_v01.parts", "" },
+}
+
+V_TppEquip.SetSupportWeapon{ equipId = TppEquip.EQP_SWP_ChaffGrenade, throwAs = TppEquip.EQP_SWP_SmokeGrenade }
+
+-- in Messages(): the fuse ran out
+Throwing = {
+  { msg = "OnActivateThrowing", func = function(handle, equipId, owner)
+      if equipId ~= TppEquip.EQP_SWP_ChaffGrenade then return end
+      local x, y, z = V_ThrowingSystem.GetPosition(handle)
+      V_RangeAttackSystem.RequestToChaff{ pos = { x, y, z }, duration = 10, owner = owner }
+      V_NoiseSystem.AddNoise{ pos = { x, y, z }, type = 0x1C, owner = owner }
+      V_ThrowingImpl.Deactivate(handle)
+    end },
+},
+```
+
+Then add its [R&D row](#add-the-rd-row-addtoequipdeveloptable) with
+`p02 = TppMbDev.EQP_DEV_TYPE_Throwing`.
+
+| Field | Required | Purpose |
+|---|---|---|
+| `equipId` | Yes | Your `EQP_SWP_*`. |
+| `throwAs` | Yes | Vanilla thrown `TppEquip.EQP_SWP_*` (grenade, smoke, stun, Molotov...): how it is held, thrown and flies, and how guards react. |
+| `attackId` | No (`throwAs`'s) | `TppDamage.ATK_*` used when Lua runs a vanilla effect on it. |
+| `blastId` | No (`throwAs`'s) | `TppEquip.BLA_*` blast, `0-255`, used the same way. |
+
+To get a vanilla effect anyway, call a `V_ThrowingImpl.UpdateAction*` function on
+the item. Molotov- and bait-style `throwAs` items still go off on contact.
+Impact grenade: `OnBounceThrowing` -> `V_ThrowingImpl.Activate(handle)`; sticky
+item: `OnBounceThrowing` -> `V_ThrowingImpl.Stop(handle)`.
+
+- Ammo boxes and supply drops refill custom items like vanilla ones. Up to 17
+  custom items keep their own ammo count at once; past that, counts may be shared.
+- A picked-up item goes into a free slot instead of replacing another custom item.
+  Higher grades replace lower ones of the same item: set `p03` (the previous
+  grade's develop ID) on every higher grade.
+- A custom support weapon in the loadout blocks FOB deployment.
+- Up to 933 custom `SWP_` rows and 207 custom blast rows.
+- The vanilla `OnPickUpPlaced`, `OnEquipItem` and `OnAmmoStackEmpty` messages may pass a temporary ID for a
+  custom item, so comparing it with `TppEquip.EQP_SWP_*` fails.
+
+### Support weapon stats (`SetSupportWeaponParameter`)
+
+| Field | Required | Purpose |
+|---|---|---|
+| `swpId` | Yes | Your `SWP_*` from `DeclareSWPs`. |
+| `ammo` | No (`0`) | Max carried. |
+| `fuseTime` | No (`0`) | Seconds before it goes off. Same value as `sensorRange` (mines, metres), `decoyStrength` (decoys) and `p1`: set one. |
+| `activeTime` | No (`0`) | Effect seconds, e.g. smoke. Same as `p2`. |
+| `grade` | No (`1`) | Item grade. |
+| `damageType` | No (automatic) | Damage type icon: `1` DMG, `2` ZZZ, `3` STN, `4` SMK, `6` ---, `0` hidden. |
+| `barDamage`, `barDurability`, `barEffectTime` | No (automatic) | Details-panel bar fill, `0-1`; `false` hides it. Wins over its `*Max`. |
+| `durabilityMax`, `effectTimeMax` | No (vanilla) | Value a full Durability / Effect Duration bar stands for. |
+
+Which bars show depends on `throwAs`: Durability for decoys, Effect Duration for smoke, sleeping gas and flares,
+Damage for all.
+
+### Blast (`SetBlastParameter`)
+
+```lua
+V_TppEquip.DeclareBLAs { "BLA_Example" }
+V_TppEquip.SetBlastParameter{ blastId = TppEquip.BLA_Example, effectRange = 6, optimalRange = 6, blastFlag = 2 }
+```
+
+| Field | Required | Purpose |
+|---|---|---|
+| `blastId` | Yes | Your `BLA_*` from `DeclareBLAs`. |
+| `effectRange` | No (`0`) | Blast radius in metres for the player's items. |
+| `optimalRange` | No (`0`) | Blast radius in metres for everyone else's. |
+| `blastFlag` | No (`2`) | Noise enemies react to, `0-4`, like the vanilla blast table. |
+
+Use it as `blastId` in `SetSupportWeapon` or `SetBullet`.
 
 ---
 
