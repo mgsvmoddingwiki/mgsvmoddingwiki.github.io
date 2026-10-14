@@ -13,7 +13,7 @@ Currently, there is no straightforward way to *add* an entirely new language as 
 ## Needed Tools
 
 ### To unpack game files
-We recommend using the [File Monolith Modmaker Toolset (Recommended)](https://www.nexusmods.com/metalgearsolidvtpp/mods/739) to unpack The Phantom Pain’s files.  
+It is recommend to use the [File Monolith Modmaker Toolset (Recommended)](https://www.nexusmods.com/metalgearsolidvtpp/mods/739) to unpack The Phantom Pain’s files.  
 Alternatively, use the latest version of [GzTool](https://github.com/Atvaark/GzsTool/releases/tag/v0.6.0) to unpack and repack `FPK/FPKD` and `.dat` files for The Phantom Pain.  
 For *Ground Zeroes*, use [GzTool v0.2](https://github.com/Atvaark/GzsTool/releases/tag/v0.2).
 
@@ -58,9 +58,17 @@ Example:
 
 
 ## `.fnt` (Font)
+To edit `.fnt` files, use [fntTool](https://github.com/Yazed0071/fntTool).
 
-> *This section is TBA (To Be Added)*.
-{:.needs-revision}
+Drag and drop the `.fnt` file into the *fntTool*'s `.exe`, and an `.xml` file with its contents will appear next to it. To repack, drag and drop the `.xml` file into the `.exe`.
+
+### Glyphs
+The `.fnt` only stores where each glyph is in the font's texture (`_alp.ftex`). The `Header` stores the font's size (`EmWidth`, `EmHeight`) and the size of each glyph's cell in the texture (`CellWidth`, `CellHeight`). Each `Glyph` entry includes properties like `Character`, `X`, `Y`, `PaddingLeft` and `PaddingRight`.
+Example:
+```xml
+<Header Version="0" EmWidth="34" EmHeight="34" CellWidth="39" CellHeight="40" GlyphCount="399" />
+<Glyph Character="A" X="47" Y="0" PaddingLeft="8" PaddingRight="8" PaddingTop="0" PaddingBottom="0" />
+```
 
 ## Tip
 Some display text properties are stored in `.fox2` files, which can be found in `\Assets\tpp\pack\ui\ui_resident_data_fpkd\Assets\tpp\ui\GraphAsset\Common\data`.

@@ -39,7 +39,7 @@ This article lists the presumed names of extensions used in MGSV, as well as som
 | ffnt | Fox Font | data1(6) | FfntTool |  |
 | [fmdl](/FMDL) | FmdlFile | fpk(14384) | [Fmdl Studio v2](https://github.com/BobDoleOwndU/FMDL-Studio-v2) | Model, includes mesh, bone, and material data. |
 | [fmtt](https://mgsvmoddingwiki.github.io/FMTT) | Material parameters | data1(2) | [FoxKit](https://github.com/youarebritish/FoxKit/) | GrTools.SetMaterialParamBinary |
-| fnt | Font | fpk(7) | UiFontDataElement entity, fontFile common_art.fox2,*_art.fox2 In exe section with uil,uif,uia,fnt,utxl |  |
+| fnt | Font | fpk(7) | [fntTool](https://github.com/Yazed0071/fntTool) | UiFontDataElement entity, fontFile common_art.fox2,*_art.fox2 In exe section with uil,uif,uia,fnt,utxl |
 | [fox2](/FOX2) | DataSetFile2 | fpkd(75167), gz fpkd(450) | [FoxTool](/FoxTool) | Translated comment in pc init.lua 'Object arrangement / property data file' |
 | fpk | Fox Package / fox::PackFile | Chunks(16637) | [FPK Tool](https://web.archive.org/web/20230517070053/https://forum.xentax.com/viewtopic.php?t=12407&start=690#p110644), [GzsTool](/GzsTool) | Usually contains compiled files that have no associated editing tools. Must have a matching fpkd (which may be empty) |
 | fpkd | Fox Package Data | Chunks(16637) | [FPK Tool](https://web.archive.org/web/20230517070053/https://forum.xentax.com/viewtopic.php?t=12407&start=690#p110644), [GzsTool](/GzsTool) | Archive that allows changes to physics or sound associations; data archive. Must have a matching fpk (which may be empty) |
