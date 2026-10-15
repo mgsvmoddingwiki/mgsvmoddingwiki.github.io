@@ -16,15 +16,18 @@ Parts: [Lua libraries](#lua-libraries), [SendCommand](#sendcommand),
 |---|---|
 | `V_FrameWork` | [Core](#core) |
 | `V_Fox` | [Core](#core) |
+| `V_TppMotion` | [Motion](#motion) |
 | `V_Pickable` | [Pickable](#pickable) |
 | `V_TppCollection` | [Collectibles](#collectibles) |
 | `V_Player` | [Player](#player) |
 | `V_TppEquip` | [Equipment](#equipment) |
+| `V_ThrowingSystem`, `V_ThrowingImpl`, `V_RangeAttackSystem`, `V_BlastSystem`, `V_NoiseSystem` | [Throwing](#throwing) |
 | `V_TppMotherBaseManagement` | [Mother Base Management](#mother-base-management) |
 | `V_TppSoldierFace` | [Soldier faces](#soldier-faces) |
 | `V_TppSoundDaemon` | [Sound](#sound) |
 | `V_CassetteCommand` | [Cassette](#cassette) |
 | `V_TppUiCommand` | [UI](#ui) |
+| `V_UixUtility` | [V Framework UI](/V_Framework_UI) |
 | `V_Helicopter` | [Helicopter](#helicopter) |
 | `V_title_sequence` | [Title sequence](#title-sequence) |
 | `V_TppGameObject` | [Game Over types](#game-over-types) |
@@ -39,6 +42,7 @@ Parts: [Lua libraries](#lua-libraries), [SendCommand](#sendcommand),
 | `V_TppCallSign` | [Radio call signs](#radio-call-signs) |
 | `V_ReceiverType` | [Receiver motion types](#receiver-motion-types) |
 | `V_MagazineType` | [Magazine motion types](#magazine-motion-types) |
+| `V_DogCommandType` | [D-Dog gear](/V_Framework_Buddy_Outfits#d-dog-gear) |
 
 ---
 
@@ -49,10 +53,20 @@ Parts: [Lua libraries](#lua-libraries), [SendCommand](#sendcommand),
 | Function | Description |
 |---|---|
 | `V_FrameWork.Log(msg)` | Writes to the V Framework log and visible console. |
+| `V_FrameWork.SetFrameCallback(name, fn)` | Calls `fn(seconds)` every frame, loading screens included. `seconds` = real time since launch. Same `name` replaces; `nil` removes. Returns `true` when stored. |
 | `V_Fox.FNVHash32(name)` | Returns the FNVHash32 of a Wwise event name. |
 | `V_Fox.ShowConsole(enabled)` | Shows or hides the log console. |
 | `V_Fox.SwapGani(fromGani, toGani)` | Every character plays `toGani` instead of `fromGani`. `toGani` must be in the character's loaded motion archives. Cleared at mission end; set it in mission init. |
 | `V_Fox.RestoreGani(fromGani, toGani)` | Undoes that swap. `toGani` is optional. |
+
+Keep the callback light. A Lua error in it is logged once per message and the callback keeps running. Register it again in `Init` (same `name`) so a reloaded module replaces it.
+
+```lua
+V_FrameWork.SetFrameCallback("MyMod", function(seconds)
+  local tips = V_TppUiCommand.GetLoadingTipsInfo()
+  -- runs on the loading screen too
+end)
+```
 
 ```lua
 -- PW-style fulton animation
@@ -61,6 +75,30 @@ V_Fox.SwapGani("/Assets/tpp/motion/SI_game/fani/bodies/enet/enetnon/enetnon_ful_
 V_Fox.SwapGani("/Assets/tpp/motion/SI_game/fani/bodies/enet/enetnon/enetnon_ful_idl", "/Assets/tpp/motion/SI_game/fani/bodies/enem/enemasr/enemasr_snak_fulton_idl_lp")
 V_Fox.SwapGani("/Assets/tpp/motion/SI_game/fani/bodies/enet/enetnon/enetnon_ful_ed", "/Assets/tpp/motion/SI_game/fani/bodies/enem/enemasr/enemasr_snak_fulton_ed")
 V_Fox.SwapGani("/Assets/tpp/motion/SI_game/fani/bodies/snap/snaputh/snaputh_q_seat_idl_lp", "/Assets/tpp/motion/SI_game/fani/bodies/snap/snaputh/snaputh_q_idroid_ed")
+```
+
+---
+
+## Motion
+
+| Function | Returns | Description |
+|---|---|---|
+| `V_TppMotion.AddClipEvent{clip, frame, event}` | `boolean` | Adds a motion event to a clip without editing its archive. It fires each time the clip passes that frame, at any playback speed. Not active in FOB. |
+
+| Field | Required | Description |
+|---|---|---|
+| `clip` | Required | Asset path, MtarTool id or full 16-digit id. |
+| `frame` | Required | Clip frame, 0 or more. |
+| `event` | Required | Event name without `MTEV_` (e.g. `"ReloadAmmo"`), or its hash. Any name of your own works too: catch it with the `ClipEvent` GameObject message. |
+
+Events added by V Framework:
+
+| Event | Effect |
+|---|---|
+| `EjectChamberRound` | On a gun or Snake reload clip, the player's gun ejects a casing if the magazine wasn't empty. Never on under-barrel reloads. |
+
+```lua
+V_TppMotion.AddClipEvent{ clip = "/Assets/tpp/motion/SI_game/fani/props/ar01/ar01/ar01_aw0_s_fre_rld.gani", frame = 134, event = "EjectChamberRound" }
 ```
 
 ---
@@ -76,7 +114,7 @@ Edit weapons, items and supplies lying in the world, by locator index
 | `V_Pickable.GetCountRawByLocatorIndex(index)` | Returns the live count, or `nil`. |
 | `V_Pickable.SetCountRawByLocatorName(name, count)` | Same, addressed by locator name. |
 | `V_Pickable.GetCountRawByLocatorName(name)` | Same, addressed by locator name. |
-| `V_Pickable.SetEquipIdByLocatorIndex(index, equipId)` | Changes which equip the pickable grants (0-2047). |
+| `V_Pickable.SetEquipIdByLocatorIndex(index, equipId)` | Changes which equip the pickable grants. |
 | `V_Pickable.GetEquipIdByLocatorIndex(index)` | Returns the pickable's equip id, or `nil`. |
 | `V_Pickable.SetEquipIdByLocatorName(name, equipId)` | Same, addressed by locator name. |
 | `V_Pickable.GetEquipIdByLocatorName(name)` | Same, addressed by locator name. |
@@ -89,13 +127,13 @@ Edit weapons, items and supplies lying in the world, by locator index
 
 | Key | Required | Purpose |
 |---|---|---|
-| `equipId` | No | Equip the pickup grants (`0-2047`). |
-| `countRaw` | No | Count/ammo it gives (`0-4095`). |
-| `secondCountRaw` | No | Second count, e.g. underbarrel ammo. |
-| `countMax` | No | Rounds loaded into the picked-up weapon. |
-| `secondCountMax` | No | Second magazine cap. |
-| `infoType` | No | Pickup type. |
-| `flags` | No | Pickup flags. |
+| `equipId` | No (unchanged) | Equip the pickup grants. |
+| `countRaw` | No (unchanged) | Count/ammo it gives (`0-4095`). |
+| `secondCountRaw` | No (unchanged) | Second count, e.g. underbarrel ammo. |
+| `countMax` | No (unchanged) | Rounds loaded into the picked-up weapon. |
+| `secondCountMax` | No (unchanged) | Second magazine cap. |
+| `infoType` | No (unchanged) | Pickup type. |
+| `flags` | No (unchanged) | Pickup flags. |
 
 ```lua
 local idx = TppPickable.GetLocatorIndex("wp_loc0001")
@@ -179,7 +217,7 @@ V_TppCollection.AddCollection("MyCollect_00", "MyMod:Collect", 185.1, 336.3, 156
 | `V_Player.SetPlayerVoiceFpkPathForType(playerType, fpkPath)` | Loads a custom voice package for a player type, from the next mission load or outfit change. |
 | `V_Player.ClearPlayerVoiceFpkPathForType(playerType)` | Restores one player type's vanilla voice package. |
 | `V_Player.ClearAllPlayerVoiceFpkOverrides()` | Restores all vanilla player voices. |
-| `V_Player.SetPlayerVoiceTypeForType(playerType, voiceType, dialogueEvent, dialogueEvent2)` | Forces a player type's voice, immediately. `voiceType`: a name like `"ddmsoldiera"` or its number. Optional `dialogueEvent`, `dialogueEvent2`: your voice bank's Dialogue Event names. |
+| `V_Player.SetPlayerVoiceTypeForType(playerType, voiceType, dialogueEvent, dialogueEvent2)` | Forces a player type's voice now. `voiceType`: name (`"ddmsoldiera"`) or number. Optional `dialogueEvent`, `dialogueEvent2`: your bank's Dialogue Events. |
 | `V_Player.ClearPlayerVoiceTypeForType(playerType)` | Restores one player type's normal voice, immediately. |
 | `V_Player.ClearAllPlayerVoiceTypeOverrides()` | Restores all normal player voices. |
 
@@ -192,6 +230,21 @@ The package must match the voice type, or it is silent. Voice types:
 |---|---|---|
 | `V_Player.IsBarrierActive()` | `true` / `false` | Whether the player's Energy Wall shield is currently deployed. |
 
+### Health
+
+| Function | Returns | Description |
+|---|---|---|
+| `V_Player.GetPlayerHealth()` | life, or `nil` | The player's life now. |
+| `V_Player.SetPlayerHealth(life)` | - | Sets the player's life. `life` Required, capped at the max. Never applies in FOB. |
+
+### Fultons
+
+| Function | Returns | Description |
+|---|---|---|
+| `V_Player.ResupplyFulton()` | new count | Refills fultons to the max, like a supply drop. |
+| `V_Player.SetFultonCount(count)` | new count | Sets the fulton count. `count` Required, capped at the max. |
+| `V_Player.GetFultonCount()` | count, max | The player's fultons now and the max their Fulton grade allows. |
+
 ### CQC
 
 | Function | Description |
@@ -200,18 +253,13 @@ The package must match the voice type, or it is silent. Voice types:
 
 #### Quiet's CQC
 
-Lets Quiet CQC-hold and interrogate enemies. Also in the IH V Framework
-menu.
+Lets Quiet CQC-hold and interrogate enemies. Also in the
+[Infinite Heaven menu](/V_Framework#infinite-heaven-menu).
 
 | Function | Description |
 |---|---|
 | `V_Player.SetQuietHoldCqc(enable)` | Quiet can CQC-hold and choke. |
 | `V_Player.SetQuietInterrogate(enable)` | Quiet can interrogate. |
-
-```lua
-V_Player.SetQuietHoldCqc(true)
-V_Player.SetQuietInterrogate(true)
-```
 
 > **These never apply in FOB.**
 {:.note}
@@ -219,7 +267,6 @@ V_Player.SetQuietInterrogate(true)
 ### Call menu
 
 Adds your own call menu options, moves options around and turns them on or off.
-Options you add are saved like a save file: add one each launch (e.g. when your script loads) and it is in every mission, on the same page and row, with any change you made to it, until you reset it. An option no mod adds for 2 launches is removed. Changes to the game's own options go back to normal when the mission ends, so make those each mission.
 
 | Function | Description |
 |---|---|
@@ -235,7 +282,6 @@ Options you add are saved like a save file: add one each launch (e.g. when your 
 
 `item` is a [`V_CallMenuItem`](#call-menu-items), an id from `AddCallMenuItem`, or an option's `key`. Every parameter is required.
 
-Pages are set for you: page 1 holds the game's options, Call em, and anything placed with `inPlaceOf`; other options fill page 2 onward, in the order they were added, and keep the page and row they first landed on. Empty pages are skipped. RELOAD goes to the next page; EVADE (controller) or ACTION (keyboard) goes back. The guide next to Select shows the button and the page, e.g. `2/5`. Page 1 shows the game's column logos; later pages show only the logos your options ask for with `icon`.
 
 #### AddCallMenuItem fields
 
@@ -246,14 +292,14 @@ Pages are set for you: page 1 holds the game's options, Call em, and anything pl
 | `column` | Required | A [`V_CallMenuColumn`](#call-menu-columns). |
 | `description` | Optional | Lang key of the help text. Default: `label`. |
 | `message` | Optional | Name sent as `item` in `ItemSelected`, so you can match it with `sender`. Default: the item id. |
-| `exclusive` | Optional | A name, e.g. your mod's. Pages holding options with this name are kept for them; other options skip those pages. |
-| `inPlaceOf` | Optional | A `V_CallMenuItem` whose row this option takes. |
+| `exclusive` | Optional | A name, e.g. your mod's. Pages holding options with this name are kept for them; other options skip those pages. Default: none. |
+| `inPlaceOf` | Optional | A `V_CallMenuItem` whose row this option takes. Default: none. |
 | `when` | Optional | A [`V_CallMenuCondition`](#call-menu-conditions). Default: `ALWAYS`. |
-| `voice` | Optional | Player voice labels (e.g. `"PLA0040_001"`) or ids; Snake says one at random when the option is picked. |
-| `icon` | Optional | Logo shown on this option's column on the page it lands on: a [`V_CallMenuIcon`](#call-menu-icons), or the path of an `.ftex` sheet of 2x2 white shapes on transparent, like the game's icon textures. The topmost option with an `icon` wins. |
+| `voice` | Optional | Player voice labels (e.g. `"PLA0040_001"`) or ids; Snake says one at random when the option is picked. Default: none. |
+| `icon` | Optional | Column logo on its page: a [`V_CallMenuIcon`](#call-menu-icons), or an `.ftex` sheet of 2x2 white shapes on transparent. Topmost option with an `icon` wins. Default: none. |
 | `iconCell` | Optional | Which quarter of that sheet: `0` top-left, `1` top-right, `2` bottom-left, `3` bottom-right. Default: `0`. |
 | `iconUvRepeat` | Optional | `{ u, v }`: how much of the texture the logo shows. `{ 1, 1 }` shows all of it, e.g. a single-picture `.ftex`. Default: `{ 0.5, 0.5 }`. |
-| `iconUvShift` | Optional | `{ u, v }`: where the shown part starts, `0` to `1` across the texture. Overrides `iconCell`. |
+| `iconUvShift` | Optional | `{ u, v }`: where the shown part starts, `0` to `1` across the texture. Overrides `iconCell`. Default: set by `iconCell`. |
 
 Picking any option, yours or the game's, sends the [`ItemSelected`](#player-messages) message.
 
@@ -331,6 +377,44 @@ See [V Framework Custom Outfits](/V_Framework_Custom_Outfits).
 
 `key` is the registration key. The head functions act on the custom head the player is wearing.
 
+#### Outfit colours
+
+Read and change an outfit's [colours](/V_Framework_Custom_Outfits#colours).
+
+| Function | Returns | Description |
+|---|---|---|
+| `V_Player.GetOutfitColors(key)` | table, or `nil` | The outfit's colour channels and picked colours. |
+| `V_Player.GetOutfitColor(key, channel)` | number, or `nil` | The picked colour of one channel. |
+| `V_Player.SetOutfitColor(key, channel, index, save)` | `true` / `false` | Picks colour `index` of a channel; `true` when it is applied or about to be. |
+| `V_Player.GetSortieOutfitCursor()` | `{ key, variant, worn, colors }`, or `nil` | The custom outfit under the Sortie Prep cursor. `colors` = whether it has colours. |
+| `V_Player.EquipSortieOutfitCursor()` | `true` / `false` | Equips the outfit under the Sortie Prep cursor. |
+
+| Parameter | Required | Purpose |
+|---|---|---|
+| `key` | Optional (worn outfit) | Registration key. `nil` = the custom outfit the player wears. |
+| `channel` | Required | `"primary"` or `"secondary"`, or `1` / `2`. |
+| `index` | Required | Colour number, from `1`. |
+| `save` | Optional (`true`) | `false` only previews the colour, until the mission changes. |
+
+`GetOutfitColors` returns `{ key, worn, variant, primary, secondary }`; each channel is `{ selected, colors }`,
+`colors` a list of `{ icon, pack }` (`pack` = the colour has its own `fpk`). `variant` is `0` for the outfit itself, `n` for its `variants[n]`.
+
+```lua
+V_Player.SetOutfitColor("MyMod:MySuit", "primary", 2)
+```
+
+---
+
+## Buddies
+
+See [V Framework Buddy Outfits](/V_Framework_Buddy_Outfits).
+
+| Function | Returns | Description |
+|---|---|---|
+| `V_TppBuddyService.RegisterBuddyOutfit(def)` | `value, developId` or `false` | Registers a Quiet costume, D-Horse tack or D-Dog gear. |
+| `V_TppBuddyService.SetBuddyOutfit(key)` | `true` / `false` | Equips a registered buddy outfit or Quiet weapon. |
+| [`V_TppBuddyService.SetQuietWeaponMotion(def)`](/V_Framework_Buddy_Outfits#quiet-weapon-animations) | `true` / `false` | Gives a Quiet weapon its own body and weapon animations. |
+
 ---
 
 ## Equipment
@@ -355,8 +439,8 @@ V_TppEquip.AddToEquipIdTable({
 })
 ```
 
-Only weapons may use the `EQP_WP_` prefix. All mods share the weapon
-ID range; when it is full the log says
+Only weapons may use the `EQP_WP_` prefix, and only support weapons
+`EQP_SWP_`. All mods share the weapon ID range; when it is full the log says
 `RegisterConstantEquipId '<name>': no free equipId, rejected`.
 
 ### Weapon-part declarations
@@ -400,11 +484,11 @@ V_TppEquip.DeclareBulletTypes { "BULLET_TYPE_Example" }
 | `DeclareBulletTypes` | `BULLET_TYPE_*` | `SetBullet` -> `bulletType` |
 | `DeclareRicochetSizes` | `RICOCHET_SIZE_*` | `SetBullet` -> `ricochetSize` |
 | `DeclarePenetrateLevels` | `PENETRATE_LEVEL_*` | `SetBullet` -> `bulletParamSetsBase.penNear` / `.penFar` |
-| `DeclareBLAs` | `BLA_*` | `SetBullet` -> `blastId` |
+| `DeclareBLAs` | `BLA_*` | `SetBullet` / `SetSupportWeapon` -> `blastId`, `SetBlastParameter` |
 | `DeclareMZs` | `MZ_*` | `SetGunBasic` -> `muzzleId` |
 | `DeclareCasings` | `CASING_*` | - |
 | `DeclareWeaponPaints` | `WEAPON_PAINT_*` | - |
-| `DeclareSWPs` | `SWP_*` | - |
+| `DeclareSWPs` | `SWP_*` | `AddToEquipIdTable`, `SetSupportWeaponParameter` |
 | `DeclareSWPTypes` | `SWP_TYPE_*` | - |
 
 ### Handling, motion and missiles
@@ -416,6 +500,145 @@ V_TppEquip.DeclareBulletTypes { "BULLET_TYPE_Example" }
 | [`V_TppEquip.SetRemoteMissile`](/V_Framework_Custom_Weapons#remote-controlled-missile-setremotemissile) | - | Weapon's shell becomes steerable, similar to Rocket arm. |
 | `V_TppEquip.AbortRemoteMissile()` | - | Ends the current flight. |
 | `V_TppEquip.IsRemoteMissileFlying()` | `boolean` | Whether a steerable missile is in the air. |
+
+### Support weapons
+
+| Function | Description |
+|---|---|
+| [`V_TppEquip.SetSupportWeapon`](/V_Framework_Custom_Weapons#support-weapons-setsupportweapon) | A custom thrown item, thrown like a vanilla one; you script its effect. |
+| [`V_TppEquip.SetSupportWeaponParameter`](/V_Framework_Custom_Weapons#support-weapon-stats-setsupportweaponparameter) | Ammo, fuse, effect time, grade and R&D stats. |
+| [`V_TppEquip.SetBlastParameter`](/V_Framework_Custom_Weapons#blast-setblastparameter) | Blast radius and noise. |
+
+---
+
+## Throwing
+
+Thrown items (grenades, smoke, decoys...) in the world, by handle, plus blasts,
+clouds, fire and noise. Get a handle from a [Throwing message](#throwing-messages), `Search` or
+`GetHandleLatestThrownByPlayer`. Commands are ignored in FOB.
+
+| Function | Returns | Description |
+|---|---|---|
+| `V_ThrowingSystem.Throw(def)` | `true` | Throws an item. |
+| `V_ThrowingSystem.Search(pos, radius)` | list of handles | Items within `radius` metres of `pos`, nearest first. |
+| `V_ThrowingSystem.GetPosition(handle)` | `x, y, z` | Item position. |
+| `V_ThrowingSystem.GetRotation(handle)` | `x, y, z, w` | Item rotation. |
+| `V_ThrowingSystem.GetInfo(handle)` | table | `{ equipId, owner, lifeLeft, reboundCount, isActivated, isStopped, isDone }`. |
+| `V_ThrowingSystem.GetLifeLeft(handle)` | number | Time the item has left. |
+| `V_ThrowingSystem.GetHandleLatestThrownByPlayer()` | handle | The player's last thrown item. |
+| `V_ThrowingSystem.GetThrowingCount(owner, swpType)` | number | Items of a `TppEquip.SWP_TYPE_*` an owner has out. |
+| `V_ThrowingSystem.GetPredictedPositionAtTime(handle, seconds)` | `x, y, z` | Where the item will be. |
+| `V_ThrowingSystem.OverwriteVelocity(handle, target, flightTime)` | `true` / `false` | Redirects the item to land on `target` (`{ x, y, z }`) after `flightTime` seconds. |
+| `V_ThrowingSystem.RequestSmoke(handle)` | - | The item gives off smoke. |
+| `V_ThrowingImpl.Activate(handle)` | `true` / `false` | The item goes off now. |
+| `V_ThrowingImpl.Deactivate(handle)` | `true` / `false` | Removes the item. |
+| `V_ThrowingImpl.SetLifeLeft(handle, time)` | `true` / `false` | Sets the time the item has left. |
+| `V_ThrowingImpl.Stop(handle)` | `true` / `false` | Stops the item where it is; its fuse keeps running. |
+| `V_ThrowingImpl.GetVelocity(handle)` | `x, y, z` | Item velocity. |
+| `V_ThrowingImpl.UpdateActionGrenade(handle, swpType)` | `true` / `false` | The item acts as a grenade of that `SWP_TYPE_*`. `swpType` Optional (`1`). |
+| `V_ThrowingImpl.UpdateActionSmoke(handle)` | `true` / `false` | Acts as a smoke grenade. |
+| `V_ThrowingImpl.UpdateActionMolotovCocktail(handle)` | `true` / `false` | Acts as a Molotov cocktail. |
+| `V_ThrowingImpl.UpdateActionDecoy(handle)` | `true` / `false` | Acts as a decoy. |
+| `V_ThrowingImpl.UpdateActionKibidango(handle)` | `true` / `false` | Acts as bait. |
+| `V_ThrowingImpl.UpdateActionFakeSign(handle)` | `true` / `false` | Acts as the fake sign. |
+| `V_ThrowingImpl.AddReboundNoise(handle)` | `true` / `false` | Enemies hear the item land. |
+| `V_ThrowingImpl.PostReboundSound(handle)` | `true` / `false` | Plays the item's landing sound. |
+| `V_ThrowingImpl.IsObstructSight(equipId)` | `true` / `false` | Whether that item blocks sight, like smoke. |
+| `V_ThrowingImpl.CreateEffectLanding(pos)` | `true` / `false` | Landing effect at `pos`. |
+| `V_ThrowingImpl.CreateEffectDropInWater(pos)` | `true` / `false` | Water splash at `pos`. |
+| `V_RangeAttackSystem.RequestToChaff(def)` | handle, or nothing | Chaff: jams cameras, UAVs and Sahelanthropus map-wide, cuts CP radio and missile lock-on. One at a time; a new one replaces the old. |
+| `V_RangeAttackSystem.RequestToStun(def)` | handle, or nothing | Stun grenade burst at a position. |
+| `V_RangeAttackSystem.RequestToSmoke(def)` | handle, or nothing | Smoke or sleeping-gas cloud. |
+| `V_RangeAttackSystem.RequestToFlame(def)` | handle, or nothing | Molotov fire. |
+| `V_BlastSystem.Blast(def)` | `true` / `false` | An explosion's damage and push, without its look or sound. |
+| `V_NoiseSystem.AddNoise(def)` | `true` / `false` | A noise guards hear and check, with no actual sound. |
+
+`pos` is `{ x, y, z }`. A command that returns `true` / `false` is queued (`true`) and runs on the next frame.
+
+#### Throw fields
+
+| Field | Required | Purpose |
+|---|---|---|
+| `equipId` | Yes | `TppEquip.EQP_SWP_*` to throw. |
+| `pos` | Yes | Start position. |
+| `velocity` | One of these two | `{ x, y, z }` m/s. |
+| `target` | One of these two | `{ x, y, z }` landing point; needs `flightTime` or `angle`. |
+| `flightTime` | With `target`, one of these two | Seconds to reach `target`. |
+| `angle` | With `target`, one of these two | Throw angle to reach `target`. |
+| `rotation` | No (none) | `{ x, y, z, w }`. |
+| `fuseTime` | No (item's) | Seconds before it goes off. |
+| `owner` | No (`0`, player) | Thrower's game object ID. |
+| `hitIgnoreId` | No (none) | Game object it passes through. |
+| `grade` | No (`0`) | Item grade. |
+
+```lua
+V_ThrowingSystem.Throw{
+  equipId    = TppEquip.EQP_SWP_Grenade,
+  pos        = { vars.playerPosX, vars.playerPosY + 1.5, vars.playerPosZ },
+  target     = { vars.playerPosX + 10, vars.playerPosY, vars.playerPosZ },
+  flightTime = 1.5,
+}
+```
+
+#### Chaff, stun, smoke and flame fields
+
+| Field | Chaff | Stun | Smoke | Flame | Purpose |
+|---|---|---|---|---|---|
+| `pos` | Yes | Yes | Yes | Yes | Position. |
+| `duration` | Yes, unless `endless` | - | Yes | No (`12`) | Seconds. A smoke cloud then fades out. |
+| `radius` | - | No (`0`) | Yes | No (`8.8`) | Metres. |
+| `endless` | No (`false`) | - | - | - | Lasts until replaced. |
+| `noEffect` | No (`false`) | - | - | - | Jams without the cloud effect. |
+| `type` | - | - | No (`"Smoke"`) | - | `"Smoke"`, `"SleepGas"`, or `0-4`. |
+| `attackId` | - | No (`TppDamage.ATK_StunGrenade`) | - | No (`TppDamage.ATK_MolotovCocktailFire`) | Damage row. |
+| `grade` | - | No (`1`) | - | No (`0`) | Grade. |
+| `owner` | No (`0`) | No (`0`) | No (`0`) | No (`0`) | Owner's game object ID. |
+
+Up to 4 requests of each kind per frame. Up to 12 smoke clouds (the oldest is replaced) and 12 fires at once.
+Example: the [chaff grenade](/V_Framework_Custom_Weapons#support-weapons-setsupportweapon).
+
+#### Blast fields
+
+| Field | Required | Purpose |
+|---|---|---|
+| `pos` | Yes | Position. |
+| `blastId` | Yes | `TppEquip.BLA_*`; gives the noise and the default radius. |
+| `attackId` | Yes | `TppDamage.ATK_*` it deals. |
+| `radius` | No (the blast's) | Metres, up to `100`. |
+| `shockwave` | No (`true`) | Also pushes things in a 1.5x wider ring. |
+| `owner` | No (`0`) | Owner's game object ID. |
+| `hitIgnoreId` | No (none) | Game object it leaves unhurt. |
+| `grade` | No (`0`) | Grade. |
+
+Up to 4 blasts per frame.
+
+```lua
+V_BlastSystem.Blast{ pos = { x, y, z }, blastId = TppEquip.BLA_Grenade, attackId = TppDamage.ATK_Grenade }
+```
+
+#### Noise fields
+
+| Field | Required | Purpose |
+|---|---|---|
+| `pos` | Yes | Position. |
+| `type` | Yes | Noise kind, `0-127`: `0x0D` grenade bouncing (a threat), `0x1A` small item bouncing, `0x1C` smoke grenade going off, `0x50` the vanilla `AddSpecialNoise` noise. |
+| `owner` | No (`0`) | Who made it. |
+
+---
+
+## Effects
+
+V Framework has no effect function: use the vanilla effect locators. Put an
+effect locator naming the `.vfx` in a `.fox2` the mission loads, then:
+
+```lua
+TppDataUtility.SetForcedChangePositionEffectFromId("MyFxLocator", x, y, z)
+TppDataUtility.CreateEffectFromId("MyFxLocator")
+```
+
+`DestroyEffectFromId`, `DestroyImmediateEffectFromId`, `IsReadyEffectFromId` and
+`SetVisibleEffectFromId` work the same way; the `...FromGroupId` versions act on a
+whole group. One locator plays one effect at a time, at a position only.
 
 ---
 
@@ -488,7 +711,7 @@ work.
 |---|---|---|
 | `equipID` (`p01`) | No (`0`) | Equipment ID. Use `EQP_None` for heads. |
 | `equipDevelopTypeID` (`p02`) | No (`0`) | Main R&D category. |
-| `baseEquipDevelopId` (`p03`) | No (none) | Parent record. Child grades must be higher than the parent. |
+| `baseEquipDevelopId` (`p03`) | No (none) | Parent R&D row. Child grades must be higher than the parent. |
 | `skill` (`p04`) | No (none) | Required skill ID. |
 | `bluePrintId` (`p05`) | No (`65535`, none) | Blueprint needed to develop the row, or a show/hide rule. |
 | `langEquipName` (`p06`) | No (none) | Display-name language ID. |
@@ -497,11 +720,13 @@ work.
 | `equipDevelopGroupID` (`p09`) | No (`0`) | Fine R&D tree group. |
 | `langPowerUpInfo0-11` (`p10-p21`) | No (none) | Upgrade-information language IDs. |
 | `langEquipRealName` (`p30`) | No (none) | Real-name language ID. |
-| `isResultRankLimited` (`p31`) | No (`0`) | Rank-limited flag. |
+| `isResultRankLimited` (`p31`) | No (`0`) | `1`: using the item in a mission caps the mission rank, like vanilla rank-limited items. |
+| `langResultRankLimited` | No (`langEquipName`) | Lang id of the result-screen line explaining the cap. |
 | `isCustomEnable` (`p32`) | No (`1`) | Customization flag. |
 | `isColorChangeEnable` (`p33`) | No (`1`) | Color-change flag. |
+| `unk34` | No (`0`) | Unknown. |
 | `isSecurityStaffEquip` (`p35`) | No (`0`) | Security-staff equipment flag. |
-| `unk34`, `unk36` | No (`0`) | Unknown. |
+| `unk36` | No (ignored) | Ignored. Custom rows never count toward what the game sends online. |
 
 #### `bluePrintId` forms
 
@@ -540,27 +765,26 @@ end
 | `resourceUsageType1/2` (`p65`, `p67`) | No (none) | Per-use resources. |
 | `resourceUsageType1Count/2Count` (`p66`, `p68`) | No (`0`) | Per-use quantities. |
 | `displayInfo` (`p69`) | No (`0`) | `0` shown; `1` needs its `skill` or its `bluePrintId` obtained to show (a design always shows); `2`, `3`, `5` hide the row. |
+| `unk70` | No (`0`) | Unknown. |
 | `developTimeMinute` (`p71`) | No (`0`) | Development time in minutes. |
 | `intimacyPoint` (`p73`) | No (`0`) | Intimacy requirement/value. |
-| `isValidMbCoin` (`p72`) | No | Always `0`. |
-| `isFobAvailable` (`p74`) | No | Always `0`. |
-| `unk70` | No (`0`) | Unknown. |
 
 Invalid grades and side-branch clashes are fixed automatically and
 logged.
 
-### Develop record state
+### R&D row state
 
 | Function | Description |
 |---|---|
-| `GetDevelopId(key)` | Returns a custom record's allocated develop ID. |
-| `SetEquipDeveloped(id)` | Marks the record developed. |
-| `SetEquipUndeveloped(id)` | Marks the record undeveloped. |
+| `GetDevelopId(key)` | Returns a custom R&D row's develop ID. |
+| `SetEquipDeveloped(id)` | Marks the item developed. |
+| `SetEquipUndeveloped(id)` | Marks the item undeveloped. |
 | `IsEquipDevelopable(id)` | Returns whether requirements are currently met. |
-| `IsEquipDeveloped(id)` | Returns whether the record is developed. |
+| `IsEquipDeveloped(id)` | Returns whether the item is developed. |
 | `SetEquipNew(id, isNew)` | Sets or clears the `NEW` flag. |
 | `IsEquipNew(id)` | Returns the `NEW` state. |
 | `SetEquipDevelopVisible(id, visible)` | Shows or hides the row at runtime without reloading. |
+| `GetUsedRankLimitedItemLangIds()` | Lang ids of the rank-limited custom items used this mission, in first-use order. |
 
 Revealing a row still marked `NEW` also plays its announcement.
 
@@ -579,8 +803,6 @@ posters, codenames or medicinal plants.
 
 
 #### The iDroid DATABASE entry
-
-`SetDataBaseDisplay` gives the entry its DATABASE row.
 
 ```lua
 local bpId = V_TppMotherBaseManagement.RegisterDataBase("MyMod_Rsh12")
@@ -606,9 +828,9 @@ TppTerminal.keyItemRewardTable[bpId] = "langId_name"
 | `docIcon` | No (none) | Small row icon. |
 | `docImage` | No (`docIcon`) | Large detail image. |
 | `langDocInfo` | No (none) | Description (lang id). |
+| `tab` | No (Blueprints) | A [`V_TppDataBase`](#database-tabs) tab. |
 
 Set at least one of `langDocName`, `docIcon`, `docImage`, `langDocInfo`.
-| `tab` | No (Blueprints) | A [`V_TppDataBase`](#database-tabs) tab. |
 
 ### Unique staff
 
@@ -643,7 +865,7 @@ created):
 | Field | Default | Purpose |
 |---|---|---|
 | `faceId` | face `0` | Face. |
-| `faceIdForNoFultonStaff` | - | Face when not fultoned. |
+| `faceIdForNoFultonStaff` | game's | Face when not fultoned. |
 | `skill` | none | Skill name, e.g. `"Surgeon"`. |
 | `missionId` | none | Stored by the game but never used. |
 | `deployMissionId` | none | Ignored; the game never reads it. |
@@ -791,7 +1013,7 @@ a table with only `gmp` still recruits staff and pays fuel.
 | Field | Default | In game |
 |---|---|---|
 | `keyValue1` | Required | The mission `key`. |
-| `keyValue2` | Required | `0-6`. Unit the recruits are for, shown as the icon: `1` Combat, `2` R&D, `3` Base Development, `4` Support, `5` Intel, `6` Medical. `0` is Combat. Recruits are still auto-assigned. |
+| `keyValue2` | Required | Recruits' unit icon: `0`/`1` Combat, `2` R&D, `3` Base Development, `4` Support, `5` Intel, `6` Medical. Recruits are still auto-assigned. |
 | `mainRewardType` | none | `MAIN_REWARD_TYPE_*`. The list icon only. |
 | `gmp` | `0` | GMP. |
 | `staffDrawCount` | `10` | Staff recruited. |
@@ -817,7 +1039,7 @@ Every value is capped at the best vanilla dispatch reward.
 | `RegisterFace(def)` | Creates a face under `def.key` and returns its `faceId`. |
 | `GetFaceId(key)` | Returns the `faceId` of a key, or `nil`. |
 
-Creates a new soldier face. Only `key` is required.
+Only `key` is required.
 
 | Field | Default | Values |
 |---|---|---|
@@ -919,7 +1141,7 @@ All functions below belong to `V_CassetteCommand`.
 | `GetCassettePlayingTrackId()` | Returns the active track ID. |
 | `PauseCassette(fadeSec)` | Pauses playback. |
 | `ResumeCassette(fadeSec)` | Resumes playback. |
-| `StopCassette(fadeSec)` | Stops playback permanently. |
+| `StopCassette(fadeSec)` | Stops playback. |
 | `IsCassetteSpeakerEnabled()` | Returns speaker-playback state. |
 | `SetCassetteSpeakerEnabled(enabled)` | Enables or disables speaker playback. |
 
@@ -1001,15 +1223,26 @@ All functions below belong to `V_TppUiCommand`.
 
 | Function | Description |
 |---|---|
-| `SetDefaultEquipBgTexturePath(path, colored, opacity)` | Sets the default player-equipment background. |
+| `SetDefaultEquipBgTexturePath(path, colored, opacity, scaleX, scaleY)` | Sets the default player-equipment background. |
 | `ClearDefaultEquipBgTexture()` | Restores the player default. |
-| `SetEquipBgTexturePath(equipId, path, colored, opacity)` | Sets one player-equipment background. |
+| `SetEquipBgTexturePath(equipId, path, colored, opacity, scaleX, scaleY)` | Sets one player-equipment background. |
 | `ClearEquipBgTexture(equipId)` | Clears one player-equipment background. |
-| `SetEnemyWeaponBgTexturePath(path, colored, opacity)` | Sets the default enemy-weapon background. |
+| `SetEnemyWeaponBgTexturePath(path, colored, opacity, scaleX, scaleY)` | Sets the default enemy-weapon background. |
 | `ClearEnemyWeaponBgTexture()` | Restores the enemy default. |
-| `SetEnemyEquipBgTexturePath(equipId, path, colored, opacity)` | Sets one enemy-equipment background. |
+| `SetEnemyEquipBgTexturePath(equipId, path, colored, opacity, scaleX, scaleY)` | Sets one enemy-equipment background. |
 | `ClearEnemyEquipBgTexture(equipId)` | Clears one enemy-equipment background. |
-| `ClearAllEquipBgTextures()` | Clears all player and enemy overrides. |
+| `ClearAllEquipBgTextures()` | Clears every background, defaults included. |
+
+| Parameter | Required | Description |
+|---|---|---|
+| `equipId` | Required | A `TppEquip` id. `0` = empty slot. |
+| `path` | Required | Texture path; `.ftex` is added if missing. |
+| `colored` | Optional | `true` shows the texture as is, black included. Default: `false` (white glow, like vanilla). |
+| `opacity` | Optional | Background alpha. Default: `1`. |
+| `scaleX` | Optional | Width multiplier, `1` = vanilla size. Default: `1`. |
+| `scaleY` | Optional | Height multiplier, `1` = vanilla size. Default: `1`. |
+
+Player equipment is what you carry this mission, supply drops and pickups included. Enemy-only guns and shields always use the enemy backgrounds. Bionic arms and empty slots only use `SetEquipBgTexturePath`.
 
 ### Screen textures
 
@@ -1026,6 +1259,48 @@ All functions below belong to `V_TppUiCommand`.
 
 `missionCode` is optional; omitted applies to every mission. A
 mission's own setting wins over the global one.
+
+### Resident UI packs
+
+| Function | Description |
+|---|---|
+| `LoadResidentUiPack(path, sizeBytes)` | Loads a UI pack (`.fpk` + `.fpkd`, with its `.pftxs`) for the rest of the game, so its windows work on loading screens too. Repeat calls do nothing. Returns `true` when asked. |
+| `IsResidentUiPackLoaded(path)` | `true` once that pack is loaded, so `V_UixUtility.CreateWindow` can use its files. |
+
+`sizeBytes`: memory for the pack's `.fpk` and `.fpkd` contents (not textures), default 1 MiB, 64 KiB to 32 MiB. Packs are never unloaded: all mods together get at most 16 packs and 64 MiB; past that the call returns `false`. Two spellings of one path are the same pack.
+
+### Loading tips and game over
+
+Read the game's loading tips screen and game over menu, to draw your own versions. Use `V_FrameWork.SetFrameCallback`: `Update` doesn't run during a load.
+
+`GetLoadingTipsInfo()` returns a table, or `nil` when it cannot be read:
+
+| Field | Meaning |
+|---|---|
+| `session` | `true` while the tips screen runs. |
+| `state` | `0` splash, `1` waiting for the tip text, `2` tips shown, `3` ending (the player resumed). |
+| `tipIndex`, `tipCount` | The tip shown and how many there are. |
+| `pageTurn` | `0` none; `1`..`5` while a page turns (`3` is the frame the game swaps the text). |
+| `resumePermitted` | `true` once the game has loaded and the player may leave the screen. |
+| `hidden` | `true` while another full-screen menu covers the tips. |
+| `tipId` | Only in state `2`: the tip's id. `tipId % 2^32` equals `Fox.StrCode32(tostring(TppDefine.TIPS.COVER))` for the COVER tip. |
+| `titleLangId`, `bodyLangId` | Only in state `2`: language ids for `V_UixUtility.GetLangText`. |
+| `page`, `pageCount` | Only in state `2`: the page of a multi-page tip. |
+
+For a frame or two after a load starts, the table still holds the previous load's end (`state` `3`) until the game restarts its screen: treat a `state` of `3` at the very start of a session as not yet started.
+
+`GetGameOverInfo()` returns a table, or `nil` when it cannot be read:
+
+| Field | Meaning |
+|---|---|
+| `open` | `true` from the moment the game over menu starts until it ends. |
+| `state` | `3` waiting for black, `4` menu shown, `5` choosing, `6`/`7` confirm popup, `8` chosen, `9` fading out, `10` done. |
+| `selected`, `previous` | The highlighted row, from `0`, and the one before it. |
+| `count` | Number of rows, `1` to `4`. |
+| `type` | `0` normal, `1` Cyprus, `2` time paradox. |
+| `items` | The rows' language ids in row order (e.g. `gameover_select_return_cp`); they also tell the rows apart. |
+
+While `open` is `false`, the other fields are `0`.
 
 ### Equipment icons
 
@@ -1116,6 +1391,13 @@ V_TppUiCommand.SetMissionMenuHelp(11082, "MustOwnRockets")
 
 ---
 
+## UI assets
+
+`V_UixUtility` (editing the HUD, menus and iDroid, and making your own
+UI windows) has its own page: [V Framework UI](/V_Framework_UI).
+
+---
+
 ## Helicopter
 
 | Function | Description |
@@ -1123,11 +1405,11 @@ V_TppUiCommand.SetMissionMenuHelp(11082, "MustOwnRockets")
 | `V_Helicopter.SetEnableHeliVoice(enabled, voiceEvent, radioEvent)` | Overrides Pequod voice and radio events. |
 | `V_Helicopter.PilotCallVoice(label)` | Plays a pilot voice line. |
 | `V_Helicopter.PilotCallRadio(label1, label2)` | Plays one or two radio lines. Helicopter must be rendered. |
-| `V_Helicopter.SetFieldTaxiMissionEnabled(missionCode, enabled)` | Enables or disables Taxi for a mission. |
+| `V_Helicopter.SetFieldTaxiMissionEnabled(missionCode, enabled)` | Enables or disables Taxi for a mission. Never in FOB. |
 | `V_Helicopter.SetTaxiLandingZoneHidden(lzName, hidden)` | Hides or shows an LZ on the Taxi map. |
-| `V_Helicopter.SetTaxiRideState(state)` | Selects player Taxi pose `1-3`. |
+| `V_Helicopter.SetTaxiRideState(state)` | Sets Snake's pose for Taxi rides: `3` on the edge (default), `8` inside by the closed door, `6` inside with the door open, `10` back seat. Mid-ride, Snake moves there. |
 | `V_Helicopter.ResetTaxiState()` | Restores the default Taxi state. |
-| `V_Helicopter.SetPlayerDropSeatPose(ganiPath, missionCode)` | Replaces Snake's seated pose in the helicopter during the drop (`snaputh_q_seat_idl_b_lp`). `missionCode` is optional: without it, every mission. `nil` `ganiPath` restores vanilla. |
+| `V_Helicopter.SetPlayerDropSeatPose(ganiPath, missionCode)` | Replaces Snake's seated pose in the helicopter during the drop (`snaputh_q_seat_idl_b_lp`). `missionCode` Optional (every mission); `nil` `ganiPath` restores vanilla. |
 
 ```lua
 V_Helicopter.SetPlayerDropSeatPose("/Assets/tpp/motion/SI_game/fani/bodies/snap/snaputh/snaputh_q_seat_idl_b_tgs_lp", 10040)
@@ -1141,8 +1423,9 @@ Applies in the ACC (Aerial Command Center).
 
 | Function | Description |
 |---|---|
-| `V_title_sequence.SetPlayIDroidEndMotion(enabled)` | Snake puts the iDroid away (`snaputh_q_idroid_ed`) when it closes while seated. Off by default. |
+| `V_title_sequence.SetPlayIDroidEndMotion(enabled)` | Snake puts the iDroid away (`snaputh_q_idroid_ed`) when it closes while seated. Default: the [Infinite Heaven option](/V_Framework#infinite-heaven-menu) (on). |
 | `V_title_sequence.SetMotion(ganiPath)` | Replaces the seated idle loop (`snaputh_q_seat_idl_lp`). `nil` restores it. |
+
 ```lua
 V_title_sequence.SetPlayIDroidEndMotion(true)
 V_title_sequence.SetMotion("/Assets/tpp/motion/SI_game/fani/bodies/snap/snaputh/snaputh_q_idl_lp")
@@ -1216,7 +1499,7 @@ For the [Call menu](#call-menu) functions.
 | `V_CallMenuItem.REQUEST_CRAWL` | Get down |
 | `V_CallMenuItem.CALL_COMRADE` | Call em; takes the knock row while you hold an enemy |
 | `V_CallMenuItem.RESCUE_BOY` | Go / Wait for the rescued children |
-| `V_CallMenuItem.FALSE_RADIO_RESPONSE` | Lie to them; takes the sonar row while you hold an enemy. |
+| `V_CallMenuItem.FALSE_RADIO_RESPONSE` | Lie to them; takes the sonar row while you hold an enemy |
 
 ### Call menu columns
 
@@ -1342,6 +1625,78 @@ Booleans take `true`/`false` or `0`/nonzero. `deadBodyLabel`,
 
 ---
 
+## Life
+
+Soldiers, hostages, animals, vehicles and walker gears.
+
+| Command | Fields | Returns |
+|---|---|---|
+| `GetLife` | - | `life, maxLife, stamina, maxStamina`. Stamina is `nil` for vehicles and walker gears, all four are `nil` when the target has no life. |
+| `SetLife` | `life`, `stamina`, `sleep` | - |
+
+| Field | Required | Description |
+|---|---|---|
+| `life` | Optional (unchanged) | New life, up to the max. `0` kills. |
+| `stamina` | Optional (unchanged) | New stamina, up to the max. `0` knocks out. Give `life`, `stamina` or both. |
+| `sleep` | Optional | Soldiers only: with `stamina = 0` he falls asleep instead of fainting. Default: `false`. |
+
+`SetLife` needs `life` or `stamina` and can't change the dead. A soldier
+left with 500 life or less starts dying, as when shot. To change the
+max, use the vanilla `SetMaxLife`.
+
+```lua
+local life, maxLife, stamina, maxStamina = GameObject.SendCommand(soldierId, { id = "GetLife" })
+GameObject.SendCommand(soldierId, { id = "SetLife", life = maxLife / 2 })
+GameObject.SendCommand(hostageId, { id = "SetLife", stamina = 0 })
+```
+
+---
+
+## Animal position
+
+The vanilla `GetPosition` also works on animals: goats, sheep, critter
+birds, storks, eagles, rats, zebras, wolves, jackals and bears.
+
+| Command | Fields | Returns |
+|---|---|---|
+| `GetPosition` | - | The animal's position as a `Vector3`, or `nil` when it isn't in the world (disabled, extracted, or never spawned). |
+
+Target: the animal's numeric game object ID, from
+`GameObject.GetGameObjectIdByIndex(type, i)` or a message. A locator name is a
+herd's name and doesn't pick one animal. In a scan loop, skip `nil` instead of
+stopping.
+
+```lua
+local goatId = GameObject.GetGameObjectIdByIndex("TppGoat", 0)
+local position = GameObject.SendCommand(goatId, { id = "GetPosition" })
+if position then
+  local x, y, z = position:GetX(), position:GetY(), position:GetZ()
+end
+```
+
+---
+
+## Animal damage
+
+The vanilla `AddDamage` also works on goats, sheep, wolves, jackals,
+zebras and bears. Birds and rats aren't supported.
+
+| Field | Required | Description |
+|---|---|---|
+| `attackId` | Required | A `TppDamage.ATK_` value. |
+| `ownerGameObjectId` | Optional | Who dealt it. Default: nobody. |
+| `isOneHitKill` | Optional | Kills it outright. Default: `false`. |
+| `isHeadShot` | Optional | Counts as a head shot. Default: `false`. |
+
+Target: as for [Animal position](#animal-position). An animal that isn't in
+the world takes nothing.
+
+```lua
+GameObject.SendCommand(goatId, { id = "AddDamage", attackId = TppDamage.ATK_10004, ownerGameObjectId = 0, isOneHitKill = true })
+```
+
+---
+
 ## Soldiers
 
 ### Occasional chats
@@ -1445,15 +1800,14 @@ The soldier radios his Command Post, even while held up or in CQC.
 | Field | Required | Purpose |
 |---|---|---|
 | `label` | Yes | What he says, a CP radio label from `CpRadioSeqCommon.spch` (or your own speech data). |
-| `reply` | No | What CP says back once he's been heard. |
+| `reply` | No (none) | What CP says back once he's been heard. |
 
 ```lua
 GameObject.SendCommand(soldierId, { id = "LieToRadio", label = "CPR0320ENE", reply = "CPR0321CP" })
 ```
 
-As with the vanilla `CallRadio`, the CP acts on what a label means, e.g. `CPR0080` makes it stand down.
-
-The logic of "What happenes after can be done in the vanilla message `RadioEnd`.
+As with the vanilla `CallRadio`, the CP acts on what a label means (e.g. `CPR0080` makes it stand down).
+Handle what happens next in the vanilla `RadioEnd` message.
 
 ### Ignore vehicle
 
@@ -1472,8 +1826,7 @@ GameObject.SendCommand(soldierId, {
 
 ### Faction
 
-Soldiers in different factions fight each other.
-Still needs work.
+Soldiers in different factions fight each other (still needs work).
 
 | Field | Required | Purpose |
 |---|---|---|
@@ -1532,7 +1885,7 @@ Post).
 | Field | Required | Purpose |
 |---|---|---|
 | `soundParameterId` | Yes (vanilla) | Voice entry in `mvars.uniqueInterTable.unique`. |
-| `index` | Yes (vanilla) | Voice slot: `0`, or table position `+ 64`. |
+| `index` | Yes (vanilla) | Voice index: `0`, or table position `+ 64`. |
 | `soundDialogueEvent` | No (`DD_vox_ene`) | Wwise event name or FNV1-32 hash. |
 | `soundDialogueEventMarker` | No (vanilla) | Same, for answers that mark a spot on the map. |
 
@@ -1554,9 +1907,9 @@ GameObject.SendCommand(cpId, {
 | Command | Fields | Returns |
 |---|---|---|
 | `SetCautionPhaseDuration` | `duration` | - |
-| `GetCautionPhaseDuration` | - | seconds |
+| `GetCautionPhaseDuration` | - | seconds (the game's own length when not set) |
 | `UnsetCautionPhaseDuration` | - | - |
-| `GetCautionPhaseRemaining` | - | seconds |
+| `GetCautionPhaseRemaining` | - | seconds, `-1` when not in caution (one CP only) |
 
 ```lua
 GameObject.SendCommand(
@@ -1596,7 +1949,6 @@ GameObject.SendCommand(
 
 | Command | Fields | Purpose |
 |---|---|---|
-| `ClearLostHostages` | - | Clears all registrations. |
 | `SetLostHostage` | `hostageType`, optional `customLostLabel`, `customLostLabelTaken` | Registers a lost hostage. |
 | `RemoveLostHostage` | - | Removes one hostage. |
 | `GetHostageGender` | - | Returns the hostage's type, or `nil` if it cannot be read. |
@@ -1671,6 +2023,8 @@ GameObject.SendCommand(
 
 ### Animation
 
+All optional.
+
 | Field | Default | Purpose |
 |---|---|---|
 | `speed` | `1.0` | Cycles per second. |
@@ -1700,6 +2054,8 @@ GameObject.SendCommand(soldierId, {
 ```
 
 ### Fading between states
+
+All optional.
 
 | Field | Default | Purpose |
 |---|---|---|
@@ -1739,7 +2095,7 @@ Use this target:
 |---|---|---|---|
 | `SetSahelanPhase` | `phase` | - | Forces an AI phase. |
 | `GetSahelanPhase` | - | number | Returns the current phase. |
-| `SetSahelanFova` | `fv2` | - | Applies a custom FOVA. |
+| `SetSahelanFova` | `fv2` | - | Gives Sahelanthropus a custom `.fv2` look. |
 | `SetEyeLampColor` | `color`, optional `phase` | - | Sets eye-lamp color. |
 | `SetEyeLampDisco` | `enabled`, `speed`, optional `a` | - | Enables eye color cycling. |
 | `SetHeartLightColor` | `color`, optional `phase` | - | Sets heart-light color. |
@@ -1774,7 +2130,8 @@ message class to use in `Messages()`. See the [Messages guide](/Messages).
 | `NoticeNoise` | `gameObjectId` | A soldier notices a noise. |
 | `NoticeIndis` | `gameObjectId` | A soldier notices something related to the player. |
 | `AnimalNotice` | `gameObjectId, noticeKind` | A herbivore, wolf or bear notices something. |
-| `RequestedHeliTaxi` | `heliId, currentLzHash, destinationLzHash` | A Taxi destination is requested. |
+| `RequestedHeliTaxi` | `heliId, currentLzHash, destinationLzHash` | A Taxi destination is requested. Answer it with a [route](#taxi-routes). |
+| `ClipEvent` | `eventName, clip, gameObjectId` | An `AddClipEvent` event fires on Snake's or his gun's clip. `eventName` and `clip` are as you passed them. |
 
 `NoticeNoise` and `NoticeIndis` are soldiers only. `noticeKind`:
 
@@ -1799,7 +2156,22 @@ message class to use in `Messages()`. See the [Messages guide](/Messages).
 | `OnPickUpCollection` | `playerIndex, uid, type, nameLangId` | The player picks up a custom collectible. |
 | `FinishHeadMotion` | `playerIndex, clipName` | A head-option motion finishes. |
 | `partsTypeChange` | `playerType, partsType, selector` | The player's outfit changes. |
-| `ItemSelected` | `item, heldSoldierId` | A call menu option is picked. `item` is a `V_CallMenuItem`, the item's `message`, or its `AddCallMenuItem` id. `heldSoldierId` is `GameObject.NULL_ID` when you aren't holding anyone. |
+| `ItemSelected` | `item, heldSoldierId` | A call menu option is picked. `item`: a `V_CallMenuItem`, the option's `message`, or its id. `heldSoldierId`: `GameObject.NULL_ID` when holding no one. |
+
+---
+
+## Throwing messages
+
+| Message | Parameters | Fires when |
+|---|---|---|
+| `OnThrow` | `handle, equipId, owner` | An item is thrown. |
+| `OnActivateThrowing` | `handle, equipId, owner` | A thrown item goes off. |
+| `OnRemoveThrowing` | `handle, equipId, owner` | A thrown item is gone. |
+| `OnBounceThrowing` | `handle, equipId, owner` | A thrown item hits a surface while moving. |
+| `OnStopThrowing` | `handle, equipId, owner` | A thrown item comes to rest. |
+
+`handle` works with the [Throwing](#throwing) functions; get the position with `V_ThrowingSystem.GetPosition(handle)`.
+`equipId` is always the real `TppEquip.EQP_SWP_*` value.
 
 ---
 
@@ -1848,5 +2220,7 @@ walkman UI, `0` from a `V_CassetteCommand` call.
 ## See also
 
   - [V Framework](/V_Framework)
+  - [V Framework UI](/V_Framework_UI)
   - [V Framework Custom Weapons](/V_Framework_Custom_Weapons)
   - [V Framework Custom Outfits](/V_Framework_Custom_Outfits)
+  - [V Framework Buddy Outfits](/V_Framework_Buddy_Outfits)

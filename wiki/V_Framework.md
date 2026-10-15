@@ -13,17 +13,23 @@ Lua access to UI, sound, soldiers, bosses and vehicles.
 
   - **[Lua API](/V_Framework_Lua_API)** - functions, DoMessages,
     SendCommands and constants.
+  - **[UI](/V_Framework_UI)** - edit the HUD and menus, and add your
+    own UI windows.
   - **[Custom Weapons](/V_Framework_Custom_Weapons)** - build a weapon
     from parts.
   - **[Custom Outfits](/V_Framework_Custom_Outfits)** - build an outfit
     from a body model and package.
+  - **[Buddy Outfits](/V_Framework_Buddy_Outfits)** - new costumes, tack,
+    gear and rifles for Quiet, D-Horse and D-Dog.
 
 ## Requirements
 
-  - MGSV: TPP 1.0.15.3 or 1.0.15.4, EN or JP.
+  - MGSV: TPP 1.0.15.4.
   - [Infinite Heaven](/Infinite_Heaven).
-  - [IHHook](/IHHook) r25+, with `enable_dll_loader=true` in
-    `ihhook_config.lua`.
+  - [IHHook](/IHHook) r25+ (optional, recommended), with
+    `enable_dll_loader=true` in `ihhook_config.lua`: V Framework then
+    loads at game start. Without it, Infinite Heaven loads it later in
+    startup.
 
 ## Installation
 
@@ -50,5 +56,23 @@ Always on, no setup:
     you hold an enemy, the call menu's knock row makes him call a nearby
     comrade over.
   - **[Lie to them](/V_Framework_Lua_API#radio-the-cp)** - grab or hold
-    up an enemy while he radios in. When his CP calls him back, the
-    sonar row makes him say all is clear and the CP stands down.
+    up an enemy his CP is waiting on: one you cut off mid-report, one
+    asked for a SITREP, or one you caught checking the power, a camera,
+    a noise or something he half-saw. The sonar row makes him say all is
+    clear.
+  - **Volume sliders** - Options >
+    Sound Settings gets Master, Music, Voice, Sound Effects, Ambience,
+    Interface and Cassette Tape volume (1-100; 50 is the original
+    volume, 100 is twice as loud). Ignored in FOB missions.
+
+## Infinite Heaven menu
+
+The **V_FrameWork** menu, in the Safe Space and In Mission menus:
+
+| Option | Default | Effect |
+|---|---|---|
+| Enables Quiet to hold with CQC | Off | Quiet can CQC-hold and choke. |
+| Enables Quiet to Interrogate | Off | Quiet can interrogate. |
+| Play close iDroid animation while in the ACC. | On | Snake puts the iDroid away when it closes while seated. |
+
+Each mission load applies these, over any earlier Lua call to the same feature.
