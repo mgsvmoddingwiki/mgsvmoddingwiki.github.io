@@ -1,7 +1,9 @@
 ---
-title: V Framework UI
-permalink: /V_Framework_UI/
+title: UI
+permalink: /V_Framework/UI/
 tags: [Lua, Reference, Guides, Infinite Heaven, UI, V Framework]
+redirect_from:
+    - /V_Framework_UI/
 ---
 
 `V_UixUtility` builds your own UI windows from `.uilb` layouts and changes the game's own UI (HUD, menus, iDroid). A window holds layouts (`.uilb`), a layout holds models (`.uif`), and a model holds nodes (text, mesh, line, common) and animations (`.uia`).
@@ -536,9 +538,9 @@ Your `.uilb`, `.uif`, `.uia`, `.uigb` and textures go in a pack's `_fpk` folder.
 </fox>
 ```
 
-Add the pack to the missions it is used in (Infinite Heaven `this.AddMissionPacks`). For UI that must also exist during loading screens, keep the pack loaded for the whole game with [`V_TppUiCommand.LoadResidentUiPack`](/V_Framework_Lua_API#resident-ui-packs) instead.
+Add the pack to the missions it is used in (Infinite Heaven `this.AddMissionPacks`). For UI that must also exist during loading screens, keep the pack loaded for the whole game with [`V_TppUiCommand.LoadResidentUiPack`](/V_Framework/Lua_API#resident-ui-packs) instead.
 
 ## See also
 
   - [V Framework](/V_Framework)
-  - [V Framework Lua API](/V_Framework_Lua_API)
+  - [V Framework Lua API](/V_Framework/Lua_API)

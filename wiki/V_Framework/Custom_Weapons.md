@@ -1,7 +1,9 @@
 ---
-title: V Framework Custom Weapons
-permalink: /V_Framework_Custom_Weapons/
+title: Custom Weapons
+permalink: /V_Framework/Custom_Weapons/
 tags: [Lua, Reference, Guides, Infinite Heaven, Weapons, V Framework]
+redirect_from:
+    - /V_Framework_Custom_Weapons/
 ---
 
 A custom weapon is assembled from parts: receiver, barrel, magazine,
@@ -62,7 +64,7 @@ V_TppEquip.AddToEquipIdTable{
 }
 ```
 
-Row format: [Equipment](/V_Framework_Lua_API#equipment).
+Row format: [Equipment](/V_Framework/Lua_API#equipment).
 
 ---
 
@@ -282,7 +284,7 @@ V_TppEquip.SetMagazine{
 | `capacity` | No (`0`) | Magazine size. |
 | `totalCarry` | No (`0`) | Maximum carried rounds. |
 | `bulletId` | No (`0`) | Projectile fired. |
-| `magazineType` | No (unchanged) | A [`V_MagazineType`](/V_Framework_Lua_API#magazine-motion-types); reload animations. |
+| `magazineType` | No (unchanged) | A [`V_MagazineType`](/V_Framework/Lua_API#magazine-motion-types); reload animations. |
 
 ---
 
@@ -604,7 +606,7 @@ V_TppMotherBaseManagement.AddToEquipDevelopTable("MyMod:Example", {
 })
 ```
 
-All fields: [AddToEquipDevelopTable](/V_Framework_Lua_API#addtoequipdeveloptable).
+All fields: [AddToEquipDevelopTable](/V_Framework/Lua_API#addtoequipdeveloptable).
 
 ---
 
@@ -902,7 +904,7 @@ V_TppEquip.SetRemoteMissile{
 
 A custom grenade or other thrown item. It is held, thrown and flies like a
 vanilla item (`throwAs`), but that item's effect never runs: you script the
-effect on the [Throwing messages](/V_Framework_Lua_API#throwing-messages).
+effect on the [Throwing messages](/V_Framework/Lua_API#throwing-messages).
 
 ```lua
 V_TppEquip.RegisterConstantEquipId("EQP_SWP_ChaffGrenade")
@@ -991,5 +993,5 @@ Use it as `blastId` in `SetSupportWeapon` or `SetBullet`.
 ## See also
 
   - [V Framework](/V_Framework)
-  - [V Framework Lua API](/V_Framework_Lua_API)
-  - [V Framework Custom Outfits](/V_Framework_Custom_Outfits)
+  - [V Framework Lua API](/V_Framework/Lua_API)
+  - [V Framework Custom Outfits](/V_Framework/Custom_Outfits)
