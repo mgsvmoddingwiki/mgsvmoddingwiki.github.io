@@ -163,6 +163,10 @@ body.theme-light {
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ GENERAL ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
+* {
+    -webkit-tap-highlight-color: transparent; /* disable the blue highlight color on touch events on Webkit/Chromium */
+}
+
 *,::before,::after {
     box-sizing: border-box;
 }
@@ -2931,9 +2935,22 @@ sup[role="doc-noteref"]:target .footnote:active {
     mask-image: url("/assets/images/ui.svg#icons-hamburger-menu");
 }
 
+.is-section .mobile-menu-open #git-wiki-mobile-header > button::before,
 .mobile-menu-open #git-wiki-mobile-header > button::before {
     -webkit-mask-image: url("/assets/images/ui.svg#icons-hamburger-menu-close");
     mask-image: url("/assets/images/ui.svg#icons-hamburger-menu-close");
+}
+
+.is-section #git-wiki-mobile-header > button::before,
+.is-section .mobile-menu-closed #git-wiki-mobile-header > button::before {
+    width: 30px;
+    -webkit-mask-image: url("/assets/images/ui.svg#icons-hamburger-menu-section");
+    mask-image: url("/assets/images/ui.svg#icons-hamburger-menu-section");
+    translate: 3px 0px;
+}
+
+.is-section .mobile-menu-open #git-wiki-mobile-header > button::before {
+    translate: 5px 0px; /* slightly offset to be more centered to section-based closed state icon */
 }
 
 /* Paz emblem */
@@ -3701,6 +3718,7 @@ footer {
 
     /* Copy of tooltip menu pseudo-element styling */
     #git-wiki-sidebar::before {
+        --for-icon-offset: 0px;
         --height: 8px;
         width: 20px;
         height: var(--height);
@@ -3710,8 +3728,13 @@ footer {
         clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
         position: absolute;
         top: 0;
-        left: calc(var(--spacing-minor) * 2);
+        left: calc(var(--spacing-minor) * 2 + var(--for-icon-offset));
         transition: top 200ms ease-out;
+    }
+
+    .is-section #git-wiki-sidebar::before {
+        /* To align with hamburger menu icon's close state offset on section pages */
+        --for-icon-offset: 2px;
     }
 
     .mobile-menu-open #git-wiki-sidebar::before {
