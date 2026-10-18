@@ -33,6 +33,7 @@ if (sectionIndex.length > 1 && !document.title.includes('Page Not Found')) {
     });
 
     sidebar.classList.add('has-section');
+    body.classList.add('is-section');
 
     // Create initial container HTML
     sectionSpoiler = document.createElement('details');
