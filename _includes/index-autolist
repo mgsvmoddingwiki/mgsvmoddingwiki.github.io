@@ -17,6 +17,7 @@
 {% comment %}----------------------{% endcomment %}
 
 {%- if include.type != "section" -%}
+    {%- assign input_tag_lower = include.tag | downcase | strip -%}
     {%- assign sections = site.pages | group_by_exp: "page", "page.url | remove_first: '/' | split: '/' | first" -%}
     {%- assign sections = sections | where_exp: "section", "section.items.size > 1" -%}
     {%- assign section_roots = "" | split: "," -%}
@@ -41,7 +42,7 @@
         {%- assign contains_root = false -%}
         {%- capture section_items_list -%}{%- endcapture -%}
 
-        {% for item in section.items %}
+        {%- for item in section.items -%}
             {%- assign is_root = false -%}
             {%- assign root_url_fs = root_url | append: "/" -%}
 
@@ -56,10 +57,9 @@
                 {%- if include.tag -%}
                     {%- for tag in item.tags -%}
                         {%- assign tag_lower = tag | downcase -%}
-                        {%- assign input_tag_lower = include.tag | downcase -%}
-                        {%- assign title_lower = item.title | downcase -%}
+                        {%- assign url_lower = item.url | replace: '/', ' ' | replace: '_', ' ' | downcase | strip -%}
                         {%- if tag_lower == input_tag_lower -%}
-                            {%- if input_tag_lower != title_lower -%}
+                            {%- if input_tag_lower != url_lower -%}
                                 {%- if is_root -%}
                                     {%- assign contains_root = true -%}
                                 {%- else -%}
@@ -149,11 +149,10 @@
             {%- for tag in page.tags -%}
                 {%- comment -%}Case insensitive comparison for when tag differences exist like `Ui` vs `UI`{%- endcomment -%}
                 {%- assign tag_lower = tag | downcase -%}
-                {%- assign input_tag_lower = include.tag | downcase -%}
-                {%- assign title_lower = page.title | downcase -%}
+                {%- assign url_lower = page.url | replace: '/', ' ' | replace: '_', ' ' | downcase | strip -%}
                 {%- if tag_lower == input_tag_lower -%}
-                    {%- comment -%}Exclude current page from list if it serves as the tag page -%}{%- endcomment -%}
-                    {%- if input_tag_lower != title_lower -%}
+                    {%- comment -%}Exclude page from list if it serves as the tag page. Compares permalink instead of title since latter can false positive if a page like 'UI' is within a section vs the standalone 'UI' page. -%}{%- endcomment -%}
+                    {%- if input_tag_lower != url_lower -%}
                     <li><a href="{{ page.url }}">{{ page.title }}</a></li>
                     {%- endif -%}
                 {%- endif -%}
