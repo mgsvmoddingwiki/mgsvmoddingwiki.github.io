@@ -157,6 +157,9 @@ This auto creates a redirection from (in the above example) `/Original_Page_Link
 > Redirections are useful for if you've had an existing page up for a while but needed to rename/move it, to allow users to be taken to the new page automatically.
 {:.tip}
 
+> Keep in mind if [running a local server](/Meta/Running_a_Local_Server/) to test the wiki any case sensitive redirects, like redirecting `Ui` to `UI` ([example page](/UI/)), will cause an infinite redirect loop since the local server is case insensitive. While on the live Github.io site it will behave as expected since URLs there *are* case sensitive.
+{:.note}
+
 #### Redirect to
 
 Similarly it's possible to redirect *to* another page, in which case a page should be created with *only* metadata and no content (since the redirect will occur so fast without loading the page content). Using eg:
