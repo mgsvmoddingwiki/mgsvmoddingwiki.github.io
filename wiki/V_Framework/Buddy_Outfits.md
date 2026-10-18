@@ -1,7 +1,9 @@
 ---
-title: V Framework Buddy Outfits
-permalink: /V_Framework_Buddy_Outfits/
+title: Buddy Outfits
+permalink: /V_Framework/Buddy_Outfits/
 tags: [Lua, Reference, Guides, Infinite Heaven, Buddy, V Framework]
+redirect_from:
+    - /V_Framework_Buddy_Outfits/
 ---
 
 New costumes for Quiet, tack for D-Horse and gear for D-Dog, picked in
@@ -154,13 +156,13 @@ V_TppMotherBaseManagement.AddToEquipDevelopTable("MyMod:QuietRed", {
 | `dog` | `TppMbDev.EQP_DEV_TYPE_DDog` |
 
 Leave `equipID` out. Other fields:
-[AddToEquipDevelopTable](/V_Framework_Lua_API#addtoequipdeveloptable).
+[AddToEquipDevelopTable](/V_Framework/Lua_API#addtoequipdeveloptable).
 
 ---
 
 ## Quiet weapons
 
-Build the rifle as a [custom weapon](/V_Framework_Custom_Weapons), then
+Build the rifle as a [custom weapon](/V_Framework/Custom_Weapons), then
 give its R&D row `equipDevelopTypeID = TppMbDev.EQP_DEV_TYPE_Quiet`. It
 appears in Quiet's weapon list; no other call is needed.
 
@@ -230,6 +232,6 @@ Returns `true`, or `false` when the buddy is busy (try again later).
 ## See also
 
   - [V Framework](/V_Framework)
-  - [V Framework Lua API](/V_Framework_Lua_API)
-  - [V Framework Custom Weapons](/V_Framework_Custom_Weapons)
-  - [V Framework Custom Outfits](/V_Framework_Custom_Outfits)
+  - [V Framework Lua API](/V_Framework/Lua_API)
+  - [V Framework Custom Weapons](/V_Framework/Custom_Weapons)
+  - [V Framework Custom Outfits](/V_Framework/Custom_Outfits)

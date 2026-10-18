@@ -1,7 +1,9 @@
 ---
-title: V Framework Custom Outfits
-permalink: /V_Framework_Custom_Outfits/
+title: Custom Outfits
+permalink: /V_Framework/Custom_Outfits/
 tags: [Lua, Reference, Guides, Infinite Heaven, Player, V Framework]
+redirect_from:
+    - /V_Framework_Custom_Outfits/
 ---
 
 A custom outfit is a body model (`.parts`) and package (`.fpk`), with
@@ -17,8 +19,8 @@ Place all calls inside `this.LoadLibraries()`.
 | [`V_Player.RegisterHeadOption`](#registerheadoption) | Create a new custom head. |
 | [`V_Player.ExtendVanillaOutfit`](#extendvanillaoutfit) | Add variants or heads to an existing vanilla outfit. |
 | [`V_TppMotherBaseManagement.AddToEquipDevelopTable`](#outfit-rd-row) | R&D name, icon, grade, cost, and unlock state. |
-| [`V_Player.GetOutfitInfo`](/V_Framework_Lua_API#custom-outfits) | Read back the ids assigned to an outfit you registered. |
-| [`V_Player.GetHeadOptionSlot`](/V_Framework_Lua_API#custom-outfits) | Read back the `vars.playerFaceEquipId` value a custom head wears under. |
+| [`V_Player.GetOutfitInfo`](/V_Framework/Lua_API#custom-outfits) | Read back the ids assigned to an outfit you registered. |
+| [`V_Player.GetHeadOptionSlot`](/V_Framework/Lua_API#custom-outfits) | Read back the `vars.playerFaceEquipId` value a custom head wears under. |
 
 IDs are assigned automatically and saved under each registration `key`.
 
@@ -127,7 +129,7 @@ colors = {
 | `icon` | No (empty swatch) | Swatch picture. |
 | `count` | No (none) | Builds `count` colours from fields with one `%d` (or `%02d`), numbered from 0. |
 
-Read or pick colours from Lua: [outfit colours](/V_Framework_Lua_API#outfit-colours).
+Read or pick colours from Lua: [outfit colours](/V_Framework/Lua_API#outfit-colours).
 
 ### Variants
 
@@ -291,7 +293,7 @@ V_TppMotherBaseManagement.AddToEquipDevelopTable("MyMod:MySuit", {
 ```
 
 Other fields:
-[AddToEquipDevelopTable](/V_Framework_Lua_API#addtoequipdeveloptable).
+[AddToEquipDevelopTable](/V_Framework/Lua_API#addtoequipdeveloptable).
 
 ---
 
@@ -340,7 +342,7 @@ ddFemale = {
 ### Head motion
 
 A branch can animate the head and attach effects; play them with
-[`PlayHeadMotion`, `PlayHeadEffect` and `PlayHeadSound`](/V_Framework_Lua_API#custom-outfits).
+[`PlayHeadMotion`, `PlayHeadEffect` and `PlayHeadSound`](/V_Framework/Lua_API#custom-outfits).
 
 ```lua
 snake = {
@@ -618,6 +620,6 @@ return this
 ## See also
 
   - [V Framework](/V_Framework)
-  - [V Framework Lua API](/V_Framework_Lua_API)
-  - [V Framework Custom Weapons](/V_Framework_Custom_Weapons)
-  - [V Framework Buddy Outfits](/V_Framework_Buddy_Outfits)
+  - [V Framework Lua API](/V_Framework/Lua_API)
+  - [V Framework Custom Weapons](/V_Framework/Custom_Weapons)
+  - [V Framework Buddy Outfits](/V_Framework/Buddy_Outfits)

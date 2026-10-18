@@ -1,7 +1,9 @@
 ---
-title: V Framework Lua API
-permalink: /V_Framework_Lua_API/
+title: Lua API
+permalink: /V_Framework/Lua_API/
 tags: [Lua, Reference, Infinite Heaven, V Framework]
+redirect_from:
+    - /V_Framework_Lua_API/
 ---
 
 ## About this reference
@@ -42,7 +44,7 @@ Parts: [Lua libraries](#lua-libraries), [SendCommand](#sendcommand),
 | `V_TppCallSign` | [Radio call signs](#radio-call-signs) |
 | `V_ReceiverType` | [Receiver motion types](#receiver-motion-types) |
 | `V_MagazineType` | [Magazine motion types](#magazine-motion-types) |
-| `V_DogCommandType` | [D-Dog gear](/V_Framework_Buddy_Outfits#d-dog-gear) |
+| `V_DogCommandType` | [D-Dog gear](/V_Framework/Buddy_Outfits#d-dog-gear) |
 
 ---
 
@@ -222,7 +224,7 @@ V_TppCollection.AddCollection("MyCollect_00", "MyMod:Collect", 185.1, 336.3, 156
 | `V_Player.ClearAllPlayerVoiceTypeOverrides()` | Restores all normal player voices. |
 
 The package must match the voice type, or it is silent. Voice types:
-[Outfit voice](/V_Framework_Custom_Outfits#outfit-voice).
+[Outfit voice](/V_Framework/Custom_Outfits#outfit-voice).
 
 ### Energy Wall
 
@@ -360,7 +362,7 @@ end
 
 ### Custom outfits
 
-See [V Framework Custom Outfits](/V_Framework_Custom_Outfits).
+See [V Framework Custom Outfits](/V_Framework/Custom_Outfits).
 
 | Function | Returns | Description |
 |---|---|---|
@@ -370,7 +372,7 @@ See [V Framework Custom Outfits](/V_Framework_Custom_Outfits).
 | `V_Player.GetOutfitInfo(key)` | `partsType, selectorCode, developId`, or `false` | Ids of an outfit you registered. |
 | `V_Player.GetHeadOptionSlot(key)` | `faceEquipId, equipId`, or `false` | The `vars.playerFaceEquipId` value your head wears under. |
 | `V_Player.GetHeadOptions()` | list of `{ key, slot, equipId, name, playerTypes }` | Every registered custom head. |
-| `V_Player.PlayHeadMotion(clip)` | `true` / `false` | Plays a clip from the worn head's [`motion`](/V_Framework_Custom_Outfits#head-motion). |
+| `V_Player.PlayHeadMotion(clip)` | `true` / `false` | Plays a clip from the worn head's [`motion`](/V_Framework/Custom_Outfits#head-motion). |
 | `V_Player.PlayHeadEffect(name)` | `true` / `false` | Starts an effect from the worn head's `motion.effects`. |
 | `V_Player.StopHeadEffect(name)` | `true` / `false` | Stops that effect. |
 | `V_Player.PlayHeadSound(event, point)` | `true` / `false` | Plays a sound event from the worn head. `point` is optional. |
@@ -379,7 +381,7 @@ See [V Framework Custom Outfits](/V_Framework_Custom_Outfits).
 
 #### Outfit colours
 
-Read and change an outfit's [colours](/V_Framework_Custom_Outfits#colours).
+Read and change an outfit's [colours](/V_Framework/Custom_Outfits#colours).
 
 | Function | Returns | Description |
 |---|---|---|
@@ -407,19 +409,19 @@ V_Player.SetOutfitColor("MyMod:MySuit", "primary", 2)
 
 ## Buddies
 
-See [V Framework Buddy Outfits](/V_Framework_Buddy_Outfits).
+See [V Framework Buddy Outfits](/V_Framework/Buddy_Outfits).
 
 | Function | Returns | Description |
 |---|---|---|
 | `V_TppBuddyService.RegisterBuddyOutfit(def)` | `value, developId` or `false` | Registers a Quiet costume, D-Horse tack or D-Dog gear. |
 | `V_TppBuddyService.SetBuddyOutfit(key)` | `true` / `false` | Equips a registered buddy outfit or Quiet weapon. |
-| [`V_TppBuddyService.SetQuietWeaponMotion(def)`](/V_Framework_Buddy_Outfits#quiet-weapon-animations) | `true` / `false` | Gives a Quiet weapon its own body and weapon animations. |
+| [`V_TppBuddyService.SetQuietWeaponMotion(def)`](/V_Framework/Buddy_Outfits#quiet-weapon-animations) | `true` / `false` | Gives a Quiet weapon its own body and weapon animations. |
 
 ---
 
 ## Equipment
 
-Weapon-building guide: [V Framework Custom Weapons](/V_Framework_Custom_Weapons).
+Weapon-building guide: [V Framework Custom Weapons](/V_Framework/Custom_Weapons).
 
 ### Equip IDs
 
@@ -495,9 +497,9 @@ V_TppEquip.DeclareBulletTypes { "BULLET_TYPE_Example" }
 
 | Function | Returns | Description |
 |---|---|---|
-| [`V_TppEquip.SetWeaponHandling`](/V_Framework_Custom_Weapons#cross-family-handling-setweaponhandling) | - | Weapon handles like another vanilla weapon. |
-| [`V_TppEquip.SetReceiverMotion`](/V_Framework_Custom_Weapons#custom-gun-motion-setreceivermotion) | - | Receiver gets its own animations. |
-| [`V_TppEquip.SetRemoteMissile`](/V_Framework_Custom_Weapons#remote-controlled-missile-setremotemissile) | - | Weapon's shell becomes steerable, similar to Rocket arm. |
+| [`V_TppEquip.SetWeaponHandling`](/V_Framework/Custom_Weapons#cross-family-handling-setweaponhandling) | - | Weapon handles like another vanilla weapon. |
+| [`V_TppEquip.SetReceiverMotion`](/V_Framework/Custom_Weapons#custom-gun-motion-setreceivermotion) | - | Receiver gets its own animations. |
+| [`V_TppEquip.SetRemoteMissile`](/V_Framework/Custom_Weapons#remote-controlled-missile-setremotemissile) | - | Weapon's shell becomes steerable, similar to Rocket arm. |
 | `V_TppEquip.AbortRemoteMissile()` | - | Ends the current flight. |
 | `V_TppEquip.IsRemoteMissileFlying()` | `boolean` | Whether a steerable missile is in the air. |
 
@@ -505,9 +507,9 @@ V_TppEquip.DeclareBulletTypes { "BULLET_TYPE_Example" }
 
 | Function | Description |
 |---|---|
-| [`V_TppEquip.SetSupportWeapon`](/V_Framework_Custom_Weapons#support-weapons-setsupportweapon) | A custom thrown item, thrown like a vanilla one; you script its effect. |
-| [`V_TppEquip.SetSupportWeaponParameter`](/V_Framework_Custom_Weapons#support-weapon-stats-setsupportweaponparameter) | Ammo, fuse, effect time, grade and R&D stats. |
-| [`V_TppEquip.SetBlastParameter`](/V_Framework_Custom_Weapons#blast-setblastparameter) | Blast radius and noise. |
+| [`V_TppEquip.SetSupportWeapon`](/V_Framework/Custom_Weapons#support-weapons-setsupportweapon) | A custom thrown item, thrown like a vanilla one; you script its effect. |
+| [`V_TppEquip.SetSupportWeaponParameter`](/V_Framework/Custom_Weapons#support-weapon-stats-setsupportweaponparameter) | Ammo, fuse, effect time, grade and R&D stats. |
+| [`V_TppEquip.SetBlastParameter`](/V_Framework/Custom_Weapons#blast-setblastparameter) | Blast radius and noise. |
 
 ---
 
@@ -595,7 +597,7 @@ V_ThrowingSystem.Throw{
 | `owner` | No (`0`) | No (`0`) | No (`0`) | No (`0`) | Owner's game object ID. |
 
 Up to 4 requests of each kind per frame. Up to 12 smoke clouds (the oldest is replaced) and 12 fires at once.
-Example: the [chaff grenade](/V_Framework_Custom_Weapons#support-weapons-setsupportweapon).
+Example: the [chaff grenade](/V_Framework/Custom_Weapons#support-weapons-setsupportweapon).
 
 #### Blast fields
 
@@ -1556,7 +1558,7 @@ For `callSign` in the [Radio call sign](#radio-call-sign) command.
 
 ### Receiver motion types
 
-For `receiverType` in [`SetReceiverMotion`](/V_Framework_Custom_Weapons#custom-gun-motion-setreceivermotion).
+For `receiverType` in [`SetReceiverMotion`](/V_Framework/Custom_Weapons#custom-gun-motion-setreceivermotion).
 `V_ReceiverType.<name>`:
 
 Names might not be accurate.
@@ -1575,7 +1577,7 @@ MissileWideReloadAim
 
 ### Magazine motion types
 
-For `magazineType` in [`SetMagazine`](/V_Framework_Custom_Weapons#magazine-setmagazine).
+For `magazineType` in [`SetMagazine`](/V_Framework/Custom_Weapons#magazine-setmagazine).
 `V_MagazineType.<name>`:
 
 Names might not be accurate.
@@ -2220,7 +2222,7 @@ walkman UI, `0` from a `V_CassetteCommand` call.
 ## See also
 
   - [V Framework](/V_Framework)
-  - [V Framework UI](/V_Framework_UI)
-  - [V Framework Custom Weapons](/V_Framework_Custom_Weapons)
-  - [V Framework Custom Outfits](/V_Framework_Custom_Outfits)
-  - [V Framework Buddy Outfits](/V_Framework_Buddy_Outfits)
+  - [V Framework UI](/V_Framework/UI)
+  - [V Framework Custom Weapons](/V_Framework/Custom_Weapons)
+  - [V Framework Custom Outfits](/V_Framework/Custom_Outfits)
+  - [V Framework Buddy Outfits](/V_Framework/Buddy_Outfits)

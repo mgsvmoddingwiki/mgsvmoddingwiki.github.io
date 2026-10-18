@@ -14,30 +14,119 @@
 {{ all_tags  | inspect }}
 {% endcomment %}
 
-
 {% comment %}----------------------{% endcomment %}
 
-{% if include.type contains "all" %}
-<ul class="index {{ include.type }}">
+{%- if include.type != "section" -%}
+    {%- assign sections = site.pages | group_by_exp: "page", "page.url | remove_first: '/' | split: '/' | first" -%}
+    {%- assign sections = sections | where_exp: "section", "section.items.size > 1" -%}
+    {%- assign section_roots = "" | split: "," -%}
+
+    {%- capture section_lists -%}
+
+    {%- for section in sections -%}
+        {%- if include.tag -%}
+            {%- comment -%}Skip making separate section heading/list if section name and include tag (or current page root) match. Ie: being used as tag page. This will allow the pages from the matching section to appear in the 'standalone' list, above any other sections that contain the tag.{%- endcomment -%}
+            {%- assign section_name_check = section.name | downcase -%}
+            {%- assign cur_page_root = page.url | remove_first: '/' | split: '/' | first | downcase -%}
+            {%- assign tag_url_check = include.tag | downcase | replace: ' ', '_' -%}
+            {%- if section_name_check == tag_url_check or section_name_check == cur_page_root -%}
+                {%- continue -%}
+            {%- endif -%}
+        {%- endif -%}
+
+        {%- assign section_roots = section_roots | push: section.name -%}
+        {%- assign root = section.name -%}
+        {%- assign root_url = "/" | append: root -%}
+        {%- assign root_obj = nil -%}
+        {%- assign contains_root = false -%}
+        {%- capture section_items_list -%}{%- endcapture -%}
+
+        {% for item in section.items %}
+            {%- assign is_root = false -%}
+            {%- assign root_url_fs = root_url | append: "/" -%}
+
+            {%- if item.url == root_url or item.url == root_url_fs -%}
+                {%- assign is_root = true -%}
+                {%- assign root_obj = item -%}
+            {%- endif -%}
+
+            {%- capture section_items_list -%}
+                {{ section_items_list }}
+
+                {%- if include.tag -%}
+                    {%- for tag in item.tags -%}
+                        {%- assign tag_lower = tag | downcase -%}
+                        {%- assign input_tag_lower = include.tag | downcase -%}
+                        {%- assign title_lower = item.title | downcase -%}
+                        {%- if tag_lower == input_tag_lower -%}
+                            {%- if input_tag_lower != title_lower -%}
+                                {%- if is_root -%}
+                                    {%- assign contains_root = true -%}
+                                {%- else -%}
+                                    <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+                                {%- endif -%}
+                            {%- endif -%}
+                        {%- endif -%}
+                    {%- endfor -%}
+                {%- else -%}
+                    {%- if is_root -%}
+                        {%- assign contains_root = true -%}
+                    {%- else -%}
+                        <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+                    {%- endif -%}
+                {%- endif -%}
+
+            {%- endcapture -%}
+        {%- endfor -%}
+
+        {%- if root_obj and section_items_list != blank -%}
+            <li>
+                <h2 id="{{ root | downcase | replace: '_', '-' }}">{{ root_obj.title }}</h2>
+                <ul>
+                    {%- if contains_root -%}
+                    {%- comment -%}Place root section link first in order (so it's easier to identify when browsing){%- endcomment -%}
+                    <li><a href="{{ root_obj.url }}">{{ root_obj.title }}</a></li>
+                    {%- endif -%}
+                    {{ section_items_list }}
+                </ul>
+            </li>
+        {%- endif -%}
+    {%- endfor -%}
+
+    {%- endcapture -%}
+{%- endif -%}
+
+{%- if include.type contains "all" -%}
+<ul class="index {{ include.type }} full-width">
     <li>
-        <h2 id="{{ include.type }}">All</h2>
-        <ul>
-        {% if include.type == "all-pages" %}
-            {% for page in site.pages %}
-                {% assign title = page.title | default: page.name %}
-                {% if title != nil and title != 'Page Not Found' and title != 'redirect.html' %}
+        {%- if include.type == "all-pages" -%}
+            <h2 id="standalone-pages">All (standalone)</h2>
+            <ul>
+            {%- for page in site.pages -%}
+                {%- assign root = page.url | remove_first: '/' | split: '/' | first -%}
+
+                {%- if section_roots contains root -%}
+                    {%- continue -%}
+                {%- endif -%}
+
+                {%- assign title = page.title | default: page.name -%}
+                {%- if title != nil and title != 'Page Not Found' and title != 'Search Results' and title != 'redirect.html' and page.redirect_to == nil -%}
                     <li><a href="{{ page.url }}">{{ page.title }}</a></li>
-                {% endif %}
-            {% endfor %}
-            {% elsif include.type == "all-tags" %}
-            {% for tag in all_tags %}
+                {%- endif -%}
+            {%- endfor -%}
+            </ul>
+            {{ section_lists }}
+        {%- elsif include.type == "all-tags" -%}
+            <h2 id="all-tags">All</h2>
+            <ul>
+            {%- for tag in all_tags -%}
                 <li><a href="/{{ tag | replace: " ", "_" }}">{{ tag }}</a></li>
-            {% endfor %}
-        {% endif %}
-        </ul>
+            {%- endfor -%}
+            </ul>
+        {%- endif -%}
     </li>
 </ul>
-{% elsif include.type contains "section" %}
+{%- elsif include.type contains "section" -%}
 <ul class="index section">
     <li>
         <h2 id="section-pages">Section pages</h2>
@@ -45,28 +134,33 @@
         </ul>
     </li>
 </ul>
-{% else %}
-<ul class="index tags" data-tag="{{ include.tag }}">
+{%- else -%}
+<ul class="index tags {% if section_lists != blank %}full-width{% endif %}" data-tag="{{ include.tag }}">
     <li>
-        {% if include.heading == "alpha" %}<h2 id="alphabetical">Alphabetical{% else %}<h2 id="related-pages">Related pages{% endif %}</h2>
+        <h2 id="related-pages">{%- if include.heading == "alpha" -%}Alphabetical{%- else -%}Related pages{%- endif -%}</h2>
         <ul>
-        {%- for input_tag in include.tag -%}
-            {%- for page in site.pages -%}
-                {%- for tag in page.tags -%}
-                    {%- comment Case insensitive comparison for when tag differences exist like `Ui` vs `UI` -%}{%- endcomment -%}
-                    {%- assign tag_lower = tag | downcase -%}
-                    {%- assign input_tag_lower = input_tag | downcase -%}
-                    {%- assign title_lower = page.title | downcase -%}
-                    {%- if tag_lower == input_tag_lower -%}
-                        {%- if input_tag_lower == title_lower -%}
-                        {% else %}
-                        <li><a href="{{ page.url }}">{{ page.title }}</a></li>
-                        {%- endif -%}
+        {%- for page in site.pages -%}
+            {%- assign root = page.url | remove_first: '/' | split: '/' | first -%}
+
+            {%- if section_roots contains root -%}
+                {%- continue -%}
+            {%- endif -%}
+
+            {%- for tag in page.tags -%}
+                {%- comment -%}Case insensitive comparison for when tag differences exist like `Ui` vs `UI`{%- endcomment -%}
+                {%- assign tag_lower = tag | downcase -%}
+                {%- assign input_tag_lower = include.tag | downcase -%}
+                {%- assign title_lower = page.title | downcase -%}
+                {%- if tag_lower == input_tag_lower -%}
+                    {%- comment -%}Exclude current page from list if it serves as the tag page -%}{%- endcomment -%}
+                    {%- if input_tag_lower != title_lower -%}
+                    <li><a href="{{ page.url }}">{{ page.title }}</a></li>
                     {%- endif -%}
-                {%- endfor -%}
+                {%- endif -%}
             {%- endfor -%}
         {%- endfor -%}
         </ul>
+        {{ section_lists }}
     </li>
 </ul>
-{% endif %}
+{%- endif -%}
