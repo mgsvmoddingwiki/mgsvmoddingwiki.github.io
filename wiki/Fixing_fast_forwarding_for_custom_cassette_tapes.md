@@ -1,5 +1,5 @@
 ---
-title: Fixing fast forwarding for custom cassete tapes
+title: Fixing fast forwarding for custom cassette tapes
 permalink: /Fixing_fast_forwarding_for_custom_cassette_tapes/
 tags: [Guides, Sound]
 ---
