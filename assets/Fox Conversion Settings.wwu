@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{2E96C35C-B44D-41CC-8291-0B29B70B7418}" SchemaVersion="62">
+	<Conversions>
+		<WorkUnit Name="Fox Conversion Settings" ID="{2E96C35C-B44D-41CC-8291-0B29B70B7418}" PersistMode="Standalone">
+			<ChildrenList>
+				<Conversion Name="Voice (Vorbis As Input with Filename)" ID="{4FE9AE73-EA61-4A5B-A787-6E65C77441C3}">
+					<PropertyList>
+						<Property Name="Channels" Type="int32">
+							<ValueList>
+								<Value Platform="XboxOne">4</Value>
+								<Value Platform="VitaSW">4</Value>
+								<Value Platform="Windows">4</Value>
+								<Value Platform="Wii">4</Value>
+								<Value Platform="WiiUSW">4</Value>
+								<Value Platform="Xbox360">4</Value>
+								<Value Platform="3DS">4</Value>
+								<Value Platform="PS3">4</Value>
+								<Value Platform="iOS">4</Value>
+								<Value Platform="PS4">4</Value>
+								<Value Platform="Mac">4</Value>
+								<Value Platform="Android">4</Value>
+								<Value Platform="VitaHW">4</Value>
+							</ValueList>
+						</Property>
+						<Property Name="LRMix" Type="Real64">
+							<ValueList>
+								<Value Platform="XboxOne">0</Value>
+								<Value Platform="VitaSW">0</Value>
+								<Value Platform="Windows">0</Value>
+								<Value Platform="Wii">0</Value>
+								<Value Platform="WiiUSW">0</Value>
+								<Value Platform="Xbox360">0</Value>
+								<Value Platform="3DS">0</Value>
+								<Value Platform="PS3">0</Value>
+								<Value Platform="iOS">0</Value>
+								<Value Platform="PS4">0</Value>
+								<Value Platform="Mac">0</Value>
+								<Value Platform="Android">0</Value>
+								<Value Platform="VitaHW">0</Value>
+							</ValueList>
+						</Property>
+						<Property Name="SampleRate" Type="int32">
+							<ValueList>
+								<Value Platform="XboxOne">0</Value>
+								<Value Platform="VitaSW">0</Value>
+								<Value Platform="Windows">0</Value>
+								<Value Platform="Wii">0</Value>
+								<Value Platform="WiiUSW">0</Value>
+								<Value Platform="Xbox360">0</Value>
+								<Value Platform="3DS">0</Value>
+								<Value Platform="PS3">0</Value>
+								<Value Platform="iOS">0</Value>
+								<Value Platform="PS4">0</Value>
+								<Value Platform="Mac">0</Value>
+								<Value Platform="Android">0</Value>
+								<Value Platform="VitaHW">0</Value>
+							</ValueList>
+						</Property>
+						<Property Name="UseFilenameMarker" Type="bool">
+							<ValueList>
+								<Value>True</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ConversionPluginInfoList>
+						<ConversionPluginInfo Platform="XboxOne">
+							<ConversionPlugin Name="" ID="{AAFC5614-1B3D-4B14-AB34-B2BA714EB457}" PluginName="PCM" CompanyID="0" PluginID="1" />
+						</ConversionPluginInfo>
+						<ConversionPluginInfo Platform="VitaSW">
+							<ConversionPlugin Name="" ID="{8F6A8912-E6B5-4056-AF39-7B68D28F70FD}" PluginName="PCM" CompanyID="0" PluginID="1" />
+						</ConversionPluginInfo>
+						<ConversionPluginInfo Platform="Windows">
+							<ConversionPlugin Name="" ID="{CB42767A-A8CB-4078-8093-8FC57D2E10A8}" PluginName="Vorbis" CompanyID="0" PluginID="4" />
+						</ConversionPluginInfo>
+						<ConversionPluginInfo Platform="Wii">
+							<ConversionPlugin Name="" ID="{5D5EF0C7-E0A7-4EA2-9186-CAA6C302BC4D}" PluginName="PCM" CompanyID="0" PluginID="1" />
+						</ConversionPluginInfo>
+						<ConversionPluginInfo Platform="WiiUSW">
+							<ConversionPlugin Name="" ID="{33E3A7A2-C36F-4EF5-BC27-239F9D72556C}" PluginName="PCM" CompanyID="0" PluginID="1" />
+						</ConversionPluginInfo>
+						<ConversionPluginInfo Platform="Xbox360">
+							<ConversionPlugin Name="" ID="{DC492CDA-62D0-4EE5-B551-C8F2283B1645}" PluginName="PCM" CompanyID="0" PluginID="1" />
+						</ConversionPluginInfo>
+						<ConversionPluginInfo Platform="3DS">
+							<ConversionPlugin Name="" ID="{D1F2B550-36C0-407F-89DF-50C254E1ABA8}" PluginName="PCM" CompanyID="0" PluginID="1" />
+						</ConversionPluginInfo>
+						<ConversionPluginInfo Platform="PS3">
+							<ConversionPlugin Name="" ID="{1EA2F1EE-58E6-4BAA-9F08-CEF0187D2775}" PluginName="PCM" CompanyID="0" PluginID="1" />
+						</ConversionPluginInfo>
+						<ConversionPluginInfo Platform="iOS">
+							<ConversionPlugin Name="" ID="{2AD40A52-01E2-45D6-B2AA-24269707D669}" PluginName="PCM" CompanyID="0" PluginID="1" />
+						</ConversionPluginInfo>
+						<ConversionPluginInfo Platform="PS4">
+							<ConversionPlugin Name="" ID="{97289C1B-5C97-4D38-937B-81268015A5DA}" PluginName="PCM" CompanyID="0" PluginID="1" />
+						</ConversionPluginInfo>
+						<ConversionPluginInfo Platform="Mac">
+							<ConversionPlugin Name="" ID="{8C5EB59C-1850-406A-8FF1-6BC7C7E3F4A8}" PluginName="PCM" CompanyID="0" PluginID="1" />
+						</ConversionPluginInfo>
+						<ConversionPluginInfo Platform="Android">
+							<ConversionPlugin Name="" ID="{FC775542-9240-4CC1-A8E1-1C1F1587BB6A}" PluginName="PCM" CompanyID="0" PluginID="1" />
+						</ConversionPluginInfo>
+						<ConversionPluginInfo Platform="VitaHW">
+							<ConversionPlugin Name="" ID="{E1484B66-6B4D-4E41-9063-D165242CF8B5}" PluginName="PCM" CompanyID="0" PluginID="1" />
+						</ConversionPluginInfo>
+					</ConversionPluginInfoList>
+				</Conversion>
+				<Conversion Name="Demo (Vorbis As Input Seek Table 4096)" ID="{6CD45DEC-4AA1-4D97-A93D-AF4AB4218DD0}">
+					<PropertyList>
+						<Property Name="Channels" Type="int32">
+							<ValueList>
+								<Value Platform="XboxOne">4</Value>
+								<Value Platform="VitaSW">4</Value>
+								<Value Platform="Windows">4</Value>
+								<Value Platform="Wii">4</Value>
+								<Value Platform="WiiUSW">4</Value>
+								<Value Platform="Xbox360">4</Value>
+								<Value Platform="3DS">4</Value>
+								<Value Platform="PS3">4</Value>
+								<Value Platform="iOS">4</Value>
+								<Value Platform="PS4">4</Value>
+								<Value Platform="Mac">4</Value>
+								<Value Platform="Android">4</Value>
+								<Value Platform="VitaHW">4</Value>
+							</ValueList>
+						</Property>
+						<Property Name="LRMix" Type="Real64">
+							<ValueList>
+								<Value Platform="XboxOne">0</Value>
+								<Value Platform="VitaSW">0</Value>
+								<Value Platform="Windows">0</Value>
+								<Value Platform="Wii">0</Value>
+								<Value Platform="WiiUSW">0</Value>
+								<Value Platform="Xbox360">0</Value>
+								<Value Platform="3DS">0</Value>
+								<Value Platform="PS3">0</Value>
+								<Value Platform="iOS">0</Value>
+								<Value Platform="PS4">0</Value>
+								<Value Platform="Mac">0</Value>
+								<Value Platform="Android">0</Value>
+								<Value Platform="VitaHW">0</Value>
+							</ValueList>
+						</Property>
+						<Property Name="SampleRate" Type="int32">
+							<ValueList>
+								<Value Platform="XboxOne">0</Value>
+								<Value Platform="VitaSW">0</Value>
+								<Value Platform="Windows">0</Value>
+								<Value Platform="Wii">0</Value>
+								<Value Platform="WiiUSW">0</Value>
+								<Value Platform="Xbox360">0</Value>
+								<Value Platform="3DS">0</Value>
+								<Value Platform="PS3">0</Value>
+								<Value Platform="iOS">0</Value>
+								<Value Platform="PS4">0</Value>
+								<Value Platform="Mac">0</Value>
+								<Value Platform="Android">0</Value>
+								<Value Platform="VitaHW">0</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ConversionPluginInfoList>
+						<ConversionPluginInfo Platform="XboxOne">
+							<ConversionPlugin Name="" ID="{76AFDC5A-619D-42F3-ABEF-5E2BAAD97EDC}" PluginName="PCM" CompanyID="0" PluginID="1" />
+						</ConversionPluginInfo>
+						<ConversionPluginInfo Platform="VitaSW">
+							<ConversionPlugin Name="" ID="{3C9FE403-EFB9-480E-AB22-7A024E2A6C14}" PluginName="PCM" CompanyID="0" PluginID="1" />
+						</ConversionPluginInfo>
+						<ConversionPluginInfo Platform="Windows">
+							<ConversionPlugin Name="" ID="{E35819FA-D38E-4C84-A47B-FD9298C77BF4}" PluginName="Vorbis" CompanyID="0" PluginID="4">
+								<PropertyList>
+									<Property Name="SeekTableGranularity" Type="int32" Value="2" />
+								</PropertyList>
+							</ConversionPlugin>
+						</ConversionPluginInfo>
+						<ConversionPluginInfo Platform="Wii">
+							<ConversionPlugin Name="" ID="{6B4F3854-3A14-4436-BA57-0FC4A267B1FB}" PluginName="PCM" CompanyID="0" PluginID="1" />
+						</ConversionPluginInfo>
+						<ConversionPluginInfo Platform="WiiUSW">
+							<ConversionPlugin Name="" ID="{7A60938E-9DA0-4BF4-888C-7CFA592D5151}" PluginName="PCM" CompanyID="0" PluginID="1" />
+						</ConversionPluginInfo>
+						<ConversionPluginInfo Platform="Xbox360">
+							<ConversionPlugin Name="" ID="{19E825F3-1C00-434D-8289-051C512B7C12}" PluginName="PCM" CompanyID="0" PluginID="1" />
+						</ConversionPluginInfo>
+						<ConversionPluginInfo Platform="3DS">
+							<ConversionPlugin Name="" ID="{C5844984-394A-4AA0-8A9A-1B727672FBFC}" PluginName="PCM" CompanyID="0" PluginID="1" />
+						</ConversionPluginInfo>
+						<ConversionPluginInfo Platform="PS3">
+							<ConversionPlugin Name="" ID="{86653D92-DEE7-4371-A393-E26B1D117F8D}" PluginName="PCM" CompanyID="0" PluginID="1" />
+						</ConversionPluginInfo>
+						<ConversionPluginInfo Platform="iOS">
+							<ConversionPlugin Name="" ID="{64EB20BA-65DC-4770-8D9D-3C230B2DD57D}" PluginName="PCM" CompanyID="0" PluginID="1" />
+						</ConversionPluginInfo>
+						<ConversionPluginInfo Platform="PS4">
+							<ConversionPlugin Name="" ID="{E695C3B7-EEEC-4178-B73F-4E5805B119D7}" PluginName="PCM" CompanyID="0" PluginID="1" />
+						</ConversionPluginInfo>
+						<ConversionPluginInfo Platform="Mac">
+							<ConversionPlugin Name="" ID="{B9C519EB-A1FB-4179-A061-9B1A26DD4E54}" PluginName="PCM" CompanyID="0" PluginID="1" />
+						</ConversionPluginInfo>
+						<ConversionPluginInfo Platform="Android">
+							<ConversionPlugin Name="" ID="{8F11B412-323F-4540-A3D9-957D38CE120F}" PluginName="PCM" CompanyID="0" PluginID="1" />
+						</ConversionPluginInfo>
+						<ConversionPluginInfo Platform="VitaHW">
+							<ConversionPlugin Name="" ID="{C604B4FB-F437-495A-9089-3139DD5F32DB}" PluginName="PCM" CompanyID="0" PluginID="1" />
+						</ConversionPluginInfo>
+					</ConversionPluginInfoList>
+				</Conversion>
+				<Conversion Name="Tape (Vorbis As Input Seek Table 8192)" ID="{F0F79D3E-868F-4292-808C-4781C49CD09C}">
+					<PropertyList>
+						<Property Name="Channels" Type="int32">
+							<ValueList>
+								<Value Platform="XboxOne">4</Value>
+								<Value Platform="VitaSW">4</Value>
+								<Value Platform="Windows">4</Value>
+								<Value Platform="Wii">4</Value>
+								<Value Platform="WiiUSW">4</Value>
+								<Value Platform="Xbox360">4</Value>
+								<Value Platform="3DS">4</Value>
+								<Value Platform="PS3">4</Value>
+								<Value Platform="iOS">4</Value>
+								<Value Platform="PS4">4</Value>
+								<Value Platform="Mac">4</Value>
+								<Value Platform="Android">4</Value>
+								<Value Platform="VitaHW">4</Value>
+							</ValueList>
+						</Property>
+						<Property Name="LRMix" Type="Real64">
+							<ValueList>
+								<Value Platform="XboxOne">0</Value>
+								<Value Platform="VitaSW">0</Value>
+								<Value Platform="Windows">0</Value>
+								<Value Platform="Wii">0</Value>
+								<Value Platform="WiiUSW">0</Value>
+								<Value Platform="Xbox360">0</Value>
+								<Value Platform="3DS">0</Value>
+								<Value Platform="PS3">0</Value>
+								<Value Platform="iOS">0</Value>
+								<Value Platform="PS4">0</Value>
+								<Value Platform="Mac">0</Value>
+								<Value Platform="Android">0</Value>
+								<Value Platform="VitaHW">0</Value>
+							</ValueList>
+						</Property>
+						<Property Name="SampleRate" Type="int32">
+							<ValueList>
+								<Value Platform="XboxOne">0</Value>
+								<Value Platform="VitaSW">0</Value>
+								<Value Platform="Windows">0</Value>
+								<Value Platform="Wii">0</Value>
+								<Value Platform="WiiUSW">0</Value>
+								<Value Platform="Xbox360">0</Value>
+								<Value Platform="3DS">0</Value>
+								<Value Platform="PS3">0</Value>
+								<Value Platform="iOS">0</Value>
+								<Value Platform="PS4">0</Value>
+								<Value Platform="Mac">0</Value>
+								<Value Platform="Android">0</Value>
+								<Value Platform="VitaHW">0</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ConversionPluginInfoList>
+						<ConversionPluginInfo Platform="XboxOne">
+							<ConversionPlugin Name="" ID="{AD646BC3-BD29-4664-A366-FC2A47C15696}" PluginName="PCM" CompanyID="0" PluginID="1" />
+						</ConversionPluginInfo>
+						<ConversionPluginInfo Platform="VitaSW">
+							<ConversionPlugin Name="" ID="{6648024A-543A-4365-B208-92434F0F246C}" PluginName="PCM" CompanyID="0" PluginID="1" />
+						</ConversionPluginInfo>
+						<ConversionPluginInfo Platform="Windows">
+							<ConversionPlugin Name="" ID="{13AC0256-E049-4E01-821E-9911D7445CAD}" PluginName="Vorbis" CompanyID="0" PluginID="4">
+								<PropertyList>
+									<Property Name="SeekTableGranularity" Type="int32" Value="3" />
+								</PropertyList>
+							</ConversionPlugin>
+						</ConversionPluginInfo>
+						<ConversionPluginInfo Platform="Wii">
+							<ConversionPlugin Name="" ID="{EA045B21-C2C5-46F7-A350-9FD6965FFA62}" PluginName="PCM" CompanyID="0" PluginID="1" />
+						</ConversionPluginInfo>
+						<ConversionPluginInfo Platform="WiiUSW">
+							<ConversionPlugin Name="" ID="{201DAC06-2123-452F-A99D-94C20D38CDD3}" PluginName="PCM" CompanyID="0" PluginID="1" />
+						</ConversionPluginInfo>
+						<ConversionPluginInfo Platform="Xbox360">
+							<ConversionPlugin Name="" ID="{120EE06F-733C-4C8B-910B-52CB757003D6}" PluginName="PCM" CompanyID="0" PluginID="1" />
+						</ConversionPluginInfo>
+						<ConversionPluginInfo Platform="3DS">
+							<ConversionPlugin Name="" ID="{DF30E6AD-4D7E-42D5-A026-C03A860E786A}" PluginName="PCM" CompanyID="0" PluginID="1" />
+						</ConversionPluginInfo>
+						<ConversionPluginInfo Platform="PS3">
+							<ConversionPlugin Name="" ID="{EE48A958-D55D-4F86-B765-272C7F28B060}" PluginName="PCM" CompanyID="0" PluginID="1" />
+						</ConversionPluginInfo>
+						<ConversionPluginInfo Platform="iOS">
+							<ConversionPlugin Name="" ID="{C3FD0C27-A2C2-4317-AF9B-1867549B72A0}" PluginName="PCM" CompanyID="0" PluginID="1" />
+						</ConversionPluginInfo>
+						<ConversionPluginInfo Platform="PS4">
+							<ConversionPlugin Name="" ID="{543687D6-E6C0-482A-8774-D0DD75CD4D1B}" PluginName="PCM" CompanyID="0" PluginID="1" />
+						</ConversionPluginInfo>
+						<ConversionPluginInfo Platform="Mac">
+							<ConversionPlugin Name="" ID="{FC6E2567-750F-4FED-A8DB-11D8B7630B6E}" PluginName="PCM" CompanyID="0" PluginID="1" />
+						</ConversionPluginInfo>
+						<ConversionPluginInfo Platform="Android">
+							<ConversionPlugin Name="" ID="{D59744A7-C3E9-495A-B7B1-D2CD061062FF}" PluginName="PCM" CompanyID="0" PluginID="1" />
+						</ConversionPluginInfo>
+						<ConversionPluginInfo Platform="VitaHW">
+							<ConversionPlugin Name="" ID="{0080BFF0-3B52-45C8-A176-5CD5F658EE13}" PluginName="PCM" CompanyID="0" PluginID="1" />
+						</ConversionPluginInfo>
+					</ConversionPluginInfoList>
+				</Conversion>
+			</ChildrenList>
+		</WorkUnit>
+	</Conversions>
+</WwiseDocument>
