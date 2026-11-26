@@ -14,9 +14,10 @@ Place all calls inside `this.LoadLibraries()`.
 ## Workflow
 
 1. [Register and declare IDs](#register-and-declare-ids)
-2. Configure [Damage](#damage-setdamage), [Receiver](#receiver-setreceiver),
-   [Barrel](#barrel-setbarrel), [Magazine](#magazine-setmagazine),
-   [Bullet](#bullet-setbullet) and any [optional attachments](#optional-attachments)
+2. Configure [Damage](#damage-setdamage),
+   [Receiver](#receiver-setreceiver), [Barrel](#barrel-setbarrel),
+   [Magazine](#magazine-setmagazine), [Bullet](#bullet-setbullet) and
+   any [optional attachments](#optional-attachments)
 3. [Assemble with `SetGunBasic`](#assemble-with-setgunbasic)
 4. [Add the R&D row](#add-the-rd-row-addtoequipdeveloptable)
 
@@ -26,6 +27,7 @@ parameter set takes a **number** (reuse a vanilla row) or a **table**
 
 > Vanilla part IDs (e.g. `TppEquip.BA_10102`) work in any `SetGunBasic`
 > slot; configure only the parts you replace.
+{:.tip}
 
 ---
 
@@ -51,8 +53,8 @@ V_TppEquip.DeclareDamages { "ATK_Example" }
 `DeclareDamages` creates `TppDamage.ATK_*`; the others create
 `TppEquip.*` constants.
 
-Map each equip ID to its model and pack (all six values required per
-row; `""` for no pack):
+Map each equip ID to its model and pack ([row
+format](/V_Framework/Lua_API#equip-ids)):
 
 ```lua
 V_TppEquip.AddToEquipIdTable{
@@ -64,7 +66,12 @@ V_TppEquip.AddToEquipIdTable{
 }
 ```
 
-Row format: [Equipment](/V_Framework/Lua_API#equipment).
+### Placing in fox2 files
+
+A placed-item or pickable locator's `equipId` field takes a custom
+`RegisterConstantEquipId` name (e.g. `"EQP_WP_Example"`) like a vanilla
+one; a pickable keeps its count. The declaring mod must load before the
+mission. Not in FOB.
 
 ---
 
@@ -74,26 +81,24 @@ The attack a receiver deals.
 
 ```lua
 V_TppEquip.SetDamage{
-  damageId       = TppDamage.ATK_Example,
-  lethalDamage             = 700,
+  damageId                = TppDamage.ATK_Example,
+  lethalDamage            = 700,
   oldLethalDamageVsSoldier = 7000,
-  impactForce              = 40,
-  damageSource             = TppDamage.DAM_SOURCE_Assault,
-  injureType               = TppDamage.INJ_TYPE_BULLET,
-  injurePart               = TppDamage.INJ_PART_ALL,
-  isBullet                 = 1,
+  impactForce             = 40,
+  damageSource            = TppDamage.DAM_SOURCE_Assault,
+  injureType              = TppDamage.INJ_TYPE_BULLET,
+  injurePart              = TppDamage.INJ_PART_ALL,
+  isBullet                = 1,
 }
 ```
 
-`damageId` is required; every other field is optional, default `0`.
-
-Fields in vanilla `DamageParameterTables.lua` column order, so a vanilla
-row can be copied straight down:
+`damageId` is required; every other field defaults to `0`. Fields are in
+vanilla `DamageParameterTables.lua` column order:
 
 | Col | Field | Notes |
 |----:|---|---|
 | 1 | `damageId` | `TppDamage.ATK_*` |
-| 2 | `oldLethalDamageVsSoldier` | vs soldiers and animals. Old name `lethalDamageUI` takes a tenth of this. |
+| 2 | `oldLethalDamageVsSoldier` | vs soldiers and animals. Old name `lethalDamageUI`, at a tenth of the scale (`700` = `7000`). |
 | 3 | `oldLethalDamageVsPlayer` | vs the player, buddies, cbox, decoy, supply crate. |
 | 4 | `oldLethalDamageVsVehicle` | vs vehicles and Sahelanthropus. |
 | 5 | `oldStaminaDamageVsSoldier` | Stamina vs soldiers. |
@@ -155,7 +160,7 @@ V_TppEquip.SetReceiver{
 | `receiverParamSetsBase`, `receiverParamSetsWobbling`, `receiverParamSetsSystem` | Yes | Number or table (below). |
 | [`receiverParamSetsSound`](#fire-sound-receiverparamsetssound) | Yes | Fire sound. |
 | `attackId` | No (`0`) | Damage row. |
-| [`motionFrom`](#borrowing-motion-motionfrom) | No (none) | Receiver whose animations to use. |
+| [`motionFrom`](#borrowing-motion-motionfrom) | No | Receiver whose animations to use. |
 
 ### Base fields
 
@@ -192,11 +197,16 @@ V_TppEquip.SetReceiver{
 
 ### Borrowing motion (`motionFrom`)
 
-`motionFrom` uses that receiver's animations. Include its `.mtar` in
-your `.fpk`, and use the same weapon family in `AddToEquipIdTable`
-(e.g. a handgun `motionFrom` needs `EQP_TYPE_Handgun`). For another
-family's handling, see [`SetWeaponHandling`](#cross-family-handling-setweaponhandling).
-For your own clips, see [Custom gun motion](#custom-gun-motion-setreceivermotion).
+Uses that receiver's animations; include its `.mtar` in your `.fpk`.
+
+A gun whose kind (its `AddToEquipIdTable` type) differs from its
+receiver's kind animates like a game gun of its own kind: the
+[`SetWeaponHandling`](#cross-family-handling-setweaponhandling)
+`familyFrom` gun, else one sharing its barrel, else its stock, else the
+first gun of that kind. The log names the pick once per gun (info line
+starting `WeaponKey:`). To choose yourself, point `motionFrom` at a
+receiver of the gun's own kind. Own clips: [Custom gun
+motion](#custom-gun-motion-setreceivermotion).
 
 ---
 
@@ -211,18 +221,14 @@ Takes one of:
 | `event` | `{ event = "sfx_w_p_ar01_m_active" }` | Plays that exact event name. |
 | `name` + `middle` | `{ name = "ms00", middle = false }` | Root with the `_m` segment forced on (`true`) or off (`false`); for a sound from another weapon family. |
 
-Add `sup = "root"` or `supEvent = "exact_event"` to the table to pick
-the suppressed sound separately.
+Add `sup = "root"` or `supEvent = "exact_event"` for the suppressed
+sound (soldiers use it too). Missile and rocket sounds have none: a
+suppressor silences them.
 
-Soldiers whose weapon carries a suppressor play the suppressed sound too. The
-`event` and `supEvent` forms play the same event for the player and soldiers.
-
-> Pass the root (`"ar01"`), not a full event name, or the weapon is
-> silent. Silent anyway: flip `middle`, or try a neighbouring root.
+> Roots (`"ar01"`) go in the string form or `name`; full event names in
+> `event` or `supEvent`. A silent root: flip `middle` or try a
+> neighbouring root.
 {:.important}
-
-Missile and rocket sounds have no suppressed version: a suppressor
-silences them.
 
 ---
 
@@ -247,12 +253,16 @@ V_TppEquip.SetBarrel{
 }
 ```
 
-`barrelId` is required. `barrelParamSetsBase` is a table or a vanilla
-row number; `1.0` is neutral and values above `2.55` work.
+In `barrelParamSetsBase`, `1.0` is neutral and an omitted field is `0`.
+The `*Mult` fields go past the vanilla cap of `2.55`; `unk2` and
+`percentOverride` stay capped at it.
 
 | Field | Required | Purpose |
 |---|---|---|
+| `barrelId` | Yes | Barrel to define. |
+| `barrelParamSetsBase` | No (`0`) | Number or table; its fields are the next seven rows. |
 | `fireRateMult` | No (`0`) | Fire rate. |
+| `unk2` (in the table) | No (`0`) | Unknown; capped at `2.55`. Use a vanilla value. |
 | `gunAimAdjustMult` | No (`0`) | Aim adjustment. |
 | `rangeMult` | No (`0`) | Effective range. |
 | `rangeUIMult` | No (`0`) | Range shown in R&D. |
@@ -260,7 +270,7 @@ row number; `1.0` is neutral and values above `2.55` work.
 | `percentOverride` | No (`0`) | Unknown; use a vanilla value. |
 | `barrelLength` | No (`0`) | `TppEquip.BARREL_LENGTH_*`. |
 | `hasScopeMount`, `hasSideMount`, `hasUnderMount` | No (`0`) | `1` enables that mount. |
-| `unk2` | No (`0`) | Unknown; use a vanilla value. |
+| `unk2` | No (`0`) | Top-level flag, not the `barrelParamSetsBase` field of the same name. Unknown; use a vanilla value. |
 
 ---
 
@@ -284,7 +294,20 @@ V_TppEquip.SetMagazine{
 | `capacity` | No (`0`) | Magazine size. |
 | `totalCarry` | No (`0`) | Maximum carried rounds. |
 | `bulletId` | No (`0`) | Projectile fired. |
-| `magazineType` | No (unchanged) | A [`V_MagazineType`](/V_Framework/Lua_API#magazine-motion-types); reload animations. |
+| `magazineType` | No (the based-on gun's) | A [`V_MagazineType`](/V_Framework/Lua_API#magazine-motion-types); reload animations. Default: the [`familyFrom`](#cross-family-handling-setweaponhandling) gun's, else the first vanilla gun on the receiver's [`motionFrom`](#borrowing-motion-motionfrom). Ignored on a receiver of another gun kind (uses the gun it [animates like](#borrowing-motion-motionfrom)). |
+
+`SetMagazine` may be called again with a different `magazineType`.
+
+An ammo row with a bullet equip in its `subId` slot (third value of an
+[`AddToEquipIdTable`](/V_Framework/Lua_API#equip-ids) row, as vanilla
+grenade ammo) fires that projectile; `SetMagazine` does not replace it:
+
+```lua
+{ TppEquip.EQP_AM_Example, TppEquip.EQP_TYPE_Ammo, TppEquip.EQP_BL_20mmGrenade, TppEquip.EQP_BLOCK_NONE,
+  "/Assets/tpp/weapon/amo/Scenes/am01_main0_def.fmdl", "" },
+```
+
+Plain ammo rows keep `0` there.
 
 ---
 
@@ -319,14 +342,13 @@ V_TppEquip.SetBullet{
 }
 ```
 
-`bulletId` is required.
-
 | Field | Required | Purpose |
 |---|---|---|
+| `bulletId` | Yes | Bullet to define. |
 | `bulletSpeed` | No (`0`) | Player-fired speed, m/s. |
 | `npcBulletSpeed` | No (`0`) | NPC-fired speed. Always set it. |
 | `dropRate` | No (`0`) | Bullet drop. |
-| `bulletParamSetsBase` | No (`0`) | Player falloff and penetration (table or vanilla row). |
+| `bulletParamSetsBase` | No (`0`) | Player falloff and penetration. |
 | `npcBulletParamSetsBase` | No (`0`) | NPC falloff and penetration. Always set it. |
 | `bulletTrailEffect` | No (`0`) | Trail index or `.vfx` path. |
 | `unk09` | No (`0`) | Unknown; use a vanilla value. |
@@ -337,13 +359,19 @@ V_TppEquip.SetBullet{
 | `eqpType` | No (`0`) | Weapon family. |
 | `ammoPerShot` | No (`0`) | Rounds used per trigger pull, `1-1023`. |
 
-Falloff: full value until `*Near`, fades by `*Far`, then stays at
-`*Residual`. Penetration order: `MINIMUM < TRANQ < HANDGUN < RIFLE <
-SNIPER < AMRIFLE`.
+Falloff curve and penetration order:
+[bulletParamSetsBase](/EquipParameters#bulletparamsetsbase-falloff-pool-row-stride-22).
+
+`DeclareBLs` has no limit; up to 125 custom bullets can be in use per
+mission, and each one past that fires as the vanilla bullet of its
+`bulletType` with a log warning. `BL_` numbers are stable across
+sessions (256 and up past the byte range). Every `bulletId` field takes
+any declared `BL_`, `lockOn` and `ammoPerShot` work on it, and
+`TppEquip.GetAmmoInfo` returns it.
 
 ### Homing bullets (`lockOn`)
 
-Optional. Makes bullets lock on and home. Not for launcher shells.
+Optional `SetBullet` field. Not for launcher shells.
 
 ```lua
 lockOn = {
@@ -372,8 +400,6 @@ the launcher reticle.
 ---
 
 ## Optional attachments
-
-Everything here is optional.
 
 ### Muzzle option (`SetMuzzle`)
 
@@ -413,13 +439,14 @@ V_TppEquip.SetSight{
 | `zoom1`-`zoom3` | No (`0`) | Zoom steps; `0` disables a step. |
 | `scopeUiId` | No (`SCOPE_UI_NONE`) | Overlay borrowed from the vanilla sight with this value and the nearest zoom: `SCOPE_UI_NONE` (0), `SCOPE_UI_DEFAULT` (1), `SCOPE_UI_DOT` (2). |
 | `booster`, `nvg`, `builtIn`, `rangeFinder`, `rangeFinderBulletDrop` | No (`0`) | `1` enables. |
-| `windowFactoryName`, `scopeUiPath` | No (none) | Pick the scope overlay yourself (below). |
+| `windowFactoryName`, `scopeUiPath` | No | Pick the scope overlay yourself (below). |
 
-Copy the borrowed sight's UI files into your sight package at the same paths,
-or the scope draws nothing. For `st16`: `sight_st16.fox2` in the `.fpkd`;
-`UI_wpscope_st16.uilb`, `UI_wpscope_st16.uif` and the `hud_bino`,
-`hud_wpscope/UI_bino.uilb` and `hud_keyhelp` UI files in the `.fpk`. The full
-set is in `/Assets/tpp/pack/collectible/chimera/sight/st16_main0_def_v00.fpk`/`.fpkd`.
+Copy the borrowed sight's UI files into your sight package at the same
+paths, or the scope draws nothing. For `st16`: `sight_st16.fox2` in the
+`.fpkd`; `UI_wpscope_st16.uilb`, `UI_wpscope_st16.uif` and the
+`hud_bino`, `hud_wpscope/UI_bino.uilb` and `hud_keyhelp` UI files in the
+`.fpk`. The full set is in
+`/Assets/tpp/pack/collectible/chimera/sight/st16_main0_def_v00.fpk`/`.fpkd`.
 
 #### Vanilla scope overlay by name
 
@@ -432,8 +459,9 @@ windowFactoryName = "SightSt13Factory",
 
 Names: `SightSt00Factory`-`SightSt17Factory` (`st03` and `st08` are
 `SightSt03_0Factory`/`SightSt03_1Factory` and
-`SightSt08_0Factory`/`SightSt08_1Factory`), `SightMs00Factory`-`SightMs03Factory`,
-`SightAr02Factory`. Ship that sight's UI files as above.
+`SightSt08_0Factory`/`SightSt08_1Factory`),
+`SightMs00Factory`-`SightMs03Factory`, `SightAr02Factory`. Ship that
+sight's UI files as above.
 
 #### Custom scope overlay
 
@@ -444,11 +472,10 @@ windowFactoryName = "V_MyScopeFactory",
 scopeUiPath       = "/Assets/tpp/ui/LayoutAsset/hud_wpscope/UI_my_scope.uilb",
 ```
 
-The overlay shows your `scopeUiPath` art; the zoom readout, key help and
-binocular frame stay vanilla. Your sight package needs a sight `.fox2` naming
-the factory: copy a vanilla one, for example
-`/Assets/tpp/ui/GraphAsset/entry_datas/sight/sight_st13.fox2`, and change two
-values:
+Zoom readout, key help and binocular frame stay vanilla. Copy a vanilla
+sight `.fox2` (e.g.
+`/Assets/tpp/ui/GraphAsset/entry_datas/sight/sight_st13.fox2`) and
+change two values:
 
 ```xml
 <property name="rawFiles" type="FilePtr" container="DynamicArray" arraySize="4">
@@ -470,11 +497,11 @@ values:
 | `windowFactoryName` | Your `windowFactoryName`. Must not be a vanilla name. |
 | `createWindowParams` | Leave empty. |
 
-Ship the `.fox2` in your sight's `.fpkd` under your own path. Put your `.uilb`
-(cloned and edited in FoxKit) with its `.uif`, `.uia` and textures in the
-`.fpk`, together with `UI_bino.uilb`, `UI_wp_zoom.uilb` and
-`UI_bino_keyhelp_zoom_icon.uilb`. Up to 61 custom overlays can be loaded at
-once; sights with the same name and path share one.
+Ship the `.fox2` in your sight's `.fpkd` under your own path; your
+`.uilb` (FoxKit) with its `.uif`, `.uia` and textures, plus
+`UI_bino.uilb`, `UI_wp_zoom.uilb` and `UI_bino_keyhelp_zoom_icon.uilb`,
+in the `.fpk`. Up to 61 custom overlays loaded at once; same name and
+path share one.
 
 ### Stock (`SetStock`)
 
@@ -486,8 +513,11 @@ V_TppEquip.SetStock{
 }
 ```
 
-`stockId` is required. Both fields default to `1.0` (neutral); higher
-`spreadRecovery` is better, lower `movementSway` is steadier.
+| Field | Required | Purpose |
+|---|---|---|
+| `stockId` | Yes | Part to define. |
+| `spreadRecovery` | No (`1.0`, neutral) | Higher recovers bloom faster. |
+| `movementSway` | No (`1.0`, neutral) | Lower is steadier. |
 
 ### Laser or flashlight (`SetOption`)
 
@@ -496,12 +526,17 @@ V_TppEquip.SetOption{ optionId = TppEquip.LS_Example, isLaser = 1 }
 V_TppEquip.SetOption{ optionId = TppEquip.LT_Example, isLight = 1 }
 ```
 
-`optionId` is required; `isLaser` and `isLight` default to `0`.
+| Field | Required | Purpose |
+|---|---|---|
+| `optionId` | Yes | Part to define. |
+| `isLaser` | No (`0`) | `1` makes the part a laser sight. |
+| `isLight` | No (`0`) | `1` makes the part a flashlight. |
+| `iconFtexPath` | No (the vanilla laser part picture) | [LASER box](#laser-switch) picture, 256x128; `.ftex` may be left off. |
 
 #### Laser colour
 
-Optional, with `isLaser = 1`. Values `0.0-1.0`; `a` is alpha (`0`
-hides the dot, stock `0.5`).
+Optional, with `isLaser = 1`. Values `0.0-1.0`; `a` is alpha (`0` hides
+the dot, stock `0.5`).
 
 ```lua
 laserColor = { r = 0, g = 1, b = 0, a = 0.5 },   -- or { 0, 1, 0, 0.5 }
@@ -513,7 +548,8 @@ laserColor = {                                   -- per weapon
 ```
 
 A non-red laser has no muzzle flare. Swapping weapons mid-mission
-recolours the dot but not the beam.
+recolours the dot but not the beam. `laserColor` and [Laser
+appearance](#laser-appearance) affect the player's laser only.
 
 #### Laser appearance
 
@@ -533,6 +569,16 @@ All optional; omitted fields keep the stock value.
 | `laserDotLuminance` / `laserDotLuminanceMin` | `600.0` / `1.0` | Dot brightness, bright and dim. |
 | `laserExposureMax` / `laserExposureMin` | `-13.6` / `-4.0` | Exposure range for the brightness. |
 
+#### Laser switch
+
+Built in, no Lua call: a laser gun gets a LASER box (`iconFtexPath`) in
+the hold-weapon options strip. Y / B toggles it there; Z / D-pad Left
+while aiming. On by default, remembered per weapon. Not in FOB.
+
+  - A beam needs `CNP_BEAM_POINT` in the model.
+  - With two option parts, put the laser in the second slot; the game
+    drops a first-slot laser.
+
 ### Underbarrel (`SetUnderBarrel`)
 
 ```lua
@@ -548,9 +594,13 @@ V_TppEquip.SetUnderBarrel{
 |---|---|---|
 | `underBarrelId` | Yes | Part to define. |
 | `receiverId` | Yes | Receiver it fires with (vanilla or custom). |
-| `magazineId` | No (none) | Its magazine (vanilla or custom). |
+| `magazineId` | No | Its magazine (vanilla or custom). |
 | `underBarrelGrade` | No (`0`) | Grade. |
-| `motionFrom` | No (a vanilla underbarrel with the same receiver type) | Vanilla underbarrel whose animations to use. |
+| `motionFrom` | No (a vanilla underbarrel with the same receiver type) | Vanilla underbarrel whose animations to use. On a model with its own `SKL_200_TRIGGER_UB` / `SKL_201_BARREL_UB`, the motion plays on them by bone name; motion for bones the model lacks is not played. |
+
+> Put the under-barrel ammo mesh in `MESH_AMO_UB`, not `MESH_AMO`; it
+> hides while the launcher is empty.
+{:.note}
 
 ---
 
@@ -576,10 +626,10 @@ V_TppEquip.SetGunBasic{
 | Field | Required | Purpose |
 |---|---|---|
 | `weaponId` | Yes | Weapon to assemble. |
-| `ammoId` | Yes | Magazine. Missing: rejected, and the weapon stays out of R&D. |
-| `receiverId` | No (vanilla part) | Receiver. |
-| `barrelId` | No (vanilla part) | Barrel; `0` for none. |
-| `stockId`, `muzzleId`, `muzzleOptionId`, `scope1Id`, `scope2Id`, `underBarrelId`, `laserFlash1Id`, `laserFlash2Id` | No (none) | Attachments. No custom `muzzleId` yet. |
+| `ammoId` | Yes | Magazine. Missing: rejected, no R&D row. |
+| `receiverId` | No (`1`) | Receiver. Left out: log warning. |
+| `barrelId` | No (`1`) | Barrel; `0` for none. Left out: log warning. |
+| `stockId`, `muzzleId`, `muzzleOptionId`, `scope1Id`, `scope2Id`, `underBarrelId`, `laserFlash1Id`, `laserFlash2Id` | No | Attachments. No custom `muzzleId` yet. |
 | `weaponGrade` | No (`1`) | Sets the weapon's actual stats. The R&D grade does not. |
 
 ---
@@ -606,7 +656,8 @@ V_TppMotherBaseManagement.AddToEquipDevelopTable("MyMod:Example", {
 })
 ```
 
-All fields: [AddToEquipDevelopTable](/V_Framework/Lua_API#addtoequipdeveloptable).
+All fields:
+[AddToEquipDevelopTable](/V_Framework/Lua_API#addtoequipdeveloptable).
 
 ---
 
@@ -708,18 +759,20 @@ return this
 
 ## Cross-family handling (`SetWeaponHandling`)
 
-Makes a weapon hold, aim and reload like any vanilla weapon while
-keeping its own model, stats, category and name - e.g. a handgun that
-handles like a shotgun.
+Holds, aims and reloads like another vanilla weapon; keeps its own
+model, stats, category and name.
 
 ```lua
 V_TppEquip.SetWeaponHandling{
-  equipId    = TppEquip.EQP_WP_SkullFace_010,
-  familyFrom = TppEquip.EQP_WP_SP_sg_010,
+  equipId    = TppEquip.EQP_WP_Example,
+  familyFrom = TppEquip.EQP_WP_West_ar_010,
 }
 ```
 
-Both fields required.
+| Field | Required | Purpose |
+|---|---|---|
+| `equipId` | Yes | Weapon to change. |
+| `familyFrom` | Yes | Weapon whose handling to use. Must have a row in the game's equip ID table (e.g. `TppEquip.EQP_WP_30101` has none: refused). Keep it to the gun's own kind; another kind breaks aiming (log warning). |
 
 ---
 
@@ -729,8 +782,10 @@ Gives a receiver its own animations on top of a vanilla motion type:
 Snake's hand clips, the gun model's clips, and the slide/bolt/hammer
 movement per shot.
 
-| Key | Required | Animates |
+| Field | Required | Purpose |
 |---|---|---|
+| `receiverId` | Yes | Receiver to animate. |
+| `receiverType` | No | A [`V_ReceiverType`](/V_Framework/Lua_API#receiver-motion-types) to build on, like [`motionFrom`](#borrowing-motion-motionfrom); wins when both are set. |
 | `playerMotion` | No (vanilla) | Snake's hands and arms (clips in your player-side `.mtar`). |
 | `weaponMotion` | No (vanilla) | The gun model during a clip (clips in your gun-side `.mtar`). |
 | `partMotion` | No (vanilla) | Slide, bolt and hammer per shot, and the idle pose. |
@@ -802,15 +857,13 @@ V_TppEquip.SetReceiverMotion{
 }
 ```
 
-`receiverType` does what `motionFrom` does; if both are set, it wins.
-
 ### `playerMotion`
 
 | Field | Required | Purpose |
 |---|---|---|
 | `mtar` | Yes | Archive with the hand clips. |
 | `pack` | Yes | `.fpk` holding that archive. Missing: no hand clip plays. |
-| `extraArchives` | No (none) | More hand-clip archives, `{ mtar = ..., pack = ... }` each in its own `.fpk`. Clips play only from these or `mtar`; don't reuse vanilla clip names. |
+| `extraArchives` | No | More hand-clip archives, `{ mtar = ..., pack = ... }` each in its own `.fpk`. Clips play only from these or `mtar`; don't reuse vanilla clip names. |
 | `clips` | Yes | Normal two-hand stance. |
 | `oneHand` | No (`clips`) | One-hand mode, e.g. carrying a body. |
 | `oneHandCqc` | No (`oneHand`) | One-hand while holding someone in CQC, standing or crouched. |
@@ -837,8 +890,8 @@ All optional.
 | `stepReload` | Round-by-round reload: `{ start, loop, loop, end }` (the loops alternate per round) | none |
 | `stepReloadEmpty` | Same, when empty | none |
 
-A clip is an asset path (`/Assets/.../x.gani`), the id MtarTool prints
-(`228f6f3d7c6f1`), or a full 16-digit path id (`0xFC5228F6F3D7C6F1`).
+A clip is an asset path (`/Assets/.../x.gani`), the ID MtarTool prints
+(`228f6f3d7c6f1`), or a full 16-digit path ID (`0xFC5228F6F3D7C6F1`).
 
 ### `weaponMotion`
 
@@ -858,8 +911,8 @@ All optional. At most two rows per list.
 | `poseLoaded` | Idle, rounds left |
 | `poseEmpty` | Idle, empty |
 
-Motion row `{ bone, axis, moveType, start, end, value }`; pose row
-`{ bone, axis, value }`.
+Motion row `{ bone, axis, moveType, start, end, value }`; pose row `{
+bone, axis, value }`.
 
 | Value | Meaning |
 |---|---|
@@ -871,6 +924,12 @@ Motion row `{ bone, axis, moveType, start, end, value }`; pose row
 
 `casing.shoot` / `casing.shootLast` (default `true`) eject a casing on
 that shot. Revolvers use `false`.
+
+A custom weapon's revolver cylinder (vanilla revolver receiver, or via
+[`motionFrom`](#borrowing-motion-motionfrom)) turns 360 / magazine
+capacity degrees per shot; vanilla weapons keep the game's turn. A
+cylinder row in `partMotion` keeps your angle (e.g. 60 for 5 rounds in 6
+chambers).
 
 ---
 
@@ -896,15 +955,86 @@ V_TppEquip.SetRemoteMissile{
 | `cameraDistance` | No (`4.0`) | Camera distance behind, `0-50`. |
 | `cameraHeight` | No (`0.0`) | Camera height, `-50-50`. |
 | `minSpeed` / `maxSpeed` | No (`0`, game default) | Speed limits, `0-100`. Full boost reaches `maxSpeed`. |
-| `fireVoiceId` | No (none) | Voice clip the player shouts on firing. |
+| `fireVoiceId` | No | Voice clip the player shouts on firing. |
+
+---
+
+## Charge shot (`SetChargeShot`)
+
+Holding fire charges; release fires the highest level reached. Release
+before level 1, or leaving the fire state (reload, switch, CQC...),
+cancels.
+
+```lua
+V_TppEquip.SetChargeShot{
+  equipId = TppEquip.EQP_WP_Example,
+  levels  = {
+    { time = 0.5, effect = "ChargeFlash" },
+    { time = 1.0, ammo = 2, shots = 2, effect = "ChargeFlash", effectVariation = 0x6448D545 },
+    { time = 1.5, ammo = 3, bulletId = TppEquip.BL_Example_Heavy, effect = "ChargeFlash", effectVariation = 0x29CA7A4C },
+  },
+}
+```
+
+Not on the under-barrel; not in FOB. Customize builds charge like their
+base weapon, and the [Player
+messages](/V_Framework/Lua_API#player-messages) `OnChargeStart`,
+`OnChargeLevel`, `OnChargeShot`, `OnChargeCancel` report the base
+`equipId`.
+
+| Field | Required | Purpose |
+|---|---|---|
+| `equipId` | One of these two | One weapon. |
+| `receiverId` | One of these two | Every weapon with this receiver (vanilla or custom). |
+| `cooldown` | No (`1.0`) | Seconds after a charged shot before a new charge. |
+| `levels` | Yes | The [charge levels](#level-fields) in order. |
+| `chargeSound` | No (D-Walker stun gun charge loop) | Loops while charging. |
+| `fullSound` | No (D-Walker full-charge sound) | On reaching the last level. |
+| `chargeEffect` | No | `.parts` effect played while charging. |
+| `hud` | No (`true`) | See [Charge HUD](#charge-hud). |
+
+### Level fields
+
+| Field | Required | Purpose |
+|---|---|---|
+| `time` | Yes | Seconds held to reach it; above the previous level's. |
+| `ammo` | No (`1`) | Rounds the shot costs, `0-65535`; not reached if the magazine has fewer. |
+| `bulletId` | No (the weapon's bullet) | Vanilla or declared `BL_*` fired instead. |
+| `shots` | No (`1`) | Bullets fired at once, `1-255`, same aim line; costs only `ammo`. |
+| `sound` | No (D-Walker level sounds) | On reaching the level. |
+| `fireSound` | No | On release, over the gun's own sound. |
+| `effect` | No (`"ChargeFlash"`) | `.parts` effect while the level holds; replaced by the next level's, fades on fire or cancel. |
+| `effectVariation` | No (the `.parts` `effectVariationName`) | Number: variation of `effect`; a new one restarts it. |
+| `impactEffect` | No | `.parts` effect played for 1 s where the aim line first hits within 200 m, facing its `.parts` locator. |
+| `impactVariation` | No (the effect's own) | `effectVariation` for `impactEffect`; walker stun blast `fx_tpp_mchmgmstn01_m2.vfx` is `0x6448D545`. |
+
+ChargeFlash
+(`/Assets/tpp/effect/vfx_data/mecha/fx_tpp_mchmgmstncrg01_s3.vfx`)
+variations by level: none, `0x6448D545`, `0x29CA7A4C`.
+
+### Sounds and effects
+
+Sounds take an event name or ID, effects a name or ID; `false` turns one
+off. D-Walker defaults need their sound bank loaded: set your own.
+
+Effects must be in the gun's `.parts` (Customize builds: the first part
+carrying the name). Only the first 16 effect entries load, in file order
+(4 in FOB); the log reports missing names and full slots.
+
+### Charge HUD
+
+`hud` on: the weapon panel swaps the round ammo icons for a charge ring,
+one cell per level (up to 3); the ammo count stays. `false`: no gauge.
 
 ---
 
 ## Support weapons (`SetSupportWeapon`)
 
-A custom grenade or other thrown item. It is held, thrown and flies like a
-vanilla item (`throwAs`), but that item's effect never runs: you script the
-effect on the [Throwing messages](/V_Framework/Lua_API#throwing-messages).
+A custom grenade, mine or other support item, thrown (`throwAs`) or
+placed ([`placeAs`](#placed-items-placeas)) like a vanilla item. Except
+for decoys, the vanilla effect never runs: script it on the [Throwing
+messages](/V_Framework/Lua_API#throwing-messages) or [Placed
+messages](/V_Framework/Lua_API#placed-messages).
 
 ```lua
 V_TppEquip.RegisterConstantEquipId("EQP_SWP_ChaffGrenade")
@@ -918,8 +1048,12 @@ V_TppEquip.AddToEquipIdTable{
 }
 
 V_TppEquip.SetSupportWeapon{ equipId = TppEquip.EQP_SWP_ChaffGrenade, throwAs = TppEquip.EQP_SWP_SmokeGrenade }
+```
 
--- in Messages(): the fuse ran out
+In your module's `Messages()` table; fires when the fuse expires
+(Molotov- and bait-style `throwAs`: on contact):
+
+```lua
 Throwing = {
   { msg = "OnActivateThrowing", func = function(handle, equipId, owner)
       if equipId ~= TppEquip.EQP_SWP_ChaffGrenade then return end
@@ -931,30 +1065,113 @@ Throwing = {
 },
 ```
 
-Then add its [R&D row](#add-the-rd-row-addtoequipdeveloptable) with
-`p02 = TppMbDev.EQP_DEV_TYPE_Throwing`.
+Vanilla effect anyway: a `V_ThrowingImpl.UpdateAction*` function. On
+`OnBounceThrowing`: `V_ThrowingImpl.Activate(handle)` for an impact
+grenade, `V_ThrowingImpl.Stop(handle)` for a sticky item. [R&D
+row](#add-the-rd-row-addtoequipdeveloptable): `equipDevelopTypeID =
+TppMbDev.EQP_DEV_TYPE_Throwing`.
 
 | Field | Required | Purpose |
 |---|---|---|
 | `equipId` | Yes | Your `EQP_SWP_*`. |
-| `throwAs` | Yes | Vanilla thrown `TppEquip.EQP_SWP_*` (grenade, smoke, stun, Molotov...): how it is held, thrown and flies, and how guards react. |
-| `attackId` | No (`throwAs`'s) | `TppDamage.ATK_*` used when Lua runs a vanilla effect on it. |
-| `blastId` | No (`throwAs`'s) | `TppEquip.BLA_*` blast, `0-255`, used the same way. |
+| `throwAs` | One of these two | Vanilla thrown `TppEquip.EQP_SWP_*` (grenade, smoke, Molotov...): how it is held, thrown and flies. |
+| `placeAs` | One of these two | Vanilla placed `TppEquip.EQP_SWP_*`: see [Placed items](#placed-items-placeas). |
+| `noticeAs` | No (the `throwAs` / `placeAs` item) | Vanilla thrown `EQP_SWP_*` or decoy that enemies hear and feel it as (`throwAs` / `placeAs` still sets holding and throwing): grenade-type = a grenade; `EQP_SWP_Magazine`, decoy or Kibidango = something small (first bounce), they look; `TppEquip.EQP_None` = silent. |
+| `attackId` | No (the `throwAs` / `placeAs` item's) | `TppDamage.ATK_*` used when Lua runs a vanilla effect on it. |
+| `blastId` | No (the `throwAs` / `placeAs` item's) | `TppEquip.BLA_*` blast, `0-255`, used the same way. |
+| `decoyType` | No (the normal look) | `1-7`, decoy `placeAs` only: inflated look (vanilla `1-3` = the PF soldier looks, `TppPlaced.SetCorrelationValueByLocatorName`). Ignored with `decoyParts`. |
 
-To get a vanilla effect anyway, call a `V_ThrowingImpl.UpdateAction*` function on
-the item. Molotov- and bait-style `throwAs` items still go off on contact.
-Impact grenade: `OnBounceThrowing` -> `V_ThrowingImpl.Activate(handle)`; sticky
-item: `OnBounceThrowing` -> `V_ThrowingImpl.Stop(handle)`.
+  - Ammo boxes and supply drops refill them. Up to 17 keep their own
+    ammo count; past that, counts may be shared.
+  - Pickups take a free slot. For higher grades to replace lower ones,
+    set
+    [`baseEquipDevelopId`](/V_Framework/Lua_API#addtoequipdeveloptable)
+    on every higher grade.
+  - Soldiers can throw them:
+    [`RegistGrenadeId`](/V_Framework/Lua_API#grenades).
+  - Up to 933 custom `SWP_` rows and 207 custom blast rows.
 
-- Ammo boxes and supply drops refill custom items like vanilla ones. Up to 17
-  custom items keep their own ammo count at once; past that, counts may be shared.
-- A picked-up item goes into a free slot instead of replacing another custom item.
-  Higher grades replace lower ones of the same item: set `p03` (the previous
-  grade's develop ID) on every higher grade.
-- A custom support weapon in the loadout blocks FOB deployment.
-- Up to 933 custom `SWP_` rows and 207 custom blast rows.
-- The vanilla `OnPickUpPlaced`, `OnEquipItem` and `OnAmmoStackEmpty` messages may pass a temporary ID for a
-  custom item, so comparing it with `TppEquip.EQP_SWP_*` fails.
+### Throw physics
+
+Optional `SetSupportWeapon` fields.
+
+| Field | Required | Purpose |
+|---|---|---|
+| `bounce` | No (the `throwAs` / `placeAs` item's) | Speed kept on a bounce, `0-1.02`. Vanilla `0.16`, decoys `0.2`. |
+| `friction` | No (the `throwAs` / `placeAs` item's) | Slide on landing, `0-1.02`: `0` slides, `1` stops dead. Vanilla `0.52`, some `0.4`, decoys `0.2`. |
+| `rollingFriction` | No (the `throwAs` / `placeAs` item's) | Rolling stop, `0-655.35`. Vanilla `2`; magazine, Molotov, Kibidango `3.6`; decoys `655.35` (no rolling). |
+| `radius` | No (half the model's smallest side) | Collision ball size, metres, above `0`. |
+| `throwSpeed` | No (`1`) | Player throw speed, above `0`; the arc follows. Soldiers ignore it. |
+| `gravity` | No (`9.8`) | Fall rate, `0-100`; `0` flies straight. Soldiers' aim and the arc follow it. |
+
+### Placed items (`placeAs`)
+
+`TppEquip.EQP_SWP_*` deciding placement and trigger: `C4` (detonator),
+`DMine` (anything), `SleepingGusMine` (people), `AntitankMine` /
+`ElectromagneticNetMine` (vehicles), `Dung`, `Decoy`, `ActiveDecoy`,
+`ShockDecoy`. `CaptureCage`, `WormholePortal`, `DarkMatter` and the
+locators are refused.
+
+Script it on the [Placed messages](/V_Framework/Lua_API#placed-messages)
+(`OnPlaceCustom`, `OnActivateCustom`) with [`V_BlastSystem.Blast`,
+`V_RangeAttackSystem`...](/V_Framework/Lua_API#throwing); set off or
+remove with [`V_PlacedSystem`](/V_Framework/Lua_API#placed-items). A
+decoy keeps vanilla behaviour and sends neither message.
+
+With its [own pack](#own-model-pack), a decoy shows its own canister
+and, with `decoyParts`, its own inflated figure:
+
+```lua
+V_TppEquip.AddToEquipIdTable{
+  { TppEquip.EQP_SWP_ScarecrowDecoy, TppEquip.EQP_TYPE_Placed, TppEquip.SWP_Decoy, TppEquip.EQP_BLOCK_MISSION,
+    "/Assets/tpp/weapon/put/Scenes/scarecrow_decoy_sta.fmdl",
+    "/Assets/tpp/pack/collectible/swp/EQP_SWP_ScarecrowDecoy.fpk",
+    decoyParts = "/Assets/tpp/parts/weapon/put/scarecrow_decoy_def_v00.parts" },
+}
+```
+
+The 5th value, the canister `.fmdl`, also shows once landed and under
+the figure (a `.parts` there keeps the game's canister on the ground).
+`decoyParts` must be in the row's own pack, else ignored with a log
+warning. Not in FOB. Feature switch `DecoyModel` in
+[`disabled_modules.txt`](/V_Framework#installation).
+
+> The figure plays the game's decoy animations
+> (`/Assets/tpp/motion/mtar/equip/DecoyCommon.mtar`): give it the game
+> figure's skeleton. The canister opens and closes only if it keeps the
+> game canister's mesh group names.
+{:.important}
+
+A mine using the [Blast](#blast-setblastparameter) example, registered
+like the chaff grenade but with `TppEquip.EQP_TYPE_Placed`:
+
+```lua
+V_TppEquip.SetSupportWeapon{ equipId = TppEquip.EQP_SWP_ExampleMine, placeAs = TppEquip.EQP_SWP_DMine }
+```
+
+```lua
+Placed = {
+  { msg = "OnActivateCustom", func = function(handle, equipId, owner)
+      if equipId ~= TppEquip.EQP_SWP_ExampleMine then return end
+      local x, y, z = V_PlacedSystem.GetPosition(handle)
+      V_BlastSystem.Blast{ pos = { x, y, z }, blastId = TppEquip.BLA_Example, attackId = TppDamage.ATK_Example, owner = owner }
+    end },
+},
+```
+
+Enemy mines from a fox2 locator:
+`TppPlaced.ChangeEquipIdByLocatorName(locatorName,
+TppEquip.EQP_SWP_<custom>)`, or [name it in the
+locator](#placing-in-fox2-files).
+
+### Own model pack
+
+A custom `Throwing`, `Placed`, `AmmoBox`, `WeaponBox` or `Item` loads
+its model from its own pack when its [`AddToEquipIdTable`
+row](/V_Framework/Lua_API#equip-ids) has block
+`TppEquip.EQP_BLOCK_MISSION` and a `packPath`. Loaded once, kept; the
+item cannot be thrown until then. Not in FOB. `EQP_BLOCK_COMMON` models
+must be in `col_common_tpp.fpk`.
 
 ### Support weapon stats (`SetSupportWeaponParameter`)
 
@@ -962,15 +1179,15 @@ item: `OnBounceThrowing` -> `V_ThrowingImpl.Stop(handle)`.
 |---|---|---|
 | `swpId` | Yes | Your `SWP_*` from `DeclareSWPs`. |
 | `ammo` | No (`0`) | Max carried. |
-| `fuseTime` | No (`0`) | Seconds before it goes off. Same value as `sensorRange` (mines, metres), `decoyStrength` (decoys) and `p1`: set one. |
+| `fuseTime` | No (`0`) | Seconds before it goes off. Aliases (set one): `sensorRange` (mines, metres), `decoyStrength` (decoys), `p1`. |
 | `activeTime` | No (`0`) | Effect seconds, e.g. smoke. Same as `p2`. |
 | `grade` | No (`1`) | Item grade. |
 | `damageType` | No (automatic) | Damage type icon: `1` DMG, `2` ZZZ, `3` STN, `4` SMK, `6` ---, `0` hidden. |
 | `barDamage`, `barDurability`, `barEffectTime` | No (automatic) | Details-panel bar fill, `0-1`; `false` hides it. Wins over its `*Max`. |
 | `durabilityMax`, `effectTimeMax` | No (vanilla) | Value a full Durability / Effect Duration bar stands for. |
 
-Which bars show depends on `throwAs`: Durability for decoys, Effect Duration for smoke, sleeping gas and flares,
-Damage for all.
+Which bars show depends on `throwAs` / `placeAs`: Durability for decoys,
+Effect Duration for smoke, sleeping gas and flares, Damage for all.
 
 ### Blast (`SetBlastParameter`)
 
@@ -990,8 +1207,29 @@ Use it as `blastId` in `SetSupportWeapon` or `SetBullet`.
 
 ---
 
+## Resupply and limits
+
+  - The ammo supply drop refills custom weapons (any `equipId`), and
+    custom items with a [count](/V_Framework/Lua_API#item-counts) from
+    its item box.
+  - The suppressor box comes only for a [muzzle
+    option](#muzzle-option-setmuzzle) with `durability` `1-254`.
+  - Vanilla consumables changed with
+    [`SetItemParameter`](/V_Framework/Lua_API#item-parameters) refill to
+    the new count.
+  - Any number of custom magazines and parts. Parts past the engine's
+    free slots read as the gun's part of that kind in a few places (a
+    sight as its `scopeUiId` match); stats stay the custom part's.
+  - FOB: vanilla IDs changed by any `V_TppEquip` setter,
+    `SetWeaponHandling` or `AddToEquipIdTable` use the game's values;
+    custom weapons, support weapons and items refuse FOB sorties and
+    visits.
+
+---
+
 ## See also
 
   - [V Framework](/V_Framework)
   - [V Framework Lua API](/V_Framework/Lua_API)
   - [V Framework Custom Outfits](/V_Framework/Custom_Outfits)
+  - [V Framework Buddy Outfits](/V_Framework/Buddy_Outfits)
