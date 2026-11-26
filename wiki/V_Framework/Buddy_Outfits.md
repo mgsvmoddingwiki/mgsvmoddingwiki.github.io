@@ -1,14 +1,14 @@
 ---
 title: Buddy Outfits
 permalink: /V_Framework/Buddy_Outfits/
-tags: [Lua, Reference, Guides, Infinite Heaven, Buddy, V Framework]
+tags: [Lua, Reference, Guides, Infinite Heaven, V Framework]
 redirect_from:
     - /V_Framework_Buddy_Outfits/
 ---
 
 New costumes for Quiet, tack for D-Horse and gear for D-Dog, picked in
-Sortie Prep like the vanilla ones. New rifles for Quiet are
-[custom weapons](#quiet-weapons).
+Sortie Prep like the vanilla ones. [Quiet weapons](#quiet-weapons) and
+[D-Walker sidearms](#d-walker-sidearm) are custom weapons.
 
 Place all calls inside `this.LoadLibraries()`.
 
@@ -36,7 +36,8 @@ V_TppBuddyService.RegisterBuddyOutfit({
 })
 ```
 
-Returns `value, developId`, or `false`.
+Returns the new costume, tack or gear number (numbered after the vanilla
+ones) and its `developId`, or `false`.
 
 | Field | Required | Purpose |
 |---|---|---|
@@ -49,11 +50,11 @@ Returns `value, developId`, or `false`.
 |---|---|---|---|
 | `fpkPath` | all | Yes | The buddy's package. Not installed: the vanilla default is worn. |
 | `bruise` | `quiet` | No (`false`) | `true` shows NAKED's bruises. |
-| `bruiseFv2`, `bruiseFpk` | `quiet` | No (none) | Own bruise look. Give both. |
-| `damageRate` | `horse` | No (NORMAL) | Share of damage D-Horse takes. `1` = full, max `1.275`. |
-| `gallopSpeedRate` | `horse` | No (NORMAL) | Gallop speed multiplier. |
-| `bodyAttackId` | `horse` | No (NORMAL) | `TppDamage.ATK_*` hit when D-Horse rams soldiers. |
-| `soundType` | `horse` | No (NORMAL) | Vanilla tack whose movement sounds play, see [D-Horse tack](#d-horse-tack). |
+| `bruiseFv2`, `bruiseFpk` | `quiet` | No | Own bruise look. Give both. |
+| `damageRate` | `horse` | No (`1`) | Share of damage D-Horse takes. `1` = full, max `1.275`. |
+| `gallopSpeedRate` | `horse` | No (`1`) | Gallop speed multiplier. |
+| `bodyAttackId` | `horse` | No (`ATK_HorseBodyAttack`) | `TppDamage.ATK_*` hit when D-Horse rams soldiers. |
+| `soundType` | `horse` | No (`0`) | Vanilla tack whose movement sounds play, see [D-Horse tack](#d-horse-tack). |
 | `commandType` | `dog` | No (`KEEP_BUSY`) | D-Dog's "Do it" order, a `V_DogCommandType` value, see [D-Dog gear](#d-dog-gear). |
 | `damageRate` | `dog` | No (`1`) | Share of damage D-Dog takes. |
 | `bulletFlinch` | `dog` | No (`true`) | `false`: bullets don't stagger D-Dog. |
@@ -63,8 +64,15 @@ Returns `value, developId`, or `false`.
 | `retargetRange` | `dog` | No (`0`) | Extra metres D-Dog looks for the next enemy. |
 | `soldierThreat` | `dog` | No (`false`) | `true`: soldiers treat D-Dog as armed, not as a stray. |
 
-Bruises show only when a script sends
-`GameObject.SendCommand(quietId, { id = "SetBruise", enable = true })`.
+Unset fields: tack plays like NORMAL, gear like NAKED. Quiet costumes
+change only the look; Customize colours and designs still apply. Quiet
+wears NAKED in "A Quiet Exit".
+
+Bruises show only when a script sends:
+
+```lua
+GameObject.SendCommand(quietId, { id = "SetBruise", enable = true })
+```
 
 ### D-Horse tack
 
@@ -75,8 +83,6 @@ horse = {
   soundType  = 4,
 },
 ```
-
-Vanilla values:
 
 | `soundType` | Vanilla tack | `damageRate` | `gallopSpeedRate` | `bodyAttackId` |
 |---|---|---|---|---|
@@ -114,9 +120,6 @@ Vanilla BATTLE DRESS: `damageRate` 0.25 during orders, `bulletFlinch`
 `hitRetreatDistance` 10, `retargetRange` 15. Soldiers treat the two
 SNEAKING suits and BATTLE DRESS as a threat.
 
-Sortie Prep cost and ability line come from the R&D row: `usageGmpCost`
-and `langPowerUpInfo0` (e.g. `"ability_1043"`).
-
 ### The package
 
 Copy the vanilla package and point its `.fox2` at your `.parts`; ship
@@ -127,10 +130,6 @@ the `.fpkd` and `.pftxs` with it.
 | `quiet` | `/Assets/tpp/pack/buddy/quiet/buddy_quiet2_00.fpk` |
 | `horse` | `/Assets/tpp/pack/buddy/horse/buddy_horse2_00.fpk` |
 | `dog` | `/Assets/tpp/pack/buddy/dog/buddy_dog2_00.fpk` |
-
-Tack plays like NORMAL and gear like NAKED apart from the fields you
-set; Quiet costumes only change the look. Customize colours and designs
-still apply. Quiet wears NAKED in "A Quiet Exit".
 
 ### R&D row
 
@@ -155,16 +154,30 @@ V_TppMotherBaseManagement.AddToEquipDevelopTable("MyMod:QuietRed", {
 | `horse` | `TppMbDev.EQP_DEV_TYPE_Horse` |
 | `dog` | `TppMbDev.EQP_DEV_TYPE_DDog` |
 
+Sortie Prep cost and ability line come from the R&D row: `usageGmpCost`
+and `langPowerUpInfo0` (e.g. `"ability_1043"`).
+
 Leave `equipID` out. Other fields:
 [AddToEquipDevelopTable](/V_Framework/Lua_API#addtoequipdeveloptable).
 
 ---
 
+## SetBuddyOutfit
+
+```lua
+V_TppBuddyService.SetBuddyOutfit("MyMod:QuietRed")
+```
+
+Takes a `RegisterBuddyOutfit` key or a Quiet weapon's R&D key. Applies
+at once if the buddy is out, else next time. Returns `true`, or `false`
+when the key is not registered or the buddy is busy.
+
+---
+
 ## Quiet weapons
 
-Build the rifle as a [custom weapon](/V_Framework/Custom_Weapons), then
-give its R&D row `equipDevelopTypeID = TppMbDev.EQP_DEV_TYPE_Quiet`. It
-appears in Quiet's weapon list; no other call is needed.
+A [custom weapon](/V_Framework/Custom_Weapons) whose R&D row has
+`equipDevelopTypeID = TppMbDev.EQP_DEV_TYPE_Quiet`. No other call.
 
 ```lua
 V_TppMotherBaseManagement.AddToEquipDevelopTable("MyMod:QuietRifle", {
@@ -190,7 +203,7 @@ V_TppMotherBaseManagement.AddToEquipDevelopTable("MyMod:QuietRifle", {
 
 ### Quiet weapon animations
 
-Quiet has rifle animations only. Give a weapon its own:
+Quiet has rifle animations only.
 
 ```lua
 V_TppBuddyService.SetQuietWeaponMotion{
@@ -207,25 +220,55 @@ V_TppBuddyService.SetQuietWeaponMotion{
 | Field | Required | Purpose |
 |---|---|---|
 | `equipId` | Yes | The weapon. |
-| `quietMotion.mtar` | With body clips | Motion archive packed in the weapon's pack. |
+| `quietMotion.mtar` | Yes, with `clips` or `prone` | Motion archive packed in the weapon's pack. |
 | `quietMotion.clips` | No (rifle) | Standing clips; crouching fire and reload use them too. |
 | `quietMotion.prone` | No (rifle) | Prone clips. |
 | `weaponMotion.clips` | No (vanilla) | The weapon model's own fire and reload clips. |
 
-A clip is a path, MtarTool id or `0x` id. Leave a move out and she plays her rifle clip for it. `aim` must be a 25-frame aim sweep like hers; author `fire` and `reload` against your `aim`.
+Clips take the forms of [custom weapon
+clips](/V_Framework/Custom_Weapons#clip-fields). Leave a move out and
+she plays her rifle clip for it. `aim` must be a 25-frame aim sweep like
+hers; author `fire` and `reload` against your `aim`.
 
 ---
 
-## SetBuddyOutfit
+## D-Walker sidearm
+
+Any
+[AddToEquipDevelopTable](/V_Framework/Lua_API#addtoequipdeveloptable)
+row with `equipDevelopTypeID` (`p02`) =
+`TppMbDev.EQP_DEV_TYPE_WalkerGear` and a handgun or SMG as `equipID`
+(`p01`) is a D-Walker sidearm; no other call. Other weapon types are
+refused with a log warning. Picked in the D-Walker's sub weapon slot.
 
 ```lua
-V_TppBuddyService.SetBuddyOutfit("MyMod:QuietRed")
+V_TppEquip.RegisterConstantEquipId("EQP_WP_MyWalkerPistol")
+
+V_TppEquip.AddToEquipIdTable{
+  { TppEquip.EQP_WP_MyWalkerPistol, TppEquip.EQP_TYPE_Handgun, TppEquip.WP_MyPistol, TppEquip.EQP_BLOCK_MISSION,
+    "/Assets/.../my_pistol.parts", "/Assets/.../my_pistol.fpk" },
+}
+
+V_TppMotherBaseManagement.AddToEquipDevelopTable("MyMod:WalkerPistol", {
+  const = {
+    equipID             = TppEquip.EQP_WP_MyWalkerPistol,
+    equipDevelopTypeID  = TppMbDev.EQP_DEV_TYPE_WalkerGear,
+    equipDevelopGroupID = TppMbDev.EQP_DEV_GROUP_BUDDY_230,
+    langEquipName       = "name_mymod_walker_pistol",
+    iconFtexPath        = "/Assets/.../ui_walker_pistol",
+  },
+  flow = { grade = 1, developGmpCost = 1000, initialAvailable = 1 },
+})
 ```
 
-Takes a `RegisterBuddyOutfit` key or a Quiet weapon's R&D key. If that
-buddy is out, it changes at once; otherwise it is worn next time.
-
-Returns `true`, or `false` when the buddy is busy (try again later).
+  - Needs its own equip ID (one per R&D row); its `AddToEquipIdTable`
+    row may reuse a Snake weapon's weaponId, parts and pack.
+  - Each row is its own sidearm; chain upgrades with
+    `baseEquipDevelopId` (`p03`).
+  - `equipDevelopGroupID` (`p09`): one of the vanilla sidearm groups,
+    `TppMbDev.EQP_DEV_GROUP_BUDDY_230` .. `_260`.
+  - The pack loads automatically.
+  - Mod removed: the D-Walker falls back to the DW S.PISTOL.
 
 ---
 
