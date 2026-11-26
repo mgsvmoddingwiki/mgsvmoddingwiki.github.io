@@ -489,10 +489,13 @@ These take a mesh node unless noted.
 | `SetLineDraw` `indices` | Yes | A list of vertex numbers (from `0`), or a list of lists, one line each; a segment per neighbouring pair. At least 2 per list, up to 65535 in all. An index past the last vertex logs a warning and draws nothing. |
 | `SetLineDraw` `vertices` | Yes | Up to 4096 `{x, y, z, w}`; `z` defaults to `0`, `w` to `1`. |
 
+{% comment %}Raw block to get around double curly brackets that Liquid otherwise errors on during building.{% endcomment %}
 ```lua
+{% raw %}
 V_UixUtility.SetLineDraw(line,
   {{0, 1, 2, 0}, {3, 4}},
   {{0, 0, 0, 1}, {2, 0, 0, 1}, {1, 2, 0, 1}, {-3, -3, 0, 1}, {3, -3, 0, 1}})
+{% endraw %}
 ```
 
 ### Sub viewports
